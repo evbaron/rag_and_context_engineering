@@ -1,6 +1,54 @@
 # MITxPRO: RAG AND CONTEXT ENGINEERING CAPSTONE PROJECT
 
-Capstone Project for RAG and Context Engineering Production-Grade AI Systems 
+Capstone Project for RAG and Context Engineering Production-Grade AI Systems
+
+## Setup
+
+This project uses a local Python virtual environment in `.venv` (macOS does not provide a `python` command by default — use `python3`).
+
+### 1. Create and activate the virtual environment
+
+From the project root (`capstone/rag_and_context_engineering`):
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Your prompt should show `(.venv)`.
+
+### 2. Install dependencies
+
+```bash
+python3 -m pip install --upgrade pip
+pip install langchain-openai langchain-core python-dotenv
+```
+
+### 3. Add your OpenRouter API key
+
+Get a free key at [https://openrouter.ai/keys](https://openrouter.ai/keys). Create a `.env` file in this folder with:
+
+```
+OPENROUTER_API_KEY=sk-or-v1-...
+```
+
+### 4. Verify the setup
+
+```bash
+python3 test_setup.py
+```
+
+A successful run prints a short model reply and `Setup verification completed successfully.`
+
+### Later sessions
+
+If the prompt no longer shows `(.venv)`, reactivate from the project root:
+
+```bash
+source .venv/bin/activate
+```
+
+Then confirm you are using the project interpreter (`which python` should end in `.venv/bin/python`). In Cursor, choose **Python: Select Interpreter** and pick `.venv` in this folder.
 
 ## Project 1: Research Paper Navigator
 
