@@ -1,0 +1,48 @@
+[2026-08-29T14:42:56] QUERY 1: According to the Wikipedia article on the 100 meters, what is the current men's world record, who holds it, and when was it set? Quote the article.
+retrieved=[('doc2', 3.0), ('doc5', 3.0), ('doc4', 2.0)]
+answer=I’m sorry, but the provided documents do not contain the Wikipedia article on the 100 meters or any information about the current men’s world record, who holds it, or when it was set. I can’t answer that from these documents without guessing.
+------------------------------------------------------------------------
+[2026-08-29T14:42:57] QUERY 2: List three significant events recorded in the Wikipedia article for the year 1580, quoting the article for each.
+retrieved=[('doc2', 1.0), ('doc3', 1.0), ('doc5', 1.0)]
+answer=I can’t answer that from the provided documents. The documents only discuss sketching, retrieval-augmented generation, and vector search, and do not contain the Wikipedia article for the year 1580 or any events from it.
+------------------------------------------------------------------------
+[2026-08-29T14:42:58] QUERY 3: Was there a person who was nominated for academy award in all three 68th, 70th and 74th awards?
+retrieved=[('doc2', 2.0), ('doc3', 2.0), ('doc4', 2.0)]
+answer=The provided documents do not contain information about Academy Award nominations or any person nominated in the 68th, 70th, and 74th awards. So I can’t determine this from the documents alone.
+------------------------------------------------------------------------
+[2026-08-29T14:42:59] QUERY 5: Which country got the most medals in 1972 Winter Olympics?
+retrieved=[('doc2', 1.0), ('doc3', 1.0), ('doc5', 1.0)]
+answer=The provided documents do not contain information about the 1972 Winter Olympics medal counts, so I can’t determine which country got the most medals from them.
+------------------------------------------------------------------------
+[2026-08-29T14:43:00] QUERY 6: How does nomination process work in academy awards?
+retrieved=[('doc3', 1.0)]
+answer=The provided document does not contain information about the Academy Awards nomination process. It only says that retrieval-augmented generation “grounds a language model's answers in documents retrieved from a corpus, reducing hallucination.” So I can’t answer how the nomination process works from these documents alone.
+------------------------------------------------------------------------
+[2026-08-29T14:43:02] QUERY 7: Which actor has won the most academy awards between from 2000 to 2020?
+retrieved=[('doc2', 2.0), ('doc5', 2.0), ('doc6', 2.0)]
+answer=The documents do not contain that information. They discuss sketching, vector search, and retrieval evaluation, but none provide academy award winners or counts for actors from 2000 to 2020.
+------------------------------------------------------------------------
+[2026-08-29T14:43:03] QUERY 8: What were the most devastating earthquakes in the last 50 years? Show human deaths for each earthquake.
+retrieved=[('doc2', 1.0), ('doc3', 1.0), ('doc5', 1.0)]
+answer=I’m sorry, but the provided documents do not contain information about earthquakes, their severity, or human deaths. The documents only discuss sketching, retrieval-augmented generation, and vector search. So I can’t answer which earthquakes were the most devastating in the last 50 years from these sources.
+------------------------------------------------------------------------
+[2026-08-29T14:43:04] QUERY 9: Compare countries by their life expectancy vs. population. Is there a correlation?
+retrieved=[('doc4', 3.0), ('doc1', 1.0), ('doc2', 1.0)]
+answer=The provided documents do not contain any information about countries, life expectancy, or population, so I can’t determine whether there is a correlation from these documents.
+------------------------------------------------------------------------
+[2026-08-29T14:43:05] QUERY 10: For winter olympics, list events that were added in the last 100 years in order they were added listing the year they were added.
+retrieved=[('doc2', 1.0), ('doc3', 1.0), ('doc4', 1.0)]
+answer=The provided documents do not contain information about Winter Olympics events or when they were added, so I can’t answer that from the documents alone.
+------------------------------------------------------------------------
+[2026-08-29T14:43:06] QUERY 11: For summer olympics, list events that were added in the last 100 years in order they were added listing the year they were added and the country that the olympics were held in at that time.
+retrieved=[('doc2', 2.0), ('doc4', 2.0), ('doc5', 2.0)]
+answer=I’m sorry, but the provided documents do not contain information about summer olympics events, when they were added, or the host countries. I can only answer from the documents given, and they don’t include the needed data.
+------------------------------------------------------------------------
+[2026-08-29T14:43:06] QUERY 12: Which winter/summer olympic years, Russia hosted the olympics?
+retrieved=[('doc2', 1.0), ('doc5', 1.0), ('doc6', 1.0)]
+answer=The provided documents do not contain information about which winter or summer Olympic years Russia hosted. The documents only discuss sketching, vector search, and retrieval evaluation.
+------------------------------------------------------------------------
+[2026-08-29T14:43:07] QUERY 13: Which olympics, Russia did not participate in?
+retrieved=[('doc3', 1.0)]
+answer=The provided document does not contain information about any Olympics Russia did or did not participate in. It only says that “Retrieval-augmented generation grounds a language model's answers in documents retrieved from a corpus, reducing hallucination.” So I can’t determine which Olympics Russia did not participate in from this document alone.
+------------------------------------------------------------------------
