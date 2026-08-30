@@ -90,7 +90,9 @@ from retrievers.llm import answer as answer_from_context
 from retrievers.llm import make_llm
 
 # %%
-TOP_K = 3
+SAMPLE_TOP_K = 3
+RETRIEVAL_TOP_K = 7
+HYBRID_CANDIDATE_POOL = max(10, RETRIEVAL_TOP_K)
 CHROMA_DB_NAME = "wikipedia_chars1600_overlap200"
 CHUNKING_STRATEGY = "character_windows"
 ARTICLE_TEXT_STORE_NAME = "wikipedia_plain_text"
@@ -104,9 +106,10 @@ SAMPLE_LOG_PATH = LOG_DIR / f"{RUN_ID}__toy-baseline.log"
 # retrievers/db/CHROMA_DB_NAME.
 
 EXPERIMENTS = [
-    RetrieverSpec(kind="bm25", label="bm25_k4", top_k=4),
-    RetrieverSpec(kind="vector", label="vector_k4", top_k=4),
-    RetrieverSpec(kind="hybrid", label="hybrid_vector_heavy", top_k=4,
+    RetrieverSpec(kind="bm25", label=f"bm25_k{RETRIEVAL_TOP_K}", top_k=RETRIEVAL_TOP_K),
+    RetrieverSpec(kind="vector", label=f"vector_k{RETRIEVAL_TOP_K}", top_k=RETRIEVAL_TOP_K),
+    RetrieverSpec(kind="hybrid", label="hybrid_vector_heavy", top_k=RETRIEVAL_TOP_K,
+                  candidate_pool=HYBRID_CANDIDATE_POOL,
                   weight_bm25=0.35, weight_vector=0.65),
 ]
 
@@ -130,17 +133,6 @@ def log(label: str, text: str) -> None:
 # folder, and update the path if your checkout puts it elsewhere.
 
 
-# %%
-SAMPLE_DOCS = [
-    {"id": "doc1", "text": "Program synthesis: generating programs automatically from a specification, such as input-output examples or a logical formula."},
-    {"id": "doc2", "text": "The sketching approach lets a programmer write a partial program with holes, and a synthesizer fills the holes to satisfy a specification."},
-    {"id": "doc3", "text": "Retrieval-augmented generation grounds a language model's answers in documents retrieved from a corpus, reducing hallucination."},
-    {"id": "doc4", "text": "BM25 is a keyword ranking function that scores documents by term frequency and inverse document frequency."},
-    {"id": "doc5", "text": "Vector search embeds text into dense vectors and ranks documents by cosine similarity to the query embedding."},
-    {"id": "doc6", "text": "Evaluation of retrieval systems measures whether the retrieved documents actually contain the information needed to answer the query."},
-]
-DOC_BY_ID = {d["id"]: d for d in SAMPLE_DOCS}
-
 
 # %% [markdown]
 # ## Step 2 — The baseline retriever (provided)
@@ -155,7 +147,7 @@ def _tokens(text: str) -> set[str]:
     return set(re.findall(r"[a-z0-9]+", text.lower()))
 
 
-def retrieve(query: str, k: int = TOP_K) -> list[tuple[str, float]]:
+def retrieve(query: str, k: int = SAMPLE_TOP_K) -> list[tuple[str, float]]:
     """Baseline keyword retrieval: Score each doc by shared-word count, return top-k."""
     q = _tokens(query)
     scored = [(d["id"], float(len(q & _tokens(d["text"])))) for d in SAMPLE_DOCS]
@@ -203,34 +195,6 @@ def my_representative_queries() -> list[str]:
     ]
     return questions
 
-
-# %% [markdown]
-# ## Step 4 — Run the baseline and capture the evidence
-#
-# This runs each query through every experiment in EXPERIMENTS, prints the retrieved
-# articles, chunk ids/scores, and grounded answer. Each retriever configuration gets
-# its own timestamped evidence file whose header records the full configuration.
-
-# %%
-def run_sample_corpus() -> None:
-    llm = make_llm()
-    queries = my_representative_queries()
-    print(f"Checkpoint 2.1 — sample-corpus toy retriever  |  scenario: {SCENARIO}")
-    print(f"Logging to: {SAMPLE_LOG_PATH}\n")
-    for i, query in enumerate(queries, 1):
-        hits = retrieve(query, TOP_K)
-        print("=" * 72)
-        print(f"QUERY {i}: {query}")
-        print(f"  retrieved: {hits}")
-        if not hits:
-            print("  (nothing matched — note this in your writeup)")
-            continue
-        context = sample_context([doc_id for doc_id, _ in hits])
-        ans = answer_from_context(query, context, llm=llm)
-        print(f"  answer: {ans}\n")
-        log(f"QUERY {i}: {query}", f"retrieved={hits}\nanswer={ans}")
-    print("=" * 72)
-    print("Done with the tiny sample corpus.")
 
 
 def run_wikipedia() -> None:

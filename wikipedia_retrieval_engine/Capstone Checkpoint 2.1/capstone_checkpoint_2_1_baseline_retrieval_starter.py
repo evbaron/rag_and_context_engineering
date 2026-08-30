@@ -87,7 +87,9 @@ from retrievers.llm import answer as answer_from_context
 from retrievers.llm import make_llm
 
 # %%
-TOP_K = 3
+SAMPLE_TOP_K = 3
+RETRIEVAL_TOP_K = 4
+HYBRID_CANDIDATE_POOL = max(10, RETRIEVAL_TOP_K)
 CHROMA_DB_NAME = "wikipedia_chars1600_overlap200"
 CHUNKING_STRATEGY = "character_windows"
 RUN_ID = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
@@ -99,13 +101,16 @@ SAMPLE_LOG_PATH = LOG_DIR / f"{RUN_ID}__toy-baseline.log"
 # retrievers/db/CHROMA_DB_NAME.
 
 EXPERIMENTS = [
-    RetrieverSpec(kind="bm25", label="bm25_k4", top_k=4),
-    RetrieverSpec(kind="vector", label="vector_k4", top_k=4),
-    RetrieverSpec(kind="hybrid", label="hybrid_50_50", top_k=4,
+    RetrieverSpec(kind="bm25", label=f"bm25_k{RETRIEVAL_TOP_K}", top_k=RETRIEVAL_TOP_K),
+    RetrieverSpec(kind="vector", label=f"vector_k{RETRIEVAL_TOP_K}", top_k=RETRIEVAL_TOP_K),
+    RetrieverSpec(kind="hybrid", label="hybrid_50_50", top_k=RETRIEVAL_TOP_K,
+                  candidate_pool=HYBRID_CANDIDATE_POOL,
                   weight_bm25=0.5, weight_vector=0.5),
-    RetrieverSpec(kind="hybrid", label="hybrid_bm25_heavy", top_k=4,
+    RetrieverSpec(kind="hybrid", label="hybrid_bm25_heavy", top_k=RETRIEVAL_TOP_K,
+                  candidate_pool=HYBRID_CANDIDATE_POOL,
                   weight_bm25=0.7, weight_vector=0.3),
-    RetrieverSpec(kind="hybrid", label="hybrid_vector_heavy", top_k=4,
+    RetrieverSpec(kind="hybrid", label="hybrid_vector_heavy", top_k=RETRIEVAL_TOP_K,
+                  candidate_pool=HYBRID_CANDIDATE_POOL,
                   weight_bm25=0.3, weight_vector=0.7),
 ]
 
@@ -154,7 +159,7 @@ def _tokens(text: str) -> set[str]:
     return set(re.findall(r"[a-z0-9]+", text.lower()))
 
 
-def retrieve(query: str, k: int = TOP_K) -> list[tuple[str, float]]:
+def retrieve(query: str, k: int = SAMPLE_TOP_K) -> list[tuple[str, float]]:
     """Baseline keyword retrieval: Score each doc by shared-word count, return top-k."""
     q = _tokens(query)
     scored = [(d["id"], float(len(q & _tokens(d["text"])))) for d in SAMPLE_DOCS]
@@ -217,7 +222,7 @@ def run_sample_corpus() -> None:
     print(f"Checkpoint 2.1 — sample-corpus toy retriever  |  scenario: {SCENARIO}")
     print(f"Logging to: {SAMPLE_LOG_PATH}\n")
     for i, query in enumerate(queries, 1):
-        hits = retrieve(query, TOP_K)
+        hits = retrieve(query, SAMPLE_TOP_K)
         print("=" * 72)
         print(f"QUERY {i}: {query}")
         print(f"  retrieved: {hits}")

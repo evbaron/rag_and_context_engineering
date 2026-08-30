@@ -87,7 +87,9 @@ from retrievers.llm import answer as answer_from_context
 from retrievers.llm import make_llm
 
 # %%
-TOP_K = 3
+SAMPLE_TOP_K = 3
+RETRIEVAL_TOP_K = 10
+HYBRID_CANDIDATE_POOL = max(10, RETRIEVAL_TOP_K)
 MAX_SECTION_CHARS = 10000
 SECTION_OVERLAP = 0
 CHROMA_DB_NAME = "wikipedia_sections_max10000_no_overlap"
@@ -102,9 +104,9 @@ SAMPLE_LOG_PATH = LOG_DIR / f"{RUN_ID}__toy-baseline.log"
 # Vector/hybrid persist this distinct index under retrievers/db/CHROMA_DB_NAME.
 
 EXPERIMENTS = [
-    RetrieverSpec(kind="bm25", label="bm25_k4", top_k=4),
-    RetrieverSpec(kind="vector", label="vector_k4", top_k=4),
-    RetrieverSpec(kind="hybrid", label="hybrid_vector_heavy", top_k=4,
+    RetrieverSpec(kind="vector", label=f"vector_k{RETRIEVAL_TOP_K}", top_k=RETRIEVAL_TOP_K),
+    RetrieverSpec(kind="hybrid", label="hybrid_vector_heavy", top_k=RETRIEVAL_TOP_K,
+                  candidate_pool=HYBRID_CANDIDATE_POOL,
                   weight_bm25=0.35, weight_vector=0.65),
 ]
 
@@ -133,7 +135,7 @@ def _tokens(text: str) -> set[str]:
     return set(re.findall(r"[a-z0-9]+", text.lower()))
 
 
-def retrieve(query: str, k: int = TOP_K) -> list[tuple[str, float]]:
+def retrieve(query: str, k: int = SAMPLE_TOP_K) -> list[tuple[str, float]]:
     """Baseline keyword retrieval: Score each doc by shared-word count, return top-k."""
     q = _tokens(query)
     scored = [(d["id"], float(len(q & _tokens(d["text"])))) for d in SAMPLE_DOCS]
