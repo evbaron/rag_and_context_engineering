@@ -57,68 +57,66 @@ plain script AND openable as cells in VS Code / PyCharm / Jupytext.
 from __future__ import annotations
 
 import warnings
+
 warnings.filterwarnings("ignore")
 
-import os
 import re
+import sys
 from datetime import datetime
 from pathlib import Path
 
-from dotenv import load_dotenv
-from langchain_core.messages import HumanMessage, SystemMessage
-from langchain_openai import ChatOpenAI
-
-# %%
-OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
-LLM_MODEL = "openai/gpt-5.4-mini"  # latest small OpenAI model, fast; covered by course credits
-TEMPERATURE = 0.2
-TOP_K = 3
 try:
     _HERE = Path(__file__).resolve().parent
 except NameError:
     _HERE = Path.cwd()
-LOG_PATH = (
-    _HERE
-    / "logs"
-    / f"checkpoint_2_1_retrieval_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log"
+_ENGINE = _HERE.parent
+if str(_ENGINE) not in sys.path:
+    sys.path.insert(0, str(_ENGINE))
+
+from retrievers import (
+    EvidenceLogger,
+    RetrieverSpec,
+    build_or_load_db,
+    format_articles,
+    format_chunks,
+    load_wikipedia_chunks,
+    make_retriever,
 )
+from retrievers.corpus import CHUNK_OVERLAP, CHUNK_SIZE, DEFAULT_WIKI_DIR
+from retrievers.llm import answer as answer_from_context
+from retrievers.llm import make_llm
+
+# %%
+TOP_K = 3
+CHROMA_DB_NAME = "wikipedia_chars1600_overlap200"
+CHUNKING_STRATEGY = "character_windows"
+RUN_ID = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
+LOG_DIR = _HERE / "logs"
+SAMPLE_LOG_PATH = LOG_DIR / f"{RUN_ID}__toy-baseline.log"
+
+# List to compare retrievers / knobs.
+# Vector/hybrid embed the full corpus on first run and persist it under
+# retrievers/db/CHROMA_DB_NAME.
+
+EXPERIMENTS = [
+    RetrieverSpec(kind="bm25", label="bm25_k4", top_k=4),
+    RetrieverSpec(kind="vector", label="vector_k4", top_k=4),
+    RetrieverSpec(kind="hybrid", label="hybrid_50_50", top_k=4,
+                  weight_bm25=0.5, weight_vector=0.5),
+    RetrieverSpec(kind="hybrid", label="hybrid_bm25_heavy", top_k=4,
+                  weight_bm25=0.7, weight_vector=0.3),
+    RetrieverSpec(kind="hybrid", label="hybrid_vector_heavy", top_k=4,
+                  weight_bm25=0.3, weight_vector=0.7),
+]
 
 # === SET THIS to the scenario you chose in Checkpoint 1.1 ===
 SCENARIO = "wikipedia"   # "research_papers" or "wikipedia"
 
-ANSWER_SYSTEM = (
-    "You are a helpful assistant. Answer the question using ONLY the provided "
-    "documents, and quote from them where you can. If the documents do not contain "
-    "the answer, say so rather than guessing."
-)
-
-
-# %%
-def check_api_key() -> str:
-    load_dotenv()
-    key = os.getenv("OPENROUTER_API_KEY")
-    if not key:
-        raise RuntimeError(
-            "OPENROUTER_API_KEY is not set. Use the OpenRouter API key "
-            "provided for this course, put it in a .env file next to this "
-            "script, and rerun."
-        )
-    return key
-
-
-def make_llm() -> ChatOpenAI:
-    return ChatOpenAI(
-        model=LLM_MODEL,
-        temperature=TEMPERATURE,
-        api_key=check_api_key(),
-        base_url=OPENROUTER_BASE_URL,
-    )
-
 
 def log(label: str, text: str) -> None:
     ts = datetime.now().isoformat(timespec="seconds")
-    LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
-    with LOG_PATH.open("a", encoding="utf-8") as fh:
+    SAMPLE_LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
+    with SAMPLE_LOG_PATH.open("a", encoding="utf-8") as fh:
         fh.write(f"[{ts}] {label}\n{text}\n{'-' * 72}\n")
 
 
@@ -164,13 +162,9 @@ def retrieve(query: str, k: int = TOP_K) -> list[tuple[str, float]]:
     return [(doc_id, score) for doc_id, score in scored[:k] if score > 0]
 
 
-def answer(llm: ChatOpenAI, query: str, doc_ids: list[str]) -> str:
+def sample_context(doc_ids: list[str]) -> str:
     context = "\n\n".join(f"[{i}] {DOC_BY_ID[i]['text']}" for i in doc_ids if i in DOC_BY_ID)
-    messages = [
-        SystemMessage(content=ANSWER_SYSTEM),
-        HumanMessage(content=f"Documents:\n{context}\n\nQuestion: {query}"),
-    ]
-    return llm.invoke(messages).content
+    return context
 
 
 # %% [markdown]
@@ -212,17 +206,16 @@ def my_representative_queries() -> list[str]:
 # %% [markdown]
 # ## Step 4 — Run the baseline and capture the evidence
 #
-# This runs each query through the baseline retriever and the LLM, printing the
-# retrieved document ids/scores and the grounded answer, and logging everything to a
-# timestamped `checkpoint_2_1_retrieval_YYYYMMDD_HHMMSS.log`. The retrieved documents from the output are the rest of the evidence for
-# submission item #2.
+# This runs each query through every experiment in EXPERIMENTS, prints the retrieved
+# articles, chunk ids/scores, and grounded answer. Each retriever configuration gets
+# its own timestamped evidence file whose header records the full configuration.
 
 # %%
 def run_sample_corpus() -> None:
     llm = make_llm()
     queries = my_representative_queries()
-    print(f"Checkpoint 2.1 — baseline retrieval  |  scenario: {SCENARIO}")
-    print(f"Logging to: {LOG_PATH}\n")
+    print(f"Checkpoint 2.1 — sample-corpus toy retriever  |  scenario: {SCENARIO}")
+    print(f"Logging to: {SAMPLE_LOG_PATH}\n")
     for i, query in enumerate(queries, 1):
         hits = retrieve(query, TOP_K)
         print("=" * 72)
@@ -231,15 +224,96 @@ def run_sample_corpus() -> None:
         if not hits:
             print("  (nothing matched — note this in your writeup)")
             continue
-        ans = answer(llm, query, [doc_id for doc_id, _ in hits])
+        context = sample_context([doc_id for doc_id, _ in hits])
+        ans = answer_from_context(query, context, llm=llm)
         print(f"  answer: {ans}\n")
         log(f"QUERY {i}: {query}", f"retrieved={hits}\nanswer={ans}")
     print("=" * 72)
-    print("Done. Use the retrieved document results above as evidence in your writeup, and "
-          "describe your REAL baseline (over your full corpus) in the submission.")
+    print("Done with the tiny sample corpus.")
 
 
-run()
+def run_wikipedia() -> None:
+    """Compare configurable retrievers on the real Wikipedia corpus and log evidence."""
+    if not EXPERIMENTS:
+        raise RuntimeError("EXPERIMENTS is empty. Add at least one RetrieverSpec.")
+    queries = my_representative_queries()
+    needs_vector = any(spec.kind in {"vector", "hybrid"} for spec in EXPERIMENTS)
+    print("Loading Wikipedia chunks...")
+    chunks = load_wikipedia_chunks()
+    db = (
+        build_or_load_db(chroma_db_name=CHROMA_DB_NAME, chunks=chunks)
+        if needs_vector
+        else None
+    )
+
+    retrievers = [
+        make_retriever(
+            spec,
+            chunks=chunks,
+            db=db,
+            chroma_db_name=CHROMA_DB_NAME,
+        )
+        for spec in EXPERIMENTS
+    ]
+    evidence_logs = [
+        EvidenceLogger(
+            log_dir=LOG_DIR,
+            run_id=RUN_ID,
+            retriever=retriever,
+            chunks=chunks,
+            question_count=len(queries),
+            chroma_db_name=CHROMA_DB_NAME,
+            chunking_strategy=CHUNKING_STRATEGY,
+            chunk_size=CHUNK_SIZE,
+            chunk_overlap=CHUNK_OVERLAP,
+            wiki_dir=DEFAULT_WIKI_DIR,
+        )
+        for retriever in retrievers
+    ]
+    llm = make_llm()
+    print(f"Checkpoint 2.1 — Wikipedia retrieval  |  scenario: {SCENARIO}")
+    print(f"Experiments: {[r.label for r in retrievers]}")
+    print("Evidence logs:")
+    for evidence_log in evidence_logs:
+        print(f"  {evidence_log.path}")
+    print()
+
+    for i, query in enumerate(queries, 1):
+        print("=" * 72)
+        print(f"QUERY {i}: {query}")
+        for retriever, evidence_log in zip(retrievers, evidence_logs):
+            hits = retriever.getTopK(query)
+            settings = retriever.settings()
+            print(f"\n  [{retriever.label}] settings={settings}")
+            print("  Retrieved articles:")
+            print(format_articles(hits))
+            print("  Retrieved chunks:")
+            print(format_chunks(hits, snippet_chars=220))
+            if not hits:
+                evidence_log.log_question(
+                    number=i,
+                    query=query,
+                    hits=hits,
+                    answer="(skipped because no chunks were retrieved)",
+                )
+                continue
+            # Reuse the exact hits displayed and logged; do not retrieve a second time.
+            context = retriever.format_context(hits)
+            ans = answer_from_context(query, context, llm=llm)
+            print(f"  answer: {ans}\n")
+            evidence_log.log_question(
+                number=i,
+                query=query,
+                hits=hits,
+                answer=ans,
+            )
+    print("=" * 72)
+    print("Done. Use the timestamped log as evidence in your writeup.")
+
+
+if __name__ == "__main__":
+    run_wikipedia()
+    # run_sample_corpus()  # optional: original 6-document toy baseline
 
 # %% [markdown]
 # ## Step 5 — Your written submission (the graded deliverable)
