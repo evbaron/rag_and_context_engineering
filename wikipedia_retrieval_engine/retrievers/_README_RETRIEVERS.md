@@ -2,6 +2,10 @@
 
 This package adapts the Module 2 lab solutions to the Wikipedia HTML corpus:
 
+For a detailed explanation of HTML extraction, character chunks, section chunks,
+Chroma indexes, BM25 indexing, and complete article text files, see
+`_README_ARTCILE_CORPUS.md`.
+
 | Retriever | Lab | What it is good at |
 |---|---|---|
 | `Bm25Retriever` | 1.2 | Exact terms, names, years, titles |
@@ -25,6 +29,7 @@ wikipedia_retrieval_engine/
     hybrid.py                         # composes BM25 + vector and fuses their results
     llm.py                            # system prompt, OpenRouter chat, embeddings
     evidence.py                       # one evidence log per configuration
+    expansion.py                      # seed chunks → complete text files for found articles
     db/
       wikipedia/                      # default persistent Chroma database
   Capstone Checkpoint 2.1/
@@ -79,6 +84,8 @@ Turns Wikipedia HTML into the units that BM25 and Chroma index.
 - `DEFAULT_CHROMA_DB_ROOT` — `retrievers/db`
 - `DEFAULT_CHROMA_DB_NAME` — `wikipedia`
 - `DEFAULT_CHROMA_DIR` — compatibility constant for `retrievers/db/wikipedia`
+- `DEFAULT_ARTICLE_TEXT_ROOT` — `retrievers/db/article_text`
+- `DEFAULT_ARTICLE_TEXT_NAME` — `wikipedia_plain_text`
 - `CHUNK_SIZE = 1600`, `CHUNK_OVERLAP = 200`
 
 **`WikiChunk`** — one indexable piece:
@@ -95,6 +102,62 @@ Turns Wikipedia HTML into the units that BM25 and Chroma index.
 2. `html_to_text()` — stdlib `HTMLParser`; drops `script` / `style` / `svg` and `[edit]` links.
 3. `chunk_text()` — ~1600-character windows with overlap, breaking on paragraphs or sentences when possible. Long articles stay inside the embedding token limit.
 4. `load_wikipedia_chunks(wiki_dir=None, *, filenames=None, max_files=None, chunk_size=..., overlap=...)` — walks `*.html` (skips names starting with `_`). Use `filenames=[...]` for a small test set.
+
+**Natural article-header chunking: detailed flow**
+
+`load_wikipedia_section_chunks()` preserves Wikipedia's `h2`–`h6` hierarchy. Every
+chunk includes its article and section path, for example:
+
+```text
+Article: 1580
+Section: Events > April–June
+```
+
+The process is:
+
+1. `_article_body_markup()` locates `mw-content-text`, so navigation outside the
+   article body is ignored. It stops before References, Notes, or the print footer.
+2. `_HTMLSectionExtractor` walks the remaining HTML once with Python's
+   `HTMLParser`. It ignores `script`, `style`, `noscript`, and `svg` content.
+3. Text before the first heading becomes the `Lead` section.
+4. When an `h2` starts, the current text is finalized and a new top-level section
+   begins. An `h3` becomes its child, an `h4` becomes the next nested child, and so on.
+5. Encountering the next heading finalizes the previous section. This means text from
+   `Events > April–June` cannot be mixed with `Events > July–September`.
+6. Whitespace is normalized, `[edit]` labels are removed, and paragraph/list line
+   boundaries are retained.
+7. The article title and complete section path are prepended to every indexed chunk.
+   This gives BM25 and embeddings meaningful labels in addition to body text.
+8. A natural section stays intact when it is at most `MAX_SECTION_CHARS`. The current
+   checkpoint setting is 10,000 characters.
+9. Only a section larger than 10,000 characters is split. Those fallback pieces use
+   zero overlap in this experiment, so no text is repeated between pieces.
+10. Each chunk receives a stable ID such as
+    `1580.html#section-003-00`, plus `section_title`, `section_path`, source article,
+    title, and article-order index metadata.
+
+The section experiment uses the separate Chroma index
+`wikipedia_sections_max10000_no_overlap`. `WikiChunk.section_title` and
+`WikiChunk.section_path` are also stored in Chroma metadata.
+
+**Complete extracted article text store**
+
+`build_or_load_article_text_store()` creates one UTF-8 text file for every HTML
+article under:
+
+```text
+retrievers/db/article_text/wikipedia_plain_text/
+```
+
+For example, `1580.html` becomes `1580.html.txt`. The text file contains the article
+title, source filename, and one continuous extraction of the article body. It is not
+assembled from chunks and therefore contains no 200-character retrieval overlap.
+
+`manifest.json` records the extractor version, source directory, article count, source
+filenames, titles, and format. On later runs, the cache is loaded when the manifest and
+all expected files match the current corpus. `ArticleTextStore` then reads only the
+articles selected for the current question rather than loading all article text into
+memory.
 
 ### `base.py`
 
@@ -250,6 +313,29 @@ Each question then records:
 output. Article aggregation is important because several retrieved chunks may come
 from the same Wikipedia article.
 
+When full-article context is enabled, the log keeps the two stages separate:
+
+- `RETRIEVED CHUNKS` are the seed hits that identified articles.
+- `FULL ARTICLE TEXTS SENT TO LLM` lists the standalone text files loaded for those
+  articles, plus each file's character count and the total context size.
+
+### `expansion.py`
+
+Implements the second context experiment without changing retrieval ranking:
+
+1. `retrieved_article_names(seed_hits)` deduplicates articles in first-hit rank order.
+2. `load_retrieved_article_texts(seed_hits, article_store)` loads each selected
+   article's complete `.txt` file once.
+3. `format_full_articles_context(articles)` separates and formats those complete texts
+   for one independent LLM call.
+
+This can improve broad synthesis when retrieval found the correct article but only a
+narrow passage. It cannot recover an article that retrieval never found—for example,
+expanding a life-expectancy article will not introduce a missing population article.
+It increases context size, but it does not repeat the 200-character overlap from the
+retrieval chunks. Retrieval chunks identify articles only; their text is not used to
+construct the full-article context.
+
 ---
 
 ## How to run experiments (Checkpoint 2.1)
@@ -310,6 +396,21 @@ evidence. This supports manual review: you can compare which articles each strat
 found, identify irrelevant results, and record an article you expected but did not see.
 
 `run_sample_corpus()` is the original 6-document toy baseline. It is commented out at the bottom of the checkpoint script.
+
+### Comparing the three checkpoint scripts
+
+The copies isolate one variable at a time:
+
+| Script | Indexed units | Context sent to LLM | Chroma index |
+|---|---|---|---|
+| `capstone_checkpoint_2_1_baseline_retrieval_starter.py` | 1600-character chunks, 200 overlap | top-k retrieved chunks | `wikipedia_chars1600_overlap200` |
+| `capstone_checkpoint_2_1_chunk_by_article_headers.py` | natural HTML sections; max 10,000 characters; zero overlap | top-k retrieved sections | `wikipedia_sections_max10000_no_overlap` |
+| `capstone_checkpoint_2_1_full articles_sent.py` | same 1600-character baseline chunks for article discovery | complete standalone `.txt` file for every article represented in top-k seed hits | `wikipedia_chars1600_overlap200` (reused) |
+
+The section experiment needs its own Chroma index because the indexed text units have
+changed. The full-article experiment reuses the baseline Chroma index because article
+discovery has not changed. After discovery, it loads non-overlapping complete article
+texts from `retrievers/db/article_text/wikipedia_plain_text/`.
 
 ---
 

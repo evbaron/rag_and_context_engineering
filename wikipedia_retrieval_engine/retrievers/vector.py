@@ -57,7 +57,13 @@ def build_or_load_db(
         docs = [
             Document(
                 page_content=c.text,
-                metadata={"source": c.doc_id, "title": c.title, "article": c.source},
+                metadata={
+                    "source": c.doc_id,
+                    "title": c.title,
+                    "article": c.source,
+                    "section_title": c.section_title,
+                    "section_path": " > ".join(c.section_path),
+                },
             )
             for c in batch
         ]

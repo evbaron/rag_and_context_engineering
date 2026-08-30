@@ -8,7 +8,14 @@ from pathlib import Path
 from typing import Any
 
 from .base import BaseRetriever
-from .corpus import CHUNK_OVERLAP, CHUNK_SIZE, DEFAULT_WIKI_DIR, WikiChunk
+from .corpus import (
+    ArticleText,
+    ArticleTextStore,
+    CHUNK_OVERLAP,
+    CHUNK_SIZE,
+    DEFAULT_WIKI_DIR,
+    WikiChunk,
+)
 from .llm import EMBEDDING_MODEL, LLM_MODEL, SYSTEM_PROMPT, TEMPERATURE
 from .vector import chroma_db_path
 
@@ -61,6 +68,23 @@ def format_chunks(hits: list[Hit], snippet_chars: int = 600) -> str:
     return "\n".join(lines)
 
 
+def format_full_articles(
+    articles: list[ArticleText], snippet_chars: int = 600
+) -> str:
+    if not articles:
+        return "  (no full articles)"
+    lines: list[str] = []
+    for number, article in enumerate(articles, 1):
+        snippet = " ".join(article.text.split())[:snippet_chars]
+        lines.append(
+            f"  {number}. {article.source}\n"
+            f"     text_file={article.path}\n"
+            f"     characters={len(article.text)}\n"
+            f"     preview={snippet}"
+        )
+    return "\n".join(lines)
+
+
 class EvidenceLogger:
     """One append-only evidence file for one retriever configuration."""
 
@@ -78,6 +102,8 @@ class EvidenceLogger:
         chunk_overlap: int = CHUNK_OVERLAP,
         wiki_dir: str | Path = DEFAULT_WIKI_DIR,
         snippet_chars: int = 600,
+        context_strategy: str = "retrieved_chunks",
+        article_text_store: ArticleTextStore | None = None,
     ) -> None:
         self.retriever = retriever
         self.snippet_chars = snippet_chars
@@ -91,14 +117,20 @@ class EvidenceLogger:
                 f"-p{settings['candidate_pool']}"
                 f"-bm{bm_percent}-vec{vector_percent}"
             )
-        index_part = (
-            f"chars{chunk_size}-o{chunk_overlap}"
-            if kind == "bm25"
-            else f"index-{_slug(chroma_db_name)}"
+        if kind == "bm25":
+            index_part = (
+                f"sections-max{chunk_size}-o{chunk_overlap}"
+                if chunking_strategy == "article_headers"
+                else f"chars{chunk_size}-o{chunk_overlap}"
+            )
+        else:
+            index_part = f"index-{_slug(chroma_db_name)}"
+        context_part = (
+            "" if context_strategy == "retrieved_chunks" else f"__ctx-{_slug(context_strategy)}"
         )
 
         log_root = Path(log_dir)
-        filename_stem = f"{run_id}__{retriever_part}__{index_part}"
+        filename_stem = f"{run_id}__{retriever_part}__{index_part}{context_part}"
         self.path = log_root / f"{filename_stem}.log"
         collision_number = 2
         while self.path.exists():
@@ -111,6 +143,16 @@ class EvidenceLogger:
             "vector": "lower is better (Chroma distance)",
             "hybrid": "higher is better (normalized fused score)",
         }[kind]
+        chunking_configuration: dict[str, Any] = {
+            "strategy": chunking_strategy,
+            "overlap_characters_for_oversized_chunks": chunk_overlap,
+        }
+        if chunking_strategy == "article_headers":
+            chunking_configuration["maximum_section_chunk_characters"] = chunk_size
+        else:
+            chunking_configuration["chunk_size_characters"] = chunk_size
+            chunking_configuration["chunk_overlap_characters"] = chunk_overlap
+
         configuration: dict[str, Any] = {
             "run_id": run_id,
             "created_at": datetime.now().astimezone().isoformat(timespec="seconds"),
@@ -119,11 +161,7 @@ class EvidenceLogger:
             "corpus_directory": str(Path(wiki_dir).resolve()),
             "article_count": article_count,
             "chunk_count": len(chunks),
-            "chunking": {
-                "strategy": chunking_strategy,
-                "chunk_size_characters": chunk_size,
-                "chunk_overlap_characters": chunk_overlap,
-            },
+            "chunking": chunking_configuration,
             "chroma": {
                 "database_name": chroma_db_name if kind != "bm25" else None,
                 "directory": (
@@ -137,6 +175,16 @@ class EvidenceLogger:
                 "system_prompt": SYSTEM_PROMPT,
             },
             "question_count": question_count,
+            "context_strategy": context_strategy,
+            "article_text_store": (
+                {
+                    "directory": str(article_text_store.root),
+                    "article_count": len(article_text_store),
+                    "format": "one complete non-overlapping UTF-8 text file per article",
+                }
+                if article_text_store is not None
+                else None
+            ),
             "logged_chunk_snippet_characters": snippet_chars,
         }
         header = (
@@ -157,7 +205,18 @@ class EvidenceLogger:
         query: str,
         hits: list[Hit],
         answer: str,
+        full_articles: list[ArticleText] | None = None,
     ) -> None:
+        expanded_section = ""
+        if full_articles is not None:
+            expanded_chars = sum(len(article.text) for article in full_articles)
+            expanded_section = (
+                "FULL ARTICLE TEXTS SENT TO LLM:\n"
+                f"  articles={[article.source for article in full_articles]}\n"
+                f"  article_count={len(full_articles)}\n"
+                f"  text_characters={expanded_chars}\n"
+                f"{format_full_articles(full_articles, self.snippet_chars)}\n\n"
+            )
         entry = (
             f"QUESTION {number}\n"
             f"{'-' * 80}\n"
@@ -165,6 +224,7 @@ class EvidenceLogger:
             f"RETRIEVED ARTICLES (unique; ranked by first matching chunk):\n"
             f"{format_articles(hits)}\n\n"
             f"RETRIEVED CHUNKS:\n{format_chunks(hits, self.snippet_chars)}\n\n"
+            f"{expanded_section}"
             f"GROUNDED ANSWER:\n{answer}\n"
             f"{'=' * 80}\n\n"
         )

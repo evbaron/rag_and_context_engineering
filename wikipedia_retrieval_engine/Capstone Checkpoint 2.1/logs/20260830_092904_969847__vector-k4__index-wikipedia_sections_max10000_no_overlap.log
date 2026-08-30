@@ -1,0 +1,449 @@
+RETRIEVAL EXPERIMENT CONFIGURATION
+================================================================================
+{
+  "run_id": "20260830_092904_969847",
+  "created_at": "2026-08-30T09:41:14-04:00",
+  "retriever": {
+    "kind": "vector",
+    "label": "vector_k4",
+    "top_k": 4,
+    "chroma_db_name": "wikipedia_sections_max10000_no_overlap"
+  },
+  "score_interpretation": "lower is better (Chroma distance)",
+  "corpus_directory": "/Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/Wikipedia",
+  "article_count": 2417,
+  "chunk_count": 41014,
+  "chunking": {
+    "strategy": "article_headers",
+    "overlap_characters_for_oversized_chunks": 0,
+    "maximum_section_chunk_characters": 10000
+  },
+  "chroma": {
+    "database_name": "wikipedia_sections_max10000_no_overlap",
+    "directory": "/Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/wikipedia_sections_max10000_no_overlap",
+    "embedding_model": "openai/text-embedding-3-small"
+  },
+  "llm": {
+    "model": "openai/gpt-5.4-mini",
+    "temperature": 0.2,
+    "system_prompt": "You are a helpful assistant for a Wikipedia retrieval engine. You answer questions by drawing information exclusively from the Wikipedia articles provided to you as context in each message.\n\nRules:\n- If the answer can be found in the provided articles, answer clearly and concisely, and quote from them where you can.\n- If the provided articles do not contain enough information to answer the question, say so explicitly and do not speculate or use outside knowledge.\n- Do not answer questions that are unrelated to the content of the provided articles."
+  },
+  "question_count": 13,
+  "context_strategy": "retrieved_chunks",
+  "article_text_store": null,
+  "logged_chunk_snippet_characters": 600
+}
+================================================================================
+
+QUESTION 1
+--------------------------------------------------------------------------------
+QUERY:
+According to the Wikipedia article on the 100 meters, what is the current men's world record, who holds it, and when was it set? Quote the article.
+
+RETRIEVED ARTICLES (unique; ranked by first matching chunk):
+  1. 100_metres.html (first chunk rank=1; chunk ranks=[1, 2, 3])
+  2. Usain_Bolt.html (first chunk rank=4; chunk ranks=[4])
+
+RETRIEVED CHUNKS:
+  1. 100_metres.html#section-000-00  score=0.715684
+     Article: 100 metres Section: Lead Sprint race This article is about the 100 metres race. For lengths on the order of magnitude of 100 metres, see Orders of magnitude (length) § 1 hectometre. For other uses, see 100 metres (disambiguation). Athletics 100 metres Start of the men's 100 metres final at the 2012 Olympic Games in London World records Men Usain Bolt (JAM) 9.58 (2009) Women Florence Griffith-Joyner (USA) 10.49 (1988) Olympic records Men Usain Bolt (JAM) 9.63 (2012) Women Elaine Thompson-Herah (JAM) 10.61 (2021) World Championship records Men Usain Bolt (JAM) 9.58 (2009) Women Melissa 
+  2. 100_metres.html#section-006-00  score=0.729004
+     Article: 100 metres Section: Record performances Usain Bolt breaking the world and Olympic records at the 2008 Beijing Olympics Major 100 m races, such as at the Olympic Games, attract much attention, particularly when the world record is thought to be within reach. The men's world record has been improved upon twelve times since electronic timing became mandatory in 1977.[18] The current men's world record of 9.58 s is held by Usain Bolt of Jamaica, set at the 2009 World Athletics Championships final in Berlin, Germany on 16 August 2009, breaking his own previous world record by 0.11 s.[19] T
+  3. 100_metres.html#section-007-00  score=0.820765
+     Article: 100 metres Section: Record performances > Continental records Updated 1 August 2025.[22][23] Area Men Women Time (s) Wind (m/s) Season Athlete Nation Time (s) Wind (m/s) Season Athlete Nation Africa (records) 9.77 A +1.2 2021 Ferdinand Omanyala Kenya 10.72 +0.4 2022 Marie-Josée Ta Lou Ivory Coast Asia (records) 9.83 +0.9 2021 Su Bingtian China 10.79 ±0.0 1997 Li Xuemei China Europe (records) 9.80 +0.1 2021 Marcell Jacobs Italy 10.73 +2.0 1998 Christine Arron France North, Central America and Caribbean (records) 9.58 WR +0.9 2009 Usain Bolt Jamaica 10.49 WR ±0.0 1988 Florence Griffith-
+  4. Usain_Bolt.html#section-026-00  score=0.887337
+     Article: Usain Bolt Section: Statistics > Personal bests Events tracked by World Athletics, the international governing body for the sport of athletics: Event and Time Date and Venue Records Notes 100 metres in 9.58 seconds 16 August in the 2009 World Championships in Athletics in Berlin, Germany WR Equivalent to an average ground speed of 10.44 m/s, 37.58 km/h, or 23.35 mph. Once his reaction time of 0.146 seconds is subtracted, his time is 9.434 seconds, or 10.6 m/s, 38.16 km/h, or 23.71 mph.[142] Bolt's top speed, based on his split time of 1.61 seconds for the 20 metres from the 60- to 80-
+
+GROUNDED ANSWER:
+According to the article, the current men’s world record is **9.58 seconds**, held by **Usain Bolt of Jamaica**, and it was set on **16 August 2009**.
+
+Quote: “**The current men's world record of 9.58 s is held by Usain Bolt of Jamaica, set at the 2009 World Athletics Championships final in Berlin, Germany on 16 August 2009**.”
+================================================================================
+
+QUESTION 2
+--------------------------------------------------------------------------------
+QUERY:
+List three significant events recorded in the Wikipedia article for the year 1580, quoting the article for each.
+
+RETRIEVED ARTICLES (unique; ranked by first matching chunk):
+  1. 1580.html (first chunk rank=1; chunk ranks=[1, 2, 3, 4])
+
+RETRIEVED CHUNKS:
+  1. 1580.html#section-004-00  score=0.933948
+     Article: 1580 Section: Events > July–September July 12 – The Ostrog Bible, the first complete printed Bible translation into a Slavic language (Old Church Slavonic), is first printed at Ostroh in the Polish–Lithuanian Commonwealth (modern-day Ukraine) by Ivan Fyodorov.[12] July 24 – Portuguese succession crisis of 1580: António, Prior of Crato, a grandson of the late King Manuel by Manuel's second son, the Duke of Beja is proclaimed King of Portugal by his supporters in the city of Santarém, and popular acclamation follows in Lisbon and other locations.[13][14] Portugal's parliament, the Corte
+  2. 1580.html#section-002-00  score=0.978886
+     Article: 1580 Section: Events > January–March January 31 – Portuguese succession crisis of 1580: The death of Henry, King of Portugal, with no direct heirs, leads to conflict between his potential successors, including King Philip II of Spain and Infanta Catherine, Duchess of Braganza.[1] February 16 – The massacre of 20 artists at the Mardi Gras festivities, at the annual Carnaval de Romans during the festival, takes place in France at Romans-sur-Isère.[2] February 28 – Three Jesuit priests from Portuguese Goa, including Rodolfo Acquaviva, arrive in Agra on the mainland of India as guests of 
+  3. 1580.html#section-000-00  score=1.001082
+     Article: 1580 Section: Lead Calendar year Years Millennium 2nd millennium Centuries 15th century 16th century 17th century Decades 1560s 1570s 1580s 1590s 1600s Years 1577 1578 1579 1580 1581 1582 1583 v t e August 25: Battle of Alcântara 1580 by topic Arts and science Architecture Art Literature Music Science Leaders Political entities State leaders Colonial governors Religious leaders Birth and death categories Births – Deaths Establishments and disestablishments categories Establishments – Disestablishments Works category Works v t e 1580 in various calendars Gregorian calendar1580 MDLXXX A
+  4. 1580.html#section-003-00  score=1.012320
+     Article: 1580 Section: Events > April–June April 6 – The Dover Straits earthquake occurs.[5] April 9 – English Fury at Mechelen: English and Scottish mercenaries, assisting the Dutch Republic, storm the Spanish Netherlands city of Mechelen (in modern-day Belgium), killing 60 civilians and plundering the town's houses and churches.[6] May 29 – Stephen Báthory is formally crowned as Grand Duke of Lithuania at the Vilnius Cathedral.[7] May – The Lipizzan stud is established by Charles II, Archduke of Austria. June 5 – In the Kingdom of Golconda (part of the modern-day Indian state of Telangana), 
+
+GROUNDED ANSWER:
+Here are three significant events from the Wikipedia article for **1580**, quoted from the text:
+
+1. **January 31 – Portuguese succession crisis begins:**  
+   “The death of Henry, King of Portugal, with no direct heirs, leads to conflict between his potential successors, including King Philip II of Spain and Infanta Catherine, Duchess of Braganza.”
+
+2. **March 25 – Iberian Union:**  
+   “King Philip II of Spain becomes King of Portugal under the name Philip I, following the death without heirs of King Henry of Portugal, in a personal union of the crowns, thus maintaining Portuguese independence (in Europe and throughout the Portuguese Empire).”
+
+3. **August 25 – Battle of Alcântara:**  
+   “Spanish armies, led by Fernando Álvarez de Toledo, defending the claim of King Philip II of Spain to the Portuguese throne, defeat the armies of Portuguese claimant António, Prior of Crato.”
+
+If you want, I can list three different events from other months in the same article.
+================================================================================
+
+QUESTION 3
+--------------------------------------------------------------------------------
+QUERY:
+Was there a person who was nominated for academy award in all three 68th, 70th and 74th awards?
+
+RETRIEVED ARTICLES (unique; ranked by first matching chunk):
+  1. List_of_Academy_Award_records.html (first chunk rank=1; chunk ranks=[1])
+  2. Academy_Award_for_Best_Actor.html (first chunk rank=2; chunk ranks=[2])
+  3. Academy_Award_for_Best_Director.html (first chunk rank=3; chunk ranks=[3])
+  4. Academy_Award_for_Best_Picture.html (first chunk rank=4; chunk ranks=[4])
+
+RETRIEVED CHUNKS:
+  1. List_of_Academy_Award_records.html#section-010-00  score=0.786418
+     Article: List of Academy Award records Section: Miscellaneous records Most films nominated for and won in a single category 1942, with 24 films nominated for Best Documentary Feature Film and 4 winners (Shorts and features competed in a single category) Most losses by a single film: 12 Sinners (2025), with 16 nominations and four wins (Best Actor, Best Original Screenplay, Best Cinematography and Best Original Score) Person nominated in the most decades John Williams: 1960s: 1967, 1969 (2 nominations) 1970s: 1971, 1972 (2 nominations), 1973 (3 nominations), 1974, 1975, 1977 (2 nominations), 19
+  2. Academy_Award_for_Best_Actor.html#section-002-00  score=0.809370
+     Article: Academy Award for Best Actor Section: Winners and nominees In the following table, the years are listed as per Academy convention, and generally correspond to the year of film release in Los Angeles County; the ceremonies are always held the following year.[5] For the first five ceremonies, the eligibility period spanned twelve months, from August 1 to July 31.[6] For the 6th ceremony held in 1934, the eligibility period lasted from August 1, 1932, to December 31, 1933.[6] Since the 7th ceremony held in 1935, the period of eligibility became the full previous calendar year from Januar
+  3. Academy_Award_for_Best_Director.html#section-007-00  score=0.814179
+     Article: Academy Award for Best Director Section: Winners and nominees > 1970s Year Director(s) Film Ref. 1970 (43rd) Franklin J. Schaffner Patton [59] Robert Altman M*A*S*H Federico Fellini Fellini Satyricon Arthur Hiller Love Story Ken Russell Women in Love 1971 (44th) William Friedkin The French Connection [60] Peter Bogdanovich The Last Picture Show Norman Jewison Fiddler on the Roof Stanley Kubrick A Clockwork Orange John Schlesinger Sunday Bloody Sunday 1972 (45th) Bob Fosse Cabaret [61] John Boorman Deliverance Francis Ford Coppola The Godfather Joseph L. Mankiewicz Sleuth Jan Troell Th
+  4. Academy_Award_for_Best_Picture.html#section-033-00  score=0.817042
+     Article: Academy Award for Best Picture Section: Individuals with multiple wins 3 wins[84] Sam Spiegel Saul Zaentz 2 wins[84] Clint Eastwood Arthur Freed Dede Gardner Jeremy Kleiner Branko Lustig Albert S. Ruddy Robert Wise
+
+GROUNDED ANSWER:
+The provided articles do **not** give enough information to determine whether a person was nominated at the **68th, 70th, and 74th Academy Awards**.  
+
+The context includes some nominee lists for Best Director in the 1970s and a note about John Williams’s nominations across decades, but it does not identify a person who was nominated in **all three of those specific award ceremonies**.
+================================================================================
+
+QUESTION 4
+--------------------------------------------------------------------------------
+QUERY:
+Where were 1972 Winter Olympics held?
+
+RETRIEVED ARTICLES (unique; ranked by first matching chunk):
+  1. 1972_Winter_Olympics.html (first chunk rank=1; chunk ranks=[1, 2, 3])
+  2. Winter_Olympic_Games.html (first chunk rank=4; chunk ranks=[4])
+
+RETRIEVED CHUNKS:
+  1. 1972_Winter_Olympics.html#section-000-00  score=0.616738
+     Article: 1972 Winter Olympics Section: Lead Multi-sport event in Sapporo, Japan XI Olympic Winter Games Emblem of the 1972 Winter Olympics LocationSapporo, Japan Nations35 Athletes1,010 (805 men, 205 women) Events35 in 6 sports (10 disciplines) OpeningFebruary 3, 1972 ClosingFebruary 13, 1972 Opened by Emperor Showa Closed by IOC President Avery Brundage Cauldron Hideki Takada StadiumMakomanai Open Stadium Winter ← Grenoble 1968 Innsbruck 1976 → Summer ← Mexico City 1968 Munich 1972 → The 1972 Winter Olympics, officially the XI Olympic Winter Games[a] and commonly known as Sapporo 1972,[b] wer
+  2. 1972_Winter_Olympics.html#section-004-00  score=0.647726
+     Article: 1972 Winter Olympics Section: Sports There were 35 events contested in 6 sports (10 disciplines). Alpine skiing (6) (details) Biathlon (2) (details) Bobsleigh (2) (details) Cross-country skiing (7) (details) Figure skating (3) (details) Ice hockey (1) (details) Luge (3) (details) Nordic combined (1) (details) Ski jumping (2) (details) Speed skating (8) (details)
+  3. 1972_Winter_Olympics.html#section-005-00  score=0.716201
+     Article: 1972 Winter Olympics Section: Participating nations 35 nations participated in the 1972 Winter Olympics. The Republic of China (commonly known as Taiwan) and the Philippines participated in their first Winter Olympic Games. Participating National Olympic Committees Argentina (2) Australia (4) Austria (40) Belgium (1) Bulgaria (4) Canada (47) Czechoslovakia (41) East Germany (42) Finland (50) France (40) Great Britain (37) Greece (3) Hungary (1) Iran (4) Italy (44) Japan (85) (host) Lebanon (1) Liechtenstein (4) Mongolia (4) Netherlands (11) New Zealand (2) North Korea (6) Norway (67) 
+  4. Winter_Olympic_Games.html#section-004-00  score=0.726715
+     Article: Winter Olympic Games Section: History > 1964 to 1980 The Herb Brooks Arena in Lake Placid (c. 2007), site of the "Miracle on Ice" in 1980 The Austrian city of Innsbruck was the host in 1964. For the first time, the Olympic torch of the Winter Olympic Games was lit at the traditional ritual held in the temple of Olympia. Although Innsbruck was a traditional winter sports resort, unprojected warm weather caused a lack of snow and organisers were unable to save enough snow to be used during the Games, and the Austrian army was enlisted to transport snow and ice from other places to the s
+
+GROUNDED ANSWER:
+The 1972 Winter Olympics were held in **Sapporo, Hokkaido Prefecture, Japan**. The article says they were “held from February 3 to 13, 1972, in **Sapporo, Hokkaido Prefecture, Japan**.”
+================================================================================
+
+QUESTION 5
+--------------------------------------------------------------------------------
+QUERY:
+Which country got the most medals in 1972 Winter Olympics?
+
+RETRIEVED ARTICLES (unique; ranked by first matching chunk):
+  1. 1972_Winter_Olympics.html (first chunk rank=1; chunk ranks=[1, 2])
+  2. 1992_Winter_Olympics.html (first chunk rank=3; chunk ranks=[3])
+  3. Winter_Olympic_Games.html (first chunk rank=4; chunk ranks=[4])
+
+RETRIEVED CHUNKS:
+  1. 1972_Winter_Olympics.html#section-007-00  score=0.601700
+     Article: 1972 Winter Olympics Section: Medal count Main article: 1972 Winter Olympics medal table These are the top eleven nations that won medals at these Games. The host nation Japan finished 11th. RankNationGoldSilverBronzeTotal 1 Soviet Union85316 2 East Germany43714 3 Switzerland43310 4 Netherlands4329 5 United States3238 6 West Germany3115 7 Norway25512 8 Italy2215 9 Austria1225 10 Sweden1124 11 Japan*1113 Totals (11 entries)33283091
+  2. 1972_Winter_Olympics.html#section-005-00  score=0.735361
+     Article: 1972 Winter Olympics Section: Participating nations 35 nations participated in the 1972 Winter Olympics. The Republic of China (commonly known as Taiwan) and the Philippines participated in their first Winter Olympic Games. Participating National Olympic Committees Argentina (2) Australia (4) Austria (40) Belgium (1) Bulgaria (4) Canada (47) Czechoslovakia (41) East Germany (42) Finland (50) France (40) Great Britain (37) Greece (3) Hungary (1) Iran (4) Italy (44) Japan (85) (host) Lebanon (1) Liechtenstein (4) Mongolia (4) Netherlands (11) New Zealand (2) North Korea (6) Norway (67) 
+  3. 1992_Winter_Olympics.html#section-012-00  score=0.805620
+     Article: 1992 Winter Olympics Section: Medal table This section does not cite any sources. Please help improve this section by adding citations to reliable sources. Unsourced material may be challenged and removed. (September 2020) (Learn how and when to remove this message) (Host nation is highlighted.) * Host nation (France) RankNationGoldSilverBronzeTotal 1 Germany1010626 2 Unified Team196823 3 Norway96520 4 Austria67821 5 United States54211 6 Italy46414 7 France*3519 8 Finland3137 9 Canada2327 10 South Korea2114 Totals (10 entries)534940142 Further information: 1992 Winter Olympics medal t
+  4. Winter_Olympic_Games.html#section-004-00  score=0.822475
+     Article: Winter Olympic Games Section: History > 1964 to 1980 The Herb Brooks Arena in Lake Placid (c. 2007), site of the "Miracle on Ice" in 1980 The Austrian city of Innsbruck was the host in 1964. For the first time, the Olympic torch of the Winter Olympic Games was lit at the traditional ritual held in the temple of Olympia. Although Innsbruck was a traditional winter sports resort, unprojected warm weather caused a lack of snow and organisers were unable to save enough snow to be used during the Games, and the Austrian army was enlisted to transport snow and ice from other places to the s
+
+GROUNDED ANSWER:
+The **Soviet Union** won the most medals at the **1972 Winter Olympics**, with **16 total medals**. The medal count table lists it first: **“Soviet Union 8 gold, 5 silver, 3 bronze, total 16.”**
+================================================================================
+
+QUESTION 6
+--------------------------------------------------------------------------------
+QUERY:
+How does nomination process work in academy awards?
+
+RETRIEVED ARTICLES (unique; ranked by first matching chunk):
+  1. 85th_Academy_Awards.html (first chunk rank=1; chunk ranks=[1])
+  2. Academy_Award_for_Best_Actor.html (first chunk rank=2; chunk ranks=[2])
+  3. Academy_Award_for_Best_Picture.html (first chunk rank=3; chunk ranks=[3, 4])
+
+RETRIEVED CHUNKS:
+  1. 85th_Academy_Awards.html#section-011-00  score=0.764266
+     Article: 85th Academy Awards Section: Ceremony information > Introduction of electronic voting system In January 2012, AMPAS announced that it would create electronic voting system starting with the 2013 ceremony as another method for members to select the nominees and winners during the process.[51] According to AMPAS Chief Operating Officer Ric Robertson, the implementation of the digital ballot was designed to increase participation among members in the voting process and to provide an alternative method of voting in case of emergency.[51] Despite several Academy officials denying such reas
+  2. Academy_Award_for_Best_Actor.html#section-002-00  score=0.808243
+     Article: Academy Award for Best Actor Section: Winners and nominees In the following table, the years are listed as per Academy convention, and generally correspond to the year of film release in Los Angeles County; the ceremonies are always held the following year.[5] For the first five ceremonies, the eligibility period spanned twelve months, from August 1 to July 31.[6] For the 6th ceremony held in 1934, the eligibility period lasted from August 1, 1932, to December 31, 1933.[6] Since the 7th ceremony held in 1935, the period of eligibility became the full previous calendar year from Januar
+  3. Academy_Award_for_Best_Picture.html#section-020-00  score=0.816107
+     Article: Academy Award for Best Picture Section: Winners and nominees In the list below, winners are listed first in the gold row, followed by the other nominees.[6] Except for the early years (when the Academy used a non-calendar year), the year shown is the one in which the film first premiered in Los Angeles County, California; normally this is also the year of first release, but it may be the year after first release (as with Casablanca and, if the film-festival premiere is considered, Crash and The Hurt Locker). This is also the year before the ceremony at which the award is given; for ex
+  4. Academy_Award_for_Best_Picture.html#section-004-00  score=0.832022
+     Article: Academy Award for Best Picture Section: History > Nomination limit increased On June 24, 2009, the Academy of Motion Picture Arts and Sciences (AMPAS) announced that the number of films to be nominated in the Best Picture award category would increase from 5 to 10, starting with the 82nd Academy Awards (2009).[15] Although the Academy never officially said so, many commenters noted the expansion was likely in part a response to public criticism of The Dark Knight and WALL-E (both 2008) (and, in previous years, other blockbusters and popular films) not being nominated for Best Picture.
+
+GROUNDED ANSWER:
+The provided articles only explain part of the Academy Awards nomination process, especially for **Best Picture**, not the full academy-wide process.
+
+From the articles:
+
+- In **January 2012**, AMPAS said it would create an **electronic voting system** for the 2013 ceremony as “another method for members to select the nominees and winners.”
+- For **Best Picture**, the nomination rules changed over time:
+  - The number of nominees increased from **5 to 10** starting with the **82nd Academy Awards (2009)**.
+  - In **2011**, it was changed again so the number of nominees could be **between 5 and 10**.
+  - Films had to earn **“5% of first-place rankings”** or **“5% after an abbreviated variation of the single transferable vote nominating process.”**
+- The articles also note that the **deadline to submit nomination ballots** was moved because of “technological errors and glitches.”
+
+So, based only on these articles, the nomination process involves **Academy members voting on nominees**, and for Best Picture it used a **preferential / instant-runoff style system** with nomination thresholds. The provided text does **not** describe the complete nomination process for all Academy Award categories.
+================================================================================
+
+QUESTION 7
+--------------------------------------------------------------------------------
+QUERY:
+Which actor has won the most academy awards between from 2000 to 2020?
+
+RETRIEVED ARTICLES (unique; ranked by first matching chunk):
+  1. Academy_Award_for_Best_Actor.html (first chunk rank=1; chunk ranks=[1, 3])
+  2. Academy_Award_for_Best_Supporting_Actor.html (first chunk rank=2; chunk ranks=[2])
+  3. Academy_Award_for_Best_Director.html (first chunk rank=4; chunk ranks=[4])
+
+RETRIEVED CHUNKS:
+  1. Academy_Award_for_Best_Actor.html#section-001-00  score=0.727526
+     Article: Academy Award for Best Actor Section: Nominations process Nominees are currently determined by single transferable vote within the actors branch of AMPAS; winners are selected by a plurality vote from the entire eligible voting members of the Academy.[2] In the first three years of the awards, actors and actresses were nominated as the best individuals in their categories. At that time, all of their work during the qualifying period (as many as three films, in some cases) was listed after the award.[3] Despite this, at the 3rd Academy Awards, held in 1930, only one film was cited in e
+  2. Academy_Award_for_Best_Supporting_Actor.html#section-001-00  score=0.785265
+     Article: Academy Award for Best Supporting Actor Section: Nominations process Nominees are currently determined by single transferable vote within the actors branch of AMPAS; winners are selected by a plurality vote from the entire eligible voting members of the Academy.[4] Walter Brennan was the inaugural winner, thrice over, for: Come and Get It (1936), Kentucky (1938), and The Westerner (1940). Joseph Schildkraut won for The Life of Émile Zola (1937). Thomas Mitchell won for Stagecoach (1939); first male to achieve the "Triple Crown of Acting". Donald Crisp won for How Green Was My Valley (
+  3. Academy_Award_for_Best_Actor.html#section-000-00  score=0.787126
+     Article: Academy Award for Best Actor Section: Lead Award presented annually by the Academy of Motion Picture Arts and Sciences Academy Award for Best Actor The 2026 recipient: Michael B. Jordan Awarded forBest Performance by an Actor in a Leading Role CountryUnited States Presented byAcademy of Motion Picture Arts and Sciences (AMPAS) First awardMay 16, 1929; 96 years ago (1929-05-16) (for films released during the 1927/1928 film season) Most recent winnerMichael B. Jordan, Sinners (2025) Most awardsDaniel Day-Lewis (3) Most nominationsLaurence Olivier and Spencer Tracy (9) Websiteoscars.org 
+  4. Academy_Award_for_Best_Director.html#section-001-00  score=0.793207
+     Article: Academy Award for Best Director Section: Winners and nominees In the following table, the years are listed as per Academy convention, and generally correspond to the year of film release in Los Angeles County, California; the ceremonies are always held the following year.[13] For the first five ceremonies, the eligibility period spanned twelve months from August 1 to July 31.[14] For the 6th ceremony held in 1934, the eligibility period lasted from August 1, 1932, to December 31, 1933.[14] Since the 7th ceremony held in 1935, the period of eligibility became the full previous calendar
+
+GROUNDED ANSWER:
+From the provided articles, **the answer is not explicitly stated as a single “most awards from 2000 to 2020” ranking**.
+
+If you mean **Best Actor wins in that period**, the article shows that **Daniel Day-Lewis** had the most among Best Actor winners listed in 2000–2020, with **two wins** in that span:
+
+- **There Will Be Blood (2007)**
+- **Lincoln (2012)**
+
+The article also says: “**Most awards Daniel Day-Lewis (3)**” overall.
+================================================================================
+
+QUESTION 8
+--------------------------------------------------------------------------------
+QUERY:
+What were the most devastating earthquakes in the last 50 years? Show human deaths for each earthquake.
+
+RETRIEVED ARTICLES (unique; ranked by first matching chunk):
+  1. Lists_of_earthquakes.html (first chunk rank=1; chunk ranks=[1, 2, 3, 4])
+
+RETRIEVED CHUNKS:
+  1. Lists_of_earthquakes.html#section-001-00  score=0.744524
+     Article: Lists of earthquakes Section: Deadliest earthquakes See also: List of deadliest 20th-century earthquakes per year and List of deadliest 21st-century earthquakes per year The following is a summary list of earthquakes with over approximately 100,000 deaths.[1] The 893 Ardabil earthquake is most likely the same as the 893 Dvin earthquake, due to misreading of the Arabic word for Dvin, "Dabil" as "Ardabil".[2][3] Event Date Location Fatal­ities Magni­tude Notes on fatalities 1976 Tangshan earthquake July 27, 1976 Hebei, China 300,000+[4] 7.6 Internal Tangshan reports found 263,299 local 
+  2. Lists_of_earthquakes.html#section-014-00  score=0.848361
+     Article: Lists of earthquakes Section: See also Earth sciences portal List of deadly earthquakes since 1900 List of historical earthquakes List of megathrust earthquakes List of natural disasters by death toll <h2
+  3. Lists_of_earthquakes.html#section-007-00  score=0.867419
+     Article: Lists of earthquakes Section: Earthquakes with the most property damage Main article: List of costliest earthquakes This is the top ten major earthquakes by the US dollar value of property (public and private) losses directly attributable to the earthquake. Rank Event Location Magnitude Property damage 1 2011 Tōhoku earthquake and tsunami Japan 9.1 $360 billion[229][230] 2 1995 Great Hanshin earthquake Japan 6.9 $200 billion[231] 3 2023 Turkey–Syria earthquakes Turkey Syria 7.8 $164 billion[232][233] 4 2008 Sichuan earthquake China 7.9 $150 billion[234] 5 2011 Christchurch earthquake 
+  4. Lists_of_earthquakes.html#section-000-00  score=0.872043
+     Article: Lists of earthquakes Section: Lead Earthquakes (6.0+ Mw) between 1900 and 2017 Earthquakes are caused by movements within the Earth's crust and uppermost mantle. They range from weak events detectable only by seismometers, to sudden and violent events lasting many minutes which have caused some of the biggest disasters in human history. Below, there are earthquakes listed by period, region or country, year, magnitude, cost, fatalities, and number of scientific studies.
+
+GROUNDED ANSWER:
+Based on the provided article, the deadliest earthquakes in roughly the last 50 years are the ones in the “Deadliest earthquakes” list with dates from 1976 onward:
+
+- **1976 Tangshan earthquake** — **300,000+ deaths**  
+- **2004 Indian Ocean earthquake and tsunami** — **227,898 deaths**  
+- **2010 Haiti earthquake** — **46,000–316,000 deaths**  
+
+The article also gives:
+- **1948 Ashgabat earthquake** — **110,000 deaths**  
+- **1923 Great Kantō earthquake** — **105,385 deaths**
+
+However, those are **older than the last 50 years**. The article section does not provide a fuller ranking limited specifically to the last 50 years, so the three above are the relevant ones from that time span that are explicitly listed.
+================================================================================
+
+QUESTION 9
+--------------------------------------------------------------------------------
+QUERY:
+Compare countries by their life expectancy vs. population. Is there a correlation?
+
+RETRIEVED ARTICLES (unique; ranked by first matching chunk):
+  1. List_of_countries_by_past_life_expectancy.html (first chunk rank=1; chunk ranks=[1, 2, 3])
+  2. Demographics_of_Japan.html (first chunk rank=4; chunk ranks=[4])
+
+RETRIEVED CHUNKS:
+  1. List_of_countries_by_past_life_expectancy.html#section-000-00  score=0.731849
+     Article: List of countries by past life expectancy Section: Lead Life expectancy by world region, from 1770 to 2023 This is a list of countries showing past life expectancy, ranging from 1950 to 2015 in five-year periods, as estimated by the 2017 revision of the World Population Prospects database by the United Nations Population Division. Life expectancy equals the average number of years a person born in a given country is expected to live if mortality rates at each age were to remain steady in the future. The life expectancy is shown as the average of males and females.
+  2. List_of_countries_by_past_life_expectancy.html#section-001-02  score=0.772700
+     Article: List of countries by past life expectancy Section: List of countries 1950 to 2015 (United Nations) 53.67 56.97 60.23 Northern Africa 42.27 45.82 48.60 51.12 53.18 56.27 59.77 62.85 64.56 66.39 67.92 69.63 71.07 Sub-Saharan Africa 36.33 38.51 40.73 42.70 44.80 46.75 48.18 49.11 48.86 49.39 50.70 54.29 57.88 Western Africa 33.55 35.50 37.61 39.50 41.80 44.42 46.71 47.67 48.13 48.21 49.30 52.33 54.74 Middle Africa 36.91 38.45 40.01 41.82 43.99 45.57 47.07 47.96 48.46 48.17 50.79 54.42 57.42 Eastern Africa 37.00 39.45 42.06 44.13 45.96 47.55 48.17 48.86 47.58 49.57 51.98 57.04 61.45 South
+  3. List_of_countries_by_past_life_expectancy.html#section-002-00  score=0.921976
+     Article: List of countries by past life expectancy Section: List of countries before 1950 Life expectancy at birth (both genders)[2] Country 1543 1683 1771 1810 1830 1851 1860 1870 1882 1890 1895 1900 1905 1910 1915 1920 1925 1930 1935 1940 1949 Australia 52.95 57.00 59.32 63.16 64.89 65.09 66.29 69.13 Austria 34.40 34.40 41.73 63.42 Argentina 33.10 34.00 33.30 39.00 39.70 44.20 46.20 48.65 50.60 52.55 54.45 56.45 64.36 Bangladesh 25.50 Belarus 36.20 Belgium 41.88 45.07 40.90 44.09 45.43 46.52 49.92 51.31 53.59 57.09 57.10 59.93 55.94 65.43 Bolivia 28.00 28.00 31.00 33.00 33.00 36.00 Brazil 29
+  4. Demographics_of_Japan.html#section-014-00  score=0.952877
+     Article: Demographics of Japan Section: Vital statistics > Life expectancy > Historical data Sources: Our World In Data and the United Nations. 1865–1949 Years 1865 1870 1875 1880 1885 1890 1895 1900 1905 1910 1915 1920 1922 1927 1935 1945 1947 1948 1949 1950[67] Life expectancy in Japan 36.4 36.6 36.8 37.0 37.3 37.7 38.1 38.6 39.2 40.0 40.9 42.0 42.6 45.7 48.2 30.5 51.7 56.8 57.7 59.2 1950–2020 Period Life expectancy in years Period Life expectancy in years 1950–1955 62.8 1985–1990 78.5 1955–1960 66.4 1990–1995 79.4 1960–1965 69.2 1995–2000 80.5 1965–1970 71.4 2000–2005 81.8 1970–1975 73.3 20
+
+GROUNDED ANSWER:
+The provided articles do **not** contain enough information to compare life expectancy with **population** or determine whether there is a correlation.
+
+What they do provide is life expectancy data, for example:
+- the world average rose from **46.98** in 1950–1955 to **70.79** in 2010–2015,
+- Japan’s life expectancy increased from **36.4** in 1865 to **84.4** in 2015–2020.
+
+But there is **no population data** in the provided context, so I can’t assess any life expectancy vs. population correlation from these articles alone.
+================================================================================
+
+QUESTION 10
+--------------------------------------------------------------------------------
+QUERY:
+For winter olympics, list events that were added in the last 100 years in order they were added listing the year they were added.
+
+RETRIEVED ARTICLES (unique; ranked by first matching chunk):
+  1. Winter_Olympic_Games.html (first chunk rank=1; chunk ranks=[1, 2, 3, 4])
+
+RETRIEVED CHUNKS:
+  1. Winter_Olympic_Games.html#section-014-00  score=0.712393
+     Article: Winter Olympic Games Section: Sports > Current sports Sport Years Events Events list Alpine skiing Since 1936 10[170] Men's: downhill, super G, giant slalom, slalom, alpine combined. Women's: downhill, super G, giant slalom, slalom, alpine combined. Mixed parallel slalom. Biathlon Since 1960[b] 11[171] Men's: sprint 10 km, individual 20 km, pursuit 12.5 km, mass start 15 km, relay 4×7.5 km. Women's: sprint 7.5 km, individual 15 km, pursuit 10 km, mass start 12.5 km, relay 4×6 km. Mixed relay 4×6 km. Bobsleigh 1924–1956, since 1964 4[172] Men's: four-man race, two-man race. Women's: tw
+  2. Winter_Olympic_Games.html#section-013-00  score=0.740070
+     Article: Winter Olympic Games Section: Sports The Olympic Charter limits winter sports to "those sports which are practised on snow or ice".[168] Since 1992 a number of new sports have been added to the Olympic programme, which include short-track speed skating, snowboarding, freestyle and moguls skiing. The addition of these events has broadened the appeal of the Winter Olympics beyond Europe and North America. While European powers such as Norway and Germany still dominate the traditional Winter Olympic sports, countries such as South Korea, Australia and Canada are finding success in these 
+  3. Winter_Olympic_Games.html#section-000-00  score=0.765690
+     Article: Winter Olympic Games Section: Lead Major international multi-sport event For other uses, see Winter Olympics (disambiguation). Olympic Games Main topics Bids Boycotts Ceremonies Charter Doping Host cities IFs IOC Medal Medal tables Medalists NOCs Olympism Pierre de Coubertin Medal Scandals and controversies Sports Symbols (Mascots) Television Torch relays Venues Villages Women participation Games Summer Winter Youth Esports Continental games African Asian European Pacific Pan American Regional games Americas Bolivarian Central South Asia Central East South Southeast West Other Europea
+  4. Winter_Olympic_Games.html#section-001-00  score=0.824104
+     Article: Winter Olympic Games Section: History > Early years Ulrich Salchow at the 1908 Olympics A predecessor, the Nordic Games, were organised by General Viktor Gustaf Balck in Stockholm, Sweden, in 1901 and were held again in 1903 and 1905 and then every fourth year thereafter until 1926.[10] Balck was a charter member of the IOC and a close friend of Olympic Games founder Pierre de Coubertin. He attempted to have winter sports, specifically figure skating, added to the Olympic programme but was unsuccessful until the 1908 Summer Olympics in London.[10] Four figure skating events were conte
+
+GROUNDED ANSWER:
+From the provided Wikipedia sections, the Winter Olympic sports/events added in the last 100 years are listed by the year each sport was first included:
+
+- **1924** — **Bobsleigh**, **Cross-country skiing**, **Curling**, **Figure skating**, **Ice hockey**, **Nordic combined**, **Ski jumping**, **Speed skating**
+- **1928** — **Skeleton**
+- **1936** — **Alpine skiing**
+- **1960** — **Biathlon**
+- **1964** — **Luge** and **Bobsleigh** was reintroduced after being absent from 1956 to 1960
+- **1992** — **Freestyle skiing** and **Short track speed skating**
+- **1998** — **Snowboarding** and **Curling** was reintroduced after being absent since 1924
+- **2002** — **Skeleton** was reintroduced after its earlier appearances in 1928 and 1948
+- **2026** — **Ski mountaineering** is listed as an **optional sport** for the 2026 Winter Olympics
+
+A note from the article: “Since 1992 a number of new sports have been added to the Olympic programme, which include short-track speed skating, snowboarding, freestyle and moguls skiing.”
+
+If you want, I can also turn this into a strict chronological table of **newly added sports only** (excluding reintroductions).
+================================================================================
+
+QUESTION 11
+--------------------------------------------------------------------------------
+QUERY:
+For summer olympics, list events that were added in the last 100 years in order they were added listing the year they were added and the country that the olympics were held in at that time.
+
+RETRIEVED ARTICLES (unique; ranked by first matching chunk):
+  1. Summer_Olympic_Games.html (first chunk rank=1; chunk ranks=[1, 2, 3, 4])
+
+RETRIEVED CHUNKS:
+  1. Summer_Olympic_Games.html#section-000-00  score=0.702151
+     Article: Summer Olympic Games Section: Lead Major international multi-sport event "Summer Olympics" and "Olympic Summer Games" redirect here. For the video game, see Olympic Summer Games (video game). For the most recent event, see 2024 Summer Olympics. Olympic Games Main topics Bids Boycotts Ceremonies Charter Doping Host cities IFs IOC Medal Medal tables Medalists NOCs Olympism Pierre de Coubertin Medal Scandals and controversies Sports Symbols (Mascots) Television Torch relays Venues Villages Women participation Games Summer Winter Youth Esports Continental games African Asian European Paci
+  2. Summer_Olympic_Games.html#section-007-00  score=0.758536
+     Article: Summer Olympic Games Section: History > Recent Games The 2020 Summer Olympics in Tokyo, Japan, had few attendees as a result of excluding public spectators amid the COVID-19 pandemic. Rio de Janeiro in Brazil hosted the 2016 Summer Olympics, becoming the first South American city to host the Olympics, the second Olympic host city in Latin America, after Mexico City in 1968, as well as the third city in the Southern Hemisphere to host the Olympics after Melbourne, Australia, in 1956 and Sydney, Australia, in 2000. The preparation for these Games was overshadowed by controversies, inclu
+  3. Summer_Olympic_Games.html#section-006-00  score=0.767462
+     Article: Summer Olympic Games Section: History > Start of the 21st century In 2004, the Olympic Games returned to their birthplace in Athens, Greece. At least $7.2 billion was spent on the 2004 Games, including $1.5 billion on security. Michael Phelps won his first Olympic medals, tallying six gold and two bronze medals. Pyrros Dimas, winning a bronze medal, became the most decorated weightlifter of all time with four Olympic medals, three gold and one bronze. Although unfounded reports of potential terrorism drove crowds away from the preliminary competitions at the first weekend of the Olymp
+  4. Summer_Olympic_Games.html#section-009-00  score=0.770154
+     Article: Summer Olympic Games Section: Sports Main article: Olympic sports There has been a total of 42 sports, spanning 55 disciplines, included in the Olympic programme at one point or another in the history of the Games. The schedule has comprised 33 sports for the recent Summer Olympics (2020), with 32 sports planned for the next Summer Olympics (2024). The various Olympic Sports federations are grouped under a common umbrella association, called the Association of Summer Olympic International Federations (ASOIF). Current sport No longer included Sport Years 3x3 Basketball Since 2020 Arche
+
+GROUNDED ANSWER:
+From the provided articles, I can list the sports/events added to the Summer Olympics in roughly the last 100 years, along with the year they were added. However, the articles do **not** give the host **country** for each of those additions, so I can only include the year and, where stated, the host city/edition.
+
+Events added since 1926-like timeframe shown in the context:
+
+- **1928** — Field hockey became included again (“1920, since 1928”)
+- **1932** — Shooting became included again (“since 1932”)
+- **1936** — Basketball; Canoeing; Football (“since 1936”); Water polo is earlier, so not new here
+- **1948** — none listed as newly added in the provided text
+- **1952** — none listed as newly added in the provided text
+- **1960** — none listed as newly added in the provided text
+- **1964** — Volleyball
+- **1972** — Archery; Judo; also Field hockey had already returned in 1928, so not here
+- **1984** — Artistic swimming
+- **1988** — Table tennis; Tennis returned
+- **1992** — Badminton; Baseball
+- **1996** — Softball
+- **2000** — Taekwondo; Triathlon
+- **2004** — none listed as newly added in the provided text
+- **2008** — none listed as newly added in the provided text
+- **2016** — Golf; Rugby sevens
+- **2020** — 3x3 Basketball; Breaking; Karate; Skateboarding; Sport climbing; Surfing
+- **2024** — Breaking is listed for 2024 in the sports table
+- **2028** — Baseball; Cricket; Flag football; Lacrosse; Softball; Squash
+
+The related host cities/countries mentioned in the articles are:
+- **1964** Tokyo, **Japan**
+- **1972** Munich, **Germany**
+- **1984** Los Angeles, **United States**
+- **1988** Seoul, **South Korea**
+- **1992** Barcelona, **Spain**
+- **1996** Atlanta, **United States**
+- **2000** Sydney, **Australia**
+- **2016** Rio de Janeiro, **Brazil**
+- **2020** Tokyo, **Japan**
+- **2024** Paris, **France**
+- **2028** Los Angeles, **United States**
+
+If you want, I can turn this into a clean table with columns for **event, year added, and host country** using only the countries explicitly mentioned in the provided context.
+================================================================================
+
+QUESTION 12
+--------------------------------------------------------------------------------
+QUERY:
+Which winter/summer olympic years, Russia hosted the olympics?
+
+RETRIEVED ARTICLES (unique; ranked by first matching chunk):
+  1. Winter_Olympic_Games.html (first chunk rank=1; chunk ranks=[1, 3])
+  2. List_of_Olympic_Games_host_cities.html (first chunk rank=2; chunk ranks=[2, 4])
+
+RETRIEVED CHUNKS:
+  1. Winter_Olympic_Games.html#section-006-00  score=0.837117
+     Article: Winter Olympic Games Section: History > 2002 to 2026 The Olympic flame during the Opening Ceremony of the 2002 Games in Salt Lake City After a tumultuous host city process, the 2002 Winter Olympics were held in Salt Lake City, United States. 2,399 athletes from 77 National Olympic Committees participated in 78 events in 7 sports.[93] These Games were the first to take place since the September 11 attacks of 2001, which meant a higher degree of security to avoid a terrorist attack. The opening ceremony saw signs of the aftermath of the events of that day, including the flag that flew a
+  2. List_of_Olympic_Games_host_cities.html#section-002-00  score=0.842339
+     Article: List of Olympic Games host cities Section: Olympic Games host cities > Host cities for multiple Summer and Winter Olympic Games List of cities that hosted multiple editions of the Olympic Games Total City Country Region Summer Olympics Winter Olympics 3 London United Kingdom Europe 3 (1908, 1948, 2012) Los Angeles United States North America 3 (1932, 1984, 2028) Paris France Europe 3 (1900, 1924, 2024) 2 Albertville 2 (1992, 2030[28]) Athens Greece 2 (1896, 2004) Beijing China Asia 1 (2008) 1 (2022) Cortina d'Ampezzo Italy Europe 2 (1956, 2026) Innsbruck Austria 2 (1964, 1976) Lake Pl
+  3. Winter_Olympic_Games.html#section-000-00  score=0.850566
+     Article: Winter Olympic Games Section: Lead Major international multi-sport event For other uses, see Winter Olympics (disambiguation). Olympic Games Main topics Bids Boycotts Ceremonies Charter Doping Host cities IFs IOC Medal Medal tables Medalists NOCs Olympism Pierre de Coubertin Medal Scandals and controversies Sports Symbols (Mascots) Television Torch relays Venues Villages Women participation Games Summer Winter Youth Esports Continental games African Asian European Pacific Pan American Regional games Americas Bolivarian Central South Asia Central East South Southeast West Other Europea
+  4. List_of_Olympic_Games_host_cities.html#section-000-00  score=0.879007
+     Article: List of Olympic Games host cities Section: Lead For individual summer and winter lists, see List of Summer Olympic Games and List of Winter Olympic Games For villages that house Olympic athletes, see List of Olympic Villages. Map of host cities and countries of the modern summer (orange) and winter (blue) Olympics. * Tokyo hosted the 2020 Summer Olympics in 2021, postponed due to the COVID-19 pandemic. In the SVG file, tap or hover over a city to show its name (only on the desktop). The modern Olympics began in 1896. Since then, summer and winter games have usually celebrated a four-y
+
+GROUNDED ANSWER:
+From the provided articles, Russia hosted the **Winter Olympics in 2014**.
+
+The relevant text says: **“Sochi, Russia, was selected as the host city for the 2014 Winter Olympics ... This was the first time that Russia had hosted a Winter Olympics.”**
+
+I don’t see any provided article stating that Russia hosted any **Summer Olympics**.
+================================================================================
+
+QUESTION 13
+--------------------------------------------------------------------------------
+QUERY:
+Which olympics, Russia did not participate in?
+
+RETRIEVED ARTICLES (unique; ranked by first matching chunk):
+  1. 1936_Summer_Olympics.html (first chunk rank=1; chunk ranks=[1])
+  2. Unified_Team_at_the_Olympics.html (first chunk rank=2; chunk ranks=[2])
+  3. Winter_Olympic_Games.html (first chunk rank=3; chunk ranks=[3])
+  4. Soviet_Union.html (first chunk rank=4; chunk ranks=[4])
+
+RETRIEVED CHUNKS:
+  1. 1936_Summer_Olympics.html#section-020-00  score=0.831765
+     Article: 1936 Summer Olympics Section: Political aspects > Boycott debate > Soviet Union The Soviet Union had not participated in international sporting events since the 1920 Summer Olympics. The Soviet government was not invited to the 1920 Games, with the Russian Civil War still raging, and they did not participate in the 1924 Summer Olympics and forward on ideological grounds. Instead, through the auspices of the Red Sport International, it had participated in a left-wing workers' alternative, the Spartakiad, since 1928. The USSR had intended to attend the People's Olympiad in Barcelona unt
+  2. Unified_Team_at_the_Olympics.html#section-003-00  score=0.870739
+     Article: Unified Team at the Olympics Section: Participating countries > Timeline of participation Olympic Year/s Teams 1900–1912 Russian Empire 1920 1924–1936 as part of Romania 1952–1988 Soviet Union 1992 Unified Team 1994 Moldova Russia Belarus Georgia Armenia Kazakhstan Kyrgyzstan Ukraine Uzbekistan 1996–2002 Belarus Azerbaijan Tajikistan Turkmenistan 2004–2012 Georgia 2014–2016 Belarus 2018 Olympic Athletes from Russia 2020–2022 Russian Olympic Committee 2024–present Individual Neutral Athletes
+  3. Winter_Olympic_Games.html#section-006-00  score=0.927076
+     Article: Winter Olympic Games Section: History > 2002 to 2026 The Olympic flame during the Opening Ceremony of the 2002 Games in Salt Lake City After a tumultuous host city process, the 2002 Winter Olympics were held in Salt Lake City, United States. 2,399 athletes from 77 National Olympic Committees participated in 78 events in 7 sports.[93] These Games were the first to take place since the September 11 attacks of 2001, which meant a higher degree of security to avoid a terrorist attack. The opening ceremony saw signs of the aftermath of the events of that day, including the flag that flew a
+  4. Soviet_Union.html#section-033-00  score=0.930582
+     Article: Soviet Union Section: Sport See also: Voluntary Sports Societies of the Soviet Union, CSKA Moscow, Soviet Union at the Olympics, and Soviet Union men's national ice hockey team Valeri Kharlamov represented the Soviet Union at 11 Ice Hockey World Championships, winning eight gold medals, two silvers and one bronze. In summer of 1923 in Moscow was established the Proletarian Sports Society "Dynamo" as a sports organization of Soviet secret police Cheka. On 13 July 1925 the Central Committee of the Russian Communist Party (Bolsheviks) adopted a statement "About the party's tasks in spher
+
+GROUNDED ANSWER:
+From the provided articles, Russia’s predecessor state, the **Soviet Union**, **did not participate in the 1920 Summer Olympics**. The article says:
+
+> “The Soviet government was not invited to the 1920 Games...”
+
+It also says the USSR **did not participate in the 1924 Summer Olympics and forward on ideological grounds**.
+
+If you mean modern **Russia** specifically, the provided articles do not directly list a specific Olympics that Russia itself did not participate in.
+================================================================================
+

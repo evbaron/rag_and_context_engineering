@@ -28,12 +28,25 @@ from .corpus import (
     DEFAULT_CHROMA_DB_NAME,
     DEFAULT_CHROMA_DB_ROOT,
     DEFAULT_CHROMA_DIR,
+    DEFAULT_ARTICLE_TEXT_NAME,
+    DEFAULT_ARTICLE_TEXT_ROOT,
     DEFAULT_WIKI_DIR,
+    ArticleText,
+    ArticleTextStore,
     WikiChunk,
+    article_text_store_path,
+    build_or_load_article_text_store,
     load_wikipedia_chunks,
+    load_wikipedia_section_chunks,
 )
 from .hybrid import HybridRetriever
 from .evidence import EvidenceLogger, format_articles, format_chunks
+from .expansion import (
+    article_name_from_doc_id,
+    format_full_articles_context,
+    load_retrieved_article_texts,
+    retrieved_article_names,
+)
 from .vector import VectorRetriever, build_or_load_db, chroma_db_path
 
 
@@ -127,8 +140,12 @@ __all__ = [
     "RetrieverKind",
     "RetrieverSpec",
     "WikiChunk",
+    "ArticleText",
+    "ArticleTextStore",
     "DEFAULT_WIKI_DIR",
     "DEFAULT_CHROMA_DIR",
+    "DEFAULT_ARTICLE_TEXT_ROOT",
+    "DEFAULT_ARTICLE_TEXT_NAME",
     "DEFAULT_CHROMA_DB_ROOT",
     "DEFAULT_CHROMA_DB_NAME",
     "DEFAULT_TOP_K",
@@ -138,7 +155,14 @@ __all__ = [
     "build_or_load_db",
     "chroma_db_path",
     "load_wikipedia_chunks",
+    "load_wikipedia_section_chunks",
+    "article_text_store_path",
+    "build_or_load_article_text_store",
     "make_retriever",
     "format_articles",
     "format_chunks",
+    "article_name_from_doc_id",
+    "format_full_articles_context",
+    "load_retrieved_article_texts",
+    "retrieved_article_names",
 ]
