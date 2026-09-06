@@ -1,26 +1,34 @@
-r"""Capstone Checkpoint 3.1 — Evaluation Infrastructure and Baseline Diagnosis (starter).
-Jupytext-style cell markers (# %% / # %% [markdown]) — runnable as a
-plain script AND openable as cells in VS Code / PyCharm / Jupytext.
+r"""Capstone Checkpoint 3.1 — Oracle evaluation (ground-truth Wikipedia context).
 
-This demonstration system is not your capstone system and 
-does not use the Research Paper Navigator or Wikipedia corpus.
+Jupytext-style cell markers (# %% / # %% [markdown]) — runnable as a
+plain script and openable as cells in VS Code / PyCharm / Jupytext.
+
+This script does not retrieve. For each question in wikipedia_GT.csv it
+loads the labeled source articles in full, asks the answer LLM to respond
+from that context only, and scores the response with a RAGAS DiscreteMetric
+(pass / partial / fail) against the grading notes. Results are written
+under ragas_experiments/.
 """
 
 # %% [markdown]
-# # Capstone Checkpoint 3.1 — Evaluation Infrastructure and Baseline Diagnosis
-# **MO-LLM Module 3 / Required Capstone Checkpoint (120 minutes)**
+# # Capstone Checkpoint 3.1 — Oracle evaluation (no retriever)
+# **Wikipedia Retrieval Engine / Module 3**
 #
-# ## What this checkpoint is
+# This script measures answer quality when retrieval is replaced by the
+# ground-truth source articles. It is an upper-bound / framework-check run:
+# the same questions, grading notes, answer model, and RAGAS judge as
+# `capstone_checkpoint_3_1_with_retriever.py`, but with gold context instead
+# of hybrid retrieval.
 #
-# #
-# This mirrors **Lab 3.1** (an LLM-judge that scores answers pass/fail against grading
-# notes), applied to your capstone system. 
-# You have a baseline retrieval system from Checkpoint 2.1. In this checkpoint, 
-# you will use a structured evaluation approach to measure baseline performance, diagnose strengths 
-# and weaknesses, and examine whether the evaluation framework detects problematic outputs.
-# The starter script includes a small demonstration corpus and retriever to illustrate the 
-# evaluation workflow. Apply the same evaluation approach to your selected capstone scenario and 
-# baseline retrieval system. The graded deliverable is the completed Capstone Checkpoint 3.1 worksheet.
+# **Pipeline**
+# 1. Load `wikipedia_retrieval_engine/GT/wikipedia_GT.csv`.
+# 2. For each question, concatenate the full text of every labeled source article.
+# 3. Generate an answer from that context only (`answer_from_context`).
+# 4. Score the answer with a RAGAS `DiscreteMetric`: `pass`, `partial`, or `fail`.
+# 5. Save the experiment CSV under `ragas_experiments/experiments/`.
+#
+# Compare these scores with the retriever script to separate generation/judge
+# issues from retrieval misses.
 #
 # **Learning outcomes (Module 3):**
 # 1. Define evaluation metrics that reflect the real-world performance requirements of an LLM-powered retrieval system.
@@ -29,26 +37,28 @@ does not use the Research Paper Navigator or Wikipedia corpus.
 # 4. Evaluate the performance of a retrieval-augmented system during development using a structured evaluation framework.
 
 # %% [markdown]
-# ## Step 1 — Keep your capstone scenario
+# ## Step 1 — Wikipedia scenario and ground truth
 #
-# Use the **same scenario and baseline retriever** from Checkpoints 1.1 and 2.1.
+# This run uses the **Wikipedia Retrieval Engine** from Checkpoints 1.1 and 2.1.
+# Oracle mode never calls a retriever: the `Source articles` column *is* the context.
 #
-# | Scenario | Corpus |
+# | Resource | Location |
 # |---|---|
-# | **Research Paper Navigator** | ~150 research-paper PDFs (`Labs/CapstoneDatasets/ResearchPapers/`) |
-# | **Wikipedia Retrieval Engine** | ~2,400 Wikipedia HTML articles (`Labs/CapstoneDatasets/Wikipedia/`) |
+# | Questions, reference answers, grading notes, source articles | `wikipedia_retrieval_engine/GT/wikipedia_GT.csv` |
+# | Full article text (plain-text store from Checkpoint 2.1) | `retrievers/db/article_text/wikipedia_plain_text/` |
 
 # %% [markdown]
-# ## Setup (~5 min)
+# ## Setup
 #
 # 1. **Python 3.11 or 3.12.**
-# 2. `pip install langchain-openai langchain-core python-dotenv`
-# 3. Use the OpenRouter API key provided for this program.
-# 4. Create a `.env` file next to this script: `OPENROUTER_API_KEY=sk-or-v1-...`
+# 2. From the repo venv: `pip install -r "wikipedia_retrieval_engine/Capstone Checkpoint 3.1/requirements.txt"`
+#    (includes RAGAS, LangChain, OpenAI, pandas — not only `langchain-openai`).
+# 3. Put the course OpenRouter key in a `.env` file as `OPENROUTER_API_KEY=sk-or-v1-...`
+#    (next to this script, or in `rag_and_context_engineering/.env`).
+# 4. The Wikipedia article-text store must already exist (built in Checkpoint 2.1).
 #
-# Runs on a tiny built-in sample corpus, so you do not need to prepare your own dataset.
-# It still requires an OpenRouter API key to run the LLM (it is not offline or free of API
-# calls). You apply the same evaluation approach to your real system for the report.
+# This is not the Lab 3.1 toy corpus. Both the answer LLM and the RAGAS judge
+# call OpenRouter.
 
 # %%
 from __future__ import annotations
@@ -103,10 +113,10 @@ import asyncio
 
 
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
-LLM_MODEL = "openai/gpt-5.4-mini"  # latest small OpenAI model, fast; covered by course credits
-JUDGE_MODEL = "openai/gpt-5.4-mini"  # judge model; try a different one in Step 2
+LLM_MODEL = "openai/gpt-5.4-mini"  # answer LLM (OpenRouter); covered by course credits
+JUDGE_MODEL = "openai/gpt-5.4-mini"  # RAGAS DiscreteMetric judge (OpenRouter)
 TEMPERATURE = 0.2
-TOP_K = 3
+TOP_K = 3  # unused leftover from the Lab 3.1 demo retriever
 
 ARTICLE_TEXT_DIR = (
     _ENGINE
@@ -115,11 +125,13 @@ ARTICLE_TEXT_DIR = (
     / "article_text"
     / "wikipedia_plain_text"
 )
-LOG_PATH = _HERE / f"checkpoint_3.1_evaluation_{datetime.now().strftime('%Y-%m-%d-%H-%M')}.log"
+LOG_PATH = _HERE / f"checkpoint_3.1_evaluation_{datetime.now().strftime('%Y-%m-%d-%H-%M')}.log"  # unused by the RAGAS experiment; see log()
 RAGAS_OUTPUT_DIR = _HERE / "ragas_experiments"
 
-SCENARIO ="wikipedia"
+SCENARIO = "wikipedia"  # Wikipedia Retrieval Engine (not used as a runtime switch)
 
+# Used only by the leftover Lab 3.1 helpers below. Live answers use
+# retrievers.llm.answer (SYSTEM_PROMPT); live judging uses correctness_metric.
 ANSWER_SYSTEM = (
     "You are a helpful assistant. Answer the question using ONLY the provided "
     "documents, and quote from them where you can. If the documents do not contain "
@@ -134,6 +146,7 @@ JUDGE_SYSTEM = (
 
 # %%
 def check_api_key() -> str:
+    """Load OPENROUTER_API_KEY from .env; raise a clear error if it is missing."""
     load_dotenv()
     key = os.getenv("OPENROUTER_API_KEY")
     if not key:
@@ -146,6 +159,7 @@ def check_api_key() -> str:
 
 
 def make_llm() -> ChatOpenAI:
+    """Answer LLM for this script (shadows retrievers.llm.make_llm so LLM_MODEL applies)."""
     return ChatOpenAI(
         model=LLM_MODEL,
         temperature=TEMPERATURE,
@@ -155,9 +169,11 @@ def make_llm() -> ChatOpenAI:
 
 # ─── RAGAS evaluation harness ────────────────────────────────────────
 def make_judge():
-    """Build the judge LLM. Called from main() AFTER require_api_key(), so a missing
-    key gives a friendly message instead of a KeyError at import time."""
+    """Build the RAGAS judge LLM via OpenRouter.
 
+    Loads OPENROUTER_API_KEY first so a missing key raises a clear error
+    instead of failing later inside llm_factory.
+    """
     api_key = check_api_key()
     return llm_factory(
         JUDGE_MODEL,
@@ -165,15 +181,18 @@ def make_judge():
     )
 
 def log(label: str, text: str) -> None:
+    """Append a timestamped block to LOG_PATH. Not used by the RAGAS experiment."""
     ts = datetime.now().isoformat(timespec="seconds")
     with LOG_PATH.open("a", encoding="utf-8") as fh:
         fh.write(f"[{ts}] {label}\n{text}\n{'-' * 72}\n")
 
 def _tokens(text: str) -> set[str]:
+    """Tokenize for overlap checks. Not used by the RAGAS experiment."""
     return set(re.findall(r"[a-z0-9]+", text.lower()))
 
 
 def answer(llm: ChatOpenAI, query: str, doc_ids: list[str]) -> str:
+    """Unused Lab 3.1 leftover (depends on DOC_BY_ID). Live path: answer_from_context."""
     context = "\n\n".join(f"[{i}] {DOC_BY_ID[i]['text']}" for i in doc_ids if i in DOC_BY_ID)
     messages = [
         SystemMessage(content=ANSWER_SYSTEM),
@@ -190,7 +209,10 @@ def parse_source_articles(source_cell: str) -> list[str]:
     ]
 
 def load_ground_truth_context(source_cell: str) -> str:
-    """Load the complete text of every ground-truth source article."""
+    """Load the complete text of every gold source article.
+
+    Used by the oracle experiment (and the optional validate_framework helper).
+    """
     context_parts = []
 
     for filename in parse_source_articles(source_cell):
@@ -213,15 +235,18 @@ def load_ground_truth_context(source_cell: str) -> str:
     separator = "\n\n" + "=" * 80 + "\n\n"
     return separator.join(context_parts)
 # %% [markdown]
-# ## Step 2 — The evaluation metric (provided)
+# ## Step 2 — RAGAS evaluation metric
 #
-# A simple **LLM-judge** that returns pass/fail by checking an answer against grading
-# notes — the same idea as Lab 3.1's DiscreteMetric, written directly here so the
-# checkpoint needs no extra packages. Tuning this metric (stricter notes, a 'partial'
-# level, a stronger judge model) is part of the diagnosis.
+# The live judge is a RAGAS `DiscreteMetric` named `answer_correctness`.
+# It reads the generated response and the question's grading notes and
+# returns exactly one of `pass`, `partial`, or `fail`.
+#
+# The binary `judge()` helper in the next cell is leftover from the Lab 3.1
+# starter (pass/fail only) and is **not** used by `main()`.
 
 # %%
 def judge(llm: ChatOpenAI, answer_text: str, grading_notes: str) -> str:
+    """Unused Lab 3.1 leftover: binary pass/fail. The experiment uses correctness_metric."""
     messages = [
         SystemMessage(content=JUDGE_SYSTEM),
         HumanMessage(content=f"ANSWER:\n{answer_text}\n\nGRADING NOTES:\n{grading_notes}\n\nVerdict (pass/fail):"),
@@ -231,6 +256,7 @@ def judge(llm: ChatOpenAI, answer_text: str, grading_notes: str) -> str:
 
 
 def my_eval_set() -> list[dict]:
+    """Load wikipedia_GT.csv and rename columns to the names the rest of this script uses."""
     gt_path = _ENGINE / "GT" / "wikipedia_GT.csv"
     df = pd.read_csv(gt_path)
     df = df.rename(columns={"Question": "question", "Grading notes": "grading_notes"})
@@ -254,60 +280,73 @@ correctness_metric = DiscreteMetric(
     ),
     allowed_values=["pass", "partial", "fail"],
 )
-# ---------  VALIDATION OF THE FRAMEWORK ---------
 
+# Optional smoke test (disabled): score a gold-context answer vs a known-wrong
+# answer to check that the judge can distinguish them. Uncomment to run once.
+#
 # def validate_framework() -> None:
 #     evaluation_set = my_eval_set()
 #     first = evaluation_set[0]
-
+#
 #     context = load_ground_truth_context(first["Source articles"])
-
+#
 #     answer_llm = make_llm()
 #     correct_response = answer_from_context(
 #         query=first["question"],
 #         context=context,
 #         llm=answer_llm,
 #     )
-
+#
 #     manipulated_response = (
 #         "The current men's world record is 10.20 seconds, "
 #         "held by Carl Lewis of the United States. It was set "
 #         "in Paris in 1995."
 #     )
-
+#
 #     ragas_judge = make_judge()
-
+#
 #     correct_score = correctness_metric.score(
 #         llm=ragas_judge,
 #         response=correct_response,
 #         grading_notes=first["grading_notes"],
 #     )
-
+#
 #     manipulated_score = correctness_metric.score(
 #         llm=ragas_judge,
 #         response=manipulated_response,
 #         grading_notes=first["grading_notes"],
 #     )
-
+#
 #     print(f"ID: {first['ID']}")
 #     print(f"Question: {first['question']}")
-
+#
 #     print(f"\nCorrect answer:\n{correct_response}")
 #     print(f"Correct-answer verdict: {correct_score.value.upper()}")
-
+#
 #     print(f"\nManipulated answer:\n{manipulated_response}")
 #     print(f"Manipulated-answer verdict: {manipulated_score.value.upper()}")
+#
+# validate_framework()
 
-# validate_framework() # this is the validation of the framework
-# ------------------------END OF VALIDATION OF THE FRAMEWORK----------------------------
 
+# %% [markdown]
+# ## Step 3 — RAGAS dataset from wikipedia_GT.csv
+#
+# `build_ragas_dataset()` copies ground-truth rows into a RAGAS `Dataset`
+# named `wikipedia_oracle_inputs`. Pass `question_ids=` for specific IDs,
+# or `limit=` for a prefix of the spreadsheet. `main()` uses `limit=None`
+# (the full set). The default `limit=2` is only a smoke-test subset.
 
-# Ragas required dataset for evalution
-# convert my_eval_set() to a Ragas dataset
+# %%
 def build_ragas_dataset(
     limit: int | None = 2,
     question_ids: list[str] | None = None,
 ) -> Dataset:
+    """Copy ground-truth rows into a RAGAS Dataset saved under RAGAS_OUTPUT_DIR.
+
+    If question_ids is set, those IDs are used (order preserved). Otherwise
+    the first `limit` spreadsheet rows are used; limit=None means the full set.
+    """
     rows = my_eval_set()
 
     if question_ids is not None:
@@ -354,10 +393,23 @@ def build_ragas_dataset(
     dataset.save()
     return dataset
 
+# %% [markdown]
+# ## Step 4 — Oracle experiment
+#
+# For each dataset row this run:
+# 1. Loads the full text of every gold source article (`load_ground_truth_context`).
+# 2. Generates an answer from that context (`answer_from_context`).
+# 3. Scores the answer with `correctness_metric` (`pass` / `partial` / `fail`).
+#
+# `asyncio.run(main())` evaluates the full ground-truth set and writes
+# `ragas_experiments/experiments/<run_name>.csv`.
+
+# %%
 def build_oracle_experiment(
     answer_llm: ChatOpenAI,
     ragas_judge,
 ):
+    """Return a RAGAS experiment that answers from gold articles, then judges."""
     @experiment()
     async def run_oracle_case(row: dict) -> dict:
         context = load_ground_truth_context(
@@ -393,6 +445,7 @@ def build_oracle_experiment(
 
 
 async def main() -> None:
+    """Run the oracle RAGAS experiment on the full Wikipedia ground-truth set."""
     dataset = build_ragas_dataset(limit=None)
 
     answer_llm = make_llm()
