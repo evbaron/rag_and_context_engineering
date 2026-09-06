@@ -16,14 +16,16 @@ This scenario is intended to model retrieval systems that provide trustworthy ac
 
 ## Setup
 
-This project uses a local Python virtual environment in `.venv` (macOS does not provide a `python` command by default — use `python3`).
+This project uses a local Python virtual environment in `.venv`.
+
+**Use Python 3.11 or 3.12.** macOS’s `/usr/bin/python3` is often 3.9, which cannot install Checkpoint 3.1 pins such as `python-dotenv==1.2.2`. If Homebrew Python 3.12 is installed, create the venv with `python3.12`.
 
 ### 1. Create and activate the virtual environment
 
 From the project root (`capstone/rag_and_context_engineering`):
 
 ```bash
-python3 -m venv .venv
+python3.12 -m venv .venv
 source .venv/bin/activate
 ```
 
@@ -32,8 +34,8 @@ Your prompt should show `(.venv)`.
 ### 2. Install dependencies
 
 ```bash
-python3 -m pip install --upgrade pip
-pip install langchain-openai langchain-core python-dotenv langchain-chorma rank-bm25
+python -m pip install --upgrade pip
+pip install -r "wikipedia_retrieval_engine/Capstone Checkpoint 3.1/requirements.txt"
 ```
 
 

@@ -6,11 +6,13 @@ For a detailed explanation of HTML extraction, character chunks, section chunks,
 Chroma indexes, BM25 indexing, and complete article text files, see
 `_README_ARTCILE_CORPUS.md`.
 
-| Retriever | Lab | What it is good at |
-|---|---|---|
-| `Bm25Retriever` | 1.2 | Exact terms, names, years, titles |
+
+| Retriever         | Lab | What it is good at                  |
+| ----------------- | --- | ----------------------------------- |
+| `Bm25Retriever`   | 1.2 | Exact terms, names, years, titles   |
 | `VectorRetriever` | 2.1 | Paraphrases and semantic similarity |
-| `HybridRetriever` | 2.2 | Weighted fusion of the two |
+| `HybridRetriever` | 2.2 | Weighted fusion of the two          |
+
 
 Retrieval ranking lives in the retriever classes. LLM and embedding calls—and the
 single authoritative system prompt—live in `llm.py`. This separation lets Checkpoint
@@ -41,24 +43,32 @@ The checkpoint script adds `wikipedia_retrieval_engine/` to `sys.path`, then imp
 
 ---
 
+
+
 ## Shared retrieval API
 
 Every retriever subclass implements:
 
-| Method | Returns | Purpose |
-|---|---|---|
-| `getTopK(query, k=None)` | `list[tuple[str, str, float]]` | `(doc_id, chunk_text, score)` |
-| `retrievedContext(query, k=None)` | `str` | Same hits formatted for the LLM |
-| `format_context(hits)` | `str` | Format existing hits without retrieving again |
-| `settings()` | `dict` | Kind, label, and knobs used for this run |
+
+| Method                            | Returns                        | Purpose                                       |
+| --------------------------------- | ------------------------------ | --------------------------------------------- |
+| `getTopK(query, k=None)`          | `list[tuple[str, str, float]]` | `(doc_id, chunk_text, score)`                 |
+| `retrievedContext(query, k=None)` | `str`                          | Same hits formatted for the LLM               |
+| `format_context(hits)`            | `str`                          | Format existing hits without retrieving again |
+| `settings()`                      | `dict`                         | Kind, label, and knobs used for this run      |
+
 
 `doc_id` looks like `1972_Winter_Olympics.html#0` (article file + chunk index).
 
-`k` defaults to the retriever’s `top_k`. Scores are **not** comparable across kinds: BM25 is higher-is-better raw, Chroma is a distance (lower-is-better), hybrid is a fused `[0, 1]` weighted sum.
+`k` defaults to the retriever’s `top_k`. Scores are **not** comparable across kinds: BM25 is higher-is-better raw, Chroma is a distance (lower-is-better), hybrid is a fused `[0, 1]` weighted sum.ac
 
 ---
 
+
+
 ## File-by-file
+
+
 
 ### `__init__.py`
 
@@ -88,7 +98,7 @@ Turns Wikipedia HTML into the units that BM25 and Chroma index.
 - `DEFAULT_ARTICLE_TEXT_NAME` — `wikipedia_plain_text`
 - `CHUNK_SIZE = 1600`, `CHUNK_OVERLAP = 200`
 
-**`WikiChunk`** — one indexable piece:
+`WikiChunk` — one indexable piece:
 
 - `doc_id` — unique, e.g. `100_metres.html#2`
 - `source` — filename
@@ -116,24 +126,24 @@ Section: Events > April–June
 The process is:
 
 1. `_article_body_markup()` locates `mw-content-text`, so navigation outside the
-   article body is ignored. It stops before References, Notes, or the print footer.
+  article body is ignored. It stops before References, Notes, or the print footer.
 2. `_HTMLSectionExtractor` walks the remaining HTML once with Python's
-   `HTMLParser`. It ignores `script`, `style`, `noscript`, and `svg` content.
+  `HTMLParser`. It ignores `script`, `style`, `noscript`, and `svg` content.
 3. Text before the first heading becomes the `Lead` section.
 4. When an `h2` starts, the current text is finalized and a new top-level section
-   begins. An `h3` becomes its child, an `h4` becomes the next nested child, and so on.
+  begins. An `h3` becomes its child, an `h4` becomes the next nested child, and so on.
 5. Encountering the next heading finalizes the previous section. This means text from
-   `Events > April–June` cannot be mixed with `Events > July–September`.
+  `Events > April–June` cannot be mixed with `Events > July–September`.
 6. Whitespace is normalized, `[edit]` labels are removed, and paragraph/list line
-   boundaries are retained.
+  boundaries are retained.
 7. The article title and complete section path are prepended to every indexed chunk.
-   This gives BM25 and embeddings meaningful labels in addition to body text.
+  This gives BM25 and embeddings meaningful labels in addition to body text.
 8. A natural section stays intact when it is at most `MAX_SECTION_CHARS`. The current
-   checkpoint setting is 10,000 characters.
+  checkpoint setting is 10,000 characters.
 9. Only a section larger than 10,000 characters is split. Those fallback pieces use
-   zero overlap in this experiment, so no text is repeated between pieces.
+  zero overlap in this experiment, so no text is repeated between pieces.
 10. Each chunk receives a stable ID such as
-    `1580.html#section-003-00`, plus `section_title`, `section_path`, source article,
+  `1580.html#section-003-00`, plus `section_title`, `section_path`, source article,
     title, and article-order index metadata.
 
 The section experiment uses the separate Chroma index
@@ -165,14 +175,16 @@ Retrieval-only. No LangChain, no API calls.
 
 **Defaults** (override per experiment; do not treat these as fixed):
 
-| Name | Default | Used by |
-|---|---|---|
-| `DEFAULT_TOP_K` | 4 | All retrievers — how many chunks to return |
-| `DEFAULT_CANDIDATE_POOL` | 10 | Hybrid — how many hits to pull from **each** side before fusion |
-| `DEFAULT_WEIGHT_BM25` | 0.5 | Hybrid fusion weight |
-| `DEFAULT_WEIGHT_VECTOR` | 0.5 | Hybrid fusion weight |
 
-**`RetrieverSpec`** — one experiment row:
+| Name                     | Default | Used by                                                         |
+| ------------------------ | ------- | --------------------------------------------------------------- |
+| `DEFAULT_TOP_K`          | 4       | All retrievers — how many chunks to return                      |
+| `DEFAULT_CANDIDATE_POOL` | 10      | Hybrid — how many hits to pull from **each** side before fusion |
+| `DEFAULT_WEIGHT_BM25`    | 0.5     | Hybrid fusion weight                                            |
+| `DEFAULT_WEIGHT_VECTOR`  | 0.5     | Hybrid fusion weight                                            |
+
+
+`RetrieverSpec` — one experiment row:
 
 ```python
 RetrieverSpec(
@@ -195,7 +207,7 @@ greater than zero. `as_dict()` is a compact settings snapshot for logging.
 - `tokenize(text)` — lowercase alphanumeric tokens, stopwords removed (same tokenizer for index and query).
 - `normalize_scores(scores, invert=False)` — min-max to `[0, 1]`. `invert=True` flips Chroma distance so **higher = more similar**.
 
-**`BaseRetriever`** — abstract: `getTopK`, plus `retrievedContext`,
+`BaseRetriever` — abstract: `getTopK`, plus `retrievedContext`,
 `format_context`, and `settings`.
 
 Prefer `format_context(hits)` after calling `getTopK()`. This guarantees the LLM sees
@@ -216,18 +228,18 @@ Constructor: `Bm25Retriever(wiki_dir=None, chunks=None, top_k=4, label="bm25")`.
 
 Lab 2.1 semantic search via Chroma + OpenRouter embeddings (`openai/text-embedding-3-small`).
 
-**`build_or_load_db(wiki_dir=None, chroma_db_name="wikipedia", chunks=None)`**
+`build_or_load_db(wiki_dir=None, chroma_db_name="wikipedia", chunks=None)`
 
 - Resolves the index path as `retrievers/db/<chroma_db_name>`.
 - If that named directory already has files, it **loads** them (no re-embed), including after
-  Python or the computer has restarted.
+Python or the computer has restarted.
 - Otherwise it embeds chunks in batches of 64 and persists to that directory.
 - Names may contain letters, numbers, `.`, `_`, and `-`; path separators and traversal
-  names are rejected.
+names are rejected.
 - First full-corpus build is slow and uses embedding credits. Remove or rename only
-  the selected named directory if you intentionally need to rebuild it.
+the selected named directory if you intentionally need to rebuild it.
 
-**`VectorRetriever`**
+`VectorRetriever`
 
 - `getTopK` calls `similarity_search_with_score`. The returned score is a **distance** (lower is closer).
 - Metadata on each Chroma document: `source` (doc_id), `title`, `article` (filename).
@@ -254,8 +266,8 @@ For each query:
 2. Min-max normalize BM25 scores (higher stays better).
 3. Min-max normalize vector **distances** with `invert=True`.
 4. Normalize the configured weights so `7 / 3` and `0.7 / 0.3` mean the same thing.
-5. Fused score:  
-   `weight_bm25 * bm25_norm + weight_vector * vector_norm`
+5. Fused score:
+  `weight_bm25 * bm25_norm + weight_vector * vector_norm`
 6. A chunk seen on only one side contributes `0` from the missing side.
 7. Sort by fused score descending and keep `top_k`.
 
@@ -273,15 +285,17 @@ Raise `weight_bm25` when queries use exact names/years. Raise `weight_vector` wh
 
 All model I/O. Retrievers do not import this except `vector.py` → `get_embeddings()`.
 
-| Symbol | Role |
-|---|---|
-| `LLM_MODEL` | `openai/gpt-5.4-mini` (course credits) |
-| `EMBEDDING_MODEL` | `openai/text-embedding-3-small` |
-| `SYSTEM_PROMPT` | The single default prompt: answer only from Wikipedia context, quote, and do not guess |
-| `load_api_key()` / `require_api_key()` | Reads `.env` from `rag_and_context_engineering/`, `capstone/`, or cwd |
-| `make_llm()` | Chat client |
-| `get_embeddings()` | Embedding client for Chroma |
-| `answer(query, context, llm=None, system_prompt=SYSTEM_PROMPT)` | Sends a `SystemMessage` plus the retrieved context and question. Does not search. |
+
+| Symbol                                                          | Role                                                                                   |
+| --------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| `LLM_MODEL`                                                     | `openai/gpt-5.4-mini` (course credits)                                                 |
+| `EMBEDDING_MODEL`                                               | `openai/text-embedding-3-small`                                                        |
+| `SYSTEM_PROMPT`                                                 | The single default prompt: answer only from Wikipedia context, quote, and do not guess |
+| `load_api_key()` / `require_api_key()`                          | Reads `.env` from `rag_and_context_engineering/`, `capstone/`, or cwd                  |
+| `make_llm()`                                                    | Chat client                                                                            |
+| `get_embeddings()`                                              | Embedding client for Chroma                                                            |
+| `answer(query, context, llm=None, system_prompt=SYSTEM_PROMPT)` | Sends a `SystemMessage` plus the retrieved context and question. Does not search.      |
+
 
 The ChatOpenAI client itself does not store a system prompt. `answer()` explicitly
 passes `system_prompt` as a LangChain `SystemMessage` on every call. The checkpoint
@@ -317,7 +331,9 @@ When full-article context is enabled, the log keeps the two stages separate:
 
 - `RETRIEVED CHUNKS` are the seed hits that identified articles.
 - `FULL ARTICLE TEXTS SENT TO LLM` lists the standalone text files loaded for those
-  articles, plus each file's character count and the total context size.
+articles, plus each file's character count and the total context size.
+
+
 
 ### `expansion.py`
 
@@ -325,9 +341,9 @@ Implements the second context experiment without changing retrieval ranking:
 
 1. `retrieved_article_names(seed_hits)` deduplicates articles in first-hit rank order.
 2. `load_retrieved_article_texts(seed_hits, article_store)` loads each selected
-   article's complete `.txt` file once.
+  article's complete `.txt` file once.
 3. `format_full_articles_context(articles)` separates and formats those complete texts
-   for one independent LLM call.
+  for one independent LLM call.
 
 This can improve broad synthesis when retrieval found the correct article but only a
 narrow passage. It cannot recover an article that retrieval never found—for example,
@@ -338,27 +354,24 @@ construct the full-article context.
 
 ---
 
+
+
 ## How to run experiments (Checkpoint 2.1)
 
 1. Activate the course venv and install extras if needed:
-
-   ```bash
+  ```bash
    pip install python-dotenv langchain-openai langchain-core langchain-chroma rank-bm25
-   ```
-
+  ```
 2. Put `OPENROUTER_API_KEY=...` in `rag_and_context_engineering/.env`.
-
 3. In `Capstone Checkpoint 2.1/capstone_checkpoint_2_1_baseline_retrieval_starter.py`, edit `EXPERIMENTS` and `my_representative_queries()`.
-
 4. Run that script. `run_wikipedia()` will:
-
-   - load Wikipedia chunks once
-   - open or build `retrievers/db/<CHROMA_DB_NAME>` once only if a spec is
-     `vector` or `hybrid`
-   - share that loaded Chroma object among vector and hybrid experiments
-   - create one configuration-specific evidence file per retriever
-   - for each query × each spec: retrieve once, format those exact hits, call
-     `answer()`, print, and append to that retriever's evidence file
+  - load Wikipedia chunks once
+  - open or build `retrievers/db/<CHROMA_DB_NAME>` once only if a spec is
+  `vector` or `hybrid`
+  - share that loaded Chroma object among vector and hybrid experiments
+  - create one configuration-specific evidence file per retriever
+  - for each query × each spec: retrieve once, format those exact hits, call
+  `answer()`, print, and append to that retriever's evidence file
 
 Example experiment list:
 
@@ -401,11 +414,13 @@ found, identify irrelevant results, and record an article you expected but did n
 
 The copies isolate one variable at a time:
 
-| Script | Indexed units | Context sent to LLM | Chroma index |
-|---|---|---|---|
-| `capstone_checkpoint_2_1_baseline_retrieval_starter.py` | 1600-character chunks, 200 overlap | top-k retrieved chunks | `wikipedia_chars1600_overlap200` |
-| `capstone_checkpoint_2_1_chunk_by_article_headers.py` | natural HTML sections; max 10,000 characters; zero overlap | top-k retrieved sections | `wikipedia_sections_max10000_no_overlap` |
-| `capstone_checkpoint_2_1_full articles_sent.py` | same 1600-character baseline chunks for article discovery | complete standalone `.txt` file for every article represented in top-k seed hits | `wikipedia_chars1600_overlap200` (reused) |
+
+| Script                                                  | Indexed units                                              | Context sent to LLM                                                              | Chroma index                              |
+| ------------------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------------------------- | ----------------------------------------- |
+| `capstone_checkpoint_2_1_baseline_retrieval_starter.py` | 1600-character chunks, 200 overlap                         | top-k retrieved chunks                                                           | `wikipedia_chars1600_overlap200`          |
+| `capstone_checkpoint_2_1_chunk_by_article_headers.py`   | natural HTML sections; max 10,000 characters; zero overlap | top-k retrieved sections                                                         | `wikipedia_sections_max10000_no_overlap`  |
+| `capstone_checkpoint_2_1_full articles_sent.py`         | same 1600-character baseline chunks for article discovery  | complete standalone `.txt` file for every article represented in top-k seed hits | `wikipedia_chars1600_overlap200` (reused) |
+
 
 The section experiment needs its own Chroma index because the indexed text units have
 changed. The full-article experiment reuses the baseline Chroma index because article
@@ -413,6 +428,8 @@ discovery has not changed. After discovery, it loads non-overlapping complete ar
 texts from `retrievers/db/article_text/wikipedia_plain_text/`.
 
 ---
+
+
 
 ## How to use the package directly
 
@@ -467,22 +484,25 @@ HybridRetriever(bm25_retriever=bm25_component,
 
 ---
 
+
+
 ## Practical notes
 
 - **BM25-only** needs no embeddings and is the cheapest way to collect first evidence.
 - **Vector / hybrid** need an API key. The first embed writes
-  `retrievers/db/<chroma_db_name>` and later runs reuse it.
+`retrievers/db/<chroma_db_name>` and later runs reuse it.
 - Use different names for genuinely different indexes, for example
-  `wikipedia_chunk_1600` and `wikipedia_chunk_800`.
+`wikipedia_chunk_1600` and `wikipedia_chunk_800`.
 - The current loader considers any nonempty named database directory reusable. It does not yet
-  validate an index manifest.
+validate an index manifest.
 - Rebuild Chroma if the source corpus, extraction logic, embedding model,
-  `CHUNK_SIZE`, or `CHUNK_OVERLAP` changes; otherwise the persisted vectors may be
-  stale. Remove or rename only the specific directory under `retrievers/db/` when
-  intentionally rebuilding.
+`CHUNK_SIZE`, or `CHUNK_OVERLAP` changes; otherwise the persisted vectors may be
+stale. Remove or rename only the specific directory under `retrievers/db/` when
+intentionally rebuilding.
 - Hybrid weights do not need to sum to `1.0`; the constructor normalizes them.
 - `candidate_pool` should be `>= top_k`. Larger pools give fusion more documents to choose from.
 - Importing the checkpoint is safe: experiments run only under its
-  `if __name__ == "__main__"` guard.
+`if __name__ == "__main__"` guard.
 - Do not commit `.env` or API keys. Chroma directories under `retrievers/db/` can be
-  large; keep them local unless you intentionally version them.
+large; keep them local unless you intentionally version them.
+
