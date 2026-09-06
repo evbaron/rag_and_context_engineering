@@ -1,0 +1,205 @@
+question_id,category,question,reference_answer,grading_notes,source_articles,evaluation_mode,answer_model,judge_model,response,score,source_count,context_characters
+GT14,People connection: shared work and awards,How are Damien Chazelle and Emma Stone connected through La La Land and the 89th Academy Awards? State each person's role in the film and the award each won at that ceremony.,"Damien Chazelle directed La La Land and won the Academy Award for Best Director at the 89th Academy Awards. Emma Stone played Mia Dolan, the film's aspiring-actress lead, and won Best Actress. La La Land received 14 nominations and won six awards at the ceremony.","Pass if the response identifies the shared film, gives Chazelle's director/Best Director edges and Stone's actor (Mia Dolan)/Best Actress edges. The 14 nominations and six wins are useful supporting evidence but are not required.",Damien_Chazelle.html.txt; Emma_Stone.html.txt; La_La_Land.html.txt; 89th_Academy_Awards.html.txt,oracle_ground_truth_context,openai/gpt-5.4-mini,openai/gpt-5.4-mini,"Damien Chazelle and Emma Stone are connected through **La La Land**, which Chazelle **directed and wrote**, and in which Stone **starred as Mia Dolan**.
+
+At the **89th Academy Awards**:
+- **Damien Chazelle** won **Best Director** for *La La Land*.
+- **Emma Stone** won **Best Actress in a Leading Role** for *La La Land*.
+
+As the *La La Land* article says, the film won Oscars including “**Best Director**” and “**Best Actress (Stone)**,” and the 89th Academy Awards page lists:
+- “**Damien Chazelle – La La Land**” under Best Directing
+- “**Emma Stone – La La Land as Amelia ‘Mia’ Dolan**” under Best Actress in a Leading Role.",pass,4,124339
+GT02,Open-list question and quotations,"According to the Wikipedia article for the year 1580, identify three significant events recorded in its Events section. Give the date of each event and include a short quotation supporting each selection.","Any three accurately dated events from the article are acceptable. Example: 31 January—the death of Henry, King of Portugal triggered a succession crisis; 11 June—Juan de Garay founded the permanent settlement that became Buenos Aires; 26 September—Francis Drake returned to Plymouth after his circumnavigation.","Pass if exactly three article events are given, each with the correct date and a faithful supporting excerpt. Accept different event combinations when all three appear in the Events section. Example excerpts include “death of Henry, King of Portugal,” “Juan de Garay founds the first permanent Spanish settlement,” and “Francis Drake returns to Plymouth.”",1580.html.txt,oracle_ground_truth_context,openai/gpt-5.4-mini,openai/gpt-5.4-mini,"Here are three significant events from the **1580** article’s **Events** section:
+
+1. **January 31** — *Portuguese succession crisis of 1580*  
+   Quotation: “**The death of Henry, King of Portugal, with no direct heirs, leads to conflict between his potential successors**...”
+
+2. **March 25** — *Iberian Union*  
+   Quotation: “**King Philip II of Spain becomes King of Portugal under the name Philip I**...”
+
+3. **August 25** — *Battle of Alcântara*  
+   Quotation: “**Spanish armies... defeat the armies of Portuguese claimant António, Prior of Crato**.”
+
+If you want, I can also provide three different events from other parts of the 1580 timeline.",pass,1,16132
+GT05,Table lookup,"Which country won the most total medals at the 1972 Winter Olympics, and what was its medal breakdown?","The Soviet Union won the most medals: 16 total, consisting of 8 gold, 5 silver, and 3 bronze.","Pass only if the answer identifies the Soviet Union and gives 16 total medals with the 8 gold, 5 silver, and 3 bronze breakdown.",1972_Winter_Olympics.html.txt,oracle_ground_truth_context,openai/gpt-5.4-mini,openai/gpt-5.4-mini,"The **Soviet Union** won the most total medals at the 1972 Winter Olympics.
+
+Its medal breakdown was **8 gold, 5 silver, and 3 bronze**, for a **total of 16 medals**. The article’s medal table lists it as:
+
+- **Gold:** 8  
+- **Silver:** 5  
+- **Bronze:** 3  
+- **Total:** 16",pass,1,9072
+GT15,People connection: repeated collaboration,How are filmmaker Chris Columbus and actor Daniel Radcliffe connected through the first two Harry Potter films? Name both films and give each person's role.,Chris Columbus directed Harry Potter and the Philosopher's Stone (released in the United States as Harry Potter and the Sorcerer's Stone) in 2001 and Harry Potter and the Chamber of Secrets in 2002. Daniel Radcliffe starred as Harry Potter in both films.,Pass if both films are named and the response states that Columbus directed them and Radcliffe portrayed Harry Potter in them. Accept either Philosopher's Stone or Sorcerer's Stone for the first film.,Chris_Columbus_(filmmaker).html.txt; Daniel_Radcliffe.html.txt,oracle_ground_truth_context,openai/gpt-5.4-mini,openai/gpt-5.4-mini,"Chris Columbus and Daniel Radcliffe are connected through the first two **Harry Potter** films:
+
+- **Harry Potter and the Philosopher's Stone (2001)** — **Chris Columbus** was the **director**, and **Daniel Radcliffe** played **Harry Potter**.
+- **Harry Potter and the Chamber of Secrets (2002)** — **Chris Columbus** was again the **director**, and **Daniel Radcliffe** again played **Harry Potter**.
+
+As the Daniel Radcliffe article says, he is “best known for portraying the title character in all eight films of the Harry Potter film series,” and the Chris Columbus article says he directed both of those first two films.",pass,2,57153
+GT06,Process explanation,"According to the Wikipedia article on the Academy Award for Best Actor, how are nominees determined and how is the winner selected?",Nominees are determined by single transferable vote within the actors branch of the Academy of Motion Picture Arts and Sciences. The winner is selected by plurality vote among all eligible Academy voting members.,"Pass if both stages are correct: nomination by single transferable vote within the actors branch, and winner selection by plurality vote of the Academy's eligible voting membership.",Academy_Award_for_Best_Actor.html.txt,oracle_ground_truth_context,openai/gpt-5.4-mini,openai/gpt-5.4-mini,"According to the article, **“Nominees are currently determined by single transferable vote within the actors branch of AMPAS; winners are selected by a plurality vote from the entire eligible voting members of the Academy.”**",pass,1,40299
+GT16,People connection: intermediary person,"Which person connects Bill Clinton and Barack Obama, and what documented relationship links that person to each man? Include the 2008 election connection and the later administration role.",Hillary Rodham Clinton is the intermediary. She is Bill Clinton's wife. She competed against Barack Obama for the 2008 Democratic presidential nomination and later served as Secretary of State in the Obama administration.,"Pass if Hillary Clinton is identified and all three edges are correct: spouse of Bill Clinton, Obama's 2008 Democratic primary opponent, and Secretary of State during Obama's presidency. Do not imply a family relationship between Bill Clinton and Obama.",Bill_Clinton.html.txt; Barack_Obama.html.txt,oracle_ground_truth_context,openai/gpt-5.4-mini,openai/gpt-5.4-mini,"The connecting person is **Hillary Rodham Clinton**.
+
+- **To Bill Clinton:** she is his **wife** — the Bill Clinton article says he is married to “**Hillary Rodham**” and that they married in 1975.
+- **To Barack Obama:** she was his **primary opponent in the 2008 presidential election**. The Barack Obama article says that in the 2008 primaries, “the race remaining close,” Obama was in a contest against **Senator Hillary Clinton**, and she later **endorsed Obama** after ending her campaign.
+- **Later administration role:** after Obama won, she served in his administration as **Secretary of State**. The Obama article says “Vice President Joe Biden and Secretary of State Hillary Clinton” made overseas trips in early 2009.
+
+So the documented links are: **Bill Clinton’s wife** and **Barack Obama’s 2008 Democratic rival who later became his Secretary of State.**",pass,2,206821
+GT01,Direct fact and quotation,"According to the Wikipedia article on the 100 metres, what is the current men's world record, who holds it, and when and where was it set? Include a short quotation from the article.","The current men's world record is 9.58 seconds, held by Usain Bolt of Jamaica. It was set at the 2009 World Athletics Championships final in Berlin, Germany, on 16 August 2009.","Pass only if the answer states all five required elements: 9.58 seconds; Usain Bolt; Jamaica; Berlin, Germany; 16 August 2009. It must also include a faithful short quotation from the article.",100_metres.html.txt,oracle_ground_truth_context,openai/gpt-5.4-mini,openai/gpt-5.4-mini,"According to the article, the current men’s world record is **9.58 seconds**, held by **Usain Bolt of Jamaica**. It was set on **16 August 2009** in **Berlin, Germany**.
+
+Short quotation: **“The current men's world record of 9.58 s is held by Usain Bolt of Jamaica, set at the 2009 World Athletics Championships final in Berlin, Germany on 16 August 2009.”**",pass,1,30607
+GT07,Temporal aggregation,"For films dated from 2000 through 2020 inclusive in the Wikipedia Best Actor winners list, which actor or actors won the Academy Award for Best Actor most often?",Sean Penn and Daniel Day-Lewis tied with two wins each. Penn won for Mystic River and Milk. Day-Lewis won for There Will Be Blood and Lincoln.,Pass if both Sean Penn and Daniel Day-Lewis are named and each is credited with two wins. Film titles are supporting evidence but are not required for a pass.,Academy_Award_for_Best_Actor.html.txt,oracle_ground_truth_context,openai/gpt-5.4-mini,openai/gpt-5.4-mini,"For the Best Actor winners listed from **2000 through 2020 inclusive**, the actor who won **most often** was **Daniel Day-Lewis**, with **one win in that range**.
+
+From the table in the article, the winners in that span are:
+
+- 2000: Russell Crowe  
+- 2001: Denzel Washington  
+- 2002: Adrien Brody  
+- 2003: Sean Penn  
+- 2004: Jamie Foxx  
+- 2005: Philip Seymour Hoffman  
+- 2006: Forest Whitaker  
+- 2007: Daniel Day-Lewis  
+- 2008: Sean Penn  
+- 2009: Jeff Bridges  
+- 2010: Colin Firth  
+- 2011: Jean Dujardin  
+- 2012: Daniel Day-Lewis  
+- 2013: Matthew McConaughey  
+- 2014: Eddie Redmayne  
+- 2015: Leonardo DiCaprio  
+- 2016: Casey Affleck  
+- 2017: Gary Oldman  
+- 2018: Rami Malek  
+- 2019: Joaquin Phoenix  
+- 2020: Anthony Hopkins
+
+However, within **2000–2020 inclusive**, **no actor won more than once except Daniel Day-Lewis and Sean Penn and Anthony Hopkins?**  
+Actually, the repeated winners in that period are:
+
+- **Daniel Day-Lewis** — 2007, 2012 = **2 wins**
+- **Sean Penn** — 2003, 2008 = **2 wins**
+
+So the actors who won most often in that period were **Daniel Day-Lewis and Sean Penn**, tied at **2 wins each**.",pass,1,40299
+GT17,Geopolitical state-formation timeline,"Using the India and Pakistan articles, construct a two-step post-colonial state-formation timeline: which two dominions resulted from the 1947 partition of British India, and which new country emerged from East Pakistan in 1971?","In 1947, British India was partitioned into the independent dominions of India and Pakistan. Pakistan initially had geographically separate eastern and western provinces. In 1971, East Pakistan seceded and became the independent country of Bangladesh.","Pass if the response names India and Pakistan for 1947, identifies East Pakistan as the predecessor territory, and names Bangladesh with the year 1971. Extra causal detail is optional and must not contradict the articles.",India.html.txt; Pakistan.html.txt,oracle_ground_truth_context,openai/gpt-5.4-mini,openai/gpt-5.4-mini,"The 1947 partition of British India created two independent dominions: **India** and **Pakistan**. The Pakistan article says the partition “**awarded separate statehood to its Muslim-majority regions**,” and the India article says “**the British Indian Empire was partitioned into two independent dominions, a Hindu-majority dominion of India and a Muslim-majority dominion of Pakistan**.”
+
+Then, in **1971**, **Bangladesh** emerged from **East Pakistan**. The Pakistan article states that “**East Pakistan seceded as the new country of Bangladesh in 1971**.”",pass,2,180406
+GT08,Uncertainty and conflicting estimates,"In the deadliest-earthquakes table, which earthquakes from 1976 onward have at least one reported fatality estimate above 100,000? Report the article's fatality figure or range and preserve any stated uncertainty.","The qualifying events are the 1976 Tangshan earthquake, the 2004 Indian Ocean earthquake and tsunami, and the 2010 Haiti earthquake. The article lists Tangshan as 300,000+ in the table while noting official and scholarly alternatives; the Indian Ocean event as 227,898; and Haiti as 46,000–316,000 with multiple attributed estimates.","Pass if all three events are identified, no nonqualifying event is added, and uncertainty is preserved for Tangshan and Haiti. Do not accept a single unqualified death figure for Haiti.",Lists_of_earthquakes.html.txt,oracle_ground_truth_context,openai/gpt-5.4-mini,openai/gpt-5.4-mini,"From the **deadliest earthquakes** table, the earthquakes **from 1976 onward** with at least one reported fatality estimate **above 100,000** are:
+
+- **1976 Tangshan earthquake** — **300,000+** deaths  
+  - Notes: “Internal Tangshan reports found 263,299 local deaths. Official nationwide deaths stated to be 242,769. Scholars estimated >300,000.”
+
+- **2004 Indian Ocean earthquake and tsunami** — **227,898** deaths  
+  - Notes: “Death toll includes those missing and presumed dead.”
+
+- **2010 Haiti earthquake** — **46,000–316,000** deaths  
+  - This range includes estimates above 100,000.
+
+If you want, I can also list the same earthquakes with their dates and locations from the table.",pass,1,44677
+GT18,Geopolitical entity relationships,"Explain the relationship among Vatican City, Rome, Italy, and the Holy See. How and when did Vatican City become an independent state?","Vatican City is a landlocked sovereign city-state and an enclave within the city of Rome, Italy. It is governed by the Holy See, which is itself a sovereign entity under international law, and is ruled by the pope. The Lateran Treaty between the Holy See and the Kingdom of Italy was signed on February 11, 1929; after ratification it took effect on June 7, 1929 and established the independent Vatican City State.","Pass if the answer states enclave within Rome, Italy; distinguishes Vatican City from the Holy See while explaining that the Holy See governs it; and attributes independence to the 1929 Lateran Treaty. Accept either the signing date or effective date if clearly labeled; full credit includes both.",Vatican_City.html.txt,oracle_ground_truth_context,openai/gpt-5.4-mini,openai/gpt-5.4-mini,"Vatican City is a **landlocked sovereign city-state inside Rome, Italy**. The article says it is “**an enclave within the city of Rome, Italy**” and that it is “**governed by the See of Rome, commonly known as the Holy See**,” which is “**a sovereign entity under international law**.”
+
+So the relationship is:
+
+- **Vatican City** = the tiny territorial state
+- **Rome / Italy** = the surrounding city and country; Vatican City sits inside Rome
+- **Holy See** = the governing sovereign entity of the Catholic Church, distinct from the territory of Vatican City, but it rules Vatican City
+
+The article also says: “**The Holy See is distinct from Vatican City State**,” and “**the pope is the sovereign of the state**.”
+
+### How and when it became independent
+Vatican City became an independent state **on 11 February 1929** through the **Lateran Treaty** between the Holy See and the Kingdom of Italy. The treaty “**established the independent state of Vatican City**,” and the article notes that it took effect on **7 June 1929**.
+
+In short: Vatican City became independent when the Lateran Treaty resolved the long-running “Roman Question” and created the modern city-state.",pass,1,57085
+GT09,Cross-table comparison,"Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",The matched data show essentially no useful relationship between population size and life expectancy. Very large and very small countries occur across a wide range of life expectancies. The comparison is imperfect because population is from 2023 while life expectancy is from 2010–2015.,"Pass if the answer concludes that population size alone has little or no meaningful correlation with life expectancy, identifies both time periods, and does not claim causation. Exact coefficients are not required unless the join rules are reproduced.",List_of_countries_by_population_(United_Nations).html.txt; List_of_countries_by_past_life_expectancy.html.txt,oracle_ground_truth_context,openai/gpt-5.4-mini,openai/gpt-5.4-mini,"Based on the two articles, there does **not** appear to be a meaningful relationship between population size and life expectancy.
+
+- The population article gives **2023 mid-year population estimates**.
+- The life-expectancy article gives **2010–2015 life expectancy values**.
+
+A quick comparison suggests no clear pattern:
+- Very large countries have mixed life expectancy values: **India** has about **67.57** years, **China** about **75.67**, and the **United States** about **78.88**.
+- Smaller countries also vary widely: **Iceland** has about **82.19** years, while **Nigeria** has about **51.88** years and **Afghanistan** about **62.25** years.
+
+So, from these articles alone, population size does **not** look meaningfully correlated with life expectancy; countries of both large and small populations can have high or low life expectancy.
+
+One important caveat: the data are **not from the same date range**. The population figures are for **2023**, while the life-expectancy figures are for **2010–2015**, so any comparison is only approximate and not strictly contemporaneous.",pass,2,44063
+GT19,Geopolitical cross-table calculation,"Using the 2023 UN population estimates and the 2010–2015 life-expectancy values in the supplied tables, compare India and mainland China. Which had the larger population and by how many people? Which had the higher life expectancy and by how many years? Based only on the supplied evidence, what, if anything, can this comparison tell us about whether population size affects life expectancy? Explain any limitations that affect your conclusion.","India's 2023 population estimate was 1,438,069,596 and mainland China's was 1,422,584,933, so India was larger by 15,484,663 people. China's 2010–2015 life expectancy was 75.67 years and India's was 67.57 years, so China was higher by 8.10 years. The measurements refer to different time periods, so the comparison is descriptive and does not establish that population size causes life expectancy.","Pass if the population and life-expectancy calculations and directions are correct. The response must recognize that the supplied evidence is insufficient to determine whether population size causes differences in life expectancy and identify relevant limitations, including the 2023 versus 2010–2015 time-period mismatch. Accept additional valid limitations, such as comparing only two countries or the absence of controls for other factors. Fail if the response claims or implies a causal relationship unsupported by the supplied tables.",List_of_countries_by_population_(United_Nations).html.txt; List_of_countries_by_past_life_expectancy.html.txt,oracle_ground_truth_context,openai/gpt-5.4-mini,openai/gpt-5.4-mini,"From the supplied tables:
+
+- **Population (1 July 2023)**  
+  - **India:** 1,438,069,596  
+  - **China (mainland China only):** 1,422,584,933  
+  - **India had the larger population** by **15,484,663 people**.
+
+- **Life expectancy (2010–2015, both genders)**  
+  - **India:** 67.57 years  
+  - **China:** 75.67 years  
+  - **China had the higher life expectancy** by **8.10 years**.
+
+### What does this tell us about whether population size affects life expectancy?
+Based only on these two countries, **it does not show that a larger population necessarily means higher or lower life expectancy**. In this comparison, **India has the larger population but China has the higher life expectancy**, so the relationship is not straightforward.
+
+### Limitations
+- This is **only a comparison of two countries**, so it cannot establish a general pattern or cause-and-effect relationship.
+- The two values come from **different sources and different time frames**:
+  - population is from **2023 UN estimates**
+  - life expectancy is from **2010–2015**
+- The China population figure is for **mainland China only**, as the note says the UN source does not include **Hong Kong, Macau, and Taiwan**.
+- Many other factors besides population size can affect life expectancy, and those are not evaluated here.
+
+So, **the evidence is insufficient to conclude that population size affects life expectancy**.",pass,2,44063
+GT10,Program-history filter,"Using the Sport/Years table in the Wikipedia article on the Winter Olympic Games, which listed sports first entered the official Winter Olympic program in 1950 or later? Give the first year for each.",Biathlon—1960; luge—1964; freestyle skiing—1992; short-track speed skating—1992; snowboarding—1998; ski mountaineering—2026.,"Pass if all six sport-year pairs are present and no earlier sport or returning sport is added. Curling, skeleton, and bobsleigh must not be counted because their later dates are returns, not first appearances.",Winter_Olympic_Games.html.txt,oracle_ground_truth_context,openai/gpt-5.4-mini,openai/gpt-5.4-mini,"From the **Sport / Years** table, the listed sports that first entered the official Winter Olympic program in **1950 or later** are:
+
+- **Biathlon** — **1960**
+- **Luge** — **1964**
+- **Short track speed skating** — **1992**
+- **Freestyle skiing** — **1992**
+- **Snowboarding** — **1998**
+- **Skeleton** — **2002**  
+- **Ski mountaineering** — **2026** *(listed as an optional sport at the 2026 Winter Olympics)*
+
+The table also shows **Bobsleigh** as “1924–1956, since 1964,” so it was not first added in 1950 or later.",fail,1,63877
+GT03,Cross-article intersection,"Was any person nominated at all three of the 68th, 70th, and 74th Academy Awards? Identify one person and the nominated work or works at each ceremony.","Yes. John Williams was nominated for Nixon and Sabrina at the 68th Academy Awards, Amistad at the 70th, and A.I. Artificial Intelligence and Harry Potter and the Sorcerer's Stone at the 74th.","Pass if the answer says yes, identifies John Williams, and correctly associates at least one nomination with each of the three ceremonies. Do not require both nominations at ceremonies where he had two.",68th_Academy_Awards.html.txt; 70th_Academy_Awards.html.txt; 74th_Academy_Awards.html.txt,oracle_ground_truth_context,openai/gpt-5.4-mini,openai/gpt-5.4-mini,"Yes. One person nominated at all three ceremonies was **Mira Sorvino**.
+
+- **68th Academy Awards (1996):** nominated for **Best Actress in a Supporting Role** for **_Mighty Aphrodite_**.
+- **70th Academy Awards (1998):** nominated for **Best Actress in a Supporting Role** for **_Mighty Aphrodite_**? No — the provided 70th Awards article does **not** list Sorvino as a nominee.
+- **74th Academy Awards (2002):** the provided 74th Awards article does **not** list Sorvino as a nominee.
+
+So, based on the provided articles, I **cannot identify any person who was nominated at all three of the 68th, 70th, and 74th Academy Awards**.",fail,3,72131
+GT11,Program-history filter,"Using the Sport/Years table in the Wikipedia article on the Summer Olympic Games, which listed sports first entered the official Summer Olympic program in 1950 or later? Give the first year for each.",Judo—1964; volleyball—1964; artistic swimming—1984; table tennis—1988; badminton—1992; baseball—1992; softball—1996; taekwondo—2000; triathlon—2000; rugby sevens—2016; 3x3 basketball—2020; karate—2020; skateboarding—2020; sport climbing—2020; surfing—2020; breaking—2024.,"Pass if all 16 table entries are paired with the correct first year. Do not add returning sports such as golf, tennis, or archery. Accept capitalization and hyphenation variants such as 3×3 basketball and short names that are unambiguous.",Summer_Olympic_Games.html.txt,oracle_ground_truth_context,openai/gpt-5.4-mini,openai/gpt-5.4-mini,"From the Sport/Years table, the listed sports that first entered the Summer Olympic program in **1950 or later** are:
+
+- **Badminton** — **1992**
+- **Artistic swimming** — **1984**
+- **Basketball** — **1936** not included, since it is before 1950
+- **Golf** — **2016**
+- **Rugby sevens** — **2016**
+- **Skateboarding** — **2020**
+- **Sport climbing** — **2020**
+- **Surfing** — **2020**
+- **Table tennis** — **1988**
+- **Taekwondo** — **2000**
+- **Triathlon** — **2000**
+- **3x3 Basketball** — **2020**
+- **Breaking** — **2024**
+- **Cricket** — **2028**
+- **Flag football** — **2028**
+- **Lacrosse** — **2028**
+- **Softball** — **1996**
+- **Squash** — **2028**
+
+If you want, I can also format this as a clean two-column table with only the sports and first year.",fail,1,44473
+GT04,Direct fact,Where were the 1972 Winter Olympics held?,"Sapporo, Hokkaido Prefecture, Japan.","Pass if Sapporo, Japan is stated. Hokkaido Prefecture is desirable but not required.",1972_Winter_Olympics.html.txt,oracle_ground_truth_context,openai/gpt-5.4-mini,openai/gpt-5.4-mini,"The 1972 Winter Olympics were held in **Sapporo, Hokkaido Prefecture, Japan**. The article says they were “held from February 3 to 13, 1972, in **Sapporo, Hokkaido Prefecture, Japan**.”",pass,1,9072
+GT12,Historical entity resolution,"From 1900 through 2024, which Summer or Winter Olympic Games were hosted by a Russia-related state? For this question, include the Russian Empire, Soviet Union (USSR), and Russian Federation (Russia).","Two Games qualify: the 1980 Summer Olympics in Moscow, hosted by the Soviet Union, and the 2014 Winter Olympics in Sochi, hosted by Russia.",Pass if both Moscow 1980 Summer and Sochi 2014 Winter are identified with the correct host-state names. Do not count Games merely attended by a Russia-related delegation.,List_of_Olympic_Games_host_cities.html.txt; Summer_Olympic_Games.html.txt; Winter_Olympic_Games.html.txt,oracle_ground_truth_context,openai/gpt-5.4-mini,openai/gpt-5.4-mini,"From the provided articles, the Olympics hosted by a Russia-related state from 1900 through 2024 were:
+
+- **1980 Summer Olympics — Moscow, Soviet Union**
+- **2014 Winter Olympics — Sochi, Russia**
+
+The articles also note that the **Soviet Union** is listed as the host country for Moscow in 1980, and **Russia** for Sochi in 2014.
+
+I do not see any Summer or Winter Games hosted by the **Russian Empire** in the provided articles.",pass,3,122375
+GT13,Historical identity timeline,"According to the timeline and related appearances in the Wikipedia article on the Unified Team at the Olympics, which Russia-related Olympic identities appear from 1900 through 2024, and what years are associated with each?",Russian Empire—1900–1912; Soviet Union—1952–1988; Unified Team (EUN)—1992; Russia—1994–2016; Olympic Athletes from Russia (OAR)—2018; Russian Olympic Committee (ROC)—2020–2022; Individual Neutral Athletes (AIN)—2024.,"Pass if all seven labels are presented in chronological order with the correct years or ranges. Accept USSR for Soviet Union and the standard acronyms EUN, OAR, ROC, and AIN when the full identity is clear.",Unified_Team_at_the_Olympics.html.txt,oracle_ground_truth_context,openai/gpt-5.4-mini,openai/gpt-5.4-mini,"According to the article’s timeline and “other related appearances,” the Russia-related Olympic identities shown from 1900 through 2024 are:
+
+- **Russian Empire** — **1900–1912**
+- **Soviet Union** — **1952–1988**
+- **Unified Team** — **1992**
+- **Russia** — **1994–2016**
+- **Olympic Athletes from Russia** — **2018**
+- **Russian Olympic Committee** — **2020–2022**
+- **Individual Neutral Athletes** — **2024–2026**
+
+The timeline section also lists **Russia** beginning in **1994** alongside the other successor states.",pass,1,6830

@@ -61,6 +61,7 @@ import re
 import sys
 from datetime import datetime
 from pathlib import Path
+from collections import Counter
 
 import pandas as pd
 from dotenv import load_dotenv
@@ -236,20 +237,23 @@ def my_eval_set() -> list[dict]:
     return df.to_dict(orient="records")
 
 
-
 correctness_metric = DiscreteMetric(
     name="answer_correctness",
     prompt=(
-        "Evaluate the response against the grading notes. "
-        "Return 'pass' only if the response satisfies all required facts "
-        "and instructions in the grading notes. "
-        "Return 'fail' if any required element is false, missing, or unsupported.\n\n"
+        "Evaluate the response using the question-specific grading notes. "
+        "The grading notes are authoritative and define PASS, PARTIAL, and FAIL.\n\n"
+        "Return exactly one label:\n"
+        "- 'pass' when all PASS requirements are satisfied.\n"
+        "- 'partial' when the answer is correct and supported but incomplete, "
+        "as defined by the PARTIAL requirements, with no material false claims.\n"
+        "- 'fail' when the answer contains a material error, unsupported claim, "
+        "invalid addition, or contradiction described by the FAIL requirements.\n\n"
+        "If both incompleteness and a material error are present, return 'fail'.\n\n"
         "Response: {response}\n\n"
         "Grading notes: {grading_notes}"
     ),
-    allowed_values=["pass", "fail"],
+    allowed_values=["pass", "partial", "fail"],
 )
-
 # ---------  VALIDATION OF THE FRAMEWORK ---------
 
 # def validate_framework() -> None:
@@ -406,23 +410,28 @@ async def main() -> None:
 
     results = await oracle_experiment.arun(dataset)
 
-    passes = sum(
-        1 for row in results
-        if row["score"] == "pass"
+    results = await oracle_experiment.arun(dataset)
+
+    score_counts = Counter(
+        row["score"]
+        for row in results
     )
 
     print(
-        f"\nExperiment complete: "
-        f"{passes}/{len(results)} passed."
+        "\nExperiment complete: "
+        f"Pass: {score_counts['pass']} | "
+        f"Partial: {score_counts['partial']} | "
+        f"Fail: {score_counts['fail']} | "
+        f"Total: {len(results)}"
     )
 
     for row in results:
         print("=" * 72)
+
+    for row in results:
+        print("=" * 72)
         print(f"ID: {row['question_id']}")
-        print(f"Question: {row['question']}")
-        print(f"Sources: {row['source_articles']}")
         print(f"Verdict: {row['score'].upper()}")
-        print(f"\nAnswer:\n{row['response']}")
 
     results.save()
 
