@@ -409,9 +409,6 @@ async def main() -> None:
     )
 
     results = await oracle_experiment.arun(dataset)
-
-    results = await oracle_experiment.arun(dataset)
-
     score_counts = Counter(
         row["score"]
         for row in results
@@ -424,14 +421,6 @@ async def main() -> None:
         f"Fail: {score_counts['fail']} | "
         f"Total: {len(results)}"
     )
-
-    for row in results:
-        print("=" * 72)
-
-    for row in results:
-        print("=" * 72)
-        print(f"ID: {row['question_id']}")
-        print(f"Verdict: {row['score'].upper()}")
 
     results.save()
 

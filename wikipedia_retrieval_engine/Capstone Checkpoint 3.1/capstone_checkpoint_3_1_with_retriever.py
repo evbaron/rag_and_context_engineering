@@ -106,7 +106,20 @@ OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 LLM_MODEL = "openai/gpt-5.4-mini"  # latest small OpenAI model, fast; covered by course credits
 JUDGE_MODEL = "openai/gpt-5.4-mini"  # judge model; try a different one in Step 2
 TEMPERATURE = 0.2
-TOP_K = 3
+RETRIEVAL_TOP_K = 7
+HYBRID_CANDIDATE_POOL = max(10, RETRIEVAL_TOP_K)
+
+CHROMA_DB_NAME = "wikipedia_chars1600_overlap200"
+ARTICLE_TEXT_STORE_NAME = "wikipedia_plain_text"
+
+BASELINE_RETRIEVER_SPEC = RetrieverSpec(
+    kind="hybrid",
+    label="hybrid_vector_heavy_k7",
+    top_k=RETRIEVAL_TOP_K,
+    candidate_pool=HYBRID_CANDIDATE_POOL,
+    weight_bm25=0.35,
+    weight_vector=0.65,
+)
 
 ARTICLE_TEXT_DIR = (
     _ENGINE
@@ -335,7 +348,7 @@ def build_ragas_dataset(
         selected_rows = rows[:limit]
 
     dataset = Dataset(
-        name="wikipedia_oracle_inputs",
+        name="wikipedia_retrieval_inputs",
         backend="local/csv",
         root_dir=str(RAGAS_OUTPUT_DIR),
     )
@@ -354,21 +367,57 @@ def build_ragas_dataset(
     dataset.save()
     return dataset
 
-def build_oracle_experiment(
+def build_retrieval_experiment(
+    retriever,
+    article_text_store,
     answer_llm: ChatOpenAI,
     ragas_judge,
 ):
     @experiment()
-    async def run_oracle_case(row: dict) -> dict:
-        context = load_ground_truth_context(
-            row["source_articles"]
+    async def run_retrieval_case(row: dict) -> dict:
+        # The question—not the ground-truth filenames—selects the evidence.
+        hits = retriever.getTopK(row["question"])
+        retrieved_article_texts = load_retrieved_article_texts(
+            hits,
+            article_text_store,
+        )
+        context = format_full_articles_context(retrieved_article_texts)
+
+        required_articles = [
+            article.removesuffix(".txt")
+            for article in parse_source_articles(row["source_articles"])
+        ]
+        retrieved_articles = [
+            article.source
+            for article in retrieved_article_texts
+        ]
+        retrieved_article_set = set(retrieved_articles)
+        matched_articles = [
+            article
+            for article in required_articles
+            if article in retrieved_article_set
+        ]
+        missing_articles = [
+            article
+            for article in required_articles
+            if article not in retrieved_article_set
+        ]
+        article_recall = (
+            len(matched_articles) / len(required_articles)
+            if required_articles
+            else 1.0
         )
 
-        response = answer_from_context(
-            query=row["question"],
-            context=context,
-            llm=answer_llm,
-        )
+        if context.strip():
+            response = answer_from_context(
+                query=row["question"],
+                context=context,
+                llm=answer_llm,
+            )
+        else:
+            response = (
+                "I cannot answer because no Wikipedia articles were retrieved."
+            )
 
         score = correctness_metric.score(
             llm=ragas_judge,
@@ -378,39 +427,67 @@ def build_oracle_experiment(
 
         return {
             **row,
-            "evaluation_mode": "oracle_ground_truth_context",
+            "evaluation_mode": "retrieved_full_article_context",
             "answer_model": LLM_MODEL,
             "judge_model": JUDGE_MODEL,
+            "retriever_kind": BASELINE_RETRIEVER_SPEC.kind,
+            "retriever_label": BASELINE_RETRIEVER_SPEC.label,
+            "retrieval_top_k": BASELINE_RETRIEVER_SPEC.top_k,
+            "hybrid_candidate_pool": BASELINE_RETRIEVER_SPEC.candidate_pool,
+            "weight_bm25": BASELINE_RETRIEVER_SPEC.weight_bm25,
+            "weight_vector": BASELINE_RETRIEVER_SPEC.weight_vector,
+            "required_articles": "; ".join(required_articles),
+            "retrieved_articles": "; ".join(retrieved_articles),
+            "matched_articles": "; ".join(matched_articles),
+            "missing_articles": "; ".join(missing_articles),
+            "article_recall": article_recall,
+            "retrieved_chunk_ids": "; ".join(hit[0] for hit in hits),
+            "retrieved_chunk_count": len(hits),
+            "retrieved_article_count": len(retrieved_articles),
             "response": response,
             "score": score.value,
-            "source_count": len(
-                parse_source_articles(row["source_articles"])
-            ),
+            "source_count": len(required_articles),
             "context_characters": len(context),
         }
 
-    return run_oracle_case
+    return run_retrieval_case
 
 
 async def main() -> None:
     dataset = build_ragas_dataset(limit=None)
 
+    print("Loading Wikipedia retrieval resources...")
+    chunks = load_wikipedia_chunks()
+    article_text_store = build_or_load_article_text_store(
+        text_store_name=ARTICLE_TEXT_STORE_NAME,
+    )
+    db = build_or_load_db(
+        chroma_db_name=CHROMA_DB_NAME,
+        chunks=chunks,
+    )
+    retriever = make_retriever(
+        BASELINE_RETRIEVER_SPEC,
+        chunks=chunks,
+        db=db,
+        chroma_db_name=CHROMA_DB_NAME,
+    )
+
     answer_llm = make_llm()
     ragas_judge = make_judge()
 
-    oracle_experiment = build_oracle_experiment(
+    retrieval_experiment = build_retrieval_experiment(
+        retriever=retriever,
+        article_text_store=article_text_store,
         answer_llm=answer_llm,
         ragas_judge=ragas_judge,
     )
 
     print(
-        f"Running oracle evaluation on "
-        f"{len(dataset)} questions..."
+        f"Running retrieval evaluation on {len(dataset)} questions "
+        f"with {retriever.settings()}..."
     )
 
-    results = await oracle_experiment.arun(dataset)
-
-    results = await oracle_experiment.arun(dataset)
+    results = await retrieval_experiment.arun(dataset)
 
     score_counts = Counter(
         row["score"]
@@ -427,10 +504,11 @@ async def main() -> None:
 
     for row in results:
         print("=" * 72)
-
-    for row in results:
-        print("=" * 72)
         print(f"ID: {row['question_id']}")
+        print(f"Required articles: {row['required_articles']}")
+        print(f"Retrieved articles: {row['retrieved_articles']}")
+        print(f"Missing articles: {row['missing_articles'] or '(none)'}")
+        print(f"Article recall: {row['article_recall']:.2f}")
         print(f"Verdict: {row['score'].upper()}")
 
     results.save()
