@@ -1,21 +1,20 @@
-# Ground Truth Evolution and Audit
+# Ground Truth Evolution from Checkpoint 2.1 to Checkpoint 3.1
 
 ## Current ground-truth artifact
 
-Ground truth location: `GT/wikipedia_GT.xlsx`
+Ground truth location: `GT/wikipedia_GT.csv`
 
-The workbook is based on the ground-truth questions from Capstone Checkpoint 2.1. The questions and reference answers were revised so that they are precise, gradeable, and supported by articles in the local Wikipedia corpus. Additional questions broaden the evaluation from direct fact and quotation retrieval to multi-article synthesis, entity resolution, calculation, uncertainty handling, and inference.
+The CSV is based on the ground-truth questions from Capstone Checkpoint 2.1. The questions and reference answers were revised so that they are precise, gradeable, and supported by articles in the local Wikipedia corpus. Additional questions broaden the evaluation from direct fact and quotation retrieval to multi-article synthesis, entity resolution, calculation, uncertainty handling, and inference.
 
-The cleanup was completed with assistance from ChatGPT GPT-5.6 Sol using high reasoning effort. The workbook structure, source-file coverage, reference answers, grading notes, and scope assumptions were reviewed against the local corpus.
+The cleanup was completed with assistance from ChatGPT. I reviewed the CSV structure, source-file coverage, reference answers, grading notes, and scope assumptions against the local corpus and made the final decisions about the evaluation set.
 
-## Workbook contents
+## CSV contents
 
-The Excel workbook contains two worksheets:
+The CSV contains 19 evaluation cases with consecutive IDs from GT01 through GT19. It
+is intentionally stored as a CSV so both the evaluation scripts and pandas can load a
+single canonical artifact without requiring Excel.
 
-- **Ground Truth:** 19 evaluation cases with consecutive IDs from GT01 through GT19.
-- **Definitions:** seven definitions that fix important scope and grading rules, including Russia-related identities, official Olympic program debuts, time bounds, quotation fidelity, open-list grading, and correlation grading.
-
-The Ground Truth worksheet uses nine fields for every test case:
+The dataset uses nine fields for every test case:
 
 1. **ID:** stable identifier used to join questions to evaluation results.
 2. **Category:** type of retrieval or reasoning task.
@@ -26,6 +25,11 @@ The Ground Truth worksheet uses nine fields for every test case:
 7. **Scope and assumptions:** boundaries needed to prevent ambiguous grading.
 8. **Evaluation role:** capability or failure mode tested by the question.
 9. **Complexity:** approximate number of sources and reasoning steps required.
+
+Definitions that were previously considered for a separate worksheet are now captured
+directly in the `Grading notes` and `Scope and assumptions` fields. These include
+Russia-related identities, official Olympic program debuts, time bounds, quotation
+fidelity, open-list grading, and limits on correlation or causal inference.
 
 ## Evaluation coverage
 
@@ -50,16 +54,20 @@ The current set includes:
 
 ## Verification status
 
-- The workbook contains 19 questions and nine populated evaluation fields for each question.
+- The CSV contains 19 questions and nine populated evaluation fields for each question.
 - IDs are unique and consecutive from GT01 through GT19.
-- The workbook contains no blank evaluation cells.
-- All 31 article references listed in the workbook resolve to files in `retrievers/db/article_text/wikipedia_plain_text`.
+- The CSV contains no blank evaluation cells.
+- All 31 article references listed in the CSV resolve to files in `retrievers/db/article_text/wikipedia_plain_text`.
 - The reference answers and grading notes define required facts, acceptable alternatives, exclusions, and uncertainty where needed.
 - The local corpus is the evidence boundary for evaluation; outside model knowledge should not be required for a passing response.
 
 ## Audit of previous GT
 
-Source workbook: `Capstone Checkpoint 2.1/wikipedia Q-A GT.xlsx`
+Historical source workbook: `Capstone Checkpoint 2.1/wikipedia Q-A GT.xlsx`
+
+The historical workbook now remains inside the Checkpoint 2.1 folder. It is preserved
+only as evidence for that checkpoint and should not be used as the current evaluation
+input.
 
 Corpus reviewed: `retrievers/db/article_text/wikipedia_plain_text`
 
@@ -70,7 +78,7 @@ Corpus reviewed: `retrievers/db/article_text/wikipedia_plain_text`
 - Replace because the current question is ambiguous or not fully supported: 5 questions
 - Remove as a duplicate: 1 question
 
-The audit found that workbook cleanup was needed: add column headers, assign unique question IDs, remove the duplicated Best Actor question, and move the continuation of Q13's answer into the same row as Q13. These changes have now been incorporated into `GT/wikipedia_GT.xlsx`.
+The audit found that workbook cleanup was needed: add column headers, assign unique question IDs, remove the duplicated Best Actor question, and move the continuation of Q13's answer into the same row as Q13. These changes have now been incorporated into `GT/wikipedia_GT.csv`.
 
 ## Question-by-question findings
 
@@ -214,8 +222,17 @@ The question is ambiguous across the Russian Empire, Soviet Union, Russian Feder
    Source: `Lists_of_earthquakes.html.txt`  
    The grading notes should require the answer to preserve the range and source attribution rather than present one certain number.
 
-## Current next step
+## Checkpoint 3.1 use
 
-Use the 19 fixed ground-truth cases to evaluate the baseline retrieval-augmented system before changing retrieval or prompting. For each run, preserve the question ID and record the retrieved articles or chunks, generated answer, criterion scores, and failure notes in a separate results file. This will make it possible to distinguish retrieval failures from response-generation failures.
+The 19 cases were used for the oracle-context, vector, and hybrid RAGAS experiments in
+Checkpoint 3.1. Each saved run preserves the question ID, generated answer, score,
+model settings, and evaluation mode. Retriever runs also preserve selected articles,
+designated-source recall, and context size. This makes it possible to distinguish
+retrieval failures from response-generation failures.
 
-After the baseline has been documented, use the Lab 3.2 workflow to create controlled question variants. Keep the original GT01–GT19 questions unchanged so that results remain comparable across retrieval methods, prompts, and later system versions.
+## Future use
+
+Keep GT01-GT19 unchanged as a development and regression set so later results remain
+comparable. Use the Lab 3.2 workflow to create controlled question variants, and add a
+separate held-out set that is not used to tune prompts, grading notes, or retrieval
+settings.

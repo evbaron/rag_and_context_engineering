@@ -17,6 +17,18 @@ chunks, HTML section chunks, and full extracted articles.
 Every question is processed independently. The system does not maintain conversation
 history or use prior questions as context.
 
+## Historical scope and later ground truth
+
+This README documents the Checkpoint 2.1 experiment as it was conducted. Its original
+ground-truth workbook has been moved into this folder as
+`wikipedia Q-A GT.xlsx` so the manual analysis remains reproducible.
+
+That workbook is not the current evaluation dataset. Checkpoint 3.1 audited its
+questions, removed a duplicate, clarified ambiguous cases, added explicit grading
+rules, and expanded the set. The current canonical dataset is
+[`../GT/wikipedia_GT.csv`](../GT/wikipedia_GT.csv). The migration is documented in
+[`../GT/capstone2.1_gt_cleanup_notes.md`](../GT/capstone2.1_gt_cleanup_notes.md).
+
 ## Evidence and project artifacts
 
 The following files contain the implementation, experiment evidence, and analysis used
@@ -27,8 +39,9 @@ for this checkpoint.
 - [Expanded retrieval analysis](<logs/Checkpoint 2.1 Retrieval Analysis_Expanded.xlsx>)
   extends the comparison to section and full-article context strategies. This is the
   primary results matrix referenced in this report.
-- [Ground-truth answers](<../GT/wikipedia Q-A GT.xlsx>) contains the expected answers
-  used during manual review.
+- [Historical Checkpoint 2.1 ground-truth answers](<wikipedia Q-A GT.xlsx>) contains
+  the expected answers used during the original manual review. It should not be
+  confused with the revised Checkpoint 3.1 CSV in `../GT/`.
 - [Baseline character-chunk experiment](capstone_checkpoint_2_1_baseline_retrieval_starter.py)
   runs BM25, vector, and multiple hybrid weighting configurations.
 - [HTML section experiment](capstone_checkpoint_2_1_chunk_by_article_headers.py)
@@ -379,9 +392,11 @@ model, and the grounded answer.
   the preprocessing version, file list, chunk count, and content fingerprint.
 - The expanded workbook intentionally summarizes selected experiment outputs; the raw
   logs remain the authoritative evidence for exact retrieved articles and chunks.
-- The ground-truth workbook contains a duplicated Best Actor question and uses `Q8` for
-  both that duplicate and the earthquake question. This README follows the 13-question
-  numbering in the analysis workbooks: Q7 is Best Actor and Q8 is earthquakes.
+- The historical Checkpoint 2.1 ground-truth workbook contains a duplicated Best Actor
+  question and uses `Q8` for both that duplicate and the earthquake question. This
+  README follows the 13-question numbering in the Checkpoint 2.1 analysis workbooks:
+  Q7 is Best Actor and Q8 is earthquakes. These issues were corrected in the current
+  `../GT/wikipedia_GT.csv` dataset.
 - The life-expectancy and population ground truth compares values from different date
   ranges. It is useful for testing retrieval, joining, and calculation, but its final
   correlation should be described as a cross-source comparison rather than a same-year
@@ -400,6 +415,11 @@ table-based aggregation require query decomposition, structured extraction, and
 deterministic computation. The most important design lesson from this checkpoint is to
 evaluate article retrieval, context completeness, and answer synthesis as separate
 components of the RAG pipeline.
+
+Checkpoint 3.1 later tested this separation quantitatively. Under the final controlled
+Top K = 7 comparison, vector retrieval outperformed the 0.35/0.65 BM25/vector hybrid
+and used less full-article context. That later result refines the recommendation above
+without changing the historical Checkpoint 2.1 observations recorded here.
 
 ## AI assistance disclosure
 
