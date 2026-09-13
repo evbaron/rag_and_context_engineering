@@ -256,10 +256,16 @@ def _configuration_metadata(first: pd.Series) -> tuple[str, str, int]:
     mode = _as_text(first.get("evaluation_mode"))
     answer_model = _as_text(first.get("answer_model")) or "unknown-answer-model"
     judge_model = _as_text(first.get("judge_model")) or "unknown-judge-model"
+    # Context representation sent to the LLM (e.g. plain_text vs markdown). Runs made
+    # before this column existed report as "unspecified": they keep grouping together
+    # as before and get no label suffix, so legacy reports are unchanged. New runs that
+    # differ only by context become distinct configurations, shown side by side.
+    context = _as_text(first.get("context_source")) or "unspecified"
+    ctx_tag = "" if context == "unspecified" else f" [{context}]"
 
     if mode == "oracle_ground_truth_context":
-        config_id = f"oracle|answer={answer_model}|judge={judge_model}"
-        return config_id, "Oracle context", 0
+        config_id = f"oracle|answer={answer_model}|judge={judge_model}|context={context}"
+        return config_id, f"Oracle context{ctx_tag}", 0
 
     kind = _as_text(first.get("retriever_kind")).lower() or "retriever"
     label = _as_text(first.get("retriever_label")) or kind
@@ -270,22 +276,23 @@ def _configuration_metadata(first: pd.Series) -> tuple[str, str, int]:
         vector = _as_float(first.get("weight_vector"))
         bm25_text = f"{bm25 * 100:.0f}" if bm25 is not None else "?"
         vector_text = f"{vector * 100:.0f}" if vector is not None else "?"
-        display = f"Hybrid k={top_k} ({bm25_text}/{vector_text})"
+        display = f"Hybrid k={top_k} ({bm25_text}/{vector_text}){ctx_tag}"
         order = 30
     elif kind == "vector":
-        display = f"Vector k={top_k}"
+        display = f"Vector k={top_k}{ctx_tag}"
         order = 20
     elif kind == "bm25":
-        display = f"BM25 k={top_k}"
+        display = f"BM25 k={top_k}{ctx_tag}"
         order = 10
     else:
-        display = f"{label} k={top_k}"
+        display = f"{label} k={top_k}{ctx_tag}"
         order = 40
 
     config_id = (
         f"{kind}|label={label}|k={top_k}|"
         f"bm25={_as_text(first.get('weight_bm25'))}|"
         f"vector={_as_text(first.get('weight_vector'))}|"
+        f"context={context}|"
         f"answer={answer_model}|judge={judge_model}"
     )
     return config_id, display, order

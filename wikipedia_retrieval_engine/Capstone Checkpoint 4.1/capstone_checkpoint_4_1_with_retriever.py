@@ -130,9 +130,10 @@ TEMPERATURE = 0.2
 RETRIEVAL_TOP_K = 7
 HYBRID_CANDIDATE_POOL = max(10, RETRIEVAL_TOP_K)
 
-CHROMA_DB_NAME = "wikipedia_chars1600_overlap200"
-ARTICLE_TEXT_STORE_NAME = "wikipedia_plain_text"
+CHROMA_DB_NAME = "wikipedia_sections_max10000_no_overlap"
 
+ARTICLE_TEXT_STORE_NAME = "wikipedia_plain_text" 
+ARTICLE_MARKDOWN_STORE_NAME = "wikipedia_markdown" 
 # Context sent to the answer LLM after retrieval picks the articles:
 #   "plain_text" — Checkpoint 2.1/3.1 baseline (flattened text; tables collapsed)
 #   "markdown"   — structure-preserving markdown store (tables/infobox preserved)
@@ -162,7 +163,11 @@ ARTICLE_TEXT_DIR = (
     / "retrievers"
     / "db"
     / "article_text"
-    / "wikipedia_plain_text"
+    / (
+        ARTICLE_MARKDOWN_STORE_NAME
+        if CONTEXT_SOURCE == "markdown"
+        else ARTICLE_TEXT_STORE_NAME
+    )
 )
 LOG_PATH = _HERE / f"checkpoint_3.1_evaluation_{datetime.now().strftime('%Y-%m-%d-%H-%M')}.log"  # unused by the RAGAS experiment; see log()
 SCENARIO = "wikipedia"  # Wikipedia Retrieval Engine (not used as a runtime switch)
@@ -603,7 +608,9 @@ async def main() -> None:
     chunks = load_wikipedia_chunks()
     if CONTEXT_SOURCE == "markdown":
         print("Context source: markdown (structure-preserving)")
-        article_text_store = build_or_load_markdown_store()
+        article_text_store = build_or_load_markdown_store(
+            store_name=ARTICLE_MARKDOWN_STORE_NAME,
+        )
     else:
         print("Context source: plain_text (baseline)")
         article_text_store = build_or_load_article_text_store(

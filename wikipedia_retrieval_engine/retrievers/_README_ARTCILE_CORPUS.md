@@ -526,7 +526,8 @@ across all corpus stores by that key.
 To keep both the prose and the extracted link list clean, page chrome is stripped from
 the DOM *before* anything is read off it:
 
-- navigation templates (`.navbox`, sidebars), the table of contents, and `[edit]` links;
+- navigation templates — every `[role="navigation"]` element (navboxes, sidebars;
+  **extractor v2**) — plus the table of contents and `[edit]` links;
 - inline citation superscripts (`[1]`, `[2]`) and the reference/citation dump
   (`ol.references`, `.reflist`);
 - maintenance banners (`.ambox`/`.mbox`/… — "needs citations", "translate from German");
@@ -612,9 +613,9 @@ python retrievers/corpus.py --force    # force a full rebuild
 
 ### Corpus statistics
 
-The built store (extractor version 1) contains:
+The built store (extractor version 2) contains:
 
-- **2,417 articles**, two files each, roughly **287 MB** total, with **0 extraction
+- **2,417 articles**, two files each, roughly **280 MB** total, with **0 extraction
   failures**;
 - **infoboxes:** 2,004 articles (83%); **data tables:** 1,473 articles (61%);
 - **per-article averages:** 20 sections, 15.5 categories, and about 41 KB of Markdown.
@@ -623,19 +624,19 @@ Link totals across the whole corpus:
 
 | bucket | total links | meaning |
 |---|---|---|
-| `local` | 17,396 | in-corpus article → article edges |
-| `wiki` | 571,784 | links to real articles not held in the corpus (pullable) |
-| `external` | 22,882 | off-wiki citation / official-site links |
+| `local` | 17,252 | in-corpus article → article edges |
+| `wiki` | 550,984 | links to real articles not held in the corpus (pullable) |
+| `external` | 22,818 | off-wiki citation / official-site links |
 
 **Graph readiness.** These figures indicate the relationships are dense enough for
 graph-augmented retrieval to add value:
 
-- the in-corpus link graph has **17,396 directed edges**, and only **141 articles (6%)**
+- the in-corpus link graph has **17,252 directed edges**, and only **141 articles (6%)**
   have no in-corpus link at all;
 - **80% of articles** share at least one category with another article, and shared
   categories connect roughly **130,000 article pairs**;
 - treating every `/wiki/` target (including out-of-corpus ones) as a shared "entity"
-  connects about **2.7 million article pairs** — the densest relatedness signal, and the
+  connects about **2.6 million article pairs** — the densest relatedness signal, and the
   reason the `wiki` bucket is worth keeping even though those targets are not local files.
 
 The corpus is thematically concentrated — the densest categories are "Living people",

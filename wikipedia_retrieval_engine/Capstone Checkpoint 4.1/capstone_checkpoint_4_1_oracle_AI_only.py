@@ -23,7 +23,8 @@ from that context only, and scores the response with a RAGAS DiscreteMetric
 #
 # **Pipeline**
 # 1. Load the ground-truth CSV selected by `--gt-set`.
-# 2. For each question, concatenate the full text of every labeled source article.
+# 2. For each question, concatenate the full text of every labeled source article
+#    from the store selected by `CONTEXT_SOURCE` (`plain_text` or `markdown`).
 # 3. Generate an answer from that context only (`answer_from_context`).
 # 4. Score the answer with a RAGAS `DiscreteMetric`: `pass`, `partial`, or `fail`.
 # 5. Save the experiment CSV under `<output-dir>/experiments/`.
@@ -43,10 +44,10 @@ from that context only, and scores the response with a RAGAS DiscreteMetric
 # This run uses the **Wikipedia Retrieval Engine** from Checkpoints 1.1 and 2.1.
 # Oracle mode never calls a retriever: the `Source articles` column *is* the context.
 #
-# | Resource | Location |
+# | Resource | Location / setting |
 # |---|---|
 # | Questions, reference answers, grading notes, source articles | CSV selected by `--gt-set` |
-# | Full article text (plain-text store from Checkpoint 2.1) | `retrievers/db/article_text/wikipedia_plain_text/` |
+# | Full article text store | `CONTEXT_SOURCE`: `"plain_text"` → `wikipedia_plain_text/`; `"markdown"` → `wikipedia_markdown/` |
 
 # %% [markdown]
 # ## Setup
@@ -56,7 +57,7 @@ from that context only, and scores the response with a RAGAS DiscreteMetric
 #    (includes RAGAS, LangChain, OpenAI, pandas — not only `langchain-openai`).
 # 3. Put the course OpenRouter key in a `.env` file as `OPENROUTER_API_KEY=sk-or-v1-...`
 #    (next to this script, or in `rag_and_context_engineering/.env`).
-# 4. The Wikipedia article-text store must already exist (built in Checkpoint 2.1).
+# 4. The Wikipedia article-text store selected by `CONTEXT_SOURCE` must already exist.
 #
 # This is not the Lab 3.1 toy corpus. Both the answer LLM and the RAGAS judge
 # call OpenRouter.
@@ -102,7 +103,12 @@ from retrievers import (
     load_retrieved_article_texts,
     make_retriever,
 )
-from retrievers.corpus import CHUNK_OVERLAP, CHUNK_SIZE, DEFAULT_WIKI_DIR
+from retrievers.corpus import (
+    CHUNK_OVERLAP,
+    CHUNK_SIZE,
+    DEFAULT_WIKI_DIR,
+    build_or_load_markdown_store,
+)
 from retrievers.llm import answer as answer_from_context
 from retrievers.llm import make_llm
 
@@ -120,12 +126,25 @@ JUDGE_MODEL = "openai/gpt-5.4-mini"  # RAGAS DiscreteMetric judge (OpenRouter)
 TEMPERATURE = 0.2
 TOP_K = 3  # unused leftover from the Lab 3.1 demo retriever
 
+ARTICLE_TEXT_STORE_NAME = "wikipedia_plain_text"
+ARTICLE_MARKDOWN_STORE_NAME = "wikipedia_markdown"
+# Context sent to the answer LLM for the gold source articles:
+#   "plain_text" — Checkpoint 2.1/3.1 baseline (flattened text; tables collapsed)
+#   "markdown"   — structure-preserving markdown store (tables/infobox preserved)
+# Retrieval is not involved either way; only the gold-article representation
+# differs, so a plain_text→markdown comparison isolates that effect.
+CONTEXT_SOURCE = "markdown"
+
 ARTICLE_TEXT_DIR = (
     _ENGINE
     / "retrievers"
     / "db"
     / "article_text"
-    / "wikipedia_plain_text"
+    / (
+        ARTICLE_MARKDOWN_STORE_NAME
+        if CONTEXT_SOURCE == "markdown"
+        else ARTICLE_TEXT_STORE_NAME
+    )
 )
 LOG_PATH = _HERE / f"checkpoint_3.1_evaluation_{datetime.now().strftime('%Y-%m-%d-%H-%M')}.log"  # unused by the RAGAS experiment; see log()
 SCENARIO = "wikipedia"  # Wikipedia Retrieval Engine (not used as a runtime switch)
@@ -208,32 +227,30 @@ def parse_source_articles(source_cell: str) -> list[str]:
         if filename.strip()
     ]
 
-def load_ground_truth_context(source_cell: str) -> str:
-    """Load the complete text of every gold source article.
+def source_key_from_gt_filename(filename: str) -> str:
+    """Map a GT `Source articles` filename to the article-store key.
+
+    Spreadsheet cells use Checkpoint 2.1 names such as `100_metres.html.txt`.
+    Both stores are keyed by the HTML source (`100_metres.html`).
+    """
+    return filename.removesuffix(".txt")
+
+
+def load_ground_truth_context(source_cell: str, article_text_store) -> str:
+    """Load the complete text of every gold source article from CONTEXT_SOURCE.
 
     Used by the oracle experiment (and the optional validate_framework helper).
     """
-    context_parts = []
-
+    articles = []
     for filename in parse_source_articles(source_cell):
-        article_path = ARTICLE_TEXT_DIR / filename
-
-        if not article_path.is_file():
+        source = source_key_from_gt_filename(filename)
+        if not article_text_store.has_article(source):
             raise FileNotFoundError(
-                f"Ground-truth article was not found: {article_path}"
+                f"Ground-truth article was not found in the "
+                f"{CONTEXT_SOURCE} store: {source} ({article_text_store.root})"
             )
-
-        article_text = article_path.read_text(
-            encoding="utf-8",
-            errors="replace",
-        )
-
-        context_parts.append(
-            f"[SOURCE: {filename}]\n{article_text}"
-        )
-
-    separator = "\n\n" + "=" * 80 + "\n\n"
-    return separator.join(context_parts)
+        articles.append(article_text_store.load(source))
+    return format_full_articles_context(articles)
 # %% [markdown]
 # ## Step 2 — RAGAS evaluation metric
 #
@@ -334,7 +351,7 @@ correctness_metric = DiscreteMetric(
 #     evaluation_set = my_eval_set(Path("path/to/ground_truth.csv"))
 #     first = evaluation_set[0]
 #
-#     context = load_ground_truth_context(first["Source articles"])
+#     context = load_ground_truth_context(first["Source articles"], article_text_store)
 #
 #     answer_llm = make_llm()
 #     correct_response = answer_from_context(
@@ -445,15 +462,18 @@ def build_ragas_dataset(
 # ## Step 4 — Oracle experiment
 #
 # For each dataset row this run:
-# 1. Loads the full text of every gold source article (`load_ground_truth_context`).
+# 1. Loads the full text of every gold source article (`load_ground_truth_context`)
+#    from the store selected by `CONTEXT_SOURCE` (`plain_text` or `markdown`).
 # 2. Generates an answer from that context (`answer_from_context`).
 # 3. Scores the answer with `correctness_metric` (`pass` / `partial` / `fail`).
+# 4. Records `context_source` on each result row so runs can be compared.
 #
 # `asyncio.run(main())` evaluates the full ground-truth set and writes
 # `<output-dir>/experiments/<run_name>.csv`.
 
 # %%
 def build_oracle_experiment(
+    article_text_store,
     answer_llm: ChatOpenAI,
     ragas_judge,
 ):
@@ -461,7 +481,8 @@ def build_oracle_experiment(
     @experiment()
     async def run_oracle_case(row: dict) -> dict:
         context = load_ground_truth_context(
-            row["source_articles"]
+            row["source_articles"],
+            article_text_store,
         )
 
         response = answer_from_context(
@@ -479,6 +500,7 @@ def build_oracle_experiment(
         return {
             **row,
             "evaluation_mode": "oracle_ground_truth_context",
+            "context_source": CONTEXT_SOURCE,
             "answer_model": LLM_MODEL,
             "judge_model": JUDGE_MODEL,
             "response": response,
@@ -507,17 +529,35 @@ async def main() -> None:
         limit=None,
     )
 
+    print("Loading Wikipedia article-text store...")
+    if CONTEXT_SOURCE == "markdown":
+        print("Context source: markdown (structure-preserving)")
+        article_text_store = build_or_load_markdown_store(
+            store_name=ARTICLE_MARKDOWN_STORE_NAME,
+        )
+    elif CONTEXT_SOURCE == "plain_text":
+        print("Context source: plain_text (baseline)")
+        article_text_store = build_or_load_article_text_store(
+            text_store_name=ARTICLE_TEXT_STORE_NAME,
+        )
+    else:
+        raise ValueError(
+            "CONTEXT_SOURCE must be 'markdown' or 'plain_text', "
+            f"got {CONTEXT_SOURCE!r}"
+        )
+
     answer_llm = make_llm()
     ragas_judge = make_judge()
 
     oracle_experiment = build_oracle_experiment(
+        article_text_store=article_text_store,
         answer_llm=answer_llm,
         ragas_judge=ragas_judge,
     )
 
     print(
         f"Running oracle evaluation on {len(dataset)} questions "
-        f"from {gt_path}..."
+        f"from {gt_path} (context_source={CONTEXT_SOURCE})..."
     )
 
     results = await oracle_experiment.arun(dataset)
