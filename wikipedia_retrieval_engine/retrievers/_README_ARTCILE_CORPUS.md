@@ -13,10 +13,12 @@ The preprocessing code is primarily in `retrievers/corpus.py`. Vector persistenc
 implemented in `retrievers/vector.py`, and full-article selection is implemented in
 `retrievers/expansion.py`.
 
-## The three corpus representations
+## The four corpus representations
 
-The project intentionally keeps three distinct representations because they answer
-different experimental questions.
+The project intentionally keeps four distinct representations because they answer
+different experimental questions. The first three flatten the HTML to plain text with
+the standard-library parser; the fourth preserves formatting and relationships for
+structure-aware and graph-augmented retrieval.
 
 ### Character-window chunks
 
@@ -78,9 +80,36 @@ retrievers/db/article_text/wikipedia_plain_text/
 They are not a vector database. They are a persistent file collection used to load a
 complete selected article without reconstructing it from overlapping chunks.
 
+### Markdown + structured sidecar
+
+Used for structure-aware retrieval and as the input to the knowledge graph.
+
+```text
+HTML article
+→ BeautifulSoup DOM (main article body only)
+→ readable Markdown  (sections, infobox, tables, inline links)  → one .md file
+→ structured sidecar (categories, links, tables, sections)      → one .json file
+```
+
+Unlike the three representations above, this pipeline preserves formatting and extracts
+the per-article relationships (links, shared categories) that graph-augmented retrieval
+needs. The files are stored under:
+
+```text
+retrievers/db/article_text/wikipedia_markdown/
+```
+
+This representation is documented in detail in
+[Markdown + structured sidecar collection](#markdown--structured-sidecar-collection).
+
 ---
 
 ## Shared HTML preprocessing
+
+This section describes the three plain-text representations. All three begin with
+`extract_title_and_body(raw)`, built on the standard-library `html.parser`. The
+Markdown representation uses a separate BeautifulSoup pipeline and is documented under
+[Markdown + structured sidecar collection](#markdown--structured-sidecar-collection).
 
 Both character chunking and complete article extraction begin with
 `extract_title_and_body(raw)`.
@@ -447,6 +476,171 @@ of article content.
 
 When retrieval identifies an article, `ArticleTextStore.load(source)` reads only that
 article's `.txt` file.
+
+---
+
+## Markdown + structured sidecar collection
+
+`build_or_load_markdown_store()` maintains a Markdown rendering plus a structured JSON
+sidecar for every article. It exists to (a) preserve the formatting the plain-text
+extraction discards — sections, infoboxes, tables, captions, and links — and (b) provide
+the per-article relationships the Module 4 knowledge graph is built from.
+
+### A separate, structure-aware extractor
+
+Unlike the plain-text and chunk paths (standard-library `html.parser`, via
+`extract_title_and_body`), this path parses the full DOM with **BeautifulSoup** (`lxml`)
+and serializes prose to Markdown with **markdownify**. Those packages are imported
+lazily inside `corpus.py`, so the BM25/vector/hybrid paths still import the module
+without them installed. Required packages: `beautifulsoup4`, `markdownify`, `lxml`.
+
+### Directory structure
+
+```text
+retrievers/db/article_text/wikipedia_markdown/
+  manifest.json
+  100_metres.html.md
+  100_metres.html.json
+  1580.html.md
+  1580.html.json
+  ...
+```
+
+Two files per article — the readable `.md` and its `.json` sidecar — keyed by the same
+`source` filename used everywhere else (for example `1580.html`), so an article joins
+across all corpus stores by that key.
+
+### What the Markdown preserves
+
+- the title as a level-1 heading (`# ...`);
+- the infobox as a `## Infobox` bullet list of key → value fields;
+- the h2–h6 section hierarchy as `##`/`###`/… headings;
+- data tables (`table.wikitable`) as GitHub-flavored Markdown tables;
+- blockquotes, nested lists, and image/figure captions (the image itself is dropped;
+  its caption text is kept);
+- inline links as `[anchor](/wiki/Target)` — kept in the body by design, since they read
+  well and mark the article's relationships in place.
+
+### What is removed before rendering
+
+To keep both the prose and the extracted link list clean, page chrome is stripped from
+the DOM *before* anything is read off it:
+
+- navigation templates (`.navbox`, sidebars), the table of contents, and `[edit]` links;
+- inline citation superscripts (`[1]`, `[2]`) and the reference/citation dump
+  (`ol.references`, `.reflist`);
+- maintenance banners (`.ambox`/`.mbox`/… — "needs citations", "translate from German");
+- red links (to pages that do not exist) are converted to plain text.
+
+**Ordering matters.** Chrome is removed before links are collected, so navigation and
+citation links never enter the sidecar or the graph. An earlier ordering leaked roughly
+twice as many links per article, dominated by navbox-footer links and DOI/PMID/ISBN
+citation stubs.
+
+### The structured sidecar
+
+Each `.json` mirrors the shape of Lab 4.2's `annotatedEmails.json` (raw content plus
+structured fields), so the knowledge graph can be built directly from it:
+
+```json
+{
+  "source": "1854_Broad_Street_cholera_outbreak.html",
+  "title": "1854 Broad Street cholera outbreak",
+  "wiki_title": "1854_Broad_Street_cholera_outbreak",
+  "categories": ["1854 in London", "1850s epidemics", "..."],
+  "sections": [{"level": 2, "id": "Background", "title": "Background"}],
+  "infobox": {"title": "", "fields": {"Date": "1854", "Deaths": "616"}},
+  "tables": [{"caption": null, "headers": ["..."], "rows": [["..."]], "n_rows": 10}],
+  "links": {
+    "local":    [{"target": "John_Snow", "source_file": "John_Snow.html",
+                  "url": "https://en.wikipedia.org/wiki/John_Snow",
+                  "anchors": ["John Snow"], "count": 3, "regions": ["body"]}],
+    "wiki":     [{"target": "Vibrio_cholerae",
+                  "url": "https://en.wikipedia.org/wiki/Vibrio_cholerae",
+                  "anchors": ["Vibrio cholerae"], "count": 2, "regions": ["body", "infobox"]}],
+    "external": [{"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1508470",
+                  "anchors": ["..."], "count": 1, "regions": ["body"]}]
+  },
+  "stats": {"n_categories": 19, "n_sections": 17, "n_tables": 0,
+            "n_local": 4, "n_wiki": 62, "n_external": 8, "md_chars": 25024}
+}
+```
+
+### Link classification (local / wiki / external)
+
+Every `<a>` in the article body, infobox, and data tables is classified so that a later
+step can tell what it can reference locally from what it would have to fetch:
+
+- **local** — a `/wiki/<Target>` whose `<Target>.html` exists in this corpus. Carries
+  `source_file`; these are the in-corpus article → article edges for the graph.
+- **wiki** — a `/wiki/<Target>` not in the corpus (a real Wikipedia article this corpus
+  does not hold). Carries the canonical `url`, so the article could be pulled later if
+  desired. Even with the target absent, two articles that link the *same* wiki target are
+  related, which makes shared wiki targets the densest "mentioned entity" signal.
+- **external** — an off-wiki `http(s)` link (citation or official site). Carries `url`.
+
+Namespaced links (`Category:`, `File:`, `Help:`, …) are not treated as article links;
+categories are captured separately from the page's category box. Each link record also
+keeps `anchors` (the visible link-text variants), a `count`, and the `regions` it
+appeared in (`body`, `infobox`, `table`), so body links can later be weighted above
+navigational ones.
+
+### Manifest and cache validation
+
+Like the plain-text store, `manifest.json` records the extractor version, source
+directory, article count, source filename list, title mapping, and any per-article
+extraction `failures`. The cache is reused only when the extractor version matches, the
+source filename list matches, and both the `.md` and `.json` exist for every article;
+otherwise the store is rebuilt. Bump `_MARKDOWN_EXTRACTOR_VERSION` when the extraction
+rules change so stale output is regenerated on the next run.
+
+### Lazy loading
+
+`MarkdownArticleStore` keeps only the source → title mapping in memory:
+
+- `load(source)` reads one article's `.md` + `.json` and returns a `MarkdownArticle`;
+- `load_metadata(source)` reads just the sidecar;
+- `iter_metadata()` streams `(source, sidecar)` for every article — the entry point the
+  knowledge-graph builder consumes.
+
+### Building
+
+```bash
+python retrievers/corpus.py            # build if absent, otherwise load from cache
+python retrievers/corpus.py --force    # force a full rebuild
+```
+
+### Corpus statistics
+
+The built store (extractor version 1) contains:
+
+- **2,417 articles**, two files each, roughly **287 MB** total, with **0 extraction
+  failures**;
+- **infoboxes:** 2,004 articles (83%); **data tables:** 1,473 articles (61%);
+- **per-article averages:** 20 sections, 15.5 categories, and about 41 KB of Markdown.
+
+Link totals across the whole corpus:
+
+| bucket | total links | meaning |
+|---|---|---|
+| `local` | 17,396 | in-corpus article → article edges |
+| `wiki` | 571,784 | links to real articles not held in the corpus (pullable) |
+| `external` | 22,882 | off-wiki citation / official-site links |
+
+**Graph readiness.** These figures indicate the relationships are dense enough for
+graph-augmented retrieval to add value:
+
+- the in-corpus link graph has **17,396 directed edges**, and only **141 articles (6%)**
+  have no in-corpus link at all;
+- **80% of articles** share at least one category with another article, and shared
+  categories connect roughly **130,000 article pairs**;
+- treating every `/wiki/` target (including out-of-corpus ones) as a shared "entity"
+  connects about **2.7 million article pairs** — the densest relatedness signal, and the
+  reason the `wiki` bucket is worth keeping even though those targets are not local files.
+
+The corpus is thematically concentrated — the densest categories are "Living people",
+American actors and actresses, Grammy and Academy Award recipients, and Olympic sport —
+so category and entity edges cluster strongly within those themes.
 
 ---
 
