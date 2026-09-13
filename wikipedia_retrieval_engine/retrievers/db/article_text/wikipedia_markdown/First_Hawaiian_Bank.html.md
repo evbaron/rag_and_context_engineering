@@ -1,0 +1,63 @@
+# First Hawaiian Bank
+
+## Infobox
+
+- **Formerly:** BancWest Corporation
+- **Company type:** Public
+- **Traded as:** Nasdaq: FHB S&P 600 component
+- **Industry:** Banking
+- **Founded:** 1858; 168 years ago ( 1858 )
+- **Headquarters:** First Hawaiian Center Honolulu, Hawaii, US
+- **Area served:** United States (Hawaii, Guam, and Northern Mariana Islands)
+- **Key people:** Robert S. Harrison ( CEO & president )
+- **Revenue:** US$ 709 million (2016)
+- **Net income:** US$230 million (2016)
+- **Number of employees:** 2,000+ (2022) [ 1 ]
+- **Website:** fhb.com
+
+**First Hawaiian, Inc.** is a bank holding company headquartered in [Honolulu, Hawaiʻi](/wiki/Honolulu). Its principal subsidiary, **First Hawaiian Bank**, founded in 1858, is Hawaiʻi’s oldest and largest financial institution headquartered in Honolulu at the [First Hawaiian Center](/wiki/First_Hawaiian_Center). The bank has 57 branches throughout Hawaiʻi, three in [Guam](/wiki/Guam) and one in [Saipan](/wiki/Saipan). It offers banking services to consumer and commercial customers, including deposit products, lending services and wealth management, insurance, private banking and trust services. First Hawaiian was listed on the [NASDAQ](/wiki/NASDAQ) on August 4, 2016, and made its debut at number 12 in the January 2017 publication of [Forbes](/wiki/Forbes)' America's 100 Largest Banks with $20 billion in total assets. In 2019, [BNP Paribas](/wiki/BNP_Paribas) sold its stake in First Hawaiian Bank.
+
+## History
+
+First Hawaiian Bank in [Waikiki](/wiki/Waikiki)
+
+In 1858, local businessmen, [Charles Reed Bishop](/wiki/Charles_Reed_Bishop) and William A. Aldrich, opened Bishop & Co. This was the first successful banking partnership under the laws of the independent [Kingdom of Hawaiʻi](/wiki/Hawaiian_Kingdom). It operated from a basement room in "Makee & Anthon's Building" on Kaʻahumanu Street. On the day Bishop & Co. opened, it took in $4,784.25 in deposits. In 1895, [Samuel M. Damon](/wiki/Samuel_M._Damon) bought Bishop & Co. from Charles Bishop.
+
+In 1910, Bishop & Co. bank opened its first branch in [Hilo](/wiki/Hilo). It then opened its first [Kauaʻi](/wiki/Kauai) branch in [Waimea](/wiki/Waimea,_Hawaii_County,_Hawaii) in 1911. In 1919 Bishop & Co. incorporated as the Bank of Bishop & Co.
+
+A $50 [National Bank Note](/wiki/National_Bank_Note) issued by the Bishop First National Bank
+
+During the 1920s the bank steadily grew, acquiring the [Bank of Honolulu](/wiki/William_G._Irwin#Claus_Spreckels) in 1922, opening a branch in [Kona](/wiki/Kona_District,_Hawaii) in 1923, and opening yet another branch on [Lānaʻi](/wiki/Lanai) in 1924. The bank's growth slowed after it merged with First National Bank of Hawaii, First American Savings Bank, Army National Bank of [Schofield Barracks](/wiki/Schofield_Barracks), and Baldwin Bank (Maui) in 1929. The bank then changed its name to Bishop First National Bank of Honolulu.
+
+In 1933, the bank's name became Bishop National Bank of Hawaii at Honolulu. The bank's name changed yet again in 1956, this time to Bishop National Bank of Hawaii.
+
+In 1966, Cooke Trust Company acquired the bank. It was then changed to First Hawaiian Bank in 1969. The next year, in 1970, the bank opened its first branch on Guam in [Dededo](/wiki/Dededo).
+
+In 1975, First Hawaiian acquired Hawaii Thrift & Loan, which had been in financial difficulty, and turned it into First Hawaiian Creditcorp.
+
+First Hawaiian Bank acquired many other banks during the 1990s. In 1991, First Hawaiian acquired First Interstate Bank of Hawaii. Then in 1992, it acquired the East West Bank, which had one branch in Honolulu and one on Maui.
+
+In 1993, the bank acquired Pioneer Federal Savings Bank, which continued to operate as a separate institution.
+
+[First Hawaiian Center](/wiki/First_Hawaiian_Center) in Honolulu
+
+In 1996, First Hawaiian acquired 31 branches in [Oregon](/wiki/Oregon), [Washington](/wiki/Washington_(state)), and [Idaho](/wiki/Idaho) from [U.S. Bancorp](/wiki/U.S._Bancorp). It then created a new subsidiary - Pacific One Bank - to hold the branches, with a charter in Oregon. During the same year, First Hawaiian also acquired ANB Financial Corporation, which was the owner of American National Bank in central Washington state. American National's branches eventually became part of Pacific One Bank. At the same time as all of these mergers, First Hawaiian built its new headquarters, the [First Hawaiian Center](/wiki/First_Hawaiian_Center). At 429 ft (131 m), it is the tallest building in [Hawaiʻi](/wiki/Hawaii).
+
+In 1997, First Hawaiian merged in Pioneer Federal and the next year merged in First Hawaiian Creditcorp. In the following year, 1998, First Hawaiian merged with [San-Francisco](/wiki/San_Francisco)-based [Bank of the West](/wiki/Bank_of_the_West). The surviving company, First Hawaiian, Inc., was renamed BancWest Corporation. Former First Hawaiian, Inc. shareholders owned 55% of BancWest; [Banque Nationale de Paris (BNP)](/wiki/BNP_Paribas), former owner of Bank of the West, owned 45%.
+
+In 2001, First Hawaiian Bank acquired [Union Bank of California](/wiki/Union_Bank_of_California)'s branch network in [Guam](/wiki/Guam) and [Saipan](/wiki/Saipan). In December, BNP Paribas completed its acquisition of 100% of First Hawaiian Bank and its parent company BancWest. Bank of the West and First Hawaiian Bank, however, continued to operate as separate institutions.
+
+On December 23, 2015, First Hawaiian Bank announced that parent company BNP Paribas was considering strategic options for the subsidiary, including an [initial public offering](/wiki/Initial_public_offering). On August 4, 2016, shares of the company started being sold on the [NASDAQ](/wiki/NASDAQ).
+
+In 2018, [Banque Nationale de Paris (BNP)](/wiki/BNP_Paribas) reduced their stake in First Hawaiian to 33.3%, and by January 2019, it had sold its remaining stake.
+
+## See also
+
+- [BNP Paribas](/wiki/BNP_Paribas), First Hawaiian Bank's previous parent company
+- [BancWest](/wiki/BancWest) ([Bank of the West](/wiki/Bank_of_the_West)), First Hawaiian Bank's previous parent company before its acquisition by BNP Paribas
+
+## References
+
+## External links
+
+- [First Hawaiian Bank](http://www.fhb.com) website

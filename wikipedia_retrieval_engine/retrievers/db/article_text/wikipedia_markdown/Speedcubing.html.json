@@ -1,0 +1,1754 @@
+{
+  "source": "Speedcubing.html",
+  "title": "Speedcubing",
+  "wiki_title": "Speedcubing",
+  "categories": [
+    "Rubik's Cube",
+    "Speedcubing",
+    "Mind sports"
+  ],
+  "sections": [
+    {
+      "level": 2,
+      "id": "History",
+      "title": "History"
+    },
+    {
+      "level": 2,
+      "id": "World_Cube_Association",
+      "title": "World Cube Association"
+    },
+    {
+      "level": 2,
+      "id": "Methods",
+      "title": "Methods"
+    },
+    {
+      "level": 3,
+      "id": "3x3x3",
+      "title": "3x3x3"
+    },
+    {
+      "level": 4,
+      "id": "CFOP",
+      "title": "CFOP"
+    },
+    {
+      "level": 4,
+      "id": "Roux",
+      "title": "Roux"
+    },
+    {
+      "level": 4,
+      "id": "ZZ",
+      "title": "ZZ"
+    },
+    {
+      "level": 4,
+      "id": "Corners-first_methods",
+      "title": "Corners-first methods"
+    },
+    {
+      "level": 3,
+      "id": "Fewest_Moves_Challenge",
+      "title": "Fewest Moves Challenge"
+    },
+    {
+      "level": 3,
+      "id": "Blindfolded",
+      "title": "Blindfolded"
+    },
+    {
+      "level": 2,
+      "id": "Competitions",
+      "title": "Competitions"
+    },
+    {
+      "level": 3,
+      "id": "Format",
+      "title": "Format"
+    },
+    {
+      "level": 3,
+      "id": "World_Rubik's_Cube_Championships",
+      "title": "World Rubik's Cube Championships"
+    },
+    {
+      "level": 2,
+      "id": "World_Records",
+      "title": "World Records"
+    },
+    {
+      "level": 2,
+      "id": "See_also",
+      "title": "See also"
+    },
+    {
+      "level": 2,
+      "id": "Notes",
+      "title": "Notes"
+    },
+    {
+      "level": 2,
+      "id": "References",
+      "title": "References"
+    },
+    {
+      "level": 2,
+      "id": "External_links",
+      "title": "External links"
+    }
+  ],
+  "infobox": null,
+  "tables": [
+    {
+      "caption": null,
+      "headers": [
+        "Category",
+        "Cube type"
+      ],
+      "rows": [
+        [
+          "Speedsolving",
+          "2x2x2, 3x3x3, 4x4x4, 5x5x5, 6x6x6, 7x7x7, Clock, Megaminx, Pyraminx, Skewb, Square-1"
+        ],
+        [
+          "Blindfolded solving",
+          "3x3x3, 4x4x4, 5x5x5"
+        ],
+        [
+          "Multiple cubes blindfolded solving",
+          "3x3x3"
+        ],
+        [
+          "One-handed solving"
+        ],
+        [
+          "Solving in fewest moves"
+        ]
+      ],
+      "n_rows": 5
+    },
+    {
+      "caption": null,
+      "headers": [
+        "Championship",
+        "Year",
+        "Host",
+        "Date(s)",
+        "Nations",
+        "Competitors",
+        "Events",
+        "Winner (3x3)",
+        "Winning time(s)",
+        "Ref"
+      ],
+      "rows": [
+        [
+          "I",
+          "1982",
+          "Budapest",
+          "5 June",
+          "19",
+          "19",
+          "1",
+          "Minh Thai",
+          "22.95 (Single)",
+          "[ 34 ]"
+        ],
+        [
+          "II",
+          "2003",
+          "Toronto",
+          "23–24 August",
+          "15",
+          "88",
+          "13",
+          "Dan Knights",
+          "20.00 (Average)",
+          "[ 35 ]"
+        ],
+        [
+          "III",
+          "2005",
+          "Lake Buena Vista",
+          "5–6 November",
+          "16",
+          "149",
+          "15",
+          "Jean Pons",
+          "15.10 (Average)",
+          "[ 36 ]"
+        ],
+        [
+          "IV",
+          "2007",
+          "Budapest",
+          "5–7 October",
+          "28",
+          "214",
+          "17",
+          "Yu Nakajima",
+          "12.46 (Average)",
+          "[ 37 ]"
+        ],
+        [
+          "V",
+          "2009",
+          "Düsseldorf",
+          "9–11 October",
+          "32",
+          "327",
+          "19",
+          "Breandan Vallance",
+          "10.74 (Average)",
+          "[ 38 ]"
+        ],
+        [
+          "VI",
+          "2011",
+          "Bangkok",
+          "14–16 October",
+          "35",
+          "292",
+          "19",
+          "Michał Pleskowicz",
+          "8.65 (Average)",
+          "[ 39 ]"
+        ],
+        [
+          "VII",
+          "2013",
+          "Las Vegas",
+          "26–28 July",
+          "35",
+          "580",
+          "17",
+          "Feliks Zemdegs",
+          "8.18 (Average)",
+          "[ 40 ]"
+        ],
+        [
+          "VIII",
+          "2015",
+          "São Paulo",
+          "17–19 July",
+          "37",
+          "428",
+          "18",
+          "Feliks Zemdegs",
+          "7.56 (Average)",
+          "[ 41 ]"
+        ],
+        [
+          "IX",
+          "2017",
+          "Paris",
+          "13–16 July",
+          "64",
+          "938",
+          "18",
+          "Max Park",
+          "6.85 (Average)",
+          "[ 42 ]"
+        ],
+        [
+          "X",
+          "2019",
+          "Melbourne",
+          "11–14 July",
+          "52",
+          "833",
+          "18",
+          "Philipp Weyer",
+          "6.74 (Average)",
+          "[ 43 ]"
+        ],
+        [
+          "XI",
+          "2021",
+          "Almere",
+          "Cancelled [ a ]",
+          "—",
+          "—",
+          "17",
+          "—",
+          "—",
+          "[ 45 ]"
+        ],
+        [
+          "XII",
+          "2023",
+          "Incheon",
+          "12–15 August",
+          "63",
+          "1187",
+          "17",
+          "Max Park",
+          "5.31 (Average)",
+          "[ 46 ]"
+        ],
+        [
+          "XIII",
+          "2025",
+          "Seattle",
+          "3–6 July",
+          "74",
+          "1864",
+          "17",
+          "Yiheng Wang",
+          "4.23 (Average)",
+          "[ 33 ]"
+        ],
+        [
+          "XIV",
+          "2027",
+          "Uppsala",
+          "22–25 July",
+          "TBA",
+          "2500",
+          "17",
+          "",
+          "",
+          "[ 47 ]"
+        ]
+      ],
+      "n_rows": 14
+    },
+    {
+      "caption": null,
+      "headers": [
+        "Event",
+        "Type",
+        "Result",
+        "Person",
+        "Competition (Date(s))",
+        "Round Results"
+      ],
+      "rows": [
+        [
+          "3x3x3 Cube",
+          "Single",
+          "2.76",
+          "Teodor Zajder",
+          "GLS Big Cubes Gdańsk 2026 (7-8 February)",
+          "4.99 / 5.36 / (5.76) / (2.76) / 5.34"
+        ],
+        [
+          "Average",
+          "3.71",
+          "Xuanyi Geng (耿暄一)",
+          "Deqing Small & Special 2026 (26 April)",
+          "3.79 / (4.33) / 3.61 / 3.74 / (2.80)"
+        ],
+        [
+          "2x2x2 Cube",
+          "Single",
+          "0.39",
+          "Ziyu Ye (叶梓渝)",
+          "Hefei Open 2025 (25 October)",
+          "(1.94) / 1.31 / 1.38 / 1.46 / (0.39)"
+        ],
+        [
+          "Average",
+          "0.86",
+          "Sujan Feist",
+          "Kids America Christmas Clash OH 2025 (13 December)",
+          "0.86 / 1.02 / (0.56) / (1.42) / 0.70"
+        ],
+        [
+          "4x4x4 Cube",
+          "Single",
+          "15.18",
+          "Tymon Kolasiński",
+          "Spanish Championship 2025 (6-8 December)",
+          "20.27 / (22.54) / 19.57 / (15.18) / 20.34"
+        ],
+        [
+          "Average",
+          "18.56",
+          "Seoul Winter 2026 (17-18 January)",
+          "19.16 / 18.01 / 18.51 / (21.64) / (16.09)"
+        ],
+        [
+          "5x5x5 Cube",
+          "Single",
+          "29.49",
+          "All Rounders Katowice I 2026 (1-3 May)",
+          "35.94 / (42.62) / 36.67 / 40.82 / (30.45)"
+        ],
+        [
+          "Average",
+          "33.73",
+          "All Rounders Katowice I 2026 (1-3 May)",
+          "36.46 / (36.67) / (31.67) / 33.11 / 33.36"
+        ],
+        [
+          "6x6x6 Cube",
+          "Single",
+          "57.69",
+          "Max Park",
+          "Burbank Big Cubes 2025 (26 April)",
+          "57.69 / 1:11.14 / 1:09.39"
+        ],
+        [
+          "Mean",
+          "1:05.04",
+          "Nub Open Trabuco Hills Fall 2025 (4 October)",
+          "1:04.60 / 1:04.80 / 1:05.73"
+        ],
+        [
+          "7x7x7 Cube",
+          "Single",
+          "1:33.48",
+          "Nub Open Trabuco Hills Fall 2025 (4 October)",
+          "1:33.48 / 1:41.36 / 1:35.75"
+        ],
+        [
+          "Mean",
+          "1:36.86",
+          "Nub Open Trabuco Hills Fall 2025 (4 October)",
+          "1:33.48 / 1:41.36 / 1:35.75"
+        ],
+        [
+          "3x3x3 Blindfolded",
+          "Single",
+          "11.67",
+          "Charlie Eggins",
+          "Cubing at The Cube 2026 (9-11 January)",
+          "14.34 / (DNF) / 13.95 / 13.85 / (11.67)"
+        ],
+        [
+          "Mean",
+          "14.05",
+          "Tommy Cherry",
+          "Rubik's WCA European Championship 2024 (25-28 July)",
+          "13.48 / 14.42 / 14.24"
+        ],
+        [
+          "Charlie Eggins",
+          "Cubing at The Cube 2026 (9-11 January)",
+          "14.34 / (DNF) / 13.95 / 13.85 / (11.67)"
+        ],
+        [
+          "3x3x3 Fewest Moves",
+          "Single",
+          "16",
+          "Sebastiano Tronto",
+          "FMC 2019 (15–16 June)",
+          "16 / 26 / 24"
+        ],
+        [
+          "Aedan Bryant",
+          "Ashfield Summer Challenge 2024 (23 June)",
+          "26 / 16 / 26"
+        ],
+        [
+          "Levi Gibson",
+          "26 / 16 / 24"
+        ],
+        [
+          "Jacob Sherwen Brown",
+          "Rubik's UK Championship FMC 2024 (26 October)",
+          "33 / 31 / 16"
+        ],
+        [
+          "Mean",
+          "19",
+          "Brian Johnson",
+          "Evanston FMC Spring 2026 (2 May)",
+          "17 / 18 / 22"
+        ],
+        [
+          "3x3x3 One-Handed",
+          "Single",
+          "5.66",
+          "Dhruva Sai Meruva",
+          "Swiss Nationals 2024 (4-6 October)",
+          "(12.25) / 9.77 / 10.02 / (5.66) / 8.93"
+        ],
+        [
+          "Average",
+          "7.72",
+          "Luke Garrett",
+          "Chicagoland Newcomers 2025 (9 March)",
+          "8.57 / 7.13 / (6.82) / 7.45 / (12.80)"
+        ],
+        [
+          "Clock",
+          "Single",
+          "1.53",
+          "Lachlan Gibson",
+          "Hasty Hastings 2025 (27 September)",
+          "3.52 / 2.33 / (7.02) / (1.53) / 3.08"
+        ],
+        [
+          "Average",
+          "2.24",
+          "Brendyn Dunagan",
+          "Temecula Valley Winter 2025 (13 December)",
+          "2.02 / 3.27 / 1.93 / 2.27 / 2.43"
+        ],
+        [
+          "Megaminx",
+          "Single",
+          "21.85",
+          "Timofei Tarasenko",
+          "Start of Summer Beijing 2026 (1-2 May)",
+          "26.43 / (21.85) / 24.50 / (27.75) / 25.87"
+        ],
+        [
+          "Average",
+          "24.38",
+          "Tashkent Open 2025 (6-7 December)",
+          "(21.99) / (27.44) / 23.81 / 23.67 / 25.65"
+        ],
+        [
+          "Pyraminx",
+          "Single",
+          "0.73",
+          "Simon Kellum",
+          "Middleton Meetup Thursday 2023 (21 December)",
+          "4.94 / 2.36 / 1.76 / (0.73) / (DNF)"
+        ],
+        [
+          "Average",
+          "1.14",
+          "Lingkun Jiang (姜凌坤)",
+          "Zhengzhou Zest 2025 (27 December)",
+          "1.04 / (3.22) / (0.97) / 1.21 / 1.16"
+        ],
+        [
+          "Skewb",
+          "Single",
+          "0.73",
+          "Vojtěch Grohmann",
+          "Głuszyca Open 2026 (7-8 March)",
+          "(3.25) / 1.57 / 1.70 / (0.73) / 1.56"
+        ],
+        [
+          "Average",
+          "1.37",
+          "Ignacy Samselski",
+          "Cube Factory League Justynów 2025 (14-15 June)",
+          "1.22 / 1.43 / (1.16) / 1.46 / (2.93)"
+        ],
+        [
+          "Square-1",
+          "Single",
+          "3.40",
+          "Hassan Khanani",
+          "Steel City Sprint PA 2026 (24 January)",
+          "7.11 / 5.98 / (3.40) / (8.61) / 7.70"
+        ],
+        [
+          "Average",
+          "4.63",
+          "Sameer Aggarwal",
+          "Cubing in Southern Oregon 2025 (1 February)",
+          "(8.08) / 6.20 / (3.42) / 3.81 / 3.88"
+        ],
+        [
+          "4x4x4 Blindfolded",
+          "Single",
+          "51.96",
+          "Stanley Chapel",
+          "4BLD in a Madison Hall 2023 (28-29 January)",
+          "1:17.62 / DNF / 51.96"
+        ],
+        [
+          "Mean",
+          "59.39",
+          "New York Multimate PBQ II 2025 (13-15 June)",
+          "57.83 / 1:04.79 / 55.54"
+        ],
+        [
+          "5x5x5 Blindfolded",
+          "Single",
+          "1:58.59",
+          "Multi Mayhem VA 2026 (2-4 January)",
+          "DNF / DNF / 2:02.28"
+        ],
+        [
+          "Mean",
+          "2:27.63",
+          "Michigan Cubing Club Epsilon 2019 (14 December)",
+          "2:32.48 / 2:28.80 / 2:21.62"
+        ],
+        [
+          "3x3x3 Multi-Blind",
+          "Single",
+          "63/65 58:23",
+          "Graham Siggins",
+          "Please Be Quiet Reno 2025 (18 October)",
+          "63/65 58:23 / 58/68 1:00:00"
+        ]
+      ],
+      "n_rows": 37
+    }
+  ],
+  "links": {
+    "local": [
+      {
+        "target": "United_States",
+        "source_file": "United_States.html",
+        "url": "https://en.wikipedia.org/wiki/United_States",
+        "anchors": [
+          "United States"
+        ],
+        "count": 41,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Poland",
+        "source_file": "Poland.html",
+        "url": "https://en.wikipedia.org/wiki/Poland",
+        "anchors": [],
+        "count": 8,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "China",
+        "source_file": "China.html",
+        "url": "https://en.wikipedia.org/wiki/China",
+        "anchors": [],
+        "count": 8,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "France",
+        "source_file": "France.html",
+        "url": "https://en.wikipedia.org/wiki/France",
+        "anchors": [],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Toronto",
+        "source_file": "Toronto.html",
+        "url": "https://en.wikipedia.org/wiki/Toronto",
+        "anchors": [
+          "Toronto",
+          "Toronto, Ontario"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Netherlands",
+        "source_file": "Netherlands.html",
+        "url": "https://en.wikipedia.org/wiki/Netherlands",
+        "anchors": [
+          "Netherlands"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Seattle",
+        "source_file": "Seattle.html",
+        "url": "https://en.wikipedia.org/wiki/Seattle",
+        "anchors": [
+          "Seattle"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Japan",
+        "source_file": "Japan.html",
+        "url": "https://en.wikipedia.org/wiki/Japan",
+        "anchors": [],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Thailand",
+        "source_file": "Thailand.html",
+        "url": "https://en.wikipedia.org/wiki/Thailand",
+        "anchors": [],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      }
+    ],
+    "wiki": [
+      {
+        "target": "Rubik's_Cube",
+        "url": "https://en.wikipedia.org/wiki/Rubik%27s_Cube",
+        "anchors": [
+          "3x3x3",
+          "3x3x3 Cube",
+          "3x3x3 Blindfolded",
+          "3x3x3 Fewest Moves",
+          "3x3x3 One-Handed",
+          "3x3x3 Multi-Blind",
+          "Rubik's Cube"
+        ],
+        "count": 16,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Australia",
+        "url": "https://en.wikipedia.org/wiki/Australia",
+        "anchors": [],
+        "count": 10,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Rubik's_Revenge",
+        "url": "https://en.wikipedia.org/wiki/Rubik%27s_Revenge",
+        "anchors": [
+          "4x4x4",
+          "4x4x4 Cube",
+          "4x4x4 Blindfolded",
+          "Rubik's Revenge"
+        ],
+        "count": 8,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Professor's_Cube",
+        "url": "https://en.wikipedia.org/wiki/Professor%27s_Cube",
+        "anchors": [
+          "5x5x5",
+          "5x5x5 Cube",
+          "5x5x5 Blindfolded",
+          "Professor's Cube"
+        ],
+        "count": 8,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Megaminx",
+        "url": "https://en.wikipedia.org/wiki/Megaminx",
+        "anchors": [
+          "Megaminx",
+          "Megaminxes"
+        ],
+        "count": 7,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Max_Park",
+        "url": "https://en.wikipedia.org/wiki/Max_Park",
+        "anchors": [
+          "Max Park"
+        ],
+        "count": 7,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Pocket_Cube",
+        "url": "https://en.wikipedia.org/wiki/Pocket_Cube",
+        "anchors": [
+          "2x2x2",
+          "2x2x2 Cube"
+        ],
+        "count": 6,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Rubik's_Clock",
+        "url": "https://en.wikipedia.org/wiki/Rubik%27s_Clock",
+        "anchors": [
+          "Clock",
+          "Rubik's Clock"
+        ],
+        "count": 6,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Pyraminx",
+        "url": "https://en.wikipedia.org/wiki/Pyraminx",
+        "anchors": [
+          "Pyraminx"
+        ],
+        "count": 6,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Skewb",
+        "url": "https://en.wikipedia.org/wiki/Skewb",
+        "anchors": [
+          "Skewb"
+        ],
+        "count": 6,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Square-1_(puzzle)",
+        "url": "https://en.wikipedia.org/wiki/Square-1_(puzzle)",
+        "anchors": [
+          "Square-1"
+        ],
+        "count": 6,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Budapest",
+        "url": "https://en.wikipedia.org/wiki/Budapest",
+        "anchors": [
+          "Budapest"
+        ],
+        "count": 6,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "World_Cube_Association",
+        "url": "https://en.wikipedia.org/wiki/World_Cube_Association",
+        "anchors": [
+          "World Cube Association",
+          "WCA delegate",
+          "WCA"
+        ],
+        "count": 6,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "V-Cube_7",
+        "url": "https://en.wikipedia.org/wiki/V-Cube_7",
+        "anchors": [
+          "7x7x7",
+          "7x7x7 Cube"
+        ],
+        "count": 5,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Hungary",
+        "url": "https://en.wikipedia.org/wiki/Hungary",
+        "anchors": [
+          "Hungary"
+        ],
+        "count": 5,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Feliks_Zemdegs",
+        "url": "https://en.wikipedia.org/wiki/Feliks_Zemdegs",
+        "anchors": [
+          "Feliks Zemdegs"
+        ],
+        "count": 5,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "V-Cube_6",
+        "url": "https://en.wikipedia.org/wiki/V-Cube_6",
+        "anchors": [
+          "6x6x6",
+          "6x6x6 Cube"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Minh_Thai",
+        "url": "https://en.wikipedia.org/wiki/Minh_Thai",
+        "anchors": [
+          "Minh Thai"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Germany",
+        "url": "https://en.wikipedia.org/wiki/Germany",
+        "anchors": [],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "United_Kingdom",
+        "url": "https://en.wikipedia.org/wiki/United_Kingdom",
+        "anchors": [],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "CFOP_method",
+        "url": "https://en.wikipedia.org/wiki/CFOP_method",
+        "anchors": [
+          "CFOP",
+          "CFOP method"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tymon_Kolasiński",
+        "url": "https://en.wikipedia.org/wiki/Tymon_Kolasi%C5%84ski",
+        "anchors": [
+          "Tymon Kolasiński"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Tommy_Cherry",
+        "url": "https://en.wikipedia.org/wiki/Tommy_Cherry",
+        "anchors": [
+          "Tommy Cherry"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Fridrich_method",
+        "url": "https://en.wikipedia.org/wiki/Fridrich_method",
+        "anchors": [
+          "Fridrich method",
+          "CFOP method"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "1982_World_Rubik's_Cube_Championship",
+        "url": "https://en.wikipedia.org/wiki/1982_World_Rubik%27s_Cube_Championship",
+        "anchors": [
+          "I"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "2003_Rubik's_Cube_World_Championship",
+        "url": "https://en.wikipedia.org/wiki/2003_Rubik%27s_Cube_World_Championship",
+        "anchors": [
+          "II"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Canada",
+        "url": "https://en.wikipedia.org/wiki/Canada",
+        "anchors": [],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "2005_Rubik's_Cube_World_Championship",
+        "url": "https://en.wikipedia.org/wiki/2005_Rubik%27s_Cube_World_Championship",
+        "anchors": [
+          "III"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Lake_Buena_Vista,_Florida",
+        "url": "https://en.wikipedia.org/wiki/Lake_Buena_Vista,_Florida",
+        "anchors": [
+          "Lake Buena Vista"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Yu_Nakajima",
+        "url": "https://en.wikipedia.org/wiki/Yu_Nakajima",
+        "anchors": [
+          "Yu Nakajima"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Düsseldorf",
+        "url": "https://en.wikipedia.org/wiki/D%C3%BCsseldorf",
+        "anchors": [
+          "Düsseldorf"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Bangkok",
+        "url": "https://en.wikipedia.org/wiki/Bangkok",
+        "anchors": [
+          "Bangkok"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Las_Vegas_Valley",
+        "url": "https://en.wikipedia.org/wiki/Las_Vegas_Valley",
+        "anchors": [
+          "Las Vegas"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Brazil",
+        "url": "https://en.wikipedia.org/wiki/Brazil",
+        "anchors": [],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "São_Paulo",
+        "url": "https://en.wikipedia.org/wiki/S%C3%A3o_Paulo",
+        "anchors": [
+          "São Paulo"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Paris",
+        "url": "https://en.wikipedia.org/wiki/Paris",
+        "anchors": [
+          "Paris"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Melbourne",
+        "url": "https://en.wikipedia.org/wiki/Melbourne",
+        "anchors": [
+          "Melbourne"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Almere",
+        "url": "https://en.wikipedia.org/wiki/Almere",
+        "anchors": [
+          "Almere"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "South_Korea",
+        "url": "https://en.wikipedia.org/wiki/South_Korea",
+        "anchors": [],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Incheon",
+        "url": "https://en.wikipedia.org/wiki/Incheon",
+        "anchors": [
+          "Incheon"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Yiheng_Wang",
+        "url": "https://en.wikipedia.org/wiki/Yiheng_Wang",
+        "anchors": [
+          "Yiheng Wang"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Sweden",
+        "url": "https://en.wikipedia.org/wiki/Sweden",
+        "anchors": [],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Uppsala",
+        "url": "https://en.wikipedia.org/wiki/Uppsala",
+        "anchors": [
+          "Uppsala"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Italy",
+        "url": "https://en.wikipedia.org/wiki/Italy",
+        "anchors": [],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Switzerland",
+        "url": "https://en.wikipedia.org/wiki/Switzerland",
+        "anchors": [],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "New_Zealand",
+        "url": "https://en.wikipedia.org/wiki/New_Zealand",
+        "anchors": [],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Russia",
+        "url": "https://en.wikipedia.org/wiki/Russia",
+        "anchors": [],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Czech_Republic",
+        "url": "https://en.wikipedia.org/wiki/Czech_Republic",
+        "anchors": [],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Algorithm",
+        "url": "https://en.wikipedia.org/wiki/Algorithm",
+        "anchors": [
+          "algorithms"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "List_of_world_records_in_speedcubing",
+        "url": "https://en.wikipedia.org/wiki/List_of_world_records_in_speedcubing",
+        "anchors": [
+          "world record",
+          "List of world records in speedcubing"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Jessica_Fridrich",
+        "url": "https://en.wikipedia.org/wiki/Jessica_Fridrich",
+        "anchors": [
+          "Jessica Fridrich"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mind_sport",
+        "url": "https://en.wikipedia.org/wiki/Mind_sport",
+        "anchors": [
+          "mind sport"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Combination_puzzle",
+        "url": "https://en.wikipedia.org/wiki/Combination_puzzle",
+        "anchors": [
+          "combination puzzles"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "N-dimensional_sequential_move_puzzle",
+        "url": "https://en.wikipedia.org/wiki/N-dimensional_sequential_move_puzzle",
+        "anchors": [
+          "3x3x3 puzzle"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Optimal_solutions_for_the_Rubik's_Cube",
+        "url": "https://en.wikipedia.org/wiki/Optimal_solutions_for_the_Rubik%27s_Cube",
+        "anchors": [
+          "high speeds"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Permutation",
+        "url": "https://en.wikipedia.org/wiki/Permutation",
+        "anchors": [
+          "solving"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pattern_recognition",
+        "url": "https://en.wikipedia.org/wiki/Pattern_recognition",
+        "anchors": [
+          "pattern recognition"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cube_(algebra)",
+        "url": "https://en.wikipedia.org/wiki/Cube_(algebra)",
+        "anchors": [
+          "NxNxN"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hungarian_people",
+        "url": "https://en.wikipedia.org/wiki/Hungarian_people",
+        "anchors": [
+          "Hungarian"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Professor",
+        "url": "https://en.wikipedia.org/wiki/Professor",
+        "anchors": [
+          "professor"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Architecture",
+        "url": "https://en.wikipedia.org/wiki/Architecture",
+        "anchors": [
+          "architecture"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ernő_Rubik",
+        "url": "https://en.wikipedia.org/wiki/Ern%C5%91_Rubik",
+        "anchors": [
+          "Ernő Rubik"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ideal_Toy_Company",
+        "url": "https://en.wikipedia.org/wiki/Ideal_Toy_Company",
+        "anchors": [
+          "Ideal Toy Company"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lars_Petrus",
+        "url": "https://en.wikipedia.org/wiki/Lars_Petrus",
+        "anchors": [
+          "Lars Petrus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Internet",
+        "url": "https://en.wikipedia.org/wiki/Internet",
+        "anchors": [
+          "Internet"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Website",
+        "url": "https://en.wikipedia.org/wiki/Website",
+        "anchors": [
+          "websites"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ron_van_Bruchem",
+        "url": "https://en.wikipedia.org/wiki/Ron_van_Bruchem",
+        "anchors": [
+          "Ron van Bruchem"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tyson_Mao",
+        "url": "https://en.wikipedia.org/wiki/Tyson_Mao",
+        "anchors": [
+          "Tyson Mao"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chris_Hardwick_(speedcuber)",
+        "url": "https://en.wikipedia.org/wiki/Chris_Hardwick_(speedcuber)",
+        "anchors": [
+          "Chris Hardwick"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "2003_World_Rubik's_Cube_Championship",
+        "url": "https://en.wikipedia.org/wiki/2003_World_Rubik%27s_Cube_Championship",
+        "anchors": [
+          "championship"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Manufacturing",
+        "url": "https://en.wikipedia.org/wiki/Manufacturing",
+        "anchors": [
+          "manufacturers"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Gancube",
+        "url": "https://en.wikipedia.org/wiki/Gancube",
+        "anchors": [
+          "GANCUBE"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "David_Singmaster",
+        "url": "https://en.wikipedia.org/wiki/David_Singmaster",
+        "anchors": [
+          "David Singmaster"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Layer_by_Layer",
+        "url": "https://en.wikipedia.org/wiki/Layer_by_Layer",
+        "anchors": [
+          "beginner method or layer by layer (LBL)"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Muscle_memory",
+        "url": "https://en.wikipedia.org/wiki/Muscle_memory",
+        "anchors": [
+          "muscle memory"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "French_people",
+        "url": "https://en.wikipedia.org/wiki/French_people",
+        "anchors": [
+          "French"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Gilles_Roux",
+        "url": "https://en.wikipedia.org/wiki/Gilles_Roux",
+        "anchors": [
+          "Gilles Roux"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sean_Patrick_Villanueva",
+        "url": "https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva",
+        "anchors": [
+          "Sean Patrick Villanueva"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Dutch_people",
+        "url": "https://en.wikipedia.org/wiki/Dutch_people",
+        "anchors": [
+          "Dutch"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Truncated_mean",
+        "url": "https://en.wikipedia.org/wiki/Truncated_mean",
+        "anchors": [
+          "trimmed mean"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mean",
+        "url": "https://en.wikipedia.org/wiki/Mean",
+        "anchors": [
+          "mean"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sport_stacking",
+        "url": "https://en.wikipedia.org/wiki/Sport_stacking",
+        "anchors": [
+          "sport stacking"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Rubik's_Master_Magic",
+        "url": "https://en.wikipedia.org/wiki/Rubik%27s_Master_Magic",
+        "anchors": [
+          "Rubik's Master Magic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cuboctahedron",
+        "url": "https://en.wikipedia.org/wiki/Cuboctahedron",
+        "anchors": [
+          "cuboctahedron"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Rubik's_Cube_World_Championship",
+        "url": "https://en.wikipedia.org/wiki/Rubik%27s_Cube_World_Championship",
+        "anchors": [
+          "Rubik's Cube World Championship"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Magic_Cube",
+        "url": "https://en.wikipedia.org/wiki/Magic_Cube",
+        "anchors": [
+          "Magic Cube"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ],
+    "external": [
+      {
+        "url": "http://www.speedsolving.com/",
+        "anchors": [
+          "Speedsolving.com"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.speedsolving.com/wiki/index.php/Main_Page",
+        "anchors": [
+          "Speedsolving.com Wiki"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://ws2.binghamton.edu/fridrich/system.html",
+        "anchors": [
+          "Fridrich Method"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://grrroux.free.fr/method/Intro.html",
+        "anchors": [
+          "Roux Method"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://cube.crider.co.uk/",
+        "anchors": [
+          "ZZ Method"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ]
+  },
+  "stats": {
+    "n_categories": 3,
+    "n_sections": 18,
+    "n_tables": 3,
+    "n_local": 9,
+    "n_wiki": 86,
+    "n_external": 5,
+    "md_chars": 34507
+  }
+}

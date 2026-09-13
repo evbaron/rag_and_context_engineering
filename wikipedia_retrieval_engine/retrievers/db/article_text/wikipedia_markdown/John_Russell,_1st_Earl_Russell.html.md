@@ -1,0 +1,290 @@
+# John Russell, 1st Earl Russell
+
+## Infobox
+
+- **Monarch:** Victoria
+- **Preceded by:** The Viscount Palmerston
+- **Succeeded by:** The Earl of Derby
+- **Prime Minister:** The Earl of Derby Benjamin Disraeli
+- **Born:** John Russell ( 1792-08-18 ) 18 August 1792 Mayfair, Middlesex, England
+- **Died:** 28 May 1878 (1878-05-28) (aged 85) Richmond Park, Surrey, England
+- **Resting place:** St Michael's, Chenies
+- **Party:** Liberal (1859–1878)
+- **Other political affiliations:** Whig (before 1859)
+- **Spouses:** Adelaide Lister ( m. 1835; died 1838) Frances Elliot-Murray-Kynynmound ( m. 1841)
+- **Children:** 6, including John, Rollo, and Agatha
+- **Parent:** 6th Duke of Bedford (father)
+- **Relatives:** Bertrand Russell (grandson)
+- **Alma mater:** University of Edinburgh
+
+"Lord John Russell" and "The Earl Russell" redirect here. For other holders of either title, see [Lord John Russell (disambiguation)](/wiki/Lord_John_Russell_(disambiguation)) and [Earl Russell](/wiki/Earl_Russell).
+
+Garter-encircled arms of John Russell, 1st Earl Russell, KG, GCMG, PC, FRS
+
+**John Russell, 1st Earl Russell** (18 August 1792 – 28 May 1878), known as **Lord John Russell** before 1861, was a British [Whig](/wiki/Whigs_(British_political_party)) and [Liberal](/wiki/Liberal_Party_(UK)) statesman who was [Prime Minister of the United Kingdom](/wiki/Prime_Minister_of_the_United_Kingdom) from 1846 to 1852 and again from 1865 to 1866.
+
+The third son of the [6th Duke of Bedford](/wiki/John_Russell,_6th_Duke_of_Bedford), Russell was educated at [Westminster School](/wiki/Westminster_School) and Edinburgh University before entering Parliament in 1813. In 1828 he took a leading role in the repeal of the [Test Acts](/wiki/Test_Act) which discriminated against Catholics and Protestant dissenters. He was one of the principal architects of the [Reform Act 1832](/wiki/Reform_Act_1832), which was the first major reform of Parliament since the [Restoration](/wiki/Stuart_Restoration), and a significant early step on the road to democracy and away from rule by the aristocracy and [landed gentry](/wiki/Landed_gentry). He favoured expanding the right to vote to the [middle classes](/wiki/Middle_class) and enfranchising Britain's growing industrial towns and cities, but he never advocated universal suffrage and he opposed the secret ballot. Russell was outspoken on many issues over the course of his career, advocating [Catholic emancipation](/wiki/Catholic_emancipation) in the 1820s, calling for the repeal of the [Corn Laws](/wiki/Corn_Laws) in 1845, denouncing [Pope Pius IX](/wiki/Pope_Pius_IX)'s [revival of Catholic bishoprics](/wiki/Universalis_Ecclesiae) in 1850, and supporting [Italian unification](/wiki/Italian_unification) during the 1860s.
+
+Russell's ministerial career spanned four decades. In addition to his two terms as prime minister, between 1831 and 1865 he served in the cabinets of [Earl Grey](/wiki/Charles_Grey,_2nd_Earl_Grey), [Viscount Melbourne](/wiki/William_Lamb,_2nd_Viscount_Melbourne), the [Earl of Aberdeen](/wiki/George_Hamilton-Gordon,_4th_Earl_of_Aberdeen), and [Viscount Palmerston](/wiki/Henry_John_Temple,_3rd_Viscount_Palmerston). Russell's relationship with Palmerston was often stormy and contributed to bringing down Russell's first government in 1852 and Palmerston's first government in 1858. However, their renewed alliance from 1859 was one of the foundations of the united Liberal Party, which would go on to dominate British politics in the following decades. While Russell was an energetic and effective minister during the 1830s and helped to commit the Whigs to a reform agenda, he proved less successful as prime minister. During his two periods as prime minister he often suffered from a disunited cabinet and weak support in the House of Commons, meaning he was unable to carry out much of his agenda. During his first premiership, his government failed to deal effectively with the [Irish Famine](/wiki/Irish_Famine), a disaster that saw the loss of a quarter of Ireland's population through death and emigration. During his second premiership, he split his party by pressing for further parliamentary reform and was forced from office only to watch [Derby](/wiki/Edward_Smith-Stanley,_14th_Earl_of_Derby) and [Disraeli](/wiki/Disraeli) carry a more ambitious [Reform Bill](/wiki/Reform_Act_1867).
+
+## Early life and education
+
+Russell was born on 18 August 1792 into the highest echelons of the British aristocracy, being the third son of [John Russell, later 6th Duke of Bedford](/wiki/John_Russell,_6th_Duke_of_Bedford), and Georgiana Byng, daughter of [George Byng, 4th Viscount Torrington](/wiki/George_Byng,_4th_Viscount_Torrington). [The Russell family](/wiki/Duke_of_Bedford) had been one of the principal Whig dynasties in England since the 17th century, and were among the richest handful of aristocratic landowning families in the country, but as a younger son of the [6th Duke of Bedford](/wiki/John_Russell,_6th_Duke_of_Bedford), he was not expected to inherit the family estates. As a younger son of a duke, he bore the [courtesy title](/wiki/Courtesy_title) "Lord John Russell", but he was not a peer in his own right. He was, therefore, able to sit in the House of Commons until he was made an earl in 1861 and was elevated to the House of Lords.
+
+Russell was born two months premature and was small and sickly as a child (even in adulthood he remained under 5 feet 5 inches (1.65 m) in height, and his small stature was frequently the butt of jokes by political opponents and caricaturists). In 1801, at the age of nine, he was sent away to school. Shortly thereafter, his mother died. After being withdrawn from [Westminster School](/wiki/Westminster_School) in 1804 due to ill health, Russell was educated by tutors, including [Edmund Cartwright](/wiki/Edmund_Cartwright). In 1806, Russell's father was made [Lord Lieutenant of Ireland](/wiki/Lord_Lieutenant_of_Ireland) in the short-lived [Ministry of All the Talents](/wiki/Ministry_of_All_the_Talents), and it was during this time that the young Russell met [Charles James Fox](/wiki/Charles_James_Fox). Fox was Russell's formative political hero and would remain an inspiration throughout his life. Russell attended the [University of Edinburgh](/wiki/University_of_Edinburgh) from 1809 to 1812, lodging with Professor [John Playfair](/wiki/John_Playfair), who oversaw his studies. He did not take a degree. Although often in poor health, he travelled widely in Britain and in [Continental Europe](/wiki/Continental_Europe), and held a commission as Captain in the [Bedfordshire Militia](/wiki/Bedfordshire_Militia) in 1810. During his continental travels, Russell visited Spain where his [brother](/wiki/Lord_George_Russell) was serving as aide-de-camp to [Lord Wellington](/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington) in the [Peninsular War](/wiki/Peninsular_War). The following year, Russell had a 90-minute meeting with [Napoleon](/wiki/Napoleon) in December 1814, during the former emperor's exile at [Elba](/wiki/Elba).
+
+## Early political career: 1813–1846
+
+### Backbench MP: 1813–1830
+
+Russell entered the [House of Commons](/wiki/House_of_Commons_of_the_United_Kingdom) as a [Whig](/wiki/Whigs_(British_political_party)) in 1813 at the age of 20. The future reformer gained his seat by virtue of his father, the [Duke of Bedford](/wiki/6th_Duke_of_Bedford), [instructing the 30 or so electors of Tavistock](/wiki/Rotten_and_pocket_boroughs) to return him as an MP even though at the time Russell was abroad and under age.
+
+Russell entered Parliament more out of a sense of duty and family tradition than out of serious political ambition. With the exception of the 1806–1807 coalition government in which Russell's father had served, the Whigs had been out of power since 1783, and Russell could have had no certain expectation of a ministerial career. In June 1815, Russell denounced the [Bourbon Restoration](/wiki/Bourbon_Restoration_in_France) and Britain's declaration of war against the [recently-returned Napoleon](/wiki/Hundred_Days) by arguing in the House of Commons that foreign powers had no right to dictate France's form of government.
+
+In 1817, tired of the prospect of perpetual opposition, Russell resigned from Parliament. After spending a year out of politics and travelling on the continent, he changed his mind and re-entered Parliament for Tavistock at the [1818 general election](/wiki/1818_United_Kingdom_general_election). In 1819, Russell embraced the cause of parliamentary reform and he led the more reformist wing of the Whigs throughout the 1820s. In 1828, while still an opposition [backbencher](/wiki/Backbencher), Russell introduced a [Sacramental Test bill](/wiki/Sacramental_Test_Act_1828) with the aim of abolishing the prohibitions on Catholics and Protestant dissenters being elected to local government and from holding civil and military offices. The bill gained the backing of the Tory [Home Secretary](/wiki/Home_Secretary) [Sir Robert Peel](/wiki/Sir_Robert_Peel) and was passed into law.
+
+### Minister under Grey and Melbourne: 1830–1841
+
+When the Whigs came to power in 1830, Russell entered [Earl Grey's](/wiki/Charles_Grey,_2nd_Earl_Grey) government as [Paymaster of the Forces](/wiki/Paymaster_of_the_Forces). Despite being a relatively junior minister, as a vocal advocate for Parliamentary reform for over a decade, Russell became a principal leader in the fight for the [Reform Act 1832](/wiki/Reform_Act_1832). He was one of the committee of four tasked by Grey with drafting the reform bill, alongside cabinet ministers [Lord Durham](/wiki/John_Lambton,_1st_Earl_of_Durham), [Lord Duncannon](/wiki/John_Ponsonby,_4th_Earl_of_Bessborough) and [Sir James Graham](/wiki/Sir_James_Graham,_2nd_Baronet). Despite not yet being in the Cabinet, Russell was chosen to introduce the bill in March 1831 and over the following year he successfully steered the Reform Act's difficult progress through the Commons.
+
+Russell earned the nickname "Finality Jack" from his pronouncing the Act a final measure but in later years he would go on to push for further reform of Parliament. In May 1834, Russell made a speech on the Irish Tithes bill, in which he argued that the revenue generated by tithes was more than was justified by the size of the [established Protestant church in Ireland](/wiki/Church_of_Ireland). Russell argued that a proportion the tithe revenue should instead be appropriated for the education of the Irish poor, regardless of denomination.
+
+The speech was seen by its opponents as an attack on the established church in Ireland and it cemented a split within Grey's government over the issue of Irish tithes. The following month [four members of the Cabinet](/wiki/Derby_Dilly) resigned over the issue, weakening the government's hold on Parliament. Sensing that his position was now hopeless, Grey offered his resignation to the King in July, and was replaced by [Viscount Melbourne](/wiki/William_Lamb,_2nd_Viscount_Melbourne) at the head of the government.
+
+A pro-reform cartoon of 1831 depicting Russell as the man with the cure for the country's ills. Tory MPs for [rotten and pocket boroughs](/wiki/Rotten_and_pocket_boroughs) are shown as patients requiring "The Russell Purge".
+
+In November 1834, when the leader of the Commons, [Lord Althorp](/wiki/John_Spencer,_3rd_Earl_Spencer), succeeded to the peerage as [Earl Spencer](/wiki/Earl_Spencer_(peerage)), Russell became the leader of the Whigs in the Commons. Russell's appointment prompted [King William IV](/wiki/King_William_IV) to terminate Melbourne's government, in part because the King objected to Russell's views on the Irish Church. This remains the last time in British history that a monarch has dismissed a government. The subsequent minority Conservative government lasted less than five months before resigning in April 1835. Russell then returned to government office as [Home Secretary](/wiki/Home_Secretary) in [Melbourne's second government](/wiki/Second_Melbourne_ministry) which was announced on 20 April 1835. Soon after the formation of the new cabinet, the Melbourne called a [general election](/wiki/1835_United_Kingdom_general_election), in which Russell suffered the loss of his home constituency in [Devonshire](/wiki/Devon) as a result of strong Tory campaigning against Russell. However, as the government had not yet formed in the Commons, a new seat was found for him in the seat of [Stroud](/wiki/Stroud) by persuading [Charles Richard Fox](/wiki/Charles_Richard_Fox) to step down. On 19 May he was duly elected again just in time to take his place as Home Secretary and head of the government in the Commons. Through this period, he continued to lead the more reformist wing of the Whig party.
+
+As Home Secretary, Russell recommended and secured conditional royal pardons for the [Tolpuddle Martyrs](/wiki/Tolpuddle_Martyrs) and partial commutation of their sentences. In October 1835 he published plans for prison reform and appointed the first official prison inspectors. In 1837, he chose not to reform the convocation of the 'Hanging Cabinet' that decided, without agreed procedures, on the [Royal prerogative of mercy](/wiki/Royal_prerogative_of_mercy) in [death sentences](/wiki/Capital_punishment_in_the_United_Kingdom). As Home Secretary, he served as the last official receiver of pleas for mercy from those condemned to death. Some of these cases, such as those of [James Pratt and John Smith](/wiki/James_Pratt_and_John_Smith), would, in the 21st century, be legally reviewed, leading to posthumous pardons. In 1836, he introduced the [Marriages Act](/wiki/Marriage_Act_1836), which introduced civil marriages in England and Wales and allowed Catholics and Protestant Dissenters to marry in their own churches.
+
+In 1837, he steered a series of seven Acts through Parliament, which together reduced the number of offences carrying a sentence of death from thirty-seven to sixteen. This number was reduced further by the [Substitution of Punishments of Death Act 1841](/wiki/Substitution_of_Punishments_of_Death_Act_1841). After these reforms the death penalty was rarely used in the United Kingdom for crimes other than murder. As Home Secretary Russell also introduced the public registration for births, marriages and deaths and played a large role in democratising the government of cities outside of London.
+
+He then served as [Secretary of State for War and the Colonies](/wiki/Secretary_of_State_for_War_and_the_Colonies) from 1839 to 1841.
+
+### Opposition: 1841–1846
+
+In 1841 the Whigs lost the [general election](/wiki/1841_United_Kingdom_general_election) to the Conservatives and Russell and his colleagues returned to opposition. In November 1845, following the failure of that year's potato harvest across Britain and Ireland, Russell came out in favour of the repeal of the [Corn Laws](/wiki/Corn_Laws) and called upon the Prime Minister [Sir Robert Peel](/wiki/Robert_Peel) to take urgent action to alleviate the emerging food crisis.
+
+Peel had by this time already become convinced of the need for repeal, but he was opposed in this by the majority of his own cabinet and party. On 11 December 1845, frustrated by his party's unwillingness to support him on repeal, Peel resigned as prime minister and [Queen Victoria](/wiki/Queen_Victoria) invited Russell to form a new government. With the Whigs a minority in the Commons however, Russell struggled to assemble the necessary support. When [Lord Grey](/wiki/Henry_George_Grey,_3rd_Earl_Grey) declared that he would not serve in cabinet if [Lord Palmerston](/wiki/Lord_Palmerston) was made Foreign Secretary, it became clear to Russell that he could not form a viable government.
+
+Russell declined the Queen's invitation on 21 December and Peel agreed to stay on as prime minister. In June 1846, Peel repealed the Corn Laws with Whig support, bitterly dividing the Conservative Party in the process. Later that same night Peel's [Irish Coercion Bill](/wiki/Coercion_Act) was defeated after vengeful anti-repeal Tories voted with the opposition; and Peel, taking this as a vote of no confidence, resigned as prime minister. Russell accepted the Queen's offer to form a government; this time Grey did not object to Palmerston's appointment.
+
+## Prime minister: 1846–1852
+
+### Appointment
+
+Further information: [First Russell ministry](/wiki/First_Russell_ministry)
+
+Russell took office as prime minister with the Whigs only a minority in the House of Commons. It was the bitter split in the Conservative Party over the Corn Laws that allowed Russell's government to remain in power in spite of this, with Sir Robert Peel and his supporters offering tentative support to the new ministry in order to keep the protectionist Conservatives under [Lord Stanley](/wiki/Edward_Smith-Stanley,_14th_Earl_of_Derby) in opposition. At the [general election of August 1847](/wiki/1847_United_Kingdom_general_election) the Whigs made gains at the expense of the Conservatives, but remained a minority, with Russell's government still dependent on the votes of [Peelite](/wiki/Peelite) and [Irish Repealer](/wiki/Repeal_Association) MPs to win divisions in the Commons.
+
+### Domestic agenda
+
+Russell served on the [Royal Commission](/wiki/Royal_Commission_for_the_Exhibition_of_1851) for the [Great Exhibition](/wiki/Great_Exhibition), which took place in 1851 while he was Prime Minister. In this group portrait of the Commissioners, by [Henry Wyndham Phillips](/wiki/Henry_Wyndham_Phillips), Russell is depicted standing behind [Prince Albert](/wiki/Albert,_Prince_Consort) (fifth from right).
+
+Russell's political agenda was frequently frustrated by his lack of a reliable Commons majority. However, his government was able to secure a number of notable social reforms. Russell introduced teachers' pensions and used [Orders in Council](/wiki/Order_in_Council) to make grants for teacher training. The [Public Baths and Wash-houses Acts](/wiki/Baths_and_wash_houses_in_Britain#Regulation) of 1847 and 1848 enabled local authorities to build municipal baths and washing facilities for the growing urban working classes. Russell lent his support to the passage of the [Factories Act 1847](/wiki/Factories_Act_1847), which restricted the working hours of women and young persons (aged 13–18) in textile mills to 10 hours per day.
+
+1848 saw the introduction of the [Metropolitan Commission of Sewers](/wiki/Metropolitan_Commission_of_Sewers) and the [Public Health Act 1848](/wiki/Public_Health_Act_1848) ([11 & 12 Vict.](/wiki/11_%26_12_Vict.) c. 63), by which the state assumed responsibility for sewerage, clean water supply, refuse collection and other aspects of public health across much of England and Wales.
+
+Following the election of [Lionel de Rothschild](/wiki/Lionel_de_Rothschild) in the 1847 general election, Russell introduced a Jewish Relief bill, which would have allowed Rothschild and other Jews to sit in the House of Commons without their having to take the explicitly Christian oath of allegiance. In 1848, the bill was passed by the House of Commons, receiving support from the Whigs and a minority of Conservatives (including future prime minister [Benjamin Disraeli](/wiki/Benjamin_Disraeli)). However, it was twice rejected by the Tory dominated House of Lords, as was a new bill in 1851. Rothschild was re-elected in the 1852 general election following the fall of the Russell government but was unable to take his seat until the [Jews Relief Act](/wiki/Jews_Relief_Act_1858) was finally passed in 1858.
+
+### Ireland
+
+Russell's government led the calamitous response to the [Irish Famine](/wiki/Great_Famine_(Ireland)). During the course of the famine, an estimated one million people died from a combination of malnutrition, disease and starvation and well over one million more [emigrated from Ireland](/wiki/Irish_diaspora). After taking office in 1846, Russell's ministry introduced a programme of public works that by the end of that year employed some half-a-million but proved impossible to administer. In 1846 Russell reported that in one year more than 50,000 Irish families had been "turned out of their wretched dwellings without pity and without refuge...we have made it the most degraded and most miserable country in the world...all the world is crying shame upon us." In January 1847, the government abandoned this policy, realising that it had failed, and turned to a mixture of "indoor" and "outdoor" direct relief; the former administered in [workhouses](/wiki/Workhouse) through the [Irish Poor Laws](/wiki/Irish_Poor_Laws), the latter through [soup kitchens](/wiki/Soup_kitchen). The costs of the Poor Law fell primarily on the local landlords, some of whom in turn attempted to reduce their liability by evicting their tenants. In June 1847, the [Poor Law Extension Act](/wiki/Irish_Poor_Law_Extension_Act) was passed, which embodied the principle, popular in Britain, that Irish property should support Irish poverty. Irish landlords were believed in Britain to have created the conditions that led to the famine, a view which Russell shared.
+
+### Relations with the Roman Catholic Church
+
+In the first half of his premiership Russell aimed to improve the British government's relations with the papacy and the Catholic clergy in Ireland, which he saw as one of the keys to making Ireland a more willing part of the United Kingdom. Russell proposed to make an annual grant of £340,000 to the Catholic Church in Ireland, with the aim of ameliorating Irish Catholic opinion towards [the Union](/wiki/Acts_of_Union_1800). In 1847, Russell's father-in-law the [Earl of Minto](/wiki/Gilbert_Elliot-Murray-Kynynmound,_2nd_Earl_of_Minto) was dispatched on a confidential mission to Rome to seek the [Pope's](/wiki/Pius_IX) support for the grants plan. In the end, the idea had to be abandoned due to Catholic objections to what they saw as an attempt to control their clergy.
+
+However, Russell pressed ahead with plans to re-establish formal diplomatic relations between the [Court of St James's](/wiki/Court_of_St_James%27s) and the [Holy See](/wiki/Holy_See), which had been severed when [James II](/wiki/James_II_of_England) was deposed in 1688. Russell managed to pass an Act to authorise an exchange of ambassadors with Rome, but not before the bill was amended by Parliament to stipulate that the Pope's ambassador must be a [layman](/wiki/Layman). The Pope refused to accept such a restriction on his choice of representative and so the exchange of ambassadors did not take place. It would not be until 1914 that formal [UK-Vatican diplomatic relations](/wiki/Holy_See%E2%80%93United_Kingdom_relations) were finally established.
+
+Relations with the papacy soured badly in late 1850 after [Pope Pius IX](/wiki/Pius_IX) issued the [bull](/wiki/Papal_bull) *[Universalis Ecclesiae](/wiki/Universalis_Ecclesiae)*. By this bull Pius unilaterally reintroduced Catholic bishops to England and Wales for the first time since the [Reformation](/wiki/English_Reformation). Anti-Catholic feelings ran high with many Protestants incensed at what they saw as impertinent foreign interference in the prerogative of the established [Church of England](/wiki/Church_of_England) to appoint bishops. Russell, not withstanding his long record of advocating civil liberties for Catholics, shared the traditional Whig suspicion of the Catholic hierarchy, and was angered at what he saw as a papal imposition. On 4 November 1850, in a letter to the [Bishop of Durham](/wiki/Edward_Maltby) published in *The Times* the same day, Russell wrote that the Pope's actions suggested a "pretension to supremacy" and declared that "No foreign prince or potentate will be permitted to fasten his fetters upon a nation which has so long and so nobly vindicated its right to freedom of opinion, civil, political, and religious". Russell's "Durham letter" won him popular support in England but in Ireland it was viewed as an unwarranted insult to the Pope. It lost Russell the confidence of Irish Repealer MPs and the cabinet were angered that he had made such an incendiary statement without having consulting them.
+
+The following year Russell passed the [Ecclesiastical Titles Act 1851](/wiki/Ecclesiastical_Titles_Act_1851) with Tory support, which made it a criminal offence carrying a fine of £100 for anyone outside of the Church of England to assume an episcopal title "of any city, town or place, or of any territory or district...in the United Kingdom." The Act was widely ignored without consequences and only served to further alienate Irish MPs, thereby weakening the government's position in the Commons.
+
+### Disagreements with Palmerston and fall of ministry
+
+Russell frequently clashed with his headstrong Foreign Secretary, [Lord Palmerston](/wiki/Henry_John_Temple,_3rd_Viscount_Palmerston), whose belligerence and support for continental revolution he found embarrassing. In 1847 Palmerston provoked a confrontation with the French government by undermining the plans of the Spanish court to marry the young [Spanish Queen](/wiki/Isabel_II_of_Spain) and [her sister](/wiki/Infanta_Luisa_Fernanda,_Duchess_of_Montpensier) into the French royal family.
+He subsequently clashed with Russell over plans to increase the size of the army and the navy to defend against the perceived threat of French invasion, which subsided after the overthrow of the [French king](/wiki/Louis_Philippe_I) in 1848.
+
+In 1850, further tension arose between the two over Palmerston's [gunboat diplomacy](/wiki/Gunboat_diplomacy) in the [Don Pacifico affair](/wiki/Don_Pacifico_affair), in which Palmerston sought compensation from the [Greek government](/wiki/Government_of_Greece) for the ransacking and the burning of the house of [David Pacifico](/wiki/David_Pacifico), a Gibraltarian holder of a British passport. Russell considered the matter "hardly worth the interposition of the British lion," and when Palmerston ignored some of his instructions, the Prime Minister wrote to Palmerston telling him he had informed the Queen that he "thought the interests of the country required that a change should take place at the Foreign Department." However, less than a month later [Lord Stanley](/wiki/Edward_Geoffrey_Smith_Stanley,_14th_Earl_of_Derby) successfully led the House of Lords into passing a motion of censure of the Government over its handling of the affair and Russell realised that he needed to align with Palmerston in order to prevent a similar motion being passed by the House of Commons, which would have obliged the Government to resign. The Government prevailed, but Palmerston came out of the affair with his popularity at new heights since he was seen as the champion of defending British subjects anywhere in the world.
+
+Russell forced Palmerston to resign as Foreign Secretary after Palmerston recognised [Napoleon III](/wiki/Napoleon_III)'s coup of 2 December 1851 without first consulting the Queen or Cabinet. Russell tried to strengthen his government by recruiting leading Peelites such as [Sir James Graham](/wiki/Sir_James_Graham,_2nd_Baronet) and [the Duke of Newcastle](/wiki/Henry_Pelham-Clinton,_5th_Duke_of_Newcastle) to his administration, but they declined. Out of office, Palmerston sought revenge by turning a vote on a militia bill into a [vote of confidence](/wiki/Motions_of_no_confidence_in_the_United_Kingdom) in the Government. A majority vote in favour of an amendment proposed by Palmerston caused the downfall of Russell's ministry on 21 February 1852. This was Palmerston's famous "tit for tat with Johnny Russell."
+
+## Between premierships: 1852–1865
+
+### In opposition: February–December 1852
+
+Following Russell's resignation, on the 23 February 1852 the [Earl of Derby](/wiki/Edward_Smith-Stanley,_14th_Earl_of_Derby) accepted the Queen's invitation to form a government. The new Conservative ministry were a minority in the Commons due to the continuing rift with the [Peelites](/wiki/Peelites). Derby called a [general election](/wiki/1852_United_Kingdom_general_election) for July but failed to secure a majority. After the election Derby's Conservatives held 292 out of the 662 seats in the Commons but were able to carry on in office due to divisions among the opposition. Negotiations over a Whig-Peelite coalition stalled over the question of who would lead it. Russell's authority and popularity within the Whigs had been dented by his falling out with Palmerston, who flatly refused to serve under him again. Moreover he had alienated many in the Peelites and the Irish Brigade, who held the balance of power in the Commons, leaving them unwilling to support another Russell-led government. Palmerston proposed [Lord Lansdowne](/wiki/Henry_Petty-Fitzmaurice,_3rd_Marquess_of_Lansdowne) as a compromise candidate. This was acceptable to Russell but Lansdowne was reluctant to take on the burdens of leading a government. The defeat of [Disraeli's](/wiki/Benjamin_Disraeli) [Budget](/wiki/Budget_of_the_United_Kingdom) in December 1852 forced the issue. Derby's government resigned and the Queen sent for Lansdowne and the Peelite [Lord Aberdeen](/wiki/George_Hamilton_Gordon,_4th_Earl_of_Aberdeen). Lansdowne declined the Queen's invitation, pleading ill-health and so Aberdeen was tasked with forming a government.
+
+### The Aberdeen coalition: 1852–1855
+
+Further information: [Aberdeen ministry](/wiki/Aberdeen_ministry)
+
+*[Portrait of Lord John Russell](/wiki/Portrait_of_Lord_John_Russell)* by [Francis Grant](/wiki/Francis_Grant_(artist)), 1853
+
+Russell, as the leader of the Whigs, agreed to bring his party into a coalition with the Peelites, headed by Aberdeen. As the leader of the largest party in the coalition, Russell was reluctant to serve under Aberdeen in a subordinate position, but agreed to take on the role of Foreign Secretary on a temporary basis, to lend stability to the fledgling government. He resigned the role in February 1853 in favour of [Clarendon](/wiki/George_Villiers,_4th_Earl_of_Clarendon), but continued to lead for the government in the Commons and attended cabinet without ministerial responsibilities. Russell was unhappy that half of Aberdeen's cabinet was made up of Peelites, despite the fact that the Whigs contributed hundreds of MPs to the Government's support in the Commons, and the Peelites only around 40. However, he came to admire some of his Peelite colleagues, particularly the Chancellor of the Exchequer [William Gladstone](/wiki/William_Ewart_Gladstone), who would go on to become an important political ally in later years.
+
+With Aberdeen's agreement, Russell used his position as [Leader of the House of Commons](/wiki/Leader_of_the_House_of_Commons) to push for a new Reform Act. Although Russell had promoted the [Reform Act 1832](/wiki/Reform_Act_1832) as a one-off measure to re-balance the constitution, after twenty years he had become convinced of the need for further electoral reform. In February 1854 Russell introduced his bill to the House. The property qualification was to be reduced from £10 to £6 in boroughs, and from £50 to £10 in the counties. Additionally 66 seats would be removed from undersized constituencies and redistributed. The second reading of the bill was set for March 1854, but the prospect of imminent war with Russia led to it being postponed until April. After the outbreak of war on 28 March Russell came under pressure from the cabinet to withdraw the bill entirely. Russell threatened to resign if the cabinet abandoned the reform bill, but he was convinced to stay on by Aberdeen, who promised that he would support the reform bill if Russell reintroduced it in a future session. However, with the fall of the Aberdeen government the following year, it would be 12 years before Russell had another chance to introduce a reform bill.
+
+Together with Palmerston, Russell supported the government taking a hard line against Russian territorial ambitions in the [Ottoman Empire](/wiki/Ottoman_Empire), a policy that ultimately resulted in Britain's entry into the [Crimean War](/wiki/Crimean_War) in March 1854, an outcome that the more cautious Aberdeen had hoped to avoid. In the following months Russell grew frustrated by what he saw as a lack of effective war leadership by Aberdeen and the [Secretary of State for War](/wiki/Secretary_of_State_for_War), the [Duke of Newcastle](/wiki/Henry_Pelham-Clinton,_5th_Duke_of_Newcastle). Dispatches from the front reported that the army was suffering from supply shortages and a lack of adequate accommodation and medical facilities. In November 1854 Russell urged Aberdeen to replace Newcastle with Palmerston, who he believed would get a firmer grip on the organisation of the war, but these suggestions came to nothing. In January 1855, after a series of military setbacks, a Commons motion was brought by the radical MP [John Roebuck](/wiki/John_Arthur_Roebuck) to appoint a select committee to investigate the management of the war. Russell, not wishing to vote against an inquiry he believed was badly needed, resigned from the cabinet in order to abstain. Aberdeen viewed the Roebuck motion as a vote of no confidence in his leadership and, accordingly, when it passed by 305-148, he resigned.
+
+In the eyes of many, including the Queen and Aberdeen, Russell's temperamental behaviour and personal ambition had undermined the stability of the coalition. On visiting [Windsor Castle](/wiki/Windsor_Castle) to resign, Aberdeen told the Queen "Had it not been for the incessant attempts of Lord John Russell to keep up party differences, it must be acknowledged that the experiment of a coalition had succeeded admirably," an assessment with which the Queen agreed. Russell accepted an invitation from the Queen to form a new government but found that he could not assemble the necessary support, with many of his colleagues having been angered by his abandonment of Aberdeen over the Roebuck motion. Palmerston became prime minister, and Russell reluctantly accepted the role of Colonial Secretary in his cabinet. Russell was sent to Vienna to negotiate peace terms with Russia, but his proposals were rejected and he resigned from the cabinet and returned to the backbenches in July 1855.
+
+### Return to the backbenches: 1855–1859
+
+Following his resignation Russell wrote to his father-in-law that he would not serve again under Palmerston or any other prime minister. For a time it appeared as if his career in frontbench politics might be over. Russell continued to speak out from the backbenches on the issues he most cared about - lobbying for increased government grants for education and for reduction in the property qualification for Parliamentary elections. In early 1857 Russell became a vocal critic of Palmerston's government over the [Anglo-Persian War](/wiki/Anglo-Persian_War) and the [Second Opium War](/wiki/Second_Opium_War). Russell spoke in support of a motion tabled by [Richard Cobden](/wiki/Richard_Cobden), which criticised British military action in China and calling for a select committee inquiry. When the motion passed on 3 March, Palmerston dissolved Parliament and went to the country. In the subsequent [general election](/wiki/1857_United_Kingdom_general_election) Palmerston was swept back into power on a tide of patriotic feeling with an increased majority. Many of Palmerston's critics lost their seats but Russell hung on in the City of London, after fighting off an attempt to deselect him and replace him with a pro-Palmerston Whig candidate. Palmerston's triumph was short-lived. In February 1858 the Government rushed through a Conspiracy to Murder bill, following the [attempted assassination](/wiki/Orsini_plot) of Napoleon III by Italian nationalist [Felice Orsini](/wiki/Felice_Orsini) - an attack planned in Britain using British-made explosives. Russell attacked the bill, which he saw as undermined traditional British political liberties to appease a foreign government. On 19 February Russell voted in favour of [Thomas Milner Gibson's](/wiki/Thomas_Milner_Gibson) motion, which criticised the government for bowing to French demands. When the motion passed by 19 votes Palmerston's government resigned.
+
+### Foreign Secretary under Palmerston: 1859–1865
+
+Further information: [Liberal government, 1859–1866](/wiki/Liberal_government,_1859%E2%80%931866)
+
+See also: [United Kingdom and the American Civil War](/wiki/United_Kingdom_and_the_American_Civil_War)
+
+In 1859, following another short-lived Conservative government, Palmerston and Russell made up their differences, and Russell consented to serve as [Foreign Secretary](/wiki/Secretary_of_State_for_Foreign_Affairs_(UK)) in a new Palmerston cabinet, usually considered the first true [Liberal](/wiki/Liberal_Party_(UK)) cabinet. This period was a particularly eventful one in the world outside Britain, seeing the [Unification of Italy](/wiki/Unification_of_Italy) (the change of British government to one sympathetic to Italian nationalism had a marked part in this process), the [American Civil War](/wiki/American_Civil_War), and the [1864 war](/wiki/Second_Schleswig_War) over [Schleswig-Holstein](/wiki/Schleswig-Holstein) between [Denmark](/wiki/Denmark) and the [German states](/wiki/German_Confederation). Russell arranged the [London Conference of 1864](/wiki/London_Conference_of_1864), but failed to establish peace in the war. His tenure of the Foreign Office was noteworthy for the famous dispatch in which he defended Italian unification: "Her Majesty's Government will turn their eyes rather to the gratifying prospect of a people building up the edifice of their liberties, and consolidating the work of their independence, amid the sympathies and good wishes of Europe" (27 October 1860).
+
+### Elevation to the peerage: 1861
+
+In 1861 Russell was elevated to the peerage as [Earl Russell](/wiki/Earl_Russell), of [Kingston Russell](/wiki/Kingston_Russell) in the County of [Dorset](/wiki/Dorset), and as [Viscount Amberley](/wiki/Viscount_Amberley), of [Amberley](/wiki/Amberley,_Gloucestershire) in the County of Gloucester, and of Ardsalla in the [County of Meath](/wiki/County_Meath)
+in the [Peerage of the United Kingdom](/wiki/Peerage_of_the_United_Kingdom). Henceforth, as a [suo jure](/wiki/Suo_jure) peer, rather than merely being known as 'Lord' because he was the son of a Duke, he sat in the House of Lords for the remainder of his career.
+
+## Prime Minister again: 1865–1866
+
+Further information: [Liberal government, 1859–1866](/wiki/Liberal_government,_1859%E2%80%931866)
+
+When Palmerston suddenly died in late 1865, Russell again became [prime minister](/wiki/Prime_minister). His second premiership was short and frustrating, and Russell failed in his great ambition of expanding the franchise, a task that would be left to his Conservative successors, Derby and [Benjamin Disraeli](/wiki/Benjamin_Disraeli). In 1866, party disunity again brought down his government. Russell never again held any office.
+
+## Final years and death
+
+Following the death of their daughter-in-law Viscountess Amberley in 1874 and their son Viscount Amberley in 1876, Earl Russell and Countess Russell brought up their orphaned grandchildren, [John ("Frank") Russell](/wiki/Frank_Russell,_2nd_Earl_Russell), who became 2nd Earl Russell on his grandfather's death, and [Bertrand Russell](/wiki/Bertrand_Russell) who would go on to become a noted philosopher and who in later life recalled his elderly grandfather as "a kindly old man in a wheelchair."
+
+Earl Russell died at home at Pembroke Lodge on 28 May 1878. The Prime Minister, the [Earl of Beaconsfield](/wiki/Benjamin_Disraeli), offered a public funeral and burial at Westminster Abbey for Russell but this was declined by Countess Russell in accordance with her late husband's wish to be buried among his family and ancestors. He is buried at the ['Bedford Chapel'](/wiki/St_Michael%27s,_Chenies#Bedford_Chapel) at [St. Michael's Church](/wiki/St_Michael%27s,_Chenies), [Chenies](/wiki/Chenies), Buckinghamshire.
+
+## Personal life
+
+### Marriages and children
+
+Russell's first wife Adelaide (1807-1838)
+
+Russell married Adelaide Lister (widow of [Thomas Lister, 2nd Baron Ribblesdale](/wiki/Thomas_Lister,_2nd_Baron_Ribblesdale), who had died in 1832) on 11 April 1835. Together they had two daughters:
+
+- Lady Georgiana Adelaide Russell (1836 – 25 September 1922). She married Archibald Peel (son of General [Jonathan Peel](/wiki/Jonathan_Peel)) on 15 August 1867. They had seven children.
+- Lady Victoria Russell (20 October 1838 – 9 May 1880). She married Henry Villiers (the son of The Honorable [Henry Montagu Villiers](/wiki/Henry_Montagu_Villiers)) on 16 April 1861. They had ten children and left many descendants.
+
+Adelaide came down with a fever following the birth of their second child and died a few days later on 1 November 1838. Following her death, Russell continued to raise his late wife's four children from her first marriage, as well their two daughters.
+
+Russell's second wife Frances with their eldest son John
+
+On 20 July 1841 Russell remarried, to [Lady Frances ("Fanny") Elliot-Murray-Kynynmound](/wiki/Frances_Russell,_Countess_Russell), daughter of Russell's cabinet colleague [Gilbert Elliot, 2nd Earl of Minto](/wiki/Gilbert_Elliot,_2nd_Earl_of_Minto). Together they had four children:
+
+- [John Russell, Viscount Amberley](/wiki/John_Russell,_Viscount_Amberley) (10 December 1842 – 9 January 1876). He married [The Hon. Katherine Stanley](/wiki/Katharine_Russell,_Viscountess_Amberley) on 8 November 1864. They had four children, including a stillborn daughter. Their eldest son, [Frank](/wiki/Frank_Russell,_2nd_Earl_Russell), would succeed Lord John to the title to become the 2nd Earl Russell. Another son, the 3rd Earl, was the philosopher [Bertrand Russell](/wiki/Bertrand_Russell).
+- Hon. George Gilbert William Russell (14 April 1848 – 27 January 1933).
+- Hon. [Francis Albert Rollo Russell](/wiki/Rollo_Russell) (11 July 1849 – 30 March 1914). He married Alice Godfrey (d. 12 May 1886) on 21 April 1885. They had one son. He remarried Gertrude Joachim on 28 April 1891. They had two children.
+- [Lady Mary Agatha Russell](/wiki/Lady_Agatha_Russell) (1853 – 23 April 1933).
+
+In 1847 [Queen Victoria](/wiki/Queen_Victoria) granted [Pembroke Lodge](/wiki/Pembroke_Lodge) in [Richmond Park](/wiki/Richmond_Park) to Lord and Lady John. It remained their family home for the rest of their lives.
+
+### Religious views
+
+Russell was religious in a simple non-dogmatic way and supported "[broad church](/wiki/Broad_church)" stances in the Church of England. He opposed the "[Oxford Movement](/wiki/Oxford_Movement)" because its "Tractarian" members were too dogmatic and too close to [Roman Catholicism](/wiki/Catholic_Church). He supported Broad Churchmen or Latitudinarians by several appointments of liberal churchmen as bishops. In 1859 he reversed himself and decided to free non-Anglicans of the duty of paying rates (taxes) to the local Anglican parish. His political clumsiness and opposition to Church finance made him a target of attack and ridicule in many Church circles.
+
+## Legacy and reputation
+
+"The greatest liberal statesman of modern times" - Russell's small stature was frequently lampooned by political caricaturists.
+
+Scion of one of the most powerful aristocratic families, Russell was a leading reformer who weakened the power of the aristocracy. His great achievements, wrote [A. J. P. Taylor](/wiki/A._J._P._Taylor), were based on his persistent battles in Parliament over the years on behalf of the expansion of liberty; after each loss he tried again and again, until finally, his efforts were largely successful. [E. L. Woodward](/wiki/Llewellyn_Woodward), however, argued that he was too much the abstract theorist:
+
+> He was more concerned with the removal of obstacles to civil liberty than with the creation of a more reasonable and civilized society. His political theory centred in the [revolution of 1688](/wiki/Glorious_Revolution), and in the clique of aristocratic families to whom the country owed loyalty in return for something like the **[charte octroyée](/wiki/Charter_of_1814)** of the reform bill.
+
+— [Woodward 1962](#CITEREFWoodward1962), p. 100
+
+Nevertheless, Russell led his Whig party into support for reform; he was the principal architect of the [Reform Act 1832](/wiki/Reform_Act_1832) ([2 & 3 Will. 4](/wiki/2_%26_3_Will._4). c. 45).
+
+He was succeeded as Liberal leader by former Peelite [William Gladstone](/wiki/William_Ewart_Gladstone), and was thus the last true Whig to serve as prime minister. Generally taken as the model for [Anthony Trollope](/wiki/Anthony_Trollope)'s Mr. Mildmay, aspects of his character may also have suggested those of [Plantagenet Palliser](/wiki/Plantagenet_Palliser). An ideal statesman, said Trollope, should have "unblemished, unextinguishable, inexhaustible love of country.... But he should also be scrupulous, and, as being scrupulous, weak."
+
+The [Reform Act 1832](/wiki/Reform_Act_1832) and extension of the franchise to British cities are partly attributed to his efforts. He also worked for emancipation, leading the attack on the [Test](/wiki/Test_Act) and [Corporation acts](/wiki/Corporation_Act_1661), which were repealed in 1828, as well as towards legislation limiting working hours in factories in the [Factories Act 1847](/wiki/Factories_Act_1847), and the [Public Health Act 1848](/wiki/Public_Health_Act_1848) ([11 & 12 Vict.](/wiki/11_%26_12_Vict.) c. 63).
+
+His government's approach to dealing with the Great Irish Famine is now widely condemned as counterproductive, ill-informed and disastrous. Russell himself was sympathetic to the plight of the Irish poor, and many of his relief proposals were blocked by his cabinet or by the British Parliament.
+
+[Queen Victoria](/wiki/Queen_Victoria)'s attitude toward Russell was coloured by his role in the Aberdeen administration. On his death in 1878 her journal records that he was "a man of much talent, who leaves a name behind him, kind, & good, with a great knowledge of the constitution, who behaved very well, on many trying occasions; but he was impulsive, very selfish (as shown on many occasions, especially during Ld Aberdeen's administration) vain, & often reckless & imprudent."
+
+A public house in Bloomsbury, large parts of which are still owned by the Bedford Estate, is named after Russell, located on Marchmont Street.
+
+Earl Russell Street is named after him in [Aylestone](/wiki/Aylestone), a suburb of [Leicester](/wiki/Leicester).
+
+Russell Road in [Merton Park](/wiki/Merton_Park), a suburb of [London](/wiki/London), is named after him, adjacent to Derby, Gladstone, Palmerston and Pelham Roads, all named after former Prime Ministers.
+
+The town of [Russell](/wiki/Russell,_New_Zealand) in the [Northland Region](/wiki/Northland_Region) of New Zealand, was named in honour of him as the then Secretary of State for the Colonies.
+
+## Literature
+
+### Original works
+
+Russell published numerous books and essays over the course of his life, especially during periods out of office. He principally wrote on politics and history, but also turned his hand to a variety of other topics and genres. His published works include:
+
+- *The Life of [William Lord Russell](/wiki/William_Russell,_Lord_Russell)* (1819) - a biography of his famous ancestor.
+- *Essays and Sketches of Life and Character by a Gentleman who has left his lodgings* (1820) - a series of social and cultural commentaries ostensibly found in a missing lodger's rooms, published anonymously.
+- *An Essay on the History of the English Government and Constitution, from the reign of [Henry VII](/wiki/Henry_VII_of_England). to the present time* (1821)
+- *The Nun of Arrouca: a Tale* (1822) - a romantic novel set in Portugal during the Peninsular War.
+- *Don Carlos: or, Persecution. A tragedy, in five acts* (1822) - a blank verse play on the same subject as the [play of the same title](/wiki/Don_Carlos_(play)) by [Friedrich Schiller](/wiki/Friedrich_Schiller).
+- *Memoirs of the Affairs of Europe from the [Peace of Utrecht](/wiki/Peace_of_Utrecht)* (1824) - a second volume appeared in 1829.
+- *The Establishment of the Turks in Europe, An Historical Discourse* (1828)
+- *The Causes of the French Revolution* (1832)
+
+  "The Author of Memoirs of the Affairs of Europe" - an illustration of Russell from [Fraser's Magazine](/wiki/Fraser%27s_Magazine), 1831
+- *Adventures in the Moon, and Other Worlds* (1836) - a collection of [fantasy](/wiki/Fantasy_literature) short stories, published anonymously.
+- *The Life and Times of [Charles James Fox](/wiki/Charles_James_Fox)* (1859-1866) - a three volume biography of Russell's political hero.
+- *Essays on the Rise and Progress of the Christian Religion in the West of Europe, from the reign of [Tiberius](/wiki/Tiberius) to the [Council of Trent](/wiki/Council_of_Trent)* (1871)
+- *The Foreign Policy of England 1570-1870, An Historical Essay* (1871)
+- *Recollections and Suggestions 1813-1873* (1875) - Russell's political memoir.
+
+### As editor
+
+- *Correspondence of [John, Fourth Duke of Bedford](/wiki/John_Russell,_4th_Duke_of_Bedford)* - in three volumes, published between 1842 and 1846.
+- *Memoirs, Journal, and Correspondence of [Thomas Moore](/wiki/Thomas_Moore)* - in eight volumes, published between 1853 and 1856. Russell was Moore's literary executor and published his papers in accordance with his late friend's wishes.
+- *Memorials and correspondence of Charles James Fox* - in four volumes, published between 1853 and 1857.
+
+### Dedications
+
+*[A Tale of Two Cities](/wiki/A_Tale_of_Two_Cities)* by [Charles Dickens](/wiki/Charles_Dickens) was dedicated to Lord John Russell, "In remembrance of many public services and private kindnesses." In speech given in 1869, Dickens remarked of Russell that "there is no man in England whom I respect more in his public capacity, whom I love more in his private capacity."
+
+## Ancestry
+
+| Ancestors of John Russell, 1st Earl Russell |
+| --- |
+| |  |  |  |  |  |  |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | |  |  | |  |  | |  |  | |  | 8. [His Grace John Russell, 4th Duke of Bedford](/wiki/John_Russell,_4th_Duke_of_Bedford) | | | | |  |  | |  |  | | | | |  | |  | 4. [Francis Russell, Marquess of Tavistock](/wiki/Francis_Russell,_Marquess_of_Tavistock) | | | |  | | | |  |  | |  |  | |  |  | | | | |  | |  | 9. [Lady Gertrude Leveson-Gower](/wiki/Gertrude_Russell,_Duchess_of_Bedford) | | | | |  |  | |  |  | | | | |  | |  | 2. [His Grace John Russell, 6th Duke of Bedford](/wiki/John_Russell,_6th_Duke_of_Bedford) | | | |  | | | | | | | |  |  | |  |  | |  |  | |  |  | | | | |  | |  | 10. [Rt. Hon. William Anne Keppel, 2nd Earl of Albemarle](/wiki/Willem_van_Keppel,_2nd_Earl_of_Albemarle) | | | | |  |  | |  |  | | | | |  | |  | 5. Lady Elizabeth Keppel | | | |  | | | |  |  | |  |  | |  |  | | | | |  | |  | 11. [Lady Anne Lennox](/wiki/Anne_van_Keppel,_Countess_of_Albemarle) | | | | |  |  | |  |  | | | | |  | |  | 1. Rt. Hon. **John Russell, first Earl Russell** | | | |  | | | | | | | | | | | |  | |  |  | |  |  | |  |  | |  |  | | | | |  | |  | 12. [Maj.-Gen. Rt. Hon. George Byng, 3rd Viscount Torrington](/wiki/George_Byng,_3rd_Viscount_Torrington) | | | | |  |  | |  |  | | | | |  | |  | 6. [Rt. Hon. George Byng, 4th Viscount Torrington](/wiki/George_Byng,_4th_Viscount_Torrington) | | | |  | | | |  |  | |  |  | |  |  | | | | |  | |  | 13. Elizabeth Daniel | | | | |  |  | |  |  | | | | |  | |  | 3. Hon. Georgiana Elizabeth Byng | | | |  | | | | | | | |  |  | |  |  | |  |  | |  |  | | | | |  | |  | 14. [Rt. Hon. John Boyle, 5th Earl of Cork](/wiki/John_Boyle,_5th_Earl_of_Cork) | | | | |  |  | |  |  | | | | |  | |  | 7. Lady Lucy Boyle | | | |  | | | |  |  | |  |  | |  |  | | | | |  | |  | 15. Margaret Hamilton | | | | |  |  | |  |  |  |  |  |  |  |  |  |  |  |  |  |  | |
+
+## Arms
+
+Coat of arms of John Russell, 1st Earl Russell
+
+|  |  |
+| --- | --- |
+|  | Crest  A goat statant argent, armed and unguled or.  Escutcheon  Argent, a lion rampant gules, on a chief sable, three escallops of the field, over the centre escallop a mullet.  Supporters  Dexter, a lion gules; sinister, an heraldic antelope gules, armed, unguled, tufted, ducally gorged and chained, the chain reflexed over the back or; each supporter charged on the shoulder with a mullet argent.  Motto  *Che sara sara* (What must be must be).  Orders  The Most Noble Order of the Garter (KG). |
+
+## See also
+
+- [British Blue Book](/wiki/British_Blue_Book)
+- [Internationalization of the Danube River](/wiki/Internationalization_of_the_Danube_River)
+- [Confederate States of America § International diplomacy](/wiki/Confederate_States_of_America#International_diplomacy)
+
+## References
+
+### Notes
+
+### Citations
+
+### Sources
+
+### Historiography
+
+## External links
+
+- [Works by John Russell, 1st Earl Russell](https://www.gutenberg.org/ebooks/author/42283) at [Project Gutenberg](/wiki/Project_Gutenberg)
+- [Lord John Russell 1st Earl Russell](https://www.gov.uk/government/history/past-prime-ministers/lord-john-russell-1st-earl-russell), short biography from the 10 Downing Street website
+- *[Hansard](/wiki/Hansard)* 1803–2005: [contributions in Parliament by Lord John Russell](https://api.parliament.uk/historic-hansard/people/lord-john-russell)
+- [Lord John Russell 1792–1878](https://web.archive.org/web/20060108134519/http://www.liberalhistory.org.uk/record.jsp?type=page&ID=105&liberalbiographies=liberalbiographies) biography from the Liberal Democrat History Group
+- [Works by or about John Russell, 1st Earl Russell](https://archive.org/search.php?query=%28%28John+Russell%2C+1st+Earl+Russell%29%20OR%20%28%221792-1878%22%20AND%20Russell%29%29%20AND%20%28-mediatype:software%29) at the [Internet Archive](/wiki/Internet_Archive)
+- [Works by John Russell, 1st Earl Russell](https://librivox.org/author/8606) at [LibriVox](/wiki/LibriVox) (public domain audiobooks)
+- [More about Earl Russell](https://web.archive.org/web/20080825211259/http://www.number10.gov.uk/history-and-tour/prime-ministers-in-history/earl-russell) on the Downing Street website
+- [Pembroke Lodge](http://www.pembroke-lodge.co.uk/) (principal residence and museum)
+- [Portraits of John Russell, 1st Earl Russell](https://www.npg.org.uk/collections/search/person.php?LinkID=mp03900) at the [National Portrait Gallery, London](/wiki/National_Portrait_Gallery,_London)

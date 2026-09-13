@@ -1,0 +1,1032 @@
+{
+  "source": "Pneumatics.html",
+  "title": "Pneumatics",
+  "wiki_title": "Pneumatics",
+  "categories": [
+    "Pneumatics"
+  ],
+  "sections": [
+    {
+      "level": 2,
+      "id": "History",
+      "title": "History"
+    },
+    {
+      "level": 2,
+      "id": "Gases_used_in_pneumatic_systems",
+      "title": "Gases used in pneumatic systems"
+    },
+    {
+      "level": 2,
+      "id": "Comparison_to_hydraulics",
+      "title": "Comparison to hydraulics"
+    },
+    {
+      "level": 3,
+      "id": "Advantages_of_pneumatics",
+      "title": "Advantages of pneumatics"
+    },
+    {
+      "level": 3,
+      "id": "Advantages_of_hydraulics",
+      "title": "Advantages of hydraulics"
+    },
+    {
+      "level": 2,
+      "id": "Pneumatic_logic",
+      "title": "Pneumatic logic"
+    },
+    {
+      "level": 2,
+      "id": "Examples_of_pneumatic_systems_and_components",
+      "title": "Examples of pneumatic systems and components"
+    },
+    {
+      "level": 2,
+      "id": "See_also",
+      "title": "See also"
+    },
+    {
+      "level": 2,
+      "id": "Notes",
+      "title": "Notes"
+    },
+    {
+      "level": 2,
+      "id": "References",
+      "title": "References"
+    },
+    {
+      "level": 2,
+      "id": "External_links",
+      "title": "External links"
+    }
+  ],
+  "infobox": null,
+  "tables": [],
+  "links": {
+    "local": [],
+    "wiki": [
+      {
+        "target": "Compressed_air",
+        "url": "https://en.wikipedia.org/wiki/Compressed_air",
+        "anchors": [
+          "compressed air",
+          "Compressed air"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Gas_compressor",
+        "url": "https://en.wikipedia.org/wiki/Gas_compressor",
+        "anchors": [
+          "compressor",
+          "Air compressors"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pneumatic_cylinder",
+        "url": "https://en.wikipedia.org/wiki/Pneumatic_cylinder",
+        "anchors": [
+          "cylinders",
+          "Pneumatic cylinder"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pneumatic_actuator",
+        "url": "https://en.wikipedia.org/wiki/Pneumatic_actuator",
+        "anchors": [
+          "pneumatic actuators",
+          "Pneumatic actuator"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Carbon_dioxide",
+        "url": "https://en.wikipedia.org/wiki/Carbon_dioxide",
+        "anchors": [
+          "carbon dioxide",
+          "phase change"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "ISBN_(identifier)",
+        "url": "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+        "anchors": [
+          "ISBN"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pneumatic_(Gnosticism)",
+        "url": "https://en.wikipedia.org/wiki/Pneumatic_(Gnosticism)",
+        "anchors": [
+          "Pneumatic (Gnosticism)"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fireless_locomotive",
+        "url": "https://en.wikipedia.org/wiki/Fireless_locomotive",
+        "anchors": [
+          "fireless locomotives"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "H.K._Porter,_Inc.",
+        "url": "https://en.wikipedia.org/wiki/H.K._Porter,_Inc.",
+        "anchors": [
+          "H.K. Porter, Inc."
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pneuma",
+        "url": "https://en.wikipedia.org/wiki/Pneuma",
+        "anchors": [
+          "pneuma"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pressurized_air",
+        "url": "https://en.wikipedia.org/wiki/Pressurized_air",
+        "anchors": [
+          "pressurized air"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Industrial_sector",
+        "url": "https://en.wikipedia.org/wiki/Industrial_sector",
+        "anchors": [
+          "industry"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Inert_gases",
+        "url": "https://en.wikipedia.org/wiki/Inert_gases",
+        "anchors": [
+          "inert gases"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Air_motor",
+        "url": "https://en.wikipedia.org/wiki/Air_motor",
+        "anchors": [
+          "air motors"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Solenoid_valve",
+        "url": "https://en.wikipedia.org/wiki/Solenoid_valve",
+        "anchors": [
+          "solenoid valves"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electric_motor",
+        "url": "https://en.wikipedia.org/wiki/Electric_motor",
+        "anchors": [
+          "electric motors"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hydraulic_actuator",
+        "url": "https://en.wikipedia.org/wiki/Hydraulic_actuator",
+        "anchors": [
+          "hydraulic actuators"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Dentistry",
+        "url": "https://en.wikipedia.org/wiki/Dentistry",
+        "anchors": [
+          "dentistry"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Construction",
+        "url": "https://en.wikipedia.org/wiki/Construction",
+        "anchors": [
+          "construction"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mining",
+        "url": "https://en.wikipedia.org/wiki/Mining",
+        "anchors": [
+          "mining"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Blowgun",
+        "url": "https://en.wikipedia.org/wiki/Blowgun",
+        "anchors": [
+          "blowguns"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bellows",
+        "url": "https://en.wikipedia.org/wiki/Bellows",
+        "anchors": [
+          "Bellows"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ctesibius_of_Alexandria",
+        "url": "https://en.wikipedia.org/wiki/Ctesibius_of_Alexandria",
+        "anchors": [
+          "Ctesibius of Alexandria"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Philo_of_Byzantium",
+        "url": "https://en.wikipedia.org/wiki/Philo_of_Byzantium",
+        "anchors": [
+          "Philo of Byzantium"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Vitruvius",
+        "url": "https://en.wikipedia.org/wiki/Vitruvius",
+        "anchors": [
+          "Vitruvius"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "De_architectura",
+        "url": "https://en.wikipedia.org/wiki/De_architectura",
+        "anchors": [
+          "De architectura"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hero_of_Alexandria",
+        "url": "https://en.wikipedia.org/wiki/Hero_of_Alexandria",
+        "anchors": [
+          "Hero of Alexandria"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Thermoscope",
+        "url": "https://en.wikipedia.org/wiki/Thermoscope",
+        "anchors": [
+          "thermoscope"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Air_thermometer",
+        "url": "https://en.wikipedia.org/wiki/Air_thermometer",
+        "anchors": [
+          "air thermometer"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Otto_von_Guericke",
+        "url": "https://en.wikipedia.org/wiki/Otto_von_Guericke",
+        "anchors": [
+          "Otto von Guericke"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Atmosphere_of_Earth",
+        "url": "https://en.wikipedia.org/wiki/Atmosphere_of_Earth",
+        "anchors": [
+          "atmospheric air"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Oxygen",
+        "url": "https://en.wikipedia.org/wiki/Oxygen",
+        "anchors": [
+          "oxygen"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Robot_Wars_(TV_series)",
+        "url": "https://en.wikipedia.org/wiki/Robot_Wars_(TV_series)",
+        "anchors": [
+          "Robot Wars"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "SodaStream",
+        "url": "https://en.wikipedia.org/wiki/SodaStream",
+        "anchors": [
+          "SodaStream"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hydraulics",
+        "url": "https://en.wikipedia.org/wiki/Hydraulics",
+        "anchors": [
+          "hydraulics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fluid_power",
+        "url": "https://en.wikipedia.org/wiki/Fluid_power",
+        "anchors": [
+          "fluid power"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pound_per_square_inch",
+        "url": "https://en.wikipedia.org/wiki/Pound_per_square_inch",
+        "anchors": [
+          "psi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pascal_(unit)",
+        "url": "https://en.wikipedia.org/wiki/Pascal_(unit)",
+        "anchors": [
+          "kPa"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Spring_(device)",
+        "url": "https://en.wikipedia.org/wiki/Spring_(device)",
+        "anchors": [
+          "spring"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hydraulic_fluid",
+        "url": "https://en.wikipedia.org/wiki/Hydraulic_fluid",
+        "anchors": [
+          "hydraulic fluid"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pneumatic_circuit",
+        "url": "https://en.wikipedia.org/wiki/Pneumatic_circuit",
+        "anchors": [
+          "Pneumatic circuit"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Logical_conjunction",
+        "url": "https://en.wikipedia.org/wiki/Logical_conjunction",
+        "anchors": [
+          "And"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Logical_disjunction",
+        "url": "https://en.wikipedia.org/wiki/Logical_disjunction",
+        "anchors": [
+          "Or"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fluidics",
+        "url": "https://en.wikipedia.org/wiki/Fluidics",
+        "anchors": [
+          "Fluidics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Air_brake_(road_vehicle)",
+        "url": "https://en.wikipedia.org/wiki/Air_brake_(road_vehicle)",
+        "anchors": [
+          "Air brakes"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bus",
+        "url": "https://en.wikipedia.org/wiki/Bus",
+        "anchors": [
+          "buses"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Truck",
+        "url": "https://en.wikipedia.org/wiki/Truck",
+        "anchors": [
+          "trucks"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Railway_air_brake",
+        "url": "https://en.wikipedia.org/wiki/Railway_air_brake",
+        "anchors": [
+          "Air brakes"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Train",
+        "url": "https://en.wikipedia.org/wiki/Train",
+        "anchors": [
+          "trains"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Air_engine",
+        "url": "https://en.wikipedia.org/wiki/Air_engine",
+        "anchors": [
+          "Air engines"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Barostat",
+        "url": "https://en.wikipedia.org/wiki/Barostat",
+        "anchors": [
+          "Barostat"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Neurogastroenterology",
+        "url": "https://en.wikipedia.org/wiki/Neurogastroenterology",
+        "anchors": [
+          "neurogastroenterology"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cable_jetting",
+        "url": "https://en.wikipedia.org/wiki/Cable_jetting",
+        "anchors": [
+          "Cable jetting"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Dental_drill",
+        "url": "https://en.wikipedia.org/wiki/Dental_drill",
+        "anchors": [
+          "Dental drill"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Compressed-air_engine",
+        "url": "https://en.wikipedia.org/wiki/Compressed-air_engine",
+        "anchors": [
+          "Compressed-air engine"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Compressed-air_vehicle",
+        "url": "https://en.wikipedia.org/wiki/Compressed-air_vehicle",
+        "anchors": [
+          "compressed-air vehicles"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Gas_Chromatography",
+        "url": "https://en.wikipedia.org/wiki/Gas_Chromatography",
+        "anchors": [
+          "Gas Chromatography"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Gas-operated_reloading",
+        "url": "https://en.wikipedia.org/wiki/Gas-operated_reloading",
+        "anchors": [
+          "Gas-operated reloading"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Holman_Projector",
+        "url": "https://en.wikipedia.org/wiki/Holman_Projector",
+        "anchors": [
+          "Holman Projector"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "HVAC_control_system",
+        "url": "https://en.wikipedia.org/wiki/HVAC_control_system",
+        "anchors": [
+          "HVAC control systems"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Inflatable_structure",
+        "url": "https://en.wikipedia.org/wiki/Inflatable_structure",
+        "anchors": [
+          "Inflatable structures"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lego_pneumatics",
+        "url": "https://en.wikipedia.org/wiki/Lego_pneumatics",
+        "anchors": [
+          "Lego pneumatics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pipe_organ",
+        "url": "https://en.wikipedia.org/wiki/Pipe_organ",
+        "anchors": [
+          "Pipe organ"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electro-pneumatic_action",
+        "url": "https://en.wikipedia.org/wiki/Electro-pneumatic_action",
+        "anchors": [
+          "Electro-pneumatic action"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tubular-pneumatic_action",
+        "url": "https://en.wikipedia.org/wiki/Tubular-pneumatic_action",
+        "anchors": [
+          "Tubular-pneumatic action"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Player_piano",
+        "url": "https://en.wikipedia.org/wiki/Player_piano",
+        "anchors": [
+          "Player piano"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Air_gun",
+        "url": "https://en.wikipedia.org/wiki/Air_gun#Pneumatic",
+        "anchors": [
+          "Pneumatic air guns"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pneumatic_bladder",
+        "url": "https://en.wikipedia.org/wiki/Pneumatic_bladder",
+        "anchors": [
+          "Pneumatic bladder"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Spud_Gun",
+        "url": "https://en.wikipedia.org/wiki/Spud_Gun",
+        "anchors": [
+          "Pneumatic launchers"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pneumatic_tube",
+        "url": "https://en.wikipedia.org/wiki/Pneumatic_tube#Pneumatic_post",
+        "anchors": [
+          "Pneumatic mail systems"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pneumatic_motor",
+        "url": "https://en.wikipedia.org/wiki/Pneumatic_motor",
+        "anchors": [
+          "Pneumatic motor"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pneumatic_tire",
+        "url": "https://en.wikipedia.org/wiki/Pneumatic_tire",
+        "anchors": [
+          "Pneumatic tire"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pneumatic_tool",
+        "url": "https://en.wikipedia.org/wiki/Pneumatic_tool",
+        "anchors": [
+          "Pneumatic tools"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Jackhammer",
+        "url": "https://en.wikipedia.org/wiki/Jackhammer",
+        "anchors": [
+          "Jackhammer"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Nailgun",
+        "url": "https://en.wikipedia.org/wiki/Nailgun",
+        "anchors": [
+          "Pneumatic nailgun"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pressure_regulator",
+        "url": "https://en.wikipedia.org/wiki/Pressure_regulator",
+        "anchors": [
+          "Pressure regulator"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pressure_sensor",
+        "url": "https://en.wikipedia.org/wiki/Pressure_sensor",
+        "anchors": [
+          "Pressure sensor"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pressure_switch",
+        "url": "https://en.wikipedia.org/wiki/Pressure_switch",
+        "anchors": [
+          "Pressure switch"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Launched_roller_coaster",
+        "url": "https://en.wikipedia.org/wiki/Launched_roller_coaster",
+        "anchors": [
+          "Launched roller coaster"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Vacuum_pump",
+        "url": "https://en.wikipedia.org/wiki/Vacuum_pump",
+        "anchors": [
+          "Vacuum pump"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Vacuum_sewer",
+        "url": "https://en.wikipedia.org/wiki/Vacuum_sewer",
+        "anchors": [
+          "Vacuum sewer"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ozone_cracking",
+        "url": "https://en.wikipedia.org/wiki/Ozone_cracking",
+        "anchors": [
+          "Ozone cracking"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pneudraulics",
+        "url": "https://en.wikipedia.org/wiki/Pneudraulics",
+        "anchors": [
+          "Pneudraulics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "History_of_pneumatic_power",
+        "url": "https://en.wikipedia.org/wiki/History_of_pneumatic_power",
+        "anchors": [
+          "History of pneumatic power"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ],
+    "external": [
+      {
+        "url": "https://en.wiktionary.org/wiki/%CF%80%CE%BD%CE%B5%E1%BF%A6%CE%BC%CE%B1",
+        "anchors": [
+          "πνεῦμα"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.designworldonline.com/articles/5265/203/Four-Ways-to-Boost-Pneumatic-Efficiency.aspx",
+        "anchors": [
+          "Four Ways to Boost Pneumatic Efficiency"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ]
+  },
+  "stats": {
+    "n_categories": 1,
+    "n_sections": 11,
+    "n_tables": 0,
+    "n_local": 0,
+    "n_wiki": 84,
+    "n_external": 2,
+    "md_chars": 10699
+  }
+}

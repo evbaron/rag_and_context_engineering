@@ -1,0 +1,2210 @@
+{
+  "source": "Ethereum.html",
+  "title": "Ethereum",
+  "wiki_title": "Ethereum",
+  "categories": [
+    "2015 software",
+    "Blockchains",
+    "Cross-platform software",
+    "Currencies introduced in 2015",
+    "Ethereum",
+    "Bytecodes"
+  ],
+  "sections": [
+    {
+      "level": 2,
+      "id": "History",
+      "title": "History"
+    },
+    {
+      "level": 3,
+      "id": "Founding_(2013–2014)",
+      "title": "Founding (2013–2014)"
+    },
+    {
+      "level": 3,
+      "id": "Development_(2014)",
+      "title": "Development (2014)"
+    },
+    {
+      "level": 3,
+      "id": "Launch_and_the_DAO_event_(2014–2016)",
+      "title": "Launch and the DAO event (2014–2016)"
+    },
+    {
+      "level": 3,
+      "id": "Continued_development_and_milestones_(2017–present)",
+      "title": "Continued development and milestones (2017–present)"
+    },
+    {
+      "level": 4,
+      "id": "CryptoKitties_and_the_ERC-721_NFT_standard",
+      "title": "CryptoKitties and the ERC-721 NFT standard"
+    },
+    {
+      "level": 4,
+      "id": "Continued_developments",
+      "title": "Continued developments"
+    },
+    {
+      "level": 3,
+      "id": "Transition_to_proof-of-stake",
+      "title": "Transition to proof-of-stake"
+    },
+    {
+      "level": 3,
+      "id": "Post-Merge_updates",
+      "title": "Post-Merge updates"
+    },
+    {
+      "level": 4,
+      "id": "Dencun",
+      "title": "Dencun"
+    },
+    {
+      "level": 4,
+      "id": "Pectra",
+      "title": "Pectra"
+    },
+    {
+      "level": 2,
+      "id": "Design",
+      "title": "Design"
+    },
+    {
+      "level": 3,
+      "id": "Overview",
+      "title": "Overview"
+    },
+    {
+      "level": 3,
+      "id": "Ether",
+      "title": "Ether"
+    },
+    {
+      "level": 3,
+      "id": "Accounts",
+      "title": "Accounts"
+    },
+    {
+      "level": 4,
+      "id": "Addresses",
+      "title": "Addresses"
+    },
+    {
+      "level": 3,
+      "id": "Virtual_machine",
+      "title": "Virtual machine"
+    },
+    {
+      "level": 3,
+      "id": "Gas",
+      "title": "Gas"
+    },
+    {
+      "level": 2,
+      "id": "Applications",
+      "title": "Applications"
+    },
+    {
+      "level": 3,
+      "id": "Contract_source_code",
+      "title": "Contract source code"
+    },
+    {
+      "level": 3,
+      "id": "ERC-20_tokens",
+      "title": "ERC-20 tokens"
+    },
+    {
+      "level": 3,
+      "id": "Non-fungible_tokens_(NFTs)",
+      "title": "Non-fungible tokens (NFTs)"
+    },
+    {
+      "level": 3,
+      "id": "Decentralized_finance",
+      "title": "Decentralized finance"
+    },
+    {
+      "level": 3,
+      "id": "Enterprise_software",
+      "title": "Enterprise software"
+    },
+    {
+      "level": 3,
+      "id": "Permissioned_ledgers",
+      "title": "Permissioned ledgers"
+    },
+    {
+      "level": 3,
+      "id": "Performance_and_scalability",
+      "title": "Performance and scalability"
+    },
+    {
+      "level": 2,
+      "id": "Legal_status_and_regulation",
+      "title": "Legal status and regulation"
+    },
+    {
+      "level": 2,
+      "id": "Notes",
+      "title": "Notes"
+    },
+    {
+      "level": 2,
+      "id": "References",
+      "title": "References"
+    },
+    {
+      "level": 2,
+      "id": "External_links",
+      "title": "External links"
+    }
+  ],
+  "infobox": {
+    "title": "",
+    "fields": {
+      "Original author(s)": "Vitalik Buterin Gavin Wood",
+      "Initial release": "30 July 2015; 10 years ago ( 2015-07-30 )",
+      "Stable release": "Fusaka / 3 December 2025; 5 months ago ( 2025-12-03 ) [ 1 ]",
+      "Development status": "Active",
+      "Software used": "EVM 1 Bytecode",
+      "Written in": "Go, Rust, C#, C++, Java, Python, Nim, TypeScript",
+      "Operating system": "Cross-platform",
+      "Platform": "x86-64, ARM",
+      "Available in": "Multilingual, but primarily English",
+      "Type": "Distributed computing",
+      "License": "Open-source licenses",
+      "Active hosts": "~8,600 nodes (6 June 2023) [ 2 ]",
+      "Website": "ethereum.org"
+    }
+  },
+  "tables": [],
+  "links": {
+    "local": [
+      {
+        "target": "Cardano_(blockchain_platform)",
+        "source_file": "Cardano_(blockchain_platform).html",
+        "url": "https://en.wikipedia.org/wiki/Cardano_(blockchain_platform)",
+        "anchors": [
+          "Cardano"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ],
+    "wiki": [
+      {
+        "target": "Vitalik_Buterin",
+        "url": "https://en.wikipedia.org/wiki/Vitalik_Buterin",
+        "anchors": [
+          "Vitalik Buterin"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Blockchain",
+        "url": "https://en.wikipedia.org/wiki/Blockchain",
+        "anchors": [
+          "blockchain"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Non-fungible_token",
+        "url": "https://en.wikipedia.org/wiki/Non-fungible_token",
+        "anchors": [
+          "non-fungible tokens",
+          "NFTs",
+          "Non-fungible token"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Gavin_Wood",
+        "url": "https://en.wikipedia.org/wiki/Gavin_Wood",
+        "anchors": [
+          "Gavin Wood"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Bytecode",
+        "url": "https://en.wikipedia.org/wiki/Bytecode",
+        "anchors": [
+          "Bytecode",
+          "bytecode"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Go_(programming_language)",
+        "url": "https://en.wikipedia.org/wiki/Go_(programming_language)",
+        "anchors": [
+          "Go"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "C++",
+        "url": "https://en.wikipedia.org/wiki/C%2B%2B",
+        "anchors": [
+          "C++"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Python_(programming_language)",
+        "url": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+        "anchors": [
+          "Python"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Smart_contract",
+        "url": "https://en.wikipedia.org/wiki/Smart_contract",
+        "anchors": [
+          "smart contract",
+          "smart contracts"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Decentralized_finance",
+        "url": "https://en.wikipedia.org/wiki/Decentralized_finance",
+        "anchors": [
+          "Decentralized finance",
+          "decentralized finance"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "JPMorgan_Chase",
+        "url": "https://en.wikipedia.org/wiki/JPMorgan_Chase",
+        "anchors": [
+          "J. P. Morgan",
+          "JPMorgan Chase"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Visa_Inc.",
+        "url": "https://en.wikipedia.org/wiki/Visa_Inc.",
+        "anchors": [
+          "Visa Inc.",
+          "Visa"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Rust_(programming_language)",
+        "url": "https://en.wikipedia.org/wiki/Rust_(programming_language)",
+        "anchors": [
+          "Rust"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "C_Sharp_(programming_language)",
+        "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)",
+        "anchors": [
+          "C#"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Java_(programming_language)",
+        "url": "https://en.wikipedia.org/wiki/Java_(programming_language)",
+        "anchors": [
+          "Java"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Operating_system",
+        "url": "https://en.wikipedia.org/wiki/Operating_system",
+        "anchors": [
+          "Operating system",
+          "operating systems"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Bitcoin",
+        "url": "https://en.wikipedia.org/wiki/Bitcoin",
+        "anchors": [
+          "bitcoin"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Charles_Hoskinson",
+        "url": "https://en.wikipedia.org/wiki/Charles_Hoskinson",
+        "anchors": [
+          "Charles Hoskinson"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Anthony_Di_Iorio",
+        "url": "https://en.wikipedia.org/wiki/Anthony_Di_Iorio",
+        "anchors": [
+          "Anthony Di Iorio"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Joseph_Lubin_(entrepreneur)",
+        "url": "https://en.wikipedia.org/wiki/Joseph_Lubin_(entrepreneur)",
+        "anchors": [
+          "Joseph Lubin"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Crowdfunding",
+        "url": "https://en.wikipedia.org/wiki/Crowdfunding",
+        "anchors": [
+          "crowdfunded",
+          "crowdfunding"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Decentralized_application",
+        "url": "https://en.wikipedia.org/wiki/Decentralized_application",
+        "anchors": [
+          "decentralized applications",
+          "decentralized application"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Financial_instrument",
+        "url": "https://en.wikipedia.org/wiki/Financial_instrument",
+        "anchors": [
+          "financial instruments"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Proof_of_stake",
+        "url": "https://en.wikipedia.org/wiki/Proof_of_stake",
+        "anchors": [
+          "proof-of-stake"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Decentralized_autonomous_organization",
+        "url": "https://en.wikipedia.org/wiki/Decentralized_autonomous_organization",
+        "anchors": [
+          "decentralized autonomous organization",
+          "decentralized autonomous organizations"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "The_DAO_(organization)",
+        "url": "https://en.wikipedia.org/wiki/The_DAO_(organization)",
+        "anchors": [
+          "The DAO"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "ConsenSys",
+        "url": "https://en.wikipedia.org/wiki/ConsenSys",
+        "anchors": [
+          "ConsenSys"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Microsoft",
+        "url": "https://en.wikipedia.org/wiki/Microsoft",
+        "anchors": [
+          "Microsoft"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Deloitte",
+        "url": "https://en.wikipedia.org/wiki/Deloitte",
+        "anchors": [
+          "Deloitte"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "MasterCard",
+        "url": "https://en.wikipedia.org/wiki/MasterCard",
+        "anchors": [
+          "MasterCard"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "CryptoKitties",
+        "url": "https://en.wikipedia.org/wiki/CryptoKitties",
+        "anchors": [
+          "CryptoKitties"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "UBS",
+        "url": "https://en.wikipedia.org/wiki/UBS",
+        "anchors": [
+          "UBS"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "JavaScript",
+        "url": "https://en.wikipedia.org/wiki/JavaScript",
+        "anchors": [
+          "JavaScript"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Initial_coin_offerings",
+        "url": "https://en.wikipedia.org/wiki/Initial_coin_offerings",
+        "anchors": [
+          "initial coin offerings"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Decentralized_exchange",
+        "url": "https://en.wikipedia.org/wiki/Decentralized_exchange",
+        "anchors": [
+          "decentralized exchanges",
+          "decentralized exchange"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Software_design",
+        "url": "https://en.wikipedia.org/wiki/Software_design",
+        "anchors": [
+          "Original author(s)"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Software_release_life_cycle",
+        "url": "https://en.wikipedia.org/wiki/Software_release_life_cycle",
+        "anchors": [
+          "Stable release"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Programming_language",
+        "url": "https://en.wikipedia.org/wiki/Programming_language",
+        "anchors": [
+          "Written in"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Nim_(programming_language)",
+        "url": "https://en.wikipedia.org/wiki/Nim_(programming_language)",
+        "anchors": [
+          "Nim"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "TypeScript",
+        "url": "https://en.wikipedia.org/wiki/TypeScript",
+        "anchors": [
+          "TypeScript"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Cross-platform_software",
+        "url": "https://en.wikipedia.org/wiki/Cross-platform_software",
+        "anchors": [
+          "Cross-platform"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Computing_platform",
+        "url": "https://en.wikipedia.org/wiki/Computing_platform",
+        "anchors": [
+          "Platform"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "X86-64",
+        "url": "https://en.wikipedia.org/wiki/X86-64",
+        "anchors": [
+          "x86-64"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "ARM_architecture",
+        "url": "https://en.wikipedia.org/wiki/ARM_architecture",
+        "anchors": [
+          "ARM"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Language",
+        "url": "https://en.wikipedia.org/wiki/Language",
+        "anchors": [
+          "Available in"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "List_of_software_categories",
+        "url": "https://en.wikipedia.org/wiki/List_of_software_categories",
+        "anchors": [
+          "Type"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Distributed_computing",
+        "url": "https://en.wikipedia.org/wiki/Distributed_computing",
+        "anchors": [
+          "Distributed computing"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Software_license",
+        "url": "https://en.wikipedia.org/wiki/Software_license",
+        "anchors": [
+          "License"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Open-source_license",
+        "url": "https://en.wikipedia.org/wiki/Open-source_license",
+        "anchors": [
+          "Open-source licenses"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "US_Dollar",
+        "url": "https://en.wikipedia.org/wiki/US_Dollar",
+        "anchors": [
+          "USD"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Decentralization",
+        "url": "https://en.wikipedia.org/wiki/Decentralization#Blockchain_technology",
+        "anchors": [
+          "decentralized"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "ISO_4217",
+        "url": "https://en.wikipedia.org/wiki/ISO_4217#Cryptocurrencies",
+        "anchors": [
+          "abbreviation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cryptocurrency",
+        "url": "https://en.wikipedia.org/wiki/Cryptocurrency",
+        "anchors": [
+          "cryptocurrency"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Market_capitalization",
+        "url": "https://en.wikipedia.org/wiki/Market_capitalization",
+        "anchors": [
+          "market capitalization"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Open-source_software",
+        "url": "https://en.wikipedia.org/wiki/Open-source_software",
+        "anchors": [
+          "open-source software"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Computer_programming",
+        "url": "https://en.wikipedia.org/wiki/Computer_programming",
+        "anchors": [
+          "programmer"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Software_development",
+        "url": "https://en.wikipedia.org/wiki/Software_development",
+        "anchors": [
+          "development"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Financial_intermediary",
+        "url": "https://en.wikipedia.org/wiki/Financial_intermediary",
+        "anchors": [
+          "financial intermediaries"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Brokerage",
+        "url": "https://en.wikipedia.org/wiki/Brokerage",
+        "anchors": [
+          "brokerages"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Exchange_(organized_market)",
+        "url": "https://en.wikipedia.org/wiki/Exchange_(organized_market)",
+        "anchors": [
+          "exchanges"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bank",
+        "url": "https://en.wikipedia.org/wiki/Bank",
+        "anchors": [
+          "banks"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Interest",
+        "url": "https://en.wikipedia.org/wiki/Interest",
+        "anchors": [
+          "interest"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Consensus_(computer_science)",
+        "url": "https://en.wikipedia.org/wiki/Consensus_(computer_science)",
+        "anchors": [
+          "consensus mechanism"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Proof_of_work",
+        "url": "https://en.wikipedia.org/wiki/Proof_of_work",
+        "anchors": [
+          "proof-of-work"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "White_paper",
+        "url": "https://en.wikipedia.org/wiki/White_paper",
+        "anchors": [
+          "white paper"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bitcoin_Magazine",
+        "url": "https://en.wikipedia.org/wiki/Bitcoin_Magazine",
+        "anchors": [
+          "Bitcoin Magazine"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Decentralized",
+        "url": "https://en.wikipedia.org/wiki/Decentralized",
+        "anchors": [
+          "decentralized"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bitcoin_Core",
+        "url": "https://en.wikipedia.org/wiki/Bitcoin_Core",
+        "anchors": [
+          "Bitcoin Core"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Real-World_Asset",
+        "url": "https://en.wikipedia.org/wiki/Real-World_Asset",
+        "anchors": [
+          "real-world assets"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "EToro",
+        "url": "https://en.wikipedia.org/wiki/EToro",
+        "anchors": [
+          "eToro"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Colored_Coins",
+        "url": "https://en.wikipedia.org/wiki/Colored_Coins",
+        "anchors": [
+          "Colored Coins"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Turing-complete",
+        "url": "https://en.wikipedia.org/wiki/Turing-complete",
+        "anchors": [
+          "Turing-complete"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wired_(magazine)",
+        "url": "https://en.wikipedia.org/wiki/Wired_(magazine)",
+        "anchors": [
+          "Wired"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Zug",
+        "url": "https://en.wikipedia.org/wiki/Zug",
+        "anchors": [
+          "Zug"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "List_of_fictional_elements,_materials,_isotopes_and_subatomic_particles",
+        "url": "https://en.wikipedia.org/wiki/List_of_fictional_elements,_materials,_isotopes_and_subatomic_particles",
+        "anchors": [
+          "a list of elements from science fiction"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Wikipedia",
+        "anchors": [
+          "Wikipedia"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Luminiferous_aether",
+        "url": "https://en.wikipedia.org/wiki/Luminiferous_aether",
+        "anchors": [
+          "ether"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chief_technology_officer",
+        "url": "https://en.wikipedia.org/wiki/Chief_technology_officer",
+        "anchors": [
+          "chief technology officer"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Decentralized_file_storage",
+        "url": "https://en.wikipedia.org/wiki/Decentralized_file_storage",
+        "anchors": [
+          "decentralized file storage"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "File_browser",
+        "url": "https://en.wikipedia.org/wiki/File_browser",
+        "anchors": [
+          "browser"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Proof_of_concept",
+        "url": "https://en.wikipedia.org/wiki/Proof_of_concept#Software_development",
+        "anchors": [
+          "proof-of-concept"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bug_bounty",
+        "url": "https://en.wikipedia.org/wiki/Bug_bounty",
+        "anchors": [
+          "bug bounty"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Incentive_compatibility",
+        "url": "https://en.wikipedia.org/wiki/Incentive_compatibility",
+        "anchors": [
+          "incentive structures"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hard_fork",
+        "url": "https://en.wikipedia.org/wiki/Hard_fork",
+        "anchors": [
+          "hard fork"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Token_sale",
+        "url": "https://en.wikipedia.org/wiki/Token_sale",
+        "anchors": [
+          "crowd sale"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Emin_Gün_Sirer",
+        "url": "https://en.wikipedia.org/wiki/Emin_G%C3%BCn_Sirer",
+        "anchors": [
+          "Emin Gün Sirer"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ethereum_Classic",
+        "url": "https://en.wikipedia.org/wiki/Ethereum_Classic",
+        "anchors": [
+          "Ethereum Classic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fortune_500",
+        "url": "https://en.wikipedia.org/wiki/Fortune_500",
+        "anchors": [
+          "Fortune 500"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "CME_Group",
+        "url": "https://en.wikipedia.org/wiki/CME_Group",
+        "anchors": [
+          "CME Group"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cornell_University",
+        "url": "https://en.wikipedia.org/wiki/Cornell_University#Research",
+        "anchors": [
+          "Cornell University's research group"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Toyota_Group",
+        "url": "https://en.wikipedia.org/wiki/Toyota_Group",
+        "anchors": [
+          "Toyota Research Institute"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Samsung_SDS",
+        "url": "https://en.wikipedia.org/wiki/Samsung_SDS",
+        "anchors": [
+          "Samsung SDS"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Intel",
+        "url": "https://en.wikipedia.org/wiki/Intel",
+        "anchors": [
+          "Intel"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cooley_LLP",
+        "url": "https://en.wikipedia.org/wiki/Cooley_LLP",
+        "anchors": [
+          "Cooley LLP"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Merck_KGaA",
+        "url": "https://en.wikipedia.org/wiki/Merck_KGaA",
+        "anchors": [
+          "Merck KGaA"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Depository_Trust_&_Clearing_Corporation",
+        "url": "https://en.wikipedia.org/wiki/Depository_Trust_%26_Clearing_Corporation",
+        "anchors": [
+          "DTCC"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Accenture",
+        "url": "https://en.wikipedia.org/wiki/Accenture",
+        "anchors": [
+          "Accenture"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Banco_Santander",
+        "url": "https://en.wikipedia.org/wiki/Banco_Santander",
+        "anchors": [
+          "Banco Santander"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "BNY_Mellon",
+        "url": "https://en.wikipedia.org/wiki/BNY_Mellon",
+        "anchors": [
+          "BNY Mellon"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "ING_Group",
+        "url": "https://en.wikipedia.org/wiki/ING_Group",
+        "anchors": [
+          "ING"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "National_Bank_of_Canada",
+        "url": "https://en.wikipedia.org/wiki/National_Bank_of_Canada",
+        "anchors": [
+          "National Bank of Canada"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cisco_Systems",
+        "url": "https://en.wikipedia.org/wiki/Cisco_Systems",
+        "anchors": [
+          "Cisco Systems"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sberbank",
+        "url": "https://en.wikipedia.org/wiki/Sberbank",
+        "anchors": [
+          "Sberbank"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Scotiabank",
+        "url": "https://en.wikipedia.org/wiki/Scotiabank",
+        "anchors": [
+          "Scotiabank"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Blockchain_game",
+        "url": "https://en.wikipedia.org/wiki/Blockchain_game",
+        "anchors": [
+          "blockchain game"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hacker",
+        "url": "https://en.wikipedia.org/wiki/Hacker#Civic_hacker",
+        "anchors": [
+          "civic hacker"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "William_Entriken",
+        "url": "https://en.wikipedia.org/wiki/William_Entriken",
+        "anchors": [
+          "William Entriken"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "ERC-721",
+        "url": "https://en.wikipedia.org/wiki/ERC-721",
+        "anchors": [
+          "ERC-721"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Virgil_Griffith",
+        "url": "https://en.wikipedia.org/wiki/Virgil_Griffith",
+        "anchors": [
+          "Virgil Griffith"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Stablecoin",
+        "url": "https://en.wikipedia.org/wiki/Stablecoin",
+        "anchors": [
+          "stablecoin"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "JP_Morgan_Chase",
+        "url": "https://en.wikipedia.org/wiki/JP_Morgan_Chase",
+        "anchors": [
+          "JP Morgan Chase"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Volatility_(finance)",
+        "url": "https://en.wikipedia.org/wiki/Volatility_(finance)",
+        "anchors": [
+          "volatility"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fork_(blockchain)",
+        "url": "https://en.wikipedia.org/wiki/Fork_(blockchain)",
+        "anchors": [
+          "fork"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Global_energy_consumption",
+        "url": "https://en.wikipedia.org/wiki/Global_energy_consumption",
+        "anchors": [
+          "global energy consumption"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Peer-to-peer_network",
+        "url": "https://en.wikipedia.org/wiki/Peer-to-peer_network",
+        "anchors": [
+          "peer-to-peer network"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Database",
+        "url": "https://en.wikipedia.org/wiki/Database",
+        "anchors": [
+          "database"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cryptographic_hash_function",
+        "url": "https://en.wikipedia.org/wiki/Cryptographic_hash_function",
+        "anchors": [
+          "cryptographic hash"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pseudorandomness",
+        "url": "https://en.wikipedia.org/wiki/Pseudorandomness",
+        "anchors": [
+          "pseudorandomly"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Signedness",
+        "url": "https://en.wikipedia.org/wiki/Signedness",
+        "anchors": [
+          "unsigned"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Integer_(computer_science)",
+        "url": "https://en.wikipedia.org/wiki/Integer_(computer_science)",
+        "anchors": [
+          "integer"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Xi_(letter)",
+        "url": "https://en.wikipedia.org/wiki/Xi_(letter)",
+        "anchors": [
+          "Xi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Currency_symbol",
+        "url": "https://en.wikipedia.org/wiki/Currency_symbol",
+        "anchors": [
+          "currency symbol"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Return_statement",
+        "url": "https://en.wikipedia.org/wiki/Return_statement",
+        "anchors": [
+          "return value"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Control_flow",
+        "url": "https://en.wikipedia.org/wiki/Control_flow",
+        "anchors": [
+          "control flow"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Volatile_memory",
+        "url": "https://en.wikipedia.org/wiki/Volatile_memory",
+        "anchors": [
+          "memory"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Arithmetic",
+        "url": "https://en.wikipedia.org/wiki/Arithmetic",
+        "anchors": [
+          "arithmetic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hexadecimal",
+        "url": "https://en.wikipedia.org/wiki/Hexadecimal",
+        "anchors": [
+          "hexadecimal"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "SHA-3",
+        "url": "https://en.wikipedia.org/wiki/SHA-3",
+        "anchors": [
+          "Keccak-256"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Elliptic_Curve_Digital_Signature_Algorithm",
+        "url": "https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm",
+        "anchors": [
+          "ECDSA"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Public-key_cryptography",
+        "url": "https://en.wikipedia.org/wiki/Public-key_cryptography",
+        "anchors": [
+          "public key"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cryptographic_nonce",
+        "url": "https://en.wikipedia.org/wiki/Cryptographic_nonce",
+        "anchors": [
+          "nonce"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Runtime_(program_lifecycle_phase)",
+        "url": "https://en.wikipedia.org/wiki/Runtime_(program_lifecycle_phase)",
+        "anchors": [
+          "runtime"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Stack_(abstract_data_type)",
+        "url": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)",
+        "anchors": [
+          "stack"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Instruction_set_architecture",
+        "url": "https://en.wikipedia.org/wiki/Instruction_set_architecture",
+        "anchors": [
+          "instruction set"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Deterministic_algorithm",
+        "url": "https://en.wikipedia.org/wiki/Deterministic_algorithm",
+        "anchors": [
+          "deterministic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Computer_hardware",
+        "url": "https://en.wikipedia.org/wiki/Computer_hardware",
+        "anchors": [
+          "hardware"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Haskell_(programming_language)",
+        "url": "https://en.wikipedia.org/wiki/Haskell_(programming_language)",
+        "anchors": [
+          "Haskell"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ruby_(programming_language)",
+        "url": "https://en.wikipedia.org/wiki/Ruby_(programming_language)",
+        "anchors": [
+          "Ruby"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Elixir_(programming_language)",
+        "url": "https://en.wikipedia.org/wiki/Elixir_(programming_language)",
+        "anchors": [
+          "Elixir"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Erlang_(programming_language)",
+        "url": "https://en.wikipedia.org/wiki/Erlang_(programming_language)",
+        "anchors": [
+          "Erlang"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "WebAssembly",
+        "url": "https://en.wikipedia.org/wiki/WebAssembly",
+        "anchors": [
+          "WebAssembly"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Unit_of_account",
+        "url": "https://en.wikipedia.org/wiki/Unit_of_account",
+        "anchors": [
+          "unit of account"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hardcoded",
+        "url": "https://en.wikipedia.org/wiki/Hardcoded",
+        "anchors": [
+          "hardcoded"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Proportionality_(mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Proportionality_(mathematics)",
+        "anchors": [
+          "proportional"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Computation",
+        "url": "https://en.wikipedia.org/wiki/Computation",
+        "anchors": [
+          "computation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Computer_data_storage",
+        "url": "https://en.wikipedia.org/wiki/Computer_data_storage",
+        "anchors": [
+          "storage"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "User_interface",
+        "url": "https://en.wikipedia.org/wiki/User_interface",
+        "anchors": [
+          "user interfaces"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Instruction_set",
+        "url": "https://en.wikipedia.org/wiki/Instruction_set",
+        "anchors": [
+          "instruction set"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Turing_completeness",
+        "url": "https://en.wikipedia.org/wiki/Turing_completeness",
+        "anchors": [
+          "Turing-complete"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Prediction_market",
+        "url": "https://en.wikipedia.org/wiki/Prediction_market",
+        "anchors": [
+          "prediction markets"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "High-level_programming_language",
+        "url": "https://en.wikipedia.org/wiki/High-level_programming_language",
+        "anchors": [
+          "high-level"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Compiler",
+        "url": "https://en.wikipedia.org/wiki/Compiler",
+        "anchors": [
+          "compiled"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Solidity",
+        "url": "https://en.wikipedia.org/wiki/Solidity",
+        "anchors": [
+          "Solidity"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "C_(programming_language)",
+        "url": "https://en.wikipedia.org/wiki/C_(programming_language)",
+        "anchors": [
+          "C"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fungible",
+        "url": "https://en.wikipedia.org/wiki/Fungible",
+        "anchors": [
+          "fungible"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "API",
+        "url": "https://en.wikipedia.org/wiki/API",
+        "anchors": [
+          "API"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "CryptoPunks",
+        "url": "https://en.wikipedia.org/wiki/CryptoPunks",
+        "anchors": [
+          "CryptoPunks"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Christie's",
+        "url": "https://en.wikipedia.org/wiki/Christie%27s",
+        "anchors": [
+          "Christie's"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Beeple",
+        "url": "https://en.wikipedia.org/wiki/Beeple",
+        "anchors": [
+          "Beeple"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "List_of_most_expensive_artworks_by_living_artists",
+        "url": "https://en.wikipedia.org/wiki/List_of_most_expensive_artworks_by_living_artists",
+        "anchors": [
+          "third-most-valuable living artist"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Art_auction",
+        "url": "https://en.wikipedia.org/wiki/Art_auction",
+        "anchors": [
+          "auction"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Web3",
+        "url": "https://en.wikipedia.org/wiki/Web3",
+        "anchors": [
+          "Web3"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "MetaMask",
+        "url": "https://en.wikipedia.org/wiki/MetaMask",
+        "anchors": [
+          "MetaMask"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Uniswap",
+        "url": "https://en.wikipedia.org/wiki/Uniswap",
+        "anchors": [
+          "Uniswap"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Aave",
+        "url": "https://en.wikipedia.org/wiki/Aave",
+        "anchors": [
+          "Aave"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Microlending",
+        "url": "https://en.wikipedia.org/wiki/Microlending",
+        "anchors": [
+          "microlending"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Enterprise_software",
+        "url": "https://en.wikipedia.org/wiki/Enterprise_software",
+        "anchors": [
+          "enterprise software"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "IBM",
+        "url": "https://en.wikipedia.org/wiki/IBM",
+        "anchors": [
+          "IBM"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Innovate_UK",
+        "url": "https://en.wikipedia.org/wiki/Innovate_UK",
+        "anchors": [
+          "Innovate UK"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Barclays",
+        "url": "https://en.wikipedia.org/wiki/Barclays",
+        "anchors": [
+          "Barclays"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Credit_Suisse",
+        "url": "https://en.wikipedia.org/wiki/Credit_Suisse",
+        "anchors": [
+          "Credit Suisse"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Amazon_(company)",
+        "url": "https://en.wikipedia.org/wiki/Amazon_(company)",
+        "anchors": [
+          "Amazon"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Blockchain_(database)",
+        "url": "https://en.wikipedia.org/wiki/Blockchain_(database)#Openness",
+        "anchors": [
+          "permissioned blockchain"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "JPM_Coin",
+        "url": "https://en.wikipedia.org/wiki/JPM_Coin",
+        "anchors": [
+          "JPM Coin"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Merkle_tree",
+        "url": "https://en.wikipedia.org/wiki/Merkle_tree",
+        "anchors": [
+          "Merkle"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "2020s_commodities_boom",
+        "url": "https://en.wikipedia.org/wiki/2020s_commodities_boom",
+        "anchors": [
+          "2020s commodities boom"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Commodity_Futures_Trading_Commission",
+        "url": "https://en.wikipedia.org/wiki/Commodity_Futures_Trading_Commission",
+        "anchors": [
+          "Commodity Futures Trading Commission"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ],
+    "external": [
+      {
+        "url": "http://ethereum.org",
+        "anchors": [
+          "ethereum.org"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "url": "https://www.ethereum.org",
+        "anchors": [
+          "Official website"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q16783523#P856",
+        "anchors": [],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ]
+  },
+  "stats": {
+    "n_categories": 6,
+    "n_sections": 30,
+    "n_tables": 0,
+    "n_local": 1,
+    "n_wiki": 177,
+    "n_external": 3,
+    "md_chars": 34055
+  }
+}

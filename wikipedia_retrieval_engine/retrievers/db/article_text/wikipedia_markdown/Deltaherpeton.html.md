@@ -1,0 +1,11 @@
+# Deltaherpeton
+
+***Deltaherpeton*** is an [extinct](/wiki/Extinct) [genus](/wiki/Genus) of [colosteid](/wiki/Colosteidae) from middle [Mississippian](/wiki/Mississippian_age) (late [Viséan](/wiki/Vis%C3%A9an) age) deposits of [Delta](/wiki/Delta,_Iowa), [Iowa](/wiki/Iowa), [United States](/wiki/United_States_of_America). It was first named by John R. Bolt and R. Eric Lombard in [2010](/wiki/2010_in_paleontology) and the type species is ***Deltaherpeton hiemstrae***.
+
+*Deltaherpeton* can be differentiated from other [colosteids](/wiki/Colosteidae) due to possessing several unique bones along the midline of the skull, separating paired skull bones which typically contact each other along the midline. These include an internasal, an oval-shaped bone which lies at the intersection of the paired [premaxillae](/wiki/Premaxilla) and [nasal](/wiki/Nasal_bone) bones at the top of the snout. Internasals are known from several of the earliest four-limbed vertebrates, such as *[Acanthostega](/wiki/Acanthostega)*, *[Ichthyostega](/wiki/Ichthyostega)*, and [baphetids](/wiki/Baphetidae). Further back, what seems to be a pair of [lozenge](/wiki/Lozenge_(shape))-shape bones lie at the intersection of the nasal bones and frontal bones. These bones may be interfrontonasals, which have been found in some [eryopoids](/wiki/Eryopoidea) and [microsaurs](/wiki/Microsauria).
+
+In addition, *Deltaherpeton* has a single [postparietal](/wiki/Postparietal) (rather than a pair), which separates the left and right [supratemporal](/wiki/Supratemporal_bone) and [tabular](/wiki/Tabular_bone) bones at the rear edge of the skull. Lone postparietals are rare among non-amniote tetrapods and tetrapod relatives; only *Ichthyostega* and [diadectomorphs](/wiki/Diadectomorpha) are known to possess them. The discovery of *Deltaherpeton* prompted a review and re-augmentation of the defining characteristics for the family [Colosteidae](/wiki/Colosteidae), though it did not help to clarify the relationship between colosteids and other early [tetrapods](/wiki/Tetrapod).
+
+Though it is believed that *Deltaherpeton* is more derived, the species is thought to have shared its environment with other early four-limbed vertebrates such as *[Whatcheeria](/wiki/Whatcheeria)*, approximately 339.4 to 336 million years ago.
+
+## References

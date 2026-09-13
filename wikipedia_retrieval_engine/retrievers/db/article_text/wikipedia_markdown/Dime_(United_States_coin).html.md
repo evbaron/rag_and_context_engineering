@@ -1,0 +1,155 @@
+# Dime (United States coin)
+
+## Infobox
+
+- **Value:** 0.10 U.S. dollar
+- **Mass:** 2.268 g (0.0729 troy oz )
+- **Diameter:** 17.91 mm (0.705 in)
+- **Thickness:** 1.35 mm (0.053 in)
+- **Edge:** 118 reeds
+- **Composition:** Current: 91.67% copper, 8.33% nickel Prior to 1965: 90% silver, 10% copper
+- **Years of minting:** 1796–1798, 1800–1805, 1807, 1809, 1811, 1814, 1820–1825, 1827–1931, 1934–present
+- **Catalog number:** –
+- **Design:** Franklin D. Roosevelt
+- **Designer:** John R. Sinnock
+- **Design date:** 1946; 80 years ago ( 1946 )
+
+The **dime**, in United States usage, is a ten-[cent](/wiki/Cent_(currency)) [coin](/wiki/United_States_coinage), one tenth of a [United States dollar](/wiki/United_States_dollar), labeled formally as "one dime". The denomination was first authorized by the [Coinage Act of 1792](/wiki/Coinage_Act_of_1792).
+
+The dime is the smallest in [diameter](/wiki/Diameter) and is the thinnest of all U.S. coins currently [minted](/wiki/US_Mint) for circulation, being 0.705 inches (17.91 millimeters) in [diameter](/wiki/Diameter) and 0.053 in (1.35 mm) in thickness. The obverse of [the current dime](/wiki/Roosevelt_dime) depicts the profile of [President](/wiki/President_of_the_United_States) [Franklin D. Roosevelt](/wiki/Franklin_D._Roosevelt) and the reverse has an olive branch, a torch, and an oak branch, from left to right respectively.
+
+The word *dime* comes from the [Old French](/wiki/Old_French) *disme* ([Modern French](/wiki/Modern_French) dîme), meaning "[tithe](/wiki/Tithe)" or "tenth part", from the [Latin](/wiki/Latin) *decima [pars]*. The dime is currently the only United States coin in general circulation that is not denominated in terms of dollars or [cents](/wiki/Cent_(United_States_coin)). As of 2024, the dime cost 5.76 cents to produce.
+
+## History
+
+The [Coinage Act of 1792](/wiki/Coinage_Act_of_1792) established the dime (spelled "disme" in the legislation), [cent](/wiki/Penny_(United_States_coin)), and [mill](/wiki/Mill_(currency)) as subdivisions of the dollar equal to 1⁄10, 1⁄100 and 1⁄1000 dollar respectively.
+
+The first known proposal for a [decimal](/wiki/Decimal_currency)-based coinage system in the United States was made in 1783 by [Thomas Jefferson](/wiki/Thomas_Jefferson), [Benjamin Franklin](/wiki/Benjamin_Franklin), [Alexander Hamilton](/wiki/Alexander_Hamilton), and [David Rittenhouse](/wiki/David_Rittenhouse). Hamilton, the nation's first [secretary of the treasury](/wiki/United_States_Secretary_of_the_Treasury), recommended the issuance of six such coins in 1791, in a report to [Congress](/wiki/United_States_Congress). Among the six was a silver coin, "which shall be, in weight and value, one-tenth part of a silver unit or dollar".
+
+From 1796 to 1837, dimes were composed of 89.24% silver and 10.76% copper, the value of which required the coins to be physically very small to prevent their commodity value from being worth more than [face value](/wiki/Face_value). Thus dimes are made small and thin. The silver percentage was increased to 90.0% with the introduction of the Seated Liberty dime; the use of a richer alloy was offset by reducing the diameter from 18.8 millimeters (0.740 inches) to its current figure of 17.9 millimeters (0.705 inches).
+
+With the passage of the [Coinage Act of 1965](/wiki/Coinage_Act_of_1965), the dime's [silver content was removed](/wiki/Debasement). Dimes from 1965 to the present are struck from a [clad metal](/wiki/Cladding_(metalworking)) composed of outer layers of 75% copper and 25% nickel alloy, bonded to a pure copper core. Pre-1965 dimes followed [Gresham's law](/wiki/Gresham%27s_law) and vanished from ordinary currency circulation at face value. Most now trade as informal [bullion coins](/wiki/Bullion_coin) known as [junk silver](/wiki/Junk_silver), priced at some multiple of face value, which price follows the [spot price](/wiki/Spot_contract) of silver on commodity markets.
+
+Starting in 1992, the U.S. Mint began issuing Silver [Proof Sets](/wiki/Proof_coinage) annually, which contain dimes composed of the pre-1965 standard of 90% silver and 10% copper, then switched to .999 fine silver from 2019 onward. These sets are intended solely for collectors and are not meant for general circulation.
+
+## Design history
+
+Since its introduction in 1796, the dime has been issued in six different major types, excluding the 1792 "disme". The name for each type (except for the Barber dime) indicates the design on the coin's [obverse](/wiki/Obverse_and_reverse).
+
+- [Draped Bust](/wiki/Draped_Bust) 1796–1807
+- [Capped Bust](/wiki/Capped_Bust) 1809–1837
+- [Seated Liberty](/wiki/United_States_Seated_Liberty_coinage) 1837–1891
+- [Barber](/wiki/United_States_Barber_coinage) 1892–1916
+- [Winged Liberty Head (Mercury)](/wiki/Mercury_dime) 1916–1945
+- [Roosevelt](/wiki/Roosevelt_dime) 1946–present
+
+### "Disme" (1792)
+
+1792 Disme copper pattern
+
+The Coinage Act of 1792, passed on April 2, 1792, authorized the mintage of a "disme", one-tenth the silver weight and value of a dollar. The composition of the disme was set at 89.24% silver and 10.76% copper. In 1792, a limited number of dismes were minted but never circulated. Some of these were struck in copper, indicating that the 1792 dismes were in fact [pattern coins](/wiki/Pattern_coin). The first dimes minted for circulation did not appear until 1796, due to a lack of demand for the coin and production problems at the [United States Mint](/wiki/United_States_Mint).
+
+### Draped Bust (1796–1807)
+
+Main article: [Draped Bust](/wiki/Draped_Bust)
+
+Draped Bust dime with small (1797) and heraldic (1800) eagle reverse designs
+
+The first dime to be circulated was the Draped Bust dime, in 1796. It featured the same obverse and reverse as all other circulating coins of the time, the so-called Draped Bust/Small Eagle design. This design was the work of then-Chief Engraver [Robert Scot](/wiki/Robert_Scot). The portrait of Liberty on the obverse was based on a [Gilbert Stuart](/wiki/Gilbert_Stuart) drawing of prominent [Philadelphia](/wiki/Philadelphia,_Pennsylvania) socialite Ann Willing Bingham, wife of noted American statesman [William Bingham](/wiki/William_Bingham). The reverse design is of a small [bald eagle](/wiki/Bald_eagle) surrounded by palm and olive branches, and perched on a cloud. Since the Coinage Act of 1792 required only that the cent and [half cent](/wiki/Half_cent_(United_States_coin)) display their [denomination](/wiki/Denomination_(currency)), Draped Bust dimes were minted with no indication of their value.
+
+All 1796 dimes have 15 stars on the obverse, representing the number of [U.S. states](/wiki/U.S._state) then in the Union. The first 1797 dimes were minted with 16 stars, reflecting [Tennessee](/wiki/Tennessee)'s admission as the 16th state. Realizing that the practice of adding one star per state could quickly clutter the coin's design, U.S. Mint Director [Elias Boudinot](/wiki/Elias_Boudinot) ordered a design alteration, to feature just 13 stars (for the original [Thirteen Colonies](/wiki/Thirteen_Colonies)). Therefore, 1797 dimes can be found with either 13 or 16 stars.
+
+Also designed by Robert Scot, the Heraldic Eagle reverse design made its debut in 1798. The obverse continued from the previous series, but the eagle on the reverse was changed from the widely criticized "scrawny" hatchling to a scaled-down version of the [Great Seal of the United States](/wiki/Great_Seal_of_the_United_States). The Draped Bust/Heraldic Eagles series continued through 1807 (although no dimes dated 1799 or 1806 were minted). Both Draped Bust designs were composed of 89.24% silver and 10.76% copper.
+
+### Capped Bust (1809–1837)
+
+1820 Capped Bust dime
+
+The Draped Bust design was succeeded by the Capped Bust, designed by Mint Assistant Engraver John Reich. Both the obverse and reverse were changed extensively. The new reverse featured a bald eagle grasping three arrows (symbolizing strength) and an olive branch (symbolizing peace). Covering the eagle's breast is a U.S. shield with six horizontal lines and 13 vertical stripes. Also on the reverse is the lettering "10C," making it the only dime minted with the value given in cents (subsequent issues are inscribed with the words "ONE DIME"). The lack of numeric value markings on subsequent dime coins causes some confusion amongst foreign visitors, who may be unaware of the value of the coin. Also, the Capped Bust dime was the first dime to have its value written on the coin. Previous designs of the dime had no indication of its value, the way people determined its value was by its size
+
+Capped Bust dimes minted through 1828 are known as the Large type. This is partially because they were struck without a restraining collar, which gave them a broader appearance. In 1828, Chief Engraver [William Kneass](/wiki/William_Kneass) introduced the close collar method of coining (which automated the process of placing [reeds](/wiki/Reeding) on a coin's edge). In addition to standardizing the diameter of coins, the new method allowed the Mint to produce thicker coins. To maintain a standard weight and alloy, the diameter of most coins was reduced. In particular, the dime was reduced in diameter from 18.8 to 18.5 millimeters. This new Capped Bust dime, which began production in 1828, is known as the Small type. There are 123 varieties known of Capped Bust Dimes.
+
+### Seated Liberty (1837–1891)
+
+Main article: [United States Seated Liberty coinage](/wiki/United_States_Seated_Liberty_coinage)
+
+Seated Liberty Dime varieties
+
+Top down: 1838-O (no stars), 1840 (stars, no drapery), 1853 (stars & arrows), 1860 (legend), 1874 (legend & arrows)
+
+[Christian Gobrecht](/wiki/Christian_Gobrecht) completed the design of the Seated Liberty dime, whose obverse was used with every circulating silver U.S. coin of the period. Mint Director Robert Maskell Patterson requested a new coin design, to be reminiscent of the [Britannia](/wiki/Britannia) image found on coinage of the [United Kingdom](/wiki/United_Kingdom_of_Great_Britain_and_Ireland). Chief Engraver [William Kneass](/wiki/William_Kneass) drew the original sketches, but suffered a stroke and was too ill to finish them or to oversee preparation of the [dies](/wiki/Coin_die). The task then fell to Gobrecht, who was promoted to Second Engraver.
+
+The obverse features an image of Liberty sitting on a rock, wearing a dress and holding a staff with a [liberty cap](/wiki/Phrygian_cap) on top. Her right hand is balancing a shield with the inscription "LIBERTY." The reverse featured the inscription "ONE DIME," surrounded by a wreath. All Seated Liberty dimes contain 90% silver and 10% copper, and are 17.9 millimeters (0.705 inch) in diameter. This size and metal composition would continue until 1965, when silver was permanently removed from circulating dimes.
+
+There were several minor varieties during the Seated Liberty's run. The initial design (1837) had no stars on the obverse and, further, the dates were minted in a Large Date and Small Date variety. These two types can be distinguished by noting the "3" and the "7" in the date. In the Large Date variety, the "3" has a pointed [serif](/wiki/Serif) at top, and the horizontal element of the "7" is straight. In the Small Date variety, the "3" has a rounded serif, and there is a small knob, or bulge, in the "7" horizontal element. Only the Philadelphia Mint made both varieties. The Small Date is slightly rarer. The New Orleans Mint also made the Seated Liberty Dime in this year, but only in the Small Date variety.
+
+Thirteen stars (symbolizing the 13 original colonies) were added to the perimeter of the obverse in 1838. These were replaced with the legend "United States of America," which was moved from the reverse in mid-1860. At the same time, the laurel wreath on the reverse was changed to a wreath of corn, wheat, maple, and oak leaves and expanded nearly to the rim of the coin. This reverse design continued through the end of the series in 1891 and was changed only slightly in 1892, when the Barber dime debuted. Another variety is the 1838–40 dime minted with no drapery underneath the left elbow of Liberty.
+
+1874 cc Seated Liberty dime, with arrows
+
+Arrows at the date in 1853 and 1873 indicated changes made in the coin's [mass](/wiki/Mass) (from 2.67 [grams](/wiki/Gram) to 2.49 grams in 1853, then to 2.50 grams in 1873). The first change was made in response to rising silver prices, while the latter alteration was brought about by the [Mint Act of 1873](/wiki/Fourth_Coinage_Act) which, in an attempt to make U.S. coinage the currency of the world, added a small amount of mass to the dime, [quarter](/wiki/Quarter_(United_States_coin)), and half-dollar to bring their weights in line with fractions of the French 5-[franc](/wiki/French_franc) piece. The change also ensured the quarter dollar (which is valued 2.5 times the dime) weighed 2.5 times the dime (6.25g), and the half dollar (twice the value of the quarter dollar) weighed twice what the quarter dollar weighed (12.5g). In this way, a specific weight of these coins, no matter the mixture of denominations, would always be worth the same. This relation in weight and value continued in the cupronickel coins from 1965 on.
+
+This produced the greatest rarities in the Seated Dime Series, the 1873 and 1874 Carson City Dimes, with arrows and the unique 1873 Carson City Dime without arrows.
+
+### Barber (1892–1916)
+
+Main article: [United States Barber coinage](/wiki/United_States_Barber_coinage)
+
+1892 Barber Dime
+
+The Barber dime is named for its designer, [Charles E. Barber](/wiki/Charles_E._Barber), who was Chief Engraver of the U.S. Mint from 1879 to 1917. The design was shared with the [quarter](/wiki/Quarter_(United_States_coin)) and [half-dollar](/wiki/Half_dollar_(United_States_coin)) of the same period. Extensive internal politics surrounded the awarding of the design job, which had initially been opened to the public. A four-member committee (which included Barber), appointed by then-Mint Director James Kimball, accorded only two of more than 300 submissions an honorable mention. Kimball's successor, Edward O. Leech, decided to dispense with the committees and public design competitions and simply instructed Barber to develop a new design. It has been speculated that this is what Barber had wanted all along.
+
+The Barber dime, as with all previous dimes, featured an image of Liberty on the obverse. She is wearing a [Phrygian cap](/wiki/Phrygian_cap), a [laurel wreath](/wiki/Laurel_wreath) with a ribbon, and a headband with the inscription "LIBERTY". This inscription is one of the key elements used in determining the condition of Barber dimes. Liberty's portrait was inspired by two sources—French coins and medals of the period, as well as ancient [Greek](/wiki/Ancient_Greece) and [Roman](/wiki/Ancient_Rome) [sculpture](/wiki/Classical_sculpture). The obverse also contains the long-used 13 stars (for the 13 colonies) design element. The reverse contained a wreath and inscription almost identical to the one used on the final design of the Seated Liberty dime. Dimes were produced at all four of the mints that operated during the period. While circulated coins of the entire series are readily available to collectors there is one outstanding rarity, the [1894-S Barber Dime](/wiki/1894-S_Barber_Dime). Twenty-four were minted, with 9 currently known.
+
+### Winged Liberty Head ("Mercury") (1916–1945)
+
+Main article: [Mercury dime](/wiki/Mercury_dime)
+
+1936 Winged Liberty Head (Mercury) dime
+
+Although most commonly referred to as the "Mercury" dime, the Winged Liberty Head does not depict the [Roman](/wiki/Roman_mythology) [messenger god](/wiki/Mercury_(mythology)). The obverse figure is a depiction of the mythological [goddess Liberty](/wiki/Liberty_(goddess)) wearing a [Phrygian cap](/wiki/Phrygian_cap), a classic Western symbol of liberty and freedom, with its wings intended to symbolize freedom of thought. Designed by noted sculptor [Adolph A. Weinman](/wiki/Adolph_Alexander_Weinman), the Winged Liberty Head dime is considered by many to be one of the most beautiful U.S. coin designs ever produced. The composition (90% silver, 10% copper) and diameter (17.9 millimeters) of the "Mercury" dime was unchanged from the Barber dime.
+
+Weinman (who had studied under [Augustus Saint-Gaudens](/wiki/Augustus_Saint-Gaudens)) won a 1915 competition against two other artists for the design job, and is thought to have modeled his version of Liberty on Elsie Kachel Stevens, wife of noted poet [Wallace Stevens](/wiki/Wallace_Stevens). The reverse design, a [fasces](/wiki/Fasces) juxtaposed with an olive branch, was intended to symbolize America's readiness for war, combined with its desire for peace. Although the fasces was later officially adopted by [Benito Mussolini](/wiki/Benito_Mussolini) and his [National Fascist Party](/wiki/National_Fascist_Party), the symbol was also [common in American iconography](/wiki/Fasces#Fasces_in_the_United_States) and has generally avoided any stigma associated with its usage in wartime Italy.
+
+### Franklin D. Roosevelt (1946–present)
+
+Main article: [Roosevelt dime](/wiki/Roosevelt_dime)
+
+Soon after the death of President [Franklin D. Roosevelt](/wiki/Franklin_D._Roosevelt) in April 1945, legislation was introduced by [Virginia](/wiki/Virginia) Congressman [Ralph H. Daughton](/wiki/Ralph_Hunter_Daughton) that called for the replacement of the Mercury dime with one bearing Roosevelt's image. The dime was chosen to honor Roosevelt partly due to his efforts in the founding of the National Foundation for Infantile Paralysis (later renamed the [March of Dimes](/wiki/March_of_Dimes)), which originally raised money for [polio](/wiki/Poliomyelitis) research and to aid victims of the disease and their families.
+
+Due to the limited amount of time available to design the new coin, the [Roosevelt dime](/wiki/Roosevelt_dime) was the first regular-issue U.S. coin designed by a Mint employee in more than 40 years. Chief Engraver [John R. Sinnock](/wiki/John_R._Sinnock) was chosen, as he had already designed a Mint presidential medal of Roosevelt. Sinnock's first design, submitted on October 12, 1945, was rejected, but a subsequent one was accepted on January 6, 1946. The dime was released to the public on January 30, 1946, which would have been Roosevelt's 64th birthday. Sinnock's design placed his initials ("JS") at the base of Roosevelt's neck, on the coin's obverse. His reverse design elements of a torch, olive branch, and oak branch symbolized, respectively, liberty, peace, and strength.
+
+Controversy immediately ensued, as strong [anti-Communist](/wiki/Anti-communism) sentiment in the United States led to the circulation of rumors that the "JS" engraved on the coin was the initials of [Joseph Stalin](/wiki/Joseph_Stalin), placed there by a Soviet agent in the mint. The Mint quickly issued a statement denying this, confirming that the initials were indeed Sinnock's. The same rumor arose after the release of the Sinnock designed [Franklin half dollar](/wiki/Franklin_half_dollar) in 1948.
+
+The plaque of [Roosevelt](/wiki/Franklin_D._Roosevelt) at the Recorder of Deeds Building in [Washington, D.C.](/wiki/Washington,_D.C.)
+
+Another controversy surrounding Sinnock's design involves his image of Roosevelt. Soon after the coin's release, it was claimed that Sinnock borrowed his design of Roosevelt from a [bas relief](/wiki/Bas_relief) created by [African American](/wiki/African_American) sculptor [Selma Burke](/wiki/Selma_Burke), unveiled at the Recorder of Deeds Building in [Washington, D.C.](/wiki/Washington,_D.C.) in September 1945. Sinnock denied this and stated that he simply utilized his earlier design on the Roosevelt medal.
+
+With the passage of the [Coinage Act of 1965](/wiki/Coinage_Act_of_1965), the composition of the dime changed from 90% silver and 10% copper to a clad "sandwich" of pure copper inner layer between two outer layers of [cupronickel](/wiki/Cupronickel) (75% copper, 25% nickel) alloy giving a total composition of 91.67% [Cu](/wiki/Copper) and 8.33% [Ni](/wiki/Nickel). This composition was selected because it gave similar mass (now 2.268 grams instead of 2.5 grams) and electrical properties (important in [vending machines](/wiki/Vending_machine))—and most importantly, because it contained no precious metal.
+
+The Roosevelt dime has been minted every year, beginning in 1946. Through 1955, all three mints, [Philadelphia](/wiki/Philadelphia_Mint), [Denver](/wiki/Denver_Mint), and [San Francisco](/wiki/San_Francisco_Mint) produced circulating coinage; production at San Francisco ended in 1955, resuming in 1968 with proof coinage only. Through 1964 "D" and "S" [mintmarks](/wiki/Mintmark) can be found to the left of the torch. From 1968, the mintmarks have appeared above the date. None were used in 1965–1967, and Philadelphia did not show a mintmark until 1980 (in 1982, an error left the "P" off a small number of dimes, which are now valuable). To commemorate the 50th anniversary of the design, the 1996 mint sets included a "W" mintmarked dime made at the [West Point Mint](/wiki/West_Point_Mint). A total of 1,457,000 dimes were issued in the sets, making it the lowest mintage Roosevelt dime up to that time. Since then, the "P" mint mark 2015 reverse proof dime and "W" mint mark 2015 proof dime, minted at Philadelphia and West Point for inclusion in the March of Dimes collector set, have the lowest mintages with 75,000 pieces struck for each.
+
+### Semiquincentennial Dime (2026)
+
+Main article: [United States Semiquincentennial coinage](/wiki/United_States_Semiquincentennial_coinage)
+
+Great Seal of the United States (left). Semiquincentennial dime reverse (right).
+
+In 2026, the United States Mint is producing a dime for the [Semiquincentennial](/wiki/United_States_Semiquincentennial), featuring a capped [Liberty](/wiki/Liberty_(personification)) on the obverse and eagle carrying arrows on the reverse, dual dated as 1776–2026. The chosen design was recommended by the [CCAC](/wiki/Citizens_Coinage_Advisory_Committee) on November 18, 2024, and follows the theme of "Liberty over Tyranny". The Mint describes the obverse as Liberty opposing the "tyranny of the British monarchy" with "steadfast resolve", and the eagle on the reverse as "representing the American Revolution and the colonists' fight for independence". The eagle's design has been compared with the [Great Seal of the United States](/wiki/Great_Seal_of_the_United_States), which features an eagle carrying an olive branch in one talon representing [peace](/wiki/Olive_Branch_Petition), and 13 arrows in the other talon representing readiness for war. The semiquincentennial dime omits the olive branch and features only the arrows representing war.
+
+## See also
+
+- [1792 half disme](/wiki/1792_half_disme)
+- *[Brother, Can You Spare a Dime?](/wiki/Brother,_Can_You_Spare_a_Dime%3F)*, a popular song of the [Great Depression](/wiki/Great_Depression)
+- [Dime store](/wiki/Dime_store), also known as a "[five and dime](/wiki/Five_and_dime)"
+- [Dime novel](/wiki/Dime_novel), later known as [dime store novel](/wiki/Dime_store_novel)
+- [March of Dimes](/wiki/March_of_Dimes)
+- "[Stop on a dime](https://en.wiktionary.org/wiki/stop_on_a_dime)"
+- [United States Mint coin production](/wiki/United_States_Mint_coin_production)
+
+## References
+
+## External links
+
+- [Official specifications for all U.S. legal tender coins](https://www.usmint.gov/about_the_mint/index.cfm?action=coin_specifications). [Archived](https://web.archive.org/web/20091111035023/http://www.usmint.gov/about_the_mint/index.cfm?action=Coin_specifications) 2009-11-11 at the [Wayback Machine](/wiki/Wayback_Machine)
+- [Value and mintage for collectors](https://en.foronum.com/coins-catalog/usa/n-1732-1-dime-roosevelt-dime)

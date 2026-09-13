@@ -1,0 +1,765 @@
+# Sheriff of Yorkshire
+
+[Sir John Hotham](/wiki/Sir_John_Hotham,_1st_Baronet), Sheriff of Yorkshire 1634–35
+
+The [Sheriff](/wiki/High_Sheriff) is the oldest secular office under [the Crown](/wiki/The_Crown). Formerly the Sheriff was the principal law enforcement officer in the county but over the centuries most of the responsibilities associated with the post have been transferred elsewhere or are now defunct, so that its functions are now largely ceremonial.
+
+Sheriff is a title originating in the time of the [Angles](/wiki/Angles_(tribe)), not long after the invasion of the [Kingdom of England](/wiki/Kingdom_of_England), which was in existence for around a thousand years. A list of the sheriffs from the [Norman Conquest](/wiki/Norman_Conquest) onwards can be found below. The Shrievalties are the oldest [secular](/wiki/Secular) titles under the Crown in England and Wales, their purpose being to represent the monarch at a local level, historically in the [shires](/wiki/Shire).
+
+The office was a powerful position in earlier times, especially in the case of [Yorkshire](/wiki/Yorkshire), which covers a very large area. The sheriffs were responsible for the maintenance of [law and order](/wiki/Law_and_order_(politics)) and various other roles. Some of their powers in Yorkshire were relinquished in 1547 as the [Lord Lieutenant of Yorkshire](/wiki/Lord_Lieutenant_of_Yorkshire) was instated to deal with military duties. It was only in 1908 under [Edward VII of the United Kingdom](/wiki/Edward_VII_of_the_United_Kingdom) that the Lord Lieutenant became more senior than the Sheriff. Since then the position of Sheriff has become more [ceremonial](/wiki/Ceremonial), with many of its previous responsibilities transferred to [High Court judges](/wiki/High_Court_judge_(England_and_Wales)), [magistrates](/wiki/Magistrate), [coroners](/wiki/Coroner), local authorities and the [police](/wiki/Police).
+
+In 1974, under the [Local Government Act 1972](/wiki/Local_Government_Act_1972), the single Yorkshire shrievalty was abolished, with high sheriffs appointed to each of the new [metropolitan](/wiki/Metropolitan_county) and [non-metropolitan](/wiki/Non-metropolitan_county) counties. Today the position is represented at a more local level in the form of four titles; the [High Sheriff of the East Riding of Yorkshire](/wiki/High_Sheriff_of_the_East_Riding_of_Yorkshire), [High Sheriff of North Yorkshire](/wiki/High_Sheriff_of_North_Yorkshire), [High Sheriff of South Yorkshire](/wiki/High_Sheriff_of_South_Yorkshire) and [High Sheriff of West Yorkshire](/wiki/High_Sheriff_of_West_Yorkshire).
+
+## Sheriffs
+
+### House of Normandy
+
+- 1066–1068 [Gamel, son of Osbern](/wiki/Gamel,_Sheriff_of_York)
+- 1068–1069 [William Malet](/wiki/William_Malet_(companion_of_William_the_Conqueror))
+- 1069–1086 [Hugh fitzBaldric](/wiki/Hugh_fitzBaldric)
+- 1086–1087 [Erneis de Burun](/wiki/Craven_in_the_Domesday_Book#The_Land_of_Erneis_du_Buron_in_Craven,_Domesday_Book_folio_327v)
+- 1087–1093 [Ralph de Paganel](/wiki/Ralph_de_Paganel) or Paynell
+- 1093–1095 Geoffrey Baynard
+- 1095–1100 Walter de Lowthorpe
+- 1100–1100 [Bertram de Verdon](/wiki/Bertram_de_Verdun)
+- 1100–1115 Osbert of Lincoln
+- 1115–1128 Ansketil de Bulmer
+- 1128–1130 Bertram de Bulmer
+- 1130–1141 *obscure period*
+- 1138 [Walter L'Espec](/wiki/Walter_Espec)
+- 1141–1150 William de Percy
+- 1150–1154 Ralph
+
+### House of Plantagenet
+
+- 1154–1163 [Bertram de Bulmer](/wiki/Bulmer_family#Bulmer_of_Bulmer_and_Brancepeth)
+- 1163–1170 [Ranulf de Glanvill](/wiki/Ranulf_de_Glanvill)
+- 1170–1175 [Robert III de Stuteville](/wiki/Robert_III_de_Stuteville)
+- 1175–1189 [Ranulf de Glanvill](/wiki/Ranulf_de_Glanvill)
+- 1189–1190 John Marshal
+- 1190–1191 [Osbert de Longchamp](/wiki/Osbert_de_Longchamp)
+- 1191–1194 [Hugh Bardolf](/wiki/Hugh_Bardolf)
+- 1194–1198 [Geoffrey Plantagenet](/wiki/Geoffrey_(archbishop_of_York)), Archbishop of York
+- 1198–1201 [Geoffrey FitzPeter, Earl of Essex](/wiki/Geoffrey_FitzPeter,_Earl_of_Essex)
+- 1201–1203 [William de Stuteville](/wiki/William_de_Stuteville)
+- 1203–1204 [Geoffrey FitzPeter, Earl of Essex](/wiki/Geoffrey_FitzPeter,_Earl_of_Essex)
+- 1204–1209 [Roger de Lacy](/wiki/Roger_de_Lacy_(1170%E2%80%931211))
+- 1209–1213 Gilbert FitzReinfrid
+- 1213–1214 Robert de Percy
+- 1214–1215 [Peter FitzHerbert](/wiki/Peter_FitzHerbert)
+- 1215–1215 William de Duston
+- 1215–1216 William de Harcourt
+- 1216–1223 [Geoffrey de Neville](/wiki/Geoffrey_de_Neville_(died_1225))
+- 1223–1225 [Simon de Hale](/wiki/Simon_de_Hale), later [Sheriff of Wiltshire](/wiki/Sheriff_of_Wiltshire)
+- 1225–1226 Eustace de Ludham
+- 1226–1229 Robert de Cokefeld
+- 1229–1232 William de Stuteville
+- 1232–1233 [Peter de Rivaux](/wiki/Peter_de_Rivaux)
+- 1233–1234 [Brian de Lisle](/wiki/Brian_de_Lisle)
+- 1235–1236 [John Fitzgeoffrey](/wiki/John_Fitzgeoffrey)
+- 1236–1239 [Bryan FitzAlan, Lord FitzAlan](/wiki/Bryan_FitzAlan,_Lord_FitzAlan)
+- 1239–1242 [Nicholas de Molis](/wiki/Nicholas_de_Moels)
+- 1242–1246 [Henry of Bath](/wiki/Henry_of_Bath)
+- 1246–1248 Adam de Neirford
+- 1248–1250 William de Dacre
+- 1250–1253 Robert de Crepping
+- 1253–1254 William de Horsenden
+- 1254–1260 William de Latimer
+- 1260–1261 John de Oketon
+- 1261–1263 Peter de Percy
+- 1263–1264 [Robert de Neville](/wiki/Robert_de_Neville,_baron_of_Raby)
+- 1264–1265 William de Baszeall
+- 1265–1266 John de Oketon
+- 1266–1267 William de Latimer
+- 1267–1268 Robert de Lathum
+- 1268–1269 Giles de Goxhill
+- 1269–1270 John de Halton
+- 1270–1274 Roger LeStrange
+- 1274–1278 Alexander de Kirketon
+- 1278–1280 Sir Ranulph de Dacre of Dacre, Cumberland
+- 1280–1285 John Lythgrins
+- 1285–1291 Sir Gervase de Clifton
+- 1291–1293 Sir John de Meaux
+- 1293–1299 John de Byron
+- 1299–1300 Sir Robert Ughtred
+- 1300–1304 Simon de Kyme
+- 1304–1307 William de Houk
+- 1307–1308 John de Crepping
+- 1308–1310 John de Gras
+- 1310–1311 John de Eure
+- 1311–1314 Gerard Salveyn
+- 1314–1315 John Malbys
+- 1315–1315 Nicholas, 2nd Lord Meinill
+- 1315–1317 Sir Simon Warde
+- 1317–1318 Nicholas de Grey
+- 1318–1318 Sir Simon Warde
+- 1318–1318 Robert de Ryther
+- 1318–1323 Sir Simon Warde
+- 1323–1325 Sir Roger Somerville
+- 1325–1327 Henry de Fauconberg
+- 1327–1328 Sir [John Darcy](/wiki/John_Darcy,_1st_Baron_Darcy_de_Knayth)
+- 1328–1330 Henry de Fauconberg
+- 1330–1332 Ralph de Bulmer
+- 1332–1335 Sir Peter Saltmarsh
+- 1335–1335 Peter Middleton
+- 1335–1337 Sir [Thomas de Rokeby (died 1356)](/wiki/Thomas_de_Rokeby_(died_1356))
+- 1337–1340 Sir [Ralph Hastings](/wiki/Ralph_Hastings_(died_1346))
+- 1340–1340 John Moryn
+- 1340–1340 Sir [Ralph Hastings](/wiki/Ralph_Hastings_(died_1346))
+- 1340–1341 Sir John Elland
+- 1341–1342 [John de Fauconberg, 3rd Baron Fauconberg](/wiki/Baron_Fauconberg)
+- 1342–1349 Sir [Thomas de Rokeby (died 1356)](/wiki/Thomas_de_Rokeby_(died_1356))
+- 1349–1349 Sir William Plays
+- 1349–1349 Sir Brian Thornhill
+- 1349–1350 Gerard Salveyn of North Duffield and Herswell (grandson of Gerard HS 1311)
+- 1350–1351 Sir William Plumpton
+- 1351–1352 Sir Peter de Nuttle
+- 1352–1353 [Miles, 3rd Lord Stapleton](/wiki/Stapleton_(surname))
+- 1353–1354 Sir Peter de Nuttle
+- 1354–1356 Miles, 3rd Lord Stapleton
+- 1356–1359 Sir Peter de Nuttle
+- 1359–1360 Sir Thomas Musgrave
+- 1360–1362 Sir Marmaduke Constable I (1st term)
+- 1362–1366 Sir Thomas Musgrave
+- 1366–1367 Sir Marmaduke Constable I (2nd term)
+- 1367–1368 Sir John Chaumont
+- 1368–1370 Sir William de Acton
+- 1370–1371 Sir John Bygod
+- 1371–1372 Sir Robert Roos
+- 1372–1373 Sir William de Acton
+- 1373–1374 Sir John Bygod
+- 1374–1375 Sir William Perciehay (Percehay)
+- 1375–1376 Sir William Melton (1st term)
+- 1376–1377 Sir Ralph Hastings
+- 1377–1378 Sir John Constable
+- 1378–1379 Sir Robert Neville
+- 1379–1380 Sir William Melton (2nd term)
+- 1380–1380 Sir John Savile (1st term)
+- 1380–1381 Sir Ralph Hastings
+- 1381–1382 Sir William Ergum
+- 1382–1383 Sir John Savile (2nd term)
+- 1383–1384 Sir Robert Hilton
+- 1384–1385 Sir Gerard Usflete
+- 1385–1386 Sir Robert Constable of Flamborough (1st term)
+- 1386–1387 Sir Robert Hilton
+- 1387–1388 Sir John Savile (3rd term)
+- 1388–1389 Sir [John Godard](/wiki/John_Godard_(died_1392))
+- 1389–1390 Sir [James Pickering](/wiki/James_Pickering)
+- 1390–1391 Sir William Melton (3rd term)
+- 1391–1392 Sir [Ralph Euer](/wiki/Ralph_Euer)
+- 1392–1393 Sir John Depeden
+- 1393–1394 Sir [James Pickering](/wiki/James_Pickering)
+- 1394–1395 Sir Robert Constable of Flamborough (2nd term)
+- 1395–1396 Sir [Ralph Euer](/wiki/Ralph_Euer)
+- 1396–1397 Sir Robert Neville
+- 1397–1399 Sir [James Pickering](/wiki/James_Pickering) (died in office)
+
+### House of Lancaster
+
+- 1399–1399 Sir John Depeden
+- 1399–1400 Sir John Constable
+- 1400–1401 Sir [Thomas Bromflete](/wiki/Thomas_Bromflete)
+- 1401–1402 Sir William Dronsfield (1st term)
+- 1402–1403 Sir John Savile (son of Sir John Savile, HS 1380)
+- 1403–1404 Sir [Richard Redman](/wiki/Richard_Redman_(speaker))
+- 1404–1405 [Sir Peter Buckton](/wiki/Sir_Peter_Buckton)
+- 1405–1406 Sir William Dronsfield (2nd term)
+- 1406–1406 Robert Mauleverer
+- 1406–1407 Sir [John Etton](/wiki/John_Etton) (1st term)
+- 1407–1408 Sir [Thomas Rokeby](/wiki/Thomas_de_Rokeby)
+- 1408–1409 Sir [William Haryngton](/wiki/William_Harrington_(knight))
+- 1409–1410 Sir Edmund Hastings
+- 1410–1411 Sir Edmund Sandford
+- 1411–1412 Sir [Thomas Rokeby](/wiki/Thomas_de_Rokeby)
+- 1412–1413 Sir [John Etton](/wiki/John_Etton) (2nd term)
+- 1413–1414 Sir [William Haryngton](/wiki/William_Harrington_(knight))
+- 1414–1415 Sir [Thomas Bromflete](/wiki/Thomas_Bromflete)
+- 1415–1416 Sir [Richard Redman](/wiki/Richard_Redman_(speaker))
+- 1416–1417 Sir Edmund Hastings
+- 1417–1418 Sir [Robert Hilton](/wiki/Robert_Hilton_(15th_century_MP)) (1st term)
+- 1418–1419 Sir John Bygod
+- 1419–1420 Sir [Thomas Bromflete](/wiki/Thomas_Bromflete)
+- 1420–1422 Sir Halnath Mauleverer of North Deighton
+- 1422–1423 Sir [William Haryngton](/wiki/William_Harrington_(knight))
+- 1423–1424 Sir [Robert Hilton](/wiki/Robert_Hilton_(15th_century_MP)) (2nd term)
+- 1424–1426 Sir John Langton
+- 1426–1426 Sir Richard Hastings
+- 1426–1427 Sir William Ryther
+- 1427–1428 Sir [Robert Hilton](/wiki/Robert_Hilton_(15th_century_MP)) (3rd term)
+- 1428–1430 Sir [William Haryngton](/wiki/William_Harrington_(knight))
+- 1430–1430 Sir John Clervaulx
+- 1430–1431 Sir William Ryther
+- 1431–1432 Sir Richard Pickering
+- 1432–1433 Sir Henry Brounflete
+- 1433–1434 Sir Richard Hastings
+- 1434–1435 Sir William Ryther
+- 1435–1436 Sir William Tirwhit
+- 1436–1437 Sir John Constable
+- 1437–1438 Sir Robert Constable
+- 1438–1439 Sir William Ryther
+- 1439–1440 Sir John Tempest
+- 1440–1441 Sir Robert Waterton
+- 1441–1442 Sir William Gascoigne
+- 1442–1443 Sir Thomas Metham
+- 1443–1444 Sir Edmund Talbot
+- 1444–1445 Sir William Euer
+- 1445–1446 Sir [James Strangways](/wiki/James_Strangeways)
+- 1446–1447 Sir Robert Ughtred
+- 1447–1448 Sir [William Plumpton](/wiki/William_Plumpton)
+- 1448–1449 Sir John Conyers
+- 1449–1450 Sir James Pickering
+- 1450–1451 Sir Robert Ughtred
+- 1451–1452 Sir Ralph Bygod
+- 1452–1453 Sir [James Strangways](/wiki/James_Strangeways)
+- 1453–1454 Sir John Melton
+- 1454–1455 Sir John Savile
+- 1455–1456 Sir Thomas Haryngton
+- 1456–1457 Sir John Hotham
+- 1457–1458 Sir Ralph Bygod
+- 1458–1459 Sir John Tempest
+- 1459–1460 Sir Thomas Metham
+- 1460–1461 Sir John Melton
+
+### House of York
+
+- 1461–1461 Sir John Savile
+- 1461–1463 Sir Robert Constable
+- 1463–1464 Sir John Constable
+- 1464–1465 Sir Edward Hastings
+- 1465–1466 Sir Richard FitzWilliam
+- 1466–1467 Sir James Haryngton
+- 1467–1468 Sir [John Conyers](/wiki/John_Conyers_(died_1490))
+- 1468–1469 Sir [James Strangways](/wiki/James_Strangeways)
+- 1469–1470 Sir Henry Vavasour
+- 1470–1471 Sir Edmund Hastings
+- 1471–1473 Sir [Ralph de Ashton](/wiki/Ralph_de_Ashton)
+- 1473–1474 Sir Walter Griffith
+- 1474–1475 Sir John Conyers
+- 1475–1476 Sir James Haryngton
+- 1476–1477 Sir Edmund Hastings
+- 1477–1478 Sir William Ryther
+- 1478–1479 Sir Robert Constable
+- 1479–1480 Sir Hugh Hastings
+- 1480–1481 Sir Marmaduke Constable
+- 1481–1482 Sir Ralph Bygod
+- 1482–1483 Sir William Eure
+- 1483–1484 Sir Edmund Hastings
+- 1484–1485 Sir Thomas Markenfield of [Markenfield Hall](/wiki/Markenfield_Hall)
+
+### House of Tudor
+
+- 1485–1486 Sir John Savile
+- 1486–1487 Sir Robert Ryther
+- 1487–1488 Sir John Neville
+- 1488–1489 [Sir Marmaduke Constable](/wiki/Sir_Marmaduke_Constable) of Everingham
+- 1489–1490 [Sir Henry Wentworth](/wiki/Sir_Henry_Wentworth)
+- 1490–1491 Sir Thomas Wortley
+- 1491–1492 Sir Richard Tunstall
+- 1492–1492 [Sir Henry Wentworth](/wiki/Sir_Henry_Wentworth)
+- 1492–1493 Sir James Strangways
+- 1493–1494 [Sir Marmaduke Constable](/wiki/Sir_Marmaduke_Constable) of Everingham
+- 1494–1495 Sir John Neville
+- 1495–1496 Sir William Gascoigne
+- 1496–1497 Sir John Melton
+- 1497–1498 Sir John Conyers
+- 1498–1500 Sir John Hotham
+- 1500–1501 Sir Walter Griffith
+- 1501–1502 Sir Thomas Wortley
+- 1502–1503 Sir William Conyers
+- 1503–1504 Sir Ralph Ryther
+- 1504–1505 Sir John Cutte
+- 1505–1506 Sir Ralph Eure
+- 1506–1508 Sir John Norton
+- 1508–1509 Sir James Strangeways
+- 1509–1510 Sir Marmaduke Constable of Nuneaton
+- 1510–1511 Sir Ralph Eure
+- 1511–1512 Sir John Constable
+- 1512–1513 Sir John Everingham
+- 1513–1514 Sir William Percy
+- 1514–1515 Sir John Norton
+- 1515–1516 Sir John Carr
+- 1516–1517 Sir [Richard Tempest](/wiki/Richard_Tempest)
+- 1517–1518 Sir [William Bulmer](/wiki/William_Bulmer_(politician))
+- 1518–1519 Sir [John Neville](/wiki/John_Neville_II)
+- 1519–1520 Sir Peter Vavasour
+- 1520–1522 Sir Thomas Strangways
+- 1522–1522 Sir William Mauleverer
+- 1522–1523 Sir [Henry Clifford](/wiki/Henry_Clifford,_1st_Earl_of_Cumberland)
+- 1523–1524 Sir [John Neville](/wiki/John_Neville_II)
+- 1524–1525 Sir John Constable
+- 1525–1526 James Metcalfe
+- 1526–1527 Sir William Middleton
+- 1527–1528 Sir [John Neville](/wiki/John_Neville_II)
+- 1528–1529 Sir John Constable
+- 1529–1530 Sir [Ralph Ellerker](/wiki/Ralph_Ellerker)
+- 1530–1530 Thomas Strangways
+- 1531–1532 Sir [Nicholas Fairfax](/wiki/Nicholas_Fairfax) of [Gilling Castle](/wiki/Gilling_Castle)
+- 1532–1533 Sir Marmaduke Constable
+- 1533–1534 Sir John Constable of Nuneaton
+- 1534–1535 William Fairfax
+- 1535–1536 Sir George Darcy
+- 1536–1537 Sir Brian Hastings
+- 1537–1537 Francis Frobisher
+- 1537–1538 Sir [Henry Savile](/wiki/Henry_Savile_(died_1558)) of Thornhill, Tankersley and Elland, Yorks.
+- 1538–1539 Sir James Strangways
+- 1539–1540 Sir William Fairfax
+- 1540–1541 Sir Robert Neville
+- 1541–1542 Sir [Henry Savile](/wiki/Henry_Savile_(died_1558)) of Thornhill, Tankersley and Elland, Yorks.
+- 1542–1543 Sir Thomas Tempest
+- 1543–1544 Sir John Dawnay
+- 1544–1545 Sir [Nicholas Fairfax](/wiki/Nicholas_Fairfax) of [Gilling Castle](/wiki/Gilling_Castle)
+- 1545–1546 Sir [Christopher Danby](/wiki/Christopher_Danby)
+- 1546–1547 Sir John Tempest
+- 1547–1548 Sir Richard Cholmeley
+- 1548–1549 Sir [William Vavasour](/wiki/William_Vavasour) of [Hazlewood Castle](/wiki/Hazlewood_Castle)
+- 1549–1550 Sir Walter Calverley
+- 1550–1551 Sir Leonard Beckwith
+- 1551–1552 Sir John Gresham
+- 1552–1553 Sir Thomas Mauleverer
+- 1553–1554 Sir Thomas Waterton
+- 1554–1555 Sir Ingram Clifford of Cowthorpe
+- 1555–1556 Sir Christopher Metcalfe
+- 1556–1557 Sir Richard Cholmeley
+- 1557–1558 Sir Robert (or Richard?) Constable
+- 1558–1559 Sir Ralph Ellerker
+- 1559–1560 John Vaughan
+- 1560–1561 Sir John Neville
+- 1561–1562 Sir [Nicholas Fairfax](/wiki/Nicholas_Fairfax) of [Gilling Castle](/wiki/Gilling_Castle)
+- 1562–1563 [Sir George Bowes](/wiki/George_Bowes_(soldier))
+- 1563–1564 Sir [William Vavasour](/wiki/William_Vavasour) of [Hazlewood Castle](/wiki/Hazlewood_Castle)
+- 1564–1565 Sir William Ingleby of [Ripley Castle](/wiki/Ripley_Castle)
+- 1565–1566 [Sir Thomas Gargrave](/wiki/Sir_Thomas_Gargrave)
+- 1566–1567 Sir John Constable
+- 1567–1568 Sir Henry Savile
+- 1568–1569 [Richard Norton](/wiki/Richard_Norton_(rebel))
+- 1569–1570 [Sir Thomas Gargrave](/wiki/Sir_Thomas_Gargrave)
+- 1570–1571 Christopher Hildyard
+- 1571–1572 Thomas Fairfax
+- 1572–1573 John Dawnay
+- 1573–1574 Marmaduke Constable
+- 1574–1575 Sir William Bellasis of [Newburgh Priory](/wiki/Newburgh_Priory)
+- 1575–1576 Sir Thomas Danby (c.1530–1590)
+- 1576–1577 Thomas Boynton
+- 1577–1578 [William Fairfax](/wiki/William_Fairfax_(died_1597)) of [Gilling Castle](/wiki/Gilling_Castle)
+- 1578–1579 Christopher Wandesforde
+- 1579–1580 Richard Goodricke of [Ribston Hall](/wiki/Ribston_Hall)
+- 1580–1581 [Ralph Bourchier](/wiki/Ralph_Bourchier)
+- 1581–1582 Sir Robert Stapleton of Easdyke, Wighill
+- 1582–1583 Thomas Wentworth
+- 1583–1584 Sir [Cotton Gargrave](/wiki/Cotton_Gargrave)
+- 1584–1585 John Hotham
+- 1585–1586 Brian Stapleton
+- 1586–1587 Henry Constable of Burton Constable
+- 1587–1588 Robert Aske
+- 1588–1589 Sir Richard Mauleverer
+- 1589–1590 Sir John Dawnay
+- 1590–1591 Philip Constable
+- 1591–1592 Richard Goodricke of [Ribston Hall](/wiki/Ribston_Hall) (son of Richard, HS 1579)
+- 1592–1593 Sir William Mallory
+- 1593–1594 [Ralph Eure](/wiki/Ralph_Eure,_3rd_Baron_Eure)
+- 1594–1595 Francis Vaughan
+- 1595–1596 Sir Christopher Hildyard
+- 1596–1597 Francis Boynton
+- 1597–1598 Thomas Lassells
+- 1598–1599 Marmaduke Grimston
+- 1599–1600 Sir Robert Swift
+- 1600–1601 [Francis Clifford](/wiki/Francis_Clifford,_4th_Earl_of_Cumberland)
+- 1601–1602 [William Wentworth](/wiki/Sir_William_Wentworth,_1st_Baronet)
+- 1602–1603 Thomas Strickland
+
+### House of Stuart
+
+- 1603–1604 Sir [Henry Bellasis](/wiki/Sir_Henry_Belasyse,_1st_Baronet) of [Newburgh Priory](/wiki/Newburgh_Priory)
+- 1604–1606 Sir [Richard Gargrave](/wiki/Richard_Gargrave) of [Nostell Priory](/wiki/Nostell_Priory) and [Kinsley](/wiki/Kinsley,_West_Yorkshire)
+- 1606–1606 Sir Timothy Hutton
+- 1606–1607 Sir Henry Griffith
+- 1607–1608 Sir [William Bamburgh](/wiki/Bamburgh_baronets)
+- 1608–1609 Sir Hugh Bethell
+- 1609–1610 Sir Francis Hildesley
+- 1610–1611 Sir Thomas Dawnay
+- 1611–1612 Sir [Henry Slingsby](/wiki/Henry_Slingsby_(died_1634)) of [Scriven](/wiki/Scriven), near Knaresborough and Red House, [Moor Monkton](/wiki/Moor_Monkton)
+- 1612–1613 Sir [Christopher Hilliard](/wiki/Christopher_Hilliard) of [Winestead](/wiki/Winestead)
+- 1613–1614 [Sir George Savile, 1st Baronet](/wiki/Sir_George_Savile,_1st_Baronet) of [Lupset](/wiki/Lupset)
+- 1614–1615 John Armytage
+- 1615–1616 Sir Edward Stanhope
+- 1616–1617 Michael Warton
+- 1617–1618 Sir Robert Swift
+- 1618–1619 Sir William Alford
+- 1619–1620 Sir [Arthur Ingram](/wiki/Arthur_Ingram)
+- 1620–1621 [Sir Thomas Gower, 1st Baronet](/wiki/Sir_Thomas_Gower,_1st_Baronet)
+- 1621–1622 Sir Richard Tempest
+- 1622–1623 Sir [Guy Palmes](/wiki/Guy_Palmes)
+- 1623–1624 Sir Henry Jenkins of [Great Busby](/wiki/Great_Busby)
+- 1624–1625 Sir [Richard Cholmeley](/wiki/Richard_Cholmeley_(died_1631)) of [Whitby](/wiki/Whitby)
+- 1625–1626 [Thomas Wentworth, 1st Earl of Strafford](/wiki/Thomas_Wentworth,_1st_Earl_of_Strafford) of [Wentworth Woodhouse](/wiki/Wentworth_Woodhouse)
+- 1626–1627 Sir Thomas Norcliffe
+- 1627–1628 [Sir Thomas Fairfax](/wiki/Thomas_Fairfax,_1st_Viscount_Fairfax) of [Walton](/wiki/Walton,_Wakefield) and [Gilling Castle](/wiki/Gilling_Castle), near Malton
+- 1628–1629 [Sir Matthew Boynton, 1st Baronet](/wiki/Sir_Matthew_Boynton,_1st_Baronet) of [Barmston](/wiki/Barmston,_East_Riding_of_Yorkshire)
+- 1629–1630 Sir [Arthur Ingram](/wiki/Arthur_Ingram) the younger
+- 1630–1631 Sir John Gibson of [Welburn](/wiki/Welburn,_Kirkbymoorside)
+- 1631–1632 Sir Thomas Layton
+- 1632–1633 Sir Arthur Robinson
+- 1633–1634 Sir [Marmaduke Wyvill, 2nd Baronet](/wiki/Wyvill_baronets)
+- 1634–1635 [Sir John Hotham, 1st Baronet](/wiki/Sir_John_Hotham,_1st_Baronet)
+- 1635–1636 [Sir William Pennyman, 1st Baronet](/wiki/Sir_William_Pennyman,_1st_Baronet) of [Marske Hall](/wiki/Marske_Hall)
+- 1636–1637 Sir John Ramsden of Byram Hall, Brotherton
+- 1637–1638 [Thomas Danby](/wiki/Thomas_Danby_(died_1660)) (1610–1660)
+- 1638–1639 Sir William Robinson
+- 1639–1640 Sir [Marmaduke Langdale](/wiki/Marmaduke_Langdale,_1st_Baron_Langdale_of_Holme)
+- 1640–1641 Sir John Buck
+- 1641–1642 [Sir Thomas Gower, 2nd Baronet](/wiki/Sir_Thomas_Gower,_2nd_Baronet)
+- 1642–1643 [Sir Richard Hutton](/wiki/Sir_Richard_Hutton,_the_younger)
+- 1643–1644 [Sir Matthew Boynton, 1st Baronet](/wiki/Sir_Matthew_Boynton,_1st_Baronet)
+- 1645–1646 Sir John Bourchier
+- 1646–1647 Sir Robert Darley
+- 1647–1648 Sir John Savile
+- 1648–1649 Sir William St Quintin, 1st Baronet
+- 1649–1650 Sir John Savile
+
+### Commonwealth
+
+- 1650–1651 Sir [Edward Rodes](/wiki/Edward_Rodes)
+- 1651–1652 Sir [George Marwood, 1st Baronet](/wiki/George_Marwood,_1st_Baronet)
+- 1652–1653 [Hugh Bethell the younger](/wiki/Hugh_Bethell_(died_1679))
+- 1653–1654 [Sir William Constable, 1st Baronet](/wiki/Sir_William_Constable,_1st_Baronet)
+- 1654–1655 [John Bright](/wiki/Sir_John_Bright,_1st_Baronet)
+- 1656–1658 Sir Thomas Harrison, Kt of Copgrave
+- 1658–1659 [Barrington Bourchier](/wiki/Barrington_Bourchier)
+- 1659–1660 Robert Walters
+
+### House of Stuart, restoration
+
+- 1660–1661 [Sir Thomas Slingsby, 2nd Baronet](/wiki/Sir_Thomas_Slingsby,_2nd_Baronet)
+- 1661–1662 [Thomas Osborne, 1st Duke of Leeds](/wiki/Thomas_Osborne,_1st_Duke_of_Leeds)
+- 1662–1663 [Sir Thomas Gower, 2nd Baronet](/wiki/Sir_Thomas_Gower,_2nd_Baronet)
+- 1663–1664 Sir Roger Langley, 2nd Baronet
+- 12 November 1665: Sir Francis Cobb
+- 7 November 1666: [Sir John Reresby, 2nd Baronet](/wiki/Sir_John_Reresby,_2nd_Baronet)
+- 6 November 1667: [Sir Richard Mauleverer, 2nd Baronet](/wiki/Mauleverer_baronets)
+- 6 November 1668: [Sir John Armytage, 2nd Baronet](/wiki/Armytage_baronets#Armytage_baronets,_of_Kirklees_(1641))
+- 11 November 1669: Sir Philip Monckton
+- 4 November 1670: Sir [Solomon Swale](/wiki/Solomon_Swale), 1st Baronet
+- 9 November 1671: Sir William Wentworth
+- 11 November 1672: John Ramsden
+- 12 November 1673: Sir Thomas Yarburgh
+- 5 November 1674: Sir [Henry Marwood, 2nd Baronet](/wiki/Henry_Marwood,_2nd_Baronet)
+- 15 November 1675: [Sir Edmund Jennings](/wiki/Edmund_Jennings_(Member_of_Parliament))
+- 10 November 1676: Sir Godfrey Copley, 1st Baronet, of [Sprotbrough House](/wiki/Sprotbrough)
+- 15 November 1677: [Sir Godfrey Copley, 2nd Baronet](/wiki/Sir_Godfrey_Copley,_2nd_Baronet), of [Sprotbrough House](/wiki/Sprotbrough)
+- 14 November 1678: Richard Shuttleworth
+- 13 November 1679: Sir Thomas Daniel
+- 4 November 1680: [Sir Richard Graham, 1st Baronet](/wiki/Graham_baronets#Graham_baronets_of_Norton_Conyers_(1662)), of Norton Conyers
+- 1681–1682 [William Lowther](/wiki/William_Lowther_(1639%E2%80%931705))
+- 1682–1683 Ambrose Pudsey
+- 1683–1684 [Sir Brian Stapylton, 2nd Baronet](/wiki/Sir_Brian_Stapylton,_2nd_Baronet)
+- 1684–1686 [Christopher Tancred](/wiki/Christopher_Tancred_(politician))
+- 1686–1687 Thomas Rokeby
+- 1688–1689 [Sir Richard Graham, 1st Baronet](/wiki/Graham_baronets#Graham_baronets_of_Norton_Conyers_(1662))
+- 1689–1689 [William Robinson](/wiki/Sir_William_Robinson,_1st_Baronet)
+- 1689–1690 Sir Jonathan Jennings
+- 1690–1690 [Sir Christopher Wandesford, 2nd Baronet](/wiki/Christopher_Wandesford,_1st_Viscount_Castlecomer)
+- 1690–1691 Henry Fairfax of Toulston
+- 1691–1692 John Gill
+- 1692–1693 Ambrose Pudsey
+- 1693–1694 Charles Tancred
+- 1694–1695 Ingleby Daniel
+- 1695–1696 John Bradshaw
+- 1696–1697 Thomas Pulleine
+- 1697–1698 [William Lowther](/wiki/Sir_William_Lowther,_1st_Baronet,_of_Swillington)
+- 1698–1699 [Sir William Strickland, 3rd Baronet](/wiki/Sir_William_Strickland,_3rd_Baronet)
+- 1699–1699 John Lambert
+- 1699–1700 Fairfax Norcliffe
+- 1700–1702 Robert Constable
+- 1702–1702 Robert Mitford
+- 1702–1703 Sir Thomas Pennyman, 2nd Baronet
+- 1703–1704 Thomas Pulleine
+- 1704–1705 Godfrey Bosvile
+- 1705–1706 Sir Matthew Pierson
+
+### Queen Anne
+
+- 1706–1707 [Sir Roger Beckwith, 2nd Baronet](/wiki/Beckwith_baronets)
+- 1707–1708 Henry Iveson
+- 1708–1709 William Ellis
+- 1709–1710 William Turbut
+- 1710–1711 William Nevile
+- 1711–1712 William Vavasour
+- 1712–1713 Richard Beaumont
+
+### House of Hanover
+
+- 1713–1714 Thomas Wrightson
+- 1714–1715 Fairfax Norcliffe
+- 1715–1716 Charles Wilkinson
+- 1716–1717 [William Hustler](/wiki/Sir_William_Hustler)
+- 1717–1718 Sir Henry Goodricke, 4th Baronet of [Ribston Hall](/wiki/Ribston_Hall)
+- 1718–1719 [Daniel Lascelles](/wiki/Daniel_Lascelles_(1655%E2%80%931734))
+- 1719–1720 John Bourchier of [Beningbrough Hall](/wiki/Beningbrough_Hall)
+- 1720–1721 Sir [Walter Hawkesworth](/wiki/Hawkesworth_baronets), 2nd Baronet
+- 1721–1722 Sir Ralph Milbanke, 4th Baronet
+- 1722–1723 [Sir William Wentworth, 4th Baronet](/wiki/Sir_William_Wentworth,_4th_Baronet)
+- 1723–1724 Hugh Cholmley of Whitby
+- 1724–1725 Cholmley Turner
+- 1725–1726 Thomas Ramsden of Hawkesworth
+- 1726–1727 [Charles Bathurst](/wiki/Charles_Bathurst_(died_1743)) of Clints and Scutterskelfe
+- 1727–1728 [Thomas Duncombe](/wiki/Thomas_Duncombe_(died_1746)) of [Duncombe Park](/wiki/Duncombe_Park)
+- 1728–1729 William Harvey
+- 1729–1730 [Sir William St Quintin, 4th Baronet](/wiki/Sir_William_St_Quintin,_4th_Baronet) of [Scampston Hall](/wiki/Scampston_Hall)
+- 1730–1731 Beilby Thompson
+- 1731–1732 Sir Rowland Winn, 4th Baronet
+- 1732–1733 Thomas Condon
+- 1733–1734 Hugh Bethell of Rise and Walton Abbey
+- 1734–1735 Francis Barlow of [Middlethorpe Hall](/wiki/Middlethorpe_Hall)
+- 1735–1736 James Hustler of Ackham
+- 1736–1737 Mark Kirby
+- 1737–1738 [Sir Hugh Smithson, 4th Baronet](/wiki/Hugh_Percy,_1st_Duke_of_Northumberland)
+- 1738–1739 Sir George Cooke, 5th Baronet
+- 1739–1740 Sir Samuel Armytage, 1st Baronet
+- 1740–1741 [Sir Lionel Pilkington, 5th Baronet](/wiki/Sir_Lionel_Pilkington,_5th_Baronet) of Stanley
+- 1741–1742 Henry Darcy
+- 1742–1743 Ralph Consett Bell
+- 1743–1744 Godfrey Copley
+- 1744–1745 Thomas Thornhill
+- 1745–1746 Sir Henry Ibbetson, 1st Baronet
+- 1746–1747 Sir William Milner, 2nd Baronet
+- 1747–1748 William Meadhurst
+- 1748–1749 William Thompson
+- 1749–1750 John Bourchier of [Beningbrough Hall](/wiki/Beningbrough_Hall)
+- 1750–1751 Sir William Pennyman, 4th Baronet
+- 1751–1752 [Sir Griffith Boynton, 5th Baronet](/wiki/Boynton_baronets)
+- 1752–1753 Richard Sykes
+- 1753–1754 [Sir Ralph Milbanke, 5th Baronet](/wiki/Sir_Ralph_Milbanke,_5th_Baronet)
+- 1754–1755 [Nathaniel Cholmley](/wiki/Nathaniel_Cholmley)
+- 1755–1756 Thomas Foljambe
+- 1756–1757 George Montgomery Metham
+- 1757–1758 [Henry Willoughby](/wiki/Henry_Willoughby,_5th_Baron_Middleton)
+- 1758–1759 Jeremiah Dixon
+- 1759–1760 [Sir Charles Turner, 1st Baronet, of Kirkleatham](/wiki/Sir_Charles_Turner,_1st_Baronet,_of_Kirkleatham)
+- 1760–1761 [James Shuttleworth](/wiki/James_Shuttleworth_(politician)) of [Gawthorpe Hall](/wiki/Gawthorpe_Hall), Lancashire and [Forcett Hall](/wiki/Forcett_Hall), Yorkshire
+- 1761–1762 Sir John Lister Kaye, 5th Baronet of Grainge
+- 1762–1763 Hugh Bethell of Rise and Watton Abbey
+- 1763–1764 Boynton Langley
+- 1764–1765 Sir William Foulis, 6th Baronet
+- 1765–1766 Sir Thomas Wentworth, 5th Baronet
+- 1766–1767 Thomas Thornhill
+- 1767–1768 Thomas Arthington, of Arthington
+- 1768–1769 Sir George Strickland, 5th Baronet
+- 1769–1770 Sir James Ibbetson, 2nd Baronet
+- 1770–1771 Sir Bellingham Graham, 5th Baronet
+- 1771–1772 [Sir Griffith Boynton, 6th Baronet](/wiki/Boynton_baronets) of [Burton Agnes](/wiki/Burton_Agnes)
+- 1772–1773 Sir [William St Quintin, 5th Baronet](/wiki/St_Quintin_baronets) of [Scampston Hall](/wiki/Scampston_Hall)
+- 1773–1774 Sir [Marmaduke Astey Wyvill, 7th Baronet](/wiki/Wyvill_baronets) of [Constable Burton Hall](/wiki/Constable_Burton_Hall)
+- 1774–1775 Marmaduke Horsfield of Thorp Green
+- 1775–1776 [Sir George Armytage, 3rd Baronet](/wiki/Sir_George_Armytage,_3rd_Baronet) of Kirklees
+- 1776–1777 Giles Earle of [Beningbrough Hall](/wiki/Beningbrough_Hall)
+- 1777–1778 Bacon Frank of Campsall
+- 1778–1779 John Sawrey Morritt of Rokeby Park
+- 1779–1780 Thomas Duncombe of [Duncombe Park](/wiki/Duncombe_Park)
+- 1780–1781 William Bethell of Rise
+- 1781–1782 Humphrey Osbaldeston
+- 1782–1783 [Sir John Ingilby, 1st Baronet](/wiki/Sir_John_Ingilby,_1st_Baronet) of [Ripley Castle](/wiki/Ripley_Castle)
+- 1783–1784 [Sir Robert Hildyard, 4th Baronet](/wiki/Hildyard_baronets) of [Winestead](/wiki/Winestead)
+- 1784–1785 [William Danby](/wiki/William_Danby_(writer)) of [Swinton](/wiki/Swinton_Estate)
+- 1785–1786 [Sir Thomas Slingsby, 8th Baronet](/wiki/Slingsby_baronets) of [Scriven Park](/wiki/Scriven_Park)
+- 1786–1787 Richard Langley of [Wykeham Abbey](/wiki/Wykeham_Abbey)
+- 1787–1788 [Francis Ferrand Foljambe](/wiki/Francis_Ferrand_Foljambe) of [Aldwark](/wiki/Aldwark,_Hambleton)
+- 1788–1789 John Yorke of Richmond
+- 1789–1790 Walter Ramsden Beaumont Hawksworth Fawkes of [Farnley Hall](/wiki/Farnley_Hall_(North_Yorkshire))
+- 1790–1791 [Charles Duncombe the younger](/wiki/Charles_Duncombe,_1st_Baron_Feversham) of [Duncombe Park](/wiki/Duncombe_Park)
+- 1791–1792 Sir George Armytage, 4th Baronet
+- 1792–1793 [Sir Thomas Frankland, 6th Baronet](/wiki/Sir_Thomas_Frankland,_6th_Baronet) of [Thirkleby Hall](/wiki/Thirkleby_Hall)
+- 1793–1794 Richard Henry Beaumont
+- 1794–1795 [Thomas Lister](/wiki/Thomas_Lister,_1st_Baron_Ribblesdale) of [Gisburne Park](/wiki/Gisburne_Park)
+- 1795–1796 [Mark Masterman-Sykes](/wiki/Mark_Masterman-Sykes), later Sir Mark Masterman-Sykes, 3rd Baronet
+- 1796–1797 Godfrey Wentworth Wentworth of [Hickleton Hall](/wiki/Hickleton_Hall)
+- 1797–1798 [Sir John Ramsden, 4th Baronet](/wiki/Sir_John_Ramsden,_4th_Baronet) of Byram
+- 1798–1799 Sir Thomas Pilkington, 7th Baronet
+- 1799–1800 Sir Rowland Winn, 6th Baronet
+- 21 February 1800: James Milnes, of Thornes House, [Wakefield](/wiki/Wakefield)
+- 11 February 1801: Richard Thompson, of Wetherby Grange
+- 3 February 1802: [Sir William Foulis, 8th Baronet](/wiki/Foulis_baronets), of Ingleby Manor
+- 3 February 1803: [Sir Henry Carr Ibbetson, 3rd Baronet](/wiki/Ibbetson_baronets), of [Denton Hall](/wiki/Denton_Hall,_Wharfedale)
+- 1 February 1804: [James Fox](/wiki/James_Fox-Lane) of [Bramham Park](/wiki/Bramham_Park)
+- 6 February 1805: Henry Cholmley, of [Howsham](/wiki/Howsham,_North_Yorkshire)
+- 1 February 1806: [John Bacon Sawrey Morritt](/wiki/John_Bacon_Sawrey_Morritt), of [Rokeby Park](/wiki/Rokeby_Park)
+- 4 February 1807: [Richard Fountayne Wilson](/wiki/Richard_Fountayne_Wilson), of [Melton on the Hill](/wiki/High_Melton)
+- 3 February 1808: William Joseph Denison, of Ayton
+- 6 February 1809: [Sir George Wombwell, 2nd Baronet](/wiki/Sir_George_Wombwell,_2nd_Baronet), of [Wombwell](/wiki/Wombwell)
+- 31 January 1810: Thomas Wynn Belasyse, of [Newburgh Priory](/wiki/Newburgh_Priory)
+- 8 February 1811: Richard Watt, of [Bishop Burton](/wiki/Bishop_Burton)
+- 24 January 1812: [Sir Thomas Slingsby, 9th Baronet](/wiki/Slingsby_baronets), of Scriven Park
+- 10 February 1813: Robert Crowe, of Kipling
+- 4 February 1814: [Sir Francis Wood, 2nd Baronet](/wiki/Sir_Francis_Wood,_2nd_Baronet), of [Hemsworth](/wiki/Hemsworth)
+- 13 February 1815: William Garforth, of Wiganthorpe Hall
+- 1816–1817 [Richard Philip Oliver-Gascoigne](/wiki/Richard_Philip_Oliver-Gascoigne) of [Parlington Hall](/wiki/Parlington_Hall)
+- 1817–1818 Sir William Mordaunt Stuart Milner, 4th Baronet
+- 1818–1819 John Yorke of Richmond
+- 1819–1820 [William Wrightson](/wiki/William_Wrightson_(MP_for_Aylesbury)) of [Cusworth Hall](/wiki/Cusworth_Hall)
+- 1820–1821 Henry Vansittart of Kirk Leatham
+- 1821–1822 [Sir William Amcotts-Ingilby, 2nd Baronet](/wiki/Sir_William_Amcotts-Ingilby,_2nd_Baronet) of [Ripley Castle](/wiki/Ripley_Castle)
+- 1822–1823 [Richard Bethell](/wiki/Richard_Bethell_(1772%E2%80%931864)) of [Rise Hall](/wiki/Rise_Hall) and Watton Abbey
+- 1823–1824 [Walter Ramsden Fawkes](/wiki/Walter_Fawkes) of [Farnley Hall](/wiki/Farnley_Hall_(North_Yorkshire))
+- 1824–1825 [Sir John Vanden-Bempde-Johnstone, 2nd Baronet](/wiki/Sir_John_Vanden-Bempde-Johnstone,_2nd_Baronet) of Hackness
+- 1825–1826 John Hutton of Marske
+- 1826–1827 Marmaduke Langley
+- 1827–1828 Henry Darley of [Aldby Park](/wiki/Aldby_Park)
+- 1828–1829 [Sir Tatton Sykes, 4th Baronet](/wiki/Sir_Tatton_Sykes,_4th_Baronet)
+- 1829–1830 [George Osbaldeston](/wiki/George_Osbaldeston) of Ebberston
+- 1830–1831 [Edward Robert Petre](/wiki/Edward_Robert_Petre) of Stapleton Park
+- 1831–1832 Sir Henry James Goodricke, 7th Baronet of [Ribston Hall](/wiki/Ribston_Hall)
+- 1831 Richard Oliver (later Richard Oliver-Gascoigne) of Castle Oliver
+- 1832–1833 Richard York of Wighill Park
+- 1833–1834 William Constable-Maxwell of Everingham
+- 1834–1835 Henry Preston of [Moreby Hall](/wiki/Moreby_Hall)
+- 1835–1836 Richard Henry Roundell of [Gledstone House](/wiki/Gledstone_Hall)
+- 1836–1837 Nicholas Edmund Yarburgh of [Heslington Hall](/wiki/Heslington_Hall)
+- 1837–1838 [Mark Milbank](/wiki/Mark_Milbank_(MP)) of [Thorpe Perrow](/wiki/Thorp_Perrow)
+- 1838–1839 [Sir Robert Frankland Russell, 7th Baronet](/wiki/Sir_Robert_Frankland_Russell,_7th_Baronet) of [Thirkleby Hall](/wiki/Thirkleby_Hall)
+- 1839–1840 Charles Robert Tempest of Broughton
+- 1840–1841 [Sir Thomas Clifford-Constable, 2nd Baronet](/wiki/Sir_Thomas_Clifford-Constable,_2nd_Baronet) of [Burton Constable Hall](/wiki/Burton_Constable_Hall)
+- 1841–1842 Frederick William Thomas Vernon-Wentworth of [Wentworth Castle](/wiki/Wentworth_Castle)
+- 1842–1843 William St. Quintin of [Scampston Hall](/wiki/Scampston_Hall)
+- 1843–1844 Sir Joseph William Copley, 4th Baronet of [Sprotbrough House](/wiki/Sprotbrough)
+- 1844–1845 Timothy Hutton of [Clifton Castle](/wiki/Clifton_Castle)
+- 1845–1846 Sir William Bryan Cooke, 8th Baronet of Wheatley
+- 1846–1847 James Walker of Sand Hutton
+- 1847–1848 Joseph Dent of [Ribston Hall](/wiki/Ribston_Hall)
+- 1848–1849 Yarburgh Greame of [Sewerby Hall](/wiki/Sewerby_Hall)
+- 1849–1850 [Octavius Henry Cyril Vernon Harcourt](/wiki/Octavius_Vernon_Harcourt) of [Swinton Park](/wiki/Swinton_Park)
+- 1850–1851 [William Rutson](/wiki/William_Rutson_(1791-1867)) of Newby Whiske, Thirsk
+- 1851–1852 Payan Dawnay of [Beningbrough Hall](/wiki/Beningbrough_Hall)
+- 1852–1853 [Sir John Henry Lowther, 2nd Baronet](/wiki/Sir_John_Lowther,_2nd_Baronet,_of_Swillington) of Swillington
+- 1853–1854 Andrew Montagu of Melton Park
+- 1854–1855 [Henry Willoughby](/wiki/Henry_Willoughby,_8th_Baron_Middleton) of Birdsall near Malton
+- 1855–1856 [James Brown](/wiki/James_Brown_(MP_for_Malton)) of Copgrove, near Knaresborough
+- 1856–1857 [Harry Stephen Meysey Thompson](/wiki/Harry_Meysey-Thompson) of Kirby Hall
+- 1857–1858 [Sir Joseph Radcliffe, 2nd Baronet](/wiki/Radcliffe_baronets) of [Rudding Park House](/wiki/Rudding_Park_House)
+- 1858–1859 [John Walbanke-Childers](/wiki/John_Walbanke-Childers) of [Cantley Hall](/wiki/Cantley_Hall), near Doncaster
+- 1859–1860 [Sir Lionel Milborne Swinnerton Pilkington Bt](/wiki/Milborne-Swinnerton-Pilkington_baronets) of [Chevet Hall](/wiki/Chevet,_West_Yorkshire)
+- 1860–1861 James Garth Marshall of Headingley, Leeds
+- 1861–1862 [Sir George Orby Wombwell](/wiki/Sir_George_Orby_Wombwell,_4th_Baronet) of Newburgh Park, York
+- 1862–1863 Godfrey Wentworth of [Woolley Hall](/wiki/Woolley_Hall), near Wakefield
+- 1863–1864 John Hope Barton of Stapleton Park, near Pontefract
+- 1864–1865 Frederick Charles Trench-Gascoigne of [Parlington Hall](/wiki/Parlington_Hall), Aberford
+- 1865–1866 Francis Watt of [Bishop Burton Hall](/wiki/Bishop_Burton) near Beverley
+- 1866–1867 Charles Sabine Augustus Thellusson of [Brodsworth Hall](/wiki/Brodsworth_Hall)
+- 1867–1868 [William Henry Harrison Broadley](/wiki/William_Harrison-Broadley) of Welton
+- 1868–1869 [Sir John William Ramsden, 5th Baronet](/wiki/Sir_John_Ramsden,_5th_Baronet) of Byram
+- 1869–1870 [Sir Tatton Sykes, 5th Baronet](/wiki/Sir_Tatton_Sykes,_5th_Baronet) of [Sledmere House](/wiki/Sledmere_House), near Malton
+- 1870–1871 James Pulleine of [Clifton Castle](/wiki/Clifton-on-Yore)
+- 1871–1872 [Sir Henry Edwards, 1st Baronet](/wiki/Sir_Henry_Edwards,_1st_Baronet) of Pye Nest
+- 1872–1873 Frederick Bacon Frank of Campsall Hall, Doncaster
+- 1873–1874 [George Lane-Fox](/wiki/George_Lane-Fox_(sheriff)) of [Bramham Park](/wiki/Bramham_Park)
+- 1874–1875 [Arthur Duncombe](/wiki/Arthur_Duncombe_(Royal_Navy_officer)) of Kilnwick Percy
+- 1875–1876 William Froggatt Bethell of Rise
+- 1876–1877 Henry Miles Stapylton of Mitton Hall
+- 1877–1878 John Horace Savile, known as Viscount Pollington
+- 1878–1879 [William Aldam](/wiki/William_Aldam) of Frickley Hall
+- 1879–1880 Charles Booth Elmsall Wright of [Bolton Hall](/wiki/Bolton_Hall,_North_Yorkshire)
+- 1880–1881 [Sir Charles William Strickland, 8th Baronet](/wiki/Sir_Charles_Strickland,_8th_Baronet) of Hildenley
+- 1881–1882 William Roundell of [Gledstone House](/wiki/Gledstone_Hall)
+- 1882–1883 Sir Henry Day Ingilby, 2nd Baronet of [Ripley Castle](/wiki/Ripley_Castle)
+- 1883–1884 [Walter Morrison](/wiki/Walter_Morrison_(politician)) of Malham Tarn House
+- 1884–1885 [John Hotham, 5th Baron Hotham](/wiki/Baron_Hotham) of [Dalton Hall](/wiki/Dalton_Hall_(Beverley))
+- 1885–1886 [John Fielden](/wiki/John_Fielden#Children) of [Grimston Park](/wiki/Grimston_Park)
+- 1886–1887 Thomas Slingsby of Scriven Park
+- 1887–1888 [Samuel Cunliffe Lister](/wiki/Samuel_Lister,_1st_Baron_Masham) of Swinton
+- 1888–1889 [Sir James Robert Walker, 2nd Baronet](/wiki/Sir_James_Robert_Walker,_2nd_Baronet) of Sand Hutton
+- 1889–1890 Thomas Edward Yorke of Bewerley Hall, Pateley Bridge
+- 1890–1891 John Coulthurst of Gargrave House, [Gargrave](/wiki/Gargrave)
+- 1891–1892 [Arthur Wilson](/wiki/Arthur_Wilson_(shipping_magnate)), of [Tranby Croft](/wiki/Tranby_Croft)
+- 1892–1893 Sir [Andrew Fairbairn](/wiki/Andrew_Fairbairn_(politician)) of [Askham Hall](/wiki/Askham_Richard)
+- 1893–1894 George Thomas Gilpin Brown of [Sedbury Park](/wiki/Gilling_West)
+- 1894–1895 [Ralph Creyke](/wiki/Ralph_Creyke) of Rawcliffe Hall
+- 1895–1896 [Henry Edmund Butler, 14th Viscount Mountgarret](/wiki/Henry_Butler,_14th_Viscount_Mountgarret) of [Nidd Hall](/wiki/Nidd_Hall), Ripleye
+- 1896–1897 Ernest Richard Bradley Hall-Watt of [Bishop Burton](/wiki/Bishop_Burton) Hall, Beverley
+- 1897–1898 [James Anson Farrer](/wiki/James_Anson_Farrer) of Ingleborough, Clapham
+- 1898–1899 Robert John Foster of [Stockeld Park](/wiki/Stockeld_Park)
+- 1899–1900 [William Herbert St Quintin](/wiki/William_Herbert_St_Quintin) of [Scampston Hall](/wiki/Scampston_Hall)
+- 1900–1901 William Henry Battie-Wrightson of [Cusworth Hall](/wiki/Cusworth_Hall), Doncaster
+
+### House of Saxe-Coburg-Gotha
+
+- 1901–1902 [Sir Alexander Wentworth Macdonald Bosville, Bt.](/wiki/Macdonald_baronets) of Thorpe Hall, Bridlington
+- 1902–1903 Sir Theophilus Peel, 1st Baronet of Potterton Hall, Barwick-in-Elmet
+- 1903–1904 [Sir William Henry Charles Wemyss Cooke, 1st Baronet](/wiki/Sir_William_Henry_Charles_Wemyss_Cooke) of Wheatley Hall, Doncaster
+- 1904–1905 William Ferrand of St Ives, Bingley
+- 1905–1906 [William Wright Warde-Aldam](/wiki/William_Wright_Warde-Aldam) of Frickley Hall, near Doncaster
+- 1906–1907 William Slingsby Hunter of [Gilling Castle](/wiki/Gilling_Castle)
+- 1907–1908 Sir George John Armytage, 6th Baronet of [Kirklees Hall](/wiki/Kirklees_Hall)
+- 1908–1908 Charles Brook
+- 1908–1909 [Bruce Canning Vernon-Wentworth](/wiki/Bruce_Canning_Vernon-Wentworth) of [Wentworth Castle](/wiki/Wentworth_Castle)
+- 1909–1910 George William Lloyd of Stockton Hall, York
+- 1910–1911 Frederick James Osbaldeston Montagu of Melton Park, Doncaster
+- 1911–1912 Sir Thomas Edward Milborne-Swinnerton-Pilkington, 12th Baronet of [Chevet Park](/wiki/Chevet,_West_Yorkshire), near Wakefield
+- 1912–1913 Charles Thellusson of [Brodsworth Hall](/wiki/Brodsworth_Hall), Doncaster
+- 1913–1914 [John William Robinson Parker](/wiki/John_William_Robinson_Parker) of [Browsholme Hall](/wiki/Browsholme_Hall)
+- 1914–1915 Charles Ernest Charlesworth of Conyngham Hall, Knaresborough
+- 1915–1916 John Brennand of Baldersley Park, Thirsk
+- 1916–1917 Joseph Constantine of Harsley Hall, Northallerton
+
+### House of Windsor
+
+- 1917–1918 Sir Francis Samuelson,3rd Baronet of Breckenbrough Hall, Thirsk
+- 1918–1919 Arthur Charles Dorman of Rye Hill, Nunthorpe
+- 1919–1920 William Fry Whitwell of Clockwood House, Yarm
+- 1920–1921 Sir Henry Dennis Readett-Bayley
+- 1921–1922 James Lionel Dugdale of Crathorne, Yarm
+- 1922–1923 Sir Algernon Freeman, 2nd Baronet of Scriven Park, Knaresborough
+- 1923–1924 [Frederic Richard Thomas Trench Gascoigne](/wiki/Frederic_Richard_Thomas_Trench_Gascoigne) of [Lotherton Hall](/wiki/Lotherton_Hall), Aberford
+- 1924–1925 Henry Whitworth of Kilnwick Percy
+- 1925–1926 William Henry Anthony Wharton of [Skelton Castle](/wiki/Skelton_Castle), Skelton in Cleveland
+- 1926–1927 [Sir William Henry Aykroyd, 1st Baronet](/wiki/Sir_William_Henry_Aykroyd,_1st_Baronet) of Cliffe Hall, Lightcliffe, near Halifax
+- 1927–1928 Sir John Donald Horsfall, 2nd Baronet of [Hayfield Hall](/wiki/Glusburn), Glusburn, near Keighley
+- 1928–1929 Sir John Henry Harrowing of Low Stakesby, Whitby
+- 1929–1930 John William Morkill of [Newfield Hall](/wiki/Newfield_Hall), Bell Busk, Leeds
+- 1930–1931 Clive Behrens of Swinton Grange, Malton
+- 1931–1932 John William Coulthurst of Gargrave House, Gargrave
+- 1932–1933 [Frederick Hawksworth Fawkes](/wiki/Frederick_Hawksworth_Fawkes) of [Farnley Hall](/wiki/Farnley_Hall_(North_Yorkshire))
+- 1933–1934 Herbert Anderson Taylor of Sutton Hall, Thirsk
+- 1934–1935 Sir Prince Prince-Smith, 2nd Baronet of Whinburn, Keighley and Southburn House near Driffield
+- 1935–1936 William Lechmere Wade-Dalton of [Hauxwell Hall](/wiki/Hauxwell_Hall), Constable Burton
+- 1936–1937 John Ralph Patientius Warde-Aldam of Frickley Hall, Doncaster
+- 1937–1938 Trevor Thornton-Berry of Swinithwaite Hall, Leyburn
+- 1938–1939 William Riley-Smith of Toulston, Tadcaster
+- 1939–1940 John Edward Durrant Shaw of [Welburn Hall](/wiki/Welburn,_Kirkbymoorside), Kirby Moorside
+- 1940–1941 William St. Andrew Warde-Aldam of Hooton Pagnell Hall, Doncaster
+- 1941–1942 Sir Frederic Alfred Aykroyd, 1st Baronet of Birstwith Hall, near Harrogate
+- 1942–1943 Charles Grant-Dalton of [Brodsworth Hall](/wiki/Brodsworth_Hall), Doncaster
+- 1943–1944 Lionel Brook Holliday of Copgrove Hall, Burton Leonard
+- 1944–1945 [Sir Edwin Airey](/wiki/Edwin_Airey) of Oakwood Grange, Roundhay, Leeds
+- 1945–1946 Sir Francis William Terry of Middlethorpe Manor, York
+- 1946–1947 Geoffrey Roy Holland Smith of [Oxton Hall](/wiki/Oxton_Hall), Tadcaster
+- 1947–1948 Christopher Hildyard Ringrose-Wharton of [Skelton Castle](/wiki/Skelton_Castle), Skelton in Cleveland, Saltburn
+- 1948–1949 Sir Mark Tatton Richard Sykes, 7th Baronet of [Sledmere House](/wiki/Sledmere_House), Malton
+- 1949–1950 Cuthbert Henry Dawnay of West Heslerton Hall, Malton
+- 1950–1951 William Riley-Smith of Toulston, Tadcaster
+- 1951–1953 [Sir Benjamin Dawson, 1st Baronet](/wiki/Sir_Benjamin_Dawson,_1st_Baronet) of [Nun Appleton Hall](/wiki/Nun_Appleton_Hall), York
+- 1952–1953 Sir Alfred Hammond Aykroyd, 2nd Baronet of Linton Spring, Wetherby
+- 1953–1954 Marcus William Wickham-Boynton of [Burton Agnes Hall](/wiki/Burton_Agnes_Hall), Driffield
+- 1954–1955 Sir George William Martin of Adel Lodge, Adel
+- 1955–1956 [Sir Frederick Austin Neill](/wiki/Frederick_Neill) of Whinfell, Whirlow, Sheffield
+- 1956–1957 Francis Roger Ingham of Bellwood Hall, Ripon
+- 1957–1958 Harold Hammond Aykroyd of Whixley Hall, Whixley, near York
+- 1958–1959 Frank Dixon Marshall of Briery Wood, Ilkley
+- 1959–1960 Neil Malcolm Peech of Park House, Firbeck, near Worksop
+- 1960–1961 James Bryan Upton of Hotham House, Hotham, York
+- 1961–1962 Sir Richard Bellingham Graham, 10th Baronet of [Norton Conyers House](/wiki/Norton_Conyers_House)
+- 1962–1963 [Kenneth Hargreaves](/wiki/Kenneth_Hargreaves) of Castlegarth, Wetherby
+- 1963–1964 Sir Kenneth Wade Parkinson of Follifoot
+- 1964–1965 Charles Rochfort Maxsted of Brantinghamthorpe, Brough
+- 1965–1966 John Clifford Roscoe of the Dower House, Newton Kyme, near Tadcaster
+- 1966–1967 [Christopher York](/wiki/Christopher_York) of Long Marston Manor, York
+- 1967–1968 Sir [Edward William Brooksbank, 2nd Baronet](/wiki/Brooksbank_baronets) of Menethorpe Hall, Melton
+- 1968–1969 [Richard Gustavus Hamilton-Russell](/wiki/Richard_Gustavus_Hamilton-Russell) of Smeaton Manor, Great Smeaton, Northallerton
+- 1969–1970 Frank Anthony Riley-Smith of Inholmes, [Tadcaster](/wiki/Tadcaster)
+- 1970–1971 Major-General John Cecil D'Arcy Dalton, of [Hauxwell Hall](/wiki/Hauxwell_Hall), [Leyburn](/wiki/Leyburn)
+- 1971–1972 Brigadier [Roderick Heathcote-Amory](/wiki/Heathcoat-Amory_baronets), of [Oswaldkirk](/wiki/Oswaldkirk) Hall, York
+- 1972–1973 Major-General Sir Charles James George Dalton, of the Hutts, [Grewelthorpe](/wiki/Grewelthorpe), near [Ripon](/wiki/Ripon)
+- 1973–1974 Henry James Homfray Gillam of Healaugh Old Hall, [Healaugh, Tadcaster](/wiki/Healaugh,_Tadcaster)
+
+## References
+
+## External links
+
+- [HighSheriffs.com](https://web.archive.org/web/20080703172752/http://www.highsheriffs.com/SHR02.HTM)

@@ -1,0 +1,715 @@
+# Chicago Bulls
+
+## Infobox
+
+- **Conference:** Eastern
+- **Division:** Central
+- **Founded:** 1966
+- **History:** Chicago Bulls 1966–present [ 1 ] [ 2 ] [ 3 ]
+- **Arena:** United Center
+- **Location:** Chicago, Illinois
+- **Team colors:** Red, black, white [ 4 ] [ 5 ] [ 6 ]
+- **Main sponsor:** Motorola Mobility [ 7 ]
+- **President:** Michael Reinsdorf [ 8 ]
+- **General manager:** Vacant
+- **Head coach:** Vacant
+- **Ownership:** Jerry Reinsdorf
+- **Affiliation:** Windy City Bulls
+- **Championships:** 6 ( 1991, 1992, 1993, 1996, 1997, 1998 )
+- **Conference titles:** 6 ( 1991, 1992, 1993, 1996, 1997, 1998 )
+- **Division titles:** 9 ( 1975, 1991, 1992, 1993, 1996, 1997, 1998, 2011, 2012 )
+- **Retired numbers:** 5 ( 1, 4, 10, 23, 33 )
+- **Website:** nba.com /bulls
+
+For other uses, see [Chicago Bulls (disambiguation)](/wiki/Chicago_Bulls_(disambiguation)).
+
+The **Chicago Bulls** are an American professional [basketball](/wiki/Basketball) team based in [Chicago](/wiki/Chicago). The Bulls compete in the [National Basketball Association](/wiki/National_Basketball_Association) (NBA) as a member of the [Central Division](/wiki/Central_Division_(NBA)) of the [Eastern Conference](/wiki/Eastern_Conference_(NBA)). The team was founded on January 16, 1966, and played its first game during the [1966–67 NBA season](/wiki/1966%E2%80%9367_Chicago_Bulls_season). The Bulls share their home arena with the [National Hockey League](/wiki/National_Hockey_League)'s [Chicago Blackhawks](/wiki/Chicago_Blackhawks), playing in the newer [United Center](/wiki/United_Center) which replaced the former [Chicago Stadium](/wiki/Chicago_Stadium).
+
+The Bulls saw their greatest success during the 1990s when they played a major part in popularizing the NBA worldwide. They are known for having one of the NBA's greatest dynasties, winning six [NBA championships](/wiki/List_of_NBA_champions) between 1991 and 1998 with two separate [three-peats](/wiki/Three-peat). All six of their championship teams were led by Hall of Famers [Michael Jordan](/wiki/Michael_Jordan), [Scottie Pippen](/wiki/Scottie_Pippen) and coach [Phil Jackson](/wiki/Phil_Jackson). The Bulls are the only NBA team to win multiple championships while never losing an [NBA Finals](/wiki/NBA_Finals) series in their history. The Bulls won 72 games during the [1995–96 season](/wiki/1995%E2%80%9396_NBA_season), setting an [NBA record](/wiki/List_of_NBA_regular_season_records) that stood until the [Golden State Warriors](/wiki/Golden_State_Warriors) won 73 games during the [2015–16 season](/wiki/2015%E2%80%9316_NBA_season). The Bulls were the first team in NBA history to win 70 games or more in a single season, and the only NBA franchise to do so until the 2015–16 Warriors.
+
+Since 1998, the Bulls have failed to regain their former success. The franchise struggled throughout the 2000s but showed promise in the early 2010s led by [Derrick Rose](/wiki/Derrick_Rose) and [Joakim Noah](/wiki/Joakim_Noah), culminating in back-to-back seasons above .732 in [2010–11](/wiki/2010%E2%80%9311_Chicago_Bulls_season) and [2011–12](/wiki/2011%E2%80%9312_Chicago_Bulls_season). An [ACL](/wiki/Anterior_cruciate_ligament) tear suffered by Rose and subsequent trades of key players triggered a rebuild, culminating in different lineups throughout the late 2010s and early 2020s. Jordan and Rose won the [NBA Most Valuable Player Award](/wiki/NBA_Most_Valuable_Player_Award) while playing for the Bulls, for a total of six MVP awards. The Bulls share rivalries with the [Cleveland Cavaliers](/wiki/Bulls%E2%80%93Cavaliers_rivalry), [Detroit Pistons](/wiki/Bulls%E2%80%93Pistons_rivalry), and the [New York Knicks](/wiki/Bulls%E2%80%93Knicks_rivalry).
+
+## History
+
+### 1966–1975: Team creation and early success
+
+The 1969–70 Chicago Bulls
+
+The Chicago Bulls were granted an NBA franchise on January 16, 1966, making them the third NBA team in Chicago's history, following the [Chicago Stags](/wiki/Chicago_Stags) (1946–1950) and the [Chicago Packers/Zephyrs](/wiki/Chicago_Packers) (1961–1963). The franchise was founded by [Dick Klein](/wiki/Dick_Klein_(basketball)), the only owner in Bulls history to have played professional basketball, having previously played for the [Chicago American Gears](/wiki/Chicago_American_Gears). Klein served as the team’s general manager and president during its formative years.
+
+After the [1966 NBA expansion draft](/wiki/1966_NBA_expansion_draft), the Bulls (coached by Chicagoan and former NBA All-Star [Johnny "Red" Kerr](/wiki/Red_Kerr)) were allowed to acquire players from established teams. In their inaugural 1966–67 season, the Bulls played their first game on October 15, securing an upset victory over [the St. Louis Hawks](/wiki/1966%E2%80%9367_St._Louis_Hawks_season). They finished the season with a 33–48 record, the best by any expansion team in NBA history at the time, and became the first (and only) expansion team to qualify for the playoffs. Guard [Guy Rodgers](/wiki/Guy_Rodgers), who led the league in assists, and forward [Jerry Sloan](/wiki/Jerry_Sloan) were named All-Stars, and Kerr earned Coach of the Year honors.
+
+The Bulls initially played their home games at the [International Amphitheatre](/wiki/International_Amphitheatre) before moving to [Chicago Stadium](/wiki/Chicago_Stadium). Despite their early success, fan interest waned over the next few seasons, with attendance dropping significantly. One Bulls game in [the 1967–68 season](/wiki/1967%E2%80%9368_Chicago_Bulls_season) had an official attendance of 891 while some Bulls games were being played in [Kansas City](/wiki/Kansas_City). In 1969, Klein resigned as general manager and hired [Pat Williams](/wiki/Pat_Williams_(basketball)), who had gained prominence with the Philadelphia 76ers for his promotional efforts. Williams revitalized the franchise, making key roster changes and introducing the team's first mascot, [Benny the Bull](/wiki/Benny_the_Bull), which helped increase attendance and visibility.
+
+Under Williams and head coach [Dick Motta](/wiki/Dick_Motta), the Bulls made the playoffs for four consecutive seasons, including setting a franchise record of 57 wins in 1972. During this period, the team relied on key players like Sloan, [Bob Love](/wiki/Bob_Love), [Chet Walker](/wiki/Chet_Walker), and [Norm Van Lier](/wiki/Norm_Van_Lier). The Bulls made their first appearance in the conference finals in [the 1973–74 season](/wiki/1973%E2%80%9374_Chicago_Bulls_season), losing in four games to [the Milwaukee Bucks](/wiki/1973%E2%80%9374_Milwaukee_Bucks_season). They also made the conference finals in [the 1974–75 season](/wiki/1974%E2%80%9375_Chicago_Bulls_season) but lost to the eventual NBA champion [Golden State Warriors](/wiki/1974%E2%80%9375_Golden_State_Warriors_season) in a 4–3 series. Despite continued success through the early 1970s, the team faced challenges in the late decade. After four seasons of 50 or more wins, Williams left for Philadelphia, and Motta took on both the coaching and general manager roles. The Bulls' performance declined significantly, culminating in a 24–58 season in [1975–76](/wiki/1975%E2%80%9376_Chicago_Bulls_season). As a result, Motta was fired and replaced by [Ed Badger](/wiki/Ed_Badger).
+
+### 1976–1984: Gilmore and Theus duo
+
+Gilmore in 1977
+
+Klein sold the Bulls to the Wirtz family, longtime owners of the [Chicago Blackhawks](/wiki/Chicago_Blackhawks). Indifferent to NBA basketball, the new ownership group infamously implemented a shoestring budget, putting little time and investment into improving the team.
+
+[Artis Gilmore](/wiki/Artis_Gilmore), acquired in the [ABA](/wiki/American_Basketball_Association) dispersal draft in 1976, led a Bulls squad which included guard [Reggie Theus](/wiki/Reggie_Theus), forward [David Greenwood](/wiki/David_Greenwood) and forward [Orlando Woolridge](/wiki/Orlando_Woolridge).
+
+In 1979, the Bulls lost a coin flip for the right to select first in the NBA draft ([Rod Thorn](/wiki/Rod_Thorn), the Bulls' general manager, called "heads"). Had the Bulls won the toss, they would have selected [Magic Johnson](/wiki/Magic_Johnson); instead, they selected David Greenwood with the second pick. [The Los Angeles Lakers](/wiki/1979%E2%80%9380_Los_Angeles_Lakers_season) selected Johnson with the pick acquired from [the New Orleans Jazz](/wiki/1978%E2%80%9379_New_Orleans_Jazz_season), who traded the selection for [Gail Goodrich](/wiki/Gail_Goodrich).
+
+After Gilmore was traded to the San Antonio Spurs for center [Dave Corzine](/wiki/Dave_Corzine), the Bulls employed a high-powered offense centered on Theus, and which soon included guards [Quintin Dailey](/wiki/Quintin_Dailey) and [Ennis Whatley](/wiki/Ennis_Whatley). However, with continued dismal results, the Bulls decided to change direction, trading Theus to [the Kansas City Kings](/wiki/1983%E2%80%9384_Kansas_City_Kings_season) during the [1983–84 season](/wiki/1983%E2%80%9384_Chicago_Bulls_season). Local businessman [Jerry Reinsdorf](/wiki/Jerry_Reinsdorf) purchased a controlling stake in the team in 1985, two years after the death of [Arthur Wirtz](/wiki/Arthur_Wirtz), patriarch of the Wirtz family.
+
+### 1984–1990: Michael Jordan era begins
+
+[Michael Jordan](/wiki/Michael_Jordan) was drafted third overall by the Bulls in [1984](/wiki/1984_NBA_draft). He won six championships and six [Finals MVPs](/wiki/Bill_Russell_NBA_Finals_Most_Valuable_Player_Award) for Chicago.
+
+In the summer of 1984, the Bulls had the third pick of the [1984 NBA draft](/wiki/1984_NBA_draft), after Houston and Portland. The [Rockets](/wiki/Houston_Rockets) selected [Hakeem Olajuwon](/wiki/Hakeem_Olajuwon), the [Blazers](/wiki/Portland_Trail_Blazers) picked [Sam Bowie](/wiki/Sam_Bowie) and the Bulls chose shooting guard [Michael Jordan](/wiki/Michael_Jordan). The team, with new management in owner [Jerry Reinsdorf](/wiki/Jerry_Reinsdorf) and general manager [Jerry Krause](/wiki/Jerry_Krause), decided to rebuild around Jordan. Jordan set franchise records during his rookie campaign for scoring (third in the league) and steals (fourth), and led the Bulls back to [the playoffs](/wiki/1985_NBA_playoffs), where they lost in four games to [the Milwaukee Bucks](/wiki/1984%E2%80%9385_Milwaukee_Bucks_season). For his efforts, he was rewarded with a selection to the All-NBA Second Team and the NBA Rookie of the Year Award.
+
+In the following off-season, the team acquired point guard [John Paxson](/wiki/John_Paxson) and on draft day traded with the Cavaliers for the rights to power forward [Charles Oakley](/wiki/Charles_Oakley). Along with Jordan and center [Dave Corzine](/wiki/Dave_Corzine), they provided much of the Bulls' offense for the next two years. After suffering a broken foot early in the [1985–86 season](/wiki/1985%E2%80%9386_Chicago_Bulls_season), Jordan finished second on the team to Woolridge in scoring. Jordan returned for [the playoffs](/wiki/1986_NBA_playoffs), and led the eighth-place Bulls against the 67–15 [Boston Celtics](/wiki/1985%E2%80%9386_Boston_Celtics_season), led by [Larry Bird](/wiki/Larry_Bird). At the time, the Bulls had the fifth-worst record of any team to qualify for the playoffs in NBA history. Though the Bulls were swept, Jordan recorded a playoff single-game record 63 points in Game 2 (which still stands to this day), prompting Bird to call him 'God disguised as Michael Jordan.'
+
+In the [1986–87 season](/wiki/1986%E2%80%9387_NBA_season), Jordan continued his assault on the record books, leading the league in scoring with 37.1 points per game and becoming the first Bull named to the All-NBA First Team. The Bulls finished 40–42, which was good enough to qualify them for the playoffs. However, they were again swept by the Celtics in [the playoffs](/wiki/1987_NBA_playoffs).
+
+In the [1987 draft](/wiki/1987_NBA_draft), to address their lack of depth, Krause selected center [Olden Polynice](/wiki/Olden_Polynice) eighth overall and power forward [Horace Grant](/wiki/Horace_Grant) 10th overall, then sent Polynice to Seattle in a draft-day trade for the fifth selection, [small forward](/wiki/Small_forward) [Scottie Pippen](/wiki/Scottie_Pippen). With Paxson and Jordan in the backcourt, [Brad Sellers](/wiki/Brad_Sellers) and Oakley at the forward spots, Corzine anchoring center, and [rookies](/wiki/Rookie) Pippen and Grant coming off the bench, the Bulls won 50 games and advanced to the Eastern Conference semifinals, where they were beaten by the eventual Eastern Conference Champions [Detroit Pistons](/wiki/1987%E2%80%9388_Detroit_Pistons_season) in five games. For his efforts, Jordan was named NBA [Most Valuable Player](/wiki/Most_Valuable_Player), an award he would win four more times over his career. The 1987–88 season would also mark the start of the Pistons-Bulls rivalry which was formed from 1988 to 1991.
+
+[The 1988–89 season](/wiki/1988%E2%80%9389_Chicago_Bulls_season) marked a second straight year of major off-season moves. Power forward Charles Oakley, who had led the league in total rebounds in both 1987 and 1988, was traded on the eve of the [1988 NBA draft](/wiki/1988_NBA_draft) to [the New York Knicks](/wiki/1988%E2%80%9389_New_York_Knicks_season) along with a first-round draft pick used by the Knicks to select [Rod Strickland](/wiki/Rod_Strickland) for center [Bill Cartwright](/wiki/Bill_Cartwright) and a first-round pick, which the Bulls used to obtain center [Will Perdue](/wiki/Will_Perdue). In addition, the Bulls acquired three-point shooter [Craig Hodges](/wiki/Craig_Hodges) from Phoenix. The new starting lineup of Paxson, Jordan, Pippen, Grant, and Cartwright took some time to mesh, winning fewer games than the previous season, but made it all the way to the Eastern Conference Finals, where they were defeated in six games by the NBA champion Pistons.
+
+In [1989–90](/wiki/1989%E2%80%9390_Chicago_Bulls_season), Jordan led the league in scoring for the fourth straight season and was joined on the all-star squad for the first time by Pippen. There was also a major change during the off-season, where head coach [Doug Collins](/wiki/Doug_Collins_(basketball)) was replaced by assistant coach [Phil Jackson](/wiki/Phil_Jackson). The Bulls also picked up rookie center [Stacey King](/wiki/Stacey_King) and rookie point guard [B. J. Armstrong](/wiki/B._J._Armstrong) in the [1989 draft](/wiki/1989_NBA_draft). With these additional players and the previous year's starting five, the Bulls again made it to the Conference Finals and pushed the Pistons to seven games before being eliminated for the third straight year, the Pistons going on to repeat as NBA champions.
+
+### 1990–1993: First championship three-peat
+
+In [the 1990–91 season](/wiki/1990%E2%80%9391_Chicago_Bulls_season), the Bulls recorded a then-franchise record 61 wins, and romped through [the playoffs](/wiki/1991_NBA_playoffs), where they swept the Knicks in the first round, defeated [the Philadelphia 76ers](/wiki/1990%E2%80%9391_Philadelphia_76ers_season) in the semifinals, and then swept the defending champion Pistons in the Conference Finals, then winning the [NBA Finals](/wiki/1991_NBA_Finals) in five games over the [Magic Johnson](/wiki/Magic_Johnson)-led [Los Angeles Lakers](/wiki/1990%E2%80%9391_Los_Angeles_Lakers_season).
+
+The Bulls won their second straight title in [1992](/wiki/1992_NBA_Finals) after racking up another franchise record for wins with 67. They swept [the Miami Heat](/wiki/1990%E2%80%9391_Miami_Heat_season) in the first round, defeated the Knicks in seven games in the second round, then [the Cleveland Cavaliers](/wiki/1990%E2%80%9391_Cleveland_Cavaliers_season) in six games in the third round, advancing to [the Finals](/wiki/1992_NBA_Finals) for the second year in a row where they defeated the [Clyde Drexler](/wiki/Clyde_Drexler)-led [Portland Trail Blazers](/wiki/Portland_Trail_Blazers) in six games.
+
+In [1993](/wiki/1993_NBA_Finals), the Bulls won their third consecutive championship by defeating [the Atlanta Hawks](/wiki/1992%E2%80%9393_Atlanta_Hawks_season), [Cleveland Cavaliers](/wiki/1992%E2%80%9393_Cleveland_Cavaliers_season) and [New York Knicks](/wiki/1992%E2%80%9393_New_York_Knicks_season) in the first three rounds of the playoffs and then defeating regular season MVP [Charles Barkley](/wiki/Charles_Barkley) and [the Phoenix Suns](/wiki/1992%E2%80%9393_Phoenix_Suns_season) in the Finals, with Paxson's three-pointer with 3.9 seconds left giving them a 99–98 victory in Game 6 in Phoenix.
+
+### 1993–1995: Jordan's first retirement and the Scottie Pippen era
+
+[United Center](/wiki/United_Center)
+
+On October 6, 1993, [Michael Jordan](/wiki/Michael_Jordan) shocked the basketball community by announcing his retirement, three months after his [father's murder](/wiki/James_R._Jordan,_Sr.). The Bulls were then led by [Scottie Pippen](/wiki/Scottie_Pippen), who established himself as one of the top players in the league by winning the [1994 All-Star](/wiki/1994_NBA_All-Star_Game) MVP. He received help from [Horace Grant](/wiki/Horace_Grant) and [B. J. Armstrong](/wiki/B._J._Armstrong), who were named to their first all-star games. The three were assisted by [Cartwright](/wiki/Bill_Cartwright), [Perdue](/wiki/Will_Perdue), shooting guard [Pete Myers](/wiki/Pete_Myers), and [Croatian](/wiki/Croats) rookie forward [Toni Kukoč](/wiki/Toni_Kuko%C4%8D). Despite the Bulls winning 55 games during the [1993–94 season](/wiki/1993%E2%80%9394_Chicago_Bulls_season), they were beaten in seven games by the Knicks in the second round of [the playoffs](/wiki/1994_NBA_playoffs), after a controversial foul call by referee [Hue Hollins](/wiki/Hue_Hollins) in game 5 of that series. The Knicks eventually reached the [NBA Finals](/wiki/1994_NBA_Finals) that year, but lost to the [Houston Rockets](/wiki/Houston_Rockets). The Bulls opened the [1994–95 season](/wiki/1994%E2%80%9395_Chicago_Bulls_season) by leaving their home of 27 years, [Chicago Stadium](/wiki/Chicago_Stadium), and moving into their current home, the [United Center](/wiki/United_Center).
+
+In 1994, the Bulls lost Grant, Cartwright and [Scott Williams](/wiki/Scott_Williams_(basketball)) to free agency, and [John Paxson](/wiki/John_Paxson) to retirement, but picked up shooting guard [Ron Harper](/wiki/Ron_Harper), the seeming heir apparent to Jordan in assistant coach [Tex Winter](/wiki/Tex_Winter)'s triple-post offense, and small-forward [Jud Buechler](/wiki/Jud_Buechler). The Bulls started Armstrong and Harper in the backcourt, Pippen and Kukoč at the forward spots, and Perdue at center. They also had sharpshooter [Steve Kerr](/wiki/Steve_Kerr), whom they acquired via free agency before the 1993–94 season, Myers, and centers [Luc Longley](/wiki/Luc_Longley) (acquired via trade in 1994 from the Minnesota Timberwolves) and [Bill Wennington](/wiki/Bill_Wennington). However, the Bulls struggled during the season, and on March 18, 1995, they received the news that Michael Jordan was coming out of retirement. He scored 55 points against the Knicks in only his fifth game back, and led the Bulls to the fifth seed in [the playoffs](/wiki/1995_NBA_playoffs), where they defeated the Charlotte Hornets. However, Jordan and the Bulls were unable to overcome the eventual Eastern Conference champion [Orlando Magic](/wiki/Orlando_Magic), which included [Horace Grant](/wiki/Horace_Grant), [Penny Hardaway](/wiki/Penny_Hardaway), and [Shaquille O'Neal](/wiki/Shaquille_O%27Neal).
+
+In the off-season, the Bulls lost Armstrong in the expansion draft, and Krause traded Perdue to [the San Antonio Spurs](/wiki/1995%E2%80%9396_San_Antonio_Spurs_season) for rebounding specialist [Dennis Rodman](/wiki/Dennis_Rodman), who had won the past four rebounding titles, and who had also been a member of the [Detroit Pistons](/wiki/Detroit_Pistons)' "Bad Boys" squad that served as the Bulls' chief nemesis in the late 1980s.
+
+### 1995–1998: Return of Michael Jordan and second championship three-peat
+
+[Michael Jordan](/wiki/Michael_Jordan)
+
+[Scottie Pippen](/wiki/Scottie_Pippen)
+
+With a lineup of Jordan, Pippen, Rodman, Harper and Longley, and bench players Steve Kerr, Kukoč, Wennington, Buechler, and guard Randy Brown, the Bulls were seen as the team to win again for the NBA Finals.
+
+The Bulls started their 1995–96 campaign with a 105–91 win over the visiting Hornets. In that game, Michael Jordan recorded 42 points, 6 rebounds and 7 assists for the Bulls. The next game, they were up against the Boston Celtics. The Bulls scored 35 points in the third quarter as they pulled away against the Celtics, 107–85. Six Bulls players scored in double figures in this win. The 1995–96 Bulls posted one of the best single-season improvements in league history and the best single-season record at that time, moving from 47–35 to 72–10, becoming the first NBA team to win 70 or more regular season games. Jordan won his eighth scoring title, and Rodman his fifth straight rebounding title, while Kerr finished second in the league in three-point shooting percentage. Jordan garnered the elusive triple crown with the [NBA MVP](/wiki/NBA_MVP), [NBA All-Star Game MVP](/wiki/NBA_All-Star_Game_MVP), and [NBA Finals MVP](/wiki/NBA_Finals_MVP). Krause was named [NBA Executive of the Year](/wiki/NBA_Executive_of_the_Year), Jackson Coach of the Year, and Kukoč the Sixth Man of the Year. Both Pippen and Jordan made the All-NBA First Team, and Jordan, Pippen, and Rodman made the All-Defensive First Team, making the Bulls one of several teams in NBA history with three players on the All-Defensive First Team.
+
+[![](//upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Pres._Clinton_%26_the_Chicago_Bulls_%281997%29.webm/500px-seek%3D181-Pres._Clinton_%26_the_Chicago_Bulls_%281997%29.webm.jpg)](//upload.wikimedia.org/wikipedia/commons/transcoded/4/4e/Pres._Clinton_%26_the_Chicago_Bulls_%281997%29.webm/Pres._Clinton_%26_the_Chicago_Bulls_%281997%29.webm.480p.vp9.webm)
+
+President [Bill Clinton](/wiki/Bill_Clinton) honoring the 1995–96 Chicago Bulls in 1997
+
+In addition, the [1995–96](/wiki/1995%E2%80%9396_NBA_season) team holds several other records, including the best road record in a standard 41 road-game season (33–8), the all-time best start by a team (41–3), and the best start at home (37–0). The Bulls also posted the second-best home record in history (39–2), behind only the 1985–86 Celtics 40–1 home mark. The team triumphed over [the Miami Heat](/wiki/1995%E2%80%9396_Miami_Heat_season) in the first round, [the New York Knicks](/wiki/1995%E2%80%9396_New_York_Knicks_season) in the second round, [the Orlando Magic](/wiki/1995%E2%80%9396_Orlando_Magic_season) in the Eastern Conference Finals and finally [Gary Payton](/wiki/Gary_Payton), [Shawn Kemp](/wiki/Shawn_Kemp) and [the Seattle SuperSonics](/wiki/1995%E2%80%9396_Seattle_SuperSonics_season) for [their fourth title](/wiki/1996_NBA_Finals). The 1995–96 Bulls are widely regarded as one of [the greatest teams in the history of basketball](/wiki/50_Greatest_Players_in_NBA_History#Top_10_Teams_in_NBA_History).
+
+Bulls head coach [Phil Jackson](/wiki/Phil_Jackson) consulting Michael Jordan in 1997
+
+In [the 1996–97 season](/wiki/1996%E2%80%9397_Chicago_Bulls_season), the Bulls missed out on a second consecutive 70-win season by losing their final two games to finish 69–13. They repeated their home dominance, going 39–2 at the United Center. The Bulls capped the season by defeating the Bullets, Hawks and Heat in the first three rounds of the playoffs en route to winning their fifth [NBA championship](/wiki/1997_NBA_Finals) over [John Stockton](/wiki/John_Stockton), [Karl Malone](/wiki/Karl_Malone) and [the Utah Jazz](/wiki/1996%E2%80%9397_Utah_Jazz_season). Jordan earned his second straight and ninth career scoring title, while Rodman earned his sixth straight rebounding title. Jordan and Pippen, along with [Robert Parish](/wiki/Robert_Parish), who was a member of the Bulls at the time, were also honored as members of the 50 greatest players of all time with the NBA celebrating its 50th season. Parish, whose single season with the Bulls would be his last year in the league, was nominated for his stellar career with the [Boston Celtics](/wiki/Boston_Celtics).
+
+The 1997–98 season was one of turmoil for the NBA champion Bulls. Many speculated this would be Michael Jordan's final season with the team. Phil Jackson's future with the team was also questionable, as his relationship with team general manager Jerry Krause was one of growing tension. Scottie Pippen was looking for a significant contract extension that he thought he deserved, but was not getting from the organization. In spite of the turmoil that surrounded the Bulls, they still had a remarkable season, with a final regular season record of 62–20. Jordan would be named the league MVP for the fifth and final time, and the Bulls went into the playoffs as the number one seed in the Eastern Conference.
+
+The first round of the playoffs for the Bulls was against [the New Jersey Nets](/wiki/1997%E2%80%9398_New_Jersey_Nets_season), a team led by [Keith Van Horn](/wiki/Keith_Van_Horn), [Kendall Gill](/wiki/Kendall_Gill) and [Sam Cassell](/wiki/Sam_Cassell). The Bulls swept the Nets three to nothing in a best of five series. The conference semi-finals were more challenging with [the Charlotte Hornets](/wiki/1997%E2%80%9398_Charlotte_Hornets_season) stealing game two from the Bulls at the United Center, and tying the series 1–1. But the Bulls easily defeated the Hornets in the next three games of the series. The Conference Finals was a challenge for the Bulls as they went up against the [Reggie Miller](/wiki/Reggie_Miller)-led [Indiana Pacers](/wiki/1997%E2%80%9398_Indiana_Pacers_season). Experts were of the opinion that the Pacers had the best chance to defeat the Bulls. The Pacers gave the Bulls no road wins, winning games 3, 4, and 6, sending the series to a deciding game seven at the United Center. The Bulls prevailed and beat the Pacers 88–83, winning their sixth Eastern Conference title.
+
+In a much-anticipated Finals, The Bulls faced the team they beat the previous year, the Utah Jazz. Led by Karl Malone and John Stockton, the Jazz felt confident that they could defeat the Bulls, winning game one at Utah's [Delta Center](/wiki/Delta_Center). Facing a potential two to nothing deficit, the Bulls won Game 2 at the Delta Center and tied the series. The Bulls returned to the United Center and, by winning the next two games, took a 3–1 series lead. The Jazz won Game 5 by two points, 83–81. Game 6 was a tough battle for both teams. Scottie Pippen left early in the first quarter due to an ongoing back injury. He came back at the start of the second half, and after a trip or two to the locker room to get physical therapy, came back out to finish the game. Late in the game and down by three points to the Jazz, Michael Jordan led the Bulls to one final win. Jordan hit a shot to bring the Bulls within 1, then stole the ball from Karl Malone and hit [the game winning shot](/wiki/The_Last_Shot_(basketball)) with 5.2 seconds remaining on the clock. With a score of 87–86, John Stockton put up a three-pointer, but missed, giving the Bulls their sixth championship in eight years. Jordan would be named the Finals MVP for the sixth time in his career. He retired for the second time on January 13, 1999.
+
+### 1998–2008: Post-Jordan era and a decade of struggle
+
+#### 1998–2004: The Baby Bulls
+
+The summer of 1998 marked the end of the Bulls' championship era. GM Jerry Krause, citing the team's aging roster, opted to rebuild rather than face decline. He traded Scottie Pippen for minimal returns, let Dennis Rodman walk, and dealt other key players for draft picks. Krause also hired coach [Tim Floyd](/wiki/Tim_Floyd) to replace Phil Jackson. Michael Jordan announced his second retirement, leaving the Bulls with a new starting lineup featuring Toni Kukoč, who led the team but couldn't prevent a 13–37 record in the lockout-shortened 1998–99 season, which included a record-low 49 points in a game against [Miami](/wiki/1998%E2%80%9399_Miami_Heat_season).
+
+Winning the draft lottery provided a highlight, allowing the Bulls to draft [Elton Brand](/wiki/Elton_Brand). Despite his stellar rookie season and co-Rookie of the Year honors, injuries and trades left the team floundering at 17–65 in 1999–2000. Attempts to attract top free agents failed, and new additions like [Brad Miller](/wiki/Brad_Miller_(basketball)) and [Ron Mercer](/wiki/Ron_Mercer) didn't improve results, leading to a league- and franchise-worst 15–67 record the following season. Krause shocked fans by trading Brand for [Tyson Chandler](/wiki/Tyson_Chandler) and drafting [Eddy Curry](/wiki/Eddy_Curry), both seen as long-term prospects. Without veteran leadership, the team struggled, despite mid-season trades and a coaching change from Floyd to Bill Cartwright, finishing with only 21 wins.
+
+Optimism returned in 2002–03 with the addition of [Jay Williams](/wiki/Jay_Williams_(basketball)) and a young, talented core, but inconsistency limited progress to 30–52. Krause retired in 2003, and John Paxson became GM. Williams' career was derailed by a motorcycle accident, and Pippen's return was marred by injuries. The 2003–04 season saw setbacks from Eddy Curry and Tyson Chandler, leading to Cartwright's firing and [Scott Skiles](/wiki/Scott_Skiles)' hiring. A major trade shifted the team's strategy to defense, but the Bulls still finished 23–59. [Kirk Hinrich](/wiki/Kirk_Hinrich) emerged as a fan favorite, earning All-Rookie honors amid another disappointing season.
+
+#### 2004–2008: Continued rebuilding
+
+Joining the Bulls in 2004, [Luol Deng](/wiki/Luol_Deng) made his first All-Star appearance with the team in 2012 and his second in 2013
+
+[Joakim Noah](/wiki/Joakim_Noah) was drafted by the Bulls in 2007. He was named an All Star for the first time in 2013 and for the second time in 2014.
+
+Between 2004 and 2008, the Chicago Bulls underwent notable roster transformations and fluctuating on-court results in their efforts to rebuild as a competitive team. In the 2004 NBA Draft, General Manager John Paxson acquired [Ben Gordon](/wiki/Ben_Gordon), [Luol Deng](/wiki/Luol_Deng), and [Chris Duhon](/wiki/Chris_Duhon) while also signing [Andrés Nocioni](/wiki/Andr%C3%A9s_Nocioni), a gold medalist with Argentina. Despite beginning the season with nine consecutive losses, the team recovered to finish 47–35, making their first playoff appearance since 1998. However, injuries to Deng and Eddy Curry contributed to a first-round exit against the Washington Wizards. Ben Gordon received the NBA Sixth Man of the Year award.
+
+During the 2005 off-season, Curry’s heart condition raised concerns, leading to his trade to the New York Knicks in exchange for [Michael Sweetney](/wiki/Michael_Sweetney), [Tim Thomas](/wiki/Tim_Thomas_(basketball)) and future draft picks. The Bulls struggled without a significant post presence but managed a 12–2 late-season run, finishing 41–41. They qualified for the playoffs but were defeated by the Miami Heat, who went on to win the championship. Despite the loss, key players gained valuable postseason experience.
+
+In the 2006 NBA Draft, the Bulls traded for [Tyrus Thomas](/wiki/Tyrus_Thomas) and [Thabo Sefolosha](/wiki/Thabo_Sefolosha) and signed veteran defensive player Ben Wallace to a four-year deal. Tyson Chandler, the last player from the Krause era, was traded to the Hornets. Chicago recovered from a poor start to finish the season with a 49–33 record. In the playoffs, they swept the defending champion Miami Heat, marking their first series victory since 1998. Their postseason ended in the next round with a 4–2 loss to the Detroit Pistons.
+
+The 2007 off-season brought speculation of major trades involving players like [Kevin Garnett](/wiki/Kevin_Garnett), [Pau Gasol](/wiki/Pau_Gasol), and [Kobe Bryant](/wiki/Kobe_Bryant), but none materialized. The Bulls began the 2007–08 season poorly, leading to the dismissal of head coach Scott Skiles in December. Interim coach [Jim Boylan](/wiki/Jim_Boylan) was appointed but could not reverse the team’s fortunes, and they ended the season with a 33–49 record. In a midseason trade, the team acquired [Drew Gooden](/wiki/Drew_Gooden_(basketball)), [Larry Hughes](/wiki/Larry_Hughes), and others in exchange for Ben Wallace and Joe Smith. Following the season, Boylan was not retained, and the search for a new head coach culminated in the hiring of [Vinny Del Negro](/wiki/Vinny_Del_Negro), a rookie coach supported by experienced assistants [Del Harris](/wiki/Del_Harris), [Bernie Bickerstaff](/wiki/Bernie_Bickerstaff), and [Bob Ociepka](/wiki/Bob_Ociepka).
+
+### 2008–2016: Derrick Rose era
+
+#### 2008–2010: Appearance of Derrick Rose
+
+[Derrick Rose](/wiki/Derrick_Rose) was drafted first overall by the Bulls in 2008. He was the 2010–11 NBA MVP.
+
+With only a slim 1.7% chance of winning the rights to draft first overall, the Bulls won the 2008 [NBA draft lottery](/wiki/NBA_draft_lottery) and selected first overall. With this, the Bulls became the team with the lowest chance of winning to ever win the lottery since it was modified for the [1994 NBA draft](/wiki/1994_NBA_draft), and second-lowest ever. On June 26, 2008, the Bulls drafted Chicago native [Derrick Rose](/wiki/Derrick_Rose) from the [University of Memphis](/wiki/University_of_Memphis) as the number 1 draft pick, and [Sonny Weems](/wiki/Sonny_Weems) at number 39. The Bulls later traded Weems to [the Denver Nuggets](/wiki/2008%E2%80%9309_Denver_Nuggets_season) for Denver's 2009 regular second-round draft pick. The Bulls also made several trades, including one that brought [Ömer Aşık](/wiki/%C3%96mer_A%C5%9F%C4%B1k) to the team. The team re-signed Luol Deng to a six-year deal, although he was sidelined for much of the season due to injury.
+
+In February 2009, the Bulls made multiple trades to strengthen the roster, including a deal with the Sacramento Kings for [Brad Miller](/wiki/Brad_Miller_(basketball)) and [John Salmons](/wiki/John_Salmons), and another with the Oklahoma City Thunder for a first-round pick. These moves helped the team secure a playoff spot, finishing the season at .500 with a 41–41 record. In the playoffs, they faced the Boston Celtics in a dramatic seven-game series. In Game 1, Derrick Rose scored 36 points, along with 11 assists, tying [Kareem Abdul-Jabbar](/wiki/Kareem_Abdul-Jabbar)'s record for most points scored by a rookie in a playoff debut. After breaking the record for most overtimes played during one [playoff series](/wiki/NBA_Playoffs), [the Boston Celtics](/wiki/2009%E2%80%9310_Boston_Celtics_season) managed to overcome the Bulls after 7 games and 7 overtime periods played.
+
+In the 2009 NBA Draft, the Bulls selected [James Johnson](/wiki/James_Johnson_(basketball,_born_1987)) and [Taj Gibson](/wiki/Taj_Gibson). They also lost Ben Gordon to the Detroit Pistons in free agency. The following season, the team made further trades, including sending John Salmons to the Milwaukee Bucks and Tyrus Thomas to the Charlotte Bobcats. The Bulls finished with the eighth seed in the 2010 playoffs but were eliminated in five games by the Cleveland Cavaliers. In May 2010, the team fired head coach Vinny Del Negro.
+
+#### 2010–2011: Arrival of Tom Thibodeau and Rose's MVP year
+
+[Tom Thibodeau](/wiki/Tom_Thibodeau) coached the Bulls to 62 wins in his first season.
+
+In early June 2010, [Boston Celtics](/wiki/2009%E2%80%9310_Boston_Celtics_season) assistant [Tom Thibodeau](/wiki/Tom_Thibodeau) accepted a three-year contract to fill the Bulls' head coaching vacancy. He was officially introduced on June 23. On July 7, it was revealed that [Carlos Boozer](/wiki/Carlos_Boozer) of the [Utah Jazz](/wiki/Utah_Jazz) had verbally agreed to an $80 million, five-year contract. Afterwards, the Bulls traded veteran point guard [Kirk Hinrich](/wiki/Kirk_Hinrich) to the [Washington Wizards](/wiki/Washington_Wizards) to create more cap space. The Bulls also signed former [76er](/wiki/Philadelphia_76ers) and Jazz sharpshooter [Kyle Korver](/wiki/Kyle_Korver) to a three-year, $15 million contract. The same day that the Bulls signed Kyle Korver, they signed Turkish All-Star [Ömer Aşık](/wiki/%C3%96mer_A%C5%9F%C4%B1k). After being matched by the [Orlando Magic](/wiki/Orlando_Magic) for [J. J. Redick](/wiki/JJ_Redick), they signed their third free agent from the Jazz in the off-season in shooting guard [Ronnie Brewer](/wiki/Ronnie_Brewer), traded for former [Warrior](/wiki/Golden_State_Warriors) point guard [C.J. Watson](/wiki/C.J._Watson), and signed former [Bucks](/wiki/Milwaukee_Bucks) power forward [Kurt Thomas](/wiki/Kurt_Thomas_(basketball)) as well as former [Spurs](/wiki/San_Antonio_Spurs) player [Keith Bogans](/wiki/Keith_Bogans) and former Celtic [Brian Scalabrine](/wiki/Brian_Scalabrine).
+
+Rose earned the 2011 NBA MVP Award, thereby becoming the youngest player in NBA history to win it. He became the first Bulls player since [Michael Jordan](/wiki/Michael_Jordan) to win the award. As a team, Chicago finished the regular season with a league-best 62–20 record and clinched the first seed in the Eastern Conference for the first time since 1998. The Bulls defeated [the Pacers](/wiki/2011%E2%80%9312_Indiana_Pacers_season) and [the Hawks](/wiki/2011%E2%80%9312_Atlanta_Hawks_season) in five and six games, respectively, thereby reaching the Eastern Conference finals for the first time since 1998, and faced [the Miami Heat](/wiki/2011%E2%80%9312_Miami_Heat_season). After winning the first game of the series, they lost the next four games, ending their season.
+
+#### 2011–2014: Injury-plagued seasons for Derrick Rose
+
+The Chicago Bulls underwent significant roster changes and faced challenges between the 2011–2014 seasons, navigating injuries to star players while attempting to remain competitive. In the [2011 NBA draft](/wiki/2011_NBA_draft), the Bulls selected [Jimmy Butler](/wiki/Jimmy_Butler) with the 30th overall pick. During the off-season, they signed veteran guard [Rip Hamilton](/wiki/Rip_Hamilton) to a three-year deal and extended Derrick Rose’s contract for five years at $94.8 million. Rose and Luol Deng earned All-Star selections during the 2011–12 season, marking the first Bulls duo in the All-Star game since Michael Jordan and Scottie Pippen. Despite Rose missing much of the season due to injuries, the Bulls finished with the NBA's best record (50–16) and secured the Eastern Conference's top seed.
+
+In the first round of the playoffs, Rose tore his ACL during Game 1 against the Philadelphia 76ers, sidelining him for the remainder of the series. Joakim Noah also sustained a foot injury during Game 3. The Bulls, weakened by these absences, lost the series in six games, becoming one of the few first-seeded teams eliminated by an eighth-seed. Subsequent roster changes saw the departures of key players, including Kyle Korver, [C.J. Watson](/wiki/C.J._Watson), and [Ömer Aşık](/wiki/%C3%96mer_A%C5%9F%C4%B1k), while the team added [Marco Belinelli](/wiki/Marco_Belinelli), [Nate Robinson](/wiki/Nate_Robinson), and [Nazr Mohammed](/wiki/Nazr_Mohammed).
+
+Rose missed the entire 2012–13 season, yet the Bulls finished 45–37 and advanced to the second round of the playoffs after a seven-game victory over the Brooklyn Nets. They were eliminated by the Miami Heat in five games. During the season, the Bulls snapped both Miami's 27-game winning streak and the New York Knicks' 13-game winning streak, becoming the second team in NBA history to snap two winning streaks of 13 games or more in a season.
+
+In 2013–14, Rose sustained another significant injury, tearing his medial meniscus just 10 games into the season, sidelining him once again. The Bulls traded Luol Deng to the Cleveland Cavaliers midseason, receiving [Andrew Bynum](/wiki/Andrew_Bynum) and draft picks in return, though Bynum was immediately waived. Despite finishing 48–34 and earning home-court advantage in the playoffs, the Bulls were eliminated in the first round by the Washington Wizards. Joakim Noah was a standout performer, earning Defensive Player of the Year honors, an All-NBA First Team selection, and placing fourth in MVP voting.
+
+During the 2014 off-season, the Bulls made notable moves in the draft and free agency. They traded two first-round picks to acquire [Doug McDermott](/wiki/Doug_McDermott), added [Cameron Bairstow](/wiki/Cameron_Bairstow) in the second round, and signed veteran star [Pau Gasol](/wiki/Pau_Gasol). The team also brought over [Nikola Mirotić](/wiki/Nikola_Miroti%C4%87), a EuroLeague talent acquired via a 2011 draft-day trade, and re-signed Kirk Hinrich to bolster the roster.
+
+#### 2014–2015: Return of Derrick Rose to health and rise of Jimmy Butler
+
+The 2014–15 season brought renewed optimism to the Chicago Bulls with the return of Derrick Rose, alongside the addition of two-time NBA champion Pau Gasol. The team, bolstered by a deep roster featuring [Taj Gibson](/wiki/Taj_Gibson), [Nikola Mirotić](/wiki/Nikola_Miroti%C4%87), [Tony Snell](/wiki/Tony_Snell_(basketball)), [Aaron Brooks](/wiki/Aaron_Brooks_(basketball)), [Doug McDermott](/wiki/Doug_McDermott) and [Kirk Hinrich](/wiki/Kirk_Hinrich) was considered one of the top contenders in the Eastern Conference, alongside the Cleveland Cavaliers. The Bulls started the season strong, winning seven of their first nine games, although they took notable losses to the Cavaliers and Celtics.
+
+Jimmy Butler's rise as a primary scorer, going from 13 to 20 points per game, was a standout story, positioning him as a candidate for the "Most Improved Player of the Year" award. Gasol's consistent double-double performances added significant value, and both Butler and Gasol were selected to the Eastern Conference All-Star team. Despite this, the Bulls struggled with consistency in the second half of the season, with Rose publicly expressing frustration over the team's lack of cohesion. Tensions between head coach Tom Thibodeau and the front office, led by Gar Forman and John Paxson, also created internal instability.
+
+The Bulls finished the regular season with a 50–32 record, securing the third seed in the Eastern Conference. In the first round of the playoffs, they faced the Milwaukee Bucks, quickly establishing a 3–0 lead in the series before allowing the Bucks to win two games in a row. However, the Bulls dominated in Game 6, winning by a playoff-record 54 points to advance 4–2. The next round saw a matchup with the Cleveland Cavaliers, led by LeBron James. The Bulls initially shocked the Cavs in Game 1, but Cleveland responded strongly, winning in Game 2. Despite a dramatic Game 3 win by Derrick Rose on a last-second three-pointer, the Bulls were ultimately defeated 4–2, ending their playoff run. Following the series, speculation about Thibodeau's future with the team intensified due to the ongoing tensions with the front office.
+
+#### 2015–2017: Departures of Tom Thibodeau and Derrick Rose
+
+[Fred Hoiberg](/wiki/Fred_Hoiberg) was the 22nd head coach in the franchise's history.
+
+On May 28, 2015, the Bulls fired Tom Thibodeau to seek a "change in approach". The following month, Fred Hoiberg was named as the new head coach. The Bulls had only one draft pick in the 2015 NBA Draft, selecting center Bobby Portis from the University of Arkansas.
+
+With forward Mike Dunleavy Jr. sidelined for the first four months of the season due to back surgery, the Bulls promoted Doug McDermott to the starting small forward position. Hoiberg told the media that the move was suggested by Noah himself, but Noah denied having made any suggestions to Hoiberg, which sparked a distrust between the two before the season even began. The Bulls started the 2015–16 season strong with a season-opening victory over the Cleveland Cavaliers and posted an 8–3 record early on; however, they struggled through the middle of the season, eventually losing 12 of their next 17 games. Jimmy Butler was sidelined for four weeks due to a knee injury, and despite finishing with a 42–40 record, the Bulls were eliminated from playoff contention, marking the first time in eight years the team had missed the postseason.
+
+In the 2016 off-season, the Bulls underwent significant roster changes. On June 22, 2016, they traded Derrick Rose, Justin Holiday, and a 2017 second-round pick to the New York Knicks in exchange for center [Robin Lopez](/wiki/Robin_Lopez), and point guards [Jerian Grant](/wiki/Jerian_Grant) and [José Calderón](/wiki/Jos%C3%A9_Calder%C3%B3n_(basketball)), the latter of whom was later traded to the Los Angeles Lakers. In July, the Bulls signed veteran guard [Rajon Rondo](/wiki/Rajon_Rondo) and Chicago native [Dwyane Wade](/wiki/Dwyane_Wade), bolstering their lineup. Additionally, they acquired 2014 Rookie of the Year [Michael Carter-Williams](/wiki/Michael_Carter-Williams) in a trade with the Milwaukee Bucks.
+
+The team made further moves in February 2017, trading Taj Gibson, Doug McDermott, and a second-round pick to the Oklahoma City Thunder for point guard [Cameron Payne](/wiki/Cameron_Payne), shooting guard [Anthony Morrow](/wiki/Anthony_Morrow), and power forward/center [Joffrey Lauvergne](/wiki/Joffrey_Lauvergne). Despite these changes, Jimmy Butler had a standout season, setting several career highs, earning All-Star honors, and being named to the All-NBA third team. The Bulls finished the regular season with a 41–41 record and clinched the eighth seed in the 2017 NBA playoffs. They took a surprising 2–0 series lead over the top-seeded [Boston Celtics](/wiki/2016%E2%80%9317_Boston_Celtics_season) but ultimately lost the series 4–2.
+
+### 2017–2025: Lavine era
+
+#### 2017–2020: Final years of GarPax and rebuilding
+
+Zach Lavine (seen here in 2022) was brought to the Bulls in 2017
+
+In June 2017, the Chicago Bulls traded Jimmy Butler and their 2017 first-round pick to [the Minnesota Timberwolves](/wiki/2017%E2%80%9318_Minnesota_Timberwolves_season) for [Zach LaVine](/wiki/Zach_LaVine), [Kris Dunn](/wiki/Kris_Dunn), and a pick used to select [Lauri Markkanen](/wiki/Lauri_Markkanen). They also waived [Rajon Rondo](/wiki/Rajon_Rondo) and [Isaiah Canaan](/wiki/Isaiah_Canaan), and allowed [Michael Carter-Williams](/wiki/Michael_Carter-Williams) to enter free agency. [Justin Holiday](/wiki/Justin_Holiday) rejoined the Bulls on a two-year, $9 million contract, while [Dwyane Wade](/wiki/Dwyane_Wade) reached a buyout agreement, returning $8 million of his $23.2 million contract.
+
+On October 17, 2017, a fight broke out between [Bobby Portis](/wiki/Bobby_Portis) and [Nikola Mirotić](/wiki/Nikola_Miroti%C4%87) during practice. Portis punched Mirotić in the face, causing a concussion and facial fractures. Portis was suspended eight games, and Mirotić missed 23 games. The incident led to Mirotić being traded to the New Orleans Pelicans in February 2018 for a first-round draft pick and [Ömer Aşık](/wiki/%C3%96mer_A%C5%9F%C4%B1k), [Tony Allen](/wiki/Tony_Allen_(basketball)), and [Jameer Nelson](/wiki/Jameer_Nelson). The Bulls finished the 2017-18 season with a 27–55 record.
+
+In 2018, the Bulls drafted [Wendell Carter Jr.](/wiki/Wendell_Carter_Jr.) and [Chandler Hutchison](/wiki/Chandler_Hutchison), and re-signed Zach LaVine to a four-year, $78 million deal. They also signed [Jabari Parker](/wiki/Jabari_Parker) to a two-year, $40 million contract. After a poor start to the 2018-19 season, [Fred Hoiberg](/wiki/Fred_Hoiberg) was fired and replaced by [Jim Boylen](/wiki/Jim_Boylen). In February 2019, Bobby Portis, Jabari Parker, and a second-round pick were traded for [Otto Porter](/wiki/Otto_Porter). The Bulls ended the season with a 22-60 record, missing the playoffs.
+
+In 2019, the Bulls selected [Coby White](/wiki/Coby_White) and signed veterans [Tomáš Satoranský](/wiki/Tom%C3%A1%C5%A1_Satoransk%C3%BD) and [Thaddeus Young](/wiki/Thaddeus_Young). After the COVID-19 disruption, [Artūras Karnišovas](/wiki/Art%C5%ABras_Karni%C5%A1ovas) became the Bulls' executive vice president, and [Marc Eversley](/wiki/Marc_Eversley) was hired as general manager. Jim Boylen was fired, and [Billy Donovan](/wiki/Billy_Donovan) became head coach in 2020. The Bulls drafted [Patrick Williams](/wiki/Patrick_Williams_(basketball)) with the fourth overall pick.
+
+In March 2021, the Bulls traded for [Nikola Vučević](/wiki/Nikola_Vu%C4%8Devi%C4%87) and [Al-Farouq Aminu](/wiki/Al-Farouq_Aminu), sending [Wendell Carter Jr](/wiki/Wendell_Carter_Jr), Otto Porter and draft picks to Orlando. Despite these moves, the Bulls finished the 2020-21 season with a 31-41 record, missing the playoffs for the fourth consecutive year.
+
+#### 2021–2024: DeRozan–Lavine duo
+
+DeRozan at the [2022 NBA All-Star Game](/wiki/2022_NBA_All-Star_Game)
+
+In the 2021 off-season, the Chicago Bulls made several notable moves aimed at improving their roster. They selected [Ayo Dosunmu](/wiki/Ayo_Dosunmu) with the 38th pick in the second round of the NBA Draft, traded for [Lonzo Ball](/wiki/Lonzo_Ball) from the New Orleans Pelicans, and signed free agent [Alex Caruso](/wiki/Alex_Caruso). The Bulls also received [DeMar DeRozan](/wiki/DeMar_DeRozan) from the San Antonio Spurs, giving up [Thaddeus Young](/wiki/Thaddeus_Young), [Al-Farouq Aminu](/wiki/Al-Farouq_Aminu), and draft picks.
+
+The Bulls's new look lineup initially performed quite well, making it to the top seed in the Eastern Conference in January 2022. DeRozan's performance in this period, including back-to-back buzzer-beater three-pointers against the Indiana Pacers and Washington Wizards, briefly captured the spotlight. After Lonzo Ball was sidelined with a knee injury requiring a meniscus replacement, the team struggled to maintain consistency. DeRozan earned an All-Star selection and LaVine joined him as a reserve, but the team quickly fell in the rankings. They finished the season in sixth place in the Eastern Conference and were eliminated in the first round of the playoffs by the Milwaukee Bucks in five games.
+
+In the 2022 off-season, the Bulls re-signed LaVine to a five-year, $215.2 million contract (the largest in franchise history) and selected [Dalen Terry](/wiki/Dalen_Terry) in the draft. They also signed [Patrick Beverley](/wiki/Patrick_Beverley) mid-season in an attempt to reignite their playoff hopes. However, despite some individual success, the team’s lack of consistency persisted. The Bulls finished 40–42 in the 2022–23 season and earned a spot in the play-in tournament, beating the Toronto Raptors in a bittersweet win for Derozan, before they were again eliminated by the Miami Heat.
+
+The 2023 off-season saw the Bulls trade for the 35th pick in the draft and select Julian Philips, while also re-signing Vucevic and Coby White. The Bulls finished with a 39–43 record, once again securing a play-in spot. After defeating the Atlanta Hawks, they were eliminated by the Miami Heat in the second game, missing the playoffs for the second consecutive year.
+
+#### 2024–present: new direction with Buzelis–Giddey
+
+[Matas Buzelis](/wiki/Matas_Buzelis)
+
+[Josh Giddey](/wiki/Josh_Giddey)
+
+[DeMar DeRozan](/wiki/DeMar_DeRozan) signed with [the Sacramento Kings](/wiki/2023%E2%80%9324_Sacramento_Kings_season) as part of a three-team sign-and-trade deal. The team also traded [Alex Caruso](/wiki/Alex_Caruso) to [the Oklahoma City Thunder](/wiki/2023%E2%80%9324_Oklahoma_City_Thunder_season) for [Josh Giddey](/wiki/Josh_Giddey). [Andre Drummond](/wiki/Andre_Drummond) signed with the [Sixers](/wiki/Philadelphia_76ers). In the draft, [Matas Buzelis](/wiki/Matas_Buzelis) was taken by the Bulls 11th overall. After two missed seasons, [Lonzo Ball](/wiki/Lonzo_Ball) made his return to the court. On February 2, 2025, the team traded [Zach LaVine](/wiki/Zach_LaVine) to the Sacramento Kings for [Zach Collins](/wiki/Zach_Collins), [Tre Jones](/wiki/Tre_Jones), [Kevin Huerter](/wiki/Kevin_Huerter) and their own 2025 first round pick from [the San Antonio Spurs](/wiki/2024%E2%80%9325_San_Antonio_Spurs_season).
+
+The Bulls finished the season with a 39–43 record, placing them 9th in the Eastern Conference. This earned them a spot in the play-in tournament, where they would go on to lose to the Miami Heat for the third consecutive year, missing the playoffs once again. In the 2025 draft, [Noa Essengue](/wiki/Noa_Essengue) was taken by the Bulls 12th overall. During the offseason, the Bulls traded [Lonzo Ball](/wiki/Lonzo_Ball) to the [Cleveland Cavaliers](/wiki/Cleveland_Cavaliers) for [Isaac Okoro](/wiki/Isaac_Okoro).
+
+The Bulls began their 2025–2026 season with a 5–0 record, the best start since their 1996–97 season. However, they ended up struggling throughout the year. The team went on an 11-game losing streak in February, setting a franchise record for the most losses in a winless month. During the trade deadline period, the Bulls completed seven trades, breaking apart their veteran core by trading away [Nikola Vucevic](/wiki/Nikola_Vucevic), [Coby White](/wiki/Coby_White), [Ayo Dosunmu](/wiki/Ayo_Dosunmu), [Julian Phillips](/wiki/Julian_Phillips_(basketball)), [Dalen Terry](/wiki/Dalen_Terry), [Kevin Huerter](/wiki/Kevin_Huerter) and [Emanuel Miller](/wiki/Emanuel_Miller). In exchange, the Bulls received [Jaden Ivey](/wiki/Jaden_Ivey), [Collin Sexton](/wiki/Collin_Sexton), [Leonard Miller](/wiki/Leonard_Miller_(basketball)), [Guerschon Yabusele](/wiki/Guerschon_Yabusele), [Nick Richards](/wiki/Nick_Richards), [Anfernee Simons](/wiki/Anfernee_Simons), [Rob Dillingham](/wiki/Rob_Dillingham) and eight second round picks. In March, the Bulls waived Ivey following his criticism of the NBA being involved with [Pride Month](/wiki/Pride_Month) activities. In April 2026, [Arturas Karnisovas](/wiki/Arturas_Karnisovas) and [Marc Eversley](/wiki/Marc_Eversley) were fired from their positions as executive vice-president of basketball operations and general manager, respectively. After the team finished the season with a 31–51 record, missing the playoffs for a fourth consecutive season, [Billy Donovan](/wiki/Billy_Donovan) also stepped down as head coach. On May 4, 2026, the Bulls named Bryson Graham as their new executive vice-president of basketball operations.
+
+## Rivalries
+
+### Cleveland Cavaliers
+
+Further information: [Bulls–Cavaliers rivalry](/wiki/Bulls%E2%80%93Cavaliers_rivalry)
+
+The Bulls–Cavaliers rivalry is a [National Basketball Association](/wiki/National_Basketball_Association) (NBA) [rivalry](/wiki/List_of_National_Basketball_Association_rivalries) between the [Cleveland Cavaliers](/wiki/Cleveland_Cavaliers) and the Chicago Bulls. The teams have played each other since the Cavaliers joined the NBA as an [expansion team](/wiki/Expansion_team) in 1970, but the rivalry didn't begin in earnest until the Bulls drafted [Michael Jordan](/wiki/Michael_Jordan) with the third overall pick in [1984](/wiki/1984_NBA_Draft). After Jordan went on to the [Washington Wizards](/wiki/Washington_Wizards) and eventually retired, the rivalry died down, but when Cleveland picked [LeBron James](/wiki/LeBron_James) with the first selection in [2003](/wiki/2003_NBA_Draft), the rivalry heated up again. However, the Cavaliers had an edge over the Bulls, who would pick [Derrick Rose](/wiki/Derrick_Rose) with the first selection in [2008](/wiki/2008_NBA_Draft) to turn Chicago from a lottery team to a future contender.
+
+### Detroit Pistons
+
+Further information: [Bulls–Pistons rivalry](/wiki/Bulls%E2%80%93Pistons_rivalry)
+
+The Bulls' main division rivals have been the [Detroit Pistons](/wiki/Detroit_Pistons) ever since the Jordan-led Bulls met the "Bad Boy" Pistons in the 1988 Eastern Conference semifinals. The two teams met in the playoffs four consecutive years, with the Pistons winning each time until 1991. The Eastern Conference Finals in 1991 ended with a four-game sweep of the Pistons, who walked off the floor with time still on the game clock. The rivalry was renewed in the 2007 Eastern Conference Semifinals, in which former Detroit cornerstone [Ben Wallace](/wiki/Ben_Wallace_(basketball)) met his former team (the Pistons won in 6 games). The geographic proximity and membership in the [Central Division](/wiki/Central_Division_(NBA)) further intensify the rivalry, which has been characterized by intense, physical play ever since the teams met in the late 1980s. Chicago fans' rivalry with Detroit extends past the NBA, as the two cities shared divisions in all four major North American sports until 2013 when the [Detroit Red Wings](/wiki/Detroit_Red_Wings) moved to the Atlantic Division of the Eastern Conference.
+
+### Miami Heat
+
+The Bulls and the [Miami Heat](/wiki/Miami_Heat) rivalry began once the Heat became contenders during the 1990s, a decade dominated by the Bulls. They were eliminated 3 times by Chicago, who went on to win the title each time. The rivalry was revived due to the return of the Bulls to the playoffs after the departure of Jordan from the Bulls and the emergence of [Dwyane Wade](/wiki/Dwyane_Wade) and [Derrick Rose](/wiki/Derrick_Rose). The revived rivalry was physical, involving rough plays and hard fouls between players, most notably the actions of former Heat player [James Posey](/wiki/James_Posey). The Bulls and Heat met in the 2011 Eastern Conference Finals, with the Heat winning in 5 games. On March 27, 2013, Chicago snapped Miami's 27-game winning streak. The Bulls and Heat met later that year in the 2013 Eastern Conference Semifinals. Miami won the series 4–1. In 2023, the two would meet in the Eastern Conference play-in, with the Heat winning to advance to the playoffs. Notably the game featured former Bull, Jimmy Butler on the Heat and former teammates DeMar DeRozan (Chicago) versus Kyle Lowry (Miami). The Bulls and the Heat would go on to meet in the Eastern Conference play-ins in both of the next two years, with the Heat eliminating the Bulls from playoff contention in both of those games.
+
+### New York Knicks
+
+Further information: [Bulls–Knicks rivalry](/wiki/Bulls%E2%80%93Knicks_rivalry)
+
+Another franchise that the Bulls have competed fiercely with is the [New York Knicks](/wiki/New_York_Knicks). The two teams met in the playoffs in four consecutive years (1991–1994) and again in 1996, with the teams' series twice (1992 and 1994) going the full seven games. Their first playoff confrontation, however, came in 1989 when both teams were called "teams on the rise" under [Michael Jordan](/wiki/Michael_Jordan) and [Patrick Ewing](/wiki/Patrick_Ewing), respectively (rivalry that started their freshman year in the [1982 NCAA Men's Division I Basketball Championship Game](/wiki/1982_NCAA_Men%27s_Division_I_Basketball_Championship_Game) with Jordan hitting the deciding jumper of the final). That first confrontation would belong to Chicago with six games of the Eastern Semifinals. The Bulls won in the first three years (1991–1993) before losing in 1994 but got revenge in 1996. As with Detroit, the historic rivalry between the cities has led to animosity between the teams and occasionally their fans.
+
+### Boston Celtics
+
+The Bulls-[Celtics](/wiki/Boston_Celtics) rivalry is a historic NBA clash defined by 1980s battles between [Larry Bird](/wiki/Larry_Bird) and [Michael Jordan](/wiki/Michael_Jordan), including Jordan's 63-point playoff game in 1986. It continued through intense 2000s playoff series and remains a significant matchup due to the storied history and contrasting team building philosophies. The Celtics dominated early matchups, setting the stage for legendary battles. In the 1986 playoffs, Jordan scored a record 63 points against the Celtics, prompting [Larry Bird](/wiki/Larry_Bird) to say it was "God disguised as Michael Jordan". The Bulls overcame their early losses to the Celtics, with the rivalry fading slightly as the Bulls began their 1990s championship run while Boston rebuilt. The rivalry was renewed with a thrilling 2009 first-round series, featuring seven games with four overtimes, which the Celtics won. A 2017 matchup also saw intense play.
+
+## Traditions
+
+### Starting lineup introductions
+
+During the Bulls' run of dominance, the player introductions became world-famous. Longtime announcer [Tommy Edwards](/wiki/Tommy_Edwards_(announcer)) was the first to use ["Sirius"](/wiki/Sirius_(instrumental)) by [The Alan Parsons Project](/wiki/The_Alan_Parsons_Project), ["On The Run"](/wiki/On_the_Run_(instrumental)) by [Pink Floyd](/wiki/Pink_Floyd), and other songs in game presentation in the NBA. When Edwards moved to Boston for employment with CBS Radio, he was replaced by [Ray Clay](/wiki/Ray_Clay) in 1990, and Clay continued many of the traditional aspects of the Bulls introductions, including "On The Run" and "Sirius" for all six championship runs.
+
+The starting lineup sequence is typically done as follows: The lights are first dimmed during the visiting team introduction, accompanied by first "On The Run" during the 90s, then "[The Imperial March](/wiki/The_Imperial_March)" from *[Star Wars](/wiki/Star_Wars)*, composed by [John Williams](/wiki/John_Williams) during the 2000s, and most recently "Tick of the Clock" by [Chromatics](/wiki/Chromatics_(band)) since the 2010s. Virtually all lights in the stadium are then shut off for the Bulls introduction (since the 2010s, after a short countdown from Bulls players promoting their "See Red" campaign), and a spotlight illuminates each player as he is introduced and runs onto the court. At Chicago Stadium, there was just one spotlight, that focused on the fans, then the introduced players. When the Bulls moved to the United Center, multiple spotlights as well as lasers and fireworks were added, as well as a [3D-animated](/wiki/Computer_animation) '[Running of the Bulls](/wiki/Running_of_the_Bulls)' video, which has been updated numerous times. The first version of the video debuted with the United Center in 1994 on their [Sony](/wiki/Sony) [Jumbotron](/wiki/Jumbotron), which showed a first-person POV of the Bulls running to the United Center. In 1997, the video was updated, now with a third-person POV of the Bulls, as well as prominently showing the [Michael Jordan Statue](/wiki/Michael_Jordan_Statue) as the Bulls arrive to the United Center and a Bull standing on top of the United Center. The video was updated again in 2002 with Bulls highlights, then again in 2006 to show more realistic Bulls, which was the first to show the Bulls smashing a bus of the other teams logo as they arrive to the United Center. The most recent version of the intro debuted in 2014, which removed the Bull on top of United Center as well as the bus, but showed more realistic Bulls, as well as humans, with live-action filming used for the first time throughout the city of Chicago. In 2016, the Bulls ended the use of lasers and fireworks on court and replaced them with an on-court projection, also showing Bulls, which temporality replaced the second half of the Running of the Bulls video before the projection was dropped in 2018, adding back in the second half of the video. In 2019, the bus was added back, as well as a readjusting of the video to fill up the new United Center scoreboard. The Bulls also added back lasers and multiple spotlights on court, with a part of the intro meant to resemble the court during the Bulls intros of the 90s.
+
+Traditionally, the players have been introduced in the following order: small forward, power forward, center, point guard, shooting guard. During the championship era, [Scottie Pippen](/wiki/Scottie_Pippen) was usually the first (or second after [Horace Grant](/wiki/Horace_Grant)) Bulls player introduced, and [Michael Jordan](/wiki/Michael_Jordan) the last. (Pippen and Jordan are the only players to play on all six Bulls championship teams.) More recently with [Derrick Rose](/wiki/Derrick_Rose)'s arrival, the guards have been reversed in order, making the Chicago-bred point guard the last player introduced. Although internal disputes eventually led to the dismissal of Clay, the Bulls in 2006 announced the return of Tommy Edwards as the announcer.
+
+As part of Edwards' return, the introductions changed as a new introduction was developed by [Lily and Lana Wachowski](/wiki/The_Wachowskis), [Ethan Stoller](/wiki/Ethan_Stoller) and Jamie Poindexter, all from Chicago. The introduction also included a newly composed remix of the traditional Sirius theme. Edwards was replaced in 2020 by [Tim Sinclair](/wiki/Tim_Sinclair_(announcer)).
+
+Coincidentally, [Alan Parsons](/wiki/Alan_Parsons) wrote "Sirius" for his own band and was the sound engineer for "On the Run" from Pink Floyd's album *[The Dark Side of the Moon](/wiki/The_Dark_Side_of_the_Moon)*.
+
+### Black shoes and socks
+
+The Bulls have an unofficial tradition of wearing black shoes (regardless of being home or away) during the playoffs, which dates all the way back to [1989](/wiki/1989_NBA_playoffs) when they debuted the tradition. Then-Bulls backup center [Brad Sellers](/wiki/Brad_Sellers) suggested to wear black shoes as a way to show unity within the team. For the 1996 playoffs, they became the first team to wear black socks with the black shoes, similar to the [University of Michigan](/wiki/Michigan_Wolverines_men%27s_basketball) and the [Fab Five](/wiki/Fab_Five_(University_of_Michigan)) which started the trend in college earlier in the decade. Since then, many teams have this look in both the regular season and playoffs. It was noted when the Bulls made their first playoff appearance during the 2004–05 season after a six-year hiatus, they continued the tradition and wore black shoes.
+
+Even though the Bulls generally wear black footwear in the playoffs since 1989, there have been some notable exceptions. In the [1995 playoffs](/wiki/1995_NBA_playoffs) against the Magic, when Michael Jordan debuted his [Air Jordan XI](/wiki/Air_Jordan#Product_history) shoe, he wore the white colorway during the Bulls' playoff games in Orlando. He was fined by the Bulls for not complying with their colorway policy. During the [2009 playoffs](/wiki/2009_NBA_playoffs), the Bulls again broke the tradition when all of their players wore white shoes and socks in Game 3 of the first round against the Boston Celtics. More recently, since the NBA's relaxation of sneaker color rules, some Bulls players wore either red or white sneakers in defiance of the tradition.
+
+### Circus trip
+
+The Bulls and their arena mates, the [Chicago Blackhawks](/wiki/Chicago_Blackhawks), shared an odd tradition dating to the opening of Chicago Stadium. Every fall, [Feld Entertainment](/wiki/Feld_Entertainment)'s now-defunct [Ringling Bros. and Barnum & Bailey Circus](/wiki/Ringling_Bros._and_Barnum_%26_Bailey_Circus) came to Chicago on its nationwide tour. Since it used large indoor venues rather than tents, it took over the United Center for its entire run and the Bulls were forced, along with the Blackhawks, to take an extended road trip that lasted about two weeks. Initially local newspapers and television and radio sportscasters, and later national programs like *[SportsCenter](/wiki/SportsCenter)*, referred to this fortnight-long local hiatus as "the circus trip". Blackhawks chairman [Rocky Wirtz](/wiki/Rocky_Wirtz), who co-owned the United Center with Bulls chairman [Jerry Reinsdorf](/wiki/Jerry_Reinsdorf), let the contract lapse after the circus' 2016 run, and condensed the formerly two-week local run of Feld's [Disney on Ice](/wiki/Disney_on_Ice) to a week-long period effective February 2018. The circus itself would be discontinued in 2017.
+
+## Name, logo, and uniforms
+
+### Name
+
+Dick Klein wanted a name that evoked Chicago's traditional [meat packing industry](/wiki/Meat_packing_industry) (similarly to the forerunner Packers franchise) and the Chicago Stadium's proximity to the [Union Stock Yards](/wiki/Union_Stock_Yards). Klein considered names like [Matadors](/wiki/Matador) or [Toreadors](/wiki/Torero), but dismissed them, saying, "If you think about it, no team with as many as three syllables in its nickname has ever had much success except for the [Montreal Canadiens](/wiki/Montreal_Canadiens)." After discussing possible names with his family, Klein settled on *Bulls* when his son Mark said, "Dad, that's a bunch of bull!"
+
+### Logo
+
+Chicago Bulls wordmark (1966–present)
+
+The Bulls are unique in the fact they have used the same logo with very little change since the team's inception. The iconic logo is a red, charging bull's face. The logo was designed by noted American graphic designer Dean P. Wessel and was adopted in 1966. At one point, the Bulls also had an alternate logo during the early 1970s, featuring the same Bulls logo, but with a cloud that says "Windy City" below the bull's nose.
+
+### Uniforms
+
+#### 1966–1973 uniforms
+
+The Bulls wear three different uniforms: a white uniform, a red uniform, and a black [alternate](/wiki/Third_jersey) uniform. The original uniforms were esthetically close to the current design, featuring the iconic diamond surrounding the Bulls logo on the shorts and block lettering. What distinguished the original uniforms were the black drop shadows, red or white side stripes with black borders, and white lettering on the red uniforms. For the 1969–70 season, the red uniforms were tweaked to include the city name.
+
+#### 1973–1985 uniforms
+
+For the 1973–74 season, the Bulls drastically changed their look, removing the side stripes and drop shadows while moving the front numbers to the left chest. While the white uniforms saw the "Bulls" wordmark go from a vertically arched to radially arched arrangement, the red uniforms saw a more significant makeover, featuring black lettering and a script "Chicago" wordmark. With a few tweaks in the lettering, these uniforms were used until 1985.
+
+This uniform set was later revived as a throwback uniform during the 2003–04 and 2015–16 seasons.
+
+#### 1985–present uniforms
+
+Starting with the 1985–86 season, the Bulls updated their uniform. Among the more notable changes in the look were centered uniform numbers and a vertically arched "Bulls" wordmark in both the red and white uniforms. Like the previous set, this uniform saw a few tweaks particularly in the treatment of the player's name.
+
+When [Nike](/wiki/Nike,_Inc.) became the NBA's uniform provider in 2017, the Bulls kept much of the same look save for the truncated shoulder striping and the addition of the [Chicago four stars](/wiki/Flag_of_Chicago) on the waistline. With Nike and the NBA eliminating designations on home and away uniforms, the Bulls also announced that their red "Icon" uniforms would become their home uniforms, and the white "Association" uniforms would become their away uniforms. The Bulls would continue to wear red "Icon" uniforms in home games until the 2020–21 season, after which they returned to wearing the white "Association" uniforms in home games starting in the 2021–22 season.
+
+#### Alternate black uniforms
+
+In the 1995–96 season, the Bulls added a black uniform to their set. The initial look featured red pinstripes and lacked the classic diamond on the shorts. This set was revived as throwback uniforms in the 2012–13 seasons.
+
+From the 1997–98 to the 2005–06 seasons, the Bulls wore slightly modified black uniforms without pinstripes. This set, with a few slight changes in the template, also marked the return of the city name in front of the uniform during the 1999–2000 season.
+
+The 2006–07 season saw another change in the Bulls' black alternate uniform, now resembling the red and white uniform with the addition of a red diamond in the shorts. For the 2014–15 season, the uniforms were tweaked a bit to include sleeves and a modernized diamond treatment in black with red and white borders.
+
+Since the 2017–18 season, the Bulls' black uniforms remained mostly untouched for the aforementioned switch to the new Nike logo that affected the treatment towards the shoulder piping. Nike also dubbed this uniform as the "Statement" uniform in reference to its third jerseys. The Bulls began wearing the Statement uniforms after Thanksgiving and they are currently used in away games against teams that wear their white, gray/silver or cream uniforms.
+
+The 2019–20 season marked the return of pinstripes to the Bulls' "Statement" uniform, albeit in dark gray. In addition, the diamond treatment returned to red, piping was tweaked, and four six-point stars were featured on the beltline. The Bulls wore this "Statement" uniform in select home games and away games against teams wearing white, cream, yellow, red or silver uniforms.
+
+Ahead of the 2025–26 season, the Bulls' black "Statement" uniform was tweaked to feature red pinstripes and modified striping.
+
+#### Other uniforms
+
+The Chicago Bulls have worn various special edition uniforms throughout the years to celebrate different events and milestones.
+
+- **Throwback Uniforms:** In the 2005–06 season, the Bulls honored the defunct Chicago Stags with red and blue throwback uniforms, featuring red tops and blue shorts.
+- **St. Patrick's Day Uniforms:** From 2006 to 2017, the Bulls wore green versions of their red uniforms around [St. Patrick's Day](/wiki/St._Patrick%27s_Day), with modifications such as sleeved versions in 2015 and a sleeveless style in 2016–17.
+- **Noche Latina:** Between 2009 and 2017, the Bulls wore a red variation of their uniforms for the NBA's "Noche Latina," often featuring the "Los Bulls" wordmark. In 2014, they briefly wore black sleeved uniforms for this event.
+- **Green Week:** The Bulls also wore dark green uniforms, based on their black alternate uniforms, for the NBA's "Green Week" in 2009 which sought to raise awareness for [environmental](/wiki/Environmentalism) issues.
+- **Christmas Day Uniforms:** The Bulls wore special Christmas uniforms for the NBA's [Christmas Day](/wiki/Christmas_Day) games from 2012 to 2016, featuring various red and modified designs with silver and ornate script lettering.
+- **Pride Uniforms:** From 2015 to 2017, the Bulls wore gray sleeved [Pride](/wiki/Pride_(LGBTQ_culture)) uniforms, featuring red and white lettering, modernized diamond designs, and six-pointed stars.
+
+##### Nike City uniforms
+
+The Bulls' "City" uniforms, introduced by Nike in 2017, pay homage to Chicago’s flag, architecture, and cultural symbols. These uniforms have evolved each season:
+
+- 2017–2018: White with red "Chicago" script and stars, inspired by Chicago’s flag.
+- 2018–2019: Black with a portion of the flag’s red stars and blue stripes.
+- 2019–2020: Light blue with a recolored Bulls logo, inspired by Lake Michigan and the Chicago River.
+- 2020–2021: Dark grey with gold lettering and red accents, reflecting Chicago's Art Deco architecture.
+- 2021–2022: A red design blending elements from past uniforms, such as black and white striping, cursive "Chicago" script, and red pinstripes.
+- 2022–2023: White with rust red letters and alternating red and black side stripes, referencing Chicago’s municipal device "Y" symbol.
+- 2023–2024: Black, inspired by the Chicago Stadium with a vertical "Chicago" wordmark and "Madhouse on Madison" on the jock tag.
+- 2024–2025: Gray and sand uniform commemorating the 30th anniversary of the United Center, incorporating design elements from the arena's signage and iconic starting lineup spotlights.
+- 2025–2026: Essentially the 2017–2018 "City" uniform but in black with light blue letters and stars, and red trim.
+
+## Mascots
+
+See also: [Benny the Bull](/wiki/Benny_the_Bull)
+
+[Benny the Bull](/wiki/Benny_the_Bull) in February 2018
+
+[Benny the Bull](/wiki/Benny_the_Bull) is the main mascot of the Chicago Bulls. He was first introduced in 1969. Benny is a red bull who wears number 1. Benny is one of the oldest and best-known mascots in all of professional sports. The Bulls also had another mascot named Da Bull. Introduced in 1995, he was described on the team website as being the high-flying cousin of Benny, known for his dunking skills. The man who portrayed Da Bull was arrested in 2004 for possession and selling marijuana from his car. Da Bull was retired soon after the incident. While Benny has a family-friendly design, Da Bull was designed as a more realistic bull. Unlike Benny, Da Bull was brown. He also had a meaner facial expression and wore number 95.
+
+## Season-by-season record
+
+*List of the last five seasons completed by the Bulls. For the full season-by-season history, see [List of Chicago Bulls seasons](/wiki/List_of_Chicago_Bulls_seasons).*
+
+***Note:** GP = Games played, W = Wins, L = Losses, W–L% = Winning percentage*
+
+|  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- |
+| Season | GP | W | L | W–L% | Finish | Playoffs |
+| [2021–22](/wiki/2021%E2%80%9322_NBA_season) | 82 | 46 | 36 | .561 | 2nd, Central | Lost in first round, 1–4 ([Bucks](/wiki/Milwaukee_Bucks)) |
+| [2022–23](/wiki/2022%E2%80%9323_NBA_season) | 82 | 40 | 42 | .488 | 3rd, Central | Did not qualify |
+| [2023–24](/wiki/2023%E2%80%9324_NBA_season) | 82 | 39 | 43 | .476 | 4th, Central | Did not qualify |
+| [2024–25](/wiki/2024%E2%80%9325_NBA_season) | 82 | 39 | 43 | .476 | 5th, Central | Did not qualify |
+| [2025–26](/wiki/2025%E2%80%9326_NBA_season) | 82 | 31 | 51 | .378 | 4th, Central | Did not qualify |
+
+## Franchise records
+
+Main article: [Chicago Bulls accomplishments and records](/wiki/Chicago_Bulls_accomplishments_and_records)
+
+## Training facilities
+
+[Alumni Hall](/wiki/Alumni_Hall_(DePaul_University)) on [DePaul University](/wiki/DePaul_University)'s Lincoln Park campus was the practice facility for the Bulls in the 1960s and 1970s.
+
+In 1992, the team began training at the Berto Center, located in [Deerfield, Illinois](/wiki/Deerfield,_Illinois).
+
+On June 13, 2012, the team announced that it would move its practice facility to a downtown location closer to the United Center to reduce game day commutes. On September 12, 2014, the Bulls officially opened their new training facility, the Advocate Center (named after the Advocate Medical Group, one of the medicine-practicing firms that serves Chicago), a block east of the United Center.
+
+## Home arenas
+
+|  |  |
+| --- | --- |
+| **Arena** | |
+| Arena | Tenure |
+| [International Amphitheatre](/wiki/International_Amphitheatre) | 1966–1967 |
+| [Chicago Stadium](/wiki/Chicago_Stadium) | 1967–1994 |
+| [United Center](/wiki/United_Center) | 1994–present |
+
+## Personnel
+
+Further information: [Chicago Bulls all-time roster](/wiki/Chicago_Bulls_all-time_roster) and [Chicago Bulls draft history](/wiki/Chicago_Bulls_draft_history)
+
+### Current roster
+
+**Chicago Bulls roster**
+
+- [v](/wiki/Template:Chicago_Bulls_roster)
+- [t](/wiki/Template_talk:Chicago_Bulls_roster)
+- [e](/wiki/Special:EditPage/Template:Chicago_Bulls_roster)
+
+| Players | Coaches |
+| --- | --- |
+| | Pos. | No. | Player | Height | Weight | DOB | From | | --- | --- | --- | --- | --- | --- | --- | | [F](/wiki/Forward_(basketball)) | 14 | [Matas Buzelis](/wiki/Matas_Buzelis) | 6 ft 8 in (2.03 m) | 196 lb (89 kg) | 2004-10-13 | Sunrise Christian (KS) | | [F/C](/wiki/Forward-center) | 12 | [Zach Collins](/wiki/Zach_Collins) | 6 ft 9 in (2.06 m) | 240 lb (109 kg) | 1997-11-19 | [Gonzaga](/wiki/Gonzaga_University) | | [G](/wiki/Guard_(basketball)) | 7 | [Rob Dillingham](/wiki/Rob_Dillingham) | 6 ft 2 in (1.88 m) | 175 lb (79 kg) | 2005-01-04 | [Kentucky](/wiki/University_of_Kentucky) | | [F](/wiki/Forward_(basketball)) | 24 | [Noa Essengue](/wiki/Noa_Essengue) | 6 ft 8 in (2.03 m) | 194 lb (88 kg) | 2006-12-18 | [France](/wiki/France) | | [G](/wiki/Guard_(basketball)) | 3 | [Josh Giddey](/wiki/Josh_Giddey) | 6 ft 7 in (2.01 m) | 214 lb (97 kg) | 2002-10-10 | [Australia](/wiki/Australia) | | [F](/wiki/Forward_(basketball)) | 16 | [Mouhamadou Gueye](/wiki/Mouhamadou_Gueye) | 6 ft 9 in (2.06 m) | 210 lb (95 kg) | 1998-07-06 | [Pittsburgh](/wiki/University_of_Pittsburgh) | | [G](/wiki/Guard_(basketball)) | 30 | [Tre Jones](/wiki/Tre_Jones) | 6 ft 1 in (1.85 m) | 190 lb (86 kg) | 2000-01-08 | [Duke](/wiki/Duke_University) | | [G](/wiki/Guard_(basketball)) | 8 | [Yuki Kawamura](/wiki/Yuki_Kawamura) (TW) | 5 ft 7 in (1.70 m) | 159 lb (72 kg) | 2001-03-02 | [Tokai University](/wiki/Tokai_University)  ([JPN](/wiki/Japan)) | | [G](/wiki/Guard_(basketball)) | 5 | [Mac McClung](/wiki/Mac_McClung) (TW) | 6 ft 2 in (1.88 m) | 185 lb (84 kg) | 1999-01-06 | [Texas Tech](/wiki/Texas_Tech_University) | | [F](/wiki/Forward_(basketball)) | 11 | [Leonard Miller](/wiki/Leonard_Miller_(basketball)) | 6 ft 10 in (2.08 m) | 220 lb (100 kg) | 2003-11-26 | Fort Erie (CAN) | | [G/F](/wiki/Swingman) | 35 | [Isaac Okoro](/wiki/Isaac_Okoro) | 6 ft 4 in (1.93 m) | 225 lb (102 kg) | 2001-01-26 | [Auburn](/wiki/Auburn_University) | | [C](/wiki/Center_(basketball)) | 47 | [Lachlan Olbrich](/wiki/Lachlan_Olbrich) (TW) | 6 ft 8 in (2.03 m) | 236 lb (107 kg) | 2003-12-30 | [UC Riverside](/wiki/UC_Riverside) | | [C](/wiki/Center_(basketball)) | 13 | [Nick Richards](/wiki/Nick_Richards) | 6 ft 11 in (2.11 m) | 245 lb (111 kg) | 1997-11-29 | [Kentucky](/wiki/University_of_Kentucky) | | [G](/wiki/Guard_(basketball)) | 2 | [Collin Sexton](/wiki/Collin_Sexton) | 6 ft 3 in (1.91 m) | 190 lb (86 kg) | 1999-01-04 | [Alabama](/wiki/University_of_Alabama) | | [G](/wiki/Guard_(basketball)) | 22 | [Anfernee Simons](/wiki/Anfernee_Simons) | 6 ft 3 in (1.91 m) | 200 lb (91 kg) | 1999-06-08 | [IMG Academy (FL)](/wiki/IMG_Academy) | | [F/C](/wiki/Forward-center) | 25 | [Jalen Smith](/wiki/Jalen_Smith) | 6 ft 8 in (2.03 m) | 244 lb (111 kg) | 2000-03-16 | [Maryland](/wiki/University_of_Maryland,_College_Park) | | [F](/wiki/Forward_(basketball)) | 44 | [Patrick Williams](/wiki/Patrick_Williams_(basketball)) | 6 ft 6 in (1.98 m) | 235 lb (107 kg) | 2001-08-26 | [Florida State](/wiki/Florida_State_University) | | [F](/wiki/Forward_(basketball)) | 28 | [Guerschon Yabusele](/wiki/Guerschon_Yabusele) | 6 ft 7 in (2.01 m) | 265 lb (120 kg) | 1995-12-17 | [France](/wiki/France) | | **Head coach**   - *Vacant*   **Assistant(s)**   - John Bryant - [Damian Cotter](/wiki/Damian_Cotter) - [Dan Craig](/wiki/Dan_Craig) - [Henry Domercant](/wiki/Henry_Domercant) - Billy Schmidt - [Wes Unseld Jr.](/wiki/Wes_Unseld_Jr.)  ---   **Legend**  - **(DP)** Unsigned draft pick - **(FA)** Free agent - **(S)** Suspended - **(GL)** On [assignment](/wiki/Assignment_(NBA_D-League)) to G League affiliate - **(TW)** Two-way affiliate player - Injured   ---   [Roster](http://www.nba.com/bulls/roster/)   Updated: April 21, 2026 |
+
+### Retained draft rights
+
+The Bulls hold the draft rights to the following unsigned draft picks who have been playing outside the NBA. A drafted player, either an international draftee or a college draftee who is not signed by the team that drafted him, is allowed to sign with any non-NBA teams. In this case, the team retains the player's draft rights in the NBA until one year after the player's contract with the non-NBA team ends. This list includes draft rights that were acquired from trades with other teams.
+
+| Draft | Round | Pick | Player | Pos. | Nationality | Current team | Note(s) | Ref |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+### Franchise leaders
+
+**Bold** denotes still active with the team. *Italics* denotes still active, but not with the team.
+
+Points scored (regular season) (as of the end of the 2025–26 season)
+
+- 1. [Michael Jordan](/wiki/Michael_Jordan) (29,277)
+- 2. [Scottie Pippen](/wiki/Scottie_Pippen) (15,123)
+- 3. [Bob Love](/wiki/Bob_Love) (12,623)
+- 4. [Luol Deng](/wiki/Luol_Deng) (10,286)
+- 5. [Jerry Sloan](/wiki/Jerry_Sloan) (10,233)
+- 6. *[Zach LaVine](/wiki/Zach_LaVine)* (10,056)
+- 7. [Chet Walker](/wiki/Chet_Walker) (9,788)
+- 8. [Artis Gilmore](/wiki/Artis_Gilmore) (9,288)
+- 9. [Kirk Hinrich](/wiki/Kirk_Hinrich) (8,536)
+- 10. [Reggie Theus](/wiki/Reggie_Theus) (8,279)
+- 11. [Derrick Rose](/wiki/Derrick_Rose) (8,001)
+- 12. [Ben Gordon](/wiki/Ben_Gordon) (7,372)
+- 13. *[Coby White](/wiki/Coby_White)* (6,945)
+- 14. [Horace Grant](/wiki/Horace_Grant) (6,866)
+- 15. *[Nikola Vučević](/wiki/Nikola_Vu%C4%8Devi%C4%87)* (6,823)
+- 16. [Norm Van Lier](/wiki/Norm_Van_Lier) (6,505)
+- 17. *[Jimmy Butler](/wiki/Jimmy_Butler)* (6,208)
+- 18. [Toni Kukoč](/wiki/Toni_Kuko%C4%8D) (6,148)
+- 19. [Orlando Woolridge](/wiki/Orlando_Woolridge) (6,146)
+- 20. *[DeMar DeRozan](/wiki/DeMar_DeRozan)* (5,831)
+- 21. [Dave Greenwood](/wiki/Dave_Greenwood) (5,824)
+- 22. [B. J. Armstrong](/wiki/B._J._Armstrong) (5,553)
+- 23. [Mickey Johnson](/wiki/Mickey_Johnson) (5,531)
+- 24. [Dave Corzine](/wiki/Dave_Corzine) (5,457)
+- 25. [Joakim Noah](/wiki/Joakim_Noah) (5,325)
+- 26. *[Taj Gibson](/wiki/Taj_Gibson)* (5,280)
+- 27. [John Paxson](/wiki/John_Paxson) (4,932)
+- 28. [Bob Boozer](/wiki/Bob_Boozer) (4,807)
+- 29. [Tom Boerwinkle](/wiki/Tom_Boerwinkle) (4,596)
+- 30. [Quintin Dailey](/wiki/Quintin_Dailey) (4,473)
+- 31. [Bob Weiss](/wiki/Bob_Weiss) (4,445)
+- 32. [Carlos Boozer](/wiki/Carlos_Boozer) (4,347)
+- 33. [Andres Nocioni](/wiki/Andres_Nocioni) (4,120)
+- 34. [Clem Haskins](/wiki/Clem_Haskins) (3,703)
+- 35. [Bill Cartwright](/wiki/Bill_Cartwright) (3,638)
+- 36. [Wilbur Holland](/wiki/Wilbur_Holland) (3,568)
+- 37. *[Ayo Dosunmu](/wiki/Ayo_Dosunmu)* (3,533)
+- 38. *[Lauri Markkanen](/wiki/Lauri_Markkanen)* (3,439)
+- 39. [Eddy Curry](/wiki/Eddy_Curry) (3,414)
+- 40. [Charles Oakley](/wiki/Charles_Oakley) (3,162)
+- 41. **[Patrick Williams](/wiki/Patrick_Williams_(basketball))** (3,141)
+- 42. [Elton Brand](/wiki/Elton_Brand) (3,117)
+- 43. [Steve Kerr](/wiki/Steve_Kerr) (3,109)
+- 44. [Ricky Sobers](/wiki/Ricky_Sobers) (3,059)
+- 45. [Scott May](/wiki/Scott_May) (3,048)
+- 46. [Nikola Mirotić](/wiki/Nikola_Miroti%C4%87) (2,774)
+- 47. [Ron Harper](/wiki/Ron_Harper) (2,760)
+- 48. [Jalen Rose](/wiki/Jalen_Rose) (2,742)
+- 49. [Jamal Crawford](/wiki/Jamal_Crawford) (2,737)
+- 50. [Jim Washington](/wiki/Jim_Washington) (2,736)
+
+Other statistics (regular season) (as of the end of the 2025–26 season)
+
+| Most minutes played | |
+| --- | --- |
+| Player | Minutes |
+| [Michael Jordan](/wiki/Michael_Jordan) | 35,887 |
+| [Scottie Pippen](/wiki/Scottie_Pippen) | 30,269 |
+| [Jerry Sloan](/wiki/Jerry_Sloan) | 24,798 |
+| [Kirk Hinrich](/wiki/Kirk_Hinrich) | 23,545 |
+| [Luol Deng](/wiki/Luol_Deng) | 22,882 |
+| [Bob Love](/wiki/Bob_Love) | 22,073 |
+| [Norm Van Lier](/wiki/Norm_Van_Lier) | 19,122 |
+| [Horace Grant](/wiki/Horace_Grant) | 18,204 |
+| [Joakim Noah](/wiki/Joakim_Noah) | 16,848 |
+| [Artis Gilmore](/wiki/Artis_Gilmore) | 16,777 |
+
+| Most rebounds | |
+| --- | --- |
+| Player | Rebounds |
+| [Michael Jordan](/wiki/Michael_Jordan) | 5,836 |
+| [Tom Boerwinkle](/wiki/Tom_Boerwinkle) | 5,745 |
+| [Scottie Pippen](/wiki/Scottie_Pippen) | 5,726 |
+| [Joakim Noah](/wiki/Joakim_Noah) | 5,387 |
+| [Jerry Sloan](/wiki/Jerry_Sloan) | 5,385 |
+| [Artis Gilmore](/wiki/Artis_Gilmore) | 5,342 |
+| [Horace Grant](/wiki/Horace_Grant) | 4,721 |
+| [Dave Greenwood](/wiki/Dave_Greenwood) | 4,222 |
+| [Luol Deng](/wiki/Luol_Deng) | 4,078 |
+| [Bob Love](/wiki/Bob_Love) | 3,998 |
+
+| Most assists | |
+| --- | --- |
+| Player | Assists |
+| [Michael Jordan](/wiki/Michael_Jordan) | 5,012 |
+| [Scottie Pippen](/wiki/Scottie_Pippen) | 4,494 |
+| [Kirk Hinrich](/wiki/Kirk_Hinrich) | 3,811 |
+| [Norm Van Lier](/wiki/Norm_Van_Lier) | 3,676 |
+| [Derrick Rose](/wiki/Derrick_Rose) | 2,516 |
+| [Reggie Theus](/wiki/Reggie_Theus) | 2,472 |
+| [John Paxson](/wiki/John_Paxson) | 2,394 |
+| [Bob Weiss](/wiki/Bob_Weiss) | 2,008 |
+| [Tom Boerwinkle](/wiki/Tom_Boerwinkle) | 2,007 |
+| [Toni Kukoč](/wiki/Toni_Kuko%C4%8D) | 1,840 |
+
+| Most steals | |
+| --- | --- |
+| Player | Steals |
+| [Michael Jordan](/wiki/Michael_Jordan) | 2,306 |
+| [Scottie Pippen](/wiki/Scottie_Pippen) | 1,792 |
+| [Kirk Hinrich](/wiki/Kirk_Hinrich) | 857 |
+| [Norm Van Lier](/wiki/Norm_Van_Lier) | 724 |
+| [Luol Deng](/wiki/Luol_Deng) | 639 |
+| [Horace Grant](/wiki/Horace_Grant) | 587 |
+| *[Jimmy Butler](/wiki/Jimmy_Butler)* | 583 |
+| [Reggie Theus](/wiki/Reggie_Theus) | 580 |
+| [Joakim Noah](/wiki/Joakim_Noah) | 481 |
+| [Toni Kukoč](/wiki/Toni_Kuko%C4%8D) | 476 |
+
+| Most blocks | |
+| --- | --- |
+| Player | Blocks |
+| [Artis Gilmore](/wiki/Artis_Gilmore) | 1,029 |
+| [Michael Jordan](/wiki/Michael_Jordan) | 828 |
+| [Joakim Noah](/wiki/Joakim_Noah) | 803 |
+| [Scottie Pippen](/wiki/Scottie_Pippen) | 774 |
+| *[Taj Gibson](/wiki/Taj_Gibson)* | 695 |
+| [Horace Grant](/wiki/Horace_Grant) | 579 |
+| [Dave Corzine](/wiki/Dave_Corzine) | 573 |
+| [Dave Greenwood](/wiki/Dave_Greenwood) | 526 |
+| [Tyson Chandler](/wiki/Tyson_Chandler) | 487 |
+| [Luol Deng](/wiki/Luol_Deng) | 360 |
+
+| Most three-pointers made | |
+| --- | --- |
+| Player | 3-pointers made |
+| *[Zach LaVine](/wiki/Zach_LaVine)* | 1,130 |
+| *[Coby White](/wiki/Coby_White)* | 1,057 |
+| [Kirk Hinrich](/wiki/Kirk_Hinrich) | 1,049 |
+| [Ben Gordon](/wiki/Ben_Gordon) | 770 |
+| [Scottie Pippen](/wiki/Scottie_Pippen) | 664 |
+| *[Nikola Vučević](/wiki/Nikola_Vu%C4%8Devi%C4%87)* | 587 |
+| [Michael Jordan](/wiki/Michael_Jordan) | 555 |
+| *[Lauri Markkanen](/wiki/Lauri_Markkanen)* | 493 |
+| **[Patrick Williams](/wiki/Patrick_Williams_(basketball))** | 434 |
+| [Nikola Mirotić](/wiki/Nikola_Miroti%C4%87) | 432 |
+
+## Head coaches
+
+Main article: [List of Chicago Bulls head coaches](/wiki/List_of_Chicago_Bulls_head_coaches)
+
+## Hall of Famers, retired, and honored numbers
+
+### Basketball Hall of Famers
+
+| Chicago Bulls Hall of Famers | | | | |
+| --- | --- | --- | --- | --- |
+| Players | | | | |
+| No. | Name | Position | Tenure | Inducted |
+| **42** | [Nate Thurmond](/wiki/Nate_Thurmond) | [C](/wiki/Center_(basketball)) | 1974–1975 | 1985 |
+| **8** | [George Gervin](/wiki/George_Gervin) | [G](/wiki/Shooting_guard)/[F](/wiki/Small_forward) | 1985–1986 | 1996 |
+| **00** | [Robert Parish](/wiki/Robert_Parish) | [C](/wiki/Center_(basketball)) | 1996–1997 | 2003 |
+| **12** **23** **45** | [Michael Jordan](/wiki/Michael_Jordan) 1 | [G](/wiki/Shooting_guard) | 1984–1993 1995–1998 | 2009 |
+| **33** | [Scottie Pippen](/wiki/Scottie_Pippen) 2 | [F](/wiki/Small_forward) | 1987–1998 2003–2004 | 2010 |
+| **53** | [Artis Gilmore](/wiki/Artis_Gilmore) | [C](/wiki/Center_(basketball)) | 1976–1982 1987 | 2011 |
+| **91** | [Dennis Rodman](/wiki/Dennis_Rodman) | [F](/wiki/Small_forward) | 1995–1998 | 2011 |
+| **25** | [Chet Walker](/wiki/Chet_Walker) | [F](/wiki/Small_forward) | 1969–1975 | 2012 |
+| **5** | [Guy Rodgers](/wiki/Guy_Rodgers) | [G](/wiki/Point_guard) | 1966–1967 | 2014 |
+| **7** | [Toni Kukoč](/wiki/Toni_Kuko%C4%8D) | [F](/wiki/Forward_(basketball)) | 1993–2000 | 2021 |
+| **3** | [Ben Wallace](/wiki/Ben_Wallace_(basketball)) | [F](/wiki/Power_forward_(basketball))/[C](/wiki/Center_(basketball)) | 2006–2008 | 2021 |
+| **16** | [Pau Gasol](/wiki/Pau_Gasol) | [F](/wiki/Power_forward_(basketball))/[C](/wiki/Center_(basketball)) | 2014–2016 | 2023 |
+| **3** | [Dwyane Wade](/wiki/Dwyane_Wade) 6 | [G](/wiki/Shooting_guard) | 2016–2017 | 2023 |
+| Coaches | | | | | |
+| Name | | Position | Tenure | Inducted |
+| [Phil Jackson](/wiki/Phil_Jackson) | | Assistant coach Head coach | 1987–1989 1989–1998 | 2007 |
+| **4** | [Jerry Sloan](/wiki/Jerry_Sloan) 3 | Assistant coach Head coach | 1977–1978 1979–1982 | 2009 |
+| [Tex Winter](/wiki/Tex_Winter) | | Assistant coach | 1985–1999 | 2011 |
+| [Billy Donovan](/wiki/Billy_Donovan) | | Head coach | 2020–present | 2025 |
+| Contributors | | | | |
+| Name | | Position | Tenure | Inducted |
+| [Jerry Colangelo](/wiki/Jerry_Colangelo) 4 | | Executive | 1966–1968 | 2004 |
+| [Jerry Reinsdorf](/wiki/Jerry_Reinsdorf) | | Owner | 1985–present | 2016 |
+| [Jerry Krause](/wiki/Jerry_Krause) | | General manager | 1985–2003 | 2017 |
+| [Rod Thorn](/wiki/Rod_Thorn) 5 | | General manager | 1978–1985 | 2018 |
+| [Larry Costello](/wiki/Larry_Costello) | | Head coach | 1978–1979 | 2022 |
+| [Del Harris](/wiki/Del_Harris) | | Assistant coach | 2008–2009 | 2022 |
+| [Doug Collins](/wiki/Doug_Collins_(basketball)) | | Head coach | 1986–1989 | 2024 |
+
+**Notes:**
+
+- 1 In total, Jordan was inducted into the Hall of Fame twice – as player and as a member of the [1992 Olympic team](/wiki/1992_United_States_men%27s_Olympic_basketball_team).
+- 2 In total, Pippen was inducted into the Hall of Fame twice – as player and as a member of the [1992 Olympic team](/wiki/1992_United_States_men%27s_Olympic_basketball_team).
+- 3 He also played for the team in 1966–1976.
+- 4 Colangelo worked as a marketing director, scout, and assistant to the president of the team.
+- 5 He also coached the team in 1981–1982.
+- 6 In total, Wade was inducted into the Hall of Fame twice – as player and as a member of the [2008 Olympic team](/wiki/2008_United_States_men%27s_Olympic_basketball_team).
+
+### FIBA Hall of Famers
+
+| Chicago Bulls Hall of Famers | | | | |
+| --- | --- | --- | --- | --- |
+| Players | | | | |
+| No. | Name | Position | Tenure | Inducted |
+| **12** **23** **45** | [Michael Jordan](/wiki/Michael_Jordan) 1 | [G](/wiki/Guard_(basketball)) | 1984–1993 1995–1998 | 2015 |
+| **33** | [Scottie Pippen](/wiki/Scottie_Pippen) | [F](/wiki/Forward_(basketball)) | 1987–1998 2003–2004 | 2017 as member of 1992 Dream Team |
+| **7** | [Toni Kukoč](/wiki/Toni_Kuko%C4%8D) | [F](/wiki/Forward_(basketball)) | 1993–2000 | 2017 |
+
+**Notes:**
+
+- 1 In total, Jordan was inducted into the FIBA Hall of Fame twice – as player and as a member of the [1992 Olympic team](/wiki/1992_United_States_men%27s_Olympic_basketball_team).
+
+### Chicagoland Sports Hall of Fame
+
+Main article: [Chicagoland Sports Hall of Fame](/wiki/Chicagoland_Sports_Hall_of_Fame)
+
+### Retired numbers and honorees
+
+|  |  |  |  |  |
+| --- | --- | --- | --- | --- |
+| **Chicago Bulls retired numbers and honorees** | | | | |
+| No. | Player | Position/charge | Tenure | Date retired |
+| **1** | [Derrick Rose](/wiki/Derrick_Rose) | [G](/wiki/Point_guard)/[SG](/wiki/Shooting_guard) | 2008–2016 | January 24, 2026 |
+| **4** | [Jerry Sloan](/wiki/Jerry_Sloan) | [G](/wiki/Guard_(basketball))/[SF](/wiki/Small_forward) | 1966–1976 | February 17, 1978 |
+| **10** | [Bob Love](/wiki/Bob_Love) | [F](/wiki/Power_forward_(basketball)) | 1968–1976 1 | January 14, 1994 |
+| **23** | [Michael Jordan](/wiki/Michael_Jordan) | [SG](/wiki/Shooting_guard) | 1984–1993 1995–19982 | November 1, 1994 |
+| **33** | [Scottie Pippen](/wiki/Scottie_Pippen) | [SF](/wiki/Small_forward) | 1987–1998 2003–2004 | December 9, 2005 |
+| — | [Phil Jackson](/wiki/Phil_Jackson) | Coach | 1987–1989 (assistant) 1989–1998 (head) | May 5, 1999 |
+| — | [Johnny Kerr](/wiki/Johnny_Kerr) | Coach Business manager Broadcaster | 1966–1968 (head coach) 1973–1975 (business manager) 1977–2009 (broadcaster) | February 10, 2009 |
+| — | [Jerry Krause](/wiki/Jerry_Krause) | General manager | 1985–2003 | October 31, 2003 |
+
+- The NBA retired [Bill Russell](/wiki/Bill_Russell)'s No. 6 for all its member teams on August 11, 2022.
+- 1 Worn by [B. J. Armstrong](/wiki/B._J._Armstrong) at the time the number was retired, and was allowed to keep it until his departure in 1995.
+- 2 Jordan also wore #12 for one game in 1990 due to a stolen jersey, and #45 for part of the 1994–95 season.
+- The Bulls announced that [Derrick Rose](/wiki/Derrick_Rose)’s #1 jersey will be retired on January 24, 2026.
+
+### Chicago Bulls Ring of Honor
+
+On January 12, 2024, the Bulls introduced the Ring of Honor, which honors former players and other personnel. On September 12, 2025, the Bulls announced 6 more members to the Ring of Honor - Johnny Bach, Cartwright, Neil Funk, Grant, Paxson and Van Lier.
+
+The inaugural class of Ring of Honor inductees included all personnel (players, coaches, executives, etc.) who have had their number retired or were honored with similar banners in the rafters, as well as a number of other contributors to the team over the years, such as original owner [Dick Klein](/wiki/Dick_Klein_(basketball)) and assistant coach [Tex Winter](/wiki/Tex_Winter). Plans were made to induct a class every two years for people with at least three seasons with the Bulls and being retired from basketball for at least three years.
+
+| Chicago Bulls Ring of Honor | | | | |
+| --- | --- | --- | --- | --- |
+| Players | | | | |
+| No. | Name | Position | Tenure | Inducted |
+| **53** | [Artis Gilmore](/wiki/Artis_Gilmore) | [C](/wiki/Center_(basketball)) | 1976–1982, 1987 | 2024 |
+| **12** **23** **45** | [Michael Jordan](/wiki/Michael_Jordan) | [SG](/wiki/Shooting_guard) | 1984–1993, 1995–1998 | 2024 |
+| **7** | [Toni Kukoč](/wiki/Toni_Kuko%C4%8D) | [SF](/wiki/Small_forward) | 1993–2000 | 2024 |
+| **10** | [Bob Love](/wiki/Bob_Love) | [SF](/wiki/Small_forward) | 1968–1976 | 2024 |
+| **33** | [Scottie Pippen](/wiki/Scottie_Pippen) | [SF](/wiki/Small_forward) | 1987–1998, 2003–2004 | 2024 |
+| **91** | [Dennis Rodman](/wiki/Dennis_Rodman) | [PF](/wiki/Power_forward) | 1995–1998 | 2024 |
+| **4** | [Jerry Sloan](/wiki/Jerry_Sloan) | [SG](/wiki/Shooting_guard) | 1966–1976 | 2024 |
+| **25** | [Chet Walker](/wiki/Chet_Walker) | [SF](/wiki/Small_forward) | 1969–1975 | 2024 |
+| **24** | [Bill Cartwright](/wiki/Bill_Cartwright) | [C](/wiki/Center_(basketball)) | 1988–1994 | 2025 |
+| **54** | [Horace Grant](/wiki/Horace_Grant) | [PF](/wiki/Power_forward) | 1987–1994 | 2025 |
+| **5** | [John Paxson](/wiki/John_Paxson) | [PG](/wiki/Point_guard) | 1985–1994 | 2025 |
+| **2** | [Norm Van Lier](/wiki/Norm_Van_Lier) | [PG](/wiki/Point_guard) | 1971–1978 | 2025 |
+| Staff | | | | |
+| Name | | Position | Tenure | Inducted |
+| [Phil Jackson](/wiki/Phil_Jackson) | | Coach | 1989–1998 | 2024 |
+| [Johnny Kerr](/wiki/Johnny_Kerr) | | Coach Broadcaster | 1966–1968 1975–2008 | 2024 |
+| [Dick Klein](/wiki/Dick_Klein_(basketball)) | | Owner | 1967–1972 | 2024 |
+| [Jerry Krause](/wiki/Jerry_Krause) | | General manager | 1985–2003 | 2024 |
+| [Tex Winter](/wiki/Tex_Winter) | | Assistant coach | 1985–1999 | 2024 |
+| [Johnny Bach](/wiki/Johnny_Bach) | | Assistant coach | 1986–1994, 2003–2006 | 2025 |
+| [Neil Funk](/wiki/Neil_Funk) | | Broadcaster | 1991–2020 | 2025 |
+| Teams | | | | |
+| Team | | | | Inducted |
+| [Members of the 1995–96 Chicago Bulls team](/wiki/1995%E2%80%9396_Chicago_Bulls_season) | | | | 2024 |
+
+## Media
+
+Main article: [List of Chicago Bulls broadcasters](/wiki/List_of_Chicago_Bulls_broadcasters)
+
+### Radio
+
+The team's games are broadcast on [Entercom](/wiki/Entercom)'s [WSCR](/wiki/WSCR) (670) as of February 3, 2018. From October 2015-January 2018, games were carried on [Cumulus Media](/wiki/Cumulus_Media)'s [WLS](/wiki/WLS_(AM)) (890) in a deal that was expected to last until the 2020–21 season, but was nullified in the middle of the 2017–18 season after Cumulus filed for [Chapter 11 bankruptcy](/wiki/Chapter_11_bankruptcy) and nullified several large play-by-play and talent contracts.
+
+[Chuck Swirsky](/wiki/Chuck_Swirsky) does play-by-play, with [Bill Wennington](/wiki/Bill_Wennington) providing [color commentary](/wiki/Color_commentary). [Univision Radio](/wiki/Univision_Radio)'s [WRTO](/wiki/WRTO_(AM)) (1200) has carried [Spanish language](/wiki/Spanish_language) game coverage since 2009–10, with Omar Ramos as play-by-play announcer and Matt Moreno as color analyst.
+
+### Television
+
+The Bulls' television broadcasts are televised by [Chicago Sports Network](/wiki/Chicago_Sports_Network), which broadcasts all of the games that are not televised nationally as of the 2024–2025 season. For many years, broadcasts were split between [NBC Sports Chicago](/wiki/NBC_Sports_Chicago) (and prior to that, [FSN Chicago](/wiki/FSN_Chicago)), [WGN-TV](/wiki/WGN-TV), and [WCIU-TV](/wiki/WCIU-TV). The announcers are [Adam Amin](/wiki/Adam_Amin) and [Stacey King](/wiki/Stacey_King). [Jason Benetti](/wiki/Jason_Benetti) fills in for Amin whenever the latter is assigned to work for [Fox Sports](/wiki/Fox_Sports_(United_States)).
+
+On January 2, 2019, the Bulls (along with the [Chicago White Sox](/wiki/Chicago_White_Sox) and [Chicago Blackhawks](/wiki/Chicago_Blackhawks)) agreed to an exclusive multi-year deal with NBC Sports Chicago, ending the team's broadcasts on WGN-TV following the 2018–19 season. The Bulls left NBC Sports Chicago at the end of the 2023–2024 season, moving to the new Chicago Sports Network in 2024.
+
+In 2020, the Chicago Bulls received significant media coverage following the release of [The Last Dance](/wiki/The_Last_Dance_(miniseries)), a critically acclaimed ESPN and Netflix documentary miniseries that chronicled Michael Jordan's career with the Bulls, with a particular focus on the team's 1997–98 championship season. The series reignited widespread interest in the Bulls' dominant run during the 1990s, leading to increased discussions across sports media and a surge in viewership for Bulls-related broadcasts.
+
+Some games are televised nationally on [ABC](/wiki/NBA_on_ABC), [NBC](/wiki/NBA_on_NBC), and [ESPN](/wiki/NBA_on_ESPN), or streaming on [Amazon Prime Video](/wiki/NBA_on_Prime_Video) and [Peacock](/wiki/Peacock_(streaming_service)). All non nationally televised games are on [NBA League Pass](/wiki/NBA_League_Pass)
+
+## Notes
+
+## References
+
+## External links
+
+- [Official website](http://www.nba.com/bulls/)

@@ -1,0 +1,48 @@
+# Ron Hutchinson (ice hockey)
+
+## Infobox
+
+- **Born:** ( 1936-10-24 ) October 24, 1936 Flin Flon, Manitoba, Canada
+- **Died:** July 10, 2021 (2021-07-10) (aged 84) Kelowna, British Columbia, Canada
+- **Height:** 5 ft 10 in (178 cm)
+- **Weight:** 165 lb (75 kg; 11 st 11 lb)
+- **Position:** Centre
+- **Shot:** Left
+- **Played for:** New York Rangers
+- **Playing career:** 1957–1970
+
+**Ronald Wayne Hutchinson** (October 24, 1936 – July 10, 2021) was a Canadian professional [ice hockey](/wiki/Ice_hockey) player who played nine games in the [National Hockey League](/wiki/National_Hockey_League) with the [New York Rangers](/wiki/New_York_Rangers) during the [1960–61 season](/wiki/1960%E2%80%9361_NHL_season). The rest of his career, which lasted from 1957 to 1970, was spent in the minor leagues.
+
+## Career statistics
+
+### Regular season and playoffs
+
+|  | | |  | [Regular season](/wiki/Regular_season) | | | | |  | [Playoffs](/wiki/Playoffs) | | | | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [Season](/wiki/Season_(sports)) | Team | League | GP | [G](/wiki/Goal_(ice_hockey)) | [A](/wiki/Assist_(ice_hockey)) | [Pts](/wiki/Point_(ice_hockey)) | [PIM](/wiki/Penalty_(ice_hockey)) | GP | G | A | Pts | PIM |
+| 1954–55 | [Flin Flon Bombers](/wiki/Flin_Flon_Bombers) | [SJHL](/wiki/Saskatchewan_Junior_Hockey_League) | 16 | 1 | 6 | 7 | 0 | — | — | — | — | — |
+| 1955–56 | Flin Flon Bombers | SJHL | 47 | 32 | 29 | 61 | 4 | 12 | 2 | 1 | 3 | 6 |
+| [1955–56](/wiki/1956_Memorial_Cup) | Flin Flon Bombers | [M-Cup](/wiki/Memorial_Cup) | — | — | — | — | — | 7 | 2 | 0 | 2 | 6 |
+| 1956–57 | Flin Flon Bombers | SJHL | 55 | 28 | 54 | 82 | 10 | 10 | 7 | 12 | 19 | 2 |
+| [1956–57](/wiki/1957_Memorial_Cup) | Flin Flon Bombers | M-Cup | — | — | — | — | — | 17 | 4 | 13 | 17 | 11 |
+| [1957–58](/wiki/1957%E2%80%9358_WHL_season) | [Vancouver Canucks](/wiki/Vancouver_Canucks_(WHL)) | [WHL](/wiki/Western_Hockey_League_(1952%E2%80%931974)) | 66 | 22 | 21 | 43 | 23 | 11 | 2 | 7 | 9 | 11 |
+| [1958–59](/wiki/1958%E2%80%9359_WHL_season) | Vancouver Canucks | WHL | 70 | 15 | 33 | 48 | 21 | 9 | 2 | 4 | 6 | 9 |
+| [1959–60](/wiki/1959%E2%80%9360_WHL_season) | Vancouver Canucks | WHL | 70 | 12 | 26 | 38 | 25 | 11 | 0 | 3 | 3 | 0 |
+| [1960–61](/wiki/1960%E2%80%9361_NHL_season) | [New York Rangers](/wiki/New_York_Rangers) | [NHL](/wiki/National_Hockey_League) | 9 | 0 | 0 | 0 | 0 | — | — | — | — | — |
+| [1960–61](/wiki/1960%E2%80%9361_WHL_season) | Vancouver Canucks | WHL | 53 | 11 | 5 | 16 | 10 | 9 | 0 | 1 | 1 | 0 |
+| [1961–62](/wiki/1961%E2%80%9362_WHL_season) | Vancouver Canucks | WHL | 26 | 4 | 5 | 9 | 0 | — | — | — | — | — |
+| 1961–62 | [Seattle Totems](/wiki/Seattle_Totems) | WHL | 44 | 14 | 11 | 25 | 14 | 2 | 0 | 0 | 0 | ) |
+| [1962–63](/wiki/1962%E2%80%9363_WHL_season) | Vancouver Canucks | WHL | 68 | 12 | 23 | 35 | 36 | 7 | 0 | 3 | 3 | 2 |
+| [1963–64](/wiki/1963%E2%80%9364_WHL_season) | Vancouver Canucks | WHL | 70 | 10 | 19 | 29 | 8 | — | — | — | — | — |
+| [1964–65](/wiki/1964%E2%80%9365_WHL_season) | [Seattle Totems](/wiki/Seattle_Totems) | WHL | 2 | 0 | 0 | 0 | 0 | — | — | — | — | — |
+| 1964–65 | [Charlotte Checkers](/wiki/Charlotte_Checkers_(1956%E2%80%931977)) | [EHL](/wiki/Eastern_Hockey_League) | 59 | 20 | 30 | 50 | 33 | 3 | 1 | 1 | 2 | 0 |
+| [1965–66](/wiki/1965%E2%80%9366_WHL_season) | Vancouver Canucks | WHL | 41 | 10 | 7 | 17 | 8 | — | — | — | — | — |
+| [1966–67](/wiki/1966%E2%80%9367_WHL_season) | Vancouver Canucks | WHL | 13 | 0 | 1 | 1 | 4 | — | — | — | — | — |
+| [1968–69](/wiki/1968%E2%80%9369_WIHL_season) | [Cranbrook Royals](/wiki/Cranbrook_Royals) | [WIHL](/wiki/Western_International_Hockey_League) | 46 | 10 | 33 | 43 | 32 | — | — | — | — | — |
+| [1969–70](/wiki/1969%E2%80%9370_WIHL_season) | Cranbrook Royals | WIHL | 35 | 13 | 21 | 34 | 6 | 5 | 0 | 1 | 1 | 2 |
+| WHL totals | | | 523 | 110 | 151 | 261 | 149 | 49 | 4 | 18 | 22 | 22 |
+| NHL totals | | | 9 | 0 | 0 | 0 | 0 | — | — | — | — | — |
+
+## External links
+
+- Biographical information and career statistics from [NHL.com](https://www.nhl.com/player/8447011), or [Eliteprospects.com](https://www.eliteprospects.com/player.php?player=165394&lang=en), or [Hockey-Reference.com](https://www.hockey-reference.com/players/h/hutchro01.html), or [The Internet Hockey Database](http://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=10694)

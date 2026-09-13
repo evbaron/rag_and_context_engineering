@@ -1,0 +1,432 @@
+# Catwoman
+
+## Infobox
+
+- **Publisher:** DC Comics
+- **First appearance:** Batman #1 ( cover-dated spring 1940; published April 25, 1940) [ 1 ]
+- **Created by:** Bill Finger Bob Kane
+- **Alter ego:** Selina Kyle
+- **Team affiliations:** Justice League Batman Family Outsiders Gotham City Sirens Birds of Prey Injustice League Suicide Squad [ 2 ]
+- **Partnerships:** Batman Holly Robinson Harley Quinn Poison Ivy Madame Zodiac Slam Bradley
+- **Notable aliases:** The Cat Selina Calabrese [ 3 ] Irena Dubrovna [ 4 ]
+- **Abilities:** Expert burglar Martial arts and hand-to-hand combat expertise Highly skilled gymnast and acrobat Proficient with whip and retractable claws
+
+For other uses, see [Catwoman (disambiguation)](/wiki/Catwoman_(disambiguation)).
+
+"Selina Kyle" redirects here. For other uses, see [Selina Kyle (disambiguation)](/wiki/Selina_Kyle_(disambiguation)).
+
+Not to be confused with [Catgirl](/wiki/Catgirl) or [Cat lady](/wiki/Cat_lady).
+
+**Catwoman** is a character appearing in [American comic books](/wiki/American_comic_books) published by [DC Comics](/wiki/DC_Comics). Created by [Bill Finger](/wiki/Bill_Finger) and [Bob Kane](/wiki/Bob_Kane), she debuted as "**the Cat**" in *[Batman](/wiki/Batman_(comic_book))* #1 (spring 1940). She has become one of the superhero [Batman](/wiki/Batman)'s most prominent enemies, belonging to the collective of adversaries that make up his [rogues gallery](/wiki/List_of_Batman_Family_adversaries#Classic_rogues_gallery), as well as Batman's best known and most enduring love interest, with many stories depicting their complex [love–hate relationship](/wiki/Love%E2%80%93hate_relationship). Since 1993, Catwoman has had her own [ongoing series](/wiki/Ongoing_series), *[Catwoman](/wiki/Catwoman_(comic_book))*.
+
+Catwoman is the [alter ego](/wiki/Alter_ego) of **Selina Kyle**, a burglar in [Gotham City](/wiki/Gotham_City) who usually wears a skintight [bodysuit](/wiki/Bodysuit) and uses a [bullwhip](/wiki/Bullwhip) for a weapon. She was originally characterized as a [supervillain](/wiki/Supervillain) and adversary of Batman, but has been featured in an eponymous series since the 1990s that portrays her as an [antiheroine](/wiki/Antiheroine), often with a utilitarian moral philosophy. The character thrived in her earliest appearances, but she took an extended hiatus from September 1954 to November 1966 due to the developing [Comics Code Authority](/wiki/Comics_Code_Authority) in 1954. These issues involved the rules regarding the development and portrayal of female characters that were in violation of the Comics Code, a code which is no longer in use. In the comics, [Holly Robinson](/wiki/Holly_Robinson_(character)) and [Eiko Hasigawa](/wiki/Eiko_Hasigawa) have both adopted the Catwoman identity, apart from Selina Kyle.
+
+Catwoman has been adapted in various media incarnations, having been portrayed in film by [Lee Meriwether](/wiki/Lee_Meriwether) in [*Batman*](/wiki/Batman_(1966_film)) (1966), [Michelle Pfeiffer](/wiki/Michelle_Pfeiffer) in *[Batman Returns](/wiki/Batman_Returns)* (1992), [Halle Berry](/wiki/Halle_Berry) in *[Catwoman](/wiki/Catwoman_(film))* (2004), [Anne Hathaway](/wiki/Anne_Hathaway) in *[The Dark Knight Rises](/wiki/The_Dark_Knight_Rises)* (2012), and [Zoë Kravitz](/wiki/Zo%C3%AB_Kravitz) in *[The Batman](/wiki/The_Batman_(film))* (2022). On television, she has been played by [Julie Newmar](/wiki/Julie_Newmar) and [Eartha Kitt](/wiki/Eartha_Kitt) in [*Batman*](/wiki/Batman_(TV_series)), where the name Selina Kyle was never used; and [Camren Bicondova](/wiki/Camren_Bicondova) and [Lili Simmons](/wiki/Lili_Simmons) in *[Gotham](/wiki/Gotham_(TV_series))*.
+
+Catwoman was ranked 11th on IGN's list of the "Top 100 Comic Book Villains of All Time", and 51st on *Wizard* magazine's "100 Greatest Villains of All Time" list. Conversely, she was ranked 20th on IGN's "Top 100 Comic Book Heroes of All Time" list.
+
+## Development
+
+### Creation
+
+Batman co-creator Bob Kane was a great movie fan and his love for film provided the impetus for several Batman characters, among them, Catwoman. Kane's inspiration for Catwoman was drawn from multiple sources to include actresses [Jean Harlow](/wiki/Jean_Harlow), [Hedy Lamarr](/wiki/Hedy_Lamarr), and his cousin, Ruth Steele. Kane and Finger wanted to give their comic book [sex appeal](/wiki/Sex_appeal), as well as a character who could appeal to female readers; they thus created a "friendly foe who committed crimes but was also a romantic interest in Batman's rather sterile life." Catwoman was meant to be a love interest and to engage Batman in a chess game, with him trying to reform her. At the same time, this character was meant to be different from other Batman villains like the [Joker](/wiki/Joker_(character)) in that she was never a killer or evil.
+
+Selina Kyle's first appearance as the Cat in *Batman* #1 (spring 1940)
+
+As for using cat imagery with the character, Kane stated that he and Finger saw cats as "kind of the antithesis of bats".
+
+> I felt that women were feline creatures and men were more like dogs. While dogs are faithful and friendly, cats are cool, detached, and unreliable. I felt much warmer with dogs around me—cats are as hard to understand as women are. Men feel more sure of themselves with a male friend than a woman. You always need to keep women at arm's length. We don't want anyone taking over our souls, and women have a habit of doing that. So there's a love-resentment thing with women. I guess women will feel that I'm being chauvinistic to speak this way, but I do feel that I've had better relationships with male friends than women. With women, once the romance is over, somehow they never remain my friends.
+
+— [Bob Kane](/wiki/Bob_Kane)
+
+## Fictional character biography
+
+### Golden Age
+
+Catwoman, then called "the Cat", first appeared in *Batman* #1 (spring 1940) as a mysterious burglar and jewel thief, revealed at the end of the story to be a young, attractive (unnamed) woman, having disguised herself as an old woman during the story and been hired to commit a burglary. Although she does not wear her [iconic](/wiki/Icon) cat-suit, the story establishes her core personality as a femme fatale who both antagonizes and attracts Batman. It is implied Batman may have deliberately let her get away by blocking [Robin](/wiki/Robin_(character)) as he tried to leap after her. She next appears in *Batman* #2 in a story also involving the [Joker](/wiki/Joker_(character)) but escapes Batman in the end. In *Batman* #3 she wears a fur mask and again succeeds in escaping Batman.
+
+*Batman* #62 (December 1950) reveals that Catwoman was an [amnesiac](/wiki/Amnesiac) [flight attendant](/wiki/Flight_attendant) who turned to crime after suffering a prior blow to the head during a plane crash she survived. She reveals this in the [Batcave](/wiki/Batcave) after being hit on the head by a piece of rubble while saving Batman while he was chasing her. However, in *[The Brave and the Bold](/wiki/The_Brave_and_the_Bold)* #197 (April 1983), she later admits that she made up the amnesia story because she wanted a way out of her past life of crime. She reforms for several years, helping out Batman in *Batman* #65 (June 1951) and 69 (February 1952), until she decides to return to a life of crime in *[Detective Comics](/wiki/Detective_Comics)* #203 (January 1954), after a newspaper publishes stories of Batman's past adventures and some crooks mock her about it. However, Catwoman prevents her thugs from murdering Batman once he is later found knocked out, but quickly claims she wants him as a hostage. Catwoman appears again as a criminal in *Batman* #84 (June 1954) and *Detective Comics* #211 (September 1954), which were her two final appearances until 1966. This was mostly due to her possible violation of the developing [Comics Code Authority](/wiki/Comics_Code_Authority)'s rules for portrayal of female characters that started in 1954.
+
+### Silver Age
+
+Catwoman made her first [Silver Age](/wiki/Silver_Age_of_Comic_Books) appearance in *[Superman's Girl Friend, Lois Lane](/wiki/Superman%27s_Girl_Friend,_Lois_Lane)* #70-71 (November–December 1966); afterward, she continued to make appearances across the various *Batman* comics.
+
+Several stories in the 1970s featured Catwoman committing murder, something that neither the Earth-One nor Earth-Two versions of her would ever do. This version of Catwoman was later assigned to the alternate world of [Earth-B](/wiki/List_of_DC_Multiverse_worlds), an alternate [Earth](/wiki/Earth) that included stories that could not be considered [canonical](/wiki/Canon_(fiction)) on Earth-One or Earth-Two.
+
+### Modern Age
+
+#### Tangled origins
+
+Catwoman's origin—and, to an extent, her character—was revised in 1987 when writer [Frank Miller](/wiki/Frank_Miller) and artist [David Mazzucchelli](/wiki/David_Mazzucchelli) published *[Batman: Year One](/wiki/Batman:_Year_One)*, a revision of Batman's origin. She worked as a [dominatrix](/wiki/Dominatrix) for a [pimp](/wiki/Pimp) named Stan in order to survive, and also sheltered a [child prostitute](/wiki/Child_prostitute) named [Holly Robinson](/wiki/Holly_Robinson_(character)) who was working for him. Selina got into a fight with a disguised Bruce after he grabbed Holly, who had stabbed him during a fight with Stan, but was knocked out.
+
+As the story progresses, Selina decides to leave prostitution and takes Holly with her. She gets into burglary to make money and starts robbing the rich and powerful men of Gotham, donning a catsuit costume while committing her heists. While trying to rob [Carmine Falcone](/wiki/Carmine_Falcone), she gets rescued by Batman but is irked of being thought of as his sidekick by the media.
+
+The 1989 *Catwoman* limited series, written by [Mindy Newell](/wiki/Mindy_Newell) and with art by J.J. Birch, expanded upon Miller's *Year One* origin. This storyline, known as "Her Sister's Keeper", explores Selina's early life as a dominatrix and the start of her career as Catwoman. The story culminates with Selina's former pimp, Stan, abducting and beating her sister Maggie, who, in contrast to Selina, is a nun. Selina kills Stan to save her sister, and gets away with it. Most of this is revealed in the former series, but is expanded upon in "Her Sister's Keeper".
+
+*Catwoman* (vol. 2) #69 provides details about Selina's childhood and neglects Maggie's existence. Maria Kyle is a distant parent who preferred to spend her time with cats, and commits suicide when Selina is very young. Her alcoholic father, Brian, is cold to Selina for resembling her mother, whom he resents for dying, and eventually drinks himself to death. To survive, Selina takes to the streets for a time before getting caught and sent first to an orphanage, then juvenile detention center, "where Selina began to see how hard the world could really be". Maggie's fate at this point in the timeline is not alluded to. However, when [Ed Brubaker](/wiki/Ed_Brubaker) reintroduces her into the comic, he implies that Maggie may have directly entered an orphanage and promptly been adopted.
+
+When she is 13 years old, Selina discovers that the detention center's administrator has been embezzling funds, and she confronts her. In an attempt to cover up her crime, the administrator puts Selina in a bag and drops her in a river to drown (like a cat). She escapes and returns to the orphanage, where she steals documents exposing the administrator's corruption. She uses these to blackmail the administrator into erasing "Selina Kyle" from the city's records, then steals the administrator's diamond necklace and escapes from the orphanage. Selina eventually finds herself in "Alleytown – a network of cobblestone streets that form a small borough between the East End and Old [Gotham](/wiki/Gotham_City)." Selina is taken in by Mama Fortuna, the elderly leader of a gang of young thieves, and is taught how to steal. Fortuna treats her students like slaves, keeping their earnings for herself. Selina eventually runs away, accompanied by her friend Sylvia. However, the two have difficulty surviving on their own, and in desperation try to support themselves by working as prostitutes. The two drift apart afterward, with Sylvia coming to resent Selina for not inquiring about what had happened to her at the hands of her abusive first client.
+
+In the *Catwoman: Year One* story, Selina, who is now an adult, achieves some success as a thief. Following a disastrous burglary, however, she accepts an offer to "lie low" as a dominatrix employed by a pimp named Stan. They plan to trick men into divulging information that might be used in future crimes. According to this storyline, Selina trains under the Armless Master of Gotham City, receiving education in martial arts and culture. During this time, a client gives her a cat o' nine tails, which Selina keeps as a trophy.
+
+*[Batman: Dark Victory](/wiki/Batman:_Dark_Victory)*, the sequel to *[Batman: The Long Halloween](/wiki/Batman:_The_Long_Halloween)*, implies that Catwoman suspects she is the illegitimate daughter of Mafia boss [Carmine Falcone](/wiki/Carmine_Falcone), although she finds no definitive proof. Selina's connection to the Falcone crime family is further explored in the miniseries *[Catwoman: When in Rome](/wiki/Catwoman:_When_in_Rome)*. Though the story adds more circumstantial evidence to the theory of Selina's Falcone heritage, establishing that the Falcones' second-born daughter was put up for adoption in America, it also supplies no definitive proof. During *Batman: The Long Halloween*, Selina (out of costume) develops a relationship with Bruce Wayne, even leading her to save Bruce from [Poison Ivy](/wiki/Poison_Ivy_(character)). However, this relationship appears to end on the Fourth of July when Bruce rejects her advances twice; once as Bruce and once as Batman. She leaves him for good and also leaves Gotham for a while in *[Batman: Dark Victory](/wiki/Batman:_Dark_Victory)*, after he stands her up on two holidays. When the two meet at an opera many years later, during the events of *[Batman: Hush](/wiki/Batman:_Hush)*, Bruce comments that the two no longer have a relationship as Bruce and Selina.
+
+Catwoman also appears in the *[Batman: Knightfall](/wiki/Batman:_Knightfall)* saga, where she is approached by [Bane](/wiki/Bane_(DC_Comics))'s henchmen while robbing a house. Bane asks her to work for him, but she refuses, as she is repulsed by the criminal who "broke" Batman. Later in the story, she boards a plane with [Bruce Wayne](/wiki/Bruce_Wayne) to fly to [Santa Prisca](/wiki/Santa_Prisca_(DC_Comics)). She next appears in the *[Batman: Knightquest](/wiki/Batman:_Knightfall#"Knightquest")* saga, where [Azrael](/wiki/Jean-Paul_Valley) is masquerading as Batman. She is one of the few to recognize that this Batman is an impostor, later being present when the true Batman returns to the fold as he struggles against his successor, his willingness to save even criminals confirming his true identity for Selina.
+
+#### *Catwoman* solo series
+
+Catwoman, painted by [Joe DeVito](/wiki/Joe_DeVito) over pencil art by the titular character's series artist [Jim Balent](/wiki/Jim_Balent). Balent penciled *Catwoman* for several years and defined the visuals of the character for a long period.
+
+In 1993, Catwoman was given her first ongoing comic book series. This series, written by an assortment of writers, but primarily penciled by [Jim Balent](/wiki/Jim_Balent), generally depicted the character as an international thief (and occasional bounty hunter) with an ambiguous moral code.
+
+Story-lines include her adoption of teenage runaway and former sidekick, Arizona; aiding Bane, whom she later betrays to Azrael; and a stint as a reluctant government operative. The series also delves into her origin, revealing her beginnings as a young thief, her difficult period in juvenile incarceration, and her training with [Ted Grant](/wiki/Wildcat_(Ted_Grant)).
+
+Moving to [New York City](/wiki/New_York_City), Selina becomes corporate vice president of Randolf Industries, a Mafia-influenced company and then becomes its [CEO](/wiki/CEO) through blackmail. She plans to use this position to run for [Mayor of New York City](/wiki/Mayor_of_New_York_City), but her hopes are dashed when the [Trickster](/wiki/Trickster_(DC_Comics)) inadvertently connects her to her criminal alter ego.
+
+After her time in New York City, Selina returns to Gotham City, which at this time is in the midst of the "[No Man's Land](/wiki/No_Man%27s_Land_(comics))" storyline. As Catwoman, she assists Batman against [Lex Luthor](/wiki/Lex_Luthor) in the reconstruction of the city. After being arrested by [Commissioner Gordon](/wiki/Commissioner_Gordon), she escapes from prison. Later that year, during the "Officer Down" storyline in the *Batman* titles, Catwoman is initially the chief suspect. Although later cleared, she displays increasingly erratic behavior throughout the story, with her series later revealing that she has developed a form of personality disorder after exposure to the Scarecrow's fear gas, causing her to act as herself and an identity that appears to be her sister Maggie pretending to be her. Soon afterward, she disappears and is believed to have been killed by the assassin [Deathstroke the Terminator](/wiki/Deathstroke), ending her series at issue #94.
+
+Catwoman then appears in a series of back-up stories in *Detective Comics* #759–762 (August–November 2001). In the back-up storyline "Trail of the Catwoman", by writer Ed Brubaker and artist Darwyn Cooke, private detective [Slam Bradley](/wiki/Slam_Bradley) attempts to find out what really happened to Selina Kyle. This storyline leads into the newest *Catwoman* series in late 2001 (written by Brubaker initially with Cooke, later joined by artist [Cameron Stewart](/wiki/Cameron_Stewart)). In this series, Selina Kyle, joined by new supporting cast members Holly and Bradley, becomes protector of the residents of Gotham's East End, while still carrying out an ambitious career as a cat burglar.
+
+During the *Batman: Hush* storyline, Batman and Catwoman briefly work together and have a romantic relationship, during which he reveals his true identity to her. At the end, he breaks off their relationship when he suspects it has been manipulated by the [Riddler](/wiki/Riddler) and [Hush](/wiki/Hush_(character)). This is the second story to establish that she knows Batman's true identity. In an early 1980s storyline, Selina and Bruce develop a relationship. The concluding story features a closing panel in which she refers to Batman as "Bruce". A change in the editorial team at that point, however, brought a swift end to that storyline and, apparently, all that transpired during the story arc.
+
+In the *[Justice League](/wiki/Justice_League)* story arc "Crisis of Conscience", Catwoman fights alongside Batman and the Justice League against the old [Secret Society of Super Villains](/wiki/Secret_Society_of_Super_Villains), of which she had once briefly been a member.
+
+#### Mindwiping revelations
+
+Catwoman appears to be completely reformed, and her love for Batman is true (although brash and unpredictable). However, she has learned her reformation was the result of a mindwipe by [Zatanna](/wiki/Zatanna), a procedure known to deeply affect and, in at least one case, physically incapacitate its victims. Zatanna gives no reason for her actions, but in a flashback, it is shown that she had acted with the consent and aid of five of the seven JLA members who had helped her mindwipe [Dr. Light](/wiki/Doctor_Light_(Arthur_Light)) and Batman. Catwoman's response to this revelation is unequivocal: she gags Zatanna with duct tape, rendering her powerless, and pushes her out a window. Afterward, she is seen covering her bed with past versions of her Catwoman costume.
+
+Still unbalanced and uncertain of herself in issue #52, Selina is forced to decide whether to kill a supervillain. [Black Mask](/wiki/Black_Mask_(character)), in an attempt to "improve himself", threatens the most important people in Selina's life, from Slam Bradley to Holly. The villain had also previously tortured Selina's sister Maggie by drilling out her husband's eyeballs and feeding them to Maggie, which drove her insane. Black Mask learns Selina's identity through his earlier alliance with Selina's childhood friend Sylvia, who still harbors a grudge against Selina. Still thinking that Selina adheres to a strict no-kill rule, Black Mask is caught by surprise when Selina shoots him in the head. This action continues to haunt her throughout the "[One Year Later](/wiki/One_Year_Later_(comics))" storyline, and it is suggested that this might have been the first time she had ever directly taken a life.
+
+#### As a mother
+
+Following the events of *[Infinite Crisis](/wiki/Infinite_Crisis)*, the [DC Universe](/wiki/DC_Universe) jumps forward in time. After "One Year later", Selina Kyle is no longer Catwoman, she has left the East End, and has given birth to a daughter named Helena. The father of her new daughter is initially unrevealed; however, Batman demonstrates great concern for the child and at one point asks to have Helena stay at his mansion. Selina attempts to live a safe and somewhat normal life, and gives up her more dangerous ways of living as Catwoman. Holly Robinson takes over as the new Catwoman while Selina, living under the alias Irena Dubrovna, turns her attention to caring for her daughter (Selina's alias was inspired by the name of the [main character](/wiki/Irena_Dubrovna) in the 1942 film *[Cat People](/wiki/Cat_People_(1942_film))*).
+
+Though she takes her role as a new mother quite seriously, Selina dons the costume for a run through the East End some days after Helena's birth. Having gained a few pounds, Selina finds that her costume is now tighter. In addition, she is easily distracted by a common criminal. Although the situation is defused through Holly's opportune arrival, the sight of two Catwomen active simultaneously in the city is caught on video. Selina returns home from her adventure to find that the mysterious movie aficionado the [Film Freak](/wiki/Film_Freak) has deduced her alias, teamed up with the [Angle Man](/wiki/Angle_Man), and grabbed Helena. After rescuing her daughter, Selina convinces [Zatanna](/wiki/Zatanna) to mindwipe the Film Freak and the Angle Man in order to preserve her secret identity. Following the procedure, the Angle Man turns himself in to the authorities; the Film Freak, however, embarks upon a murderous rampage.
+
+A twist occurs when Wildcat informs Selina that Holly has been arrested for the murder of Black Mask. Selina infiltrates the police station and frees Holly. Finally defeating the Film Freak, Selina returns home to find that Bradley has deduced that Helena is the daughter of his son Sam Bradley, Jr., and therefore his granddaughter (although it is still strongly hinted that Bruce Wayne may be the father).
+
+Batman asks Catwoman to infiltrate the violent tribe of the [Bana Amazons](/wiki/Bana-Mighdall) during the *[Amazons Attack!](/wiki/Amazons_Attack!)* crossover. Posing as a criminal, Selina gains the Bana's trust and thwarts a terror attack aimed at causing mass casualties in Gotham City.
+
+Selina questions whether she should be raising a daughter when her life as Catwoman has already proven to be such a danger to the child. After enlisting Batman's help in faking the death of both herself and her daughter, Selina puts Helena up for adoption. A month after Helena is placed with a new family, Catwoman asks Zatanna to erase her memories of Helena and change her mind back to a criminal mentality. Zatanna refuses, judging that such an act would be cruel to both mother and daughter. She tells Selina that she could never reverse Selina's mindset, since she was on the path to becoming a hero on her own. Believing she can no longer function as a criminal, Selina decided to become one of Batman's [Outsiders](/wiki/Outsiders_(comics)). She quickly quits, however, and is replaced by [Batgirl](/wiki/Cassandra_Cain).
+
+#### *Salvation Run*
+
+In *[Salvation Run](/wiki/Salvation_Run)* #2, Catwoman is sent to the Prison Planet. She allies with [Lex Luthor](/wiki/Lex_Luthor) in an attempt to return to Earth, and mistakenly ends up on an [alternate universe](/wiki/Parallel_universe_(fiction))-Earth where Catwoman is a notorious villain. It is later revealed that this Earth is a creation of her own mind, and she has not left the planet. When accused of being a traitor by Luthor, she reveals the [Martian Manhunter](/wiki/Martian_Manhunter) is posing as the [Blockbuster](/wiki/Blockbuster_(DC_Comics)), which would soon lead to the hero's death.
+
+Using the trust she regained in Luthor's eyes, she earns a passage to the 'real' Earth, in a jerry-rigged teleport machine built by Luthor to let the villains escape. On Earth, she resumes being a hero, with occasional lapses into thievery by commission, simply for the thrill of it.
+
+#### *Heart of Hush*
+
+*Catwoman* (vol. 3) #48, with art by Adam Hughes. Catwoman's costume and style transitioned to a spy aesthetic in the 2000s.
+
+Later, in *Detective Comics*, Selina is quite uncertain about pursuing a romantic relationship with Batman. She talks with Bruce about [Jezebel Jet](/wiki/List_of_Batman_supporting_characters#Bruce_Wayne's_love_interests), his current girlfriend, and then has a quick pep talk with Zatanna, whom she believes is also courting Bruce. Zatanna confirms and admits her feelings, adding that she has since chosen to forget them, but extremely encourages Selina to open her heart to Bruce Wayne before Jet is able to "seal the deal". [Hush](/wiki/Hush_(character)) eavesdrops on the conversation, targeting both women as a way to hurt his enemy, Bruce Wayne.
+
+In *Detective Comics* #848 (November 2008), Hush attacks Selina as she is in her apartment, kidnapping her and surgically removing her heart. She is delivered anonymously to a Gotham hospital. Batman receives word of her situation, and while he goes in search of Hush, he leaves Selina in the care of [Doctor Mid-Nite](/wiki/Doctor_Mid-Nite_(Pieter_Cross)), who is considered the superhero community's chief doctor.
+
+Batman recovers Selina's heart and Mid-Nite returns it to her body; however, the doctor also makes a prognosis on whether she can still return to her former life swinging through rooftops. While Selina is still in a coma, she encounters Zatanna, who apologizes for not warning her about Hush. She tells Selina that she was so happy about her relationship with Bruce that she ignored the other warnings in the cards. Zatanna gives her a little bottle supposedly containing [aloe vera](/wiki/Aloe_vera) for her post-op scars. It is hinted that there is a little magic in there to help Selina with her recovery. Selina is sad that she might end up alone again. In the meantime, Bruce enters the recovery room and, believing her unconscious, launches into a soliloquy. He ends by telling Selina that he will always love her, when she opens her eyes and reveals to him that she was awake all the time and heard his confession.
+
+#### *Batman R.I.P.*
+
+During the events of *[Batman R.I.P.](/wiki/Batman_R.I.P.)*, Selina and Bruce's romance lasts only for a night because Bruce must continue to pose as Jezebel's lover to bring down the Black Glove. While still recuperating, she pulls off one more heist and exacts her revenge on Hush. With the help of a few allies on both sides; the [Oracle](/wiki/Barbara_Gordon), Holly Robinson, [Poison Ivy](/wiki/Poison_Ivy_(character)), [Harley Quinn](/wiki/Harley_Quinn), and Slam Bradley, Selina taps into Hush's assets, leaving him penniless and suffering from wounds inflicted by Batman.
+
+#### *Battle for the Cowl*
+
+In *[Batman: Battle for the Cowl](/wiki/Batman:_Battle_for_the_Cowl)*, Selina is seen as one of the members of [Nightwing](/wiki/Nightwing) and [Robin](/wiki/Robin_(character))'s contingency team known as "the Network", where she is seen taking down a gang of thugs before seeing [Tim Drake](/wiki/Tim_Drake) dressed in a Batman uniform and is initially taken by surprise.
+
+#### *Batman: Reborn* and *Gotham City Sirens*
+
+In the first issue of *[Gotham City Sirens](/wiki/Gotham_City_Sirens)*, Selina runs into the Bonebuster, a new villain trying to make a name for himself, and is saved by Poison Ivy. Selina, fearing the many dangers of a post-Batman Gotham, proposes that she, Ivy, and Harley Quinn team up, living together at a single base in an abandoned animal shelter. Ivy agrees under one condition: using home-grown drugs to weaken Selina's resistance, Ivy demands the identity of the true Batman. Selina flashes back three years to when [Talia al Ghul](/wiki/Talia_al_Ghul) requested her presence in [Tibet](/wiki/Tibet). There, Talia made it so that Selina would not relinquish the true identity of Batman under any circumstances. After the interrogation is over, Selina sees Harley with Bruce Wayne on TV. Selina tells Ivy that she knows it is Hush in disguise.
+
+#### *Blackest Night*
+
+During the events of *[Blackest Night](/wiki/Blackest_Night)*, Selina is attacked by Black Mask after he has been reborn as a member of the [Black Lantern Corps](/wiki/Black_Lantern_Corps). After he tells her that he plans on getting an emotional response before killing her, Selina steals a car and heads to the mental institution where Maggie is held, believing Black Mask is coming for her. Black Mask attacks the institution, and somehow awakens Maggie from her coma. Selina arrives in time to help her sister flee into the sewers. While on the run, Maggie angrily tells Selina that she ruined both of their lives the day she decided to become Catwoman. Devastated by her sister's statement, Selina fails to realize they have both been heading into a trap. Just as Black Mask is about to gouge Maggie's eyes out and shove them down Selina's throat, Harley and Ivy arrive and defeat the Black Lantern by trapping him in the stomach of a man-eating plant. Selina is helped to her feet by her friends, who tell her that Maggie has fled the scene. The next day, the staff members of the mental institution are shown discussing Maggie's escape, also mentioning that a nun that works at the hospital had been found beaten and stripped of her uniform. Maggie is then shown in the depths of the Gotham City sewers clad in the bloodied nun robes, muttering about her plan to kill Catwoman in order to free Selina's soul. Now calling herself Sister Zero, Maggie attempts to kill Selina, but ultimately flees after being defeated by the Sirens. She is last seen going over her options, now realizing that she cannot murder her own sister, and therefore must personally exorcise the "cat demon" from within Selina's body.
+
+#### *The Return of Bruce Wayne*
+
+In the build-up to *[The Return of Bruce Wayne](/wiki/Batman:_The_Return_of_Bruce_Wayne)*, the Sirens help Zatanna put out a massive fire at a local park near their home, only for them to be ambushed by a creature made of mud. After being dragged underneath the soil by the creature, Catwoman awakens bound and gagged on the floor of a dark room, and is quickly forced into an illusion by her unseen captors. Back in reality, Talia reveals to the Sirens that just a few hours prior, an unknown benefactor had offered up a massive reward to whoever could kidnap and deliver Catwoman to him, with the hopes that he could penetrate her mind and learn Batman's secret identity. Before the knowledge can be ripped from her mind, Selina's captors (revealed to be [Shrike](/wiki/Shrike_(DC_Comics)) and a new villain named Sempai), are eventually defeated by the other Sirens.
+
+Selina with her then-sidekick, Catgirl (2010), art by Tony Daniel
+
+Once Selina is freed, Talia orders Zatanna to wipe Bruce's identity from her memory, reasoning that her kidnapping has proved that the knowledge is too dangerous for her to handle. The two women initially restrain Selina and attempt to remove the knowledge from her, but Zatanna refuses at the last moment and ends up fighting Talia in order to protect Selina. Talia tries to kill Selina before vanishing, but she survives and ultimately reunites with Bruce, who had recently returned to the present.
+
+After stealing the contents of a safe belonging to the Falcone crime family, Selina returns home to find [Kitrina](/wiki/Kitrina_Falcone), a teenaged escape artist and Carmine Falcone's long-lost daughter, breaking into her room. She attacks and subdues Kitrina, who tells Selina that she had unknowingly stolen a map that details the location of the new Black Mask's underground bunker. Realizing that she could use the map to capture Black Mask and claim the 50 million dollar bounty on his head, Selina leaves Kitrina bound in a locked room so that she can keep the map for herself. She later calls Batman to her house in order to turn the would-be thief over to the police, but discovers that Kitrina had managed to free herself and steal back the map. This impresses Selina, who mentions that she had tied up the child using an "inescapable" knot that Bruce had shown her years earlier.
+
+Following a battle with Black Mask and his henchmen, which ends with neither woman being able to claim the bounty, Selina agrees to take on Kitrina as her new sidekick, [Catgirl](/wiki/Kitrina_Falcone). Once Bruce Wayne returns from his time in the past, he establishes [Batman Incorporated](/wiki/Batman_Incorporated), a global team of Batmen. Selina accompanies Batman on a mission to break into [Doctor Sivana](/wiki/Doctor_Sivana)'s armory, and later travels with him to Tokyo in order to recruit a Japanese representative for Batman Inc. Catwoman teams up with Batman to stop Harley Quinn from breaking the Joker out of Arkham Asylum. After defeating Harley and the Joker, Catwoman tells Poison Ivy that they are no longer friends, this after Ivy drugged her in an attempt to uncover Batman's secret identity.
+
+Shortly afterwards, Poison Ivy and Harley Quinn have escaped and set off to pursue revenge on Catwoman for leaving them behind. The two of them found Catwoman and fought her. While they were fighting, Catwoman says that she saw good in them and only wanted to help them. Batman was about to arrest them, but Catwoman helped the two of them escape.
+
+### *The New 52* / *Catwoman* (vol. 4)
+
+In 2011, DC Comics relaunched its main line of superhero titles under the umbrella *[The New 52](/wiki/The_New_52)*, which revised and updated the fictional history of its superhero characters. Catwoman's new monthly title now focused on Selina's earlier days as Catwoman, though not the identity's origins. The series begins with Selina frantically escaping from unknown masked men who are invading her apartment. After flitting from rooftop to rooftop, Selina looks back just in time to see her apartment blown apart by explosives. She turns to her informant, Lola, who often supplies Catwoman with information and various jobs. In this instance, Lola tips Selina off to an unoccupied penthouse where Selina can lie low for a few weeks, as well as a job stealing a painting from Russian mobsters. For this job, Selina infiltrates a Russian club by posing as the bartender. There, she recognizes a man who murdered a friend of hers, and she takes her revenge. Once her cover is blown, Selina dons her Catwoman outfit and fights her way out of the club. It is revealed through Selina's inner monologue that she and Batman are lovers, and the premiere issue ends with the first sex scene between the two. Her revised origin in *Catwoman* (vol. 4) #0 draws from *[Batman Returns](/wiki/Batman_Returns)*.
+
+Catwoman is later confronted by [Steve Trevor](/wiki/Steve_Trevor), who offers her a spot on [Amanda Waller](/wiki/Amanda_Waller)'s new [Justice League of America](/wiki/Justice_League_of_America). Selina initially refuses, but accepts the offer after Trevor promises to help her track down a woman who has apparently been posing as Selina. It is later revealed that Catwoman was chosen specifically to take down Batman should the JLA ever need to defeat the original Justice League. The teams eventually come into conflict in the publisher's "[Trinity War](/wiki/Trinity_War)" crossover.
+
+In the [Earth-Two](/wiki/Earth-Two) continuity, Selina Kyle and Bruce Wayne are married, and their daughter, Helena Wayne, is that universe's [Robin](/wiki/Robin_(character)). In this universe, either Selina has reformed or was never a supervillain in the first place. It is revealed in issue #0 of *[Worlds' Finest](/wiki/Worlds%27_Finest)* that this Selina was killed while trying to stop what she believed was a human trade ring.
+
+#### *Keeper of the Castle* and *Inheritance*
+
+From 2014 to 2015, science fiction writer [Genevieve Valentine](/wiki/Genevieve_Valentine) took over the series and penned a 10-issue story arc focused on Selina Kyle's reign as a [Gotham City](/wiki/Gotham_City) crime boss. Following events from *[Batman Eternal](/wiki/Batman_Eternal)* and preceding those in *Batman* #28, Selina takes over control of the Calabrese crime family, after being revealed as the daughter of [Rex Calabrese](/wiki/Rex_Calabrese). During this time she stops wearing the Catwoman costume, prompting Eiko Hasigawa, heir to the rival Hasigawa family, to replace her in the role.
+
+The women confront each other several times, discussing Eiko's motivations to dress as Catwoman and whether Selina's plans for Gotham and the families are worth the sacrifices required. During one of their encounters, Selina and Eiko kiss, establishing their relationship as a romantic one.
+
+### *DC Universe*
+
+In June 2016, the *[DC Rebirth](/wiki/DC_Rebirth)* event again relaunched DC Comics' entire line of superhero comic book titles with partial revisions of their characters' fictional histories. Catwoman assumes a prominent role in the third volume of *Batman*. In December 2017, DC Comics ended the *DC Rebirth* branding, opting to include everything under a larger *DC Universe* banner and naming, and Catwoman continues to be featured in the third volume of *Batman*. The series reveals Selina Kyle's origin through a series of flashbacks and letters exchanged between her and Bruce. Selina's parents died when she was young, and she hardly remembers them. She is sent to the Thomas and Martha Wayne Home For the Boys and Girls of Gotham, and even after being placed in various foster homes, Selina would escape to return to the orphanage.
+
+Eventually, Selina takes on the Catwoman persona. During one of her heists, she is approached by the Kite Man to aide the Joker in a gang war against the Riddler, which she refuses. She later aides Batman, with whom she already has a romantic relationship, to spy on the Joker. She is shot from a window, but is unharmed. At some point in the future, her childhood orphanage is bombed by a terrorist group called the Dogs of War. Batman reluctantly arrests Catwoman after all 237 of them are killed, despite Catwoman's insistence on her guilt.
+
+Catwoman's first appearance following the start of DC Rebirth is in *Batman* (vol. 3) #9, where she is revealed to be imprisoned in Arkham Asylum for the alleged murders of the Dogs of War. Batman is determined to prove her innocence, and makes a deal with Amanda Waller to get her off death row in exchange for her help on a mission to Santa Prisca. The mission to find the [Psycho-Pirate](/wiki/Psycho-Pirate) is a success, and Batman and Catwoman return to Gotham City. Before Batman can return her to custody, she escapes. Batman investigates the murders of the terrorists that she has been charged with, and deduces that it was in fact Holly Robinson who committed the murders after the terrorists burned down the orphanage she and Selina were raised in. After being attacked by Holly Robinson, Batman is rescued by Catwoman.
+
+Bruce proposes to Selina at the end of *Batman* (vol. 3) #24. In issue #32, Selina asks Bruce to propose to her again, to which she says, "Yes". The two leave Gotham for Khadym to where Holly Robinson has fled to in order to clear Selina's name, ultimately facing [Talia al Ghul](/wiki/Talia_al_Ghul).
+
+*Batman Annual* (vol. 3) #2 (January 2018) centers on a romantic storyline between Batman and Catwoman, beginning with their initial meetings and acceptance of their shared mutual attraction towards one and another. Towards the end, the story is flash-forwarded to the future, in which Bruce Wayne and Selina Kyle are a married couple in their golden years. Bruce receives a terminal medical diagnosis, and Selina cares for him until his death.
+
+On the day of their wedding, Selina decides to call off the wedding as she realises that marrying Bruce would ultimately take away what makes him Batman. This is later revealed to be due to the manipulations of Holly under the instructions of Bane as to finally break Batman of both spirit and will. Subsequently, Selina leaves Gotham and starts a new life in the city of Villa Hermosa, California (*Catwoman* (vol. 5) #1). She faces opposition from the power-hungry Creel family who run Villa Hermosa, specifically First Lady Raina Creel.
+
+She reappears in the "City of Bane" storyline, reuniting with Bruce following his defeat against both Bane and his father Thomas Wayne from the *Flashpoint* reality. They proceed to go to Paris for Bruce to recover, before going to disrupt a shipment of Venom under the jurisdiction of Bane's lieutenant, the Magpie. During this, they reconcile and finally determine when they actually first met (Batman believed it to be on a boat when they first met under their alter-egos; whilst Catwoman believed it to be in the streets as their true identities, reminiscent of their meeting in *Batman: Year One*). They subsequently go back to Gotham and defeat all of Batman's enemies who had sided with Bane before taking on and defeating Bane himself, at which point the two are taken by Thomas who, in an attempt to finally break Bruce's spirit, shows him the corpse of the recently murdered Alfred. However, both Bruce and Selina then defeat Thomas utilizing both Scarface and the Psycho-Pirate.
+
+## Equipment
+
+### Weapons
+
+During the Silver Age, Catwoman, like most *Batman* villains, used a variety of themed weapons, vehicles, and equipment, such as a custom cat-themed car called the "Cat-illac". This usage also appeared in the 1960s *Batman* television series. In her Post-*Crisis* appearances, Catwoman's favored weapon is a whip. She wields both a standard bullwhip and a cat o' nine tails with expert proficiency. She uses the whip because it is a weapon that the user must be trained to use, and therefore it can not be taken from her and used against her in a confrontation. She can also be seen using a pistol against people if her whip is taken from her. Catwoman uses [caltrops](/wiki/Caltrop) as an anti-personnel weapon and [bolas](/wiki/Bolas) to entangle opponents at a distance.
+
+Catwoman has also been shown to have various items to restrain her victims, such as rope for binding hands and feet, and a roll of [duct tape](/wiki/Duct_tape) used to gag her targets, as she has done with various victims during her robberies over the years. Often, especially in the TV series, she uses sleeping gas or knockout darts to subdue victims. Catwoman's attractiveness and feminine wiles have also allowed her to take advantage of male opponents.
+
+A showcase of Catwoman's various costume designs throughout the years. Variant cover art of *[Catwoman](/wiki/Catwoman_(comic_book))* Vol 5 #68 (November 2024), art by [Nicola Scott](/wiki/Nicola_Scott)
+
+### Costume
+
+Catwoman, in her first appearance, wore no costume or disguise at all. It was not until her next appearance that she donned a mask, which was a theatrically face-covering cat-mask that had the appearance of a real cat, rather than a more stylized face mask seen in her later incarnations. Later, she wore a dress with a hood that came with ears, and still later, a [catsuit](/wiki/Catsuit) with attached boots and either a [domino](/wiki/Domino_mask) or glasses-mask.
+
+In the 1960s, Catwoman's catsuit was green, which was typical of villains of that era. In the 1990s, she usually wore a mostly purple, skintight catsuit before switching to a black catsuit similar to [Michelle Pfeiffer](/wiki/Michelle_Pfeiffer)'s costume in *Batman Returns*, except not haphazardly stitched together.
+
+In recent years, artists have typically depicted Catwoman in some variation of a tight, black bodysuit. Ed Brubaker, the writer behind the 2001 revamp of the character, has stated that Selina's current costume was inspired by [Emma Peel](/wiki/Emma_Peel)'s iconic leather catsuit in *[The Avengers](/wiki/The_Avengers_(TV_series))* television series. It has a more high tech look, with domino-shaped [infrared goggles](/wiki/Thermography) on her cowl. Many of her costumes have incorporated retractable metal claws on the fingertips of her gloves and sometimes on the toes of her boots. On rare occasions, she has also sported a cat's tail.
+
+On May 21, 2018, DC Comics unveiled Selina's revamped Catwoman costume designed by comic book writer and artist [Joëlle Jones](/wiki/Jo%C3%ABlle_Jones). The new costume is black with openings under her arms and shoulders for mobility along with reinforcement in the middle. Gone are the goggles in favor of a cowl and sleeker, more stylish gloves and boots. Jones, who had been drawing the covers and interior art for *[DC Rebirth](/wiki/DC_Rebirth)*'s *Batman* was announced as the writer and artist of a new solo *Catwoman* series (volume 5).
+
+Holly Robinson uses the same costume Selina used prior to *Infinite Crisis*.
+
+## Other versions
+
+### Earth-Two
+
+The Catwoman of [Earth-Two](/wiki/Earth-Two), retroactively declared as the home of DC's [Golden Age](/wiki/Golden_Age_of_Comic_Books) characters, has the same history as her Golden Age counterpart. Selina later reformed in the 1950s (after the events of *Batman* #69) and had married Bruce Wayne; soon afterward, she gave birth to Helena Wayne ([Huntress](/wiki/Huntress_(Helena_Wayne))). *The Brave and the Bold* #197 (April 1983) elaborates upon the Golden Age origin of Catwoman given in *Batman* #62, after Selina reveals that she never suffered from amnesia. It is revealed that Selina Kyle had been in a bad marriage, and eventually decided to leave her husband. However, her husband kept her jewelry in his private vault, forcing her to break into it to retrieve it. Selina enjoyed this experience so much she decided to become a professional burglar, and thus began a career that repeatedly led to her encountering Batman.
+
+Selina Kyle is blackmailed by her former underling "Silky" Cernak into going into action again as Catwoman. She is shot by one of Cernak's henchmen, causing her to fall from the fourth floor. Selina dies from her injuries, leading to Helena Wayne becoming Huntress and bringing Cernak to justice.
+
+### *The Dark Knight Returns*
+
+A future version of Selina Kyle appears in *[Batman: The Dark Knight Returns](/wiki/Batman:_The_Dark_Knight_Returns)*.
+
+### Prose books
+
+Two 1990s prose books feature Catwoman: *The Further Adventures of Batman: Volume 3 featuring Catwoman*, a short story anthology with stories written by various authors, and *Catwoman: Tiger Hunt*, a novel. Both books feature a *Batman: Year One*-influenced Catwoman who wears a gray cat costume and was once a prostitute.
+
+### *Kingdom Come*
+
+A future version of Catwoman makes minor appearances in *[Kingdom Come](/wiki/Kingdom_Come_(comics))*.
+
+### *Batman: Digital Justice*
+
+An original incarnation of Catwoman appears in *[Batman: Digital Justice](/wiki/Batman:_Digital_Justice)*. This version is Sheila Romero, the daughter of the mayor of Gotham City and a [pop music](/wiki/Pop_music) star. Romero is jealous of the new Batman, James Gordon, because media coverage of his activities have been cutting into her airtime. Setting out to learn as much about Batman and his enemies as she can, Romero becomes the new Catwoman.
+
+### *Elseworlds*
+
+- An alternate universe version of Selina Kyle, with elements of Batman, appears in the *[Elseworlds](/wiki/Elseworlds)* story *Catwoman: Guardian of Gotham*. This version is the daughter of millionaires Thomas and Martha Kyle, who were shot and killed by a robber. Years later, Kyle becomes Catwoman, the defender of Gotham City, whose archenemy is the criminal Batman.
+- In *[Batman: Nine Lives](/wiki/Batman:_Nine_Lives)*, Selina Kyle is [African-American](/wiki/African-American) and the owner of the Kit Kat Club until she is murdered.
+- An unnamed alternate universe version of Catwoman appears in *Batman/Tarzan: Claws of the Cat-woman*. This version is the princess of an African tribe and the priestess of a cult dedicated to cats.
+- In *[JLA: The Nail](/wiki/JLA:_The_Nail)*, Catwoman is diagnosed by the head warden of Arkham Asylum as not being a true "criminal", but simply enjoying playing a "cat-and-mouse" game with Batman, donning her costume simply to attract his attention. After [Batgirl](/wiki/Barbara_Gordon) and [Robin](/wiki/Dick_Grayson) are killed, Selina becomes Batwoman and joins Batman in rescuing the JLA from captivity.
+- In *[Batman: In Darkest Knight](/wiki/Batman:_In_Darkest_Knight)*, Selina Kyle is corrupted by [Sinestro](/wiki/Sinestro) and becomes a [Star Sapphire](/wiki/Star_Sapphire_(comics)).
+
+### *Batman: Bloodstorm*
+
+In *[Batman: Bloodstorm](/wiki/Batman_%26_Dracula_trilogy#Batman:_Bloodstorm_(1994))*, the first of two sequels to *[Batman & Dracula: Red Rain](/wiki/Batman_%26_Dracula_trilogy#Batman_&_Dracula:_Red_Rain_(1991))*, where Batman was forced to become a [vampire](/wiki/Vampire) to save Gotham from an attack by [Dracula](/wiki/Dracula_(DC_Comics)), Selina is turned into a [werecat](/wiki/Werecat) after being bitten by one of the remaining vampires. Hunting for the monster that transformed her, Selina encounters Batman as he hunts for the remaining vampires, the two subsequently joining forces to eliminate the vampire horde. Catwoman sacrifices herself to save Batman from the Joker, who had become the leader of the remaining vampires after Dracula's death.
+
+### *Thrillkiller*
+
+In [Howard Chaykin](/wiki/Howard_Chaykin)'s *Thrillkiller*, Selina Kyle is a stripper and informant for Bruce Wayne.
+
+### *Dark Allegiances*
+
+In Howard Chaykin's *Dark Allegiances*, Selina Kyle becomes a film star under the stage name of Kitty Grimalkin. Prior to becoming a star, she was an alcoholic whose actions during one of her "blackouts" were recorded into an underground porn film. The stills from the film are used to blackmail her into stealing information from [Wayne Enterprises](/wiki/Wayne_Enterprises).
+
+### *Batman: Shadow of the Bat*
+
+An original incarnation of Catwoman, [Vikki Vale](/wiki/Vicki_Vale), appears in *[Batman: Shadow of the Bat](/wiki/Batman:_Shadow_of_the_Bat) Annual* #2.
+
+### *Batman: Two Faces*
+
+In [Dan Abnett](/wiki/Dan_Abnett) and [Andy Lanning](/wiki/Andy_Lanning)'s *[Batman: Two Faces](/wiki/Batman:_Two_Faces)*, Selina Kyle is a madame in 19th century Gotham, who defends streetwalkers in a mask, [bustier](/wiki/Bustier), and [fishnets](/wiki/Fishnet_(material)) and occasionally works with amateur detective Bruce Wayne.
+
+### *Batman: Leatherwing*
+
+An original incarnation of Catwoman appears in "[Batman: Leatherwing](/wiki/Batman:_Leatherwing)". This version is Capitana Felina, an 18th-century Spanish Contessa turned pirate.
+
+### *Batman Beyond*
+
+An original incarnation of Catwoman appears in *[Batman Beyond](/wiki/Batman_Beyond_(comic_book))* (vol. 3). This version is the daughter of the villain [Multiplex](/wiki/Multiplex_(comics)) and inherited his ability to self-duplicate, but can only create nine clones at a time.
+
+### *Flashpoint*
+
+In the alternate timeline of the *[Flashpoint](/wiki/Flashpoint_(comics))* event, Selina Kyle becomes the [Oracle](/wiki/Barbara_Gordon), having been paralyzed under unspecified circumstances.
+
+### *Batman: Earth One*
+
+In the second volume of the *[Batman: Earth One](/wiki/Batman:_Earth_One)* graphic novel series, Selena Kyle appears and helps Batman tending his wounds after chasing the Riddler, pretending to be a single mother who lives in the apartment building where he was injured. Batman later discovers that she is neither the apartment's tenant or a mother, but a burglar who was robbing the building at the time.
+
+### Earth 2
+
+In 2011, *[The New 52](/wiki/The_New_52)* revised and relaunched DC Comics superhero titles, including revisions to the alternate-universe stories and characters of "Earth-Two"—renamed "Earth-2". The Earth 2 version of Catwoman is married to Batman and is the mother of Helena Wayne. Catwoman trained her daughter in crimefighting so that she can one day aid her father, who is busy protecting the world from bigger threats. Batman found out about the outing and got angry, only for Catwoman to calm him down and kiss him. Helena later came to her father's aid and found that soldiers from another world killed Catwoman as Batman mourns her death.
+
+### *Batman '89*
+
+In 2021, DC announced that it would be releasing a comic book continuation of [Tim Burton](/wiki/Tim_Burton)'s first two *[Batman](/wiki/Batman_(1989_film_series))* films, *[Batman](/wiki/Batman_(1989_film))* (1989) and *Batman Returns* (1992), *[Batman '89](/wiki/Batman_%2789_(comic_book))*, written by [Sam Hamm](/wiki/Sam_Hamm), and illustrated by Joe Quinones. The book picks up following the events of *Batman Returns* (1992) and includes the return of Michelle Pfeiffer's Selina Kyle / Catwoman.
+
+### *Absolute Batman*
+
+Selina Kyle / Catwoman appears in series set in the [Absolute Universe](/wiki/Absolute_Universe). First appearing in *[Absolute Batman](/wiki/Absolute_Batman)*, this version is a childhood friend, later girlfriend, of Bruce Wayne who eventually left Gotham to travel the world. By the present, she has adopted a dome-shaped helmet and a submachine gun. In 2025, DC announced that Selina would receive her own limited spin-off series, *Absolute Catwoman*, in 2026.
+
+## In other media
+
+Main article: [Catwoman in other media](/wiki/Catwoman_in_other_media)
+
+Catwoman made her live-action debut in the 1966 *[Batman](/wiki/Batman_(TV_series))* television series, portrayed by [Julie Newmar](/wiki/Julie_Newmar); she was also portrayed by [Lee Meriwether](/wiki/Lee_Meriwether) in the [film adaptation](/wiki/Batman_(1966_film)) and [Eartha Kitt](/wiki/Eartha_Kitt) in the third season. The [character](/wiki/Selina_Kyle_(Batman_Returns)) later appeared in [Tim Burton](/wiki/Tim_Burton)'s *[Batman Returns](/wiki/Batman_Returns)*, portrayed by [Michelle Pfeiffer](/wiki/Michelle_Pfeiffer). A solo *[Catwoman](/wiki/Catwoman_(film))* film was released in 2004 in which she was portrayed by [Halle Berry](/wiki/Halle_Berry). [Anne Hathaway](/wiki/Anne_Hathaway) portrayed the character in [Christopher Nolan](/wiki/Christopher_Nolan)'s *[The Dark Knight Rises](/wiki/The_Dark_Knight_Rises)*. She was voiced by [Zoë Kravitz](/wiki/Zo%C3%AB_Kravitz) in the 2017 animated film *[The Lego Batman Movie](/wiki/The_Lego_Batman_Movie)*, and in 2022, she portrayed the character in [Matt Reeves](/wiki/Matt_Reeves)' live-action film *[The Batman](/wiki/The_Batman_(film))*. Catwoman has also appeared in the television series *[Gotham](/wiki/Gotham_(TV_series))* (2014–2019), in which she was portrayed by [Camren Bicondova](/wiki/Camren_Bicondova) and [Lili Simmons](/wiki/Lili_Simmons) (adult).
+
+## Reception
+
+Catwoman was ranked 11th on [IGN](/wiki/IGN)'s "Top 100 Comic Book Villains of All Time" list, and 51st on *[Wizard](/wiki/Wizard_(magazine))* magazine's "100 Greatest Villains of All Time" list. Conversely, she was ranked 20th on IGN's "Top 100 Comic Book Heroes of All Time" list, as well as 23rd in *[Comics Buyer's Guide](/wiki/Comics_Buyer%27s_Guide)'s* "100 Sexiest Women in Comics" list.
+
+## Bibliography
+
+### List of *Catwoman* titles
+
+- *Catwoman* (miniseries) #1–4 (1989)
+- *Catwoman: Defiant* (1992)
+- Materiał From *Showcase '93* #1–4 (1993)
+- Materiał From *Showcase '95* #4 (1995)
+- *Catwoman* (vol. 2) #1–94 (1993–2001)
+  - *Catwoman* (vol. 2) #0 (1994)
+  - *Catwoman* #1,000,000 (1998)
+  - *Catwoman Annual* #1–4 (1994–1997)
+- *Catwoman/[Vampirella](/wiki/Vampirella): The Furies* (1997)
+- *Catwoman Plus/Scream Queen* #1 (1997) (with Scream Queen)
+- *Catwoman/[Wildcat](/wiki/Wildcat_(DC_Comics))* #1–4 (1998)
+- *Catwoman: Guardian of Gotham* #1–2 (1999)
+- *Catwoman* (vol. 3) #1–83 (2002–2008, 2010)
+  - *Catwoman: Secret Files and Origins* #1 (2003)
+- *[Catwoman: When in Rome](/wiki/Catwoman:_When_in_Rome)* #1–6 (2004)
+- *Batman/Catwoman: Trail of the Gun* #1–2 (2004)
+- *[Gotham City Sirens](/wiki/Gotham_City_Sirens)* #1–26 (2009–2011) (Catwoman co-stars in the title alongside Poison Ivy and Harley Quinn)
+- *Catwoman* (vol. 4) #1–52 (2011–2016)
+  - *Catwoman* (vol. 4) #0
+  - *Catwoman: Futures End* #1
+  - *Catwoman Annual* (vol. 2) #1–2 (2013 and 2014)
+- *Catwoman* (vol. 5) #1–ongoing (2018–present)
+  - *Catwoman Annual* (vol. 3) #1 (2019)
+- *Catwoman: Lonely City* #1–4 (2021–2022)
+
+### Novels
+
+- *Catwoman: Tiger Hunt*, [Warner Books](/wiki/Warner_Books), September 1992, [ISBN](/wiki/ISBN_(identifier)) [978-0-446-36043-2](/wiki/Special:BookSources/978-0-446-36043-2)
+
+### Graphic novels
+
+- *Catwoman: Selina's Big Score*, DC Comics, [ISBN](/wiki/ISBN_(identifier)) [978-1-56389-922-5](/wiki/Special:BookSources/978-1-56389-922-5) (SC, August 2003), [ISBN](/wiki/ISBN_(identifier)) [978-1-56389-897-6](/wiki/Special:BookSources/978-1-56389-897-6) (HC, July 2002)
+
+### Collected editions
+
+| Title | Material collected | Publication date | ISBN |
+| --- | --- | --- | --- |
+| *Catwoman* | | | |
+| ***Catwoman: Her Sister's Keeper*** | *Catwoman* #1–4 | May 1991 | [978-0-930289-97-3](/wiki/Special:BookSources/978-0-930289-97-3) |
+| *Catwoman* (vol. 2) | | | | |
+| ***Catwoman by Jim Balent Book One*** | *Catwoman* (vol. 2) #1–13 | September 2017 | [978-1401273637](/wiki/Special:BookSources/978-1401273637) |
+| ***Catwoman by Jim Balent Book Two*** | *Catwoman* (vol. 2) #14–24, #0; *Catwoman Annual* #2; material from *Showcase '95* #4 | March 2019 | [978-1401288204](/wiki/Special:BookSources/978-1401288204) |
+| ***Catwoman: The Catfile*** | *Catwoman* (vol. 2) #15–19 | April 1996 | [978-1-56389-262-2](/wiki/Special:BookSources/978-1-56389-262-2) |
+| ***Catwoman: When in Rome*** | *Catwoman: When in Rome* #1–6 | June 2007 December 2005 | SC: [978-1-4012-0717-5](/wiki/Special:BookSources/978-1-4012-0717-5) HC: [978-1-4012-0432-7](/wiki/Special:BookSources/978-1-4012-0432-7) |
+| ***Catwoman: Nine Lives of a Feline Fatale*** | *Catwoman* (vol. 2) #54; *Catwoman: Secret Files and Origins* #1; *[Batman](/wiki/Batman_(comic_book))* #1, 197, 210, 392;  *[Batman: Gotham Adventures](/wiki/Batman:_Gotham_Adventures)* #4; *[Detective Comics](/wiki/Detective_Comics)* #203; *Superman's Girl Friend, Lois Lane* #70–71 | July 2004 | [978-1-4012-0213-2](/wiki/Special:BookSources/978-1-4012-0213-2) |
+| ***Catwoman: The Movie and Other Cat Tales*** | *Catwoman: The Movie Adaptation*; *Catwoman* #0; *Catwoman* (vol. 2) #11, 25 | August 2004 | [978-1-84023-991-1](/wiki/Special:BookSources/978-1-84023-991-1) |
+| *Catwoman* (vol. 3) old editions | | | |
+| ***Catwoman Vol. 1: Dark End of the Street*** | *Catwoman* (vol. 3) #1–4; back-up stories from *Detective Comics* #759–762 | September 2002 | [978-1-56389-908-9](/wiki/Special:BookSources/978-1-56389-908-9) |
+| ***Catwoman Vol. 2: Crooked Little Town*** | *Catwoman* (vol. 3) #5–10; *Catwoman: Secret Files and Origins* #1 | December 2003 | [978-1-4012-0008-4](/wiki/Special:BookSources/978-1-4012-0008-4) |
+| ***Catwoman Vol. 3: Relentless*** | *Catwoman* (vol. 3) #12–19; *Catwoman: Secret Files and Origins* #1 | February 2005 | [978-1-4012-0218-7](/wiki/Special:BookSources/978-1-4012-0218-7) |
+| ***Catwoman Vol. 4: Wild Ride*** | *Catwoman* (vol. 3) #20–24; *Catwoman: Secret Files and Origins* #1 | September 2005 | [978-1-4012-0436-5](/wiki/Special:BookSources/978-1-4012-0436-5) |
+| ***Catwoman Vol. 5: The Replacements*** | *Catwoman* (vol. 3) #53–58 | February 2007 | [978-1-4012-1213-1](/wiki/Special:BookSources/978-1-4012-1213-1) |
+| ***Catwoman Vol. 6: It's Only a Movie*** | *Catwoman* (vol. 3) #59–65 | August 2007 | [978-1-4012-1337-4](/wiki/Special:BookSources/978-1-4012-1337-4) |
+| ***Catwoman Vol. 7: Catwoman Dies*** | *Catwoman* (vol. 3) #66–72 | February 2008 | [978-1-4012-1643-6](/wiki/Special:BookSources/978-1-4012-1643-6) |
+| ***Catwoman Vol. 8: Crime Pays*** | *Catwoman* (vol. 3) #73–77 | October 2008 | [978-1-4012-1929-1](/wiki/Special:BookSources/978-1-4012-1929-1) |
+| ***Catwoman Vol. 9: The Long Road Home*** | *Catwoman* (vol. 3) #78–82 | March 2009 | [978-1-4012-2168-3](/wiki/Special:BookSources/978-1-4012-2168-3) |
+| *Catwoman* (vol. 3) new editions | | | |
+| ***Catwoman Vol. 1: Trail of the Catwoman*** | *Catwoman: Selina's Big Score*, back-up stories from *Detective Comics* #759–762, and *Catwoman* (vol. 3) #1–9 | January 2012 | [978-1-4012-3384-6](/wiki/Special:BookSources/978-1-4012-3384-6) |
+| ***Catwoman Vol. 2: No Easy Way Down*** | *Catwoman* (vol. 3) #10–24, *Catwoman: Secret Files and Origins* #1 | June 2013 | [978-1-4012-4037-0](/wiki/Special:BookSources/978-1-4012-4037-0) |
+| ***Catwoman Vol. 3: Under Pressure*** | *Catwoman* (vol. 3) #25–37 | March 2014 | [978-1-4012-4592-4](/wiki/Special:BookSources/978-1-4012-4592-4) |
+| ***Catwoman Vol. 4: The One You Love*** | *Catwoman* (vol. 3) #38–49 | December 2015 | [978-1-4012-5832-0](/wiki/Special:BookSources/978-1-4012-5832-0) |
+| ***Catwoman Vol. 5: Backward Masking*** | *Catwoman* (vol. 3) #50–65 | May 2016 | [978-1401260736](/wiki/Special:BookSources/978-1401260736) |
+| ***Catwoman Vol. 6: Final Jeopardy*** | *Catwoman* (vol. 3) #66–82 | January 2017 | [978-1401265588](/wiki/Special:BookSources/978-1401265588) |
+| ***Catwoman of East End Omnibus*** | *Catwoman* (vol. 3) #1-37, *Detective Comics* #759-762; *Catwoman Secret Files* #1; *Catwoman: Selina's Big Score* #1 | June 2022 | [978-1779515032](/wiki/Special:BookSources/978-1779515032) |
+| *Gotham City Sirens* old editions | | | |
+| ***Gotham City Sirens Vol. 1: Union*** | *Gotham City Sirens* #1–7 | April 2010 | [978-1-4012-2570-4](/wiki/Special:BookSources/978-1-4012-2570-4) |
+| ***Gotham City Sirens Vol. 2: Songs of the Sirens*** | *Gotham City Sirens* #8–13, *Catwoman* (vol. 3) #83 | November 2010 | [978-1-4012-2907-8](/wiki/Special:BookSources/978-1-4012-2907-8) |
+| ***Gotham City Sirens Vol. 3: Strange Fruit*** | *Gotham City Sirens* #14–19 | August 2011 | [978-1-4012-3137-8](/wiki/Special:BookSources/978-1-4012-3137-8) |
+| ***Gotham City Sirens Vol. 4: Division*** | *Gotham City Sirens* #20–26 | March 2012 | [978-1-4012-3393-8](/wiki/Special:BookSources/978-1-4012-3393-8) |
+| *Gotham City Sirens* new editions | | | |
+| ***Gotham City Sirens Book 1*** | *Gotham City Sirens* #1–13 | October 2014 | [978-1401251758](/wiki/Special:BookSources/978-1401251758) |
+| ***Gotham City Sirens Book 2*** | *Gotham City Sirens* #14–26 | May 2015 | [978-1401254124](/wiki/Special:BookSources/978-1401254124) |
+| ***Harley Quinn & The Gotham City Sirens Omnibus*** | *Gotham City Sirens* #1–26 and *Catwoman* #83 | September 2022 | [978-1779516763](/wiki/Special:BookSources/978-1779516763) |
+| *Catwoman* (vol. 4) | | | |
+| ***Catwoman Vol. 1: The Game*** | *Catwoman* (vol. 4) #1–6 | May 2012 | [978-1-4012-3464-5](/wiki/Special:BookSources/978-1-4012-3464-5) |
+| ***Catwoman Vol. 2: Dollhouse*** | *Catwoman* (vol. 4) #7–12 | February 2013 | [978-1-4012-3839-1](/wiki/Special:BookSources/978-1-4012-3839-1) |
+| ***Catwoman Vol. 3: Death of the Family*** | *Catwoman* (vol. 4) #0, 13–18; a story from *Young Romance* #1 | October 2013 | [978-1-4012-4272-5](/wiki/Special:BookSources/978-1-4012-4272-5) |
+| ***Catwoman Vol. 4: Gotham Underground*** | *Catwoman* (vol. 4) #19–24, 26, *Annual* (vol. 2) #1 and *Batman: The Dark Knight* #23.4 - *Joker's Daughter* | May 2014 | [978-1-4012-4627-3](/wiki/Special:BookSources/978-1-4012-4627-3) |
+| ***Catwoman Vol. 5: Race of Thieves*** | *Catwoman* (vol. 4) #25, 27–34 and *Catwoman: Futures End* #1 | November 2014 | [978-1-4012-5063-8](/wiki/Special:BookSources/978-1-4012-5063-8) |
+| ***Catwoman Vol. 6: The Keeper of the Castle*** | *Catwoman* (vol. 4) #35–40 and *Annual* (vol. 2) #2 | July 2015 | [978-1-4012-5469-8](/wiki/Special:BookSources/978-1-4012-5469-8) |
+| ***Catwoman Vol. 7: lnheritance*** | *Catwoman* (vol. 4) #41–46 | February 2016 | [978-1-4012-6118-4](/wiki/Special:BookSources/978-1-4012-6118-4) |
+| ***Catwoman Vol. 8: Run Like Hell*** | *Catwoman* (vol. 4) #47–52 | October 2016 | [978-1401264864](/wiki/Special:BookSources/978-1401264864) |
+| *Catwoman* (vol. 5) | | | |
+| ***Catwoman Vol. 1: Copycats*** | *Catwoman* (vol. 5) #1–6 | April 2019 | [978-1-4012-8889-1](/wiki/Special:BookSources/978-1-4012-8889-1) |
+| ***Catwoman Vol. 2: Far from Gotham*** | *Catwoman* (vol. 5) #7–13 and *Catwoman Annual* (vol. 3) #1 | September 2019 | [978-1401294779](/wiki/Special:BookSources/978-1401294779) |
+| ***Catwoman Vol. 3: Friend of Foe?*** | *Catwoman* (vol. 5) #16–21 | June 2020 | [978-1401299767](/wiki/Special:BookSources/978-1401299767) |
+| ***Catwoman Vol. 4: Come Home, Alley Cat*** | *Catwoman* (vol. 5) #14-15, 22-28 and *Catwoman 80th Anniversary 100 page Super Spectacular* | February 2021 | [978-1779504517](/wiki/Special:BookSources/978-1779504517) |
+| ***Catwoman Vol. 5: Valley of the Shadow of Death*** | *Catwoman* (vol. 5) #29–32 and *Catwoman 2021 Annual* | November 2021 | [978-1779512635](/wiki/Special:BookSources/978-1779512635) |
+| ***Catwoman Vol. 6: Fear State*** | *Catwoman* (vol. 5) #34–38 | July 2022 | [978-1779515292](/wiki/Special:BookSources/978-1779515292) |
+| ***Catwoman Vol. 1: Dangerous Liaisons*** | *Catwoman* (vol. 5) #39–44 | November 2022 | [978-1779517289](/wiki/Special:BookSources/978-1779517289) |
+| ***Catwoman Vol. 2: Cat International*** | *Catwoman* (vol. 5) #45-50 | May 2023 | [978-1779520326](/wiki/Special:BookSources/978-1779520326) |
+| ***Catwoman Vol. 3: Duchess of Gotham*** | *Catwoman* (vol. 5) #51-56 | November 2023 | [978-1779523327](/wiki/Special:BookSources/978-1779523327) |
+| ***Batman/Catwoman: The Gotham War*** | *Catwoman* (vol. 5) #57-58, *Batman/Catwoman: The Gotham War, Battle Lines*, *Batman* #137-138, *Batman/Catwoman: The Gotham War: Red Hood* #1-2 and *Batman/Catwoman: The Gotham War: Scorched Earth* | June 2024 | [978-1779525987](/wiki/Special:BookSources/978-1779525987) |
+| ***Catwoman Vol. 4: Nine Lives*** | *Catwoman* (vol. 5) #59-68 | December 2024 | [978-1779525000](/wiki/Special:BookSources/978-1779525000) |
+
+### Other collected editions
+
+- ***Batman: Knightfall Vol. 2: Knightquest*** (*Catwoman* (vol. 2) #6–7)
+- ***Batman: Knightfall Vol. 3: KnightsEnd*** (*Catwoman* (vol. 2) #12–13)
+- ***Batman: Contagion*** (*Catwoman* (vol. 2) #31–35)
+- ***Batman: Legacy*** (*Catwoman* (vol. 2) #35–36)
+- ***Batman/Wildcat*** (*Catwoman/Wildcat* #1-4)
+- ***Batman: Cataclysm*** (*Catwoman* (vol. 2) #56)
+- ***Batman: No Man's Land Vol. 2*** (*Catwoman* (vol. 2) #72–74)
+- ***Batman: No Man's Land Vol. 4*** (*Catwoman* (vol. 2) #75–77)
+- ***Batman: New Gotham Vol. 2 – Officer Down*** (*Catwoman* (vol. 2) #90)
+- ***Batman: War Games Act 1*** (*Catwoman* (vol. 3) #34)
+- ***Batman: War Games Act 2*** (*Catwoman* (vol. 3) #35)
+- ***Batman: War Games Act 3*** (*Catwoman* (vol. 3) #36)
+- ***Batman: Night of the Owls*** (*Catwoman* (vol. 4) #9)
+- ***The Joker: Death of the Family*** (*Catwoman* (vol. 4) #13–14)
+- ***DC Comics: Zero Year*** (*Catwoman* (vol. 4) #25)
+- ***Gotham City Sirens: Trigger Happy*** (*Gotham City Sirens: Trigger Happy* #1-4)
+
+## See also
+
+- [List of Batman supporting characters](/wiki/List_of_Batman_supporting_characters)
+- [List of Batman family enemies](/wiki/List_of_Batman_family_enemies)
+
+## References
+
+## External links
+
+- [Official website](https://www.dccomics.com/characters/catwoman)
+- [Catwoman Through the Years](https://web.archive.org/web/20120122081326/http://www.life.com/gallery/54741/catwoman-through-the-years) – slideshow by [*Life* magazine](/wiki/Life_(magazine))
+- ["Catwoman (of *Batman: The Animated Series*) from BatmanTAS.com"](https://web.archive.org/web/20120323153045/http://www.batmantas.com/cmp/cat.htm). Archived from [the original](http://www.batmantas.com/cmp/cat.htm) on March 23, 2012. Retrieved 2005-11-26.
+- [Catwoman](https://community.fandom.com/wiki/w:c:dc:Catwoman) on [DC Database](https://community.fandom.com/wiki/w:c:dc), a [DC Comics](/wiki/DC_Comics) [wiki](/wiki/Wiki)
+- ["Girls With Gauntlets"](https://web.archive.org/web/20120218145946/http://www.tnt.tv/title/?oid=342634-3761). Archived from [the original](http://www.tnt.tv/title/?oid=342634-3761) on February 18, 2012. Retrieved 2006-01-07. – the influence of Catwoman upon female action heroes of the 1990s
+- Moore, Booth (January 24, 2011). ["Catching up with the original Catwoman, Julie Newmar"](http://latimesblogs.latimes.com/alltherage/2011/01/catching-up-with-the-original-catwoman-julie-newmar.html#more). *Los Angeles Times*. Retrieved January 24, 2011.

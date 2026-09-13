@@ -1,0 +1,4596 @@
+{
+  "source": "Lyme_disease.html",
+  "title": "Lyme disease",
+  "wiki_title": "Lyme_disease",
+  "categories": [
+    "Lyme disease",
+    "Bacterial diseases",
+    "Bacterium-related cutaneous conditions",
+    "Medical controversies",
+    "Neurodegenerative disorders",
+    "Tick-borne diseases"
+  ],
+  "sections": [
+    {
+      "level": 2,
+      "id": "Signs_and_symptoms",
+      "title": "Signs and symptoms"
+    },
+    {
+      "level": 3,
+      "id": "Early_localized_infection",
+      "title": "Early localized infection"
+    },
+    {
+      "level": 3,
+      "id": "Early_disseminated_infection",
+      "title": "Early disseminated infection"
+    },
+    {
+      "level": 3,
+      "id": "Late_disseminated_infection",
+      "title": "Late disseminated infection"
+    },
+    {
+      "level": 2,
+      "id": "Cause",
+      "title": "Cause"
+    },
+    {
+      "level": 3,
+      "id": "Ticks",
+      "title": "Ticks"
+    },
+    {
+      "level": 4,
+      "id": "Tick_life_cycle",
+      "title": "Tick life cycle"
+    },
+    {
+      "level": 4,
+      "id": "Tick_appearance_changes_when_feeding",
+      "title": "Tick appearance changes when feeding"
+    },
+    {
+      "level": 4,
+      "id": "Types_of_ticks,_and_hosts",
+      "title": "Types of ticks, and hosts"
+    },
+    {
+      "level": 3,
+      "id": "Transmission",
+      "title": "Transmission"
+    },
+    {
+      "level": 4,
+      "id": "Mechanism",
+      "title": "Mechanism"
+    },
+    {
+      "level": 4,
+      "id": "Duration_of_attachment",
+      "title": "Duration of attachment"
+    },
+    {
+      "level": 4,
+      "id": "Prevalence",
+      "title": "Prevalence"
+    },
+    {
+      "level": 4,
+      "id": "In_pregnancy",
+      "title": "In pregnancy"
+    },
+    {
+      "level": 4,
+      "id": "Other_human_transmission",
+      "title": "Other human transmission"
+    },
+    {
+      "level": 3,
+      "id": "Tick-borne_co-infections",
+      "title": "Tick-borne co-infections"
+    },
+    {
+      "level": 2,
+      "id": "Pathophysiology",
+      "title": "Pathophysiology"
+    },
+    {
+      "level": 3,
+      "id": "Immunological_studies",
+      "title": "Immunological studies"
+    },
+    {
+      "level": 2,
+      "id": "Diagnosis",
+      "title": "Diagnosis"
+    },
+    {
+      "level": 3,
+      "id": "Laboratory_testing",
+      "title": "Laboratory testing"
+    },
+    {
+      "level": 3,
+      "id": "Imaging",
+      "title": "Imaging"
+    },
+    {
+      "level": 3,
+      "id": "Differential_diagnosis",
+      "title": "Differential diagnosis"
+    },
+    {
+      "level": 2,
+      "id": "Treatment",
+      "title": "Treatment"
+    },
+    {
+      "level": 2,
+      "id": "Prognosis",
+      "title": "Prognosis"
+    },
+    {
+      "level": 3,
+      "id": "Post-treatment_Lyme_disease_syndrome",
+      "title": "Post-treatment Lyme disease syndrome"
+    },
+    {
+      "level": 4,
+      "id": "Symptoms_and_prevalence",
+      "title": "Symptoms and prevalence"
+    },
+    {
+      "level": 4,
+      "id": "Causes",
+      "title": "Causes"
+    },
+    {
+      "level": 4,
+      "id": "Risk_factors",
+      "title": "Risk factors"
+    },
+    {
+      "level": 4,
+      "id": "Treatment_and_management",
+      "title": "Treatment and management"
+    },
+    {
+      "level": 4,
+      "id": "Prognosis_2",
+      "title": "Prognosis"
+    },
+    {
+      "level": 2,
+      "id": "Epidemiology_and_prevalence",
+      "title": "Epidemiology and prevalence"
+    },
+    {
+      "level": 3,
+      "id": "Overview",
+      "title": "Overview"
+    },
+    {
+      "level": 3,
+      "id": "Climate_change",
+      "title": "Climate change"
+    },
+    {
+      "level": 3,
+      "id": "North_America",
+      "title": "North America"
+    },
+    {
+      "level": 4,
+      "id": "United_States",
+      "title": "United States"
+    },
+    {
+      "level": 4,
+      "id": "Canada",
+      "title": "Canada"
+    },
+    {
+      "level": 4,
+      "id": "Mexico",
+      "title": "Mexico"
+    },
+    {
+      "level": 3,
+      "id": "Europe",
+      "title": "Europe"
+    },
+    {
+      "level": 4,
+      "id": "United_Kingdom",
+      "title": "United Kingdom"
+    },
+    {
+      "level": 3,
+      "id": "South_America",
+      "title": "South America"
+    },
+    {
+      "level": 3,
+      "id": "Africa",
+      "title": "Africa"
+    },
+    {
+      "level": 3,
+      "id": "Asia",
+      "title": "Asia"
+    },
+    {
+      "level": 3,
+      "id": "Australia",
+      "title": "Australia"
+    },
+    {
+      "level": 2,
+      "id": "Prevention",
+      "title": "Prevention"
+    },
+    {
+      "level": 3,
+      "id": "Tick_removal",
+      "title": "Tick removal"
+    },
+    {
+      "level": 3,
+      "id": "Preventive_antibiotics",
+      "title": "Preventive antibiotics"
+    },
+    {
+      "level": 3,
+      "id": "Garden_landscaping",
+      "title": "Garden landscaping"
+    },
+    {
+      "level": 3,
+      "id": "Occupational_exposure",
+      "title": "Occupational exposure"
+    },
+    {
+      "level": 3,
+      "id": "Host_animals",
+      "title": "Host animals"
+    },
+    {
+      "level": 2,
+      "id": "Vaccination",
+      "title": "Vaccination"
+    },
+    {
+      "level": 3,
+      "id": "LYMErix",
+      "title": "LYMErix"
+    },
+    {
+      "level": 3,
+      "id": "VLA15",
+      "title": "VLA15"
+    },
+    {
+      "level": 3,
+      "id": "Other_research",
+      "title": "Other research"
+    },
+    {
+      "level": 3,
+      "id": "Canine_vaccines",
+      "title": "Canine vaccines"
+    },
+    {
+      "level": 2,
+      "id": "Etymology",
+      "title": "Etymology"
+    },
+    {
+      "level": 2,
+      "id": "History",
+      "title": "History"
+    },
+    {
+      "level": 3,
+      "id": "Early_evidence",
+      "title": "Early evidence"
+    },
+    {
+      "level": 3,
+      "id": "1930–1970",
+      "title": "1930–1970"
+    },
+    {
+      "level": 3,
+      "id": "From_1970",
+      "title": "From 1970"
+    },
+    {
+      "level": 2,
+      "id": "Society,_culture,_and_controversy",
+      "title": "Society, culture, and controversy"
+    },
+    {
+      "level": 3,
+      "id": "Landscape_changes_and_urbanization",
+      "title": "Landscape changes and urbanization"
+    },
+    {
+      "level": 3,
+      "id": "The_dilution_effect",
+      "title": "The dilution effect"
+    },
+    {
+      "level": 3,
+      "id": "Chronic_Lyme_disease",
+      "title": "Chronic Lyme disease"
+    },
+    {
+      "level": 3,
+      "id": "Conspiracy_theories_about_origins",
+      "title": "Conspiracy theories about origins"
+    },
+    {
+      "level": 2,
+      "id": "Other_animals",
+      "title": "Other animals"
+    },
+    {
+      "level": 3,
+      "id": "Dogs",
+      "title": "Dogs"
+    },
+    {
+      "level": 3,
+      "id": "Cats",
+      "title": "Cats"
+    },
+    {
+      "level": 3,
+      "id": "Horses",
+      "title": "Horses"
+    },
+    {
+      "level": 2,
+      "id": "References",
+      "title": "References"
+    },
+    {
+      "level": 3,
+      "id": "Notes",
+      "title": "Notes"
+    },
+    {
+      "level": 3,
+      "id": "Citations",
+      "title": "Citations"
+    },
+    {
+      "level": 2,
+      "id": "Further_reading",
+      "title": "Further reading"
+    },
+    {
+      "level": 2,
+      "id": "External_links",
+      "title": "External links"
+    }
+  ],
+  "infobox": {
+    "title": "",
+    "fields": {
+      "Other names": "Lyme borreliosis",
+      "Specialty": "Infectious disease",
+      "Symptoms": "Expanding area of redness at the site of a tick bite, fever, headache, tiredness [ 1 ]",
+      "Complications": "Facial nerve paralysis, arthritis, meningitis-like symptoms, [ 2 ] heart rhythm irregularities [ 3 ]",
+      "Usual onset": "A week after a bite [ 1 ]",
+      "Causes": "Borrelia spread by ticks [ 4 ]",
+      "Diagnostic method": "Based on symptoms, tick exposure, blood tests [ 5 ]",
+      "Prevention": "Prevention of tick bites (clothing the limbs, DEET ), doxycycline [ 4 ]",
+      "Medication": "Doxycycline, amoxicillin, ceftriaxone, cefuroxime [ 4 ]",
+      "Frequency": "~476k/year in U.S. (a likely overestimate), 200k/year in Europe [ 6 ] [ 7 ] [ 8 ]"
+    }
+  },
+  "tables": [],
+  "links": {
+    "local": [
+      {
+        "target": "Tick",
+        "source_file": "Tick.html",
+        "url": "https://en.wikipedia.org/wiki/Tick",
+        "anchors": [
+          "tick",
+          "ticks"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "New_England",
+        "source_file": "New_England.html",
+        "url": "https://en.wikipedia.org/wiki/New_England",
+        "anchors": [
+          "New England"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cattle",
+        "source_file": "Cattle.html",
+        "url": "https://en.wikipedia.org/wiki/Cattle",
+        "anchors": [
+          "cattle"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Thailand",
+        "source_file": "Thailand.html",
+        "url": "https://en.wikipedia.org/wiki/Thailand",
+        "anchors": [
+          "Thailand"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mongolia",
+        "source_file": "Mongolia.html",
+        "url": "https://en.wikipedia.org/wiki/Mongolia",
+        "anchors": [
+          "Mongolia"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Carl_Linnaeus",
+        "source_file": "Carl_Linnaeus.html",
+        "url": "https://en.wikipedia.org/wiki/Carl_Linnaeus",
+        "anchors": [
+          "Linnaeus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wrocław",
+        "source_file": "Wrocław.html",
+        "url": "https://en.wikipedia.org/wiki/Wroc%C5%82aw",
+        "anchors": [
+          "Wrocław"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Connecticut",
+        "source_file": "Connecticut.html",
+        "url": "https://en.wikipedia.org/wiki/Connecticut",
+        "anchors": [
+          "Connecticut"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Yale_University",
+        "source_file": "Yale_University.html",
+        "url": "https://en.wikipedia.org/wiki/Yale_University",
+        "anchors": [
+          "Yale University"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ],
+    "wiki": [
+      {
+        "target": "Facial_palsy",
+        "url": "https://en.wikipedia.org/wiki/Facial_palsy",
+        "anchors": [
+          "facial palsy",
+          "Facial palsy",
+          "facial palsies"
+        ],
+        "count": 9,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Erythema_migrans",
+        "url": "https://en.wikipedia.org/wiki/Erythema_migrans",
+        "anchors": [
+          "erythema migrans",
+          "Erythema migrans",
+          "EM"
+        ],
+        "count": 8,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Borrelia",
+        "url": "https://en.wikipedia.org/wiki/Borrelia",
+        "anchors": [
+          "Borrelia"
+        ],
+        "count": 6,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Doxycycline",
+        "url": "https://en.wikipedia.org/wiki/Doxycycline",
+        "anchors": [
+          "doxycycline",
+          "Doxycycline"
+        ],
+        "count": 6,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Ceftriaxone",
+        "url": "https://en.wikipedia.org/wiki/Ceftriaxone",
+        "anchors": [
+          "ceftriaxone"
+        ],
+        "count": 6,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Borrelia_burgdorferi",
+        "url": "https://en.wikipedia.org/wiki/Borrelia_burgdorferi",
+        "anchors": [
+          "Borrelia burgdorferi",
+          "B. burgdorferi"
+        ],
+        "count": 6,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Meningitis",
+        "url": "https://en.wikipedia.org/wiki/Meningitis",
+        "anchors": [
+          "meningitis-like symptoms",
+          "severe headaches with neck stiffness",
+          "meningitis"
+        ],
+        "count": 5,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Cerebrospinal_fluid",
+        "url": "https://en.wikipedia.org/wiki/Cerebrospinal_fluid",
+        "anchors": [
+          "cerebrospinal fluid",
+          "CSF"
+        ],
+        "count": 5,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ixodes_ricinus",
+        "url": "https://en.wikipedia.org/wiki/Ixodes_ricinus",
+        "anchors": [
+          "Ixodes ricinus"
+        ],
+        "count": 5,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Centers_for_Disease_Control_and_Prevention",
+        "url": "https://en.wikipedia.org/wiki/Centers_for_Disease_Control_and_Prevention",
+        "anchors": [
+          "Centers for Disease Control and Prevention",
+          "CDC"
+        ],
+        "count": 5,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ixodes_scapularis",
+        "url": "https://en.wikipedia.org/wiki/Ixodes_scapularis",
+        "anchors": [
+          "deer tick",
+          "Ixodes scapularis"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Arthritis",
+        "url": "https://en.wikipedia.org/wiki/Arthritis",
+        "anchors": [
+          "arthritis",
+          "joint pains"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Amoxicillin",
+        "url": "https://en.wikipedia.org/wiki/Amoxicillin",
+        "anchors": [
+          "amoxicillin"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Arthralgia",
+        "url": "https://en.wikipedia.org/wiki/Arthralgia",
+        "anchors": [
+          "joint pains",
+          "joint aches",
+          "joint"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Neuroborreliosis",
+        "url": "https://en.wikipedia.org/wiki/Neuroborreliosis",
+        "anchors": [
+          "neuroborreliosis",
+          "Neurologic complications of Lyme disease"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Radiculopathy",
+        "url": "https://en.wikipedia.org/wiki/Radiculopathy",
+        "anchors": [
+          "radiculopathy"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Radiculitis",
+        "url": "https://en.wikipedia.org/wiki/Radiculitis",
+        "anchors": [
+          "pain",
+          "radicular pain",
+          "radiculitis"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Paresis",
+        "url": "https://en.wikipedia.org/wiki/Paresis",
+        "anchors": [
+          "weakness",
+          "impaired movement"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "DEET",
+        "url": "https://en.wikipedia.org/wiki/DEET",
+        "anchors": [
+          "DEET"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Cefuroxime",
+        "url": "https://en.wikipedia.org/wiki/Cefuroxime",
+        "anchors": [
+          "cefuroxime"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Antibodies",
+        "url": "https://en.wikipedia.org/wiki/Antibodies",
+        "anchors": [
+          "antibodies"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Myalgia",
+        "url": "https://en.wikipedia.org/wiki/Myalgia",
+        "anchors": [
+          "muscle pains"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lymphocytic_pleocytosis",
+        "url": "https://en.wikipedia.org/wiki/Lymphocytic_pleocytosis",
+        "anchors": [
+          "characteristic changes",
+          "lymphocytic pleocytosis",
+          "objective markers of infection"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Paresthesia",
+        "url": "https://en.wikipedia.org/wiki/Paresthesia",
+        "anchors": [
+          "altered sensation"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Peripheral_neuropathy",
+        "url": "https://en.wikipedia.org/wiki/Peripheral_neuropathy#Mononeuritis_multiplex",
+        "anchors": [
+          "Mononeuritis multiplex",
+          "peripheral neuropathy"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cardiac_muscle",
+        "url": "https://en.wikipedia.org/wiki/Cardiac_muscle",
+        "anchors": [
+          "myocardial"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Acrodermatitis_chronica_atrophicans",
+        "url": "https://en.wikipedia.org/wiki/Acrodermatitis_chronica_atrophicans",
+        "anchors": [
+          "Acrodermatitis chronica atrophicans",
+          "acrodermatitis chronica atrophicans"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lyme_disease_microbiology",
+        "url": "https://en.wikipedia.org/wiki/Lyme_disease_microbiology",
+        "anchors": [
+          "Lyme disease microbiology",
+          "outer surface protein",
+          "OspA antigens"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Borrelia_afzelii",
+        "url": "https://en.wikipedia.org/wiki/Borrelia_afzelii",
+        "anchors": [
+          "Borrelia afzelii"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Borrelia_garinii",
+        "url": "https://en.wikipedia.org/wiki/Borrelia_garinii",
+        "anchors": [
+          "Borrelia garinii"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wisconsin",
+        "url": "https://en.wikipedia.org/wiki/Wisconsin",
+        "anchors": [
+          "Wisconsin"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Polymerase_chain_reaction",
+        "url": "https://en.wikipedia.org/wiki/Polymerase_chain_reaction",
+        "anchors": [
+          "Polymerase chain reaction",
+          "PCR",
+          "polymerase chain reaction"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cellulitis",
+        "url": "https://en.wikipedia.org/wiki/Cellulitis",
+        "anchors": [
+          "cellulitis",
+          "Cellulitis"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fatigue",
+        "url": "https://en.wikipedia.org/wiki/Fatigue",
+        "anchors": [
+          "fatigue"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Leaf_litter",
+        "url": "https://en.wikipedia.org/wiki/Leaf_litter",
+        "anchors": [
+          "leaf litter"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Nymph_(biology)",
+        "url": "https://en.wikipedia.org/wiki/Nymph_(biology)",
+        "anchors": [
+          "nymphs",
+          "nymphal stage"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Fatigue_(medical)",
+        "url": "https://en.wikipedia.org/wiki/Fatigue_(medical)",
+        "anchors": [
+          "tiredness"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Facial_nerve_paralysis",
+        "url": "https://en.wikipedia.org/wiki/Facial_nerve_paralysis",
+        "anchors": [
+          "Facial nerve paralysis",
+          "loss of the ability to move one or both sides of the face"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Medical_diagnosis",
+        "url": "https://en.wikipedia.org/wiki/Medical_diagnosis",
+        "anchors": [
+          "Diagnostic method",
+          "diagnosed"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Chronic_Lyme_disease",
+        "url": "https://en.wikipedia.org/wiki/Chronic_Lyme_disease",
+        "anchors": [
+          "Chronic Lyme disease"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tick-borne_disease",
+        "url": "https://en.wikipedia.org/wiki/Tick-borne_disease",
+        "anchors": [
+          "tick-borne disease",
+          "Tick-borne disease"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Disease_vector",
+        "url": "https://en.wikipedia.org/wiki/Disease_vector",
+        "anchors": [
+          "transmitted by",
+          "vector"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ticks",
+        "url": "https://en.wikipedia.org/wiki/Ticks",
+        "anchors": [
+          "ticks"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ixodes",
+        "url": "https://en.wikipedia.org/wiki/Ixodes",
+        "anchors": [
+          "Ixodes"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Northern_Hemisphere",
+        "url": "https://en.wikipedia.org/wiki/Northern_Hemisphere",
+        "anchors": [
+          "Northern Hemisphere"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Antibiotic",
+        "url": "https://en.wikipedia.org/wiki/Antibiotic",
+        "anchors": [
+          "antibiotics",
+          "antibiotic"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Picaridin",
+        "url": "https://en.wikipedia.org/wiki/Picaridin",
+        "anchors": [
+          "picaridin"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Insect_repellent",
+        "url": "https://en.wikipedia.org/wiki/Insect_repellent",
+        "anchors": [
+          "insect repellents",
+          "repellents"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Babesiosis",
+        "url": "https://en.wikipedia.org/wiki/Babesiosis",
+        "anchors": [
+          "babesiosis"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Asymptomatic",
+        "url": "https://en.wikipedia.org/wiki/Asymptomatic",
+        "anchors": [
+          "Asymptomatic",
+          "asymptomatic"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Aseptic_meningitis",
+        "url": "https://en.wikipedia.org/wiki/Aseptic_meningitis",
+        "anchors": [
+          "Lymphocytic meningitis",
+          "lymphocytic meningitis"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Papilledema",
+        "url": "https://en.wikipedia.org/wiki/Papilledema",
+        "anchors": [
+          "partial loss of vision",
+          "partial vision obstruction"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hypoesthesia",
+        "url": "https://en.wikipedia.org/wiki/Hypoesthesia",
+        "anchors": [
+          "numbness"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Dermatome_(anatomy)",
+        "url": "https://en.wikipedia.org/wiki/Dermatome_(anatomy)",
+        "anchors": [
+          "areas of the body served by nerves connected to the affected roots",
+          "dermatome"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Encephalitis",
+        "url": "https://en.wikipedia.org/wiki/Encephalitis",
+        "anchors": [
+          "brain",
+          "encephalitis"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ataxia",
+        "url": "https://en.wikipedia.org/wiki/Ataxia",
+        "anchors": [
+          "abnormal gait, ocular movements, or speech",
+          "ataxia"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Heart_block",
+        "url": "https://en.wikipedia.org/wiki/Heart_block",
+        "anchors": [
+          "block",
+          "heart block"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Borrelial_lymphocytoma",
+        "url": "https://en.wikipedia.org/wiki/Borrelial_lymphocytoma",
+        "anchors": [
+          "borrelial lymphocytoma"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Malaise",
+        "url": "https://en.wikipedia.org/wiki/Malaise",
+        "anchors": [
+          "a general sense of feeling unwell",
+          "malaise"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fibromyalgia",
+        "url": "https://en.wikipedia.org/wiki/Fibromyalgia",
+        "anchors": [
+          "fibromyalgia"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Spirochete",
+        "url": "https://en.wikipedia.org/wiki/Spirochete",
+        "anchors": [
+          "spirochetes"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "White-tailed_deer",
+        "url": "https://en.wikipedia.org/wiki/White-tailed_deer",
+        "anchors": [
+          "white-tailed deer",
+          "White-tailed deer"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Amblyomma_americanum",
+        "url": "https://en.wikipedia.org/wiki/Amblyomma_americanum",
+        "anchors": [
+          "Amblyomma americanum"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Southern_tick-associated_rash_illness",
+        "url": "https://en.wikipedia.org/wiki/Southern_tick-associated_rash_illness",
+        "anchors": [
+          "southern tick-associated rash illness"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Host_(biology)",
+        "url": "https://en.wikipedia.org/wiki/Host_(biology)",
+        "anchors": [
+          "hosts"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Vector_(epidemiology)",
+        "url": "https://en.wikipedia.org/wiki/Vector_(epidemiology)",
+        "anchors": [
+          "vectors",
+          "vector"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "White-footed_mouse",
+        "url": "https://en.wikipedia.org/wiki/White-footed_mouse",
+        "anchors": [
+          "white-footed mouse"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Downregulation_and_upregulation",
+        "url": "https://en.wikipedia.org/wiki/Downregulation_and_upregulation",
+        "anchors": [
+          "downregulates",
+          "upregulates"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Endemic_(epidemiology)",
+        "url": "https://en.wikipedia.org/wiki/Endemic_(epidemiology)",
+        "anchors": [
+          "common",
+          "occurs regularly"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sensitivity_and_specificity",
+        "url": "https://en.wikipedia.org/wiki/Sensitivity_and_specificity",
+        "anchors": [
+          "sensitive",
+          "specific"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lumbar_puncture",
+        "url": "https://en.wikipedia.org/wiki/Lumbar_puncture",
+        "anchors": [
+          "lumbar puncture"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "DNA",
+        "url": "https://en.wikipedia.org/wiki/DNA",
+        "anchors": [
+          "DNA"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Serology",
+        "url": "https://en.wikipedia.org/wiki/Serology",
+        "anchors": [
+          "serologic",
+          "serological"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Spider_bites",
+        "url": "https://en.wikipedia.org/wiki/Spider_bites",
+        "anchors": [
+          "spider bites"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Shingles",
+        "url": "https://en.wikipedia.org/wiki/Shingles",
+        "anchors": [
+          "shingles"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Antibiotics",
+        "url": "https://en.wikipedia.org/wiki/Antibiotics",
+        "anchors": [
+          "Antibiotics",
+          "antibiotic"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cefuroxime_axetil",
+        "url": "https://en.wikipedia.org/wiki/Cefuroxime_axetil",
+        "anchors": [
+          "cefuroxime axetil"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Artificial_cardiac_pacemaker",
+        "url": "https://en.wikipedia.org/wiki/Artificial_cardiac_pacemaker",
+        "anchors": [
+          "pacemaker"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Synovectomy",
+        "url": "https://en.wikipedia.org/wiki/Synovectomy",
+        "anchors": [
+          "synovectomy"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Attentional_control",
+        "url": "https://en.wikipedia.org/wiki/Attentional_control",
+        "anchors": [
+          "concentration"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Global_warming",
+        "url": "https://en.wikipedia.org/wiki/Global_warming",
+        "anchors": [
+          "global warming"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Woodland",
+        "url": "https://en.wikipedia.org/wiki/Woodland",
+        "anchors": [
+          "woodlands"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Dry_stone",
+        "url": "https://en.wikipedia.org/wiki/Dry_stone",
+        "anchors": [
+          "stone walls"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "GlaxoSmithKline",
+        "url": "https://en.wikipedia.org/wiki/GlaxoSmithKline#SmithKline_Beecham",
+        "anchors": [
+          "SmithKline Beecham",
+          "GlaxoSmithKline"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Food_and_Drug_Administration",
+        "url": "https://en.wikipedia.org/wiki/Food_and_Drug_Administration",
+        "anchors": [
+          "Food and Drug Administration"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lyme,_Connecticut",
+        "url": "https://en.wikipedia.org/wiki/Lyme,_Connecticut",
+        "anchors": [
+          "Lyme, Connecticut",
+          "Lyme"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Medical_specialty",
+        "url": "https://en.wikipedia.org/wiki/Medical_specialty",
+        "anchors": [
+          "Specialty"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Infectious_disease_(medical_specialty)",
+        "url": "https://en.wikipedia.org/wiki/Infectious_disease_(medical_specialty)",
+        "anchors": [
+          "Infectious disease"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Signs_and_symptoms",
+        "url": "https://en.wikipedia.org/wiki/Signs_and_symptoms",
+        "anchors": [
+          "Symptoms"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Fever",
+        "url": "https://en.wikipedia.org/wiki/Fever",
+        "anchors": [
+          "fever"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Headache",
+        "url": "https://en.wikipedia.org/wiki/Headache",
+        "anchors": [
+          "headache"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Complication_(medicine)",
+        "url": "https://en.wikipedia.org/wiki/Complication_(medicine)",
+        "anchors": [
+          "Complications"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Cause_(medicine)",
+        "url": "https://en.wikipedia.org/wiki/Cause_(medicine)",
+        "anchors": [
+          "Causes"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Medication",
+        "url": "https://en.wikipedia.org/wiki/Medication",
+        "anchors": [
+          "Medication"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Phytophotodermatitis",
+        "url": "https://en.wikipedia.org/wiki/Phytophotodermatitis",
+        "anchors": [
+          "Phytophotodermatitis"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Rash",
+        "url": "https://en.wikipedia.org/wiki/Rash",
+        "anchors": [
+          "rash"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Heart_palpitation",
+        "url": "https://en.wikipedia.org/wiki/Heart_palpitation",
+        "anchors": [
+          "heart palpitations"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Incubation_period",
+        "url": "https://en.wikipedia.org/wiki/Incubation_period",
+        "anchors": [
+          "incubation period"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Armpit",
+        "url": "https://en.wikipedia.org/wiki/Armpit",
+        "anchors": [
+          "armpit"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Groin",
+        "url": "https://en.wikipedia.org/wiki/Groin",
+        "anchors": [
+          "groin"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Popliteal_fossa",
+        "url": "https://en.wikipedia.org/wiki/Popliteal_fossa",
+        "anchors": [
+          "back of the knee"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Torso",
+        "url": "https://en.wikipedia.org/wiki/Torso",
+        "anchors": [
+          "trunk"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Leukopenia",
+        "url": "https://en.wikipedia.org/wiki/Leukopenia",
+        "anchors": [
+          "white"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Anemia",
+        "url": "https://en.wikipedia.org/wiki/Anemia",
+        "anchors": [
+          "red"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Thrombocytopenia",
+        "url": "https://en.wikipedia.org/wiki/Thrombocytopenia",
+        "anchors": [
+          "platelets"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tick-borne_diseases",
+        "url": "https://en.wikipedia.org/wiki/Tick-borne_diseases",
+        "anchors": [
+          "tick-borne diseases"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ehrlichiosis",
+        "url": "https://en.wikipedia.org/wiki/Ehrlichiosis",
+        "anchors": [
+          "ehrlichiosis"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Meningism",
+        "url": "https://en.wikipedia.org/wiki/Meningism",
+        "anchors": [
+          "meningitis signs"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Neck_stiffness",
+        "url": "https://en.wikipedia.org/wiki/Neck_stiffness",
+        "anchors": [
+          "inability to flex the neck fully"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Photophobia",
+        "url": "https://en.wikipedia.org/wiki/Photophobia",
+        "anchors": [
+          "intolerance to bright lights"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Otorhinolaryngology",
+        "url": "https://en.wikipedia.org/wiki/Otorhinolaryngology",
+        "anchors": [
+          "otolaryngological symptoms"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tinnitus",
+        "url": "https://en.wikipedia.org/wiki/Tinnitus",
+        "anchors": [
+          "tinnitus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Vertigo",
+        "url": "https://en.wikipedia.org/wiki/Vertigo",
+        "anchors": [
+          "Vertigo"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Neuritis",
+        "url": "https://en.wikipedia.org/wiki/Neuritis",
+        "anchors": [
+          "neuritis"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cranial_nerves",
+        "url": "https://en.wikipedia.org/wiki/Cranial_nerves",
+        "anchors": [
+          "cranial nerves"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Diplopia",
+        "url": "https://en.wikipedia.org/wiki/Diplopia",
+        "anchors": [
+          "double vision"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Nerve_root",
+        "url": "https://en.wikipedia.org/wiki/Nerve_root",
+        "anchors": [
+          "nerve roots"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Myelitis",
+        "url": "https://en.wikipedia.org/wiki/Myelitis",
+        "anchors": [
+          "spinal cord"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Apraxia",
+        "url": "https://en.wikipedia.org/wiki/Apraxia",
+        "anchors": [
+          "impaired motor planning"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tremor",
+        "url": "https://en.wikipedia.org/wiki/Tremor",
+        "anchors": [
+          "shaking"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lymphocytic_meningoradiculitis",
+        "url": "https://en.wikipedia.org/wiki/Lymphocytic_meningoradiculitis",
+        "anchors": [
+          "Bannwarth syndrome"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Paraparesis",
+        "url": "https://en.wikipedia.org/wiki/Paraparesis",
+        "anchors": [
+          "impairment of motor or sensory function"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Carditis",
+        "url": "https://en.wikipedia.org/wiki/Carditis",
+        "anchors": [
+          "carditis"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Palpitations",
+        "url": "https://en.wikipedia.org/wiki/Palpitations",
+        "anchors": [
+          "palpitations"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Dizziness",
+        "url": "https://en.wikipedia.org/wiki/Dizziness",
+        "anchors": [
+          "dizziness"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Syncope_(medicine)",
+        "url": "https://en.wikipedia.org/wiki/Syncope_(medicine)",
+        "anchors": [
+          "fainting"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Shortness_of_breath",
+        "url": "https://en.wikipedia.org/wiki/Shortness_of_breath",
+        "anchors": [
+          "shortness of breath"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chest_pain",
+        "url": "https://en.wikipedia.org/wiki/Chest_pain",
+        "anchors": [
+          "chest pain"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Headaches",
+        "url": "https://en.wikipedia.org/wiki/Headaches",
+        "anchors": [
+          "headaches"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cardiomegaly",
+        "url": "https://en.wikipedia.org/wiki/Cardiomegaly",
+        "anchors": [
+          "cardiomegaly"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ventricle_(heart)",
+        "url": "https://en.wikipedia.org/wiki/Ventricle_(heart)",
+        "anchors": [
+          "ventricular"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Scrotum",
+        "url": "https://en.wikipedia.org/wiki/Scrotum",
+        "anchors": [
+          "scrotum"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hip",
+        "url": "https://en.wikipedia.org/wiki/Hip",
+        "anchors": [
+          "hip"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Temporomandibular_joint",
+        "url": "https://en.wikipedia.org/wiki/Temporomandibular_joint",
+        "anchors": [
+          "temporomandibular joint"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Joint_effusion",
+        "url": "https://en.wikipedia.org/wiki/Joint_effusion",
+        "anchors": [
+          "joint effusion"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Baker's_cyst",
+        "url": "https://en.wikipedia.org/wiki/Baker%27s_cyst",
+        "anchors": [
+          "Baker's cysts"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Insomnia",
+        "url": "https://en.wikipedia.org/wiki/Insomnia",
+        "anchors": [
+          "insomnia"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Attention_deficit_hyperactivity_disorder",
+        "url": "https://en.wikipedia.org/wiki/Attention_deficit_hyperactivity_disorder",
+        "anchors": [
+          "ADHD"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Autism",
+        "url": "https://en.wikipedia.org/wiki/Autism",
+        "anchors": [
+          "autism"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Gram-negative_bacteria",
+        "url": "https://en.wikipedia.org/wiki/Gram-negative_bacteria",
+        "anchors": [
+          "gram-negative bacteria"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Genus",
+        "url": "https://en.wikipedia.org/wiki/Genus",
+        "anchors": [
+          "genus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Peptidoglycan",
+        "url": "https://en.wikipedia.org/wiki/Peptidoglycan",
+        "anchors": [
+          "peptidoglycan"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Flagella",
+        "url": "https://en.wikipedia.org/wiki/Flagella",
+        "anchors": [
+          "flagella"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sensu_lato",
+        "url": "https://en.wikipedia.org/wiki/Sensu_lato",
+        "anchors": [
+          "sensu lato"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Genetic_diversity",
+        "url": "https://en.wikipedia.org/wiki/Genetic_diversity",
+        "anchors": [
+          "genetic diversity"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sensu_stricto",
+        "url": "https://en.wikipedia.org/wiki/Sensu_stricto",
+        "anchors": [
+          "sensu stricto"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Eurasia",
+        "url": "https://en.wikipedia.org/wiki/Eurasia",
+        "anchors": [
+          "Eurasia"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Borrelia_mayonii",
+        "url": "https://en.wikipedia.org/wiki/Borrelia_mayonii",
+        "anchors": [
+          "B. mayonii"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Borrelia_spielmanii",
+        "url": "https://en.wikipedia.org/wiki/Borrelia_spielmanii",
+        "anchors": [
+          "B. spielmanii"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "White-footed_Mouse",
+        "url": "https://en.wikipedia.org/wiki/White-footed_Mouse",
+        "anchors": [
+          "white-footed mice"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Borrelia_valaisiana",
+        "url": "https://en.wikipedia.org/wiki/Borrelia_valaisiana",
+        "anchors": [
+          "Borrelia valaisiana"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Spirochaete",
+        "url": "https://en.wikipedia.org/wiki/Spirochaete",
+        "anchors": [
+          "spirochetes"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bacteriolytic",
+        "url": "https://en.wikipedia.org/wiki/Bacteriolytic",
+        "anchors": [
+          "bacteriolytic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Enzootic",
+        "url": "https://en.wikipedia.org/wiki/Enzootic",
+        "anchors": [
+          "enzootic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Castor_oil_plant",
+        "url": "https://en.wikipedia.org/wiki/Castor_oil_plant",
+        "anchors": [
+          "castor bean"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ixodes_persulcatus",
+        "url": "https://en.wikipedia.org/wiki/Ixodes_persulcatus",
+        "anchors": [
+          "Ixodes persulcatus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Texas",
+        "url": "https://en.wikipedia.org/wiki/Texas",
+        "anchors": [
+          "Texas"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "West_Coast_of_the_United_States",
+        "url": "https://en.wikipedia.org/wiki/West_Coast_of_the_United_States",
+        "anchors": [
+          "West Coast of the United States"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ixodes_pacificus",
+        "url": "https://en.wikipedia.org/wiki/Ixodes_pacificus",
+        "anchors": [
+          "Ixodes pacificus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Western_Fence_Lizard",
+        "url": "https://en.wikipedia.org/wiki/Western_Fence_Lizard",
+        "anchors": [
+          "western fence lizard"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Zoonosis",
+        "url": "https://en.wikipedia.org/wiki/Zoonosis",
+        "anchors": [
+          "zoonosis"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Transmission_(medicine)",
+        "url": "https://en.wikipedia.org/wiki/Transmission_(medicine)",
+        "anchors": [
+          "transmitted"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Natural_reservoir",
+        "url": "https://en.wikipedia.org/wiki/Natural_reservoir",
+        "anchors": [
+          "natural reservoir"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Babesia",
+        "url": "https://en.wikipedia.org/wiki/Babesia",
+        "anchors": [
+          "Babesia"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Babesia_microti",
+        "url": "https://en.wikipedia.org/wiki/Babesia_microti",
+        "anchors": [
+          "Babesia microti"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Anaplasma_phagocytophilum",
+        "url": "https://en.wikipedia.org/wiki/Anaplasma_phagocytophilum",
+        "anchors": [
+          "Anaplasma phagocytophilum"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Human_granulocytic_anaplasmosis",
+        "url": "https://en.wikipedia.org/wiki/Human_granulocytic_anaplasmosis",
+        "anchors": [
+          "human granulocytic anaplasmosis"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tick-borne_encephalitis",
+        "url": "https://en.wikipedia.org/wiki/Tick-borne_encephalitis",
+        "anchors": [
+          "tick-borne encephalitis"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Powassan_encephalitis",
+        "url": "https://en.wikipedia.org/wiki/Powassan_encephalitis",
+        "anchors": [
+          "Powassan virus disease"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Dermis",
+        "url": "https://en.wikipedia.org/wiki/Dermis",
+        "anchors": [
+          "dermis"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Neutrophils",
+        "url": "https://en.wikipedia.org/wiki/Neutrophils",
+        "anchors": [
+          "Neutrophils"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Plasmin",
+        "url": "https://en.wikipedia.org/wiki/Plasmin",
+        "anchors": [
+          "plasmin"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Antigenic_variation",
+        "url": "https://en.wikipedia.org/wiki/Antigenic_variation",
+        "anchors": [
+          "antigenic variation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Complement_system",
+        "url": "https://en.wikipedia.org/wiki/Complement_system",
+        "anchors": [
+          "complement"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Extracellular_matrix",
+        "url": "https://en.wikipedia.org/wiki/Extracellular_matrix",
+        "anchors": [
+          "extracellular matrix"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Inflammatory_response",
+        "url": "https://en.wikipedia.org/wiki/Inflammatory_response",
+        "anchors": [
+          "inflammatory response"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Autoimmune",
+        "url": "https://en.wikipedia.org/wiki/Autoimmune",
+        "anchors": [
+          "autoimmune"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Molecular_mimicry",
+        "url": "https://en.wikipedia.org/wiki/Molecular_mimicry",
+        "anchors": [
+          "molecular mimicry"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Rheumatic_fever",
+        "url": "https://en.wikipedia.org/wiki/Rheumatic_fever",
+        "anchors": [
+          "rheumatic fever"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mid-Atlantic_(United_States)",
+        "url": "https://en.wikipedia.org/wiki/Mid-Atlantic_(United_States)",
+        "anchors": [
+          "Mid-Atlantic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Minnesota",
+        "url": "https://en.wikipedia.org/wiki/Minnesota",
+        "anchors": [
+          "Minnesota"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Microbiological_culture",
+        "url": "https://en.wikipedia.org/wiki/Microbiological_culture",
+        "anchors": [
+          "grow"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Empiric_treatment",
+        "url": "https://en.wikipedia.org/wiki/Empiric_treatment",
+        "anchors": [
+          "empiric treatment"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "ELISA",
+        "url": "https://en.wikipedia.org/wiki/ELISA",
+        "anchors": [
+          "ELISA"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Western_blot",
+        "url": "https://en.wikipedia.org/wiki/Western_blot",
+        "anchors": [
+          "Western blot"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Immune_system",
+        "url": "https://en.wikipedia.org/wiki/Immune_system",
+        "anchors": [
+          "immune system"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Immunoglobulin_M",
+        "url": "https://en.wikipedia.org/wiki/Immunoglobulin_M",
+        "anchors": [
+          "IgM"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Immunoglobulin_G",
+        "url": "https://en.wikipedia.org/wiki/Immunoglobulin_G",
+        "anchors": [
+          "IgG"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lymphocytes",
+        "url": "https://en.wikipedia.org/wiki/Lymphocytes",
+        "anchors": [
+          "lymphocytes"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electromyography",
+        "url": "https://en.wikipedia.org/wiki/Electromyography",
+        "anchors": [
+          "electromyography"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Nerve_conduction_studies",
+        "url": "https://en.wikipedia.org/wiki/Nerve_conduction_studies",
+        "anchors": [
+          "nerve conduction studies"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electrocardiography",
+        "url": "https://en.wikipedia.org/wiki/Electrocardiography",
+        "anchors": [
+          "electrocardiograms"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Echocardiography",
+        "url": "https://en.wikipedia.org/wiki/Echocardiography",
+        "anchors": [
+          "echocardiography"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Biopsy",
+        "url": "https://en.wikipedia.org/wiki/Biopsy",
+        "anchors": [
+          "Biopsy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Type_I_and_type_II_errors",
+        "url": "https://en.wikipedia.org/wiki/Type_I_and_type_II_errors",
+        "anchors": [
+          "false positive"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Immunosuppression",
+        "url": "https://en.wikipedia.org/wiki/Immunosuppression",
+        "anchors": [
+          "immunosuppressed"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Titer",
+        "url": "https://en.wikipedia.org/wiki/Titer",
+        "anchors": [
+          "titers"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Neuroimaging",
+        "url": "https://en.wikipedia.org/wiki/Neuroimaging",
+        "anchors": [
+          "Neuroimaging"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Differential_diagnosis",
+        "url": "https://en.wikipedia.org/wiki/Differential_diagnosis",
+        "anchors": [
+          "differential diagnosis"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Magnetic_resonance_imaging",
+        "url": "https://en.wikipedia.org/wiki/Magnetic_resonance_imaging",
+        "anchors": [
+          "Magnetic resonance imaging"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Single-photon_emission_computed_tomography",
+        "url": "https://en.wikipedia.org/wiki/Single-photon_emission_computed_tomography",
+        "anchors": [
+          "single-photon emission computed tomography"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Creutzfeldt–Jakob_disease",
+        "url": "https://en.wikipedia.org/wiki/Creutzfeldt%E2%80%93Jakob_disease",
+        "anchors": [
+          "Creutzfeldt–Jakob disease"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Necrosis",
+        "url": "https://en.wikipedia.org/wiki/Necrosis",
+        "anchors": [
+          "necrosis"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bell's_palsy",
+        "url": "https://en.wikipedia.org/wiki/Bell%27s_palsy",
+        "anchors": [
+          "Bell's palsy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Empiric_therapy",
+        "url": "https://en.wikipedia.org/wiki/Empiric_therapy",
+        "anchors": [
+          "empiric therapy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Viral_meningitis",
+        "url": "https://en.wikipedia.org/wiki/Viral_meningitis",
+        "anchors": [
+          "viral meningitis"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sciatica",
+        "url": "https://en.wikipedia.org/wiki/Sciatica",
+        "anchors": [
+          "sciatica"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Diverticulitis",
+        "url": "https://en.wikipedia.org/wiki/Diverticulitis",
+        "anchors": [
+          "diverticulitis"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Acute_coronary_syndrome",
+        "url": "https://en.wikipedia.org/wiki/Acute_coronary_syndrome",
+        "anchors": [
+          "acute coronary syndrome"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Photosensitivity",
+        "url": "https://en.wikipedia.org/wiki/Photosensitivity",
+        "anchors": [
+          "higher risk of sunburns"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Azithromycin",
+        "url": "https://en.wikipedia.org/wiki/Azithromycin",
+        "anchors": [
+          "azithromycin"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cephalexin",
+        "url": "https://en.wikipedia.org/wiki/Cephalexin",
+        "anchors": [
+          "cephalexin"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Infectious_Diseases_Society_of_America",
+        "url": "https://en.wikipedia.org/wiki/Infectious_Diseases_Society_of_America",
+        "anchors": [
+          "IDSA"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Amoxicillin/clavulanic_acid",
+        "url": "https://en.wikipedia.org/wiki/Amoxicillin/clavulanic_acid",
+        "anchors": [
+          "amoxicillin/clavulanic acid"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cefotaxime",
+        "url": "https://en.wikipedia.org/wiki/Cefotaxime",
+        "anchors": [
+          "cefotaxime"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Nonsteroidal_anti-inflammatory_drug",
+        "url": "https://en.wikipedia.org/wiki/Nonsteroidal_anti-inflammatory_drug",
+        "anchors": [
+          "nonsteroidal anti-inflammatory drugs"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Joint_injection",
+        "url": "https://en.wikipedia.org/wiki/Joint_injection",
+        "anchors": [
+          "joint injections"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Synovitis",
+        "url": "https://en.wikipedia.org/wiki/Synovitis",
+        "anchors": [
+          "joint swelling"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Synovial_fluid",
+        "url": "https://en.wikipedia.org/wiki/Synovial_fluid",
+        "anchors": [
+          "synovial fluid"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Disease-modifying_antirheumatic_drugs",
+        "url": "https://en.wikipedia.org/wiki/Disease-modifying_antirheumatic_drugs",
+        "anchors": [
+          "disease-modifying antirheumatic drugs"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Synkinesis",
+        "url": "https://en.wikipedia.org/wiki/Synkinesis",
+        "anchors": [
+          "synkinesis"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Corticosteroid",
+        "url": "https://en.wikipedia.org/wiki/Corticosteroid",
+        "anchors": [
+          "corticosteroid"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bannwarth_syndrome",
+        "url": "https://en.wikipedia.org/wiki/Bannwarth_syndrome",
+        "anchors": [
+          "Bannwarth syndrome"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Intravenous",
+        "url": "https://en.wikipedia.org/wiki/Intravenous",
+        "anchors": [
+          "intravenous"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Memory",
+        "url": "https://en.wikipedia.org/wiki/Memory",
+        "anchors": [
+          "memory"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sleep",
+        "url": "https://en.wikipedia.org/wiki/Sleep",
+        "anchors": [
+          "sleep"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "DMARD",
+        "url": "https://en.wikipedia.org/wiki/DMARD",
+        "anchors": [
+          "DMARDs"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Guillain–Barré_syndrome",
+        "url": "https://en.wikipedia.org/wiki/Guillain%E2%80%93Barr%C3%A9_syndrome",
+        "anchors": [
+          "Guillain–Barré syndrome"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Myalgic_encephalomyelitis/chronic_fatigue_syndrome",
+        "url": "https://en.wikipedia.org/wiki/Myalgic_encephalomyelitis/chronic_fatigue_syndrome",
+        "anchors": [
+          "ME/CFS"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Weather_and_climate_effects_on_Lyme_disease_exposure",
+        "url": "https://en.wikipedia.org/wiki/Weather_and_climate_effects_on_Lyme_disease_exposure",
+        "anchors": [
+          "Weather and climate effects on Lyme disease exposure"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Climate_change",
+        "url": "https://en.wikipedia.org/wiki/Climate_change",
+        "anchors": [
+          "climate change"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Effects_of_climate_change_on_human_health",
+        "url": "https://en.wikipedia.org/wiki/Effects_of_climate_change_on_human_health",
+        "anchors": [
+          "climate change would cause"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Disease_ecology",
+        "url": "https://en.wikipedia.org/wiki/Disease_ecology",
+        "anchors": [
+          "disease ecology"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Northeast_Megalopolis",
+        "url": "https://en.wikipedia.org/wiki/Northeast_Megalopolis",
+        "anchors": [
+          "Northeast Megalopolis"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Yellowstone_River",
+        "url": "https://en.wikipedia.org/wiki/Yellowstone_River",
+        "anchors": [
+          "Yellowstone River"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Slovenia",
+        "url": "https://en.wikipedia.org/wiki/Slovenia",
+        "anchors": [
+          "Slovenia"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Health_Protection_Agency",
+        "url": "https://en.wikipedia.org/wiki/Health_Protection_Agency",
+        "anchors": [
+          "Health Protection Agency"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Notifiable_disease",
+        "url": "https://en.wikipedia.org/wiki/Notifiable_disease",
+        "anchors": [
+          "notifiable disease"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "New_Forest",
+        "url": "https://en.wikipedia.org/wiki/New_Forest",
+        "anchors": [
+          "New Forest"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Salisbury_Plain",
+        "url": "https://en.wikipedia.org/wiki/Salisbury_Plain",
+        "anchors": [
+          "Salisbury Plain"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Exmoor",
+        "url": "https://en.wikipedia.org/wiki/Exmoor",
+        "anchors": [
+          "Exmoor"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "South_Downs",
+        "url": "https://en.wikipedia.org/wiki/South_Downs",
+        "anchors": [
+          "South Downs"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wiltshire",
+        "url": "https://en.wikipedia.org/wiki/Wiltshire",
+        "anchors": [
+          "Wiltshire"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Berkshire",
+        "url": "https://en.wikipedia.org/wiki/Berkshire",
+        "anchors": [
+          "Berkshire"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Thetford_Forest",
+        "url": "https://en.wikipedia.org/wiki/Thetford_Forest",
+        "anchors": [
+          "Thetford Forest"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Seropositive",
+        "url": "https://en.wikipedia.org/wiki/Seropositive",
+        "anchors": [
+          "seropositive"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Baggio–Yoshinari_syndrome",
+        "url": "https://en.wikipedia.org/wiki/Baggio%E2%80%93Yoshinari_syndrome",
+        "anchors": [
+          "Baggio–Yoshinari syndrome"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Amblyomma",
+        "url": "https://en.wikipedia.org/wiki/Amblyomma",
+        "anchors": [
+          "Amblyomma"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Rhipicephalus",
+        "url": "https://en.wikipedia.org/wiki/Rhipicephalus",
+        "anchors": [
+          "Rhipicephalus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cotia",
+        "url": "https://en.wikipedia.org/wiki/Cotia",
+        "anchors": [
+          "Cotia"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Morocco",
+        "url": "https://en.wikipedia.org/wiki/Morocco",
+        "anchors": [
+          "Morocco"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Algeria",
+        "url": "https://en.wikipedia.org/wiki/Algeria",
+        "anchors": [
+          "Algeria"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Egypt",
+        "url": "https://en.wikipedia.org/wiki/Egypt",
+        "anchors": [
+          "Egypt"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tunisia",
+        "url": "https://en.wikipedia.org/wiki/Tunisia",
+        "anchors": [
+          "Tunisia"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Kenya",
+        "url": "https://en.wikipedia.org/wiki/Kenya",
+        "anchors": [
+          "Kenya"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Nepal",
+        "url": "https://en.wikipedia.org/wiki/Nepal",
+        "anchors": [
+          "Nepal"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ecotone",
+        "url": "https://en.wikipedia.org/wiki/Ecotone",
+        "anchors": [
+          "edges between woods and lawns"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Groundcover",
+        "url": "https://en.wikipedia.org/wiki/Groundcover",
+        "anchors": [
+          "groundcover"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Larva",
+        "url": "https://en.wikipedia.org/wiki/Larva",
+        "anchors": [
+          "larvae"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Permethrin",
+        "url": "https://en.wikipedia.org/wiki/Permethrin",
+        "anchors": [
+          "permethrin"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "United_States_Environmental_Protection_Agency",
+        "url": "https://en.wikipedia.org/wiki/United_States_Environmental_Protection_Agency",
+        "anchors": [
+          "EPA"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "IR3535",
+        "url": "https://en.wikipedia.org/wiki/IR3535",
+        "anchors": [
+          "IR3535"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Eucalyptus_oil",
+        "url": "https://en.wikipedia.org/wiki/Eucalyptus_oil",
+        "anchors": [
+          "oil of lemon eucalyptus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "P-Menthane-3,8-diol",
+        "url": "https://en.wikipedia.org/wiki/P-Menthane-3,8-diol",
+        "anchors": [
+          "para-menthane-diol (PMD)"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sunscreen",
+        "url": "https://en.wikipedia.org/wiki/Sunscreen",
+        "anchors": [
+          "sunscreen"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Blood_blister",
+        "url": "https://en.wikipedia.org/wiki/Blood_blister",
+        "anchors": [
+          "blood blister"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Petroleum_jelly",
+        "url": "https://en.wikipedia.org/wiki/Petroleum_jelly",
+        "anchors": [
+          "petroleum jelly"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ixodes_holocyclus",
+        "url": "https://en.wikipedia.org/wiki/Ixodes_holocyclus",
+        "anchors": [
+          "Australian paralysis tick"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Australasian_Society_of_Clinical_Immunology_and_Allergy",
+        "url": "https://en.wikipedia.org/wiki/Australasian_Society_of_Clinical_Immunology_and_Allergy",
+        "anchors": [
+          "Australasian Society of Clinical Immunology and Allergy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Anaphylaxis",
+        "url": "https://en.wikipedia.org/wiki/Anaphylaxis",
+        "anchors": [
+          "anaphylaxis"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Dental_floss",
+        "url": "https://en.wikipedia.org/wiki/Dental_floss",
+        "anchors": [
+          "dental floss"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Acaricides",
+        "url": "https://en.wikipedia.org/wiki/Acaricides",
+        "anchors": [
+          "acaricides"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lizards",
+        "url": "https://en.wikipedia.org/wiki/Lizards",
+        "anchors": [
+          "lizards"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Birds",
+        "url": "https://en.wikipedia.org/wiki/Birds",
+        "anchors": [
+          "birds"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mice",
+        "url": "https://en.wikipedia.org/wiki/Mice",
+        "anchors": [
+          "mice"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cats",
+        "url": "https://en.wikipedia.org/wiki/Cats",
+        "anchors": [
+          "cats"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Dogs",
+        "url": "https://en.wikipedia.org/wiki/Dogs",
+        "anchors": [
+          "dogs"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Deer",
+        "url": "https://en.wikipedia.org/wiki/Deer",
+        "anchors": [
+          "deer"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Humans",
+        "url": "https://en.wikipedia.org/wiki/Humans",
+        "anchors": [
+          "humans"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Reservoir_host",
+        "url": "https://en.wikipedia.org/wiki/Reservoir_host",
+        "anchors": [
+          "reservoir host"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Monhegan,_Maine",
+        "url": "https://en.wikipedia.org/wiki/Monhegan,_Maine",
+        "anchors": [
+          "Monhegan, Maine"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "White-footed_mice",
+        "url": "https://en.wikipedia.org/wiki/White-footed_mice",
+        "anchors": [
+          "white-footed mice"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Eastern_chipmunks",
+        "url": "https://en.wikipedia.org/wiki/Eastern_chipmunks",
+        "anchors": [
+          "Eastern chipmunks"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Deforestation",
+        "url": "https://en.wikipedia.org/wiki/Deforestation",
+        "anchors": [
+          "deforestation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ticks_of_domestic_animals",
+        "url": "https://en.wikipedia.org/wiki/Ticks_of_domestic_animals",
+        "anchors": [
+          "ticks of domestic animals"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Acaricide",
+        "url": "https://en.wikipedia.org/wiki/Acaricide",
+        "anchors": [
+          "acaricides"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mus_musculus",
+        "url": "https://en.wikipedia.org/wiki/Mus_musculus",
+        "anchors": [
+          "house mouse"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Capreolus_capreolus",
+        "url": "https://en.wikipedia.org/wiki/Capreolus_capreolus",
+        "anchors": [
+          "Capreolus capreolus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Red_deer",
+        "url": "https://en.wikipedia.org/wiki/Red_deer",
+        "anchors": [
+          "red deer"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Boars",
+        "url": "https://en.wikipedia.org/wiki/Boars",
+        "anchors": [
+          "boars"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sus_scrofa",
+        "url": "https://en.wikipedia.org/wiki/Sus_scrofa",
+        "anchors": [
+          "Sus scrofa"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Recombinant_DNA",
+        "url": "https://en.wikipedia.org/wiki/Recombinant_DNA#Applications_of_recombinant_DNA_technology",
+        "anchors": [
+          "recombinant vaccine"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Clinical_trial",
+        "url": "https://en.wikipedia.org/wiki/Clinical_trial",
+        "anchors": [
+          "clinical trials"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Adverse_effect",
+        "url": "https://en.wikipedia.org/wiki/Adverse_effect",
+        "anchors": [
+          "adverse effects"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Vaccine",
+        "url": "https://en.wikipedia.org/wiki/Vaccine",
+        "anchors": [
+          "vaccine"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Autoimmunity",
+        "url": "https://en.wikipedia.org/wiki/Autoimmunity",
+        "anchors": [
+          "autoimmune"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Class-action_lawsuit",
+        "url": "https://en.wikipedia.org/wiki/Class-action_lawsuit",
+        "anchors": [
+          "class-action lawsuits"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Nature_(journal)",
+        "url": "https://en.wikipedia.org/wiki/Nature_(journal)",
+        "anchors": [
+          "Nature"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Max_Planck_Institute",
+        "url": "https://en.wikipedia.org/wiki/Max_Planck_Institute",
+        "anchors": [
+          "Max Planck Institute"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Valneva",
+        "url": "https://en.wikipedia.org/wiki/Valneva",
+        "anchors": [
+          "Valneva"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fast_track_(FDA)",
+        "url": "https://en.wikipedia.org/wiki/Fast_track_(FDA)",
+        "anchors": [
+          "fast track designation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pfizer",
+        "url": "https://en.wikipedia.org/wiki/Pfizer",
+        "anchors": [
+          "Pfizer"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "MRNA_vaccine",
+        "url": "https://en.wikipedia.org/wiki/MRNA_vaccine",
+        "anchors": [
+          "mRNA vaccine"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Erythema",
+        "url": "https://en.wikipedia.org/wiki/Erythema",
+        "anchors": [
+          "erythema"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Norbert_Pardi",
+        "url": "https://en.wikipedia.org/wiki/Norbert_Pardi",
+        "anchors": [
+          "Pardi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lipid_nanoparticles",
+        "url": "https://en.wikipedia.org/wiki/Lipid_nanoparticles",
+        "anchors": [
+          "lipid nanoparticles"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Vaccination_of_dogs",
+        "url": "https://en.wikipedia.org/wiki/Vaccination_of_dogs",
+        "anchors": [
+          "Canine vaccines"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Schering-Plough",
+        "url": "https://en.wikipedia.org/wiki/Schering-Plough",
+        "anchors": [
+          "Schering-Plough"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Virulence-related_outer_membrane_protein_family",
+        "url": "https://en.wikipedia.org/wiki/Virulence-related_outer_membrane_protein_family",
+        "anchors": [
+          "proteins OspC and OspA"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Merial",
+        "url": "https://en.wikipedia.org/wiki/Merial",
+        "anchors": [
+          "Merial"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Oetzi",
+        "url": "https://en.wikipedia.org/wiki/Oetzi",
+        "anchors": [
+          "Oetzi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Eastern_Alps",
+        "url": "https://en.wikipedia.org/wiki/Eastern_Alps",
+        "anchors": [
+          "Eastern Alps"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Reforestation",
+        "url": "https://en.wikipedia.org/wiki/Reforestation",
+        "anchors": [
+          "reforestation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Midwest",
+        "url": "https://en.wikipedia.org/wiki/Midwest",
+        "anchors": [
+          "Midwest"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Peter_Kalm",
+        "url": "https://en.wikipedia.org/wiki/Peter_Kalm",
+        "anchors": [
+          "Peter Kalm"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "John_Walker_(natural_historian)",
+        "url": "https://en.wikipedia.org/wiki/John_Walker_(natural_historian)",
+        "anchors": [
+          "John Walker"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Jura,_Scotland",
+        "url": "https://en.wikipedia.org/wiki/Jura,_Scotland",
+        "anchors": [
+          "Jura"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ötzi_the_Iceman",
+        "url": "https://en.wikipedia.org/wiki/%C3%96tzi_the_Iceman",
+        "anchors": [
+          "Ötzi the Iceman"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mummy",
+        "url": "https://en.wikipedia.org/wiki/Mummy",
+        "anchors": [
+          "mummy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Breslau",
+        "url": "https://en.wikipedia.org/wiki/Breslau",
+        "anchors": [
+          "Breslau"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Skin_disorder",
+        "url": "https://en.wikipedia.org/wiki/Skin_disorder",
+        "anchors": [
+          "skin disorder"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Arvid_Afzelius",
+        "url": "https://en.wikipedia.org/wiki/Arvid_Afzelius",
+        "anchors": [
+          "Arvid Afzelius"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Alfred_Bannwarth",
+        "url": "https://en.wikipedia.org/wiki/Alfred_Bannwarth",
+        "anchors": [
+          "Alfred Bannwarth"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Karolinska_Institute",
+        "url": "https://en.wikipedia.org/wiki/Karolinska_Institute",
+        "anchors": [
+          "Karolinska Institute"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Penicillin",
+        "url": "https://en.wikipedia.org/wiki/Penicillin",
+        "anchors": [
+          "penicillin"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Montauk,_New_York",
+        "url": "https://en.wikipedia.org/wiki/Montauk,_New_York",
+        "anchors": [
+          "Montauk Knee"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Syndrome",
+        "url": "https://en.wikipedia.org/wiki/Syndrome",
+        "anchors": [
+          "syndrome"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Juvenile_rheumatoid_arthritis",
+        "url": "https://en.wikipedia.org/wiki/Juvenile_rheumatoid_arthritis",
+        "anchors": [
+          "juvenile rheumatoid arthritis"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Old_Lyme",
+        "url": "https://en.wikipedia.org/wiki/Old_Lyme",
+        "anchors": [
+          "Old Lyme"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Allen_Steere",
+        "url": "https://en.wikipedia.org/wiki/Allen_Steere",
+        "anchors": [
+          "Allen Steere"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Epidemic_Intelligence_Service",
+        "url": "https://en.wikipedia.org/wiki/Epidemic_Intelligence_Service",
+        "anchors": [
+          "Epidemic Intelligence Service"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Stephen_Malawista",
+        "url": "https://en.wikipedia.org/wiki/Stephen_Malawista",
+        "anchors": [
+          "Stephen Malawista"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Jorge_Benach",
+        "url": "https://en.wikipedia.org/wiki/Jorge_Benach",
+        "anchors": [
+          "Jorge Benach"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Willy_Burgdorfer",
+        "url": "https://en.wikipedia.org/wiki/Willy_Burgdorfer",
+        "anchors": [
+          "Willy Burgdorfer"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Rocky_Mountain_Biological_Laboratory",
+        "url": "https://en.wikipedia.org/wiki/Rocky_Mountain_Biological_Laboratory",
+        "anchors": [
+          "Rocky Mountain Biological Laboratory"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Rocky_Mountain_spotted_fever",
+        "url": "https://en.wikipedia.org/wiki/Rocky_Mountain_spotted_fever",
+        "anchors": [
+          "Rocky Mountain spotted fever"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Blood_serum",
+        "url": "https://en.wikipedia.org/wiki/Blood_serum",
+        "anchors": [
+          "sera"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Science_(journal)",
+        "url": "https://en.wikipedia.org/wiki/Science_(journal)",
+        "anchors": [
+          "Science"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tetracycline_antibiotics",
+        "url": "https://en.wikipedia.org/wiki/Tetracycline_antibiotics",
+        "anchors": [
+          "tetracycline antibiotics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Human_impact_on_the_environment",
+        "url": "https://en.wikipedia.org/wiki/Human_impact_on_the_environment",
+        "anchors": [
+          "anthropogenic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Non-specific_symptoms",
+        "url": "https://en.wikipedia.org/wiki/Non-specific_symptoms",
+        "anchors": [
+          "non-specific symptoms"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Under_Our_Skin",
+        "url": "https://en.wikipedia.org/wiki/Under_Our_Skin",
+        "anchors": [
+          "Under Our Skin"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Conspiracy_theory",
+        "url": "https://en.wikipedia.org/wiki/Conspiracy_theory",
+        "anchors": [
+          "conspiracy theories"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Plum_Island_Animal_Disease_Center",
+        "url": "https://en.wikipedia.org/wiki/Plum_Island_Animal_Disease_Center",
+        "anchors": [
+          "Plum Island laboratory"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Robert_F._Kennedy_Jr",
+        "url": "https://en.wikipedia.org/wiki/Robert_F._Kennedy_Jr",
+        "anchors": [
+          "Robert F. Kennedy Jr"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Amitraz",
+        "url": "https://en.wikipedia.org/wiki/Amitraz",
+        "anchors": [
+          "Amitraz"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fipronil",
+        "url": "https://en.wikipedia.org/wiki/Fipronil",
+        "anchors": [
+          "Fipronil"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pyrethroids",
+        "url": "https://en.wikipedia.org/wiki/Pyrethroids",
+        "anchors": [
+          "pyrethroids"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chronic_kidney_disease",
+        "url": "https://en.wikipedia.org/wiki/Chronic_kidney_disease",
+        "anchors": [
+          "chronic kidney disease"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lameness_(equine)",
+        "url": "https://en.wikipedia.org/wiki/Lameness_(equine)",
+        "anchors": [
+          "lameness"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Radiculoneuritis",
+        "url": "https://en.wikipedia.org/wiki/Radiculoneuritis",
+        "anchors": [
+          "radiculoneuritis"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Serological_testing",
+        "url": "https://en.wikipedia.org/wiki/Serological_testing",
+        "anchors": [
+          "serological testing"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Antibody",
+        "url": "https://en.wikipedia.org/wiki/Antibody",
+        "anchors": [
+          "specific antibodies"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Equinae",
+        "url": "https://en.wikipedia.org/wiki/Equinae",
+        "anchors": [
+          "equine"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Oxytetracycline",
+        "url": "https://en.wikipedia.org/wiki/Oxytetracycline",
+        "anchors": [
+          "oxytetracycline"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Minocycline",
+        "url": "https://en.wikipedia.org/wiki/Minocycline",
+        "anchors": [
+          "minocycline"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Euthanized",
+        "url": "https://en.wikipedia.org/wiki/Euthanized",
+        "anchors": [
+          "euthanized"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Outer_surface_protein",
+        "url": "https://en.wikipedia.org/wiki/Outer_surface_protein",
+        "anchors": [
+          "outer-surface protein"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Copyright_status_of_works_by_the_federal_government_of_the_United_States",
+        "url": "https://en.wikipedia.org/wiki/Copyright_status_of_works_by_the_federal_government_of_the_United_States",
+        "anchors": [
+          "public domain material"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ],
+    "external": [
+      {
+        "url": "https://www.cdc.gov/lyme/postLDS/index.html",
+        "anchors": [
+          "Post-Treatment Lyme Disease Syndrome"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://www.cdc.gov/lyme/",
+        "anchors": [
+          "CDC – Lyme Disease"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://www.aphl.org/aboutAPHL/publications/Documents/ID-2021-Lyme-Disease-Serologic-Testing-Reporting.pdf",
+        "anchors": [
+          "Association for Public Health Laboratories guide"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://www.niaid.nih.gov/diseases-conditions/lyme-disease",
+        "anchors": [
+          "NIH – Lyme Disease"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://www.nice.org.uk/guidance/ng95/chapter/Recommendations",
+        "anchors": [
+          "NICE Guidelines – Lyme Disease"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://vbdhub.org",
+        "anchors": [
+          "UK's One Health Vector-Borne Diseases Hub"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ]
+  },
+  "stats": {
+    "n_categories": 6,
+    "n_sections": 73,
+    "n_tables": 0,
+    "n_local": 9,
+    "n_wiki": 359,
+    "n_external": 6,
+    "md_chars": 103525
+  }
+}

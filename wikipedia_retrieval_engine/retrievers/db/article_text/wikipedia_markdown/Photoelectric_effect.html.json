@@ -1,0 +1,1922 @@
+{
+  "source": "Photoelectric_effect.html",
+  "title": "Photoelectric effect",
+  "wiki_title": "Photoelectric_effect",
+  "categories": [
+    "Quantum mechanics",
+    "Electrical phenomena",
+    "Albert Einstein",
+    "Heinrich Hertz",
+    "Energy conversion",
+    "Photovoltaics",
+    "Photochemistry",
+    "Electrochemistry"
+  ],
+  "sections": [
+    {
+      "level": 2,
+      "id": "Emission_mechanism",
+      "title": "Emission mechanism"
+    },
+    {
+      "level": 3,
+      "id": "Experimental_observation_of_photoelectric_emission",
+      "title": "Experimental observation of photoelectric emission"
+    },
+    {
+      "level": 3,
+      "id": "Theoretical_explanation",
+      "title": "Theoretical explanation"
+    },
+    {
+      "level": 3,
+      "id": "Photoemission_from_atoms,_molecules_and_solids",
+      "title": "Photoemission from atoms, molecules and solids"
+    },
+    {
+      "level": 4,
+      "id": "Models_of_photoemission_from_solids",
+      "title": "Models of photoemission from solids"
+    },
+    {
+      "level": 2,
+      "id": "History",
+      "title": "History"
+    },
+    {
+      "level": 3,
+      "id": "19th_century",
+      "title": "19th century"
+    },
+    {
+      "level": 3,
+      "id": "20th_century",
+      "title": "20th century"
+    },
+    {
+      "level": 3,
+      "id": "21st_century",
+      "title": "21st century"
+    },
+    {
+      "level": 2,
+      "id": "Uses_and_effects",
+      "title": "Uses and effects"
+    },
+    {
+      "level": 3,
+      "id": "Photomultipliers",
+      "title": "Photomultipliers"
+    },
+    {
+      "level": 3,
+      "id": "Image_sensors",
+      "title": "Image sensors"
+    },
+    {
+      "level": 3,
+      "id": "Photoelectron_spectroscopy",
+      "title": "Photoelectron spectroscopy"
+    },
+    {
+      "level": 3,
+      "id": "Night_vision_devices",
+      "title": "Night vision devices"
+    },
+    {
+      "level": 3,
+      "id": "Spacecraft",
+      "title": "Spacecraft"
+    },
+    {
+      "level": 3,
+      "id": "Moon_dust",
+      "title": "Moon dust"
+    },
+    {
+      "level": 2,
+      "id": "Cross_section_and_competing_processes",
+      "title": "Cross section and competing processes"
+    },
+    {
+      "level": 2,
+      "id": "See_also",
+      "title": "See also"
+    },
+    {
+      "level": 2,
+      "id": "References",
+      "title": "References"
+    },
+    {
+      "level": 2,
+      "id": "External_links",
+      "title": "External links"
+    }
+  ],
+  "infobox": null,
+  "tables": [],
+  "links": {
+    "local": [
+      {
+        "target": "Albert_Einstein",
+        "source_file": "Albert_Einstein.html",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein",
+        "anchors": [
+          "Albert Einstein"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Max_Planck",
+        "source_file": "Max_Planck.html",
+        "url": "https://en.wikipedia.org/wiki/Max_Planck",
+        "anchors": [
+          "Max Planck"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_mechanics",
+        "source_file": "Quantum_mechanics.html",
+        "url": "https://en.wikipedia.org/wiki/Quantum_mechanics",
+        "anchors": [
+          "quantum mechanics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Moon",
+        "source_file": "Moon.html",
+        "url": "https://en.wikipedia.org/wiki/Moon",
+        "anchors": [
+          "Moon"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ],
+    "wiki": [
+      {
+        "target": "Angle-resolved_photoemission_spectroscopy",
+        "url": "https://en.wikipedia.org/wiki/Angle-resolved_photoemission_spectroscopy",
+        "anchors": [
+          "angle-resolved photoemission spectroscopy",
+          "Angle-resolved photoemission spectroscopy",
+          "ARPES"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Photovoltaic_effect",
+        "url": "https://en.wikipedia.org/wiki/Photovoltaic_effect",
+        "anchors": [
+          "Photovoltaic effect",
+          "photovoltaic effect"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Compton_scattering",
+        "url": "https://en.wikipedia.org/wiki/Compton_scattering",
+        "anchors": [
+          "Compton effect",
+          "Compton scattering"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wayback_Machine",
+        "url": "https://en.wikipedia.org/wiki/Wayback_Machine",
+        "anchors": [
+          "Wayback Machine"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electron",
+        "url": "https://en.wikipedia.org/wiki/Electron",
+        "anchors": [
+          "electrons"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Photon",
+        "url": "https://en.wikipedia.org/wiki/Photon",
+        "anchors": [
+          "photons"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Energy",
+        "url": "https://en.wikipedia.org/wiki/Energy",
+        "anchors": [
+          "energy"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Intensity_(physics)",
+        "url": "https://en.wikipedia.org/wiki/Intensity_(physics)",
+        "anchors": [
+          "intensity"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Kinetic_energy",
+        "url": "https://en.wikipedia.org/wiki/Kinetic_energy",
+        "anchors": [
+          "kinetic energy"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Gilbert_N._Lewis",
+        "url": "https://en.wikipedia.org/wiki/Gilbert_N._Lewis",
+        "anchors": [
+          "Gilbert N. Lewis"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Atomic_number",
+        "url": "https://en.wikipedia.org/wiki/Atomic_number",
+        "anchors": [
+          "atomic number"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wave–particle_duality",
+        "url": "https://en.wikipedia.org/wiki/Wave%E2%80%93particle_duality",
+        "anchors": [
+          "wave–particle duality",
+          "Wave–particle duality"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Photoconductivity",
+        "url": "https://en.wikipedia.org/wiki/Photoconductivity",
+        "anchors": [
+          "photoconductive",
+          "photoconductivity"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Synchrotron_radiation",
+        "url": "https://en.wikipedia.org/wiki/Synchrotron_radiation",
+        "anchors": [
+          "synchrotron radiation"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electronic_band_structure",
+        "url": "https://en.wikipedia.org/wiki/Electronic_band_structure",
+        "anchors": [
+          "electronic band structure"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Planck_constant",
+        "url": "https://en.wikipedia.org/wiki/Planck_constant",
+        "anchors": [
+          "Planck constant"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electroscope",
+        "url": "https://en.wikipedia.org/wiki/Electroscope",
+        "anchors": [
+          "electroscope"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wilhelm_Hallwachs",
+        "url": "https://en.wikipedia.org/wiki/Wilhelm_Hallwachs",
+        "anchors": [
+          "Wilhelm Hallwachs"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Aleksandr_Stoletov",
+        "url": "https://en.wikipedia.org/wiki/Aleksandr_Stoletov",
+        "anchors": [
+          "Aleksander Stoletov",
+          "Aleksandr Stoletov"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cross_section_(physics)",
+        "url": "https://en.wikipedia.org/wiki/Cross_section_(physics)",
+        "anchors": [
+          "cross section"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pair_production",
+        "url": "https://en.wikipedia.org/wiki/Pair_production",
+        "anchors": [
+          "pair production"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electromagnetic_radiation",
+        "url": "https://en.wikipedia.org/wiki/Electromagnetic_radiation",
+        "anchors": [
+          "electromagnetic radiation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ultraviolet_light",
+        "url": "https://en.wikipedia.org/wiki/Ultraviolet_light",
+        "anchors": [
+          "ultraviolet light"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Condensed_matter_physics",
+        "url": "https://en.wikipedia.org/wiki/Condensed_matter_physics",
+        "anchors": [
+          "condensed matter physics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Solid-state_chemistry",
+        "url": "https://en.wikipedia.org/wiki/Solid-state_chemistry",
+        "anchors": [
+          "solid state"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_chemistry",
+        "url": "https://en.wikipedia.org/wiki/Quantum_chemistry",
+        "anchors": [
+          "quantum chemistry"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electronics",
+        "url": "https://en.wikipedia.org/wiki/Electronics",
+        "anchors": [
+          "electronic devices"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Classical_electromagnetism",
+        "url": "https://en.wikipedia.org/wiki/Classical_electromagnetism",
+        "anchors": [
+          "classical electromagnetism"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Frequency",
+        "url": "https://en.wikipedia.org/wiki/Frequency",
+        "anchors": [
+          "frequency"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Light",
+        "url": "https://en.wikipedia.org/wiki/Light#Wave_theory",
+        "anchors": [
+          "a wave"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Metal",
+        "url": "https://en.wikipedia.org/wiki/Metal",
+        "anchors": [
+          "metals"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electronvolt",
+        "url": "https://en.wikipedia.org/wiki/Electronvolt",
+        "anchors": [
+          "electron-volt"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Visible_light",
+        "url": "https://en.wikipedia.org/wiki/Visible_light",
+        "anchors": [
+          "visible"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Core_electron",
+        "url": "https://en.wikipedia.org/wiki/Core_electron",
+        "anchors": [
+          "core electrons"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chemical_element",
+        "url": "https://en.wikipedia.org/wiki/Chemical_element",
+        "anchors": [
+          "elements"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Photoelectrochemical_cell",
+        "url": "https://en.wikipedia.org/wiki/Photoelectrochemical_cell",
+        "anchors": [
+          "photoelectrochemical effect"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Photon_energy",
+        "url": "https://en.wikipedia.org/wiki/Photon_energy",
+        "anchors": [
+          "photon energy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electron_binding_energy",
+        "url": "https://en.wikipedia.org/wiki/Electron_binding_energy",
+        "anchors": [
+          "binding energy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Irradiated",
+        "url": "https://en.wikipedia.org/wiki/Irradiated",
+        "anchors": [
+          "irradiated"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Introduction_to_quantum_mechanics",
+        "url": "https://en.wikipedia.org/wiki/Introduction_to_quantum_mechanics",
+        "anchors": [
+          "quantum mechanics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fermi_level",
+        "url": "https://en.wikipedia.org/wiki/Fermi_level",
+        "anchors": [
+          "Fermi level"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Xenon_arc_lamps",
+        "url": "https://en.wikipedia.org/wiki/Xenon_arc_lamps",
+        "anchors": [
+          "xenon arc lamps"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fluorescent_lamps",
+        "url": "https://en.wikipedia.org/wiki/Fluorescent_lamps",
+        "anchors": [
+          "fluorescent lamps"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Laser",
+        "url": "https://en.wikipedia.org/wiki/Laser",
+        "anchors": [
+          "ultraviolet lasers"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Monochromator",
+        "url": "https://en.wikipedia.org/wiki/Monochromator",
+        "anchors": [
+          "monochromatize"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Vacuum_tube",
+        "url": "https://en.wikipedia.org/wiki/Vacuum_tube",
+        "anchors": [
+          "vacuum tube"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Radiation",
+        "url": "https://en.wikipedia.org/wiki/Radiation",
+        "anchors": [
+          "radiation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Probability",
+        "url": "https://en.wikipedia.org/wiki/Probability",
+        "anchors": [
+          "probability"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Polarization_(waves)",
+        "url": "https://en.wikipedia.org/wiki/Polarization_(waves)",
+        "anchors": [
+          "polarization"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Photons",
+        "url": "https://en.wikipedia.org/wiki/Photons",
+        "anchors": [
+          "photons"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Work_function",
+        "url": "https://en.wikipedia.org/wiki/Work_function",
+        "anchors": [
+          "work function"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "History_of_quantum_mechanics",
+        "url": "https://en.wikipedia.org/wiki/History_of_quantum_mechanics",
+        "anchors": [
+          "development of quantum mechanics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Binding_energy",
+        "url": "https://en.wikipedia.org/wiki/Binding_energy",
+        "anchors": [
+          "binding energies"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Selection_rule",
+        "url": "https://en.wikipedia.org/wiki/Selection_rule",
+        "anchors": [
+          "selection rules"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Auger_effect",
+        "url": "https://en.wikipedia.org/wiki/Auger_effect",
+        "anchors": [
+          "Auger effect"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Phonon",
+        "url": "https://en.wikipedia.org/wiki/Phonon",
+        "anchors": [
+          "phonons"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Inelastic_mean_free_path",
+        "url": "https://en.wikipedia.org/wiki/Inelastic_mean_free_path",
+        "anchors": [
+          "universal curve"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "A._E._Becquerel",
+        "url": "https://en.wikipedia.org/wiki/A._E._Becquerel",
+        "anchors": [
+          "Alexandre Edmond Becquerel"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electrolytic_cell",
+        "url": "https://en.wikipedia.org/wiki/Electrolytic_cell",
+        "anchors": [
+          "electrolytic cells"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Photovoltaics",
+        "url": "https://en.wikipedia.org/wiki/Photovoltaics",
+        "anchors": [
+          "photovoltaics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Willoughby_Smith",
+        "url": "https://en.wikipedia.org/wiki/Willoughby_Smith",
+        "anchors": [
+          "Willoughby Smith"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Selenium",
+        "url": "https://en.wikipedia.org/wiki/Selenium",
+        "anchors": [
+          "selenium"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Julius_Elster",
+        "url": "https://en.wikipedia.org/wiki/Julius_Elster",
+        "anchors": [
+          "Johann Elster"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hans_Friedrich_Geitel",
+        "url": "https://en.wikipedia.org/wiki/Hans_Friedrich_Geitel",
+        "anchors": [
+          "Hans Geitel"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Heidelberg",
+        "url": "https://en.wikipedia.org/wiki/Heidelberg",
+        "anchors": [
+          "Heidelberg"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Rubidium",
+        "url": "https://en.wikipedia.org/wiki/Rubidium",
+        "anchors": [
+          "rubidium"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Potassium",
+        "url": "https://en.wikipedia.org/wiki/Potassium",
+        "anchors": [
+          "potassium"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Alloy",
+        "url": "https://en.wikipedia.org/wiki/Alloy",
+        "anchors": [
+          "alloy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sodium",
+        "url": "https://en.wikipedia.org/wiki/Sodium",
+        "anchors": [
+          "sodium"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lithium",
+        "url": "https://en.wikipedia.org/wiki/Lithium",
+        "anchors": [
+          "lithium"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Magnesium",
+        "url": "https://en.wikipedia.org/wiki/Magnesium",
+        "anchors": [
+          "magnesium"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Thallium",
+        "url": "https://en.wikipedia.org/wiki/Thallium",
+        "anchors": [
+          "thallium"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Zinc",
+        "url": "https://en.wikipedia.org/wiki/Zinc",
+        "anchors": [
+          "zinc"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Copper",
+        "url": "https://en.wikipedia.org/wiki/Copper",
+        "anchors": [
+          "copper"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Platinum",
+        "url": "https://en.wikipedia.org/wiki/Platinum",
+        "anchors": [
+          "platinum"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lead",
+        "url": "https://en.wikipedia.org/wiki/Lead",
+        "anchors": [
+          "lead"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Iron",
+        "url": "https://en.wikipedia.org/wiki/Iron",
+        "anchors": [
+          "iron"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cadmium",
+        "url": "https://en.wikipedia.org/wiki/Cadmium",
+        "anchors": [
+          "cadmium"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Carbon",
+        "url": "https://en.wikipedia.org/wiki/Carbon",
+        "anchors": [
+          "carbon"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mercury_(element)",
+        "url": "https://en.wikipedia.org/wiki/Mercury_(element)",
+        "anchors": [
+          "mercury"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Heinrich_Hertz",
+        "url": "https://en.wikipedia.org/wiki/Heinrich_Hertz",
+        "anchors": [
+          "Heinrich Hertz"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Spark_gap",
+        "url": "https://en.wikipedia.org/wiki/Spark_gap",
+        "anchors": [
+          "spark gap"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quartz",
+        "url": "https://en.wikipedia.org/wiki/Quartz",
+        "anchors": [
+          "quartz"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Augusto_Righi",
+        "url": "https://en.wikipedia.org/wiki/Augusto_Righi",
+        "anchors": [
+          "Augusto Righi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ozone",
+        "url": "https://en.wikipedia.org/wiki/Ozone",
+        "anchors": [
+          "ozone"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Stoletov's_law",
+        "url": "https://en.wikipedia.org/wiki/Stoletov%27s_law",
+        "anchors": [
+          "Stoletov's law"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "J._J._Thomson",
+        "url": "https://en.wikipedia.org/wiki/J._J._Thomson",
+        "anchors": [
+          "J. J. Thomson"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Geissler_tube",
+        "url": "https://en.wikipedia.org/wiki/Geissler_tube",
+        "anchors": [
+          "Crookes tubes"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cathode_rays",
+        "url": "https://en.wikipedia.org/wiki/Cathode_rays",
+        "anchors": [
+          "cathode rays"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Philipp_Lenard",
+        "url": "https://en.wikipedia.org/wiki/Philipp_Lenard",
+        "anchors": [
+          "Philipp Lenard"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electrode",
+        "url": "https://en.wikipedia.org/wiki/Electrode",
+        "anchors": [
+          "electrodes"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wave_theory_of_light",
+        "url": "https://en.wikipedia.org/wiki/Wave_theory_of_light",
+        "anchors": [
+          "wave theory of light"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Black-body_radiation",
+        "url": "https://en.wikipedia.org/wiki/Black-body_radiation",
+        "anchors": [
+          "black-body radiation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Robert_Andrews_Millikan",
+        "url": "https://en.wikipedia.org/wiki/Robert_Andrews_Millikan",
+        "anchors": [
+          "Robert A. Millikan"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Nobel_Prize_in_Physics",
+        "url": "https://en.wikipedia.org/wiki/Nobel_Prize_in_Physics",
+        "anchors": [
+          "Nobel Prize in Physics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum",
+        "url": "https://en.wikipedia.org/wiki/Quantum",
+        "anchors": [
+          "quanta"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Annus_Mirabilis_papers",
+        "url": "https://en.wikipedia.org/wiki/Annus_Mirabilis_papers",
+        "anchors": [
+          "Annus Mirabilis papers"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "James_Clerk_Maxwell",
+        "url": "https://en.wikipedia.org/wiki/James_Clerk_Maxwell",
+        "anchors": [
+          "James Clerk Maxwell"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Infinite_divisibility",
+        "url": "https://en.wikipedia.org/wiki/Infinite_divisibility",
+        "anchors": [
+          "infinite divisibility"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Georgi_Nadjakov",
+        "url": "https://en.wikipedia.org/wiki/Georgi_Nadjakov",
+        "anchors": [
+          "Georgi Nadjakov"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Xerography",
+        "url": "https://en.wikipedia.org/wiki/Xerography",
+        "anchors": [
+          "xerography"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tungsten",
+        "url": "https://en.wikipedia.org/wiki/Tungsten",
+        "anchors": [
+          "tungsten"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Attosecond",
+        "url": "https://en.wikipedia.org/wiki/Attosecond",
+        "anchors": [
+          "attoseconds"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Photomultiplier",
+        "url": "https://en.wikipedia.org/wiki/Photomultiplier",
+        "anchors": [
+          "Photomultiplier"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Photocathode",
+        "url": "https://en.wikipedia.org/wiki/Photocathode",
+        "anchors": [
+          "photocathode"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Secondary_emission",
+        "url": "https://en.wikipedia.org/wiki/Secondary_emission",
+        "anchors": [
+          "secondary emission"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Video_camera_tube",
+        "url": "https://en.wikipedia.org/wiki/Video_camera_tube",
+        "anchors": [
+          "Video camera tubes"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Television",
+        "url": "https://en.wikipedia.org/wiki/Television",
+        "anchors": [
+          "television"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Philo_Farnsworth",
+        "url": "https://en.wikipedia.org/wiki/Philo_Farnsworth",
+        "anchors": [
+          "Philo Farnsworth"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Image_dissector",
+        "url": "https://en.wikipedia.org/wiki/Image_dissector",
+        "anchors": [
+          "Image dissector"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Photoemission_spectroscopy",
+        "url": "https://en.wikipedia.org/wiki/Photoemission_spectroscopy",
+        "anchors": [
+          "Photoemission spectroscopy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "X-ray_photoelectron_spectroscopy",
+        "url": "https://en.wikipedia.org/wiki/X-ray_photoelectron_spectroscopy",
+        "anchors": [
+          "X-ray photoelectron spectroscopy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Monochromatic",
+        "url": "https://en.wikipedia.org/wiki/Monochromatic",
+        "anchors": [
+          "monochromatic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "X-ray",
+        "url": "https://en.wikipedia.org/wiki/X-ray",
+        "anchors": [
+          "X-ray"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ultraviolet",
+        "url": "https://en.wikipedia.org/wiki/Ultraviolet",
+        "anchors": [
+          "UV"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Photoelectron_spectroscopy",
+        "url": "https://en.wikipedia.org/wiki/Photoelectron_spectroscopy",
+        "anchors": [
+          "Photoelectron spectroscopy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hemispherical_electron_energy_analyzer",
+        "url": "https://en.wikipedia.org/wiki/Hemispherical_electron_energy_analyzer",
+        "anchors": [
+          "concentric hemispherical analyzer"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Semiconductor",
+        "url": "https://en.wikipedia.org/wiki/Semiconductor",
+        "anchors": [
+          "semiconductor"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Gallium_arsenide",
+        "url": "https://en.wikipedia.org/wiki/Gallium_arsenide",
+        "anchors": [
+          "gallium arsenide"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Image_intensifier",
+        "url": "https://en.wikipedia.org/wiki/Image_intensifier",
+        "anchors": [
+          "image intensifier"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electrostatic_field",
+        "url": "https://en.wikipedia.org/wiki/Electrostatic_field",
+        "anchors": [
+          "electrostatic field"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Phosphor",
+        "url": "https://en.wikipedia.org/wiki/Phosphor",
+        "anchors": [
+          "phosphor"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Micro-channel_plate",
+        "url": "https://en.wikipedia.org/wiki/Micro-channel_plate",
+        "anchors": [
+          "micro-channel plate"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electron_affinity",
+        "url": "https://en.wikipedia.org/wiki/Electron_affinity",
+        "anchors": [
+          "electron affinity"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Band_gap",
+        "url": "https://en.wikipedia.org/wiki/Band_gap",
+        "anchors": [
+          "band gap"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Spacecraft",
+        "url": "https://en.wikipedia.org/wiki/Spacecraft",
+        "anchors": [
+          "spacecraft"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Static_electricity",
+        "url": "https://en.wikipedia.org/wiki/Static_electricity",
+        "anchors": [
+          "static charge"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electrostatic_levitation",
+        "url": "https://en.wikipedia.org/wiki/Electrostatic_levitation",
+        "anchors": [
+          "electrostatic levitation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Surveyor_program",
+        "url": "https://en.wikipedia.org/wiki/Surveyor_program",
+        "anchors": [
+          "Surveyor program"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chang'e_3",
+        "url": "https://en.wikipedia.org/wiki/Chang%27e_3",
+        "anchors": [
+          "Chang'e 3"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Gamma_ray",
+        "url": "https://en.wikipedia.org/wiki/Gamma_ray",
+        "anchors": [
+          "gamma-ray"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Attenuation_coefficient",
+        "url": "https://en.wikipedia.org/wiki/Attenuation_coefficient",
+        "anchors": [
+          "linear attenutation coefficent"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "K-edge",
+        "url": "https://en.wikipedia.org/wiki/K-edge",
+        "anchors": [
+          "K-edge"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Anomalous_photovoltaic_effect",
+        "url": "https://en.wikipedia.org/wiki/Anomalous_photovoltaic_effect",
+        "anchors": [
+          "Anomalous photovoltaic effect"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Dember_effect",
+        "url": "https://en.wikipedia.org/wiki/Dember_effect",
+        "anchors": [
+          "Dember effect"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Photo–Dember_effect",
+        "url": "https://en.wikipedia.org/wiki/Photo%E2%80%93Dember_effect",
+        "anchors": [
+          "Photo–Dember effect"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Photomagnetic_effect",
+        "url": "https://en.wikipedia.org/wiki/Photomagnetic_effect",
+        "anchors": [
+          "Photomagnetic effect"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Photochemistry",
+        "url": "https://en.wikipedia.org/wiki/Photochemistry",
+        "anchors": [
+          "Photochemistry"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Timeline_of_atomic_and_subatomic_physics",
+        "url": "https://en.wikipedia.org/wiki/Timeline_of_atomic_and_subatomic_physics",
+        "anchors": [
+          "Timeline of atomic and subatomic physics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Applet",
+        "url": "https://en.wikipedia.org/wiki/Applet",
+        "anchors": [
+          "Applets"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Java_(programming_language)",
+        "url": "https://en.wikipedia.org/wiki/Java_(programming_language)",
+        "anchors": [
+          "Java"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ],
+    "external": [
+      {
+        "url": "http://www.astronomycast.com/2014/02/ep-335-photoelectric-effect/",
+        "anchors": [
+          "http://www.astronomycast.com/2014/02/ep-335-photoelectric-effect/"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://hyperphysics.phy-astr.gsu.edu/hbase/mod1.html",
+        "anchors": [
+          "Wave-Particle Duality"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20081019151010/http://www.colorado.edu/physics/2000/quantumzone/photoelectric.html",
+        "anchors": [
+          "Photoelectric effect"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20081213000603/http://acept.la.asu.edu/PiN/rdg/photoelectric/photoelectric.shtml",
+        "anchors": [
+          "The Photoelectric Effect"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.faqs.org/docs/qp/",
+        "anchors": [
+          "Grains of Mystique: Quantum Physics for the Layman"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.faqs.org/docs/qp/chap03.html",
+        "anchors": [
+          "Einstein Demystifies Photoelectric Effect"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.phy.davidson.edu/ModernPhysicsLabs/hovere.html",
+        "anchors": [
+          "The Photoelectric effect"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20090801101824/http://www.phy.davidson.edu/ModernPhysicsLabs/hovere.html",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.phys.virginia.edu/classes/252/photoelectric_effect.html",
+        "anchors": [
+          "The Photoelectric Effect"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20141121114532/http://www.esfm2005.ipn.mx/ESFM_Images/paper1.pdf",
+        "anchors": [
+          "Concerning an Heuristic Point of View Toward the Emission and Transformation of Light"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.chemistryexplained.com/Ru-Sp/Solar-Cells.html",
+        "anchors": [
+          "http://www.chemistryexplained.com/Ru-Sp/Solar-Cells.html"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://sensorse.com/page4en.html",
+        "anchors": [
+          "http://sensorse.com/page4en.html"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://iwant2study.org/ospsg/index.php/interactive-resources/physics/06-quantum-physics/344-photoelectriceffectwee3",
+        "anchors": [
+          "HTML 5 JavaScript simulator"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20220625225730/https://iwant2study.org/ospsg/index.php/interactive-resources/physics/06-quantum-physics/344-photoelectriceffectwee3",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20080611220909/http://phet.colorado.edu/new/simulations/sims.php?sim=Photoelectric_Effect",
+        "anchors": [
+          "Photoelectric Effect"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20051102014650/http://www.walter-fendt.de/ph14e/photoeffect.htm",
+        "anchors": [
+          "The Photoelectric Effect"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://lectureonline.cl.msu.edu/~mmp/kap28/PhotoEffect/photo.htm",
+        "anchors": [
+          "Applet: Photo Effect"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20100314191535/http://lectureonline.cl.msu.edu/~mmp/kap28/PhotoEffect/photo.htm",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ]
+  },
+  "stats": {
+    "n_categories": 8,
+    "n_sections": 20,
+    "n_tables": 0,
+    "n_local": 4,
+    "n_wiki": 141,
+    "n_external": 18,
+    "md_chars": 41323
+  }
+}

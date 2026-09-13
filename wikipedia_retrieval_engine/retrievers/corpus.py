@@ -433,7 +433,9 @@ def build_or_load_article_text_store(
 # links split into local / wiki / external. bs4 + markdownify are imported lazily
 # so the plain-text paths above keep working without those packages installed.
 #     pip install beautifulsoup4 markdownify lxml
-_MARKDOWN_EXTRACTOR_VERSION = 1
+# v2: strip navigation templates by [role="navigation"] + .sidebar. v1 missed
+# sidebar/role-based nav, which leaked into the markdown and polluted sidecar links.
+_MARKDOWN_EXTRACTOR_VERSION = 2
 
 # /wiki/<Prefix>:... namespaces that are never article links.
 _WIKI_NAMESPACES = {
@@ -447,7 +449,8 @@ _WIKI_NAMESPACES = {
 # line can be commented back in.
 _MD_STRIP_SELECTORS = (
     ".mw-editsection", "sup.reference", "style", "link",            # edit links, [1] refs
-    ".navbox", ".vertical-navbox", ".sistersitebox", ".navbox-styles",  # nav templates
+    '[role="navigation"]',                                          # every nav template (robust)
+    ".navbox", ".vertical-navbox", ".sistersitebox", ".navbox-styles", ".sidebar",  # nav/sidebars
     ".mw-table-of-contents-container", "#toc", ".toc",             # table of contents
     "ol.references", ".reflist", ".refbegin", ".mw-references-wrap",  # citation dump
     ".ambox", ".mbox", ".ombox", ".tmbox", ".dmbox", ".metadata",  # maintenance banners
@@ -740,6 +743,14 @@ class MarkdownArticle:
     metadata: dict
     markdown_path: Path
     sidecar_path: Path
+
+    @property
+    def text(self) -> str:
+        """Body text for context assembly. Aliases ``markdown`` so a MarkdownArticle
+        can stand in wherever an ArticleText is expected (e.g.
+        ``format_full_articles_context``), letting the LLM-context source switch
+        between the plain-text and markdown stores with no other code changes."""
+        return self.markdown
 
 
 class MarkdownArticleStore:

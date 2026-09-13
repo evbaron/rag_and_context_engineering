@@ -1,0 +1,111 @@
+# Pseudoscorpion
+
+**Pseudoscorpions**, also known as **false scorpions** or **book scorpions**, are small, scorpion-like [arachnids](/wiki/Arachnid) belonging to the order **Pseudoscorpiones**, also known as **Pseudoscorpionida** or **Chelonethida**.
+
+Pseudoscorpions are generally beneficial to humans because they prey on [clothes moth](/wiki/Tineola_bisselliella) larvae, [carpet beetle](/wiki/Dermestidae) larvae, [booklice](/wiki/Psocoptera), [ants](/wiki/Ant), [mites](/wiki/Mite), and small [flies](/wiki/Diptera). They are common in many environments, but they are rarely noticed due to their small size. When people see pseudoscorpions, especially indoors, they often mistake them for [ticks](/wiki/Tick) or small [spiders](/wiki/Spider). Pseudoscorpions often carry out [phoresis](/wiki/Phoresis), a form of [commensalism](/wiki/Commensalism) in which one organism uses another for the purpose of transport.
+
+## Characteristics
+
+Morphology of a pseudoscorpion
+
+Pseudoscorpions, of the class [Arachnida](/wiki/Arachnida), are small arachnids with a flat, pear-shaped body, and pincer-like [pedipalps](/wiki/Pedipalp) that resemble those of [scorpions](/wiki/Scorpion). They usually range from 2 to 8 mm (0.08 to 0.31 in) in length. The largest known species is *[Garypus titanius](/wiki/Garypus_titanius)* of [Ascension Island](/wiki/Ascension_Island) at up to 12 mm (0.5 in). Range is generally smaller at an average of 3 mm (0.1 in).
+
+A pseudoscorpion has eight legs with five to seven segments each; the number of fused segments is used to distinguish families and genera. They have two very long [pedipalps](/wiki/Pedipalp) with palpal [chelae](/wiki/Chela_(organ)) (pincers), which strongly resemble the pincers found on a scorpion. The pedipalps generally consist of an immobile "hand" and mobile "finger", the latter controlled by an [adductor muscle](/wiki/Adduction). Members of the clade Iocheirata, which contains the majority of pseudoscorpions, are [venomous](/wiki/Venom), with a venom gland and duct usually located in the mobile finger; the venom is used to immobilize the pseudoscorpion's prey. During digestion, pseudoscorpions exude a mildly corrosive fluid over the prey, then ingest the liquefied remains. In all known cases, this is medically insignificant to humans.
+
+The abdomen, referred to as the [opisthosoma](/wiki/Opisthosoma), is made up of 12 segments, each protected by [sclerotized](/wiki/Sclerotin) plates (called [tergites](/wiki/Tergite) above and [sternites](/wiki/Sternite) below). The abdomen is short and rounded at the rear, rather than extending into a segmented tail and stinger like [true scorpions](/wiki/Scorpion). The color of the body can be yellowish tan to dark brown, with the paired claws often a contrasting color. They may have two, four, or no eyes.
+
+Pseudoscorpions spin [silk](/wiki/Silk) from a gland in their jaws to make disk-shaped [cocoons](/wiki/Cocoon_(silk)) for mating, molting, or waiting out cold weather, but they do not have [book lungs](/wiki/Book_lungs) like true scorpions and the [Tetrapulmonata](/wiki/Tetrapulmonata). Instead, they breathe exclusively through [tracheae](/wiki/Trachea#Invertebrates), which open laterally through two pairs of [spiracles](/wiki/Spiracle_(arthropods)) on the posterior margins of the sternites of abdominal segments 3 and 4.
+
+## Behavior
+
+[Phoretic](/wiki/Phoresy#Types) pseudoscorpion (*Lamprochernes* sp.) on a fly, Germany
+
+The male produces a [spermatophore](/wiki/Spermatophore), which is attached to the substrate and is picked up by the female. Members of the Cheliferoidea (Atemnidae, Cheliferidae, Chernetidae, and Withiidae) have an elaborate [mating dance](/wiki/Mating_dance), which ends with the male navigating the female over his spermatophore. In Cheliferidae, the male also uses his forelegs to open the female genital operculum, and after she has mounted the packet of sperm, assisting the spermatophore's entry by pushing it into her genital opening. Females in species that possess a [spermatheca](/wiki/Spermatheca) (sperm-storing organ) can store the sperm for a long period of time before fertilizing the eggs, but species without the organ fertilize their eggs shortly after mating. The female carries the fertilized eggs in a brood pouch attached to her [abdomen](/wiki/Abdomen).
+
+Between two and 50 young are hatched in a single [brood](/wiki/Offspring), with more than one brood per year possible. The young go through three [molts](/wiki/Ecdysis) called the protonymph, deutonymph, and tritonymph. The developing embryo and the protonymph, which remain attached to the mother, are nourished by a ‘milk’ produced by her ovary. Many species molt in a small, silken igloo that protects them from enemies during this vulnerable period.
+
+After reaching adulthood, they no longer molt, and can live for 2–3 years. They are active in the warm months of the year, overwintering in silken cocoons when the weather grows cold. Smaller species live in debris and [humus](/wiki/Humus). Some species are [arboreal](/wiki/Arboreal_locomotion), while others are [phagophiles](/wiki/Phagophile), eating parasites in an example of [cleaning symbiosis](/wiki/Cleaning_symbiosis). Some species are [phoretic](/wiki/Phoretic), while others may sometimes be found feeding on mites under the wing covers of certain beetles.
+
+## Distribution
+
+A book scorpion (*[Chelifer cancroides](/wiki/Chelifer_cancroides)*) on top of an open book
+
+More than 3,300 species of pseudoscorpions are recorded in more than 430 genera, with more being discovered on a regular basis. They range worldwide, even in temperate to cold regions such as [Northern Ontario](/wiki/Northern_Ontario) and above the timberline in Wyoming's Rocky Mountains in the United States and the [Jenolan Caves](/wiki/Jenolan_Caves) of Australia, but have their most dense and diverse populations in the [tropics](/wiki/Tropical) and subtropics, where they spread even to island territories such as the [Canary Islands](/wiki/Canary_Islands), where around 25 [endemic](/wiki/Endemic) species have been found. Two endemic species are found also on the [Maltese Islands](/wiki/Maltese_Islands). Species have been found under tree bark, in leaf and pine [litter](/wiki/Plant_litter), in soil, in [tree hollows](/wiki/Tree_hollows), under stones, in caves such as the [Movile Cave](/wiki/Movile_Cave), at the seashore in the intertidal zone, and within fractured rocks.
+
+*[Chelifer cancroides](/wiki/Chelifer_cancroides)* is the species most commonly found in homes, where it is often observed in rooms with dusty books. There, the tiny animals (2.5–4.5 mm or 0.10–0.18 in) can find their food such as booklice and [house dust mites](/wiki/House_dust_mites). They enter homes by riding insects ([phoresy](/wiki/Phoresy)) larger than themselves or are brought in with firewood.
+
+## Evolution
+
+Example of pseudoscorpions preserved in amber. (a) *Progonatemnus succineus*, (b) *[Roncus](/wiki/Roncus) succineus*, (c) *[Chelignathus](/wiki/Chelignathus) kochii*, (d) *[Neobisium](/wiki/Neobisium) exstinctum*, (e) *Electrochelifer balticus*, (f) *[Cheiridium](/wiki/Cheiridium) hartmanni*, (g) *[Geogarypus](/wiki/Geogarypus) macrodactylus*, (h) *[Microcreagris](/wiki/Microcreagris) koellneri*
+
+The oldest known fossil pseudoscorpion, *[Dracochela deprehendor](/wiki/Dracochela)*, is known from [cuticle](/wiki/Arthropod_cuticle) fragments of nymphs found in the [Panther Mountain Formation](/wiki/Panther_Mountain_Formation) near [Gilboa](/wiki/Gilboa,_New_York) in [New York](/wiki/New_York_(state)), dating to the mid-[Devonian](/wiki/Devonian), around 383 million years ago. It has all of the traits of a modern pseudoscorpion, indicating that the order evolved very early in the history of land animals. Its morphology suggests that it is more primitive than any living pseudoscorpion. As with most other arachnid orders, the pseudoscorpions have changed very little since they first appeared, retaining almost all the features of their original forms. After the Devonian fossils, almost no other fossils of pseudoscorpions are known for over 250 million years until [Cretaceous](/wiki/Cretaceous) fossils in [amber](/wiki/Amber), all belonging to modern families, suggesting that the major diversification of pseudoscorpions had already taken place by this time. The only fossil from this time gap is *Archaeofeaella* from the [Triassic](/wiki/Triassic) of Ukraine, around 227 million years ago, which is suggested to be an early relative of the family [Feaellidae](/wiki/Feaellidae).
+
+## Historical references
+
+Pseudoscorpions were first described by [Aristotle](/wiki/Aristotle), who probably found them among scrolls in a library where they would have been feeding on [booklice](/wiki/Psocoptera). [Robert Hooke](/wiki/Robert_Hooke) referred to a "Land-Crab" in his 1665 work *[Micrographia](/wiki/Micrographia)*. Another reference in the 1780s, when [George Adams](/wiki/George_Adams_(scientist,_died_1795)) wrote of "a lobster-insect, spied by some labouring men who were drinking their [porter](/wiki/Porter_(beer)), and borne away by an ingenious gentleman, who brought it to my lodging."
+
+## Classification
+
+These taxon numbers have been calculated as of the end of 2023:
+
+- [Atemnidae](/wiki/Atemnidae) Kishida, 1929 (21 genera, 194 species)
+- [Bochicidae](/wiki/Bochicidae) Chamberlin, 1930 (12 genera, 44 species)
+- [Cheiridiidae](/wiki/Cheiridiidae) Hansen, 1894 (9 genera, 81 species)
+- [Cheliferidae](/wiki/Cheliferidae) Risso, 1827 (64 genera, 312 species)
+- [Chernetidae](/wiki/Chernetidae) Menge, 1855 (120 genera, 728 species)
+- [Chthoniidae](/wiki/Chthoniidae) Daday, 1888 (54 genera, 909 species)
+- [Feaellidae](/wiki/Feaellidae) Ellingsen, 1906 (8 genus, 37 species)
+- [Garypidae](/wiki/Garypidae) Simon, 1879 (11 genera, 110 species)
+- [Garypinidae](/wiki/Garypinidae) Daday, 1888 (21 genera, 94 species)
+- [Geogarypidae](/wiki/Geogarypidae) Chamberlin, 1930 (2 genera, 81 species)
+- [Gymnobisiidae](/wiki/Gymnobisiidae) Beier, 1947 (4 genera, 17 species)
+- [Hyidae](/wiki/Hyidae) Chamberlin, 1930 (2 genera, 41 species)
+- [Ideoroncidae](/wiki/Ideoroncidae) Chamberlin, 1930 (15 genera, 86 species)
+- [Larcidae](/wiki/Larcidae) Harvey, 1992 (1 genus, 15 species)
+- [Menthidae](/wiki/Menthidae) Chamberlin, 1930 (5 genera, 12 species)
+- [Neobisiidae](/wiki/Neobisiidae) Chamberlin, 1930 (34 genera, 748 species)
+- [Olpiidae](/wiki/Olpiidae) Banks, 1895 (24 genera, 211 species)
+- [Parahyidae](/wiki/Parahyidae) Harvey, 1992 (1 genus, 1 species)
+- [Pseudochiridiidae](/wiki/Pseudochiridiidae) Chamberlin, 1923 (2 genera, 13 species)
+- [Pseudogarypidae](/wiki/Pseudogarypidae) Chamberlin, 1923 (2 genera, 12 species)
+- [Pseudotyrannochthoniidae](/wiki/Pseudotyrannochthoniidae) Beier, 1932 (6 genera, 80 species)
+- [Sternophoridae](/wiki/Sternophoridae) Chamberlin, 1923 (3 genera, 21 species)
+- [Syarinidae](/wiki/Syarinidae) Chamberlin, 1930 (18 genera, 125 species)
+- [Withiidae](/wiki/Withiidae) Chamberlin, 1931 (37 genera, 170 species)
+- †[Dracochelidae](/wiki/Dracochelidae) Schawaller, Shear & Bonamo, 1991 (1 genus, 1 species)
+
+This amounts to 24 living families, 471 genera, and 4,142 described species of pseudoscorpions.
+
+### Cladogram
+
+After Benavides et al., 2019, with historic taxonomic groups from Harvey (1992).
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Order | |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | | Suborder | |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | | Infraorder | |  |  |  |  |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | | Parvorder | |  |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | --- | | Superfamily | |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | | Family | |  |  |  | | --- | --- | --- | |  | |  | | --- | |  | | |  | | |  | | |  | | |  | | |  | | |  | |
+|  |
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [Pseudoscorpiones](/wiki/Pseudoscorpiones) | |  |  |  |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | |  | |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | | Palaeosphyronida | |  |  |  |  |  | | --- | --- | --- | --- | --- | |  | |  |  | | --- | --- | | Dracocheloidea | †[Dracochelidae](/wiki/Dracochelidae) | |  | | |  | | |  | | |  | |  | |  |  |  |  |  |  |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | | Heterosphyronida | |  |  |  |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | |  | |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | | [Chthonioidea](/wiki/Chthonioidea) | |  |  | | --- | --- | |  | [Pseudotyrannochthoniidae](/wiki/Pseudotyrannochthoniidae) | |  | |  | [Chthoniidae](/wiki/Chthoniidae) | |  | | |  | | |  | | |  | | Homosphyronida | |  |  |  |  |  |  |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | | Atoposphyronida | |  |  |  |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | |  | |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | | [Feaelloidea](/wiki/Feaelloidea) | |  |  | | --- | --- | |  | [Pseudogarypidae](/wiki/Pseudogarypidae) | |  | |  | [Feaellidae](/wiki/Feaellidae) | |  | | |  | | |  | | |  | | Iocheirata | |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | | Hemictenata | |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | |  | |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | | [Neobisioidea](/wiki/Neobisioidea) | |  |  |  |  |  |  |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | |  | |  |  | | --- | --- | |  | [Ideoroncidae](/wiki/Ideoroncidae) | |  | |  | |  |  | | --- | --- | |  | [Bochicidae](/wiki/Bochicidae) | |  | |  | [Hyidae](/wiki/Hyidae) | |  | | |  | | |  | |  | |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | |  | |  |  | | --- | --- | |  | [Syarinidae](/wiki/Syarinidae) | |  | |  | [Parahyidae](/wiki/Parahyidae) | |  | | |  | |  | |  |  | | --- | --- | |  | [Gymnobisiidae](/wiki/Gymnobisiidae) | |  | |  | [Neobisiidae](/wiki/Neobisiidae) | |  | | |  | | |  | | |  | | |  | | |  | | Panctenata | |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | |  | |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | |  | |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | | [Garypoidea](/wiki/Garypoidea) | |  |  | | --- | --- | |  | [Geogarypidae](/wiki/Geogarypidae) | |  | |  | |  |  | | --- | --- | |  | Hesperolpiidae | |  | |  | |  |  | | --- | --- | |  | [Garypidae](/wiki/Garypidae) | |  | |  | |  |  | | --- | --- | |  | [Menthidae](/wiki/Menthidae) | |  | |  | [Olpiidae](/wiki/Olpiidae) | |  | | |  | | |  | | |  | | |  | | |  | | |  | |  | |  |  |  |  |  |  |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | |  | |  |  |  |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | |  | |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | | Garypinoidea | |  |  | | --- | --- | |  | [Garypinidae](/wiki/Garypinidae) | |  | |  | [Larcidae](/wiki/Larcidae) | |  | | |  | | |  | | |  | |  | |  |  |  |  |  |  |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | |  | |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | | [Cheiridioidea](/wiki/Cheiridioidea) | |  |  | | --- | --- | |  | [Cheiridiidae](/wiki/Cheiridiidae) | |  | |  | [Pseudochiridiidae](/wiki/Pseudochiridiidae) | |  | | |  | | [Sternophoroidea](/wiki/Sternophoroidea) | [Sternophoridae](/wiki/Sternophoridae) | |  | | |  | |  | |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | | [Cheliferoidea](/wiki/Cheliferoidea) | |  |  |  |  |  |  |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | |  | |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | |  | |  |  | | --- | --- | |  | [Withiidae](/wiki/Withiidae) | |  | |  | [Atemnidae](/wiki/Atemnidae) | |  | | |  | |  | [Cheliferidae](/wiki/Cheliferidae) | |  | | |  | |  | [Chernetidae](/wiki/Chernetidae) | |  | | |  | | |  | | |  | | |  | | |  | | |  | | |  | | |  | | Epiochierata  Hemictenata  Mestommatina  Elassommatina |
+|  |
+
+## References
+
+## Further reading
+
+- Mark Harvey (2011). [Pseudoscorpions of the World](http://www.museum.wa.gov.au/catalogues/pseudoscorpions/)
+- Joseph C. Chamberlin (1931): *The Arachnid Order Chelonethida*. Stanford University Publications in Biological Science. 7(1): 1–284.
+- Clarence Clayton Hoff (1958): List of the Pseudoscorpions of North America North of Mexico. *American Museum Novitates*. **1875**. [PDF](http://digitallibrary.amnh.org/dspace/bitstream/2246/4658/1/N1875.pdf)
+- Max Beier (1967): Pseudoscorpione vom kontinentalen Südost-Asien. *Pacific Insects* **9**(2): 341–369. [PDF](http://hbs.bishopmuseum.org/pi/pdf/9(2)-341.pdf)
+- [Peter Weygoldt](/wiki/Peter_Weygoldt) (1969). *The biology of pseudoscorpions*. Harvard University Press, Cambridge. [ISBN](/wiki/ISBN_(identifier)) [9780674074255](/wiki/Special:BookSources/9780674074255).
+- P. D. Gabbutt (1970): Validity of Life History Analyses of Pseudoscorpions. *Journal of Natural History* **4**: 1–15.
+- W. B. Muchmore (1982): *Pseudoscorpionida*. In "Synopsis and Classification of Living Organisms." Vol. 2. Parker, S.P.
+- J. A. Coddington, S. F. Larcher & J. C. Cokendolpher (1990): *The Systematic Status of Arachnida, Exclusive of Acari, in North America North of Mexico.* In "Systematics of the North American Insects and Arachnids: Status and Needs." National Biological Survey **3**. *Virginia Agricultural Experiment Station, Virginia Polytechnic Institute and State University*.
+- Mark S. Harvey (1991): *Catalogue of the Pseudoscorpionida.* (edited by V . Mahnert). Manchester University Press, Manchester.
+
+## External links
+
+- Media related to [Pseudoscorpiones](https://commons.wikimedia.org/wiki/Category:Pseudoscorpiones) at Wikimedia Commons
+- Data related to [Pseudoscorpiones](https://species.wikimedia.org/wiki/Pseudoscorpiones) at Wikispecies
+- [Video of Pseudoscorpions in Ireland](https://www.youtube.com/watch?v=cvNoJOBtNtA)

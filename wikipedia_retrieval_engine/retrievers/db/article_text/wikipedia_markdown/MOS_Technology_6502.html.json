@@ -1,0 +1,3921 @@
+{
+  "source": "MOS_Technology_6502.html",
+  "title": "MOS Technology 6502",
+  "wiki_title": "MOS_Technology_6502",
+  "categories": [
+    "MOS Technology microprocessors",
+    "65xx microprocessors",
+    "Computer-related introductions in 1975",
+    "8-bit microprocessors"
+  ],
+  "sections": [
+    {
+      "level": 2,
+      "id": "History_and_use",
+      "title": "History and use"
+    },
+    {
+      "level": 3,
+      "id": "Genesis_at_Motorola",
+      "title": "Genesis at Motorola"
+    },
+    {
+      "level": 3,
+      "id": "MOS_Technology",
+      "title": "MOS Technology"
+    },
+    {
+      "level": 3,
+      "id": "Moving_to_NMOS",
+      "title": "Moving to NMOS"
+    },
+    {
+      "level": 3,
+      "id": "Design_notes",
+      "title": "Design notes"
+    },
+    {
+      "level": 3,
+      "id": "Introducing_the_6501_and_6502",
+      "title": "Introducing the 6501 and 6502"
+    },
+    {
+      "level": 3,
+      "id": "Motorola_lawsuit",
+      "title": "Motorola lawsuit"
+    },
+    {
+      "level": 3,
+      "id": "Computers_and_games",
+      "title": "Computers and games"
+    },
+    {
+      "level": 2,
+      "id": "Programmers_model",
+      "title": "Programmers model"
+    },
+    {
+      "level": 3,
+      "id": "Registers",
+      "title": "Registers"
+    },
+    {
+      "level": 3,
+      "id": "Addressing",
+      "title": "Addressing"
+    },
+    {
+      "level": 3,
+      "id": "Instructions_and_opcodes",
+      "title": "Instructions and opcodes"
+    },
+    {
+      "level": 3,
+      "id": "Assembly_language",
+      "title": "Assembly language"
+    },
+    {
+      "level": 3,
+      "id": "Instruction_table",
+      "title": "Instruction table"
+    },
+    {
+      "level": 3,
+      "id": "Example_code",
+      "title": "Example code"
+    },
+    {
+      "level": 2,
+      "id": "IC_hardware_design",
+      "title": "IC hardware design"
+    },
+    {
+      "level": 2,
+      "id": "Variations_and_derivatives",
+      "title": "Variations and derivatives"
+    },
+    {
+      "level": 3,
+      "id": "16-bit_derivatives",
+      "title": "16-bit derivatives"
+    },
+    {
+      "level": 2,
+      "id": "Bugs_and_quirks",
+      "title": "Bugs and quirks"
+    },
+    {
+      "level": 2,
+      "id": "See_also",
+      "title": "See also"
+    },
+    {
+      "level": 2,
+      "id": "Notes",
+      "title": "Notes"
+    },
+    {
+      "level": 2,
+      "id": "References",
+      "title": "References"
+    },
+    {
+      "level": 3,
+      "id": "Citations",
+      "title": "Citations"
+    },
+    {
+      "level": 3,
+      "id": "Bibliography",
+      "title": "Bibliography"
+    },
+    {
+      "level": 2,
+      "id": "Further_reading",
+      "title": "Further reading"
+    },
+    {
+      "level": 2,
+      "id": "External_links",
+      "title": "External links"
+    }
+  ],
+  "infobox": {
+    "title": "",
+    "fields": {
+      "Launched": "1975; 51 years ago ( 1975 )",
+      "Common manufacturer": "MOS Technology, Rockwell, Synertek",
+      "Max. CPU clock rate": "1 MHz to 3 MHz",
+      "Data width": "8 bits",
+      "Address width": "16 bits",
+      "Transistors": "3,510, [ 1 ] 3,218 [ 2 ]",
+      "Package": "40-pin DIP",
+      "Instruction set": "MOS 6502",
+      "Number of instructions": "56 (55 originally)",
+      "Predecessors": "Motorola 6800 MOS 6501",
+      "Successors": "MOS 6510 WDC 65C02 WDC 65C816"
+    }
+  },
+  "tables": [
+    {
+      "caption": "Opcode matrix for the 6502 instruction set",
+      "headers": [
+        "Addressing modes: A – accumulator, # – immediate, zpg – zero page, abs – absolute, ind – indirect, X – indexed by X register, Y – indexed by Y register, rel – relative"
+      ],
+      "rows": [
+        [
+          "High nibble",
+          "Low nibble"
+        ],
+        [
+          "0",
+          "1",
+          "2",
+          "4",
+          "5",
+          "6",
+          "8",
+          "9",
+          "A",
+          "C",
+          "D",
+          "E"
+        ],
+        [
+          "0",
+          "BRK",
+          "ORA ( ind,X)",
+          "",
+          "",
+          "ORA zpg",
+          "ASL zpg",
+          "PHP",
+          "ORA #",
+          "ASL A",
+          "",
+          "ORA abs",
+          "ASL abs"
+        ],
+        [
+          "1",
+          "BPL rel",
+          "ORA ( ind ),Y",
+          "",
+          "",
+          "ORA zpg,X",
+          "ASL zpg,X",
+          "CLC",
+          "ORA abs,Y",
+          "",
+          "",
+          "ORA abs,X",
+          "ASL abs,X"
+        ],
+        [
+          "2",
+          "JSR abs",
+          "AND ( ind,X)",
+          "",
+          "BIT zpg",
+          "AND zpg",
+          "ROL zpg",
+          "PLP",
+          "AND #",
+          "ROL A",
+          "BIT abs",
+          "AND abs",
+          "ROL abs"
+        ],
+        [
+          "3",
+          "BMI rel",
+          "AND ( ind ),Y",
+          "",
+          "",
+          "AND zpg,X",
+          "ROL zpg,X",
+          "SEC",
+          "AND abs,Y",
+          "",
+          "",
+          "AND abs,X",
+          "ROL abs,X"
+        ],
+        [
+          "4",
+          "RTI",
+          "EOR ( ind,X)",
+          "",
+          "",
+          "EOR zpg",
+          "LSR zpg",
+          "PHA",
+          "EOR #",
+          "LSR A",
+          "JMP abs",
+          "EOR abs",
+          "LSR abs"
+        ],
+        [
+          "5",
+          "BVC rel",
+          "EOR ( ind ),Y",
+          "",
+          "",
+          "EOR zpg,X",
+          "LSR zpg,X",
+          "CLI",
+          "EOR abs,Y",
+          "",
+          "",
+          "EOR abs,X",
+          "LSR abs,X"
+        ],
+        [
+          "6",
+          "RTS",
+          "ADC ( ind,X)",
+          "",
+          "",
+          "ADC zpg",
+          "ROR zpg",
+          "PLA",
+          "ADC #",
+          "ROR A",
+          "JMP ( ind )",
+          "ADC abs",
+          "ROR abs"
+        ],
+        [
+          "7",
+          "BVS rel",
+          "ADC ( ind ),Y",
+          "",
+          "",
+          "ADC zpg,X",
+          "ROR zpg,X",
+          "SEI",
+          "ADC abs,Y",
+          "",
+          "",
+          "ADC abs,X",
+          "ROR abs,X"
+        ],
+        [
+          "8",
+          "",
+          "STA ( ind,X)",
+          "",
+          "STY zpg",
+          "STA zpg",
+          "STX zpg",
+          "DEY",
+          "",
+          "TXA",
+          "STY abs",
+          "STA abs",
+          "STX abs"
+        ],
+        [
+          "9",
+          "BCC rel",
+          "STA ( ind ),Y",
+          "",
+          "STY zpg,X",
+          "STA zpg,X",
+          "STX zpg,Y",
+          "TYA",
+          "STA abs,Y",
+          "TXS",
+          "",
+          "STA abs,X",
+          ""
+        ],
+        [
+          "A",
+          "LDY #",
+          "LDA ( ind,X)",
+          "LDX #",
+          "LDY zpg",
+          "LDA zpg",
+          "LDX zpg",
+          "TAY",
+          "LDA #",
+          "TAX",
+          "LDY abs",
+          "LDA abs",
+          "LDX abs"
+        ],
+        [
+          "B",
+          "BCS rel",
+          "LDA ( ind ),Y",
+          "",
+          "LDY zpg,X",
+          "LDA zpg,X",
+          "LDX zpg,Y",
+          "CLV",
+          "LDA abs,Y",
+          "TSX",
+          "LDY abs,X",
+          "LDA abs,X",
+          "LDX abs,Y"
+        ],
+        [
+          "C",
+          "CPY #",
+          "CMP ( ind,X)",
+          "",
+          "CPY zpg",
+          "CMP zpg",
+          "DEC zpg",
+          "INY",
+          "CMP #",
+          "DEX",
+          "CPY abs",
+          "CMP abs",
+          "DEC abs"
+        ],
+        [
+          "D",
+          "BNE rel",
+          "CMP ( ind ),Y",
+          "",
+          "",
+          "CMP zpg,X",
+          "DEC zpg,X",
+          "CLD",
+          "CMP abs,Y",
+          "",
+          "",
+          "CMP abs,X",
+          "DEC abs,X"
+        ],
+        [
+          "E",
+          "CPX #",
+          "SBC ( ind,X)",
+          "",
+          "CPX zpg",
+          "SBC zpg",
+          "INC zpg",
+          "INX",
+          "SBC #",
+          "NOP",
+          "CPX abs",
+          "SBC abs",
+          "INC abs"
+        ],
+        [
+          "F",
+          "BEQ rel",
+          "SBC ( ind ),Y",
+          "",
+          "",
+          "SBC zpg,X",
+          "INC zpg,X",
+          "SED",
+          "SBC abs,Y",
+          "",
+          "",
+          "SBC abs,X",
+          "INC abs,X"
+        ],
+        [
+          "Blank opcodes (e.g., F2 ) and all opcodes whose low nibbles are 3, 7, B and F are undefined in the 6502 instruction set."
+        ]
+      ],
+      "n_rows": 19
+    },
+    {
+      "caption": "Pinout differences",
+      "headers": [
+        "Pin",
+        "6800",
+        "6501",
+        "6502"
+      ],
+      "rows": [
+        [
+          "2",
+          "Halt",
+          "Ready",
+          "Ready"
+        ],
+        [
+          "3",
+          "∅1 (in)",
+          "∅1 (in)",
+          "∅1 (out)"
+        ],
+        [
+          "5",
+          "Valid memory address",
+          "Valid memory address",
+          "N.C."
+        ],
+        [
+          "7",
+          "Bus available",
+          "Bus available",
+          "SYNC"
+        ],
+        [
+          "36",
+          "Data bus enable",
+          "Data bus enable",
+          "N.C."
+        ],
+        [
+          "37",
+          "∅2 (in)",
+          "∅2 (in)",
+          "∅0 (in)"
+        ],
+        [
+          "38",
+          "N.C.",
+          "N.C.",
+          "Set overflow flag"
+        ],
+        [
+          "39",
+          "Three-state control",
+          "N.C.",
+          "∅2 (out)"
+        ]
+      ],
+      "n_rows": 8
+    },
+    {
+      "caption": "Variations",
+      "headers": [
+        "Company",
+        "Model",
+        "Description"
+      ],
+      "rows": [
+        [
+          "",
+          "6502",
+          "A 1 MHz chip used in KIM-1 and other single board computers in the mid-1970s."
+        ],
+        [
+          "",
+          "6502A",
+          "A 1.5 MHz chip used in Asteroids Deluxe and at 2 MHz in the BBC Micro"
+        ],
+        [
+          "",
+          "6502B",
+          "Version of the 6502 capable of running at a maximum speed of 3 MHz instead of 2 MHz. The B was used in both the Apple III and early Atari 8-bit computers, each running at ~1.8 MHz. [ f ]"
+        ],
+        [
+          "",
+          "6502C",
+          "The “official” 6502C was a version of the original 6502 able to run at up to 4 MHz. Not to be confused with SALLY, a custom 6502 designed for Atari (and sometimes referred to by them as \"6502C\" [ 69 ] ) nor with the similarly named 65C02."
+        ],
+        [
+          "",
+          "SALLY, C014806, \"6502C\"",
+          "Custom 6502 variant designed for Atari, used in later Atari 8-bit computers and Atari 5200 and Atari 7800 consoles. Has a HALT signal on pin 35 and the R/W signal on pin 36 (these pins are not connected (N/C) on a standard 6502). Pulling HALT low latches the clock, pausing the processor. This was used to allow the video circuitry direct memory access (DMA). [ 70 ] Although sometimes referred to as \"6502C\" in Atari documentation, this is not the same as the official 6502C and the chip itself is never marked as such. [ 69 ]"
+        ],
+        [
+          "MOS",
+          "6503",
+          "Reduced memory addressing capability (4 KB) and no RDY input, in a 28-pin DIP package (with the phase 1 (OUT), SYNC, redundant Vss, and SO pins of the 6502 also omitted). [ 71 ]"
+        ],
+        [
+          "MOS",
+          "6504",
+          "Reduced memory addressing capability (8 KB), no NMI, and no RDY input, in a 28-pin DIP package (with the phase 1 (OUT), SYNC, redundant Vss, and SO pins of the 6502 also omitted). [ 71 ]"
+        ],
+        [
+          "MOS",
+          "6505",
+          "Reduced memory addressing capability (4 KB) and no NMI, in a 28-pin DIP package (with the phase 1 (OUT), SYNC, redundant Vss, and SO pins of the 6502 also omitted). [ 71 ]"
+        ],
+        [
+          "MOS",
+          "6506",
+          "Reduced memory addressing capability (4 KB), no NMI, and no RDY input, but all 3 clock pins of the 6502 (i.e. a 2-phase output clock), in a 28-pin DIP package (with the SYNC, redundant Vss, and SO pins of the 6502 also omitted). [ 71 ]"
+        ],
+        [
+          "MOS",
+          "6507",
+          "Reduced memory addressing capability (8 KB) and no interrupts, in a 28-pin DIP package (with the phase 1 (OUT), SYNC, redundant Vss, and SO pins of the 6502 also omitted). [ 71 ] This chip was used in the Atari 2600 video game system and in many Atari 8-bit computer peripherals."
+        ],
+        [
+          "MOS",
+          "6508",
+          "Has a built-in 8-bit input/output port and 256 bytes of internal static RAM."
+        ],
+        [
+          "MOS",
+          "6509",
+          "Can address up to 1 MB of RAM as 16 banks of 64 KB and was used in the Commodore CBM-II series."
+        ],
+        [
+          "MOS",
+          "6510",
+          "Has a built-in 6-bit programmable input/output port and was used in the Commodore 64. The 8500 is effectively an HMOS version of the 6510, and replaced it in later versions of the C64."
+        ],
+        [
+          "MOS",
+          "6512 6513 6514 6515",
+          "The MOS Technology 6512, 6513, 6514, and 6515 each rely on an external clock, instead of using an internal clock generator like the 650x (e.g. 6502). This was used to advantage in some designs where the clocks could be run asymmetrically, increasing overall CPU performance. The 6512 is a 6502 with a 2-phase clock input for an external clock oscillator, instead of an on-board clock oscillator. [ 71 ] The 6513, 6514 and 6515 are similarly equivalent to (respectively) a 6503, 6504 and 6505 with the same 2-phase clock input. [ 71 ] The 6512 was used in the BBC Micro B+64."
+        ],
+        [
+          "Ricoh",
+          "RP2A03 RP2A07",
+          "Unlicensed 6502 variants running at ~1.8 MHz [ f ] including an audio processing unit but lacking the BCD mode, used in the Nintendo Entertainment System."
+        ],
+        [
+          "MOS",
+          "6591 6592",
+          "System on a chip designs that utilize a complete Atari 2600 in a 48-pin DIP package. [ 72 ] [ 73 ]"
+        ],
+        [
+          "WDC",
+          "65C02",
+          "CMOS version of the NMOS 6502 that was designed by Bill Mensch of the Western Design Center (WDC), featuring reduced power consumption, support for much higher clock speeds, new instructions, new addressing modes for some existing instructions, and correction of NMOS errata, such as the JMP ($xxFF) bug."
+        ],
+        [
+          "CSG, MOS",
+          "65CE02",
+          "CMOS variant developed by the Commodore Semiconductor Group (CSG), formerly MOS Technology. The 65CE02 provides a further enhanced instruction set from the 65C02, featuring a third indexing register (Z), base page register, 16-bit stack and faster program execution with the minimal instruction timing reduced from 2 to 1 clock cycles."
+        ],
+        [
+          "Rockwell",
+          "R6511Q R6500/11, R6500/12, R6500/15 \" One-Chip Microcomputers \"",
+          "Enhanced versions of the 6502-based processor, also including individual bit manipulation operations (RMB, SMB, BBR and BBS), on-chip 192-byte zero-page RAM, UART, etc. [ 74 ] [ 75 ]"
+        ],
+        [
+          "Rockwell",
+          "R65F11 R65F12",
+          "The Rockwell R65F11 (introduced in 1983) and the later R65F12 are enhanced versions of the 6502-based processor, also including individual bit manipulation operations (RMB, SMB, BBR and BBS), on-chip zero-page RAM, on-chip Forth kernel ROM, a UART, etc. [ 76 ] [ 77 ] [ 78 ] [ 79 ] [ 80 ]"
+        ],
+        [
+          "GTE",
+          "G65SC12",
+          "Drop in 6502 CMOS variant without individual bit manipulation operations (RMB, SMB, BBR and BBS). [ 81 ] This was used in the BBC Master."
+        ],
+        [
+          "GTE",
+          "G65SC102",
+          "Software compatible with the 6502, but has a slightly different pinout and oscillator circuit. The BBC Master Turbo included the 4 MHz version of this CPU on a coprocessor card, which could also be bought separately and added to the Master 128."
+        ],
+        [
+          "Rockwell",
+          "R65C00 R65C21 R65C29",
+          "The R65C00, R65C21, and R65C29 have two enhanced CMOS 6502s in a single chip, and the R65C00 and R65C21 additionally contained 2 KB of mask-programmable ROM. [ 82 ] [ 83 ]"
+        ],
+        [
+          "",
+          "CM630",
+          "A 1 MHz Eastern Bloc clone of the 6502 and was used in the Pravetz 8A and 8C, Bulgarian clones of the Apple II. [ 84 ]"
+        ],
+        [
+          "MOS",
+          "7501 8501",
+          "6510 (an enhanced 6502) variants, introduced in 1984. [ 85 ] They extended the number of I/O port pins from 6 to 7, but omitted pins for non-maskable interrupt and clock output. [ 86 ] Used in Commodore's C-16, C-116 and Plus/4 computers. The main difference between 7501 and 8501 CPUs is that the 7501 was manufactured with the HMOS -1 process and the 8501 with HMOS-2. [ 85 ]"
+        ],
+        [
+          "MOS",
+          "8500",
+          "Introduced in 1985 as an HMOS version of the 6510 (which is in turn based on the 6502). Other than the process modification, the 8500 is virtually identical to the NMOS version of the 6510. It replaced the 6510 in later versions of the Commodore 64."
+        ],
+        [
+          "MOS",
+          "8502",
+          "Designed by MOS Technology and used in the Commodore 128. Based on the MOS 6510 used in the Commodore 64, the 8502 was able to run at double clock rate of the 6510. [ 87 ] The 8502 family also includes the MOS 7501, 8500 and 8501."
+        ],
+        [
+          "Hudson Soft",
+          "HuC6280",
+          "Japanese video game company Hudson Soft 's improved version of the WDC 65C02. Manufactured for them by Seiko Epson and NEC for the SuperGrafx. The most notable product using the HuC6280 is NEC's TurboGrafx-16 video game console."
+        ],
+        [
+          "VLSI",
+          "VL65NC02 [ 88 ]",
+          "VLSI licensed 65C02 variant was included in the Atari Lynx 's main system IC named Mikey."
+        ]
+      ],
+      "n_rows": 29
+    }
+  ],
+  "links": {
+    "local": [
+      {
+        "target": "Nintendo_Entertainment_System",
+        "source_file": "Nintendo_Entertainment_System.html",
+        "url": "https://en.wikipedia.org/wiki/Nintendo_Entertainment_System",
+        "anchors": [
+          "Nintendo Entertainment System",
+          "Nintendo Entertainment System (NES) and Famicom",
+          "Family Computer (Famicom)"
+        ],
+        "count": 6,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Ricoh_2A03",
+        "source_file": "Ricoh_2A03.html",
+        "url": "https://en.wikipedia.org/wiki/Ricoh_2A03",
+        "anchors": [
+          "RP2A03",
+          "2A03"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Ford_Motor_Company",
+        "source_file": "Ford_Motor_Company.html",
+        "url": "https://en.wikipedia.org/wiki/Ford_Motor_Company",
+        "anchors": [
+          "Ford Motor Company"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ],
+    "wiki": [
+      {
+        "target": "Wayback_Machine",
+        "url": "https://en.wikipedia.org/wiki/Wayback_Machine",
+        "anchors": [
+          "Wayback Machine"
+        ],
+        "count": 15,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "ISBN_(identifier)",
+        "url": "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+        "anchors": [
+          "ISBN"
+        ],
+        "count": 11,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Commodore_64",
+        "url": "https://en.wikipedia.org/wiki/Commodore_64",
+        "anchors": [
+          "Commodore 64"
+        ],
+        "count": 9,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "BBC_Micro",
+        "url": "https://en.wikipedia.org/wiki/BBC_Micro",
+        "anchors": [
+          "BBC Micro",
+          "BBC Micro B+64"
+        ],
+        "count": 8,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Atari_2600",
+        "url": "https://en.wikipedia.org/wiki/Atari_2600",
+        "anchors": [
+          "Atari 2600"
+        ],
+        "count": 8,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Atari_8-bit_computers",
+        "url": "https://en.wikipedia.org/wiki/Atari_8-bit_computers",
+        "anchors": [
+          "Atari 8-bit computers",
+          "Atari 800"
+        ],
+        "count": 7,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "65C02",
+        "url": "https://en.wikipedia.org/wiki/65C02",
+        "anchors": [
+          "65C02"
+        ],
+        "count": 6,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "BBC_Master",
+        "url": "https://en.wikipedia.org/wiki/BBC_Master",
+        "anchors": [
+          "BBC Master"
+        ],
+        "count": 6,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "NMOS_logic",
+        "url": "https://en.wikipedia.org/wiki/NMOS_logic",
+        "anchors": [
+          "NMOS"
+        ],
+        "count": 6,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "MOS_Technology_6510",
+        "url": "https://en.wikipedia.org/wiki/MOS_Technology_6510",
+        "anchors": [
+          "MOS 6510",
+          "6510"
+        ],
+        "count": 5,
+        "regions": [
+          "body",
+          "infobox",
+          "table"
+        ]
+      },
+      {
+        "target": "WDC_65C816",
+        "url": "https://en.wikipedia.org/wiki/WDC_65C816",
+        "anchors": [
+          "WDC 65C816",
+          "65C816",
+          "65C802",
+          "65C802/65C816"
+        ],
+        "count": 5,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "KIM-1",
+        "url": "https://en.wikipedia.org/wiki/KIM-1",
+        "anchors": [
+          "KIM-1"
+        ],
+        "count": 5,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "CMOS",
+        "url": "https://en.wikipedia.org/wiki/CMOS",
+        "anchors": [
+          "CMOS"
+        ],
+        "count": 5,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Apple_II",
+        "url": "https://en.wikipedia.org/wiki/Apple_II",
+        "anchors": [
+          "Apple II"
+        ],
+        "count": 5,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Atari_Lynx",
+        "url": "https://en.wikipedia.org/wiki/Atari_Lynx",
+        "anchors": [
+          "Atari Lynx"
+        ],
+        "count": 5,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Binary-coded_decimal",
+        "url": "https://en.wikipedia.org/wiki/Binary-coded_decimal",
+        "anchors": [
+          "binary-coded decimal",
+          "D",
+          "Decimal",
+          "BCD"
+        ],
+        "count": 5,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "MOS_Technology",
+        "url": "https://en.wikipedia.org/wiki/MOS_Technology",
+        "anchors": [
+          "MOS Technology"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Motorola_6800",
+        "url": "https://en.wikipedia.org/wiki/Motorola_6800",
+        "anchors": [
+          "Motorola 6800"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "MOS_Technology_6507",
+        "url": "https://en.wikipedia.org/wiki/MOS_Technology_6507",
+        "anchors": [
+          "6507"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Commodore_16",
+        "url": "https://en.wikipedia.org/wiki/Commodore_16",
+        "anchors": [
+          "C-16",
+          "C-116"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "HMOS",
+        "url": "https://en.wikipedia.org/wiki/HMOS",
+        "anchors": [
+          "HMOS"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Accumulator_(computing)",
+        "url": "https://en.wikipedia.org/wiki/Accumulator_(computing)",
+        "anchors": [
+          "accumulators",
+          "A ccumulator",
+          "accumulator"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Index_register",
+        "url": "https://en.wikipedia.org/wiki/Index_register",
+        "anchors": [
+          "index register",
+          "index",
+          "index registers"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Rodnay_Zaks",
+        "url": "https://en.wikipedia.org/wiki/Rodnay_Zaks",
+        "anchors": [
+          "Zaks, Rodnay"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "GitHub",
+        "url": "https://en.wikipedia.org/wiki/GitHub",
+        "anchors": [
+          "GitHub"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Dual_in-line_package",
+        "url": "https://en.wikipedia.org/wiki/Dual_in-line_package",
+        "anchors": [
+          "DIP-40",
+          "DIP"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "8-bit_computing",
+        "url": "https://en.wikipedia.org/wiki/8-bit_computing",
+        "anchors": [
+          "8 bits",
+          "8-bit"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "16-bit_computing",
+        "url": "https://en.wikipedia.org/wiki/16-bit_computing",
+        "anchors": [
+          "16 bits",
+          "16-bit"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "WDC_65C02",
+        "url": "https://en.wikipedia.org/wiki/WDC_65C02",
+        "anchors": [
+          "WDC 65C02",
+          "65C02"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Atari_5200",
+        "url": "https://en.wikipedia.org/wiki/Atari_5200",
+        "anchors": [
+          "Atari 5200"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Atari_7800",
+        "url": "https://en.wikipedia.org/wiki/Atari_7800",
+        "anchors": [
+          "Atari 7800"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "MOS_Technology_6508",
+        "url": "https://en.wikipedia.org/wiki/MOS_Technology_6508",
+        "anchors": [
+          "6508"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "System_on_a_chip",
+        "url": "https://en.wikipedia.org/wiki/System_on_a_chip",
+        "anchors": [
+          "System on a chip",
+          "system on a chip"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Western_Design_Center",
+        "url": "https://en.wikipedia.org/wiki/Western_Design_Center",
+        "anchors": [
+          "Western Design Center"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Commodore_128",
+        "url": "https://en.wikipedia.org/wiki/Commodore_128",
+        "anchors": [
+          "Commodore 128"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Hudson_Soft_HuC6280",
+        "url": "https://en.wikipedia.org/wiki/Hudson_Soft_HuC6280",
+        "anchors": [
+          "HuC6280",
+          "Hudson Soft HuC6280"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Intel_8080",
+        "url": "https://en.wikipedia.org/wiki/Intel_8080",
+        "anchors": [
+          "Intel 8080"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Commodore_International",
+        "url": "https://en.wikipedia.org/wiki/Commodore_International",
+        "anchors": [
+          "Commodore International",
+          "Commodore"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Program_counter",
+        "url": "https://en.wikipedia.org/wiki/Program_counter",
+        "anchors": [
+          "Program counter",
+          "program counter"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Status_register",
+        "url": "https://en.wikipedia.org/wiki/Status_register",
+        "anchors": [
+          "Status register",
+          "status",
+          "status flags"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Interrupt",
+        "url": "https://en.wikipedia.org/wiki/Interrupt",
+        "anchors": [
+          "interrupt",
+          "edge sensitive",
+          "level sensitive"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Assembly_language",
+        "url": "https://en.wikipedia.org/wiki/Assembly_language",
+        "anchors": [
+          "assembly language"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sybex",
+        "url": "https://en.wikipedia.org/wiki/Sybex",
+        "anchors": [
+          "Sybex"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Rockwell_International",
+        "url": "https://en.wikipedia.org/wiki/Rockwell_International",
+        "anchors": [
+          "Rockwell"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Synertek",
+        "url": "https://en.wikipedia.org/wiki/Synertek",
+        "anchors": [
+          "Synertek"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Central_processing_unit",
+        "url": "https://en.wikipedia.org/wiki/Central_processing_unit",
+        "anchors": [
+          "CPU",
+          "CPUs"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Transistor_count",
+        "url": "https://en.wikipedia.org/wiki/Transistor_count",
+        "anchors": [
+          "Transistors",
+          "Transistor count"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Asteroids_Deluxe",
+        "url": "https://en.wikipedia.org/wiki/Asteroids_Deluxe",
+        "anchors": [
+          "Asteroids Deluxe"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Apple_III",
+        "url": "https://en.wikipedia.org/wiki/Apple_III",
+        "anchors": [
+          "Apple III"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "MOS_Technology_6509",
+        "url": "https://en.wikipedia.org/wiki/MOS_Technology_6509",
+        "anchors": [
+          "6509"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "CBM-II",
+        "url": "https://en.wikipedia.org/wiki/CBM-II",
+        "anchors": [
+          "CBM-II"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "MOS_Technology_6512",
+        "url": "https://en.wikipedia.org/wiki/MOS_Technology_6512",
+        "anchors": [
+          "6512"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Bill_Mensch",
+        "url": "https://en.wikipedia.org/wiki/Bill_Mensch",
+        "anchors": [
+          "Bill Mensch"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "CSG_65CE02",
+        "url": "https://en.wikipedia.org/wiki/CSG_65CE02",
+        "anchors": [
+          "65CE02"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Commodore_Semiconductor_Group",
+        "url": "https://en.wikipedia.org/wiki/Commodore_Semiconductor_Group",
+        "anchors": [
+          "Commodore Semiconductor Group"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "UART",
+        "url": "https://en.wikipedia.org/wiki/UART",
+        "anchors": [
+          "UART"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Forth_(programming_language)",
+        "url": "https://en.wikipedia.org/wiki/Forth_(programming_language)",
+        "anchors": [
+          "Forth"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Eastern_Bloc",
+        "url": "https://en.wikipedia.org/wiki/Eastern_Bloc",
+        "anchors": [
+          "Eastern Bloc"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Pravetz_computers",
+        "url": "https://en.wikipedia.org/wiki/Pravetz_computers",
+        "anchors": [
+          "Pravetz"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "MOS_Technology_7501",
+        "url": "https://en.wikipedia.org/wiki/MOS_Technology_7501",
+        "anchors": [
+          "7501"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "MOS_Technology_8501",
+        "url": "https://en.wikipedia.org/wiki/MOS_Technology_8501",
+        "anchors": [
+          "8501"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Commodore_Plus/4",
+        "url": "https://en.wikipedia.org/wiki/Commodore_Plus/4",
+        "anchors": [
+          "Plus/4"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "MOS_Technology_8500",
+        "url": "https://en.wikipedia.org/wiki/MOS_Technology_8500",
+        "anchors": [
+          "8500"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "MOS_Technology_8502",
+        "url": "https://en.wikipedia.org/wiki/MOS_Technology_8502",
+        "anchors": [
+          "8502"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Hudson_Soft",
+        "url": "https://en.wikipedia.org/wiki/Hudson_Soft",
+        "anchors": [
+          "Hudson Soft"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Seiko_Epson",
+        "url": "https://en.wikipedia.org/wiki/Seiko_Epson",
+        "anchors": [
+          "Seiko Epson"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "NEC",
+        "url": "https://en.wikipedia.org/wiki/NEC",
+        "anchors": [
+          "NEC"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "SuperGrafx",
+        "url": "https://en.wikipedia.org/wiki/SuperGrafx",
+        "anchors": [
+          "SuperGrafx"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "VLSI_Technology",
+        "url": "https://en.wikipedia.org/wiki/VLSI_Technology",
+        "anchors": [
+          "VLSI"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Chuck_Peddle",
+        "url": "https://en.wikipedia.org/wiki/Chuck_Peddle",
+        "anchors": [
+          "Chuck Peddle"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Zilog_Z80",
+        "url": "https://en.wikipedia.org/wiki/Zilog_Z80",
+        "anchors": [
+          "Zilog Z80"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Second_source",
+        "url": "https://en.wikipedia.org/wiki/Second_source",
+        "anchors": [
+          "second-sourced",
+          "second source"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Direct_memory_access",
+        "url": "https://en.wikipedia.org/wiki/Direct_memory_access",
+        "anchors": [
+          "direct memory access",
+          "DMA"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Apple_I",
+        "url": "https://en.wikipedia.org/wiki/Apple_I",
+        "anchors": [
+          "Apple I"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Commodore_PET",
+        "url": "https://en.wikipedia.org/wiki/Commodore_PET",
+        "anchors": [
+          "Commodore PET"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Acorn_Atom",
+        "url": "https://en.wikipedia.org/wiki/Acorn_Atom",
+        "anchors": [
+          "Acorn Atom"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "VIC-20",
+        "url": "https://en.wikipedia.org/wiki/VIC-20",
+        "anchors": [
+          "VIC-20",
+          "Commodore VIC-20"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ohio_Scientific",
+        "url": "https://en.wikipedia.org/wiki/Ohio_Scientific",
+        "anchors": [
+          "Ohio Scientific",
+          "Ohio Scientific Challenger 4P"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Apple_IIe",
+        "url": "https://en.wikipedia.org/wiki/Apple_IIe",
+        "anchors": [
+          "Apple IIe"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "TurboGrafx-16",
+        "url": "https://en.wikipedia.org/wiki/TurboGrafx-16",
+        "anchors": [
+          "TurboGrafx-16"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Stack_pointer",
+        "url": "https://en.wikipedia.org/wiki/Stack_pointer",
+        "anchors": [
+          "S tack pointer",
+          "stack pointer"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Negative_flag",
+        "url": "https://en.wikipedia.org/wiki/Negative_flag",
+        "anchors": [
+          "N",
+          "Negative"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Overflow_flag",
+        "url": "https://en.wikipedia.org/wiki/Overflow_flag",
+        "anchors": [
+          "V",
+          "Overflow"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Interrupt_flag",
+        "url": "https://en.wikipedia.org/wiki/Interrupt_flag",
+        "anchors": [
+          "I",
+          "Interrupt disable"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Zero_flag",
+        "url": "https://en.wikipedia.org/wiki/Zero_flag",
+        "anchors": [
+          "Z",
+          "Zero"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Carry_flag",
+        "url": "https://en.wikipedia.org/wiki/Carry_flag",
+        "anchors": [
+          "C",
+          "Carry"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Programmable_logic_array",
+        "url": "https://en.wikipedia.org/wiki/Programmable_logic_array",
+        "anchors": [
+          "PLA",
+          "programmable logic array"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Addressing_mode",
+        "url": "https://en.wikipedia.org/wiki/Addressing_mode",
+        "anchors": [
+          "addressing modes"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Operand",
+        "url": "https://en.wikipedia.org/wiki/Operand",
+        "anchors": [
+          "operand",
+          "operands"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Opcode",
+        "url": "https://en.wikipedia.org/wiki/Opcode",
+        "anchors": [
+          "operation codes",
+          "opcodes"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Interrupt_request",
+        "url": "https://en.wikipedia.org/wiki/Interrupt_request",
+        "anchors": [
+          "IRQ",
+          "IRQs"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Osborne/McGraw-Hill",
+        "url": "https://en.wikipedia.org/wiki/Osborne/McGraw-Hill",
+        "anchors": [
+          "Osborne/McGraw-Hill"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Date_code",
+        "url": "https://en.wikipedia.org/wiki/Date_code",
+        "anchors": [
+          "date code"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Clock_rate",
+        "url": "https://en.wikipedia.org/wiki/Clock_rate",
+        "anchors": [
+          "clock rate"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Instruction_set_architecture",
+        "url": "https://en.wikipedia.org/wiki/Instruction_set_architecture",
+        "anchors": [
+          "Instruction set"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Microprocessor",
+        "url": "https://en.wikipedia.org/wiki/Microprocessor",
+        "anchors": [
+          "microprocessor"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Motorola",
+        "url": "https://en.wikipedia.org/wiki/Motorola",
+        "anchors": [
+          "Motorola"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Depletion-load_NMOS_logic",
+        "url": "https://en.wikipedia.org/wiki/Depletion-load_NMOS_logic",
+        "anchors": [
+          "depletion-load NMOS"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Home_computer",
+        "url": "https://en.wikipedia.org/wiki/Home_computer",
+        "anchors": [
+          "home computer"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Microcomputer_revolution",
+        "url": "https://en.wikipedia.org/wiki/Microcomputer_revolution",
+        "anchors": [
+          "revolution"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Home_video_game_console",
+        "url": "https://en.wikipedia.org/wiki/Home_video_game_console",
+        "anchors": [
+          "Home video game consoles"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Embedded_system",
+        "url": "https://en.wikipedia.org/wiki/Embedded_system",
+        "anchors": [
+          "embedded systems"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Austin,_Texas",
+        "url": "https://en.wikipedia.org/wiki/Austin,_Texas",
+        "anchors": [
+          "Austin, Texas"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mesa,_Arizona",
+        "url": "https://en.wikipedia.org/wiki/Mesa,_Arizona",
+        "anchors": [
+          "Mesa, Arizona"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bob_Galvin",
+        "url": "https://en.wikipedia.org/wiki/Bob_Galvin",
+        "anchors": [
+          "Bob Galvin"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mostek",
+        "url": "https://en.wikipedia.org/wiki/Mostek",
+        "anchors": [
+          "Mostek"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "L._J._Sevin",
+        "url": "https://en.wikipedia.org/wiki/L._J._Sevin",
+        "anchors": [
+          "L. J. Sevin"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "General_Instrument",
+        "url": "https://en.wikipedia.org/wiki/General_Instrument",
+        "anchors": [
+          "General Instrument"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Valley_Forge,_Pennsylvania",
+        "url": "https://en.wikipedia.org/wiki/Valley_Forge,_Pennsylvania",
+        "anchors": [
+          "Valley Forge, Pennsylvania"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Allen-Bradley",
+        "url": "https://en.wikipedia.org/wiki/Allen-Bradley",
+        "anchors": [
+          "Allen-Bradley"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Intel_4040",
+        "url": "https://en.wikipedia.org/wiki/Intel_4040",
+        "anchors": [
+          "Intel 4040"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wafer_(electronics)",
+        "url": "https://en.wikipedia.org/wiki/Wafer_(electronics)",
+        "anchors": [
+          "wafer"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Thousandth_of_an_inch",
+        "url": "https://en.wikipedia.org/wiki/Thousandth_of_an_inch",
+        "anchors": [
+          "mils"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Depletion-load_NMOS",
+        "url": "https://en.wikipedia.org/wiki/Depletion-load_NMOS",
+        "anchors": [
+          "depletion-load NMOS"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Voltage_doubler",
+        "url": "https://en.wikipedia.org/wiki/Voltage_doubler",
+        "anchors": [
+          "voltage doubler"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Projection_mask",
+        "url": "https://en.wikipedia.org/wiki/Projection_mask",
+        "anchors": [
+          "projection masking"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Photomask",
+        "url": "https://en.wikipedia.org/wiki/Photomask",
+        "anchors": [
+          "mask"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Photoresist",
+        "url": "https://en.wikipedia.org/wiki/Photoresist",
+        "anchors": [
+          "photoresist"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Perkin-Elmer",
+        "url": "https://en.wikipedia.org/wiki/Perkin-Elmer",
+        "anchors": [
+          "Perkin-Elmer"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Micralign",
+        "url": "https://en.wikipedia.org/wiki/Micralign",
+        "anchors": [
+          "Micralign"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "PMOS_logic",
+        "url": "https://en.wikipedia.org/wiki/PMOS_logic",
+        "anchors": [
+          "PMOS"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "EDN_(magazine)",
+        "url": "https://en.wikipedia.org/wiki/EDN_(magazine)",
+        "anchors": [
+          "EDN"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tri-state_driver",
+        "url": "https://en.wikipedia.org/wiki/Tri-state_driver",
+        "anchors": [
+          "tri-state drivers"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Multiprocessing",
+        "url": "https://en.wikipedia.org/wiki/Multiprocessing",
+        "anchors": [
+          "multiprocessing"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Multiplexer",
+        "url": "https://en.wikipedia.org/wiki/Multiplexer#List_of_ICs_which_provide_multiplexing",
+        "anchors": [
+          "74158"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Stack_register",
+        "url": "https://en.wikipedia.org/wiki/Stack_register",
+        "anchors": [
+          "stack register"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "PDP-11",
+        "url": "https://en.wikipedia.org/wiki/PDP-11",
+        "anchors": [
+          "PDP-11"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Vellum_paper",
+        "url": "https://en.wikipedia.org/wiki/Vellum_paper",
+        "anchors": [
+          "vellum paper"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Instruction_decoder",
+        "url": "https://en.wikipedia.org/wiki/Instruction_decoder",
+        "anchors": [
+          "instruction decoder"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Engineering_sample",
+        "url": "https://en.wikipedia.org/wiki/Engineering_sample",
+        "anchors": [
+          "engineering samples"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "EE_Times",
+        "url": "https://en.wikipedia.org/wiki/EE_Times",
+        "anchors": [
+          "EE Times"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Westin_St._Francis",
+        "url": "https://en.wikipedia.org/wiki/Westin_St._Francis",
+        "anchors": [
+          "St. Francis Hotel"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Photocopies",
+        "url": "https://en.wikipedia.org/wiki/Photocopies",
+        "anchors": [
+          "photocopies"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Signetics",
+        "url": "https://en.wikipedia.org/wiki/Signetics",
+        "anchors": [
+          "Signetics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Signetics_2650",
+        "url": "https://en.wikipedia.org/wiki/Signetics_2650",
+        "anchors": [
+          "2650"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cross-licensing",
+        "url": "https://en.wikipedia.org/wiki/Cross-licensing",
+        "anchors": [
+          "cross-license"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Computer_terminal",
+        "url": "https://en.wikipedia.org/wiki/Computer_terminal",
+        "anchors": [
+          "computer terminal"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Compact_cassette",
+        "url": "https://en.wikipedia.org/wiki/Compact_cassette",
+        "anchors": [
+          "compact cassette"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "AIM-65",
+        "url": "https://en.wikipedia.org/wiki/AIM-65",
+        "anchors": [
+          "AIM-65"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "SYM-1",
+        "url": "https://en.wikipedia.org/wiki/SYM-1",
+        "anchors": [
+          "SYM-1"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Oric_computers",
+        "url": "https://en.wikipedia.org/wiki/Oric_computers",
+        "anchors": [
+          "Oric computers"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tri-state_buffer",
+        "url": "https://en.wikipedia.org/wiki/Tri-state_buffer",
+        "anchors": [
+          "tri-state"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Kilobyte",
+        "url": "https://en.wikipedia.org/wiki/Kilobyte",
+        "anchors": [
+          "KB"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ricoh",
+        "url": "https://en.wikipedia.org/wiki/Ricoh",
+        "anchors": [
+          "Ricoh"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sprite_(computer_graphics)",
+        "url": "https://en.wikipedia.org/wiki/Sprite_(computer_graphics)",
+        "anchors": [
+          "sprite"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "NTSC",
+        "url": "https://en.wikipedia.org/wiki/NTSC",
+        "anchors": [
+          "NTSC"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "2A07",
+        "url": "https://en.wikipedia.org/wiki/2A07",
+        "anchors": [
+          "2A07"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "PAL",
+        "url": "https://en.wikipedia.org/wiki/PAL",
+        "anchors": [
+          "PAL"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Nintendo",
+        "url": "https://en.wikipedia.org/wiki/Nintendo",
+        "anchors": [
+          "Nintendo"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Floppy_disk_drive",
+        "url": "https://en.wikipedia.org/wiki/Floppy_disk_drive",
+        "anchors": [
+          "floppy disk drives"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Atari_810",
+        "url": "https://en.wikipedia.org/wiki/Atari_810",
+        "anchors": [
+          "810"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Atari_1050",
+        "url": "https://en.wikipedia.org/wiki/Atari_1050",
+        "anchors": [
+          "1050"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Elektor",
+        "url": "https://en.wikipedia.org/wiki/Elektor",
+        "anchors": [
+          "Elektor"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Elektor_Junior_Computer",
+        "url": "https://en.wikipedia.org/wiki/Elektor_Junior_Computer",
+        "anchors": [
+          "Junior Computer"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Apple_IIc",
+        "url": "https://en.wikipedia.org/wiki/Apple_IIc",
+        "anchors": [
+          "Apple IIc"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Epyx",
+        "url": "https://en.wikipedia.org/wiki/Epyx",
+        "anchors": [
+          "Epyx"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "GTE_Microcircuits",
+        "url": "https://en.wikipedia.org/wiki/GTE_Microcircuits",
+        "anchors": [
+          "GTE Microcircuits"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Acorn_Electron",
+        "url": "https://en.wikipedia.org/wiki/Acorn_Electron",
+        "anchors": [
+          "Acorn Electron"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Baby!_1",
+        "url": "https://en.wikipedia.org/wiki/Baby!_1",
+        "anchors": [
+          "Baby! 1"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Orao_(computer)",
+        "url": "https://en.wikipedia.org/wiki/Orao_(computer)",
+        "anchors": [
+          "Orao"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Oric-1",
+        "url": "https://en.wikipedia.org/wiki/Oric-1",
+        "anchors": [
+          "Oric-1"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Oric_Atmos",
+        "url": "https://en.wikipedia.org/wiki/Oric_Atmos",
+        "anchors": [
+          "Oric Atmos"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Index_registers",
+        "url": "https://en.wikipedia.org/wiki/Index_registers",
+        "anchors": [
+          "Index registers"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Little-endian",
+        "url": "https://en.wikipedia.org/wiki/Little-endian",
+        "anchors": [
+          "little-endian"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Address_bus",
+        "url": "https://en.wikipedia.org/wiki/Address_bus",
+        "anchors": [
+          "address bus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Die_(integrated_circuit)",
+        "url": "https://en.wikipedia.org/wiki/Die_(integrated_circuit)",
+        "anchors": [
+          "die size"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Megahertz",
+        "url": "https://en.wikipedia.org/wiki/Megahertz",
+        "anchors": [
+          "MHz"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Combinational_logic",
+        "url": "https://en.wikipedia.org/wiki/Combinational_logic",
+        "anchors": [
+          "combinational (clockless) logic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Microcode",
+        "url": "https://en.wikipedia.org/wiki/Microcode",
+        "anchors": [
+          "microcode"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Motorola_68000",
+        "url": "https://en.wikipedia.org/wiki/Motorola_68000",
+        "anchors": [
+          "Motorola 68000"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Processor_register",
+        "url": "https://en.wikipedia.org/wiki/Processor_register",
+        "anchors": [
+          "registers"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Zero_page",
+        "url": "https://en.wikipedia.org/wiki/Zero_page",
+        "anchors": [
+          "zero page"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "PDP-8",
+        "url": "https://en.wikipedia.org/wiki/PDP-8",
+        "anchors": [
+          "PDP-8"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Operating_system",
+        "url": "https://en.wikipedia.org/wiki/Operating_system",
+        "anchors": [
+          "operating system"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Literal_(computer_programming)",
+        "url": "https://en.wikipedia.org/wiki/Literal_(computer_programming)",
+        "anchors": [
+          "literal"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Array_(data_type)",
+        "url": "https://en.wikipedia.org/wiki/Array_(data_type)",
+        "anchors": [
+          "array"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Atari_BASIC",
+        "url": "https://en.wikipedia.org/wiki/Atari_BASIC",
+        "anchors": [
+          "Atari BASIC"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Endianness",
+        "url": "https://en.wikipedia.org/wiki/Endianness",
+        "anchors": [
+          "little-endian format"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bit_manipulation",
+        "url": "https://en.wikipedia.org/wiki/Bit_manipulation",
+        "anchors": [
+          "bit manipulation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Rockwell_Semiconductor",
+        "url": "https://en.wikipedia.org/wiki/Rockwell_Semiconductor",
+        "anchors": [
+          "Rockwell Semiconductor"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mnemonic",
+        "url": "https://en.wikipedia.org/wiki/Mnemonic",
+        "anchors": [
+          "mnemonic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Source_code",
+        "url": "https://en.wikipedia.org/wiki/Source_code",
+        "anchors": [
+          "source code"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Null-terminated_string",
+        "url": "https://en.wikipedia.org/wiki/Null-terminated_string",
+        "anchors": [
+          "null-terminated"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "String_(computer_science)",
+        "url": "https://en.wikipedia.org/wiki/String_(computer_science)",
+        "anchors": [
+          "character string"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Interrupts_in_65xx_processors",
+        "url": "https://en.wikipedia.org/wiki/Interrupts_in_65xx_processors",
+        "anchors": [
+          "Interrupts in 65xx processors"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Non-maskable_interrupt",
+        "url": "https://en.wikipedia.org/wiki/Non-maskable_interrupt",
+        "anchors": [
+          "non-maskable interrupt"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wired-OR",
+        "url": "https://en.wikipedia.org/wiki/Wired-OR",
+        "anchors": [
+          "wired-OR"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Interrupt_handler",
+        "url": "https://en.wikipedia.org/wiki/Interrupt_handler",
+        "anchors": [
+          "interrupt handler"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Polling_(computer_science)",
+        "url": "https://en.wikipedia.org/wiki/Polling_(computer_science)",
+        "anchors": [
+          "polling"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Commodore_1541",
+        "url": "https://en.wikipedia.org/wiki/Commodore_1541",
+        "anchors": [
+          "Commodore 1541"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Floppy_disk",
+        "url": "https://en.wikipedia.org/wiki/Floppy_disk",
+        "anchors": [
+          "floppy disk"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Serialization",
+        "url": "https://en.wikipedia.org/wiki/Serialization",
+        "anchors": [
+          "serializer"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Dual_inline_package",
+        "url": "https://en.wikipedia.org/wiki/Dual_inline_package",
+        "anchors": [
+          "DIP"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Not_connected",
+        "url": "https://en.wikipedia.org/wiki/Not_connected",
+        "anchors": [
+          "not connected"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bank_switching",
+        "url": "https://en.wikipedia.org/wiki/Bank_switching",
+        "anchors": [
+          "bank switching"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Static_random-access_memory",
+        "url": "https://en.wikipedia.org/wiki/Static_random-access_memory",
+        "anchors": [
+          "SRAM"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Apple_IIGS",
+        "url": "https://en.wikipedia.org/wiki/Apple_IIGS",
+        "anchors": [
+          "Apple IIGS"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ricoh_5A22",
+        "url": "https://en.wikipedia.org/wiki/Ricoh_5A22",
+        "anchors": [
+          "Ricoh 5A22"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Super_Nintendo_Entertainment_System",
+        "url": "https://en.wikipedia.org/wiki/Super_Nintendo_Entertainment_System",
+        "anchors": [
+          "Super Nintendo Entertainment System"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hardware_bug",
+        "url": "https://en.wikipedia.org/wiki/Hardware_bug",
+        "anchors": [
+          "bugs"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Circular_shift",
+        "url": "https://en.wikipedia.org/wiki/Circular_shift",
+        "anchors": [
+          "ROR"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Illegal_opcode",
+        "url": "https://en.wikipedia.org/wiki/Illegal_opcode",
+        "anchors": [
+          "undocumented instructions"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hardwired_control",
+        "url": "https://en.wikipedia.org/wiki/Hardwired_control",
+        "anchors": [
+          "hardwired"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "NOP_(code)",
+        "url": "https://en.wikipedia.org/wiki/NOP_(code)",
+        "anchors": [
+          "NOP"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Indirect_branch",
+        "url": "https://en.wikipedia.org/wiki/Indirect_branch",
+        "anchors": [
+          "memory indirect jump"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hexadecimal",
+        "url": "https://en.wikipedia.org/wiki/Hexadecimal",
+        "anchors": [
+          "hex"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Read–modify–write",
+        "url": "https://en.wikipedia.org/wiki/Read%E2%80%93modify%E2%80%93write",
+        "anchors": [
+          "read–modify–write"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Defensive_programming",
+        "url": "https://en.wikipedia.org/wiki/Defensive_programming",
+        "anchors": [
+          "Defensive programming"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "KERNAL",
+        "url": "https://en.wikipedia.org/wiki/KERNAL",
+        "anchors": [
+          "KERNAL"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Software_interrupt",
+        "url": "https://en.wikipedia.org/wiki/Software_interrupt",
+        "anchors": [
+          "software interrupt"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "ARM_architecture_family",
+        "url": "https://en.wikipedia.org/wiki/ARM_architecture_family",
+        "anchors": [
+          "ARM"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Machine_code_monitor",
+        "url": "https://en.wikipedia.org/wiki/Machine_code_monitor",
+        "anchors": [
+          "machine language monitor"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Intel_8086",
+        "url": "https://en.wikipedia.org/wiki/Intel_8086",
+        "anchors": [
+          "Intel 8086"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hardware_interrupt",
+        "url": "https://en.wikipedia.org/wiki/Hardware_interrupt",
+        "anchors": [
+          "hardware interrupt"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Stack_(abstract_data_type)",
+        "url": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)",
+        "anchors": [
+          "stack"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Comparison_of_assemblers",
+        "url": "https://en.wikipedia.org/wiki/Comparison_of_assemblers#6502_assemblers",
+        "anchors": [
+          "List of 6502 assemblers"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "List_of_home_computers_by_category",
+        "url": "https://en.wikipedia.org/wiki/List_of_home_computers_by_category#MOS_Technology_6502",
+        "anchors": [
+          "MOS Technology 6502-based home computers"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Apple_II_accelerators",
+        "url": "https://en.wikipedia.org/wiki/Apple_II_accelerators",
+        "anchors": [
+          "Apple II accelerators"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cc65",
+        "url": "https://en.wikipedia.org/wiki/Cc65",
+        "anchors": [
+          "cc65"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Robert_H._Cushman",
+        "url": "https://en.wikipedia.org/wiki/Robert_H._Cushman",
+        "anchors": [
+          "Cushman, Robert H."
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Reston_Publishing",
+        "url": "https://en.wikipedia.org/wiki/Reston_Publishing",
+        "anchors": [
+          "Reston Publishing"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Compute!_Publications",
+        "url": "https://en.wikipedia.org/wiki/Compute!_Publications",
+        "anchors": [
+          "Compute! Publications"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "SYBEX",
+        "url": "https://en.wikipedia.org/wiki/SYBEX",
+        "anchors": [
+          "SYBEX"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Prentice_Hall",
+        "url": "https://en.wikipedia.org/wiki/Prentice_Hall",
+        "anchors": [
+          "Prentice Hall"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Byte_(magazine)",
+        "url": "https://en.wikipedia.org/wiki/Byte_(magazine)",
+        "anchors": [
+          "Byte"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "McGraw_Hill",
+        "url": "https://en.wikipedia.org/wiki/McGraw_Hill",
+        "anchors": [
+          "McGraw Hill"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "ISSN_(identifier)",
+        "url": "https://en.wikipedia.org/wiki/ISSN_(identifier)",
+        "anchors": [
+          "ISSN"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ],
+    "external": [
+      {
+        "url": "https://github.com/MicroCoreLabs/Projects/tree/master/MCL65",
+        "anchors": [
+          "MCL65 6502 CPU core, C code",
+          "MCL65 6502 CPU core"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://en.wiktionary.org/wiki/Hardwired",
+        "anchors": [
+          "hardwired"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://en.wikibooks.org/wiki/Computer_Programming/Hello_world#Accumulator_+_index_register_machine:_MOS_Technology_6502,_CBM_KERNEL,_MOS_assembler_syntax",
+        "anchors": [
+          "Hello world!"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=enHF9lMseP8",
+        "anchors": [
+          "\"Oral History of Chuck Peddle\""
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://ghostarchive.org/varchive/youtube/20211118/enHF9lMseP8",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://archive.computerhistory.org/resources/access/text/2015/06/102702020-05-01-acc.pdf",
+        "anchors": [
+          "\"Motorola 6800 Oral History Panel\""
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20210413223530/https://archive.computerhistory.org/resources/access/text/2015/06/102702020-05-01-acc.pdf",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20160424050556/http://www.swtpc.com/mholley/Microprocessors/EDN_Sep_20_1975_6502.pdf",
+        "anchors": [
+          "\"2-1/2 Generation μP's -$10 Parts That Perform Like Low-End Mini's\""
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.swtpc.com/mholley/Microprocessors/EDN_Sep_20_1975_6502.pdf",
+        "anchors": [
+          "the original"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20120508024231/http://silicongenesis.stanford.edu/complete_listing.html",
+        "anchors": [
+          "Interview with William Mensch"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20160304091031/http://silicongenesis.stanford.edu/transcripts/mensch.htm",
+        "anchors": [
+          "Transcript"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://archive.org/details/mos_6500_mpu_preliminary_may_1976",
+        "anchors": [
+          "6500 Series Datasheet"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://bytecollector.com/archive/misc/6500-10A_MCS6500hwMan_Jan76.pdf",
+        "anchors": [
+          "6500 Series Hardware Manual"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20110913045342/http://bytecollector.com/archive/misc/6500-10A_MCS6500hwMan_Jan76.pdf",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://bytecollector.com/archive/misc/6500-50A_MCS6500pgmManJan76.pdf",
+        "anchors": [
+          "6500 Series Programming Manual"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20110913045402/http://bytecollector.com/archive/misc/6500-50A_MCS6500pgmManJan76.pdf",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://archive.org/details/6502_Applications_Book/",
+        "anchors": [
+          "6502 Applications Book"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://archive.org/details/6502-assembly-language-programming/",
+        "anchors": [
+          "6502 Assembly Language Programming"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://archive.org/details/6502_Assembly_Language_Subroutines/",
+        "anchors": [
+          "6502 Assembly Language Subroutines"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://archive.org/details/6502GamesRodnayZaks/",
+        "anchors": [
+          "6502 Games"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://archive.org/details/6502UsersManual/",
+        "anchors": [
+          "6502 User's Manual"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://archive.org/details/Advanced_6502_Programming/",
+        "anchors": [
+          "Advanced 6502 programming"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://project64.c64.org/Software/ml-bgnr.pdf",
+        "anchors": [
+          "Machine Language for Beginners: Personal Computer Machine Language Programming For The Atari, VIC, Apple, Commodore 64, And PET/CBM Computers"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://www.atariarchives.org/mlb/index.php",
+        "anchors": [
+          "AtariArchives.org"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://archive.org/details/Programming_the_6502_OCR/",
+        "anchors": [
+          "Programming the 6502"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://archive.org/details/0893037893ProgrammingThe65816/",
+        "anchors": [
+          "Programming the 65816 – Including the 6502, 65C02, and 65802"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.atarimania.com/documents/6502%20(65xx)%20Microprocessor%20Instant%20Reference%20Card.jpg",
+        "anchors": [
+          "(archive)"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20190904042615/http://www.atarimania.com/documents/6502%20(65xx)%20Microprocessor%20Instant%20Reference%20Card.jpg",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.6502.org/",
+        "anchors": [
+          "6502.org – the 6502 microprocessor resource"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20201129185700/http://www.6502.org/",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20181004202006/https://www.commodore.ca/history/company/mos/mos_technology.htm",
+        "anchors": [
+          "The Rise of MOS Technology & The 6502"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.cpu-collection.de/?tn=1&l0=cl&l1=650x",
+        "anchors": [
+          "650x information"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20200311235418/http://www.cpu-collection.de/?tn=1&l0=cl&l1=650x",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20090113222331/http://mdfs.net/Docs/Comp/6502/",
+        "anchors": [
+          "mdfs.net"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20120524112833/http://ericclever.com/6500/",
+        "anchors": [
+          "\"6502 – the first RISC µP\""
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://ericclever.com/6500/",
+        "anchors": [
+          "the original"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20060525053048/http://wiz-worx.com/resume/byte8010.htm",
+        "anchors": [
+          "\"6502 Gets Microprogrammable Instructions\""
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://search.worldcat.org/issn/0360-5280",
+        "anchors": [
+          "0360-5280"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.wiz-worx.com/resume/byte8010.htm",
+        "anchors": [
+          "the original"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://6502asm.com/",
+        "anchors": [
+          "Online 6502 compatible assembler and emulator, written in JavaScript"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20110208004832/http://6502asm.com/",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.zophar.net/6502.html",
+        "anchors": [
+          "List of 6502 software emulators"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20200919032922/http://www.zophar.net/6502.html",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://atarihq.com/danb/6502.shtml",
+        "anchors": [
+          "6502 simulator for Windows"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20041204171239/http://atarihq.com/danb/6502.shtml",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.visual6502.org/",
+        "anchors": [
+          "Visual Transistor-level Simulation of 6502 CPU"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20110314114737/http://www.visual6502.org/",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://searle.x10host.com/6502/Simple6502.html",
+        "anchors": [
+          "Grant's 7/8-chip 6502 board"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20220606014503/http://searle.x10host.com/6502/Simple6502.html",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.kswichit.com/6502/6502.html",
+        "anchors": [
+          "6502 microprocessor training board"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20190714012420/http://www.kswichit.com/6502/6502.html",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.6502.org/trainers/",
+        "anchors": [
+          "Build your own KIM-1 training board"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20190714012420/http://www.6502.org/trainers/",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://github.com/grappendorf/homecomputer-6502",
+        "anchors": [
+          "6502 home computer"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://putnamelectronics.com/products.html",
+        "anchors": [
+          "PE6502 single board computer"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20200503122709/http://putnamelectronics.com/products.html",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://github.com/tebl/BE6502-Build-a-65c02-computer",
+        "anchors": [
+          "BE6502 single board computer"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://opencores.org/projects/cpu6502_true_cycle",
+        "anchors": [
+          "cpu6502_tc 6502 CPU core – VHDL source code"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://opencores.org/projects/ag_6502",
+        "anchors": [
+          "ag_6502 6502 CPU core – Verilog source code"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20200804093306/https://opencores.org/projects/ag_6502",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://opencores.org/projects/m65c02",
+        "anchors": [
+          "M65C02 65C02 CPU core – Verilog source code"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20200804103904/https://opencores.org/projects/m65c02",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ]
+  },
+  "stats": {
+    "n_categories": 4,
+    "n_sections": 26,
+    "n_tables": 3,
+    "n_local": 3,
+    "n_wiki": 227,
+    "n_external": 62,
+    "md_chars": 80195
+  }
+}

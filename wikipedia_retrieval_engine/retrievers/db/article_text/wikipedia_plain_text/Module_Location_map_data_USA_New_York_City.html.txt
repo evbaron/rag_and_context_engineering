@@ -1,0 +1,119 @@
+Article: Location map/data/USA New York City
+Source: Module_Location_map_data_USA_New_York_City.html
+
+Module documentation[view] [history] [purge]
+
+Location map of New York City
+
+name
+
+New York City
+
+border
+coordinates
+
+40.92
+
+-74.27
+
+←↕→
+
+-73.68
+
+40.49
+
+map center
+
+40°42′18″N 73°58′30″W﻿ / ﻿40.705°N 73.975°W﻿ / 40.705; -73.975
+
+image
+
+USA_New_York_City_location_map.svg
+
+Module:Location map/data/USA New York City is a location map definition used to overlay markers and labels on an equirectangular projection map of New York City. The markers are placed by latitude and longitude coordinates on the default map or a similar map image.
+
+Usage
+
+These definitions are used by the following templates when invoked with parameter "USA New York City":
+
+{{Location map|USA New York City |...}}
+
+{{Location map many|USA New York City |...}}
+
+{{Location map+|USA New York City |...}}
+
+{{Location map~|USA New York City |...}}
+
+Map definition
+
+name = New York City
+
+Name used in the default map caption
+
+image = USA_New_York_City_location_map.svg
+
+The default map image, without "Image:" or "File:"
+
+top = 40.92
+
+Latitude at top edge of map, in decimal degrees
+
+bottom = 40.49
+
+Latitude at bottom edge of map, in decimal degrees
+
+left = -74.27
+
+Longitude at left edge of map, in decimal degrees
+
+right = -73.68
+
+Longitude at right edge of map, in decimal degrees
+
+Precision
+
+Longitude: from West to East this map definition covers 0.59 degrees.
+
+At an image width of 200 pixels, that is 0.0029 degrees per pixel.
+
+At an image width of 1000 pixels, that is 0.0006 degrees per pixel.
+
+Latitude: from North to South this map definition covers 0.43 degrees.
+
+At an image height of 200 pixels, that is 0.0022 degrees per pixel.
+
+At an image height of 1000 pixels, that is 0.0004 degrees per pixel.
+
+See also
+
+Module:Location map/data/USA
+
+Module:Location map/data/USA New York
+
+Location map templates
+
+Template:Location map, to display one mark and label using latitude and longitude
+
+Template:Location map many, to display up to nine marks and labels
+
+Template:Location map+, to display an unlimited number of marks and labels
+
+Creating new map definitions
+
+Template:Location map/Creating a new map definition
+
+The above documentation is transcluded from Module:Location map/data/USA New York City/doc. (edit | history)
+Editors can experiment in this module's sandbox (create | mirror) and testcases (create) pages.
+Subpages of this module.
+
+return {
+name = 'New York City',
+top = 40.92,
+bottom = 40.49,
+left = -74.27,
+right = -73.68,
+width = 200,
+image = 'USA_New_York_City_location_map.svg'
+}
+
+<div

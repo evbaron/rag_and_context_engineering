@@ -1,0 +1,212 @@
+# Peter Tosh
+
+## Infobox
+
+- **Also known as:** Stepping Razor
+- **Born:** Winston Hubert McIntosh ( 1944-10-19 ) 19 October 1944 Grange Hill, Jamaica
+- **Died:** 11 September 1987 (1987-09-11) (aged 42) Kingston, Jamaica
+- **Cause of death:** Murder (gunshot wounds)
+- **Genres:** Reggae ska rocksteady
+- **Occupations:** Musician singer songwriter
+- **Instruments:** Guitar vocals keyboards melodica percussion drums violin
+- **Years active:** 1961–1987
+- **Labels:** Intel-Diplo, JAD Records
+- **Website:** petertosh.com
+
+**Peter Tosh** [OM](/wiki/Order_of_Merit_(Jamaica)) [GCOT](/wiki/Order_of_the_Companions_of_O._R._Tambo) (born **Winston Hubert McIntosh**; 19 October  1944 – 11 September 1987) was a Jamaican musician and reggae singer. Along with [Bob Marley](/wiki/Bob_Marley) and [Bunny Wailer](/wiki/Bunny_Wailer), he was one of the core members of the band [the Wailers](/wiki/Bob_Marley_and_the_Wailers) (1963–1976), after which he established himself as a successful solo artist and a promoter of [Rastafari](/wiki/Rastafari). He was murdered in 1987 during a [home invasion](/wiki/Home_invasion).
+
+## Early life
+
+Tosh was born Winston Hubert McIntosh on 19 October 1944 in [Westmoreland](/wiki/Westmoreland_Parish), the westernmost parish of [Jamaica](/wiki/Jamaica). He was abandoned by his parents and "shuffled among relatives". When McIntosh was fifteen, his aunt died and he moved to [Trenchtown](/wiki/Trenchtown) in [Kingston, Jamaica](/wiki/Kingston,_Jamaica). He was educated in [Bluefields](/wiki/Bluefields,_Jamaica) up to age 17, then moved to Kingston to live with another aunt. He began an apprenticeship as a welder.
+
+He first learned guitar after watching a man in the country play a song that captivated him. He watched the man play the same song for half a day, memorizing everything his fingers were doing. He then picked up the guitar and played the song back to the man. The man then asked McIntosh who had taught him to play; McIntosh told him that he had. During the early 1960s, as an aspiring musician, Tosh went to vocal teacher [Joe Higgs](/wiki/Joe_Higgs), who gave free music lessons to young people. Through his contact with Higgs, Tosh met Robert Nesta Marley ([Bob Marley](/wiki/Bob_Marley)) and Neville O'Reilly Livingston ([Bunny Wailer](/wiki/Bunny_Wailer)). He then changed his name to Peter Tosh and the trio started singing together in 1962. Higgs taught the trio to harmonise and while developing their music, they would often play on the street corners of Trenchtown.
+
+## Music career
+
+By 1964, Tosh, Marley, and Bunny had formed [the Wailing Wailers](/wiki/Bob_Marley_and_the_Wailers), with falsetto singer [Junior Braithwaite](/wiki/Junior_Braithwaite), and backup singers [Beverley Kelso](/wiki/Beverley_Kelso) and [Cherry Smith](/wiki/Cherry_Smith). Initially, Tosh was the only one in the group who could play musical instruments. According to [Bunny Wailer](/wiki/Bunny_Wailer), Tosh was critical to the band because he was a self-taught guitarist and keyboardist, and thus became an inspiration for the other band members to learn to play. The Wailing Wailers had a major [ska](/wiki/Ska) hit with their first single, "Simmer Down", and recorded several more successful singles before Braithwaite, Kelso and Smith left the band in late 1965. Marley spent much of 1966 in [Delaware](/wiki/Delaware) in the United States with his mother, [Cedella (née Malcolm) Marley-Booker](/wiki/Cedella_Booker), and for a brief time was working at a nearby [Chrysler](/wiki/Chrysler) factory. He returned to Jamaica in early 1967 with a renewed interest in music and a new spirituality. Tosh and Bunny were already Rastafarians when Marley returned from the US, and the three became very involved with the Rastafari faith. Soon afterwards, they renamed the musical group the Wailers. Tosh would explain later that they chose the name Wailers because to "wail" means to mourn or to, as he put it, "...express one's feelings vocally". He also claims that he was the beginning of the group, and that it was he who first taught Bob Marley the guitar. Also according to Bunny Wailer, the early Wailers learned to play instruments from Tosh.
+
+During the mid-1960s Tosh, along with Bob Marley and Bunny Wailer, were introduced to Danny Sims and [Johnny Nash](/wiki/Johnny_Nash), who signed the three artists to an exclusive recording contract on Sims' and Nash's [JAD Records](/wiki/JAD_Records) label as well as an exclusive publishing agreement through Sims' music publishing company, Cayman Music. Rejecting the up-tempo dance of ska, the band slowed their music to a [rocksteady](/wiki/Rocksteady) pace, and infused their lyrics with political and social messages inspired by their new-found faith. The Wailers composed several songs for the American-born singer Nash before teaming with producer [Lee "Scratch" Perry](/wiki/Lee_%22Scratch%22_Perry) to record some of the earliest well-known reggae songs, including "Soul Rebel", "Duppy Conqueror", and "Small Axe". The collaboration had given birth to reggae music and in 1970 bassist [Aston "Family Man" Barrett](/wiki/Aston_Barrett) and his brother, drummer [Carlton Barrett](/wiki/Carlton_Barrett), joined the group. They recorded the album *[The Best of The Wailers](/wiki/The_Best_of_The_Wailers)*, which was produced by Leslie Kong and released in 1971.
+
+In 1972, Danny Sims assigned the balance of the JAD Records recording contract with the band to [Chris Blackwell](/wiki/Chris_Blackwell) and [Island Records](/wiki/Island_Records) company and released their debut, *[Catch a Fire](/wiki/Catch_a_Fire)*, in 1973, following it with *[Burnin'](/wiki/Burnin%27_(The_Wailers_album))* the same year. The Wailers had moved from many producers after 1970 and there were instances where producers would record rehearsal sessions that Tosh did and release them in England under the name "Peter Touch".
+
+In 1973, Tosh was driving home with his girlfriend Evonne when his car was hit by another car driving on the wrong side of the road. The accident killed Evonne and severely fractured Tosh's skull.
+
+After Island Records president Chris Blackwell refused to issue his solo album in 1974, Tosh and Bunny Wailer left the Wailers, citing the unfair treatment they received from Blackwell, to whom Tosh often referred with a derogatory play on Blackwell's surname, 'Whiteworst'. Tosh had written or co-written many of the Wailers' hit songs such as "[Get Up, Stand Up](/wiki/Get_Up,_Stand_Up)", "400 Years", and "No Sympathy". Tosh went on to a solo career, releasing albums with CBS Records and [Rolling Stones Records](/wiki/Rolling_Stones_Records).
+
+### Solo career
+
+Tosh performing with [Robbie Shakespeare](/wiki/Robbie_Shakespeare) in 1978
+
+Tosh's debut solo album, *[Legalize It](/wiki/Legalize_It)*, was recorded in 1975–6 at [Treasure Isle](/wiki/Treasure_Isle). It was released in June 1976 on [CBS Records](/wiki/Columbia_Records). The title track soon became popular among endorsers of [cannabis](/wiki/Cannabis_(drug)) legalization, reggae music lovers and Rastafari all over the world, and was a favourite at Tosh's concerts. Also in 1976, Tosh organised a backing band, [Word, Sound and Power](/wiki/Word,_Sound_and_Power), who were to accompany him on tour for the next few years, and many of whom performed on his albums of this period. Tosh's second album, *[Equal Rights](/wiki/Equal_Rights_(album))*, was released in 1977. It featured his recording of a song co-written with Marley, "[Get Up, Stand Up](/wiki/Get_Up,_Stand_Up)", and a [cover](/wiki/Cover_version) of "Stepping Razor" that would also appear on the soundtrack to the film *[Rockers](/wiki/Rockers_(soundtrack))*.
+
+In 1978, the [Rolling Stones](/wiki/Rolling_Stones)' record label, Rolling Stones Records, contracted with Tosh, on which the album *[Bush Doctor](/wiki/Bush_Doctor)* was released, introducing Tosh to a larger audience. The album featured Rolling Stones frontmen [Mick Jagger](/wiki/Mick_Jagger) and [Keith Richards](/wiki/Keith_Richards), and the lead single – a cover version of [the Temptations](/wiki/The_Temptations) song "[Don't Look Back](/wiki/Don%27t_Look_Back_(Temptations_song))" – was performed as a duet with Jagger. In April, Tosh performed at the Jamaican [One Love Peace Concert](/wiki/One_Love_Peace_Concert) of 1978. Tosh lit a marijuana [spliff](/wiki/Joint_(cannabis)) and lectured about [legalising cannabis](/wiki/Legalisation_of_cannabis), lambasting attending dignitaries [Michael Manley](/wiki/Michael_Manley) and [Edward Seaga](/wiki/Edward_Seaga) for their failure to enact such legislation. According to *[The Gleaner](/wiki/The_Gleaner)*, Tosh became regular target for the police after the concert. In September, he was arrested by police at [Half Way Tree](/wiki/Half_Way_Tree) square, on the grounds of smoking marijuana and attacking a police officer. He reported being beaten severely while in police custody – resulting in a broken hand and head injuries requiring stitches.
+
+*[Mystic Man](/wiki/Mystic_Man)* (1979) and *[Wanted Dread and Alive](/wiki/Wanted_Dread_and_Alive)* (1981) followed, both released on Rolling Stones Records. Tosh tried to gain some mainstream success while keeping his militant views, but was only moderately successful, especially when compared to Marley's achievements.
+
+In September 1979, a controversy sparked after his performance at the [No Nukes concerts](/wiki/No_Nukes:_The_Muse_Concerts_for_a_Non-Nuclear_Future) at [Madison Square Garden](/wiki/Madison_Square_Garden), where he wore [Palestinian clothing](/wiki/Palestinian_traditional_costumes) (*[thawb](/wiki/Thawb)* and *[keffiyeh](/wiki/Keffiyeh)*) and openly smoked marijuana. Tosh's appearance was considered a provocation towards the [Jewish community in New York City](/wiki/History_of_the_Jews_in_New_York_City), as the concerts took place during the [Jewish New Year](/wiki/Rosh_Hashanah) holiday. Despite his performance being advertised to appear in the accompanying film and on the triple live album, Tosh was removed from both releases. The Palestinian dress remained a trademark performance outfit in the following years.
+
+In 1984, after the release of 1983's album *[Mama Africa](/wiki/Mama_Africa_(Peter_Tosh_album))*, Tosh went into self-imposed exile, seeking the spiritual advice of traditional medicine men in Africa, and trying to free himself from recording agreements that distributed his records in South Africa. Tosh had been at odds for several years with his label, [EMI](/wiki/EMI), over a perceived lack of promotion for his music.
+
+Tosh also participated in the international opposition to South African [apartheid](/wiki/Apartheid) by appearing at anti-apartheid concerts and by conveying his opinion in various songs like "Apartheid" (1977, re-recorded 1987), "Equal Rights" (1977), "Fight On" (1979), and "Not Gonna Give It Up" (1983). In 1987, Peter Tosh seemed to be having a career revival. He was awarded a [Grammy Award](/wiki/Grammy_Award) for Best Reggae Performance in 1987 for *[No Nuclear War](/wiki/No_Nuclear_War)*, his last record.
+
+## Personal life
+
+### Religion
+
+Along with [Bob Marley](/wiki/Bob_Marley) and [Bunny Wailer](/wiki/Bunny_Wailer) during the late 1960s, Peter Tosh became a devotee of [Rastafari](/wiki/Rastafari). One of the beliefs of the Rastas is that [Haile Selassie](/wiki/Haile_Selassie), the [Emperor of Ethiopia](/wiki/Emperor_of_Ethiopia), was either an [embodiment of God](/wiki/The_Rastafari_Messiah) or a messenger of God, leading the three friends to be baptized in the [Ethiopian Orthodox Church](/wiki/Ethiopian_Orthodox_Tewahedo_Church).
+
+### Unicycling
+
+At some point after his departure from the Wailers, Tosh developed an interest in [unicycles](/wiki/Unicycle) and became a unicycle rider, being able to ride forwards and backwards and hop. He often amused his audiences by riding onto the stage on his unicycle for his shows.
+
+### Family
+
+Tosh's girlfriend Evonne was killed in a car crash in 1973. Tosh was in a relationship with his future wife Marlene Brown for about five years from 1982; she was 21 at the start of the relationship. Tosh had ten children including [Carlos Andrew](/wiki/Andrew_Tosh) (1967), Gamal "Tosh 1" Jawara McIntosh (1980-2020) (mother Melody Cunningham), Aldrina Michelle and his youngest, Niambe, who has since 2009 been the administrator of her late father's estate. The others are his sons Horace David, Stephen, and Nabii; and his daughters Sheba, Camille Erone, and Tobi.
+
+## Murder
+
+On 11 September 1987, after Tosh returned to his home in Jamaica, a three-man gang came to his house on motorcycles demanding money. Tosh replied that he did not have any with him, but the gang did not believe him. They remained at his residence for several hours and tortured Tosh in an attempt to [extort](/wiki/Extort) money from him. Over the hours, as various associates of Tosh arrived to visit him, they were also taken hostage by the gunmen. The gunmen included chief thug Dennis "Leppo" Lobban, a man whom Tosh had previously befriended and tried to help find work after Lobban's release from a lengthy jail sentence.
+
+Tosh said he did not have any money in the house, after which Lobban and the fellow gunmen opened fire in a reckless manner. Tosh was shot twice in the head and killed. Herbalist Wilton "Doc" Brown and disc jockey Jeff 'Free I' Dixon also died as a result of wounds sustained during the robbery. Several others in the house were wounded, including Tosh's common-law wife Andrea Marlene Brown, Free I's wife Yvonne ("Joy"), Tosh's drummer Carlton "Santa" Davis, and musician Michael Robinson.
+
+According to Police Commissioner Herman Ricketts, Lobban surrendered and two other men were interrogated but not publicly named. Lobban pled innocent during his trial, telling the court he had been drinking with friends. The trial was held in a closed court due to the involvement of illegal firearms. Lobban was ultimately found guilty by a jury of eight women and four men and [sentenced to death](/wiki/Capital_punishment) by hanging.
+
+In 1995, Lobban's sentence was [commuted](/wiki/Commutation_of_sentence) and he remained in jail. Another suspect was acquitted due to insufficient evidence. The other two gunmen were never identified by name.
+
+## Instruments
+
+In 1983, at the Los Angeles stop on Tosh's *Mama Africa* tour, local musician Bruno Coon went to the hotel at which Tosh was staying, with a gift for him: a custom-built guitar in the shape of an [M16 rifle](/wiki/M16_rifle). Tosh accepted the gift personally. The guitar was subsequently lost by the airlines when the tour went to Europe but was recovered when Tosh's [public relations](/wiki/Public_relations) agent placed an article about its loss in *[Der Spiegel](/wiki/Der_Spiegel)*. Tosh went on to perform on stage with the guitar.
+
+The promoters of the Flashpoint Film Festival announced in 2006 that Tosh's common-law wife Andrea "Marlene" Brown would auction it on [eBay](/wiki/EBay). Tosh's sons, [Andrew Tosh](/wiki/Andrew_Tosh), and Jawara McIntosh, prevented the sale, claiming ownership of the guitar. In 2011 Andrew Tosh said that the guitar was in the custody of a close friend, awaiting the opening of a museum dedicated to Peter Tosh.
+
+## Legacy
+
+"[Man in Business Suit Levitating emoji](/wiki/Man_in_Business_Suit_Levitating_emoji)" based on 2 Tone Records logo, based on photo of Tosh.
+
+In 1979, a 1964 photograph of Tosh in sunglasses and a suit, also featuring [Bob Marley and the Wailers](/wiki/Bob_Marley_and_the_Wailers), was the inspiration for the logo of [2 Tone Records](/wiki/2_Tone_Records). The label released albums from ska bands such as [The Specials](/wiki/The_Specials). The logo featured a stylized man in a suit based on the photo of Tosh, although the figure was called "Walt Jabsco". The logo in turn was the inspiration for a character in a [Webdings](/wiki/Webdings) font designed by [Vincent Connare](/wiki/Vincent_Connare) in 1997 ("[Man in Business Suit Levitating emoji](/wiki/Man_in_Business_Suit_Levitating_emoji)" in the [Emoji](/wiki/Emoji) system). Connare changed the design to facing forward and floating. Tosh's children [Andrew Tosh](/wiki/Andrew_Tosh) and Niambe McIntosh both praised the emoji in a 2021 [BBC](/wiki/BBC) interview, with Andrew stating that "[Peter Tosh] wanted [people] to dance to their own (political) awakening".
+
+In 1993, *[Stepping Razor: Red X](/wiki/Stepping_Razor:_Red_X)* was released, a documentary film chronicling Tosh's life, music, and death. It was directed by Canadian filmmaker [Nicholas Campbell](/wiki/Nicholas_Campbell), produced by Wayne Jobson and based upon a series of spoken-word recordings made by Peter Tosh. The film was released on DVD in 2002.
+
+A monument to Tosh is maintained by his family in Belmont,Westmoreland, which is open to the public. His birthday is celebrated there annually with live reggae music.
+
+In October 2012, Tosh was posthumously awarded Jamaica's fourth highest honour, the [Order of Merit](/wiki/Jamaican_Order_of_Merit).
+
+In 2015, Tosh's daughter – the administrator of the Peter Tosh Estate – deemed that [April 20](/wiki/420_(cannabis_culture)) should be celebrated as International Peter Tosh Day, in honour of his "philosophy of responsible cannabis consumption for medicinal and spiritual health benefits".
+
+A square on Trafalgar Road in [Kingston, Jamaica](/wiki/Kingston,_Jamaica), was renamed Peter Tosh Square. The square is home to the Peter Tosh Museum, opened on Peter Tosh's 72nd birthday on 19 October 2016. Among the artifacts on display is Tosh's M16 guitar. There was a benefit concert for the grand opening, on the 22nd, featuring [Chronixx](/wiki/Chronixx), [Luciano](/wiki/Luciano_(singer)) and Andrew Tosh.
+
+The annual Peter Tosh Gala Awards event was inaugurated in 2017.
+
+In October 2019, a commemorative [blue plaque](/wiki/Blue_plaque) dedicated by the [Nubian Jak Community Trust](/wiki/Nubian_Jak_Community_Trust) honoring Bob Marley, Peter Tosh, and Bunny Wailer was placed at the former site of [Basing Street Studios](/wiki/Island_Studios) in London, where *[Catch a Fire](/wiki/Catch_a_Fire)* and *[Burnin'](/wiki/Burnin%27_(Bob_Marley_and_the_Wailers_album))* were completed.
+
+In 2023, he was posthumously bestowed with the [Order of the Companions of O. R. Tambo](/wiki/Order_of_the_Companions_of_O._R._Tambo).
+
+## Discography
+
+### Studio albums
+
+List of albums, with selected chart positions
+
+| Title | Album details | Peak chart positions | | | | [Certifications](/wiki/List_of_music_recording_certifications) |
+| --- | --- | --- | --- | --- | --- | --- |
+| [US](/wiki/Billboard_200) | [US R&B/HH](/wiki/Top_R%26B/Hip-Hop_Albums) | [AUS](/wiki/ARIA_Charts) | [UK](/wiki/UK_Albums_Chart) |
+| *[Legalize It](/wiki/Legalize_It)* | - Released: June 1976 - Label: [Columbia Records](/wiki/Columbia_Records), [Island Records](/wiki/Island_Records), Intel-Diplo - Format: [Vinyl](/wiki/Phonograph_record), [Cassette](/wiki/Cassette_tape) | 199 | — | — | 54 | - [RIAA](/wiki/Recording_Industry_Association_of_America): Platinum |
+| *[Equal Rights](/wiki/Equal_Rights_(album))* | - Released: 1977 - Label: [Columbia Records](/wiki/Columbia_Records), Intel-Diplo, [Rolling Stones Records](/wiki/Rolling_Stones_Records), [EMI Music Distribution](/wiki/EMI) - Format: Vinyl, Cassette | 146 | — | — | — | - RIAA: Gold |
+| *[Bush Doctor](/wiki/Bush_Doctor)* | - Released: December 9, 1978 - Label: Rolling Stones Records, EMI - Format: Vinyl, Cassette | 104 | — | 34 | — | - [NVPI](/wiki/NVPI): Gold |
+| *[Mystic Man](/wiki/Mystic_Man)* | - Released: 1979 - Label: Rolling Stones Records, EMI - Format: Vinyl, Cassette | 123 | — | 72 | — |  |
+| *[Wanted Dread & Alive](/wiki/Wanted_Dread_%26_Alive)* | - Released: 1981 - Label: Rolling Stones Records, EMI, [Capitol](/wiki/Capitol_Records) - Format: | 91 | 40 | — | — |  |
+| *[Mama Africa](/wiki/Mama_Africa_(Peter_Tosh_album))* | - Released: 1983 - Label: Rolling Stones Records, EMI - Format: | 59 | 49 | 47 | — |  |
+| *[No Nuclear War](/wiki/No_Nuclear_War)* | - Released: 1987 - Label: EMI - Format: | — | — | — | — |  |
+| "—" denotes a recording that did not chart or was not released in that territory. | | | | | | |
+
+### Live albums
+
+- *Captured Live* (1984)
+- *Live at the One Love Peace Concert* (JAD) (2000)
+- *Live & Dangerous: Boston 1976* (2001)
+- *Live at the Jamaica World Music Festival 1982* (JAD) (2002)
+- *Complete Captured Live* (2002)
+- *Live at My Father's Place 1978* (2014)
+
+### Compilations
+
+Listed are compilations containing material previously unreleased outside of Jamaica.
+
+- *[The Toughest](/wiki/The_Toughest)* (Capitol) (1988)
+- *Honorary Citizen* (1997)
+- *Scrolls of the Prophet: The Best of Peter Tosh* (1999)
+- *Arise Black Man* (1999)
+- *Black Dignity (Early Works of the Stepping Razor)* (2001)
+- *I Am That I Am* (JAD) (2001)
+- *The Best of Peter Tosh 1977–1987* (2003)
+- *[Can't Blame the Youth](/wiki/Can%27t_Blame_the_Youth)* (JAD) (2004)
+- *Black Dignity* (2004)
+- *Talking Revolution* (2005)
+- *The Ultimate Peter Tosh Experience* (2009)
+
+### Appears on
+
+- [The Wailing Wailers](/wiki/The_Wailing_Wailers) (1965)
+- *[Negril](/wiki/Negril_(album))* ([Eric Gale](/wiki/Eric_Gale), 1975)
+- *Rastafari Dub* ([Ras Michael](/wiki/Ras_Michael) & The Sons of Negus, 1975)
+- *[Blackheart Man](/wiki/Blackheart_Man)* ([Bunny Wailer](/wiki/Bunny_Wailer), 1976)
+- *Word Sound and Power* (Chris Hinze, 1980)
+
+### Singles
+
+- 1975 — Legalize It / Legalize It (Version) — Intel/Diplo PT-177 (JAM)
+- 1975 — Brand New Second Hand / Brand New Second Hand (Version) — Intel/Diplo (JAM)
+- 1976 — Legalize It / Brand New Second Hand — Virgin VS-140 or Island WIP-6323 (UK)
+- 1976 — Legalize It / Why Must I Cry // Till Your Well Runs Dry — Columbia AE7 1109 (USA)
+- 1976 — Ketchy Shubby / Iration — Intel/Diplo (JAM)
+- 1976 — Babylon Queendom / Iration — Intel/Diplo (JAM)
+- 1976 — Vampire / Dracula— Intel/Diplo (JAM)
+- 1977 — African / African (Version) — Intel/Diplo (JAM)
+- 1977 — Stepping Razor / Stepping Razor (Version) — Intel/Diplo (JAM)
+- 1977 — African / Stepping Razor — Virgin VS-179 (UK)
+- 1977 — Get Up, Stand Up (Mono) / Get Up, Stand Up (Stereo)— Columbia ASF 310 (USA)
+- 1977 — Equal Rights / Equal Rights (Version) — Intel/Diplo (JAM)
+- 1977 — Anti-Apartheid / Solidarity — Solomonic BW-0078 (JAM)
+- 1978 — (You Gotta Walk) Don't Look Back / Soon Come — Intel/Diplo (JAM), Rolling Stones Records RS 19308 (US), EMI 2859 (UK)
+- 1978 — I Am the Toughest / Toughest Version — Studio One CD-1033 (JAM), Rolling Stones Records RSR 103 (UK)
+- 1979 — Bush Doctor / Bush Doctor (Version) — Intel/Diplo (JAM)
+- 1979 — Buckingham Palace / Buckingham Palace (Version) (7") — Intel/Diplo (JAM)
+- 1979 — Buk-In-Hamm Palace // Dubbing In Buk-In-Hamm / The Day the Dollar Die (12") — Intel/Diplo (JAM), Rolling Stones Records 12YRSR 104 (UK)
+- 1979 — Buk-In-Hamm Palace / The Day the Dollar Die (7") — Rolling Stones Records RSR 104 (UK)
+- 1979 — Buk-In-Hamm Palace / Buk-In-Hamm Palace (Dance Mix) // The Day the Dollar Die / Buk-In-Hamm Palace (Dub) — Rolling Stones Records 12RSR 104 (UK)
+- 1979 — Buk-In-Hamm Palace / Recruiting Soldiers (7") — Rolling Stones Records RS 20000 (USA)
+- 1979 — Buk-In-Hamm Palace // Crystal Ball / Dubbing In Buk-In-Hamm (12") — Rolling Stones Records/Atlantic DSKO 193
+- 1979 — Stepping Razor / Legalise It — Virgin VS-304 (UK)
+- 1980 — Can't Blame the Youth / Hammer — Intel/Diplo (JAM)
+- 1980 — Jah Man / Hammer — Intel/Diplo (JAM)
+- 1981 — Oh Bumbo Klaat / Oh Bumbo Klaat (Version) — Intel/Diplo (JAM)
+- 1981 — Nothing But Love / Cold Blood — Rolling Stones Records RSR 107 (UK)
+- 1981 — Nothing But Love // Cold Blood / Oh Bumbo Klaat — Rolling Stones Records 12RSR 107 (UK)
+- 1981 — Nothing But Love / Oh Bumbo Klaat — EMI 8083 (USA)
+- 1981 — Coming In Hot / Reggae-Mylitis — EMI 8094 (USA)
+- 1982 — Rock with Me / Rock with Me (Version) — Intel/Diplo (JAM)
+- 1982 — Peace Treaty / Glass House — Intel/Diplo (JAM)
+- 1982 — Glass House / Glass House (Version) — Intel/Diplo (JAM)
+- 1983 — Johnny B. Goode / Johnny B. Goode (Version) — Intel/Diplo (JAM)
+- 1983 — Johnny B. Goode / Peace Treaty (7" e 10") — EMI RIC 115 (UK), EMI B-8159 (USA)
+- 1983 — Johnny B. Goode / Glass House (12") — EMI 7807-1 e 7807-2 (USA)
+- 1983 — Johnny B. Goode (Long) / Johnny B. Goode (Short) (12") — EMI SPRO-9912 e SPRO-9913 (USA)
+- 1983 — Where You Gonna Run / Stop That Train (7" e 10") — EMI RIC 116 (UK), EMI B-8175 (7" USA), SPRO-9993 e SPRO-9994 (12" USA)
+- 1983 — Mama Africa / Not Gonna Give It Up (7" e 10") — EMI RIC 117 (UK)
+- 1987 — In My Song / Come Together (7") — Parlophone R 6156 (UK)
+- 1987 — In My Song // Come Together / Nah Goa Jail (12") — Parlophone 12R 6156 (UK)
+
+## See also
+
+- [List of Rastafarians](/wiki/List_of_Rastafarians)
+- [List of reggae musicians](/wiki/List_of_reggae_musicians)
+
+## References
+
+## External links
+
+- [Peter Tosh](http://www.allmusic.com/artist/peter-tosh-p104237) on [AllMusic](/wiki/AllMusic)
+- [Discography](http://lpdw.free.fr/groupes/petertosh/discographie.htm)
+- [Peter Tosh – Jamaicapage.com Feature](http://www.jamaicapage.com/peter-tosh-baddest/) [Archived](https://web.archive.org/web/20080908103853/http://www.jamaicapage.com/peter-tosh-baddest/) 8 September 2008 at the [Wayback Machine](/wiki/Wayback_Machine)
+- [The Wailers News](http://www.iration.com/wailers)
+- [Peter Tosh [Discography, Biography & Lyrics] @ www.MusicGonnaTeach.com](https://web.archive.org/web/20150708214422/http://www.musicgonnateach.com/PeterTosh/)

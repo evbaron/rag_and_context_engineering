@@ -4,7 +4,9 @@ __pycache__/
 *$py.class
 
 .DS_Store
-db/
+wikipedia_retrieval_engine/Wikipedia/
+wikipedia_retrieval_engine/retrievers/db/wikipedia_sections_max10000_no_overlap/
+wikipedia_retrieval_engine/retrievers/db/wikipedia_chars1600_overlap200/
 
 # C extensions
 *.so

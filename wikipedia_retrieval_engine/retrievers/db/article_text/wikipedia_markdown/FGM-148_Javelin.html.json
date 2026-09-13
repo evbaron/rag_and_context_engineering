@@ -1,0 +1,2608 @@
+{
+  "source": "FGM-148_Javelin.html",
+  "title": "FGM-148 Javelin",
+  "wiki_title": "FGM-148_Javelin",
+  "categories": [
+    "Anti-tank guided missiles of the United States",
+    "Texas Instruments",
+    "Raytheon Company products",
+    "United States Marine Corps equipment",
+    "Military equipment introduced in the 1990s",
+    "Fire-and-forget weapons"
+  ],
+  "sections": [
+    {
+      "level": 2,
+      "id": "Overview",
+      "title": "Overview"
+    },
+    {
+      "level": 2,
+      "id": "Development",
+      "title": "Development"
+    },
+    {
+      "level": 3,
+      "id": "Test_and_evaluation",
+      "title": "Test and evaluation"
+    },
+    {
+      "level": 3,
+      "id": "Qualification_testing",
+      "title": "Qualification testing"
+    },
+    {
+      "level": 2,
+      "id": "Components",
+      "title": "Components"
+    },
+    {
+      "level": 3,
+      "id": "Command_launch_unit",
+      "title": "Command launch unit"
+    },
+    {
+      "level": 4,
+      "id": "Day_field_of_view",
+      "title": "Day field of view"
+    },
+    {
+      "level": 4,
+      "id": "Wide_field_of_view",
+      "title": "Wide field of view"
+    },
+    {
+      "level": 4,
+      "id": "Narrow_field_of_view",
+      "title": "Narrow field of view"
+    },
+    {
+      "level": 4,
+      "id": "Lightweight_CLU",
+      "title": "Lightweight CLU"
+    },
+    {
+      "level": 3,
+      "id": "Launch_tube_assembly",
+      "title": "Launch tube assembly"
+    },
+    {
+      "level": 3,
+      "id": "Missile",
+      "title": "Missile"
+    },
+    {
+      "level": 4,
+      "id": "Warhead",
+      "title": "Warhead"
+    },
+    {
+      "level": 4,
+      "id": "Propulsion",
+      "title": "Propulsion"
+    },
+    {
+      "level": 4,
+      "id": "Seeker",
+      "title": "Seeker"
+    },
+    {
+      "level": 4,
+      "id": "Focal_plane_array_(FPA)",
+      "title": "Focal plane array (FPA)"
+    },
+    {
+      "level": 4,
+      "id": "Cooling/calibration",
+      "title": "Cooling/calibration"
+    },
+    {
+      "level": 4,
+      "id": "Stabilization",
+      "title": "Stabilization"
+    },
+    {
+      "level": 4,
+      "id": "Tracker",
+      "title": "Tracker"
+    },
+    {
+      "level": 2,
+      "id": "Training",
+      "title": "Training"
+    },
+    {
+      "level": 2,
+      "id": "Combat_history",
+      "title": "Combat history"
+    },
+    {
+      "level": 2,
+      "id": "Variants",
+      "title": "Variants"
+    },
+    {
+      "level": 2,
+      "id": "Operators",
+      "title": "Operators"
+    },
+    {
+      "level": 3,
+      "id": "Current_operators",
+      "title": "Current operators"
+    },
+    {
+      "level": 3,
+      "id": "Future_operators",
+      "title": "Future operators"
+    },
+    {
+      "level": 3,
+      "id": "Potential_operators",
+      "title": "Potential operators"
+    },
+    {
+      "level": 2,
+      "id": "See_also",
+      "title": "See also"
+    },
+    {
+      "level": 2,
+      "id": "References",
+      "title": "References"
+    },
+    {
+      "level": 2,
+      "id": "External_links",
+      "title": "External links"
+    }
+  ],
+  "infobox": {
+    "title": "",
+    "fields": {
+      "Type": "Anti-tank missile Surface-to-surface missile Surface-to-air missile",
+      "Place of origin": "United States",
+      "In service": "1996–present",
+      "Used by": "See Operators",
+      "Wars": "War in Afghanistan [ 1 ] Iraq War [ 2 ] Syrian Civil War [ 3 ] Second Libyan Civil War [ 4 ] Russo-Ukrainian War [ 5 ]",
+      "Designer": "Texas Instruments & Martin Marietta, now Raytheon Technologies & Lockheed Martin",
+      "Designed": "June 1989",
+      "Manufacturer": "Raytheon & Lockheed Martin",
+      "Unit cost": "US$216,717 (G-model missile only, FY2021) [ 6 ] US$240,000 (missile only, export cost, FY2019) [ 7 ] US$249,700 (Lightweight CLU only, FY2021) [ 6 ]",
+      "Produced": "1996–present",
+      "No. built": "50,000 missiles (12,000 CLUs) [ 8 ] [ 9 ]",
+      "Variants": "See: § Variants",
+      "Mass": "22.3 kg (49 lb), ready to fire 6.4 kg (14 lb), detachable CLU [ 10 ] [ 11 ] 15.9 kg (35 lb), missile in launch tube",
+      "Length": "1.1 m (43 in) (missile)",
+      "Barrel length": "1.2 m (47 in)",
+      "Diameter": "127 mm (5.0 in)",
+      "Crew": "1 or 2",
+      "Calibre": "127 mm (5.0 in)",
+      "Effective firing range": "Original CLU: 2,500 m (1.6 mi) Lightweight CLU: 4,000 m (2.5 mi) [ 12 ] From vehicle: 4,750 m (2.95 mi) [ 13 ] [ 14 ]",
+      "Sights": "Optical sight & thermal imaging",
+      "Warhead": "Tandem-charge HEAT",
+      "Warhead weight": "8.4 kg (19 lb) [ 15 ]",
+      "Detonation mechanism": "Contact fuze",
+      "Blast yield": "Penetration: Stated as being in excess of 30 in (760 mm) RHA [ 16 ]",
+      "Propellant": "Solid-fuel",
+      "Flight ceiling": "150 m (490 ft) (top attack mode) 60 m (200 ft) (direct attack mode)",
+      "Guidance system": "Infrared homing",
+      "Launch platform": "Man-portable launcher"
+    }
+  },
+  "tables": [],
+  "links": {
+    "local": [
+      {
+        "target": "FIM-92_Stinger",
+        "source_file": "FIM-92_Stinger.html",
+        "url": "https://en.wikipedia.org/wiki/FIM-92_Stinger",
+        "anchors": [
+          "FIM-92 Stinger"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Georgia_(U.S._state)",
+        "source_file": "Georgia_(U.S._state).html",
+        "url": "https://en.wikipedia.org/wiki/Georgia_(U.S._state)",
+        "anchors": [
+          "Georgia"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Croatia",
+        "source_file": "Croatia.html",
+        "url": "https://en.wikipedia.org/wiki/Croatia",
+        "anchors": [
+          "Croatia"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "France",
+        "source_file": "France.html",
+        "url": "https://en.wikipedia.org/wiki/France",
+        "anchors": [
+          "France"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Indonesia",
+        "source_file": "Indonesia.html",
+        "url": "https://en.wikipedia.org/wiki/Indonesia",
+        "anchors": [
+          "Indonesia"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Norway",
+        "source_file": "Norway.html",
+        "url": "https://en.wikipedia.org/wiki/Norway",
+        "anchors": [
+          "Norway"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Poland",
+        "source_file": "Poland.html",
+        "url": "https://en.wikipedia.org/wiki/Poland",
+        "anchors": [
+          "Poland"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "United_Arab_Emirates",
+        "source_file": "United_Arab_Emirates.html",
+        "url": "https://en.wikipedia.org/wiki/United_Arab_Emirates",
+        "anchors": [
+          "United Arab Emirates"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "United_States",
+        "source_file": "United_States.html",
+        "url": "https://en.wikipedia.org/wiki/United_States",
+        "anchors": [
+          "United States"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bulgaria",
+        "source_file": "Bulgaria.html",
+        "url": "https://en.wikipedia.org/wiki/Bulgaria",
+        "anchors": [
+          "Bulgaria"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Thailand",
+        "source_file": "Thailand.html",
+        "url": "https://en.wikipedia.org/wiki/Thailand",
+        "anchors": [
+          "Thailand"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "India",
+        "source_file": "India.html",
+        "url": "https://en.wikipedia.org/wiki/India",
+        "anchors": [
+          "India"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Philippines",
+        "source_file": "Philippines.html",
+        "url": "https://en.wikipedia.org/wiki/Philippines",
+        "anchors": [
+          "Philippines"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ],
+    "wiki": [
+      {
+        "target": "High-explosive_anti-tank",
+        "url": "https://en.wikipedia.org/wiki/High-explosive_anti-tank",
+        "anchors": [
+          "HEAT",
+          "high-explosive anti-tank"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "War_in_Afghanistan_(2001–2021)",
+        "url": "https://en.wikipedia.org/wiki/War_in_Afghanistan_(2001%E2%80%932021)",
+        "anchors": [
+          "War in Afghanistan"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Iraq_War",
+        "url": "https://en.wikipedia.org/wiki/Iraq_War",
+        "anchors": [
+          "Iraq War",
+          "Iraq in 2003"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Syrian_Civil_War",
+        "url": "https://en.wikipedia.org/wiki/Syrian_Civil_War",
+        "anchors": [
+          "Syrian Civil War"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Russo-Ukrainian_War",
+        "url": "https://en.wikipedia.org/wiki/Russo-Ukrainian_War",
+        "anchors": [
+          "Russo-Ukrainian War"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Texas_Instruments",
+        "url": "https://en.wikipedia.org/wiki/Texas_Instruments",
+        "anchors": [
+          "Texas Instruments"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Martin_Marietta",
+        "url": "https://en.wikipedia.org/wiki/Martin_Marietta",
+        "anchors": [
+          "Martin Marietta"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Lockheed_Martin",
+        "url": "https://en.wikipedia.org/wiki/Lockheed_Martin",
+        "anchors": [
+          "Lockheed Martin"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Fire-and-forget",
+        "url": "https://en.wikipedia.org/wiki/Fire-and-forget",
+        "anchors": [
+          "fire-and-forget"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Top_attack",
+        "url": "https://en.wikipedia.org/wiki/Top_attack",
+        "anchors": [
+          "top-down attack",
+          "top attack"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Explosive_reactive_armor",
+        "url": "https://en.wikipedia.org/wiki/Explosive_reactive_armor",
+        "anchors": [
+          "explosive reactive armor"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Shaped_charge",
+        "url": "https://en.wikipedia.org/wiki/Shaped_charge",
+        "anchors": [
+          "shaped charges",
+          "shaped charge"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Soft_launch_(missile)",
+        "url": "https://en.wikipedia.org/wiki/Soft_launch_(missile)",
+        "anchors": [
+          "soft launch"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fort_Benning",
+        "url": "https://en.wikipedia.org/wiki/Fort_Benning",
+        "anchors": [
+          "Fort Benning",
+          "Fort Moore"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Infrared",
+        "url": "https://en.wikipedia.org/wiki/Infrared",
+        "anchors": [
+          "infrared"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Staring_array",
+        "url": "https://en.wikipedia.org/wiki/Staring_array",
+        "anchors": [
+          "focal plane array",
+          "Staring array"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Readout_integrated_circuit",
+        "url": "https://en.wikipedia.org/wiki/Readout_integrated_circuit",
+        "anchors": [
+          "readout integrated circuits"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Autopilot",
+        "url": "https://en.wikipedia.org/wiki/Autopilot",
+        "anchors": [
+          "autopilot"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Special_Forces_(United_States_Army)",
+        "url": "https://en.wikipedia.org/wiki/Special_Forces_(United_States_Army)",
+        "anchors": [
+          "US Special Forces"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Libyan_National_Army",
+        "url": "https://en.wikipedia.org/wiki/Libyan_National_Army",
+        "anchors": [
+          "Libyan National Army"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Saint_Javelin",
+        "url": "https://en.wikipedia.org/wiki/Saint_Javelin",
+        "anchors": [
+          "Saint Javelin"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Russia",
+        "url": "https://en.wikipedia.org/wiki/Russia",
+        "anchors": [
+          "Russia"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ukraine",
+        "url": "https://en.wikipedia.org/wiki/Ukraine",
+        "anchors": [
+          "Ukraine"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "MILAN",
+        "url": "https://en.wikipedia.org/wiki/MILAN",
+        "anchors": [
+          "MILAN"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Defense_Security_Cooperation_Agency",
+        "url": "https://en.wikipedia.org/wiki/Defense_Security_Cooperation_Agency",
+        "anchors": [
+          "DSCA",
+          "Defense Security Cooperation Agency"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Brazil",
+        "url": "https://en.wikipedia.org/wiki/Brazil",
+        "anchors": [
+          "Brazil"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Spike_(missile)",
+        "url": "https://en.wikipedia.org/wiki/Spike_(missile)",
+        "anchors": [
+          "Spike missile",
+          "Spike"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Anti-tank_missile",
+        "url": "https://en.wikipedia.org/wiki/Anti-tank_missile",
+        "anchors": [
+          "Anti-tank missile"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Surface-to-surface_missile",
+        "url": "https://en.wikipedia.org/wiki/Surface-to-surface_missile",
+        "anchors": [
+          "Surface-to-surface missile"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Surface-to-air_missile",
+        "url": "https://en.wikipedia.org/wiki/Surface-to-air_missile",
+        "anchors": [
+          "Surface-to-air missile"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Second_Libyan_Civil_War",
+        "url": "https://en.wikipedia.org/wiki/Second_Libyan_Civil_War",
+        "anchors": [
+          "Second Libyan Civil War"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Raytheon_Technologies",
+        "url": "https://en.wikipedia.org/wiki/Raytheon_Technologies",
+        "anchors": [
+          "Raytheon Technologies"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Gun_barrel",
+        "url": "https://en.wikipedia.org/wiki/Gun_barrel",
+        "anchors": [
+          "Barrel"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Caliber",
+        "url": "https://en.wikipedia.org/wiki/Caliber",
+        "anchors": [
+          "Calibre"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Optical_sight",
+        "url": "https://en.wikipedia.org/wiki/Optical_sight",
+        "anchors": [
+          "Optical sight"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Thermal_imaging",
+        "url": "https://en.wikipedia.org/wiki/Thermal_imaging",
+        "anchors": [
+          "thermal imaging"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Contact_fuze",
+        "url": "https://en.wikipedia.org/wiki/Contact_fuze",
+        "anchors": [
+          "Contact fuze"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Rolled_homogeneous_armor",
+        "url": "https://en.wikipedia.org/wiki/Rolled_homogeneous_armor",
+        "anchors": [
+          "RHA"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Infrared_homing",
+        "url": "https://en.wikipedia.org/wiki/Infrared_homing",
+        "anchors": [
+          "Infrared homing"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Man-portable_anti-tank_systems",
+        "url": "https://en.wikipedia.org/wiki/Man-portable_anti-tank_systems",
+        "anchors": [
+          "Man-portable launcher"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Javelin_(surface-to-air_missile)",
+        "url": "https://en.wikipedia.org/wiki/Javelin_(surface-to-air_missile)",
+        "anchors": [
+          "Javelin (surface-to-air missile)"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Man-portable_anti-tank_system",
+        "url": "https://en.wikipedia.org/wiki/Man-portable_anti-tank_system",
+        "anchors": [
+          "man-portable anti-tank system"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "M47_Dragon",
+        "url": "https://en.wikipedia.org/wiki/M47_Dragon",
+        "anchors": [
+          "M47 Dragon"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Infrared_guidance",
+        "url": "https://en.wikipedia.org/wiki/Infrared_guidance",
+        "anchors": [
+          "infrared guidance"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wire-guided_missile",
+        "url": "https://en.wikipedia.org/wiki/Wire-guided_missile",
+        "anchors": [
+          "wire-guided"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "2022_Russian_invasion_of_Ukraine",
+        "url": "https://en.wikipedia.org/wiki/2022_Russian_invasion_of_Ukraine",
+        "anchors": [
+          "2022 Russian invasion"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Helicopter",
+        "url": "https://en.wikipedia.org/wiki/Helicopter",
+        "anchors": [
+          "helicopters"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Imaging_infrared",
+        "url": "https://en.wikipedia.org/wiki/Imaging_infrared",
+        "anchors": [
+          "imaging infrared"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tandem_warhead",
+        "url": "https://en.wikipedia.org/wiki/Tandem_warhead",
+        "anchors": [
+          "tandem warhead"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Reactive_armor",
+        "url": "https://en.wikipedia.org/wiki/Reactive_armor",
+        "anchors": [
+          "reactive armor"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Rocket_motor",
+        "url": "https://en.wikipedia.org/wiki/Rocket_motor",
+        "anchors": [
+          "rocket motors"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "United_States_Army",
+        "url": "https://en.wikipedia.org/wiki/United_States_Army",
+        "anchors": [
+          "United States Army"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ford_Aerospace",
+        "url": "https://en.wikipedia.org/wiki/Ford_Aerospace",
+        "anchors": [
+          "Ford Aerospace"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hughes_Aircraft_Company",
+        "url": "https://en.wikipedia.org/wiki/Hughes_Aircraft_Company",
+        "anchors": [
+          "Hughes Aircraft Missile System Group"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Raytheon",
+        "url": "https://en.wikipedia.org/wiki/Raytheon",
+        "anchors": [
+          "Raytheon"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Government_Accountability_Office",
+        "url": "https://en.wikipedia.org/wiki/Government_Accountability_Office",
+        "anchors": [
+          "Government Accountability Office"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "75th_Ranger_Regiment",
+        "url": "https://en.wikipedia.org/wiki/75th_Ranger_Regiment",
+        "anchors": [
+          "75th Ranger Regiment"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Special_Forces",
+        "url": "https://en.wikipedia.org/wiki/Special_Forces",
+        "anchors": [
+          "Special Forces"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Airborne_forces",
+        "url": "https://en.wikipedia.org/wiki/Airborne_forces",
+        "anchors": [
+          "airborne"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Air_assault",
+        "url": "https://en.wikipedia.org/wiki/Air_assault",
+        "anchors": [
+          "air assault"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Light_infantry",
+        "url": "https://en.wikipedia.org/wiki/Light_infantry",
+        "anchors": [
+          "light infantry"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Institute_for_Defense_Analyses",
+        "url": "https://en.wikipedia.org/wiki/Institute_for_Defense_Analyses",
+        "anchors": [
+          "Institute for Defense Analyses"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Focal_plane_array",
+        "url": "https://en.wikipedia.org/wiki/Focal_plane_array",
+        "anchors": [
+          "focal plane array"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Microprocessor",
+        "url": "https://en.wikipedia.org/wiki/Microprocessor",
+        "anchors": [
+          "microprocessors"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Thermal_sight",
+        "url": "https://en.wikipedia.org/wiki/Thermal_sight",
+        "anchors": [
+          "thermal sight"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Armored_personnel_carrier",
+        "url": "https://en.wikipedia.org/wiki/Armored_personnel_carrier",
+        "anchors": [
+          "armored personnel carriers"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tank",
+        "url": "https://en.wikipedia.org/wiki/Tank",
+        "anchors": [
+          "tanks"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "GPS",
+        "url": "https://en.wikipedia.org/wiki/GPS",
+        "anchors": [
+          "GPS"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Infrared_radiation",
+        "url": "https://en.wikipedia.org/wiki/Infrared_radiation",
+        "anchors": [
+          "infrared radiation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Refrigeration",
+        "url": "https://en.wikipedia.org/wiki/Refrigeration",
+        "anchors": [
+          "refrigeration"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Control_stick",
+        "url": "https://en.wikipedia.org/wiki/Control_stick",
+        "anchors": [
+          "control stick"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cockpit_(aviation)",
+        "url": "https://en.wikipedia.org/wiki/Cockpit_(aviation)",
+        "anchors": [
+          "cockpits"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Thermographic_camera",
+        "url": "https://en.wikipedia.org/wiki/Thermographic_camera",
+        "anchors": [
+          "thermographic camera"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Unmanned_aerial_vehicle",
+        "url": "https://en.wikipedia.org/wiki/Unmanned_aerial_vehicle",
+        "anchors": [
+          "unmanned aerial vehicles"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Superplasticity",
+        "url": "https://en.wikipedia.org/wiki/Superplasticity",
+        "anchors": [
+          "superplastically"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Molybdenum",
+        "url": "https://en.wikipedia.org/wiki/Molybdenum",
+        "anchors": [
+          "molybdenum"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Composite_material",
+        "url": "https://en.wikipedia.org/wiki/Composite_material",
+        "anchors": [
+          "composite material"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Detonation",
+        "url": "https://en.wikipedia.org/wiki/Detonation",
+        "anchors": [
+          "detonation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Aviation_and_Missile_Research,_Development,_and_Engineering_Center",
+        "url": "https://en.wikipedia.org/wiki/Aviation_and_Missile_Research,_Development,_and_Engineering_Center",
+        "anchors": [
+          "Aviation and Missile Research, Development, and Engineering Center"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Stryker",
+        "url": "https://en.wikipedia.org/wiki/Stryker",
+        "anchors": [
+          "Stryker"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fort_Carson",
+        "url": "https://en.wikipedia.org/wiki/Fort_Carson",
+        "anchors": [
+          "Fort Carson"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Propellant",
+        "url": "https://en.wikipedia.org/wiki/Propellant",
+        "anchors": [
+          "propellant"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Burst_disc",
+        "url": "https://en.wikipedia.org/wiki/Burst_disc",
+        "anchors": [
+          "burst disc"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lead",
+        "url": "https://en.wikipedia.org/wiki/Lead",
+        "anchors": [
+          "lead"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lead_oxide",
+        "url": "https://en.wikipedia.org/wiki/Lead_oxide",
+        "anchors": [
+          "lead oxide"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Shear_pin",
+        "url": "https://en.wikipedia.org/wiki/Shear_pin",
+        "anchors": [
+          "shear pins"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "MerCad",
+        "url": "https://en.wikipedia.org/wiki/MerCad",
+        "anchors": [
+          "MerCad"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Dewar_flask",
+        "url": "https://en.wikipedia.org/wiki/Dewar_flask",
+        "anchors": [
+          "Dewar flask"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Stirling_engine",
+        "url": "https://en.wikipedia.org/wiki/Stirling_engine",
+        "anchors": [
+          "Stirling engine"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Joule-Thomson_effect",
+        "url": "https://en.wikipedia.org/wiki/Joule-Thomson_effect",
+        "anchors": [
+          "Joule-Thomson expander"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Argon",
+        "url": "https://en.wikipedia.org/wiki/Argon",
+        "anchors": [
+          "argon"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chopper_wheel",
+        "url": "https://en.wikipedia.org/wiki/Chopper_wheel",
+        "anchors": [
+          "chopper wheel"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Gimbal",
+        "url": "https://en.wikipedia.org/wiki/Gimbal",
+        "anchors": [
+          "gimbal"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Accelerometer",
+        "url": "https://en.wikipedia.org/wiki/Accelerometer",
+        "anchors": [
+          "accelerometers"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Gyroscope",
+        "url": "https://en.wikipedia.org/wiki/Gyroscope",
+        "anchors": [
+          "spinning-mass gyros"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Microelectromechanical_systems",
+        "url": "https://en.wikipedia.org/wiki/Microelectromechanical_systems",
+        "anchors": [
+          "MEMS"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Video_frame",
+        "url": "https://en.wikipedia.org/wiki/Video_frame",
+        "anchors": [
+          "video frame"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Algorithms",
+        "url": "https://en.wikipedia.org/wiki/Algorithms",
+        "anchors": [
+          "algorithms"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pattern_recognition",
+        "url": "https://en.wikipedia.org/wiki/Pattern_recognition",
+        "anchors": [
+          "pattern recognition"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Guidance_system",
+        "url": "https://en.wikipedia.org/wiki/Guidance_system",
+        "anchors": [
+          "guidance system"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Closed-loop_controller",
+        "url": "https://en.wikipedia.org/wiki/Closed-loop_controller",
+        "anchors": [
+          "closed-loop controller"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "United_States_Army_Infantry_School",
+        "url": "https://en.wikipedia.org/wiki/United_States_Army_Infantry_School",
+        "anchors": [
+          "Infantry School"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "2003_invasion_of_Iraq",
+        "url": "https://en.wikipedia.org/wiki/2003_invasion_of_Iraq",
+        "anchors": [
+          "2003 invasion of Iraq"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Type_69_tank",
+        "url": "https://en.wikipedia.org/wiki/Type_69_tank",
+        "anchors": [
+          "Type 69"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lion_of_Babylon_tank",
+        "url": "https://en.wikipedia.org/wiki/Lion_of_Babylon_tank",
+        "anchors": [
+          "Lion of Babylon tanks"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Battle_of_Debecka_Pass",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Debecka_Pass",
+        "anchors": [
+          "Battle of Debecka Pass"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Platoon",
+        "url": "https://en.wikipedia.org/wiki/Platoon",
+        "anchors": [
+          "platoon"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "United_States_Army_Special_Forces",
+        "url": "https://en.wikipedia.org/wiki/United_States_Army_Special_Forces",
+        "anchors": [
+          "US Army Special Forces"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "T-54/T-55",
+        "url": "https://en.wikipedia.org/wiki/T-54/T-55",
+        "anchors": [
+          "T-55"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "ISIL",
+        "url": "https://en.wikipedia.org/wiki/ISIL",
+        "anchors": [
+          "ISIL"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Counter-insurgency",
+        "url": "https://en.wikipedia.org/wiki/Counter-insurgency",
+        "anchors": [
+          "counter-insurgency"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "DShK_heavy_machine_gun",
+        "url": "https://en.wikipedia.org/wiki/DShK_heavy_machine_gun",
+        "anchors": [
+          "DShK heavy machine guns"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "B-10_recoilless_rifle",
+        "url": "https://en.wikipedia.org/wiki/B-10_recoilless_rifle",
+        "anchors": [
+          "B-10 recoilless rifles"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "AT4",
+        "url": "https://en.wikipedia.org/wiki/AT4",
+        "anchors": [
+          "AT4"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "M203",
+        "url": "https://en.wikipedia.org/wiki/M203",
+        "anchors": [
+          "M203"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Al-Shaddadi_offensive_(2016)",
+        "url": "https://en.wikipedia.org/wiki/Al-Shaddadi_offensive_(2016)",
+        "anchors": [
+          "al-Shaddadi offensive"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Car_bomb",
+        "url": "https://en.wikipedia.org/wiki/Car_bomb",
+        "anchors": [
+          "car bomb"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "People's_Protection_Units",
+        "url": "https://en.wikipedia.org/wiki/People%27s_Protection_Units",
+        "anchors": [
+          "People's Protection Units"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Syrian_Democratic_Forces",
+        "url": "https://en.wikipedia.org/wiki/Syrian_Democratic_Forces",
+        "anchors": [
+          "Syrian Democratic Forces"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Deir_ez-Zor_campaign_(September_2017–present)",
+        "url": "https://en.wikipedia.org/wiki/Deir_ez-Zor_campaign_(September_2017%E2%80%93present)#ISIL_counterattacks",
+        "anchors": [
+          "Deir ez-Zor campaign"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Euphrates",
+        "url": "https://en.wikipedia.org/wiki/Euphrates",
+        "anchors": [
+          "Euphrates"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Government_of_National_Accord",
+        "url": "https://en.wikipedia.org/wiki/Government_of_National_Accord",
+        "anchors": [
+          "Government of National Accord"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Russian_invasion_of_Ukraine",
+        "url": "https://en.wikipedia.org/wiki/Russian_invasion_of_Ukraine",
+        "anchors": [
+          "Russian invasion of Ukraine"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Virgin_Mary",
+        "url": "https://en.wikipedia.org/wiki/Virgin_Mary",
+        "anchors": [
+          "Virgin Mary"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Icon",
+        "url": "https://en.wikipedia.org/wiki/Icon",
+        "anchors": [
+          "Eastern Orthodox church painting"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Iran",
+        "url": "https://en.wikipedia.org/wiki/Iran",
+        "anchors": [
+          "Iran"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Shahed_131",
+        "url": "https://en.wikipedia.org/wiki/Shahed_131",
+        "anchors": [
+          "Shahed"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Qods_Mohajer-6",
+        "url": "https://en.wikipedia.org/wiki/Qods_Mohajer-6",
+        "anchors": [
+          "Mohajer"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Center_for_Strategic_and_International_Studies",
+        "url": "https://en.wikipedia.org/wiki/Center_for_Strategic_and_International_Studies",
+        "anchors": [
+          "Center for Strategic and International Studies (CSIS)"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Albania",
+        "url": "https://en.wikipedia.org/wiki/Albania",
+        "anchors": [
+          "Albania"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Australia",
+        "url": "https://en.wikipedia.org/wiki/Australia",
+        "anchors": [
+          "Australia"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bahrain",
+        "url": "https://en.wikipedia.org/wiki/Bahrain",
+        "anchors": [
+          "Bahrain"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Czech_Republic",
+        "url": "https://en.wikipedia.org/wiki/Czech_Republic",
+        "anchors": [
+          "Czech Republic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Estonia",
+        "url": "https://en.wikipedia.org/wiki/Estonia",
+        "anchors": [
+          "Estonia"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Missile_Moyenne_Portée",
+        "url": "https://en.wikipedia.org/wiki/Missile_Moyenne_Port%C3%A9e",
+        "anchors": [
+          "Missile Moyenne Portée"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Georgia_(country)",
+        "url": "https://en.wikipedia.org/wiki/Georgia_(country)",
+        "anchors": [
+          "Georgia"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Foreign_Military_Sales",
+        "url": "https://en.wikipedia.org/wiki/Foreign_Military_Sales",
+        "anchors": [
+          "Foreign Military Sale"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Republic_of_Ireland",
+        "url": "https://en.wikipedia.org/wiki/Republic_of_Ireland",
+        "anchors": [
+          "Ireland"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Irish_Army",
+        "url": "https://en.wikipedia.org/wiki/Irish_Army",
+        "anchors": [
+          "Irish Army"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Jordan",
+        "url": "https://en.wikipedia.org/wiki/Jordan",
+        "anchors": [
+          "Jordan"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Libya",
+        "url": "https://en.wikipedia.org/wiki/Libya",
+        "anchors": [
+          "Libya"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lithuania",
+        "url": "https://en.wikipedia.org/wiki/Lithuania",
+        "anchors": [
+          "Lithuania"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "New_Zealand",
+        "url": "https://en.wikipedia.org/wiki/New_Zealand",
+        "anchors": [
+          "New Zealand"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Active_protection_system",
+        "url": "https://en.wikipedia.org/wiki/Active_protection_system",
+        "anchors": [
+          "active protection systems"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Oman",
+        "url": "https://en.wikipedia.org/wiki/Oman",
+        "anchors": [
+          "Oman"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Qatar",
+        "url": "https://en.wikipedia.org/wiki/Qatar",
+        "anchors": [
+          "Qatar"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Saudi_Arabia",
+        "url": "https://en.wikipedia.org/wiki/Saudi_Arabia",
+        "anchors": [
+          "Saudi Arabia"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Taiwan",
+        "url": "https://en.wikipedia.org/wiki/Taiwan",
+        "anchors": [
+          "Taiwan"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Turkey",
+        "url": "https://en.wikipedia.org/wiki/Turkey",
+        "anchors": [
+          "Turkey"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tunisia",
+        "url": "https://en.wikipedia.org/wiki/Tunisia",
+        "anchors": [
+          "Tunisia"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "United_Kingdom",
+        "url": "https://en.wikipedia.org/wiki/United_Kingdom",
+        "anchors": [
+          "United Kingdom"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ministry_of_Defence_(United_Kingdom)",
+        "url": "https://en.wikipedia.org/wiki/Ministry_of_Defence_(United_Kingdom)",
+        "anchors": [
+          "UK Ministry of Defence"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Swingfire",
+        "url": "https://en.wikipedia.org/wiki/Swingfire",
+        "anchors": [
+          "Swingfire"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "M1296_Dragoon",
+        "url": "https://en.wikipedia.org/wiki/M1296_Dragoon",
+        "anchors": [
+          "Stryker Dragoon"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Kosovo",
+        "url": "https://en.wikipedia.org/wiki/Kosovo",
+        "anchors": [
+          "Kosovo"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Latvia",
+        "url": "https://en.wikipedia.org/wiki/Latvia",
+        "anchors": [
+          "Latvia"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Morocco",
+        "url": "https://en.wikipedia.org/wiki/Morocco",
+        "anchors": [
+          "Morocco"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Romania",
+        "url": "https://en.wikipedia.org/wiki/Romania",
+        "anchors": [
+          "Romania"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bangladesh",
+        "url": "https://en.wikipedia.org/wiki/Bangladesh",
+        "anchors": [
+          "Bangladesh"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Directorate_General_of_Defence_Purchase_(Bangladesh)",
+        "url": "https://en.wikipedia.org/wiki/Directorate_General_of_Defence_Purchase_(Bangladesh)",
+        "anchors": [
+          "DGDP"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Request_for_information",
+        "url": "https://en.wikipedia.org/wiki/Request_for_information",
+        "anchors": [
+          "RFI"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bangladesh_special_operations_forces",
+        "url": "https://en.wikipedia.org/wiki/Bangladesh_special_operations_forces",
+        "anchors": [
+          "Special Forces"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Para_Commando_Brigade_(Bangladesh)",
+        "url": "https://en.wikipedia.org/wiki/Para_Commando_Brigade_(Bangladesh)",
+        "anchors": [
+          "airborne elements"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Letter_of_Request",
+        "url": "https://en.wikipedia.org/wiki/Letter_of_Request",
+        "anchors": [
+          "Letter of Request"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Indian_army",
+        "url": "https://en.wikipedia.org/wiki/Indian_army",
+        "anchors": [
+          "Indian Army"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "M982_Excalibur",
+        "url": "https://en.wikipedia.org/wiki/M982_Excalibur",
+        "anchors": [
+          "Excalibur artillery shells"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Manila_Bulletin",
+        "url": "https://en.wikipedia.org/wiki/Manila_Bulletin",
+        "anchors": [
+          "Manila Bulletin"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Philippine_Army",
+        "url": "https://en.wikipedia.org/wiki/Philippine_Army",
+        "anchors": [
+          "Philippine Army"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "List_of_anti-tank_missiles",
+        "url": "https://en.wikipedia.org/wiki/List_of_anti-tank_missiles",
+        "anchors": [
+          "List of anti-tank missiles"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Escadrone",
+        "url": "https://en.wikipedia.org/wiki/Escadrone",
+        "anchors": [
+          "Escadrone"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Akeron_MP",
+        "url": "https://en.wikipedia.org/wiki/Akeron_MP",
+        "anchors": [
+          "Akeron MP"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "MBDA",
+        "url": "https://en.wikipedia.org/wiki/MBDA",
+        "anchors": [
+          "MBDA France"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "AT-1K_Raybolt",
+        "url": "https://en.wikipedia.org/wiki/AT-1K_Raybolt",
+        "anchors": [
+          "AT-1K Raybolt"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hanwha_Vision",
+        "url": "https://en.wikipedia.org/wiki/Hanwha_Vision",
+        "anchors": [
+          "Hanwha Vision"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "LIG_Nex1",
+        "url": "https://en.wikipedia.org/wiki/LIG_Nex1",
+        "anchors": [
+          "LIG Nex1"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "HJ-12",
+        "url": "https://en.wikipedia.org/wiki/HJ-12",
+        "anchors": [
+          "HJ-12"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Norinco",
+        "url": "https://en.wikipedia.org/wiki/Norinco",
+        "anchors": [
+          "Norinco"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "MPATGM",
+        "url": "https://en.wikipedia.org/wiki/MPATGM",
+        "anchors": [
+          "MPATGM"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "DRDO",
+        "url": "https://en.wikipedia.org/wiki/DRDO",
+        "anchors": [
+          "DRDO"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "OMTAS",
+        "url": "https://en.wikipedia.org/wiki/OMTAS",
+        "anchors": [
+          "OMTAS"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Karaok",
+        "url": "https://en.wikipedia.org/wiki/Karaok",
+        "anchors": [
+          "Karaok"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Type_01_LMAT",
+        "url": "https://en.wikipedia.org/wiki/Type_01_LMAT",
+        "anchors": [
+          "Type 01 LMAT"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Kawasaki_Heavy_Industries",
+        "url": "https://en.wikipedia.org/wiki/Kawasaki_Heavy_Industries",
+        "anchors": [
+          "Kawasaki Heavy Industries"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bulsae-4",
+        "url": "https://en.wikipedia.org/wiki/Bulsae-4",
+        "anchors": [
+          "Bulsae-4"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Laser_beam_riding",
+        "url": "https://en.wikipedia.org/wiki/Laser_beam_riding",
+        "anchors": [
+          "beam riding"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Skif_(anti-tank_guided_missile)",
+        "url": "https://en.wikipedia.org/wiki/Skif_(anti-tank_guided_missile)",
+        "anchors": [
+          "Skif or Stuhna-P"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Luch_Design_Bureau",
+        "url": "https://en.wikipedia.org/wiki/Luch_Design_Bureau",
+        "anchors": [
+          "Luch Design Bureau"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "9M133_Kornet",
+        "url": "https://en.wikipedia.org/wiki/9M133_Kornet",
+        "anchors": [
+          "9M133 Kornet"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "KBP_Instrument_Design_Bureau",
+        "url": "https://en.wikipedia.org/wiki/KBP_Instrument_Design_Bureau",
+        "anchors": [
+          "KBP Instrument Design Bureau"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Alcotán-100",
+        "url": "https://en.wikipedia.org/wiki/Alcot%C3%A1n-100",
+        "anchors": [
+          "Alcotán-100"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "NLAW",
+        "url": "https://en.wikipedia.org/wiki/NLAW",
+        "anchors": [
+          "NLAW"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "FGM-172_SRAW",
+        "url": "https://en.wikipedia.org/wiki/FGM-172_SRAW",
+        "anchors": [
+          "FGM-172 SRAW"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "AGM-176_Griffin",
+        "url": "https://en.wikipedia.org/wiki/AGM-176_Griffin",
+        "anchors": [
+          "AGM-176 Griffin"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Starstreak",
+        "url": "https://en.wikipedia.org/wiki/Starstreak",
+        "anchors": [
+          "Starstreak"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "RPG-7",
+        "url": "https://en.wikipedia.org/wiki/RPG-7",
+        "anchors": [
+          "RPG-7"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ],
+    "external": [
+      {
+        "url": "http://i16.photobucket.com/albums/b24/hybenamon/LAND/AAWS-M/TI-098.jpg",
+        "anchors": [
+          "Texas Instruments"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://i16.photobucket.com/albums/b24/hybenamon/LAND/AAWS-M/HM-099.jpg",
+        "anchors": [
+          "Hughes Aircraft"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://i16.photobucket.com/albums/b24/hybenamon/LAND/AAWS-M/FA-093.jpg",
+        "anchors": [
+          "Ford Aerospace"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20080120110001/http://www.missilesandfirecontrol.com/our_products/antiarmor/JAVELIN/product-JAVELIN.shtml",
+        "anchors": [
+          "Javelin"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.missilesandfirecontrol.com/our_products/antiarmor/JAVELIN/product-JAVELIN.shtml",
+        "anchors": [
+          "the original"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.designation-systems.net/dusrm/m-148.html",
+        "anchors": [
+          "Designation Systems"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.fas.org/man/dod-101/sys/land/javelin.htm",
+        "anchors": [
+          "FAS article on Javelin"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=6qHL7jET8Gc",
+        "anchors": [
+          "Javelin tank killer"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ]
+  },
+  "stats": {
+    "n_categories": 6,
+    "n_sections": 29,
+    "n_tables": 0,
+    "n_local": 13,
+    "n_wiki": 195,
+    "n_external": 8,
+    "md_chars": 46307
+  }
+}

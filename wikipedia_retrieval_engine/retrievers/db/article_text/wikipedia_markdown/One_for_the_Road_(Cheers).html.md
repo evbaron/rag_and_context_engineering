@@ -1,0 +1,131 @@
+# One for the Road (Cheers)
+
+## Infobox
+
+- **Episode no.:** Season 11 Episode 26
+- **Directed by:** James Burrows
+- **Written by:** Glen Charles Les Charles
+- **Featured music:** Craig Safan
+- **Cinematography by:** John Finger
+- **Editing by:** Robert Bramwell
+- **Production code:** 271
+- **Original air date:** May 20, 1993 ( 1993-05-20 )
+
+"**One for the Road**" is the final [episode](/wiki/List_of_Cheers_episodes) of the American [television series](/wiki/Television_series) *[Cheers](/wiki/Cheers)*. It was the 271st episode of the series and the twenty-sixth episode of the eleventh season of the show. It first aired on [NBC](/wiki/NBC) on May 20, 1993, to [an audience of approximately 42.4 million households](/wiki/List_of_most_watched_television_broadcasts#United_States) in a 98-minute version, making it the second-highest-rated series finale of all time behind [the series finale of *M\*A\*S\*H*](/wiki/Goodbye,_Farewell,_and_Amen) and the highest-rated episode of the 1992–1993 television season in the United States. The 98-minute version was rebroadcast on May 23, 1993, and an edited 90-minute version aired on August 19, 1993.
+
+According to estimates by NBC, the finale was watched by 93 million viewers, almost 40% of the US population at the time.
+
+In this episode, [Shelley Long](/wiki/Shelley_Long) reprised the role of [Diane Chambers](/wiki/Diane_Chambers), a character who is reunited with her former on-off love interest [Sam Malone](/wiki/Sam_Malone) after six years of separation. [Rebecca Howe](/wiki/Rebecca_Howe) continues her relationship with plumber Don Santry. [Frasier Crane](/wiki/Frasier_Crane) helps [Woody Boyd](/wiki/Woody_Boyd) write Woody's political speech. A semi-unemployed [Norm Peterson](/wiki/Norm_Peterson) wants a city job. [Cliff Clavin](/wiki/Cliff_Clavin) wants a promotion from the Post Office.
+
+The episode was filmed between March 31 and April 7, 1993.
+
+## Synopsis
+
+### Background
+
+The television series *Cheers* follows the fortunes and inter-relationships of a group of Bostonians who meet regularly at "Cheers", their local bar. Sam Malone ([Ted Danson](/wiki/Ted_Danson)), a [ladies' man](/wiki/Lothario), former professional baseball player, and [bartender](/wiki/Bartender), and Diane Chambers ([Shelley Long](/wiki/Shelley_Long)), a college graduate student and [cocktail waitress](/wiki/Cocktail_waitress), had on-and-off relationships throughout the first five seasons of the program (1982–1987) until Diane left Boston to pursue a writing career in the season five finale, "[I Do, Adieu](/wiki/I_Do,_Adieu)" (1987). This was Shelley Long's last contracted appearance as Diane Chambers. Six years after the season five finale, the [Sam and Diane](/wiki/Sam_and_Diane) storyline is resurrected with a special guest appearance by Shelley Long and then concluded in the final episode.
+
+During season eleven there are many transformations before the finale. Woody Boyd ([Woody Harrelson](/wiki/Woody_Harrelson)), another bartender at Cheers, is married to socialite Kelly Gaines ([Jackie Swanson](/wiki/Jackie_Swanson)), expecting a child with her, and has been running to be a councilmember of the [Boston City Council](/wiki/Boston_City_Council). The waitress [Carla Tortelli](/wiki/Carla_Tortelli) ([Rhea Perlman](/wiki/Rhea_Perlman)) has gone through two husbands—her first marriage ended with divorce before the series began, and she became widowed in her second—and is a single mother of eight. [Frasier Crane](/wiki/Frasier_Crane) ([Kelsey Grammer](/wiki/Kelsey_Grammer)) and [Lilith Sternin](/wiki/Lilith_Sternin) ([Bebe Neuwirth](/wiki/Bebe_Neuwirth)) face marital problems, including Lilith's affair with another man. After her failed relationships with rich men in the past, the bar manager Rebecca Howe ([Kirstie Alley](/wiki/Kirstie_Alley)) and the plumber Don Santry ([Tom Berenger](/wiki/Tom_Berenger)) start dating each other in the preceding episode, "The Guy Can't Help It" (1993). Meanwhile in that episode, Sam faces up to his [sexual addiction](/wiki/Sexual_addiction) and begins to attend [group therapy](/wiki/Group_psychotherapy). Norm Peterson ([George Wendt](/wiki/George_Wendt)) is still semi-unemployed. Cliff Clavin ([John Ratzenberger](/wiki/John_Ratzenberger)) is still a postal carrier living with his mother.
+
+The episode ran for 98 minutes, including commercials, when it was originally broadcast. This episode was rebroadcast on August 19, 1993, but was trimmed to 90 minutes. In syndicated and online reruns, this episode was split into three parts, but the DVD release has the original, uncut version.
+
+### Plot
+
+The episode begins with Frasier writing a political speech for Woody, who has trouble doing it himself. Rebecca accidentally rejects Don Santry's ([Tom Berenger](/wiki/Tom_Berenger)) proposal because she is too excited to accept it, causing him to break up with her. Diane Chambers appears on television, accepting an award for outstanding writing of a television movie, surprising Sam. Diane calls Sam at night to thank him for the congratulatory telegram he sent earlier and accepts Sam's invitation to return to Boston, but Sam doubts that she will actually come.
+
+The following day, Diane arrives with her husband Reed ([Mark Harelik](/wiki/Mark_Harelik)). Shocked, Sam eventually uses Rebecca, who is grieving over her breakup, as his pretend wife. At Melville's restaurant, when Don enters and re-proposes, Rebecca finally accepts, ruining Sam's charade. Then Reed's actual partner Kevin ([Anthony Heald](/wiki/Anthony_Heald)) arrives to confront him for "cheating" with Diane. Now alone at the table, Diane admits to Sam that she broke her promise to return to him after six months in the episode "[I Do, Adieu](/wiki/I_Do,_Adieu)" (1987). Indeed, she had to convert her rejected finished manuscript into a screenplay, prompting her to remain in Los Angeles for six years for greater success. Sam and Diane both admit having been incompatible together and having no family of their own. When Diane bids Sam farewell, he stops her from leaving and convinces her to restart their relationship for old times' sake.
+
+The following day, Woody, now elected [city councilman](/wiki/City_council), gives Norm a job with the city. Rebecca marries Don but secretly regrets it, feeling he is too good for her. Cliff is promoted to postal assistant supervisor after bribing the head of the postal department with gifts. Sam and Diane walk in and announce their engagement. His friends disapprove; however, having enough of going years without a family, Sam leaves the bar with Diane. On the plane, they begin to reconsider their decision to be together again. As the flight is delayed, they amicably agree to part ways. Diane returns to Los Angeles, and Sam returns to Cheers to see his friends again.
+
+While Sam and his gang celebrate the reunion, Rebecca announces happily that Don has a job with the sewer department and leaves for their honeymoon. After the rest of the gang head home for the night, Norm briefly stays behind (for one last onscreen beer of the series) and they talk about how love and happiness can come from having a family or from simply doing what you love in a place that you love. As he heads for the door, Norm tells Sam that he knew he would return to Boston for his "one true love," and that "you'll always come back to her." Sam asks what he means, but Norm just smiles and says "Think about it, Sam." After Norm leaves, Sam looks around the empty bar and says to himself, "I'm the luckiest son of a bitch on earth," before he tells someone (Bob Broder) knocking on the door, "Sorry, we're closed." He walks over and straightens a picture of Geronimo hanging on the back wall, and then exits into the corridor toward the billiard room and the back door. The final shot of the series is of Cheers seen from the street at night.
+
+## Cast
+
+|  |  |  |
+| --- | --- | --- |
+| **Main cast**   - [Ted Danson](/wiki/Ted_Danson) as [Sam Malone](/wiki/Sam_Malone) - [Kirstie Alley](/wiki/Kirstie_Alley) as [Rebecca Howe](/wiki/Rebecca_Howe) - [Woody Harrelson](/wiki/Woody_Harrelson) as [Woody Boyd](/wiki/Woody_Boyd) - [Rhea Perlman](/wiki/Rhea_Perlman) as [Carla Tortelli](/wiki/Carla_Tortelli) - [John Ratzenberger](/wiki/John_Ratzenberger) as [Cliff Clavin](/wiki/Cliff_Clavin) - [George Wendt](/wiki/George_Wendt) as [Norm Peterson](/wiki/Norm_Peterson) - [Kelsey Grammer](/wiki/Kelsey_Grammer) as [Frasier Crane](/wiki/Frasier_Crane) | **Guest cast**   - [Shelley Long](/wiki/Shelley_Long) as [Diane Chambers](/wiki/Diane_Chambers) - [Tom Berenger](/wiki/Tom_Berenger) as Don Santry - [Mark Harelik](/wiki/Mark_Harelik) as Reed Manchester - [Anthony Heald](/wiki/Anthony_Heald) as Kevin - [Kim Alexis](/wiki/Kim_Alexis) as herself - [Mike Ditka](/wiki/Mike_Ditka) as himself - [Mitchell Lichtenstein](/wiki/Mitchell_Lichtenstein) as Waiter - Lena Banks as Stewardess | **Recurring cast**   - [Jackie Swanson](/wiki/Jackie_Swanson) as [Kelly Boyd](/wiki/List_of_recurring_characters_in_Cheers#Kelly_Gaines) - [Paul Willson](/wiki/Paul_Willson) as [Paul Krapence](/wiki/List_of_recurring_characters_in_Cheers#Paul_Krapence) - [Tim Cunningham](/wiki/Tim_Cunningham) as Tim - Steve Gianelli as Steve - [Alan Koss](/wiki/Alan_Koss) as Alan - [Philip Perlman](/wiki/Philip_Perlman_(actor)) as Phil - Peter Schreiner as Pete |
+
+## Production
+
+Shelley Long *(pictured in 1996)* makes her special guest appearance as Diane Chambers in the series finale, six years after her departure.
+
+Three hundred people attended the filming of the finale at Paramount Studios' Stage 25 in Los Angeles on Wednesday, March 31, 1993, from 7:20 p.m. to 2:15 a.m. Because of Shelley Long's commitment to the [CBS](/wiki/CBS) sitcom *[Good Advice](/wiki/Good_Advice_(TV_series))*, the finale's bar scene ending, where the series main cast gather as their own respective characters, was shot without her on Wednesday, April 7, 1993, after the episode "It's Lonely on the Top" was completely filmed out of sequence on the same day. However, the ending was concealed from the general public and the studio audience until the episode was first broadcast. Before her special guest appearance in this episode, Shelley Long's reprise as Diane Chambers was rumored in 1989 when she appeared with Ted Danson at the premiere of one of his movies, *[Cousins](/wiki/Cousins_(1989_film))*. A spokesperson for [Paramount Television](/wiki/Paramount_Television) denied these rumors. Long appeared as herself for the 200th episode special in 1990, hosted by [John McLaughlin](/wiki/John_McLaughlin_(host)), along with other surviving cast members at the time.
+
+> "I don't think we ever entertained that idea of [Sam and Diane](/wiki/Sam_and_Diane) going off together. It seemed like [we'd be] going backwards a little. I'm not sure if that big of a portion of our audience would have been happy with it[.] [T]here were people who loved Shelley, but a lot of people liked Rebecca better, or thought Diane was bad for Sam, and so on."
+
+— Les Charles, *[GQ](/wiki/GQ)* magazine
+
+The series's creators [Glen and Les Charles](/wiki/Glen_and_Les_Charles) co-wrote the series finale, and [James Burrows](/wiki/James_Burrows) directed it. Despite what Les Charles considered the basic story intended to resolve the [Sam and Diane](/wiki/Sam_and_Diane) story arc, the producers expanded the length of the finale, longer than a typical *Cheers* episode, to accommodate the network NBC's demands for more commercials. The total number of 30-second commercials that aired on the initial, original broadcast was 25 to 30, each of which cost $650,000.
+
+[United States President](/wiki/President_of_the_United_States) [Bill Clinton](/wiki/Bill_Clinton) sent the crew his message saying that he wanted to appear in the finale, so the Charles brothers wrote a segment where Clinton supposedly appeared. However, when the filming of the episode started, Clinton decided to cancel his own appearance. [Brandon Tartikoff](/wiki/Brandon_Tartikoff), former executive of NBC and former chief of Paramount Studios, and *[Doonesbury](/wiki/Doonesbury)* cartoonist [Garry Trudeau](/wiki/Garry_Trudeau) appeared in the finale as uncredited bar extras. Bob Broder, agent for the show's creators, also made an uncredited appearance in the final moments of the show as the man who is told by Sam that the bar is closed.
+
+### Promotion
+
+The final episode was promoted extensively, including in the media, before its initial airing. NBC executives expected a rating of 65  percent of total television households. Sources on [Madison Avenue](/wiki/Madison_Avenue#Advertising_industry) estimated a [Nielsen rating](/wiki/Nielsen_ratings) of 33–40s and a share of 50–70; one expected a rating of 37–38 and a share of 60.
+
+NBC and its affiliates, such as [KNBC](/wiki/KNBC), promoted the finale's broadcast for a few weeks up to the day of the original airing on the network's news programs, such as *[Dateline NBC](/wiki/Dateline_NBC)* and *[Today](/wiki/Today_(NBC_program))*. [KTLA](/wiki/KTLA), a Los Angeles station that reran *Cheers* in syndication, played a variation of the show's theme song, "[Where Everybody Knows Your Name](/wiki/Where_Everybody_Knows_Your_Name)", during the week before the finale. *[Entertainment Tonight](/wiki/Entertainment_Tonight)* showed [blooper](/wiki/Blooper) reels of *Cheers* in the same week. Ratings of Season 11 episodes (1992–1993) were growing in the weeks prior to the finale.
+
+Between April 1–4, 1993, the Times Mirror Center for the People and the Press (now the [Pew Research Center](/wiki/Pew_Research_Center)) surveyed 1,011 people by telephone. Sam Malone was voted a favorite by 26% and had a 15% chance of a spin-off. Answering a question as to who he should marry, 21% voted Diane Chambers, 19% voted Rebecca Howe, 48% voted for Sam to remain single, and 12% had no opinion on this matter. Woody Boyd was voted a favorite by 18% and had 12% chance of a spin-off, and Norm Peterson was voted by 14% and had 10% chance of a spin-off.
+
+Newspapers counted down to the *Cheers* finale in different ways. *[The Washington Post](/wiki/The_Washington_Post)* covered the show's background. The *[Star Tribune](/wiki/Star_Tribune)* published stories related to *Cheers*, including one about local residents playing trivia games that paid tribute to the show and characters such as Cliff and Norm; the future of the fictional Sam Malone was addressed. The *[Deseret News](/wiki/Deseret_News)* asked its readers to send in their own fantasy finale endings before it was broadcast.
+
+Many bars across the United States and one of the Canadian stadiums, the 50,000-seat [SkyDome](/wiki/SkyDome) in Toronto, organized parties for screenings of the series finale.
+
+## Reception
+
+### Critical reviews
+
+Reviews of this episode at the time of its initial broadcast were mixed. [John J. O'Connor](/wiki/John_J._O%27Connor_(journalist)) from *[The New York Times](/wiki/The_New_York_Times)* called the episode "overly long and uncharacteristically labored" and considered its length "a miscalculation." Nevertheless, O'Connor wrote, "Things didn't turn absolutely soppy, but nearly." Tony Scott of *[Daily Variety](/wiki/Variety_(magazine))* praised the writing, yet he found the finale "overly long" and described the last 30 minutes as "limping." John Carman of the *[San Francisco Chronicle](/wiki/San_Francisco_Chronicle)* "liked the finale" and "was choked up at the end"; nevertheless, he found Shelley Long's special guest performance "disappointing" – her "cute pills" were past "their expiration date." Ann Hodges of The *[Houston Chronicle](/wiki/Houston_Chronicle)* "found the conclusion fitting" but was not sad about the series' cancellation. One reader's letter in *[The Post-Standard](/wiki/The_Post-Standard)* pointed out that the episode did not explicitly mention [Coach Ernie Pantusso](/wiki/Coach_Ernie_Pantusso), one of the original *Cheers* characters who died in 1985, and expressed disdain over this but was pleased to see the [Geronimo](/wiki/Geronimo) picture (which Coach's portrayer Nicholas Colasanto had always kept in his dressing room and was added to the set after his death) shown at the end.
+
+The reviews in later years were mostly positive. In 1998, [A. J. Jacobs](/wiki/A._J._Jacobs) of *[Entertainment Weekly](/wiki/Entertainment_Weekly)* graded this finale a B+, calling it "a satisfying nightcap" and "sharply written by the [Charles brothers]", with its final moments "classy as a [flute](/wiki/Champagne_stemware#Champagne_flute) of chilled [Cristal](/wiki/Cristal_(wine))." In 2006, Ron Geraci, author of the book *The Bachelor Chronicles: A Dating Memoir*, called it "raw and moving" and "significant." In 2007, Dalton Ross of *Entertainment Weekly* called it one of his "Five Best (pre-*[Sopranos](/wiki/The_Sopranos)*) Series Finales." In 2007, Douglas Durden of The *[Richmond Times-Dispatch](/wiki/Richmond_Times-Dispatch)* named it her fifth most favorite television finale of all-time. In 2009, [the A.V. Club](/wiki/The_A.V._Club) ranked it No. 3 in "10 American TV Series with Satisfying Endings" in the book *Inventory*. In 2010, Sharon Knolle of *[The Huffington Post](/wiki/The_Huffington_Post)* was relieved to see the final onscreen romance between Sam and Diane end rather than conclude with their marriage. In the same year, Oliver Miller of *The Huffington Post* was heartbroken by Sam and Diane's on-screen "absurd protracted double-gut-punch break-up" in the episode. Claire Suddath from *[Time](/wiki/Time_(magazine))* magazine called it one of the top ten "anticipated" finales ever. In 2011, the finale was ranked fifth on the [TV Guide Network](/wiki/TV_Guide_Network) special, *TV's Most Unforgettable Finales*. In 2014, *[IGN](/wiki/IGN)* ranked it number six of the top ten *Cheers* episodes.
+
+### Ratings
+
+The episode aired on NBC on May 20, 1993, at 9:22 p.m. instead of 9:30 pm, the regular time for *Cheers*, as the episode was scheduled to run 98-minutes. The overall Nielsen rating was 45.5 (approximately 42.4 million households), 64 or 62 share, and the number of American viewers was either 80 million or 93 million. NBC estimates that the finale was watched by 93 million viewers, almost 40% of the US population at the time. The broadcast in 29 major markets resulted an overnight 46.7 Nielsen rating (22 million households) and 62 share. In the Los Angeles area, the finale scored a 44.5 rating (KNBC); in the Minneapolis–St. Paul market ([KARE](/wiki/KARE_(TV))), a 54.8 rating and 72 share; in New York City ([WNBC](/wiki/WNBC)), a 45.6 rating; in the Hartford–New Haven ([WVIT](/wiki/WVIT)) area, a 48 rating and 63 share; and in Boston ([WBZ-TV](/wiki/WBZ-TV)), the series' setting, a 54.1 rating.
+
+The retrospective program *Cheers: Last Call!*, produced by NBC (not the series producers) and hosted by [Bob Costas](/wiki/Bob_Costas), paid tribute to 11 years of *Cheers* and aired at 9:00 p.m. before the 9:22 p.m. finale. It received an overall 39.6 rating (36.9 million households); the Los Angeles rating was 40.0.
+
+The finale reran on Sunday, May 23, 1993, from 7:22 p.m. to 9:00 p.m. ET with a Nielsen rating of 10.0. *Cheers: Last Call!*, which ran from 7:00 p.m. to 7:22 p.m. ET had a 7.4 rating. The finale reran again on Thursday, August 19, 1993, in a 90-minute format from 8:00 p.m. to 9:30 p.m. and received a 9.4 rating.
+
+### Accolades
+
+At the [45th Primetime Emmy Awards](/wiki/45th_Primetime_Emmy_Awards) (1993), Robert Bramwell won Outstanding Achievement in Editing for a Series (Multi-Camera Production). Shelley Long lost the Outstanding Guest Actress in a Comedy Series to [Tracey Ullman](/wiki/Tracey_Ullman) (*[Love and War](/wiki/Love_%26_War_(TV_series))*). [Tom Berenger](/wiki/Tom_Berenger) lost the Outstanding Guest Actor in a Comedy Series to [David Clennon](/wiki/David_Clennon) (*[Dream On](/wiki/Dream_On_(TV_series))*). [James Burrows](/wiki/James_Burrows) lost the Outstanding Individual Achievement in Directing in a Comedy Series to Betty Thomas (*Dream On*)
+
+### Aftermath
+
+Before and after the production of *Cheers* had ended, the cast had moved on to other stages in their careers. Shelley Long appeared on the [CBS](/wiki/CBS) show *[Good Advice](/wiki/Good_Advice_(TV_series))* before this episode, and resumed her work there. Ted Danson appeared in *[Made in America](/wiki/Made_in_America_(1993_film))*, which opened in theatres soon after the episode aired. Kirstie Alley participated in the film *[Look Who's Talking Now](/wiki/Look_Who%27s_Talking_Now)*, the sequel to *[Look Who's Talking](/wiki/Look_Who%27s_Talking)* and *[Look Who's Talking Too](/wiki/Look_Who%27s_Talking_Too)*.
+
+Woody Harrelson appeared in *[Indecent Proposal](/wiki/Indecent_Proposal)*, with [Demi Moore](/wiki/Demi_Moore) and [Robert Redford](/wiki/Robert_Redford) already showing in theaters, and appeared in [Oliver Stone](/wiki/Oliver_Stone)'s *[Natural Born Killers](/wiki/Natural_Born_Killers)*. George Wendt appeared in an off-Broadway play. John Ratzenberger appeared in [Fox's](/wiki/Fox_Broadcasting_Company) *Locals*. Rhea Perlman took "a break" from acting for a while. Kelsey Grammer soon reappeared as Frasier Crane in the spinoff *[Frasier](/wiki/Frasier)*, set in Seattle, as the host of a new radio show with only occasional appearances of Lilith Sternin or their son Frederick during its 11-year run. However, Frasier would eventually return to Boston for a visit, along with his brother [Niles](/wiki/Niles_Crane) and father [Martin](/wiki/Martin_Crane) (played by [David Hyde Pierce](/wiki/David_Hyde_Pierce) and [John Mahoney](/wiki/John_Mahoney), respectively).
+
+Before the first airing of this series finale, more than five hundred people, including the cast of *Cheers* (except Shelley Long, Kirstie Alley, and Bebe Neuwirth) and politicians such as [William M. Bulger](/wiki/William_M._Bulger) and then-[Governor of Massachusetts](/wiki/Governor_of_Massachusetts) [William Weld](/wiki/William_Weld), participated at an afternoon celebration on Beacon Street near the [Bull & Finch Pub](/wiki/Bull_%26_Finch_Pub) in Boston, to celebrate the series' ending. After the episode aired, the remaining cast appeared live on *[The Tonight Show with Jay Leno](/wiki/The_Tonight_Show_with_Jay_Leno)* in the Bull & Finch Pub. According to host [Jay Leno](/wiki/Jay_Leno), not only the cast but nearly everyone at the bar was intoxicated.
+
+In 1997, one copy of this episode's script was donated by George Wendt to the [Handel and Haydn Society](/wiki/Handel_and_Haydn_Society), a Boston music institution. It contained the autographs of eight cast members, including Wendt, Shelley Long, and Woody Harrelson. On February 15, 1997, it was stolen from the Boston [Four Seasons Hotel](/wiki/Four_Seasons_Hotels_and_Resorts). The high bid for it at the benefit auction was $1,000 before it was stolen. About one week later, the stolen script, in a [manila envelope](/wiki/Manila_folder), was left at a church; the Society then retrieved it. In March 1997, the autographed copy of the episode's script was sold to the Bull and Finch Pub (now [Cheers Beacon Hill](/wiki/Cheers_Beacon_Hill)) for $10,000.
+
+George Wendt died at age 76 on May 20, 2025, the 32nd anniversary of the episode's original air date.
+
+## Notes
+
+## References
+
+## Bibliography
+
+## Further reading
+
+- Ariano, Tara, and Sarah D. Bunting. *Television without Pity: 752 Things We Love to Hate (and Hate to Love) About TV*. Philadelphia: Quirk Books, 2006. Print. [ISBN](/wiki/ISBN_(identifier)) [978-1-59474-117-3](/wiki/Special:BookSources/978-1-59474-117-3).
+- Bark, Ed. "'Cheers' closer gives Channel 5 a ratings boost." *[The Dallas Morning News](/wiki/The_Dallas_Morning_News)* May 29, 1993. Web. January 9, 2012. Document ID number is 0ED3D38C34E6DF2B. (subscription required)
+- Bonko, Larry. "The Best and the Worst on TV in 1993." *[The Virginian-Pilot](/wiki/The_Virginian-Pilot)* [Norfolk, Virginia] December 27, 1993. Print. (subscription required)
+- Hein, John. *Jump the Shark: When Good Things Go Bad*. TV ed. New York: Plume, 2003. Print. [ISBN](/wiki/ISBN_(identifier)) [0-452-28410-4](/wiki/Special:BookSources/0-452-28410-4).
+- Holbert, Ginny. "'Frontline' Leans Too Heavily on Politics." *[Chicago Sun-Times](/wiki/Chicago_Sun-Times)* May 25, 1993: 35. Print. (subscription required)
+- Husted, Bill. "Funny Dream for Self-Promoter." *[Rocky Mountain News](/wiki/Rocky_Mountain_News)* May 19, 1993. Print. (subscription required)
+- Kepnes, Caroline. "One for the Road." *[Entertainment Weekly](/wiki/Entertainment_Weekly)* May 25, 2001. Web. February 2, 2012 <[[1]](https://web.archive.org/web/20081202234013/http://www.ew.com/ew/article/0,,256448,00.html)>.
+- Lazare, Lewis. "Move over, `M\*A\*S\*H'." *[Chicago Sun-Times](/wiki/Chicago_Sun-Times)* February 9, 2010: 16. Print. (subscription required)
+- Mink, Eric. "'Cheers' Was Fine; Leno Show a Fiasco." *[St. Louis Post-Dispatch](/wiki/St._Louis_Post-Dispatch)* May 24, 1993, Five Star ed.: 5D. Print. ID number for Web version is 9305220632. (subscription required)
+- Stevenson, Jennifer L. "3 Cheers // Hype, hype, hooray! It's over! Series: Entertainment – TV Review." *[St. Petersburg Times](/wiki/St._Petersburg_Times)* [St. Petersburg, Florida] May 21, 1993, City ed.: 5B. Print. (subscription required)
+- "Although television's Cheers closes tonight, real-life versions of the bar will go right on being second families to a lot of folks." *[Fort Worth Star-Telegram](/wiki/Fort_Worth_Star-Telegram)* May 20, 1993. Print. (subscription required)
+- "Loving `Cheers' and loving work." *[Star Tribune](/wiki/Star_Tribune)* [Minneapolis] May 22, 1993. Print. (subscription required)
+- "WTMJ-TV's post `Cheers' news gets heady rating." *[Milwaukee Journal Sentinel](/wiki/Milwaukee_Journal_Sentinel)* May 24, 1993. Web. January 15, 2012. (subscription required) Document ID number is 0EB827D3BA3592DF.
+
+## External links
+
+- ["One for the Road"](https://www.imdb.com/title/tt0539826/) at [IMDb](/wiki/IMDb_(identifier))
+- ["One for the Road"](http://www.paleycenter.org/collection/item/?q=Cheers&p=1&item=B:65390) at the [Paley Center for Media](/wiki/Paley_Center_for_Media)

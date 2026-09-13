@@ -1,0 +1,32 @@
+# Madeline Pumariega
+
+## Infobox
+
+- **Preceded by:** Eduardo J. Padrón
+- **Education:** Miami Dade College University of Central Florida St. Thomas University ( BA ) Florida Atlantic University ( MEd ) Barry University ( PhD )
+
+**Madeline Pumeriega** is the fifth president of [Miami Dade College](/wiki/Miami_Dade_College) in [Miami](/wiki/Miami), Florida. She is the first woman to hold the post.
+
+## Biography
+
+Pumariega attended [Hialeah High School](/wiki/Hialeah_High_School) in [Hialeah, Florida](/wiki/Hialeah,_Florida). She attended [Miami Dade College](/wiki/Miami_Dade_College) and [University of Central Florida](/wiki/University_of_Central_Florida) as an undergraduate and received a bachelor's degree from [St. Thomas University](/wiki/St._Thomas_University_(Florida)).
+
+Pumariega began her career at Miami Dade College in 1992 as the Dean of Students Services and later was Dean of Student and Administration Services. In 2011 Pumariega became President of MDC's Wolfson Campus in downtown Miami and held the position for nearly two years. In 2013, Pumariega became the President and Chief Executive Officer of Take Stock in Children, a non-profit.
+
+In 2015, Florida Department of Education Commissioner Pam Stewart announced the appointment of Pumariega as Chancellor of the [Florida College System](/wiki/Florida_College_System). She was the first woman and first Hispanic FCS Chancellor.
+
+In 2019, Pumariega was named executive vice president and provost of [Tallahassee Community College](/wiki/Tallahassee_Community_College). She also served as Affiliate Professor of Leadership at the NYU Steinhardt School of Culture, Education, and Human Development.
+
+On November 17, 2020, Pumariega was appointed the fifth president of Miami Dade College.
+
+## Controversies
+
+In 2025, Miami Dade College (MDC) approved the transfer of a 2.63-acre college-owned parcel in downtown Miami to the State of Florida for use as the Donald J. Trump Presidential Library. The land had been purchased by MDC in 2004 for $24.8 million and was transferred without compensation or conditions.["Miami Dade College trustees approve land transfer for Trump presidential library after legal challenge"](https://www.miamiherald.com/news/politics-government/state-politics/article312622515.html). *Miami Herald*. 2025.
+
+The decision drew public scrutiny after critics alleged that the MDC Board of Trustees did not provide sufficient notice of the meeting at which the initial approval was granted. The publicly posted agenda referenced “potential real estate transactions” but did not specifically identify the presidential library proposal.["Miami Dade College president answers questions about activist dispute with Trump presidential library land"](https://www.local10.com/news/local/2025/10/21/miami-dade-college-president-answers-question-about-activits-dispute-with-trump-presidential-library-land/). *Local 10 News*. 2025.
+
+In response to questions about the process, MDC President Madeline Pumariega stated that the item had been “posted seven days in advance” and that the board had followed legal notice requirements.
+
+A circuit court judge temporarily halted the transfer, citing inadequate public notice. The board later reconvened with expanded public comment and approved the transfer again, allowing the project to proceed.
+
+## References

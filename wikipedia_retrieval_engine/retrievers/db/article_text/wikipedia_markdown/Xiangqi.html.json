@@ -1,0 +1,2212 @@
+{
+  "source": "Xiangqi.html",
+  "title": "Xiangqi",
+  "wiki_title": "Xiangqi",
+  "categories": [
+    "Xiangqi",
+    "Abstract strategy games",
+    "Games related to chaturanga",
+    "Chess in China",
+    "Chinese ancient games",
+    "Traditional board games",
+    "Mind sports"
+  ],
+  "sections": [
+    {
+      "level": 2,
+      "id": "Board",
+      "title": "Board"
+    },
+    {
+      "level": 2,
+      "id": "Rules",
+      "title": "Rules"
+    },
+    {
+      "level": 3,
+      "id": "Pieces",
+      "title": "Pieces"
+    },
+    {
+      "level": 4,
+      "id": "General",
+      "title": "General"
+    },
+    {
+      "level": 4,
+      "id": "Advisor",
+      "title": "Advisor"
+    },
+    {
+      "level": 4,
+      "id": "Elephant",
+      "title": "Elephant"
+    },
+    {
+      "level": 4,
+      "id": "Horse",
+      "title": "Horse"
+    },
+    {
+      "level": 4,
+      "id": "Chariot",
+      "title": "Chariot"
+    },
+    {
+      "level": 4,
+      "id": "Cannon",
+      "title": "Cannon"
+    },
+    {
+      "level": 4,
+      "id": "Soldier",
+      "title": "Soldier"
+    },
+    {
+      "level": 2,
+      "id": "Approximate_relative_values_of_the_pieces",
+      "title": "Approximate relative values of the pieces"
+    },
+    {
+      "level": 2,
+      "id": "Notation",
+      "title": "Notation"
+    },
+    {
+      "level": 3,
+      "id": "System_1",
+      "title": "System 1"
+    },
+    {
+      "level": 3,
+      "id": "System_2",
+      "title": "System 2"
+    },
+    {
+      "level": 3,
+      "id": "Romanised_version",
+      "title": "Romanised version"
+    },
+    {
+      "level": 3,
+      "id": "Chinese_(Original)_version",
+      "title": "Chinese (Original) version"
+    },
+    {
+      "level": 3,
+      "id": "System_3",
+      "title": "System 3"
+    },
+    {
+      "level": 3,
+      "id": "Example",
+      "title": "Example"
+    },
+    {
+      "level": 2,
+      "id": "Gameplay",
+      "title": "Gameplay"
+    },
+    {
+      "level": 3,
+      "id": "Tactics",
+      "title": "Tactics"
+    },
+    {
+      "level": 3,
+      "id": "Openings",
+      "title": "Openings"
+    },
+    {
+      "level": 3,
+      "id": "Middlegame_strategy",
+      "title": "Middlegame strategy"
+    },
+    {
+      "level": 3,
+      "id": "Endgame",
+      "title": "Endgame"
+    },
+    {
+      "level": 4,
+      "id": "Zugzwang_in_xiangqi_endgames",
+      "title": "Zugzwang in xiangqi endgames"
+    },
+    {
+      "level": 4,
+      "id": "Soldier_(pawn)_endgames",
+      "title": "Soldier (pawn) endgames"
+    },
+    {
+      "level": 4,
+      "id": "Horse_endgames",
+      "title": "Horse endgames"
+    },
+    {
+      "level": 4,
+      "id": "Cannon_endgames",
+      "title": "Cannon endgames"
+    },
+    {
+      "level": 4,
+      "id": "Horse+Cannon_endgames",
+      "title": "Horse+Cannon endgames"
+    },
+    {
+      "level": 4,
+      "id": "Chariot_endgames",
+      "title": "Chariot endgames"
+    },
+    {
+      "level": 2,
+      "id": "History",
+      "title": "History"
+    },
+    {
+      "level": 2,
+      "id": "Modern_play",
+      "title": "Modern play"
+    },
+    {
+      "level": 3,
+      "id": "Tournaments_and_leagues",
+      "title": "Tournaments and leagues"
+    },
+    {
+      "level": 3,
+      "id": "Rankings",
+      "title": "Rankings"
+    },
+    {
+      "level": 3,
+      "id": "Computers",
+      "title": "Computers"
+    },
+    {
+      "level": 2,
+      "id": "Variations",
+      "title": "Variations"
+    },
+    {
+      "level": 2,
+      "id": "Variations_played_with_special_boards_or_pieces",
+      "title": "Variations played with special boards or pieces"
+    },
+    {
+      "level": 2,
+      "id": "In_Unicode",
+      "title": "In Unicode"
+    },
+    {
+      "level": 2,
+      "id": "See_also",
+      "title": "See also"
+    },
+    {
+      "level": 2,
+      "id": "Notes",
+      "title": "Notes"
+    },
+    {
+      "level": 2,
+      "id": "References",
+      "title": "References"
+    },
+    {
+      "level": 2,
+      "id": "Further_reading",
+      "title": "Further reading"
+    },
+    {
+      "level": 2,
+      "id": "External_links",
+      "title": "External links"
+    }
+  ],
+  "infobox": {
+    "title": "",
+    "fields": {
+      "Years active": "Southern Song dynasty to present",
+      "Genres": "Board game Abstract strategy game Mind sport",
+      "Players": "2",
+      "Setup time": "<1 minute",
+      "Playing time": "Informal games: may vary from twenty minutes to several hours Blitz games: up to 10 minutes",
+      "Chance": "None",
+      "Skills": "Strategy, tactics",
+      "Synonyms": "Chinese chess Elephant chess Elephant game"
+    }
+  },
+  "tables": [
+    {
+      "caption": null,
+      "headers": [
+        "Piece",
+        "Points"
+      ],
+      "rows": [
+        [
+          "Soldier before crossing the river",
+          "1"
+        ],
+        [
+          "Soldier after crossing the river",
+          "2"
+        ],
+        [
+          "Advisor",
+          "2"
+        ],
+        [
+          "Elephant",
+          "2"
+        ],
+        [
+          "Horse",
+          "4"
+        ],
+        [
+          "Cannon",
+          "4½"
+        ],
+        [
+          "Chariot",
+          "9"
+        ]
+      ],
+      "n_rows": 7
+    },
+    {
+      "caption": null,
+      "headers": [
+        "Name",
+        "Abbr.",
+        "Pieces"
+      ],
+      "rows": [
+        [
+          "Advisor",
+          "A",
+          ""
+        ],
+        [
+          "Cannon",
+          "C",
+          ""
+        ],
+        [
+          "Chariot",
+          "R*",
+          ""
+        ],
+        [
+          "Elephant",
+          "E",
+          ""
+        ],
+        [
+          "General",
+          "G",
+          ""
+        ],
+        [
+          "Horse",
+          "H",
+          ""
+        ],
+        [
+          "Soldier",
+          "S",
+          ""
+        ],
+        [
+          "* using C would conflict with the letter for Cannon"
+        ]
+      ],
+      "n_rows": 8
+    }
+  ],
+  "links": {
+    "local": [
+      {
+        "target": "Shogi",
+        "source_file": "Shogi.html",
+        "url": "https://en.wikipedia.org/wiki/Shogi",
+        "anchors": [
+          "shogi"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      }
+    ],
+    "wiki": [
+      {
+        "target": "ISBN_(identifier)",
+        "url": "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+        "anchors": [
+          "ISBN"
+        ],
+        "count": 8,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chinese_language",
+        "url": "https://en.wikipedia.org/wiki/Chinese_language",
+        "anchors": [
+          "Chinese"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pinyin",
+        "url": "https://en.wikipedia.org/wiki/Pinyin",
+        "anchors": [
+          "pinyin"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chaturanga",
+        "url": "https://en.wikipedia.org/wiki/Chaturanga",
+        "anchors": [
+          "chaturanga"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Traditional_Chinese_characters",
+        "url": "https://en.wikipedia.org/wiki/Traditional_Chinese_characters",
+        "anchors": [
+          "traditional Chinese characters",
+          "Traditional Chinese characters"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Simplified_Chinese_characters",
+        "url": "https://en.wikipedia.org/wiki/Simplified_Chinese_characters",
+        "anchors": [
+          "simplified Chinese characters",
+          "Simplified Chinese characters"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Qing_dynasty",
+        "url": "https://en.wikipedia.org/wiki/Qing_dynasty",
+        "anchors": [
+          "Qing dynasty"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Southern_Song_dynasty",
+        "url": "https://en.wikipedia.org/wiki/Southern_Song_dynasty",
+        "anchors": [
+          "Southern Song dynasty"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Board_game",
+        "url": "https://en.wikipedia.org/wiki/Board_game",
+        "anchors": [
+          "Board game",
+          "board game"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Strategy_game",
+        "url": "https://en.wikipedia.org/wiki/Strategy_game",
+        "anchors": [
+          "Strategy",
+          "strategy"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Standard_Chinese",
+        "url": "https://en.wikipedia.org/wiki/Standard_Chinese",
+        "anchors": [
+          "Standard Mandarin",
+          "Mandarin"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Janggi",
+        "url": "https://en.wikipedia.org/wiki/Janggi",
+        "anchors": [
+          "janggi",
+          "Janggi"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Literal_translation",
+        "url": "https://en.wikipedia.org/wiki/Literal_translation",
+        "anchors": [
+          "lit."
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Perpetual_check",
+        "url": "https://en.wikipedia.org/wiki/Perpetual_check",
+        "anchors": [
+          "Perpetual checks",
+          "Perpetual chases"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chinese_characters",
+        "url": "https://en.wikipedia.org/wiki/Chinese_characters",
+        "anchors": [
+          "Chinese character",
+          "Chinese characters"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Homophone",
+        "url": "https://en.wikipedia.org/wiki/Homophone",
+        "anchors": [
+          "homophones"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pawn_chain",
+        "url": "https://en.wikipedia.org/wiki/Pawn_chain",
+        "anchors": [
+          "pawn chains",
+          "pawn chain"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Zugzwang",
+        "url": "https://en.wikipedia.org/wiki/Zugzwang",
+        "anchors": [
+          "zugzwang"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Warring_States_period",
+        "url": "https://en.wikipedia.org/wiki/Warring_States_period",
+        "anchors": [
+          "Warring States period"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Xiang_Jing",
+        "url": "https://en.wikipedia.org/wiki/Xiang_Jing",
+        "anchors": [
+          "Xiang Jing"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "David_H._Li",
+        "url": "https://en.wikipedia.org/wiki/David_H._Li",
+        "anchors": [
+          "David H. Li",
+          "Li, David H."
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chess_Symbols",
+        "url": "https://en.wikipedia.org/wiki/Chess_Symbols",
+        "anchors": [
+          "Chess Symbols"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Abstract_strategy_game",
+        "url": "https://en.wikipedia.org/wiki/Abstract_strategy_game",
+        "anchors": [
+          "Abstract strategy game"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Mind_sport",
+        "url": "https://en.wikipedia.org/wiki/Mind_sport",
+        "anchors": [
+          "Mind sport"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Blitz_chess",
+        "url": "https://en.wikipedia.org/wiki/Blitz_chess",
+        "anchors": [
+          "Blitz games"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Chinese_chess_(disambiguation)",
+        "url": "https://en.wikipedia.org/wiki/Chinese_chess_(disambiguation)",
+        "anchors": [
+          "Chinese chess (disambiguation)"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hanyu_Pinyin",
+        "url": "https://en.wikipedia.org/wiki/Hanyu_Pinyin",
+        "anchors": [
+          "Hanyu Pinyin"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bopomofo",
+        "url": "https://en.wikipedia.org/wiki/Bopomofo",
+        "anchors": [
+          "Bopomofo"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wade–Giles",
+        "url": "https://en.wikipedia.org/wiki/Wade%E2%80%93Giles",
+        "anchors": [
+          "Wade–Giles"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cantonese",
+        "url": "https://en.wikipedia.org/wiki/Cantonese",
+        "anchors": [
+          "Yue: Cantonese"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Yale_romanization_of_Cantonese",
+        "url": "https://en.wikipedia.org/wiki/Yale_romanization_of_Cantonese",
+        "anchors": [
+          "Yale Romanization"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Jyutping",
+        "url": "https://en.wikipedia.org/wiki/Jyutping",
+        "anchors": [
+          "Jyutping"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Southern_Min",
+        "url": "https://en.wikipedia.org/wiki/Southern_Min",
+        "anchors": [
+          "Southern Min"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hokkien",
+        "url": "https://en.wikipedia.org/wiki/Hokkien",
+        "anchors": [
+          "Hokkien"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pe̍h-ōe-jī",
+        "url": "https://en.wikipedia.org/wiki/Pe%CC%8Dh-%C5%8De-j%C4%AB",
+        "anchors": [
+          "POJ"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Eastern_Min",
+        "url": "https://en.wikipedia.org/wiki/Eastern_Min",
+        "anchors": [
+          "Eastern Min"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fuzhou_dialect",
+        "url": "https://en.wikipedia.org/wiki/Fuzhou_dialect",
+        "anchors": [
+          "Fuzhou"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Foochow_Romanized",
+        "url": "https://en.wikipedia.org/wiki/Foochow_Romanized",
+        "anchors": [
+          "BUC"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Vietnamese_language",
+        "url": "https://en.wikipedia.org/wiki/Vietnamese_language",
+        "anchors": [
+          "Vietnamese"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hán-Nôm",
+        "url": "https://en.wikipedia.org/wiki/H%C3%A1n-N%C3%B4m",
+        "anchors": [
+          "Hán-Nôm"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hangul",
+        "url": "https://en.wikipedia.org/wiki/Hangul",
+        "anchors": [
+          "Hangul"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hanja",
+        "url": "https://en.wikipedia.org/wiki/Hanja",
+        "anchors": [
+          "Hanja"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Revised_Romanization_of_Korean",
+        "url": "https://en.wikipedia.org/wiki/Revised_Romanization_of_Korean",
+        "anchors": [
+          "Revised Romanization"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Kanji",
+        "url": "https://en.wikipedia.org/wiki/Kanji",
+        "anchors": [
+          "Kanji"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hiragana",
+        "url": "https://en.wikipedia.org/wiki/Hiragana",
+        "anchors": [
+          "Hiragana"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Katakana",
+        "url": "https://en.wikipedia.org/wiki/Katakana",
+        "anchors": [
+          "Katakana"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hepburn_romanization",
+        "url": "https://en.wikipedia.org/wiki/Hepburn_romanization",
+        "anchors": [
+          "Revised Hepburn"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Kunrei-shiki_romanization",
+        "url": "https://en.wikipedia.org/wiki/Kunrei-shiki_romanization",
+        "anchors": [
+          "Kunrei-shiki"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chess",
+        "url": "https://en.wikipedia.org/wiki/Chess",
+        "anchors": [
+          "Western chess"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Indian_chess",
+        "url": "https://en.wikipedia.org/wiki/Indian_chess",
+        "anchors": [
+          "Indian chess"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Go_(game)",
+        "url": "https://en.wikipedia.org/wiki/Go_(game)",
+        "anchors": [
+          "Go"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chu_(state)",
+        "url": "https://en.wikipedia.org/wiki/Chu_(state)",
+        "anchors": [
+          "Chu"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Han_dynasty",
+        "url": "https://en.wikipedia.org/wiki/Han_dynasty",
+        "anchors": [
+          "Han"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chu–Han_Contention",
+        "url": "https://en.wikipedia.org/wiki/Chu%E2%80%93Han_Contention",
+        "anchors": [
+          "Chu–Han War"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "North",
+        "url": "https://en.wikipedia.org/wiki/North",
+        "anchors": [
+          "north"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "South",
+        "url": "https://en.wikipedia.org/wiki/South",
+        "anchors": [
+          "south"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Stalemate",
+        "url": "https://en.wikipedia.org/wiki/Stalemate",
+        "anchors": [
+          "stalemate"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mainland_China",
+        "url": "https://en.wikipedia.org/wiki/Mainland_China",
+        "anchors": [
+          "mainland China"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Jade",
+        "url": "https://en.wikipedia.org/wiki/Jade",
+        "anchors": [
+          "jade"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Three_Gorges_Museum",
+        "url": "https://en.wikipedia.org/wiki/Three_Gorges_Museum",
+        "anchors": [
+          "Three Gorges Museum"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Orthogonal",
+        "url": "https://en.wikipedia.org/wiki/Orthogonal",
+        "anchors": [
+          "orthogonally"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Naming_taboo",
+        "url": "https://en.wikipedia.org/wiki/Naming_taboo",
+        "anchors": [
+          "naming taboos"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Royal_piece",
+        "url": "https://en.wikipedia.org/wiki/Royal_piece",
+        "anchors": [
+          "royal pieces"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mandarin_(bureaucrat)",
+        "url": "https://en.wikipedia.org/wiki/Mandarin_(bureaucrat)",
+        "anchors": [
+          "mandarins"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Non-commissioned_officer",
+        "url": "https://en.wikipedia.org/wiki/Non-commissioned_officer",
+        "anchors": [
+          "officer"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Diagonal",
+        "url": "https://en.wikipedia.org/wiki/Diagonal",
+        "anchors": [
+          "diagonally"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hobble_(device)",
+        "url": "https://en.wikipedia.org/wiki/Hobble_(device)",
+        "anchors": [
+          "hobbling"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Catapult",
+        "url": "https://en.wikipedia.org/wiki/Catapult",
+        "anchors": [
+          "catapult"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Radical_(Chinese_characters)",
+        "url": "https://en.wikipedia.org/wiki/Radical_(Chinese_characters)",
+        "anchors": [
+          "radical"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Beijing",
+        "url": "https://en.wikipedia.org/wiki/Beijing",
+        "anchors": [
+          "Beijing"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Plus_sign",
+        "url": "https://en.wikipedia.org/wiki/Plus_sign",
+        "anchors": [
+          "plus sign"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Minus_sign",
+        "url": "https://en.wikipedia.org/wiki/Minus_sign",
+        "anchors": [
+          "minus sign"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Equals_sign",
+        "url": "https://en.wikipedia.org/wiki/Equals_sign",
+        "anchors": [
+          "equals sign"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Full_stop",
+        "url": "https://en.wikipedia.org/wiki/Full_stop",
+        "anchors": [
+          "dot"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "World_Xiangqi_Federation",
+        "url": "https://en.wikipedia.org/wiki/World_Xiangqi_Federation",
+        "anchors": [
+          "World Xiangqi Federation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Doubled_pawn",
+        "url": "https://en.wikipedia.org/wiki/Doubled_pawn",
+        "anchors": [
+          "tripled, quadrupled, or quintupled"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Algebraic_notation_(chess)",
+        "url": "https://en.wikipedia.org/wiki/Algebraic_notation_(chess)",
+        "anchors": [
+          "algebraic notation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fool's_Mate",
+        "url": "https://en.wikipedia.org/wiki/Fool%27s_Mate",
+        "anchors": [
+          "Fool's Mate"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chess_tactic",
+        "url": "https://en.wikipedia.org/wiki/Chess_tactic",
+        "anchors": [
+          "Chess tactic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fork_(chess)",
+        "url": "https://en.wikipedia.org/wiki/Fork_(chess)",
+        "anchors": [
+          "fork"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pin_(chess)",
+        "url": "https://en.wikipedia.org/wiki/Pin_(chess)",
+        "anchors": [
+          "pinned"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Skewer_(chess)",
+        "url": "https://en.wikipedia.org/wiki/Skewer_(chess)",
+        "anchors": [
+          "skewered"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Discovered_check",
+        "url": "https://en.wikipedia.org/wiki/Discovered_check",
+        "anchors": [
+          "discovered check"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Double_check",
+        "url": "https://en.wikipedia.org/wiki/Double_check",
+        "anchors": [
+          "double check"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Isolated_pawn",
+        "url": "https://en.wikipedia.org/wiki/Isolated_pawn",
+        "anchors": [
+          "isolated"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Smothered_mate",
+        "url": "https://en.wikipedia.org/wiki/Smothered_mate",
+        "anchors": [
+          "smothered mate"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Windmill_(chess)",
+        "url": "https://en.wikipedia.org/wiki/Windmill_(chess)",
+        "anchors": [
+          "windmill"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bad_bishop",
+        "url": "https://en.wikipedia.org/wiki/Bad_bishop",
+        "anchors": [
+          "bad bishop"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Directmate",
+        "url": "https://en.wikipedia.org/wiki/Directmate",
+        "anchors": [
+          "directmate"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Decoy_sacrifice",
+        "url": "https://en.wikipedia.org/wiki/Decoy_sacrifice",
+        "anchors": [
+          "decoy sacrifice"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pawn_promotion",
+        "url": "https://en.wikipedia.org/wiki/Pawn_promotion",
+        "anchors": [
+          "pawn promotion"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pawnless_chess_endgame",
+        "url": "https://en.wikipedia.org/wiki/Pawnless_chess_endgame",
+        "anchors": [
+          "pawnless chess endgames"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fortress_(chess)",
+        "url": "https://en.wikipedia.org/wiki/Fortress_(chess)",
+        "anchors": [
+          "fortresses"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Insufficient_material",
+        "url": "https://en.wikipedia.org/wiki/Insufficient_material",
+        "anchors": [
+          "insufficient material"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Opposition_(chess)",
+        "url": "https://en.wikipedia.org/wiki/Opposition_(chess)",
+        "anchors": [
+          "opposition"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Triangulation_(chess)",
+        "url": "https://en.wikipedia.org/wiki/Triangulation_(chess)",
+        "anchors": [
+          "triangulation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bipartite_graph",
+        "url": "https://en.wikipedia.org/wiki/Bipartite_graph",
+        "anchors": [
+          "bipartite graphs"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Knight's_graph",
+        "url": "https://en.wikipedia.org/wiki/Knight%27s_graph",
+        "anchors": [
+          "knight's graph"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Shuo_Yuan",
+        "url": "https://en.wikipedia.org/wiki/Shuo_Yuan",
+        "anchors": [
+          "Shuo Yuan"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lord_Mengchang_of_Qi",
+        "url": "https://en.wikipedia.org/wiki/Lord_Mengchang_of_Qi",
+        "anchors": [
+          "Lord Mengchang of Qi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Emperor_Wu_of_Northern_Zhou",
+        "url": "https://en.wikipedia.org/wiki/Emperor_Wu_of_Northern_Zhou",
+        "anchors": [
+          "Emperor Wu of Northern Zhou"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Northern_Zhou_Xiangxi",
+        "url": "https://en.wikipedia.org/wiki/Northern_Zhou_Xiangxi",
+        "anchors": [
+          "xiangxi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Northern_Song_dynasty",
+        "url": "https://en.wikipedia.org/wiki/Northern_Song_dynasty",
+        "anchors": [
+          "Northern Song dynasty"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Han_Xin",
+        "url": "https://en.wikipedia.org/wiki/Han_Xin",
+        "anchors": [
+          "Han Xin"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Niu_Sengru",
+        "url": "https://en.wikipedia.org/wiki/Niu_Sengru",
+        "anchors": [
+          "Niu Sengru"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tang_dynasty",
+        "url": "https://en.wikipedia.org/wiki/Tang_dynasty",
+        "anchors": [
+          "Tang dynasty"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Korean_Peninsula",
+        "url": "https://en.wikipedia.org/wiki/Korean_Peninsula",
+        "anchors": [
+          "Korean Peninsula"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Encyclopedia_of_Chinese_Chess_Openings",
+        "url": "https://en.wikipedia.org/wiki/Encyclopedia_of_Chinese_Chess_Openings",
+        "anchors": [
+          "Encyclopedia of Chinese Chess Openings"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chinese_Xiangqi_Association",
+        "url": "https://en.wikipedia.org/wiki/Chinese_Xiangqi_Association",
+        "anchors": [
+          "Chinese Xiangqi Association"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Elo_rating_system",
+        "url": "https://en.wikipedia.org/wiki/Elo_rating_system",
+        "anchors": [
+          "Elo rating system"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tang_Dan",
+        "url": "https://en.wikipedia.org/wiki/Tang_Dan",
+        "anchors": [
+          "Tang Dan"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Xu_Yinchuan",
+        "url": "https://en.wikipedia.org/wiki/Xu_Yinchuan",
+        "anchors": [
+          "Xu Yinchuan"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Game_complexity",
+        "url": "https://en.wikipedia.org/wiki/Game_complexity",
+        "anchors": [
+          "game-tree complexity"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Computer_Olympiad",
+        "url": "https://en.wikipedia.org/wiki/Computer_Olympiad",
+        "anchors": [
+          "Computer Olympiads"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Graphical_user_interface",
+        "url": "https://en.wikipedia.org/wiki/Graphical_user_interface",
+        "anchors": [
+          "graphical user interface"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Universal_Chess_Interface",
+        "url": "https://en.wikipedia.org/wiki/Universal_Chess_Interface",
+        "anchors": [
+          "Universal Chess Interface"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "WinBoard",
+        "url": "https://en.wikipedia.org/wiki/WinBoard",
+        "anchors": [
+          "WinBoard"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Manchu_chess",
+        "url": "https://en.wikipedia.org/wiki/Manchu_chess",
+        "anchors": [
+          "Manchu chess"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Manchu",
+        "url": "https://en.wikipedia.org/wiki/Manchu",
+        "anchors": [
+          "Manchu"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bughouse_chess",
+        "url": "https://en.wikipedia.org/wiki/Bughouse_chess",
+        "anchors": [
+          "Bughouse chess"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fischer_Random_Chess",
+        "url": "https://en.wikipedia.org/wiki/Fischer_Random_Chess",
+        "anchors": [
+          "Fischer Random Chess"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Banqi",
+        "url": "https://en.wikipedia.org/wiki/Banqi",
+        "anchors": [
+          "Banqi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hong_Kong",
+        "url": "https://en.wikipedia.org/wiki/Hong_Kong",
+        "anchors": [
+          "Hong Kong"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Stratego",
+        "url": "https://en.wikipedia.org/wiki/Stratego",
+        "anchors": [
+          "Stratego"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Luzhanqi",
+        "url": "https://en.wikipedia.org/wiki/Luzhanqi",
+        "anchors": [
+          "Luzhanqi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "San_Guo_Qi",
+        "url": "https://en.wikipedia.org/wiki/San_Guo_Qi",
+        "anchors": [
+          "San Guo Qi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Three_Kingdoms",
+        "url": "https://en.wikipedia.org/wiki/Three_Kingdoms",
+        "anchors": [
+          "Three Kingdoms"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Game_of_the_Three_Friends",
+        "url": "https://en.wikipedia.org/wiki/Game_of_the_Three_Friends",
+        "anchors": [
+          "San You Qi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "She_County,_Anhui",
+        "url": "https://en.wikipedia.org/wiki/She_County,_Anhui",
+        "anchors": [
+          "Shexian"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Anhui",
+        "url": "https://en.wikipedia.org/wiki/Anhui",
+        "anchors": [
+          "Anhui"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Kangxi_Emperor",
+        "url": "https://en.wikipedia.org/wiki/Kangxi_Emperor",
+        "anchors": [
+          "Kangxi Emperor"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Game_of_the_Seven_Kingdoms",
+        "url": "https://en.wikipedia.org/wiki/Game_of_the_Seven_Kingdoms",
+        "anchors": [
+          "Qi Guo Xiang Qi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Unicode",
+        "url": "https://en.wikipedia.org/wiki/Unicode",
+        "anchors": [
+          "Unicode"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "List_of_world_championships_in_mind_sports",
+        "url": "https://en.wikipedia.org/wiki/List_of_world_championships_in_mind_sports",
+        "anchors": [
+          "List of world championships in mind sports"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "National_Peasants'_Games",
+        "url": "https://en.wikipedia.org/wiki/National_Peasants%27_Games",
+        "anchors": [
+          "National Peasants' Games"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Xiangqi_at_the_2007_Asian_Indoor_Games",
+        "url": "https://en.wikipedia.org/wiki/Xiangqi_at_the_2007_Asian_Indoor_Games",
+        "anchors": [
+          "Xiangqi at the 2007 Asian Indoor Games"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Xiangqi_at_the_2009_Asian_Indoor_Games",
+        "url": "https://en.wikipedia.org/wiki/Xiangqi_at_the_2009_Asian_Indoor_Games",
+        "anchors": [
+          "Xiangqi at the 2009 Asian Indoor Games"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Xiangqi_at_the_2010_Asian_Games",
+        "url": "https://en.wikipedia.org/wiki/Xiangqi_at_the_2010_Asian_Games",
+        "anchors": [
+          "Xiangqi at the 2010 Asian Games"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "World_Xiangqi_Championship",
+        "url": "https://en.wikipedia.org/wiki/World_Xiangqi_Championship",
+        "anchors": [
+          "World Xiangqi Championship"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "H._J._R._Murray",
+        "url": "https://en.wikipedia.org/wiki/H._J._R._Murray",
+        "anchors": [
+          "Murray, H. J. R."
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "A_History_of_Chess",
+        "url": "https://en.wikipedia.org/wiki/A_History_of_Chess",
+        "anchors": [
+          "A History of Chess"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wayback_Machine",
+        "url": "https://en.wikipedia.org/wiki/Wayback_Machine",
+        "anchors": [
+          "Wayback Machine"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hans_Bodlaender",
+        "url": "https://en.wikipedia.org/wiki/Hans_Bodlaender",
+        "anchors": [
+          "Hans Bodlaender"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "The_Chess_Variant_Pages",
+        "url": "https://en.wikipedia.org/wiki/The_Chess_Variant_Pages",
+        "anchors": [
+          "The Chess Variant Pages"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ],
+    "external": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/e/e9/Zh-ju1.ogg/Zh-ju1.ogg.mp3",
+        "anchors": [
+          "jū"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/4/4c/Zh-shi4.ogg/Zh-shi4.ogg.mp3",
+        "anchors": [
+          "shì"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/7/79/Xi%C3%A0ngq%C3%AD.ogg/Xi%C3%A0ngq%C3%AD.ogg.mp3",
+        "anchors": [],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/4/4a/Zh-gong1.ogg/Zh-gong1.ogg.mp3",
+        "anchors": [
+          "gōng"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/0/06/Zh-chu3he2.ogg/Zh-chu3he2.ogg.mp3",
+        "anchors": [
+          "chǔ hé"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/25/Zh-han4jie4.ogg/Zh-han4jie4.ogg.mp3",
+        "anchors": [
+          "hàn jiè"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/e/e8/Zh-jiang1.ogg/Zh-jiang1.ogg.mp3",
+        "anchors": [
+          "jiāng"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/6/6d/Zh-jiang4.ogg/Zh-jiang4.ogg.mp3",
+        "anchors": [
+          "jiàng"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/d/de/Zh-shuai4.ogg/Zh-shuai4.ogg.mp3",
+        "anchors": [
+          "shuài"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/0/0a/Zh-xiang4.ogg/Zh-xiang4.ogg.mp3",
+        "anchors": [
+          "Listen"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b2/Zh-ma3.ogg/Zh-ma3.ogg.mp3",
+        "anchors": [
+          "mǎ"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/f/f8/Zh-pao4.ogg/Zh-pao4.ogg.mp3",
+        "anchors": [
+          "pào"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://en.wiktionary.org/wiki/%E7%82%AE",
+        "anchors": [
+          "炮"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://en.wiktionary.org/wiki/%E5%8C%85",
+        "anchors": [
+          "包"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/9/9b/Zh-zu2.ogg/Zh-zu2.ogg.mp3",
+        "anchors": [
+          "zú"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/86/Zh-bing1.ogg/Zh-bing1.ogg.mp3",
+        "anchors": [
+          "bīng"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/a8/Zh-dang1tou2pao4_ma3lai2tiao4.ogg/Zh-dang1tou2pao4_ma3lai2tiao4.ogg.mp3",
+        "anchors": [
+          "dāng tóu pào, mǎ lái tiào"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://archive.org/details/chinesechessintr0000lauh",
+        "anchors": [
+          "Chinese Chess"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.banaschak.net/index.html",
+        "anchors": [
+          "The Chess of China"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://www.xiangqi.com",
+        "anchors": [
+          "Xiangqi.com"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.01xq.com",
+        "anchors": [
+          "Xiangqi Championships"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.xqinenglish.com/",
+        "anchors": [
+          "Learn Chinese Chess in English"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.crockford.com/chess/xiangqi.html",
+        "anchors": [
+          "An Introduction to Xiangqi for Chess Players"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20201111232423/http://www.crockford.com/chess/xiangqi.html",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://history.chess.free.fr/xiangqi.htm",
+        "anchors": [
+          "Xiangqi, Chinese Chess"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.chessvariants.com/xiangqi.html",
+        "anchors": [
+          "Xiangqi (象棋): Chinese Chess"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ]
+  },
+  "stats": {
+    "n_categories": 7,
+    "n_sections": 42,
+    "n_tables": 2,
+    "n_local": 1,
+    "n_wiki": 144,
+    "n_external": 26,
+    "md_chars": 71543
+  }
+}

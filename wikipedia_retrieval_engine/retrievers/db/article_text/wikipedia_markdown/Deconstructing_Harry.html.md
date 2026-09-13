@@ -1,0 +1,122 @@
+# Deconstructing Harry
+
+## Infobox
+
+- **Directed by:** Woody Allen
+- **Written by:** Woody Allen
+- **Produced by:** Jean Doumanian
+- **Starring:** Caroline Aaron Woody Allen Kirstie Alley Bob Balaban Richard Benjamin Eric Bogosian Billy Crystal Judy Davis Hazelle Goodman Mariel Hemingway Amy Irving Julie Kavner Eric Lloyd Julia Louis-Dreyfus Tobey Maguire Demi Moore Elisabeth Shue Stanley Tucci Robin Williams
+- **Cinematography:** Carlo Di Palma
+- **Edited by:** Susan E. Morse
+- **Production company:** Sweetland Films
+- **Distributed by:** Fine Line Features
+- **Release dates:** August 27, 1997 ( 1997-08-27 ) ( Venice ) December 12, 1997 ( 1997-12-12 ) (United States; limited) January 2, 1998 ( 1998-01-02 ) (United States; wide)
+- **Running time:** 96 minutes
+- **Country:** United States
+- **Language:** English
+- **Budget:** $20 million [ 1 ]
+- **Box office:** $10.7 million (US) [ 1 ]
+
+***Deconstructing Harry*** is a 1997 American [black comedy](/wiki/Black_comedy) film written, directed by, and co-starring [Woody Allen](/wiki/Woody_Allen), with an [ensemble cast](/wiki/Ensemble_cast), including [Caroline Aaron](/wiki/Caroline_Aaron), [Kirstie Alley](/wiki/Kirstie_Alley), [Bob Balaban](/wiki/Bob_Balaban), [Richard Benjamin](/wiki/Richard_Benjamin), [Eric Bogosian](/wiki/Eric_Bogosian), [Billy Crystal](/wiki/Billy_Crystal), [Judy Davis](/wiki/Judy_Davis), and [Elisabeth Shue](/wiki/Elisabeth_Shue), as well as [Jennifer Garner](/wiki/Jennifer_Garner) in her feature film debut. The film tells the story of a successful writer named Harry Block, played by Allen, who draws inspiration from people he knows in real life, and from events that happen to him, sometimes causing these people to become alienated from him.
+
+The central plot features Block driving to a university (from which he was once expelled) to receive an honorary degree. Three passengers accompany him on the trip: a prostitute, a friend, and his son, whom he has kidnapped from his ex-wife. There are many [flashbacks](/wiki/Flashback_(narrative)), segments taken from Block's writing, and interactions with his own fictional characters. *Deconstructing Harry* received moderately positive reviews from critics.
+
+## Plot
+
+One night, Lucy takes a taxi to the home of famous [Manhattan](/wiki/Manhattan) author Harry Block. She has just read Harry's latest novel, where the character Leslie is having an affair with her sister's husband Ken. Lucy is angry because the novel is patently based on her and Harry's own affair; as a result, everyone knows about it. Lucy pulls a gun from her purse, threatening to kill herself. She turns the gun on Harry and begins firing. As she chases him onto the roof, he insists that he has already been punished: his latest girlfriend Fay has left him for his best friend Larry. To distract Lucy, Harry tells her a story that he is currently writing: a semi-autobiographical story of a sex-obsessed young man named Harvey who is mistakenly claimed by [Death](/wiki/Personifications_of_death) during an encounter with a prostitute.
+
+In therapy, Harry realizes that he has not changed since his sex-obsessed youth. He discusses his honoring ceremony at his old university in [upstate New York](/wiki/Upstate_New_York), taking place the next day; he is particularly unhappy that he has nobody with whom to share the occasion. After the session, Harry asks his ex-wife and former therapist Joan if he can take their son Hilliard to the ceremony. She refuses, stating that Harry is a bad influence on Hilliard. She is also furious at Harry for the novel he wrote. In it, the character Epstein marries his therapist Helen, but the marriage begins to crumble after the birth of their son.
+
+Harry runs into an acquaintance, Richard, who is worried about his health. After accompanying Richard to the hospital, Harry invites him to the university ceremony; Richard claims he will be busy that day. Harry meets with his ex-girlfriend Fay, who reveals that she is now engaged. Harry begs Fay to get back together with him. He asks Fay to accompany him to his ceremony, but it clashes with her wedding, scheduled the following day.
+
+That night, Harry sleeps with a prostitute, Cookie, who agrees to accompany him to his ceremony. In the morning, Richard unexpectedly arrives to join Harry and Cookie on the trip. On a whim, Harry decides to "kidnap" his son Hilliard. Along the way, they stop at a carnival, then at Harry's half-sister Doris's. Doris, a devout [Jew](/wiki/Jew), is upset by Harry's portrayals of Judaism in his stories, as is her husband. During the trip, Harry encounters his fictional creations Ken and Helen, who force him to confront some painful truths about his life. Before arriving at the university, Richard dies peacefully in the car.
+
+While filming, Harry's fictional alter ego Mel literally slides out of focus, becoming blurred. The university's staffers gush over Harry, asking what he plans to write next. He describes a story about a man (based on himself) who journeys to Hell to reclaim his true love (based on Fay) from [the Devil](/wiki/The_Devil) (based on Larry). Harry and the Devil engage in a verbal duel regarding who is truly the more evil of the two. Harry argues that he is a kidnapper, but the story is interrupted by the arrival of the police. Harry is arrested for kidnapping Hilliard, for possessing a gun (it was Lucy's), and for having drugs in the car (belonging to Cookie).
+
+Larry and Fay come from their wedding to bail out Harry from jail. Harry reluctantly gives them his blessings. At his apartment, a miserable Harry fantasizes that the university's ceremony is taking place. He eventually overcomes his writer's block by starting to write a book about a man who, like him, can function only in art, not in life.
+
+## Cast
+
+- [Caroline Aaron](/wiki/Caroline_Aaron) as Doris Block, Harry's sister
+- [Woody Allen](/wiki/Woody_Allen) as Harry Block
+- [Kirstie Alley](/wiki/Kirstie_Alley) as Joan, Harry's second wife
+- [Bob Balaban](/wiki/Bob_Balaban) as Richard
+- [Richard Benjamin](/wiki/Richard_Benjamin) as Ken, Harry's character
+- [Eric Bogosian](/wiki/Eric_Bogosian) as Burt, Harry's brother-in-law
+- [Billy Crystal](/wiki/Billy_Crystal) as Larry, Harry's friend / The Devil
+- [Judy Davis](/wiki/Judy_Davis) as Lucy, Jane's sister
+- [Hazelle Goodman](/wiki/Hazelle_Goodman) as Cookie Williams
+- [Mariel Hemingway](/wiki/Mariel_Hemingway) as Beth Kramer
+- [Amy Irving](/wiki/Amy_Irving) as Jane, Harry's third wife
+- [Julie Kavner](/wiki/Julie_Kavner) as Grace
+- [Eric Lloyd](/wiki/Eric_Lloyd) as Hilliard "Hilly" Block, Harry's son
+- [Julia Louis-Dreyfus](/wiki/Julia_Louis-Dreyfus) as Leslie, Harry's character
+- [Tobey Maguire](/wiki/Tobey_Maguire) as Harvey Stern, Harry's character
+- [Demi Moore](/wiki/Demi_Moore) as Helen, Harry's character
+- [Elisabeth Shue](/wiki/Elisabeth_Shue) as Fay Sexton, Harry's last girlfriend
+- [Stanley Tucci](/wiki/Stanley_Tucci) as Paul Epstein, Harry's character
+- [Robin Williams](/wiki/Robin_Williams) as Mel, Harry's character
+- [Hy Anzell](/wiki/Hy_Anzell) as Max Pincus, Harry's character
+- [Scotty Bloch](/wiki/Scotty_Bloch) as Ms. Paley
+- [Philip Bosco](/wiki/Philip_Bosco) as Professor Clark
+- [Robert Harper](/wiki/Robert_Harper_(actor)) as Harry's doctor
+- [Shifra Lerer](/wiki/Shifra_Lerer) as Dolly Pincus, Harry's character
+- [Gene Saks](/wiki/Gene_Saks) as Mr. Block, Harry's father
+- [Victoria Hale](/wiki/Victoria_Hale_(actress)) as Woman in Shoe Store
+- [Adam Rose](/wiki/Adam_Rose_(actor)) as Mel's son
+- [Jennifer Garner](/wiki/Jennifer_Garner) as Woman in Elevator, Harry's character
+- [Viola Harris](/wiki/Viola_Harris) as Elsie
+- [Paul Giamatti](/wiki/Paul_Giamatti) as Professor Abbott
+- [Arden Myrin](/wiki/Arden_Myrin) as Student Mary
+- [Peter McRobbie](/wiki/Peter_McRobbie) as Damned Man
+
+### Casting
+
+Woody Allen offered the role of Harry Block to [Elliott Gould](/wiki/Elliott_Gould), [Dustin Hoffman](/wiki/Dustin_Hoffman), [Dennis Hopper](/wiki/Dennis_Hopper) and [Albert Brooks](/wiki/Albert_Brooks), all of whom turned it down. Allen took the role himself.
+
+## Influences
+
+The film is a general reworking of Allen's 1980 film *[Stardust Memories](/wiki/Stardust_Memories)*, which also had an artist attend a ceremony in his honor, while reminiscing over past relationships and trying to fix and stabilize current ones.
+
+Allen is an admirer of several renowned European directors, and his films in particular often draw on the works of [Ingmar Bergman](/wiki/Ingmar_Bergman) and [Federico Fellini](/wiki/Federico_Fellini). The rough outline of the plot of *Deconstructing Harry*, that of an academic on a long drive to receive an honorary award from his old university while reflecting on his life's experiences, essentially mirrors that of Bergman's *[Wild Strawberries](/wiki/Wild_Strawberries_(film))*. Additionally, the film is similar to Fellini's *[8½](/wiki/8%C2%BD)*, in being about an artist struggling with his current relationships and remembering his old ones, interspersed with dream sequences, as well as works based on events from his life.
+
+It is acknowledged by some critics that Allen based the name of Harry Block on Antonius Block ([Max von Sydow](/wiki/Max_von_Sydow)), the protagonist from Bergman's *[The Seventh Seal](/wiki/The_Seventh_Seal)*. Some critics, including [Roger Ebert](/wiki/Roger_Ebert), have suggested that the character of Harry Block is based on real-life author [Philip Roth](/wiki/Philip_Roth), and not on Allen.
+
+## Soundtrack
+
+- "Twisted" (1952) – Music by [Wardell Gray](/wiki/Wardell_Gray) – Performed by [Annie Ross](/wiki/Annie_Ross)
+- "Out of Nowhere" (1931) – Music by [Johnny Green](/wiki/Johnny_Green) – Lyrics by [Edward Heyman](/wiki/Edward_Heyman) – Performed by [Django Reinhardt](/wiki/Django_Reinhardt)
+- "[The Girl from Ipanema](/wiki/The_Girl_from_Ipanema)" (1962) – Music by [Antonio Carlos Jobim](/wiki/Antonio_Carlos_Jobim) – Lyrics by [Vinicius de Moraes](/wiki/Vinicius_de_Moraes) – Performed by [Stan Getz](/wiki/Stan_Getz)
+- "She's Funny That Way" (1928) – Music by [Neil Moret](/wiki/Neil_Moret) – Lyrics by [Richard A. Whiting](/wiki/Richard_A._Whiting) – Performed by [Erroll Garner](/wiki/Erroll_Garner)
+- "Waiting" (1993) – Written by Glenn Dickson – Performed by the Shirim Klezmer Orchestra
+- "All the Things You Are" (1939) – Music by [Jerome Kern](/wiki/Jerome_Kern) – Lyrics by [Oscar Hammerstein II](/wiki/Oscar_Hammerstein_II)
+- "Mussorgsky: Night on Bald Mountain" (1867) – Written by [Modest Mussorgsky](/wiki/Modest_Mussorgsky) – Performed by [Orchestre de la Suisse Romande](/wiki/Orchestre_de_la_Suisse_Romande)
+- "[The Way You Look Tonight](/wiki/The_Way_You_Look_Tonight)" (1936) – Music by [Jerome Kern](/wiki/Jerome_Kern) – Lyrics by [Dorothy Fields](/wiki/Dorothy_Fields) – Performed by Erroll Garner
+- "Rosalie" (1937) – Written by [Cole Porter](/wiki/Cole_Porter) – Performed by The Savoy Hotel Orpheans
+- "Miami Beach Rumba" (1946) – Written by John A. Camacho, Irving Fields and Albert Gamse
+- "Tzena Tzena Tzena" (1950) – Written by [Mitchell Parish](/wiki/Mitchell_Parish), Issichar Miron and Julius Grossman
+- "Sing Sing Sing (With a Swing)" (1936) – Written by [Louis Prima](/wiki/Louis_Prima) – Performed by [Benny Goodman](/wiki/Benny_Goodman)
+- "Christopher Columbus" (1936) – Music by [Leon Berry](/wiki/Leon_Berry) – Lyrics by [Andy Razaf](/wiki/Andy_Razaf) – Performed by Benny Goodman
+- "I Could Write a Book" (1940) – Music by [Richard Rodgers](/wiki/Richard_Rodgers) – Lyrics by [Lorenz Hart](/wiki/Lorenz_Hart) – Performed by The Stebbins Hall Band
+- "Dream a Little Dream of Me" (1931) – Music by [Wilbur Schwandt](/wiki/Wilbur_Schwandt) and [Fabian Andre](/wiki/Fabian_Andre) – Lyrics by [Gus Kahn](/wiki/Gus_Kahn)
+
+## Reception
+
+### Critical reaction
+
+On the [review aggregator](/wiki/Review_aggregator) website [Rotten Tomatoes](/wiki/Rotten_Tomatoes), the film holds an approval rating of 74%, based on 38 reviews, with an average rating of 7.2/10. [Metacritic](/wiki/Metacritic), which uses a [weighted average](/wiki/Weighted_arithmetic_mean), assigned the film a score of 61 out of 100, based on 19 critics, indicating "generally favorable" reviews. Audiences polled by [CinemaScore](/wiki/CinemaScore) gave the film an average grade of "C" on an A+ to F scale.
+
+Writing for *[Variety](/wiki/Variety_(magazine))*, [David Stratton](/wiki/David_Stratton) stated: "*Deconstructing Harry* is abrasive, complex, lacerating and self-revelatory. It's also very funny, most of the time. Woody Allen's latest is one of his most provocative and challenging films."
+
+### Accolades
+
+Allen was nominated for the [Academy Award for Best Writing, Screenplay Written Directly for the Screen](/wiki/Academy_Award_for_Best_Original_Screenplay). The film was nominated for the [Satellite Award for Best Motion Picture – Comedy or Musical](/wiki/Satellite_Award_for_Best_Film#Comedy_or_Musical_(1996–2010,_2018–present)).
+
+## References
+
+## External links
+
+- [*Deconstructing Harry*](https://www.imdb.com/title/tt0118954/) at [IMDb](/wiki/IMDb_(identifier))
+- [*Deconstructing Harry*](https://www.boxofficemojo.com/movies/?id=deconstructingharry.htm) at [Box Office Mojo](/wiki/Box_Office_Mojo)
+- [*Deconstructing Harry*](https://www.rottentomatoes.com/m/deconstructing_harry) at [Rotten Tomatoes](/wiki/Rotten_Tomatoes)
+- [Beconstructing Harry](https://www.behavenet.com/movie/deconstructing-harry) at BehaveNet (Movies)

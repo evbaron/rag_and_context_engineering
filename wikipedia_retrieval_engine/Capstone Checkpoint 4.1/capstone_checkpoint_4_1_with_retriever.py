@@ -106,7 +106,12 @@ from retrievers import (
     load_retrieved_article_texts,
     make_retriever,
 )
-from retrievers.corpus import CHUNK_OVERLAP, CHUNK_SIZE, DEFAULT_WIKI_DIR
+from retrievers.corpus import (
+    CHUNK_OVERLAP,
+    CHUNK_SIZE,
+    DEFAULT_WIKI_DIR,
+    build_or_load_markdown_store,
+)
 from retrievers.llm import answer as answer_from_context
 from retrievers.llm import make_llm
 
@@ -127,6 +132,13 @@ HYBRID_CANDIDATE_POOL = max(10, RETRIEVAL_TOP_K)
 
 CHROMA_DB_NAME = "wikipedia_chars1600_overlap200"
 ARTICLE_TEXT_STORE_NAME = "wikipedia_plain_text"
+
+# Context sent to the answer LLM after retrieval picks the articles:
+#   "plain_text" — Checkpoint 2.1/3.1 baseline (flattened text; tables collapsed)
+#   "markdown"   — structure-preserving markdown store (tables/infobox preserved)
+# Retrieval is UNCHANGED either way; only the full-article context differs, so a
+# plain_text->markdown comparison isolates the effect of context representation.
+CONTEXT_SOURCE = "markdown"
 
 # Checkpoint 2.1 baseline: hybrid, vector-heavy, k=7.
 # ------------_ RUN 1_ ------------
@@ -546,6 +558,7 @@ def build_retrieval_experiment(
         return {
             **row,
             "evaluation_mode": "retrieved_full_article_context",
+            "context_source": CONTEXT_SOURCE,
             "answer_model": LLM_MODEL,
             "judge_model": JUDGE_MODEL,
             "retriever_kind": BASELINE_RETRIEVER_SPEC.kind,
@@ -588,9 +601,14 @@ async def main() -> None:
 
     print("Loading Wikipedia retrieval resources...")
     chunks = load_wikipedia_chunks()
-    article_text_store = build_or_load_article_text_store(
-        text_store_name=ARTICLE_TEXT_STORE_NAME,
-    )
+    if CONTEXT_SOURCE == "markdown":
+        print("Context source: markdown (structure-preserving)")
+        article_text_store = build_or_load_markdown_store()
+    else:
+        print("Context source: plain_text (baseline)")
+        article_text_store = build_or_load_article_text_store(
+            text_store_name=ARTICLE_TEXT_STORE_NAME,
+        )
     db = build_or_load_db(
         chroma_db_name=CHROMA_DB_NAME,
         chunks=chunks,

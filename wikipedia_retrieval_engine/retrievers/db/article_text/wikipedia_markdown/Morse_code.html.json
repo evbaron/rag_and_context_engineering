@@ -1,0 +1,5624 @@
+{
+  "source": "Morse_code.html",
+  "title": "Morse code",
+  "wiki_title": "Morse_code",
+  "categories": [
+    "Morse code",
+    "American inventions",
+    "Latin-script representations",
+    "1848 introductions",
+    "Scoutcraft",
+    "Amateur radio"
+  ],
+  "sections": [
+    {
+      "level": 2,
+      "id": "Development_and_history",
+      "title": "Development and history"
+    },
+    {
+      "level": 3,
+      "id": "Pre-Morse_telegraphs_and_codes",
+      "title": "Pre-Morse telegraphs and codes"
+    },
+    {
+      "level": 3,
+      "id": "Samuel_Morse_and_Alfred_Vail",
+      "title": "Samuel Morse and Alfred Vail"
+    },
+    {
+      "level": 3,
+      "id": "Operator-led_change_from_graphical_to_audible_code",
+      "title": "Operator-led change from graphical to audible code"
+    },
+    {
+      "level": 3,
+      "id": "Gerke's_refinement_of_Morse's_code",
+      "title": "Gerke's refinement of Morse's code"
+    },
+    {
+      "level": 3,
+      "id": "Radiotelegraphy_and_aviation",
+      "title": "Radiotelegraphy and aviation"
+    },
+    {
+      "level": 3,
+      "id": "Maritime_flash_telegraphy_and_radio_telegraphy",
+      "title": "Maritime flash telegraphy and radio telegraphy"
+    },
+    {
+      "level": 3,
+      "id": "Demise_of_commercial_telegraphy",
+      "title": "Demise of commercial telegraphy"
+    },
+    {
+      "level": 3,
+      "id": "Continuing_use_of_Morse_code",
+      "title": "Continuing use of Morse code"
+    },
+    {
+      "level": 2,
+      "id": "Operator_proficiency",
+      "title": "Operator proficiency"
+    },
+    {
+      "level": 2,
+      "id": "International_Morse_code",
+      "title": "International Morse code"
+    },
+    {
+      "level": 3,
+      "id": "Aviation",
+      "title": "Aviation"
+    },
+    {
+      "level": 3,
+      "id": "Amateur_radio",
+      "title": "Amateur radio"
+    },
+    {
+      "level": 3,
+      "id": "Other_uses",
+      "title": "Other uses"
+    },
+    {
+      "level": 3,
+      "id": "Applications_for_the_general_public",
+      "title": "Applications for the general public"
+    },
+    {
+      "level": 3,
+      "id": "Morse_code_as_an_assistive_technology",
+      "title": "Morse code as an assistive technology"
+    },
+    {
+      "level": 2,
+      "id": "Representation,_timing,_and_speeds",
+      "title": "Representation, timing, and speeds"
+    },
+    {
+      "level": 3,
+      "id": "Transmission",
+      "title": "Transmission"
+    },
+    {
+      "level": 4,
+      "id": "Digital_storage",
+      "title": "Digital storage"
+    },
+    {
+      "level": 3,
+      "id": "Cable_code",
+      "title": "Cable code"
+    },
+    {
+      "level": 3,
+      "id": "Timing",
+      "title": "Timing"
+    },
+    {
+      "level": 3,
+      "id": "Spoken_representation",
+      "title": "Spoken representation"
+    },
+    {
+      "level": 3,
+      "id": "Speed_in_words_per_minute",
+      "title": "Speed in words per minute"
+    },
+    {
+      "level": 3,
+      "id": "Farnsworth_speed",
+      "title": "Farnsworth speed"
+    },
+    {
+      "level": 3,
+      "id": "Alternative_display_of_common_characters_in_International_Morse_code",
+      "title": "Alternative display of common characters in International Morse code"
+    },
+    {
+      "level": 2,
+      "id": "Learning_methods",
+      "title": "Learning methods"
+    },
+    {
+      "level": 3,
+      "id": "Mnemonics",
+      "title": "Mnemonics"
+    },
+    {
+      "level": 2,
+      "id": "Characters_and_prosigns",
+      "title": "Characters and prosigns"
+    },
+    {
+      "level": 3,
+      "id": "Cut_numbers",
+      "title": "Cut numbers"
+    },
+    {
+      "level": 3,
+      "id": "Prosigns",
+      "title": "Prosigns"
+    },
+    {
+      "level": 3,
+      "id": "Symbol_representations",
+      "title": "Symbol representations"
+    },
+    {
+      "level": 3,
+      "id": "Diacritics_and_non-Latin_extensions",
+      "title": "Diacritics and non-Latin extensions"
+    },
+    {
+      "level": 3,
+      "id": "Unusual_variants",
+      "title": "Unusual variants"
+    },
+    {
+      "level": 2,
+      "id": "Decoding_software",
+      "title": "Decoding software"
+    },
+    {
+      "level": 2,
+      "id": "See_also",
+      "title": "See also"
+    },
+    {
+      "level": 2,
+      "id": "Notes",
+      "title": "Notes"
+    },
+    {
+      "level": 2,
+      "id": "References",
+      "title": "References"
+    },
+    {
+      "level": 2,
+      "id": "External_links",
+      "title": "External links"
+    }
+  ],
+  "infobox": null,
+  "tables": [
+    {
+      "caption": null,
+      "headers": [
+        "Category",
+        "Character",
+        "Code"
+      ],
+      "rows": [
+        [
+          "Letters",
+          "A, a",
+          "▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "B, b",
+          "▄▄▄ ▄ ▄ ▄ ⓘ"
+        ],
+        [
+          "C, c",
+          "▄▄▄ ▄ ▄▄▄ ▄ ⓘ"
+        ],
+        [
+          "D, d",
+          "▄▄▄ ▄ ▄ ⓘ"
+        ],
+        [
+          "E, e",
+          "▄ ⓘ"
+        ],
+        [
+          "F, f",
+          "▄ ▄ ▄▄▄ ▄ ⓘ"
+        ],
+        [
+          "G, g",
+          "▄▄▄ ▄▄▄ ▄ ⓘ"
+        ],
+        [
+          "H, h",
+          "▄ ▄ ▄ ▄ ⓘ"
+        ],
+        [
+          "I, i",
+          "▄ ▄ ⓘ"
+        ],
+        [
+          "J, j",
+          "▄ ▄▄▄ ▄▄▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "K, k Prosign for general invitation to transmit",
+          "▄▄▄ ▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "L, l",
+          "▄ ▄▄▄ ▄ ▄ ⓘ"
+        ],
+        [
+          "M, m",
+          "▄▄▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "N, n",
+          "▄▄▄ ▄ ⓘ"
+        ],
+        [
+          "O, o",
+          "▄▄▄ ▄▄▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "P, p",
+          "▄ ▄▄▄ ▄▄▄ ▄ ⓘ"
+        ],
+        [
+          "Q, q",
+          "▄▄▄ ▄▄▄ ▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "R, r",
+          "▄ ▄▄▄ ▄ ⓘ"
+        ],
+        [
+          "S, s",
+          "▄ ▄ ▄ ⓘ"
+        ],
+        [
+          "T, t",
+          "▄▄▄ ⓘ"
+        ],
+        [
+          "U, u",
+          "▄ ▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "V, v",
+          "▄ ▄ ▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "W, w",
+          "▄ ▄▄▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "X, x",
+          "▄▄▄ ▄ ▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "Y, y",
+          "▄▄▄ ▄ ▄▄▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "Z, z",
+          "▄▄▄ ▄▄▄ ▄ ▄ ⓘ"
+        ],
+        [
+          "Numbers",
+          "0",
+          "▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "1",
+          "▄ ▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "2",
+          "▄ ▄ ▄▄▄ ▄▄▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "3",
+          "▄ ▄ ▄ ▄▄▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "4",
+          "▄ ▄ ▄ ▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "5",
+          "▄ ▄ ▄ ▄ ▄ ⓘ"
+        ],
+        [
+          "6",
+          "▄▄▄ ▄ ▄ ▄ ▄ ⓘ"
+        ],
+        [
+          "7",
+          "▄▄▄ ▄▄▄ ▄ ▄ ▄ ⓘ"
+        ],
+        [
+          "8",
+          "▄▄▄ ▄▄▄ ▄▄▄ ▄ ▄ ⓘ"
+        ],
+        [
+          "9",
+          "▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄ ▄ ⓘ"
+        ],
+        [
+          "Punctuation",
+          "Period [. ] RK digraph",
+          "▄ ▄▄▄ ▄ ▄▄▄ ▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "Comma [, ] GW digraph",
+          "▄▄▄ ▄▄▄ ▄ ▄ ▄▄▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "Question mark [ ? ] UD digraph",
+          "▄ ▄ ▄▄▄ ▄▄▄ ▄ ▄ ⓘ"
+        ],
+        [
+          "Apostrophe [ ' ], also used for minutes of arc and doubled for seconds of arc ('') WG digraph",
+          "▄ ▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄ ▄ ⓘ"
+        ],
+        [
+          "Slash or fraction bar [ / ] DN digraph",
+          "▄▄▄ ▄ ▄ ▄▄▄ ▄ ⓘ"
+        ],
+        [
+          "Open parenthesis [ ( ] KN digraph; unofficial prosign for exclusive invitation to transmit",
+          "▄▄▄ ▄ ▄▄▄ ▄▄▄ ▄ ⓘ"
+        ],
+        [
+          "Close parenthesis [ ) ] KK digraph",
+          "▄▄▄ ▄ ▄▄▄ ▄▄▄ ▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "Colon [: ] OS digraph",
+          "▄▄▄ ▄▄▄ ▄▄▄ ▄ ▄ ▄ ⓘ"
+        ],
+        [
+          "Double dash [ = ] BT digraph; prosign for new section or new paragraph",
+          "▄▄▄ ▄ ▄ ▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "Plus sign [ + ] RN digraph; prosign for new message or new page",
+          "▄ ▄▄▄ ▄ ▄▄▄ ▄ ⓘ"
+        ],
+        [
+          "Hyphen or Minus sign [ − ] DU",
+          "▄▄▄ ▄ ▄ ▄ ▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "Quotation mark [ \" ] RR",
+          "▄ ▄▄▄ ▄ ▄ ▄▄▄ ▄ ⓘ"
+        ],
+        [
+          "At sign [ @ ] AC digraph",
+          "▄ ▄▄▄ ▄▄▄ ▄ ▄▄▄ ▄ ⓘ"
+        ],
+        [
+          "Nonstandard punctuation",
+          "Exclamation mark, [ ! ] KW digraph, alt. MN",
+          "▄▄▄ ▄ ▄▄▄ ▄ ▄▄▄ ▄▄▄ ⓘ alt. ▄▄▄ ▄▄▄ ▄▄▄ ▄ ⓘ"
+        ],
+        [
+          "Ampersand [ & ] AS digraph; prosign for wait",
+          "▄ ▄▄▄ ▄ ▄ ▄ ⓘ"
+        ],
+        [
+          "Semicolon [; ] KR",
+          "▄▄▄ ▄ ▄▄▄ ▄ ▄▄▄ ▄ ⓘ"
+        ],
+        [
+          "Underscore [ _ ] UK",
+          "▄ ▄ ▄▄▄ ▄▄▄ ▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "Dollar sign [ $ ] SX digraph",
+          "▄ ▄ ▄ ▄▄▄ ▄ ▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "Prosigns",
+          "End of work SK digraph",
+          "▄ ▄ ▄ ▄▄▄ ▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "Error HH digraph",
+          "▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄ ⓘ"
+        ],
+        [
+          "General invitation to transmit Also used for letter 'K'",
+          "▄▄▄ ▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "Transmission start signal CT digraph",
+          "▄▄▄ ▄ ▄▄▄ ▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "Next message follows RN digraph; message or page separator. Sometimes represented as + in a single-line decoding display.",
+          "▄ ▄▄▄ ▄ ▄▄▄ ▄ ⓘ"
+        ],
+        [
+          "Verified SN digraph; also used for letter Ŝ",
+          "▄ ▄ ▄ ▄▄▄ ▄ ⓘ"
+        ],
+        [
+          "Wait AS digraph; proposed for use as ampersand [ & ]",
+          "▄ ▄▄▄ ▄ ▄ ▄ ⓘ"
+        ],
+        [
+          "Diacritics and non-Latin extensions",
+          "À, à Code shared with Å",
+          "▄ ▄▄▄ ▄▄▄ ▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "Ä, ä Code shared with Æ, Ą",
+          "▄ ▄▄▄ ▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "Å, å Code shared with À",
+          "▄ ▄▄▄ ▄▄▄ ▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "Ą, ą Code shared with Ä, Æ",
+          "▄ ▄▄▄ ▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "Æ, æ Code shared with Ä, Ą",
+          "▄ ▄▄▄ ▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "Ć, ć Code shared with Ĉ, Ç",
+          "▄▄▄ ▄ ▄▄▄ ▄ ▄ ⓘ"
+        ],
+        [
+          "Ĉ, ĉ Code shared with Ć, Ç",
+          "▄▄▄ ▄ ▄▄▄ ▄ ▄ ⓘ"
+        ],
+        [
+          "Ç, ç Code shared with Ć, Ĉ",
+          "▄▄▄ ▄ ▄▄▄ ▄ ▄ ⓘ"
+        ],
+        [
+          "CH, ch Code shared with Ĥ, Š",
+          "▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "Đ, đ ( D with stroke ) Code shared with É, Ę; distinct from eth (Ð, ð)",
+          "▄ ▄ ▄▄▄ ▄ ▄ ⓘ"
+        ],
+        [
+          "Ð, ð ( Edh or eth ) Distinct from D with stroke ( Đ, đ)",
+          "▄ ▄ ▄▄▄ ▄▄▄ ▄ ⓘ"
+        ],
+        [
+          "É, é Code shared with Đ,Ę",
+          "▄ ▄ ▄▄▄ ▄ ▄ ⓘ"
+        ],
+        [
+          "È, è Code shared with Ł",
+          "▄ ▄▄▄ ▄ ▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "Ę, ę Code shared with Đ, É",
+          "▄ ▄ ▄▄▄ ▄ ▄ ⓘ"
+        ],
+        [
+          "Ĝ, ĝ",
+          "▄▄▄ ▄▄▄ ▄ ▄▄▄ ▄ ⓘ"
+        ],
+        [
+          "Ĥ, ĥ Code shared with CH, Š",
+          "▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "Ĵ, ĵ",
+          "▄ ▄▄▄ ▄▄▄ ▄▄▄ ▄ ⓘ"
+        ],
+        [
+          "Ł, ł Code shared with È",
+          "▄ ▄▄▄ ▄ ▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "Ń, ń Code shared with Ñ",
+          "▄▄▄ ▄▄▄ ▄ ▄▄▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "Ñ, ñ Code shared with Ń",
+          "▄▄▄ ▄▄▄ ▄ ▄▄▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "Ó, ó Code shared with Ö, Ø, [ ! ]",
+          "▄▄▄ ▄▄▄ ▄▄▄ ▄ ⓘ"
+        ],
+        [
+          "Ö, ö Code shared with Ó, Ø, [ ! ]",
+          "▄▄▄ ▄▄▄ ▄▄▄ ▄ ⓘ"
+        ],
+        [
+          "Ø, ø Code shared with Ó, Ö, [ ! ]",
+          "▄▄▄ ▄▄▄ ▄▄▄ ▄ ⓘ"
+        ],
+        [
+          "Ś, ś",
+          "▄ ▄ ▄ ▄▄▄ ▄ ▄ ▄ ⓘ"
+        ],
+        [
+          "Ŝ, ŝ Prosign for verified",
+          "▄ ▄ ▄ ▄▄▄ ▄ ⓘ"
+        ],
+        [
+          "Š, š Code shared with CH, Ĥ",
+          "▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "Þ, þ",
+          "▄ ▄▄▄ ▄▄▄ ▄ ▄ ⓘ"
+        ],
+        [
+          "Ü, ü Code shared with Ŭ",
+          "▄ ▄ ▄▄▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "Ŭ, ŭ Code shared with Ü",
+          "▄ ▄ ▄▄▄ ▄▄▄ ⓘ"
+        ],
+        [
+          "Ź, ź",
+          "▄▄▄ ▄▄▄ ▄ ▄ ▄▄▄ ▄ ⓘ"
+        ],
+        [
+          "Ż, ż",
+          "▄▄▄ ▄▄▄ ▄ ▄ ▄▄▄ ⓘ"
+        ]
+      ],
+      "n_rows": 92
+    },
+    {
+      "caption": "Cut numbers [ citation needed ]",
+      "headers": [
+        "Intended digit",
+        "\"Cut\" number code",
+        "Same as code in Intl. Morse",
+        "Normal code (long form)"
+      ],
+      "rows": [
+        [
+          "0",
+          "▄▄▄",
+          "T",
+          "▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄"
+        ],
+        [
+          "1",
+          "▄ ▄▄▄",
+          "A",
+          "▄ ▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄"
+        ],
+        [
+          "2",
+          "▄ ▄ ▄▄▄",
+          "U",
+          "▄ ▄ ▄▄▄ ▄▄▄ ▄▄▄"
+        ],
+        [
+          "3",
+          "▄ ▄ ▄ ▄▄▄",
+          "V",
+          "▄ ▄ ▄ ▄▄▄ ▄▄▄"
+        ],
+        [
+          "4",
+          "▄ ▄ ▄ ▄ ▄▄▄",
+          "4",
+          "▄ ▄ ▄ ▄ ▄▄▄"
+        ],
+        [
+          "5",
+          "▄ or ▄ ▄ ▄ ▄ ▄ [ i ]",
+          "e or 5",
+          "▄ ▄ ▄ ▄ ▄"
+        ],
+        [
+          "6",
+          "▄▄▄ ▄ ▄ ▄ ▄",
+          "6",
+          "▄▄▄ ▄ ▄ ▄ ▄"
+        ],
+        [
+          "7",
+          "▄▄▄ ▄ ▄ ▄",
+          "B",
+          "▄▄▄ ▄▄▄ ▄ ▄ ▄"
+        ],
+        [
+          "8",
+          "▄▄▄ ▄ ▄",
+          "D",
+          "▄▄▄ ▄▄▄ ▄▄▄ ▄ ▄"
+        ],
+        [
+          "9",
+          "▄▄▄ ▄",
+          "N",
+          "▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄ ▄"
+        ],
+        [
+          ".",
+          "▄▄▄ ▄ ▄▄▄",
+          "K",
+          "▄ ▄▄▄ ▄ ▄▄▄ ▄ ▄▄▄"
+        ]
+      ],
+      "n_rows": 11
+    }
+  ],
+  "links": {
+    "local": [
+      {
+        "target": "World_War_I",
+        "source_file": "World_War_I.html",
+        "url": "https://en.wikipedia.org/wiki/World_War_I",
+        "anchors": [
+          "World War I"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Poland",
+        "source_file": "Poland.html",
+        "url": "https://en.wikipedia.org/wiki/Poland",
+        "anchors": [
+          "Poland"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Belgium",
+        "source_file": "Belgium.html",
+        "url": "https://en.wikipedia.org/wiki/Belgium",
+        "anchors": [
+          "Belgium"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "France",
+        "source_file": "France.html",
+        "url": "https://en.wikipedia.org/wiki/France",
+        "anchors": [
+          "France"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Soviet_Union",
+        "source_file": "Soviet_Union.html",
+        "url": "https://en.wikipedia.org/wiki/Soviet_Union",
+        "anchors": [
+          "Soviet Union"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Netherlands",
+        "source_file": "Netherlands.html",
+        "url": "https://en.wikipedia.org/wiki/Netherlands",
+        "anchors": [
+          "Netherlands"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "World_War_II",
+        "source_file": "World_War_II.html",
+        "url": "https://en.wikipedia.org/wiki/World_War_II",
+        "anchors": [
+          "World War II"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "United_States_Air_Force",
+        "source_file": "United_States_Air_Force.html",
+        "url": "https://en.wikipedia.org/wiki/United_States_Air_Force",
+        "anchors": [
+          "United States Air Force"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ],
+    "wiki": [
+      {
+        "target": "Digraph_(orthography)",
+        "url": "https://en.wikipedia.org/wiki/Digraph_(orthography)",
+        "anchors": [
+          "digraph"
+        ],
+        "count": 41,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Prosign",
+        "url": "https://en.wikipedia.org/wiki/Prosign",
+        "anchors": [
+          "Prosign",
+          "prosign"
+        ],
+        "count": 15,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Prosigns_for_Morse_code",
+        "url": "https://en.wikipedia.org/wiki/Prosigns_for_Morse_code",
+        "anchors": [
+          "Prosigns",
+          "prosigns",
+          "Prosigns for Morse code",
+          "procedural signs"
+        ],
+        "count": 9,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "American_Morse_code",
+        "url": "https://en.wikipedia.org/wiki/American_Morse_code",
+        "anchors": [
+          "commercial telegraphy in North America",
+          "original alphabetic code",
+          "American Morse code",
+          "American Morse landline code",
+          "American Morse encoding"
+        ],
+        "count": 7,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ampersand",
+        "url": "https://en.wikipedia.org/wiki/Ampersand",
+        "anchors": [
+          "Ampersand",
+          "ampersand"
+        ],
+        "count": 6,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Ø",
+        "url": "https://en.wikipedia.org/wiki/%C3%98",
+        "anchors": [
+          "Ø",
+          "Ø, ø"
+        ],
+        "count": 6,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "ITU-R",
+        "url": "https://en.wikipedia.org/wiki/ITU-R",
+        "anchors": [
+          "ITU-R"
+        ],
+        "count": 6,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Telegraph_key",
+        "url": "https://en.wikipedia.org/wiki/Telegraph_key",
+        "anchors": [
+          "Telegraph key",
+          "iambic paddle",
+          "telegraph key"
+        ],
+        "count": 5,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Call_sign",
+        "url": "https://en.wikipedia.org/wiki/Call_sign",
+        "anchors": [
+          "call sign",
+          "W9YZE",
+          "UCL",
+          "identification"
+        ],
+        "count": 5,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wabun_code",
+        "url": "https://en.wikipedia.org/wiki/Wabun_code",
+        "anchors": [
+          "Wabun code",
+          "Wabun"
+        ],
+        "count": 5,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Q",
+        "url": "https://en.wikipedia.org/wiki/Q",
+        "anchors": [
+          "Q, q",
+          "Q"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Plus_and_minus_signs",
+        "url": "https://en.wikipedia.org/wiki/Plus_and_minus_signs",
+        "anchors": [
+          "Plus sign",
+          "Minus sign"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Ŝ",
+        "url": "https://en.wikipedia.org/wiki/%C5%9C",
+        "anchors": [
+          "Ŝ",
+          "Ŝ, ŝ"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "D_with_stroke",
+        "url": "https://en.wikipedia.org/wiki/D_with_stroke",
+        "anchors": [
+          "D with stroke"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "É",
+        "url": "https://en.wikipedia.org/wiki/%C3%89",
+        "anchors": [
+          "É",
+          "É, é"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Ę",
+        "url": "https://en.wikipedia.org/wiki/%C4%98",
+        "anchors": [
+          "Ę",
+          "Ę, ę"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Eth",
+        "url": "https://en.wikipedia.org/wiki/Eth",
+        "anchors": [
+          "eth",
+          "Edh or eth"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Friedrich_Clemens_Gerke",
+        "url": "https://en.wikipedia.org/wiki/Friedrich_Clemens_Gerke",
+        "anchors": [
+          "Friedrich Gerke",
+          "Friedrich Clemens Gerke"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Morse_code_for_non-Latin_alphabets",
+        "url": "https://en.wikipedia.org/wiki/Morse_code_for_non-Latin_alphabets",
+        "anchors": [
+          "Morse alphabets",
+          "Morse code for non-Latin alphabets",
+          "Greek, Hebrew",
+          "Greek Morse code"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Keyer",
+        "url": "https://en.wikipedia.org/wiki/Keyer",
+        "anchors": [
+          "keyer",
+          "keyers",
+          "Keyer"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Exclamation_mark",
+        "url": "https://en.wikipedia.org/wiki/Exclamation_mark",
+        "anchors": [
+          "Exclamation mark",
+          "exclamation mark"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Dollar_sign",
+        "url": "https://en.wikipedia.org/wiki/Dollar_sign",
+        "anchors": [
+          "Dollar sign",
+          "dollar sign"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Ń",
+        "url": "https://en.wikipedia.org/wiki/%C5%83",
+        "anchors": [
+          "Ń, ń",
+          "Ń"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Ñ",
+        "url": "https://en.wikipedia.org/wiki/%C3%91",
+        "anchors": [
+          "Ñ, ñ",
+          "Ñ"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Electrical_telegraph",
+        "url": "https://en.wikipedia.org/wiki/Electrical_telegraph",
+        "anchors": [
+          "telegraph",
+          "electromagnetic telegraphy",
+          "electrical telegraph"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Alfred_Vail",
+        "url": "https://en.wikipedia.org/wiki/Alfred_Vail",
+        "anchors": [
+          "Alfred Vail"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "ITU",
+        "url": "https://en.wikipedia.org/wiki/ITU",
+        "anchors": [
+          "ITU"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Latin_alphabet",
+        "url": "https://en.wikipedia.org/wiki/Latin_alphabet",
+        "anchors": [
+          "Latin alphabet",
+          "Latin"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "American_Radio_Relay_League",
+        "url": "https://en.wikipedia.org/wiki/American_Radio_Relay_League",
+        "anchors": [
+          "American Radio Relay League"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "VHF_omnidirectional_range",
+        "url": "https://en.wikipedia.org/wiki/VHF_omnidirectional_range",
+        "anchors": [
+          "VOR-DME",
+          "VORs",
+          "VOR"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "A",
+        "url": "https://en.wikipedia.org/wiki/A",
+        "anchors": [
+          "A, a"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "B",
+        "url": "https://en.wikipedia.org/wiki/B",
+        "anchors": [
+          "B, b"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "C",
+        "url": "https://en.wikipedia.org/wiki/C",
+        "anchors": [
+          "C, c"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "D",
+        "url": "https://en.wikipedia.org/wiki/D",
+        "anchors": [
+          "D, d"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "E",
+        "url": "https://en.wikipedia.org/wiki/E",
+        "anchors": [
+          "E, e"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "F",
+        "url": "https://en.wikipedia.org/wiki/F",
+        "anchors": [
+          "F, f"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "G",
+        "url": "https://en.wikipedia.org/wiki/G",
+        "anchors": [
+          "G, g"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "H",
+        "url": "https://en.wikipedia.org/wiki/H",
+        "anchors": [
+          "H, h"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "I",
+        "url": "https://en.wikipedia.org/wiki/I",
+        "anchors": [
+          "I, i"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "J",
+        "url": "https://en.wikipedia.org/wiki/J",
+        "anchors": [
+          "J, j"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "K",
+        "url": "https://en.wikipedia.org/wiki/K",
+        "anchors": [
+          "K, k"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "L",
+        "url": "https://en.wikipedia.org/wiki/L",
+        "anchors": [
+          "L, l"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "M",
+        "url": "https://en.wikipedia.org/wiki/M",
+        "anchors": [
+          "M, m"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "N",
+        "url": "https://en.wikipedia.org/wiki/N",
+        "anchors": [
+          "N, n"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "O",
+        "url": "https://en.wikipedia.org/wiki/O",
+        "anchors": [
+          "O, o"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "P",
+        "url": "https://en.wikipedia.org/wiki/P",
+        "anchors": [
+          "P, p"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "R",
+        "url": "https://en.wikipedia.org/wiki/R",
+        "anchors": [
+          "R, r"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "S",
+        "url": "https://en.wikipedia.org/wiki/S",
+        "anchors": [
+          "S, s"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "T",
+        "url": "https://en.wikipedia.org/wiki/T",
+        "anchors": [
+          "T, t"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "U",
+        "url": "https://en.wikipedia.org/wiki/U",
+        "anchors": [
+          "U, u"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "V",
+        "url": "https://en.wikipedia.org/wiki/V",
+        "anchors": [
+          "V, v"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "W",
+        "url": "https://en.wikipedia.org/wiki/W",
+        "anchors": [
+          "W, w"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "X",
+        "url": "https://en.wikipedia.org/wiki/X",
+        "anchors": [
+          "X, x"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Y",
+        "url": "https://en.wikipedia.org/wiki/Y",
+        "anchors": [
+          "Y, y"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Z",
+        "url": "https://en.wikipedia.org/wiki/Z",
+        "anchors": [
+          "Z, z"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "0",
+        "url": "https://en.wikipedia.org/wiki/0",
+        "anchors": [
+          "0"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "1",
+        "url": "https://en.wikipedia.org/wiki/1",
+        "anchors": [
+          "1"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "2",
+        "url": "https://en.wikipedia.org/wiki/2",
+        "anchors": [
+          "2"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "3",
+        "url": "https://en.wikipedia.org/wiki/3",
+        "anchors": [
+          "3"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "4",
+        "url": "https://en.wikipedia.org/wiki/4",
+        "anchors": [
+          "4"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "5",
+        "url": "https://en.wikipedia.org/wiki/5",
+        "anchors": [
+          "5"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "6",
+        "url": "https://en.wikipedia.org/wiki/6",
+        "anchors": [
+          "6"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "7",
+        "url": "https://en.wikipedia.org/wiki/7",
+        "anchors": [
+          "7"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "8",
+        "url": "https://en.wikipedia.org/wiki/8",
+        "anchors": [
+          "8"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "9",
+        "url": "https://en.wikipedia.org/wiki/9",
+        "anchors": [
+          "9"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Full_stop",
+        "url": "https://en.wikipedia.org/wiki/Full_stop",
+        "anchors": [
+          "Period"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Comma",
+        "url": "https://en.wikipedia.org/wiki/Comma",
+        "anchors": [
+          "Comma"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Question_mark",
+        "url": "https://en.wikipedia.org/wiki/Question_mark",
+        "anchors": [
+          "Question mark"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Apostrophe",
+        "url": "https://en.wikipedia.org/wiki/Apostrophe",
+        "anchors": [
+          "Apostrophe"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Slash_(punctuation)",
+        "url": "https://en.wikipedia.org/wiki/Slash_(punctuation)",
+        "anchors": [
+          "Slash"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Fraction_(mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Fraction_(mathematics)",
+        "anchors": [
+          "fraction bar"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Open_parenthesis",
+        "url": "https://en.wikipedia.org/wiki/Open_parenthesis",
+        "anchors": [
+          "Open parenthesis"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Close_parenthesis",
+        "url": "https://en.wikipedia.org/wiki/Close_parenthesis",
+        "anchors": [
+          "Close parenthesis"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Colon_(punctuation)",
+        "url": "https://en.wikipedia.org/wiki/Colon_(punctuation)",
+        "anchors": [
+          "Colon"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Equal_sign",
+        "url": "https://en.wikipedia.org/wiki/Equal_sign",
+        "anchors": [
+          "Double dash"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Hyphen",
+        "url": "https://en.wikipedia.org/wiki/Hyphen",
+        "anchors": [
+          "Hyphen"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Quotation_mark",
+        "url": "https://en.wikipedia.org/wiki/Quotation_mark",
+        "anchors": [
+          "Quotation mark"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "At_sign",
+        "url": "https://en.wikipedia.org/wiki/At_sign",
+        "anchors": [
+          "At sign"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Semicolon",
+        "url": "https://en.wikipedia.org/wiki/Semicolon",
+        "anchors": [
+          "Semicolon"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Underscore",
+        "url": "https://en.wikipedia.org/wiki/Underscore",
+        "anchors": [
+          "Underscore"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "À",
+        "url": "https://en.wikipedia.org/wiki/%C3%80",
+        "anchors": [
+          "À, à"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Ä",
+        "url": "https://en.wikipedia.org/wiki/%C3%84",
+        "anchors": [
+          "Ä, ä"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Å",
+        "url": "https://en.wikipedia.org/wiki/%C3%85",
+        "anchors": [
+          "Å, å"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Ą",
+        "url": "https://en.wikipedia.org/wiki/%C4%84",
+        "anchors": [
+          "Ą, ą"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Æ",
+        "url": "https://en.wikipedia.org/wiki/%C3%86",
+        "anchors": [
+          "Æ, æ"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Ć",
+        "url": "https://en.wikipedia.org/wiki/%C4%86",
+        "anchors": [
+          "Ć, ć"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Ĉ",
+        "url": "https://en.wikipedia.org/wiki/%C4%88",
+        "anchors": [
+          "Ĉ, ĉ"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Ç",
+        "url": "https://en.wikipedia.org/wiki/%C3%87",
+        "anchors": [
+          "Ç, ç"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Ch_(digraph)",
+        "url": "https://en.wikipedia.org/wiki/Ch_(digraph)",
+        "anchors": [
+          "CH, ch"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Đ",
+        "url": "https://en.wikipedia.org/wiki/%C4%90",
+        "anchors": [
+          "Đ, đ"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Ð",
+        "url": "https://en.wikipedia.org/wiki/%C3%90",
+        "anchors": [
+          "Ð, ð"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "È",
+        "url": "https://en.wikipedia.org/wiki/%C3%88",
+        "anchors": [
+          "È, è"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Ĝ",
+        "url": "https://en.wikipedia.org/wiki/%C4%9C",
+        "anchors": [
+          "Ĝ, ĝ"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Ĥ",
+        "url": "https://en.wikipedia.org/wiki/%C4%A4",
+        "anchors": [
+          "Ĥ, ĥ"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Ĵ",
+        "url": "https://en.wikipedia.org/wiki/%C4%B4",
+        "anchors": [
+          "Ĵ, ĵ"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Ł",
+        "url": "https://en.wikipedia.org/wiki/%C5%81",
+        "anchors": [
+          "Ł, ł"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Ó",
+        "url": "https://en.wikipedia.org/wiki/%C3%93",
+        "anchors": [
+          "Ó, ó"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Ö",
+        "url": "https://en.wikipedia.org/wiki/%C3%96",
+        "anchors": [
+          "Ö, ö"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Ś",
+        "url": "https://en.wikipedia.org/wiki/%C5%9A",
+        "anchors": [
+          "Ś, ś"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Š",
+        "url": "https://en.wikipedia.org/wiki/%C5%A0",
+        "anchors": [
+          "Š, š"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Þ",
+        "url": "https://en.wikipedia.org/wiki/%C3%9E",
+        "anchors": [
+          "Þ, þ"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Ü",
+        "url": "https://en.wikipedia.org/wiki/%C3%9C",
+        "anchors": [
+          "Ü, ü"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Ŭ",
+        "url": "https://en.wikipedia.org/wiki/%C5%AC",
+        "anchors": [
+          "Ŭ, ŭ"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Ź",
+        "url": "https://en.wikipedia.org/wiki/%C5%B9",
+        "anchors": [
+          "Ź, ź"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Ż",
+        "url": "https://en.wikipedia.org/wiki/%C5%BB",
+        "anchors": [
+          "Ż, ż"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Samuel_Morse",
+        "url": "https://en.wikipedia.org/wiki/Samuel_Morse",
+        "anchors": [
+          "Samuel Morse"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "On-off_keying",
+        "url": "https://en.wikipedia.org/wiki/On-off_keying",
+        "anchors": [
+          "on-off keying",
+          "on-off keyed"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Telegraph_sounder",
+        "url": "https://en.wikipedia.org/wiki/Telegraph_sounder",
+        "anchors": [
+          "sounder",
+          "Sounder"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "North_Africa",
+        "url": "https://en.wikipedia.org/wiki/North_Africa",
+        "anchors": [
+          "North Africa"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "U.S._Army",
+        "url": "https://en.wikipedia.org/wiki/U.S._Army",
+        "anchors": [
+          "U.S. Army"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Federal_Communications_Commission",
+        "url": "https://en.wikipedia.org/wiki/Federal_Communications_Commission",
+        "anchors": [
+          "Federal Communications Commission"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "The_CW_Operators'_Club",
+        "url": "https://en.wikipedia.org/wiki/The_CW_Operators%27_Club",
+        "anchors": [
+          "The CW Operators' Club"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Amateur_radio",
+        "url": "https://en.wikipedia.org/wiki/Amateur_radio",
+        "anchors": [
+          "amateur radio"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Words_per_minute",
+        "url": "https://en.wikipedia.org/wiki/Words_per_minute",
+        "anchors": [
+          "words per minute",
+          "WPM"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Communications_protocol",
+        "url": "https://en.wikipedia.org/wiki/Communications_protocol",
+        "anchors": [
+          "communications protocol"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "International_Telecommunication_Union",
+        "url": "https://en.wikipedia.org/wiki/International_Telecommunication_Union",
+        "anchors": [
+          "International Telecommunication Union"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Morse_code_abbreviations",
+        "url": "https://en.wikipedia.org/wiki/Morse_code_abbreviations",
+        "anchors": [
+          "Morse code abbreviations"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "U.S._Navy",
+        "url": "https://en.wikipedia.org/wiki/U.S._Navy",
+        "anchors": [
+          "U.S. Navy"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "SOS",
+        "url": "https://en.wikipedia.org/wiki/SOS",
+        "anchors": [
+          "SOS"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "High-speed_telegraphy",
+        "url": "https://en.wikipedia.org/wiki/High-speed_telegraphy",
+        "anchors": [
+          "High-speed telegraphy"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Morse_code_mnemonics",
+        "url": "https://en.wikipedia.org/wiki/Morse_code_mnemonics",
+        "anchors": [
+          "Morse code mnemonics"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Alphabet",
+        "url": "https://en.wikipedia.org/wiki/Alphabet",
+        "anchors": [
+          "alphabetic"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Russian_Morse_code",
+        "url": "https://en.wikipedia.org/wiki/Russian_Morse_code",
+        "anchors": [
+          "Russian, and Ukrainian",
+          "Russian Morse code"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ψ",
+        "url": "https://en.wikipedia.org/wiki/%CE%A8",
+        "anchors": [
+          "Ψ"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Morse_Code_(disambiguation)",
+        "url": "https://en.wikipedia.org/wiki/Morse_Code_(disambiguation)",
+        "anchors": [
+          "Morse Code (disambiguation)"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Gotthard_railway",
+        "url": "https://en.wikipedia.org/wiki/Gotthard_railway#The_Gotthard_railway_telegraph_network",
+        "anchors": [
+          "Gotthard railway"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Shortwave_radio",
+        "url": "https://en.wikipedia.org/wiki/Shortwave_radio",
+        "anchors": [
+          "shortwave radio"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Telecommunications",
+        "url": "https://en.wikipedia.org/wiki/Telecommunications",
+        "anchors": [
+          "telecommunications"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Character_encoding",
+        "url": "https://en.wikipedia.org/wiki/Character_encoding",
+        "anchors": [
+          "encodes"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Written_language",
+        "url": "https://en.wikipedia.org/wiki/Written_language",
+        "anchors": [
+          "text"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "ISO_basic_Latin_alphabet",
+        "url": "https://en.wikipedia.org/wiki/ISO_basic_Latin_alphabet",
+        "anchors": [
+          "basic Latin letters"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Accented",
+        "url": "https://en.wikipedia.org/wiki/Accented",
+        "anchors": [
+          "accented"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Arabic_numerals",
+        "url": "https://en.wikipedia.org/wiki/Arabic_numerals",
+        "anchors": [
+          "Indo-Arabic numerals"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Rhythm",
+        "url": "https://en.wikipedia.org/wiki/Rhythm",
+        "anchors": [
+          "rhythm"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Beat_(music)",
+        "url": "https://en.wikipedia.org/wiki/Beat_(music)",
+        "anchors": [
+          "half-beat"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Delimiter",
+        "url": "https://en.wikipedia.org/wiki/Delimiter",
+        "anchors": [
+          "separated by"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sound_waves",
+        "url": "https://en.wikipedia.org/wiki/Sound_waves",
+        "anchors": [
+          "sound waves"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Visible_light_communication",
+        "url": "https://en.wikipedia.org/wiki/Visible_light_communication",
+        "anchors": [
+          "visible light"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Entropy_coding",
+        "url": "https://en.wikipedia.org/wiki/Entropy_coding",
+        "anchors": [
+          "inverse to the frequency"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Static_electricity",
+        "url": "https://en.wikipedia.org/wiki/Static_electricity",
+        "anchors": [
+          "static electricity"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Voltaic_pile",
+        "url": "https://en.wikipedia.org/wiki/Voltaic_pile",
+        "anchors": [
+          "Voltaic piles"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electrochemical",
+        "url": "https://en.wikipedia.org/wiki/Electrochemical",
+        "anchors": [
+          "electrochemical"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electromagnetic",
+        "url": "https://en.wikipedia.org/wiki/Electromagnetic",
+        "anchors": [
+          "electromagnetic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Telegraphist",
+        "url": "https://en.wikipedia.org/wiki/Telegraphist",
+        "anchors": [
+          "telegraphist"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electromagnetism",
+        "url": "https://en.wikipedia.org/wiki/Electromagnetism",
+        "anchors": [
+          "electromagnetism"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hans_Christian_Ørsted",
+        "url": "https://en.wikipedia.org/wiki/Hans_Christian_%C3%98rsted",
+        "anchors": [
+          "Hans Christian Ørsted"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electromagnet",
+        "url": "https://en.wikipedia.org/wiki/Electromagnet",
+        "anchors": [
+          "electromagnet"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "William_Sturgeon",
+        "url": "https://en.wikipedia.org/wiki/William_Sturgeon",
+        "anchors": [
+          "William Sturgeon"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electric_current",
+        "url": "https://en.wikipedia.org/wiki/Electric_current",
+        "anchors": [
+          "electric current"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "William_Fothergill_Cooke",
+        "url": "https://en.wikipedia.org/wiki/William_Fothergill_Cooke",
+        "anchors": [
+          "William Cooke"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Charles_Wheatstone",
+        "url": "https://en.wikipedia.org/wiki/Charles_Wheatstone",
+        "anchors": [
+          "Charles Wheatstone"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "United_Kingdom",
+        "url": "https://en.wikipedia.org/wiki/United_Kingdom",
+        "anchors": [
+          "Britain"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Carl_Friedrich_Gauss",
+        "url": "https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss",
+        "anchors": [
+          "Carl Friedrich Gauss"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wilhelm_Eduard_Weber",
+        "url": "https://en.wikipedia.org/wiki/Wilhelm_Eduard_Weber",
+        "anchors": [
+          "Wilhelm Eduard Weber"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Carl_August_von_Steinheil",
+        "url": "https://en.wikipedia.org/wiki/Carl_August_von_Steinheil",
+        "anchors": [
+          "Carl August von Steinheil"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Physicist",
+        "url": "https://en.wikipedia.org/wiki/Physicist",
+        "anchors": [
+          "physicist"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Joseph_Henry",
+        "url": "https://en.wikipedia.org/wiki/Joseph_Henry",
+        "anchors": [
+          "Joseph Henry"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Telegraphy",
+        "url": "https://en.wikipedia.org/wiki/Telegraphy",
+        "anchors": [
+          "telegraphy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Letter_frequency",
+        "url": "https://en.wikipedia.org/wiki/Letter_frequency",
+        "anchors": [
+          "letter frequency"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Movable_type",
+        "url": "https://en.wikipedia.org/wiki/Movable_type",
+        "anchors": [
+          "movable type"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Type_case",
+        "url": "https://en.wikipedia.org/wiki/Type_case",
+        "anchors": [
+          "type cases"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Morristown,_New_Jersey",
+        "url": "https://en.wikipedia.org/wiki/Morristown,_New_Jersey",
+        "anchors": [
+          "Morristown, New Jersey"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Radio_communication",
+        "url": "https://en.wikipedia.org/wiki/Radio_communication",
+        "anchors": [
+          "radio communication"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Umpteen",
+        "url": "https://en.wikipedia.org/wiki/Umpteen",
+        "anchors": [
+          "umpteen"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "American_Morse",
+        "url": "https://en.wikipedia.org/wiki/American_Morse",
+        "anchors": [
+          "American Morse"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "German_language",
+        "url": "https://en.wikipedia.org/wiki/German_language",
+        "anchors": [
+          "German"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Umlaut_(linguistics)",
+        "url": "https://en.wikipedia.org/wiki/Umlaut_(linguistics)",
+        "anchors": [
+          "umlauted"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Radio",
+        "url": "https://en.wikipedia.org/wiki/Radio",
+        "anchors": [
+          "radio"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Spark-gap_transmitter",
+        "url": "https://en.wikipedia.org/wiki/Spark-gap_transmitter",
+        "anchors": [
+          "spark gap system of transmission"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Airship",
+        "url": "https://en.wikipedia.org/wiki/Airship",
+        "anchors": [
+          "airships"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "America_(airship)",
+        "url": "https://en.wikipedia.org/wiki/America_(airship)",
+        "anchors": [
+          "America"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Zeppelin",
+        "url": "https://en.wikipedia.org/wiki/Zeppelin",
+        "anchors": [
+          "Zeppelin airships"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Charles_Lindbergh",
+        "url": "https://en.wikipedia.org/wiki/Charles_Lindbergh",
+        "anchors": [
+          "Charles Lindbergh"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "New_York_City",
+        "url": "https://en.wikipedia.org/wiki/New_York_City",
+        "anchors": [
+          "New York"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Paris",
+        "url": "https://en.wikipedia.org/wiki/Paris",
+        "anchors": [
+          "Paris"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Spirit_of_St._Louis",
+        "url": "https://en.wikipedia.org/wiki/Spirit_of_St._Louis",
+        "anchors": [
+          "Spirit of St. Louis"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Southern_Cross_(aircraft)",
+        "url": "https://en.wikipedia.org/wiki/Southern_Cross_(aircraft)",
+        "anchors": [
+          "Southern Cross"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Radio_telegraph",
+        "url": "https://en.wikipedia.org/wiki/Radio_telegraph",
+        "anchors": [
+          "radio telegraph"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Aeronautical_chart",
+        "url": "https://en.wikipedia.org/wiki/Aeronautical_chart",
+        "anchors": [
+          "Aeronautical charts"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Blitzkrieg",
+        "url": "https://en.wikipedia.org/wiki/Blitzkrieg",
+        "anchors": [
+          "blitzkrieg"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Nazi_German",
+        "url": "https://en.wikipedia.org/wiki/Nazi_German",
+        "anchors": [
+          "Nazi German"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wehrmacht",
+        "url": "https://en.wikipedia.org/wiki/Wehrmacht",
+        "anchors": [
+          "Wehrmacht"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "British_Army",
+        "url": "https://en.wikipedia.org/wiki/British_Army",
+        "anchors": [
+          "British Army"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Italy",
+        "url": "https://en.wikipedia.org/wiki/Italy",
+        "anchors": [
+          "Italy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Signals_intelligence",
+        "url": "https://en.wikipedia.org/wiki/Signals_intelligence",
+        "anchors": [
+          "signals intelligence"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Warship",
+        "url": "https://en.wikipedia.org/wiki/Warship",
+        "anchors": [
+          "warships"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Naval_base",
+        "url": "https://en.wikipedia.org/wiki/Naval_base",
+        "anchors": [
+          "naval bases"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Encrypted",
+        "url": "https://en.wikipedia.org/wiki/Encrypted",
+        "anchors": [
+          "encrypted"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Warplane",
+        "url": "https://en.wikipedia.org/wiki/Warplane",
+        "anchors": [
+          "warplanes"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Scout_plane",
+        "url": "https://en.wikipedia.org/wiki/Scout_plane",
+        "anchors": [
+          "patrol planes"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Global_Maritime_Distress_and_Safety_System",
+        "url": "https://en.wikipedia.org/wiki/Global_Maritime_Distress_and_Safety_System",
+        "anchors": [
+          "Global Maritime Distress and Safety System"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "French_Navy",
+        "url": "https://en.wikipedia.org/wiki/French_Navy",
+        "anchors": [
+          "French Navy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Signalman_(rank)",
+        "url": "https://en.wikipedia.org/wiki/Signalman_(rank)",
+        "anchors": [
+          "signalman"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Australian_Defence_Force",
+        "url": "https://en.wikipedia.org/wiki/Australian_Defence_Force",
+        "anchors": [
+          "Australian Defence Force"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Royal_Australian_Navy",
+        "url": "https://en.wikipedia.org/wiki/Royal_Australian_Navy",
+        "anchors": [
+          "Royal Australian Navy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "United_States_Coast_Guard",
+        "url": "https://en.wikipedia.org/wiki/United_States_Coast_Guard",
+        "anchors": [
+          "United States Coast Guard"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Radio_frequencies",
+        "url": "https://en.wikipedia.org/wiki/Radio_frequencies",
+        "anchors": [
+          "radio frequencies"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Medium_frequency",
+        "url": "https://en.wikipedia.org/wiki/Medium_frequency",
+        "anchors": [
+          "medium frequency"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "500_kHz",
+        "url": "https://en.wikipedia.org/wiki/500_kHz",
+        "anchors": [
+          "500 kHz"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "KPH_(radio)",
+        "url": "https://en.wikipedia.org/wiki/KPH_(radio)",
+        "anchors": [
+          "KPH"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Museum_ship",
+        "url": "https://en.wikipedia.org/wiki/Museum_ship",
+        "anchors": [
+          "museum ship"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Asheville,_North_Carolina",
+        "url": "https://en.wikipedia.org/wiki/Asheville,_North_Carolina",
+        "anchors": [
+          "Asheville, North Carolina"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Boy_Scouts_of_America",
+        "url": "https://en.wikipedia.org/wiki/Boy_Scouts_of_America",
+        "anchors": [
+          "Boy Scouts of America"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "GMDSS",
+        "url": "https://en.wikipedia.org/wiki/GMDSS",
+        "anchors": [
+          "GMDSS"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electrical",
+        "url": "https://en.wikipedia.org/wiki/Electrical",
+        "anchors": [
+          "electrical"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hamburg",
+        "url": "https://en.wikipedia.org/wiki/Hamburg",
+        "anchors": [
+          "Hamburg"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cuxhaven",
+        "url": "https://en.wikipedia.org/wiki/Cuxhaven",
+        "anchors": [
+          "Cuxhaven"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Numerical_digit",
+        "url": "https://en.wikipedia.org/wiki/Numerical_digit",
+        "anchors": [
+          "numerals"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Aviation",
+        "url": "https://en.wikipedia.org/wiki/Aviation",
+        "anchors": [
+          "aviation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Radio_navigation",
+        "url": "https://en.wikipedia.org/wiki/Radio_navigation",
+        "anchors": [
+          "radio navigation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Vilo_Acuña_Airport",
+        "url": "https://en.wikipedia.org/wiki/Vilo_Acu%C3%B1a_Airport",
+        "anchors": [
+          "Vilo Acuña Airport"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cayo_Largo_del_Sur",
+        "url": "https://en.wikipedia.org/wiki/Cayo_Largo_del_Sur",
+        "anchors": [
+          "Cayo Largo del Sur, Cuba"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pilots",
+        "url": "https://en.wikipedia.org/wiki/Pilots",
+        "anchors": [
+          "pilots"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Navigator",
+        "url": "https://en.wikipedia.org/wiki/Navigator",
+        "anchors": [
+          "navigators"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Winnipeg_James_Armstrong_Richardson_International_Airport",
+        "url": "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
+        "anchors": [
+          "Winnipeg's main airport"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Vibroplex",
+        "url": "https://en.wikipedia.org/wiki/Vibroplex",
+        "anchors": [
+          "Vibroplex"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Stick_insect",
+        "url": "https://en.wikipedia.org/wiki/Stick_insect",
+        "anchors": [
+          "stick insect"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Continuous_wave",
+        "url": "https://en.wikipedia.org/wiki/Continuous_wave",
+        "anchors": [
+          "continuous wave"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Spark_gap",
+        "url": "https://en.wikipedia.org/wiki/Spark_gap",
+        "anchors": [
+          "spark gap"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Frequency-shift_keying",
+        "url": "https://en.wikipedia.org/wiki/Frequency-shift_keying",
+        "anchors": [
+          "frequency-shift keying"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "World_Radiocommunication_Conference",
+        "url": "https://en.wikipedia.org/wiki/World_Radiocommunication_Conference",
+        "anchors": [
+          "World Radiocommunication Conference"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "40-meter_band",
+        "url": "https://en.wikipedia.org/wiki/40-meter_band",
+        "anchors": [
+          "40 meter ham radio band"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Shortwave",
+        "url": "https://en.wikipedia.org/wiki/Shortwave",
+        "anchors": [
+          "shortwave bands"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "2200-meter_band",
+        "url": "https://en.wikipedia.org/wiki/2200-meter_band",
+        "anchors": [
+          "LF"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "630-meter_band",
+        "url": "https://en.wikipedia.org/wiki/630-meter_band",
+        "anchors": [
+          "MF low"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "160-meter_band",
+        "url": "https://en.wikipedia.org/wiki/160-meter_band",
+        "anchors": [
+          "MF high"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "High_frequency",
+        "url": "https://en.wikipedia.org/wiki/High_frequency",
+        "anchors": [
+          "HF"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "VHF",
+        "url": "https://en.wikipedia.org/wiki/VHF",
+        "anchors": [
+          "VHF"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "UHF",
+        "url": "https://en.wikipedia.org/wiki/UHF",
+        "anchors": [
+          "UHF"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "List_of_amateur_radio_modes",
+        "url": "https://en.wikipedia.org/wiki/List_of_amateur_radio_modes",
+        "anchors": [
+          "radio transmission modes"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Signal_bandwidth",
+        "url": "https://en.wikipedia.org/wiki/Signal_bandwidth",
+        "anchors": [
+          "bandwidth"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hz",
+        "url": "https://en.wikipedia.org/wiki/Hz",
+        "anchors": [
+          "Hz"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Single-sideband_modulation",
+        "url": "https://en.wikipedia.org/wiki/Single-sideband_modulation",
+        "anchors": [
+          "SSB voice"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "DXing",
+        "url": "https://en.wikipedia.org/wiki/DXing",
+        "anchors": [
+          "DX (long distance) transmissions"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "QRP_operation",
+        "url": "https://en.wikipedia.org/wiki/QRP_operation",
+        "anchors": [
+          "QRP operation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Q-code",
+        "url": "https://en.wikipedia.org/wiki/Q-code",
+        "anchors": [
+          "Q-code"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Q_code",
+        "url": "https://en.wikipedia.org/wiki/Q_code",
+        "anchors": [
+          "Q codes"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Software",
+        "url": "https://en.wikipedia.org/wiki/Software",
+        "anchors": [
+          "Software"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "ARRL",
+        "url": "https://en.wikipedia.org/wiki/ARRL",
+        "anchors": [
+          "ARRL"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Non-directional_beacon",
+        "url": "https://en.wikipedia.org/wiki/Non-directional_beacon",
+        "anchors": [
+          "NDBs"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Signal_lamp",
+        "url": "https://en.wikipedia.org/wiki/Signal_lamp",
+        "anchors": [
+          "signal lamps"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Radio_silence",
+        "url": "https://en.wikipedia.org/wiki/Radio_silence",
+        "anchors": [
+          "radio silence"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Automatic_Transmitter_Identification_System_(television)",
+        "url": "https://en.wikipedia.org/wiki/Automatic_Transmitter_Identification_System_(television)",
+        "anchors": [
+          "Automatic Transmitter Identification System"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Satellite",
+        "url": "https://en.wikipedia.org/wiki/Satellite",
+        "anchors": [
+          "satellite"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Amateur_radio_repeater",
+        "url": "https://en.wikipedia.org/wiki/Amateur_radio_repeater",
+        "anchors": [
+          "amateur radio repeaters"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Assistive_technology",
+        "url": "https://en.wikipedia.org/wiki/Assistive_technology",
+        "anchors": [
+          "assistive technology"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Disabilities",
+        "url": "https://en.wikipedia.org/wiki/Disabilities",
+        "anchors": [
+          "disabilities"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Handwriting_recognition",
+        "url": "https://en.wikipedia.org/wiki/Handwriting_recognition",
+        "anchors": [
+          "handwriting recognition"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electronic_typewriter",
+        "url": "https://en.wikipedia.org/wiki/Electronic_typewriter",
+        "anchors": [
+          "electronic typewriter"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sip-and-puff",
+        "url": "https://en.wikipedia.org/wiki/Sip-and-puff",
+        "anchors": [
+          "sip-and-puff"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Switch_access_scanning",
+        "url": "https://en.wikipedia.org/wiki/Switch_access_scanning",
+        "anchors": [
+          "row column scanning"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "QST",
+        "url": "https://en.wikipedia.org/wiki/QST",
+        "anchors": [
+          "QST"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Stroke",
+        "url": "https://en.wikipedia.org/wiki/Stroke",
+        "anchors": [
+          "stroke"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "QST_magazine",
+        "url": "https://en.wikipedia.org/wiki/QST_magazine",
+        "anchors": [
+          "QST magazine"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Prisoner_of_war",
+        "url": "https://en.wikipedia.org/wiki/Prisoner_of_war",
+        "anchors": [
+          "prisoner of war"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Jeremiah_Denton",
+        "url": "https://en.wikipedia.org/wiki/Jeremiah_Denton",
+        "anchors": [
+          "Jeremiah Denton"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "North_Vietnam",
+        "url": "https://en.wikipedia.org/wiki/North_Vietnam",
+        "anchors": [
+          "North Vietnamese"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Odd_number",
+        "url": "https://en.wikipedia.org/wiki/Odd_number",
+        "anchors": [
+          "odd number"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Even_number",
+        "url": "https://en.wikipedia.org/wiki/Even_number",
+        "anchors": [
+          "even number"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Staccato",
+        "url": "https://en.wikipedia.org/wiki/Staccato",
+        "anchors": [
+          "staccato"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Telegraph",
+        "url": "https://en.wikipedia.org/wiki/Telegraph",
+        "anchors": [
+          "telegraph"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Aldis_lamp",
+        "url": "https://en.wikipedia.org/wiki/Aldis_lamp",
+        "anchors": [
+          "Aldis lamp"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Heliograph",
+        "url": "https://en.wikipedia.org/wiki/Heliograph",
+        "anchors": [
+          "heliograph"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bit",
+        "url": "https://en.wikipedia.org/wiki/Bit",
+        "anchors": [
+          "bit"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Byte",
+        "url": "https://en.wikipedia.org/wiki/Byte",
+        "anchors": [
+          "byte"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Nibble",
+        "url": "https://en.wikipedia.org/wiki/Nibble",
+        "anchors": [
+          "nibbles"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Microprocessor",
+        "url": "https://en.wikipedia.org/wiki/Microprocessor",
+        "anchors": [
+          "microprocessors"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "RAM",
+        "url": "https://en.wikipedia.org/wiki/RAM",
+        "anchors": [
+          "RAM"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Time_constant",
+        "url": "https://en.wikipedia.org/wiki/Time_constant",
+        "anchors": [
+          "time constants"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Submarine_communications_cable",
+        "url": "https://en.wikipedia.org/wiki/Submarine_communications_cable",
+        "anchors": [
+          "submarine communications cables"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Milliseconds",
+        "url": "https://en.wikipedia.org/wiki/Milliseconds",
+        "anchors": [
+          "milliseconds"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "FCC",
+        "url": "https://en.wikipedia.org/wiki/FCC",
+        "anchors": [
+          "FCC"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Guinness_Book_of_Records",
+        "url": "https://en.wikipedia.org/wiki/Guinness_Book_of_Records",
+        "anchors": [
+          "Guinness Book of Records"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "International_Amateur_Radio_Union",
+        "url": "https://en.wikipedia.org/wiki/International_Amateur_Radio_Union",
+        "anchors": [
+          "International Amateur Radio Union"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Primorsko",
+        "url": "https://en.wikipedia.org/wiki/Primorsko",
+        "anchors": [
+          "Primorsko"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Belarus",
+        "url": "https://en.wikipedia.org/wiki/Belarus",
+        "anchors": [
+          "Belarus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Huffman_coding",
+        "url": "https://en.wikipedia.org/wiki/Huffman_coding",
+        "anchors": [
+          "Huffman coding"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Dichotomic_search",
+        "url": "https://en.wikipedia.org/wiki/Dichotomic_search",
+        "anchors": [
+          "dichotomic search"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Binary_search",
+        "url": "https://en.wikipedia.org/wiki/Binary_search",
+        "anchors": [
+          "binary search"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sturmabteilung",
+        "url": "https://en.wikipedia.org/wiki/Sturmabteilung",
+        "anchors": [
+          "stormtrooper"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "W1AW",
+        "url": "https://en.wikipedia.org/wiki/W1AW",
+        "anchors": [
+          "W1AW"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Scouting",
+        "url": "https://en.wikipedia.org/wiki/Scouting",
+        "anchors": [
+          "Scout"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Robert_Baden-Powell,_1st_Baron_Baden-Powell",
+        "url": "https://en.wikipedia.org/wiki/Robert_Baden-Powell,_1st_Baron_Baden-Powell",
+        "anchors": [
+          "Baden-Powell's"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Baden-Powell",
+        "url": "https://en.wikipedia.org/wiki/Baden-Powell",
+        "anchors": [
+          "Baden-Powell"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Girl_Guides",
+        "url": "https://en.wikipedia.org/wiki/Girl_Guides",
+        "anchors": [
+          "Girl Guides"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "God_Save_the_Queen",
+        "url": "https://en.wikipedia.org/wiki/God_Save_the_Queen",
+        "anchors": [
+          "God Save the Queen"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Beethoven",
+        "url": "https://en.wikipedia.org/wiki/Beethoven",
+        "anchors": [
+          "Beethoven"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Symphony_No._5_(Beethoven)",
+        "url": "https://en.wikipedia.org/wiki/Symphony_No._5_(Beethoven)",
+        "anchors": [
+          "Fifth Symphony"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Prime_Minister_of_the_United_Kingdom",
+        "url": "https://en.wikipedia.org/wiki/Prime_Minister_of_the_United_Kingdom",
+        "anchors": [
+          "prime minister"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Churchill",
+        "url": "https://en.wikipedia.org/wiki/Churchill",
+        "anchors": [
+          "Churchill"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "R-S-T_system",
+        "url": "https://en.wikipedia.org/wiki/R-S-T_system",
+        "anchors": [
+          "R-S-T signal report"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "White_space_(visual_arts)",
+        "url": "https://en.wikipedia.org/wiki/White_space_(visual_arts)",
+        "anchors": [
+          "white space"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Heathkit",
+        "url": "https://en.wikipedia.org/wiki/Heathkit",
+        "anchors": [
+          "Heathkit"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Currency_symbol",
+        "url": "https://en.wikipedia.org/wiki/Currency_symbol",
+        "anchors": [
+          "currency symbols"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "ISO_4217",
+        "url": "https://en.wikipedia.org/wiki/ISO_4217",
+        "anchors": [
+          "ISO 4217"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "CNY",
+        "url": "https://en.wikipedia.org/wiki/CNY",
+        "anchors": [
+          "CNY"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "EUR",
+        "url": "https://en.wikipedia.org/wiki/EUR",
+        "anchors": [
+          "EUR"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "GBP",
+        "url": "https://en.wikipedia.org/wiki/GBP",
+        "anchors": [
+          "GBP"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "JPY",
+        "url": "https://en.wikipedia.org/wiki/JPY",
+        "anchors": [
+          "JPY"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "South_Korean_won",
+        "url": "https://en.wikipedia.org/wiki/South_Korean_won",
+        "anchors": [
+          "KRW"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "USD",
+        "url": "https://en.wikipedia.org/wiki/USD",
+        "anchors": [
+          "USD"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Phillips_Code",
+        "url": "https://en.wikipedia.org/wiki/Phillips_Code",
+        "anchors": [
+          "Phillips Code"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Railroad_Morse",
+        "url": "https://en.wikipedia.org/wiki/Railroad_Morse",
+        "anchors": [
+          "Railroad Morse"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Amateur_radio_operators",
+        "url": "https://en.wikipedia.org/wiki/Amateur_radio_operators",
+        "anchors": [
+          "hams"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Commercial_at",
+        "url": "https://en.wikipedia.org/wiki/Commercial_at",
+        "anchors": [
+          "commercial at"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Email",
+        "url": "https://en.wikipedia.org/wiki/Email",
+        "anchors": [
+          "e‑mail"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Percent_sign",
+        "url": "https://en.wikipedia.org/wiki/Percent_sign",
+        "anchors": [
+          "Percent"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Permille",
+        "url": "https://en.wikipedia.org/wiki/Permille",
+        "anchors": [
+          "permille"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Diacritic",
+        "url": "https://en.wikipedia.org/wiki/Diacritic",
+        "anchors": [
+          "diacritics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Gerke_code",
+        "url": "https://en.wikipedia.org/wiki/Gerke_code",
+        "anchors": [
+          "Gerke code"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Spanish_language",
+        "url": "https://en.wikipedia.org/wiki/Spanish_language",
+        "anchors": [
+          "Spanish"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Greek_letter",
+        "url": "https://en.wikipedia.org/wiki/Greek_letter",
+        "anchors": [
+          "Greek letter"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Russian_language",
+        "url": "https://en.wikipedia.org/wiki/Russian_language",
+        "anchors": [
+          "Russian"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bulgarian_language",
+        "url": "https://en.wikipedia.org/wiki/Bulgarian_language",
+        "anchors": [
+          "Bulgarian"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cyrillic_characters",
+        "url": "https://en.wikipedia.org/wiki/Cyrillic_characters",
+        "anchors": [
+          "Cyrillic characters"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bulgarian_alphabet",
+        "url": "https://en.wikipedia.org/wiki/Bulgarian_alphabet",
+        "anchors": [
+          "Bulgarian alphabet"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Permutation",
+        "url": "https://en.wikipedia.org/wiki/Permutation",
+        "anchors": [
+          "permutations"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Э",
+        "url": "https://en.wikipedia.org/wiki/%D0%AD",
+        "anchors": [
+          "Э"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ъ",
+        "url": "https://en.wikipedia.org/wiki/%D0%AA",
+        "anchors": [
+          "Ъ"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Kana",
+        "url": "https://en.wikipedia.org/wiki/Kana",
+        "anchors": [
+          "kana"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chinese_language",
+        "url": "https://en.wikipedia.org/wiki/Chinese_language",
+        "anchors": [
+          "Chinese"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chinese_telegraph_code",
+        "url": "https://en.wikipedia.org/wiki/Chinese_telegraph_code",
+        "anchors": [
+          "Chinese telegraph code"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chinese_characters",
+        "url": "https://en.wikipedia.org/wiki/Chinese_characters",
+        "anchors": [
+          "Chinese characters"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hangul",
+        "url": "https://en.wikipedia.org/wiki/Hangul",
+        "anchors": [
+          "hangul"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Latin_script",
+        "url": "https://en.wikipedia.org/wiki/Latin_script",
+        "anchors": [
+          "Latin script"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Korean_language",
+        "url": "https://en.wikipedia.org/wiki/Korean_language",
+        "anchors": [
+          "Korean"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "North_Atlantic",
+        "url": "https://en.wikipedia.org/wiki/North_Atlantic",
+        "anchors": [
+          "North Atlantic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mediterranean_Sea",
+        "url": "https://en.wikipedia.org/wiki/Mediterranean_Sea",
+        "anchors": [
+          "Mediterranean Sea"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "The_Codebreakers",
+        "url": "https://en.wikipedia.org/wiki/The_Codebreakers",
+        "anchors": [
+          "The Codebreakers"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "David_Kahn_(writer)",
+        "url": "https://en.wikipedia.org/wiki/David_Kahn_(writer)",
+        "anchors": [
+          "David Kahn"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "SIGINT",
+        "url": "https://en.wikipedia.org/wiki/SIGINT",
+        "anchors": [
+          "SIGINT"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ham_bands",
+        "url": "https://en.wikipedia.org/wiki/Ham_bands",
+        "anchors": [
+          "ham bands"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "ACP_131",
+        "url": "https://en.wikipedia.org/wiki/ACP_131",
+        "anchors": [
+          "ACP 131"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Guglielmo_Marconi",
+        "url": "https://en.wikipedia.org/wiki/Guglielmo_Marconi",
+        "anchors": [
+          "Guglielmo Marconi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hog-Morse",
+        "url": "https://en.wikipedia.org/wiki/Hog-Morse",
+        "anchors": [
+          "Hog-Morse"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Instructograph",
+        "url": "https://en.wikipedia.org/wiki/Instructograph",
+        "anchors": [
+          "Instructograph"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "NATO_phonetic_alphabet",
+        "url": "https://en.wikipedia.org/wiki/NATO_phonetic_alphabet",
+        "anchors": [
+          "NATO phonetic alphabet"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Radio_code",
+        "url": "https://en.wikipedia.org/wiki/Radio_code",
+        "anchors": [
+          "Radio code"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tap_code",
+        "url": "https://en.wikipedia.org/wiki/Tap_code",
+        "anchors": [
+          "Tap code"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wireless_telegraphy",
+        "url": "https://en.wikipedia.org/wiki/Wireless_telegraphy",
+        "anchors": [
+          "Wireless telegraphy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Curlie",
+        "url": "https://en.wikipedia.org/wiki/Curlie",
+        "anchors": [
+          "Curlie"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ],
+    "external": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d0/%C3%96%2C_%C3%98%2C_%C3%93_Morse_Code.oga/%C3%96%2C_%C3%98%2C_%C3%93_Morse_Code.oga.mp3",
+        "anchors": [
+          "▄▄▄ ▄▄▄ ▄▄▄ ▄"
+        ],
+        "count": 8,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/6/66/%C3%84%2C_%C3%86%2C_%C4%84_morse_code.oga/%C3%84%2C_%C3%86%2C_%C4%84_morse_code.oga.mp3",
+        "anchors": [
+          "▄ ▄▄▄ ▄ ▄▄▄"
+        ],
+        "count": 6,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/f/f7/%C3%87%2C%C4%88%2C%C4%86_Morse_Code.oga/%C3%87%2C%C4%88%2C%C4%86_Morse_Code.oga.mp3",
+        "anchors": [
+          "▄▄▄ ▄ ▄▄▄ ▄ ▄"
+        ],
+        "count": 6,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/3/3f/CH%2C_%C4%A4%2C_%C5%A0_Morse_Code.oga/CH%2C_%C4%A4%2C_%C5%A0_Morse_Code.oga.mp3",
+        "anchors": [
+          "▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄"
+        ],
+        "count": 6,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/5/57/%C3%89%2C_%C4%91%2C_%C4%98_Morse_Code.oga/%C3%89%2C_%C4%91%2C_%C4%98_Morse_Code.oga.mp3",
+        "anchors": [
+          "▄ ▄ ▄▄▄ ▄ ▄"
+        ],
+        "count": 6,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c4/Morse_Code_-_Plus.ogg/Morse_Code_-_Plus.ogg.mp3",
+        "anchors": [
+          "▄ ▄▄▄ ▄ ▄▄▄ ▄"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/80/%C3%80%2C_%C3%85_morse_code.oga/%C3%80%2C_%C3%85_morse_code.oga.mp3",
+        "anchors": [
+          "▄ ▄▄▄ ▄▄▄ ▄ ▄▄▄"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/86/%C3%88%2C_%C5%81_Morse_Code.oga/%C3%88%2C_%C5%81_Morse_Code.oga.mp3",
+        "anchors": [
+          "▄ ▄▄▄ ▄ ▄ ▄▄▄"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/0/05/%C3%91%2C_%C5%83_Morse_Code.oga/%C3%91%2C_%C5%83_Morse_Code.oga.mp3",
+        "anchors": [
+          "▄▄▄ ▄▄▄ ▄ ▄▄▄ ▄▄▄"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/a8/%C3%9C%2C_%C5%AC_Morse_Code.oga/%C3%9C%2C_%C5%AC_Morse_Code.oga.mp3",
+        "anchors": [
+          "▄ ▄ ▄▄▄ ▄▄▄"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/f/f3/A_morse_code.ogg/A_morse_code.ogg.mp3",
+        "anchors": [
+          "▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b1/B_morse_code.ogg/B_morse_code.ogg.mp3",
+        "anchors": [
+          "▄▄▄ ▄ ▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/25/C_morse_code.ogg/C_morse_code.ogg.mp3",
+        "anchors": [
+          "▄▄▄ ▄ ▄▄▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/9/92/D_morse_code.ogg/D_morse_code.ogg.mp3",
+        "anchors": [
+          "▄▄▄ ▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/e/e7/E_morse_code.ogg/E_morse_code.ogg.mp3",
+        "anchors": [
+          "▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/6/63/F_morse_code.ogg/F_morse_code.ogg.mp3",
+        "anchors": [
+          "▄ ▄ ▄▄▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/7/72/G_morse_code.ogg/G_morse_code.ogg.mp3",
+        "anchors": [
+          "▄▄▄ ▄▄▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/9/93/H_morse_code.ogg/H_morse_code.ogg.mp3",
+        "anchors": [
+          "▄ ▄ ▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d9/I_morse_code.ogg/I_morse_code.ogg.mp3",
+        "anchors": [
+          "▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/9/9e/J_morse_code.ogg/J_morse_code.ogg.mp3",
+        "anchors": [
+          "▄ ▄▄▄ ▄▄▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/6/6a/K_morse_code.ogg/K_morse_code.ogg.mp3",
+        "anchors": [
+          "▄▄▄ ▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/a8/L_morse_code.ogg/L_morse_code.ogg.mp3",
+        "anchors": [
+          "▄ ▄▄▄ ▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/9/97/M_morse_code.ogg/M_morse_code.ogg.mp3",
+        "anchors": [
+          "▄▄▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/5/5a/N_morse_code.ogg/N_morse_code.ogg.mp3",
+        "anchors": [
+          "▄▄▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/4/41/O_morse_code.ogg/O_morse_code.ogg.mp3",
+        "anchors": [
+          "▄▄▄ ▄▄▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c6/P_morse_code.ogg/P_morse_code.ogg.mp3",
+        "anchors": [
+          "▄ ▄▄▄ ▄▄▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/f/f0/Q_morse_code.ogg/Q_morse_code.ogg.mp3",
+        "anchors": [
+          "▄▄▄ ▄▄▄ ▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/e/ea/R_morse_code.ogg/R_morse_code.ogg.mp3",
+        "anchors": [
+          "▄ ▄▄▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d8/S_morse_code.ogg/S_morse_code.ogg.mp3",
+        "anchors": [
+          "▄ ▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/b/ba/T_morse_code.ogg/T_morse_code.ogg.mp3",
+        "anchors": [
+          "▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/3/34/U_morse_code.ogg/U_morse_code.ogg.mp3",
+        "anchors": [
+          "▄ ▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/3/37/V_morse_code.ogg/V_morse_code.ogg.mp3",
+        "anchors": [
+          "▄ ▄ ▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/6/68/W_morse_code.ogg/W_morse_code.ogg.mp3",
+        "anchors": [
+          "▄ ▄▄▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/b/be/X_morse_code.ogg/X_morse_code.ogg.mp3",
+        "anchors": [
+          "▄▄▄ ▄ ▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/5/5d/Y_morse_code.ogg/Y_morse_code.ogg.mp3",
+        "anchors": [
+          "▄▄▄ ▄ ▄▄▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/7/7a/Z_morse_code.ogg/Z_morse_code.ogg.mp3",
+        "anchors": [
+          "▄▄▄ ▄▄▄ ▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/5/5d/0_number_morse_code.ogg/0_number_morse_code.ogg.mp3",
+        "anchors": [
+          "▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/9/9b/1_number_morse_code.ogg/1_number_morse_code.ogg.mp3",
+        "anchors": [
+          "▄ ▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/e/ee/2_number_morse_code.ogg/2_number_morse_code.ogg.mp3",
+        "anchors": [
+          "▄ ▄ ▄▄▄ ▄▄▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/f/fd/3_number_morse_code.ogg/3_number_morse_code.ogg.mp3",
+        "anchors": [
+          "▄ ▄ ▄ ▄▄▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/5/5c/4_number_morse_code.ogg/4_number_morse_code.ogg.mp3",
+        "anchors": [
+          "▄ ▄ ▄ ▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/5/52/5_number_morse_code.ogg/5_number_morse_code.ogg.mp3",
+        "anchors": [
+          "▄ ▄ ▄ ▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/4/4d/6_number_morse_code.ogg/6_number_morse_code.ogg.mp3",
+        "anchors": [
+          "▄▄▄ ▄ ▄ ▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/1/14/7_number_morse_code.ogg/7_number_morse_code.ogg.mp3",
+        "anchors": [
+          "▄▄▄ ▄▄▄ ▄ ▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/3/3a/8_number_morse_code.ogg/8_number_morse_code.ogg.mp3",
+        "anchors": [
+          "▄▄▄ ▄▄▄ ▄▄▄ ▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/4/44/9_number_morse_code.ogg/9_number_morse_code.ogg.mp3",
+        "anchors": [
+          "▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/8a/Morse_Code_-_Period.ogg/Morse_Code_-_Period.ogg.mp3",
+        "anchors": [
+          "▄ ▄▄▄ ▄ ▄▄▄ ▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/24/Morse_Code_-_Comma.ogg/Morse_Code_-_Comma.ogg.mp3",
+        "anchors": [
+          "▄▄▄ ▄▄▄ ▄ ▄ ▄▄▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c4/Morse_Code_-_Question_Mark.ogg/Morse_Code_-_Question_Mark.ogg.mp3",
+        "anchors": [
+          "▄ ▄ ▄▄▄ ▄▄▄ ▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c1/Morse_Code_-_Apostrope.ogg/Morse_Code_-_Apostrope.ogg.mp3",
+        "anchors": [
+          "▄ ▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/4/49/Morse_Code_-_Slash.ogg/Morse_Code_-_Slash.ogg.mp3",
+        "anchors": [
+          "▄▄▄ ▄ ▄ ▄▄▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/a5/Morse_Code_-_Parenthesis_%28Open%29.ogg/Morse_Code_-_Parenthesis_%28Open%29.ogg.mp3",
+        "anchors": [
+          "▄▄▄ ▄ ▄▄▄ ▄▄▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/e/e4/Morse_Code_-_Parenthesis_%28Close%29.ogg/Morse_Code_-_Parenthesis_%28Close%29.ogg.mp3",
+        "anchors": [
+          "▄▄▄ ▄ ▄▄▄ ▄▄▄ ▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/e/e3/Morse_Code_-_Colon.ogg/Morse_Code_-_Colon.ogg.mp3",
+        "anchors": [
+          "▄▄▄ ▄▄▄ ▄▄▄ ▄ ▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/4/48/Morse_Code_-_Equals.ogg/Morse_Code_-_Equals.ogg.mp3",
+        "anchors": [
+          "▄▄▄ ▄ ▄ ▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/e/e7/Morse_Code_-_Hyphen%2C_Minus.ogg/Morse_Code_-_Hyphen%2C_Minus.ogg.mp3",
+        "anchors": [
+          "▄▄▄ ▄ ▄ ▄ ▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/e/e9/Morse_Code_-_Quotation_Mark.ogg/Morse_Code_-_Quotation_Mark.ogg.mp3",
+        "anchors": [
+          "▄ ▄▄▄ ▄ ▄ ▄▄▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/87/Morse_Code_-_At_%28Commercial_At%29.ogg/Morse_Code_-_At_%28Commercial_At%29.ogg.mp3",
+        "anchors": [
+          "▄ ▄▄▄ ▄▄▄ ▄ ▄▄▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/20/Morse_Code_-_Exclamation_Point.ogg/Morse_Code_-_Exclamation_Point.ogg.mp3",
+        "anchors": [
+          "▄▄▄ ▄ ▄▄▄ ▄ ▄▄▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/1/10/Morse_Code_-_Ampersand.ogg/Morse_Code_-_Ampersand.ogg.mp3",
+        "anchors": [
+          "▄ ▄▄▄ ▄ ▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/0/03/Morse_Code_-_Semicolon.ogg/Morse_Code_-_Semicolon.ogg.mp3",
+        "anchors": [
+          "▄▄▄ ▄ ▄▄▄ ▄ ▄▄▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/8c/Morse_Code_-_Underscore.ogg/Morse_Code_-_Underscore.ogg.mp3",
+        "anchors": [
+          "▄ ▄ ▄▄▄ ▄▄▄ ▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/4/4a/Morse_Code_-_Dollar_Sign.ogg/Morse_Code_-_Dollar_Sign.ogg.mp3",
+        "anchors": [
+          "▄ ▄ ▄ ▄▄▄ ▄ ▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/a1/Morse_Prosign_-_End_of_Work.oga/Morse_Prosign_-_End_of_Work.oga.mp3",
+        "anchors": [
+          "▄ ▄ ▄ ▄▄▄ ▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/f/fd/Morse_Prosign_-_Error.oga/Morse_Prosign_-_Error.oga.mp3",
+        "anchors": [
+          "▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/82/Morse_Prosign_-_Invitation_to_Transmit.oga/Morse_Prosign_-_Invitation_to_Transmit.oga.mp3",
+        "anchors": [
+          "▄▄▄ ▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/9/9d/Morse_Prosign_-_Starting_Signal.oga/Morse_Prosign_-_Starting_Signal.oga.mp3",
+        "anchors": [
+          "▄▄▄ ▄ ▄▄▄ ▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/2e/Morse_Prosign_-_Understood.oga/Morse_Prosign_-_Understood.oga.mp3",
+        "anchors": [
+          "▄ ▄ ▄ ▄▄▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/f/fc/Morse_Prosign_-_Wait.oga/Morse_Prosign_-_Wait.oga.mp3",
+        "anchors": [
+          "▄ ▄▄▄ ▄ ▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/89/%C3%90_Morse_Code.oga/%C3%90_Morse_Code.oga.mp3",
+        "anchors": [
+          "▄ ▄ ▄▄▄ ▄▄▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d2/%C4%9C_Morse_Code.oga/%C4%9C_Morse_Code.oga.mp3",
+        "anchors": [
+          "▄▄▄ ▄▄▄ ▄ ▄▄▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/f/fa/%C4%B4_Morse_Code.oga/%C4%B4_Morse_Code.oga.mp3",
+        "anchors": [
+          "▄ ▄▄▄ ▄▄▄ ▄▄▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/0/08/%C5%9A_Morse_Code.oga/%C5%9A_Morse_Code.oga.mp3",
+        "anchors": [
+          "▄ ▄ ▄ ▄▄▄ ▄ ▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/c/cb/%C5%9C_Morse_Code.oga/%C5%9C_Morse_Code.oga.mp3",
+        "anchors": [
+          "▄ ▄ ▄ ▄▄▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/8c/%C3%9E_Morse_Code.oga/%C3%9E_Morse_Code.oga.mp3",
+        "anchors": [
+          "▄ ▄▄▄ ▄▄▄ ▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/25/%C5%B9_Morse_Code.oga/%C5%B9_Morse_Code.oga.mp3",
+        "anchors": [
+          "▄▄▄ ▄▄▄ ▄ ▄ ▄▄▄ ▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/f/f1/%C5%BB_Morse_Code.oga/%C5%BB_Morse_Code.oga.mp3",
+        "anchors": [
+          "▄▄▄ ▄▄▄ ▄ ▄ ▄▄▄"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://en.wiktionary.org/wiki/what_hath_God_wrought",
+        "anchors": [
+          "What hath God wrought"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://www.britannica.com/topic/Morse-Code",
+        "anchors": [
+          "\"Morse code\""
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://curlie.org/Recreation/Radio/Amateur/Morse_Code/",
+        "anchors": [
+          "\"Morse code\""
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.dxzone.com/catalog/Operating_Modes/Morse_code/",
+        "anchors": [
+          "\"Morse Code resources\""
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://starling.us/free/morse",
+        "anchors": [
+          "\"Morse code MP3 practice files\""
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=R-petiNdCIY",
+        "anchors": [
+          "International Morse code, hand sending"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://ghostarchive.org/varchive/youtube/20211211/R-petiNdCIY",
+        "anchors": [
+          "Ghostarchive"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20120707064749/https://www.youtube.com/watch?v=R-petiNdCIY",
+        "anchors": [
+          "Wayback Machine"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20120707064836/https://www.youtube.com/watch?v=iC5RQNSSZH0",
+        "anchors": [
+          "Technique of hand sending"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=iC5RQNSSZH0",
+        "anchors": [
+          "the original"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.nonstopsystems.com/radio/pdf-hell/article-hell-codw-sowp.pdf",
+        "anchors": [
+          "\"Codes of the World\""
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ]
+  },
+  "stats": {
+    "n_categories": 6,
+    "n_sections": 38,
+    "n_tables": 2,
+    "n_local": 8,
+    "n_wiki": 341,
+    "n_external": 88,
+    "md_chars": 86373
+  }
+}

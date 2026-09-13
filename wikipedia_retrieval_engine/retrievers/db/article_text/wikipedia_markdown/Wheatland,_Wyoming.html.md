@@ -1,0 +1,179 @@
+# Wheatland, Wyoming
+
+## Infobox
+
+- **Country:** United States
+- **State:** Wyoming
+- **County:** Platte
+- **• Total:** 4.10 sq mi (10.61 km 2 )
+- **• Land:** 4.10 sq mi (10.61 km 2 )
+- **• Water:** 0 sq mi (0.00 km 2 )
+- **Elevation:** 4,751 ft (1,448 m)
+- **• Density:** 876/sq mi (338.1/km 2 )
+- **Time zone:** UTC-7 ( Mountain (MST) )
+- **• Summer ( DST ):** UTC-6 (MDT)
+- **ZIP code:** 82201
+- **Area code:** 307
+- **FIPS code:** 56-83040 [ 3 ]
+- **GNIS feature ID:** 1609173 [ 4 ]
+- **Website:** Official website
+
+**Wheatland** is a town in and the [county seat](/wiki/County_seat) of [Platte County](/wiki/Platte_County,_Wyoming) in southeastern [Wyoming](/wiki/Wyoming), United States. The population was 3,588 at the [2020 census](/wiki/2020_United_States_census).
+
+## History
+
+Before the late 19th century, the area around the future site of Wheatland was a flat, arid landscape with desert-like vegetation. In 1883 local rancher and judge [Joseph M. Carey](/wiki/Joseph_M._Carey), along with [Horace Plunkett](/wiki/Horace_Plunkett), [John Hoyt](/wiki/John_Wesley_Hoyt), [Morton Post](/wiki/Morton_Post), [Francis E. Warren](/wiki/Francis_E._Warren), William Irvine, and Andrew Gilchrist, established the Wyoming Development Company. The company hoped to irrigate in the Wheatland Flats and profit from new development.
+
+By the fall of 1883 an irrigation system was constructed on the Wheatland flats including a 2,380 foot long tunnel to divert water for irrigation into Bluegrass Creek and the first two of the system's canals. The [Cheyenne and Northern Railway](/wiki/Cheyenne_and_Northern_Railway) line reached the Wheatland flats in July 1887, eventually extending to the [Wyoming Central Railway](/wiki/Wyoming_Central_Railway) at Wendover. The line was eventually sold to the [Colorado and Southern Railway](/wiki/Colorado_and_Southern_Railway), controlled by the [Chicago, Burlington, and Quincy Railroad](/wiki/Chicago,_Burlington,_and_Quincy_Railroad), and operated at [Wheatland station](/wiki/Wheatland_station). Lots in the town of Wheatland were auctioned in 1894. By 1915 many farms were established in the irrigation district and the population of the flats was 5,277.
+
+In 1911 Platte County was created from a portion of [Albany County](/wiki/Albany_County,_Wyoming), and Wheatland was selected as the county seat. The [Platte County Courthouse](/wiki/Platte_County_Courthouse_(Wyoming)) was built in Wheatland in 1917.
+
+The Wheatland Irrigation District is still the largest privately owned irrigation system in the country.
+
+## Geography
+
+Wheatland City Hall
+
+Wheatland is located at [42°3′14″N 104°57′34″W / 42.05389°N 104.95944°W / 42.05389; -104.95944](https://geohack.toolforge.org/geohack.php?pagename=Wheatland,_Wyoming&params=42_3_14_N_104_57_34_W_type:city) (42.053917, –104.959460).
+According to the [United States Census Bureau](/wiki/United_States_Census_Bureau), the town has a total area of 4.10 square miles (10.62 km2), all land.
+
+## Demographics
+
+Historical population
+
+| Census | Pop. | Note | %± |
+| --- | --- | --- | --- |
+| [1910](/wiki/1910_United_States_census) | 796 |  | — |
+| [1920](/wiki/1920_United_States_census) | 1,336 |  | 67.8% |
+| [1930](/wiki/1930_United_States_census) | 1,997 |  | 49.5% |
+| [1940](/wiki/1940_United_States_census) | 2,110 |  | 5.7% |
+| [1950](/wiki/1950_United_States_census) | 2,286 |  | 8.3% |
+| [1960](/wiki/1960_United_States_census) | 2,350 |  | 2.8% |
+| [1970](/wiki/1970_United_States_census) | 2,498 |  | 6.3% |
+| [1980](/wiki/1980_United_States_census) | 5,816 |  | 132.8% |
+| [1990](/wiki/1990_United_States_census) | 3,271 |  | −43.8% |
+| [2000](/wiki/2000_United_States_census) | 3,548 |  | 8.5% |
+| [2010](/wiki/2010_United_States_census) | 3,627 |  | 2.2% |
+| [2020](/wiki/2020_United_States_census) | 3,588 |  | −1.1% |
+| 2023 (est.) | 3,509 |  | −2.2% |
+| [U.S. Decennial Census](https://www.census.gov/programs-surveys/decennial-census.html) | | | |
+
+### 2020 census
+
+As of the [2020 census](/wiki/2020_United_States_census), Wheatland had a population of 3,588. The median age was 45.3 years. 20.3% of residents were under the age of 18 and 24.5% of residents were 65 years of age or older. For every 100 females there were 93.0 males, and for every 100 females age 18 and over there were 91.1 males age 18 and over.
+
+0.0% of residents lived in urban areas, while 100.0% lived in rural areas.
+
+There were 1,584 households in Wheatland, of which 25.6% had children under the age of 18 living in them. Of all households, 44.8% were married-couple households, 19.8% were households with a male householder and no spouse or partner present, and 28.7% were households with a female householder and no spouse or partner present. About 35.0% of all households were made up of individuals and 18.3% had someone living alone who was 65 years of age or older.
+
+There were 1,903 housing units, of which 16.8% were vacant. The homeowner vacancy rate was 2.8% and the rental vacancy rate was 13.5%.
+
+Racial composition as of the 2020 census
+
+| Race | Number | Percent |
+| --- | --- | --- |
+| [White](/wiki/White_Americans) | 3,141 | 87.5% |
+| [Black or African American](/wiki/African_Americans) | 9 | 0.3% |
+| [American Indian and Alaska Native](/wiki/Native_Americans_in_the_United_States) | 37 | 1.0% |
+| [Asian](/wiki/Asian_Americans) | 37 | 1.0% |
+| [Native Hawaiian](/wiki/Native_Hawaiians) and [Other Pacific Islander](/wiki/Pacific_Islander) | 0 | 0.0% |
+| Some other race | 146 | 4.1% |
+| [Two or more races](/wiki/Multiracial_Americans) | 218 | 6.1% |
+| *[Hispanic or Latino](/wiki/Hispanic_and_Latino_Americans) (of any race)* | 373 | 10.4% |
+
+### 2010 census
+
+As of the [census](/wiki/Census) of 2010, there were 3,627 people, 1,657 households, and 974 families living in the town. The [population density](/wiki/Population_density) was 884.6 inhabitants per square mile (341.5/km2). There were 1,879 housing units at an average density of 458.3 per square mile (177.0/km2). The racial makeup of the town was 95.1% [White](/wiki/White_(U.S._Census)), 0.1% [African American](/wiki/African_American_(U.S._Census)), 0.4% [Native American](/wiki/Native_American_(U.S._Census)), 0.7% [Asian](/wiki/Asian_(U.S._Census)), 2.1% from [other races](/wiki/Race_(U.S._Census)), and 1.6% from two or more races. [Hispanic](/wiki/Hispanic_(U.S._Census)) or [Latino](/wiki/Latino_(U.S._Census)) of any race were 7.4% of the population.
+
+There were 1,657 households, of which 25.0% had children under the age of 18 living with them, 46.0% were [married couples](/wiki/Marriage) living together, 8.8% had a female householder with no husband present, 3.9% had a male householder with no wife present, and 41.2% were non-families. 37.5% of all households were made up of individuals, and 19.3% had someone living alone who was 65 years of age or older. The average household size was 2.13 and the average family size was 2.78.
+
+The median age in the town was 45.4 years. 20.7% of residents were under the age of 18; 7.1% were between the ages of 18 and 24; 21.6% were from 25 to 44; 28.3% were from 45 to 64; and 22.3% were 65 years of age or older. The gender makeup of the town was 48.7% male and 51.3% female.
+
+### 2000 census
+
+City limits
+
+As of the [census](/wiki/Census) of 2000, there were 3,548 people, 1,539 households, and 980 families living in the town. The [population density](/wiki/Population_density) was 837.6 people per square mile (323.1/km2). There were 1,764 housing units at an average density of 416.4 per square mile (160.6/km2). The racial makeup of the town was 96.00% [White](/wiki/White_(U.S._Census)), 0.31% [African American](/wiki/African_American_(U.S._Census)), 0.68% [Native American](/wiki/Native_American_(U.S._Census)), 0.34% [Asian](/wiki/Asian_(U.S._Census)), 1.89% from [other races](/wiki/Race_(United_States_Census)), and 0.79% from two or more races. [Hispanic](/wiki/Hispanic_(U.S._Census)) or [Latino](/wiki/Latino_(U.S._Census)) of any race were 6.54% of the population.
+
+There were 1,539 households, out of which 27.0% had children under the age of 18 living with them, 52.7% were [married couples](/wiki/Marriage) living together, 7.9% had a female householder with no husband present, and 36.3% were non-families. 32.2% of all households were made up of individuals, and 16.8% had someone living alone who was 65 years of age or older. The average household size was 2.24 and the average family size was 2.83.
+
+In the town, the population was spread out, with 22.8% under the age of 18, 7.2% from 18 to 24, 22.7% from 25 to 44, 26.5% from 45 to 64, and 20.8% who were 65 years of age or older. The median age was 43 years. For every 100 females, there were 89.5 males. For every 100 females age 18 and over, there were 88.8 males.
+
+The median income for a household in the town was $35,208, and the median income for a family was $42,623. Males had a median income of $34,940 versus $20,185 for females. The [per capita income](/wiki/Per_capita_income) for the town was $19,069. About 6.9% of families and 8.9% of the population were below the [poverty line](/wiki/Poverty_line), including 9.9% of those under age 18 and 8.6% of those age 65 or over.
+
+## Climate
+
+Wheatland experiences a [semi-arid climate](/wiki/Semi-arid_climate) ([Köppen](/wiki/K%C3%B6ppen_climate_classification) *BSk*) with cold, dry winters and hot, wetter summers.
+
+| Climate data for Wheatland 4N, Wyoming (1991–2020 normals, extremes 1893–present) | | | | | | | | | | | | | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Month | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec | Year |
+| Record high °F (°C) | 70 (21) | 74 (23) | 86 (30) | 91 (33) | 98 (37) | 108 (42) | 107 (42) | 112 (44) | 101 (38) | 92 (33) | 86 (30) | 76 (24) | 112 (44) |
+| Mean maximum °F (°C) | 60.2 (15.7) | 63.2 (17.3) | 74.2 (23.4) | 80.9 (27.2) | 88.9 (31.6) | 95.7 (35.4) | 99.9 (37.7) | 98.0 (36.7) | 94.2 (34.6) | 84.2 (29.0) | 70.7 (21.5) | 61.7 (16.5) | 100.6 (38.1) |
+| Mean daily maximum °F (°C) | 43.3 (6.3) | 45.1 (7.3) | 55.4 (13.0) | 62.1 (16.7) | 71.1 (21.7) | 82.7 (28.2) | 90.3 (32.4) | 89.0 (31.7) | 80.2 (26.8) | 65.6 (18.7) | 52.4 (11.3) | 42.8 (6.0) | 65.0 (18.3) |
+| Daily mean °F (°C) | 30.0 (−1.1) | 30.8 (−0.7) | 39.8 (4.3) | 46.1 (7.8) | 55.1 (12.8) | 65.4 (18.6) | 72.2 (22.3) | 70.5 (21.4) | 61.6 (16.4) | 48.8 (9.3) | 38.0 (3.3) | 29.5 (−1.4) | 49.0 (9.4) |
+| Mean daily minimum °F (°C) | 16.6 (−8.6) | 16.5 (−8.6) | 24.1 (−4.4) | 30.0 (−1.1) | 39.2 (4.0) | 48.0 (8.9) | 54.1 (12.3) | 52.0 (11.1) | 43.1 (6.2) | 32.0 (0.0) | 23.7 (−4.6) | 16.2 (−8.8) | 33.0 (0.6) |
+| Mean minimum °F (°C) | −12.2 (−24.6) | −6.1 (−21.2) | 5.7 (−14.6) | 15.8 (−9.0) | 26.8 (−2.9) | 39.2 (4.0) | 45.6 (7.6) | 42.9 (6.1) | 31.0 (−0.6) | 15.1 (−9.4) | −0.4 (−18.0) | −10.0 (−23.3) | −19.5 (−28.6) |
+| Record low °F (°C) | −36 (−38) | −36 (−38) | −25 (−32) | −22 (−30) | 13 (−11) | 28 (−2) | 29 (−2) | 25 (−4) | 12 (−11) | −9 (−23) | −19 (−28) | −39 (−39) | −39 (−39) |
+| Average [precipitation](/wiki/Precipitation) inches (mm) | 0.28 (7.1) | 0.42 (11) | 0.74 (19) | 1.70 (43) | 2.70 (69) | 2.12 (54) | 1.73 (44) | 1.17 (30) | 1.29 (33) | 1.14 (29) | 0.45 (11) | 0.39 (9.9) | 14.13 (359) |
+| Average snowfall inches (cm) | 4.6 (12) | 7.8 (20) | 7.4 (19) | 5.4 (14) | 1.4 (3.6) | 0.0 (0.0) | 0.0 (0.0) | 0.0 (0.0) | 0.1 (0.25) | 3.2 (8.1) | 4.3 (11) | 5.7 (14) | 39.9 (101) |
+| Average precipitation days (≥ 0.01 in) | 2.7 | 3.4 | 3.6 | 5.7 | 7.8 | 7.5 | 6.3 | 5.8 | 5.4 | 4.3 | 3.0 | 2.8 | 58.3 |
+| Average snowy days (≥ 0.1 in) | 2.7 | 3.2 | 2.8 | 2.0 | 0.6 | 0.0 | 0.0 | 0.0 | 0.2 | 1.1 | 2.4 | 3.1 | 18.1 |
+| Source: [NOAA](/wiki/NOAA) | | | | | | | | | | | | | |
+
+## Education
+
+Public education in the town of Wheatland is provided by [Platte County School District #1](/wiki/Platte_County_School_District_Number_1). Campuses serving the town include Libbey Elementary School (grades K–2), West Elementary School (grades 3–5), Wheatland Middle School (grades 6–8), and [Wheatland High School](/wiki/Wheatland_High_School_(Wyoming)) (grades 9–12).
+
+Wheatland has a [public library](/wiki/Public_library), a branch of the Platte County Public Library System.
+
+## Transport
+
+### Highways
+
+- [I-25](/wiki/Interstate_25_in_Wyoming) - bypasses on the west.
+- [US 87](/wiki/U.S._Route_87_in_Wyoming) - north-south route through Wheatland.
+- [WYO 310](/wiki/Wyoming_Highway_310) (Hightower Rd.)
+- [WYO 312](/wiki/Wyoming_Highway_312) (Ferguson Rd.)
+- [WYO 316](/wiki/Wyoming_Highway_316) (Antelope Gap Rd.)
+- [WYO 320](/wiki/Wyoming_Highway_320) (No. Wheatland Hwy.)
+
+### Transit
+
+Intercity bus service to the city is provided by Express Arrow.
+
+### Air Transport
+
+Wheatland is served by Phifer Airfield just east of town on State Route 316 (Gilchrist St./Antelope Gap Rd.). However, the field has no direct commercial service, residents can choose between [Western Nebraska Regional Airport](/wiki/Western_Nebraska_Regional_Airport), [Casper–Natrona County International Airport](/wiki/Casper%E2%80%93Natrona_County_International_Airport), and [Cheyenne Regional Airport](/wiki/Cheyenne_Regional_Airport).
+
+### Railroads
+
+Wheatland is the home of the historical [Wheatland station](/wiki/Wheatland_station), then operated by [Union Pacific, Denver and Gulf Railway](/wiki/Union_Pacific,_Denver_and_Gulf_Railway). The station is not open today for revenue service, though the tracks through Wheatland are currently owned and used by [Berkshire Hathaway](/wiki/Berkshire_Hathaway)'s [BNSF Railway](/wiki/BNSF_Railway) after a series of acquisitions which gave BNSF the Wheatland assets formerly operated by Union Pacific, Denver and Gulf. BNSF currently has small offices located in Wheatland.
+
+## Arts and culture
+
+Wheatland hosts the annual Platte County Fair & Rodeo, usually held the second full week of August, at the fairgrounds on the east edge of town at Front Street and Antelope Gap Road.
+
+The horse **Steamboat**, the model for the [bucking horse and rider](/wiki/Bucking_horse_and_rider) motif on the Wyoming license plate, was stabled near Wheatland in a barn owned and maintained as a historical structure by Mike and Linda Holst. Steamboat is also the logo for the [University of Wyoming](/wiki/University_of_Wyoming).
+
+## Notable people
+
+- [Deborah Alden](/wiki/Deborah_Alden), member of the [Wyoming House of Representatives](/wiki/Wyoming_House_of_Representatives)
+- [Benjamin N. Bellis](/wiki/Benjamin_N._Bellis) (1924–2019), United States Air Force Lieutenant General
+- [Casey Bramlet](/wiki/Casey_Bramlet), NFL quarterback
+- [Freckles Brown](/wiki/Freckles_Brown) (1921–1987), [Professional Rodeo Cowboys Association](/wiki/Professional_Rodeo_Cowboys_Association) world champion bull rider
+- [Edward Bryant](/wiki/Edward_Bryant) (1945–2017), science fiction writer, fantasy author
+- [Jim Geringer](/wiki/Jim_Geringer) (born 1944), former [governor of Wyoming](/wiki/List_of_governors_of_Wyoming)
+- [Robert Mills Grant](/wiki/Robert_Mills_Grant) (1926–2012), rancher and [Republican](/wiki/Republican_Party_(United_States)) member of the [Wyoming House of Representatives](/wiki/Wyoming_House_of_Representatives) from 1983 to 1992
+- [Jeremy Haroldson](/wiki/Jeremy_Haroldson), pastor, member of the [Wyoming House of Representatives](/wiki/Wyoming_House_of_Representatives)
+- [Floyd Shaman](/wiki/Floyd_Shaman) (1935–2005), sculptor
+- [Irving W. Twiford](/wiki/Irving_W._Twiford) (1898–1988), member of the [Wyoming House of Representatives](/wiki/Wyoming_House_of_Representatives)
+- [Dennis Utter](/wiki/Dennis_Utter) (1939–2011), [Nebraska](/wiki/Nebraska) state legislator
+- [Charles Hoskinson](/wiki/Charles_Hoskinson) (born 1987), founder of [Cardano (blockchain platform)](/wiki/Cardano_(blockchain_platform)), co-founder of [Ethereum](/wiki/Ethereum)
+
+## References
+
+## External links
+
+- [Platte County Record Times](http://www.pcrecordtimes.com/v2_main_page.php)
+- [Wheaterville News](http://www.wheaterville.com)

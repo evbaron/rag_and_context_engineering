@@ -1,0 +1,2642 @@
+{
+  "source": "Pioneer_11.html",
+  "title": "Pioneer 11",
+  "wiki_title": "Pioneer_11",
+  "categories": [
+    "1973 in spaceflight",
+    "Derelict space probes",
+    "Missions to Jupiter",
+    "Missions to Saturn",
+    "Pioneer program",
+    "Spacecraft escaping the Solar System",
+    "Spacecraft launched by Atlas-Centaur rockets",
+    "Spacecraft launched in 1973",
+    "Missions to Titan (moon)",
+    "Missions to Europa (moon)"
+  ],
+  "sections": [
+    {
+      "level": 2,
+      "id": "Mission_background",
+      "title": "Mission background"
+    },
+    {
+      "level": 3,
+      "id": "History",
+      "title": "History"
+    },
+    {
+      "level": 3,
+      "id": "Spacecraft_design",
+      "title": "Spacecraft design"
+    },
+    {
+      "level": 4,
+      "id": "Attitude_control_and_propulsion",
+      "title": "Attitude control and propulsion"
+    },
+    {
+      "level": 4,
+      "id": "Communications",
+      "title": "Communications"
+    },
+    {
+      "level": 4,
+      "id": "Power",
+      "title": "Power"
+    },
+    {
+      "level": 4,
+      "id": "Computer",
+      "title": "Computer"
+    },
+    {
+      "level": 4,
+      "id": "Scientific_instruments",
+      "title": "Scientific instruments"
+    },
+    {
+      "level": 2,
+      "id": "Mission_profile",
+      "title": "Mission profile"
+    },
+    {
+      "level": 3,
+      "id": "Launch_and_trajectory",
+      "title": "Launch and trajectory"
+    },
+    {
+      "level": 3,
+      "id": "Encounter_with_Jupiter",
+      "title": "Encounter with Jupiter"
+    },
+    {
+      "level": 3,
+      "id": "Encounter_with_Saturn",
+      "title": "Encounter with Saturn"
+    },
+    {
+      "level": 3,
+      "id": "Interstellar_mission",
+      "title": "Interstellar mission"
+    },
+    {
+      "level": 3,
+      "id": "Timeline",
+      "title": "Timeline"
+    },
+    {
+      "level": 2,
+      "id": "Current_status",
+      "title": "Current status"
+    },
+    {
+      "level": 2,
+      "id": "Pioneer_anomaly",
+      "title": "Pioneer anomaly"
+    },
+    {
+      "level": 2,
+      "id": "Pioneer_plaque",
+      "title": "Pioneer plaque"
+    },
+    {
+      "level": 2,
+      "id": "Commemoration",
+      "title": "Commemoration"
+    },
+    {
+      "level": 2,
+      "id": "Gallery",
+      "title": "Gallery"
+    },
+    {
+      "level": 2,
+      "id": "See_also",
+      "title": "See also"
+    },
+    {
+      "level": 2,
+      "id": "References",
+      "title": "References"
+    },
+    {
+      "level": 3,
+      "id": "Bibliography",
+      "title": "Bibliography"
+    },
+    {
+      "level": 2,
+      "id": "External_links",
+      "title": "External links"
+    }
+  ],
+  "infobox": {
+    "title": "",
+    "fields": {
+      "Mission type": "Planetary / Heliosphere exploration",
+      "Operator": "NASA / Ames",
+      "COSPAR ID": "1973-019A",
+      "SATCAT no.": "6421",
+      "Website": "science.nasa.gov",
+      "Mission duration": "22 years, 7 months and 19 days",
+      "Spacecraft": "Pioneer G",
+      "Manufacturer": "TRW",
+      "Launch mass": "258.5 kg (570 lb) [ 1 ]",
+      "Power": "155 watts (at launch)",
+      "Launch date": "April 6, 1973, 02:11:00 ( 1973-04-06UTC02:11Z ) UTC [ 1 ]",
+      "Rocket": "Atlas SLV-3D Centaur-D1A Star-37E",
+      "Launch site": "Cape Canaveral LC-36B",
+      "Disposal": "Decommissioned",
+      "Last contact": "November 24, 1995 ( 1995-11-25 )",
+      "Closest approach": "December 3, 1974",
+      "Distance": "43,000 km (27,000 mi)"
+    }
+  },
+  "tables": [
+    {
+      "caption": null,
+      "headers": [
+        "Helium Vector Magnetometer ( HVM )"
+      ],
+      "rows": [
+        [
+          "",
+          "Measures the fine structure of the interplanetary magnetic field, mapped the Jovian magnetic field, and provides magnetic field measurements to evaluate solar wind interaction with Jupiter. [ 14 ] Principal investigator: Edward Smith / JPL Data: PDS/PPI data catalog, NSSDC data archive"
+        ],
+        [
+          "Quadrispherical Plasma Analyzer"
+        ],
+        [
+          "",
+          "Peer through a hole in the large dish-shaped antenna to detect particles of the solar wind originating from the Sun. [ 15 ] Principal investigator: Aaron Barnes / NASA Ames Research Center ( archived website ) [ 16 ] Data: PDS/PPI data catalog, NSSDC data archive"
+        ],
+        [
+          "Charged Particle Instrument ( CPI )"
+        ],
+        [
+          "",
+          "Detects cosmic rays in the Solar System. [ 17 ] Principal investigator: John Simpson / University of Chicago [ 16 ] Data: NSSDC data archive"
+        ],
+        [
+          "Cosmic Ray Telescope ( CRT )"
+        ],
+        [
+          "",
+          "Collects data on the composition of the cosmic ray particles and their energy ranges. [ 18 ] Principal investigator: Frank B. McDonald / NASA Goddard Space Flight Center [ 16 ] Data: PDS/PPI data catalog, NSSDC data archive"
+        ],
+        [
+          "Geiger Tube Telescope ( GTT )"
+        ],
+        [
+          "",
+          "Surveys the intensities, energy spectra, and angular distributions of electrons and protons along the spacecraft's path through the radiation belts of Jupiter and Saturn. [ 19 ] Principal investigator: James A. Van Allen / University of Iowa ( website ) [ 16 ] Data: PDS/PPI data catalog, NSSDC data archive, NSSDC Jupiter data archive"
+        ],
+        [
+          "Trapped Radiation Detector ( TRD )"
+        ],
+        [
+          "",
+          "Includes an unfocused Cerenkov counter that detects the light emitted in a particular direction as particles passed through it recording electrons of energy, 0.5 to 12 MeV, an electron scatter detector for electrons of energy, 100 to 400 keV, and a minimum ionizing detector consisting of a solid-state diode that measured minimum ionizing particles (<3 MeV) and protons in the range of 50 to 350 MeV. [ 20 ] Principal investigator: R. Fillius / University of California San Diego [ 16 ] Data: NSSDC hourly data archive, NSSDC Saturn data archive"
+        ],
+        [
+          "Meteoroid Detectors"
+        ],
+        [
+          "",
+          "Twelve panels of pressurized cell detectors mounted on the back of the main dish antenna record penetrating impacts of small meteoroids. [ 21 ] Principal investigator: William Kinard / NASA Langley Research Center [ 16 ] Data: NSSDC data archive list"
+        ],
+        [
+          "Asteroid/Meteoroid Detector ( AMD )"
+        ],
+        [
+          "",
+          "Meteoroid-asteroid detector looks into space with four non-imaging telescopes to track particles ranging from close by bits of dust to distant large asteroids. [ 22 ] Principal investigator: Robert Soberman / General Electric Company [ 16 ] Data: NSSDC data archive list"
+        ],
+        [
+          "Ultraviolet Photometer"
+        ],
+        [
+          "",
+          "Ultraviolet light (200 to 800 Å ) is sensed to determine the quantities of hydrogen and helium in space and on Jupiter and Saturn. [ 23 ] Principal investigator: Darrell Judge / University of Southern California [ 16 ] Data: PDS/PPI data catalog, NSSDC data archive"
+        ],
+        [
+          "Imaging Photopolarimeter ( IPP )"
+        ],
+        [
+          "",
+          "The imaging experiment relies upon the spin of the spacecraft to sweep a small telescope across the planet in narrow strips only 0.03 degrees wide, looking at the planet in red (5800 to 7000 Å ) and blue (3900 to 4900 Å) light. These strips are then processed to build up a visual image of the planet. [ 24 ] Principal investigator: Tom Gehrels / University of Arizona [ 16 ] Data: NSSDC data archive list"
+        ],
+        [
+          "Infrared Radiometer"
+        ],
+        [
+          "",
+          "Provides information on cloud temperature and the output of heat from Jupiter and Saturn. [ 25 ] Principal investigator: Andrew Ingersoll / California Institute of Technology [ 16 ]"
+        ],
+        [
+          "Triaxial Fluxgate Magnetometer"
+        ],
+        [
+          "",
+          "Measures the magnetic fields of both Jupiter and Saturn. This instrument is not carried on Pioneer 10. [ 26 ] Principal investigator: Mario Acuna / NASA Goddard Space Flight Center Data: NSSDC data archive list"
+        ]
+      ],
+      "n_rows": 23
+    },
+    {
+      "caption": null,
+      "headers": [
+        "Date",
+        "Event"
+      ],
+      "rows": [
+        [
+          "1973-04-06",
+          "Spacecraft launched at 02:11:00."
+        ],
+        [
+          "1974-04-19",
+          "Passage through the asteroid belt."
+        ],
+        [
+          "1974-11-03",
+          "Start Jupiter observation phase. Time Event 1974-12-02 Encounter with Jovian system. 08:21:00 Callisto flyby at 786,500 km. 22:09:00 Ganymede flyby at 692,300 km. 1974-12-03 03:11:00 Io flyby at 314,000 km. 04:15:00 Europa flyby at 586,700 km. 05:00:21 Jupiter shadow entry. 05:01:01 Jupiter occultation entry. 05:21:19 Jupiter closest approach at 42,828 km. 05:33:52 Jupiter shadow exit. 05:43:03 Jupiter occultation exit. 22:29:00 Amalthea flyby at 127,500 km. 1975-01-01 Phase stop.",
+          "Time",
+          "Event",
+          "1974-12-02",
+          "Encounter with Jovian system.",
+          "08:21:00",
+          "Callisto flyby at 786,500 km.",
+          "22:09:00",
+          "Ganymede flyby at 692,300 km.",
+          "1974-12-03",
+          "",
+          "03:11:00",
+          "Io flyby at 314,000 km.",
+          "04:15:00",
+          "Europa flyby at 586,700 km.",
+          "05:00:21",
+          "Jupiter shadow entry.",
+          "05:01:01",
+          "Jupiter occultation entry.",
+          "05:21:19",
+          "Jupiter closest approach at 42,828 km.",
+          "05:33:52",
+          "Jupiter shadow exit.",
+          "05:43:03",
+          "Jupiter occultation exit.",
+          "22:29:00",
+          "Amalthea flyby at 127,500 km.",
+          "1975-01-01",
+          "Phase stop."
+        ],
+        [
+          "Time",
+          "Event"
+        ],
+        [
+          "1974-12-02",
+          "Encounter with Jovian system."
+        ],
+        [
+          "08:21:00",
+          "Callisto flyby at 786,500 km."
+        ],
+        [
+          "22:09:00",
+          "Ganymede flyby at 692,300 km."
+        ],
+        [
+          "1974-12-03",
+          ""
+        ],
+        [
+          "03:11:00",
+          "Io flyby at 314,000 km."
+        ],
+        [
+          "04:15:00",
+          "Europa flyby at 586,700 km."
+        ],
+        [
+          "05:00:21",
+          "Jupiter shadow entry."
+        ],
+        [
+          "05:01:01",
+          "Jupiter occultation entry."
+        ],
+        [
+          "05:21:19",
+          "Jupiter closest approach at 42,828 km."
+        ],
+        [
+          "05:33:52",
+          "Jupiter shadow exit."
+        ],
+        [
+          "05:43:03",
+          "Jupiter occultation exit."
+        ],
+        [
+          "22:29:00",
+          "Amalthea flyby at 127,500 km."
+        ],
+        [
+          "1975-01-01",
+          "Phase stop."
+        ],
+        [
+          "1979-07-31",
+          "Start Saturn observation phase. Time Event 1979-08-29 Encounter with Saturnian system. 06:06:10 Iapetus flyby at 1,032,535 km. 11:53:33 Phoebe flyby at 13,713,574 km. 1979-08-31 12:32:33 Hyperion flyby at 666,153 km. 1979-09-01 14:26:56 Descending ring plane crossing. 14:50:55 Epimetheus flyby at 6,676 km. 15:06:32 Atlas flyby at 45,960 km. 15:59:30 Dione flyby at 291,556 km. 16:26:28 Mimas flyby at 104,263 km. 16:29:34 Saturn closest approach at 20,591 km. 16:35:00 Saturn occultation entry. 16:35:57 Saturn shadow entry. 16:51:11 Janus flyby at 228,988 km. 17:53:32 Saturn occultation exit. 17:54:47 Saturn shadow exit. 18:21:59 Ascending ring plane crossing. 18:25:34 Tethys flyby at 329,197 km. 18:30:14 Enceladus flyby at 222,027 km. 20:04:13 Calypso flyby at 109,916 km. 22:15:27 Rhea flyby at 345,303 km. 1979-09-02 18:00:33 Titan flyby at 362,962 km. 1979-10-05 Phase stop.",
+          "Time",
+          "Event",
+          "1979-08-29",
+          "Encounter with Saturnian system.",
+          "06:06:10",
+          "Iapetus flyby at 1,032,535 km.",
+          "11:53:33",
+          "Phoebe flyby at 13,713,574 km.",
+          "1979-08-31",
+          "",
+          "12:32:33",
+          "Hyperion flyby at 666,153 km.",
+          "1979-09-01",
+          "",
+          "14:26:56",
+          "Descending ring plane crossing.",
+          "14:50:55",
+          "Epimetheus flyby at 6,676 km.",
+          "15:06:32",
+          "Atlas flyby at 45,960 km.",
+          "15:59:30",
+          "Dione flyby at 291,556 km.",
+          "16:26:28",
+          "Mimas flyby at 104,263 km.",
+          "16:29:34",
+          "Saturn closest approach at 20,591 km.",
+          "16:35:00",
+          "Saturn occultation entry.",
+          "16:35:57",
+          "Saturn shadow entry.",
+          "16:51:11",
+          "Janus flyby at 228,988 km.",
+          "17:53:32",
+          "Saturn occultation exit.",
+          "17:54:47",
+          "Saturn shadow exit.",
+          "18:21:59",
+          "Ascending ring plane crossing.",
+          "18:25:34",
+          "Tethys flyby at 329,197 km.",
+          "18:30:14",
+          "Enceladus flyby at 222,027 km.",
+          "20:04:13",
+          "Calypso flyby at 109,916 km.",
+          "22:15:27",
+          "Rhea flyby at 345,303 km.",
+          "1979-09-02",
+          "",
+          "18:00:33",
+          "Titan flyby at 362,962 km.",
+          "1979-10-05",
+          "Phase stop."
+        ],
+        [
+          "Time",
+          "Event"
+        ],
+        [
+          "1979-08-29",
+          "Encounter with Saturnian system."
+        ],
+        [
+          "06:06:10",
+          "Iapetus flyby at 1,032,535 km."
+        ],
+        [
+          "11:53:33",
+          "Phoebe flyby at 13,713,574 km."
+        ],
+        [
+          "1979-08-31",
+          ""
+        ],
+        [
+          "12:32:33",
+          "Hyperion flyby at 666,153 km."
+        ],
+        [
+          "1979-09-01",
+          ""
+        ],
+        [
+          "14:26:56",
+          "Descending ring plane crossing."
+        ],
+        [
+          "14:50:55",
+          "Epimetheus flyby at 6,676 km."
+        ],
+        [
+          "15:06:32",
+          "Atlas flyby at 45,960 km."
+        ],
+        [
+          "15:59:30",
+          "Dione flyby at 291,556 km."
+        ],
+        [
+          "16:26:28",
+          "Mimas flyby at 104,263 km."
+        ],
+        [
+          "16:29:34",
+          "Saturn closest approach at 20,591 km."
+        ],
+        [
+          "16:35:00",
+          "Saturn occultation entry."
+        ],
+        [
+          "16:35:57",
+          "Saturn shadow entry."
+        ],
+        [
+          "16:51:11",
+          "Janus flyby at 228,988 km."
+        ],
+        [
+          "17:53:32",
+          "Saturn occultation exit."
+        ],
+        [
+          "17:54:47",
+          "Saturn shadow exit."
+        ],
+        [
+          "18:21:59",
+          "Ascending ring plane crossing."
+        ],
+        [
+          "18:25:34",
+          "Tethys flyby at 329,197 km."
+        ],
+        [
+          "18:30:14",
+          "Enceladus flyby at 222,027 km."
+        ],
+        [
+          "20:04:13",
+          "Calypso flyby at 109,916 km."
+        ],
+        [
+          "22:15:27",
+          "Rhea flyby at 345,303 km."
+        ],
+        [
+          "1979-09-02",
+          ""
+        ],
+        [
+          "18:00:33",
+          "Titan flyby at 362,962 km."
+        ],
+        [
+          "1979-10-05",
+          "Phase stop."
+        ],
+        [
+          "1979-10-05",
+          "Begin Pioneer Interstellar Mission."
+        ],
+        [
+          "1990-",
+          "Passed the orbit of Pluto."
+        ],
+        [
+          "1995-09-30",
+          "Routine daily mission operations stopped. Pioneer 11 is 6.5 billion km from Earth."
+        ],
+        [
+          "1995-11-24",
+          "Last signal received."
+        ]
+      ],
+      "n_rows": 48
+    },
+    {
+      "caption": null,
+      "headers": [
+        "Time",
+        "Event"
+      ],
+      "rows": [
+        [
+          "1974-12-02",
+          "Encounter with Jovian system."
+        ],
+        [
+          "08:21:00",
+          "Callisto flyby at 786,500 km."
+        ],
+        [
+          "22:09:00",
+          "Ganymede flyby at 692,300 km."
+        ],
+        [
+          "1974-12-03",
+          ""
+        ],
+        [
+          "03:11:00",
+          "Io flyby at 314,000 km."
+        ],
+        [
+          "04:15:00",
+          "Europa flyby at 586,700 km."
+        ],
+        [
+          "05:00:21",
+          "Jupiter shadow entry."
+        ],
+        [
+          "05:01:01",
+          "Jupiter occultation entry."
+        ],
+        [
+          "05:21:19",
+          "Jupiter closest approach at 42,828 km."
+        ],
+        [
+          "05:33:52",
+          "Jupiter shadow exit."
+        ],
+        [
+          "05:43:03",
+          "Jupiter occultation exit."
+        ],
+        [
+          "22:29:00",
+          "Amalthea flyby at 127,500 km."
+        ],
+        [
+          "1975-01-01",
+          "Phase stop."
+        ]
+      ],
+      "n_rows": 13
+    },
+    {
+      "caption": null,
+      "headers": [
+        "Time",
+        "Event"
+      ],
+      "rows": [
+        [
+          "1979-08-29",
+          "Encounter with Saturnian system."
+        ],
+        [
+          "06:06:10",
+          "Iapetus flyby at 1,032,535 km."
+        ],
+        [
+          "11:53:33",
+          "Phoebe flyby at 13,713,574 km."
+        ],
+        [
+          "1979-08-31",
+          ""
+        ],
+        [
+          "12:32:33",
+          "Hyperion flyby at 666,153 km."
+        ],
+        [
+          "1979-09-01",
+          ""
+        ],
+        [
+          "14:26:56",
+          "Descending ring plane crossing."
+        ],
+        [
+          "14:50:55",
+          "Epimetheus flyby at 6,676 km."
+        ],
+        [
+          "15:06:32",
+          "Atlas flyby at 45,960 km."
+        ],
+        [
+          "15:59:30",
+          "Dione flyby at 291,556 km."
+        ],
+        [
+          "16:26:28",
+          "Mimas flyby at 104,263 km."
+        ],
+        [
+          "16:29:34",
+          "Saturn closest approach at 20,591 km."
+        ],
+        [
+          "16:35:00",
+          "Saturn occultation entry."
+        ],
+        [
+          "16:35:57",
+          "Saturn shadow entry."
+        ],
+        [
+          "16:51:11",
+          "Janus flyby at 228,988 km."
+        ],
+        [
+          "17:53:32",
+          "Saturn occultation exit."
+        ],
+        [
+          "17:54:47",
+          "Saturn shadow exit."
+        ],
+        [
+          "18:21:59",
+          "Ascending ring plane crossing."
+        ],
+        [
+          "18:25:34",
+          "Tethys flyby at 329,197 km."
+        ],
+        [
+          "18:30:14",
+          "Enceladus flyby at 222,027 km."
+        ],
+        [
+          "20:04:13",
+          "Calypso flyby at 109,916 km."
+        ],
+        [
+          "22:15:27",
+          "Rhea flyby at 345,303 km."
+        ],
+        [
+          "1979-09-02",
+          ""
+        ],
+        [
+          "18:00:33",
+          "Titan flyby at 362,962 km."
+        ],
+        [
+          "1979-10-05",
+          "Phase stop."
+        ]
+      ],
+      "n_rows": 25
+    }
+  ],
+  "links": {
+    "local": [
+      {
+        "target": "Pluto",
+        "source_file": "Pluto.html",
+        "url": "https://en.wikipedia.org/wiki/Pluto",
+        "anchors": [
+          "Pluto"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      }
+    ],
+    "wiki": [
+      {
+        "target": "Jupiter",
+        "url": "https://en.wikipedia.org/wiki/Jupiter",
+        "anchors": [
+          "Jupiter"
+        ],
+        "count": 9,
+        "regions": [
+          "body",
+          "infobox",
+          "table"
+        ]
+      },
+      {
+        "target": "Saturn",
+        "url": "https://en.wikipedia.org/wiki/Saturn",
+        "anchors": [
+          "Saturn"
+        ],
+        "count": 8,
+        "regions": [
+          "body",
+          "infobox",
+          "table"
+        ]
+      },
+      {
+        "target": "Occultation",
+        "url": "https://en.wikipedia.org/wiki/Occultation",
+        "anchors": [
+          "occultation"
+        ],
+        "count": 6,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Pioneer_10",
+        "url": "https://en.wikipedia.org/wiki/Pioneer_10",
+        "anchors": [
+          "Pioneer 10"
+        ],
+        "count": 5,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Callisto_(moon)",
+        "url": "https://en.wikipedia.org/wiki/Callisto_(moon)",
+        "anchors": [
+          "Callisto"
+        ],
+        "count": 5,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Io_(moon)",
+        "url": "https://en.wikipedia.org/wiki/Io_(moon)",
+        "anchors": [
+          "Io"
+        ],
+        "count": 5,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "NASA",
+        "url": "https://en.wikipedia.org/wiki/NASA",
+        "anchors": [
+          "NASA"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Ames_Research_Center",
+        "url": "https://en.wikipedia.org/wiki/Ames_Research_Center",
+        "anchors": [
+          "Ames",
+          "Ames Research Center"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Magnetometer",
+        "url": "https://en.wikipedia.org/wiki/Magnetometer",
+        "anchors": [
+          "Magnetometer"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Angstrom",
+        "url": "https://en.wikipedia.org/wiki/Angstrom",
+        "anchors": [
+          "Å"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Asteroid_belt",
+        "url": "https://en.wikipedia.org/wiki/Asteroid_belt",
+        "anchors": [
+          "asteroid belt"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Ganymede_(moon)",
+        "url": "https://en.wikipedia.org/wiki/Ganymede_(moon)",
+        "anchors": [
+          "Ganymede"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Europa_(moon)",
+        "url": "https://en.wikipedia.org/wiki/Europa_(moon)",
+        "anchors": [
+          "Europa"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Saturnian_system",
+        "url": "https://en.wikipedia.org/wiki/Saturnian_system",
+        "anchors": [
+          "Saturnian system"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Epimetheus_(moon)",
+        "url": "https://en.wikipedia.org/wiki/Epimetheus_(moon)",
+        "anchors": [
+          "Epimetheus"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Mimas_(moon)",
+        "url": "https://en.wikipedia.org/wiki/Mimas_(moon)",
+        "anchors": [
+          "Mimas"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Janus_(moon)",
+        "url": "https://en.wikipedia.org/wiki/Janus_(moon)",
+        "anchors": [
+          "Janus"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Titan_(moon)",
+        "url": "https://en.wikipedia.org/wiki/Titan_(moon)",
+        "anchors": [
+          "Titan"
+        ],
+        "count": 4,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Voyager_1",
+        "url": "https://en.wikipedia.org/wiki/Voyager_1",
+        "anchors": [
+          "Voyager 1"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Jovian_system",
+        "url": "https://en.wikipedia.org/wiki/Jovian_system",
+        "anchors": [
+          "Jovian system"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Amalthea_(moon)",
+        "url": "https://en.wikipedia.org/wiki/Amalthea_(moon)",
+        "anchors": [
+          "Amalthea"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Iapetus_(moon)",
+        "url": "https://en.wikipedia.org/wiki/Iapetus_(moon)",
+        "anchors": [
+          "Iapetus"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Phoebe_(moon)",
+        "url": "https://en.wikipedia.org/wiki/Phoebe_(moon)",
+        "anchors": [
+          "Phoebe"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Hyperion_(moon)",
+        "url": "https://en.wikipedia.org/wiki/Hyperion_(moon)",
+        "anchors": [
+          "Hyperion"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Atlas_(moon)",
+        "url": "https://en.wikipedia.org/wiki/Atlas_(moon)",
+        "anchors": [
+          "Atlas"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Dione_(moon)",
+        "url": "https://en.wikipedia.org/wiki/Dione_(moon)",
+        "anchors": [
+          "Dione"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Tethys_(moon)",
+        "url": "https://en.wikipedia.org/wiki/Tethys_(moon)",
+        "anchors": [
+          "Tethys"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Enceladus",
+        "url": "https://en.wikipedia.org/wiki/Enceladus",
+        "anchors": [
+          "Enceladus"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Calypso_(moon)",
+        "url": "https://en.wikipedia.org/wiki/Calypso_(moon)",
+        "anchors": [
+          "Calypso"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Rhea_(moon)",
+        "url": "https://en.wikipedia.org/wiki/Rhea_(moon)",
+        "anchors": [
+          "Rhea"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Exploration_of_Saturn",
+        "url": "https://en.wikipedia.org/wiki/Exploration_of_Saturn",
+        "anchors": [
+          "encounter Saturn",
+          "Exploration of Saturn"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pioneer_anomaly",
+        "url": "https://en.wikipedia.org/wiki/Pioneer_anomaly",
+        "anchors": [
+          "Pioneer anomaly"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "ISBN_(identifier)",
+        "url": "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+        "anchors": [
+          "ISBN"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "TRW_Inc.",
+        "url": "https://en.wikipedia.org/wiki/TRW_Inc.",
+        "anchors": [
+          "TRW"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Atlas-Centaur",
+        "url": "https://en.wikipedia.org/wiki/Atlas-Centaur",
+        "anchors": [
+          "Atlas SLV-3D Centaur-D1A",
+          "Atlas-Centaur"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Cape_Canaveral_Air_Force_Station",
+        "url": "https://en.wikipedia.org/wiki/Cape_Canaveral_Air_Force_Station",
+        "anchors": [
+          "Cape Canaveral"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Pioneer_program",
+        "url": "https://en.wikipedia.org/wiki/Pioneer_program",
+        "anchors": [
+          "Pioneer program"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Plasma_(physics)",
+        "url": "https://en.wikipedia.org/wiki/Plasma_(physics)",
+        "anchors": [
+          "Plasma"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Charged_particle",
+        "url": "https://en.wikipedia.org/wiki/Charged_particle",
+        "anchors": [
+          "Charged Particle"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "John_Alexander_Simpson",
+        "url": "https://en.wikipedia.org/wiki/John_Alexander_Simpson",
+        "anchors": [
+          "John Simpson"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Cosmic_Ray",
+        "url": "https://en.wikipedia.org/wiki/Cosmic_Ray",
+        "anchors": [
+          "Cosmic Ray"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Frank_B._McDonald",
+        "url": "https://en.wikipedia.org/wiki/Frank_B._McDonald",
+        "anchors": [
+          "Frank B. McDonald"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Geiger–Müller_tube",
+        "url": "https://en.wikipedia.org/wiki/Geiger%E2%80%93M%C3%BCller_tube",
+        "anchors": [
+          "Geiger Tube"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "James_A._Van_Allen",
+        "url": "https://en.wikipedia.org/wiki/James_A._Van_Allen",
+        "anchors": [
+          "James A. Van Allen"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Radiation",
+        "url": "https://en.wikipedia.org/wiki/Radiation",
+        "anchors": [
+          "Radiation"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Cherenkov_detector",
+        "url": "https://en.wikipedia.org/wiki/Cherenkov_detector",
+        "anchors": [
+          "Cerenkov counter"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Electronvolt",
+        "url": "https://en.wikipedia.org/wiki/Electronvolt",
+        "anchors": [
+          "MeV"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Meteoroid",
+        "url": "https://en.wikipedia.org/wiki/Meteoroid",
+        "anchors": [
+          "Meteoroid"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Photometer",
+        "url": "https://en.wikipedia.org/wiki/Photometer",
+        "anchors": [
+          "Photometer"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Darrell_Lynn_Judge",
+        "url": "https://en.wikipedia.org/wiki/Darrell_Lynn_Judge",
+        "anchors": [
+          "Darrell Judge"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Polarimeter",
+        "url": "https://en.wikipedia.org/wiki/Polarimeter",
+        "anchors": [
+          "Photopolarimeter"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Tom_Gehrels",
+        "url": "https://en.wikipedia.org/wiki/Tom_Gehrels",
+        "anchors": [
+          "Tom Gehrels"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Radiometer",
+        "url": "https://en.wikipedia.org/wiki/Radiometer",
+        "anchors": [
+          "Radiometer"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Andrew_Ingersoll",
+        "url": "https://en.wikipedia.org/wiki/Andrew_Ingersoll",
+        "anchors": [
+          "Andrew Ingersoll"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Mario_Acuna",
+        "url": "https://en.wikipedia.org/wiki/Mario_Acuna",
+        "anchors": [
+          "Mario Acuna"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Solar_wind",
+        "url": "https://en.wikipedia.org/wiki/Solar_wind",
+        "anchors": [
+          "solar wind"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "List_of_artificial_objects_leaving_the_Solar_System",
+        "url": "https://en.wikipedia.org/wiki/List_of_artificial_objects_leaving_the_Solar_System",
+        "anchors": [
+          "second of five artificial objects",
+          "List of artificial objects leaving the Solar System"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "National_Air_and_Space_Museum",
+        "url": "https://en.wikipedia.org/wiki/National_Air_and_Space_Museum",
+        "anchors": [
+          "National Air and Space Museum"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Voyager_program",
+        "url": "https://en.wikipedia.org/wiki/Voyager_program",
+        "anchors": [
+          "Voyager program",
+          "Voyager"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Deep_Space_Network",
+        "url": "https://en.wikipedia.org/wiki/Deep_Space_Network",
+        "anchors": [
+          "Deep Space Network"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cape_Canaveral_Air_Force_Station_Space_Launch_Complex_36",
+        "url": "https://en.wikipedia.org/wiki/Cape_Canaveral_Air_Force_Station_Space_Launch_Complex_36",
+        "anchors": [
+          "Launch Complex 36A",
+          "Space Launch Complex 36A"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Exploration_of_Jupiter",
+        "url": "https://en.wikipedia.org/wiki/Exploration_of_Jupiter",
+        "anchors": [
+          "Exploration of Jupiter"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Great_Red_Spot",
+        "url": "https://en.wikipedia.org/wiki/Great_Red_Spot",
+        "anchors": [
+          "Great Red Spot"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Gravity_assist",
+        "url": "https://en.wikipedia.org/wiki/Gravity_assist",
+        "anchors": [
+          "gravity assist"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Voyager_2",
+        "url": "https://en.wikipedia.org/wiki/Voyager_2",
+        "anchors": [
+          "Voyager 2"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Heliosphere",
+        "url": "https://en.wikipedia.org/wiki/Heliosphere",
+        "anchors": [
+          "Heliosphere"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "International_Designator",
+        "url": "https://en.wikipedia.org/wiki/International_Designator",
+        "anchors": [
+          "COSPAR ID"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Satellite_Catalog_Number",
+        "url": "https://en.wikipedia.org/wiki/Satellite_Catalog_Number",
+        "anchors": [
+          "SATCAT no."
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Star_37",
+        "url": "https://en.wikipedia.org/wiki/Star_37",
+        "anchors": [
+          "Star-37E"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Spaceport_Florida_Launch_Complex_36",
+        "url": "https://en.wikipedia.org/wiki/Spaceport_Florida_Launch_Complex_36",
+        "anchors": [
+          "LC-36B"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Pioneer_Venus_Orbiter",
+        "url": "https://en.wikipedia.org/wiki/Pioneer_Venus_Orbiter",
+        "anchors": [
+          "Pioneer 12"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Space_probe",
+        "url": "https://en.wikipedia.org/wiki/Space_probe",
+        "anchors": [
+          "space probe"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cosmic_ray",
+        "url": "https://en.wikipedia.org/wiki/Cosmic_ray",
+        "anchors": [
+          "cosmic rays"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Escape_velocity",
+        "url": "https://en.wikipedia.org/wiki/Escape_velocity",
+        "anchors": [
+          "escape velocity"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Solar_System",
+        "url": "https://en.wikipedia.org/wiki/Solar_System#Farthest_regions",
+        "anchors": [
+          "leave the Solar System"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Outer_Solar_System",
+        "url": "https://en.wikipedia.org/wiki/Outer_Solar_System",
+        "anchors": [
+          "outer Solar System"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Interplanetary_medium",
+        "url": "https://en.wikipedia.org/wiki/Interplanetary_medium",
+        "anchors": [
+          "interplanetary medium"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Atmosphere_of_Jupiter",
+        "url": "https://en.wikipedia.org/wiki/Atmosphere_of_Jupiter",
+        "anchors": [
+          "environment of Jupiter"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Magnetic_field",
+        "url": "https://en.wikipedia.org/wiki/Magnetic_field",
+        "anchors": [
+          "magnetic field"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Atmosphere_of_Saturn",
+        "url": "https://en.wikipedia.org/wiki/Atmosphere_of_Saturn",
+        "anchors": [
+          "Saturn's atmosphere"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Radio_occultation",
+        "url": "https://en.wikipedia.org/wiki/Radio_occultation",
+        "anchors": [
+          "radio occultation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Voyager_Program",
+        "url": "https://en.wikipedia.org/wiki/Voyager_Program",
+        "anchors": [
+          "Mariner Jupiter/Saturn mission"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "NASA_Ames_Research_Center",
+        "url": "https://en.wikipedia.org/wiki/NASA_Ames_Research_Center",
+        "anchors": [
+          "NASA Ames Research Center"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pioneer_H",
+        "url": "https://en.wikipedia.org/wiki/Pioneer_H",
+        "anchors": [
+          "Pioneer H"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Washington,_D.C.",
+        "url": "https://en.wikipedia.org/wiki/Washington,_D.C.",
+        "anchors": [
+          "Washington, D.C."
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Newton_(unit)",
+        "url": "https://en.wikipedia.org/wiki/Newton_(unit)",
+        "anchors": [
+          "N"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hydrazine",
+        "url": "https://en.wikipedia.org/wiki/Hydrazine",
+        "anchors": [
+          "hydrazine"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Monopropellant_rocket",
+        "url": "https://en.wikipedia.org/wiki/Monopropellant_rocket",
+        "anchors": [
+          "monopropellant"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Revolutions_per_minute",
+        "url": "https://en.wikipedia.org/wiki/Revolutions_per_minute",
+        "anchors": [
+          "rpm"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Conical_scanning",
+        "url": "https://en.wikipedia.org/wiki/Conical_scanning",
+        "anchors": [
+          "conical scanning"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Star_tracker",
+        "url": "https://en.wikipedia.org/wiki/Star_tracker#Star_tracker",
+        "anchors": [
+          "star sensor"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Canopus",
+        "url": "https://en.wikipedia.org/wiki/Canopus",
+        "anchors": [
+          "Canopus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sun_sensor",
+        "url": "https://en.wikipedia.org/wiki/Sun_sensor",
+        "anchors": [
+          "Sun sensors"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Transceiver",
+        "url": "https://en.wikipedia.org/wiki/Transceiver",
+        "anchors": [
+          "transceivers"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Directional_antenna",
+        "url": "https://en.wikipedia.org/wiki/Directional_antenna",
+        "anchors": [
+          "high-gain antenna"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "S_band",
+        "url": "https://en.wikipedia.org/wiki/S_band",
+        "anchors": [
+          "S-band"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Convolutional_code",
+        "url": "https://en.wikipedia.org/wiki/Convolutional_code",
+        "anchors": [
+          "convolutional encoder"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Error_correction",
+        "url": "https://en.wikipedia.org/wiki/Error_correction",
+        "anchors": [
+          "correction of errors"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Radioisotope_thermoelectric_generator",
+        "url": "https://en.wikipedia.org/wiki/Radioisotope_thermoelectric_generator",
+        "anchors": [
+          "radioisotope thermoelectric generators"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bytes",
+        "url": "https://en.wikipedia.org/wiki/Bytes",
+        "anchors": [
+          "bytes"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "National_Aeronautics_and_Space_Administration",
+        "url": "https://en.wikipedia.org/wiki/National_Aeronautics_and_Space_Administration",
+        "anchors": [
+          "National Aeronautics and Space Administration"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Star-37E",
+        "url": "https://en.wikipedia.org/wiki/Star-37E",
+        "anchors": [
+          "Star-37E"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Earth",
+        "url": "https://en.wikipedia.org/wiki/Earth",
+        "anchors": [
+          "Earth"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Uranus",
+        "url": "https://en.wikipedia.org/wiki/Uranus",
+        "anchors": [
+          "Uranus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Neptune",
+        "url": "https://en.wikipedia.org/wiki/Neptune",
+        "anchors": [
+          "Neptune"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ice_giant",
+        "url": "https://en.wikipedia.org/wiki/Ice_giant",
+        "anchors": [
+          "ice giants"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "UTC",
+        "url": "https://en.wikipedia.org/wiki/UTC",
+        "anchors": [
+          "UTC"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Daniel_Goldin",
+        "url": "https://en.wikipedia.org/wiki/Daniel_Goldin",
+        "anchors": [
+          "Daniel Goldin"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ecliptic_coordinate_system",
+        "url": "https://en.wikipedia.org/wiki/Ecliptic_coordinate_system#Spherical_coordinates",
+        "anchors": [
+          "Heliocentric positions"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Interstellar_probe",
+        "url": "https://en.wikipedia.org/wiki/Interstellar_probe",
+        "anchors": [
+          "interstellar probes"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Orbital_pole",
+        "url": "https://en.wikipedia.org/wiki/Orbital_pole#Ecliptic_pole",
+        "anchors": [
+          "north ecliptic pole"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Third-angle_projection",
+        "url": "https://en.wikipedia.org/wiki/Third-angle_projection",
+        "anchors": [
+          "third-angle projections"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Scutum_(constellation)",
+        "url": "https://en.wikipedia.org/wiki/Scutum_(constellation)",
+        "anchors": [
+          "Scutum"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Right_ascension",
+        "url": "https://en.wikipedia.org/wiki/Right_ascension",
+        "anchors": [
+          "RA"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Declination",
+        "url": "https://en.wikipedia.org/wiki/Declination",
+        "anchors": [
+          "dec"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Epoch_(astronomy)",
+        "url": "https://en.wikipedia.org/wiki/Epoch_(astronomy)#Julian_years_and_J2000",
+        "anchors": [
+          "J2000.0"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Messier_26",
+        "url": "https://en.wikipedia.org/wiki/Messier_26",
+        "anchors": [
+          "Messier 26"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Parsec",
+        "url": "https://en.wikipedia.org/wiki/Parsec",
+        "anchors": [
+          "parsecs"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Light-year",
+        "url": "https://en.wikipedia.org/wiki/Light-year",
+        "anchors": [
+          "light-years"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lambda_Aquilae",
+        "url": "https://en.wikipedia.org/wiki/Lambda_Aquilae",
+        "anchors": [
+          "Lambda Aquilae"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Doppler_effect",
+        "url": "https://en.wikipedia.org/wiki/Doppler_effect",
+        "anchors": [
+          "Doppler"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Systematic_bias",
+        "url": "https://en.wikipedia.org/wiki/Systematic_bias",
+        "anchors": [
+          "systematic origin"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Slava_Turyshev",
+        "url": "https://en.wikipedia.org/wiki/Slava_Turyshev",
+        "anchors": [
+          "Slava Turyshev"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pioneer_plaque",
+        "url": "https://en.wikipedia.org/wiki/Pioneer_plaque",
+        "anchors": [
+          "Pioneer plaque"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Commemorative_plaque",
+        "url": "https://en.wikipedia.org/wiki/Commemorative_plaque",
+        "anchors": [
+          "plaque"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Galileo_(spacecraft)",
+        "url": "https://en.wikipedia.org/wiki/Galileo_(spacecraft)",
+        "anchors": [
+          "Galileo"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "New_Horizons",
+        "url": "https://en.wikipedia.org/wiki/New_Horizons",
+        "anchors": [
+          "New Horizons"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Juno_(spacecraft)",
+        "url": "https://en.wikipedia.org/wiki/Juno_(spacecraft)",
+        "anchors": [
+          "Juno"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cassini–Huygens",
+        "url": "https://en.wikipedia.org/wiki/Cassini%E2%80%93Huygens",
+        "anchors": [
+          "Cassini–Huygens"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "List_of_missions_to_the_outer_planets",
+        "url": "https://en.wikipedia.org/wiki/List_of_missions_to_the_outer_planets",
+        "anchors": [
+          "List of missions to the outer planets"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Robotic_spacecraft",
+        "url": "https://en.wikipedia.org/wiki/Robotic_spacecraft",
+        "anchors": [
+          "Robotic spacecraft"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Timeline_of_artificial_satellites_and_space_probes",
+        "url": "https://en.wikipedia.org/wiki/Timeline_of_artificial_satellites_and_space_probes",
+        "anchors": [
+          "Timeline of artificial satellites and space probes"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "OCLC_(identifier)",
+        "url": "https://en.wikipedia.org/wiki/OCLC_(identifier)",
+        "anchors": [
+          "OCLC"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "ASIN_(identifier)",
+        "url": "https://en.wikipedia.org/wiki/ASIN_(identifier)",
+        "anchors": [
+          "ASIN"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bibcode_(identifier)",
+        "url": "https://en.wikipedia.org/wiki/Bibcode_(identifier)",
+        "anchors": [
+          "Bibcode"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ],
+    "external": [
+      {
+        "url": "http://pds-ppi.igpp.ucla.edu/search/?filter=PN_5001,PN_6001&title=Pioneer_11_Helium_Vector_Magnetometer",
+        "anchors": [
+          "PDS/PPI data catalog"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20061010073422/http://nssdcftp.gsfc.nasa.gov/spacecraft_data/pioneer/pioneer11/mag/",
+        "anchors": [
+          "NSSDC data archive"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20000520044455/http://arwen.arc.nasa.gov/",
+        "anchors": [
+          "archived website"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "http://pds-ppi.igpp.ucla.edu/search/?filter=PN_5001,PN_6001&title=Pioneer_11_Quadrispherical_Plasma_Analyser",
+        "anchors": [
+          "PDS/PPI data catalog"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20061010073242/http://nssdcftp.gsfc.nasa.gov/spacecraft_data/pioneer/pioneer11/plasma/",
+        "anchors": [
+          "NSSDC data archive"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20151029072854/http://nssdcftp.gsfc.nasa.gov/spacecraft_data/pioneer/pioneer11/particle/cpi/",
+        "anchors": [
+          "NSSDC data archive"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "http://pds-ppi.igpp.ucla.edu/search/?filter=PN_5001,PN_6001&title=Pioneer_11_Cosmic_Ray_Telescope",
+        "anchors": [
+          "PDS/PPI data catalog"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20151029092923/http://nssdcftp.gsfc.nasa.gov/spacecraft_data/pioneer/pioneer11/particle/crt/",
+        "anchors": [
+          "NSSDC data archive"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "http://www-pw.physics.uiowa.edu/pioneer/home.html",
+        "anchors": [
+          "website"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "http://pds-ppi.igpp.ucla.edu/search/?filter=PN_5001,PN_6001&title=Pioneer_11_Gieger_Tube_Telescope",
+        "anchors": [
+          "PDS/PPI data catalog"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20151029095745/http://nssdcftp.gsfc.nasa.gov/spacecraft_data/pioneer/pioneer11/particle/gtt/",
+        "anchors": [
+          "NSSDC data archive"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20151029101105/http://nssdcftp.gsfc.nasa.gov/spacecraft_data/pioneer/pioneer11/particle/trd/",
+        "anchors": [
+          "NSSDC hourly data archive"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://nssdc.gsfc.nasa.gov/nmc/datasetSearch.do?spacecraft=Pioneer%2011&experiment=Meteoroid%20Detectors",
+        "anchors": [
+          "NSSDC data archive list"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://nssdc.gsfc.nasa.gov/nmc/datasetSearch.do?spacecraft=Pioneer%2011&experiment=Asteroid/Meteoroid%20Astronomy",
+        "anchors": [
+          "NSSDC data archive list"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://ppi.pds.nasa.gov/search?filter=PN_5001,PN_6001&title=Pioneer_11_Ultraviolet_Photometer",
+        "anchors": [
+          "PDS/PPI data catalog"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20061010073351/http://nssdcftp.gsfc.nasa.gov/spacecraft_data/pioneer/pioneer11/uv/",
+        "anchors": [
+          "NSSDC data archive"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://nssdc.gsfc.nasa.gov/nmc/datasetSearch.do?spacecraft=Pioneer%2011&experiment=Imaging%20Photopolarimeter%20%28IPP%29",
+        "anchors": [
+          "NSSDC data archive list"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://nssdc.gsfc.nasa.gov/nmc/datasetSearch.do?spacecraft=Pioneer%2011&experiment=Jovian%20Magnetic%20Field",
+        "anchors": [
+          "NSSDC data archive list"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Interstellar_probes_trajectory.svg",
+        "anchors": [
+          "the SVG file,"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1973-019A",
+        "anchors": [
+          "1973-019A"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q59113#P247",
+        "anchors": [],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "url": "https://science.nasa.gov/mission/pioneer-11/",
+        "anchors": [
+          "science.nasa.gov"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Photos_of_Jupiter_by_Pioneer_11",
+        "anchors": [
+          "Pioneer 11 Jupiter encounter"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Photos_of_Saturn_by_Pioneer_11",
+        "anchors": [
+          "Pioneer 11 Saturn encounter"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://books.google.com/books?id=9okgAQAAIAAJ",
+        "anchors": [
+          "Exploring Space: Voyages in the Solar System and Beyond"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://ntrs.nasa.gov/citations/20190002224",
+        "anchors": [
+          "Pioneer Odyssey: Encounter with a Giant"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://search.worldcat.org/oclc/3211441",
+        "anchors": [
+          "3211441"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://atmos.nmsu.edu/data_and_services/atmospheres_data/SATURN/logs/nasa-sp-446-Pioneer-First-to-Jupiter-Saturn-and-Beyond.pdf",
+        "anchors": [
+          "\"Pioneer: First to Jupiter, Saturn, and Beyond\""
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://www.amazon.com/dp/B000IRXYN0",
+        "anchors": [
+          "B000IRXYN0"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://ui.adsabs.harvard.edu/abs/1980NASSP.446.....F",
+        "anchors": [
+          "1980NASSP.446.....F"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://books.google.com/books?id=NMk3adgqfawC&pg=PA146",
+        "anchors": [
+          "\"The Cosmic Radiation\""
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://books.google.com/books?id=NMk3adgqfawC",
+        "anchors": [
+          "The Century of Space Science"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20070802052346/http://solarsystem.nasa.gov/missions/profile.cfm?MCode=Pioneer_11",
+        "anchors": [
+          "Pioneer 11 Profile"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://solarsystem.nasa.gov",
+        "anchors": [
+          "NASA's Solar System Exploration"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20071004222059/http://www.strykfoto.org/pioneersaturn.htm",
+        "anchors": [
+          "Ted Stryk's Pioneer 11 at Saturn page"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ]
+  },
+  "stats": {
+    "n_categories": 10,
+    "n_sections": 23,
+    "n_tables": 4,
+    "n_local": 1,
+    "n_wiki": 135,
+    "n_external": 35,
+    "md_chars": 31532
+  }
+}

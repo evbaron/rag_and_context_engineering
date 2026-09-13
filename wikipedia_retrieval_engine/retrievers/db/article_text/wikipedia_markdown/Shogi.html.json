@@ -1,0 +1,3705 @@
+{
+  "source": "Shogi.html",
+  "title": "Shogi",
+  "wiki_title": "Shogi",
+  "categories": [
+    "Shogi",
+    "Abstract strategy games",
+    "Japanese games",
+    "Traditional board games",
+    "Games related to chaturanga",
+    "Mind sports"
+  ],
+  "sections": [
+    {
+      "level": 2,
+      "id": "Equipment",
+      "title": "Equipment"
+    },
+    {
+      "level": 2,
+      "id": "Setup_and_gameplay",
+      "title": "Setup and gameplay"
+    },
+    {
+      "level": 2,
+      "id": "Rules",
+      "title": "Rules"
+    },
+    {
+      "level": 3,
+      "id": "Objective",
+      "title": "Objective"
+    },
+    {
+      "level": 3,
+      "id": "Movement",
+      "title": "Movement"
+    },
+    {
+      "level": 3,
+      "id": "Promotion",
+      "title": "Promotion"
+    },
+    {
+      "level": 3,
+      "id": "Drops",
+      "title": "Drops"
+    },
+    {
+      "level": 3,
+      "id": "Check",
+      "title": "Check"
+    },
+    {
+      "level": 3,
+      "id": "End_of_the_game",
+      "title": "End of the game"
+    },
+    {
+      "level": 4,
+      "id": "Checkmate",
+      "title": "Checkmate"
+    },
+    {
+      "level": 4,
+      "id": "Resignation",
+      "title": "Resignation"
+    },
+    {
+      "level": 4,
+      "id": "Infractions",
+      "title": "Infractions"
+    },
+    {
+      "level": 4,
+      "id": "Repetition_(draw)",
+      "title": "Repetition (draw)"
+    },
+    {
+      "level": 4,
+      "id": "Impasse",
+      "title": "Impasse"
+    },
+    {
+      "level": 5,
+      "id": "Entering_King",
+      "title": "Entering King"
+    },
+    {
+      "level": 5,
+      "id": "Amateur_resolutions",
+      "title": "Amateur resolutions"
+    },
+    {
+      "level": 4,
+      "id": "Draws_in_tournaments",
+      "title": "Draws in tournaments"
+    },
+    {
+      "level": 3,
+      "id": "Time_control",
+      "title": "Time control"
+    },
+    {
+      "level": 2,
+      "id": "Player_rank_and_handicaps",
+      "title": "Player rank and handicaps"
+    },
+    {
+      "level": 3,
+      "id": "Handicaps",
+      "title": "Handicaps"
+    },
+    {
+      "level": 2,
+      "id": "Notation",
+      "title": "Notation"
+    },
+    {
+      "level": 2,
+      "id": "Strategy_and_tactics",
+      "title": "Strategy and tactics"
+    },
+    {
+      "level": 3,
+      "id": "Opening",
+      "title": "Opening"
+    },
+    {
+      "level": 3,
+      "id": "Middle_game",
+      "title": "Middle game"
+    },
+    {
+      "level": 3,
+      "id": "Endgame",
+      "title": "Endgame"
+    },
+    {
+      "level": 2,
+      "id": "Etiquette",
+      "title": "Etiquette"
+    },
+    {
+      "level": 3,
+      "id": "Game_setup",
+      "title": "Game setup"
+    },
+    {
+      "level": 3,
+      "id": "Furigoma",
+      "title": "Furigoma"
+    },
+    {
+      "level": 2,
+      "id": "History",
+      "title": "History"
+    },
+    {
+      "level": 2,
+      "id": "Professional_Japanese_shogi",
+      "title": "Professional Japanese shogi"
+    },
+    {
+      "level": 2,
+      "id": "International_shogi",
+      "title": "International shogi"
+    },
+    {
+      "level": 2,
+      "id": "Computer_shogi",
+      "title": "Computer shogi"
+    },
+    {
+      "level": 2,
+      "id": "Video_games",
+      "title": "Video games"
+    },
+    {
+      "level": 2,
+      "id": "Culture",
+      "title": "Culture"
+    },
+    {
+      "level": 2,
+      "id": "Comparison_to_chess",
+      "title": "Comparison to chess"
+    },
+    {
+      "level": 2,
+      "id": "See_also",
+      "title": "See also"
+    },
+    {
+      "level": 2,
+      "id": "Notes",
+      "title": "Notes"
+    },
+    {
+      "level": 2,
+      "id": "References",
+      "title": "References"
+    },
+    {
+      "level": 2,
+      "id": "Bibliography",
+      "title": "Bibliography"
+    },
+    {
+      "level": 2,
+      "id": "External_links",
+      "title": "External links"
+    }
+  ],
+  "infobox": {
+    "title": "",
+    "fields": {
+      "Genres": "Board game Abstract strategy game Mind sport",
+      "Players": "2",
+      "Setup time": "< 2 minutes",
+      "Playing time": "30 mins. to 2 hours (typically)",
+      "Chance": "None",
+      "Skills": "Strategy, tactics",
+      "Synonyms": "Japanese chess Game of Generals"
+    }
+  },
+  "tables": [
+    {
+      "caption": null,
+      "headers": [
+        "English name",
+        "Image",
+        "Kanji",
+        "Rōmaji",
+        "Meaning",
+        "Abbreviations",
+        "Betza notation"
+      ],
+      "rows": [
+        [
+          "King (higher ranked player or reigning champion)",
+          "",
+          "王将",
+          "ōshō",
+          "king general [ c ]",
+          "K",
+          "王",
+          "ō",
+          "K"
+        ],
+        [
+          "King (lower ranked player or challenger)",
+          "",
+          "玉将",
+          "gyokushō",
+          "jeweled general",
+          "K",
+          "玉",
+          "gyoku",
+          "K"
+        ],
+        [
+          "Rook",
+          "",
+          "飛車",
+          "hisha",
+          "flying chariot",
+          "R",
+          "飛",
+          "hi",
+          "R"
+        ],
+        [
+          "Promoted rook (\"Dragon\")",
+          "",
+          "竜王",
+          "ryūō",
+          "dragon king",
+          "+R",
+          "龍 or 竜 [ d ]",
+          "ryū",
+          "FR"
+        ],
+        [
+          "Bishop",
+          "",
+          "角行",
+          "kakugyō",
+          "angle mover",
+          "B",
+          "角",
+          "kaku",
+          "B"
+        ],
+        [
+          "Promoted bishop (\"Horse\")",
+          "",
+          "竜馬",
+          "ryūma or ryūme",
+          "dragon horse",
+          "+B",
+          "馬",
+          "uma",
+          "WB"
+        ],
+        [
+          "Gold general (\"Gold\")",
+          "",
+          "金将",
+          "kinshō",
+          "gold general",
+          "G",
+          "金",
+          "kin",
+          "WfF"
+        ],
+        [
+          "Silver general (\"Silver\")",
+          "",
+          "銀将",
+          "ginshō",
+          "silver general",
+          "S",
+          "銀",
+          "gin",
+          "FfW"
+        ],
+        [
+          "Promoted silver",
+          "",
+          "成銀",
+          "narigin",
+          "promoted silver",
+          "+S",
+          "(全)",
+          "—",
+          "WfF"
+        ],
+        [
+          "Knight",
+          "",
+          "桂馬",
+          "keima",
+          "cassia horse [ e ]",
+          "N",
+          "桂",
+          "kei",
+          "ffN"
+        ],
+        [
+          "Promoted knight",
+          "",
+          "成桂",
+          "narikei",
+          "promoted cassia",
+          "+N",
+          "(圭 or 今)",
+          "—",
+          "WfF"
+        ],
+        [
+          "Lance",
+          "",
+          "香車",
+          "kyōsha",
+          "incense chariot",
+          "L",
+          "香",
+          "kyō",
+          "fR"
+        ],
+        [
+          "Promoted lance",
+          "",
+          "成香",
+          "narikyō",
+          "promoted incense",
+          "+L",
+          "(杏 or 仝)",
+          "—",
+          "WfF"
+        ],
+        [
+          "Pawn",
+          "",
+          "歩兵",
+          "fuhyō",
+          "foot soldier",
+          "P",
+          "歩",
+          "fu",
+          "fW"
+        ],
+        [
+          "Promoted pawn (\"tokin\")",
+          "",
+          "と金",
+          "tokin",
+          "reaches gold",
+          "+P",
+          "と ( or 个)",
+          "to",
+          "WfF"
+        ]
+      ],
+      "n_rows": 15
+    },
+    {
+      "caption": null,
+      "headers": [
+        "L",
+        "N",
+        "S",
+        "G",
+        "K",
+        "G",
+        "S",
+        "N",
+        "L"
+      ],
+      "rows": [],
+      "n_rows": 0
+    },
+    {
+      "caption": null,
+      "headers": [
+        "香",
+        "桂",
+        "銀",
+        "金",
+        "玉",
+        "金",
+        "銀",
+        "桂",
+        "香"
+      ],
+      "rows": [],
+      "n_rows": 0
+    },
+    {
+      "caption": null,
+      "headers": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "○",
+          "○",
+          "○",
+          ""
+        ],
+        [
+          "",
+          "○",
+          "玉",
+          "○",
+          ""
+        ],
+        [
+          "",
+          "○",
+          "○",
+          "○",
+          ""
+        ]
+      ],
+      "n_rows": 3
+    },
+    {
+      "caption": null,
+      "headers": [
+        "",
+        "",
+        "│",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "│",
+          "",
+          ""
+        ],
+        [
+          "─",
+          "─",
+          "飛",
+          "─",
+          "─"
+        ],
+        [
+          "",
+          "",
+          "|",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "|",
+          "",
+          ""
+        ]
+      ],
+      "n_rows": 4
+    },
+    {
+      "caption": null,
+      "headers": [
+        "╲",
+        "",
+        "",
+        "",
+        "╱"
+      ],
+      "rows": [
+        [
+          "",
+          "╲",
+          "",
+          "╱",
+          ""
+        ],
+        [
+          "",
+          "",
+          "角",
+          "",
+          ""
+        ],
+        [
+          "",
+          "╱",
+          "",
+          "╲",
+          ""
+        ],
+        [
+          "╱",
+          "",
+          "",
+          "",
+          "╲"
+        ]
+      ],
+      "n_rows": 4
+    },
+    {
+      "caption": null,
+      "headers": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "○",
+          "○",
+          "○",
+          ""
+        ],
+        [
+          "",
+          "○",
+          "金",
+          "○",
+          ""
+        ],
+        [
+          "",
+          "",
+          "○",
+          "",
+          ""
+        ]
+      ],
+      "n_rows": 3
+    },
+    {
+      "caption": null,
+      "headers": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "○",
+          "○",
+          "○",
+          ""
+        ],
+        [
+          "",
+          "",
+          "銀",
+          "",
+          ""
+        ],
+        [
+          "",
+          "○",
+          "",
+          "○",
+          ""
+        ]
+      ],
+      "n_rows": 3
+    },
+    {
+      "caption": null,
+      "headers": [
+        "",
+        "☆",
+        "",
+        "☆",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "桂",
+          "",
+          ""
+        ]
+      ],
+      "n_rows": 1
+    },
+    {
+      "caption": null,
+      "headers": [
+        "",
+        "",
+        "│",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "│",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "香",
+          "",
+          ""
+        ]
+      ],
+      "n_rows": 2
+    },
+    {
+      "caption": null,
+      "headers": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "○",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "歩",
+          "",
+          ""
+        ]
+      ],
+      "n_rows": 2
+    },
+    {
+      "caption": null,
+      "headers": [
+        "Notation"
+      ],
+      "rows": [
+        [
+          "○",
+          "Steps to an adjacent square"
+        ],
+        [
+          "☆",
+          "Jumps to a non-adjacent square, bypassing any intervening piece"
+        ],
+        [
+          "│",
+          "Ranges along a straight line, crossing any number of empty squares"
+        ],
+        [
+          "─"
+        ],
+        [
+          "╲"
+        ],
+        [
+          "╱"
+        ]
+      ],
+      "n_rows": 6
+    },
+    {
+      "caption": null,
+      "headers": [
+        "",
+        "",
+        "│",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "○",
+          "│",
+          "○",
+          ""
+        ],
+        [
+          "─",
+          "─",
+          "龍",
+          "─",
+          "─"
+        ],
+        [
+          "",
+          "○",
+          "│",
+          "○",
+          ""
+        ],
+        [
+          "",
+          "",
+          "│",
+          "",
+          ""
+        ]
+      ],
+      "n_rows": 4
+    },
+    {
+      "caption": null,
+      "headers": [
+        "╲",
+        "",
+        "",
+        "",
+        "╱"
+      ],
+      "rows": [
+        [
+          "",
+          "╲",
+          "○",
+          "╱",
+          ""
+        ],
+        [
+          "",
+          "○",
+          "馬",
+          "○",
+          ""
+        ],
+        [
+          "",
+          "╱",
+          "○",
+          "╲",
+          ""
+        ],
+        [
+          "╱",
+          "",
+          "",
+          "",
+          "╲"
+        ]
+      ],
+      "n_rows": 4
+    },
+    {
+      "caption": null,
+      "headers": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "○",
+          "○",
+          "○",
+          ""
+        ],
+        [
+          "",
+          "○",
+          "全",
+          "○",
+          ""
+        ],
+        [
+          "",
+          "",
+          "○",
+          "",
+          ""
+        ]
+      ],
+      "n_rows": 3
+    },
+    {
+      "caption": null,
+      "headers": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "○",
+          "○",
+          "○",
+          ""
+        ],
+        [
+          "",
+          "○",
+          "圭",
+          "○",
+          ""
+        ],
+        [
+          "",
+          "",
+          "○",
+          "",
+          ""
+        ]
+      ],
+      "n_rows": 3
+    },
+    {
+      "caption": null,
+      "headers": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "○",
+          "○",
+          "○",
+          ""
+        ],
+        [
+          "",
+          "○",
+          "杏",
+          "○",
+          ""
+        ],
+        [
+          "",
+          "",
+          "○",
+          "",
+          ""
+        ]
+      ],
+      "n_rows": 3
+    },
+    {
+      "caption": null,
+      "headers": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "○",
+          "○",
+          "○",
+          ""
+        ],
+        [
+          "",
+          "○",
+          "と",
+          "○",
+          ""
+        ],
+        [
+          "",
+          "",
+          "○",
+          "",
+          ""
+        ]
+      ],
+      "n_rows": 3
+    },
+    {
+      "caption": null,
+      "headers": [
+        "Game End",
+        "Win State"
+      ],
+      "rows": [
+        [
+          "Checkmate",
+          "Loss"
+        ],
+        [
+          "Resignation",
+          "Loss"
+        ],
+        [
+          "Illegal move",
+          "Loss"
+        ],
+        [
+          "Repetition",
+          "Draw"
+        ],
+        [
+          "Impasse",
+          "Draw (usually)"
+        ],
+        [
+          "Time forfeit",
+          "Loss"
+        ]
+      ],
+      "n_rows": 6
+    },
+    {
+      "caption": "Ōhashi order",
+      "headers": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "19 歩",
+          "17 歩",
+          "15 歩",
+          "13 歩",
+          "12 歩",
+          "14 歩",
+          "16 歩",
+          "18 歩",
+          "20 歩"
+        ],
+        [
+          "",
+          "10 角",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "11 飛",
+          ""
+        ],
+        [
+          "8 香",
+          "6 桂",
+          "4 銀",
+          "2 金",
+          "1 玉",
+          "3 金",
+          "5 銀",
+          "7 桂",
+          "9 香"
+        ]
+      ],
+      "n_rows": 3
+    },
+    {
+      "caption": "Itō order",
+      "headers": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "8 歩",
+          "9 歩",
+          "10 歩",
+          "11 歩",
+          "12 歩",
+          "13 歩",
+          "14 歩",
+          "15 歩",
+          "16 歩"
+        ],
+        [
+          "",
+          "19 角",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "20 飛",
+          ""
+        ],
+        [
+          "17 香",
+          "6 桂",
+          "4 銀",
+          "2 金",
+          "1 玉",
+          "3 金",
+          "5 銀",
+          "7 桂",
+          "18 香"
+        ]
+      ],
+      "n_rows": 3
+    }
+  ],
+  "links": {
+    "local": [
+      {
+        "target": "Xiangqi",
+        "source_file": "Xiangqi.html",
+        "url": "https://en.wikipedia.org/wiki/Xiangqi",
+        "anchors": [
+          "xiangqi",
+          "Xiangqi"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      }
+    ],
+    "wiki": [
+      {
+        "target": "ISBN_(identifier)",
+        "url": "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+        "anchors": [
+          "ISBN"
+        ],
+        "count": 7,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fairy_chess_piece",
+        "url": "https://en.wikipedia.org/wiki/Fairy_chess_piece#Ralph_Betza's_\"funny_notation\"",
+        "anchors": [
+          "Betza notation",
+          "gold generals",
+          "silver generals",
+          "lances"
+        ],
+        "count": 5,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Chu_shogi",
+        "url": "https://en.wikipedia.org/wiki/Chu_shogi",
+        "anchors": [
+          "chu shogi",
+          "Chu Shogi",
+          "Chu shogi"
+        ],
+        "count": 5,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Meijin_(shogi)",
+        "url": "https://en.wikipedia.org/wiki/Meijin_(shogi)",
+        "anchors": [
+          "Meijin title match",
+          "Meijin-sen",
+          "Meijin"
+        ],
+        "count": 5,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Professional_shogi_player",
+        "url": "https://en.wikipedia.org/wiki/Professional_shogi_player#Ranking",
+        "anchors": [
+          "Professional shogi player § Ranking",
+          "Professional shogi player",
+          "professional",
+          "women's professional",
+          "apprentice professional"
+        ],
+        "count": 5,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wayback_Machine",
+        "url": "https://en.wikipedia.org/wiki/Wayback_Machine",
+        "anchors": [
+          "Wayback Machine"
+        ],
+        "count": 5,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chaturanga",
+        "url": "https://en.wikipedia.org/wiki/Chaturanga",
+        "anchors": [
+          "chaturanga"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Computer_shogi",
+        "url": "https://en.wikipedia.org/wiki/Computer_shogi",
+        "anchors": [
+          "shogi engines",
+          "Computer shogi"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Yoshio_Kimura_(shogi)",
+        "url": "https://en.wikipedia.org/wiki/Yoshio_Kimura_(shogi)",
+        "anchors": [
+          "Kimura Yoshio",
+          "Yoshio Kimura"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Kanji",
+        "url": "https://en.wikipedia.org/wiki/Kanji",
+        "anchors": [
+          "Kanji",
+          "kanji"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Cinnamomum_cassia",
+        "url": "https://en.wikipedia.org/wiki/Cinnamomum_cassia",
+        "anchors": [
+          "cassia",
+          "cassia bark"
+        ],
+        "count": 3,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Makruk",
+        "url": "https://en.wikipedia.org/wiki/Makruk",
+        "anchors": [
+          "Makruk",
+          "makruk"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Checkmate",
+        "url": "https://en.wikipedia.org/wiki/Checkmate",
+        "anchors": [
+          "checkmate"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Japanese_language",
+        "url": "https://en.wikipedia.org/wiki/Japanese_language",
+        "anchors": [
+          "Japanese"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Handicap_(shogi)",
+        "url": "https://en.wikipedia.org/wiki/Handicap_(shogi)",
+        "anchors": [
+          "bishop handicap game",
+          "Handicap (shogi)",
+          "handicap game"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "81Dojo",
+        "url": "https://en.wikipedia.org/wiki/81Dojo",
+        "anchors": [
+          "81Dojo",
+          "81dojo"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Go_(game)",
+        "url": "https://en.wikipedia.org/wiki/Go_(game)",
+        "anchors": [
+          "go",
+          "Go"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Castle_(shogi)",
+        "url": "https://en.wikipedia.org/wiki/Castle_(shogi)",
+        "anchors": [
+          "Castle (shogi)",
+          "castle"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Titleholder_system",
+        "url": "https://en.wikipedia.org/wiki/Titleholder_system",
+        "anchors": [
+          "titleholder system"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Japan_Shogi_Association",
+        "url": "https://en.wikipedia.org/wiki/Japan_Shogi_Association",
+        "anchors": [
+          "Japan Shogi Association"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Yoshiharu_Habu",
+        "url": "https://en.wikipedia.org/wiki/Yoshiharu_Habu",
+        "anchors": [
+          "Yoshiharu Habu",
+          "Habu, Yoshiharu"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Board_game",
+        "url": "https://en.wikipedia.org/wiki/Board_game",
+        "anchors": [
+          "Board game",
+          "board game"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Abstract_strategy_game",
+        "url": "https://en.wikipedia.org/wiki/Abstract_strategy_game",
+        "anchors": [
+          "Abstract strategy game",
+          "abstract strategy"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Mind_sport",
+        "url": "https://en.wikipedia.org/wiki/Mind_sport",
+        "anchors": [
+          "Mind sport"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Shogi_strategy_and_tactics",
+        "url": "https://en.wikipedia.org/wiki/Shogi_strategy_and_tactics",
+        "anchors": [
+          "Strategy, tactics",
+          "Shogi strategy and tactics"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "infobox"
+        ]
+      },
+      {
+        "target": "Rōmaji",
+        "url": "https://en.wikipedia.org/wiki/R%C5%8Dmaji",
+        "anchors": [
+          "Rōmaji"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Chinese_dragon",
+        "url": "https://en.wikipedia.org/wiki/Chinese_dragon",
+        "anchors": [
+          "dragon"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Joss_stick",
+        "url": "https://en.wikipedia.org/wiki/Joss_stick",
+        "anchors": [
+          "incense"
+        ],
+        "count": 2,
+        "regions": [
+          "body",
+          "table"
+        ]
+      },
+      {
+        "target": "Chess",
+        "url": "https://en.wikipedia.org/wiki/Chess",
+        "anchors": [
+          "Western chess",
+          "chess"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Janggi",
+        "url": "https://en.wikipedia.org/wiki/Janggi",
+        "anchors": [
+          "janggi",
+          "Janggi"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Shogi_variant",
+        "url": "https://en.wikipedia.org/wiki/Shogi_variant",
+        "anchors": [
+          "shogi variants",
+          "Shogi variants"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Knight_(chess)",
+        "url": "https://en.wikipedia.org/wiki/Knight_(chess)",
+        "anchors": [
+          "knights",
+          "international chess knights"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pawn_(chess)",
+        "url": "https://en.wikipedia.org/wiki/Pawn_(chess)",
+        "anchors": [
+          "pawns",
+          "international chess pawns"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tsumeshogi",
+        "url": "https://en.wikipedia.org/wiki/Tsumeshogi",
+        "anchors": [
+          "tsumeshogi",
+          "Tsumeshogi"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Perpetual_check",
+        "url": "https://en.wikipedia.org/wiki/Perpetual_check",
+        "anchors": [
+          "perpetual check"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sennichite",
+        "url": "https://en.wikipedia.org/wiki/Sennichite",
+        "anchors": [
+          "sennichite",
+          "Sennichite"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bear-in-the-hole_castle",
+        "url": "https://en.wikipedia.org/wiki/Bear-in-the-hole_castle",
+        "anchors": [
+          "Bear-in-the-hole castle",
+          "Anaguma castle"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Shogi_opening",
+        "url": "https://en.wikipedia.org/wiki/Shogi_opening",
+        "anchors": [
+          "Shogi opening",
+          "senpō"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Static_Rook",
+        "url": "https://en.wikipedia.org/wiki/Static_Rook",
+        "anchors": [
+          "Static Rook"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ranging_Rook",
+        "url": "https://en.wikipedia.org/wiki/Ranging_Rook",
+        "anchors": [
+          "Ranging Rook"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Material_(chess)",
+        "url": "https://en.wikipedia.org/wiki/Material_(chess)",
+        "anchors": [
+          "material"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Yasuharu_Ōyama",
+        "url": "https://en.wikipedia.org/wiki/Yasuharu_%C5%8Cyama",
+        "anchors": [
+          "Yasuharu Ōyama"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Dai_shogi",
+        "url": "https://en.wikipedia.org/wiki/Dai_shogi",
+        "anchors": [
+          "dai shogi",
+          "Dai shogi"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Kōzō_Masuda",
+        "url": "https://en.wikipedia.org/wiki/K%C5%8Dz%C5%8D_Masuda",
+        "anchors": [
+          "Kōzō Masuda"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sōta_Fujii",
+        "url": "https://en.wikipedia.org/wiki/S%C5%8Dta_Fujii",
+        "anchors": [
+          "Sōta Fujii"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Karolina_Styczyńska",
+        "url": "https://en.wikipedia.org/wiki/Karolina_Styczy%C5%84ska",
+        "anchors": [
+          "Karolina Styczyńska"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Game_tree_complexity",
+        "url": "https://en.wikipedia.org/wiki/Game_tree_complexity",
+        "anchors": [
+          "game complexity",
+          "game tree complexity"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fortress_opening",
+        "url": "https://en.wikipedia.org/wiki/Fortress_opening",
+        "anchors": [
+          "fortress opening"
+        ],
+        "count": 1,
+        "regions": [
+          "infobox"
+        ]
+      },
+      {
+        "target": "Indian_chess",
+        "url": "https://en.wikipedia.org/wiki/Indian_chess",
+        "anchors": [
+          "Indian chess"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mercenary",
+        "url": "https://en.wikipedia.org/wiki/Mercenary",
+        "anchors": [
+          "mercenary"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Samurai",
+        "url": "https://en.wikipedia.org/wiki/Samurai",
+        "anchors": [
+          "samurai"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Game_complexity",
+        "url": "https://en.wikipedia.org/wiki/Game_complexity",
+        "anchors": [
+          "game tree complexity"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "FIDE",
+        "url": "https://en.wikipedia.org/wiki/FIDE",
+        "anchors": [
+          "FIDE"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "First-move_advantage_in_chess",
+        "url": "https://en.wikipedia.org/wiki/First-move_advantage_in_chess",
+        "anchors": [
+          "first turn advantage"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Korea",
+        "url": "https://en.wikipedia.org/wiki/Korea",
+        "anchors": [
+          "Korea"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Nara_period",
+        "url": "https://en.wikipedia.org/wiki/Nara_period",
+        "anchors": [
+          "Nara period"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Heian_period",
+        "url": "https://en.wikipedia.org/wiki/Heian_period",
+        "anchors": [
+          "Heian period"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "King_(chess)",
+        "url": "https://en.wikipedia.org/wiki/King_(chess)",
+        "anchors": [
+          "king"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Rook_(chess)",
+        "url": "https://en.wikipedia.org/wiki/Rook_(chess)",
+        "anchors": [
+          "rook"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bishop_(chess)",
+        "url": "https://en.wikipedia.org/wiki/Bishop_(chess)",
+        "anchors": [
+          "bishop"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chinese_characters",
+        "url": "https://en.wikipedia.org/wiki/Chinese_characters",
+        "anchors": [
+          "Chinese characters"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Syllabogram",
+        "url": "https://en.wikipedia.org/wiki/Syllabogram",
+        "anchors": [
+          "syllabograms"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Logogram",
+        "url": "https://en.wikipedia.org/wiki/Logogram",
+        "anchors": [
+          "logograms"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Old_Japanese",
+        "url": "https://en.wikipedia.org/wiki/Old_Japanese",
+        "anchors": [
+          "Old Japanese"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hiragana",
+        "url": "https://en.wikipedia.org/wiki/Hiragana",
+        "anchors": [
+          "hiragana"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Western_world",
+        "url": "https://en.wikipedia.org/wiki/Western_world",
+        "anchors": [
+          "Westernized"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Orthogonality",
+        "url": "https://en.wikipedia.org/wiki/Orthogonality",
+        "anchors": [
+          "orthogonal"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "行き所のない駒",
+        "url": "https://ja.wikipedia.org/wiki/%E8%A1%8C%E3%81%8D%E6%89%80%E3%81%AE%E3%81%AA%E3%81%84%E9%A7%92",
+        "anchors": [
+          "行き所のない駒"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "二歩",
+        "url": "https://ja.wikipedia.org/wiki/%E4%BA%8C%E6%AD%A9",
+        "anchors": [
+          "二歩"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "打ち歩詰め",
+        "url": "https://ja.wikipedia.org/wiki/%E6%89%93%E3%81%A1%E6%AD%A9%E8%A9%B0%E3%82%81",
+        "anchors": [
+          "打ち歩詰め"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Check_(chess)",
+        "url": "https://en.wikipedia.org/wiki/Check_(chess)",
+        "anchors": [
+          "check"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Draw_by_agreement",
+        "url": "https://en.wikipedia.org/wiki/Draw_by_agreement",
+        "anchors": [
+          "draw by agreement"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hisshi",
+        "url": "https://en.wikipedia.org/wiki/Hisshi",
+        "anchors": [
+          "hisshi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Takahiro_Toyokawa",
+        "url": "https://en.wikipedia.org/wiki/Takahiro_Toyokawa",
+        "anchors": [
+          "Takahiro Toyokawa"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Kōsuke_Tamura",
+        "url": "https://en.wikipedia.org/wiki/K%C5%8Dsuke_Tamura",
+        "anchors": [
+          "Kōsuke Tamura"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "NHK_Cup_(shogi)",
+        "url": "https://en.wikipedia.org/wiki/NHK_Cup_(shogi)",
+        "anchors": [
+          "NHK Cup"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bishop_Exchange_Fourth_File_Rook",
+        "url": "https://en.wikipedia.org/wiki/Bishop_Exchange_Fourth_File_Rook",
+        "anchors": [
+          "Bishop Exchange Fourth File Rook"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Reciprocal_zugzwang",
+        "url": "https://en.wikipedia.org/wiki/Reciprocal_zugzwang",
+        "anchors": [
+          "reciprocal zugzwang"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lifetime_Meijin",
+        "url": "https://en.wikipedia.org/wiki/Lifetime_Meijin",
+        "anchors": [
+          "Lifetime Meijin"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ōi_(shogi)",
+        "url": "https://en.wikipedia.org/wiki/%C5%8Ci_(shogi)",
+        "anchors": [
+          "Ōi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Masayuki_Toyoshima",
+        "url": "https://en.wikipedia.org/wiki/Masayuki_Toyoshima",
+        "anchors": [
+          "Masayuki Toyoshima"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Kazuki_Kimura",
+        "url": "https://en.wikipedia.org/wiki/Kazuki_Kimura",
+        "anchors": [
+          "Kazuki Kimura"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "将棋ウォーズ",
+        "url": "https://ja.wikipedia.org/wiki/%E5%B0%86%E6%A3%8B%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%BA",
+        "anchors": [
+          "将棋ウォーズ"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Rugby_football",
+        "url": "https://en.wikipedia.org/wiki/Rugby_football",
+        "anchors": [
+          "rugby football"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Try_(rugby)",
+        "url": "https://en.wikipedia.org/wiki/Try_(rugby)",
+        "anchors": [
+          "Try (rugby)"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Makoto_Nakahara",
+        "url": "https://en.wikipedia.org/wiki/Makoto_Nakahara",
+        "anchors": [
+          "Makoto Nakahara"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hifumi_Katoh",
+        "url": "https://en.wikipedia.org/wiki/Hifumi_Katoh",
+        "anchors": [
+          "Hifumi Katoh"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Double_Fortress",
+        "url": "https://en.wikipedia.org/wiki/Double_Fortress",
+        "anchors": [
+          "Double Fortress or Double Yagura"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Professional_shogi_players",
+        "url": "https://en.wikipedia.org/wiki/Professional_shogi_players",
+        "anchors": [
+          "professional shogi players"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Kyū",
+        "url": "https://en.wikipedia.org/wiki/Ky%C5%AB",
+        "anchors": [
+          "kyū"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Dan_(rank)",
+        "url": "https://en.wikipedia.org/wiki/Dan_(rank)",
+        "anchors": [
+          "dan"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Handicap_(chess)",
+        "url": "https://en.wikipedia.org/wiki/Handicap_(chess)",
+        "anchors": [
+          "western chess"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Shogi_notation",
+        "url": "https://en.wikipedia.org/wiki/Shogi_notation",
+        "anchors": [
+          "Shogi notation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Shogi_opening_sequences",
+        "url": "https://en.wikipedia.org/wiki/Shogi_opening_sequences",
+        "anchors": [
+          "Shogi opening sequences"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Double_Static_Rook",
+        "url": "https://en.wikipedia.org/wiki/Double_Static_Rook",
+        "anchors": [
+          "Double Static Rook"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Double_Ranging_Rook",
+        "url": "https://en.wikipedia.org/wiki/Double_Ranging_Rook",
+        "anchors": [
+          "Double Ranging Rook"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fourth_File_Rook",
+        "url": "https://en.wikipedia.org/wiki/Fourth_File_Rook",
+        "anchors": [
+          "Fourth File Rook"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mino_castle",
+        "url": "https://en.wikipedia.org/wiki/Mino_castle#Silver_Crown",
+        "anchors": [
+          "Mino castle"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bear-in-the-hole_Static_Rook",
+        "url": "https://en.wikipedia.org/wiki/Bear-in-the-hole_Static_Rook",
+        "anchors": [
+          "Anaguma Static Rook"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Badger",
+        "url": "https://en.wikipedia.org/wiki/Badger",
+        "anchors": [
+          "badger"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tsume_shogi",
+        "url": "https://en.wikipedia.org/wiki/Tsume_shogi",
+        "anchors": [
+          "tsumeshogi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Brinkmate",
+        "url": "https://en.wikipedia.org/wiki/Brinkmate",
+        "anchors": [
+          "\"inevitable mate\""
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ueno_Park",
+        "url": "https://en.wikipedia.org/wiki/Ueno_Park",
+        "anchors": [
+          "Ueno Park"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Etiquette",
+        "url": "https://en.wikipedia.org/wiki/Etiquette",
+        "anchors": [
+          "etiquette"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bowing_in_Japan",
+        "url": "https://en.wikipedia.org/wiki/Bowing_in_Japan",
+        "anchors": [
+          "bowing"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Touch-move_rule",
+        "url": "https://en.wikipedia.org/wiki/Touch-move_rule",
+        "anchors": [
+          "touch-move rule"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Seiza",
+        "url": "https://en.wikipedia.org/wiki/Seiza",
+        "anchors": [
+          "seiza"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Zabuton",
+        "url": "https://en.wikipedia.org/wiki/Zabuton",
+        "anchors": [
+          "zabuton"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Shimbashi",
+        "url": "https://en.wikipedia.org/wiki/Shimbashi",
+        "anchors": [
+          "Shimbashi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Rock–paper–scissors",
+        "url": "https://en.wikipedia.org/wiki/Rock%E2%80%93paper%E2%80%93scissors",
+        "anchors": [
+          "Rock–paper–scissors"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "History_of_shogi",
+        "url": "https://en.wikipedia.org/wiki/History_of_shogi",
+        "anchors": [
+          "History of shogi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Eurasia",
+        "url": "https://en.wikipedia.org/wiki/Eurasia",
+        "anchors": [
+          "Eurasia"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fujiwara_no_Akihira",
+        "url": "https://en.wikipedia.org/wiki/Fujiwara_no_Akihira",
+        "anchors": [
+          "Fujiwara Akihira"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Kōfuku-ji",
+        "url": "https://en.wikipedia.org/wiki/K%C5%8Dfuku-ji",
+        "anchors": [
+          "Kōfuku-ji"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Nara_Prefecture",
+        "url": "https://en.wikipedia.org/wiki/Nara_Prefecture",
+        "anchors": [
+          "Nara Prefecture"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tengi",
+        "url": "https://en.wikipedia.org/wiki/Tengi",
+        "anchors": [
+          "Tengi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Heian_shogi",
+        "url": "https://en.wikipedia.org/wiki/Heian_shogi",
+        "anchors": [
+          "Heian shogi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Heian_dai_shogi",
+        "url": "https://en.wikipedia.org/wiki/Heian_dai_shogi",
+        "anchors": [
+          "Heian dai shogi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sho_shogi",
+        "url": "https://en.wikipedia.org/wiki/Sho_shogi",
+        "anchors": [
+          "sho shogi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Kyoto",
+        "url": "https://en.wikipedia.org/wiki/Kyoto",
+        "anchors": [
+          "Kyoto"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Edo_period",
+        "url": "https://en.wikipedia.org/wiki/Edo_period",
+        "anchors": [
+          "Edo period"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tenjiku_shogi",
+        "url": "https://en.wikipedia.org/wiki/Tenjiku_shogi",
+        "anchors": [
+          "tenjiku shogi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Dai_dai_shogi",
+        "url": "https://en.wikipedia.org/wiki/Dai_dai_shogi",
+        "anchors": [
+          "dai dai shogi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Maka_dai_dai_shogi",
+        "url": "https://en.wikipedia.org/wiki/Maka_dai_dai_shogi",
+        "anchors": [
+          "maka dai dai shogi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tai_shogi",
+        "url": "https://en.wikipedia.org/wiki/Tai_shogi",
+        "anchors": [
+          "tai shogi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Taikyoku_shogi",
+        "url": "https://en.wikipedia.org/wiki/Taikyoku_shogi",
+        "anchors": [
+          "taikyoku shogi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tokugawa_shogunate",
+        "url": "https://en.wikipedia.org/wiki/Tokugawa_shogunate",
+        "anchors": [
+          "Tokugawa shogunate"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hon'inbō_Sansa",
+        "url": "https://en.wikipedia.org/wiki/Hon%27inb%C5%8D_Sansa",
+        "anchors": [
+          "Hon’inbō Sansa"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tokugawa_Yoshimune",
+        "url": "https://en.wikipedia.org/wiki/Tokugawa_Yoshimune",
+        "anchors": [
+          "Tokugawa Yoshimune"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Kannazuki",
+        "url": "https://en.wikipedia.org/wiki/Kannazuki",
+        "anchors": [
+          "Kannazuki"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Newspaper",
+        "url": "https://en.wikipedia.org/wiki/Newspaper",
+        "anchors": [
+          "newspapers"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ryu-oh",
+        "url": "https://en.wikipedia.org/wiki/Ryu-oh",
+        "anchors": [
+          "Ryūō title match"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Supreme_Commander_of_the_Allied_Powers",
+        "url": "https://en.wikipedia.org/wiki/Supreme_Commander_of_the_Allied_Powers",
+        "anchors": [
+          "SCAP"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bushido",
+        "url": "https://en.wikipedia.org/wiki/Bushido",
+        "anchors": [
+          "Bushido"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Prisoner_abuse",
+        "url": "https://en.wikipedia.org/wiki/Prisoner_abuse",
+        "anchors": [
+          "prisoner abuse"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Gender_equality",
+        "url": "https://en.wikipedia.org/wiki/Gender_equality",
+        "anchors": [
+          "gender equality"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Amahiko_Satō",
+        "url": "https://en.wikipedia.org/wiki/Amahiko_Sat%C5%8D",
+        "anchors": [
+          "Satō Amahiko"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Yasuhito,_Prince_Chichibu",
+        "url": "https://en.wikipedia.org/wiki/Yasuhito,_Prince_Chichibu",
+        "anchors": [
+          "Prince Chichibu"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ladies_Professional_Shogi-players'_Association_of_Japan",
+        "url": "https://en.wikipedia.org/wiki/Ladies_Professional_Shogi-players%27_Association_of_Japan",
+        "anchors": [
+          "Ladies Professional Shogi-players' Association of Japan"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "JPY",
+        "url": "https://en.wikipedia.org/wiki/JPY",
+        "anchors": [
+          "JPY"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Kana_Satomi",
+        "url": "https://en.wikipedia.org/wiki/Kana_Satomi",
+        "anchors": [
+          "Kana Satomi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tomoka_Nishiyama",
+        "url": "https://en.wikipedia.org/wiki/Tomoka_Nishiyama",
+        "anchors": [
+          "Tomoka Nishiyama"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Nanami_Naka",
+        "url": "https://en.wikipedia.org/wiki/Nanami_Naka",
+        "anchors": [
+          "Nanami Naka"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fumio_Kishida",
+        "url": "https://en.wikipedia.org/wiki/Fumio_Kishida",
+        "anchors": [
+          "Fumio Kishida"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ryūō",
+        "url": "https://en.wikipedia.org/wiki/Ry%C5%AB%C5%8D",
+        "anchors": [
+          "Ryūō"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ōshō_(shogi)",
+        "url": "https://en.wikipedia.org/wiki/%C5%8Csh%C5%8D_(shogi)",
+        "anchors": [
+          "Ōshō"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ōza_(shogi)",
+        "url": "https://en.wikipedia.org/wiki/%C5%8Cza_(shogi)",
+        "anchors": [
+          "Ōza"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Kisei_(shogi)",
+        "url": "https://en.wikipedia.org/wiki/Kisei_(shogi)",
+        "anchors": [
+          "Kisei"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Kiō",
+        "url": "https://en.wikipedia.org/wiki/Ki%C5%8D",
+        "anchors": [
+          "Kiō"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Eiō",
+        "url": "https://en.wikipedia.org/wiki/Ei%C5%8D",
+        "anchors": [
+          "Eiō"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Minsk",
+        "url": "https://en.wikipedia.org/wiki/Minsk",
+        "anchors": [
+          "Minsk"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "World_Open_Shogi_Championship",
+        "url": "https://en.wikipedia.org/wiki/World_Open_Shogi_Championship",
+        "anchors": [
+          "World Open Shogi Championship"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "European_Shogi_Championship",
+        "url": "https://en.wikipedia.org/wiki/European_Shogi_Championship",
+        "anchors": [
+          "European Shogi Championship"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Federation_of_European_Shogi_Associations",
+        "url": "https://en.wikipedia.org/wiki/Federation_of_European_Shogi_Associations",
+        "anchors": [
+          "Federation of European Shogi Associations"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Trevor_Leggett",
+        "url": "https://en.wikipedia.org/wiki/Trevor_Leggett",
+        "anchors": [
+          "Trevor Leggett"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "West_Coast_of_the_United_States",
+        "url": "https://en.wikipedia.org/wiki/West_Coast_of_the_United_States",
+        "anchors": [
+          "west coast"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Larry_Kaufman",
+        "url": "https://en.wikipedia.org/wiki/Larry_Kaufman",
+        "anchors": [
+          "Larry Kaufman"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Personal_computer",
+        "url": "https://en.wikipedia.org/wiki/Personal_computer",
+        "anchors": [
+          "personal computing"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "People's_Republic_of_China",
+        "url": "https://en.wikipedia.org/wiki/People%27s_Republic_of_China",
+        "anchors": [
+          "People's Republic of China"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Shanghai",
+        "url": "https://en.wikipedia.org/wiki/Shanghai",
+        "anchors": [
+          "Shanghai"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hiroyuki_Miura_(shogi)",
+        "url": "https://en.wikipedia.org/wiki/Hiroyuki_Miura_(shogi)",
+        "anchors": [
+          "Hiroyuki Miura"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "DeepMind",
+        "url": "https://en.wikipedia.org/wiki/DeepMind",
+        "anchors": [
+          "DeepMind"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "AlphaZero",
+        "url": "https://en.wikipedia.org/wiki/AlphaZero",
+        "anchors": [
+          "AlphaZero"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Elmo_(shogi_engine)",
+        "url": "https://en.wikipedia.org/wiki/Elmo_(shogi_engine)",
+        "anchors": [
+          "Elmo"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Computational_complexity_theory",
+        "url": "https://en.wikipedia.org/wiki/Computational_complexity_theory",
+        "anchors": [
+          "computational complexity"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "EXPTIME-complete",
+        "url": "https://en.wikipedia.org/wiki/EXPTIME-complete",
+        "anchors": [
+          "EXPTIME-complete"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "List_of_shogi_video_games",
+        "url": "https://en.wikipedia.org/wiki/List_of_shogi_video_games",
+        "anchors": [
+          "List of shogi video games"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Video_game",
+        "url": "https://en.wikipedia.org/wiki/Video_game",
+        "anchors": [
+          "video games"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Video_game_console",
+        "url": "https://en.wikipedia.org/wiki/Video_game_console",
+        "anchors": [
+          "consoles"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Toshiaki_Kubo",
+        "url": "https://en.wikipedia.org/wiki/Toshiaki_Kubo",
+        "anchors": [
+          "Toshiaki Kubo"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Keita_Inoue",
+        "url": "https://en.wikipedia.org/wiki/Keita_Inoue",
+        "anchors": [
+          "Keita Inoue"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tetsurō_Itodani",
+        "url": "https://en.wikipedia.org/wiki/Tetsur%C5%8D_Itodani",
+        "anchors": [
+          "Tetsurō Itodani"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Akira_Inaba",
+        "url": "https://en.wikipedia.org/wiki/Akira_Inaba",
+        "anchors": [
+          "Akira Inaba"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Shinobu_Iwane",
+        "url": "https://en.wikipedia.org/wiki/Shinobu_Iwane",
+        "anchors": [
+          "Shinobu Iwane"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Rei_Takedomi",
+        "url": "https://en.wikipedia.org/wiki/Rei_Takedomi",
+        "anchors": [
+          "Rei Takedomi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Himeji",
+        "url": "https://en.wikipedia.org/wiki/Himeji",
+        "anchors": [
+          "Himeji"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Haiku",
+        "url": "https://en.wikipedia.org/wiki/Haiku",
+        "anchors": [
+          "haiku"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tanka",
+        "url": "https://en.wikipedia.org/wiki/Tanka",
+        "anchors": [
+          "tanka"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Noh",
+        "url": "https://en.wikipedia.org/wiki/Noh",
+        "anchors": [
+          "noh"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ikebana",
+        "url": "https://en.wikipedia.org/wiki/Ikebana",
+        "anchors": [
+          "ikebana"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Japanese_tea_ceremony",
+        "url": "https://en.wikipedia.org/wiki/Japanese_tea_ceremony",
+        "anchors": [
+          "Japanese tea ceremony"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Iemoto",
+        "url": "https://en.wikipedia.org/wiki/Iemoto",
+        "anchors": [
+          "iemoto"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Shogunate",
+        "url": "https://en.wikipedia.org/wiki/Shogunate",
+        "anchors": [
+          "shogunate"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tendō,_Yamagata",
+        "url": "https://en.wikipedia.org/wiki/Tend%C5%8D,_Yamagata",
+        "anchors": [
+          "Tendō"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Rabbit's_foot",
+        "url": "https://en.wikipedia.org/wiki/Rabbit%27s_foot",
+        "anchors": [
+          "Rabbit's foot"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tendō_Station",
+        "url": "https://en.wikipedia.org/wiki/Tend%C5%8D_Station",
+        "anchors": [
+          "Tendō Station"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Minishogi",
+        "url": "https://en.wikipedia.org/wiki/Minishogi",
+        "anchors": [
+          "minishogi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pawn_chain",
+        "url": "https://en.wikipedia.org/wiki/Pawn_chain",
+        "anchors": [
+          "pawn chains"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Shogi_tactics",
+        "url": "https://en.wikipedia.org/wiki/Shogi_tactics",
+        "anchors": [
+          "Shogi tactics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Shogi_strategy",
+        "url": "https://en.wikipedia.org/wiki/Shogi_strategy",
+        "anchors": [
+          "Shogi strategy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Dōbutsu_shōgi",
+        "url": "https://en.wikipedia.org/wiki/D%C5%8Dbutsu_sh%C5%8Dgi",
+        "anchors": [
+          "Dōbutsu shōgi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chess_variant",
+        "url": "https://en.wikipedia.org/wiki/Chess_variant",
+        "anchors": [
+          "Chess variants"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Crazyhouse",
+        "url": "https://en.wikipedia.org/wiki/Crazyhouse",
+        "anchors": [
+          "Crazyhouse"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "List_of_world_championships_in_mind_sports",
+        "url": "https://en.wikipedia.org/wiki/List_of_world_championships_in_mind_sports",
+        "anchors": [
+          "List of world championships in mind sports"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ishi_Press",
+        "url": "https://en.wikipedia.org/wiki/Ishi_Press",
+        "anchors": [
+          "Ishi Press"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "David_Pritchard_(chess_player)",
+        "url": "https://en.wikipedia.org/wiki/David_Pritchard_(chess_player)",
+        "anchors": [
+          "Pritchard, D. B."
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hans_Bodlaender",
+        "url": "https://en.wikipedia.org/wiki/Hans_Bodlaender",
+        "anchors": [
+          "Hans Bodlaender"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "The_Chess_Variant_Pages",
+        "url": "https://en.wikipedia.org/wiki/The_Chess_Variant_Pages",
+        "anchors": [
+          "The Chess Variant Pages"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ],
+    "external": [
+      {
+        "url": "http://www.shogishack.net/",
+        "anchors": [
+          "Shogi Shack"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www2.teu.ac.jp/gamelab/SHOGI/shogipage.html",
+        "anchors": [
+          "Reijer Grimbergen's Shogi Page"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.shogi.net/shogi.html",
+        "anchors": [
+          "Shogi.Net"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://shogihub.com/",
+        "anchors": [
+          "Shogi Hub"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20221130161751/http://shogihub.com/",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://groups.google.com/forum/#!forum/shogi-l",
+        "anchors": [
+          "Shogi-L"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.ricoh.co.jp/SHOGI/index_e.html",
+        "anchors": [
+          "Ricoh Shogi Page"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20130922182618/http://www.ricoh.co.jp/SHOGI/index_e.html",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://keishogi.web.fc2.com/dic/",
+        "anchors": [
+          "Japanese–English shogi glossary"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.shogi.net/shogivocab/vocabhtml.html",
+        "anchors": [
+          "Hans Geuns' Basic Shogi Vocabulary"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.shogi.pl/ism/",
+        "anchors": [
+          "International Shogi Magazine"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20230924050111/http://shogi.pl/ism/",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.shogi.pl/level-1-shogi-course/",
+        "anchors": [
+          "Level 1 Shogi Course"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/view_play_list?p=587865CAE59EB84A&page=1",
+        "anchors": [
+          "40 shogi lessons"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.crockford.com/chess/shogi.html",
+        "anchors": [
+          "An Introduction to Shogi for Chess Players"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20060127011433/http://www.crockford.com/chess/shogi.html",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.chessvariants.org/shogi.html",
+        "anchors": [
+          "Shogi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://81dojo.com/documents/Rules_and_Manners_of_Shogi",
+        "anchors": [
+          "Rules and Manners of Shogi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.shogi.net/fesa/pdf/FESA%20rules.pdf",
+        "anchors": [
+          "FESA - Shogi official playing rules"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20211106061240/http://shogi.net/fesa/pdf/FESA%20rules.pdf",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://history.chess.free.fr/shogi.htm",
+        "anchors": [
+          "Shogi, the Japanese Chess"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.shogi.cz/en/rules",
+        "anchors": [
+          "Shogi and Dobutsu-Animal shogi rules to download"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://81dojo.com/",
+        "anchors": [
+          "81Dojo"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://lishogi.org/",
+        "anchors": [
+          "Lishogi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://www.shogidojo.net/",
+        "anchors": [
+          "Shogi Dojo 24"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://shogiwars.heroz.jp/?locale=en",
+        "anchors": [
+          "Shogi Wars"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://wars.fm/shogi10",
+        "anchors": [
+          "Shogi Quest"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://www.playok.com/en/shogi/",
+        "anchors": [
+          "PlayOK shogi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://goldtoken.com/games/play?rules=Shogi",
+        "anchors": [
+          "GoldToken"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://wsl.81dojo.com/",
+        "anchors": [
+          "World Shogi League"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.hozo.biz/shogi.html",
+        "anchors": [
+          "HamShogi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.shogi.net/shogi-l/Archive/2007/Njun15-05.txt",
+        "anchors": [
+          "instructions"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://boardspace.net/english/about_shogi.html",
+        "anchors": [
+          "boardspace.net"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://shogidb2.com/",
+        "anchors": [
+          "将棋DB2"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://kyokumen.jp/positions/1",
+        "anchors": [
+          "Kyokumenpedia"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://play.mogproject.com/",
+        "anchors": [
+          "Shogi Playground"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://sfenreader.appspot.com/en/create_board.html",
+        "anchors": [
+          "Create Shogi Diagram on the Web"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ]
+  },
+  "stats": {
+    "n_categories": 6,
+    "n_sections": 40,
+    "n_tables": 21,
+    "n_local": 1,
+    "n_wiki": 198,
+    "n_external": 37,
+    "md_chars": 98754
+  }
+}

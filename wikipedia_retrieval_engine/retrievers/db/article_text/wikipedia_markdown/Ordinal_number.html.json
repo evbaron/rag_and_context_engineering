@@ -1,0 +1,1522 @@
+{
+  "source": "Ordinal_number.html",
+  "title": "Ordinal number",
+  "wiki_title": "Ordinal_number",
+  "categories": [
+    "Ordinal numbers",
+    "Wellfoundedness"
+  ],
+  "sections": [
+    {
+      "level": 2,
+      "id": "Motivation",
+      "title": "Motivation"
+    },
+    {
+      "level": 2,
+      "id": "Definitions",
+      "title": "Definitions"
+    },
+    {
+      "level": 3,
+      "id": "Well-ordering",
+      "title": "Well-ordering"
+    },
+    {
+      "level": 3,
+      "id": "Well-ordered_sets",
+      "title": "Well-ordered sets"
+    },
+    {
+      "level": 3,
+      "id": "Definition_of_an_ordinal_as_an_equivalence_class",
+      "title": "Definition of an ordinal as an equivalence class"
+    },
+    {
+      "level": 2,
+      "id": "Von_Neumann_definition_of_ordinals",
+      "title": "Von Neumann definition of ordinals"
+    },
+    {
+      "level": 3,
+      "id": "Basic_properties",
+      "title": "Basic properties"
+    },
+    {
+      "level": 3,
+      "id": "Order_types",
+      "title": "Order types"
+    },
+    {
+      "level": 2,
+      "id": "Successor_and_limit_ordinals",
+      "title": "Successor and limit ordinals"
+    },
+    {
+      "level": 2,
+      "id": "Termination_of_decreasing_sequences",
+      "title": "Termination of decreasing sequences"
+    },
+    {
+      "level": 2,
+      "id": "Transfinite_sequence",
+      "title": "Transfinite sequence"
+    },
+    {
+      "level": 2,
+      "id": "Transfinite_induction",
+      "title": "Transfinite induction"
+    },
+    {
+      "level": 3,
+      "id": "Transfinite_recursion",
+      "title": "Transfinite recursion"
+    },
+    {
+      "level": 3,
+      "id": "Indexing_classes_of_ordinals",
+      "title": "Indexing classes of ordinals"
+    },
+    {
+      "level": 2,
+      "id": "Arithmetic_of_ordinals",
+      "title": "Arithmetic of ordinals"
+    },
+    {
+      "level": 2,
+      "id": "Ordinals_and_cardinals",
+      "title": "Ordinals and cardinals"
+    },
+    {
+      "level": 3,
+      "id": "Initial_ordinal_of_a_cardinal",
+      "title": "Initial ordinal of a cardinal"
+    },
+    {
+      "level": 3,
+      "id": "Cofinality",
+      "title": "Cofinality"
+    },
+    {
+      "level": 3,
+      "id": "Closed_unbounded_sets_and_classes",
+      "title": "Closed unbounded sets and classes"
+    },
+    {
+      "level": 2,
+      "id": "Some_\"large\"_countable_ordinals",
+      "title": "Some \"large\" countable ordinals"
+    },
+    {
+      "level": 2,
+      "id": "Topology_and_ordinals",
+      "title": "Topology and ordinals"
+    },
+    {
+      "level": 2,
+      "id": "History",
+      "title": "History"
+    },
+    {
+      "level": 2,
+      "id": "See_also",
+      "title": "See also"
+    },
+    {
+      "level": 2,
+      "id": "Notes",
+      "title": "Notes"
+    },
+    {
+      "level": 2,
+      "id": "Citations",
+      "title": "Citations"
+    },
+    {
+      "level": 2,
+      "id": "References",
+      "title": "References"
+    },
+    {
+      "level": 2,
+      "id": "External_links",
+      "title": "External links"
+    }
+  ],
+  "infobox": null,
+  "tables": [],
+  "links": {
+    "local": [],
+    "wiki": [
+      {
+        "target": "Well-order",
+        "url": "https://en.wikipedia.org/wiki/Well-order",
+        "anchors": [
+          "well-order",
+          "well-ordered"
+        ],
+        "count": 5,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ordinal_arithmetic",
+        "url": "https://en.wikipedia.org/wiki/Ordinal_arithmetic",
+        "anchors": [
+          "added, multiplied, and exponentiated",
+          "ordinal arithmetic",
+          "Ordinal arithmetic",
+          "Cantor normal form"
+        ],
+        "count": 5,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Order_topology",
+        "url": "https://en.wikipedia.org/wiki/Order_topology",
+        "anchors": [
+          "order topology",
+          "Order topology",
+          "Topology and ordinals",
+          "Ordinal space"
+        ],
+        "count": 5,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cardinal_number",
+        "url": "https://en.wikipedia.org/wiki/Cardinal_number",
+        "anchors": [
+          "cardinal numbers",
+          "cardinal",
+          "cardinals"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Transfinite_induction",
+        "url": "https://en.wikipedia.org/wiki/Transfinite_induction",
+        "anchors": [
+          "transfinite induction",
+          "Transfinite induction"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Transitive_set",
+        "url": "https://en.wikipedia.org/wiki/Transitive_set",
+        "anchors": [
+          "transitive",
+          "transitive closure",
+          "transitive sets"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Natural_number",
+        "url": "https://en.wikipedia.org/wiki/Natural_number",
+        "anchors": [
+          "natural number"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Proper_class",
+        "url": "https://en.wikipedia.org/wiki/Proper_class",
+        "anchors": [
+          "proper class"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Zermelo–Fraenkel_set_theory",
+        "url": "https://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory",
+        "anchors": [
+          "Zermelo–Fraenkel set theory",
+          "Zermelo–Fraenkel",
+          "ZF"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Initial_segment",
+        "url": "https://en.wikipedia.org/wiki/Initial_segment",
+        "anchors": [
+          "initial segment"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Order_type",
+        "url": "https://en.wikipedia.org/wiki/Order_type",
+        "anchors": [
+          "order type"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Derived_set_(mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Derived_set_(mathematics)",
+        "anchors": [
+          "derived sets",
+          "perfect set"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Axiom_schema_of_replacement",
+        "url": "https://en.wikipedia.org/wiki/Axiom_schema_of_replacement",
+        "anchors": [
+          "Axiom schema of replacement",
+          "axiom schema of replacement"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ordinal_numeral",
+        "url": "https://en.wikipedia.org/wiki/Ordinal_numeral",
+        "anchors": [
+          "Ordinal numeral",
+          "ordinal numerals"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Infinite_set",
+        "url": "https://en.wikipedia.org/wiki/Infinite_set",
+        "anchors": [
+          "infinite sets"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Linearly_ordered",
+        "url": "https://en.wikipedia.org/wiki/Linearly_ordered",
+        "anchors": [
+          "linearly ordered"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Set_(mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Set_(mathematics)",
+        "anchors": [
+          "set"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Burali-Forti_paradox",
+        "url": "https://en.wikipedia.org/wiki/Burali-Forti_paradox",
+        "anchors": [
+          "Burali-Forti paradox"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Axiom_of_choice",
+        "url": "https://en.wikipedia.org/wiki/Axiom_of_choice",
+        "anchors": [
+          "axiom of choice"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sequence",
+        "url": "https://en.wikipedia.org/wiki/Sequence",
+        "anchors": [
+          "sequence"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Well-founded_relation",
+        "url": "https://en.wikipedia.org/wiki/Well-founded_relation",
+        "anchors": [
+          "well-foundedness",
+          "well-founded relation"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cardinality",
+        "url": "https://en.wikipedia.org/wiki/Cardinality",
+        "anchors": [
+          "cardinality"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Total_order",
+        "url": "https://en.wikipedia.org/wiki/Total_order",
+        "anchors": [
+          "total order"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Limit_point",
+        "url": "https://en.wikipedia.org/wiki/Limit_point",
+        "anchors": [
+          "limit point",
+          "limit points"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fixed_point_(mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Fixed_point_(mathematics)",
+        "anchors": [
+          "fixed points"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Surreal_number",
+        "url": "https://en.wikipedia.org/wiki/Surreal_number",
+        "anchors": [
+          "surreal numbers",
+          "Surreal number"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cofinality",
+        "url": "https://en.wikipedia.org/wiki/Cofinality",
+        "anchors": [
+          "cofinality"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Regular_cardinal",
+        "url": "https://en.wikipedia.org/wiki/Regular_cardinal",
+        "anchors": [
+          "regular cardinal",
+          "regular cardinals"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Limit_cardinal",
+        "url": "https://en.wikipedia.org/wiki/Limit_cardinal",
+        "anchors": [
+          "limit cardinals"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Inaccessible_cardinal",
+        "url": "https://en.wikipedia.org/wiki/Inaccessible_cardinal",
+        "anchors": [
+          "inaccessible cardinal"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Set_theory",
+        "url": "https://en.wikipedia.org/wiki/Set_theory",
+        "anchors": [
+          "set theory"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Enumeration",
+        "url": "https://en.wikipedia.org/wiki/Enumeration",
+        "anchors": [
+          "enumeration"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Greek_letter",
+        "url": "https://en.wikipedia.org/wiki/Greek_letter",
+        "anchors": [
+          "Greek letters"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Variable_(mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Variable_(mathematics)",
+        "anchors": [
+          "variables"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Greatest_element_and_least_element",
+        "url": "https://en.wikipedia.org/wiki/Greatest_element_and_least_element",
+        "anchors": [
+          "least or \"smallest\" element"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Isomorphic",
+        "url": "https://en.wikipedia.org/wiki/Isomorphic",
+        "anchors": [
+          "isomorphic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Commutative_property",
+        "url": "https://en.wikipedia.org/wiki/Commutative_property",
+        "anchors": [
+          "commutative"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Georg_Cantor",
+        "url": "https://en.wikipedia.org/wiki/Georg_Cantor",
+        "anchors": [
+          "Georg Cantor"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Trigonometric_series",
+        "url": "https://en.wikipedia.org/wiki/Trigonometric_series",
+        "anchors": [
+          "trigonometric series"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "0_(number)",
+        "url": "https://en.wikipedia.org/wiki/0_(number)",
+        "anchors": [
+          "0"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mathematical_induction",
+        "url": "https://en.wikipedia.org/wiki/Mathematical_induction",
+        "anchors": [
+          "mathematical induction"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lexicographical_order",
+        "url": "https://en.wikipedia.org/wiki/Lexicographical_order",
+        "anchors": [
+          "lexicographically"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Comparability",
+        "url": "https://en.wikipedia.org/wiki/Comparability",
+        "anchors": [
+          "comparable"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Isomorphism",
+        "url": "https://en.wikipedia.org/wiki/Isomorphism",
+        "anchors": [
+          "isomorphic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Real_number",
+        "url": "https://en.wikipedia.org/wiki/Real_number",
+        "anchors": [
+          "real numbers"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Open_interval",
+        "url": "https://en.wikipedia.org/wiki/Open_interval",
+        "anchors": [
+          "open interval"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Totally_ordered_set",
+        "url": "https://en.wikipedia.org/wiki/Totally_ordered_set",
+        "anchors": [
+          "totally ordered set"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Order_isomorphism",
+        "url": "https://en.wikipedia.org/wiki/Order_isomorphism",
+        "anchors": [
+          "order isomorphism"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "0-based_indexing",
+        "url": "https://en.wikipedia.org/wiki/0-based_indexing",
+        "anchors": [
+          "0-based indexing"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bijections",
+        "url": "https://en.wikipedia.org/wiki/Bijections",
+        "anchors": [
+          "bijections"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Equivalence_relation",
+        "url": "https://en.wikipedia.org/wiki/Equivalence_relation",
+        "anchors": [
+          "equivalence relation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Equivalence_class",
+        "url": "https://en.wikipedia.org/wiki/Equivalence_class",
+        "anchors": [
+          "equivalence classes"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Principia_Mathematica",
+        "url": "https://en.wikipedia.org/wiki/Principia_Mathematica",
+        "anchors": [
+          "Principia Mathematica"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Isomorphism_class",
+        "url": "https://en.wikipedia.org/wiki/Isomorphism_class",
+        "anchors": [
+          "isomorphism class"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Set_of_all_sets",
+        "url": "https://en.wikipedia.org/wiki/Set_of_all_sets",
+        "anchors": [
+          "set of all sets"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Type_theory",
+        "url": "https://en.wikipedia.org/wiki/Type_theory",
+        "anchors": [
+          "type theory"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "New_Foundations",
+        "url": "https://en.wikipedia.org/wiki/New_Foundations",
+        "anchors": [
+          "New Foundations"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Axiomatic_set_theory",
+        "url": "https://en.wikipedia.org/wiki/Axiomatic_set_theory",
+        "anchors": [
+          "axiomatic set theory"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mostowski_collapse_lemma",
+        "url": "https://en.wikipedia.org/wiki/Mostowski_collapse_lemma",
+        "anchors": [
+          "Mostowski collapse lemma"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Recursively",
+        "url": "https://en.wikipedia.org/wiki/Recursively",
+        "anchors": [
+          "recursively"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Von_Neumann_natural_number",
+        "url": "https://en.wikipedia.org/wiki/Von_Neumann_natural_number",
+        "anchors": [
+          "von Neumann natural numbers"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Downward_closed",
+        "url": "https://en.wikipedia.org/wiki/Downward_closed",
+        "anchors": [
+          "downward closed"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Partial_order",
+        "url": "https://en.wikipedia.org/wiki/Partial_order",
+        "anchors": [
+          "partial order"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Zero",
+        "url": "https://en.wikipedia.org/wiki/Zero",
+        "anchors": [
+          "Zero"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Successor_ordinal",
+        "url": "https://en.wikipedia.org/wiki/Successor_ordinal",
+        "anchors": [
+          "Successor ordinals"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Limit_ordinals",
+        "url": "https://en.wikipedia.org/wiki/Limit_ordinals",
+        "anchors": [
+          "Limit ordinals"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Axiom_of_dependent_choice",
+        "url": "https://en.wikipedia.org/wiki/Axiom_of_dependent_choice",
+        "anchors": [
+          "axiom of dependent choice"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Proof_by_infinite_descent",
+        "url": "https://en.wikipedia.org/wiki/Proof_by_infinite_descent",
+        "anchors": [
+          "proof by infinite descent"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tuple_(mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Tuple_(mathematics)",
+        "anchors": [
+          "tuple"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "String_(computer_science)",
+        "url": "https://en.wikipedia.org/wiki/String_(computer_science)",
+        "anchors": [
+          "string"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Continuous_function_(set_theory)",
+        "url": "https://en.wikipedia.org/wiki/Continuous_function_(set_theory)",
+        "anchors": [
+          "continuous"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Transfinite_recursion",
+        "url": "https://en.wikipedia.org/wiki/Transfinite_recursion",
+        "anchors": [
+          "transfinite recursion"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Limsup",
+        "url": "https://en.wikipedia.org/wiki/Limsup",
+        "anchors": [
+          "limsup"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Additively_indecomposable_ordinal",
+        "url": "https://en.wikipedia.org/wiki/Additively_indecomposable_ordinal",
+        "anchors": [
+          "additively indecomposable ordinals"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Epsilon_numbers_(mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Epsilon_numbers_(mathematics)",
+        "anchors": [
+          "epsilon numbers"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Nimber",
+        "url": "https://en.wikipedia.org/wiki/Nimber",
+        "anchors": [
+          "nimbers"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Von_Neumann_cardinal_assignment",
+        "url": "https://en.wikipedia.org/wiki/Von_Neumann_cardinal_assignment",
+        "anchors": [
+          "Von Neumann cardinal assignment"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Scott's_trick",
+        "url": "https://en.wikipedia.org/wiki/Scott%27s_trick",
+        "anchors": [
+          "Scott's trick"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cofinal_(mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Cofinal_(mathematics)",
+        "anchors": [
+          "cofinal"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Regular_ordinal",
+        "url": "https://en.wikipedia.org/wiki/Regular_ordinal",
+        "anchors": [
+          "regular"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Idempotent",
+        "url": "https://en.wikipedia.org/wiki/Idempotent",
+        "anchors": [
+          "idempotent"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Club_set",
+        "url": "https://en.wikipedia.org/wiki/Club_set",
+        "anchors": [
+          "club set"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Limit_ordinal",
+        "url": "https://en.wikipedia.org/wiki/Limit_ordinal",
+        "anchors": [
+          "limit ordinals"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Strong_limit_cardinal",
+        "url": "https://en.wikipedia.org/wiki/Strong_limit_cardinal",
+        "anchors": [
+          "strong limit cardinal"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Normal_function",
+        "url": "https://en.wikipedia.org/wiki/Normal_function",
+        "anchors": [
+          "normal functions"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Filter_(mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Filter_(mathematics)",
+        "anchors": [
+          "filter"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Club_filter",
+        "url": "https://en.wikipedia.org/wiki/Club_filter",
+        "anchors": [
+          "club filter"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Large_cardinal",
+        "url": "https://en.wikipedia.org/wiki/Large_cardinal",
+        "anchors": [
+          "large cardinals"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mahlo_cardinal",
+        "url": "https://en.wikipedia.org/wiki/Mahlo_cardinal",
+        "anchors": [
+          "Mahlo cardinal"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Weakly_inaccessible",
+        "url": "https://en.wikipedia.org/wiki/Weakly_inaccessible",
+        "anchors": [
+          "weakly inaccessible"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ultrafilter",
+        "url": "https://en.wikipedia.org/wiki/Ultrafilter",
+        "anchors": [
+          "ultrafilter"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Axiom_of_Choice",
+        "url": "https://en.wikipedia.org/wiki/Axiom_of_Choice",
+        "anchors": [
+          "Axiom of Choice"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fodor's_lemma",
+        "url": "https://en.wikipedia.org/wiki/Fodor%27s_lemma",
+        "anchors": [
+          "Fodor's lemma"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Axiom_of_determinacy",
+        "url": "https://en.wikipedia.org/wiki/Axiom_of_determinacy",
+        "anchors": [
+          "Axiom of determinacy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Measurable_cardinal",
+        "url": "https://en.wikipedia.org/wiki/Measurable_cardinal",
+        "anchors": [
+          "measurable cardinal"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Large_countable_ordinal",
+        "url": "https://en.wikipedia.org/wiki/Large_countable_ordinal",
+        "anchors": [
+          "Large countable ordinal"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Church–Kleene_ordinal",
+        "url": "https://en.wikipedia.org/wiki/Church%E2%80%93Kleene_ordinal",
+        "anchors": [
+          "Church–Kleene ordinal"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Computable_ordinal",
+        "url": "https://en.wikipedia.org/wiki/Computable_ordinal",
+        "anchors": [
+          "computable ordinal"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Computable_function",
+        "url": "https://en.wikipedia.org/wiki/Computable_function",
+        "anchors": [
+          "computable"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ordinal_analysis",
+        "url": "https://en.wikipedia.org/wiki/Ordinal_analysis",
+        "anchors": [
+          "proof-theoretic strength"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Formal_system",
+        "url": "https://en.wikipedia.org/wiki/Formal_system",
+        "anchors": [
+          "formal systems"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Peano_axioms",
+        "url": "https://en.wikipedia.org/wiki/Peano_axioms",
+        "anchors": [
+          "Peano arithmetic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Admissible_ordinal",
+        "url": "https://en.wikipedia.org/wiki/Admissible_ordinal",
+        "anchors": [
+          "admissible ordinals"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Topological_space",
+        "url": "https://en.wikipedia.org/wiki/Topological_space",
+        "anchors": [
+          "topological space"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Discrete_topology",
+        "url": "https://en.wikipedia.org/wiki/Discrete_topology",
+        "anchors": [
+          "discrete"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cofinite",
+        "url": "https://en.wikipedia.org/wiki/Cofinite",
+        "anchors": [
+          "cofinite"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pairwise_disjoint",
+        "url": "https://en.wikipedia.org/wiki/Pairwise_disjoint",
+        "anchors": [
+          "pairwise disjoint"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Discrete_set",
+        "url": "https://en.wikipedia.org/wiki/Discrete_set",
+        "anchors": [
+          "discrete sets"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Proof_by_contradiction",
+        "url": "https://en.wikipedia.org/wiki/Proof_by_contradiction",
+        "anchors": [
+          "proof by contradiction"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cantor-Bendixson_theorem",
+        "url": "https://en.wikipedia.org/wiki/Cantor-Bendixson_theorem",
+        "anchors": [
+          "Cantor-Bendixson theorem"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Aleph_number",
+        "url": "https://en.wikipedia.org/wiki/Aleph_number",
+        "anchors": [
+          "aleph numbers"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Counting",
+        "url": "https://en.wikipedia.org/wiki/Counting",
+        "anchors": [
+          "Counting"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Even_and_odd_ordinals",
+        "url": "https://en.wikipedia.org/wiki/Even_and_odd_ordinals",
+        "anchors": [
+          "Even and odd ordinals"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "First_uncountable_ordinal",
+        "url": "https://en.wikipedia.org/wiki/First_uncountable_ordinal",
+        "anchors": [
+          "First uncountable ordinal"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Encyclopedia_of_Mathematics",
+        "url": "https://en.wikipedia.org/wiki/Encyclopedia_of_Mathematics",
+        "anchors": [
+          "Encyclopedia of Mathematics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "European_Mathematical_Society",
+        "url": "https://en.wikipedia.org/wiki/European_Mathematical_Society",
+        "anchors": [
+          "EMS Press"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "GNU_General_Public_License",
+        "url": "https://en.wikipedia.org/wiki/GNU_General_Public_License",
+        "anchors": [
+          "GPL'd"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ],
+    "external": [
+      {
+        "url": "https://www.encyclopediaofmath.org/index.php?title=Ordinal_number",
+        "anchors": [
+          "\"Ordinal number\""
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.apronus.com/provenmath/ordinals.htm",
+        "anchors": [
+          "Ordinals at ProvenMath"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20220121063447/http://www.mtnmath.com/ord/index.html",
+        "anchors": [
+          "Ordinal calculator"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://math.colorado.edu/~monkd",
+        "anchors": [
+          "Don Monk's"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20150429210249/http://euclid.colorado.edu/~monkd/m8714.html",
+        "anchors": [
+          "lecture notes"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ]
+  },
+  "stats": {
+    "n_categories": 2,
+    "n_sections": 27,
+    "n_tables": 0,
+    "n_local": 0,
+    "n_wiki": 117,
+    "n_external": 5,
+    "md_chars": 57526
+  }
+}

@@ -1,0 +1,3795 @@
+{
+  "source": "Quantum_mechanics.html",
+  "title": "Quantum mechanics",
+  "wiki_title": "Quantum_mechanics",
+  "categories": [
+    "1920s introductions",
+    "Quantum mechanics"
+  ],
+  "sections": [
+    {
+      "level": 2,
+      "id": "Overview_and_fundamental_concepts",
+      "title": "Overview and fundamental concepts"
+    },
+    {
+      "level": 2,
+      "id": "Mathematical_formulation",
+      "title": "Mathematical formulation"
+    },
+    {
+      "level": 3,
+      "id": "Time_evolution_of_a_quantum_state",
+      "title": "Time evolution of a quantum state"
+    },
+    {
+      "level": 3,
+      "id": "Uncertainty_principle",
+      "title": "Uncertainty principle"
+    },
+    {
+      "level": 3,
+      "id": "Composite_systems_and_entanglement",
+      "title": "Composite systems and entanglement"
+    },
+    {
+      "level": 3,
+      "id": "Equivalence_between_formulations",
+      "title": "Equivalence between formulations"
+    },
+    {
+      "level": 3,
+      "id": "Symmetries_and_conservation_laws",
+      "title": "Symmetries and conservation laws"
+    },
+    {
+      "level": 2,
+      "id": "Examples",
+      "title": "Examples"
+    },
+    {
+      "level": 3,
+      "id": "Free_particle",
+      "title": "Free particle"
+    },
+    {
+      "level": 3,
+      "id": "Particle_in_a_box",
+      "title": "Particle in a box"
+    },
+    {
+      "level": 3,
+      "id": "Harmonic_oscillator",
+      "title": "Harmonic oscillator"
+    },
+    {
+      "level": 3,
+      "id": "Mach–Zehnder_interferometer",
+      "title": "Mach–Zehnder interferometer"
+    },
+    {
+      "level": 2,
+      "id": "Applications",
+      "title": "Applications"
+    },
+    {
+      "level": 2,
+      "id": "Relation_to_other_scientific_theories",
+      "title": "Relation to other scientific theories"
+    },
+    {
+      "level": 3,
+      "id": "Classical_mechanics",
+      "title": "Classical mechanics"
+    },
+    {
+      "level": 3,
+      "id": "Special_relativity_and_electrodynamics",
+      "title": "Special relativity and electrodynamics"
+    },
+    {
+      "level": 3,
+      "id": "Relation_to_general_relativity",
+      "title": "Relation to general relativity"
+    },
+    {
+      "level": 2,
+      "id": "Philosophical_implications",
+      "title": "Philosophical implications"
+    },
+    {
+      "level": 2,
+      "id": "History",
+      "title": "History"
+    },
+    {
+      "level": 2,
+      "id": "See_also",
+      "title": "See also"
+    },
+    {
+      "level": 2,
+      "id": "Explanatory_notes",
+      "title": "Explanatory notes"
+    },
+    {
+      "level": 2,
+      "id": "References",
+      "title": "References"
+    },
+    {
+      "level": 2,
+      "id": "Further_reading",
+      "title": "Further reading"
+    },
+    {
+      "level": 2,
+      "id": "External_links",
+      "title": "External links"
+    }
+  ],
+  "infobox": null,
+  "tables": [],
+  "links": {
+    "local": [
+      {
+        "target": "Max_Planck",
+        "source_file": "Max_Planck.html",
+        "url": "https://en.wikipedia.org/wiki/Max_Planck",
+        "anchors": [
+          "Max Planck"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Albert_Einstein",
+        "source_file": "Albert_Einstein.html",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein",
+        "anchors": [
+          "Albert Einstein"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Photoelectric_effect",
+        "source_file": "Photoelectric_effect.html",
+        "url": "https://en.wikipedia.org/wiki/Photoelectric_effect",
+        "anchors": [
+          "photoelectric effect"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Niels_Bohr",
+        "source_file": "Niels_Bohr.html",
+        "url": "https://en.wikipedia.org/wiki/Niels_Bohr",
+        "anchors": [
+          "Niels Bohr"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bohr_model",
+        "source_file": "Bohr_model.html",
+        "url": "https://en.wikipedia.org/wiki/Bohr_model",
+        "anchors": [
+          "model of the hydrogen atom"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ],
+    "wiki": [
+      {
+        "target": "Interpretations_of_quantum_mechanics",
+        "url": "https://en.wikipedia.org/wiki/Interpretations_of_quantum_mechanics",
+        "anchors": [
+          "interpretations of quantum mechanics",
+          "Interpretations of quantum mechanics",
+          "interpretations",
+          "philosophical speculation about the 'observer'"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Classical_physics",
+        "url": "https://en.wikipedia.org/wiki/Classical_physics",
+        "anchors": [
+          "classical physics",
+          "classical methods"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Old_quantum_theory",
+        "url": "https://en.wikipedia.org/wiki/Old_quantum_theory",
+        "anchors": [
+          "old quantum theory",
+          "quantum theory"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Atoms",
+        "url": "https://en.wikipedia.org/wiki/Atoms",
+        "anchors": [
+          "atoms"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Schrödinger_equation",
+        "url": "https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation",
+        "anchors": [
+          "Schrödinger equation",
+          "non-relativistic Schrödinger equation in position space",
+          "wave mechanics"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Double-slit_experiment",
+        "url": "https://en.wikipedia.org/wiki/Double-slit_experiment",
+        "anchors": [
+          "double-slit experiment",
+          "such experiments"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Eigenstate",
+        "url": "https://en.wikipedia.org/wiki/Eigenstate",
+        "anchors": [
+          "eigenstate",
+          "eigenstates"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_harmonic_oscillator",
+        "url": "https://en.wikipedia.org/wiki/Quantum_harmonic_oscillator",
+        "anchors": [
+          "quantum harmonic oscillator",
+          "Quantum harmonic oscillator"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wave_function",
+        "url": "https://en.wikipedia.org/wiki/Wave_function",
+        "anchors": [
+          "Wave functions",
+          "wave function"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electron",
+        "url": "https://en.wikipedia.org/wiki/Electron",
+        "anchors": [
+          "electron"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_chemistry",
+        "url": "https://en.wikipedia.org/wiki/Quantum_chemistry",
+        "anchors": [
+          "quantum chemistry"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_information_science",
+        "url": "https://en.wikipedia.org/wiki/Quantum_information_science",
+        "anchors": [
+          "quantum information science"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Macroscopic",
+        "url": "https://en.wikipedia.org/wiki/Macroscopic",
+        "anchors": [
+          "macroscopic"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bound_state",
+        "url": "https://en.wikipedia.org/wiki/Bound_state",
+        "anchors": [
+          "bound",
+          "bound states"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantization_(physics)",
+        "url": "https://en.wikipedia.org/wiki/Quantization_(physics)",
+        "anchors": [
+          "quantized"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Momentum",
+        "url": "https://en.wikipedia.org/wiki/Momentum",
+        "anchors": [
+          "momentum"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Angular_momentum",
+        "url": "https://en.wikipedia.org/wiki/Angular_momentum",
+        "anchors": [
+          "angular momentum"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wave",
+        "url": "https://en.wikipedia.org/wiki/Wave",
+        "anchors": [
+          "waves",
+          "wave"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wave–particle_duality",
+        "url": "https://en.wikipedia.org/wiki/Wave%E2%80%93particle_duality",
+        "anchors": [
+          "wave–particle duality"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Uncertainty_principle",
+        "url": "https://en.wikipedia.org/wiki/Uncertainty_principle",
+        "anchors": [
+          "uncertainty principle"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Black-body_radiation",
+        "url": "https://en.wikipedia.org/wiki/Black-body_radiation",
+        "anchors": [
+          "black-body radiation"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Erwin_Schrödinger",
+        "url": "https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger",
+        "anchors": [
+          "Erwin Schrödinger"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Werner_Heisenberg",
+        "url": "https://en.wikipedia.org/wiki/Werner_Heisenberg",
+        "anchors": [
+          "Werner Heisenberg"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Max_Born",
+        "url": "https://en.wikipedia.org/wiki/Max_Born",
+        "anchors": [
+          "Max Born"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Paul_Dirac",
+        "url": "https://en.wikipedia.org/wiki/Paul_Dirac",
+        "anchors": [
+          "Paul Dirac"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Molecules",
+        "url": "https://en.wikipedia.org/wiki/Molecules",
+        "anchors": [
+          "molecules"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_electrodynamics",
+        "url": "https://en.wikipedia.org/wiki/Quantum_electrodynamics",
+        "anchors": [
+          "quantum electrodynamics"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Born_rule",
+        "url": "https://en.wikipedia.org/wiki/Born_rule",
+        "anchors": [
+          "Born rule"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Probability_density_function",
+        "url": "https://en.wikipedia.org/wiki/Probability_density_function",
+        "anchors": [
+          "probability density function",
+          "Probability densities"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Photon",
+        "url": "https://en.wikipedia.org/wiki/Photon",
+        "anchors": [
+          "photon",
+          "photons"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_tunneling",
+        "url": "https://en.wikipedia.org/wiki/Quantum_tunneling",
+        "anchors": [
+          "quantum tunneling"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_entanglement",
+        "url": "https://en.wikipedia.org/wiki/Quantum_entanglement",
+        "anchors": [
+          "quantum entanglement",
+          "entangled"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_computing",
+        "url": "https://en.wikipedia.org/wiki/Quantum_computing",
+        "anchors": [
+          "quantum computing"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bell_test",
+        "url": "https://en.wikipedia.org/wiki/Bell_test",
+        "anchors": [
+          "Bell test",
+          "several experiments"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_superposition",
+        "url": "https://en.wikipedia.org/wiki/Quantum_superposition",
+        "anchors": [
+          "quantum superposition",
+          "quantum superpositions"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Measurement_in_quantum_mechanics",
+        "url": "https://en.wikipedia.org/wiki/Measurement_in_quantum_mechanics",
+        "anchors": [
+          "measurement"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Planck_constant",
+        "url": "https://en.wikipedia.org/wiki/Planck_constant",
+        "anchors": [
+          "Planck constant"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Correspondence_principle",
+        "url": "https://en.wikipedia.org/wiki/Correspondence_principle",
+        "anchors": [
+          "correspondence principle"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Particle_in_a_box",
+        "url": "https://en.wikipedia.org/wiki/Particle_in_a_box",
+        "anchors": [
+          "particle in a box",
+          "Particle in a box"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hydrogen_atom",
+        "url": "https://en.wikipedia.org/wiki/Hydrogen_atom",
+        "anchors": [
+          "hydrogen atom"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fourier_transform",
+        "url": "https://en.wikipedia.org/wiki/Fourier_transform#Uncertainty_principle",
+        "anchors": [
+          "Fourier transforms",
+          "differentiation corresponds to multiplication in the dual space"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_decoherence",
+        "url": "https://en.wikipedia.org/wiki/Quantum_decoherence",
+        "anchors": [
+          "quantum decoherence",
+          "Quantum decoherence"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Matrix_mechanics",
+        "url": "https://en.wikipedia.org/wiki/Matrix_mechanics",
+        "anchors": [
+          "matrix mechanics"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wave_packet",
+        "url": "https://en.wikipedia.org/wiki/Wave_packet",
+        "anchors": [
+          "wave packet"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Kinetic_energy",
+        "url": "https://en.wikipedia.org/wiki/Kinetic_energy#Kinetic_energy_of_rigid_bodies",
+        "anchors": [
+          "classic kinetic energy analogue",
+          "kinetic energy"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Harmonic_oscillator",
+        "url": "https://en.wikipedia.org/wiki/Harmonic_oscillator",
+        "anchors": [
+          "harmonic oscillator",
+          "classical harmonic oscillator"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Classical_mechanics",
+        "url": "https://en.wikipedia.org/wiki/Classical_mechanics",
+        "anchors": [
+          "classical mechanics"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_optics",
+        "url": "https://en.wikipedia.org/wiki/Quantum_optics",
+        "anchors": [
+          "quantum optics"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Semiconductor",
+        "url": "https://en.wikipedia.org/wiki/Semiconductor",
+        "anchors": [
+          "semiconductors"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electric_charge",
+        "url": "https://en.wikipedia.org/wiki/Electric_charge",
+        "anchors": [
+          "electric charges",
+          "charged"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Steven_Weinberg",
+        "url": "https://en.wikipedia.org/wiki/Steven_Weinberg",
+        "anchors": [
+          "Steven Weinberg"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Atomic_theory",
+        "url": "https://en.wikipedia.org/wiki/Atomic_theory",
+        "anchors": [
+          "Atomic theory",
+          "atomic theory"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Solvay_Conference",
+        "url": "https://en.wikipedia.org/wiki/Solvay_Conference",
+        "anchors": [
+          "Solvay Conference"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Edward_N._Zalta",
+        "url": "https://en.wikipedia.org/wiki/Edward_N._Zalta",
+        "anchors": [
+          "Zalta, Edward N."
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Stanford_Encyclopedia_of_Philosophy",
+        "url": "https://en.wikipedia.org/wiki/Stanford_Encyclopedia_of_Philosophy",
+        "anchors": [
+          "Stanford Encyclopedia of Philosophy"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "ISSN_(identifier)",
+        "url": "https://en.wikipedia.org/wiki/ISSN_(identifier)",
+        "anchors": [
+          "ISSN"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "OCLC_(identifier)",
+        "url": "https://en.wikipedia.org/wiki/OCLC_(identifier)",
+        "anchors": [
+          "OCLC"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum-Systems",
+        "url": "https://en.wikipedia.org/wiki/Quantum-Systems",
+        "anchors": [
+          "Quantum-Systems"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Introduction_to_quantum_mechanics",
+        "url": "https://en.wikipedia.org/wiki/Introduction_to_quantum_mechanics",
+        "anchors": [
+          "Introduction to quantum mechanics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Scientific_theory",
+        "url": "https://en.wikipedia.org/wiki/Scientific_theory",
+        "anchors": [
+          "theory"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Atom",
+        "url": "https://en.wikipedia.org/wiki/Atom",
+        "anchors": [
+          "atoms"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_biology",
+        "url": "https://en.wikipedia.org/wiki/Quantum_biology",
+        "anchors": [
+          "quantum biology"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_field_theory",
+        "url": "https://en.wikipedia.org/wiki/Quantum_field_theory",
+        "anchors": [
+          "quantum field theory"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_technology",
+        "url": "https://en.wikipedia.org/wiki/Quantum_technology",
+        "anchors": [
+          "quantum technology"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Microscopic_scale",
+        "url": "https://en.wikipedia.org/wiki/Microscopic_scale",
+        "anchors": [
+          "(optical) microscopic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Submicroscopic",
+        "url": "https://en.wikipedia.org/wiki/Submicroscopic",
+        "anchors": [
+          "submicroscopic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Subatomic",
+        "url": "https://en.wikipedia.org/wiki/Subatomic",
+        "anchors": [
+          "subatomic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Discrete_mathematics",
+        "url": "https://en.wikipedia.org/wiki/Discrete_mathematics",
+        "anchors": [
+          "discrete values"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Energy",
+        "url": "https://en.wikipedia.org/wiki/Energy",
+        "anchors": [
+          "energy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Particle",
+        "url": "https://en.wikipedia.org/wiki/Particle",
+        "anchors": [
+          "particles"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Annus_Mirabilis_papers",
+        "url": "https://en.wikipedia.org/wiki/Annus_Mirabilis_papers#Photoelectric_effect",
+        "anchors": [
+          "1905 paper"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mathematical_formulations_of_quantum_mechanics",
+        "url": "https://en.wikipedia.org/wiki/Mathematical_formulations_of_quantum_mechanics",
+        "anchors": [
+          "specially developed mathematical formalisms"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Probability_amplitude",
+        "url": "https://en.wikipedia.org/wiki/Probability_amplitude",
+        "anchors": [
+          "probability amplitudes"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Physical_systems",
+        "url": "https://en.wikipedia.org/wiki/Physical_systems",
+        "anchors": [
+          "physical systems"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Subatomic_particle",
+        "url": "https://en.wikipedia.org/wiki/Subatomic_particle",
+        "anchors": [
+          "subatomic particles"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wigner's_friend",
+        "url": "https://en.wikipedia.org/wiki/Wigner%27s_friend",
+        "anchors": [
+          "Wigner's friend"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Accuracy",
+        "url": "https://en.wikipedia.org/wiki/Accuracy",
+        "anchors": [
+          "accuracy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Precision_tests_of_QED",
+        "url": "https://en.wikipedia.org/wiki/Precision_tests_of_QED",
+        "anchors": [
+          "shown to agree with experiment"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Complex_number",
+        "url": "https://en.wikipedia.org/wiki/Complex_number",
+        "anchors": [
+          "complex number"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_interference",
+        "url": "https://en.wikipedia.org/wiki/Quantum_interference",
+        "anchors": [
+          "quantum interference"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Coherence_(physics)",
+        "url": "https://en.wikipedia.org/wiki/Coherence_(physics)",
+        "anchors": [
+          "coherent light source"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Laser",
+        "url": "https://en.wikipedia.org/wiki/Laser",
+        "anchors": [
+          "laser"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Interference_(wave_propagation)",
+        "url": "https://en.wikipedia.org/wiki/Interference_(wave_propagation)",
+        "anchors": [
+          "interfere"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electrons",
+        "url": "https://en.wikipedia.org/wiki/Electrons",
+        "anchors": [
+          "electrons"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_tunnelling",
+        "url": "https://en.wikipedia.org/wiki/Quantum_tunnelling",
+        "anchors": [
+          "quantum tunnelling"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Potential_barrier",
+        "url": "https://en.wikipedia.org/wiki/Potential_barrier",
+        "anchors": [
+          "potential barrier"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Radioactive_decay",
+        "url": "https://en.wikipedia.org/wiki/Radioactive_decay",
+        "anchors": [
+          "radioactive decay"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Nuclear_fusion",
+        "url": "https://en.wikipedia.org/wiki/Nuclear_fusion",
+        "anchors": [
+          "nuclear fusion"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Scanning_tunnelling_microscopy",
+        "url": "https://en.wikipedia.org/wiki/Scanning_tunnelling_microscopy",
+        "anchors": [
+          "scanning tunnelling microscopy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tunnel_diode",
+        "url": "https://en.wikipedia.org/wiki/Tunnel_diode",
+        "anchors": [
+          "tunnel diode"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tunnel_field-effect_transistor",
+        "url": "https://en.wikipedia.org/wiki/Tunnel_field-effect_transistor",
+        "anchors": [
+          "tunnel field-effect transistor"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_key_distribution",
+        "url": "https://en.wikipedia.org/wiki/Quantum_key_distribution",
+        "anchors": [
+          "quantum key distribution"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Superdense_coding",
+        "url": "https://en.wikipedia.org/wiki/Superdense_coding",
+        "anchors": [
+          "superdense coding"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Faster_than_light",
+        "url": "https://en.wikipedia.org/wiki/Faster_than_light",
+        "anchors": [
+          "faster than light"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "No-communication_theorem",
+        "url": "https://en.wikipedia.org/wiki/No-communication_theorem",
+        "anchors": [
+          "no-communication theorem"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hidden_variable_theory",
+        "url": "https://en.wikipedia.org/wiki/Hidden_variable_theory",
+        "anchors": [
+          "hidden variables"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bell's_theorem",
+        "url": "https://en.wikipedia.org/wiki/Bell%27s_theorem",
+        "anchors": [
+          "Bell's theorem"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Linear_algebra",
+        "url": "https://en.wikipedia.org/wiki/Linear_algebra",
+        "anchors": [
+          "linear algebra"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Differential_equation",
+        "url": "https://en.wikipedia.org/wiki/Differential_equation",
+        "anchors": [
+          "differential equations"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Group_theory",
+        "url": "https://en.wikipedia.org/wiki/Group_theory",
+        "anchors": [
+          "group theory"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mathematical_formulation_of_quantum_mechanics",
+        "url": "https://en.wikipedia.org/wiki/Mathematical_formulation_of_quantum_mechanics",
+        "anchors": [
+          "Mathematical formulation of quantum mechanics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Separable_space",
+        "url": "https://en.wikipedia.org/wiki/Separable_space",
+        "anchors": [
+          "separable"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hilbert_space",
+        "url": "https://en.wikipedia.org/wiki/Hilbert_space",
+        "anchors": [
+          "Hilbert space"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Projective_space",
+        "url": "https://en.wikipedia.org/wiki/Projective_space",
+        "anchors": [
+          "projective space"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Complex_projective_space",
+        "url": "https://en.wikipedia.org/wiki/Complex_projective_space",
+        "anchors": [
+          "complex projective space"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Square-integrable",
+        "url": "https://en.wikipedia.org/wiki/Square-integrable",
+        "anchors": [
+          "square-integrable"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Spin_(physics)",
+        "url": "https://en.wikipedia.org/wiki/Spin_(physics)",
+        "anchors": [
+          "spin"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hermitian_adjoint",
+        "url": "https://en.wikipedia.org/wiki/Hermitian_adjoint#Hermitian_operators",
+        "anchors": [
+          "Hermitian"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Self-adjoint_operator",
+        "url": "https://en.wikipedia.org/wiki/Self-adjoint_operator",
+        "anchors": [
+          "self-adjoint"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Operator_(physics)",
+        "url": "https://en.wikipedia.org/wiki/Operator_(physics)",
+        "anchors": [
+          "operators"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Eigenvector",
+        "url": "https://en.wikipedia.org/wiki/Eigenvector",
+        "anchors": [
+          "eigenvector"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Eigenvalue",
+        "url": "https://en.wikipedia.org/wiki/Eigenvalue",
+        "anchors": [
+          "eigenvalue"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Probability_density",
+        "url": "https://en.wikipedia.org/wiki/Probability_density",
+        "anchors": [
+          "probability density"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Collapse_of_the_wavefunction",
+        "url": "https://en.wikipedia.org/wiki/Collapse_of_the_wavefunction",
+        "anchors": [
+          "collapse"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Probabilistic",
+        "url": "https://en.wikipedia.org/wiki/Probabilistic",
+        "anchors": [
+          "probabilistic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hamiltonian_(quantum_mechanics)",
+        "url": "https://en.wikipedia.org/wiki/Hamiltonian_(quantum_mechanics)",
+        "anchors": [
+          "Hamiltonian"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Total_energy",
+        "url": "https://en.wikipedia.org/wiki/Total_energy",
+        "anchors": [
+          "total energy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hamiltonian_mechanics",
+        "url": "https://en.wikipedia.org/wiki/Hamiltonian_mechanics",
+        "anchors": [
+          "classical Hamiltonian"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Unitarity_(physics)",
+        "url": "https://en.wikipedia.org/wiki/Unitarity_(physics)",
+        "anchors": [
+          "unitary"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Deterministic",
+        "url": "https://en.wikipedia.org/wiki/Deterministic",
+        "anchors": [
+          "deterministic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chladni's_figures",
+        "url": "https://en.wikipedia.org/wiki/Chladni%27s_figures",
+        "anchors": [
+          "Chladni's figures"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Acoustics",
+        "url": "https://en.wikipedia.org/wiki/Acoustics",
+        "anchors": [
+          "acoustic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Resonant_frequencies",
+        "url": "https://en.wikipedia.org/wiki/Resonant_frequencies",
+        "anchors": [
+          "resonant frequencies"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Atomic_nucleus",
+        "url": "https://en.wikipedia.org/wiki/Atomic_nucleus",
+        "anchors": [
+          "atomic nucleus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Atomic_orbital",
+        "url": "https://en.wikipedia.org/wiki/Atomic_orbital",
+        "anchors": [
+          "s orbital"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "List_of_quantum-mechanical_systems_with_analytical_solutions",
+        "url": "https://en.wikipedia.org/wiki/List_of_quantum-mechanical_systems_with_analytical_solutions",
+        "anchors": [
+          "very few relatively simple model Hamiltonians"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Dihydrogen_cation",
+        "url": "https://en.wikipedia.org/wiki/Dihydrogen_cation",
+        "anchors": [
+          "dihydrogen cation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Helium",
+        "url": "https://en.wikipedia.org/wiki/Helium",
+        "anchors": [
+          "helium"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Closed-form_expression",
+        "url": "https://en.wikipedia.org/wiki/Closed-form_expression",
+        "anchors": [
+          "closed form"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Perturbation_theory_(quantum_mechanics)",
+        "url": "https://en.wikipedia.org/wiki/Perturbation_theory_(quantum_mechanics)",
+        "anchors": [
+          "perturbation theory"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Potential_energy",
+        "url": "https://en.wikipedia.org/wiki/Potential_energy",
+        "anchors": [
+          "potential energy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hermitian_operators",
+        "url": "https://en.wikipedia.org/wiki/Hermitian_operators",
+        "anchors": [
+          "Hermitian operators"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Canonical_commutation_relation",
+        "url": "https://en.wikipedia.org/wiki/Canonical_commutation_relation",
+        "anchors": [
+          "canonical commutation relation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Standard_deviation",
+        "url": "https://en.wikipedia.org/wiki/Standard_deviation",
+        "anchors": [
+          "standard deviation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Commutator",
+        "url": "https://en.wikipedia.org/wiki/Commutator",
+        "anchors": [
+          "commutator"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tensor_product",
+        "url": "https://en.wikipedia.org/wiki/Tensor_product",
+        "anchors": [
+          "tensor product"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Reduced_density_matrix",
+        "url": "https://en.wikipedia.org/wiki/Reduced_density_matrix",
+        "anchors": [
+          "reduced density matrices"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "POVM",
+        "url": "https://en.wikipedia.org/wiki/POVM",
+        "anchors": [
+          "positive operator-valued measures"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Transformation_theory_(quantum_mechanics)",
+        "url": "https://en.wikipedia.org/wiki/Transformation_theory_(quantum_mechanics)",
+        "anchors": [
+          "transformation theory"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Feynman",
+        "url": "https://en.wikipedia.org/wiki/Feynman",
+        "anchors": [
+          "Feynman"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Path_integral_formulation",
+        "url": "https://en.wikipedia.org/wiki/Path_integral_formulation",
+        "anchors": [
+          "path integral formulation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Action_principle",
+        "url": "https://en.wikipedia.org/wiki/Action_principle",
+        "anchors": [
+          "action principle"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Noether's_theorem",
+        "url": "https://en.wikipedia.org/wiki/Noether%27s_theorem",
+        "anchors": [
+          "Noether's theorem"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Emmy_Noether",
+        "url": "https://en.wikipedia.org/wiki/Emmy_Noether",
+        "anchors": [
+          "Emmy Noether"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lagrangian_mechanics",
+        "url": "https://en.wikipedia.org/wiki/Lagrangian_mechanics",
+        "anchors": [
+          "Lagrangian"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Differentiable",
+        "url": "https://en.wikipedia.org/wiki/Differentiable",
+        "anchors": [
+          "differentiable"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Symmetry_(physics)",
+        "url": "https://en.wikipedia.org/wiki/Symmetry_(physics)",
+        "anchors": [
+          "symmetry"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Conservation_law",
+        "url": "https://en.wikipedia.org/wiki/Conservation_law",
+        "anchors": [
+          "conservation law"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Free_particle",
+        "url": "https://en.wikipedia.org/wiki/Free_particle",
+        "anchors": [
+          "Free particle"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Plane_wave",
+        "url": "https://en.wikipedia.org/wiki/Plane_wave",
+        "anchors": [
+          "plane waves"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Euler's_formula",
+        "url": "https://en.wikipedia.org/wiki/Euler%27s_formula",
+        "anchors": [
+          "Euler's formula"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Finite_potential_well",
+        "url": "https://en.wikipedia.org/wiki/Finite_potential_well",
+        "anchors": [
+          "finite potential well"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Rectangular_potential_barrier",
+        "url": "https://en.wikipedia.org/wiki/Rectangular_potential_barrier",
+        "anchors": [
+          "rectangular potential barrier"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Flash_memory",
+        "url": "https://en.wikipedia.org/wiki/Flash_memory",
+        "anchors": [
+          "flash memory"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Scanning_tunneling_microscopy",
+        "url": "https://en.wikipedia.org/wiki/Scanning_tunneling_microscopy",
+        "anchors": [
+          "scanning tunneling microscopy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hooke's_law",
+        "url": "https://en.wikipedia.org/wiki/Hooke%27s_law",
+        "anchors": [
+          "spring"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Real_part",
+        "url": "https://en.wikipedia.org/wiki/Real_part",
+        "anchors": [
+          "real part"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Imaginary_part",
+        "url": "https://en.wikipedia.org/wiki/Imaginary_part",
+        "anchors": [
+          "imaginary part"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Standing_wave",
+        "url": "https://en.wikipedia.org/wiki/Standing_wave",
+        "anchors": [
+          "standing waves"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Stationary_state",
+        "url": "https://en.wikipedia.org/wiki/Stationary_state",
+        "anchors": [
+          "stationary states"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Energy_level",
+        "url": "https://en.wikipedia.org/wiki/Energy_level",
+        "anchors": [
+          "energy level"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hermite_polynomials",
+        "url": "https://en.wikipedia.org/wiki/Hermite_polynomials",
+        "anchors": [
+          "Hermite polynomials"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mach–Zehnder_interferometer",
+        "url": "https://en.wikipedia.org/wiki/Mach%E2%80%93Zehnder_interferometer",
+        "anchors": [
+          "Mach–Zehnder interferometer"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Delayed_choice_quantum_eraser",
+        "url": "https://en.wikipedia.org/wiki/Delayed_choice_quantum_eraser",
+        "anchors": [
+          "delayed choice quantum eraser"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Elitzur–Vaidman_bomb_tester",
+        "url": "https://en.wikipedia.org/wiki/Elitzur%E2%80%93Vaidman_bomb_tester",
+        "anchors": [
+          "Elitzur–Vaidman bomb tester"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Beam_splitter",
+        "url": "https://en.wikipedia.org/wiki/Beam_splitter",
+        "anchors": [
+          "beam splitters"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Phase_(waves)",
+        "url": "https://en.wikipedia.org/wiki/Phase_(waves)",
+        "anchors": [
+          "phase shift"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Applications_of_quantum_mechanics",
+        "url": "https://en.wikipedia.org/wiki/Applications_of_quantum_mechanics",
+        "anchors": [
+          "Applications of quantum mechanics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Proton",
+        "url": "https://en.wikipedia.org/wiki/Proton",
+        "anchors": [
+          "protons"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Neutron",
+        "url": "https://en.wikipedia.org/wiki/Neutron",
+        "anchors": [
+          "neutrons"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Solid-state_physics",
+        "url": "https://en.wikipedia.org/wiki/Solid-state_physics",
+        "anchors": [
+          "Solid-state physics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Materials_science",
+        "url": "https://en.wikipedia.org/wiki/Materials_science",
+        "anchors": [
+          "materials science"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Superconducting_magnet",
+        "url": "https://en.wikipedia.org/wiki/Superconducting_magnet",
+        "anchors": [
+          "superconducting magnets"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Light-emitting_diode",
+        "url": "https://en.wikipedia.org/wiki/Light-emitting_diode",
+        "anchors": [
+          "light-emitting diodes"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Optical_amplifier",
+        "url": "https://en.wikipedia.org/wiki/Optical_amplifier",
+        "anchors": [
+          "optical amplifier"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Transistor",
+        "url": "https://en.wikipedia.org/wiki/Transistor",
+        "anchors": [
+          "transistor"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Microprocessor",
+        "url": "https://en.wikipedia.org/wiki/Microprocessor",
+        "anchors": [
+          "microprocessor"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Medical_imaging",
+        "url": "https://en.wikipedia.org/wiki/Medical_imaging",
+        "anchors": [
+          "medical and research imaging"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Magnetic_resonance_imaging",
+        "url": "https://en.wikipedia.org/wiki/Magnetic_resonance_imaging",
+        "anchors": [
+          "magnetic resonance imaging"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electron_microscopy",
+        "url": "https://en.wikipedia.org/wiki/Electron_microscopy",
+        "anchors": [
+          "electron microscopy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "DNA",
+        "url": "https://en.wikipedia.org/wiki/DNA",
+        "anchors": [
+          "DNA"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_number",
+        "url": "https://en.wikipedia.org/wiki/Quantum_number",
+        "anchors": [
+          "quantum numbers"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Canonical_quantization",
+        "url": "https://en.wikipedia.org/wiki/Canonical_quantization",
+        "anchors": [
+          "quantization"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Theory_of_relativity",
+        "url": "https://en.wikipedia.org/wiki/Theory_of_relativity",
+        "anchors": [
+          "non-relativistic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chaotic_systems",
+        "url": "https://en.wikipedia.org/wiki/Chaotic_systems",
+        "anchors": [
+          "chaotic systems"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_chaos",
+        "url": "https://en.wikipedia.org/wiki/Quantum_chaos",
+        "anchors": [
+          "quantum chaos"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_coherence",
+        "url": "https://en.wikipedia.org/wiki/Quantum_coherence",
+        "anchors": [
+          "coherence"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Absolute_zero",
+        "url": "https://en.wikipedia.org/wiki/Absolute_zero",
+        "anchors": [
+          "absolute zero"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Molecule",
+        "url": "https://en.wikipedia.org/wiki/Molecule",
+        "anchors": [
+          "molecules"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Special_relativity",
+        "url": "https://en.wikipedia.org/wiki/Special_relativity",
+        "anchors": [
+          "special relativity"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Klein–Gordon_equation",
+        "url": "https://en.wikipedia.org/wiki/Klein%E2%80%93Gordon_equation",
+        "anchors": [
+          "Klein–Gordon equation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Dirac_equation",
+        "url": "https://en.wikipedia.org/wiki/Dirac_equation",
+        "anchors": [
+          "Dirac equation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electromagnetic_interaction",
+        "url": "https://en.wikipedia.org/wiki/Electromagnetic_interaction",
+        "anchors": [
+          "electromagnetic interaction"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "General_relativity",
+        "url": "https://en.wikipedia.org/wiki/General_relativity",
+        "anchors": [
+          "general relativity"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electromagnetic_field",
+        "url": "https://en.wikipedia.org/wiki/Electromagnetic_field",
+        "anchors": [
+          "electromagnetic field"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electric_field",
+        "url": "https://en.wikipedia.org/wiki/Electric_field",
+        "anchors": [
+          "electric field"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electric_potential",
+        "url": "https://en.wikipedia.org/wiki/Electric_potential",
+        "anchors": [
+          "Coulomb potential"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Stern–Gerlach_experiment",
+        "url": "https://en.wikipedia.org/wiki/Stern%E2%80%93Gerlach_experiment",
+        "anchors": [
+          "Stern–Gerlach experiment"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Charged_particle",
+        "url": "https://en.wikipedia.org/wiki/Charged_particle",
+        "anchors": [
+          "charged particles"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Field_(physics)",
+        "url": "https://en.wikipedia.org/wiki/Field_(physics)",
+        "anchors": [
+          "Quantum field"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Strong_nuclear_force",
+        "url": "https://en.wikipedia.org/wiki/Strong_nuclear_force",
+        "anchors": [
+          "strong nuclear force"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Weak_nuclear_force",
+        "url": "https://en.wikipedia.org/wiki/Weak_nuclear_force",
+        "anchors": [
+          "weak nuclear force"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_chromodynamics",
+        "url": "https://en.wikipedia.org/wiki/Quantum_chromodynamics",
+        "anchors": [
+          "quantum chromodynamics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quark",
+        "url": "https://en.wikipedia.org/wiki/Quark",
+        "anchors": [
+          "quarks"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Gluon",
+        "url": "https://en.wikipedia.org/wiki/Gluon",
+        "anchors": [
+          "gluons"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electroweak_theory",
+        "url": "https://en.wikipedia.org/wiki/Electroweak_theory",
+        "anchors": [
+          "electroweak theory"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Abdus_Salam",
+        "url": "https://en.wikipedia.org/wiki/Abdus_Salam",
+        "anchors": [
+          "Abdus Salam"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sheldon_Glashow",
+        "url": "https://en.wikipedia.org/wiki/Sheldon_Glashow",
+        "anchors": [
+          "Sheldon Glashow"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Empirical_evidence",
+        "url": "https://en.wikipedia.org/wiki/Empirical_evidence",
+        "anchors": [
+          "empirical evidence"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_gravity",
+        "url": "https://en.wikipedia.org/wiki/Quantum_gravity",
+        "anchors": [
+          "quantum gravity"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Physical_cosmology",
+        "url": "https://en.wikipedia.org/wiki/Physical_cosmology",
+        "anchors": [
+          "physical cosmology"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Theory_of_Everything",
+        "url": "https://en.wikipedia.org/wiki/Theory_of_Everything",
+        "anchors": [
+          "Theory of Everything"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "String_theory",
+        "url": "https://en.wikipedia.org/wiki/String_theory",
+        "anchors": [
+          "string theory"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Point_particle",
+        "url": "https://en.wikipedia.org/wiki/Point_particle",
+        "anchors": [
+          "point-like particles"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Particle_physics",
+        "url": "https://en.wikipedia.org/wiki/Particle_physics",
+        "anchors": [
+          "particle physics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Dimension_(mathematics_and_physics)",
+        "url": "https://en.wikipedia.org/wiki/Dimension_(mathematics_and_physics)",
+        "anchors": [
+          "one-dimensional"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "String_(physics)",
+        "url": "https://en.wikipedia.org/wiki/String_(physics)",
+        "anchors": [
+          "strings"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mass",
+        "url": "https://en.wikipedia.org/wiki/Mass",
+        "anchors": [
+          "mass"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Charge_(physics)",
+        "url": "https://en.wikipedia.org/wiki/Charge_(physics)",
+        "anchors": [
+          "charge"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Vibration",
+        "url": "https://en.wikipedia.org/wiki/Vibration",
+        "anchors": [
+          "vibrational"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Graviton",
+        "url": "https://en.wikipedia.org/wiki/Graviton",
+        "anchors": [
+          "graviton"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Loop_quantum_gravity",
+        "url": "https://en.wikipedia.org/wiki/Loop_quantum_gravity",
+        "anchors": [
+          "loop quantum gravity"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_spacetime",
+        "url": "https://en.wikipedia.org/wiki/Quantum_spacetime",
+        "anchors": [
+          "quantum spacetime"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Spin_network",
+        "url": "https://en.wikipedia.org/wiki/Spin_network",
+        "anchors": [
+          "spin networks"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Spin_foam",
+        "url": "https://en.wikipedia.org/wiki/Spin_foam",
+        "anchors": [
+          "spin foam"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Planck_length",
+        "url": "https://en.wikipedia.org/wiki/Planck_length",
+        "anchors": [
+          "Planck length"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Superposition_principle",
+        "url": "https://en.wikipedia.org/wiki/Superposition_principle",
+        "anchors": [
+          "superposition"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wave_function_collapse",
+        "url": "https://en.wikipedia.org/wiki/Wave_function_collapse",
+        "anchors": [
+          "wave function collapse"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "List_of_unsolved_problems_in_physics",
+        "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics",
+        "anchors": [
+          "More unsolved problems in physics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Philosophical",
+        "url": "https://en.wikipedia.org/wiki/Philosophical",
+        "anchors": [
+          "philosophical"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wavefunction_collapse",
+        "url": "https://en.wikipedia.org/wiki/Wavefunction_collapse",
+        "anchors": [
+          "wavefunction collapse"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Measurement_problem",
+        "url": "https://en.wikipedia.org/wiki/Measurement_problem",
+        "anchors": [
+          "measurement problem"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_nonlocality",
+        "url": "https://en.wikipedia.org/wiki/Quantum_nonlocality",
+        "anchors": [
+          "quantum nonlocality"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Richard_Feynman",
+        "url": "https://en.wikipedia.org/wiki/Richard_Feynman",
+        "anchors": [
+          "Richard Feynman"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Copenhagen_interpretation",
+        "url": "https://en.wikipedia.org/wiki/Copenhagen_interpretation",
+        "anchors": [
+          "Copenhagen interpretation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Complementarity_(physics)",
+        "url": "https://en.wikipedia.org/wiki/Complementarity_(physics)",
+        "anchors": [
+          "complementary"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Anton_Zeilinger",
+        "url": "https://en.wikipedia.org/wiki/Anton_Zeilinger",
+        "anchors": [
+          "Zeilinger"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Determinism",
+        "url": "https://en.wikipedia.org/wiki/Determinism",
+        "anchors": [
+          "determinism"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Principle_of_locality",
+        "url": "https://en.wikipedia.org/wiki/Principle_of_locality",
+        "anchors": [
+          "locality"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bohr–Einstein_debates",
+        "url": "https://en.wikipedia.org/wiki/Bohr%E2%80%93Einstein_debates",
+        "anchors": [
+          "Bohr–Einstein debates"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Action_at_a_distance",
+        "url": "https://en.wikipedia.org/wiki/Action_at_a_distance",
+        "anchors": [
+          "action at a distance"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Thermodynamics",
+        "url": "https://en.wikipedia.org/wiki/Thermodynamics",
+        "anchors": [
+          "thermodynamics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Statistical_mechanics",
+        "url": "https://en.wikipedia.org/wiki/Statistical_mechanics",
+        "anchors": [
+          "statistical mechanics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Boris_Podolsky",
+        "url": "https://en.wikipedia.org/wiki/Boris_Podolsky",
+        "anchors": [
+          "Boris Podolsky"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Nathan_Rosen",
+        "url": "https://en.wikipedia.org/wiki/Nathan_Rosen",
+        "anchors": [
+          "Nathan Rosen"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Thought_experiment",
+        "url": "https://en.wikipedia.org/wiki/Thought_experiment",
+        "anchors": [
+          "thought experiment"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Einstein–Podolsky–Rosen_paradox",
+        "url": "https://en.wikipedia.org/wiki/Einstein%E2%80%93Podolsky%E2%80%93Rosen_paradox",
+        "anchors": [
+          "Einstein–Podolsky–Rosen paradox"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "John_Stewart_Bell",
+        "url": "https://en.wikipedia.org/wiki/John_Stewart_Bell",
+        "anchors": [
+          "John Bell"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bell_inequalities",
+        "url": "https://en.wikipedia.org/wiki/Bell_inequalities",
+        "anchors": [
+          "Bell inequalities"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bohmian_mechanics",
+        "url": "https://en.wikipedia.org/wiki/Bohmian_mechanics",
+        "anchors": [
+          "Bohmian mechanics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Schrödinger's_cat",
+        "url": "https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat",
+        "anchors": [
+          "Schrödinger's cat"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Many-worlds_interpretation",
+        "url": "https://en.wikipedia.org/wiki/Many-worlds_interpretation",
+        "anchors": [
+          "many-worlds interpretation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Relational_quantum_mechanics",
+        "url": "https://en.wikipedia.org/wiki/Relational_quantum_mechanics",
+        "anchors": [
+          "Relational quantum mechanics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "QBism",
+        "url": "https://en.wikipedia.org/wiki/QBism",
+        "anchors": [
+          "QBism"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "History_of_quantum_mechanics",
+        "url": "https://en.wikipedia.org/wiki/History_of_quantum_mechanics",
+        "anchors": [
+          "History of quantum mechanics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Robert_Hooke",
+        "url": "https://en.wikipedia.org/wiki/Robert_Hooke",
+        "anchors": [
+          "Robert Hooke"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Christiaan_Huygens",
+        "url": "https://en.wikipedia.org/wiki/Christiaan_Huygens",
+        "anchors": [
+          "Christiaan Huygens"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Leonhard_Euler",
+        "url": "https://en.wikipedia.org/wiki/Leonhard_Euler",
+        "anchors": [
+          "Leonhard Euler"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Polymath",
+        "url": "https://en.wikipedia.org/wiki/Polymath",
+        "anchors": [
+          "polymath"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Thomas_Young_(scientist)",
+        "url": "https://en.wikipedia.org/wiki/Thomas_Young_(scientist)",
+        "anchors": [
+          "Thomas Young"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Young's_interference_experiment",
+        "url": "https://en.wikipedia.org/wiki/Young%27s_interference_experiment",
+        "anchors": [
+          "double-slit experiment"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wave_theory_of_light",
+        "url": "https://en.wikipedia.org/wiki/Wave_theory_of_light",
+        "anchors": [
+          "wave theory of light"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chemistry",
+        "url": "https://en.wikipedia.org/wiki/Chemistry",
+        "anchors": [
+          "chemical"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "John_Dalton",
+        "url": "https://en.wikipedia.org/wiki/John_Dalton",
+        "anchors": [
+          "John Dalton"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Amedeo_Avogadro",
+        "url": "https://en.wikipedia.org/wiki/Amedeo_Avogadro",
+        "anchors": [
+          "Amedeo Avogadro"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "James_Clerk_Maxwell",
+        "url": "https://en.wikipedia.org/wiki/James_Clerk_Maxwell",
+        "anchors": [
+          "James Clerk Maxwell"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ludwig_Boltzmann",
+        "url": "https://en.wikipedia.org/wiki/Ludwig_Boltzmann",
+        "anchors": [
+          "Ludwig Boltzmann"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Kinetic_theory_of_gases",
+        "url": "https://en.wikipedia.org/wiki/Kinetic_theory_of_gases",
+        "anchors": [
+          "kinetic theory of gases"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Greek_philosophy",
+        "url": "https://en.wikipedia.org/wiki/Greek_philosophy",
+        "anchors": [
+          "Greek philosophy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Greek_language",
+        "url": "https://en.wikipedia.org/wiki/Greek_language",
+        "anchors": [
+          "Greek"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Michael_Faraday",
+        "url": "https://en.wikipedia.org/wiki/Michael_Faraday",
+        "anchors": [
+          "Michael Faraday"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Julius_Plücker",
+        "url": "https://en.wikipedia.org/wiki/Julius_Pl%C3%BCcker",
+        "anchors": [
+          "Julius Plücker"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Johann_Wilhelm_Hittorf",
+        "url": "https://en.wikipedia.org/wiki/Johann_Wilhelm_Hittorf",
+        "anchors": [
+          "Johann Wilhelm Hittorf"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Eugen_Goldstein",
+        "url": "https://en.wikipedia.org/wiki/Eugen_Goldstein",
+        "anchors": [
+          "Eugen Goldstein"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cathode_rays",
+        "url": "https://en.wikipedia.org/wiki/Cathode_rays",
+        "anchors": [
+          "cathode rays"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "J._J._Thomson",
+        "url": "https://en.wikipedia.org/wiki/J._J._Thomson",
+        "anchors": [
+          "J. J. Thomson"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Gustav_Kirchhoff",
+        "url": "https://en.wikipedia.org/wiki/Gustav_Kirchhoff",
+        "anchors": [
+          "Gustav Kirchhoff"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Latin",
+        "url": "https://en.wikipedia.org/wiki/Latin",
+        "anchors": [
+          "Latin"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Frequency",
+        "url": "https://en.wikipedia.org/wiki/Frequency",
+        "anchors": [
+          "frequency"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Local_realism",
+        "url": "https://en.wikipedia.org/wiki/Local_realism",
+        "anchors": [
+          "realistically"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Spectral_line",
+        "url": "https://en.wikipedia.org/wiki/Spectral_line",
+        "anchors": [
+          "spectral lines"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electromagnetic_wave",
+        "url": "https://en.wikipedia.org/wiki/Electromagnetic_wave",
+        "anchors": [
+          "electromagnetic wave"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Brussels",
+        "url": "https://en.wikipedia.org/wiki/Brussels",
+        "anchors": [
+          "Brussels"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Heuristic",
+        "url": "https://en.wikipedia.org/wiki/Heuristic",
+        "anchors": [
+          "heuristic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "WKB_approximation",
+        "url": "https://en.wikipedia.org/wiki/WKB_approximation#Application_to_the_Schrödinger_equation",
+        "anchors": [
+          "semi-classical approximation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Peter_Debye",
+        "url": "https://en.wikipedia.org/wiki/Peter_Debye",
+        "anchors": [
+          "Peter Debye"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Specific_heat",
+        "url": "https://en.wikipedia.org/wiki/Specific_heat",
+        "anchors": [
+          "specific heat"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hendrika_Johanna_van_Leeuwen",
+        "url": "https://en.wikipedia.org/wiki/Hendrika_Johanna_van_Leeuwen",
+        "anchors": [
+          "Hendrika Johanna van Leeuwen"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bohr–Van_Leeuwen_theorem",
+        "url": "https://en.wikipedia.org/wiki/Bohr%E2%80%93Van_Leeuwen_theorem",
+        "anchors": [
+          "proof"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Diamagnetism",
+        "url": "https://en.wikipedia.org/wiki/Diamagnetism",
+        "anchors": [
+          "diamagnetism"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Arnold_Sommerfeld",
+        "url": "https://en.wikipedia.org/wiki/Arnold_Sommerfeld",
+        "anchors": [
+          "Arnold Sommerfeld"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Louis_de_Broglie",
+        "url": "https://en.wikipedia.org/wiki/Louis_de_Broglie",
+        "anchors": [
+          "Louis de Broglie"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pascual_Jordan",
+        "url": "https://en.wikipedia.org/wiki/Pascual_Jordan",
+        "anchors": [
+          "Pascual Jordan"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "David_Hilbert",
+        "url": "https://en.wikipedia.org/wiki/David_Hilbert",
+        "anchors": [
+          "David Hilbert"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "John_von_Neumann",
+        "url": "https://en.wikipedia.org/wiki/John_von_Neumann",
+        "anchors": [
+          "John von Neumann"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_electronics",
+        "url": "https://en.wikipedia.org/wiki/Quantum_electronics",
+        "anchors": [
+          "quantum electronics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Periodic_table_of_elements",
+        "url": "https://en.wikipedia.org/wiki/Periodic_table_of_elements",
+        "anchors": [
+          "periodic table of elements"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chemical_bond",
+        "url": "https://en.wikipedia.org/wiki/Chemical_bond",
+        "anchors": [
+          "chemical bonding"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Superconductors",
+        "url": "https://en.wikipedia.org/wiki/Superconductors",
+        "anchors": [
+          "superconductors"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Superfluid",
+        "url": "https://en.wikipedia.org/wiki/Superfluid",
+        "anchors": [
+          "superfluids"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bra–ket_notation",
+        "url": "https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation",
+        "anchors": [
+          "Bra–ket notation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Einstein's_thought_experiments",
+        "url": "https://en.wikipedia.org/wiki/Einstein%27s_thought_experiments",
+        "anchors": [
+          "Einstein's thought experiments"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "List_of_textbooks_on_classical_mechanics_and_quantum_mechanics",
+        "url": "https://en.wikipedia.org/wiki/List_of_textbooks_on_classical_mechanics_and_quantum_mechanics",
+        "anchors": [
+          "List of textbooks on classical mechanics and quantum mechanics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Macroscopic_quantum_phenomena",
+        "url": "https://en.wikipedia.org/wiki/Macroscopic_quantum_phenomena",
+        "anchors": [
+          "Macroscopic quantum phenomena"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Phase-space_formulation",
+        "url": "https://en.wikipedia.org/wiki/Phase-space_formulation",
+        "anchors": [
+          "Phase-space formulation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Regularization_(physics)",
+        "url": "https://en.wikipedia.org/wiki/Regularization_(physics)",
+        "anchors": [
+          "Regularization (physics)"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Two-state_quantum_system",
+        "url": "https://en.wikipedia.org/wiki/Two-state_quantum_system",
+        "anchors": [
+          "Two-state quantum system"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hans_Bethe",
+        "url": "https://en.wikipedia.org/wiki/Hans_Bethe",
+        "anchors": [
+          "Hans Bethe"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ramamurti_Shankar",
+        "url": "https://en.wikipedia.org/wiki/Ramamurti_Shankar",
+        "anchors": [
+          "Ramamurti Shankar"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "MIT_OpenCourseWare",
+        "url": "https://en.wikipedia.org/wiki/MIT_OpenCourseWare",
+        "anchors": [
+          "MIT OpenCourseWare"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ],
+    "external": [
+      {
+        "url": "https://search.worldcat.org/issn/1095-5054",
+        "anchors": [
+          "1095-5054"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://search.worldcat.org/oclc/429049174",
+        "anchors": [
+          "429049174"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://interactivetextbooks.tudelft.nl/introduction-to-quantum-mechanics/",
+        "anchors": [
+          "Introduction to quantum mechanics by Timon Idema"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://bethe.cornell.edu/",
+        "anchors": [
+          "Quantum Physics Made Relatively Simple"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://oyc.yale.edu/sites/default/files/notes_quantum_cookbook.pdf",
+        "anchors": [
+          "Quantum Cook Book"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://oyc.yale.edu/physics/phys-201#sessions",
+        "anchors": [
+          "PHYS 201: Fundamentals of Physics II"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://lightandmatter.com/mod/",
+        "anchors": [
+          "Modern Physics: With waves, thermodynamics, and optics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://ocw.mit.edu/courses/chemistry/",
+        "anchors": [
+          "Chemistry"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://ocw.mit.edu/courses/physics/",
+        "anchors": [
+          "Physics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://ocw.mit.edu/courses/physics/8-04-quantum-physics-i-spring-2016/",
+        "anchors": [
+          "8.04"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://ocw.mit.edu/courses/physics/8-05-quantum-physics-ii-fall-2013/index.htm",
+        "anchors": [
+          "8.05"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://ocw.mit.edu/courses/physics/8-06-quantum-physics-iii-spring-2018/index.htm",
+        "anchors": [
+          "8.06"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://physics.csbsju.edu/QM/",
+        "anchors": [
+          "⁠5 + 1 / 2 ⁠ Examples in Quantum Mechanics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://plato.stanford.edu/entries/qm/",
+        "anchors": [
+          "\"Quantum Mechanics\""
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://plato.stanford.edu/entries/qt-issues/",
+        "anchors": [
+          "\"Philosophical Issues in Quantum Theory\""
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ]
+  },
+  "stats": {
+    "n_categories": 2,
+    "n_sections": 24,
+    "n_tables": 0,
+    "n_local": 5,
+    "n_wiki": 310,
+    "n_external": 15,
+    "md_chars": 66400
+  }
+}

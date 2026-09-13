@@ -1,0 +1,1667 @@
+# List of Canadian musicians
+
+This is a **list of Canadian musicians**. Only [notable](/wiki/Wikipedia:NMUSIC) individuals appear here; bands are listed at [List of bands from Canada](/wiki/List_of_bands_from_Canada).
+
+## 0-9
+
+- [2Rude](/wiki/2Rude) – hip hop/R&B record producer
+- [347aidan](/wiki/347aidan) – rapper
+
+## A
+
+- [Lee Aaron](/wiki/Lee_Aaron) – jazz and rock singer-songwriter, also known as "Metal Queen"
+- [Abdominal](/wiki/Abdominal_(rapper)) – hip-hop musician
+- [Adaline](/wiki/Adaline_(musician)) – singer-songwriter
+- [Bryan Adams](/wiki/Bryan_Adams) – singer-songwriter
+- [Bernard Adamus](/wiki/Bernard_Adamus) – singer-songwriter
+- [Susan Aglukark](/wiki/Susan_Aglukark) – folk-pop singer-songwriter
+- [AHI](/wiki/AHI_(musician)) – folk singer-songwriter
+- [Lydia Ainsworth](/wiki/Lydia_Ainsworth) – composer/singer
+- [Robert Aitken](/wiki/Robert_Aitken_(composer)) – composer, flute player
+- [Chuckie Akenz](/wiki/Chuckie_Akenz) – rapper, songwriter
+- [Pierrette Alarie](/wiki/Pierrette_Alarie) – opera singer
+- [Emma Albani](/wiki/Emma_Albani) – opera singer
+- [Jeremie Albino](/wiki/Jeremie_Albino) – country/roots rock singer-songwriter
+- [Coco Love Alcorn](/wiki/Coco_Love_Alcorn) – pop singer
+- [John Alcorn](/wiki/John_Alcorn_(singer)) – jazz singer
+- [Don Alder](/wiki/Don_Alder) – fingerstyle guitarist, singer-songwriter, composer
+- [Toya Alexis](/wiki/Toya_Alexis) – R&B singer
+- [Madeleine Allakariallak](/wiki/Madeleine_Allakariallak) – Inuk throat singer, folk singer
+- [Chad Allan](/wiki/Chad_Allan_(musician)) – singer (the [Guess Who](/wiki/The_Guess_Who))
+- [Andrew Allen](/wiki/Andrew_Allen_(singer)) – singer
+- [John P. Allen](/wiki/John_P._Allen_(musician)) – bluegrass, country and rock fiddler
+- [Lillian Allen](/wiki/Lillian_Allen) – dub poet
+- [Archie Alleyne](/wiki/Archie_Alleyne) – jazz drummer
+- [a l l i e](/wiki/Allie_(musician)) – R&B singer
+- [Allie X](/wiki/Allie_X) – singer-songwriter
+- [Tommy Alto](/wiki/Tommy_Alto) – indie rock singer-songwriter
+- [Don Amero](/wiki/Don_Amero) – singer-songwriter
+- [Barbra Amesbury](/wiki/Barbra_Amesbury) – singer-songwriter
+- [Ammoye](/wiki/Ammoye) – reggae singer
+- [Amylie](/wiki/Amylie) – pop singer-songwriter
+- [Anachnid](/wiki/Anachnid) – pop/electronic singer-songwriter
+- [Laura Anglade](/wiki/Laura_Anglade) – jazz singer
+- [Charlie Angus](/wiki/Charlie_Angus) – alternative country singer-songwriter, writer, politician
+- [Paul Anka](/wiki/Paul_Anka) – singer-songwriter, 1950s pop star
+- [Matt Andersen](/wiki/Matt_Andersen) – singer-songwriter
+- [Kerri Anderson](/wiki/Kerri_Anderson) – pop singer
+- [James Anthony](/wiki/James_Anthony_(musician)) – blues guitarist
+- [Tafari Anthony](/wiki/Tafari_Anthony) – rhythm and blues singer
+- [Alan Anton](/wiki/Alan_Anton_(musician)) – bassist ([Cowboy Junkies](/wiki/Cowboy_Junkies))
+- [Aphrose](/wiki/Aphrose) – soul/R&B singer
+- [Natalie Appleton](/wiki/Natalie_Appleton) – singer (All Saints)
+- [Aqyila](/wiki/Aqyila) – rhythm and blues singer
+- [Violet Archer](/wiki/Violet_Archer) – composer
+- [Jann Arden](/wiki/Jann_Arden) – pop singer-songwriter
+- [Ardn](/wiki/Ardn) – rapper
+- [Carolyn Arends](/wiki/Carolyn_Arends) – [Contemporary Christian](/wiki/Contemporary_Christian_music) pop singer
+- [Susie Arioli](/wiki/Susie_Arioli) – jazz singer
+- [Julian Armour](/wiki/Julian_Armour) – cellist
+- [John Arpin](/wiki/John_Arpin) – pianist, composer, recording artist, entertainer
+- [Marie-Pierre Arthur](/wiki/Marie-Pierre_Arthur) – pop singer-songwriter
+- [Talena Atfield](/wiki/Talena_Atfield) – bassist ([Kittie](/wiki/Kittie))
+- [Athésia](/wiki/Ath%C3%A9sia) – pop/dance singer
+- [Allison Au](/wiki/Allison_Au) – jazz saxophonist
+- [Rich Aucoin](/wiki/Rich_Aucoin) – indie rock singer-songwriter
+- [Viviane Audet](/wiki/Viviane_Audet) – singer, composer
+- [Melissa Auf der Maur](/wiki/Melissa_Auf_der_Maur) – rock bassist ([Hole](/wiki/Hole_(band)), the [Smashing Pumpkins](/wiki/The_Smashing_Pumpkins))
+- [Shawn Austin](/wiki/Shawn_Austin) – country singer and songwriter
+- [Eva Avila](/wiki/Eva_Avila) – singer (winner of *[Canadian Idol](/wiki/Canadian_Idol)*, 2006)
+- [Mike Ayley](/wiki/Mike_Ayley) – singer, bass guitarist ([Marianas Trench](/wiki/Marianas_Trench))
+- [Jay Aymar](/wiki/Jay_Aymar) – guitarist and singer-songwriter
+- [Marcel Aymar](/wiki/Marcel_Aymar) – singer-songwriter
+- [Aysanabee](/wiki/Aysanabee) – singer-songwriter
+- [Caroline Azar](/wiki/Caroline_Azar) – singer-songwriter, keyboardist ([Fifth Column](/wiki/Fifth_Column_(band)))
+
+## B
+
+- [Sebastian Bach](/wiki/Sebastian_Bach) – rock singer
+- [Randy Bachman](/wiki/Randy_Bachman) – rock singer, guitarist
+- [Tal Bachman](/wiki/Tal_Bachman) – singer (son of [Randy Bachman](/wiki/Randy_Bachman))
+- [Back Alley John](/wiki/Back_Alley_John) – blues singer-songwriter, harmonica player
+- [Backxwash](/wiki/Backxwash) – rapper
+- [Bad News Brown](/wiki/Bad_News_Brown_(musician)) – rapper
+- [Bahamas](/wiki/Bahamas_(musician)) – folk singer-guitarist
+- [Jason Bajada](/wiki/Jason_Bajada) – singer-songwriter
+- [Carroll Baker](/wiki/Carroll_Baker_(singer)) – country music singer
+- [Tim Baker](/wiki/Tim_Baker_(musician)) – indie rock singer-songwriter
+- [James Baley](/wiki/James_Baley) – rhythm and blues/dance singer
+- [Gord Bamford](/wiki/Gord_Bamford) – country singer
+- [Buddy Banks](/wiki/Buddy_Banks_(bassist)) – jazz double-bassist
+- [Lanie Banks](/wiki/Lanie_Banks) – Canadian-Ugandan rapper
+- [Del Barber](/wiki/Del_Barber) – singer-songwriter
+- [Steve Barakatt](/wiki/Steve_Barakatt) – composer-pianist
+- [Jill Barber](/wiki/Jill_Barber) – singer-songwriter
+- [Matthew Barber](/wiki/Matthew_Barber_(singer-songwriter)) – singer-songwriter
+- [Barlow](/wiki/Barlow_(musician)) – composer, rock
+- [Emilie-Claire Barlow](/wiki/Emilie-Claire_Barlow) – singer-songwriter
+- [Kim Barlow](/wiki/Kim_Barlow) – singer-songwriter
+- [Quinton Barnes](/wiki/Quinton_Barnes) – R&B/electronic singer
+- [Alexis Baro](/wiki/Alexis_Baro) – jazz, rhythm and blues trumpeter
+- [Laura Barrett](/wiki/Laura_Barrett_(singer-songwriter)) – singer-songwriter, kalimba player
+- [Claudja Barry](/wiki/Claudja_Barry) – disco singer
+- [Mary Barry](/wiki/Mary_Barry_(singer)) – singer-songwriter, composer, pianist, jazz, blues, chanson
+- [Yank Barry](/wiki/Yank_Barry) – rock singer, composer, guitar, percussion
+- [Miguel de la Bastide](/wiki/Miguel_de_la_Bastide) – flamenco guitarist
+- [Annie Mottram Craig Batten](/wiki/Annie_Mottram_Craig_Batten) – singer, vocal teacher, composer
+- [Isabel Bayrakdarian](/wiki/Isabel_Bayrakdarian) – soprano
+- [Kevin Bazinet](/wiki/Kevin_Bazinet) – pop singer
+- [Bobby Bazini](/wiki/Bobby_Bazini) – singer-songwriter
+- [bbno$](/wiki/Bbno$) – rapper, singer-songwriter
+- [Gary Beals](/wiki/Gary_Beals) – R&B singer
+- [Eric Bearclaw](/wiki/Eric_Bearclaw) – guitarist
+- [Martin Beaver](/wiki/Martin_Beaver) – violinist
+- [Dany Bédar](/wiki/Dany_B%C3%A9dar) – singer-songwriter
+- [Gabriela Bee](/wiki/Gabriela_Bee) – singer-songwriter
+- [Jaymz Bee](/wiki/Jaymz_Bee) – singer, music director
+- [Begonia](/wiki/Begonia_(musician)) — singer
+- [Dan Bejar](/wiki/Dan_Bejar) – singer-songwriter ([Destroyer](/wiki/Destroyer_(band)); [Swan Lake](/wiki/Swan_Lake_(band)); [Hello, Blue Roses](/wiki/Hello,_Blue_Roses); [the New Pornographers](/wiki/The_New_Pornographers))
+- [Daniel Bélanger](/wiki/Daniel_B%C3%A9langer) – pop, electro, rock, ambience singer
+- [Steve Bell](/wiki/Steve_Bell_(musician)) – guitarist, singer-songwriter
+- [Clayton Bellamy](/wiki/Clayton_Bellamy) – singer-songwriter
+- [Belly](/wiki/Belly_(rapper)) – rapper, songwriter
+- [Quanteisha Benjamin](/wiki/Quanteisha_Benjamin) – singer
+- [Eli Bennett](/wiki/Eli_Bennett) – saxophonist, composer
+- [Willie P. Bennett](/wiki/Willie_P._Bennett) – folk/alternative country singer-songwriter
+- [Ridley Bent](/wiki/Ridley_Bent) – country singer
+- [Barney Bentall](/wiki/Barney_Bentall) – rock singer-songwriter
+- [Beppie](/wiki/Beppie) – children's musician
+- [Jennifer Berezan](/wiki/Jennifer_Berezan) – singer-songwriter, producer
+- [Moe Berg](/wiki/Moe_Berg_(musician)) – singer-songwriter ([Pursuit of Happiness](/wiki/The_Pursuit_of_Happiness_(band)))
+- [Art Bergmann](/wiki/Art_Bergmann) – punk/alternative singer-songwriter
+- [Ruth Berhe](/wiki/Ruth_B) – singer-songwriter
+- [Camille Bernard](/wiki/Camille_Bernard) – opera singer
+- [Mario Bernardi](/wiki/Mario_Bernardi) – conductor, pianist
+- [Geoff Berner](/wiki/Geoff_Berner) – [klezmer](/wiki/Klezmer)/folk accordionist, singer-songwriter
+- [Larry Berrio](/wiki/Larry_Berrio) – country singer-songwriter
+- [Salome Bey](/wiki/Salome_Bey) – blues/gospel/jazz singer
+- [Amélie Beyries](/wiki/Beyries_(singer)) – pop singer-songwriter
+- [Laila Biali](/wiki/Laila_Biali) – jazz singer/pianist
+- [Ed Bickert](/wiki/Ed_Bickert) – jazz guitarist
+- [Charlie Biddle](/wiki/Charlie_Biddle) – jazz bassist
+- [Dave Bidini](/wiki/Dave_Bidini) – guitarist ([Rheostatics](/wiki/Rheostatics))
+- [Justin Bieber](/wiki/Justin_Bieber) – pop singer-songwriter
+- [Big Rude Jake](/wiki/Big_Rude_Jake) – singer-songwriter, band leader, blues shouter, guitarist
+- [Dan Bigras](/wiki/Dan_Bigras) – singer-songwriter
+- [Kim Bingham](/wiki/Kim_Bingham) – rock/ska singer-songwriter
+- [Heather Bishop](/wiki/Heather_Bishop) – folk singer-songwriter
+- [Jaydee Bixby](/wiki/Jaydee_Bixby) – country singer
+- [Annesley Black](/wiki/Annesley_Black) (born 1979) – composer
+- [Gwendolyn Black](/wiki/Gwendolyn_Black) – pianist, educator and activist
+- [Jully Black](/wiki/Jully_Black) – R&B musician
+- [Stacey Blades](/wiki/Stacey_Blades) – guitarist ([L.A. Guns](/wiki/L.A._Guns))
+- [Jason Blaine](/wiki/Jason_Blaine) – country singer
+- [Jean-Michel Blais](/wiki/Jean-Michel_Blais) – composer and pianist
+- [Forest Blakk](/wiki/Forest_Blakk) – pop singer
+- [Paul Bley](/wiki/Paul_Bley) – jazz pianist
+- [Omar Blondahl](/wiki/Omar_Blondahl) – singer
+- [George Blondheim](/wiki/George_Blondheim) – pianist, composer
+- [Joe Bocan](/wiki/Joe_Bocan) – pop singer
+- [La Bolduc](/wiki/La_Bolduc) – singer-songwriter, harmonicist, violinist
+- [Mars Bonfire](/wiki/Mars_Bonfire) – from [Steppenwolf](/wiki/Steppenwolf_(band))
+- [Jonas Bonnetta](/wiki/Jonas_Bonnetta) – singer-songwriter
+- [Bonky](/wiki/Bonky) (Onno Borgen) – trance musician
+- [Will Bonness](/wiki/Will_Bonness) – jazz pianist
+- [Boogat](/wiki/Boogat) – rapper
+- [Dave Bookman](/wiki/Dave_Bookman) – indie rock singer-songwriter
+- [Brian Borcherdt](/wiki/Brian_Borcherdt) – singer-songwriter
+- [John Borra](/wiki/John_Borra) – singer-songwriter and bassist
+- [Bob Bossin](/wiki/Bob_Bossin) – folk singer-songwriter, activist; co-founded the Canadian folk group Stringband with Marie-Lynn Hammond
+- [Boslen](/wiki/Boslen) – rapper
+- [Robi Botos](/wiki/Robi_Botos) – jazz pianist
+- [John Bottomley](/wiki/John_Bottomley) – singer-songwriter
+- [Grimes](/wiki/Grimes) (Claire Boucher) – singer, songwriter, artist
+- [Isabelle Boulay](/wiki/Isabelle_Boulay) – pop singer
+- [Gerry Boulet](/wiki/Gerry_Boulet) – rock singer
+- [Bill Bourne](/wiki/Bill_Bourne) – folk/alternative singer-songwriter
+- [Pierre Bouvier](/wiki/Pierre_Bouvier) – singer-songwriter, guitarist (Reset, Simple Plan)
+- [Mitch Bowden](/wiki/Mitch_Bowden) – rock singer, guitarist (Don Vail, the Priddle Concern, Chore)
+- [Benjamin Bowman](/wiki/Benjamin_Bowman) – violinist
+- [Jimmy Bowskill](/wiki/Jimmy_Bowskill) – blues guitarist, bassist and singer
+- [Boy Golden](/wiki/Boy_Golden_(musician)) – alternative country singer-songwriter
+- [Liona Boyd](/wiki/Liona_Boyd) – classical guitarist
+- [Philippe Brach](/wiki/Philippe_Brach) – singer-songwriter
+- [David Bradstreet](/wiki/David_Bradstreet) – singer-songwriter
+- [Tim Brady](/wiki/Tim_Brady_(composer)) – electric guitarist, composer, improviser, working in contemporary classical, experimental, musique actuelle
+- [Andru Branch](/wiki/Andru_Branch) – singer-songwriter, keyboardist (Andru Branch, Halfway Tree)
+- [Paul Brandt](/wiki/Paul_Brandt) – country singer-songwriter
+- [Russell Braun](/wiki/Russell_Braun) – operatic baritone
+- [Lenny Breau](/wiki/Lenny_Breau) – guitarist
+- [Beverly Breckenridge](/wiki/Beverly_Breckenridge) – bassist ([Fifth Column](/wiki/Fifth_Column_(band)) and [Phono-Comb](/wiki/Phono-Comb))
+- [Michael Breen](/wiki/Michael_Breen_(musician)) – pop/rock singer and guitarist
+- [Dean Brody](/wiki/Dean_Brody) – country singer-songwriter
+- [Lisa Brokop](/wiki/Lisa_Brokop) – country singer-songwriter
+- [Michael Brook](/wiki/Michael_Brook) – guitarist, producer, film scorer
+- [Alma Faye Brooks](/wiki/Alma_Faye_Brooks) – disco, soul and R&B singer
+- [Jon Brooks](/wiki/Jon_Brooks) – folk singer-songwriter
+- [Colleen Brown](/wiki/Colleen_Brown) – singer-songwriter
+- [Divine Brown](/wiki/Divine_Brown_(singer)) – R&B/soul singer
+- [Michael Jerome Browne](/wiki/Michael_Jerome_Browne) – blues singer and guitarist
+- [Edwin Orion Brownell](/wiki/Edwin_Orion_Brownell) – neo-classical composer, pianist
+- [Chad Brownlee](/wiki/Chad_Brownlee) – country singer
+- [Measha Brueggergosman](/wiki/Measha_Brueggergosman) – operatic soprano
+- [Roxane Bruneau](/wiki/Roxane_Bruneau) – pop singer
+- [Paul Brunelle](/wiki/Paul_Brunelle) – country music guitarist, songwriter
+- [Rod Bruno](/wiki/Hospital_Music) – singer-songwriter, guitarist
+- [Billy Bryans](/wiki/Billy_Bryans) – percussionist, record producer
+- [Jon Bryant](/wiki/Jon_Bryant) – singer-songwriter
+- [Dan Bryk](/wiki/Dan_Bryk) – singer-songwriter
+- [Jim Bryson](/wiki/Jim_Bryson_(musician)) – singer-songwriter
+- [Michael Bublé](/wiki/Michael_Bubl%C3%A9) – singer
+- [Buck 65](/wiki/Buck_65) – hip-hop artist
+- [Basia Bulat](/wiki/Basia_Bulat) – singer-songwriter
+- [George Burdi](/wiki/George_Burdi)
+- [Malcolm Burn](/wiki/Malcolm_Burn) – singer, record producer
+- [Louise Burns](/wiki/Louise_Burns) – singer-songwriter
+- [Jason Burnstick](/wiki/Jason_Burnstick) – folk singer-songwriter
+- [Spencer Burton](/wiki/Spencer_Burton) – indie rock and country singer-songwriter
+- [Win Butler](/wiki/Win_Butler) – member of [Arcade Fire](/wiki/Arcade_Fire)
+- [Matthew Byrne](/wiki/Matthew_Byrne_(musician)) – folk singer-songwriter
+
+## C
+
+- [Meryn Cadell](/wiki/Meryn_Cadell) – rock singer-songwriter, performance artist
+- [Cadence Weapon](/wiki/Cadence_Weapon) – rapper
+- [Daniel Caesar](/wiki/Daniel_Caesar) – R&B, singer-songwriter
+- [Buddy Cage](/wiki/Buddy_Cage) – pedal steel guitar player
+- [Shawna Cain](/wiki/Shawna_Cain) – Christian R&B singer
+- [Kathryn Calder](/wiki/Kathryn_Calder) – indie rock/pop singer-songwriter
+- [John Allan Cameron](/wiki/John_Allan_Cameron) – folk singer, guitarist
+- [Steph Cameron](/wiki/Steph_Cameron) – folk singer-songwriter
+- [Cherie Camp](/wiki/Cherie_Camp) – singer-songwriter
+- [James Campbell](/wiki/James_Campbell_(clarinetist)) – clarinetist
+- [Torquil Campbell](/wiki/Torquil_Campbell) – singer-songwriter ([Stars](/wiki/Stars_(Canadian_band)))
+- [Brendan Canning](/wiki/Brendan_Canning) – singer-songwriter ([Broken Social Scene](/wiki/Broken_Social_Scene), [Valley of the Giants](/wiki/Valley_of_the_Giants_(band)))
+- [Patricia Cano](/wiki/Patricia_Cano) – jazz/Latin music singer and musical theatre actress
+- [Lou Canon](/wiki/Lou_Canon) – singer-songwriter
+- [George Canyon](/wiki/George_Canyon) – country singer
+- [Ben Caplan](/wiki/Ben_Caplan) – folk musician
+- [Alessia Cara](/wiki/Alessia_Cara) – contemporary R&B
+- [Craig Cardiff](/wiki/Craig_Cardiff) – singer-songwriter
+- [Charlotte Cardin](/wiki/Charlotte_Cardin) – pop singer
+- [Celeigh Cardinal](/wiki/Celeigh_Cardinal) – singer-songwriter
+- [Paul Cargnello](/wiki/Paul_Cargnello) – singer-songwriter
+- [Jean Carignan](/wiki/Jean_Carignan) – fiddler
+- [Marie Carmen](/wiki/Marie_Carmen) – pop singer, musical theatre actor (*[Starmania](/wiki/Starmania_(musical))*)
+- [Glory-Anne Carriere](/wiki/Glory-Anne_Carriere) – country singer
+- [Stef Carse](/wiki/Stef_Carse) – country and pop singer
+- [Wilf Carter](/wiki/Wilf_Carter_(musician)) – country singer
+- [Jazz Cartier](/wiki/Jazz_Cartier) – rapper
+- [João Carvalho](/wiki/Jo%C3%A3o_Carvalho_(musical_engineer)) – recording and mastering engineer, producer and musician
+- [Andrew Cash](/wiki/Andrew_Cash) – singer-songwriter
+- [Peter Cash](/wiki/Peter_Cash) – singer-songwriter
+- [Barbara Cass-Beggs](/wiki/Barbara_Cass-Beggs) – singer
+- [Andrew Cassara](/wiki/Andrew_Cassara) – pop singer-songwriter
+- [Ian Casselman](/wiki/Ian_Casselman) – singer, drummer ([Marianas Trench](/wiki/Marianas_Trench))
+- [Lou-Adriane Cassidy](/wiki/Lou-Adriane_Cassidy) – pop singer-songwriter
+- [Tory Cassis](/wiki/Tory_Cassis) – folk and jazz singer
+- [France Castel](/wiki/France_Castel) – pop and blues singer, musical theatre actress
+- [Jennifer Castle](/wiki/Jennifer_Castle) – singer-songwriter
+- [Demo Cates](/wiki/Demo_Cates) – jazz/R&B saxophonist and singer
+- [Rachel Cavalho](/wiki/Rachel_Cavalho) – pianist, music educator
+- [Cayouche](/wiki/Cayouche) – singer-songwriter
+- [David Celia](/wiki/David_Celia) – singer-songwriter
+- [CFCF](/wiki/CFCF_(musician)) – electronic musician
+- [Tim Chaisson](/wiki/Tim_Chaisson) – singer-songwriter
+- [Chantal Chamandy](/wiki/Chantal_Chamandy) – pop/dance singer-songwriter
+- [Champion](/wiki/Champion_(musician)) – DJ, electronic musician
+- [Keshia Chanté](/wiki/Keshia_Chant%C3%A9) – urban/R&B singer
+- [Mathieu Charbonneau](/wiki/Mathieu_Charbonneau) – keyboardist, composer
+- [Robert Charlebois](/wiki/Robert_Charlebois) – rock and funk singer
+- [Chloe Charles](/wiki/Chloe_Charles) – soul pop singer
+- [Gregory Charles](/wiki/Gregory_Charles) – chorister and pianist
+- [Nuela Charles](/wiki/Nuela_Charles) – soul/pop/R&B/hip hop singer
+- [Tanika Charles](/wiki/Tanika_Charles) – soul and rhythm and blues singer
+- [Régine Chassagne](/wiki/R%C3%A9gine_Chassagne) – member of [Arcade Fire](/wiki/Arcade_Fire)
+- [Checkmate](/wiki/Checkmate_(rapper)) – rapper
+- [Vern Cheechoo](/wiki/Vern_Cheechoo) – country singer-songwriter
+- [Brad Cheeseman](/wiki/Brad_Cheeseman) – jazz bassist and composer
+- [Rita Chiarelli](/wiki/Rita_Chiarelli) – blues singer
+- [Ramon Chicharron](/wiki/Ramon_Chicharron) – Latin music singer and songwriter
+- [Jane Child](/wiki/Jane_Child) – pop and rock dance artist, songwriter, producer
+- [Choclair](/wiki/Choclair) – hip-hop artist
+- [Charlene Choi](/wiki/Charlene_Choi) – pop singer in Hong Kong
+- [Gina Choi](/wiki/G.NA) – South Korean singer
+- [Tommy Chong](/wiki/Tommy_Chong) – guitarist ([Bobby Taylor & the Vancouvers](/wiki/Bobby_Taylor_%26_the_Vancouvers)), comedian
+- [Timothy Chooi](/wiki/Timothy_Chooi) – violinist
+- [Christophe](/wiki/Christophe_(singer)) – pop singer
+- [Jarvis Church](/wiki/Jarvis_Church) – R&B singer-producer (real name Gerald Eaton)
+- [Annabelle Chvostek](/wiki/Annabelle_Chvostek) – folk singer
+- [Cikwes](/wiki/Cikwes) – traditional Cree music singer
+- [Clairmont the Second](/wiki/Clairmont_the_Second) – rapper
+- [Terri Clark](/wiki/Terri_Clark) – country singer-songwriter
+- [Alanna Clarke](/wiki/Alanna_Clarke) – pop/rock singer-songwriter
+- [Classified](/wiki/Classified_(rapper)) – rapper
+- [Renée Claude](/wiki/Ren%C3%A9e_Claude) – singer
+- [Véronique Claveau](/wiki/V%C3%A9ronique_Claveau) – musical theatre actress
+- [David Clayton-Thomas](/wiki/David_Clayton-Thomas) – singer
+- [Jim Clench](/wiki/Jim_Clench) – bassist, vocalist ([April Wine](/wiki/April_Wine), [Bachman–Turner Overdrive](/wiki/Bachman%E2%80%93Turner_Overdrive))
+- [Kevin Closs](/wiki/Kevin_Closs) – singer-songwriter
+- [William Cloutier](/wiki/William_Cloutier) – pop singer
+- [Tom Cochrane](/wiki/Tom_Cochrane) – singer-songwriter
+- [Bruce Cockburn](/wiki/Bruce_Cockburn) – singer-songwriter
+- [Code Pie](/wiki/Code_Pie) – indie-pop/rock
+- [Leonard Cohen](/wiki/Leonard_Cohen) – singer-songwriter, poet
+- [Cold Specks](/wiki/Cold_Specks) – soul singer
+- [Holly Cole](/wiki/Holly_Cole) – jazz singer
+- [Naida Cole](/wiki/Naida_Cole) – pianist
+- [Raquel Cole](/wiki/Raquel_Cole) – country pop singer-songwriter
+- [Don Coleman](/wiki/Don_Coleman_(musician)) – rock singer
+- [Jason Collett](/wiki/Jason_Collett) – singer-songwriter (also member of [Broken Social Scene](/wiki/Broken_Social_Scene))
+- [Dorothy Collins](/wiki/Dorothy_Collins) – pop singer
+- [Simon Collins](/wiki/Simon_Collins) – pop/electronic musician
+- [Chuck Comeau](/wiki/Chuck_Comeau) – drummer ([Reset](/wiki/Reset_(Canadian_band)), [Simple Plan](/wiki/Simple_Plan))
+- [Ray Condo](/wiki/Ray_Condo) – rockabilly singer
+- [Chantal Condor](/wiki/Chantal_Condor) – singer
+- [Tyler Connolly](/wiki/Tyler_Connolly) – singer-songwriter, guitarist ([Theory of a Deadman](/wiki/Theory_of_a_Deadman))
+- [Stompin' Tom Connors](/wiki/Stompin%27_Tom_Connors) – country singer-songwriter
+- [Jesse Cook](/wiki/Jesse_Cook) – guitarist, producer, composer
+- [Robin-Joël Cool](/wiki/Robin-Jo%C3%ABl_Cool) – songwriter, composer
+- [Spirit Cool](/wiki/Spirit_Cool) – live-looping acoustic guitarist, singer
+- [Bill Coon](/wiki/Bill_Coon) – guitarist, composer
+- [Jim Corcoran](/wiki/Jim_Corcoran) – singer-songwriter, radio personality
+- [J. P. Cormier](/wiki/J._P._Cormier) – singer, guitarist
+- [Jacinta Cormier](/wiki/Jacinta_Cormier) – singer, pianist
+- [Louis-Jean Cormier](/wiki/Louis-Jean_Cormier) – rock singer-songwriter
+- [Corneille](/wiki/Corneille_(singer)) – funk, R&B, soul singer-songwriter
+- [Antoine Corriveau](/wiki/Antoine_Corriveau) – singer-songwriter
+- [Michel Corriveau](/wiki/Michel_Corriveau) – keyboardist, composer
+- [Pierre-Philippe Côté](/wiki/Pierre-Philippe_C%C3%B4t%C3%A9) – singer-songwriter, composer
+- [Ève Cournoyer](/wiki/%C3%88ve_Cournoyer) – pop and rock singer
+- [Rose Cousins](/wiki/Rose_Cousins) – singer-songwriter
+- [Deborah Cox](/wiki/Deborah_Cox) – pop/R&B singer
+- [Jonny Craig](/wiki/Jonny_Craig) – vocalist, songwriter, ex-front man for [Dance Gavin Dance](/wiki/Dance_Gavin_Dance), front man for [Emarosa](/wiki/Emarosa) and [Isles and Glaciers](/wiki/Isles_and_Glaciers)
+- [Sara Craig](/wiki/Sara_Craig) – singer-songwriter
+- [Terri Crawford](/wiki/Terri_Crawford) – rock singer, children's entertainer
+- [Siobhan Crawley](/wiki/Siobhan_Crawley) – pop singer
+- [Jim Creeggan](/wiki/Jim_Creeggan) – singer-songwriter, member of the [Barenaked Ladies](/wiki/Barenaked_Ladies) and the Brothers Creeggan
+- [Andy Creeggan](/wiki/Andy_Creeggan) – singer-songwriter, former member of the Barenaked Ladies and the Brothers Creeggan
+- [CRi](/wiki/CRi) – electronic producer
+- [Cold Specks](/wiki/Cold_Specks) (Ladan Hussein) – soul musician
+- [Colin Cripps](/wiki/Colin_Cripps) – rock guitarist, producer ([Crash Vegas](/wiki/Crash_Vegas))
+- [Julie Crochetière](/wiki/Julie_Crocheti%C3%A8re) – singer-songwriter, pianist (jazz, pop, R&B, soul)
+- [John Crossingham](/wiki/John_Crossingham) – rock singer ([Raising the Fawn](/wiki/Raising_the_Fawn))
+- [Allison Crowe](/wiki/Allison_Crowe) – singer-songwriter
+- [Alex Cuba](/wiki/Alex_Cuba) – jazz/pop singer-songwriter
+- [Jim Cuddy](/wiki/Jim_Cuddy) – rock singer ([Blue Rodeo](/wiki/Blue_Rodeo))
+- [Eliana Cuevas](/wiki/Eliana_Cuevas) – jazz/Latin singer
+- [Lori Cullen](/wiki/Lori_Cullen) – pop/jazz singer
+- [Burton Cummings](/wiki/Burton_Cummings) – rock musician (the [Guess Who](/wiki/The_Guess_Who), solo artist)
+- [Chris Cummings](/wiki/Chris_Cummings) – country singer-songwriter
+- [Amelia Curran](/wiki/Amelia_Curran_(musician)) – singer-songwriter
+- [Andy Curran](/wiki/Andy_Curran_(musician)) – rock singer and bassist
+- [Bobby Curtola](/wiki/Bobby_Curtola) – singer
+- [Isabelle Cyr](/wiki/Isabelle_Cyr) – singer
+
+## D
+
+- [Ryan Dahle](/wiki/Ryan_Dahle) – guitarist (Limblifter)
+- [Gail Dahms](/wiki/Gail_Dahms) – pop singer, musical theatre actress
+- [Lisa Dalbello](/wiki/Dalbello) – singer-songwriter
+- [Sean Dalton](/wiki/Sean_Dalton_(musician)) – drummer ([The Trews](/wiki/The_Trews))
+- [France D'Amour](/wiki/France_D%27Amour) – singer-songwriter
+- [Leah Daniels](/wiki/Leah_Daniels) – country singer-songwriter
+- [Rick Danko](/wiki/Rick_Danko) – bassist, violinist, guitarist, singer (the [Band](/wiki/The_Band))
+- [Mychael Danna](/wiki/Mychael_Danna) – film composer
+- [D'Ari](/wiki/D%27Ari) – rock singer-songwriter
+- [Datsik](/wiki/Datsik_(musician)) – dubstep artist
+- [Benoît David](/wiki/Beno%C3%AEt_David) – singer ([Mystery](/wiki/Mystery_(band)))
+- [Marie Davidson](/wiki/Marie_Davidson) – EDM singer and producer
+- [Maïa Davies](/wiki/Ma%C3%AFa_Davies) – singer-songwriter
+- [Mark Davis](/wiki/Mark_Davis_(Canadian_musician)) – singer-songwriter
+- [Stu Davis](/wiki/Stu_Davis) – singer-songwriter, guitarist
+- [Tanya Davis](/wiki/Tanya_Davis) – singer-songwriter, poet
+- [Desirée Dawson](/wiki/Desir%C3%A9e_Dawson) – singer-songwriter, ukulele player
+- [Dax](/wiki/Dax_(rapper)) – rapper
+- [Sophie Day](/wiki/Sophie_Day_(singer)) – jazz singer
+- [Luc de Larochellière](/wiki/Luc_de_Larochelli%C3%A8re) – singer-songwriter
+- [deadmau5](/wiki/Deadmau5) – house artist, electronic music producer, real name Joel Zimmerman
+- [Aselin Debison](/wiki/Aselin_Debison) – Celtic pop
+- [Art d'Ecco](/wiki/Art_d%27Ecco) – indie rock, glam rock singer
+- [Tony Dekker](/wiki/Tony_Dekker) – folk rock singer-songwriter ([Great Lake Swimmers](/wiki/Great_Lake_Swimmers))
+- [Gordon Delamont](/wiki/Gordon_Delamont) – big-band conductor, arranger, teacher
+- [Helena Deland](/wiki/Helena_Deland) – singer-songwriter
+- [Mac DeMarco](/wiki/Mac_DeMarco) – indie rock musician
+- [Kris Demeanor](/wiki/Kris_Demeanor) – singer-songwriter
+- [Simone Denny](/wiki/Simone_Denny) – dance/house/pop/techno singer
+- [Gisela Depkat](/wiki/Gisela_Depkat) – cellist
+- [Richard Desjardins](/wiki/Richard_Desjardins) – singer
+- [Shawn Desman](/wiki/Shawn_Desman) – pop, R&B singer
+- [Lorraine Desmarais](/wiki/Lorraine_Desmarais) – jazz pianist, composer
+- [Dave "Rave" Desroches](/wiki/Dave_Desroches) – singer-songwriter ([Teenage Head](/wiki/Teenage_Head_(band)), the Dave Rave Conspiracy)
+- [David Desrosiers](/wiki/David_Desrosiers) – bassist, singer ([Reset](/wiki/Reset_(Canadian_band)), [Simple Plan](/wiki/Simple_Plan))
+- [Marie-Michèle Desrosiers](/wiki/Marie-Mich%C3%A8le_Desrosiers) – pop and rock singer
+- [Angela Desveaux](/wiki/Angela_Desveaux) – singer-songwriter
+- [Devon](/wiki/Devon_(rapper)) – rapper
+- [Devours](/wiki/Devours) – electronic musician
+- [Alpha Yaya Diallo](/wiki/Alpha_Yaya_Diallo) – guitarist, composer
+- [Scott Dibble](/wiki/Scott_Dibble_(singer-songwriter)) – singer-songwriter (Scott Dibble and Watertown)
+- [Steffi DiDomenicantonio](/wiki/Steffi_DiDomenicantonio) – pop singer, musical theatre actress
+- [DijahSB](/wiki/DijahSB) – rapper
+- [Hugh Dillon](/wiki/Hugh_Dillon) – frontman of [Headstones](/wiki/Headstones_(band)) and [Hugh Dillon Redemption Choir](/wiki/Hugh_Dillon_Redemption_Choir)
+- [Natalie Di Luccio](/wiki/Natalie_Di_Luccio) – singer, soprano
+- [Céline Dion](/wiki/Celine_Dion) – pop singer
+- [Carl Dixon](/wiki/Carl_Dixon) – singer-songwriter, guitarist
+- [DL Incognito](/wiki/DL_Incognito) – rapper
+- [Creighton Doane](/wiki/Creighton_Doane) – drummer, songwriter
+- [Melanie Doane](/wiki/Melanie_Doane) – guitarist, singer-songwriter
+- [Bonnie Dobson](/wiki/Bonnie_Dobson) – singer-songwriter, guitarist
+- [Fefe Dobson](/wiki/Fefe_Dobson) – singer-songwriter
+- [Dr. Draw](/wiki/Dr._Draw) – electronic violinist, composer
+- [Denny Doherty](/wiki/Denny_Doherty) – singer (the [Mamas & the Papas](/wiki/The_Mamas_%26_the_Papas))
+- [Julie Doiron](/wiki/Julie_Doiron) – singer-songwriter
+- [Nicole Dollanganger](/wiki/Nicole_Dollanganger) – singer-songwriter
+- [Luke Doucet](/wiki/Luke_Doucet) – singer-songwriter
+- [Jerry Doucette](/wiki/Jerry_Doucette) – guitarist, singer-songwriter
+- [Gordon Downie](/wiki/Gordon_Downie) – singer ([Tragically Hip](/wiki/Tragically_Hip))
+- [Aaryn Doyle](/wiki/Aaryn_Doyle) – rapper, singer-songwriter
+- [Alan Doyle](/wiki/Alan_Doyle) – singer, guitarist ([Great Big Sea](/wiki/Great_Big_Sea))
+- [Damhnait Doyle](/wiki/Damhnait_Doyle) – pop singer-songwriter
+- [Drake](/wiki/Drake_(entertainer)) – rapper, singer, actor
+- [Kevin Drew](/wiki/Kevin_Drew) – guitarist, singer-songwriter
+- [Glen Drover](/wiki/Glen_Drover) – guitarist ([Megadeth](/wiki/Megadeth), [Eidolon](/wiki/Eidolon_(band)))
+- [Shawn Drover](/wiki/Shawn_Drover) – drummer (Megadeth, Eidolon)
+- [Ian D'Sa](/wiki/Ian_D%27Sa) – songwriter, vocalist, guitarist ([Billy Talent](/wiki/Billy_Talent))
+- [Dubmatix](/wiki/Dubmatix) – reggae/electronic musician
+- [Claude Dubois](/wiki/Claude_Dubois) – pop singer-songwriter, musical theatre actor
+- [Martin Dubreuil](/wiki/Martin_Dubreuil) – tambourinist ([Les Breastfeeders](/wiki/Les_Breastfeeders))
+- [Annette Ducharme](/wiki/Annette_Ducharme) – singer, songwriter
+- [Armond Duck Chief](/wiki/Armond_Duck_Chief) – country singer-songwriter
+- [Victoria Duffield](/wiki/Victoria_Duffield) – singer-songwriter
+- [Dumas](/wiki/Dumas_(singer)) – Québécois singer
+- [Kyle Bobby Dunn](/wiki/Kyle_Bobby_Dunn) – composer, musician, live performer
+- [Marc Dupré](/wiki/Marc_Dupr%C3%A9) – singer-songwriter, comedian
+- [Élie Dupuis](/wiki/%C3%89lie_Dupuis) – singer, pianist
+- [Shae Dupuy](/wiki/Shae_Dupuy) – country singer-songwriter
+- [Melanie Durrant](/wiki/Melanie_Durrant) – R&B singer
+- [Bill Durst](/wiki/Bill_Durst) – guitarist (Thundermug)
+- [Matt Dusk](/wiki/Matt_Dusk) – [jazz](/wiki/Jazz) singer-songwriter
+- [Jeremy Dutcher](/wiki/Jeremy_Dutcher) – singer
+- [DVBBS](/wiki/DVBBS) – DJ, producer
+- [Paul Dwayne](/wiki/Paul_Dwayne) – country singer-songwriter
+- [Phil Dwyer](/wiki/Phil_Dwyer_(musician)) – jazz saxophonist
+- [Jesse Aaron Dwyre](/wiki/Jesse_Aaron_Dwyre) – drummer
+- [Howard Dyck](/wiki/Howard_Dyck) – conductor, broadcaster
+- [Félix Dyotte](/wiki/F%C3%A9lix_Dyotte) – singer-songwriter
+
+## E
+
+- [Fred Eaglesmith](/wiki/Fred_Eaglesmith) – alternative country singer-songwriter
+- [Jade Eagleson](/wiki/Jade_Eagleson) – country music singer-songwriter
+- [Eddie Eastman](/wiki/Eddie_Eastman) – country music singer-songwriter, Juno Award winner
+- [Chris Eaton](/wiki/Chris_Eaton_(Canadian_musician)) – indie rock singer-songwriter
+- [Gerald Eaton](/wiki/Gerald_Eaton) – R&B singer, producer (known as Jarvis Church)
+- [Mike Edel](/wiki/Mike_Edel) – folk musician & guitarist
+- [Jerry Edmonton](/wiki/Jerry_Edmonton) – drummer ([Steppenwolf](/wiki/Steppenwolf_(band))); his brother wrote "[Born to Be Wild](/wiki/Born_to_Be_Wild)" under the pseudonym [Mars Bonfire](/wiki/Mars_Bonfire)
+- [Kathleen Edwards](/wiki/Kathleen_Edwards) – singer-songwriter
+- [Efajemue](/wiki/Efajemue) – jazz drummer
+- [Coral Egan](/wiki/Coral_Egan) – pop, jazz singer
+- [Thompson Egbo-Egbo](/wiki/Thompson_Egbo-Egbo) – jazz pianist
+- [James Ehnes](/wiki/James_Ehnes) – violin virtuoso
+- [Eightcubed](/wiki/Eightcubed) – electronic artist
+- [Shirley Eikhard](/wiki/Shirley_Eikhard) – singer-songwriter
+- [Elisapie](/wiki/Elisapie) – pop singer
+- [Peter Elkas](/wiki/Peter_Elkas) – singer-songwriter
+- [Lindsay Ell](/wiki/Lindsay_Ell) – country singer
+- [Emanuel](/wiki/Emanuel_(musician)) – rhythm and blues singer
+- [Emma-Lee](/wiki/Emma-Lee) – singer-songwriter, photographer
+- [Rik Emmett](/wiki/Rik_Emmett) – singer-songwriter (former member of [Triumph](/wiki/Triumph_(band)))
+- [Ariel Engle](/wiki/Ariel_Engle) – indie pop singer ([Broken Social Scene](/wiki/Broken_Social_Scene), La Force)
+- [Matt Epp](/wiki/Matt_Epp) – singer-songwriter
+- [Quique Escamilla](/wiki/Quique_Escamilla) – singer-songwriter
+- [Esthero](/wiki/Esthero) – singer-songwriter
+- [Elise Estrada](/wiki/Elise_Estrada) – pop singer
+- [Emmalyn Estrada](/wiki/Emmalyn_Estrada) – pop singer ([G.R.L](/wiki/G.R.L))
+- [Eternia](/wiki/Eternia_(rapper)) – rapper
+- [Quin Etheridge-Pedden](/wiki/Quin_Etheridge-Pedden) – fiddler
+- [Andre Ethier](/wiki/Andre_Ethier_(musician)) – rock singer-songwriter
+- [Eric Ethridge](/wiki/Eric_Ethridge) – country singer-songwriter
+- [George Evans](/wiki/George_Evans_(Canadian_jazz_vocalist)) – jazz vocalist
+- [Gil Evans](/wiki/Gil_Evans) – pianist, arranger
+- [Kellylee Evans](/wiki/Kellylee_Evans) – jazz/soul vocalist
+- [Eva Everything](/wiki/Eva_Everything) – New Wave pop singer, television composer
+- [Mike Evin](/wiki/Mike_Evin) – pop singer-songwriter
+- [Excision](/wiki/Excision_(musician)) – dubstep artist
+- [Bob Ezrin](/wiki/Bob_Ezrin) – musician, producer of *[The Wall](/wiki/The_Wall)* by [Pink Floyd](/wiki/Pink_Floyd)
+
+## F
+
+- [Andrew F](/wiki/Andrew_F) – singer-songwriter, pop rock singer
+- [Lara Fabian](/wiki/Lara_Fabian) – pop singer
+- [Eria Fachin](/wiki/Eria_Fachin) – dance/pop singer
+- [Julie Fader](/wiki/Julie_Fader) – folk-pop singer-songwriter, keyboardist
+- [Bruce Fairbairn](/wiki/Bruce_Fairbairn) – musician, rock band producer ([Aerosmith](/wiki/Aerosmith), [Bon Jovi](/wiki/Bon_Jovi), [Loverboy](/wiki/Loverboy))
+- [Percy Faith](/wiki/Percy_Faith) – composer
+- [Famous](/wiki/Famous_(rapper)) – rapper
+- [Todd Fancey](/wiki/Todd_Fancey) – bassist (the [New Pornographers](/wiki/The_New_Pornographers)), singer-songwriter
+- [Faouzia](/wiki/Faouzia) – singer-songwriter, musician
+- [Mylène Farmer](/wiki/Myl%C3%A8ne_Farmer) – singer
+- [Robert Farnon](/wiki/Robert_Farnon) – arranger, composer, conductor
+- [Stephen Fearing](/wiki/Stephen_Fearing) – singer-songwriter
+- [Leslie Feist](/wiki/Leslie_Feist) – pop singer-songwriter
+- [Christine Fellows](/wiki/Christine_Fellows) – folk-pop singer-songwriter
+- [Kate Fenner](/wiki/Kate_Fenner) – singer-songwriter
+- [Jay Ferguson](/wiki/Jay_Ferguson_(Canadian_musician)) – power pop singer-songwriter, guitarist ([Sloan](/wiki/Sloan_(band)))
+- [Maynard Ferguson](/wiki/Maynard_Ferguson) – jazz band leader, trumpet
+- [Danny Fernandes](/wiki/Danny_Fernandes) – pop singer
+- [Ferron](/wiki/Ferron) – folk singer-songwriter
+- [Michael Feuerstack](/wiki/Michael_Feuerstack) – singer-songwriter, guitarist ([Wooden Stars](/wiki/Wooden_Stars), [Snailhouse](/wiki/Snailhouse))
+- [Janina Fialkowska](/wiki/Janina_Fialkowska) – pianist
+- [Dominique Fils-Aimé](/wiki/Dominique_Fils-Aim%C3%A9) – jazz, rhythm and blues singer
+- [Hank Fisher](/wiki/Washboard_Hank) – known as Washboard Hank, singer-songwriter and multi-instrument entertainer
+- [Jeremy Fisher](/wiki/Jeremy_Fisher) – singer-songwriter
+- [Brent Fitz](/wiki/Brent_Fitz) – drummer, pianist ([Slash](/wiki/Slash_(musician)), [Theory of a Deadman](/wiki/Theory_of_a_Deadman), [Alice Cooper](/wiki/Alice_Cooper), [Vince Neil](/wiki/Vince_Neil), [Union](/wiki/Union_(band)))
+- [Warren Dean Flandez](/wiki/Warren_Dean_Flandez) – R&B, gospel singer
+- [Jon-Rae Fletcher](/wiki/Jon-Rae_Fletcher) – rock singer-songwriter
+- [Luca Fogale](/wiki/Luca_Fogale) – pop singer
+- [Peter Foldy](/wiki/Peter_Foldy) – singer-songwriter
+- [Sue Foley](/wiki/Sue_Foley) – blues singer-songwriter
+- [Roy Forbes](/wiki/Roy_Forbes) – folk music singer-songwriter
+- [Frazey Ford](/wiki/Frazey_Ford) – folk music guitarist, singer-songwriter (the [Be Good Tanyas](/wiki/The_Be_Good_Tanyas))
+- [Angel Forrest](/wiki/Angel_Forrest) – singer
+- [Maureen Forrester](/wiki/Maureen_Forrester) – contralto
+- [Judith Forst](/wiki/Judith_Forst) – operatic mezzo-soprano
+- [Amanda Forsyth](/wiki/Amanda_Forsyth) – cellist
+- [Marc Fortier](/wiki/Marc_Fortier) – singer-songwriter, guitarist
+- [Fred Fortin](/wiki/Fred_Fortin) – rock singer-songwriter, guitarist, drummer
+- [J.D. Fortune](/wiki/J.D._Fortune) – former INXS lead singer
+- [David Foster](/wiki/David_Foster) – composer, producer, pianist, vocalist
+- [FouKi](/wiki/FouKi) – rapper
+- [Jeanick Fournier](/wiki/Jeanick_Fournier) – singer, *[Canada's Got Talent](/wiki/Canada%27s_Got_Talent)* season 2 winner
+- [George Fox](/wiki/George_Fox_(musician)) – country singer-songwriter
+- [Foxtrott](/wiki/Foxtrott) – electronic/indie pop musician
+- [David Francey](/wiki/David_Francey) – folk singer-songwriter
+- [Angelique Francis](/wiki/Angelique_Francis) – blues singer
+- [Frankenstein](/wiki/Frankenstein_(rapper)) – rapper and record producer
+- [Allan Fraser](/wiki/Allan_Fraser_(musician)) – folk singer-songwriter (formerly of [Fraser & DeBolt](/wiki/Fraser_%26_DeBolt))
+- [Fredz](/wiki/Fredz) – rapper
+- [Matt Frenette](/wiki/Matt_Frenette) – drummer ([Headpins](/wiki/Headpins), [Loverboy](/wiki/Loverboy), [Streetheart](/wiki/Streetheart_(band)))
+- [Fresh I.E.](/wiki/Fresh_I.E.) – Christian rapper
+- [Alan Frew](/wiki/Alan_Frew) – singer-songwriter ([Glass Tiger](/wiki/Glass_Tiger))
+- [Debby Friday](/wiki/Debby_Friday) – electronic musician
+- [Allen Froese](/wiki/Allen_Froese) – contemporary Christian singer
+- [Lily Frost](/wiki/Lily_Frost) – singer-songwriter, performer and recording artist
+- [Georgette Fry](/wiki/Georgette_Fry) – blues singer, songwriter, choir director
+- [Rhys Fulber](/wiki/Rhys_Fulber) – electronic musician/producer, [Front Line Assembly](/wiki/Front_Line_Assembly), [Delerium](/wiki/Delerium), [Conjure One](/wiki/Conjure_One)
+- [Aaron Funk](/wiki/Aaron_Funk) – breakcore artist
+- [Lewis Furey](/wiki/Lewis_Furey) – rock singer-songwriter, film music composer
+- [Nelly Furtado](/wiki/Nelly_Furtado) – R&B/pop singer-songwriter, record producer, actress
+
+## G
+
+- [B. B. Gabor](/wiki/B._B._Gabor) – new wave artist
+- [André Gagnon](/wiki/Andr%C3%A9_Gagnon) – pianist, composer
+- [John Harvey Gahan](/wiki/John_Harvey_Gahan) – violinist
+- [Jonathan Gallant](/wiki/Jonathan_Gallant) – bassist (Billy Talent)
+- [Lennie Gallant](/wiki/Lennie_Gallant) – singer-songwriter
+- [Patsy Gallant](/wiki/Patsy_Gallant) – singer
+- [Edward Gamblin](/wiki/Edward_Gamblin) – singer-songwriter
+- [Daniel Gardner](/wiki/Daniel_Gardner_(musician)) – electronic musician
+- [Yoan Garneau](/wiki/Yoan_Garneau) – singer-songwriter
+- [Gale Garnett](/wiki/Gale_Garnett) – singer-songwriter of the 1964 Top 10 Hit "[We'll Sing in the Sunshine](/wiki/We%27ll_Sing_in_the_Sunshine)"
+- [Garou](/wiki/Pierre_Garand) – singer
+- [Amos Garrett](/wiki/Amos_Garrett) – guitarist, singer
+- [Sebastian Gaskin](/wiki/Sebastian_Gaskin) – R&B singer-songwriter
+- [Ali Gatie](/wiki/Ali_Gatie) – singer-songwriter
+- [Nadia Gaudet](/wiki/Nadia_Gaudet) – folk singer-songwriter
+- [Karina Gauvin](/wiki/Karina_Gauvin) – soprano
+- [Gayance](/wiki/Gayance) – electronic/house DJ
+- [Eric Genuis](/wiki/Eric_Genuis) – composer, pianist
+- [Hannah Georgas](/wiki/Hannah_Georgas) – singer-songwriter
+- [Jian Ghomeshi](/wiki/Jian_Ghomeshi) – singer, broadcaster, writer, producer
+- [Joel Gibb](/wiki/Joel_Gibb) – singer-songwriter (the [Hidden Cameras](/wiki/The_Hidden_Cameras))
+- [Tim Gilbertson](/wiki/Tim_Gilbertson) – singer-songwriter
+- [Nick Gilder](/wiki/Nick_Gilder) – singer-songwriter, "[Hot Child in the City](/wiki/Hot_Child_in_the_City)"
+- [Flora Gionest](/wiki/Flora_Gionest) – singer-songwriter
+- [Fernande Giroux](/wiki/Fernande_Giroux) – jazz singer
+- [Martin Giroux](/wiki/Martin_Giroux) – singer
+- [Alice Glass](/wiki/Alice_Glass) – lyricist, vocalist ([Crystal Castles](/wiki/Crystal_Castles_(band)))
+- [Greg Godovitz](/wiki/Greg_Godovitz) – singer, bass guitarist
+- [Gary Pig Gold](/wiki/Gary_Pig_Gold) – singer-songwriter, guitarist ([Dave Rave](/wiki/Dave_Rave)), producer ([Simply Saucer](/wiki/Simply_Saucer))
+- [Roxanne Goldade](/wiki/Roxanne_Goldade) – country singer
+- [Rose Goldblatt](/wiki/Rose_Goldblatt) – pianist
+- [Kat Goldman](/wiki/Kat_Goldman) – singer-songwriter
+- [Anthony Gomes](/wiki/Anthony_Gomes) – guitarist, singer-songwriter
+- [Adam Gontier](/wiki/Adam_Gontier) – singer ([Three Days Grace](/wiki/Three_Days_Grace), [Saint Asonia](/wiki/Saint_Asonia))
+- [Chilly Gonzales](/wiki/Chilly_Gonzales) – classical musician
+- [Matthew Good](/wiki/Matthew_Good) – singer-songwriter (Matthew Good Band)
+- [Myles Goodwyn](/wiki/Myles_Goodwyn) – singer-songwriter, guitarist ([April Wine](/wiki/April_Wine))
+- [James Gordon](/wiki/James_Gordon_(Canadian_musician)) – singer-songwriter
+- [Valery Gore](/wiki/Valery_Gore) – singer-songwriter
+- [Rex Goudie](/wiki/Rex_Goudie) – singer-songwriter (*[Canadian Idol](/wiki/Canadian_Idol)* runner-up, 2005)
+- [Denis Gougeon](/wiki/Denis_Gougeon) – composer
+- [Glenn Gould](/wiki/Glenn_Gould) – classical pianist, composer, philosopher
+- [Robert Goulet](/wiki/Robert_Goulet) – baritone singer, Broadway musical star
+- [Lawrence Gowan](/wiki/Lawrence_Gowan) – rock singer (solo, [Styx](/wiki/Styx_(band)))
+- [Max Graham](/wiki/Max_Graham) – house DJ
+- [Sebastien Grainger](/wiki/Sebastien_Grainger) – singer, drummer, percussionist ([Death from Above 1979](/wiki/Death_from_Above_1979))
+- [Gil Grand](/wiki/Gil_Grand) – country singer-songwriter
+- [Jenn Grant](/wiki/Jenn_Grant) – singer-songwriter
+- [Justin Gray](/wiki/Justin_Gray_(musician)) – jazz bassist, recording engineer
+- [Saya Gray](/wiki/Saya_Gray) – alternative pop bassist
+- [Gordon Grdina](/wiki/Gordon_Grdina) – jazz, indie rock and world music guitarist
+- [Dallas Green](/wiki/Dallas_Green_(musician)) – singer-songwriter, guitarist ([Alexisonfire](/wiki/Alexisonfire), [City and Colour](/wiki/City_and_Colour))
+- [Brian Greenway](/wiki/Brian_Greenway) – guitarist, harmonicist, vocalist ([April Wine](/wiki/April_Wine), [Mashmakhan](/wiki/Mashmakhan))
+- [Joey Gregorash](/wiki/Joey_Gregorash)
+- [Adam Gregory](/wiki/Adam_Gregory_(singer-songwriter)) – country musician
+- [Grimes](/wiki/Grimes_(musician)) (Claire Boucher) – singer-songwriter, visual artist, music video director
+- [Matthew Grimson](/wiki/Matthew_Grimson) – singer-songwriter
+- [Paul Gross](/wiki/Paul_Gross) – singer-songwriter, actor, producer
+- [Emm Gryner](/wiki/Emm_Gryner) – singer-songwriter, pianist, guitarist
+- [Jean "Guilda" Guida](/wiki/Guilda) – cabaret pop singer
+- [Molly Guldemond](/wiki/Molly_Guldemond) – singer, synthesizer player (Mother Mother)
+- [Ryan Guldemond](/wiki/Ryan_Guldemond) – singer-songwriter, guitarist (Mother Mother)
+- [Jim Guthrie](/wiki/Jim_Guthrie_(singer-songwriter)) – singer-songwriter
+- [Trevor Guthrie](/wiki/Trevor_Guthrie) – singer-songwriter, formerly of [SoulDecision](/wiki/SoulDecision)
+- [Bruce Guthro](/wiki/Bruce_Guthro) – singer-songwriter (lead vocalist of [Runrig](/wiki/Runrig))
+- [Caity Gyorgy](/wiki/Caity_Gyorgy) – jazz singer
+
+## H
+
+- [Emily Haines](/wiki/Emily_Haines) – singer-songwriter (also member of [Metric](/wiki/Metric_(band)), Emily Haines and the Soft Skeleton and [Broken Social Scene](/wiki/Broken_Social_Scene))
+- [Nate Haller](/wiki/Nate_Haller) – country singer-songwriter
+- [Marc-André Hamelin](/wiki/Marc-Andr%C3%A9_Hamelin) – classical pianist and composer
+- [Mark Hamilton](/wiki/Mark_Hamilton_(singer)) – frontman of [Woodpigeon](/wiki/Woodpigeon_(band))
+- [Moshe Hammer](/wiki/Moshe_Hammer) – violinist
+- [Marie-Lynn Hammond](/wiki/Marie-Lynn_Hammond) – folk singer
+- [Handsome Ned](/wiki/Handsome_Ned) – country singer
+- [Gerry Hannah](/wiki/Gerry_Hannah) – bass player of [Subhumans](/wiki/The_Subhumans_(Canadian_band))
+- [Barbara Hannigan](/wiki/Barbara_Hannigan) – soprano, conductor
+- [Lynne Hanson](/wiki/Lynne_Hanson) – singer-songwriter
+- [Buster Harding](/wiki/Buster_Harding) – jazz pianist, composer, arranger
+- [Hagood Hardy](/wiki/Hagood_Hardy) – jazz vibraphonist, pianist, known for "The Homecoming"
+- [Georgia Harmer](/wiki/Georgia_Harmer) – singer-songwriter
+- [Sarah Harmer](/wiki/Sarah_Harmer) – singer-songwriter
+- [Neil Harnett](/wiki/Neil_Harnett) – blues-rock singer-songwriter
+- [Ofra Harnoy](/wiki/Ofra_Harnoy) – cellist
+- [Barry Harris](/wiki/Barry_Harris_(musician)) – dance music DJ, remixer, musician
+- [Chris Harris](/wiki/Chris_Harris_(musician)) – multi-instrumentalist
+- [Harrison](/wiki/Harrison_(Canadian_musician)) – electronic musician
+- [Robin Harrison](/wiki/Robin_Harrison_(pianist)) – pianist, composer
+- [Corey Hart](/wiki/Corey_Hart_(singer)) – singer
+- [Joshua Haulli](/wiki/Joshua_Haulli) – singer-songwriter
+- [Ron Hawkins](/wiki/Ron_Hawkins) – singer-songwriter
+- [Ronnie Hawkins](/wiki/Ronnie_Hawkins) – American-born singer, naturalized Canadian
+- [Richie Hawtin](/wiki/Richie_Hawtin) – techno musician-DJ, producer
+- [Hayden](/wiki/Hayden_(musician)) – singer-songwriter, real name Paul Hayden Desser
+- [Oliver Haze](/wiki/Oliver_Haze) – singer-songwriter
+- [Terra Hazelton](/wiki/Terra_Hazelton) – jazz singer
+- [Jeff Healey](/wiki/Jeff_Healey) – guitarist, trumpet player, singer
+- [Kevin Hearn](/wiki/Kevin_Hearn) – singer-songwriter ([Barenaked Ladies](/wiki/Barenaked_Ladies))
+- [Tim Hecker](/wiki/Tim_Hecker) – ambient/electronic musician
+- [Coleman Hell](/wiki/Coleman_Hell) – indie pop/electronic musician
+- [Thomas Hellman](/wiki/Thomas_Hellman) – jazz/pop singer
+- [Scott Helman](/wiki/Scott_Helman) – singer-songwriter
+- [Wade Hemsworth](/wiki/Wade_Hemsworth) – folk singer-songwriter
+- [Bill Henderson](/wiki/Bill_Henderson_(Canadian_singer)) – singer-songwriter ([Chilliwack](/wiki/Chilliwack_(band)))
+- [Sheila Henig](/wiki/Sheila_Henig) – pianist, soprano
+- [Carl Henry](/wiki/Carl_Henry_(singer)) – R&B, reggae musician
+- [Darcy Hepner](/wiki/Darcy_Hepner) – saxophonist, composer/arranger
+- [Ben Heppner](/wiki/Ben_Heppner) – operatic tenor
+- [Mikey Heppner](/wiki/Mikey_Heppner) – guitarist, singer-songwriter ([Priestess](/wiki/Priestess_(band)))
+- [Angela Hewitt](/wiki/Angela_Hewitt) – pianist
+- [Tim Hicks](/wiki/Tim_Hicks) – country singer-songwriter
+- [Jolene Higgins](/wiki/Little_Miss_Higgins) – folk and acoustic blues singer-songwriter known as "Little Miss Higgins"
+- [Rebekah Higgs](/wiki/Rebekah_Higgs) – singer-songwriter
+- [Dan Hill](/wiki/Dan_Hill) – pop singer
+- [Warren Hill](/wiki/Warren_Hill_(musician)) – smooth jazz musician
+- [Veda Hille](/wiki/Veda_Hille) – singer-songwriter
+- [Florian Hoefner](/wiki/Florian_Hoefner) – jazz pianist
+- [Jacob Hoggard](/wiki/Jacob_Hoggard) – singer ([Hedley](/wiki/Hedley_(band)))
+- [Frannie Holder](/wiki/Frannie_Holder) – singer, composer
+- [Steve Holt](/wiki/Steve_Holt_(Canadian_musician)) – pianist, singer-songwriter
+- [Matt Holubowski](/wiki/Matt_Holubowski) – singer-songwriter
+- [Amy Honey](/wiki/Amy_Honey) – singer-songwriter
+- [Jason Hook](/wiki/Jason_Hook) – guitarist
+- [Chris Hooper](/wiki/Chris_Hooper_(musician)) – drummer
+- [Tom Hooper](/wiki/Tom_Hooper_(musician)) – singer-songwriter
+- [Charlie Hope](/wiki/Charlie_Hope) – children's musician
+- [Kelly Hoppe](/wiki/Kelly_Hoppe) – harmonica player, multi-instrumentalist ([Big Sugar](/wiki/Big_Sugar_(band)))
+- [Paul Horn](/wiki/Paul_Horn_(jazz_musician)) – flute player
+- [Luke Hoskin](/wiki/Luke_Hoskin) – guitar player ([Protest the Hero](/wiki/Protest_the_Hero))
+- [Gregory Hoskins](/wiki/Gregory_Hoskins) – singer-songwriter
+- [Stuart Howe](/wiki/Stuart_Howe) – operatic tenor
+- [Andrew Huang](/wiki/Andrew_Huang_(musician)) – musician
+- [Andrew Huculiak](/wiki/Andrew_Huculiak) – drummer ([We Are the City](/wiki/We_Are_the_City))
+- [Garth Hudson](/wiki/Garth_Hudson) – multi-instrumentalist (the [Band](/wiki/The_Band))
+- [Paul Humphrey](/wiki/Paul_Humphrey_(Canadian_musician)) – singer-songwriter ([Blue Peter](/wiki/Blue_Peter_(band)))
+- [Alex Zhang Hungtai](/wiki/Dirty_Beaches) – indie rock singer-songwriter, performing as [Dirty Beaches](/wiki/Dirty_Beaches)
+- [Jimmy Hunt](/wiki/Jimmy_Hunt_(musician)) – singer-songwriter
+- [Tommy Hunter](/wiki/Tommy_Hunter) – singer who had his own CBC TV show
+- [Nate Husser](/wiki/Nate_Husser) – rapper
+- [Timothy Hutchins](/wiki/Timothy_Hutchins) – flute player
+- [Andrew Hyatt](/wiki/Andrew_Hyatt) – country singer
+- [Paul Hyde](/wiki/Paul_Hyde) – singer-songwriter ([Payola$](/wiki/Payola$))
+- [Ron Hynes](/wiki/Ron_Hynes) – Newfoundland folk singer-songwriter
+- [Hyper-T](/wiki/Hyper-T) – rapper
+- [Joshua Hyslop](/wiki/Joshua_Hyslop) – singer-songwriter
+
+## I
+
+- [Zaki Ibrahim](/wiki/Zaki_Ibrahim) – soul, R&B singer
+- [Norman Iceberg](/wiki/Norman_Iceberg) – pop singer
+- [Lucie Idlout](/wiki/Lucie_Idlout) – rock singer
+- [Ill-esha](/wiki/Ill-esha) – electronic, R&B vocalist, producer, songwriter
+- [Joshua Ingram](/wiki/Joshua_Ingram) – rock drummer, percussionist
+- [Chin Injeti](/wiki/Chin_Injeti) – R&B singer
+- [Paolo Iovannone](/wiki/Paolo_Iovannone) – singer-songwriter, producer
+- [May Irwin](/wiki/May_Irwin) – vaudeville singer
+- [Elisapie Isaac](/wiki/Elisapie_Isaac) – singer-songwriter
+- [Orin Isaacs](/wiki/Orin_Isaacs) – bandleader, bass guitarist
+- [Brandon Isaak](/wiki/Brandon_Isaak) – blues singer and guitarist
+- [iskwē](/wiki/Iskw%C4%93) – pop, electronic music singer
+
+## J
+
+- [Lenni Jabour](/wiki/Lenni_Jabour) – pop singer-songwriter
+- [Susan Jacks](/wiki/Susan_Jacks) – pop singer-songwriter
+- [Terry Jacks](/wiki/Terry_Jacks) – pop singer-songwriter, producer
+- [Sammy Jackson](/wiki/Sammy_Jackson_(singer)) – jazz and rhythm and blues singer
+- [Jacynthe](/wiki/Jacynthe) – pop singer
+- [Emmanuel Jal](/wiki/Emmanuel_Jal) – hip hop musician
+- [Colin James](/wiki/Colin_James) – blues and rock musician
+- [Freddie James](/wiki/Freddie_James_(musician)) – R&B singer
+- [John James](/wiki/John_James_(Canadian_musician)) – dance musician
+- [Ryland James](/wiki/Ryland_James) – pop singer
+- [Reid Jamieson](/wiki/Reid_Jamieson) – pop and folk singer-songwriter ([Vinyl Cafe](/wiki/Vinyl_Cafe))
+- [Patti Jannetta](/wiki/Patti_Jannetta) – pop and rock singer
+- [Paul Janz](/wiki/Paul_Janz) – singer-songwriter
+- [Sterling Jarvis](/wiki/Sterling_Jarvis) – R&B singer, musical theatre actor
+- [Yves Jarvis](/wiki/Yves_Jarvis) – indie rock singer-songwriter
+- [JayWood](/wiki/JayWood) – indie funk-rock singer and songwriter
+- [JBM](/wiki/JBM) (Jesse Marchant) – singer-songwriter
+- [Anik Jean](/wiki/Anik_Jean) – rock and pop singer
+- [Jelleestone](/wiki/Jelleestone) – rapper
+- [Jemeni](/wiki/Jemeni_(singer)) – hip-hop, R&B singer
+- [Drake Jensen](/wiki/Drake_Jensen) – country singer
+- [Ingrid Jensen](/wiki/Ingrid_Jensen) – jazz trumpet player
+- [Jeon So-mi](/wiki/Jeon_So-mi) – singer-songwriter, former member of [I.O.I](/wiki/I.O.I)
+- [Carly Rae Jepsen](/wiki/Carly_Rae_Jepsen) – singer-songwriter
+- [Jhyve](/wiki/Jhyve) – rhythm and blues singer
+- [Berk Jodoin](/wiki/Berk_Jodoin) – folk/country singer-songwriter
+- [Mendelson Joe](/wiki/Mendelson_Joe)
+- [Lyndon John X](/wiki/Lyndon_John_X) – reggae musician
+- [Rita Johns](/wiki/Rita_Johns) – pop singer
+- [Alexz Johnson](/wiki/Alexz_Johnson) – singer-songwriter, actress
+- [Bill Johnson](/wiki/Bill_Johnson_(blues_musician)) – blues and roots music performer
+- [Carolyn Dawn Johnson](/wiki/Carolyn_Dawn_Johnson) – country singer-songwriter
+- [Gordie Johnson](/wiki/Gordie_Johnson) – guitar player and singer ([Big Sugar](/wiki/Big_Sugar_(band)))
+- [Martha Johnson](/wiki/Martha_Johnson_(singer)) – singer-songwriter ([Martha and the Muffins](/wiki/Martha_and_the_Muffins))
+- [Molly Johnson](/wiki/Molly_Johnson) – rock and jazz singer
+- [Rick Johnson](/wiki/Rick_Johnson_(Canadian_politician)) – rock guitarist, children's entertainer
+- [Taborah Johnson](/wiki/Taborah_Johnson) (Tabby Johnson) – jazz and rock singer
+- [France Joli](/wiki/France_Joli) – disco singer
+- [Danko Jones](/wiki/Danko_Jones) – singer-songwriter
+- [G.B. Jones](/wiki/G.B._Jones) – guitarist, drummer ([Fifth Column](/wiki/Fifth_Column_(band)))
+- [Jeff Jones](/wiki/Jeff_Jones_(bassist)) – rock bassist, singer
+- [Miles Jones](/wiki/Miles_Jones_(musician)) – rapper, singer-songwriter, producer
+- [Oliver Jones](/wiki/Oliver_Jones_(pianist)) – jazz pianist
+- [Jorane](/wiki/Jorane) – cellist, singer-songwriter
+- [Keven Jordan](/wiki/Keven_Jordan) – pop/rock singer-songwriter
+- [Marc Jordan](/wiki/Marc_Jordan) – singer-songwriter
+- [Sass Jordan](/wiki/Sass_Jordan) – rock singer, judge on *[Canadian Idol](/wiki/Canadian_Idol)*
+- [Michelle Josef](/wiki/Michelle_Josef) – drummer
+- [Leila Bronia Josefowicz](/wiki/Leila_Bronia_Josefowicz) – violinist
+- [Martha Joy](/wiki/Martha_Joy) – singer
+- [Junia-T](/wiki/Junia-T) – rapper
+- [Juurini](/wiki/Juurini) – singer-songwriter
+
+## K
+
+- [Florence K](/wiki/Florence_K_(singer)) – pop singer-songwriter
+- [K-Anthony](/wiki/K-Anthony) – gospel singer
+- [K-Bust](/wiki/K-Bust) – singer-songwriter
+- [Todd Kerns](/wiki/Todd_Kerns) – vocalist/bassist (Slash, Age of Electric)
+- [Michael Kaeshammer](/wiki/Michael_Kaeshammer)
+- [Connie Kaldor](/wiki/Connie_Kaldor) – singer-songwriter, poet
+- [Kamau](/wiki/Kamau) – hip-hop musician
+- [Kevin Kane](/wiki/Kevin_Kane_(musician)) – singer-songwriter
+- [Kanen](/wiki/Kanen_(singer)) – singer-songwriter
+- [KAPRI](/wiki/KAPRI) – dance/pop singer
+- [Kardinal Offishall](/wiki/Kardinal_Offishall) – rapper
+- [Kaia Kater](/wiki/Kaia_Kater) – singer-songwriter
+- [Cevin Key](/wiki/CEvin_Key) – songwriter, producer, and composer
+- [Ethan Kath](/wiki/Ethan_Kath) – producer ([Crystal Castles](/wiki/Crystal_Castles_(band)))
+- [Kathleen](/wiki/Kathleen_(singer)) – Quebec pop singer
+- [Katie B](/wiki/Katie_B) – singer-songwriter (formerly with [Jakalope](/wiki/Jakalope))
+- [John Kay](/wiki/John_Kay_(musician)) – singer ([Steppenwolf](/wiki/Steppenwolf_(band)))
+- [Kaya](/wiki/Kaya_(Canadian_singer)) – rock and pop singer, formerly known as Francis Martin
+- [Kaytranada](/wiki/Kaytranada) – electronic
+- [Sherry Kean](/wiki/Sherry_Kean)
+- [James Keelaghan](/wiki/James_Keelaghan) – singer-songwriter
+- [Jesse F. Keeler](/wiki/Jesse_F._Keeler) – [Death from Above 1979](/wiki/Death_from_Above_1979), [MSTRKRFT](/wiki/MSTRKRFT)
+- [Greg Keelor](/wiki/Greg_Keelor) – singer-songwriter, guitarist ([Blue Rodeo](/wiki/Blue_Rodeo), solo artist)
+- [Simeonie Keenainak](/wiki/Simeonie_Keenainak) – accordionist
+- [Joey Keithley](/wiki/Joey_Keithley) – also known as Joey Shithead, Vancouver punk rock singer, guitarist ([D.O.A.](/wiki/D.O.A._(band))), political and environmental activist
+- [Geoffrey Kelly](/wiki/Geoffrey_Kelly) – Celtic-folk musician, singer ([Spirit of the West](/wiki/Spirit_of_the_West), the [Paperboys](/wiki/The_Paperboys))
+- [Sean Kelly](/wiki/Sean_Kelly_(Canadian_musician)) – singer, guitarist (Crash Kelly)
+- [Roy Kenner](/wiki/Roy_Kenner) – singer-songwriter
+- [Mo Kenney](/wiki/Mo_Kenney) – singer-songwriter
+- [Lydia Képinski](/wiki/Lydia_K%C3%A9pinski) – singer-songwriter
+- [Cassius Khan](/wiki/Cassius_Khan) – ghazal player, tabla player, Indian classical musician
+- [Khotin](/wiki/Khotin_(musician)) – house, downtempo electronic musician
+- [Rich Kidd](/wiki/Rich_Kidd) – hip hop artist
+- [Brett Kissel](/wiki/Brett_Kissel) – country singer
+- [Kid Koala](/wiki/Kid_Koala) – hip-hop artist
+- [Kiesza](/wiki/Kiesza) (Kiesa Rae Ellestad) – singer-songwriter
+- [Andy Kim](/wiki/Andy_Kim_(singer)) – singer-songwriter, pop musician ("[Sugar, Sugar](/wiki/Sugar,_Sugar)")
+- [Kiva](/wiki/Kiva_(musician)) – harmonic overtone singer, keyboardist, worldbeat/jazz artist
+- [Bryden Gwiss Kiwenzie](/wiki/Bryden_Gwiss_Kiwenzie) – dance music
+- [Francois Klark](/wiki/Francois_Klark) – pop singer-songwriter
+- [Trish Klein](/wiki/Trish_Klein) – folk music guitarist, singer-songwriter (the [Be Good Tanyas](/wiki/The_Be_Good_Tanyas))
+- [Billy Klippert](/wiki/Billy_Klippert) – rock musician
+- [K.Maro](/wiki/K.Maro) – R&B, rap musician, producer
+- [K'naan](/wiki/K%27naan) – rapper
+- [Aidan Knight](/wiki/Aidan_Knight) – singer-songwriter
+- [Chester Knight](/wiki/Chester_Knight) – singer-songwriter
+- [Moe Koffman](/wiki/Moe_Koffman) – jazz artist
+- [Gwendolyn Koldofsky](/wiki/Gwendolyn_Koldofsky) – piano accompanist and music educator
+- [Ron Korb](/wiki/Ron_Korb) – composer, flutist
+- [Koriass](/wiki/Koriass) – rapper
+- [k-os](/wiki/K-os) – rapper, hip-hop musician
+- [Keith Kouna](/wiki/Keith_Kouna) – punk rock singer
+- [Benjamin Kowalewicz](/wiki/Benjamin_Kowalewicz) – frontman of [Billy Talent](/wiki/Billy_Talent)
+- [Dan and Ryan Kowarsky](/wiki/RyanDan) – singers ([RyanDan](/wiki/RyanDan) and [b4-4](/wiki/B4-4))
+- [Nik Kozub](/wiki/Nik_Kozub) – bassist ([Veal](/wiki/Veal_(band))), keyboardist ([Shout Out Out Out Out](/wiki/Shout_Out_Out_Out_Out)), remixer (the [Paronomasiac](/wiki/The_Paronomasiac))
+- [Serouj Kradjian](/wiki/Serouj_Kradjian) – pianist, composer
+- [Norbert Kraft](/wiki/Norbert_Kraft) – guitarist
+- [Diana Krall](/wiki/Diana_Krall) – jazz singer, pianist
+- [Chantal Kreviazuk](/wiki/Chantal_Kreviazuk) – singer-songwriter
+- [Nicholas Krgovich](/wiki/Nicholas_Krgovich) – indie rock, pop singer-songwriter
+- [David Kristian](/wiki/David_Kristian) – film composer, electronic musician
+- [Kyrie Kristmanson](/wiki/Kyrie_Kristmanson) – singer-songwriter
+- [Chad Kroeger](/wiki/Chad_Kroeger) – singer, guitarist, [Nickelback](/wiki/Nickelback)
+- [Patricia Krueger](/wiki/Patricia_Krueger) – classical pianist with the [Toronto Symphony Orchestra](/wiki/Toronto_Symphony_Orchestra)
+- [Spencer Krug](/wiki/Spencer_Krug) – singer-songwriter ([Fifths of Seven](/wiki/Fifths_of_Seven), [Frog Eyes](/wiki/Frog_Eyes), [Wolf Parade](/wiki/Wolf_Parade), [Sunset Rubdown](/wiki/Sunset_Rubdown), [Swan Lake](/wiki/Swan_Lake))
+- [Pierre Kwenders](/wiki/Pierre_Kwenders) – pop/world music singer, rapper
+- [Kyprios](/wiki/Kyprios) – hip-hop musician
+
+## L
+
+- [Jesse Labelle](/wiki/Jesse_Labelle) – country singer country singer
+- [James LaBrie](/wiki/James_LaBrie) – singer-songwriter, Dream Theater
+- [Kathryn Ladano](/wiki/Kathryn_Ladano) – bass clarinetist
+- [Elise LeGrow](/wiki/Elise_LeGrow) – singer-songwriter
+- [James LaBrie](/wiki/James_LaBrie) – singer-songwriter ([Dream Theater](/wiki/Dream_Theater_(band)))
+- [Kathryn Ladano](/wiki/Kathryn_Ladano) – bass clarinetist
+- [Paul Laine](/wiki/Paul_Laine) – singer (solo, [Danger Danger](/wiki/Danger_Danger))
+- [Corky Laing](/wiki/Corky_Laing) – drummer
+- [Jon Lajoie](/wiki/Jon_Lajoie) – comedian, actor, rapper, singer, musician, [Internet celebrity](/wiki/Internet_celebrity)
+- [Mary Jane Lamond](/wiki/Mary_Jane_Lamond) – Gaelic singer
+- [Willie Lamothe](/wiki/Willie_Lamothe) – country singer
+- [Wendy Lands](/wiki/Wendy_Lands) – pop and jazz singer
+- [Tory Lanez](/wiki/Tory_Lanez) – R&B
+- [k.d. lang](/wiki/K.d._lang) – country punk singer
+- [Matt Lang](/wiki/Matt_Lang) – country singer
+- [Steve Lang](/wiki/Steve_Lang) – bassist ([April Wine](/wiki/April_Wine), [Mashmakhan](/wiki/Mashmakhan))
+- [Robert Langevin](/wiki/Robert_Langevin) – flute player
+- [Daniel Lanois](/wiki/Daniel_Lanois) – composer, producer
+- [Jessy Lanza](/wiki/Jessy_Lanza) – electronic musician
+- [Abigail Lapell](/wiki/Abigail_Lapell) – folk singer-songwriter
+- [André Laplante](/wiki/Andr%C3%A9_Laplante) – pianist
+- [Eric Lapointe](/wiki/%C3%89ric_Lapointe_(singer)) – rock singer
+- [Pierre Lapointe](/wiki/Pierre_Lapointe) – pop, rock, funk singer-songwriter
+- [Steph La Rochelle](/wiki/Steph_La_Rochelle) – country/pop singer-songwriter, musical theatre actress
+- [Thierry Larose](/wiki/Thierry_Larose) – rock singer-songwriter
+- [Bells Larsen](/wiki/Bells_Larsen) – singer-songwriter
+- [Grit Laskin](/wiki/William_Laskin) – folk singer, luthier
+- [Henry Lau](/wiki/Henry_Lau) – violinist, singer, dancer (Super Junior-M)
+- [Michael Laucke](/wiki/Michael_Laucke) – classical and flamenco guitarist, composer, producer
+- [Carole Laure](/wiki/Carole_Laure) – pop/folk singer
+- [Laurence-Anne](/wiki/Laurence-Anne) – pop singer
+- [Sherisse Laurence](/wiki/Sherisse_Laurence) – country/pop singer, musical theatre actress
+- [Wayne Lavallee](/wiki/Wayne_Lavallee) – singer-songwriter, film, television and theatre composer
+- [Avril Lavigne](/wiki/Avril_Lavigne) – singer-songwriter, musician, record producer
+- [Charles Lavoie](/wiki/Charles_Lavoie) – singer, composer
+- [Daniel Lavoie](/wiki/Daniel_Lavoie) – singer-songwriter
+- [Barbara Law](/wiki/Barbara_Law) – pop and rock singer
+- [Grant Lawrence](/wiki/Grant_Lawrence) – rock singer, radio personality
+- [Marshall Lawrence](/wiki/Marshall_Lawrence) – blues, rock
+- [Dorothy Lawson](/wiki/Dorothy_Lawson) – cellist, composer ([ETHEL](/wiki/Ethel_(string_quartet)))
+- [Lisa LeBlanc](/wiki/Lisa_LeBlanc) – singer-songwriter, banjoist
+- [Félix Leclerc](/wiki/F%C3%A9lix_Leclerc) – singer-songwriter
+- [Salomé Leclerc](/wiki/Salom%C3%A9_Leclerc) – singer-songwriter
+- [Daniel Ledwell](/wiki/Daniel_Ledwell) – singer-songwriter, record producer, keyboardist ([In-Flight Safety](/wiki/In-Flight_Safety))
+- [Geddy Lee](/wiki/Geddy_Lee) – singer, bassist, keyboardist ([Rush](/wiki/Rush_(band)))
+- [Jess Lee](/wiki/Jess_Lee_(Canadian_singer)) – country singer-songwriter
+- [Mark Lee](/wiki/Mark_(rapper)) – rapper, dancer of [NCT](/wiki/NCT_(group)), [NCT 127](/wiki/NCT_127), and [SuperM](/wiki/SuperM), [NCT Dream](/wiki/NCT_Dream)
+- [Lee Kum-Sing](/wiki/Lee_Kum-Sing) – classical pianist
+- [Ranee Lee](/wiki/Ranee_Lee) – jazz singer, drummer, tenor saxophonist
+- [Sook-Yin Lee](/wiki/Sook-Yin_Lee) – rock singer-songwriter, broadcaster
+- [Sebastien Lefebvre](/wiki/Sebastien_Lefebvre) – guitarist, singer ([Simple Plan](/wiki/Simple_Plan))
+- [Vincent Legault](/wiki/Vincent_Legault) – instrumentalist, composer
+- [Ray Legere](/wiki/Ray_Legere) – bluegrass mandolinist and fiddler
+- [Elise LeGrow](/wiki/Elise_LeGrow) – singer-songwriter
+- [Peter Leitch](/wiki/Peter_Leitch_(musician)) – jazz guitarist
+- [Jean Leloup](/wiki/Jean_Leloup) – singer-songwriter
+- [Lynda Lemay](/wiki/Lynda_Lemay) – singer-songwriter
+- [Michel Lemieux](/wiki/Michel_Lemieux) – experimental electronic music, performance art
+- [Hubert Lenoir](/wiki/Hubert_Lenoir) – rock singer
+- [Martin Léon](/wiki/Martin_L%C3%A9on) – singer-songwriter, composer
+- [Exco Levi](/wiki/Exco_Levi) – reggae singer
+- [Mike Levine](/wiki/Mike_Levine_(musician)) – bassist and keyboardist
+- [Andrea Lewis](/wiki/Andrea_Lewis) – singer
+- [Glenn Lewis](/wiki/Glenn_Lewis) – [R&B](/wiki/Rhythm_and_blues) singer
+- [Jacob Lewis](/wiki/Jacob_Lewis_(singer)) – pop/rock singer
+- [Larnell Lewis](/wiki/Larnell_Lewis) – drummer
+- [Neil Leyton](/wiki/Neil_Leyton) – rock singer and guitarist
+- [David Lickley](/wiki/David_Lickley) – singer-songwriter
+- [Alex Lifeson](/wiki/Alex_Lifeson) – guitarist ([Rush](/wiki/Rush_(band)))
+- [Murray Lightburn](/wiki/Murray_Lightburn) – indie-rock singer-songwriter, guitarist
+- [Gordon Lightfoot](/wiki/Gordon_Lightfoot) – singer-songwriter (voted Canada's favourite singer-songwriter)
+- [Terra Lightfoot](/wiki/Terra_Lightfoot) – singer-songwriter
+- [LIGHTS](/wiki/Lights_(musician)) – singer-songwriter
+- [Andrea Lindsay](/wiki/Andrea_Lindsay) – singer-songwriter
+- [Aaron Lines](/wiki/Aaron_Lines) – country musician
+- [Bruce Liu](/wiki/Bruce_Liu_(pianist)) – pianist
+- [Liu Fang](/wiki/Liu_Fang) – [pipa](/wiki/Pipa) player
+- [Brianna Lizotte](/wiki/Brianna_Lizotte) – fiddler
+- [Guy Lombardo](/wiki/Guy_Lombardo) – big band leader
+- [Celine Lomez](/wiki/Celine_Lomez) – pop singer
+- [Rich London](/wiki/Rich_London) – rapper
+- [Morley Loon](/wiki/Morley_Loon) – singer-songwriter
+- [Loony](/wiki/Loony_(musician)) – R&B singer
+- [Oscar Lopez](/wiki/Oscar_Lopez_(guitarist)) – [Latin](/wiki/Latin_music)-[folk](/wiki/Folk_music) guitarist
+- [Myrna Lorrie](/wiki/Myrna_Lorrie) – country singer-songwriter ("first lady of Canadian country music")
+- [Louis Lortie](/wiki/Louis_Lortie) – pianist
+- [Loud](/wiki/Loud_(rapper)) – rapper
+- [Russell Louder](/wiki/Russell_Louder) – pop singer, performance artist
+- [Alexina Louie](/wiki/Alexina_Louie) – pianist
+- [Wyatt C. Louis](/wiki/Wyatt_C._Louis) – singer-songwriter
+- [Night Lovell](/wiki/Night_Lovell) – hip hop musician/rapper, songwriter
+- [Johnnie Lovesin](/wiki/Johnnie_Lovesin) – rock singer
+- [Lowell](/wiki/Lowell_(musician)) – electropop singer-songwriter
+- [Larissa Loyva](/wiki/Larissa_Loyva) – singer-songwriter
+- [Luba](/wiki/Luba_(singer)) – pop singer
+- [Lederhosen Lucil](/wiki/Lederhosen_Lucil) – singer-songwriter
+- [Zachary Lucky](/wiki/Zachary_Lucky) – singer-songwriter
+- [Chris "Old Man" Luedecke](/wiki/Old_Man_Luedecke) – folk singer-songwriter
+- [Todd Lumley](/wiki/Todd_Lumley) – pianist, keyboardist
+- [Sekou Lumumba](/wiki/Sekou_Lumumba) – drummer
+- [Corb Lund](/wiki/Corb_Lund) – country singer-songwriter
+- [Rob Lutes](/wiki/Rob_Lutes) – folk/blues singer-songwriter
+- [Loma Lyns](/wiki/Loma_Lyns) – country singer
+- [Lysandre](/wiki/Lysandre_M%C3%A9nard) – pop singer-songwriter and pianist
+
+## M
+
+- [Amanda Mabro](/wiki/Amanda_Mabro) – singer-songwriter
+- [Mark Masri](/wiki/Mark_Masri) – tenor singer/gospel composer
+- [Galt MacDermot](/wiki/Galt_MacDermot) – composer, musician, wrote the music for *[Hair](/wiki/Hair_(musical))*
+- [Colin MacDonald](/wiki/Colin_MacDonald_(musician)) – singer, guitarist (the [Trews](/wiki/The_Trews))
+- [Sarah MacDonald](/wiki/Sarah_MacDonald_(musician)) – conductor and organist
+- [John-Angus MacDonald](/wiki/John-Angus_MacDonald) – guitarist (the [Trews](/wiki/The_Trews))
+- [Maggie MacDonald](/wiki/Maggie_MacDonald) – singer, keyboardist (the [Hidden Cameras](/wiki/The_Hidden_Cameras), [Kids on TV](/wiki/Kids_on_TV))
+- [Tom MacDonald](/wiki/Tom_MacDonald_(rapper)) – Independent rapper
+- [Kris MacFarlane](/wiki/Kris_MacFarlane) – independent drummer/multi-instrumentalist ([Great Big Sea](/wiki/Great_Big_Sea), the [Paperboys](/wiki/The_Paperboys))
+- [Ryan MacGrath](/wiki/Ryan_MacGrath) – singer-songwriter
+- [Ashley MacIsaac](/wiki/Ashley_MacIsaac) – violinist
+- [Gisele MacKenzie](/wiki/Gisele_MacKenzie) – singer, violinist
+- [Jon McKiel](/wiki/Jon_McKiel) – rock singer-songwriter
+- [Tara MacLean](/wiki/Tara_MacLean) – singer-songwriter
+- [Catherine MacLellan](/wiki/Catherine_MacLellan) – singer-songwriter
+- [Gene MacLellan](/wiki/Gene_MacLellan) – singer-songwriter
+- [Brian Macleod](/wiki/Brian_MacLeod_(Canadian_musician)) – songwriter, music producer (best known as a member of [Chilliwack](/wiki/Chilliwack_(band)) and the [Headpins](/wiki/The_Headpins))
+- [Buddy MacMaster](/wiki/Buddy_MacMaster) – violinist
+- [Natalie MacMaster](/wiki/Natalie_MacMaster) – violinist, stepdancer
+- [Kevin MacMichael](/wiki/Kevin_MacMichael) – guitarist ([Cutting Crew](/wiki/Cutting_Crew))
+- [Rita MacNeil](/wiki/Rita_MacNeil) – country and folk singer
+- [Rozalind MacPhail](/wiki/Rozalind_MacPhail) – singer-songwriter, multi-instrumentalist
+- [Mad Child](/wiki/Mad_Child) – rapper
+- [Madagascar Slim](/wiki/Madagascar_Slim) – folk and blues guitarist
+- [Ria Mae](/wiki/Ria_Mae) – singer-songwriter
+- [Maestro Fresh Wes](/wiki/Maestro_Fresh_Wes) – hip-hop musician, singer of "[Let Your Backbone Slide](/wiki/Let_Your_Backbone_Slide)"
+- [Matt Maher](/wiki/Matt_Maher) – contemporary Christian singer
+- [Raine Maida](/wiki/Raine_Maida) – singer ([Our Lady Peace](/wiki/Our_Lady_Peace))-songwriter, producer
+- [Phyllis Mailing](/wiki/Phyllis_Mailing) – mezzo-soprano
+- [Catherine Major](/wiki/Catherine_Major) – singer-songwriter
+- [Charlie Major](/wiki/Charlie_Major) – singer-songwriter
+- [Kate Maki](/wiki/Kate_Maki) – [country rock](/wiki/Country_rock) singer-songwriter
+- [Ryan Malcolm](/wiki/Ryan_Malcolm) – lead singer ([Low Level Flight](/wiki/Low_Level_Flight)), first *[Canadian Idol](/wiki/Canadian_Idol)* winner
+- [Manafest](/wiki/Manafest) – hip-hop musician
+- [Dan Mangan](/wiki/Dan_Mangan) – singer-songwriter
+- [Casey Manierka-Quaile](/wiki/Casey_Manierka-Quaile) (Casey MQ) – electronic musician, songwriter, producer
+- [John Mann](/wiki/John_Mann_(musician)) – rock singer ([Spirit of the West](/wiki/Spirit_of_the_West))
+- [Dayna Manning](/wiki/Dayna_Manning) – singer-songwriter
+- [Catherine Manoukian](/wiki/Catherine_Manoukian) – violinist
+- [Richard Manuel](/wiki/Richard_Manuel) – pianist, vocalist, drummer (the [Band](/wiki/The_Band))
+- [Richard Margison](/wiki/Richard_Margison) – operatic tenor
+- [Kristina Maria](/wiki/Kristina_Maria) – pop singer-songwriter
+- [Marie-Mai](/wiki/Marie-Mai) – singer
+- [Frank Marino](/wiki/Frank_Marino) – guitarist, singer ([Mahogany Rush](/wiki/Mahogany_Rush))
+- [Carolyn Mark](/wiki/Carolyn_Mark) – alt-country singer-songwriter
+- [Gerry Markman](/wiki/Gerry_Markman) – rock guitarist (the [Lincolns](/wiki/The_Lincolns))
+- [Cory Marks](/wiki/Cory_Marks) – country rock singer-songwriter and guitarist
+- [Hugh Marsh](/wiki/Hugh_Marsh) – violinist
+- [Amanda Marshall](/wiki/Amanda_Marshall) – singer-songwriter
+- [Lois Marshall](/wiki/Lois_Marshall) – soprano
+- [Béatrice Martin](/wiki/B%C3%A9atrice_Martin) – singer-songwriter, pianist, also known as Cœur de pirate
+- [Jeff Martin](/wiki/Jeff_Martin_(Canadian_musician)) – singer-songwriter (the [Tea Party](/wiki/The_Tea_Party_(band)))
+- [Stephanie Martin](/wiki/Stephanie_Martin) – singer-songwriter, actress
+- [Mia Martina](/wiki/Mia_Martina) – pop singer-songwriter
+- [Masia One](/wiki/Masia_One) – rapper
+- [Dutch Mason](/wiki/Dutch_Mason) – blues artist
+- [Jojo Mason](/wiki/Jojo_Mason) – country singer-songwriter
+- [Massari](/wiki/Massari) – R&B singer
+- [Ken Masters](/wiki/Ken_Masters) – rapper
+- [Andrew Matheson](/wiki/Andrew_Matheson_(musician)) – punk rock singer and songwriter
+- [Jake Mathews](/wiki/Jake_Mathews) – country singer-songwriter
+- [André Mathieu](/wiki/Andr%C3%A9_Mathieu) – pianist and composer
+- [Matiu](/wiki/Matiu_(musician)) – singer-songwriter
+- [Kalle Mattson](/wiki/Kalle_Mattson) – folk rock singer-songwriter
+- [Romi Mayes](/wiki/Romi_Mayes) – country singer
+- [Matt Mays](/wiki/Matt_Mays) – singer-songwriter
+- [Bill McBirnie](/wiki/Bill_McBirnie) – jazz/Latin flutist (Extreme Flute)
+- [Maxwell McCabe-Lokos](/wiki/Maxwell_McCabe-Lokos) – keyboardist (the [Deadly Snakes](/wiki/The_Deadly_Snakes))
+- [Séan McCann](/wiki/S%C3%A9an_McCann) – singer-songwriter, guitarist ([Great Big Sea](/wiki/Great_Big_Sea))
+- [Jay McCarrol](/wiki/Jay_McCarrol) – composer
+- [Melissa McClelland](/wiki/Melissa_McClelland) – singer-songwriter
+- [Jeremiah McDade](/wiki/Jeremiah_McDade) – composer, saxophonist, Irish whistle (the [McDadea](/wiki/The_McDades))
+- [Solon McDade](/wiki/Solon_McDade) – composer, bassist (the [McDades](/wiki/The_McDades))
+- [Eileen McGann](/wiki/Eileen_McGann_(musician)) – folk singer-songwriter
+- [Anna McGarrigle](/wiki/Anna_McGarrigle) – folk singer-songwriter ([Kate & Anna McGarrigle](/wiki/Kate_%26_Anna_McGarrigle))
+- [Kate McGarrigle](/wiki/Kate_McGarrigle) – folk singer-songwriter (Kate & Anna McGarrigle)
+- [Jay W. McGee](/wiki/Jay_W._McGee) – soul, R&B and hip hop singer/rapper
+- [Wayne McGhie](/wiki/Wayne_McGhie) – soul, R&B, reggae singer
+- [Blake McGrath](/wiki/Blake_McGrath) – pop singer
+- [Eamon McGrath](/wiki/Eamon_McGrath) – singer-songwriter
+- [Kyle McKearney](/wiki/Kyle_McKearney) – alternative country singer-songwriter
+- [Mike McKenna](/wiki/Mike_McKenna_(musician)) – rock/blues guitarist noted for his electric slide playing
+- [Loreena McKennitt](/wiki/Loreena_McKennitt) – Celtic-inspired musician, vocalist
+- [Chris McKhool](/wiki/Chris_McKhool) – violinist, guitarist, singer ([Sultans of String](/wiki/Sultans_of_String))
+- [Sarah McLachlan](/wiki/Sarah_McLachlan) – singer-songwriter
+- [Murray McLauchlan](/wiki/Murray_McLauchlan) – singer-songwriter
+- [Ambre McLean](/wiki/Ambre_McLean) – singer-songwriter, multi-instrumentalist
+- [Kelly McMichael](/wiki/Kelly_McMichael) – singer-songwriter
+- [Holly McNarland](/wiki/Holly_McNarland) – singer-songwriter
+- [Suzie McNeil](/wiki/Suzie_McNeil) – pop rock singer-songwriter
+- [Trevor McNevan](/wiki/Trevor_McNevan) – singer-songwriter ([Thousand Foot Krutch](/wiki/Thousand_Foot_Krutch), [FM Static](/wiki/FM_Static))
+- [Colin McPhee](/wiki/Colin_McPhee) – classical composer, musicologist
+- [Linda McRae](/wiki/Linda_McRae) – singer-songwriter ([Spirit of the West](/wiki/Spirit_of_the_West), solo artist)
+- [Tate McRae](/wiki/Tate_McRae) – singer-songwriter
+- [Glen Meadmore](/wiki/Glen_Meadmore) – punk/rock musician
+- [Michie Mee](/wiki/Michie_Mee) – rapper
+- [Tom Meikle](/wiki/Mappe_Of) – singer-songwriter who records as Mappe Of and Forest Moon
+- [Brian Melo](/wiki/Brian_Melo) – singer (winner of *Canadian Idol*, 2007)
+- [Shawn Mendes](/wiki/Shawn_Mendes) – singer-songwriter, guitarist
+- [Dylan Menzie](/wiki/Dylan_Menzie) – singer-songwriter
+- [Jerry Mercer](/wiki/Jerry_Mercer) – drummer, vocalist ([April Wine](/wiki/April_Wine), [Mashmakhan](/wiki/Mashmakhan), the [Wackers](/wiki/The_Wackers))
+- [Madeline Merlo](/wiki/Madeline_Merlo) – country singer-songwriter
+- [Kathleen Ivaluarjuk Merritt](/wiki/Iva_and_Angu) – Inuk throat singer
+- [Scott Merritt](/wiki/Scott_Merritt) – singer-songwriter
+- [Don Messer](/wiki/Donald_Charles_Frederick_Messer) – fiddler
+- [Patrice Michaud](/wiki/Patrice_Michaud) – singer-songwriter
+- [Danny Michel](/wiki/Danny_Michel) – singer-songwriter, guitarist
+- [Anthony J. Mifsud](/wiki/Anthony_J._Mifsud) (Mif) – singer-songwriter ([Slash Puppet](/wiki/Slash_Puppet))
+- [Brandon Mig](/wiki/Brandon_Mig) – pop singer
+- [Haviah Mighty](/wiki/Haviah_Mighty) – rapper
+- [Lynn Miles](/wiki/Lynn_Miles) – singer-songwriter
+- [Amy Millan](/wiki/Amy_Millan) – singer-songwriter ([Stars](/wiki/Stars_(Canadian_band)), [Broken Social Scene](/wiki/Broken_Social_Scene))
+- [Tim Millar](/wiki/Tim_Millar) – rhythm guitar player ([Protest the Hero](/wiki/Protest_the_Hero))
+- [Muriel Millard](/wiki/Muriel_Millard) – singer-songwriter
+- [Derek Miller](/wiki/Derek_Miller_(Canadian_musician)) – blues singer-songwriter, guitarist
+- [Darby Mills](/wiki/Darby_Mills) – singer (the [Headpins](/wiki/The_Headpins))
+- [Frank Mills](/wiki/Frank_Mills_(pianist)) – pianist
+- [Tyler Joe Miller](/wiki/Tyler_Joe_Miller) – country music singer-songwriter
+- [Millimetrik](/wiki/Millimetrik) – electronic musician
+- [Kenneth G. Mills](/wiki/Kenneth_G._Mills) – pianist, conductor, composer
+- [Andy Milne](/wiki/Andy_Milne) – jazz pianist
+- [Matt Minglewood](/wiki/Matt_Minglewood) – singer-songwriter, guitarist
+- [Ben Mink](/wiki/Ben_Mink) – guitarist, violinist ([k.d. lang](/wiki/K.d._lang), [Geddy Lee](/wiki/Geddy_Lee), [Rush](/wiki/Rush_(band)), [FM](/wiki/FM_(Canadian_band)))
+- [Ruth Minnikin](/wiki/Ruth_Minnikin) – singer-songwriter
+- [Joni Mitchell](/wiki/Joni_Mitchell) – folk and jazz artist, painter
+- [Kim Mitchell](/wiki/Kim_Mitchell) – guitarist, singer-songwriter, radio personality
+- [Lindsay Mitchell](/wiki/Lindsay_Mitchell) – guitarist, songwriter ([Prism](/wiki/Prism_(band)))
+- [Taylor Mitchell](/wiki/Taylor_Mitchell) – singer-songwriter
+- [Willy Mitchell](/wiki/Willy_Mitchell) – singer, guitarist
+- [Mitsou](/wiki/Mitsou) – pop singer
+- [Dave Moffatt](/wiki/Dave_Moffatt) – pop/rock keyboardist, singer
+- [Aviva Mongillo](/wiki/Aviva_Mongillo) – singer, actress
+- [Monsune](/wiki/Monsune) – electronic musician
+- [Montag](/wiki/Antoine_B%C3%A9dard) – electronic musician
+- [Betty Moon](/wiki/Betty_Moon) – singer-songwriter
+- [Jacob Moon](/wiki/Jacob_Moon) – singer-songwriter, guitarist
+- [Kevin Moon](/wiki/Kevin_Moon_(singer)) – singer, main vocalist ([the Boyz](/wiki/The_Boyz_(South_Korean_band)))
+- [Darren Moore](/wiki/Darren_Moore) – member of Harlequin, founder of Living Under Venus, writer of themes for Tampa Bay Rays and Toronto Blue Jays
+- [Gil Moore](/wiki/Gil_Moore) – drummer, vocalist ([Triumph](/wiki/Triumph_(band)))
+- [Katie Moore](/wiki/Katie_Moore_(singer-songwriter)) – singer-songwriter
+- [Mae Moore](/wiki/Mae_Moore) – singer-songwriter
+- [Rick Moranis](/wiki/Rick_Moranis) – singer, actor
+- [Ryland Moranz](/wiki/Ryland_Moranz) – folk/roots singer-songwriter
+- [Carlos Morgan](/wiki/Carlos_Morgan) – R&B/soul singer
+- [Jeffrey Morgan](/wiki/Jeffrey_Morgan_(writer)) – singer-songwriter, rock critic
+- [Alanis Morissette](/wiki/Alanis_Morissette) – rock singer
+- [Johannes Moser](/wiki/Johannes_Moser_(cellist)) – cellist
+- [Jess Moskaluke](/wiki/Jess_Moskaluke) – country pop singer
+- [Mr. Roam](/wiki/Mr._Roam) – rapper
+- [Geoffrey Moull](/wiki/Geoffrey_Moull) – conductor, pianist
+- [Art Murphy](/wiki/Art_Murphy) – singer-songwriter
+- [Chris Murphy](/wiki/Chris_Murphy_(Canadian_musician)) – power pop singer-songwriter, bassist ([Sloan](/wiki/Sloan_(band)))
+- [Matt Murphy](/wiki/Matt_Murphy_(Canadian_musician)) – singer-songwriter, guitarist (the [Super Friendz](/wiki/The_Super_Friendz), the [Flashing Lights](/wiki/The_Flashing_Lights), *[The Life and Hard Times of Guy Terrifico](/wiki/The_Life_and_Hard_Times_of_Guy_Terrifico)*)
+- [Anne Murray](/wiki/Anne_Murray) – country/pop singer
+- [Alannah Myles](/wiki/Alannah_Myles) – rock singer
+- [David Myles](/wiki/David_Myles_(singer-songwriter)) – singer-songwriter
+- [Ken Myhr](/wiki/Ken_Myhr) – guitarist, composer
+- [Men I Trust](/wiki/Men_I_Trust) – indie band.
+
+## N
+
+- [N Nao](/wiki/N_Nao) – dream-pop singer and songwriter
+- [Kaveh Nabatian](/wiki/Kaveh_Nabatian) – trumpeter
+- [Bif Naked](/wiki/Bif_Naked) – punk/pop singer
+- [Nardwuar the Human Serviette](/wiki/Nardwuar_the_Human_Serviette)
+- [Nancy Nash](/wiki/Nancy_Nash) – blues and pop singer
+- [Narcy](/wiki/Narcy_(rapper)) – rapper
+- [Nash the Slash](/wiki/Nash_the_Slash) – multi-instrumental rock musician ([FM](/wiki/FM_(Canadian_band)))
+- [Kamila Nasr](/wiki/Kamila_Nasr) – singer, composer and multi-instrumentalist
+- [Nav](/wiki/NAV_(rapper)) – rapper
+- [Haydain Neale](/wiki/Haydain_Neale) – soul, R&B, jazz singer-songwriter
+- [Nemahsis](/wiki/Nemahsis) – pop singer
+- [Laurence Nerbonne](/wiki/Laurence_Nerbonne) – pop singer
+- [Richard Newell](/wiki/King_Biscuit_Boy) – also known as King Biscuit Boy, blues singer, songwriter, band leader and harmonica player
+- [Carl Newman](/wiki/Carl_Newman) – guitarist, songwriter (the [New Pornographers](/wiki/The_New_Pornographers))
+- [Billy Newton-Davis](/wiki/Billy_Newton-Davis) – R&B, jazz, gospel singer-songwriter
+- [Yannick Nézet-Séguin](/wiki/Yannick_N%C3%A9zet-S%C3%A9guin) – conductor
+- [Luke Nicholson](/wiki/Luke_Nicholson) – singer-songwriter
+- [Larry Nickel](/wiki/Larry_Nickel) – composer
+- [Dave Nicol](/wiki/Dave_Nicol_(musician)) – folk singer-songwriter
+- [Chris Nielsen](/wiki/Chris_Nielsen_(singer)) – country singer
+- [Eliza Niemi](/wiki/Eliza_Niemi) – singer-songwriter, cellist
+- [Laura Niquay](/wiki/Laura_Niquay) – singer-songwriter
+- [Noah23](/wiki/Noah23) – rapper
+- [Graph Nobel](/wiki/Graph_Nobel) – hip-hop artist, R&B rapper, singer-songwriter
+- [Sierra Noble](/wiki/Sierra_Noble) – singer-songwriter, fiddler
+- [Bob Nolan](/wiki/Bob_Nolan) – country singer-songwriter (the [Sons of the Pioneers](/wiki/Sons_of_the_Pioneers))
+- [Faith Nolan](/wiki/Faith_Nolan) – jazz singer-songwriter, guitarist
+- [Safia Nolin](/wiki/Safia_Nolin) – singer-songwriter
+- [Craig Norris](/wiki/Craig_Norris) – rock singer, radio personality
+- [Craig Northey](/wiki/Craig_Northey) – rock singer ([Odds](/wiki/Odds_(band)))
+- [Aldo Nova](/wiki/Aldo_Nova) – rock/pop artist
+- [George Nozuka](/wiki/George_Nozuka) – singer
+- [Justin Nozuka](/wiki/Justin_Nozuka) – singer, writer
+- [Nyssa](/wiki/Nyssa_(musician)) – singer-songwriter
+
+## O
+
+- [OBUXUM](/wiki/OBUXUM) – record producer
+- [Patricia O'Callaghan](/wiki/Patricia_O%27Callaghan) – singer
+- [Michael Occhipinti](/wiki/Michael_Occhipinti) – jazz guitarist
+- [Roberto Occhipinti](/wiki/Roberto_Occhipinti) – jazz/classical bassist
+- [Ryan Ofei](/wiki/Ryan_Ofei) – gospel singer
+- [Nivek Ogre](/wiki/Nivek_Ogre) – industrial rock singer
+- [Maggie Blue O'Hara](/wiki/Maggie_Blue_O%27Hara) – singer, actress, voice artist
+- [Mary Margaret O'Hara](/wiki/Mary_Margaret_O%27Hara) – pop/rock singer-songwriter
+- [Jenny Omnichord](/wiki/Jenny_Omnichord) – indie pop singer-songwriter
+- [Melissa O'Neil](/wiki/Melissa_O%27Neil) – pop singer (winner of *[Canadian Idol](/wiki/Canadian_Idol)*, 2005)
+- [Mike O'Neill](/wiki/Mike_O%27Neill_(musician)) – singer-songwriter and guitarist (the [Inbreds](/wiki/The_Inbreds))
+- [Moka Only](/wiki/Moka_Only) – rapper
+- [Maren Ord](/wiki/Maren_Ord) – pop singer
+- [Johnny Orlando](/wiki/Johnny_Orlando) – pop singer
+- [John Orpheus](/wiki/Antonio_Michael_Downing) – rapper, singer
+- [Achilla Orru](/wiki/Achilla_Orru) – lukembé player
+- [Lindi Ortega](/wiki/Lindi_Ortega) – singer-songwriter
+- [Walter Ostanek](/wiki/Walter_Ostanek) – polka musician, accordionist
+- [John Oswald](/wiki/John_Oswald_(composer)) – composer
+- [Robyn Ottolini](/wiki/Robyn_Ottolini) – country singer-songwriter
+- [Karim Ouellet](/wiki/Karim_Ouellet) – pop singer-songwriter
+- [Peter Oundjian](/wiki/Peter_Oundjian) – violinist, conductor
+- [Ouri](/wiki/Ouri_(musician)) – electronic-classical fusion composer
+
+## P
+
+- [Dorothea Paas](/wiki/Dorothea_Paas) – singer-songwriter
+- [Steven Page](/wiki/Steven_Page) – singer-songwriter (formerly with the [Barenaked Ladies](/wiki/Barenaked_Ladies))
+- [Michel Pagliaro](/wiki/Michel_Pagliaro) – bilingual singer, songwriter, guitarist
+- [Doug Paisley](/wiki/Doug_Paisley) – singer-songwriter
+- [Owen Pallett](/wiki/Owen_Pallett) – indie pop singer, violinist ([Final Fantasy](/wiki/Owen_Pallett))
+- [Bruce Palmer](/wiki/Bruce_Palmer) – bassist ([Buffalo Springfield](/wiki/Buffalo_Springfield))
+- [Alex Pangman](/wiki/Alex_Pangman) – jazz singer
+- [Charlie Panigoniak](/wiki/Charlie_Panigoniak) – Inuk singer-songwriter, guitarist
+- [Gabrielle Papillon](/wiki/Gabrielle_Papillon) – singer-songwriter
+- [Parichay](/wiki/Parichay_(singer)) – Bollywood/ Hip Hop/ R&B and Pop music producer and artist
+- [Sarina Paris](/wiki/Sarina_Paris) – techno singer
+- [Jon Kimura Parker](/wiki/Jon_Kimura_Parker) – classical pianist
+- [Kathleen Parlow](/wiki/Kathleen_Parlow) – classical violinist
+- [Evalyn Parry](/wiki/Evalyn_Parry) – folk singer-songwriter
+- [Mark Parry](/wiki/Mark_Parry_(musician)) – guitarist
+- [Samantha Parton](/wiki/Samantha_Parton) – folk music multi-instrumentalist singer-songwriter (the [Be Good Tanyas](/wiki/The_Be_Good_Tanyas))
+- [PartyNextDoor](/wiki/PartyNextDoor) – rapper
+- [Blaise Pascal](/wiki/Blaise_Pascal_(musician)) – singer-songwriter
+- [Meghan Patrick](/wiki/Meghan_Patrick) – country singer
+- [Shan Vincent de Paul](/wiki/Shan_Vincent_de_Paul) – pop/electronic/hip hop singer
+- [Nico Paulo](/wiki/Nico_Paulo) – singer-songwriter
+- [Trevor W. Payne](/wiki/Trevor_W._Payne) – gospel and R&B singer, composer
+- [Matt Paxton](/wiki/Matt_Paxton) – singer-songwriter
+- [Peaches](/wiki/Peaches_(musician)) – electroclash/dance punk singer-songwriter, multi-instrumentalist
+- [Ryan Peake](/wiki/Ryan_Peake) – guitarist ([Nickelback](/wiki/Nickelback))
+- [Neil Peart](/wiki/Neil_Peart) – drummer, percussionist, lyricist ([Rush](/wiki/Rush_(band)))
+- [Orville Peck](/wiki/Orville_Peck) – country musician
+- [Klô Pelgag](/wiki/Kl%C3%B4_Pelgag) – pop singer-songwriter
+- [Bruno Pelletier](/wiki/Bruno_Pelletier) – singer-songwriter
+- [Fred Pellerin](/wiki/Fred_Pellerin) – folk singer
+- [Fred Penner](/wiki/Fred_Penner) – children's music performer
+- [Patrick Pentland](/wiki/Patrick_Pentland) – power pop singer-songwriter, guitarist ([Sloan](/wiki/Sloan_(band)))
+- [Yann Perreau](/wiki/Yann_Perreau) – electro-rock musician
+- [Anjulie Persaud](/wiki/Anjulie_Persaud) – singer-songwriter
+- [Colleen Peterson](/wiki/Colleen_Peterson) – country singer-songwriter
+- [Oscar Peterson](/wiki/Oscar_Peterson) – jazz pianist
+- [Billy Pettinger](/wiki/Billy_Pettinger) – singer-songwriter
+- [Lou Phelps](/wiki/Lou_Phelps) – rapper
+- [Philémon Cimon](/wiki/Phil%C3%A9mon_Cimon) – singer-songwriter
+- [Stu Phillips](/wiki/Stu_Phillips_(country_music)) – country singer
+- [Pascale Picard](/wiki/Pascale_Picard) – singer
+- [Scott-Pien Picard](/wiki/Scott-Pien_Picard) – singer-songwriter
+- [Paul Piché](/wiki/Paul_Pich%C3%A9) – singer
+- [Jason Pierce](/wiki/Jason_Pierce_(drummer)) – drummer (Our Lady Peace)
+- [Lido Pimienta](/wiki/Lido_Pimienta) – electronic pop singer and producer
+- [Grenville Pinto](/wiki/Grenville_Pinto) – violinist, recording artist, entertainer and composer
+- [Nestor Pistor](/wiki/Nestor_Pistor) – country singer/comedy musician
+- [Louise Pitre](/wiki/Louise_Pitre) – musical theatre actor
+- [Dany Placard](/wiki/Dany_Placard) – singer-songwriter
+- [Dominique Plante](/wiki/Dominique_Plante) – guitarist, composer
+- [Bill Plaskett](/wiki/Bill_Plaskett) – folk/rock/jazz musician
+- [Joel Plaskett](/wiki/Joel_Plaskett) – alternative rock musician
+- [Jason Plumb](/wiki/Jason_Plumb) – singer-songwriter
+- [Poizunus](/wiki/Poizunus) – DJ, human beatbox
+- [Steve Poltz](/wiki/Steve_Poltz) – singer-songwriter (known for collaboration with [Jewel](/wiki/Jewel_(singer)))
+- [poolblood](/wiki/Poolblood) – indie pop singer-songwriter
+- [Carole Pope](/wiki/Carole_Pope) – [new wave](/wiki/New_wave_music) rock/pop singer
+- [Kalan Porter](/wiki/Kalan_Porter) – singer-songwriter (winner of *[Canadian Idol](/wiki/Canadian_Idol)*, 2004)
+- [Shelley Posen](/wiki/Shelley_Posen) – folklorist, songwriter
+- [Catherine Potter](/wiki/Catherine_Potter) – bansuri
+- [Roxanne Potvin](/wiki/Roxanne_Potvin) – blues singer-songwriter
+- [Blake Pouliot](/wiki/Blake_Pouliot) – violinist
+- [Tom Power](/wiki/Tom_Power_(musician)) – folk musician
+- [Daniel Powter](/wiki/Daniel_Powter) – singer-songwriter
+- [Pressa](/wiki/Pressa_(rapper)) – rapper
+- [Chad Price](/wiki/Chad_Price_(Canadian_musician)) – singer-songwriter
+- [Garth Prince](/wiki/Garth_Prince) – children's entertainer
+- [William Prince](/wiki/William_Prince_(musician)) – singer-songwriter
+- [Peter Pringle](/wiki/Peter_Pringle) – pop and jazz singer, pianist, theremin player
+- [Promise](/wiki/Promise_(rapper)) – hip-hop rapper, singer-songwriter
+- [ThePropheC](/wiki/ThePropheC) – singer-songwriter, producer
+- [P'tit Belliveau](/wiki/P%27tit_Belliveau)
+- [Adonis Puentes](/wiki/Adonis_Puentes) – jazz, world music
+- [Don Pyle](/wiki/Don_Pyle) – drummer ([Shadowy Men on a Shadowy Planet](/wiki/Shadowy_Men_on_a_Shadowy_Planet), [Fifth Column](/wiki/Fifth_Column))
+
+## Q
+
+- [Q052](/wiki/Q052) – rapper
+- [Charlotte Angugaattiaq Qamaniq](/wiki/Iva_and_Angu) – Inuk throat singer
+- [Quanteisha](/wiki/Quanteisha) – singer
+- [Sara Quin](/wiki/Sara_Quin) – singer-songwriter, producer ([Tegan and Sara](/wiki/Tegan_and_Sara))
+- [Tegan Quin](/wiki/Tegan_Quin) – singer-songwriter, producer ([Tegan and Sara](/wiki/Tegan_and_Sara))
+
+## R
+
+- [Raffi](/wiki/Raffi_(musician)) – folk/pop singer-songwriter
+- [Billy Raffoul](/wiki/Billy_Raffoul) – rock singer, songwriter
+- [Iceis Rain](/wiki/Iceis_Rain) – pop/rock singer
+- [Ralph](/wiki/Ralph_(singer)) – singer-songwriter
+- [Alcvin Ramos](/wiki/Alcvin_Ramos) – [shakuhachi](/wiki/Shakuhachi) player (solo and ensemble)
+- [Josh Ramsay](/wiki/Josh_Ramsay) – singer-songwriter, guitarist, pianist [Marianas Trench](/wiki/Marianas_Trench_(band))
+- [Jan Randall](/wiki/Jan_Randall) – film composer
+- [Luv Randhawa](/wiki/Luv_Randhawa) – bhangra singer
+- [Allan Rayman](/wiki/Allan_Rayman) – rhythm and blues singer
+- [Corin Raymond](/wiki/Corin_Raymond) – singer-songwriter
+- [Richard Raymond](/wiki/Richard_Raymond_(pianist)) – pianist
+- [Savannah Ré](/wiki/Savannah_R%C3%A9) – soul/rhythm and blues singer
+- [Lee Reed](/wiki/Lee_Reed) – rapper
+- [Josh Reichmann](/wiki/Josh_Reichmann) – singer-songwriter ([Tangiers](/wiki/Tangiers_(band)), [Jewish Legend](/wiki/Jewish_Legend))
+- [Alyssa Reid](/wiki/Alyssa_Reid) – pop singer-songwriter
+- [Noah Reid](/wiki/Noah_Reid) – singer-songwriter
+- [Colleen Rennison](/wiki/Colleen_Rennison) – singer ([No Sinner](/wiki/No_Sinner))
+- [Ginette Reno](/wiki/Ginette_Reno) – singer
+- [Mike Reno](/wiki/Mike_Reno) – singer ([Loverboy](/wiki/Loverboy))
+- [Jessie Reyez](/wiki/Jessie_Reyez) – singer
+- [Donn Reynolds](/wiki/Donn_Reynolds) – yodeler; folk and country singer-songwriter
+- [Isabelle Rezazadeh](/wiki/Isabelle_Rezazadeh) – DJ and record producer ([Rezz](/wiki/Rezz))
+- [Amanda Rheaume](/wiki/Amanda_Rheaume) – folk singer-songwriter
+- [Kyle Riabko](/wiki/Kyle_Riabko) – singer, guitarist
+- [Alejandra Ribera](/wiki/Alejandra_Ribera) – pop and jazz singer-songwriter
+- [Jackie Richardson](/wiki/Jackie_Richardson) – blues, jazz and gospel singer
+- [Sébastien Ricard](/wiki/S%C3%A9bastien_Ricard) – rapper ([Loco Locass](/wiki/Loco_Locass)), actor
+- [Charles Richard-Hamelin](/wiki/Charles_Richard-Hamelin) – pianist
+- [Kim Richardson](/wiki/Kim_Richardson) – pop, blues, jazz and gospel singer
+- [River Tiber](/wiki/River_Tiber_(musician)) – rhythm and blues musician
+- [Jesse Rivest](/wiki/Jesse_Rivest) – singer-songwriter
+- [Ian Robb](/wiki/Ian_Robb) – folk musician
+- [Vincent Roberge](/wiki/Les_Louanges) – indie-pop singer
+- [Robert Robert](/wiki/Robert_Robert) – pop/electronic singer and producer
+- [Brad Roberts](/wiki/Brad_Roberts) – singer ([Crash Test Dummies](/wiki/Crash_Test_Dummies))
+- [Sam Roberts](/wiki/Sam_Roberts_(singer-songwriter)) – rock musician
+- [Ed Robertson](/wiki/Ed_Robertson) – singer-songwriter ([Barenaked Ladies](/wiki/Barenaked_Ladies))
+- [Robbie Robertson](/wiki/Robbie_Robertson) – guitarist, singer (the [Band](/wiki/The_Band))-songwriter
+- [Alex J. Robinson](/wiki/Alex_J._Robinson) – country singer-songwriter
+- [Damien Robitaille](/wiki/Damien_Robitaille) – musician
+- [Bob Rock](/wiki/Bob_Rock) – singer-songwriter ([Payola$](/wiki/Payola$)), producer ([Metallica](/wiki/Metallica))
+- [Andrew Rodriguez](/wiki/Andrew_Rodriguez_(singer-songwriter)) – singer-songwriter
+- [Garnet Rogers](/wiki/Garnet_Rogers) – singer-songwriter
+- [Kate Rogers](/wiki/Kate_Rogers) – singer-songwriter
+- [Nathan Rogers](/wiki/Nathan_Rogers) – singer-songwriter
+- [Stan Rogers](/wiki/Stan_Rogers) – folk musician
+- [Daniel Romano](/wiki/Daniel_Romano) – folk, country and indie rock musician
+- [Don Ross](/wiki/Don_Ross_(guitarist)) – fingerstyle guitarist, musician, composer
+- [Josh Ross](/wiki/Josh_Ross) – country singer and songwriter
+- [Lukas Rossi](/wiki/Lukas_Rossi) – singer-songwriter, winner of Rockstar: Supernova
+- [Adolphe-Basile Routhier](/wiki/Adolphe-Basile_Routhier) – lyricist of the original French version of the Canadian national anthem "[O Canada](/wiki/O_Canada)"
+- [Ariane Roy](/wiki/Ariane_Roy) – pop singer-songwriter
+- [Jonathan Roy](/wiki/Jonathan_Roy_(singer)) – pop singer-songwriter
+- [Spookey Ruben](/wiki/Spookey_Ruben) – singer-songwriter
+- [Paul Rudolph](/wiki/Paul_Rudolph_(musician)) – guitarist, singer-songwriter ([Pink Fairies](/wiki/Pink_Fairies), [Hawkwind](/wiki/Hawkwind), [Brian Eno](/wiki/Brian_Eno))
+- [Allison Russell](/wiki/Allison_Russell) – singer-songwriter, musician and activist
+- [Brenda Russell](/wiki/Brenda_Russell) – singer-songwriter, keyboardist
+- [Justin Rutledge](/wiki/Justin_Rutledge) – alt-country singer-songwriter
+- [Deric Ruttan](/wiki/Deric_Ruttan) – country singer-songwriter
+- [Serena Ryder](/wiki/Serena_Ryder) – folk/pop singer-songwriter
+
+## S
+
+- [Shakura S'Aida](/wiki/Shakura_S%27Aida) – blues/jazz singer-songwriter
+- [Julien Sagot](/wiki/Julien_Sagot) – percussionist, singer-songwriter
+- [Josh Sahunta](/wiki/Josh_Sahunta) – pop/R&B singer-songwriter
+- [Martine St-Clair](/wiki/Martine_St-Clair) – pop singer
+- [Jordan St Cyr](/wiki/Jordan_St_Cyr) – contemporary Christian singer
+- [Samian](/wiki/Samian_(rapper)) – rapper
+- [Gordie Sampson](/wiki/Gordie_Sampson) – blues, rock singer
+- [Lance "Aquakultre" Sampson](/wiki/Aquakultre) – soul, R&B singer and rapper
+- [John K. Samson](/wiki/John_K._Samson) – indie rock singer and songwriter (the [Weakerthans](/wiki/The_Weakerthans))
+- [Chase Sanborn](/wiki/Chase_Sanborn) – jazz trumpeter
+- [Curtis Santiago](/wiki/Curtis_Santiago) – dance rock singer-songwriter
+- [Ivana Santilli](/wiki/Ivana_Santilli) – R&B singer
+- [Sarahmée](/wiki/Sarahm%C3%A9e) – rapper
+- [SATE](/wiki/SATE_(musician)) – rock singer
+- [Saukrates](/wiki/Saukrates) – rapper
+- [Andrew Scott](/wiki/Andrew_Scott_(drummer)) – power pop singer-songwriter, drummer ([Sloan](/wiki/Sloan_(band)))
+- [Jack Scott](/wiki/Jack_Scott_(singer)) – rock and roll singer
+- [Jay Scøtt](/wiki/Jay_Scott_(Canadian_musician)) – folk/hip hop singer-songwriter
+- [Jennifer Scott](/wiki/Jennifer_Scott_(musician)) – jazz singer, pianist
+- [Keith Scott](/wiki/Keith_Scott_(musician))- rock guitarist (Bryan Adams band)
+- [Sea Oleena](/wiki/Sea_Oleena) – indie folk singer-songwriter
+- [Joyce Seamone](/wiki/Joyce_Seamone) – country singer
+- [Lorraine Segato](/wiki/Lorraine_Segato) – singer-songwriter
+- [Jacques Kuba Séguin](/wiki/Jacques_Kuba_S%C3%A9guin) – jazz trumpeter
+- [Jay Semko](/wiki/Jay_Semko) – singer-songwriter, bassist
+- [Matthew Seok](/wiki/Zerobaseone) – singer, ([Zerobaseone](/wiki/Zerobaseone))
+- [Ron Sexsmith](/wiki/Ron_Sexsmith) – singer-songwriter
+- [Mike Shabb](/wiki/Mike_Shabb) – rapper
+- [Shad](/wiki/Shad_(rapper)) – rapper
+- [Paul Shaffer](/wiki/Paul_Shaffer) – musical director
+- [Remy Shand](/wiki/Remy_Shand) – R&B/soul singer
+- [Jackie Shane](/wiki/Jackie_Shane) – R&B singer
+- [Jairus Sharif](/wiki/Jairus_Sharif) – experimental jazz saxophonist
+- [Andy Shauf](/wiki/Andy_Shauf) – singer-songwriter
+- [Shauit](/wiki/Shauit) – singer-songwriter
+- [Andrew Shaver](/wiki/Andrew_Shaver) – folk/country singer-songwriter
+- [Bernie Shaw](/wiki/Bernie_Shaw) – rock singer (Uriah Heep)
+- [Graham Shaw](/wiki/Graham_Shaw_(musician)) – rock singer, television composer
+- [James Shaw](/wiki/James_Shaw_(musician)) – guitarist (Metric)
+- [Tyler Shaw](/wiki/Tyler_Shaw) – singer-songwriter, cinematic composer
+- [Crystal Shawanda](/wiki/Crystal_Shawanda) – country singer
+- [Shay Lia](/wiki/Shay_Lia) – singer
+- [Shiloh](/wiki/Shiloh_(singer)) – pop singer-songwriter
+- [Shingoose](/wiki/Shingoose) – singer-songwriter
+- [Stefie Shock](/wiki/Stefie_Shock) – pop and funk singer-songwriter
+- [Gabrielle Shonk](/wiki/Gabrielle_Shonk) – singer-songwriter
+- [Howard Shore](/wiki/Howard_Shore) – composer (*The Lord of the Rings* trilogy and films of [David Cronenberg](/wiki/David_Cronenberg))
+- [Shotgun Jimmie](/wiki/Shotgun_Jimmie) – singer-songwriter
+- [Edythe Shuttleworth](/wiki/Edythe_Shuttleworth) – mezzo-soprano
+- [Ali Siadat](/wiki/Mother_Mother) – drummer (Mother Mother)
+- [Rosemary Siemens](/wiki/Rosemary_Siemens) – violinist, vocalist
+- [Jane Siberry](/wiki/Jane_Siberry) – singer-songwriter
+- [Siibii](/wiki/Siibii) – pop singer
+- [Lucas Silveira](/wiki/Lucas_Silveira) – rock singer, guitarist
+- [Liberty Silver](/wiki/Liberty_Silver) – R&B singer
+- [Marie-Josée Simard](/wiki/Marie-Jos%C3%A9e_Simard) – percussionist
+- [Nathalie Simard](/wiki/Nathalie_Simard) – pop singer
+- [René Simard](/wiki/Ren%C3%A9_Simard) – pop singer
+- [Denis Simpson](/wiki/Denis_Simpson) – singer
+- [Shane Simpson](/wiki/Shane_Simpson_(musician)) – guitarist, singer-songwriter
+- [Dylan Sinclair](/wiki/Dylan_Sinclair) – rhythm and blues singer
+- [Zal Sissokho](/wiki/Zal_Sissokho) – [Kora](/wiki/Kora_(instrument))) player, [Griot](/wiki/Griot)
+- [Sister Ray](/wiki/Sister_Ray_(singer)) – singer-songwriter
+- [Sixtoo](/wiki/Sixtoo) – hip-hop DJ and MC
+- [Skiifall](/wiki/Skiifall) – rapper
+- [Ken Skinner](/wiki/Ken_Skinner) – pianist/composer, record producer
+- [Amy Sky](/wiki/Amy_Sky) – singer-songwriter
+- [Slakah the Beatchild](/wiki/Slakah_the_Beatchild) – soul and R&B singer, record producer
+- [Sarah Slean](/wiki/Sarah_Slean) – singer-songwriter, pianist
+- [Alberta Slim](/wiki/Alberta_Slim) – country music singer
+- [Tannis Slimmon](/wiki/Tannis_Slimmon) – folk singer-songwriter
+- [Henry Small](/wiki/Henry_Small_(singer)) – singer-songwriter, radio personality
+- [Dallas Smith](/wiki/Dallas_Smith) – rock/country singer-songwriter
+- [Laura Smith](/wiki/Laura_Smith_(Canadian_singer)) – folk singer
+- [Maybe Smith](/wiki/Maybe_Smith) – indie pop singer-songwriter
+- [Meaghan Smith](/wiki/Meaghan_Smith) – singer
+- [R. Harlan Smith](/wiki/R._Harlan_Smith) – country singer
+- [Samantha Savage Smith](/wiki/Samantha_Savage_Smith) – singer-songwriter
+- [Dan Snaith](/wiki/Caribou_(musician)) – songwriter
+- [Floyd Sneed](/wiki/Floyd_Sneed) – rock drummer
+- [Bob Snider](/wiki/Bob_Snider) – folk singer-songwriter
+- [Jason Sniderman](/wiki/Jason_Sniderman) – keyboardist ([Blue Peter](/wiki/Blue_Peter_(band)))
+- [Snow](/wiki/Snow_(musician)) – reggae/rap/pop musician
+- [Hank Snow](/wiki/Hank_Snow) – country and western singer
+- [So Sus](/wiki/So_Sus) – electronic musician
+- [Bryce Soderberg](/wiki/Bryce_Soderberg) – bassist (Lifehouse)
+- [Viviana Sofronitsky](/wiki/Viviana_Sofronitsky) – pianist
+- [Ana Sokolovic](/wiki/Ana_Sokolovic) – composer
+- [Theresa Sokyrka](/wiki/Theresa_Sokyrka) – singer (*Canadian Idol* semi-finalist, 2004)
+- [Solitair](/wiki/Solitair) – rapper
+- [Lenny Solomon](/wiki/Lenny_Solomon_(Canadian_musician)) – pop and jazz singer
+- [Maribeth Solomon](/wiki/Maribeth_Solomon) – songwriter, composer
+- [Aaron Solowoniuk](/wiki/Aaron_Solowoniuk) – drummer (Billy Talent)
+- [Harry Somers](/wiki/Harry_Somers) – composer
+- [SonReal](/wiki/SonReal) – rapper
+- [Martina Sorbara](/wiki/Martina_Sorbara) – folk-pop singer
+- [Arielle Soucy](/wiki/Arielle_Soucy) – singer-songwriter
+- [Souldia](/wiki/Souldia) – rapper
+- [Jay Sparrow](/wiki/Jay_Sparrow) – rock singer-songwriter
+- [Spek Won](/wiki/Spek_Won) – rapper
+- [Kevin Spencer](/wiki/Kevin_Spencer_(musician)) – multi-instrumentalist, songwriter, producer
+- [Spirit](/wiki/Spirit_Cool) – guitarist and singer-songwriter
+- [Rae Spoon](/wiki/Rae_Spoon) – folk/indie singer-songwriter
+- [Tony "Wild T" Springer](/wiki/Tony_Springer) – blues-rock guitarist
+- [Frederick Squire](/wiki/Frederick_Squire) – rock singer, guitarist ([Shotgun & Jaybird](/wiki/Shotgun_%26_Jaybird))
+- [Glen Stace](/wiki/Glen_Stace) – rock singer
+- [Leeroy Stagger](/wiki/Leeroy_Stagger) – singer-songwriter
+- [Ethel Stark](/wiki/Ethel_Stark) – violinist and conductor
+- [Erroll Starr](/wiki/Erroll_Starr) – rhythm and blues singer
+- [Kinnie Starr](/wiki/Kinnie_Starr) – singer-songwriter
+- [Lucille Starr](/wiki/Lucille_Starr) – singer
+- [Cassie Steele](/wiki/Cassie_Steele) – singer-songwriter, actress
+- [Chrissy Steele](/wiki/Chrissy_Steele) – rock singer
+- [Emily Steinwall](/wiki/Emily_Steinwall) – singer, composer, saxophonist
+- [Katie Stelmanis](/wiki/Katie_Stelmanis) – singer-songwriter
+- [Ian Stephens](/wiki/Ian_Stephens_(poet)) – punk rock musician
+- [Martin Stevens](/wiki/Martin_Stevens_(musician)) – disco singer
+- [Tyler Stewart](/wiki/Tyler_Stewart) – drummer
+- [Craig Stickland](/wiki/Craig_Stickland) – singer-songwriter
+- [Jeff Stinco](/wiki/Jeff_Stinco) – singer-songwriter and rhythm-guitarist ([Simple Plan](/wiki/Simple_Plan))
+- [Georgina Stirling](/wiki/Georgina_Stirling) – singer
+- [Andy Stochansky](/wiki/Andy_Stochansky) – singer-songwriter, drummer (former drummer for [Ani DiFranco](/wiki/Ani_DiFranco))
+- [Kim Stockwood](/wiki/Kim_Stockwood) – singer
+- [Jayme Stone](/wiki/Jayme_Stone) – banjoist, composer
+- [Miranda Stone](/wiki/Miranda_Stone) – singer-songwriter
+- [Storry](/wiki/Storry_(musician)) – pop, R&B singer-songwriter
+- [Charlie Storwick](/wiki/Charlie_Storwick) – singer-songwriter
+- [Amanda Stott](/wiki/Amanda_Stott) – singer
+- [Jeffery Straker](/wiki/Jeffery_Straker) – singer-songwriter
+- [Byron Stroud](/wiki/Byron_Stroud) – bassist ([Strapping Young Lad](/wiki/Strapping_Young_Lad), [Fear Factory](/wiki/Fear_Factory))
+- [Sukha](/wiki/Sukha_(rapper)) – rapper
+- [Mark Sultan](/wiki/Mark_Sultan) – singer-songwriter, Sultan Records founder
+- [Harold Sumberg](/wiki/Harold_Sumberg) – violinist
+- [Cree Summer](/wiki/Cree_Summer) – rock/alternative singer
+- [Richard Summerbell](/wiki/Richard_Summerbell) – singer-songwriter
+- [Leonard Sumner](/wiki/Leonard_Sumner) – singer-songwriter
+- [Terry Sumsion](/wiki/Terry_Sumsion) – country singer
+- [Michelle Sweeney](/wiki/Michelle_Sweeney) – jazz singer
+- [Skye Sweetnam](/wiki/Skye_Sweetnam) – singer-songwriter
+- [Gwen Swick](/wiki/Gwen_Swick) – singer-songwriter
+- [Tomi Swick](/wiki/Tomi_Swick) – singer-songwriter
+- [Ember Swift](/wiki/Ember_Swift) – singer-songwriter
+- [Kurt Swinghammer](/wiki/Kurt_Swinghammer) – singer-songwriter
+
+## T
+
+- [Tablo](/wiki/Tablo) – rapper ([Epik High](/wiki/Epik_High))
+- [Tanya Tagaq](/wiki/Tanya_Tagaq) – Inuk throat singer, folk singer
+- [Talk](/wiki/Talk_(musician)) – indie rock singer
+- [Tamia](/wiki/Tamia) – R&B singer
+- [Theo Tams](/wiki/Theo_Tams) – singer-songwriter (winner of *Canadian Idol*, 2008)
+- [Eva Tanguay](/wiki/Eva_Tanguay) – vaudeville singer
+- [Chaim Tannenbaum](/wiki/Chaim_Tannenbaum) – folk singer
+- [Tariq](/wiki/Tariq_Hussain_(musician)) – singer-songwriter, radio personality
+- [Tasha the Amazon](/wiki/Tasha_the_Amazon) – rapper
+- [Bobby Taylor](/wiki/Bobby_Taylor_%26_the_Vancouvers) – R&B singer-songwriter
+- [Dione Taylor](/wiki/Dione_Taylor) – jazz singer
+- [Julian Taylor](/wiki/Julian_Taylor_(singer)) – rock singer
+- [R. Dean Taylor](/wiki/R._Dean_Taylor) – singer-songwriter, producer for [Motown](/wiki/Motown_Records)
+- [Lydia Taylor](/wiki/Lydia_Taylor) – rock singer
+- [Tebey](/wiki/Tebey) – country singer-songwriter
+- [Mark Templeton](/wiki/Mark_Templeton_(electronic_artist)) – electro-acoustic musician
+- [The Tenors](/wiki/The_Tenors) – vocal trio tenor musician operatic gospel pop
+- [Marie-Jo Thério](/wiki/Marie-Jo_Th%C3%A9rio) – singer-songwriter
+- [David Thibault](/wiki/David_Thibault) – singer
+- [David Clayton Thomas](/wiki/David_Clayton_Thomas) – singer ([Blood, Sweat & Tears](/wiki/Blood,_Sweat_%26_Tears))
+- [Ian Thomas](/wiki/Ian_Thomas_(Canadian_musician)) – singer-songwriter, actor, author
+- [T. Thomason](/wiki/T._Thomason) – singer-songwriter
+- [Don Thompson](/wiki/Don_Thompson_(musician)) – jazz musician
+- [Jamie Thompson](/wiki/Jamie_Thompson_(musician)) – drummer, beat-maker
+- [Nicholas Thorburn](/wiki/Nicholas_Thorburn) – frontman for [Islands](/wiki/Islands_(band))
+- [Ian Thornley](/wiki/Ian_Thornley) – singer-songwriter
+- [Willie Thrasher](/wiki/Willie_Thrasher) – Inuk singer-songwriter
+- [Thrust](/wiki/Thrust_(rapper)) – rapper
+- [Georges Thurston](/wiki/Georges_Thurston) – soul singer
+- [Martin Tielli](/wiki/Martin_Tielli) – singer-songwriter ([Rheostatics](/wiki/Rheostatics))
+- [Margo Timmins](/wiki/Margo_Timmins) – singer ([Cowboy Junkies](/wiki/Cowboy_Junkies))
+- [Tire le coyote](/wiki/Tire_le_coyote) – singer-songwriter
+- [Brent Titcomb](/wiki/Brent_Titcomb) – musician, actor
+- [Liam Titcomb](/wiki/Liam_Titcomb) – singer-songwriter
+- [Ken Tobias](/wiki/Ken_Tobias) – singer-songwriter
+- [Maylee Todd](/wiki/Maylee_Todd) – pop singer
+- [Yvette Tollar](/wiki/Yvette_Tollar) – jazz singer, composer
+- [Henri Tomasi](/wiki/Henri_Tomasi) – composer and conductor
+- [Töme](/wiki/T%C3%B6me) – reggae singer
+- [Morgan Toney](/wiki/Morgan_Toney) – folk singer-songwriter and fiddler
+- [Tor](/wiki/Tor_(musician)) – electronic musician
+- [Marie-Chantal Toupin](/wiki/Marie-Chantal_Toupin) – Francophone pop singer
+- [Theresa Tova](/wiki/Theresa_Tova) – musical theatre actress
+- [Tenille Townes](/wiki/Tenille_Townes) – country singer-songwriter
+- [Devin Townsend](/wiki/Devin_Townsend) – multi-instrumentalist, metal guitarist, songwriter
+- [Pete Traynor](/wiki/Pete_Traynor) – rock guitarist and bassist, designer of [Traynor Amplifiers](/wiki/Traynor_Amplifiers)
+- [Pat Travers](/wiki/Pat_Travers) – rock guitarist
+- [Tre Mission](/wiki/Tre_Mission) – rapper
+- [Lucie Blue Tremblay](/wiki/Lucie_Blue_Tremblay) – folk singer-songwriter
+- [Domenic Troiano](/wiki/Domenic_Troiano) – guitarist
+- [Valerie Tryon](/wiki/Valerie_Tryon) – pianist
+- [Andrina Turenne](/wiki/Andrina_Turenne) – folk singer-songwriter
+- [Ronald Turini](/wiki/Ronald_Turini) – classical pianist
+- [Cynthia Johnston Turner](/wiki/Cynthia_Johnston_Turner) – conductor
+- [Kreesha Turner](/wiki/Kreesha_Turner) – R&B singer
+- [Shania Twain](/wiki/Shania_Twain) – country/pop singer
+- [Jessica Tyler](/wiki/Jessica_Tyler) – singer-songwriter and actress
+- [Ian Tyson](/wiki/Ian_Tyson) – folk singer
+- [Sylvia Tyson](/wiki/Sylvia_Tyson) – singer-songwriter, guitarist
+
+## U
+
+- [Dave Ullrich](/wiki/Dave_Ullrich) – drummer, singer (the [Inbreds](/wiki/The_Inbreds), [Egger](/wiki/Egger_(band)))
+- [Shari Ulrich](/wiki/Shari_Ulrich) – folk rock singer-songwriter
+- [Suzie Ungerleider](/wiki/Suzie_Ungerleider) – alternative country singer
+- [UpsideDown](/wiki/DJ_UpsideDown) – DJ, producer
+- [David Usher](/wiki/David_Usher) – rock singer-songwriter ([Moist](/wiki/Moist_(Canadian_band)))
+- [Terry Uyarak](/wiki/Terry_Uyarak) – singer-songwriter
+
+## V
+
+- [Mathew V](/wiki/Mathew_V) – pop singer
+- [Jake Vaadeland](/wiki/Jake_Vaadeland) – country and bluegrass singer-songwriter
+- [Vaï](/wiki/Va%C3%AF) – hip-hop singer
+- [Elizabeth Anka Vajagic](/wiki/Elizabeth_Anka_Vajagic) – post-rock singer, guitarist
+- [Valdy](/wiki/Valdy) – singer-songwriter
+- [Gilles Valiquette](/wiki/Gilles_Valiquette) – rock singer, guitarist
+- [Jim Vallance](/wiki/Jim_Vallance) – songwriter, multi-instrumentalist
+- [Rosie Valland](/wiki/Rosie_Valland) – pop singer-songwriter
+- [Dom Vallie](/wiki/Dom_Vallie) – rapper
+- [Diyet van Lieshout](/wiki/Diyet_van_Lieshout) – singer-songwriter
+- [Randy Vancourt](/wiki/Randy_Vancourt) – pop singer-songwriter, theatre and TV composer
+- [Chad VanGaalen](/wiki/Chad_VanGaalen) – singer-songwriter
+- [Vanity](/wiki/Vanity_(performer)) – singer, model
+- [Gino Vannelli](/wiki/Gino_Vannelli) – rock singer
+- [Chris Velan](/wiki/Chris_Velan) – pop and rock singer-songwriter
+- [Alx Veliz](/wiki/Alx_Veliz) – singer-songwriter
+- [Stéphane Venne](/wiki/St%C3%A9phane_Venne) – songwriter and composer
+- [Reg Vermue](/wiki/Reg_Vermue) – singer-songwriter ("Gentleman Reg")
+- [Tim Vesely](/wiki/Tim_Vesely) – singer, guitarist ([Rheostatics](/wiki/Rheostatics))
+- [Jon Vickers](/wiki/Jon_Vickers) – operatic tenor
+- [Daniel Victor](/wiki/Daniel_Victor) – rock musician ([Neverending White Lights](/wiki/Neverending_White_Lights))
+- [Gilles Vigneault](/wiki/Gilles_Vigneault) – singer-songwriter
+- [Annie Villeneuve](/wiki/Annie_Villeneuve) – singer-songwriter
+- [Suzie Vinnick](/wiki/Suzie_Vinnick) – folk and blues singer-songwriter, guitarist
+- [Laura Vinson](/wiki/Laura_Vinson) – country singer-songwriter
+- [Jon Vinyl](/wiki/Jon_Vinyl) – R&B/soul singer
+- [Virginia to Vegas](/wiki/Virginia_to_Vegas) – singer-songwriter
+- [Claude Vivier](/wiki/Claude_Vivier) – classical composer
+- [Roch Voisine](/wiki/Roch_Voisine) – singer-songwriter
+- [Florent Vollant](/wiki/Florent_Vollant) – aboriginal singer
+- [Leif Vollebekk](/wiki/Leif_Vollebekk) – singer-songwriter
+- [Brian Vollmer](/wiki/Brian_Vollmer) – rock singer ([Helix](/wiki/Helix_(band)))
+- [Lindy Vopnfjörð](/wiki/Lindy_Vopnfj%C3%B6r%C3%B0) – singer-songwriter
+
+## W
+
+- [Martha Wainwright](/wiki/Martha_Wainwright) – folk-pop singer
+- [Rufus Wainwright](/wiki/Rufus_Wainwright) – folk-pop singer
+- [Frank Walker](/wiki/Frank_Walker_(musician)) – EDM DJ
+- [Rody Walker](/wiki/Rody_Walker) – singer ([Protest the Hero](/wiki/Protest_the_Hero))
+- [Colter Wall](/wiki/Colter_Wall) – folk singer
+- [Christopher Ward](/wiki/Christopher_Ward_(songwriter)) – songwriter
+- [Chris Wardman](/wiki/Chris_Wardman) – songwriter, guitarist ([Blue Peter](/wiki/Blue_Peter_(band)))
+- [Andy Warren](/wiki/Andy_Warren_(Canadian_musician)) – singer-songwriter
+- [Jackie Washington](/wiki/Jackie_Washington) – blues and folk singer-songwriter, guitarist
+- [Jeff Waters](/wiki/Jeff_Waters) – guitarist and vocalist for heavy metal band [Annihilator](/wiki/Annihilator_(band))
+- [Ruby Waters](/wiki/Ruby_Waters) – singer-songwriter
+- [Sneezy Waters](/wiki/Sneezy_Waters) – singer-songwriter
+- [Dawn Tyler Watson](/wiki/Dawn_Tyler_Watson) – blues singer
+- [Patrick Watson](/wiki/Patrick_Watson_(musician)) – singer-songwriter
+- [Andrée Watters](/wiki/Andr%C3%A9e_Watters) – singer-songwriter
+- [The Weeknd](/wiki/The_Weeknd) – singer, songwriter, record producer, and actor born Abel Tesfaye
+- [John Welsman](/wiki/John_Welsman) – composer, songwriter
+- [Zack Werner](/wiki/Zack_Werner) – artist, producer, entertainment lawyer, manager
+- [Daniel Wesley](/wiki/Daniel_Wesley) – singer-songwriter
+- [Wesli](/wiki/Wesli) – world music guitarist
+- [Jim West](/wiki/Jim_West_(guitarist)) – guitarist for ["Weird Al" Yankovic](/wiki/%22Weird_Al%22_Yankovic)
+- [Phil Western](/wiki/Phil_Western) – drummer, programmer ([Download](/wiki/Download_(band)))
+- [Dawud Wharnsby-Ali](/wiki/Dawud_Wharnsby-Ali) – singer-songwriter
+- [Deryck Whibley](/wiki/Deryck_Whibley) – singer-songwriter ([Sum 41](/wiki/Sum_41))
+- [Bill White](/wiki/Bill_White_(Canadian_politician)) – composer, choral group leader
+- [Nancy White](/wiki/Nancy_White_(singer-songwriter)) – singer-songwriter, musical satirist
+- [Portia White](/wiki/Portia_White) – operatic contralto
+- [Rick White](/wiki/Rick_White_(musician)) – singer-songwriter ([Eric's Trip](/wiki/Eric%27s_Trip)), guitarist
+- [Alissa White-Gluz](/wiki/Alissa_White-Gluz) – metal vocalist and songwriter ([Arch Enemy](/wiki/Arch_Enemy), [The Agonist](/wiki/The_Agonist))
+- [Jenny Whiteley](/wiki/Jenny_Whiteley) – folk and country singer-songwriter
+- [Ken Whiteley](/wiki/Ken_Whiteley) – multi-instrumentalist, producer, composer
+- [Andrew Whiteman](/wiki/Andrew_Whiteman) – singer-songwriter, guitarist ([Broken Social Scene](/wiki/Broken_Social_Scene), [Bourbon Tabernacle Choir](/wiki/Bourbon_Tabernacle_Choir), [Apostle of Hustle](/wiki/Apostle_of_Hustle))
+- [David Wiffen](/wiki/David_Wiffen) – folk singer-songwriter
+- [David Wilcox](/wiki/David_Wilcox_(Canadian_musician)) – blues guitarist, singer
+- [Richie Wilcox](/wiki/Richie_Wilcox) – singer
+- [Simon Wilcox](/wiki/Simon_Wilcox) – singer-songwriter (daughter of David Wilcox)
+- [JJ Wilde](/wiki/JJ_Wilde) – rock singer
+- [Healey Willan](/wiki/Healey_Willan) – organist, composer
+- [Hal Willis](/wiki/Hal_Willis_(singer)) – singer-songwriter
+- [Charlotte Day Wilson](/wiki/Charlotte_Day_Wilson) – singer-songwriter
+- [Tom Wilson](/wiki/Tom_Wilson_(musician)) – singer-songwriter
+- [Jesse Winchester](/wiki/Jesse_Winchester) – singer-songwriter
+- [Kurt Winter](/wiki/Kurt_Winter) – guitarist, songwriter (the [Guess Who](/wiki/The_Guess_Who))
+- [Bob Wiseman](/wiki/Bob_Wiseman) – pianist, songwriter
+- [Karl Wolf](/wiki/Karl_Wolf) – R&B singer-songwriter
+- [Royal Wood](/wiki/Royal_Wood) – singer-songwriter
+- [Donovan Woods](/wiki/Donovan_Woods_(musician)) – singer-songwriter
+- [Roy Woods](/wiki/Roy_Woods) – singer-songwriter, rapper
+- [Hawksley Workman](/wiki/Hawksley_Workman) – singer-songwriter
+- [Michelle Wright](/wiki/Michelle_Wright) – country singer-songwriter
+- [Kris Wu](/wiki/Kris_Wu) – rapper
+
+## Y
+
+- [Tony Yike Yang](/wiki/Tony_Yike_Yang) – pianist
+- [Jonah Yano](/wiki/Jonah_Yano) – indie pop singer-songwriter
+- [Nikki Yanovsky](/wiki/Nikki_Yanovsky) – singer
+- [Zal Yanovsky](/wiki/Zal_Yanovsky) – guitarist, singer (the [Lovin' Spoonful](/wiki/The_Lovin%27_Spoonful))
+- [Francesco Yates](/wiki/Francesco_Yates) – singer-songwriter
+- [Ken Yates](/wiki/Ken_Yates) – folk singer-songwriter
+- [Lori Yates](/wiki/Lori_Yates) – country singer
+- [Kathleen Yearwood](/wiki/Kathleen_Yearwood) – singer-songwriter, guitarist
+- [d'bi Young](/wiki/D%27bi_Young) – dub poet
+- [Young K](/wiki/Young_K) – singer-songwriter, bass player [Day6](/wiki/Day6)
+- [Neil Young](/wiki/Neil_Young) – singer-songwriter, guitarist
+- [Catalina Yue](/wiki/Catalina_Yue) – singer-songwriter
+
+## Z
+
+- [Jordon Zadorozny](/wiki/Jordon_Zadorozny) – singer, producer
+- [La Zarra](/wiki/La_Zarra) – singer
+- [Mary Lu Zahalan](/wiki/Mary_Lu_Zahalan) – rock singer
+- [Zaho](/wiki/Zaho) – R&B singer
+- [Alfie Zappacosta](/wiki/Alfie_Zappacosta) – singer, actor
+- [Maurice Zbriger](/wiki/Maurice_Zbriger) – violinist, composer, conductor
+- [Zeina](/wiki/Zeina_(singer)) – pop/R&B singer
+- [Liping Zhang](/wiki/Liping_Zhang) – soprano
+- [Joel Zifkin](/wiki/Joel_Zifkin) – electric violinist, songwriter, composer
+- [Brock Zeman](/wiki/Brock_Zeman) – producer, singer-songwriter, touring musician
+- [Gilles Zolty](/wiki/Gilles_Zolty) – singer-songwriter, composer, sound designer
+- [Jesse Zubot](/wiki/Jesse_Zubot) – violinist, composer
+
+## See also
+
+- [List of bands from Canada](/wiki/List_of_bands_from_Canada)
+- [List of diamond-certified albums in Canada](/wiki/List_of_diamond-certified_albums_in_Canada)
+- [List of Indigenous musicians in Canada](/wiki/List_of_Indigenous_musicians_in_Canada)
+
+## Further reading
+
+- Toomey, Kathleen M., and Stephen Charles Willis. *Musicians in Canada: a Bio-bibliographical Finding List*. Ottawa, Ont.: Canadian Association of Music Libraries, 1981. *N.B*.: Title and introductory matter also in French.
+
+## References
+
+This is a [dynamic list](/wiki/Wikipedia:WikiProject_Lists#Dynamic_lists) and may never be able to satisfy particular standards for completeness. You can help by [editing the page](/wiki/Special:EditPage/List_of_Canadian_musicians) to add missing items, with references to [reliable sources](/wiki/Wikipedia:Reliable_sources).

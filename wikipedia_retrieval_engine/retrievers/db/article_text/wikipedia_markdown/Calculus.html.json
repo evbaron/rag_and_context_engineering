@@ -1,0 +1,3499 @@
+{
+  "source": "Calculus.html",
+  "title": "Calculus",
+  "wiki_title": "Calculus",
+  "categories": [
+    "Calculus"
+  ],
+  "sections": [
+    {
+      "level": 2,
+      "id": "Etymology",
+      "title": "Etymology"
+    },
+    {
+      "level": 2,
+      "id": "Primary_concepts_and_basic_notation",
+      "title": "Primary concepts and basic notation"
+    },
+    {
+      "level": 3,
+      "id": "Limits_and_infinitesimals",
+      "title": "Limits and infinitesimals"
+    },
+    {
+      "level": 3,
+      "id": "Differential_calculus",
+      "title": "Differential calculus"
+    },
+    {
+      "level": 3,
+      "id": "Leibniz_notation",
+      "title": "Leibniz notation"
+    },
+    {
+      "level": 3,
+      "id": "Integral_calculus",
+      "title": "Integral calculus"
+    },
+    {
+      "level": 3,
+      "id": "Fundamental_theorem",
+      "title": "Fundamental theorem"
+    },
+    {
+      "level": 2,
+      "id": "Advanced_topics",
+      "title": "Advanced topics"
+    },
+    {
+      "level": 3,
+      "id": "Multivariable_and_vector_calculus",
+      "title": "Multivariable and vector calculus"
+    },
+    {
+      "level": 3,
+      "id": "Differential_equations",
+      "title": "Differential equations"
+    },
+    {
+      "level": 3,
+      "id": "Real_analysis",
+      "title": "Real analysis"
+    },
+    {
+      "level": 3,
+      "id": "Complex_analysis",
+      "title": "Complex analysis"
+    },
+    {
+      "level": 3,
+      "id": "Calculus_of_variations",
+      "title": "Calculus of variations"
+    },
+    {
+      "level": 2,
+      "id": "History",
+      "title": "History"
+    },
+    {
+      "level": 3,
+      "id": "Ancient_precursors",
+      "title": "Ancient precursors"
+    },
+    {
+      "level": 4,
+      "id": "Egypt_and_Babylon",
+      "title": "Egypt and Babylon"
+    },
+    {
+      "level": 4,
+      "id": "Greece",
+      "title": "Greece"
+    },
+    {
+      "level": 4,
+      "id": "China",
+      "title": "China"
+    },
+    {
+      "level": 3,
+      "id": "Medieval",
+      "title": "Medieval"
+    },
+    {
+      "level": 4,
+      "id": "Middle_East",
+      "title": "Middle East"
+    },
+    {
+      "level": 4,
+      "id": "India",
+      "title": "India"
+    },
+    {
+      "level": 4,
+      "id": "Europe",
+      "title": "Europe"
+    },
+    {
+      "level": 3,
+      "id": "Modern",
+      "title": "Modern"
+    },
+    {
+      "level": 3,
+      "id": "Foundations",
+      "title": "Foundations"
+    },
+    {
+      "level": 3,
+      "id": "Significance",
+      "title": "Significance"
+    },
+    {
+      "level": 2,
+      "id": "Applications",
+      "title": "Applications"
+    },
+    {
+      "level": 2,
+      "id": "See_also",
+      "title": "See also"
+    },
+    {
+      "level": 2,
+      "id": "References",
+      "title": "References"
+    },
+    {
+      "level": 2,
+      "id": "Further_reading",
+      "title": "Further reading"
+    },
+    {
+      "level": 2,
+      "id": "External_links",
+      "title": "External links"
+    }
+  ],
+  "infobox": null,
+  "tables": [
+    {
+      "caption": null,
+      "headers": [
+        "x {\\displaystyle x}",
+        "sin ⁡ x x {\\displaystyle {\\frac {\\sin x}{x}}}"
+      ],
+      "rows": [
+        [
+          "1",
+          "0.841471..."
+        ],
+        [
+          "0.1",
+          "0.998334..."
+        ],
+        [
+          "0.01",
+          "0.999983..."
+        ]
+      ],
+      "n_rows": 3
+    }
+  ],
+  "links": {
+    "local": [
+      {
+        "target": "Quantum_mechanics",
+        "source_file": "Quantum_mechanics.html",
+        "url": "https://en.wikipedia.org/wiki/Quantum_mechanics",
+        "anchors": [
+          "quantum mechanics"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ibn_al-Haytham",
+        "source_file": "Ibn_al-Haytham.html",
+        "url": "https://en.wikipedia.org/wiki/Ibn_al-Haytham",
+        "anchors": [
+          "Ibn al-Haytham",
+          "Hasan Ibn al-Haytham"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Philosophiæ_Naturalis_Principia_Mathematica",
+        "source_file": "Philosophiæ_Naturalis_Principia_Mathematica.html",
+        "url": "https://en.wikipedia.org/wiki/Philosophi%C3%A6_Naturalis_Principia_Mathematica",
+        "anchors": [
+          "Principia Mathematica"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Albert_Einstein",
+        "source_file": "Albert_Einstein.html",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein",
+        "anchors": [
+          "Einstein"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ],
+    "wiki": [
+      {
+        "target": "Isaac_Newton",
+        "url": "https://en.wikipedia.org/wiki/Isaac_Newton",
+        "anchors": [
+          "Isaac Newton",
+          "Newton"
+        ],
+        "count": 5,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Derivative",
+        "url": "https://en.wikipedia.org/wiki/Derivative",
+        "anchors": [
+          "instantaneous rates of change",
+          "derivative",
+          "derivatives"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Integral",
+        "url": "https://en.wikipedia.org/wiki/Integral",
+        "anchors": [
+          "integral calculus",
+          "Integral",
+          "integration",
+          "integral"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fundamental_theorem_of_calculus",
+        "url": "https://en.wikipedia.org/wiki/Fundamental_theorem_of_calculus",
+        "anchors": [
+          "fundamental theorem of calculus",
+          "Fundamental theorem of calculus"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Gottfried_Wilhelm_Leibniz",
+        "url": "https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz",
+        "anchors": [
+          "Gottfried Wilhelm Leibniz"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Infinitesimal",
+        "url": "https://en.wikipedia.org/wiki/Infinitesimal",
+        "anchors": [
+          "Infinitesimal",
+          "infinitesimals",
+          "infinitesimal"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Continuous_function",
+        "url": "https://en.wikipedia.org/wiki/Continuous_function",
+        "anchors": [
+          "continuous",
+          "continuity"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Engineering",
+        "url": "https://en.wikipedia.org/wiki/Engineering",
+        "anchors": [
+          "engineering"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Calculus_of_variations",
+        "url": "https://en.wikipedia.org/wiki/Calculus_of_variations",
+        "anchors": [
+          "calculus of variations",
+          "Calculus of variations"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Velocity",
+        "url": "https://en.wikipedia.org/wiki/Velocity",
+        "anchors": [
+          "velocity"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Limit_of_a_function",
+        "url": "https://en.wikipedia.org/wiki/Limit_of_a_function",
+        "anchors": [
+          "Limit of a function",
+          "limits",
+          "limit"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Real_number",
+        "url": "https://en.wikipedia.org/wiki/Real_number",
+        "anchors": [
+          "real number",
+          "real number system",
+          "real numbers"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Limit_(mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Limit_(mathematics)",
+        "anchors": [
+          "limit"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Differential_equation",
+        "url": "https://en.wikipedia.org/wiki/Differential_equation",
+        "anchors": [
+          "differential equation",
+          "Differential equation"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Physics",
+        "url": "https://en.wikipedia.org/wiki/Physics",
+        "anchors": [
+          "physics",
+          "Physics"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Real_analysis",
+        "url": "https://en.wikipedia.org/wiki/Real_analysis",
+        "anchors": [
+          "Real analysis",
+          "real analysis"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Complex_analysis",
+        "url": "https://en.wikipedia.org/wiki/Complex_analysis",
+        "anchors": [
+          "Complex analysis",
+          "complex analysis"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Taylor_series",
+        "url": "https://en.wikipedia.org/wiki/Taylor_series",
+        "anchors": [
+          "Taylor series"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Differential_calculus",
+        "url": "https://en.wikipedia.org/wiki/Differential_calculus",
+        "anchors": [
+          "differential calculus",
+          "Differential calculus"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Integral_calculus",
+        "url": "https://en.wikipedia.org/wiki/Integral_calculus",
+        "anchors": [
+          "integral calculus"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Slope",
+        "url": "https://en.wikipedia.org/wiki/Slope",
+        "anchors": [
+          "slopes",
+          "slope"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Area",
+        "url": "https://en.wikipedia.org/wiki/Area",
+        "anchors": [
+          "areas",
+          "area"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Convergent_series",
+        "url": "https://en.wikipedia.org/wiki/Convergent_series",
+        "anchors": [
+          "convergence"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Infinite_series",
+        "url": "https://en.wikipedia.org/wiki/Infinite_series",
+        "anchors": [
+          "infinite series"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "(ε,_δ)-definition_of_limit",
+        "url": "https://en.wikipedia.org/wiki/(%CE%B5,_%CE%B4)-definition_of_limit",
+        "anchors": [
+          "formalization of the concept of limits",
+          "(ε, δ)-definition of limit"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Non-standard_analysis",
+        "url": "https://en.wikipedia.org/wiki/Non-standard_analysis",
+        "anchors": [
+          "non-standard analysis"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Smooth_infinitesimal_analysis",
+        "url": "https://en.wikipedia.org/wiki/Smooth_infinitesimal_analysis",
+        "anchors": [
+          "smooth infinitesimal analysis"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Antiderivative",
+        "url": "https://en.wikipedia.org/wiki/Antiderivative",
+        "anchors": [
+          "antiderivative",
+          "antiderivatives"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Riemann_sum",
+        "url": "https://en.wikipedia.org/wiki/Riemann_sum",
+        "anchors": [
+          "Riemann sum"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Isaac_Barrow",
+        "url": "https://en.wikipedia.org/wiki/Isaac_Barrow",
+        "anchors": [
+          "Isaac Barrow"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Multivariable_calculus",
+        "url": "https://en.wikipedia.org/wiki/Multivariable_calculus",
+        "anchors": [
+          "Multivariable calculus"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Vector_calculus",
+        "url": "https://en.wikipedia.org/wiki/Vector_calculus",
+        "anchors": [
+          "vector calculus",
+          "Vector calculus"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mathematical_model",
+        "url": "https://en.wikipedia.org/wiki/Mathematical_model",
+        "anchors": [
+          "mathematical models",
+          "mathematically modeled"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Economics",
+        "url": "https://en.wikipedia.org/wiki/Economics",
+        "anchors": [
+          "economics"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Volume",
+        "url": "https://en.wikipedia.org/wiki/Volume",
+        "anchors": [
+          "volume"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Greek_mathematics",
+        "url": "https://en.wikipedia.org/wiki/Greek_mathematics",
+        "anchors": [
+          "Greek mathematics",
+          "Greece"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Method_of_exhaustion",
+        "url": "https://en.wikipedia.org/wiki/Method_of_exhaustion",
+        "anchors": [
+          "method of exhaustion"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cavalieri's_principle",
+        "url": "https://en.wikipedia.org/wiki/Cavalieri%27s_principle",
+        "anchors": [
+          "indivisibles",
+          "Cavalieri's principle"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sphere",
+        "url": "https://en.wikipedia.org/wiki/Sphere",
+        "anchors": [
+          "hemisphere",
+          "sphere"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Paraboloid",
+        "url": "https://en.wikipedia.org/wiki/Paraboloid",
+        "anchors": [
+          "paraboloid"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chinese_mathematics",
+        "url": "https://en.wikipedia.org/wiki/Chinese_mathematics",
+        "anchors": [
+          "China"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bhāskara_II",
+        "url": "https://en.wikipedia.org/wiki/Bh%C4%81skara_II",
+        "anchors": [
+          "Bhāskara II"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Product_rule",
+        "url": "https://en.wikipedia.org/wiki/Product_rule",
+        "anchors": [
+          "product rule"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chain_rule",
+        "url": "https://en.wikipedia.org/wiki/Chain_rule",
+        "anchors": [
+          "chain rule"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Newton's_laws_of_motion",
+        "url": "https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion",
+        "anchors": [
+          "laws of motion",
+          "Newton's second law of motion"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Maria_Gaetana_Agnesi",
+        "url": "https://en.wikipedia.org/wiki/Maria_Gaetana_Agnesi",
+        "anchors": [
+          "Maria Gaetana Agnesi"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Acceleration",
+        "url": "https://en.wikipedia.org/wiki/Acceleration",
+        "anchors": [
+          "acceleration"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electromagnetism",
+        "url": "https://en.wikipedia.org/wiki/Electromagnetism",
+        "anchors": [
+          "electromagnetism"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Wayback_Machine",
+        "url": "https://en.wikipedia.org/wiki/Wayback_Machine",
+        "anchors": [
+          "Wayback Machine"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Calculus_(disambiguation)",
+        "url": "https://en.wikipedia.org/wiki/Calculus_(disambiguation)",
+        "anchors": [
+          "Calculus (disambiguation)"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mathematical_analysis",
+        "url": "https://en.wikipedia.org/wiki/Mathematical_analysis",
+        "anchors": [
+          "mathematical analysis"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Curve",
+        "url": "https://en.wikipedia.org/wiki/Curve",
+        "anchors": [
+          "curves"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Infinite_sequences",
+        "url": "https://en.wikipedia.org/wiki/Infinite_sequences",
+        "anchors": [
+          "infinite sequences"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mathematical_limit",
+        "url": "https://en.wikipedia.org/wiki/Mathematical_limit",
+        "anchors": [
+          "mathematical limit"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Physical_science",
+        "url": "https://en.wikipedia.org/wiki/Physical_science",
+        "anchors": [
+          "physical science"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Science",
+        "url": "https://en.wikipedia.org/wiki/Science",
+        "anchors": [
+          "science"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Latin",
+        "url": "https://en.wikipedia.org/wiki/Latin",
+        "anchors": [
+          "Latin"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Calculus_(medicine)",
+        "url": "https://en.wikipedia.org/wiki/Calculus_(medicine)",
+        "anchors": [
+          "persists in medicine"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Abacus",
+        "url": "https://en.wikipedia.org/wiki/Abacus",
+        "anchors": [
+          "abacuses"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Propositional_calculus",
+        "url": "https://en.wikipedia.org/wiki/Propositional_calculus",
+        "anchors": [
+          "propositional calculus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ricci_calculus",
+        "url": "https://en.wikipedia.org/wiki/Ricci_calculus",
+        "anchors": [
+          "Ricci calculus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lambda_calculus",
+        "url": "https://en.wikipedia.org/wiki/Lambda_calculus",
+        "anchors": [
+          "lambda calculus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sequent_calculus",
+        "url": "https://en.wikipedia.org/wiki/Sequent_calculus",
+        "anchors": [
+          "sequent calculus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Process_calculus",
+        "url": "https://en.wikipedia.org/wiki/Process_calculus",
+        "anchors": [
+          "process calculus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Jeremy_Bentham",
+        "url": "https://en.wikipedia.org/wiki/Jeremy_Bentham",
+        "anchors": [
+          "Bentham's"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Felicific_calculus",
+        "url": "https://en.wikipedia.org/wiki/Felicific_calculus",
+        "anchors": [
+          "felicific calculus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ethical_calculus",
+        "url": "https://en.wikipedia.org/wiki/Ethical_calculus",
+        "anchors": [
+          "ethical calculus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Geometry",
+        "url": "https://en.wikipedia.org/wiki/Geometry",
+        "anchors": [
+          "geometry"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Algebra",
+        "url": "https://en.wikipedia.org/wiki/Algebra",
+        "anchors": [
+          "algebra"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Triangle",
+        "url": "https://en.wikipedia.org/wiki/Triangle",
+        "anchors": [
+          "triangles"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Square",
+        "url": "https://en.wikipedia.org/wiki/Square",
+        "anchors": [
+          "squares"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Polygon",
+        "url": "https://en.wikipedia.org/wiki/Polygon",
+        "anchors": [
+          "polygons"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Epsilon,_delta",
+        "url": "https://en.wikipedia.org/wiki/Epsilon,_delta",
+        "anchors": [
+          "epsilon, delta"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Function_(mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Function_(mathematics)",
+        "anchors": [
+          "function"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lagrange's_notation",
+        "url": "https://en.wikipedia.org/wiki/Lagrange%27s_notation",
+        "anchors": [
+          "Lagrange's notation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Apostrophe",
+        "url": "https://en.wikipedia.org/wiki/Apostrophe",
+        "anchors": [
+          "apostrophe"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Prime_(symbol)",
+        "url": "https://en.wikipedia.org/wiki/Prime_(symbol)",
+        "anchors": [
+          "prime"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Linear_function",
+        "url": "https://en.wikipedia.org/wiki/Linear_function",
+        "anchors": [
+          "linear"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Graph_of_a_function",
+        "url": "https://en.wikipedia.org/wiki/Graph_of_a_function",
+        "anchors": [
+          "graph"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Difference_quotient",
+        "url": "https://en.wikipedia.org/wiki/Difference_quotient",
+        "anchors": [
+          "difference quotient"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Dividing_by_zero",
+        "url": "https://en.wikipedia.org/wiki/Dividing_by_zero",
+        "anchors": [
+          "dividing by zero"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tangent_line",
+        "url": "https://en.wikipedia.org/wiki/Tangent_line",
+        "anchors": [
+          "tangent line"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Leibniz's_notation",
+        "url": "https://en.wikipedia.org/wiki/Leibniz%27s_notation",
+        "anchors": [
+          "Leibniz's notation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Differentiation_operator",
+        "url": "https://en.wikipedia.org/wiki/Differentiation_operator",
+        "anchors": [
+          "differentiation operator"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "X-axis",
+        "url": "https://en.wikipedia.org/wiki/X-axis",
+        "anchors": [
+          "x-axis"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Long_s",
+        "url": "https://en.wikipedia.org/wiki/Long_s",
+        "anchors": [
+          "elongated S"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Constant_of_integration",
+        "url": "https://en.wikipedia.org/wiki/Constant_of_integration",
+        "anchors": [
+          "constant of integration"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Gottfried_Leibniz",
+        "url": "https://en.wikipedia.org/wiki/Gottfried_Leibniz",
+        "anchors": [
+          "Leibniz"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Function_of_several_real_variables",
+        "url": "https://en.wikipedia.org/wiki/Function_of_several_real_variables",
+        "anchors": [
+          "functions of several variables"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Multivariate_(mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Multivariate_(mathematics)",
+        "anchors": [
+          "multivariate"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Vector_field",
+        "url": "https://en.wikipedia.org/wiki/Vector_field",
+        "anchors": [
+          "vector fields"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Euclidean_space",
+        "url": "https://en.wikipedia.org/wiki/Euclidean_space",
+        "anchors": [
+          "Euclidean space"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Differential_geometry",
+        "url": "https://en.wikipedia.org/wiki/Differential_geometry",
+        "anchors": [
+          "differential geometry"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Partial_differential_equation",
+        "url": "https://en.wikipedia.org/wiki/Partial_differential_equation",
+        "anchors": [
+          "partial differential equations"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electromagnetic_field",
+        "url": "https://en.wikipedia.org/wiki/Electromagnetic_field",
+        "anchors": [
+          "electromagnetic fields"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Gravitational_field",
+        "url": "https://en.wikipedia.org/wiki/Gravitational_field",
+        "anchors": [
+          "gravitational fields"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fluid_flow",
+        "url": "https://en.wikipedia.org/wiki/Fluid_flow",
+        "anchors": [
+          "fluid flow"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Functional_equation",
+        "url": "https://en.wikipedia.org/wiki/Functional_equation",
+        "anchors": [
+          "equation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Scientific_law",
+        "url": "https://en.wikipedia.org/wiki/Scientific_law",
+        "anchors": [
+          "scientific laws"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Biology",
+        "url": "https://en.wikipedia.org/wiki/Biology",
+        "anchors": [
+          "biology"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Exponential_decay",
+        "url": "https://en.wikipedia.org/wiki/Exponential_decay",
+        "anchors": [
+          "exponential decay"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sequence",
+        "url": "https://en.wikipedia.org/wiki/Sequence",
+        "anchors": [
+          "sequences"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Series_(mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Series_(mathematics)",
+        "anchors": [
+          "series"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Real_function",
+        "url": "https://en.wikipedia.org/wiki/Real_function",
+        "anchors": [
+          "real functions"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Smoothness",
+        "url": "https://en.wikipedia.org/wiki/Smoothness",
+        "anchors": [
+          "smoothness"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Complex_number",
+        "url": "https://en.wikipedia.org/wiki/Complex_number",
+        "anchors": [
+          "complex"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Algebraic_geometry",
+        "url": "https://en.wikipedia.org/wiki/Algebraic_geometry",
+        "anchors": [
+          "algebraic geometry"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Number_theory",
+        "url": "https://en.wikipedia.org/wiki/Number_theory",
+        "anchors": [
+          "number theory"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Analytic_combinatorics",
+        "url": "https://en.wikipedia.org/wiki/Analytic_combinatorics",
+        "anchors": [
+          "analytic combinatorics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Applied_mathematics",
+        "url": "https://en.wikipedia.org/wiki/Applied_mathematics",
+        "anchors": [
+          "applied mathematics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hydrodynamics",
+        "url": "https://en.wikipedia.org/wiki/Hydrodynamics",
+        "anchors": [
+          "hydrodynamics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Thermodynamics",
+        "url": "https://en.wikipedia.org/wiki/Thermodynamics",
+        "anchors": [
+          "thermodynamics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Twistor_theory",
+        "url": "https://en.wikipedia.org/wiki/Twistor_theory",
+        "anchors": [
+          "twistor theory"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Nuclear_engineering",
+        "url": "https://en.wikipedia.org/wiki/Nuclear_engineering",
+        "anchors": [
+          "nuclear"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Aerospace_engineering",
+        "url": "https://en.wikipedia.org/wiki/Aerospace_engineering",
+        "anchors": [
+          "aerospace"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mechanical_engineering",
+        "url": "https://en.wikipedia.org/wiki/Mechanical_engineering",
+        "anchors": [
+          "mechanical"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electrical_engineering",
+        "url": "https://en.wikipedia.org/wiki/Electrical_engineering",
+        "anchors": [
+          "electrical engineering"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Holomorphic_functions",
+        "url": "https://en.wikipedia.org/wiki/Holomorphic_functions",
+        "anchors": [
+          "holomorphic functions"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Differentiable_function",
+        "url": "https://en.wikipedia.org/wiki/Differentiable_function",
+        "anchors": [
+          "differentiable functions"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Infinitely_differentiable",
+        "url": "https://en.wikipedia.org/wiki/Infinitely_differentiable",
+        "anchors": [
+          "infinitely differentiable"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Neighborhood_(mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Neighborhood_(mathematics)",
+        "anchors": [
+          "neighborhood"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Domain_of_a_function",
+        "url": "https://en.wikipedia.org/wiki/Domain_of_a_function",
+        "anchors": [
+          "domain"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Functional_(mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Functional_(mathematics)",
+        "anchors": [
+          "functionals"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Map_(mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Map_(mathematics)",
+        "anchors": [
+          "mapping"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Straight_line",
+        "url": "https://en.wikipedia.org/wiki/Straight_line",
+        "anchors": [
+          "straight line"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Geodesic",
+        "url": "https://en.wikipedia.org/wiki/Geodesic",
+        "anchors": [
+          "geodesics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fermat's_principle",
+        "url": "https://en.wikipedia.org/wiki/Fermat%27s_principle",
+        "anchors": [
+          "Fermat's principle"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Optical_length",
+        "url": "https://en.wikipedia.org/wiki/Optical_length",
+        "anchors": [
+          "optical length"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mechanics",
+        "url": "https://en.wikipedia.org/wiki/Mechanics",
+        "anchors": [
+          "mechanics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Principle_of_least_action",
+        "url": "https://en.wikipedia.org/wiki/Principle_of_least_action",
+        "anchors": [
+          "principle of least/stationary action"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Definite_integral",
+        "url": "https://en.wikipedia.org/wiki/Definite_integral",
+        "anchors": [
+          "definite integrals"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Euler–Lagrange_equation",
+        "url": "https://en.wikipedia.org/wiki/Euler%E2%80%93Lagrange_equation",
+        "anchors": [
+          "Euler–Lagrange equation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "History_of_calculus",
+        "url": "https://en.wikipedia.org/wiki/History_of_calculus",
+        "anchors": [
+          "History of calculus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Egyptian_mathematics",
+        "url": "https://en.wikipedia.org/wiki/Egyptian_mathematics",
+        "anchors": [
+          "Egyptian"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Moscow_Mathematical_Papyrus",
+        "url": "https://en.wikipedia.org/wiki/Moscow_Mathematical_Papyrus",
+        "anchors": [
+          "Moscow papyrus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Babylon",
+        "url": "https://en.wikipedia.org/wiki/Babylon",
+        "anchors": [
+          "Babylonians"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Trapezoidal_rule",
+        "url": "https://en.wikipedia.org/wiki/Trapezoidal_rule",
+        "anchors": [
+          "trapezoidal rule"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Jupiter",
+        "url": "https://en.wikipedia.org/wiki/Jupiter",
+        "anchors": [
+          "Jupiter"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quadrature_of_the_Parabola",
+        "url": "https://en.wikipedia.org/wiki/Quadrature_of_the_Parabola",
+        "anchors": [
+          "Quadrature of the Parabola"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Eudoxus_of_Cnidus",
+        "url": "https://en.wikipedia.org/wiki/Eudoxus_of_Cnidus",
+        "anchors": [
+          "Eudoxus of Cnidus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hellenistic_period",
+        "url": "https://en.wikipedia.org/wiki/Hellenistic_period",
+        "anchors": [
+          "Hellenistic period"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Archimedes",
+        "url": "https://en.wikipedia.org/wiki/Archimedes",
+        "anchors": [
+          "Archimedes"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Archimedes_use_of_infinitesimals",
+        "url": "https://en.wikipedia.org/wiki/Archimedes_use_of_infinitesimals",
+        "anchors": [
+          "infinitesimals"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "The_Method_of_Mechanical_Theorems",
+        "url": "https://en.wikipedia.org/wiki/The_Method_of_Mechanical_Theorems",
+        "anchors": [
+          "The Method of Mechanical Theorems"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Center_of_gravity",
+        "url": "https://en.wikipedia.org/wiki/Center_of_gravity",
+        "anchors": [
+          "center of gravity"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Frustum",
+        "url": "https://en.wikipedia.org/wiki/Frustum",
+        "anchors": [
+          "frustum"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Parabola",
+        "url": "https://en.wikipedia.org/wiki/Parabola",
+        "anchors": [
+          "parabola"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Secant_line",
+        "url": "https://en.wikipedia.org/wiki/Secant_line",
+        "anchors": [
+          "secant lines"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Liu_Hui",
+        "url": "https://en.wikipedia.org/wiki/Liu_Hui",
+        "anchors": [
+          "Liu Hui"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Zu_Gengzhi",
+        "url": "https://en.wikipedia.org/wiki/Zu_Gengzhi",
+        "anchors": [
+          "Zu Gengzhi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Zu_Chongzhi",
+        "url": "https://en.wikipedia.org/wiki/Zu_Chongzhi",
+        "anchors": [
+          "Zu Chongzhi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fourth_power",
+        "url": "https://en.wikipedia.org/wiki/Fourth_power",
+        "anchors": [
+          "fourth powers"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Madhava_of_Sangamagrama",
+        "url": "https://en.wikipedia.org/wiki/Madhava_of_Sangamagrama",
+        "anchors": [
+          "Madhava of Sangamagrama"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Kerala_School_of_Astronomy_and_Mathematics",
+        "url": "https://en.wikipedia.org/wiki/Kerala_School_of_Astronomy_and_Mathematics",
+        "anchors": [
+          "Kerala School of Astronomy and Mathematics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Victor_J._Katz",
+        "url": "https://en.wikipedia.org/wiki/Victor_J._Katz",
+        "anchors": [
+          "Victor J. Katz"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Oxford_Calculators",
+        "url": "https://en.wikipedia.org/wiki/Oxford_Calculators",
+        "anchors": [
+          "Oxford Calculators"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Nicole_Oresme",
+        "url": "https://en.wikipedia.org/wiki/Nicole_Oresme",
+        "anchors": [
+          "Nicole Oresme"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Harmonic_series_(mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Harmonic_series_(mathematics)",
+        "anchors": [
+          "harmonic series"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mean_speed_theorem",
+        "url": "https://en.wikipedia.org/wiki/Mean_speed_theorem",
+        "anchors": [
+          "mean speed theorem"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Johannes_Kepler",
+        "url": "https://en.wikipedia.org/wiki/Johannes_Kepler",
+        "anchors": [
+          "Johannes Kepler"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bonaventura_Cavalieri",
+        "url": "https://en.wikipedia.org/wiki/Bonaventura_Cavalieri",
+        "anchors": [
+          "Bonaventura Cavalieri"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Calculus_of_finite_differences",
+        "url": "https://en.wikipedia.org/wiki/Calculus_of_finite_differences",
+        "anchors": [
+          "calculus of finite differences"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pierre_de_Fermat",
+        "url": "https://en.wikipedia.org/wiki/Pierre_de_Fermat",
+        "anchors": [
+          "Pierre de Fermat"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Diophantus",
+        "url": "https://en.wikipedia.org/wiki/Diophantus",
+        "anchors": [
+          "Diophantus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Adequality",
+        "url": "https://en.wikipedia.org/wiki/Adequality",
+        "anchors": [
+          "adequality"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "John_Wallis",
+        "url": "https://en.wikipedia.org/wiki/John_Wallis",
+        "anchors": [
+          "John Wallis"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "James_Gregory_(astronomer_and_mathematician)",
+        "url": "https://en.wikipedia.org/wiki/James_Gregory_(astronomer_and_mathematician)",
+        "anchors": [
+          "James Gregory"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Higher_derivative",
+        "url": "https://en.wikipedia.org/wiki/Higher_derivative",
+        "anchors": [
+          "higher derivatives"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Analytic_function",
+        "url": "https://en.wikipedia.org/wiki/Analytic_function",
+        "anchors": [
+          "analytic functions"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mathematical_physics",
+        "url": "https://en.wikipedia.org/wiki/Mathematical_physics",
+        "anchors": [
+          "mathematical physics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cycloid",
+        "url": "https://en.wikipedia.org/wiki/Cycloid",
+        "anchors": [
+          "cycloid"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Newton's_law_of_universal_gravitation",
+        "url": "https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation",
+        "anchors": [
+          "universal gravitation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Plagiarism",
+        "url": "https://en.wikipedia.org/wiki/Plagiarism",
+        "anchors": [
+          "plagiarism"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Multiple_discovery",
+        "url": "https://en.wikipedia.org/wiki/Multiple_discovery",
+        "anchors": [
+          "independent inventor"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Newton_v._Leibniz_calculus_controversy",
+        "url": "https://en.wikipedia.org/wiki/Newton_v._Leibniz_calculus_controversy",
+        "anchors": [
+          "great controversy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Method_of_Fluxions",
+        "url": "https://en.wikipedia.org/wiki/Method_of_Fluxions",
+        "anchors": [
+          "Method of Fluxions"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Nova_Methodus_pro_Maximis_et_Minimis",
+        "url": "https://en.wikipedia.org/wiki/Nova_Methodus_pro_Maximis_et_Minimis",
+        "anchors": [
+          "Nova Methodus pro Maximis et Minimis"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Royal_Society",
+        "url": "https://en.wikipedia.org/wiki/Royal_Society",
+        "anchors": [
+          "Royal Society"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Method_of_fluxions",
+        "url": "https://en.wikipedia.org/wiki/Method_of_fluxions",
+        "anchors": [
+          "the science of fluxions"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Rigorous",
+        "url": "https://en.wikipedia.org/wiki/Rigorous#Mathematical_rigor",
+        "anchors": [
+          "rigorous"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Axiom",
+        "url": "https://en.wikipedia.org/wiki/Axiom",
+        "anchors": [
+          "axioms"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Michel_Rolle",
+        "url": "https://en.wikipedia.org/wiki/Michel_Rolle",
+        "anchors": [
+          "Michel Rolle"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "George_Berkeley",
+        "url": "https://en.wikipedia.org/wiki/George_Berkeley",
+        "anchors": [
+          "Bishop Berkeley"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ghosts_of_departed_quantities",
+        "url": "https://en.wikipedia.org/wiki/Ghosts_of_departed_quantities",
+        "anchors": [
+          "ghosts of departed quantities"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "The_Analyst",
+        "url": "https://en.wikipedia.org/wiki/The_Analyst",
+        "anchors": [
+          "The Analyst"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Colin_Maclaurin",
+        "url": "https://en.wikipedia.org/wiki/Colin_Maclaurin",
+        "anchors": [
+          "Maclaurin"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Augustin-Louis_Cauchy",
+        "url": "https://en.wikipedia.org/wiki/Augustin-Louis_Cauchy",
+        "anchors": [
+          "Cauchy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Karl_Weierstrass",
+        "url": "https://en.wikipedia.org/wiki/Karl_Weierstrass",
+        "anchors": [
+          "Weierstrass"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cours_d'Analyse",
+        "url": "https://en.wikipedia.org/wiki/Cours_d%27Analyse",
+        "anchors": [
+          "Cours d'Analyse"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Nilsquare",
+        "url": "https://en.wikipedia.org/wiki/Nilsquare",
+        "anchors": [
+          "nilsquare"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bernhard_Riemann",
+        "url": "https://en.wikipedia.org/wiki/Bernhard_Riemann",
+        "anchors": [
+          "Bernhard Riemann"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Complex_plane",
+        "url": "https://en.wikipedia.org/wiki/Complex_plane",
+        "anchors": [
+          "complex plane"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mathematical_proof",
+        "url": "https://en.wikipedia.org/wiki/Mathematical_proof",
+        "anchors": [
+          "proofs"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Henri_Lebesgue",
+        "url": "https://en.wikipedia.org/wiki/Henri_Lebesgue",
+        "anchors": [
+          "Henri Lebesgue"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Measure_theory",
+        "url": "https://en.wikipedia.org/wiki/Measure_theory",
+        "anchors": [
+          "measure theory"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Émile_Borel",
+        "url": "https://en.wikipedia.org/wiki/%C3%89mile_Borel",
+        "anchors": [
+          "Émile Borel"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pathological_(mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Pathological_(mathematics)",
+        "anchors": [
+          "pathological"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Laurent_Schwartz",
+        "url": "https://en.wikipedia.org/wiki/Laurent_Schwartz",
+        "anchors": [
+          "Laurent Schwartz"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Distribution_(mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Distribution_(mathematics)",
+        "anchors": [
+          "distributions"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Abraham_Robinson",
+        "url": "https://en.wikipedia.org/wiki/Abraham_Robinson",
+        "anchors": [
+          "Abraham Robinson"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mathematical_logic",
+        "url": "https://en.wikipedia.org/wiki/Mathematical_logic",
+        "anchors": [
+          "mathematical logic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Infinity",
+        "url": "https://en.wikipedia.org/wiki/Infinity",
+        "anchors": [
+          "infinite"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hyperreal_number",
+        "url": "https://en.wikipedia.org/wiki/Hyperreal_number",
+        "anchors": [
+          "hyperreal numbers"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "F._W._Lawvere",
+        "url": "https://en.wikipedia.org/wiki/F._W._Lawvere",
+        "anchors": [
+          "F. W. Lawvere"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Category_theory",
+        "url": "https://en.wikipedia.org/wiki/Category_theory",
+        "anchors": [
+          "category theory"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Discrete_mathematics",
+        "url": "https://en.wikipedia.org/wiki/Discrete_mathematics",
+        "anchors": [
+          "discrete"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Law_of_excluded_middle",
+        "url": "https://en.wikipedia.org/wiki/Law_of_excluded_middle",
+        "anchors": [
+          "law of excluded middle"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Constructive_mathematics",
+        "url": "https://en.wikipedia.org/wiki/Constructive_mathematics",
+        "anchors": [
+          "constructive mathematics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Constructive_analysis",
+        "url": "https://en.wikipedia.org/wiki/Constructive_analysis",
+        "anchors": [
+          "constructive analysis"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Indian_mathematics",
+        "url": "https://en.wikipedia.org/wiki/Indian_mathematics",
+        "anchors": [
+          "India"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Islamic_mathematics",
+        "url": "https://en.wikipedia.org/wiki/Islamic_mathematics",
+        "anchors": [
+          "Iraq, Persia"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Japanese_mathematics",
+        "url": "https://en.wikipedia.org/wiki/Japanese_mathematics",
+        "anchors": [
+          "Japan"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "John_von_Neumann",
+        "url": "https://en.wikipedia.org/wiki/John_von_Neumann",
+        "anchors": [
+          "John von Neumann"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mathematical_optimization",
+        "url": "https://en.wikipedia.org/wiki/Mathematical_optimization",
+        "anchors": [
+          "optimization"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Arc_length",
+        "url": "https://en.wikipedia.org/wiki/Arc_length",
+        "anchors": [
+          "arc length"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Center_of_mass",
+        "url": "https://en.wikipedia.org/wiki/Center_of_mass",
+        "anchors": [
+          "center of mass"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Work_(physics)",
+        "url": "https://en.wikipedia.org/wiki/Work_(physics)",
+        "anchors": [
+          "work"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Pressure",
+        "url": "https://en.wikipedia.org/wiki/Pressure",
+        "anchors": [
+          "pressure"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Power_series",
+        "url": "https://en.wikipedia.org/wiki/Power_series",
+        "anchors": [
+          "power series"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fourier_series",
+        "url": "https://en.wikipedia.org/wiki/Fourier_series",
+        "anchors": [
+          "Fourier series"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Division_by_zero",
+        "url": "https://en.wikipedia.org/wiki/Division_by_zero",
+        "anchors": [
+          "division by zero"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Motion_(physics)",
+        "url": "https://en.wikipedia.org/wiki/Motion_(physics)",
+        "anchors": [
+          "motion"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Ancient_Greek",
+        "url": "https://en.wikipedia.org/wiki/Ancient_Greek",
+        "anchors": [
+          "ancient Greek"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Zeno_of_Elea",
+        "url": "https://en.wikipedia.org/wiki/Zeno_of_Elea",
+        "anchors": [
+          "Zeno of Elea"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Zeno's_paradoxes",
+        "url": "https://en.wikipedia.org/wiki/Zeno%27s_paradoxes",
+        "anchors": [
+          "paradoxes"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Logarithmic_spiral",
+        "url": "https://en.wikipedia.org/wiki/Logarithmic_spiral",
+        "anchors": [
+          "logarithmic spiral"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Nautilus",
+        "url": "https://en.wikipedia.org/wiki/Nautilus",
+        "anchors": [
+          "nautilus shell"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Actuarial_science",
+        "url": "https://en.wikipedia.org/wiki/Actuarial_science",
+        "anchors": [
+          "actuarial science"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Computer_science",
+        "url": "https://en.wikipedia.org/wiki/Computer_science",
+        "anchors": [
+          "computer science"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Statistics",
+        "url": "https://en.wikipedia.org/wiki/Statistics",
+        "anchors": [
+          "statistics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Business",
+        "url": "https://en.wikipedia.org/wiki/Business",
+        "anchors": [
+          "business"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Medicine",
+        "url": "https://en.wikipedia.org/wiki/Medicine",
+        "anchors": [
+          "medicine"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Demography",
+        "url": "https://en.wikipedia.org/wiki/Demography",
+        "anchors": [
+          "demography"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Optimization_(mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Optimization_(mathematics)",
+        "anchors": [
+          "optimal"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Linear_algebra",
+        "url": "https://en.wikipedia.org/wiki/Linear_algebra",
+        "anchors": [
+          "linear algebra"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Probability_theory",
+        "url": "https://en.wikipedia.org/wiki/Probability_theory",
+        "anchors": [
+          "probability theory"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Expectation_value",
+        "url": "https://en.wikipedia.org/wiki/Expectation_value",
+        "anchors": [
+          "expectation value"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Random_variable",
+        "url": "https://en.wikipedia.org/wiki/Random_variable",
+        "anchors": [
+          "random variable"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Probability_density_function",
+        "url": "https://en.wikipedia.org/wiki/Probability_density_function",
+        "anchors": [
+          "probability density function"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Analytic_geometry",
+        "url": "https://en.wikipedia.org/wiki/Analytic_geometry",
+        "anchors": [
+          "analytic geometry"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Concave_function",
+        "url": "https://en.wikipedia.org/wiki/Concave_function",
+        "anchors": [
+          "concavity"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Inflection_points",
+        "url": "https://en.wikipedia.org/wiki/Inflection_points",
+        "anchors": [
+          "inflection points"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Newton's_method",
+        "url": "https://en.wikipedia.org/wiki/Newton%27s_method",
+        "anchors": [
+          "Newton's method"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Fixed_point_iteration",
+        "url": "https://en.wikipedia.org/wiki/Fixed_point_iteration",
+        "anchors": [
+          "fixed point iteration"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Linear_approximation",
+        "url": "https://en.wikipedia.org/wiki/Linear_approximation",
+        "anchors": [
+          "linear approximation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Euler_method",
+        "url": "https://en.wikipedia.org/wiki/Euler_method",
+        "anchors": [
+          "Euler method"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Classical_mechanics",
+        "url": "https://en.wikipedia.org/wiki/Classical_mechanics",
+        "anchors": [
+          "classical mechanics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mass",
+        "url": "https://en.wikipedia.org/wiki/Mass",
+        "anchors": [
+          "mass"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Density",
+        "url": "https://en.wikipedia.org/wiki/Density",
+        "anchors": [
+          "density"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Moment_of_inertia",
+        "url": "https://en.wikipedia.org/wiki/Moment_of_inertia",
+        "anchors": [
+          "moment of inertia"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Potential_energy",
+        "url": "https://en.wikipedia.org/wiki/Potential_energy",
+        "anchors": [
+          "potential energies"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Momentum",
+        "url": "https://en.wikipedia.org/wiki/Momentum",
+        "anchors": [
+          "momentum"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Force",
+        "url": "https://en.wikipedia.org/wiki/Force",
+        "anchors": [
+          "force"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "General_relativity",
+        "url": "https://en.wikipedia.org/wiki/General_relativity",
+        "anchors": [
+          "general relativity"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Blood_vessel",
+        "url": "https://en.wikipedia.org/wiki/Blood_vessel",
+        "anchors": [
+          "blood vessel"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cancer",
+        "url": "https://en.wikipedia.org/wiki/Cancer",
+        "anchors": [
+          "cancerous"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Marginal_cost",
+        "url": "https://en.wikipedia.org/wiki/Marginal_cost",
+        "anchors": [
+          "marginal cost"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Marginal_revenue",
+        "url": "https://en.wikipedia.org/wiki/Marginal_revenue",
+        "anchors": [
+          "marginal revenue"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Black–Scholes_model",
+        "url": "https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_model",
+        "anchors": [
+          "Black–Scholes model"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Option_(finance)",
+        "url": "https://en.wikipedia.org/wiki/Option_(finance)",
+        "anchors": [
+          "option pricing"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Outline_of_calculus",
+        "url": "https://en.wikipedia.org/wiki/Outline_of_calculus",
+        "anchors": [
+          "Outline of calculus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Glossary_of_calculus",
+        "url": "https://en.wikipedia.org/wiki/Glossary_of_calculus",
+        "anchors": [
+          "Glossary of calculus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "List_of_calculus_topics",
+        "url": "https://en.wikipedia.org/wiki/List_of_calculus_topics",
+        "anchors": [
+          "List of calculus topics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "List_of_derivatives_and_integrals_in_alternative_calculi",
+        "url": "https://en.wikipedia.org/wiki/List_of_derivatives_and_integrals_in_alternative_calculi",
+        "anchors": [
+          "List of derivatives and integrals in alternative calculi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "List_of_differentiation_identities",
+        "url": "https://en.wikipedia.org/wiki/List_of_differentiation_identities",
+        "anchors": [
+          "List of differentiation identities"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "List_of_publications_in_mathematics",
+        "url": "https://en.wikipedia.org/wiki/List_of_publications_in_mathematics#Calculus",
+        "anchors": [
+          "Publications in calculus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Table_of_integrals",
+        "url": "https://en.wikipedia.org/wiki/Table_of_integrals",
+        "anchors": [
+          "Table of integrals"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Real_Analysis",
+        "url": "https://en.wikipedia.org/wiki/Real_Analysis",
+        "anchors": [
+          "Real Analysis"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mathematical_Analysis",
+        "url": "https://en.wikipedia.org/wiki/Mathematical_Analysis",
+        "anchors": [
+          "Mathematical Analysis"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Encyclopedia_of_Mathematics",
+        "url": "https://en.wikipedia.org/wiki/Encyclopedia_of_Mathematics",
+        "anchors": [
+          "Encyclopedia of Mathematics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "European_Mathematical_Society",
+        "url": "https://en.wikipedia.org/wiki/European_Mathematical_Society",
+        "anchors": [
+          "EMS Press"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Eric_W._Weisstein",
+        "url": "https://en.wikipedia.org/wiki/Eric_W._Weisstein",
+        "anchors": [
+          "Weisstein, Eric W."
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "MathWorld",
+        "url": "https://en.wikipedia.org/wiki/MathWorld",
+        "anchors": [
+          "MathWorld"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "PlanetMath",
+        "url": "https://en.wikipedia.org/wiki/PlanetMath",
+        "anchors": [
+          "PlanetMath"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "In_Our_Time_(radio_series)",
+        "url": "https://en.wikipedia.org/wiki/In_Our_Time_(radio_series)",
+        "anchors": [
+          "In Our Time"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "BBC",
+        "url": "https://en.wikipedia.org/wiki/BBC",
+        "anchors": [
+          "BBC"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Massachusetts_Institute_of_Technology",
+        "url": "https://en.wikipedia.org/wiki/Massachusetts_Institute_of_Technology",
+        "anchors": [
+          "Massachusetts Institute of Technology"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Michiel_Hazewinkel",
+        "url": "https://en.wikipedia.org/wiki/Michiel_Hazewinkel",
+        "anchors": [
+          "Michiel Hazewinkel"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ],
+    "external": [
+      {
+        "url": "https://en.wiktionary.org/wiki/calculus#Latin",
+        "anchors": [
+          "calculus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://www.encyclopediaofmath.org/index.php?title=Calculus",
+        "anchors": [
+          "\"Calculus\""
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://mathworld.wolfram.com/Calculus.html",
+        "anchors": [
+          "\"Calculus\""
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://planetmath.org/TopicsOnCalculus",
+        "anchors": [
+          "Topics on Calculus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://djm.cc/library/Calculus_Made_Easy_Thompson.pdf",
+        "anchors": [
+          "Calculus Made Easy (1914) by Silvanus P. Thompson"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://www.bbc.co.uk/programmes/b00mrfwq",
+        "anchors": [
+          "Calculus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.calculus.org",
+        "anchors": [
+          "Calculus.org: The Calculus page"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.economics.soton.ac.uk/staff/aldrich/Calculus%20and%20Analysis%20Earliest%20Uses.htm",
+        "anchors": [
+          "Earliest Known Uses of Some of the Words of Mathematics: Calculus & Analysis"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.ericdigests.org/pre-9217/calculus.htm",
+        "anchors": [
+          "The Role of Calculus in College Mathematics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20210726234750/http://www.ericdigests.org/pre-9217/calculus.htm",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/",
+        "anchors": [
+          "OpenCourseWare Calculus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.encyclopediaofmath.org/index.php?title=Infinitesimal_calculus&oldid=18648",
+        "anchors": [
+          "Infinitesimal Calculus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://math.mit.edu/~djk/calculus_beginners/",
+        "anchors": [
+          "\"Calculus for Beginners and Artists\""
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.imomath.com/index.php?options=277",
+        "anchors": [
+          "Calculus training materials at imomath.com"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://web.archive.org/web/20230709175857/https://www.imomath.com/index.php?options=277",
+        "anchors": [
+          "Archived"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "http://www.wdl.org/en/item/4327/",
+        "anchors": [
+          "The Excursion of Calculus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ]
+  },
+  "stats": {
+    "n_categories": 1,
+    "n_sections": 30,
+    "n_tables": 1,
+    "n_local": 4,
+    "n_wiki": 278,
+    "n_external": 16,
+    "md_chars": 51535
+  }
+}

@@ -1,0 +1,1012 @@
+# Demographics of Japan
+
+## Infobox
+
+- **Population:** 123,400,000 (April 2025) [ 1 ] [ 2 ] ( 11th )
+- **Density:** 343.28/km 2 (889.1/sq mi) (2022) [ 3 ]
+- **Growth rate:** –0.44% (2024)
+- **Birth rate:** 5.8 births/1,000 population (2023 est.)
+- **Death rate:** 12.7 deaths/1,000 population (2023 est.)
+- **Life expectancy:** 84.83 years
+- **• male:** 81 years
+- **• female:** 87 years
+- **Fertility rate:** 1.14 children born/woman (2024)
+- **Infant mortality rate:** 1.9 deaths/1,000 live births
+- **Net migration rate:** 0.74 migrant(s)/1,000 population
+- **0–14 years:** 10.9%
+- **15–64 years:** 59.7%
+- **65 and over:** 29.4%
+- **Total:** 0.95 male(s)/female (2022 est.)
+- **At birth:** 1.06 male(s)/female
+- **Nationality:** Japanese
+- **Major ethnic:** Japanese (97.5%) Yamatos (N/D) [ 4 ] Ryukyuans (N/D) Ainus (N/D)
+- **Minor ethnic:** Han Chinese (0.6%) [ 4 ] Viets (0.4%) [ 4 ] Koreans (0.3%) [ 4 ] Other groups (1.2%) [ 4 ]
+- **Official:** Japanese
+- **Spoken:** Languages of Japan
+
+Japan's population history
+
+The demography of [Japan](/wiki/Japan) is monitored by [National Institute of Population and Social Security Research](/wiki/National_Institute_of_Population_and_Social_Security_Research) (IPSS) and [Statistics Bureau](/wiki/Statistics_Bureau_(Japan)). As of April 2025, Japan's population was roughly 123.4 million people, and peaked at 128.5 million people in 2010. It is the [6th-most populous country](/wiki/List_of_Asian_countries_by_population) in Asia, and the [11th-most populous country](/wiki/List_of_countries_and_dependencies_by_population_(United_Nations)) in the world.
+
+In 2024, the [median age](/wiki/List_of_countries_by_median_age) of Japanese people was projected to be 49.9 years, the highest level since 1950, compared to 29.8 for India, 38.9 for the United States and 40.2 for China. Japan has the second highest median age in the world, behind only [Monaco](/wiki/Monaco). An improved quality of life and regular health checks are two reasons why Japan has one of the highest life expectancies in the world.
+
+The [life expectancy](/wiki/Life_expectancy) from birth in Japan improved significantly after [World War II](/wiki/World_War_II), rising 20 years between 1945 and 1955. As life expectancy rises further, Japan expects to experience difficulties caring for the older generations in the future. Shortages in the service sector are already a major concern, with demand for nurses and care workers increasing.
+
+The [fertility rate](/wiki/Total_fertility_rate) among Japanese women was around 1.4 children per woman from 2010 to 2018. From then until 2022, the fertility rate declined to 1.2. Apart from a small baby boom in the early 1970s, the crude birth rate in Japan has been declining since 1950. It reached its currently lowest point of 5.8 births per thousand people in 2023. With a falling birth rate and a large share of its inhabitants reaching old age, Japan's population is expected to continue declining, a trend that has been seen since 2010.
+
+[Japanese](/wiki/Japanese_language) is a major language of the [Japonic language family](/wiki/Japonic_languages) spoken by [Japanese people](/wiki/Japanese_people), which is separated into [several dialects](/wiki/Japanese_dialects), with the Tokyo dialect considered [Standard Japanese](/wiki/Japanese_language#Modern_Japanese). Japanese has around 128 million speakers, primarily in Japan, the only country where it is the [national language](/wiki/National_language), and within the [Japanese diaspora](/wiki/Japanese_diaspora) across the globe.
+
+The [sex ratio](/wiki/Human_sex_ratio) in Japan in 2021 was 95.38 males per 100 females. There are 61.53 million males and 64.52 million females in Japan. The female percentage of the population was 51.18%, compared to 48.82% male population. Japan has 2.98 million more females than males.
+
+## Historical overview
+
+Historical population
+
+| Year | Pop. | ±% p.a. |
+| --- | --- | --- |
+| 1920 | 55,963,053 | — |
+| 1925 | 59,736,822 | +1.31% |
+| 1930 | 64,450,005 | +1.53% |
+| 1935 | 69,254,148 | +1.45% |
+| 1940 | 73,114,308 | +1.09% |
+| 1945 | 71,998,104 | −0.31% |
+| 1950 | 83,199,637 | +2.93% |
+| 1955 | 89,275,529 | +1.42% |
+| 1960 | 93,418,501 | +0.91% |
+| 1965 | 98,274,961 | +1.02% |
+| 1970 | 103,720,060 | +1.08% |
+| 1975 | 111,939,643 | +1.54% |
+| 1980 | 117,060,396 | +0.90% |
+| 1985 | 121,048,923 | +0.67% |
+| 1990 | 123,611,167 | +0.42% |
+| 1995 | 125,570,246 | +0.31% |
+| 2000 | 126,925,843 | +0.21% |
+| 2005 | 127,767,994 | +0.13% |
+| 2010 | 128,057,352 | +0.05% |
+| 2015 | 127,094,745 | −0.15% |
+| 2020 | 126,146,099 | −0.15% |
+| 2025 | 123,210,000 | −0.47% |
+| Population size may be affected by changes in administrative divisions. | | |
+
+See also: [Demographics of the Empire of Japan](/wiki/Demographics_of_the_Empire_of_Japan) and [Demographic history of Japan before the Meiji Restoration](/wiki/Demographic_history_of_Japan_before_the_Meiji_Restoration)
+
+As of 2025, Japan was the world's [twelfth-most populous country](/wiki/List_of_countries_and_dependencies_by_population). Japan's population had declined by 0.8 percent from the time of the 2012 census, the first time it had declined since the 1945 census.
+
+Since 2010, Japan has experienced net population loss due to falling [birth rates](/wiki/Birth_rate) and minimal [immigration](/wiki/Immigration_to_Japan), despite having one of the highest [life expectancies](/wiki/Life_expectancy) in the world, at 85.00 years in 2016. It stood at 81.25 in 2006. Using the annual estimate for October of each year, the population peaked in 2008 at 128,083,960 and had fallen by 2,983,352 by October 2021.
+
+Based on 2012 data from the National Institute of Population and Social Security Research, Japan's population will keep declining by about one million people every year in the coming decades, which would leave it with a population of around 70 million by 2060 and 42 million by early 22nd century if the current [projections](/wiki/Human_population_projections) do not change. More than 40% of the population is expected to be over the age of 65 in 2060. In 2021, the population declined by 644,000, the largest drop on record since 1945 and also reflecting a record low of 831,000 births. In 2013, more than 20 percent of the population of Japan were aged 65 and over. Many reasons are behind the decline, including the declining birthrates, as well as the ratio of men to women since the last measurements from the years of 2006 and 2010. According to the Japanese Health Ministry, the population is estimated to drop from its current state of 125.58 million to 86.74 million by the year 2060.
+
+In July 2000, the population consisted of 47,062,743 households, with 78.7% in urban areas. Japan has a high population density of 329.5 people per square kilometer. There are 1,523 persons per square kilometer of habitable land.
+
+Japan dropped steadily from the 5th most populous country in the world to the 12th over the period of 1964 to 2023. Between 2010 to 2015, Japan's population shrank by almost a million, and Japan lost a half-million in 2022 alone. The number of Japanese citizens decreased by 801,000 to 122,423,038 in 2022 from a year earlier, which was the most severe decrease and the first time all 47 prefectures have suffered a decline since the launch of the poll in 1968. In early 2010, Japan's population reached 128,057,352. In the 2010s, the long-lasting effects of Japanese economic crisis during the [Great Recession](/wiki/Great_Recession) strongly slowed down immigration rates in Japan.
+
+In March 2011, Japan was hit by an [earthquake and tsunami](/wiki/2011_T%C5%8Dhoku_earthquake_and_tsunami), which caused the meltdown of the [Fukushima nuclear plant](/wiki/Fukushima_nuclear_accident). These disasters resulted in 20,000 deaths, a reduction of about 1.39 years in the average life expectancy, a decrease in birth rates, and the steepest decrease in immigration rates since the [Chernobyl disaster](/wiki/Chernobyl_disaster) in 1986.
+
+From January 2020 to the end of September 2021 and as a direct effect of [COVID-19 pandemic](/wiki/COVID-19_pandemic), Japan registered at least 112,000 excess deaths, a reduction of about 2.6 years in the average [life expectancy](/wiki/Life_expectancy), a noticeable decrease in birth rates and a marked decrease in immigration rates. The overall effect was a record population decline of 798,214 persons in that year, although the [excess mortality](/wiki/Excess_mortality) rate for all causes has been estimated at between 100,000 and 130,000 deaths. It is the largest population decline recorded since [World War I](/wiki/World_War_I) (1914–1918), [Spanish flu pandemic](/wiki/Spanish_flu) (1918–1920), [Great Kanto earthquake](/wiki/Great_Kant%C5%8D_Earthquake) (1923), [Showa Recession](/wiki/Sh%C5%8Dwa_financial_crisis) and Depression of 1930s, and [Asia-Pacific War](/wiki/Pacific_War) in [World War II](/wiki/World_War_II) (1937–1945).
+
+According to a demographic study conducted by [Japanese Ministry of Internal Affairs and Communications](/wiki/Ministry_of_Internal_Affairs_and_Communications), the Japanese population, including foreign residents, declined from 128 million people in 2010 to 124.3 million people in 2023, with a decrease of almost 511,000 people in one year.
+
+204060801001201401860189019201950198020102040millionJapan Total Population
+
+View [source data](https://commons.wikimedia.org/wiki/Data:Japan_Total_Population.tab).
+
+‰years-20-10010203040501860189019201950198020102040Natural change (per 1000)Crude migration change (per 1000)Japan Population Change
+
+View [source data](https://commons.wikimedia.org/wiki/Data:Japan_Population_Change.tab).
+
+‰year5101520253035401860189019201950198020102040birth ratedeath rateCrude birth and death rate
+
+View [source data](https://commons.wikimedia.org/wiki/Data:Japan_Natural_population_growth.tab).
+
+TFRyears1234561860189019201950198020102040Total Fertility RateTotal Fertility Rate (1873–2022)
+
+View [source data](https://commons.wikimedia.org/wiki/Data:Total_Fertility_Rate.tab).
+
+Infant Mortality (per 1000 births)years0306090120150180210189019201950198020102040Infant Mortality (per 1000 births)Infant Mortality Rate (1899–2022)
+
+View [source data](https://commons.wikimedia.org/wiki/Data:Infant_Mortality_Rate.tab).
+
+## Population
+
+### Census
+
+See also: [Population and housing censuses by country](/wiki/Population_and_housing_censuses_by_country)
+
+[Japan](/wiki/Japan) collects census information every five years, with censuses conducted by the [Statistics Bureau](/wiki/Statistics_Bureau_(Japan)) of the [Ministry of Internal Affairs](/wiki/Ministry_of_Internal_Affairs_and_Communications). The latest population census reflects the situation as of 2020.
+
+### Population density
+
+A map of Japan's population density [by municipality](/wiki/Municipalities_of_Japan), July 2025.
+
+In 2025, Japan's population density was 338 people per square kilometer (875 people per square mile). It ranks 41st in a [list of countries by population density](/wiki/List_of_countries_and_dependencies_by_population_density). Between 1955 and 1989, land prices in the six largest cities increased by 15,000%, +12% per year compounded. Urban land prices generally increased 40% from 1980 to 1987. In the six largest cities, the price of land doubled over that period. For many families, this trend put housing in central cities out of reach.
+
+The result was lengthy [commutes](/wiki/Commuting) for many workers in the big cities, especially in [Tokyo](/wiki/Tokyo) area/[Kanto Region](/wiki/Kant%C5%8D_region), where daily commutes of two hours each way are common. In 1991, as the bubble economy started to collapse, land prices began a steep decline, and within a few years fell 60% below their peak. After a decade of declining land prices, residents began moving back into central city areas, especially Tokyo's 23 wards, as evidenced by 2005 census figures. Despite nearly 70% of Japan being covered by forests, [parks](/wiki/Park) in many major cities—especially Tokyo and Osaka—are smaller and scarcer than in major West European or North American cities. As of 2014, parkland per inhabitant in Tokyo is 5.78 square meters, which is roughly half of the 11.5 square meters of Madrid.
+
+National and regional governments devote resources to making regional cities and rural areas more attractive by developing transportation networks, social services, industry, and educational institutions to try to decentralize settlement and improve the quality of life. Nevertheless, major cities, especially Tokyo, [Yokohama](/wiki/Yokohama) and [Fukuoka](/wiki/Fukuoka), and to a lesser extent [Kyoto](/wiki/Kyoto), [Osaka](/wiki/Osaka) and [Nagoya](/wiki/Nagoya), remain attractive to young people seeking education and jobs.
+
+### Urban distribution
+
+By 2015 census, the % of the population living in:
+
+1. [Kantō region](/wiki/Kant%C5%8D_region) (34.5%)
+2. [Keihanshin](/wiki/Keihanshin) (16.3%)
+3. [Tōkai region](/wiki/T%C5%8Dkai_region) (11.8%)
+4. [Kyushu region](/wiki/Kyushu) (11.4%)
+5. Rest of Japan (26.0%)
+
+Japan's population distribution by [regions](/wiki/List_of_regions_of_Japan) (blue shades) and [prefectures](/wiki/Prefectures_of_Japan) (red: most populous; green: less).
+[KANTO](/wiki/Kant%C5%8D_region), [KEIHANSHIN](/wiki/Keihanshin) and [TOKAI](/wiki/T%C5%8Dkai_region) are the three largest metropolitan areas, which have about 2/3 of Japan's population. Out of 47 prefectures, 13 are red and 34 are green.
+ Japan's population has been decreasing since 2011. Only 8 prefectures increased their population compared to 2010, due to internal migration to large cities.
+
+| External images | |
+| --- | --- |
+| Views of the World | |
+| [Japan Gridded Population Cartogram](http://www.viewsoftheworld.net/wp-content/uploads/2011/03/Japan_PopulationCartogram.png) | |
+| [Japan Gridded Population](https://worldmapper.org/maps/gridded-population-jpn/) | |
+
+Japan has a high population concentration in urban areas on the plains since 75% of Japan's land area is made up of mountains, and also Japan has a forest cover rate of 68.5% (the only other developed countries with such a high forest cover percentage are Finland and Sweden).
+The 2010 census shows 90.7% of the total Japanese population live in cities.
+
+Japan is an urban society with about only 5% of the [labor force](/wiki/Labor_force) working in [agriculture](/wiki/Agriculture). Many farmers supplement their income with [part-time jobs](/wiki/Part-time_job) in nearby towns and cities. About 80 million of the urban population is heavily concentrated on the Pacific shore of [Honshu](/wiki/Honshu).
+
+Metropolitan [Tokyo](/wiki/Tokyo)–[Yokohama](/wiki/Yokohama), with its population of 35 million residents, is the world's most populous city. Japan faces the same problems that confront urban industrialized societies throughout the world: overcrowded cities and congested [highways](/wiki/Highway).
+
+### Age structure
+
+Main article: [Aging of Japan](/wiki/Aging_of_Japan)
+
+[Median age by country](/wiki/List_of_countries_by_median_age)
+
+The age structure of Japan is highly unique and is characterized by a "super-aged" society and it is the oldest population structure in the world. This demographic profile results from the combination of a high life expectancy and a persistently low total fertility rate (TFR). The age distribution is often described as a constrictive or inverted pyramid shape, with a narrow base (few young people) and a large bulge in the middle and upper ages.
+
+Overview of the changing age distribution 1935–2020
+
+| Year | Total population (census; thousands) | Population by age (%) | | |
+| --- | --- | --- | --- | --- |
+| 0–14 | 15–64 | 65+ |
+| 1935 | 69,254 | 36.9% | 58.5% | 4.7% |
+| 1940 | 73,114 | 36.1% | 59.2% | 5.7% |
+| 1945 | 71,998 | 36.8% | 58.1% | 5.1% |
+| 1950 | 83,199 | 35.4% | 59.6% | 4.9% |
+| 1955 | 89,275 | 33.4% | 61.2% | 5.3% |
+| 1960 | 93,418 | 30.2% | 64.1% | 5.7% |
+| 1965 | 98,274 | 25.7% | 68.0% | 6.3% |
+| 1970 | 103,720 | 24.0% | 68.9% | 7.1% |
+| 1975 | 111,939 | 24.3% | 67.7% | 7.9% |
+| 1980 | 117,060 | 23.5% | 67.3% | 9.1% |
+| 1985 | 121,048 | 21.5% | 68.2% | 10.3% |
+| 1990 | 123,611 | 18.2% | 69.5% | 12.0% |
+| 1995 | 125,570 | 15.9% | 69.4% | 14.5% |
+| 2000 | 126,925 | 14.6% | 67.9% | 17.3% |
+| 2005 | 127,767 | 13.7% | 65.8% | 20.1% |
+| 2010 | 128,057 | 13.2% | 63.7% | 23.1% |
+| 2015 | 127,094 | 12.6% | 60.7% | 26.6% |
+| 2020 | 126,226 | 12.0% | 59.3% | 28.8% |
+| 2025 | 123,400 | 10.5% | 59.4% | 30.1% |
+
+Population projections for Japan ([National Institute of Population and Social Security Research](/wiki/National_Institute_of_Population_and_Social_Security_Research), 2023)
+
+- Population pyramids of Japan 2065 (middle-birth, middle-death scenario case)
+- Japan demographic transition 1888–2019
+
+Japan's population is [aging](/wiki/Population_ageing) faster than that of any other nation. The population of those 65 years or older roughly doubled in 24 years, from 7.1% of the population in 1970 to 14.1% in 1994. The same increase took 61 years in [Italy](/wiki/Demographics_of_Italy), 85 years in [Sweden](/wiki/Demographics_of_Sweden), and 115 years in [France](/wiki/Demographics_of_France). In 2014, 26% of Japan's population was estimated to be 65 years or older, and the Health and Welfare Ministry has estimated that over-65s will account for 40% of the population by 2060. The demographic shift in Japan's age profile has triggered concerns about the nation's economic future and the viability of its welfare state.
+
+- 1888
+- 1920 (1st national census of population)
+- 1925 (2nd national census of population)
+- 1930 (3rd national census of population)
+- 1935 (4th national census of population)
+- 1940 (5th national census of population)
+- 1947 (6th national census of population)
+- 1950 (7th national census of population)
+- 1955 (8th national census of population)
+- 1960 (9th national census of population)
+- 1965 (10th national census of population)
+- 1970 (11th national census of population)
+- 1975 (12th national census of population)
+- 1980 (13th national census of population)
+- 1985 (14th national census of population)
+- 1990 (15th national census of population)
+- 1995 (16th national census of population)
+- 2000 (17th national census of population)
+- 2005 (18th national census of population)
+- 2010 (19th national census of population)
+- 2015 (20th national census of population)
+- 2019 estimate
+- Live births and deaths of Japan (1946–2019)
+
+### Population pyramids by prefecture
+
+- Population pyramids of Japan's prefectures in 2020
+- Tokyo
+- Nagasaki
+- Hiroshima
+- Hokkaido
+- Kyoto
+- Aichi
+- Fukushima
+- Osaka
+- Okinawa
+- Aomori
+- Akita
+- Chiba
+- Ibaraki
+- Miyagi
+- Yamagata
+- Iwate
+- Fukuoka
+- Yamaguchi
+- Saga
+- Okayama
+- Toyama
+- Hyogo
+- Ishikawa
+- Niigata
+- Fukui
+- Ehime
+- Tokushima
+- Kagawa
+- Miyazaki
+- Kumamoto
+- Kagoshima
+- Kochi
+- Yamanashi
+- Oita
+- Kanagawa
+- Shizuoka
+- Mie
+- Wakayama
+- Saitama
+- Nara
+- Tochigi
+- Nagano
+- Gunma
+- Shiga
+- Gifu
+- Tottori
+- Shimane
+
+Population estimates by sex and age group (01.VII.2020) (Because of rounding, totals are not in all cases the sum of the respective components. Estimates or projections based on the 2015 population census.):
+
+| Age group | Male | Female | Total | % |
+| --- | --- | --- | --- | --- |
+| Total | 61 226 000 | 64 610 000 | 125 836 000 | 100 |
+| 0–4 | 2 406 000 | 2 288 000 | 4 694 000 | 3.73 |
+| 5–9 | 2 580 000 | 2 462 000 | 5 042 000 | 4.01 |
+| 10–14 | 2 736 000 | 2 605 000 | 5 341 000 | 4.24 |
+| 15–19 | 2 932 000 | 2 792 000 | 5 724 000 | 4.55 |
+| 20–24 | 3 298 000 | 3 089 000 | 6 386 000 | 5.07 |
+| 25–29 | 3 240 000 | 3 036 000 | 6 275 000 | 4.99 |
+| 30–34 | 3 391 000 | 3 244 000 | 6 635 000 | 5.27 |
+| 35–39 | 3 767 000 | 3 665 000 | 7 432 000 | 5.91 |
+| 40–44 | 4 289 000 | 4 183 000 | 8 472 000 | 6.73 |
+| 45–49 | 4 954 000 | 4 847 000 | 9 801 000 | 7.79 |
+| 50–54 | 4 353 000 | 4 305 000 | 8 658 000 | 6.88 |
+| 55–59 | 3 905 000 | 3 913 000 | 7 818 000 | 6.21 |
+| 60–64 | 3 674 000 | 3 770 000 | 7 443 000 | 5.91 |
+| 65–69 | 4 047 000 | 4 305 000 | 8 351 000 | 6.64 |
+| 70–74 | 4 288 000 | 4 798 000 | 9 086 000 | 7.22 |
+| 75–79 | 3 193 000 | 3 953 000 | 7 145 000 | 5.68 |
+| 80–84 | 2 239 000 | 3 159 000 | 5 398 000 | 4.29 |
+| 85–89 | 1 323 000 | 2 394 000 | 3 717 000 | 2.95 |
+| 90–94 | 506 000 | 1 316 000 | 1 822 000 | 1.45 |
+| 95–99 | 97 000 | 421 000 | 519 000 | 0.41 |
+| 100+ | 10 000 | 66 000 | 76 000 | 0.06 |
+| Age group | Male | Female | Total | Percent |
+| 0–14 | 7 722 000 | 7 355 000 | 15 077 000 | 11.98 |
+| 15–64 | 37 801 000 | 36 843 000 | 74 644 000 | 59.32 |
+| 65+ | 15 703 000 | 20 412 000 | 36 115 000 | 28.70 |
+
+### Sex ratio
+
+| Age group | 2006 | 2020 |
+| --- | --- | --- |
+| At birth | 1.05 | 1.06 |
+| 0–15 | 1.05 | 1.06 |
+| 15–64 | 1.01 | 1.01 |
+| 65+ | 0.73 | 0.78 |
+| Total | 0.95 | 0.94 |
+
+## Vital statistics
+
+Japanese birth and death rates since 1950.
+
+Births and total fertility rate of Japan
+
+### Statistics since 1873
+
+Source: [National Institute of Population and Social Security Research](/wiki/National_Institute_of_Population_and_Social_Security_Research) (IPSS) and [Statistics Bureau of Japan](/wiki/Statistics_Bureau_(Japan)) Figures for 1947-1972 do not include [Okinawa Prefecture](/wiki/Okinawa_Prefecture).
+
+Notable events in Japanese demographics:
+
+- 1939–1945 – [Second World War](/wiki/World_War_II)
+- 1947–1949 – [Post-World War II baby boom](/wiki/Mid-20th-century_baby_boom)
+- 1948 – [Abortion act](/wiki/Abortion_in_Japan) came into force
+- 1966 – [Year of the Fire Horse](/wiki/Fire_Horse#Births_in_1966)
+
+| Year | Average population (Oct 1) | Live births | Deaths | Natural change | Crude rates (per 1000) | | | | Total fertility rate | Net change | Infant mortality rate (per 1000 births) | Life expectancy | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Births | Deaths | Natural change | Migration | Males | Females |
+| 1873 | 34,806,000 | 809,000 | 660,694 | 148,306 | 23.1 | 18.9 | 4.3 |  | 3.41 |  |  |
+| 1874 | 34,985,000 | 836,000 | 696,653 | 139,347 | 23.8 | 19.8 | 4.0 | 1.3 | 3.52 | 179,000 |  |
+| 1875 | 35,316,000 | 869,000 | 654,562 | 214,438 | 24.6 | 18.5 | 6.1 | 2.1 | 3.74 | 331,000 |  |
+| 1876 | 35,555,000 | 903,000 | 613,022 | 289,978 | 25.4 | 17.2 | 8.2 | −1.5 | 3.75 | 239,000 |  |
+| 1877 | 35,870,000 | 891,000 | 620,306 | 270,694 | 24.8 | 17.3 | 7.5 | 0.1 | 3.67 | 315,000 |  |
+| 1878 | 36,166,000 | 875,000 | 603,277 | 271,723 | 24.2 | 16.7 | 7.5 | 2.5 | 3.58 | 296,000 |  |
+| 1879 | 36,464,000 | 877,000 | 721,147 | 155,853 | 24.0 | 19.8 | 4.3 | 3.6 | 3.55 | 298,000 |  |
+| 1880 | 36,649,000 | 884,000 | 603,055 | 281,945 | 24.1 | 16.5 | 7.7 | −2.7 | 3.59 | 185,000 |  |
+| 1881 | 36,965,000 | 941,000 | 686,064 | 254,936 | 25.5 | 18.6 | 6.9 | 1.7 | 3.77 | 316,000 |  |
+| 1882 | 37,259,000 | 923,000 | 668,342 | 254,658 | 24.8 | 17.9 | 6.8 | 1.4 | 3.67 | 294,000 |  |
+| 1883 | 37,569,000 | 1,005,000 | 676,369 | 328,631 | 26.8 | 18.0 | 8.7 | −1.3 | 3.96 | 310,000 |  |
+| 1884 | 37,962,000 | 975,000 | 705,126 | 269,874 | 25.7 | 18.6 | 7.1 | 3.2 | 3.80 | 393,000 |  |
+| 1885 | 38,313,000 | 1,025,000 | 886,824 | 138,176 | 26.7 | 23.1 | 3.6 | 1.3 | 3.98 | 351,000 |  |
+| 1886 | 38,541,000 | 1,051,000 | 938,343 | 112,657 | 27.3 | 24.3 | 2.9 | 3.1 | 4.04 | 228,000 |  |
+| 1887 | 38,703,000 | 1,058,000 | 753,456 | 304,544 | 27.3 | 19.5 | 7.9 | −4.0 | 4.04 | 162,000 |  |
+| 1888 | 39,029,000 | 1,173,000 | 752,834 | 420,166 | 30.0 | 19.3 | 10.8 | −1.1 | 4.43 | 326,000 |  |
+| 1889 | 39,473,000 | 1,210,000 | 808,680 | 401,320 | 30.7 | 20.5 | 10.2 | 1.7 | 4.54 | 444,000 |  |
+| 1890 | 39,902,000 | 1,145,000 | 823,718 | 321,282 | 28.7 | 20.6 | 8.1 | 2.1 | 4.18 | 429,000 |  |
+| 1891 | 40,251,000 | 1,087,000 | 853,139 | 233,861 | 27.0 | 21.2 | 5.8 | 4.2 | 3.99 | 349,000 |  |
+| 1892 | 40,508,000 | 1,207,000 | 886,988 | 320,012 | 29.8 | 21.9 | 7.9 | −0.3 | 4.40 | 257,000 |  |
+| 1893 | 40,860,000 | 1,178,000 | 937,644 | 240,356 | 28.8 | 22.9 | 5.9 | 4.5 | 4.26 | 352,000 |  |
+| 1894 | 41,142,000 | 1,209,000 | 840,768 | 368,232 | 29.4 | 20.4 | 8.9 | −1.3 | 4.35 | 282,000 |  |
+| 1895 | 41,557,000 | 1,246,000 | 852,422 | 393,578 | 30.0 | 20.5 | 9.5 | 1.1 | 4.36 | 415,000 |  |
+| 1896 | 41,992,000 | 1,282,000 | 912,822 | 369,178 | 30.5 | 21.7 | 8.8 | 3.1 | 4.51 | 435,000 |  |
+| 1897 | 42,400,000 | 1,334,000 | 876,837 | 457,163 | 31.5 | 20.7 | 10.8 | −1.9 | 4.66 | 408,000 |  |
+| 1898 | 42,886,000 | 1,370,000 | 894,524 | 475,476 | 31.9 | 20.9 | 11.1 | 0.3 | 4.72 | 486,000 |  |
+| 1899 | 43,400,000 | 1,386,981 | 932,087 | 454,894 | 32.0 | 21.5 | 10.5 | 1.4 | 4.73 | 514,000 | 153.8 |  |  |
+| 1900 | 43,847,000 | 1,420,534 | 910,744 | 509,790 | 32.4 | 20.8 | 11.6 | −1.4 | 4.69 | 447,000 | 155.0 |  |  |
+| 1901 | 44,359,000 | 1,501,591 | 925,810 | 575,781 | 33.9 | 20.9 | 13.0 | −1.5 | 5.01 | 512,100 | 149.9 |  |  |
+| 1902 | 44,964,000 | 1,510,853 | 959,126 | 551,709 | 33.6 | 21.3 | 12.3 | 1.2 | 4.97 | 605,000 | 154.0 |  |  |
+| 1903 | 45,546,000 | 1,489,816 | 931,008 | 558,808 | 32.0 | 20.0 | 13.5 | 0.5 | 4.83 | 582,000 | 152.4 |  |  |
+| 1904 | 46,135,000 | 1,440,371 | 955,400 | 484,971 | 30.6 | 21.2 | 10.7 | 2.3 | 4.61 | 589,000 | 151.9 |  |  |
+| 1905 | 46,620,000 | 1,452,770 | 1,004,661 | 448,109 | 30.6 | 21.9 | 10.1 | 0.8 | 4.52 | 485,000 | 151.7 |  |  |
+| 1906 | 47,038,000 | 1,394,295 | 955,256 | 439,039 | 29.0 | 20.0 | 10.6 | −0.5 | 4.38 | 418,000 | 153.6 |  |  |
+| 1907 | 47,416,000 | 1,614,472 | 1,016,798 | 597,674 | 33.2 | 21.0 | 13.9 | −4.7 | 5.03 | 378,000 | 151.3 |  |  |
+| 1908 | 47,965,000 | 1,662,815 | 1,029,447 | 633,368 | 33.7 | 20.9 | 14.5 | −1.8 | 5.13 | 549,000 | 158.0 |  |  |
+| 1909 | 48,554,000 | 1,693,850 | 1,091,264 | 602,586 | 33.9 | 21.9 | 13.8 | −0.3 | 5.16 | 589,000 | 167.3 |  |  |
+| 1910 | 49,184,000 | 1,712,857 | 1,064,234 | 648,623 | 33.9 | 21.1 | 14.5 | −0.4 | 5.01 | 630,000 | 161.2 |  |  |
+| 1911 | 49,852,000 | 1,747,803 | 1,043,906 | 703,897 | 34.1 | 20.4 | 15.5 | −0.7 | 5.19 | 668,000 | 158.4 |  |  |
+| 1912 | 50,577,000 | 1,737,674 | 1,037,016 | 700,658 | 33.4 | 20.0 | 15.3 | −0.5 | 5.08 | 725,000 | 154.2 |  |  |
+| 1913 | 51,305,000 | 1,757,441 | 1,027,257 | 730,184 | 33.3 | 19.5 | 15.6 | 0 | 5.07 | 728,000 | 152.1 |  |  |
+| 1914 | 52,039,000 | 1,808,402 | 1,101,815 | 706,587 | 33.8 | 20.6 | 14.9 | 0.5 | 5.14 | 734,000 | 158.5 |  |  |
+| 1915 | 52,752,000 | 1,799,326 | 1,093,793 | 705,533 | 33.2 | 20.2 | 14.4 | 0.1 | 4.91 | 713,000 | 160.4 |  |  |
+| 1916 | 53,496,000 | 1,804,822 | 1,187,832 | 616,990 | 32.9 | 21.6 | 12.7 | 2.4 | 4.98 | 744,000 | 170.3 |  |  |
+| 1917 | 54,134,000 | 1,812,413 | 1,199,669 | 612,744 | 32.7 | 21.6 | 12.5 | 0.5 | 4.95 | 738,000 | 173.2 |  |  |
+| 1918 | 54,739,000 | 1,791,992 | 1,493,162 | 298,830 | 32.2 | 26.7 | 6.4 | 5.7 | 4.83 | 605,000 | 188.6 |  |  |
+| 1919 | 55,033,000 | 1,778,685 | 1,281,965 | 496,720 | 31.6 | 22.8 | 10.2 | −3.7 | 4.77 | 294,000 | 170.5 |  |  |
+| 1920 | 55,963,053 | 2,025,564 | 1,422,096 | 603,468 | 36.2 | 25.4 | 12.0 | 5.9 | 5.35 | 930,053 | 165.7 |  |  |
+| 1921 | 56,666,000 | 1,990,876 | 1,288,570 | 702,306 | 35.1 | 22.7 | 12.4 | 0.0 | 5.22 | 702,947 | 168.3 |  |  |
+| 1922 | 57,390,000 | 1,969,314 | 1,286,941 | 682,373 | 34.3 | 22.4 | 11.9 | 0.7 | 5.12 | 724,000 | 166.4 |  |  |
+| 1923 | 58,119,000 | 2,043,297 | 1,332,485 | 710,812 | 35.2 | 22.9 | 12.2 | 0.3 | 5.26 | 729,000 | 163.4 |  |  |
+| 1924 | 58,876,000 | 1,998,520 | 1,254,946 | 743,574 | 33.9 | 21.3 | 12.6 | 0.2 | 5.07 | 757,000 | 156.2 |  |  |
+| 1925 | 59,736,822 | 2,086,091 | 1,210,706 | 875,395 | 34.9 | 20.3 | 14.5 | −0.2 | 5.10 | 860,822 | 142.4 |  |  |
+| 1926 | 60,741,000 | 2,104,405 | 1,160,734 | 943,671 | 34.6 | 19.1 | 15.5 | 1.0 | 5.19 | 1,004,178 | 137.5 |  |  |
+| 1927 | 61,659,300 | 2,060,737 | 1,214,323 | 846,414 | 33.4 | 19.7 | 13.7 | 1.2 | 5.00 | 918,000 | 141.6 |  |  |
+| 1928 | 62,595,300 | 2,135,852 | 1,236,711 | 899,141 | 34.1 | 19.8 | 14.4 | 0.6 | 5.09 | 936,000 | 136.7 |  |  |
+| 1929 | 63,461,000 | 2,077,026 | 1,261,228 | 815,798 | 32.7 | 19.9 | 12.9 | 0.8 | 4.87 | 866,000 | 142.1 |  |  |
+| 1930 | 64,450,005 | 2,085,101 | 1,170,867 | 914,234 | 32.4 | 18.2 | 14.2 | 1.2 | 4.70 | 989,005 | 124.1 |  |  |
+| 1931 | 65,457,500 | 2,102,784 | 1,240,891 | 861,893 | 32.1 | 19.0 | 13.2 | 2.3 | 4.76 | 1,006,995 | 131.5 |  |  |
+| 1932 | 66,433,800 | 2,182,742 | 1,175,344 | 1,007,398 | 32.9 | 17.7 | 15.2 | −0.5 | 4.86 | 343,000 | 117.5 |  |  |
+| 1933 | 67,431,600 | 2,121,253 | 1,193,987 | 927,266 | 31.5 | 17.7 | 13.8 | 1.1 | 4.63 | 990,000 | 121.3 |  |  |
+| 1934 | 68,308,900 | 2,043,783 | 1,234,684 | 809,099 | 29.9 | 18.1 | 11.9 | 1.0 | 4.39 | 890,000 | 124.8 |  |  |
+| 1935 | 69,254,148 | 2,190,704 | 1,161,936 | 1,028,768 | 31.6 | 16.8 | 14.9 | −1.2 | 4.59 | 574,148 | 106.7 |  |  |
+| 1936 | 70,113,600 | 2,101,969 | 1,230,278 | 871,691 | 30.0 | 17.5 | 12.4 | −0.2 | 4.34 | 345,852 | 116.7 | 46.92 | 49.63 |
+| 1937 | 70,630,400 | 2,180,734 | 1,207,899 | 972,835 | 30.9 | 17.1 | 13.7 | −6.5 | 4.45 | 770,000 | 105.8 |  |  |
+| 1938 | 71,012,600 | 1,928,321 | 1,259,805 | 668,516 | 27.2 | 17.7 | 9.4 | −4.1 | 3.88 | 230,000 | 114.4 |  |  |
+| 1939 | 71,379,700 | 1,901,573 | 1,268,760 | 632,813 | 26.6 | 17.8 | 8.8 | −3.7 | 3.80 | 340,000 | 106.2 |  |  |
+| 1940 | 71,993,000 | 2,115,867 | 1,186,595 | 929,272 | 29.4 | 16.4 | 12.9 | −4.4 | 4.11 | 2,184,308 | 90.0 |  |  |
+| 1941 | 71,678,000 | 2,277,283 | 1,149,559 | 1,127,724 | 31.1 | 15.7 | 15.4 | −20.0 | 4.36 | −364,308 | 84.1 |  |  |
+| 1942 | 72,386,000 | 2,233,660 | 1,166,630 | 1,067,030 | 30.3 | 15.8 | 14.4 | −5.0 | 4.18 | 700,000 | 85.5 |  |  |
+| 1943 | 72,887,700 | 2,253,535 | 1,213,811 | 1,039,724 | 30.3 | 16.3 | 13.9 | −7.4 | 4.11 | 530,000 | 86.6 |  |  |
+| 1944 | 73,064,000 | 2,149,843 | 1,279,639 | 870,204 | 29.2 | 17.4 | 11.8 | −9.5 | 3.95 | −115,000 |  |  |  |
+| 1945 | 71,998,104 | 1,685,583 | 2,113,798 | -428,215 | 23.2 | 29.2 | −5.9 | −8.7 | 3.11 | −1,866,896 |  |  |  |
+| 1946 | 73,114,000 | 1,905,809 | 1,326,592 | 579,217 | 25.3 | 17.6 | 7.7 | 7.5 | 3.37 | 3,301,896 |  |  |  |
+| 1947 | 78,101,000 | 2,678,792 | 1,138,238 | 1,540,554 | 34.3 | 14.6 | 19.7 | 47.1 | 4.541 | 2,725,000 | 76.7 | 50.06 | 53.96 |
+| 1948 | 80,002,500 | 2,681,624 | 950,610 | 1,731,014 | 33.7 | 12.0 | 21.8 | 2.2 | 4.400 | 1,475,000 | 61.7 | 55.6 | 59.4 |
+| 1949 | 81,772,600 | 2,696,638 | 945,444 | 1,751,194 | 33.2 | 11.6 | 21.5 | 0.2 | 4.316 | 1,800,000 | 62.5 | 56.2 | 59.8 |
+| 1950 | 83,199,637 | 2,337,507 | 904,876 | 1,432,631 | 28.2 | 10.9 | 17.3 | −0.1 | 3.650 | 1,899,637 | 60.1 | 58.0 | 61.5 |
+| 1951 | 84,541,000 | 2,137,689 | 838,998 | 1,298,691 | 25.4 | 10.0 | 15.4 | 0.5 | 3.262 | 1,035,363 | 57.5 | 59.57 | 62.97 |
+| 1952 | 85,808,000 | 2,005,162 | 765,068 | 1,240,094 | 23.5 | 8.9 | 14.5 | 0.3 | 2.976 | 1,268,000 | 49.4 | 61.9 | 65.5 |
+| 1953 | 86,981,000 | 1,868,040 | 772,547 | 1,095,493 | 21.5 | 8.9 | 12.6 | 0.9 | 2.695 | 1,192,000 | 48.9 | 61.9 | 65.7 |
+| 1954 | 88,239,000 | 1,769,580 | 721,491 | 1,048,089 | 20.1 | 8.2 | 11.9 | 2.4 | 2.481 | 1,281,000 | 44.6 | 63.41 | 67.69 |
+| 1955 | 89,275,529 | 1,730,692 | 693,523 | 1,037,169 | 19.4 | 7.8 | 11.7 | 0 | 2.370 | 1,299,529 | 39.8 | 63.60 | 67.75 |
+| 1956 | 90,172,000 | 1,665,278 | 724,460 | 940,818 | 18.5 | 8.1 | 10.5 | −0.5 | 2.223 | 677,471 | 40.6 | 63.59 | 67.54 |
+| 1957 | 90,928,000 | 1,566,713 | 752,445 | 814,268 | 17.3 | 8.3 | 9.0 | −0.6 | 2.043 | 781,000 | 40.0 | 63.24 | 67.60 |
+| 1958 | 91,767,000 | 1,653,469 | 684,189 | 969,280 | 18.1 | 7.5 | 10.6 | −1.4 | 2.110 | 812,000 | 34.5 | 64.98 | 69.61 |
+| 1959 | 92,641,000 | 1,626,088 | 689,959 | 936,129 | 17.6 | 7.5 | 10.1 | −0.7 | 2.039 | 888,000 | 33.7 | 65.21 | 69.88 |
+| 1960 | 93,418,501 | 1,606,041 | 706,599 | 899,442 | 17.3 | 7.6 | 9.7 | −1.3 | 2.004 | 984,501 | 30.7 | 65.32 | 70.19 |
+| 1961 | 94,287,000 | 1,589,372 | 695,644 | 893,728 | 17.0 | 7.4 | 9.6 | −0.3 | 1.961 | 1,524,499 | 28.6 | 66.03 | 70.79 |
+| 1962 | 95,181,000 | 1,618,616 | 710,265 | 908,351 | 17.1 | 7.5 | 9.6 | −0.2 | 1.976 | 889,000 | 26.4 | 66.23 | 71.16 |
+| 1963 | 96,156,000 | 1,659,521 | 670,770 | 988,751 | 17.4 | 7.0 | 10.4 | −0.1 | 2.005 | 980,000 | 23.2 | 67.21 | 72.34 |
+| 1964 | 97,182,000 | 1,716,761 | 673,067 | 1,043,694 | 17.8 | 6.9 | 10.8 | −0.2 | 2.049 | 1,014,000 | 20.4 | 67.67 | 72.87 |
+| 1965 | 98,274,961 | 1,823,697 | 700,438 | 1,123,259 | 18.7 | 7.1 | 11.5 | −0.3 | 2.139 | 448,961 | 18.5 | 67.74 | 72.92 |
+| 1966 | 99,036,000 | 1,360,974 | 670,342 | 690,632 | 13.8 | 6.8 | 7.1 | 0.7 | 1.578 | 1,515,039 | 19.3 | 68.35 | 73.61 |
+| 1967 | 100,196,000 | 1,935,647 | 675,006 | 1,260,641 | 19.4 | 6.7 | 12.7 | −1.0 | 2.226 | 935,000 | 14.9 | 68.91 | 74.15 |
+| 1968 | 101,331,000 | 1,871,839 | 686,555 | 1,185,284 | 18.5 | 6.8 | 11.8 | −0.5 | 2.134 | 1,336,000 | 15.3 | 69.05 | 74.30 |
+| 1969 | 102,536,000 | 1,889,815 | 693,787 | 1,196,028 | 18.5 | 6.8 | 11.7 | 0.1 | 2.131 | 1,111,000 | 14.2 | 69.18 | 74.67 |
+| 1970 | 103,720,060 | 1,934,239 | 712,962 | 1,221,277 | 18.7 | 6.9 | 11.9 | −0.4 | 2.135 | 548,060 | 13.1 | 69.31 | 74.66 |
+| 1971 | 105,145,000 | 2,000,973 | 684,521 | 1,316,452 | 19.1 | 6.5 | 12.6 | 1.0 | 2.157 | 1,976,940 | 12.4 | 70.17 | 75.58 |
+| 1972 | 107,595,000 | 2,038,682 | 683,751 | 1,354,931 | 19.2 | 6.4 | 12.8 | 10.4 | 2.142 | 1,491,000 | 11.7 | 70.50 | 75.94 |
+| 1973 | 109,104,000 | 2,091,983 | 709,416 | 1,382,567 | 19.2 | 6.5 | 12.7 | 1.2 | 2.140 | 1,521,000 | 11.3 | 70.70 | 76.02 |
+| 1974 | 110,573,000 | 2,029,989 | 710,510 | 1,319,479 | 18.4 | 6.4 | 12.0 | 1.4 | 2.049 | 1,453,000 | 10.8 | 71.16 | 76.31 |
+| 1975 | 111,939,643 | 1,901,440 | 702,275 | 1,199,165 | 17.0 | 6.3 | 10.7 | 1.5 | 1.909 | 1,777,643 | 10.0 | 71.73 | 76.89 |
+| 1976 | 113,094,000 | 1,832,617 | 703,270 | 1,129,347 | 16.3 | 6.2 | 10.0 | 0.2 | 1.852 | 835,357 | 9.3 | 72.15 | 77.35 |
+| 1977 | 114,165,000 | 1,755,100 | 690,074 | 1,065,026 | 15.4 | 6.1 | 9.4 | 0.1 | 1.800 | 1,097,000 | 8.9 | 72.69 | 77.95 |
+| 1978 | 115,190,000 | 1,708,643 | 695,821 | 1,012,822 | 14.9 | 6.1 | 8.8 | 0.1 | 1.792 | 662,000 | 8.4 | 72.97 | 78.33 |
+| 1979 | 116,155,000 | 1,642,580 | 689,664 | 952,916 | 14.2 | 6.0 | 8.2 | 0.1 | 1.769 | 962,000 | 7.9 | 73.46 | 78.89 |
+| 1980 | 117,060,396 | 1,576,889 | 722,801 | 854,088 | 13.6 | 6.2 | 7.3 | 0.4 | 1.747 | 1,104,396 | 7.5 | 73.35 | 78.76 |
+| 1981 | 117,902,000 | 1,529,455 | 720,262 | 809,193 | 13.0 | 6.1 | 6.9 | 0.3 | 1.741 | 621,604 | 7.1 | 73.79 | 79.13 |
+| 1982 | 118,728,000 | 1,515,392 | 711,883 | 803,509 | 12.8 | 6.0 | 6.8 | 0.2 | 1.770 | 821,000 | 6.6 | 74.22 | 79.66 |
+| 1983 | 119,536,000 | 1,508,687 | 740,038 | 768,649 | 12.7 | 6.2 | 6.5 | 0.3 | 1.800 | 796,000 | 6.2 | 74.20 | 79.78 |
+| 1984 | 120,305,000 | 1,489,780 | 740,247 | 749,533 | 12.5 | 6.2 | 6.3 | 0.2 | 1.811 | 654,000 | 6.0 | 74.54 | 80.18 |
+| 1985 | 121,049,000 | 1,431,577 | 752,283 | 679,294 | 11.9 | 6.3 | 5.6 | 0.5 | 1.764 | 755,923 | 5.5 | 74.78 | 80.48 |
+| 1986 | 121,660,000 | 1,382,946 | 750,620 | 632,326 | 11.4 | 6.2 | 5.2 | −0.2 | 1.723 | 670,077 | 5.2 | 75.23 | 80.93 |
+| 1987 | 122,239,000 | 1,346,658 | 751,172 | 595,486 | 11.1 | 6.2 | 4.9 | −0.1 | 1.690 | 863,000 | 5.0 | 75.61 | 81.39 |
+| 1988 | 122,745,000 | 1,314,006 | 793,014 | 520,992 | 10.8 | 6.5 | 4.3 | −0.1 | 1.656 | 565,000 | 4.8 | 75.54 | 81.30 |
+| 1989 | 123,205,000 | 1,246,802 | 788,594 | 458,208 | 10.2 | 6.4 | 3.7 | 0 | 1.572 | 609,000 | 4.6 | 75.91 | 81.77 |
+| 1990 | 123,611,000 | 1,221,585 | 820,305 | 401,280 | 10.0 | 6.7 | 3.3 | 0 | 1.543 | 455,167 | 4.6 | 75.92 | 81.90 |
+| 1991 | 124,101,000 | 1,223,245 | 829,797 | 393,448 | 9.9 | 6.7 | 3.2 | 0.8 | 1.533 | 511,833 | 4.4 | 76.11 | 82.11 |
+| 1992 | 124,567,000 | 1,208,989 | 856,643 | 352,346 | 9.8 | 6.9 | 2.9 | 0.9 | 1.502 | 453,000 | 4.5 | 76.09 | 82.22 |
+| 1993 | 124,928,000 | 1,188,282 | 878,532 | 309,750 | 9.6 | 7.1 | 2.5 | 0.4 | 1.458 | 431,000 | 4.3 | 76.25 | 82.51 |
+| 1994 | 125,265,000 | 1,238,328 | 875,933 | 362,395 | 10.0 | 7.1 | 2.9 | −0.2 | 1.500 | 452,000 | 4.2 | 76.57 | 82.98 |
+| 1995 | 125,570,000 | 1,187,064 | 922,139 | 264,925 | 9.6 | 7.4 | 2.2 | 0.3 | 1.423 | 213,000 | 4.3 | 76.38 | 82.85 |
+| 1996 | 125,859,000 | 1,206,555 | 896,211 | 310,344 | 9.7 | 7.2 | 2.5 | −0.2 | 1.425 | 285,000 | 3.8 | 77.01 | 83.59 |
+| 1997 | 126,157,000 | 1,191,665 | 913,402 | 278,263 | 9.5 | 7.3 | 2.2 | 0.2 | 1.388 | 300,000 | 3.7 | 77.19 | 83.82 |
+| 1998 | 126,472,000 | 1,203,147 | 936,484 | 266,663 | 9.6 | 7.5 | 2.1 | 0.4 | 1.384 | 343,000 | 3.6 | 77.16 | 84.01 |
+| 1999 | 126,767,000 | 1,177,669 | 982,031 | 195,638 | 9.4 | 7.8 | 1.6 | 0.8 | 1.342 | 231,000 | 3.4 | 77.10 | 83.99 |
+| 2000 | 127,076,000 | 1,190,547 | 961,653 | 228,894 | 9.5 | 7.7 | 1.8 | 0.6 | 1.359 | 212,000 | 3.2 | 77.72 | 84.60 |
+| 2001 | 127,291,000 | 1,170,662 | 970,331 | 200,331 | 9.3 | 7.7 | 1.6 | 0.1 | 1.334 | 306,000 | 3.1 | 78.07 | 84.93 |
+| 2002 | 127,435,000 | 1,153,855 | 982,379 | 171,476 | 9.2 | 7.8 | 1.4 | −0.2 | 1.319 | 296,000 | 3.0 | 78.32 | 85.23 |
+| 2003 | 127,619,000 | 1,123,610 | 1,014,951 | 108,659 | 8.9 | 8.0 | 0.9 | 0.6 | 1.291 | 273,000 | 3.0 | 78.36 | 85.33 |
+| 2004 | 127,687,000 | 1,110,721 | 1,028,602 | 82,119 | 8.8 | 8.2 | 0.6 | −0.1 | 1.289 | 43,000 | 2.8 | 78.64 | 85.59 |
+| 2005 | 127,768,000 | 1,062,530 | 1,083,796 | −21,266 | 8.4 | 8.6 | −0.2 | 0.8 | 1.260 | 12,000 | 2.8 | 78.56 | 85.52 |
+| 2006 | 127,901,000 | 1,092,674 | 1,084,451 | 8,223 | 8.7 | 8.6 | 0.1 | −0.0 | 1.317 | 81,000 | 2.6 | 79.00 | 85.81 |
+| 2007 | 128,033,000 | 1,089,818 | 1,108,334 | −18,516 | 8.6 | 8.8 | −0.2 | 0.2 | 1.337 | 147,000 | 2.6 | 79.19 | 85.99 |
+| 2008 | 128,084,000 | 1,091,156 | 1,142,407 | −51,251 | 8.7 | 9.1 | −0.4 | −0.2 | 1.367 | 62,000 | 2.6 | 79.29 | 86.05 |
+| 2009 | 128,032,000 | 1,070,036 | 1,141,865 | −71,829 | 8.5 | 9.1 | −0.6 | −0.9 | 1.368 | −52,000 | 2.4 | 79.59 | 86.44 |
+| 2010 | 128,057,352 | 1,071,305 | 1,197,014 | −125,709 | 8.5 | 9.5 | −1.0 | 1.4 | 1.387 | 25,352 | 2.3 | 79.64 | 86.39 |
+| 2011 | 127,834,000 | 1,050,807 | 1,253,068 | −202,261 | 8.3 | 9.9 | −1.6 | −0.4 | 1.393 | −222,648 | 2.3 | 79.44 | 85.90 |
+| 2012 | 127,593,000 | 1,037,232 | 1,256,359 | −219,127 | 8.2 | 10.0 | −1.8 | −0.4 | 1.405 | −241,000 | 2.2 | 79.93 | 86.37 |
+| 2013 | 127,414,000 | 1,029,817 | 1,268,438 | −238,621 | 8.2 | 10.1 | −1.9 | 1.7 | 1.427 | −179,000 | 2.1 | 80.19 | 86.56 |
+| 2014 | 127,237,000 | 1,003,609 | 1,273,025 | −269,416 | 8.0 | 10.1 | −2.1 | 2.0 | 1.423 | −177,000 | 2.1 | 80.48 | 86.77 |
+| 2015 | 127,094,745 | 1,005,721 | 1,290,510 | −284,789 | 8.0 | 10.3 | −2.3 | 1.0 | 1.451 | −142,245 | 1.9 | 80.75 | 86.98 |
+| 2016 | 127,042,000 | 977,242 | 1,308,158 | −330,916 | 7.8 | 10.5 | −2.7 | 1.2 | 1.442 | −52,745 | 2.0 | 80.98 | 87.14 |
+| 2017 | 126,919,000 | 946,146 | 1,340,567 | −394,421 | 7.6 | 10.8 | −3.2 | 2.1 | 1.428 | −123,000 | 1.9 | 81.09 | 87.26 |
+| 2018 | 126,749,000 | 918,397 | 1,362,482 | −444,085 | 7.4 | 11.0 | −3.6 | 3.0 | 1.416 | −170,000 | 1.9 | 81.25 | 87.32 |
+| 2019 | 126,555,000 | 865,239 | 1,381,093 | −515,854 | 7.0 | 11.2 | −4.2 | 1.8 | 1.361 | −194,000 | 1.9 | 81.41 | 87.45 |
+| 2020 | 126,146,099 | 840,832 | 1,372,648 | −531,816 | 6.8 | 11.1 | −4.3 | 1.0 | 1.330 | −408,901 | 1.8 | 81.64 | 87.74 |
+| 2021 | 125,502,000 | 811,604 | 1,439,809 | −628,205 | 6.6 | 11.7 | −5.1 | 2.3 | 1.303 | −644,099 | 1.7 | 81.47 | 87.57 |
+| 2022 | 124,947,000 | 770,759 | 1,569,050 | −798,291 | 6.1 | 12.5 | −6.4 | 1.9 | 1.257 | −555,000 | 1.8 | 80.74 | 86.88 |
+| 2023 | 124,352,000 | 727,277 | 1,575,936 | −848,659 | 5.8 | 12.7 | −6.9 | 0.9 | 1.201 | −595,000 | 1.8 | 81.09 | 87.14 |
+| 2024 | 123,802,000 | 686,061 | 1,605,298 | −919,237 | 5.5 | 12.9 | −7.5 | 3.0 | 1.147 | −550,000 | 1.8 | 81.09 | 87.13 |
+| 2025 | 123,210,000 | 668,000(e) |  |  |  |  |  |  |  | –592,000 |  |  |  |
+
+### Current vital statistics
+
+| Period | Live births | Deaths | Natural increase |
+| --- | --- | --- | --- |
+| January–February 2025 | 109,336 | 321,457 | −212,121 |
+| January–February 2026 | 109,455 | 283,415 | −173,960 |
+| Difference | 119 (+0.1%) | −38,042 (−11.8%) | +38,161 |
+| Source: | | | |
+
+To be revised. The preliminary figures represent the total number of submitted questionnaires and include events pertaining to Japanese nationals residing in Japan, foreign nationals residing in Japan, Japanese nationals residing overseas. A summary focusing solely on 'Japanese nationals residing in Japan,' with slight revisions added, constitutes the official vital statistics (final counts).
+
+### Total fertility rate by prefecture
+
+2024
+
+| Prefecture | TFR |
+| --- | --- |
+| [Tokyo](/wiki/Tokyo) | 0.95 |
+| [Hokkaido](/wiki/Hokkaido) | 1.01 |
+| [Miyagi](/wiki/Miyagi_Prefecture) | 1.03 |
+| [Akita](/wiki/Akita_Prefecture) | 1.06 |
+| [Kyoto](/wiki/Kyoto_Prefecture) | 1.07 |
+| [Kanagawa](/wiki/Kanagawa) | 1.09 |
+| [Saitama](/wiki/Saitama_Prefecture) | 1.10 |
+| [Chiba](/wiki/Chiba_Prefecture) | 1.10 |
+| [Iwate](/wiki/Iwate_Prefecture) | 1.12 |
+| [Osaka](/wiki/Osaka_Prefecture) | 1.15 |
+| [Tochigi](/wiki/Tochigi_Prefecture) | 1.15 |
+| **[Japan](/wiki/Japan)** | 1.15 |
+| [Nara](/wiki/Nara_Prefecture) | 1.17 |
+| [Fukushima](/wiki/Fukushima_Prefecture) | 1.17 |
+| [Ibaraki](/wiki/Ibaraki_Prefecture) | 1.18 |
+| [Yamagata](/wiki/Yamagata_Prefecture) | 1.18 |
+| [Aomori](/wiki/Aomori_Prefecture) | 1.19 |
+| [Niigata](/wiki/Niigata_Prefecture) | 1.19 |
+| [Gunma](/wiki/Gunma_Prefecture) | 1.21 |
+| [Shizuoka](/wiki/Shizuoka_Prefecture) | 1.21 |
+| [Fukuoka](/wiki/Fukuoka_Prefecture) | 1.22 |
+| [Hyogo](/wiki/Hy%C5%8Dgo_Prefecture) | 1.25 |
+| [Aichi](/wiki/Aichi_Prefecture) | 1.25 |
+| [Mie](/wiki/Mie_Prefecture) | 1.25 |
+| [Kochi](/wiki/K%C5%8Dchi_Prefecture) | 1.26 |
+| [Gifu](/wiki/Gifu_Prefecture) | 1.27 |
+| [Ehime](/wiki/Ehime_Prefecture) | 1.27 |
+| [Okayama](/wiki/Okayama_Prefecture) | 1.28 |
+| [Yamanashi](/wiki/Yamanashi_Prefecture) | 1.28 |
+| [Wakayama](/wiki/Wakayama_Prefecture) | 1.29 |
+| [Hiroshima](/wiki/Hiroshima_Prefecture) | 1.29 |
+| [Ishikawa](/wiki/Ishikawa_Prefecture) | 1.30 |
+| [Nagano](/wiki/Nagano_Prefecture) | 1.30 |
+| [Toyama](/wiki/Toyama_Prefecture) | 1.31 |
+| [Tokushima](/wiki/Tokushima_Prefecture) | 1.32 |
+| [Shiga](/wiki/Shiga_Prefecture) | 1.34 |
+| [Oita](/wiki/%C5%8Cita_Prefecture) | 1.35 |
+| [Kagawa](/wiki/Kagawa_Prefecture) | 1.36 |
+| [Yamaguchi](/wiki/Yamaguchi_Prefecture) | 1.36 |
+| [Tottori](/wiki/Tottori_Prefecture) | 1.40 |
+| [Fukui](/wiki/Fukui_Prefecture) | 1.42 |
+| [Shimane](/wiki/Shimane_Prefecture) | 1.42 |
+| [Saga](/wiki/Saga_Prefecture) | 1.42 |
+| [Kumamoto](/wiki/Kumamoto_Prefecture) | 1.43 |
+| [Kagoshima](/wiki/Kagoshima_Prefecture) | 1.44 |
+| [Nagasaki](/wiki/Nagasaki_Prefecture) | 1.45 |
+| [Miyazaki](/wiki/Miyazaki_Prefecture) | 1.45 |
+| [Okinawa](/wiki/Okinawa_Prefecture) | 1.56 |
+
+The map of total fertility rates by prefecture in 1925 shows a clear trend of lower fertility in the west and higher in the east.
+
+The Total Fertility Rate (TFR) exhibits notable regional disparities across Japan's [prefectures](/wiki/Prefectures_of_Japan). Historically, [Tohoku](/wiki/T%C5%8Dhoku_region) and [Hokkaido regions](/wiki/Hokkaido) have maintained the highest TFR, while [Okinawa](/wiki/Okinawa_Prefecture) and [Kyushu](/wiki/Kyushu) regions have generally recorded the lowest.
+
+Map of East Asia by [total fertility rate](/wiki/Total_fertility_rate) (TFR) in 2021. Japan's TFR in 2012 was estimated at 1.41 children per woman, increasing slightly from 1.32 in the 2001–05 period. In 2012, the highest TFR was 1.90, in [Okinawa](/wiki/Okinawa_Prefecture), and the lowest was 1.09, in [Tokyo](/wiki/Tokyo). TFR by [prefecture](/wiki/Prefectures_of_Japan) for 2000–05, as well as future estimates, have been released.
+
+However in the 1970s, [Akita Prefecture](/wiki/Akita_Prefecture) registered the nation's lowest rate (1.88, compared to Tokyo's 1.96). In recent years, this pattern has largely persisted. As of 2021, Okinawa Prefecture led the nation with a TFR of 1.80, followed by [Kagoshima](/wiki/Kagoshima) and [Miyazaki Prefectures](/wiki/Miyazaki_Prefecture). Conversely, Tokyo Metropolis recorded the lowest TFR at 1.08, with Miyagi Prefecture and Hokkaido following.
+
+The specific causes underlying these regional variations in birth rates are complex and not fully elucidated. For instance, the contrast between the high birth rates observed in the [Kyushu](/wiki/Kyushu) and Okinawa regions and the low rates in [Hokkaido](/wiki/Hokkaido) and [Tōhoku](/wiki/T%C5%8Dhoku_region) is often attributed to a combination of socio-economic and cultural factors. These include the prevalence of living with or near parents (multi-generational households), regional values concerning childbirth and child-rearing, and specific local traditions.
+
+In large urban areas, including the [Tokyo metropolitan area](/wiki/Greater_Tokyo_Area) and other [designated cities](/wiki/Designated_city), the average age at first marriage and the average age at first birth are significantly higher than the respective prefectural and national averages. This delay in life milestones is considered a primary contributor to the lower birth rates observed in these regions.
+Furthermore, the rate of college graduates, particularly for women, is typically higher in these urban centers. This leads to an observed negative correlation between TFR and college graduates rates, suggesting that higher educational attainment is associated with lower fertility rates at the regional level.
+
+Total Fertility Rate by Prefecture, 2000 to 2021
+
+### Total fertility rate
+
+#### Total Fertility rate before 1873
+
+TFR of Japan over time to 2016
+
+Source: [Our world in data](/wiki/Our_World_in_Data)
+
+The total fertility rate (TFR) in Japan before 1873 fluctuated, but several estimates for the period of the early to mid-19th century range from around 3.6 to 4.8 children per woman. During the 17th and 18th centuries, local studies suggest TFR was even lower in some areas, with completed family sizes often averaging 3 to 4 children.
+
+| Years | 1800 | 1801 | 1802 | 1803 | 1804 | 1805 | 1806 | 1807 | 1808 | 1809 | 1810 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Total Fertility Rate in Japan | 4.08 | 4.11 | 4.14 | 4.17 | 4.20 | 4.22 | 4.25 | 4.28 | 4.31 | 4.34 | 4.37 |
+
+| Years | 1811 | 1812 | 1813 | 1814 | 1815 | 1816 | 1817 | 1818 | 1819 | 1820 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Total Fertility Rate in Japan | 4.00 | 4.43 | 4.43 | 4.44 | 4.44 | 4.45 | 4.45 | 4.45 | 4.46 | 4.46 |
+
+| Years | 1821 | 1822 | 1823 | 1824 | 1825 | 1826 | 1827 | 1828 | 1829 | 1830 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Total Fertility Rate in Japan | 4.47 | 4.47 | 4.48 | 4.48 | 4.48 | 4.49 | 4.49 | 4.50 | 4.50 | 4.51 |
+
+| Years | 1831 | 1832 | 1833 | 1834 | 1835 | 1836 | 1837 | 1838 | 1839 | 1840 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Total Fertility Rate in Japan | 4.51 | 4.51 | 4.52 | 4.52 | 4.53 | 4.53 | 4.54 | 4.54 | 4.55 | 4.56 |
+
+| Years | 1841 | 1842 | 1843 | 1844 | 1845 | 1846 | 1847 | 1848 | 1849 | 1850 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Total Fertility Rate in Japan | 4.58 | 4.59 | 4.60 | 4.61 | 4.62 | 4.64 | 4.65 | 4.66 | 4.67 | 4.68 |
+
+| Years | 1851 | 1852 | 1853 | 1854 | 1855 | 1856 | 1857 | 1858 | 1859 | 1860 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Total Fertility Rate in Japan | 4.70 | 4.71 | 4.72 | 4.73 | 4.74 | 4.76 | 4.77 | 4.78 | 4.79 | 4.80 |
+
+| Years | 1861 | 1862 | 1863 | 1864 | 1865 | 1866 | 1867 | 1868 | 1869 | 1870 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [Total Fertility Rate](/wiki/Total_fertility_rate) in Japan | 4.82 | 4.83 | 4.84 | 4.70 | 4.55 | 4.41 | 4.27 | 4.13 | 3.98 | 3.84 |
+
+| Years | 1871 | 1872 | 1873 |
+| --- | --- | --- | --- |
+| Total Fertility Rate in Japan | 3.70 | 3.56 | 3.41 |
+
+In 2023, Japan's total fertility rate was 1.20, among the lowest in the world and far below the replacement rate of 2.1. In January 2023, Japanese Prime Minister [Fumio Kishida](/wiki/Fumio_Kishida) pledged to take urgent steps to tackle the country's declining birth rate, calling it "now or never" for Japan's aging society; he had planned to double the budget for child-related policies by June 2023 and to set up a new government agency in April.
+
+- Number of births by age groups in Japan
+
+### Life expectancy
+
+Main article: [List of Japanese prefectures by life expectancy](/wiki/List_of_Japanese_prefectures_by_life_expectancy)
+
+Life expectancy in Japan since 1865
+
+Life expectancy in Japan since 1960 by gender
+
+Life expectancy map for 2020
+
+Japan consistently ranks among the [highest in the world for overall life expectancy](/wiki/List_of_countries_by_life_expectancy), holding the top position for women and one of the highest for men. As of 2024 data, life expectancy is approximately 87.13 years for females and 81.09 years for males. Historically, life expectancy was much lower, with a significant increase after [World War II](/wiki/World_War_II).
+
+Before World War II, Japan's life expectancy was significantly lower than its current, world-leading figures, but it was already steadily improving from the late 19th century onward. Throughout the first half of the 20th century, life expectancy remained under 50 years for both men and women. The progress during this period was primarily driven by initial reductions in mortality from infectious and [parasitic diseases](/wiki/Parasitic_disease).
+
+Following the [End of World War II](/wiki/End_of_World_War_II), Japan experienced a rapid and sustained increase in longevity, driven initially by a sharp decline in infectious disease mortality and later by advancements in chronic disease management. [Universal Health Coverage](/wiki/Universal_health_care) and government-led campaigns targeting [Non-Communicable Diseases](/wiki/Non-communicable_disease) (NCDs), notably through salt-reduction efforts to combat [stroke](/wiki/Stroke).
+
+| Age | 2010 | | | | 2020 | | | | 2023 | | | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| overall | male | female | sex gap | overall | male | female | sex gap | overall | male | female | sex gap |
+| 0 | 82.95 | 79.51 | 86.24 | 6.73 | 84.71 | 81.58 | 87.73 | 6.15 | 84.14 | 81.10 | 87.16 | 6.06 |
+| 1 | 82.14 | 78.71 | 85.43 | 6.72 | 83.86 | 80.73 | 86.89 | 6.16 | 83.29 | 80.25 | 86.31 | 6.06 |
+| 5 | 78.22 | 74.79 | 81.49 | 6.70 | 79.91 | 76.78 | 82.92 | 6.14 | 79.35 | 76.30 | 82.37 | 6.07 |
+| 10 | 73.25 | 69.82 | 76.53 | 6.71 | 74.93 | 71.80 | 77.95 | 6.15 | 74.37 | 71.33 | 77.39 | 6.06 |
+| 15 | 68.28 | 64.86 | 71.55 | 6.69 | 69.96 | 66.83 | 72.98 | 6.15 | 69.41 | 66.36 | 72.43 | 6.07 |
+| 20 | 63.36 | 59.95 | 66.61 | 6.66 | 65.03 | 61.92 | 68.03 | 6.11 | 64.49 | 61.45 | 67.50 | 6.05 |
+| 25 | 58.49 | 55.13 | 61.69 | 6.56 | 60.15 | 57.07 | 63.11 | 6.04 | 59.60 | 56.59 | 62.59 | 6.00 |
+| 30 | 53.62 | 50.30 | 56.78 | 6.48 | 55.26 | 52.20 | 58.19 | 5.99 | 54.71 | 51.73 | 57.67 | 5.94 |
+| 35 | 48.77 | 45.48 | 51.89 | 6.41 | 50.38 | 47.35 | 53.27 | 5.92 | 49.84 | 46.88 | 52.76 | 5.88 |
+| 40 | 43.95 | 40.69 | 47.03 | 6.34 | 45.52 | 42.52 | 48.39 | 5.87 | 44.99 | 42.06 | 47.88 | 5.82 |
+| 45 | 39.20 | 35.98 | 42.21 | 6.23 | 40.72 | 37.74 | 43.55 | 5.81 | 40.19 | 37.29 | 43.03 | 5.74 |
+| 50 | 34.54 | 31.39 | 37.46 | 6.07 | 36.00 | 33.06 | 38.77 | 5.71 | 35.46 | 32.60 | 38.25 | 5.65 |
+| 55 | 30.00 | 26.95 | 32.80 | 5.85 | 31.39 | 28.52 | 34.08 | 5.56 | 30.86 | 28.06 | 33.56 | 5.50 |
+| 60 | 25.62 | 22.71 | 28.22 | 5.51 | 26.91 | 24.15 | 29.45 | 5.30 | 26.38 | 23.69 | 28.94 | 5.25 |
+| 65 | 21.41 | 18.70 | 23.74 | 5.04 | 22.58 | 19.99 | 24.90 | 4.91 | 22.06 | 19.54 | 24.40 | 4.86 |
+| 70 | 17.38 | 14.92 | 19.37 | 4.45 | 18.47 | 16.11 | 20.48 | 4.37 | 17.95 | 15.66 | 19.98 | 4.32 |
+| 75 | 13.59 | 11.40 | 15.21 | 3.81 | 14.62 | 12.56 | 16.24 | 3.68 | 14.13 | 12.15 | 15.77 | 3.62 |
+| 80 | 10.22 | 8.36 | 11.40 | 3.04 | 11.08 | 9.36 | 12.28 | 2.92 | 10.65 | 9.01 | 11.85 | 2.84 |
+| 85 | 7.38 | 5.94 | 8.08 | 2.14 | 7.98 | 6.61 | 8.77 | 2.16 | 7.61 | 6.34 | 8.38 | 2.04 |
+| 90 | 5.11 | 4.14 | 5.47 | 1.33 | 5.53 | 4.54 | 5.94 | 1.40 | 5.19 | 4.29 | 5.59 | 1.30 |
+| 95 | 3.48 | 2.89 | 3.63 | 0.74 | 3.75 | 3.11 | 3.91 | 0.80 | 3.50 | 2.95 | 3.65 | 0.70 |
+| 100 | 2.38 | 2.09 | 2.43 | 0.34 | 2.52 | 2.19 | 2.58 | 0.39 | 2.36 | 2.08 | 2.40 | 0.32 |
+| 105 | 1.73 | 1.61 | 1.74 | 0.13 | 1.79 | 1.65 | 1.80 | 0.15 | 1.69 | 1.58 | 1.69 | 0.11 |
+| 110 | 1.36 | 1.34 | 1.36 | 0.02 | 1.39 | 1.34 | 1.39 | 0.05 | 1.33 | 1.30 | 1.33 | 0.03 |
+
+Data source: [National Institute of Population and Social Security Research](/wiki/National_Institute_of_Population_and_Social_Security_Research)
+
+#### Historical data
+
+Sources: [Our World In Data](/wiki/Our_World_in_Data) and the [United Nations](/wiki/United_Nations).
+
+1865–1949
+
+| Years | 1865 | 1870 | 1875 | 1880 | 1885 | 1890 | 1895 | 1900 | 1905 | 1910 | 1915 | 1920 | 1922 | 1927 | 1935 | 1945 | 1947 | 1948 | 1949 | 1950 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Life expectancy in Japan | 36.4 | 36.6 | 36.8 | 37.0 | 37.3 | 37.7 | 38.1 | 38.6 | 39.2 | 40.0 | 40.9 | 42.0 | 42.6 | 45.7 | 48.2 | 30.5 | 51.7 | 56.8 | 57.7 | 59.2 |
+
+1950–2020
+
+| Period | Life expectancy in years | Period | Life expectancy in years |
+| --- | --- | --- | --- |
+| 1950–1955 | 62.8 | 1985–1990 | 78.5 |
+| 1955–1960 | 66.4 | 1990–1995 | 79.4 |
+| 1960–1965 | 69.2 | 1995–2000 | 80.5 |
+| 1965–1970 | 71.4 | 2000–2005 | 81.8 |
+| 1970–1975 | 73.3 | 2005–2010 | 82.7 |
+| 1975–1980 | 75.4 | 2010–2015 | 83.3 |
+| 1980–1985 | 77.0 | 2015–2020 | 84.4 |
+
+Source: *UN World Population Prospects*
+
+### Marriages and divorce
+
+See also: [Marriage in Japan](/wiki/Marriage_in_Japan)
+
+The percentage of births to unmarried women in selected countries, 1980 and 2007. As can be seen in the figure, Japan has not followed the trend of other industrialized countries of children born outside of marriage to the same degree.
+
+Many Japanese lead a sexless marriage. Japan has the lowest level of couples having sex at 45 times per year, well below the global average of 103 times. With reasons of "tired" and "bored with intercourse" usually given as an answer. Despite this, Japan ranks as number two globally on the amount spent on pornography, after South Korea.
+
+- Marriage and divorce statistics
+- Marriages in Japan over time
+- Marriage rate per 1000 people in Japan
+- Average age of first marriage in Japan
+- Number of divorces in Japan over time
+- Divorce rates per 1000 of total population
+
+## Ethnic groups
+
+Main articles: [Racism in Japan](/wiki/Racism_in_Japan) and [Ethnic groups of Japan](/wiki/Ethnic_groups_of_Japan)
+
+Naturalized Japanese citizens and native-born Japanese nationals with a multi-ethnic background are all considered to be Japanese in the population census of Japan.
+
+### Discrimination against ethnic minorities
+
+Main article: [Burakumin](/wiki/Burakumin)
+
+Three native Japanese minority groups can be identified. The largest are the *hisabetsu buraku* or "discriminated communities", also known as the *burakumin*. These descendants of premodern outcast hereditary occupational groups, such as [butchers](/wiki/Butcher), [leatherworkers](/wiki/Leather), [funeral directors](/wiki/Funeral_director), and certain entertainers, may be considered a Japanese analog of [India](/wiki/India)'s [Dalits](/wiki/Dalit). Historically, discrimination against these occupational groups was based on [Buddhist](/wiki/Buddhism) prohibitions on killing and [Shinto](/wiki/Shinto) notions of pollution, and it was also a feature of governmental social control.
+
+During the [Edo period](/wiki/Edo_period), such people were required to live in special *buraku* and, like the rest of the population, they were bound by [sumptuary laws](/wiki/Sumptuary_law) which were based on the inheritance of social class. The [Meiji](/wiki/Meiji_era) government abolished most of the derogatory names which were applied to these discriminated communities in 1871, but the new laws had little effect on the social discrimination which was faced by the former outcasts and their descendants. However, the laws eliminated the economic monopoly which they had on certain occupations. The *buraku* continued to be treated as social outcasts and some casual interactions with the majority caste were perceived [taboo](/wiki/Taboo) until the era after World War II.
+
+Estimates of their number range from 2 to 4 million (about 4% of the national population in 2022). Although the members of these marginalized communities are physically indistinguishable from other Japanese, most of them live in urban [ghettoes](/wiki/Ghetto) or they live in the traditional special hamlets which are located in rural areas, and as a result, membership in a marginalized group can be surmised from the location of a family's home, a family's occupation, the dialect which a family speaks, or the mannerisms which a family uses when it communicates with people. Checks on the backgrounds of families which were designed to ferret out *buraku* were commonly performed as a condition of marriage arrangements and employment applications, but in Osaka, they have been illegal since 1985.
+
+Among the *hisabetsu buraku*, past and current discrimination against them has resulted in lower educational attainments and it has also resulted in a lower socioeconomic status, by contrast, the majority of Japanese have higher educational attainments and they also have a higher economic status. Movements with objectives which range from "liberation" to the encouragement of integration have attempted to change this situation, with some success. Nadamoto Masahisa of the Buraku History Institute estimates that as of 1998, between 60 and 80% of burakumin married a non-burakumin.
+
+### Ryukyuans
+
+One of the largest minority groups among Japanese citizens is the [Ryukyuan people](/wiki/Ryukyuans). They are primarily distinguished by their use of several distinct [Ryukyuan languages](/wiki/Ryukyuan_languages), though use of Ryukyuan is dying out. The Ryukyuan people and language originated in the [Ryukyu Islands](/wiki/Ryukyu_Islands), which are in Okinawa prefecture and [Kagoshima Prefecture](/wiki/Kagoshima_Prefecture).
+
+### Ainu
+
+Japanese Ainu group in 1904
+
+The third largest minority group among Japanese citizens is the [Ainu](/wiki/Ainu_people), whose language is an [isolate](/wiki/Language_isolate). Historically, the Ainu were an indigenous [hunting](/wiki/Hunting) and gathering population who occupied most of northern Honshū as late as the Nara period (A.D. 710–94). As Japanese settlement expanded, the Ainu were pushed northward, by the [Tokugawa shogunate](/wiki/Tokugawa_shogunate), the Ainu were pushed into the island of [Hokkaido](/wiki/Hokkaido).
+
+Characterized as remnants of a primitive circumpolar culture, the fewer than 20,000 Ainu in 1990 were considered racially distinct and thus not fully Japanese. Disease and a low birth rate had severely diminished their numbers over the past two centuries, and intermarriage had brought about an almost completely mixed population.
+
+Although no longer in daily use, the [Ainu language](/wiki/Ainu_language) is preserved in epics, songs, and stories transmitted orally over succeeding generations. Distinctive rhythmic music and dances and some Ainu festivals and crafts are preserved, but mainly in order to take advantage of tourism.
+
+### Hāfu
+
+[Hāfu](/wiki/H%C4%81fu) (a kana rendition of "half") is a term used for people who are [biracial](/wiki/Multiracial_people) and ethnically half [Japanese](/wiki/Japanese_people). Of the one million children born in Japan in 2013, 2.2% had one or two non-Japanese parents.[[70]](/wiki/Marriage_in_Japan#cite_note-70) According to the Japanese Ministry of Health, Labor and Welfare, in 2016 one in forty-nine babies born in Japan were born into families with one non-Japanese parent. Most intermarriages in Japan are between Japanese men and women from other Asian countries, including China, the Philippines and South Korea. Southeast Asia also has significant populations of people with half-Japanese ancestry, particularly in [the Philippines](/wiki/Japanese_in_the_Philippines), [Indonesia](/wiki/Japanese_migration_to_Indonesia), [Malaysia](/wiki/Japanese_migration_to_Malaysia), [Singapore](/wiki/Japanese_people_in_Singapore) and [Thailand](/wiki/Japanese_migration_to_Thailand).
+
+In the 1940s, biracial Japanese children (Ainoko), specifically [Amerasian](/wiki/Amerasian) children, encountered social problems such as poverty, perception of impurity and discrimination due to negative treatment in Japan. In the 21st century, discrimination against [hāfu](/wiki/H%C4%81fu) occurs based on how different their identity, behavior and appearance is from a typical Japanese person.
+
+## Languages
+
+Main article: [Languages of Japan](/wiki/Languages_of_Japan)
+
+The most widely-spoken language in [Japan](/wiki/Japan) is [Japanese](/wiki/Japanese_language), which is [separated into several dialects](/wiki/Japanese_dialects), with the Tokyo dialect considered to be [Standard Japanese](/wiki/Standard_Japanese).
+
+In addition to the Japanese language, [Ryūkyūan languages](/wiki/Ry%C5%ABky%C5%ABan_languages) are spoken in [Okinawa](/wiki/Okinawa_Prefecture) and parts of [Kagoshima](/wiki/Kagoshima_Prefecture) in the [Ryūkyū Islands](/wiki/Ry%C5%ABky%C5%AB_Islands). Along with Japanese, these languages are part of the [Japonic language family](/wiki/Japonic_languages), but they are separate languages, and are not [mutually intelligible](/wiki/Mutual_intelligibility) with Japanese, or with each other. All of the spoken Ryukyuan languages are classified by [UNESCO](/wiki/UNESCO) as endangered.
+
+In [Hokkaidō](/wiki/Hokkaid%C5%8D), there is the [Ainu language](/wiki/Ainu_language), which is spoken by the [Ainu people](/wiki/Ainu_people), who are the indigenous people of the island. The Ainu languages, of which Hokkaidō Ainu is the only extant variety, are isolated and do not fall under any language family. Ever since the Meiji period, Japanese has become widely used among the Ainu people and consequently Ainu languages have been classified critically endangered by [UNESCO](/wiki/UNESCO).
+
+In addition, languages such as [Orok](/wiki/Orok_language), [Evenki](/wiki/Evenki_language) and [Nivkh](/wiki/Nivkh_language) spoken in formerly Japanese controlled southern [Sakhalin](/wiki/Sakhalin) are becoming more and more endangered. After the [Soviet Union](/wiki/Soviet_Union) took control of the region, speakers of these languages and their descendants migrated to mainland Japan and still exist in small numbers.
+
+The Japanese society of [Yamato people](/wiki/Yamato_people) is [linguistically](/wiki/Linguistics) homogeneous with small populations of [Koreans](/wiki/Koreans) (0.9 million), [Chinese](/wiki/Chinese_people)/[Taiwanese](/wiki/Taiwanese_people) (0.65 million), [Filipino](/wiki/Filipinos_in_Japan) (306,000 some being Japanese Filipino; children of Japanese and Filipino parentage). This can be also said for [Brazilians](/wiki/Brazil) (300,000, many of whom are ethnically Japanese) as well as [Peruvians](/wiki/Peru) and [Argentineans](/wiki/Argentina) of both Latin American and Japanese descent. Japan has indigenous [minority groups](/wiki/Minority_group) such as the [Ainu](/wiki/Ainu_people) and [Ryukyuans](/wiki/Ryukyuans), who generally speak Japanese.
+
+## Citizenship
+
+Japanese [citizenship](/wiki/Citizenship) is conferred *[jure sanguinis](/wiki/Jus_sanguinis)*, and monolingual Japanese-speaking minorities often reside in Japan for generations under permanent residency status without acquiring citizenship in their country of birth, although legally they are allowed to do so. This is because Japanese law does not recognize dual citizenship after the age of adulthood, and so people becoming naturalized Japanese citizens must relinquish their previous citizenship upon reaching the age of 22 years.
+
+In addition, people taking Japanese citizenship must take a name using one or more of the Japanese character sets ([hiragana](/wiki/Hiragana), [katakana](/wiki/Katakana), [kanji](/wiki/Kanji)). Names written in the Western alphabet, Korean alphabet, Arabic characters, etc., are not acceptable as legal names. Chinese characters are usually legally acceptable as nearly all Chinese characters are recognized as valid by the Japanese government. Transliterations of non-Japanese names using katakana (e.g. スミス　"*Sumisu*" for "Smith") are also legally acceptable.
+
+However, some naturalizing foreigners feel that becoming a Japanese citizen should mean that they have a Japanese name and that they should abandon their foreign name, and some foreign residents do not wish to do this—although most [Special Permanent Resident](/wiki/Special_permanent_resident_(Japan)) Koreans and Chinese already use Japanese names. Nonetheless, some 10,000 [Zainichi Koreans](/wiki/Koreans_in_Japan) naturalize every year. Approximately 98.6% of the population are Japanese citizens, and 99% of the population speak [Japanese](/wiki/Japanese_language) as their first language. Non-ethnic Japanese in the past, and to an extent in the present, also live in small numbers in the Japanese archipelago.
+
+## Religion
+
+Main article: [Religion in Japan](/wiki/Religion_in_Japan)
+
+A [Shinto wedding](/wiki/Shinto_wedding) at the [Meiji Shrine](/wiki/Meiji_Shrine)
+
+[Religion in Japan](/wiki/Religion_in_Japan), 2020.
+
+1. [Buddhism](/wiki/Buddhism) (55.7%)
+2. [New Religion](/wiki/Japanese_new_religions) (26.2%)
+3. [Christianity](/wiki/Christianity) (2.18%)
+4. [Shintoism](/wiki/Shinto) (2.12%)
+5. [Chinese folk religion](/wiki/Chinese_folk_religion) (0.48%)
+6. [Islam](/wiki/Islam) (0.15%)
+7. [None](/wiki/Irreligion) (12.9%)
+8. Other (0.23%)
+
+[Shinto](/wiki/Shinto) and [Buddhism](/wiki/Buddhism) are Japan's two major religions. They have co-existed for more than a thousand years. Most Japanese people generally do not exclusively identify themselves as adherents of one religion, but rather incorporate various elements in a [syncretic](/wiki/Syncretism) fashion. There are small [Christian](/wiki/Christianity_in_Japan) and other minorities as well, with the Christian population dating to as early as the 1500s, as a result of European missionary work before [sakoku](/wiki/Sakoku) was implemented from 1635 to 1853.
+
+## Migration
+
+### Internal migration
+
+Main article: [Migration in Japan](/wiki/Migration_in_Japan)
+
+In the 1980s, between 6 million and 7 million people moved their residences each year. About 50% of these moves were within the same prefecture. The others were relocations from one prefecture to another. During Japan's economic development in the twentieth century, and especially during the 1950s and 1960s, migration was characterized by [urbanization](/wiki/Urbanization) as people from rural areas in increasing numbers moved to the larger metropolitan areas in search of better jobs and education. Out-migration from rural prefectures continued in the late 1980s, but more slowly than in previous decades.
+
+In the 1980s, government policy provided support for new urban development away from the large cities, particularly Tokyo, and assisted regional cities to attract young people to live and work there. Regional cities offered familiarity to those from nearby areas, lower costs of living, shorter commutes, and, in general, a more relaxed lifestyle than could be had in larger cities. Young people continued to move to large cities to attend universities and find work, but some returned to regional cities, a pattern known as U-turn, or to their prefecture of origin (referred to as "J-turn"), or even moved to a rural area for the first time ("I-turn").
+
+In the 1980s, significant numbers of people left the largest central cities, Tokyo and Osaka, to move to suburbs within their metropolitan areas. In 1988, more than 500,000 people left Tokyo, which experienced a net loss through migration of nearly 73,000 for the year. Osaka had a net loss of nearly 36,000 in the same year.
+
+With a decreasing total population, internal migration results in only eight prefectures showing an increase in population. These are [Okinawa](/wiki/Okinawa_Prefecture)
+(2.9%), [Tokyo](/wiki/Tokyo)
+(2.7%), [Aichi](/wiki/Aichi_Prefecture)
+(1.0%), [Saitama](/wiki/Saitama_Prefecture)
+(1.0%), [Kanagawa](/wiki/Kanagawa_Prefecture)
+(0.9%), [Fukuoka](/wiki/Fukuoka_Prefecture)
+(0.6%), [Shiga](/wiki/Shiga_Prefecture)
+(0.2%), and [Chiba](/wiki/Chiba_Prefecture)
+(0.1%).
+
+### Emigration
+
+Main article: [Japanese diaspora](/wiki/Japanese_diaspora)
+
+In 1975, about 663,300 Japanese were living abroad, approximately 75,000 of whom had permanent foreign residency, more than six times the number who had that status. In 1990, more than 200,000 Japanese went abroad for extended periods of study, research, or business assignments. As the government and private corporations have stressed internationalization, greater numbers of individuals have been directly affected, decreasing Japan's historical insularity. By the late 1980s, these problems, particularly [the bullying](/wiki/Bullying) of returnee children in schools, had become a major public issue both in Japan and in Japanese communities abroad.
+
+Countries with significant populations of Japanese nationals in 2024
+
+| Country | Expatriates | Permanent expatriates |
+| --- | --- | --- |
+| [United States](/wiki/United_States) | 413,380 | 230,378 |
+| [Australia](/wiki/Australia) | 104,141 | 64,070 |
+| [China](/wiki/China) | 97,538 | 5,992 |
+| [Canada](/wiki/Canada) | 77,294 | 52,457 |
+| [Thailand](/wiki/Thailand) | 70,421 | 2,554 |
+| [United Kingdom](/wiki/United_Kingdom) | 64,066 | 29,449 |
+| [Brazil](/wiki/Brazil) | 46,577 | 42,017 |
+| [Germany](/wiki/Germany) | 43,513 | 18,738 |
+| [South Korea](/wiki/South_Korea) | 43,064 | 16,631 |
+| [France](/wiki/France) | 37,056 | 15,585 |
+| [Singapore](/wiki/Singapore) | 32,565 | 4,852 |
+| [Taiwan](/wiki/Taiwan) | 21,696 | 7,128 |
+| [New Zealand](/wiki/New_Zealand) | 20,318 | 12,200 |
+| [Malaysia](/wiki/Malaysia) | 20,025 | 2,009 |
+| [Vietnam](/wiki/Vietnam) | 17,410 | 515 |
+| [Indonesia](/wiki/Indonesia) | 14,934 | 1,809 |
+| [Switzerland](/wiki/Switzerland) | 12,085 | 7,936 |
+| [Italy](/wiki/Italy) | 11,937 | 6,577 |
+| [Netherlands](/wiki/Netherlands) | 10,656 | 2,928 |
+| [Argentina](/wiki/Argentina) | 10,528 | 10,177 |
+
+Note: The above data shows the number of Japanese nationals living overseas. It was published by the [Ministry of Foreign Affairs of Japan](/wiki/Ministry_of_Foreign_Affairs_(Japan)).
+
+### Immigration
+
+Main article: [Immigration to Japan](/wiki/Immigration_to_Japan)
+
+According to the Japanese immigration centre, the number of foreign residents in Japan has steadily increased, and the number of foreign residents exceeded 3,768,977 people in December 2024.
+
+In 2020, the number of foreigners in Japan was 2,887,116. This includes 325,000 Filipinos, many of whom are married to Japanese nationals and possessing some degree of Japanese ancestry, 208,538 Brazilians, the majority possessing some degree of Japanese ancestry, 778,112 Chinese, 448,053 Vietnamese and 426,908 South Koreans. Chinese, Vietnamese, Koreans, Filipinos and Brazilians account for about 77% of foreign residents in Japan.
+
+The current issue of the shrinking workforce in Japan alongside its aging population has resulted in a recent need to attract foreign labour to the country. Reforms which took effect in 2015 relax visa requirements for "Highly Skilled Foreign Professionals" and create a new type of residence status with an unlimited period of stay.
+
+The number of naturalized individuals peaked in 2003 at 17,633, before declining to 8,863 by 2024. Most of the decline is accounted for by a steep reduction in the number of Japan-born Koreans taking Japanese citizenship. Historically the bulk of those taking Japanese citizenship have not been foreign-born immigrants but rather Japanese-born descendants of Koreans and Taiwanese who lost their citizenship in the [Japanese Empire](/wiki/Empire_of_Japan) in 1947 as part of the American Occupation policy for Japan.
+
+Japanese statistical authorities do not collect information on ethnicity, only nationality. As a result, both native and naturalized Japanese citizens are counted in a single group. Although official statistics therefore show homogeneity, other analyses describe the population as "multi-ethnic".
+
+### Net Migration
+
+Net Migration to Japan (2001–present)
+
+| Year | Net Migration |
+| --- | --- |
+| 2001 | 145,781 |
+| 2002 | −50,788 |
+| 2003 | 67,832 |
+| 2004 | −35,076 |
+| 2005 | −52,729 |
+| 2006 | 1,221 |
+| 2007 | 3,598 |
+| 2008 | −44,626 |
+| 2009 | −123,748 |
+| 2010 | 14 |
+| 2011 | −78,984 |
+| 2012 | −78,805 |
+| 2013 | 14,378 |
+| 2014 | 36,386 |
+| 2015 | 94,438 |
+| 2016 | 133,892 |
+| 2017 | 150,727 |
+| 2018 | 161,456 |
+| 2019 | 208,783 |
+| 2020 | 41,907 |
+| 2021 | −35,188 |
+| 2022 | 175,115 |
+| 2023 | 242,131 |
+| 2024 | 339,843 |
+
+#### Foreign residents
+
+Foreign residents in Japan by source country, 1950–2024
+
+The age and sex distribution of major foreign cohorts in Japan, 2012
+
+In December 2024, there were 3,768,977 foreign residents in Japan, representing 3.04% of the Japanese population. Foreign Army personnel, of which there were up to 430,000 from the [SCAP](/wiki/Supreme_Commander_for_the_Allied_Powers) ([post-occupation](/wiki/Postwar_Japan), [United States Forces Japan](/wiki/United_States_Forces_Japan)) and 40,000 [BCOF](/wiki/British_Commonwealth_Occupation_Force) in the immediate post-war years, have not been at any time included in Japanese foreign resident statistics. Most foreign residents in Japan come from [Brazil](/wiki/Brazil) or from other Asian countries, particularly from [China](/wiki/China), [Vietnam](/wiki/Vietnam), [South Korea](/wiki/South_Korea), [the Philippines](/wiki/Philippines), and [Nepal](/wiki/Nepal).
+
+A number of long-term resident Koreans in Japan today retain familial links with the descendants of [Koreans](/wiki/Koreans), that either immigrated voluntarily or were forcibly relocated during the [Japanese occupation of Korea](/wiki/Korea_under_Japanese_rule). Within this group, a number hold [Special Permanent Resident](/wiki/Special_permanent_resident_(Japan)) status, granted under the terms of the Normalisation Treaty (22 June 1965) between South Korea and Japan. In many cases special residents, despite being born in Japan and speaking Japanese, have chosen not to take advantage of the mostly automatic granting of citizenship to special resident applicants.
+
+Beginning in 1947, the [Japanese government](/wiki/Government_of_Japan) started to repatriate Korean nationals, who had nominally been granted [Japanese citizenship](/wiki/Japanese_nationality_law) during the years of [military occupation](/wiki/Occupation_of_Japan). When the [Treaty of San Francisco](/wiki/Treaty_of_San_Francisco) came into force many ethnic Koreans lost their Japanese citizenship from April 28, 1952, and with it the right to welfare grants, to hold a government job of any kind or to attend Japanese schools. In the following year the government contrived, with the help of the Red Cross, a scheme to "repatriate" Korean residents, who mainly were from the Southern Provinces, to their "home" of [North Korea](/wiki/North_Korea). Between 1959 and 1984 93,430 people used this route, of whom 6,737 were Japanese or Chinese dependents. Most of these departures – 78,276 – occurred before 1962.
+
+Foreign-born population by citizenship in 2023.
+
+Japan's population (December 2025)
+
+1. Japanese nationals (96.7%)
+2. Foreign nationals (3.35%)
+
+All non-Japanese without special residential status (people whose residential roots go back to before WWII) are required by law to register with the government and carry alien registration cards. From the early 1980s, a civil disobedience movement encouraged refusal of the [fingerprinting](/wiki/Fingerprint) that accompanied registration every five years.
+
+Opponents of fingerprinting argued that it was discriminatory because the only Japanese who were fingerprinted were criminals. The courts upheld fingerprinting, but the law was changed so that fingerprinting was done once rather than with each renewal of the registration, which until a law reform in 1989 was usually required every six months for anybody from the age of 16. Those refusing fingerprinting were denied re-entry permits, thus depriving them of freedom of movement.
+
+Of these foreign residents below, the new wave which started in 2014, came to Japan as students or trainees. These foreigners are registered under student visa or trainee visa, which gives them the student residency status. Most of these new foreigners are under this visa. Almost all of these foreign students and trainees will return to their home country after three to four years (one valid period); few students extend their visa. [Vietnamese](/wiki/Vietnamese_people) make up the largest increase. [Burmese](/wiki/Demographics_of_Myanmar), [Cambodians](/wiki/Demographics_of_Cambodia), [Filipinos](/wiki/Filipinos) and [Chinese](/wiki/Chinese_people) are also increasing.
+
+[Asian migrant wives of Japanese men](/wiki/Asian_migrant_brides_in_Japan) have also contributed to the foreign-born population in the country. Many young single Japanese male farmers choose foreign wives, mainly from the Philippines, Sri Lanka, Thailand, China and South Korea, due to a lack of interest from Japanese women living a farming life. Migrant wives often travel as [mail-order brides](/wiki/Mail-order_bride) as a result of [arranged marriages](/wiki/Arranged_marriage) with Japanese men.
+
+| Country region groups | Number | Percentage of | |
+| --- | --- | --- | --- |
+| Foreign citizens | Total population |
+| Asians | 3,258,155 | 86.45% | 2.63% |
+| South Americans | 278,814 | 7.4% | 0.22% |
+| Europeans | 102,792 | 2.73% | 0.08% |
+| North Americans | 85,431 | 2.27% | 0.07% |
+| African | 25,283 | 0.67% | 0.02% |
+| Oceania | 18,034 | 0.48% | 0.01% |
+| Total (as of 2024) | 3,768,977 | 100% | 3.04% |
+
+### Table: numbers of foreign nationals in Japan
+
+| Country | 1990 | 2000 | 2005 | 2010 | 2015 | 2020 | 2024 | Main article |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [China](/wiki/China) | 137,499 | 335,575 | 519,561 | 687,156 | 665,847 | 778,112 | 873,286 | [Chinese people in Japan](/wiki/Chinese_people_in_Japan) |
+| [Vietnam](/wiki/Vietnam) | 6,316 | 16,908 | 28,932 | 41,781 | 146,956 | 448,053 | 634,361 | [Vietnamese people in Japan](/wiki/Vietnamese_people_in_Japan) |
+| [South Korea](/wiki/South_Korea) | 681,838 | 635,269 | 598,687 | 565,989 | 457,772 | 426,908 | 409,238 | [Koreans in Japan](/wiki/Koreans_in_Japan) |
+| [Philippines](/wiki/Philippines) | 38,925 | 144,871 | 187,261 | 210,181 | 229,595 | 279,660 | 341,518 | [Filipinos in Japan](/wiki/Filipinos_in_Japan) |
+| [Nepal](/wiki/Nepal) | 399 | 3,649 | 6,953 | 17,525 | 54,775 | 95,982 | 233,043 | [Nepalis in Japan](/wiki/Nepalis_in_Japan) |
+| [Brazil](/wiki/Brazil) | 14,258 | 254,394 | 302,080 | 230,552 | 173,437 | 208,538 | 211,907 | [Brazilians in Japan](/wiki/Brazilians_in_Japan) |
+| [Indonesia](/wiki/Indonesia) | 2,781 | 19,346 | 25,097 | 24,895 | 35,910 | 66,832 | 199,824 | [Indonesians in Japan](/wiki/Indonesians_in_Japan) |
+| [Myanmar](/wiki/Myanmar) | 894 | 4,851 | 5,342 | 8,577 | 13,737 | 35,049 | 134,574 | [Burmese people in Japan](/wiki/Burmese_people_in_Japan) |
+| [Taiwan](/wiki/Taiwan) |  |  |  |  | 48,723 | 55,872 | 70,147 | Taiwanese in Japan |
+| [United States](/wiki/United_States) | 34,900 | 44,856 | 49,390 | 50,667 | 52,271 | 55,761 | 66,111 | [Americans in Japan](/wiki/Americans_in_Japan) |
+| [Thailand](/wiki/Thailand) | 5,542 | 29,289 | 37,703 | 41,279 | 45,379 | 53,379 | 65,398 | [Thais in Japan](/wiki/Thais_in_Japan) |
+| [Sri Lanka](/wiki/Sri_Lanka) | 1,064 | 5,655 | 9,013 | 9,097 | 13,152 | 29,290 | 63,472 | [Sri Lankans in Japan](/wiki/Sri_Lankans_in_Japan) |
+| [India](/wiki/India) | 2,926 | 10,064 | 16,988 | 22,497 | 26,244 | 38,558 | 53,974 | [Indians in Japan](/wiki/Indians_in_Japan) |
+| [Peru](/wiki/Peru) | 4,121 | 46,171 | 57,728 | 54,636 | 47,721 | 48,256 | 49,247 | [Peruvian migration to Japan](/wiki/Peruvian_migration_to_Japan) |
+| [Bangladesh](/wiki/Bangladesh) | 2,205 | 7,176 | 11,015 | 10,175 | 10,835 | 17,463 | 35,073 | [Bangladeshis in Japan](/wiki/Bangladeshis_in_Japan) |
+| [Pakistan](/wiki/Pakistan) | 1,875 | 7,498 | 8,789 | 10,299 | 12,708 | 19,103 | 29,647 | [Pakistanis in Japan](/wiki/Pakistanis_in_Japan) |
+| [Cambodia](/wiki/Cambodia) | 1,148 | 1,761 | 2,263 | 2,683 | 6,111 | 16,659 | 26,827 | [Cambodians in Japan](/wiki/Cambodians_in_Japan) |
+| [North Korea](/wiki/North_Korea) |  |  |  |  | 33,939 | 27,214 | 23,206 | [Koreans in Japan](/wiki/Koreans_in_Japan) |
+| [Mongolia](/wiki/Mongolia) | 23 | 1,209 | 3,762 | 4,949 | 6,590 | 13,504 | 21,240 | [Mongolians in Japan](/wiki/Mongolians_in_Japan) |
+| [United Kingdom](/wiki/United_Kingdom) | 9,272 | 16,525 | 17,494 | 16,044 | 15,826 | 16,891 | 21,139 | [Britons in Japan](/wiki/Britons_in_Japan) |
+| [France](/wiki/France) | 2,881 | 5,371 | 7,337 | 9,060 | 10,672 | 12,264 | 16,215 | [French people in Japan](/wiki/French_people_in_Japan) |
+| [Australia](/wiki/Australia) | 3,073 | 9,188 | 11,277 | 9,756 | 9,843 | 9,758 | 13,015 | [Australians in Japan](/wiki/Australians_in_Japan) |
+| [Canada](/wiki/Canada) | 4,172 | 10,088 | 12,022 | 9,995 | 9,538 | 10,103 | 12,226 | [Canadians in Japan](/wiki/Canadians_in_Japan) |
+| [Russia](/wiki/Russia) | 340 | 4,893 | 7,110 | 7,814 | 8,092 | 9,249 | 11,982 | [Russians in Japan](/wiki/Russians_in_Japan) |
+| [Malaysia](/wiki/Malaysia) | 4,309 | 8,386 | 7,910 | 8,364 | 8,738 | 10,318 | 11,968 | Malaysians in Japan |
+| [Germany](/wiki/Germany) | 3,410 | 4,295 | 5,356 | 5,971 | 6,336 | 6,114 | 8,749 | [Germans in Japan](/wiki/Germans_in_Japan) |
+| [Turkey](/wiki/Turkey) | 190 | 1,424 | 2,275 | 2,547 | 4,157 | 6,212 | 7,711 | [Turks in Japan](/wiki/Turks_in_Japan) |
+| [Uzbekistan](/wiki/Uzbekistan) | 113 | 184 | 495 | 832 | 1,503 | 3,632 | 7,107 | [Uzbeks in Japan](/wiki/Uzbeks_in_Japan) |
+| [Bolivia](/wiki/Bolivia) | 238 | 3,915 | 6,139 | 5,720 | 5,412 | 6,119 | 6,753 | Bolivians in Japan |
+| [Afghanistan](/wiki/Afghanistan) | 128 | 430 | 593 | 1,148 | 2,639 | 3,509 | 6,351 | Afghans in Japan |
+| [Italy](/wiki/Italy) | 890 | 1,579 | 2,083 | 2,731 | 3,536 | 4,263 | 5,556 | [Italians in Japan](/wiki/Italians_in_Japan) |
+| [Laos](/wiki/Laos) | 864 | 1,677 | 2,393 | 2,639 | 2,592 | 2,903 | 4,442 | Laotians in Japan |
+| [Iran](/wiki/Iran) | 988 | 6,167 | 5,227 | 4,841 | 3,996 | 4,121 | 4,399 | [Iranians in Japan](/wiki/Iranians_in_Japan) |
+| [Nigeria](/wiki/Nigeria) | 140 | 1,741 | 2,389 | 2,729 | 2,638 | 3,315 | 4,318 | [Nigerians in Japan](/wiki/Nigerians_in_Japan) |
+| [Ukraine](/wiki/Ukraine) | 892 | 1,004 | 1,784 | 1,507 | 1,699 | 1,865 | 4,176 | Ukrainians in Japan |
+| [Spain](/wiki/Spain) | 827 | 1,338 | 1,585 | 1,907 | 2,495 | 3,240 | 4,146 | Spaniards in Japan |
+| [New Zealand](/wiki/New_Zealand) | 967 | 3,264 | 3,824 | 3,250 | 3,152 | 3,280 | 4,022 | [New Zealanders in Japan](/wiki/New_Zealanders_in_Japan) |
+| [Singapore](/wiki/Singapore) | 1,042 | 1,940 | 2,283 | 2,512 | 2,501 | 2,958 | 3,739 | Singaporean in Japan |
+| [Mexico](/wiki/Mexico) | 691 | 1,740 | 1,825 | 1,956 | 2,141 | 2,714 | 3,702 | [Mexicans in Japan](/wiki/Mexicans_in_Japan) |
+| [Argentina](/wiki/Argentina) | 1,704 | 3,072 | 3,834 | 3,181 | 2,630 | 2,966 | 3,523 | Argentines in Japan |
+| [Ghana](/wiki/Ghana) | 518 | 1,657 | 1,824 | 1,883 | 2,235 | 2,005 | 3,124 | [Ghanaians in Japan](/wiki/Ghanaians_in_Japan) |
+| [Colombia](/wiki/Colombia) | 373 | 2,496 | 2,902 | 2,606 | 2,268 | 2,482 | 2,774 | Colombians in Japan |
+| [Egypt](/wiki/Egypt) | 344 | 1,103 | 1,366 | 1,593 | 2,005 | 2,027 | 2,450 | Egyptians in Japan |
+| [Romania](/wiki/Romania) | 42 | 2,449 | 3,574 | 2,409 | 2,408 | 2,250 | 2,310 | [Romanians in Japan](/wiki/Romanians_in_Japan) |
+| [Paraguay](/wiki/Paraguay) | 672 | 1,678 | 2,287 | 2,098 | 1,880 | 2,131 | 2,266 | Paraguayans in Japan |
+| [Sweden](/wiki/Sweden) | 586 | 1,158 | 1,136 | 1,553 | 1,805 | 1,514 | 1,971 | [Swedes in Japan](/wiki/Swedes_in_Japan) |
+| [Netherlands](/wiki/Netherlands) | 749 | 904 | 1,079 | 1,099 | 1,129 | 1,294 | 1,881 | Dutch in Japan |
+| [Poland](/wiki/Poland) | 359 | 742 | 870 | 978 | 1,653 | 1,408 | 1,865 | [Poles in Japan](/wiki/Poles_in_Japan) |
+| [Syria](/wiki/Syria) | 70 | 135 | 158 | 188 | 477 | 970 | 1,584 | Syrians in Japan |
+| [South Africa](/wiki/South_Africa) | 108 | 353 | 564 | 570 | 691 | 1,020 | 1,560 | South Africans in Japan |
+| [Cameroon](/wiki/Cameroon) | 6 | 100 | 214 | 343 | 473 | 1,059 | 1,558 | Cameroonians in Japan |
+| [Switzerland](/wiki/Switzerland) | 980 | 907 | 971 | 1,089 | 1,023 | 1,076 | 1,393 | Swiss in Japan |
+| [Ireland](/wiki/Republic_of_Ireland) | 671 | 974 | 1,094 | 1,061 | 1,026 | 1,128 | 1,392 | [Irish people in Japan](/wiki/Irish_people_in_Japan) |
+| [Chile](/wiki/Chile) | 263 | 652 | 712 | 680 | 639 | 886 | 1,249 | Chilean in Japan |
+| **Total foreign residents** | 984,455 | 1,686,444 | 2,011,555 | 2,134,151 | 2,232,189 | 2,887,116 | 3,768,977 |
+
+#### Foreign residents as of 2015
+
+There was an increase of 110,358 foreign residents from 2014 to 2015. [Vietnamese](/wiki/Vietnamese_people) made the largest proportion of these new foreign residents, whilst [Nepalese](/wiki/Nepalis), [Filipino](/wiki/Filipinos), [Chinese](/wiki/Chinese_people) and [Taiwanese](/wiki/Taiwanese_people) are also significant in numbers. Together these countries makes up 91,126 or 82.6% of all new residents from 2014 to 2015. The majority of these immigrants will only remain in Japan for a maximum of five years, as many of them have entered Japan in order to complete trainee programmes. Once they complete their programmes, they will be required to return to their home countries.
+
+In December 2014, there were 2,121,831 foreigners residing in Japan, 677,019 of whom were long-term residents in Japan, according to national demographics figures. The majority of long-term residents were from Asia, totalling 478,953. Chinese made up the largest portion of them with 215,155, followed by Filipinos with 115,857, and Koreans with 65,711. Thai, Vietnamese, and Taiwanese long-term residents totaled 47,956, and those from other Asian countries totaled 34,274. The Korean figures do not include [zainichi](/wiki/Koreans_in_Japan) Koreans with *tokubetsu eijusha* ("special permanent resident") visas, of whom there were 354,503, of a total of 358,409 of all nationalities with such visas. The number of permanent residents had declined over the previous five years due to high cost of living.
+
+#### Foreign residents as of 2021
+
+In 2019, the number of foreign residents of Japan reached a high of 2.93 million before falling to 2.76 million at the end of 2021. The number of foreign workers was 1.46 million in 2018. 29.7% were in the manufacturing sector. 389,000 are from Vietnam and 316,000 are from China.
+
+On April 1, 2019, Japan's revised immigration law was enacted. The revision clarifies and better protects the rights of foreign workers. Japan formally accepts foreign blue-collar workers. This helps reduce labour shortage in certain sectors of the economy. The reform changes the status of foreign workers to regular employees and they can obtain permanent residence status.
+
+The reform includes a new visa status called *tokutei gino* (特定技能, *"designated skills"*). In order to qualify, applicants must pass a language and skills test, level N4 or higher of the [Japanese-Language Proficiency Test](/wiki/Japanese-Language_Proficiency_Test). In the old "Technical Trainee programme" a foreign employee was tied to their employer. This caused numerous cases of exploitation. The revision gives foreign workers more freedom to leave and change their employer.
+
+- Japanese nationality data mapped in prefectures in 2020
+- Japanese nationality (96.3% total)
+- Foreign nationality (1.9% total)
+- No nationality stated (1.7% total)
+
+## See also
+
+- [Demographic history of Japan before the Meiji Restoration](/wiki/Demographic_history_of_Japan_before_the_Meiji_Restoration)
+- [Demography of the Empire of Japan](/wiki/Demographics_of_the_Empire_of_Japan)
+- [Elderly people in Japan](/wiki/Elderly_people_in_Japan)
+- [Largest cities in Japan by population by decade](/wiki/Largest_cities_in_Japan_by_population_by_decade)
+- [Demographics of Tokyo](/wiki/Demographics_of_Tokyo)
+
+## Notes
+
+## References
+
+## External links
+
+- Media related to [Demographics of Japan](https://commons.wikimedia.org/wiki/Category:Demographics_of_Japan) at Wikimedia Commons
+- [Japan Population Census 2010](https://web.archive.org/web/20121115193524/http://www.stat.go.jp/data//kokusei/2010/special/english/index.htm)
+- [Expatriates in Japan](http://linkexpats.com/Expatriates-in-Japan) [Archived](https://web.archive.org/web/20170608180556/http://linkexpats.com/Expatriates-in-Japan) 2017-06-08 at the [Wayback Machine](/wiki/Wayback_Machine)
+- ["The Dilemma Posed by Japan's Population Decline"](http://www.japanesestudies.org.uk/discussionpapers/Chapple.html) [Archived](https://web.archive.org/web/20050915083338/http://www.japanesestudies.org.uk/discussionpapers/Chapple.html) 2005-09-15 at the [Wayback Machine](/wiki/Wayback_Machine)—Discussion paper by Julian Chapple in the [*electronic journal of contemporary japanese studies*](http://www.japanesestudies.org.uk/) [Archived](https://web.archive.org/web/20051108105216/http://www.japanesestudies.org.uk/) 2005-11-08 at the [Wayback Machine](/wiki/Wayback_Machine), 18 October 2004.
+- [The Exodus to North Korea Museum](http://exodustonorthkorea.wordpress.com/omura-%E3%80%80%E5%A4%A7%E6%9D%91/)—Commemorates the story of the 93,340 people who migrated from Japan to North Korea in the period 1959–1984
+- [Another Tsunami Warning: Caring for Japan's Elderly](http://www.nbr.org/research/activity.aspx?id=131) [Archived](https://web.archive.org/web/20171003075155/http://www.nbr.org/research/activity.aspx?id=131) 2017-10-03 at the [Wayback Machine](/wiki/Wayback_Machine)—Brief on what the future of Japan looks like for an increasingly aging population, and if this demographic transition is limited to Japan alone
+- Morita, Kiriro and Saskia Sassen. "[The New Illegal Immigration in Japan, 1980–1992](https://www.researchgate.net/publication/11133410_The_New_Illegal_Immigration_in_Japan_1980-1992) [Archived](https://web.archive.org/web/20211031024004/https://www.researchgate.net/publication/11133410_The_New_Illegal_Immigration_in_Japan_1980-1992) 2021-10-31 at the [Wayback Machine](/wiki/Wayback_Machine)". *[International Migration Review](/wiki/International_Migration_Review)*. Vol. 28, No. 1 (Spring 1994), pp. 153–163. [JSTOR](/wiki/JSTOR_(identifier)) [2547030](https://www.jstor.org/stable/2547030).

@@ -1,0 +1,373 @@
+# Happy Days
+
+## Infobox
+
+- **Also known as:** Happy Days Again
+- **Genre:** Sitcom
+- **Created by:** Garry Marshall
+- **Directed by:** Jerry Paris Various (seasons 1–3)
+- **Starring:** Ron Howard Marion Ross Anson Williams Tom Bosley Henry Winkler Donny Most Erin Moran Pat Morita Al Molinaro Scott Baio Lynda Goodfriend Cathy Silvers Ted McGinley Linda Purl Heather O'Rourke
+- **Theme music composer:** Max C. Freedman and James E. Myers (1974–1975, opening) Norman Gimbel and Charles Fox (1975–1984, opening; 1974–1984, ending)
+- **Opening theme:** " Rock Around the Clock ", performed by Bill Haley & His Comets (1974–1975) " Happy Days ", performed by: The Ron Hicklin Singers (1975–1983) Bobby Arvon (1983–1984)
+- **Ending theme:** "Happy Days", performed by: Jim Haas (1974–1975) The Ron Hicklin Singers (1975–1983) Bobby Arvon (1983–1984)
+- **Composers:** John Beal Frank Comstock Pete King James Patrick Dunne
+- **Country of origin:** United States
+- **Original language:** English
+- **No. of seasons:** 11
+- **No. of episodes:** 255 ( list of episodes )
+- **Executive producers:** Garry Marshall Thomas L. Miller Edward K. Milkis Robert L. Boyett
+- **Producers:** William Bickley Michael Warren Anthony W. Marshall Ronny Hallin Fred Fox, Jr.
+- **Camera setup:** Single-camera (1974–1975) Multi-camera (1975–1984)
+- **Running time:** 25 minutes
+- **Production companies:** Miller-Milkis Productions (seasons 1–8) Henderson Production Company, Inc. (seasons 6–11) Miller-Milkis-Boyett Productions (seasons 9–11) Paramount Television
+- **Network:** ABC
+- **Release:** January 15, 1974 ( 1974-01-15 ) – July 19, 1984 ( 1984-07-19 )
+
+This article is about the 1970s television series. For other uses, see [Happy Days (disambiguation)](/wiki/Happy_Days_(disambiguation)).
+
+***Happy Days*** is an American television [sitcom](/wiki/Sitcom) that aired on [ABC](/wiki/American_Broadcasting_Company) from January 15, 1974 to July 19, 1984 with a total of 255 half-hour episodes spanning 11 seasons. Created by [Garry Marshall](/wiki/Garry_Marshall), it was one of the most successful series of the 1970s. The series presented life in the 1950s and early 1960s [Midwestern United States](/wiki/Midwestern_United_States), where it also featured an [ensemble cast](/wiki/Ensemble_cast), starring [Ron Howard](/wiki/Ron_Howard) as [Richie Cunningham](/wiki/Richie_Cunningham), [Henry Winkler](/wiki/Henry_Winkler) as his friend [Fonzie](/wiki/Fonzie) and [Tom Bosley](/wiki/Tom_Bosley) and [Marion Ross](/wiki/Marion_Ross) as Richie's parents, [Howard](/wiki/Howard_Cunningham_(Happy_Days)) and [Marion Cunningham](/wiki/Marion_Cunningham_(Happy_Days)). Although it opened to mixed reviews from critics, *Happy Days* became successful and popular over time.
+
+The series began as an unsold pilot starring Howard, Ross and [Anson Williams](/wiki/Anson_Williams), which aired in 1972 as a segment titled "Love and the Television Set" (later retitled "Love and the Happy Days" for syndication) on ABC's anthology show *[Love, American Style](/wiki/Love,_American_Style)*. Based on the pilot, director [George Lucas](/wiki/George_Lucas) cast Howard as the lead in his 1973 film *[American Graffiti](/wiki/American_Graffiti)*, causing ABC to take a renewed interest in the pilot. The first two seasons of *Happy Days* focused on the experiences and dilemmas of "innocent teenager" Richie Cunningham, his family, and his high school friends, attempting to "honestly depict a wistful look back at adolescence".
+
+Initially a moderate success, the series' ratings began to fall during its second season, causing Marshall to retool it. The new format emphasized broad comedy and spotlighted the previously minor character of Fonzie, a cool [biker](/wiki/Motorcycling#Subcultures) and high school dropout. Following these changes, *Happy Days* became the number-one program in television in 1976–1977, Fonzie became one of the most merchandised characters of the 1970s, and Henry Winkler became a major star. The series also spawned a number of [spin-offs](/wiki/Spin-off_(media)), including *[Laverne & Shirley](/wiki/Laverne_%26_Shirley)* and *[Mork & Mindy](/wiki/Mork_%26_Mindy)*.
+
+## Plot
+
+Set in [Milwaukee](/wiki/Milwaukee), Wisconsin, during the 1950s and 1960s, the series revolves around teenager [Richie Cunningham](/wiki/Richie_Cunningham) and his family: his father, Howard, who owns a hardware store; traditional homemaker and mother, Marion; younger sister [Joanie Cunningham](/wiki/Joanie_Cunningham); Richie's older brother Chuck (briefly in seasons 1 and 2 only, disappearing from storylines afterward); and high school dropout, leather-jacket–clad [greaser](/wiki/Greaser_(subculture)), suave and promiscuous mechanic [Fonzie](/wiki/Fonzie), who would eventually become Richie's best friend and the Cunninghams' over-the-garage tenant. Season 1 likely takes place in 1955, based on cultural references and popular songs featured in the episodes. In season 2, the episode "The Not Making of the President" is explicitly set during the 1956 presidential election campaign between Adlai Stevenson and Dwight D. Eisenhower, with Richie Cunningham campaigning for Stevenson. The earliest episodes revolve around Richie and his friends, [Potsie Weber](/wiki/Potsie_Weber) and [Ralph Malph](/wiki/Ralph_Malph), with Fonzie as a secondary character.
+
+However, as the series progressed, Fonzie proved to be a favorite with viewers, and soon more story lines were written to reflect his growing popularity, Winkler was top billed in the opening credits alongside Howard by season 3. Fonzie befriended Richie and the Cunningham family and, when Richie left the series for military service, Fonzie became the central figure of the show, with Winkler receiving sole top billing. In later seasons, other characters were introduced including Fonzie's young cousin, [Chachi Arcola](/wiki/Chachi_Arcola), who became a love interest for Joanie Cunningham.
+
+The series' pilot was originally shown as "Love and the Television Set", later retitled "Love and the Happy Days" for syndication, a one-episode teleplay on the anthology series *[Love, American Style](/wiki/Love,_American_Style)*, aired on February 25, 1972. *Happy Days* spawned successful television shows *[Laverne & Shirley](/wiki/Laverne_%26_Shirley)* and *[Mork & Mindy](/wiki/Mork_%26_Mindy)* as well as three failures: *[Joanie Loves Chachi](/wiki/Joanie_Loves_Chachi)*, *[Blansky's Beauties](/wiki/Blansky%27s_Beauties)* featuring Nancy Walker as Howard's cousin, and *[Out of the Blue](/wiki/Out_of_the_Blue_(1979_TV_series))*. The show is the basis for the [*Happy Days* musical](/wiki/Happy_Days_(musical)) touring the United States since 2008. The leather jacket worn by Winkler during the series was acquired by the [Smithsonian Institution](/wiki/Smithsonian_Institution) for the permanent collection at the [National Museum of American History](/wiki/National_Museum_of_American_History). The original, light grey [McGregor](/wiki/Harrington_jacket) windbreaker Winkler wore during the first season eventually was thrown into the garbage after ABC relented and allowed the Fonzie character to wear a leather jacket.
+
+## Episodes
+
+Main article: [List of *Happy Days* episodes](/wiki/List_of_Happy_Days_episodes)
+
+## Cast
+
+| Actor | Character | Seasons | | | | | | | | | | | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [1](/wiki/Happy_Days_season_1) | [2](/wiki/Happy_Days_season_2) | [3](/wiki/Happy_Days_season_3) | [4](/wiki/Happy_Days_season_4) | [5](/wiki/Happy_Days_season_5) | [6](/wiki/Happy_Days_season_6) | [7](/wiki/Happy_Days_season_7) | [8](/wiki/Happy_Days_season_8) | [9](/wiki/Happy_Days_season_9) | [10](/wiki/Happy_Days_season_10) | [11](/wiki/Happy_Days_season_11) | Ep |
+| [Ron Howard](/wiki/Ron_Howard) | [Richie Cunningham](/wiki/Richie_Cunningham) | Main | | | | | | |  | | | Guest | 170 |
+| [Anson Williams](/wiki/Anson_Williams) | [Potsie Weber](/wiki/Potsie_Weber) | Main | | | | | | | | | | | 211 |
+| [Marion Ross](/wiki/Marion_Ross) | [Marion Cunningham](/wiki/Marion_Cunningham_(Happy_Days)) | Main | | | | | | | | | | | 252 |
+| [Tom Bosley](/wiki/Tom_Bosley) | [Howard Cunningham](/wiki/Howard_Cunningham_(Happy_Days)) | Main | | | | | | | | | | | 255 |
+| [Henry Winkler](/wiki/Henry_Winkler) | [Arthur "Fonzie" Fonzarelli](/wiki/Fonzie) | Recurring | Main | | | | | | | | | | 255 |
+| [Don Most](/wiki/Don_Most) | [Ralph Malph](/wiki/Ralph_Malph) | Recurring | Main | | | | | |  | | | Guest | 168 |
+| [Erin Moran](/wiki/Erin_Moran) | [Joanie Cunningham](/wiki/Joanie_Cunningham) | Recurring | | Main | | | | | | | Recurring | Main | 234 |
+| [Pat Morita](/wiki/Pat_Morita) | Matsuo "Arnold" Takahashi |  | | Recurring | Guest |  | Guest |  | | | Recurring | Guest | 26 |
+| [Al Molinaro](/wiki/Al_Molinaro) | [Al Delvecchio](/wiki/Al_Delvecchio) |  | | | Recurring | | Main | | | | Guest | | 145 |
+| [Scott Baio](/wiki/Scott_Baio) | [Chachi Arcola](/wiki/Chachi_Arcola) |  | | | | Recurring | Main | | | | Recurring | Main | 131 |
+| [Lynda Goodfriend](/wiki/Lynda_Goodfriend) | Lori Beth Cunningham |  | | | | Recurring | | | Main | |  | Guest | 66 |
+| [Cathy Silvers](/wiki/Cathy_Silvers) | Jenny Piccolo |  | | | | | | | Recurring | | Main | Guest | 55 |
+| [Ted McGinley](/wiki/Ted_McGinley) | Roger Phillips |  | | | | | | | Recurring | | Main | | 61 |
+| [Linda Purl](/wiki/Linda_Purl) | Ashley Pfister |  | | | | | | | | | Main |  | 19 |
+| [Heather O'Rourke](/wiki/Heather_O%27Rourke) | Heather Pfister |  | | | | | | | | | Recurring |  | 12 |
+| Vincent Teo | The chinese cook |  | | | | | | | | | Recurring |  | 15 |
+| Main  Recurring  Guest | | | | | |
+
+## Characters
+
+### Main
+
+- [Richie Cunningham](/wiki/Richie_Cunningham) — The [protagonist](/wiki/Protagonist) for the first seven seasons of the series (1974–1980). When [Ron Howard](/wiki/Ron_Howard) left the show due to his burgeoning directorial career, Richie was written out by leaving to join the United States Army. He marries his girlfriend, Lori Beth, in season eight by phone so that she will be able to join him at his post in Greenland, while Fonzie stands in for him in the wedding. Howard returned for guest appearances as Richie during the show's final season. He came back with Lori Beth and their son, Richie Jr., and Ralph in the season 11 two-part episode, "Welcome Home", and then left for California with Lori Beth and Richie Jr. to pursue a career in screenwriting. He also returned in "Passages", when he and his family attended Joanie and Chachi's wedding.
+- [Marion Cunningham](/wiki/Marion_Cunningham_(Happy_Days)) ([née](/wiki/Birth_name#Maiden_and_married_names) Kelp) — Wife of Howard, mother of Chuck, Richie, and Joanie, and a traditional homemaker. She is the only character who is allowed to call Fonzie by his real first name, Arthur, which she does affectionately. She sometimes gets tired of being at home, such as in "Marion Rebels" where she gets into an argument with Howard and briefly gets a job as a waitress at Arnold's. Marion was one of only four characters to remain with the show throughout its entire run.
+- [Howard Cunningham](/wiki/Howard_Cunningham_(Happy_Days)) — Husband of Marion, father of Chuck, Richie, and Joanie, business owner of a hardware store called "Cunningham's Hardware", he is a lodge member, and family man. Howard is one of only two characters (the other being Fonzie) to appear in every episode of the series.
+- [Joanie Cunningham](/wiki/Joanie_Cunningham) — Richie's younger sister. In early seasons, she is sometimes snooping on Richie's activities and would occasionally be sent to her room by her parents. She is affectionately called "Shortcake" by Fonzie.
+- [Arthur Fonzarelli](/wiki/Fonzie), a.k.a. The Fonz or Fonzie — Initially a secondary or recurring character, billed in the end credits, during the first season, he became a popular [breakout character](/wiki/List_of_breakout_characters) and was promoted to front billing by the second season. Fonzarelli's "Fonzie" nickname and comeback phrase, "Sit on it", were created by the show's producer [Bob Brunner](/wiki/Bob_Brunner). His parents abandoned him as a child and his grandmother raised him from the age of four.
+- [Warren "Potsie" Weber](/wiki/Potsie_Weber) — Richie's best friend and an aspiring and talented singer.
+- [Ralph Malph](/wiki/Ralph_Malph) — In the first season, Ralph was intended as more of a secondary character, billed in the end credits, along with Winkler and Moran, but by season 2, Ralph was front billed with them.
+- Mitsumo "Arnold" Takahashi ([Noriyuki "Pat" Morita](/wiki/Pat_Morita)) (seasons 1-3, 10–11: 26 episodes) is the owner of Arnold's Drive-In (1975–76). Morita also played "Arnold" as a guest star in 1977 and 1979 before returning as a recurring character after [Al Molinaro](/wiki/Al_Molinaro) departed in 1982.
+- [Chachi Arcola](/wiki/Chachi_Arcola) ([Scott Baio](/wiki/Scott_Baio)) — Fonzie's younger cousin and later Al Delvecchio's stepson. Fonzie acts as his older brother/father figure. He has much of Fonzie's smoothness and charisma, "wah wah wah" being his catchphrase. Chachi becomes "one of the guys", joining Richie, Potsie, Ralph, and Fonzie in their antics and as their bandmate/drummer.
+- Jenny Piccalo ([Cathy Silvers](/wiki/Cathy_Silvers)) — Joanie's boy-crazy best friend (1980–1983), frequently mentioned but never seen in early episodes. She made her first on-screen appearance in the eighth season and remained a recurring character through the ninth season, becoming a regular during the tenth season in 1983. She returned as a guest star in the 1984 series finale. Jenny's father, played by [Cathy Silvers](/wiki/Cathy_Silvers)' real-life father [Phil Silvers](/wiki/Phil_Silvers), appeared in one episode (S9E8 "Just a Piccalo").
+- Roger Phillips ([Ted McGinley](/wiki/Ted_McGinley)) — Marion's nephew; coach and teacher at Jefferson High, until the episode "Vocational Education" when he became principal at Patton High. Introduced in 1980 after Richie left the show as a recurring character.
+- Lori Beth Allen-Cunningham ([Lynda Goodfriend](/wiki/Lynda_Goodfriend)) — Richie's girlfriend and later his wife (1977–82). She married Richie by phone in season eight. Fonzie helped Lori Beth deliver her baby in "Little Baby Cunningham". She returned as a guest star in the final season, where she is pregnant with her second baby.
+- Ashley Pfister ([Linda Purl](/wiki/Linda_Purl)) — Divorced mother who becomes Fonzie's steady girlfriend until they break up offscreen sometime before "Where the Guys Are". (Purl also portrays Richie's part-time girlfriend Gloria in season 2).
+
+### Minor/recurring
+
+- Marsha Simms ([Beatrice Colen](/wiki/Beatrice_Colen)) (seasons 1–3, 5; 22 episodes) — A [carhop](/wiki/Carhop) waitress in the first 3 seasons with comic sides and plot development appearances. She returned for a flashback (guest) appearance in the episode "Our Gang".
+- Bobby Melner (Harris Kal) (seasons 8–11; 19 episodes) — Friend of Chachi and Joanie seen in episodes after Richie and Ralph left the show. He is a student in Fonzie's auto shop class, as well as in Roger's health class. At one point, he was also on the Jefferson High basketball team, and performed in a band with Joanie and Chachi.
+- K.C. Cunningham ([Crystal Bernard](/wiki/Crystal_Bernard)) (season 10; 15 episodes) — Howard's niece. She moves in with Howard and Marion after Joanie leaves for Chicago. She left an all-girls boarding school in Texas because it closed down.
+- Leopold "Flip" Phillips ([Billy Warlock](/wiki/Billy_Warlock)) (seasons 9–10; 13 episodes) — Roger's rebellious younger brother. He usually wears a shirt cut off over his bellybutton.
+- Tommy (Kevin Sullivan) (seasons 8–11; 13 episodes) — Another friend of Chachi and Joanie in episodes after Ron Howard and Don Most left the show. Like Bobby, Tommy is a student in Fonzie's auto shop class, as well as in Roger's health class.
+- Heather Pfister ([Heather O'Rourke](/wiki/Heather_O%27Rourke)) (season 10; 12 episodes) — Ashley Pfister's daughter. Initially she does not get along with Fonzie, but gradually learns to accept him as a father figure.
+- Charles "Chuck" Cunningham ([Gavan O'Herlihy](/wiki/Gavan_O%27Herlihy), [Randolph Roberts](/wiki/Randolph_Roberts)) (seasons 1–2; 11 episodes) — The oldest son of Howard and Marion Cunningham and older brother of Richie and Joanie, Chuck is a college student and basketball player. He is rarely seen and disappears without explanation in season three, never to be seen nor referenced again after season 2's "Fish and Fins". The character's disappearance gave rise to the term "Chuck Cunningham Syndrome", used to describe TV characters that disappear from shows without an in-narrative explanation and are nowhere to be seen or mentioned again. Gavan O'Herlihy played Chuck, but then he asked to leave the series. He was replaced by Randolph Roberts. In several late-season episodes, Howard and Marion say they are "very proud of our two children", with no on-screen reference to Chuck.
+- Eugene Belvin (Denis Mandel) (seasons 8–9; 10 episodes) — Nerdy classmate of Joanie and Chachi, and twin brother of Melvin Belvin. He takes Fonzie's auto shop class and has a crush on Jenny Piccolo. Despite being a general stooge to his classmates at Jefferson High, he frequently tags along with Joanie and Chachi's circle of friends.
+- "Bag" Zombroski (Neil J. Schwartz) (seasons 1–4; 9 episodes) — A Jefferson High schoolmate, drummer of Richie's band and a leader of a jacket club called "The Demons".
+- Police Officer Kirk / Army Reserve Major Kirk ([Ed Peck](/wiki/Ed_Peck)) (seasons 3–10; 9 episodes) — Fonzie's nemesis and [antagonist](/wiki/Antagonist), who is eager to demonstrate his inflated sense of authority, and on the watch for delinquents and "[pinkos](/wiki/Pinko)" (communists). Kirk takes over as acting sheriff following the untimely death of Sheriff Flanaghan.
+- Wendy ([Misty Rowe](/wiki/Misty_Rowe)) (season 2; 8 episodes) — A carhop from Arnold's in season two. She is paired with Marsha Simms in 5 episodes.
+- Trudy (Tita Bell) (seasons 1–4; 8 episodes) — A Jefferson High classmate, Potsie's and Fonzie's date in various episodes
+- Melvin Belvin (Scott Bernstein) (seasons 9–10; 8 episodes) — A nerdy classmate of Joanie and Chachi, and twin brother of Eugene Belvin. Like his brother, Melvin frequently tags along with Joanie's and Chachi's circle of friends.
+- Leather Tuscadero ([Suzi Quatro](/wiki/Suzi_Quatro)) (seasons 5–6; 7 episodes) — A musician, younger sister of Pinky Tuscadero and a former juvenile delinquent, she forms her own [girl group](/wiki/Girl_group) called "Leather and the Suedes".
+- Jennifer Jerome (Lorrie Mahaffey) (seasons 5–6; 6 episodes) — Potsie's steady girlfriend. Mahaffey was [Anson Williams](/wiki/Anson_Williams)' then wife.
+- Laverne De Fazio ([Penny Marshall](/wiki/Penny_Marshall)) and Shirley Feeney ([Cindy Williams](/wiki/Cindy_Williams)) (seasons 3, 6–7; 5 episodes) — Dating interest of Fonzie, Laverne and her friend Shirley appeared prominently in three episodes during season three ("A Date with Fonzie", "Football Frolics", and "Fonzie the Superstar"), which led to the Marshall and Williams starring in the spin-off series *[Laverne & Shirley](/wiki/Laverne_%26_Shirley)*; they also made guest appearances in season six's "Fonzie's Funeral (Part 2)" and season seven's "Shotgun Wedding" (Part 1) (the second part of "Shotgun Wedding" concluded on a [crossover](/wiki/Crossover_(fiction)) episode of *Laverne and Shirley*.)
+- Louisa Arcola-Delvecchio ([Ellen Travolta](/wiki/Ellen_Travolta)) (seasons 8–11; 5 episodes) — Mother of Chachi Arcola and aunt of Fonzie. She marries Al Delvecchio and they move to Chicago.
+- Gloria ([Linda Purl](/wiki/Linda_Purl)) (season 2; 5 episodes) — Richie's occasional girlfriend in season two.
+- Dr. Mickey Malph ([Alan Oppenheimer](/wiki/Alan_Oppenheimer), [Jack Dodson](/wiki/Jack_Dodson)) (season 3–4, 7; 4 episodes) — Ralph's father, an optometrist and, like his son, a self-styled comedian. He briefly separates from his wife Minnie, but apparently resolves the issues with her after a talk with Ralph.
+- Raymond "Spike" Fonzarelli (Danny Butch) (seasons 2–4; 4 episodes) — Fonzie's cousin (often referred to as his nephew, but Fonzie explains that he could not be his nephew, as Fonzie was an only child) and his copycat. He goes on a date with Joanie in "Not with My Sister, You Don't" and made only fleeting appearances before the introduction of Chachi.
+- Grandma Nussbaum ([Frances Bay](/wiki/Frances_Bay)) (seasons 3, 9–11: 4 episodes) — Chachi Arcola and Fonzie's grandmother. Grandma Nussbaum was played by [Lillian Bronson](/wiki/Lillian_Bronson) in the season 3 episode "Fonzie Moves In".
+- Carol "Pinky" Tuscadero ([Roz Kelly](/wiki/Roz_Kelly)) (season 4; 3 episodes) — Former girlfriend of Fonzie and a traveling [demolition derby](/wiki/Demolition_derby) driver.
+- Clarence (Gary Friedkin) (season 10; 3 episodes) — A cook at Arnold's who is referred to several times throughout the show, but never actually seen until the episode "A Woman Not Under the Influence". There, it is revealed that Clarence is a little person.
+- Bill "Sticks" Downey ([John Anthony Bailey](/wiki/John_Bailey_(American_actor))) (season 3; 2 episodes) — Friend of Fonzie, Richie, Potsie, and Ralph and drummer for their band, hence his nickname "Sticks", though he claims he got the nickname because he was skinny.
+
+## Production
+
+*Happy Days* originated during a time of 1950s [nostalgic](/wiki/Nostalgic) interest as evident in 1970s film, television, and music. In late winter of 1971, [Michael Eisner](/wiki/Michael_Eisner) was snowed in at Newark airport where he bumped into Tom Miller, head of development at Paramount. Eisner has stated that he told Miller, "Tom, this is ridiculous. We're wasting our time here. Let's write a show." The script treatment that came out of that did not sell. But in spite of the market research department telling them that the 1950s theme would not work, they decided to redo it, and this was accepted as a pilot. This unsold pilot was filmed in late 1971 and titled *New Family in Town,* with [Harold Gould](/wiki/Harold_Gould) in the role of Howard Cunningham, [Marion Ross](/wiki/Marion_Ross) as Marion, [Ron Howard](/wiki/Ron_Howard) as Richie, [Anson Williams](/wiki/Anson_Williams) as Potsie, [Ric Carrott](/wiki/Ric_Carrott) as Charles "Chuck" Cunningham, and [Susan Neher](/wiki/Susan_Neher) as Joanie. [Paramount](/wiki/Paramount_Pictures) passed on making it into a weekly series, and the pilot was recycled with the title *Love and the Television Set* (later retitled *Love and the Happy Days* for syndication), for presentation on the television [anthology series](/wiki/Anthology_series) *[Love, American Style](/wiki/Love,_American_Style).* Also in 1971, the musical *[Grease](/wiki/Grease_(musical)#Original_productions_and_Broadway)* had a successful opening in Chicago, and by the following year became successful on Broadway. In 1972, [George Lucas](/wiki/George_Lucas) asked to view the pilot to determine if Ron Howard would be suitable to play a teenager in *[American Graffiti](/wiki/American_Graffiti),* then in pre-production. Lucas immediately cast Howard in the film, which became one of the top-grossing films of 1973. With the movie's success generating a renewed interest in the 1950s era (although the film was set in 1962), TV show creator [Garry Marshall](/wiki/Garry_Marshall) and ABC recast the unsold pilot to turn *Happy Days* into a series. According to Marshall in an interview, executive producer [Tom Miller](/wiki/Thomas_L._Miller) said while developing the sitcom, "If we do a TV series that takes place in another era, and when it goes into reruns, then it won't look old." This made sense to Marshall while on the set of the show.
+
+Gould had originally been tapped to reprise the role of Howard Cunningham on the show. However, during a delay before the start of production he found work doing a play abroad and when he was notified the show was ready to begin production, he declined to return because he wanted to honor his commitment. Bosley was then offered the role.
+
+For the role of Fonzie it was narrowed down to [Micky Dolenz](/wiki/Micky_Dolenz) and Henry Winkler but the role eventually went to the latter, Dolenz later said that Winkler "deserved it".
+
+### Production and scheduling notes
+
+- [Jerry Paris](/wiki/Jerry_Paris), who played next-door neighbor Jerry Helper on *[The Dick Van Dyke Show](/wiki/The_Dick_Van_Dyke_Show)* and directed 84 episodes of that series, directed every episode of *Happy Days* from season three on, except for three episodes in season three ("Jailhouse Rock", "Dance Contest", and "Arnold's Wedding").
+- Producer and writer [Bob Brunner](/wiki/Bob_Brunner) created Arthur Fonzarelli's "Fonzie" nickname and the phrase that appeared in Season 3 onward which became his iconic comeback: "Sit on it."
+- Beginning in September 1979 until the show went out of production, reruns of the show were [syndicated](/wiki/Television_syndication) under the title *Happy Days Again*.
+- *Happy Days* was produced by Miller-Milkis Productions, a teaming of Thomas L. Miller with former film editor Edward K. Milkis, which became Miller-Milkis-Boyett Productions when Robert L. Boyett joined the company in 1980, and was the first-ever show to be produced by the company's most recent incarnation, [Miller-Boyett Productions](/wiki/Miller-Boyett_Productions), which followed Milkis's resignation from the partnership. It was also produced by Henderson Productions and was one of the popular shows produced in association with [Paramount Television](/wiki/Paramount_Television).
+- In its 11 seasons on the air, *Happy Days* is the third-longest-running sitcom in [ABC](/wiki/American_Broadcasting_Company)'s history (behind *[The Adventures of Ozzie and Harriet](/wiki/The_Adventures_of_Ozzie_and_Harriet),* which ran 14 seasons, from 1952 to 1966), and one of the longest-running primetime programs in the network's history. It is also unique in that it remained in the same time slot, leading off ABC's Tuesday night programming at 8:00 p.m. [Eastern](/wiki/Eastern_Time_Zone)/[Pacific](/wiki/Pacific_Time_Zone) (7:00 p.m. in the [Central](/wiki/Central_Time_Zone) and [Mountain](/wiki/Mountain_Time_Zone) zones) for its first ten seasons. That half-hour became a signature timeslot for ABC, with *[Who's the Boss?](/wiki/Who%27s_the_Boss%3F)* instantly entering the top 10 when it was moved from Thursdays and staying in that time slot for six seasons, followed by the equally family-friendly sitcom *[Full House](/wiki/Full_House)* (another Miller-Boyett co-production). That sitcom also hit the top 10 immediately after inheriting the Tuesday at 8:00/7:00 p.m. slot and then stayed there for four seasons.
+- *Happy Days* also proved to be quite popular in daytime reruns; the show joined the [ABC daytime](/wiki/ABC_Daytime) schedule in September 1975, airing reruns at 11:30 a.m. ET (10:30 a.m. CT/MT/PT), being moved to 11:00/10:00 a.m. in April 1977, paired with *[Family Feud](/wiki/Family_Feud)* following at 11:30/10:30 a.m. It was replaced on the daytime schedule by reruns of its spin-off, *Laverne & Shirley,* in April 1979.
+- [CBS](/wiki/CBS) programming head [Fred Silverman](/wiki/Fred_Silverman) scheduled the *[Maude](/wiki/Maude_(TV_series))* spin-off *[Good Times](/wiki/Good_Times)* directly against *Happy Days* during their respective second seasons in an attempt to kill the ABC show's growing popularity. In a way this move backfired on Silverman, as he was named president of ABC in 1975, thus forcing him to come up with a way to save the show he tried to kill the year before. After having knocked *Happy Days* out of the top 20 programs on television his last year at CBS, Silverman had the series at the top of the [Nielsen ratings](/wiki/Nielsen_ratings) by 1977 (see below). *Good Times* was later ended in 1979.
+- Ron Howard later revealed that many of the exterior scenes filmed in *Happy Days* were actually shot in [Munster, Indiana](/wiki/Munster,_Indiana).
+- The official series finale ("Passages") aired on May 8, 1984. But there were five "leftover" episodes that ABC did not have time to air during the regular season due to the [Winter Olympics](/wiki/1984_Winter_Olympics) and the spring run of *[a.k.a. Pablo](/wiki/A.k.a._Pablo)*. Four of these aired on Thursday nights during the summer of 1984; the fifth and final official episode of the entire series ("Fonzie's Spots") aired on September 24, 1984.
+
+#### Production styles
+
+The first two seasons of *Happy Days* (1974–75) were filmed using a [single-camera setup](/wiki/Single-camera_setup) and [laugh track](/wiki/Laugh_track). One episode of season two ("Fonzie Gets Married") was filmed in front of a studio audience with [three cameras](/wiki/Multiple-camera_setup) as a test run. From the third season on (1975–84), the show was a three-camera production in front of a live audience (with a cast member, usually Tom Bosley, announcing in voice-over, *"Happy Days* is filmed before a live audience" at the start of most episodes), giving these later seasons a markedly different style. A laugh track was still used during post-production to smooth over live reactions.
+
+Garry Marshall's earlier television series *[The Odd Couple](/wiki/The_Odd_Couple_(1970_TV_series))* had undergone an identical change in production style after its first season in 1970–71.
+
+#### Sets
+
+Richie and Fonzie view his destroyed motorcycle in his living room, 1976. Fonzie's apartment was over the Cunninghams' garage.
+
+The show had two main sets: the Cunningham home and Arnold's/Al's [Drive-In](/wiki/Drive-In).
+
+In seasons one and two, the Cunningham house was arranged with the front door on the left and the kitchen on the right of screen, in a triangular arrangement. From season three on, the house was rearranged to accommodate multiple cameras and a studio audience.
+
+The Cunninghams' official address is 565 North Clinton Drive, [Milwaukee](/wiki/Milwaukee), [Wisconsin](/wiki/Wisconsin). The house that served as the exterior of the Cunningham residence is actually located at 565 North Cahuenga Boulevard (south of Melrose Avenue) in Los Angeles, several blocks from the Paramount lot on Melrose Avenue.
+
+The Milky Way Drive-In, located on Port Washington Road in the North Shore suburb of [Glendale, Wisconsin](/wiki/Glendale,_Wisconsin) (now [Kopp's Frozen Custard](/wiki/Kopp%27s_Frozen_Custard) Stand), was the inspiration for the original Arnold's Drive-In; it has since been demolished. The exterior of Arnold's was a standing set on the Paramount Studios lot that has since been demolished. This exterior was close to Stage 19, where the rest of the show's sets were located.
+
+The set of the diner in the first two seasons was a room with the same vague details of the later set, such as the paneling, and the college pennants. When the show changed to a studio production in 1975, the set was widened and the entrance was hidden, but allowed an upstage, central entrance for cast members. The barely-seen kitchen was also upstaged and seen only through a pass-through window. The diner had orange booths, downstage center for closeup conversation, as well as camera left. There were two restroom doors camera right, labeled "Guys" and "Dolls". A 1953 [Seeburg](/wiki/Seeburg_Corporation) Model G jukebox (with replaced metal [pilasters](/wiki/Pilaster) from Wico Corp.) was positioned camera right, and an [anachronistic](/wiki/Anachronism) "Nip-It" pinball machine (actually produced in 1972) was positioned far camera right.
+
+Potsie, Richie, Fonzie, and Ralph Malph at Arnold's, 1975
+
+In 2004, two decades after the first set was destroyed, the *Happy Days 30th Anniversary Reunion* requested that the reunion take place in Arnold's. The set was rebuilt by production designer James Yarnell based on the original floor plan. The reunion special was taped at [CBS Television City](/wiki/CBS_Television_City)'s Bob Barker Studio in September 2004.
+
+### Theme music
+
+Main article: [Happy Days (TV theme)](/wiki/Happy_Days_(TV_theme))
+
+Season one used a newly recorded version of "[Rock Around the Clock](/wiki/Rock_Around_the_Clock)" by [Bill Haley & His Comets](/wiki/Bill_Haley_%26_His_Comets) (recorded in the fall of 1973) as the opening theme song. This recording was not commercially released at the time, although the original 1954 recording returned to the American [Billboard](/wiki/Billboard_magazine) charts in 1974 as a result of the song's use on the show. The "Happy Days" recording had its first commercial release in 2005 by the German label Hydra Records. (When *Happy Days* entered [syndication](/wiki/Broadcast_syndication) in 1979, the series was retitled *Happy Days Again* and used an edited version of the 1954 recording instead of the 1973 version.) In some prints intended for reruns and overseas broadcasts, as well as on the Season 2 DVD set release and later re-releases of the Season 1 DVD set, the original "Rock Around the Clock" opening theme is replaced by the more standard "Happy Days" theme, because of music rights issues.
+
+The show's closing theme song in seasons one and two was a fragment from "Happy Days" (although in a different recording with a different lyric from that which would become the standard version), whose music was composed by [Charles Fox](/wiki/Charles_Fox_(composer)) and whose lyric was written by [Norman Gimbel](/wiki/Norman_Gimbel). According to SAG, this version was performed by [Jim Haas](/wiki/Jim_Haas) on lead vocals, [The Ron Hicklin Singers](/wiki/The_Ron_Hicklin_Singers), Stan Farber, Jerry Whitman, and Gary Garrett on backing vocals, and studio musicians.
+
+From seasons three to ten inclusive, a longer version of "Happy Days" replaced "Rock Around the Clock" at the beginning of the show. Released as a single in 1976 by [Pratt & McClain](/wiki/Pratt_%26_McClain), "Happy Days" cracked the Top 5. The show itself finished the 1976–77 television season at No. 1, ending the five-year [Nielsen](/wiki/Nielsen_ratings) reign of *[All in the Family](/wiki/All_in_the_Family)*.
+
+For the show's 11th and final season (1983–84), the theme was rerecorded in a more modern style. It featured Bobby Arvon on lead vocals, with several back-up vocalists. To accompany this new version, new opening credits were filmed, and the flashing *Happy Days* logo was reanimated to create an overall "new" feel which incorporated 1980s sensibilities with 1950s nostalgia (although by this time the show was set in 1965).
+
+### Merchandising revenue lawsuit
+
+On April 19, 2011, *Happy Days* co-stars Erin Moran, Don Most, Marion Ross and Anson Williams, as well as the estate of Tom Bosley (who died in 2010), filed a $10 million breach-of-contract lawsuit against CBS, which owns the show, claiming they had not been paid for merchandising revenues owed under their contracts. The cast members claimed they had not received revenues from show-related items, including comic books, T-shirts, scrapbooks, trading cards, games, lunch boxes, dolls, toy cars, magnets, greeting cards and DVDs where their images appear on the box covers. Under their contracts, they were supposed to be paid 5% of the net proceeds of merchandising if their sole image were used, and half that amount if they were in a group. CBS said it owed the actors $8,500 and $9,000 each, most of it from slot machine revenues, but the group said they were owed millions. The lawsuit was initiated after Ross was informed by a friend playing slots at a casino of a *Happy Days* machine on which players win the jackpot when five Marion Rosses are rolled.
+
+In October 2011, a judge rejected the group's fraud claim, which meant they could not receive millions of dollars in potential damages. On June 5, 2012, a judge denied a motion filed by CBS to have the case thrown out, which meant it would go to trial on July 17 if the matter was not settled by then. In July 2012, the actors settled their lawsuit with CBS. Each received a payment of $65,000 and a promise by CBS to continue honoring the terms of their contracts.
+
+## Daytime reruns
+
+The series was rebroadcast on [ABC](/wiki/American_Broadcasting_Company) from September 1, 1975, to March 30, 1979.
+
+## Legacy
+
+In 1978, actor [Robin Williams](/wiki/Robin_Williams) made his screen debut during the fifth season of *Happy Days,* as the character "Mork" in the episode "[My Favorite Orkan](/wiki/My_Favorite_Orkan)". Sought after as a last-minute cast replacement for a departing actor, Williams impressed the producer with his quirky sense of humor when he sat on his head when asked to take a seat for the audition. While portraying Mork on *Happy Days*, Williams improvised much of his dialogue and physical comedy, speaking in a high, nasal voice, and he made the most of the script. The cast and crew, as well as TV network executives were deeply impressed with his performance. As such, the executives moved quickly to get the performer on contract just four days later before competitors could make their own offers.
+
+In 1980, the [National Museum of American History](/wiki/National_Museum_of_American_History), [Smithsonian Institution](/wiki/Smithsonian_Institution) asked Winkler to donate one of Fonzie's leather jackets.
+
+In 1985, [Jon Hein](/wiki/Jon_Hein) developed the phrase [jumping the shark](/wiki/Jumping_the_shark) in response to the season 5 episode "[Hollywood: Part 3](/wiki/Happy_Days_season_5#ep91)", written by Fred Fox Jr., which aired on September 20, 1977. In this episode, Fonzie jumps over a shark while on water-skis. The phrase is used to suggest that a creative outlet appears to be making a misguided attempt at generating new attention or publicity for something that is perceived to be once, but no longer, widely popular. In a 2019 interview with [NPR](/wiki/NPR), [Terry Gross](/wiki/Terry_Gross) asked Winkler what it was "about that scene or that episode that came to signify when something's time is up – when it's over?" Winkler responded: "You know what? I don't know. To them, the Fonz water skiing was just like the last straw. The only thing is it wasn't to the audience because we were number one for years after that. So it didn't much matter to anybody." In addition, he told [TheWrap](/wiki/TheWrap) in 2018 that he is "not embarrassed" by the phrase. He stated that "newspapers would mention jumping the shark... and they would show a picture of me in my leather jacket and swim shorts water-skiing. And at that time I had great legs. So I thought, 'I don't care.' And we were number one for the next four or five years." As his character Barry Zuckerkorn (in the sitcom *[Arrested Development](/wiki/Arrested_Development)*) hopped over a shark in [Episode 13 of the second season](/wiki/Motherboy_XXX), Winkler also noted that there "was a book, there was a board game and it is an expression that is still used today ... [and] I'm very proud that I am the only actor, maybe in the world, that has jumped the shark twice – once on *Happy Days*, and once on *Arrested Development*."
+
+In 1999 *[TV Guide](/wiki/TV_Guide)* ranked Fonzie as number 4 on its 50 Greatest TV Characters of All Time list.
+
+In a 2001 poll conducted by [Channel 4](/wiki/Channel_4) in the UK, the Fonz was ranked 13th on their list of the [100 Greatest TV Characters](/wiki/100_Greatest_(TV_series)).
+
+In 2008, American artist Gerald P. Sawyer unveiled the [Bronze Fonz](/wiki/Bronze_Fonz) (a public artwork) on the [Milwaukee Riverwalk](/wiki/Milwaukee_Riverwalk) in downtown [Milwaukee](/wiki/Milwaukee), [Wisconsin](/wiki/Wisconsin).
+
+In December 2023, *[Variety](/wiki/Variety_(magazine))* ranked *Happy Days* number 87 on its list of the 100 greatest TV shows of all time.
+
+## Home media
+
+[Paramount Home Entertainment](/wiki/Paramount_Home_Entertainment) and [CBS DVD](/wiki/CBS_Home_Entertainment) have released the first six seasons of *Happy Days* on DVD in Region 1, as of December 2, 2014. For the second season, CBS features music replacements due to copyright issues, including the theme song "Rock Around the Clock". ('The Complete First Season' retains the original opening, as it was released before CBS was involved). Only seasons 1, 3 and 4 of the DVD release contain the original music. The sixth season was released on December 2, 2014. The remaining 5 seasons have not been released.
+
+The season 7 premiere "Shotgun Wedding: Part 1" was also released on the *Laverne & Shirley* season 5 DVD. To date, this is the last episode released on home media.
+
+The first four seasons have also been released on DVD in the UK (Region 2) and Australia (Region 4).
+
+| DVD name | No. of episodes | Release dates | | |
+| --- | --- | --- | --- | --- |
+| Region 1 | Region 2 | Region 4 |
+| The Complete First Season | 16 | August 17, 2004 | August 27, 2007 | September 19, 2007 |
+| The Second Season | 23 | April 17, 2007 | November 12, 2007 | March 6, 2008 |
+| The Third Season | 24 | November 27, 2007 | April 7, 2008 | September 4, 2008 |
+| The Fourth Season | 25 | December 9, 2008 | January 9, 2011 | February 5, 2009 |
+| The Fifth Season | 27 | May 20, 2014 | TBA | TBA |
+| The Sixth Season | 27 | December 2, 2014 | TBA | TBA |
+| Seasons 1–4 | 88 | —N/a | | 1 December 2011 |
+| Seasons 1–6 | 142 | January 11, 2016 | —N/a | |
+| Seasons 1–6 (reissue) | 142 | October 13, 2020 | —N/a | |
+
+## Reunion specials
+
+There have been two reunion specials which aired on ABC: the first was *[The Happy Days Reunion Special](/wiki/List_of_Happy_Days_episodes#Reunion_specials)* originally aired in March 1992, followed by *[Happy Days: 30th Anniversary Reunion](/wiki/List_of_Happy_Days_episodes#Reunion_specials)* in February 2005 to commemorate the program's 30th anniversary. Both were set up in interview/clip format.
+
+## Spin-offs
+
+*Happy Days* resulted in seven different spin-off series, including two that were animated: *[Laverne & Shirley](/wiki/Laverne_%26_Shirley),* *[Blansky's Beauties](/wiki/Blansky%27s_Beauties),* *[Mork & Mindy](/wiki/Mork_%26_Mindy),* *[Out of the Blue](/wiki/Out_of_the_Blue_(1979_TV_series)),* *[Joanie Loves Chachi](/wiki/Joanie_Loves_Chachi),* *[The Fonz and the Happy Days Gang](/wiki/The_Fonz_and_the_Happy_Days_Gang)* (animated), and *[Laverne & Shirley with The Fonz](/wiki/Mork_%26_Mindy/Laverne_%26_Shirley/Fonz_Hour#Laverne_&_Shirley_with_The_Fonz)* (animated).
+
+- The most successful of these spin-offs, *[Laverne & Shirley](/wiki/Laverne_%26_Shirley)* (1976–83) starring [Penny Marshall](/wiki/Penny_Marshall) and [Cindy Williams](/wiki/Cindy_Williams), respectively, also took place in early/mid-1960s [Milwaukee](/wiki/Milwaukee). As Shotz Brewery workers, modeled after the Miller, Schlitz, and Pabst Breweries once located in Milwaukee, Laverne and Shirley find themselves in adventures with The Fonz, Lenny and Squiggy and even the Cunninghams also living in the midwestern city. The two starring characters eventually moved to Los Angeles in the show's later years. Penny Marshall was the sister of producer [Garry Marshall](/wiki/Garry_Marshall). *Happy Days* and *Laverne & Shirley* had a crossover episode, "Shotgun Wedding", in which Richie and Fonzie get into trouble with a farmer for courting his daughters, and Laverne and Shirley try to help them. Part one is the season seven premiere of *Happy Days* and part two is the season five premiere of *Laverne & Shirley*.
+- After [Robin Williams](/wiki/Robin_Williams) appeared as Mork in "[My Favorite Orkan](/wiki/My_Favorite_Orkan)", he was given his own sitcom, *[Mork & Mindy](/wiki/Mork_%26_Mindy)* (1978–82). In this series, Mork is an alien from the planet Ork, who lands in 1970s [Boulder, Colorado](/wiki/Boulder,_Colorado), to study humans. He moves in with [Pam Dawber](/wiki/Pam_Dawber)'s character of Mindy McConnell.
+- *[Joanie Loves Chachi](/wiki/Joanie_Loves_Chachi)* (1982–83) was a show about Richie's younger sister Joanie and Fonzie's younger cousin Chachi's relationship during their years as musicians in Chicago. While commonly believed that the show was canceled due to low ratings, the program finished in the Top 20 its first season, but ABC determined that the show was losing too much of its lead-in, suggesting low appeal if the show were moved (a suggestion that came to be realized, as the show's ratings dropped dramatically after a move to another time slot in its second season). This type of cancellation seemed strange in the early 1980s, but soon became a commonplace part of TV audience research.
+- *[Out of the Blue](/wiki/Out_of_the_Blue_(1979_TV_series))* (1979) is a spin-off of *Happy Days,* though a scheduling error had the series airing prior to the main character's introduction on *Happy Days.*
+- *[Blansky's Beauties](/wiki/Blansky%27s_Beauties)* (1977) starred [Nancy Walker](/wiki/Nancy_Walker) as former Las Vegas showgirl Nancy Blansky. One week before the show's premiere, the Blansky character appeared on *Happy Days* as a cousin of Howard Cunningham. [Scott Baio](/wiki/Scott_Baio) and [Lynda Goodfriend](/wiki/Lynda_Goodfriend) co-starred before joining *Happy Days* the following fall, and [Pat Morita](/wiki/Pat_Morita) reprised his role of Arnold. Similarly, [Eddie Mekka](/wiki/Eddie_Mekka) of *Laverne & Shirley* played the cousin of his Carmine character, while pulling double duty as a regular in both shows.
+
+Spin-off pilots that did not succeed include *The Ralph and Potsie Show* as well as *The Pinky Tuscadero Show*. A pilot for a sequel titled *Happy Days '92* was shot but not picked up for broadcast.
+
+## List of songs performed on *Happy Days*
+
+| Episode | Title | Song(s) | Performed by |
+| --- | --- | --- | --- |
+| 1x10 | "Give the Band a Hand" | "[All Shook Up](/wiki/All_Shook_Up)" | [Anson Williams](/wiki/Anson_Williams) |
+| 2x19 | "Fonzie Joins the Band" | "[Splish Splash](/wiki/Splish_Splash_(song))" | Anson Williams |
+| 2x20 | "Fish and the Fins" | "[Young Blood](/wiki/Young_Blood_(The_Coasters_song))" | [Flash Cadillac and the Continental Kids](/wiki/Flash_Cadillac_and_the_Continental_Kids) |
+| 3x10 | "A Date with Fonzie" | "[Great Balls of Fire](/wiki/Great_Balls_of_Fire)" | Anson Williams |
+| 3x12 | "Fonzie's New Friend" | "[Honeycomb](/wiki/Honeycomb_(song))" | Anson Williams |
+| 3x13 | "They Call It Potsie Love" | "[Put Your Head on My Shoulder](/wiki/Put_Your_Head_on_My_Shoulder_(song))" | Anson Williams |
+| "[Whole Lotta Shakin' Goin' On](/wiki/Whole_Lotta_Shakin%27_Goin%27_On)" | Anson Williams |
+| 3x19 | "Fonzie the Superstar" | "[By the Light of the Silvery Moon](/wiki/By_the_Light_of_the_Silvery_Moon_(song))" | [Pat Morita](/wiki/Pat_Morita), [Penny Marshall](/wiki/Penny_Marshall) and [Cindy Williams](/wiki/Cindy_Williams) |
+| "[Heartbreak Hotel](/wiki/Heartbreak_Hotel)" | [Henry Winkler](/wiki/Henry_Winkler) |
+| 4x01 | "Fonzie Loves Pinky, Part 1" | "[You're Sixteen](/wiki/You%27re_Sixteen)" | Anson Williams |
+| 4x02 | "Fonzie Loves Pinky, Part 2" | "[America the Beautiful](/wiki/America_the_Beautiful)" | Anson Williams |
+| 4x08 | "They Shoot Fonzies, Don't They?" | "[Venus](/wiki/Venus_(Frankie_Avalon_song))" | Anson Williams |
+| "[Rockin' Robin](/wiki/Rockin%27_Robin_(song))" | Anson Williams |
+| "[Anniversary Song](/wiki/Anniversary_Song)" | [Donny Most](/wiki/Donny_Most) |
+| 4x09 | "The Muckrakers" | "[Sh-Boom](/wiki/Sh-Boom)" | Anson Williams, Donny Most, [Ron Howard](/wiki/Ron_Howard) and [Al Molinaro](/wiki/Al_Molinaro) |
+| "[You'll Never Walk Alone](/wiki/You%27ll_Never_Walk_Alone)" | Anson Williams |
+| 4x12 | "Fonzie's Old Lady" | "[It's Late](/wiki/It%27s_Late_(Ricky_Nelson_song))" | Anson Williams |
+| "Splish Splash" | Anson Williams and Donny Most |
+| 4x18 | "Graduation, Part 1" | "Deeply" | Anson Williams |
+| 4x21 | "Joanie's Weird Boyfriend" | "[McNamara's Band](/wiki/McNamara%27s_Band)" | Anson Williams |
+| "[When Irish Eyes Are Smiling](/wiki/When_Irish_Eyes_Are_Smiling)" | Anson Williams, Donny Most and Ron Howard |
+| 4x25 | "Fonzie's Baptism" | "[Faith of our Fathers](/wiki/Faith_of_Our_Fathers_(hymn))" | Anson Williams, Donny Most, Ron Howard and [Erin Moran](/wiki/Erin_Moran) |
+| 5x01 | "Hollywood, Part 1" | "[Will You Love Me Tomorrow](/wiki/Will_You_Love_Me_Tomorrow)" | Anson Williams |
+| 5x08 | "Fonzie and Leather Tuscadero, Part 1" | "Cat Size" | [Suzi Quatro](/wiki/Suzi_Quatro) |
+| "All Shook Up" | Suzi Quatro |
+| 5x09 | "Fonzie and Leather Tuscadero, Part 2" | "Heartbreak Hotel" | Suzi Quatro |
+| "[Devil Gate Drive](/wiki/Devil_Gate_Drive)" | Suzi Quatro |
+| 5x11 | "Bye Bye Blackball" | "My Dream Girl Of Phi Kappa Nu" | Anson Williams |
+| 5x12 | "Requiem for a Malph" | "[Calendar Girl](/wiki/Calendar_Girl_(song))" | Anson Williams |
+| "[Down by the Old Mill Stream](/wiki/Down_by_the_Old_Mill_Stream)" | [Tom Bosley](/wiki/Tom_Bosley), [Marion Ross](/wiki/Marion_Ross), Ron Howard, Erin Moran and Henry Winkler |
+| 5x14 | "Grandpa's Visit" | "Down South in New Orleans" | [Danny Thomas](/wiki/Danny_Thomas) |
+| "[Sonny Boy](/wiki/Sonny_Boy_(song))" | Danny Thomas |
+| "[When the Saints Go Marching In](/wiki/When_the_Saints_Go_Marching_In)" | Danny Thomas |
+| 5x15 | "Potsie Gets Pinned" | "Pinning Song" | Anson Williams and Lorrie Mahaffey |
+| 5x17 | "Marion's Misgivings" | "[Wild One](/wiki/Wild_One_(Bobby_Rydell_song))" | Anson Williams |
+| "I May Be Too Young" | Suzi Quatro |
+| 5x18 | "Richie Almost Dies" | "Believe" | Suzi Quatro |
+| 5x20 | "Be My Valentine" | "Save Your Last Kiss for Me" | Anson Williams and Lorrie Mahaffey |
+| "[My Funny Valentine](/wiki/My_Funny_Valentine)" | Donny Most |
+| "[Thank Heaven for Little Girls](/wiki/Thank_Heaven_for_Little_Girls)" | [Scott Baio](/wiki/Scott_Baio) |
+| "I Remember It Well" | Tom Bosley and Marion Ross |
+| "[Isn't It Romantic?](/wiki/Isn%27t_It_Romantic%3F)" | Al Molinaro |
+| 5x26 | "Rules to Date By" | "[Happy Birthday Sweet Sixteen](/wiki/Happy_Birthday_Sweet_Sixteen)" | Anson Williams |
+| 5x27 | "Fonzie for the Defense" | "[The Three Caballeros](/wiki/The_Three_Caballeros_(song))" | Anson Williams, Donny Most and Ron Howard |
+| 6x02 | "Westward Ho!, Part 2" | "Rodeo Song" | Anson Williams |
+| 6x03 | "Westward Ho!, Part 3" | "[Tumbling Tumbleweeds](/wiki/Tumbling_Tumbleweeds)" | Anson Williams |
+| 6x07 | "Sweet Sixteen" | "Happy Birthday Sweet Sixteen" | Anson Williams |
+| "Put Your Head on My Shoulder" | Anson Williams |
+| 6x09 | "The Evil Eye" | "[The Monster Mash](/wiki/The_Monster_Mash)" | Anson Williams, Donny Most and Ron Howard |
+| 6x10 | "The Claw Meets the Fonz" | "[Maybe Baby](/wiki/Maybe_Baby_(song))" | Anson Williams |
+| 6x13 | "The Kissing Bandit" | "[Everyday](/wiki/Everyday_(Buddy_Holly_song))" | Anson Williams |
+| 6x19 | "Stolen Melodies" | "I Can't Stand You Anymore" | Fred Fox, Jr. |
+| "Moonlight Love" | Suzi Quatro |
+| "Do the Fonzie" | Suzi Quatro |
+| 6x21 | "Marion: Fairy Godmother" | "[Hey Little Girl](/wiki/Hey_Little_Girl_(Dee_Clark_song))" | Anson Williams |
+| "Every Hour, Every Day" | Anson Williams and Lorrie Mahaffey |
+| 6x20 | "Married Strangers" | "Cause of You" | Anson Williams |
+| 6x26 | "Chachi's Incredo Wax" | "[Take Good Care of My Baby](/wiki/Take_Good_Care_of_My_Baby)" | Anson Williams |
+| 6x27 | "Potsie Quits School" | "Pump Your Blood" | Anson Williams |
+| 7x08 | "Burlesque" | "Top Banana" | Tom Bosley |
+| "Girl of Our Nations" | Anson Williams |
+| "It's Delightful" | Donny Most and Henry Winkler |
+| 7x10 | "King Richard's Big Night" | "[Hello Mary Lou](/wiki/Hello_Mary_Lou)" | Anson Williams |
+| "[Let's Twist Again](/wiki/Let%27s_Twist_Again)" | Anson Williams |
+| 7x11 | "Fonzie vs. The She-Devils" | "[Beer Barrel Polka](/wiki/Beer_Barrel_Polka)" | Tom Bosley, Marion Ross, Erin Moran and Henry Winkler |
+| "[That Old Gang of Mine](/wiki/That_Old_Gang_of_Mine_(song))" | Tom Bosley, Marion Ross, Ron Howard and Erin Moran |
+| 7x12 | "The Mechanic" | "[Tossin' and Turnin'](/wiki/Tossin%27_and_Turnin%27)" | Anson Williams |
+| 7x14 | "Here Comes the Bride" | "Wedding Song" | Anson Williams |
+| 7x17 | "Hot Stuff" | "[For He's a Jolly Good Fellow](/wiki/For_He%27s_a_Jolly_Good_Fellow)" | Tom Bosley, Marion Ross, Ron Howard, Anson Williams, Donny Most, Erin Moran and [Lynda Goodfriend](/wiki/Lynda_Goodfriend) |
+| 7x18 | "The New Arnold's" | "Let's Twist Again" | Anson Williams |
+| 7x23 | "A Potsie is Born" | "[Surfin' Safari](/wiki/Surfin%27_Safari_(song))" | Anson Williams |
+| "[Mack the Knife](/wiki/Mack_the_Knife)" | Anson Williams |
+| "[Oh, Boy!](/wiki/Oh,_Boy!_(The_Crickets_song))" | Anson Williams and [Gail Edwards](/wiki/Gail_Edwards) |
+| 8x07 | "And The Winner Is" | "The Jefferson Anthem" | Anson Williams and Al Molinaro |
+| 8x12 | "Broadway It's Not" | "You Look at Me" | Erin Moran and Scott Baio |
+| 8x19 | "R.C. and L.B. Forever" | "Wedding Song" | Anson Williams |
+| 8x22 | "American Musical" | "Long After You'll Always Have Me" | Erin Moran and Scott Baio |
+| "Jail Song" | Anson Williams, Scott Baio, Tom Bosley, Henry Winkler, Al Molinaro and [Ted McGinley](/wiki/Ted_McGinley) |
+| "A Toast To My Country And Home" | Al Molinaro, Lynda Goodfriend and [Cathy Silvers](/wiki/Cathy_Silvers) |
+| "Youre Gonna Make It" | Tom Bosley, Marion Ross and Ted McGinley |
+| 9x02 | "Home Movies, Part 2" | "Every Time, Every Place" | Anson Williams |
+| 9x09 | "No, Thank You" | "Lookin' Good, Feelin' Fine" | Erin Moran and Scott Baio |
+| 9x12 | "To Beanie or Not to Beanie" | "Call" | Erin Moran and Scott Baio |
+| 9x14 | "Grandma Nussbaum" | "How Am I Gonna Sing" | Tom Bosley, Marion Ross, Erin Moran, Lynda Goodfriend, Ted McGinley and [Pat O'Brien](/wiki/Pat_O%27Brien_(actor)) |
+| 9x15 | "Poobah Doo Dah" | "[Twistin' the Night Away](/wiki/Twistin%27_the_Night_Away)" | Erin Moran and Scott Baio |
+| "[The Way You Look Tonight](/wiki/The_Way_You_Look_Tonight)" | Tom Bosley and Marion Ross |
+| "[Goodbye, My Coney Island Baby](/wiki/Goodbye,_My_Coney_Island_Baby)" | Anson Williams, Scott Baio, Al Molinaro and Ted McGinley |
+| "Venus" | [Frankie Avalon](/wiki/Frankie_Avalon) |
+| 9x16 | "A Touch of Classical" | "[Twist and Shout](/wiki/Twist_and_Shout)" | Erin Moran and Scott Baio |
+| 9x18 | "Great Expectations" | "Time Turned Around" | Erin Moran and Scott Baio |
+| 9x20 | "Chachi's Future" | "Princess of 3rd Street" | Scott Baio |
+| 10x06 | "Who Gives a Hootenanny?" | "[Come Go With Me](/wiki/Come_Go_With_Me)" | Erin Moran and Scott Baio |
+| 10x08 | "Such a Nice Girl" | "[Blue Moon](/wiki/Blue_Moon_(1934_song))" | Pat Morita |
+| 10x14 | "Prisoner of Love" | "[Stop! In The Name of Love](/wiki/Stop!_In_The_Name_of_Love)" | [Crystal Bernard](/wiki/Crystal_Bernard), Cathy Silvers and Julie Paris |
+| 10x15 | "Life is More Important Than Show Business" | "[The Loco-Motion](/wiki/The_Loco-Motion)" | Erin Moran and Scott Baio |
+| 11x04 | "Welcome Home, Part 1" | "[Blueberry Hill](/wiki/Blueberry_Hill)" | Anson Williams, Ron Howard, Donny Most and Henry Winkler |
+
+## In other media
+
+### Books
+
+A series of novels based on characters and dialog of the series was written by [William Johnston](/wiki/William_Joseph_Johnston_(novelist)) and published by Tempo Books in the 1970s.
+
+### Comic books
+
+[Western Publishing](/wiki/Western_Publishing) published a *Happy Days* [comic book](/wiki/Comic_book) series from March 1979 to February 1980 under their [Gold Key Comics](/wiki/Gold_Key_Comics) and Whitman Comics brands.
+
+### Animation
+
+There are two [animated series](/wiki/Animated_series), both produced by [Hanna-Barbera Productions](/wiki/Hanna-Barbera) in association with [Paramount Television](/wiki/Paramount_Television) (now known as [CBS Media Ventures](/wiki/CBS_Media_Ventures)). *[The Fonz and the Happy Days Gang](/wiki/The_Fonz_and_the_Happy_Days_Gang)* ran from 1980 to 1982. There are also animated spin-offs of *Laverne & Shirley* (*[Laverne & Shirley in the Army](/wiki/Laverne_%26_Shirley_in_the_Army)*) and *Mork & Mindy* (centering on a young Mork and Mindy in high school). The following season, they were connected together as *[Mork & Mindy/Laverne & Shirley/Fonz Hour](/wiki/Mork_%26_Mindy/Laverne_%26_Shirley/Fonz_Hour)* (1982).
+
+### Musicals
+
+In the late 1990s, a touring arena show called *Happy Days: The Arena Spectacular* toured Australia's major cities. The story featured a property developer, and former girlfriend of Fonzie's, called Miss Frost ([Rebecca Gibney](/wiki/Rebecca_Gibney)), wanting to buy the diner and redevelop it. It starred [Craig McLachlan](/wiki/Craig_McLachlan) as Fonzie, [Max Gillies](/wiki/Max_Gillies) and [Wendy Hughes](/wiki/Wendy_Hughes) as Mr. and Mrs. Cunningham, [Doug Parkinson](/wiki/Doug_Parkinson) as Al, and [Jo Beth Taylor](/wiki/Jo_Beth_Taylor) as Richie's love interest Laura. [Tom Bosley](/wiki/Tom_Bosley) presented an introduction before each performance live on stage, and pop group [Human Nature](/wiki/Human_Nature_(band)) played a 1950s-style rock group.
+
+Another stage show, *[Happy Days: A New Musical](/wiki/Happy_Days_(musical)),* began touring in 2008.
+
+#### Music videos
+
+The music video for the song "[Buddy Holly](/wiki/Buddy_Holly_(song))" (which takes place at Arnold's Drive-in) by [Weezer](/wiki/Weezer) features footage from the series, including clips of Richie, Potsie, Ralph Malph, Joanie, and Fonzie. [Al Molinaro](/wiki/Al_Molinaro) also reprises his role as [Al Delvecchio](/wiki/Al_Delvecchio) in the video, introducing the band and learning from them afterward that the night's fish special was not very good.
+
+### Video games
+
+A 1976 arcade racing game named [*Fonz*](/wiki/Fonz_(video_game)) was released based on Fonzie, with a picture of the character appearing on the side of the [arcade cabinet](/wiki/Arcade_cabinet).
+
+## See also
+
+- [*Fonz* (video game)](/wiki/Fonz_(video_game))
+
+## Notes
+
+## References
+
+## External links
+
+- [*Happy Days*](https://www.imdb.com/title/tt0070992/) at [IMDb](/wiki/IMDb_(identifier))
+- [*Happy Days*](https://interviews.televisionacademy.com/shows/happy-days) at [The Interviews: An Oral History of Television](/wiki/The_Interviews:_An_Oral_History_of_Television) results

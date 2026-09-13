@@ -1,0 +1,1681 @@
+{
+  "source": "Three-body_problem.html",
+  "title": "Three-body problem",
+  "wiki_title": "Three-body_problem",
+  "categories": [
+    "Chaotic maps",
+    "Classical mechanics",
+    "Dynamical systems",
+    "Mathematical physics",
+    "Orbits",
+    "Equations of astronomy"
+  ],
+  "sections": [
+    {
+      "level": 2,
+      "id": "Mathematical_description",
+      "title": "Mathematical description"
+    },
+    {
+      "level": 3,
+      "id": "Restricted_three-body_problem",
+      "title": "Restricted three-body problem"
+    },
+    {
+      "level": 2,
+      "id": "Solutions",
+      "title": "Solutions"
+    },
+    {
+      "level": 3,
+      "id": "General_solution",
+      "title": "General solution"
+    },
+    {
+      "level": 3,
+      "id": "Special-case_solutions",
+      "title": "Special-case solutions"
+    },
+    {
+      "level": 3,
+      "id": "Numerical_approaches",
+      "title": "Numerical approaches"
+    },
+    {
+      "level": 2,
+      "id": "History",
+      "title": "History"
+    },
+    {
+      "level": 2,
+      "id": "Other_problems_involving_three_bodies",
+      "title": "Other problems involving three bodies"
+    },
+    {
+      "level": 2,
+      "id": "n-body_problem",
+      "title": "n -body problem"
+    },
+    {
+      "level": 2,
+      "id": "See_also",
+      "title": "See also"
+    },
+    {
+      "level": 2,
+      "id": "References",
+      "title": "References"
+    },
+    {
+      "level": 2,
+      "id": "Further_reading",
+      "title": "Further reading"
+    },
+    {
+      "level": 2,
+      "id": "External_links",
+      "title": "External links"
+    }
+  ],
+  "infobox": null,
+  "tables": [],
+  "links": {
+    "local": [
+      {
+        "target": "Moon",
+        "source_file": "Moon.html",
+        "url": "https://en.wikipedia.org/wiki/Moon",
+        "anchors": [
+          "Moon"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Quantum_mechanics",
+        "source_file": "Quantum_mechanics.html",
+        "url": "https://en.wikipedia.org/wiki/Quantum_mechanics",
+        "anchors": [
+          "quantum mechanics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Philosophiæ_Naturalis_Principia_Mathematica",
+        "source_file": "Philosophiæ_Naturalis_Principia_Mathematica.html",
+        "url": "https://en.wikipedia.org/wiki/Philosophi%C3%A6_Naturalis_Principia_Mathematica",
+        "anchors": [
+          "Philosophiæ Naturalis Principia Mathematica"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "John_Harrison",
+        "source_file": "John_Harrison.html",
+        "url": "https://en.wikipedia.org/wiki/John_Harrison",
+        "anchors": [
+          "John Harrison"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Marine_chronometer",
+        "source_file": "Marine_chronometer.html",
+        "url": "https://en.wikipedia.org/wiki/Marine_chronometer",
+        "anchors": [
+          "marine chronometer"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Alexis_Clairaut",
+        "source_file": "Alexis_Clairaut.html",
+        "url": "https://en.wikipedia.org/wiki/Alexis_Clairaut",
+        "anchors": [
+          "Alexis Clairaut"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ],
+    "wiki": [
+      {
+        "target": "N-body_problem",
+        "url": "https://en.wikipedia.org/wiki/N-body_problem",
+        "anchors": [
+          "n -body problem"
+        ],
+        "count": 4,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Two-body_problem",
+        "url": "https://en.wikipedia.org/wiki/Two-body_problem",
+        "anchors": [
+          "two-body problem",
+          "Two-body problem"
+        ],
+        "count": 3,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "The_Three-Body_Problem_(novel)",
+        "url": "https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)",
+        "anchors": [
+          "The Three-Body Problem (novel)"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Closed-form_expression",
+        "url": "https://en.wikipedia.org/wiki/Closed-form_expression",
+        "anchors": [
+          "closed-form analytic solution",
+          "closed-form solution"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Differential_equation",
+        "url": "https://en.wikipedia.org/wiki/Differential_equation",
+        "anchors": [
+          "differential equations"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Integrable_system",
+        "url": "https://en.wikipedia.org/wiki/Integrable_system",
+        "anchors": [
+          "integrable"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Chaos_theory",
+        "url": "https://en.wikipedia.org/wiki/Chaos_theory",
+        "anchors": [
+          "chaotic"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Earth",
+        "url": "https://en.wikipedia.org/wiki/Earth",
+        "anchors": [
+          "Earth"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sun",
+        "url": "https://en.wikipedia.org/wiki/Sun",
+        "anchors": [
+          "Sun",
+          "the Sun"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Jacobi_integral",
+        "url": "https://en.wikipedia.org/wiki/Jacobi_integral",
+        "anchors": [
+          "Jacobi integral"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Henri_Poincaré",
+        "url": "https://en.wikipedia.org/wiki/Henri_Poincar%C3%A9",
+        "anchors": [
+          "Henri Poincaré"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Alain_Chenciner",
+        "url": "https://en.wikipedia.org/wiki/Alain_Chenciner",
+        "anchors": [
+          "Alain Chenciner",
+          "Chenciner, Alain"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Numerical_integration",
+        "url": "https://en.wikipedia.org/wiki/Numerical_integration",
+        "anchors": [
+          "numerical integration"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Numerical_analysis",
+        "url": "https://en.wikipedia.org/wiki/Numerical_analysis",
+        "anchors": [
+          "numerically solve",
+          "numerical analysis"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lunar_theory",
+        "url": "https://en.wikipedia.org/wiki/Lunar_theory#Newton",
+        "anchors": [
+          "lunar theory"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Karl_F._Sundman",
+        "url": "https://en.wikipedia.org/wiki/Karl_F._Sundman",
+        "anchors": [
+          "Karl Sundman",
+          "Karl F. Sundman"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "N-body_simulation",
+        "url": "https://en.wikipedia.org/wiki/N-body_simulation",
+        "anchors": [
+          "n -body simulation"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Center_of_mass",
+        "url": "https://en.wikipedia.org/wiki/Center_of_mass",
+        "anchors": [
+          "center of mass"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Law_of_conservation_of_momentum",
+        "url": "https://en.wikipedia.org/wiki/Law_of_conservation_of_momentum",
+        "anchors": [
+          "law of conservation of momentum"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Physics",
+        "url": "https://en.wikipedia.org/wiki/Physics",
+        "anchors": [
+          "physics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Classical_mechanics",
+        "url": "https://en.wikipedia.org/wiki/Classical_mechanics",
+        "anchors": [
+          "classical mechanics"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Velocity",
+        "url": "https://en.wikipedia.org/wiki/Velocity",
+        "anchors": [
+          "velocities"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Momentum",
+        "url": "https://en.wikipedia.org/wiki/Momentum",
+        "anchors": [
+          "momenta"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Point_mass",
+        "url": "https://en.wikipedia.org/wiki/Point_mass",
+        "anchors": [
+          "point masses"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Newton's_laws_of_motion",
+        "url": "https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion",
+        "anchors": [
+          "Newton's laws of motion"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Newton's_law_of_universal_gravitation",
+        "url": "https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation",
+        "anchors": [
+          "Newton's law of universal gravitation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Time",
+        "url": "https://en.wikipedia.org/wiki/Time",
+        "anchors": [
+          "time"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Initial_condition",
+        "url": "https://en.wikipedia.org/wiki/Initial_condition",
+        "anchors": [
+          "initial conditions"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Dynamical_system",
+        "url": "https://en.wikipedia.org/wiki/Dynamical_system",
+        "anchors": [
+          "dynamical system"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Numerical_method",
+        "url": "https://en.wikipedia.org/wiki/Numerical_method",
+        "anchors": [
+          "numerical methods"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Gravitational_constant",
+        "url": "https://en.wikipedia.org/wiki/Gravitational_constant",
+        "anchors": [
+          "gravitational constant"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hamiltonian_formalism",
+        "url": "https://en.wikipedia.org/wiki/Hamiltonian_formalism",
+        "anchors": [
+          "Hamiltonian formalism"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Hamiltonian_mechanics",
+        "url": "https://en.wikipedia.org/wiki/Hamiltonian_mechanics#Mathematical_formalism",
+        "anchors": [
+          "Hamiltonian"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Phase_space",
+        "url": "https://en.wikipedia.org/wiki/Phase_space",
+        "anchors": [
+          "phase space"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Conserved_quantity",
+        "url": "https://en.wikipedia.org/wiki/Conserved_quantity",
+        "anchors": [
+          "conserved quantity"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Heinrich_Bruns",
+        "url": "https://en.wikipedia.org/wiki/Heinrich_Bruns",
+        "anchors": [
+          "Heinrich Bruns"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Algebraic_function",
+        "url": "https://en.wikipedia.org/wiki/Algebraic_function",
+        "anchors": [
+          "algebraic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Analytic_function",
+        "url": "https://en.wikipedia.org/wiki/Analytic_function",
+        "anchors": [
+          "analytic"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Constants_of_motion",
+        "url": "https://en.wikipedia.org/wiki/Constants_of_motion",
+        "anchors": [
+          "constants of motion"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Exactly_solvable",
+        "url": "https://en.wikipedia.org/wiki/Exactly_solvable",
+        "anchors": [
+          "exactly solvable"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Radiation_pressure",
+        "url": "https://en.wikipedia.org/wiki/Radiation_pressure",
+        "anchors": [
+          "radiation pressure"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Equilibrium_points",
+        "url": "https://en.wikipedia.org/wiki/Equilibrium_points",
+        "anchors": [
+          "equilibrium points"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lagrange_points",
+        "url": "https://en.wikipedia.org/wiki/Lagrange_points",
+        "anchors": [
+          "Lagrange points"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Elastic_force",
+        "url": "https://en.wikipedia.org/wiki/Elastic_force",
+        "anchors": [
+          "elastically"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Finland",
+        "url": "https://en.wikipedia.org/wiki/Finland",
+        "anchors": [
+          "Finnish"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mathematics",
+        "url": "https://en.wikipedia.org/wiki/Mathematics",
+        "anchors": [
+          "mathematician"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Karl_Fritiof_Sundman",
+        "url": "https://en.wikipedia.org/wiki/Karl_Fritiof_Sundman",
+        "anchors": [
+          "Karl Fritiof Sundman"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Analytic_solution",
+        "url": "https://en.wikipedia.org/wiki/Analytic_solution",
+        "anchors": [
+          "analytic solution"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Puiseux_series",
+        "url": "https://en.wikipedia.org/wiki/Puiseux_series",
+        "anchors": [
+          "Puiseux series"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Power_series",
+        "url": "https://en.wikipedia.org/wiki/Power_series",
+        "anchors": [
+          "power series"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Angular_momentum",
+        "url": "https://en.wikipedia.org/wiki/Angular_momentum",
+        "anchors": [
+          "angular momentum"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lebesgue_measure",
+        "url": "https://en.wikipedia.org/wiki/Lebesgue_measure",
+        "anchors": [
+          "Lebesgue measure"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Radius_of_convergence",
+        "url": "https://en.wikipedia.org/wiki/Radius_of_convergence",
+        "anchors": [
+          "radius of convergence"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Regularization_(physics)",
+        "url": "https://en.wikipedia.org/wiki/Regularization_(physics)",
+        "anchors": [
+          "regularization"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cauchy",
+        "url": "https://en.wikipedia.org/wiki/Cauchy",
+        "anchors": [
+          "Cauchy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Existence_theorem",
+        "url": "https://en.wikipedia.org/wiki/Existence_theorem",
+        "anchors": [
+          "existence theorem"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cauchy–Kovalevskaya_theorem",
+        "url": "https://en.wikipedia.org/wiki/Cauchy%E2%80%93Kovalevskaya_theorem",
+        "anchors": [
+          "Cauchy–Kovalevskaya theorem"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Leonhard_Euler",
+        "url": "https://en.wikipedia.org/wiki/Leonhard_Euler",
+        "anchors": [
+          "Leonhard Euler"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Collinear",
+        "url": "https://en.wikipedia.org/wiki/Collinear",
+        "anchors": [
+          "collinear"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Joseph_Louis_Lagrange",
+        "url": "https://en.wikipedia.org/wiki/Joseph_Louis_Lagrange",
+        "anchors": [
+          "Lagrange"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Central_configuration",
+        "url": "https://en.wikipedia.org/wiki/Central_configuration",
+        "anchors": [
+          "central configurations"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Kepler_orbit",
+        "url": "https://en.wikipedia.org/wiki/Kepler_orbit",
+        "anchors": [
+          "Keplerian ellipses"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Circular_restricted_three-body_problem",
+        "url": "https://en.wikipedia.org/wiki/Circular_restricted_three-body_problem",
+        "anchors": [
+          "circular restricted three-body problem"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lagrangian_point",
+        "url": "https://en.wikipedia.org/wiki/Lagrangian_point",
+        "anchors": [
+          "Lagrangian points"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Special_right_triangle",
+        "url": "https://en.wikipedia.org/wiki/Special_right_triangle",
+        "anchors": [
+          "3:4:5 right triangle"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Victor_Szebehely",
+        "url": "https://en.wikipedia.org/wiki/Victor_Szebehely",
+        "anchors": [
+          "Victor Szebehely"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Michel_Hénon",
+        "url": "https://en.wikipedia.org/wiki/Michel_H%C3%A9non",
+        "anchors": [
+          "Michel Hénon"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Roger_A._Broucke",
+        "url": "https://en.wikipedia.org/wiki/Roger_A._Broucke",
+        "anchors": [
+          "Roger A. Broucke"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cris_Moore",
+        "url": "https://en.wikipedia.org/wiki/Cris_Moore",
+        "anchors": [
+          "Cris Moore"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Santa_Fe_Institute",
+        "url": "https://en.wikipedia.org/wiki/Santa_Fe_Institute",
+        "anchors": [
+          "Santa Fe Institute"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Scattering",
+        "url": "https://en.wikipedia.org/wiki/Scattering",
+        "anchors": [
+          "scattering"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Shijun_Liao",
+        "url": "https://en.wikipedia.org/wiki/Shijun_Liao",
+        "anchors": [
+          "Shijun Liao"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Special_relativity",
+        "url": "https://en.wikipedia.org/wiki/Special_relativity",
+        "anchors": [
+          "special relativity"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Random_walks",
+        "url": "https://en.wikipedia.org/wiki/Random_walks",
+        "anchors": [
+          "random walks"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Probability",
+        "url": "https://en.wikipedia.org/wiki/Probability",
+        "anchors": [
+          "probability"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Isaac_Newton",
+        "url": "https://en.wikipedia.org/wiki/Isaac_Newton",
+        "anchors": [
+          "Isaac Newton"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Renaissance",
+        "url": "https://en.wikipedia.org/wiki/Renaissance",
+        "anchors": [
+          "Renaissance"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Nicolaus_Copernicus",
+        "url": "https://en.wikipedia.org/wiki/Nicolaus_Copernicus",
+        "anchors": [
+          "Nicolaus Copernicus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Tycho_Brahe",
+        "url": "https://en.wikipedia.org/wiki/Tycho_Brahe",
+        "anchors": [
+          "Tycho Brahe"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Johannes_Kepler",
+        "url": "https://en.wikipedia.org/wiki/Johannes_Kepler",
+        "anchors": [
+          "Johannes Kepler"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Amerigo_Vespucci",
+        "url": "https://en.wikipedia.org/wiki/Amerigo_Vespucci",
+        "anchors": [
+          "Amerigo Vespucci"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Galileo_Galilei",
+        "url": "https://en.wikipedia.org/wiki/Galileo_Galilei",
+        "anchors": [
+          "Galileo Galilei"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Simon_Stevin",
+        "url": "https://en.wikipedia.org/wiki/Simon_Stevin",
+        "anchors": [
+          "Simon Stevin"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "History_of_longitude",
+        "url": "https://en.wikipedia.org/wiki/History_of_longitude#Problem_of_longitude",
+        "anchors": [
+          "determination of longitude at sea"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Jean_le_Rond_d'Alembert",
+        "url": "https://en.wikipedia.org/wiki/Jean_le_Rond_d%27Alembert",
+        "anchors": [
+          "Jean le Rond d'Alembert"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "French_language",
+        "url": "https://en.wikipedia.org/wiki/French_language",
+        "anchors": [
+          "French"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Renormalization_group",
+        "url": "https://en.wikipedia.org/wiki/Renormalization_group",
+        "anchors": [
+          "renormalization group"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Limit_cycle",
+        "url": "https://en.wikipedia.org/wiki/Limit_cycle",
+        "anchors": [
+          "limit cycle"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "George_William_Hill",
+        "url": "https://en.wikipedia.org/wiki/George_William_Hill",
+        "anchors": [
+          "George William Hill"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Venus",
+        "url": "https://en.wikipedia.org/wiki/Venus",
+        "anchors": [
+          "Venus"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Mercury_(planet)",
+        "url": "https://en.wikipedia.org/wiki/Mercury_(planet)",
+        "anchors": [
+          "Mercury"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Vitaly_Efimov",
+        "url": "https://en.wikipedia.org/wiki/Vitaly_Efimov",
+        "anchors": [
+          "V. Efimov"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Efimov_effect",
+        "url": "https://en.wikipedia.org/wiki/Efimov_effect",
+        "anchors": [
+          "Efimov effect"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Liao_Shijun",
+        "url": "https://en.wikipedia.org/wiki/Liao_Shijun",
+        "anchors": [
+          "Shijun Liao"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Neural_network",
+        "url": "https://en.wikipedia.org/wiki/Neural_network",
+        "anchors": [
+          "neural network"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Helium_atom",
+        "url": "https://en.wikipedia.org/wiki/Helium_atom",
+        "anchors": [
+          "helium atom"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Helium",
+        "url": "https://en.wikipedia.org/wiki/Helium",
+        "anchors": [
+          "helium"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Electrons",
+        "url": "https://en.wikipedia.org/wiki/Electrons",
+        "anchors": [
+          "electrons"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Inverse-square",
+        "url": "https://en.wikipedia.org/wiki/Inverse-square",
+        "anchors": [
+          "inverse-square"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Coulomb_interaction",
+        "url": "https://en.wikipedia.org/wiki/Coulomb_interaction",
+        "anchors": [
+          "Coulomb interaction"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Harmonic_oscillator",
+        "url": "https://en.wikipedia.org/wiki/Harmonic_oscillator",
+        "anchors": [
+          "harmonic attraction"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Two-dimensional_point_vortex_gas",
+        "url": "https://en.wikipedia.org/wiki/Two-dimensional_point_vortex_gas",
+        "anchors": [
+          "point vortex model"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Vortex",
+        "url": "https://en.wikipedia.org/wiki/Vortex",
+        "anchors": [
+          "vortices"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "General_relativity",
+        "url": "https://en.wikipedia.org/wiki/General_relativity",
+        "anchors": [
+          "general relativity"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Event_horizon",
+        "url": "https://en.wikipedia.org/wiki/Event_horizon",
+        "anchors": [
+          "event horizon"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Black_hole",
+        "url": "https://en.wikipedia.org/wiki/Black_hole",
+        "anchors": [
+          "black hole"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Numerical_relativity",
+        "url": "https://en.wikipedia.org/wiki/Numerical_relativity",
+        "anchors": [
+          "sophisticated numerical techniques"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Two-body_problem_in_general_relativity",
+        "url": "https://en.wikipedia.org/wiki/Two-body_problem_in_general_relativity",
+        "anchors": [
+          "two-body problem"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Gravity",
+        "url": "https://en.wikipedia.org/wiki/Gravity",
+        "anchors": [
+          "gravity"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Qiudong_Wang",
+        "url": "https://en.wikipedia.org/wiki/Qiudong_Wang",
+        "anchors": [
+          "Qiudong Wang"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Trigonometric_series",
+        "url": "https://en.wikipedia.org/wiki/Trigonometric_series",
+        "anchors": [
+          "trigonometric series"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Galaxy",
+        "url": "https://en.wikipedia.org/wiki/Galaxy",
+        "anchors": [
+          "galaxy"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Cluster_of_galaxies",
+        "url": "https://en.wikipedia.org/wiki/Cluster_of_galaxies",
+        "anchors": [
+          "cluster of galaxies"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Planetary_systems",
+        "url": "https://en.wikipedia.org/wiki/Planetary_systems",
+        "anchors": [
+          "planetary systems"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Stars",
+        "url": "https://en.wikipedia.org/wiki/Stars",
+        "anchors": [
+          "stars"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Planets",
+        "url": "https://en.wikipedia.org/wiki/Planets",
+        "anchors": [
+          "planets"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Satellites",
+        "url": "https://en.wikipedia.org/wiki/Satellites",
+        "anchors": [
+          "satellites"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Perturbation_(astronomy)",
+        "url": "https://en.wikipedia.org/wiki/Perturbation_(astronomy)",
+        "anchors": [
+          "perturbation"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Few-body_systems",
+        "url": "https://en.wikipedia.org/wiki/Few-body_systems",
+        "anchors": [
+          "Few-body systems"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Galaxy_formation_and_evolution",
+        "url": "https://en.wikipedia.org/wiki/Galaxy_formation_and_evolution",
+        "anchors": [
+          "Galaxy formation and evolution"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Gravity_assist",
+        "url": "https://en.wikipedia.org/wiki/Gravity_assist",
+        "anchors": [
+          "Gravity assist"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Lagrange_point",
+        "url": "https://en.wikipedia.org/wiki/Lagrange_point",
+        "anchors": [
+          "Lagrange point"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Low-energy_transfer",
+        "url": "https://en.wikipedia.org/wiki/Low-energy_transfer",
+        "anchors": [
+          "Low-energy transfer"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Michael_Minovitch",
+        "url": "https://en.wikipedia.org/wiki/Michael_Minovitch",
+        "anchors": [
+          "Michael Minovitch"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Symplectic_integrator",
+        "url": "https://en.wikipedia.org/wiki/Symplectic_integrator",
+        "anchors": [
+          "Symplectic integrator"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Sitnikov_problem",
+        "url": "https://en.wikipedia.org/wiki/Sitnikov_problem",
+        "anchors": [
+          "Sitnikov problem"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Synodic_reference_frame",
+        "url": "https://en.wikipedia.org/wiki/Synodic_reference_frame",
+        "anchors": [
+          "Synodic reference frame"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Triple_star_system",
+        "url": "https://en.wikipedia.org/wiki/Triple_star_system",
+        "anchors": [
+          "Triple star system"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Three-Body",
+        "url": "https://en.wikipedia.org/wiki/Three-Body",
+        "anchors": [
+          "Three-Body (TV series)"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "3_Body_Problem_(TV_series)",
+        "url": "https://en.wikipedia.org/wiki/3_Body_Problem_(TV_series)",
+        "anchors": [
+          "3 Body Problem (TV series)"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Scholarpedia",
+        "url": "https://en.wikipedia.org/wiki/Scholarpedia",
+        "anchors": [
+          "Scholarpedia"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Bibcode_(identifier)",
+        "url": "https://en.wikipedia.org/wiki/Bibcode_(identifier)",
+        "anchors": [
+          "Bibcode"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "target": "Doi_(identifier)",
+        "url": "https://en.wikipedia.org/wiki/Doi_(identifier)",
+        "anchors": [
+          "doi"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ],
+    "external": [
+      {
+        "url": "https://doi.org/10.4249%2Fscholarpedia.2111",
+        "anchors": [
+          "\"Three body problem\"",
+          "10.4249/scholarpedia.2111"
+        ],
+        "count": 2,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://ui.adsabs.harvard.edu/abs/2007SchpJ...2.2111C",
+        "anchors": [
+          "2007SchpJ...2.2111C"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://www.livescience.com/physics-mathematics/the-3-body-problem-may-not-be-so-chaotic-after-all-new-study-suggests",
+        "anchors": [
+          "The '3-body problem' may not be so chaotic after all, new study suggests"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      },
+      {
+        "url": "https://www.science.org/content/article/physicists-discover-whopping-13-new-solutions-three-body-problem",
+        "anchors": [
+          "Physicists Discover a Whopping 13 New Solutions to Three-Body Problem"
+        ],
+        "count": 1,
+        "regions": [
+          "body"
+        ]
+      }
+    ]
+  },
+  "stats": {
+    "n_categories": 6,
+    "n_sections": 13,
+    "n_tables": 0,
+    "n_local": 6,
+    "n_wiki": 133,
+    "n_external": 4,
+    "md_chars": 27875
+  }
+}
