@@ -130,7 +130,7 @@ TEMPERATURE = 0.2
 RETRIEVAL_TOP_K = 7
 HYBRID_CANDIDATE_POOL = max(10, RETRIEVAL_TOP_K)
 
-CHROMA_DB_NAME = "wikipedia_sections_max10000_no_overlap"
+CHROMA_DB_NAME = "wikipedia_chars1600_overlap200"
 
 ARTICLE_TEXT_STORE_NAME = "wikipedia_plain_text" 
 ARTICLE_MARKDOWN_STORE_NAME = "wikipedia_markdown" 

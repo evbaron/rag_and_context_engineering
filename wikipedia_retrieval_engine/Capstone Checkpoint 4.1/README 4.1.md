@@ -65,52 +65,6 @@ avoids tuning to the very questions we measure on.
 > averages, not single runs (mirrors the Checkpoint 3.1 finding). First multi-question
 > re-run already looks more typical than the near-perfect first run.
 
-## Failure analysis: where the baseline breaks (baseline vs oracle)
-
-Ran the baseline retriever and the **oracle** (perfect / gold-article context) on the
-evaluation set, grouped by task family. The **oracle gap** (oracle quality − baseline
-quality) is the key column: a large positive gap means *retrieval* is the bottleneck; a
-gap near zero means better retrieval wouldn't help — the failure is elsewhere.
-
-| Task family | Q | Baseline quality | Fail % | Oracle quality | Oracle gap | Article recall |
-|---|---|---|---|---|---|---|
-| Exhaustive list or time filter | 5 | 0.340 | 64.0% | 0.322 | −0.018 | 86.7% |
-| Evidence selection or explanation | 3 | 0.767 | 20.0% | 0.815 | +0.048 | 100.0% |
-| Entity relationship or historical synthesis | 6 | 0.867 | 10.0% | 1.000 | +0.133 | 87.5% |
-| Cross-table quantitative reasoning | 2 | 1.000 | 0.0% | 0.972 | −0.028 | 75.0% |
-| Direct fact or table lookup | 3 | 1.000 | 0.0% | 1.000 | +0.000 | 100.0% |
-
-Reading it:
-
-- **Exhaustive list / time filter** is the dominant failure (64% fail, quality 0.340).
-  Its oracle gap is **≈ 0** (−0.018) with **86.7% recall** — retrieval already finds the
-  article, and *perfect* context doesn't help. The bottleneck is **not retrieval**: the
-  answer-bearing content (tables) is destroyed in the flattened plain-text context, so
-  even the gold article is unusable.
-- **Entity relationship / historical synthesis** has a **positive** oracle gap (+0.133) —
-  better context *does* help → a *retrieval* limitation (later target for decomposition /
-  graph).
-- Direct lookups and (n=2) cross-table are already near ceiling.
-
-**Two distinct failure modes:** (1) table/aggregation answers lost to **flattened
-context** (representation); (2) cross-article synthesis limited by **single-pass
-retrieval**. Caveat: oracle-gap≈0 can't by itself separate "mangled tables" from "model
-can't aggregate," because the oracle context *also* used plain-text. The markdown swap
-below is the experiment that discriminates them.
-
-## Strategy + architecture change: markdown context swap (isolate one variable)
-
-- **Baseline pipeline:** retrieve top-k character chunks → dedupe to articles → send
-  **full plain-text articles** to the LLM (context = `wikipedia_plain_text`).
-- **Change:** keep retrieval *identical*; swap the context source to the **markdown**
-  store (tables/infobox preserved). This changes a **single variable** (context
-  representation), so any gain is attributable to it — a clean ablation and the direct
-  test of failure mode (1).
-- **Implementation:** `CONTEXT_SOURCE = "markdown"` in
-  `capstone_checkpoint_4_1_with_retriever.py` (switch between `plain_text` and
-  `markdown`); `MarkdownArticle` exposes `.text` so it drops into the existing
-  full-article context path. **No re-embedding, no index rebuild.**
-- **New base:** re-run GT + validation as `starting_quality_base_4.1`, 2–3× (variance).
 
 ## Reusable evaluation scripts
 Need to establish exisitng base line for new validation set
@@ -156,7 +110,7 @@ Using a separate output directory for validation prevents its results from being
 silently mixed with the Checkpoint 3.1 development experiments. The same scripts can
 run another compatible GT set by changing only the two command-line paths.
 
-## Analyze the validation experiments
+### Analyze the validation experiments
 
 After the oracle and retriever runs have created experiment CSVs, generate the PDF
 comparison report with:
@@ -173,3 +127,97 @@ same directory selected by the `cd` command in the oracle example above. The ana
 reads saved CSV files and does not make LLM or API calls. When a CSV includes
 `experiment_name` or `config_name`, that value becomes the comparison group shown in
 the report; older or unnamed CSVs still use the analyzer's derived configuration name.
+
+
+## Failure analysis: where the baseline breaks (baseline vs oracle)
+
+Ran the baseline retriever and the **oracle** (perfect / gold-article context) on the
+evaluation set, grouped by task family. The **oracle gap** (oracle quality − baseline
+quality) is the key column: a large positive gap means *retrieval* is the bottleneck; a
+gap near zero means better retrieval wouldn't help — the failure is elsewhere.
+
+| Task family | Q | Baseline quality | Fail % | Oracle quality | Oracle gap | Article recall |
+|---|---|---|---|---|---|---|
+| Exhaustive list or time filter | 5 | 0.340 | 64.0% | 0.322 | −0.018 | 86.7% |
+| Evidence selection or explanation | 3 | 0.767 | 20.0% | 0.815 | +0.048 | 100.0% |
+| Entity relationship or historical synthesis | 6 | 0.867 | 10.0% | 1.000 | +0.133 | 87.5% |
+| Cross-table quantitative reasoning | 2 | 1.000 | 0.0% | 0.972 | −0.028 | 75.0% |
+| Direct fact or table lookup | 3 | 1.000 | 0.0% | 1.000 | +0.000 | 100.0% |
+
+Reading it:
+
+- **Exhaustive list / time filter** is the dominant failure (64% fail, quality 0.340).
+  Its oracle gap is **≈ 0** (−0.018) with **86.7% recall** — retrieval already finds the
+  article, and *perfect* context doesn't help. The bottleneck is **not retrieval**: the
+  answer-bearing content (tables) is destroyed in the flattened plain-text context, so
+  even the gold article is unusable.
+- **Entity relationship / historical synthesis** has a **positive** oracle gap (+0.133) —
+  better context *does* help → a *retrieval* limitation (later target for decomposition /
+  graph).
+- Direct lookups and (n=2) cross-table are already near ceiling.
+
+**Two distinct failure modes:** (1) table/aggregation answers lost to **flattened
+context** (representation); (2) cross-article synthesis limited by **single-pass
+retrieval**. Caveat: oracle-gap≈0 can't by itself separate "mangled tables" from "model
+can't aggregate," because the oracle context *also* used plain-text. The markdown swap
+below is the experiment that discriminates them.
+
+## Controlled ablation: does context representation cause the table failures? (markdown vs plain-text)
+
+- **Baseline pipeline:** retrieve top-k character chunks → dedupe to articles → send
+  **full plain-text articles** to the LLM (context = `wikipedia_plain_text`).
+- **Change:** keep retrieval *identical*; swap the context source to the **markdown**
+  store (tables/infobox preserved). This changes a **single variable** (context
+  representation), so any gain is attributable to it — a clean ablation and the direct
+  test of failure mode (1).
+- **Implementation:** `CONTEXT_SOURCE = "markdown"` in
+  `capstone_checkpoint_4_1_with_retriever.py` (switch between `plain_text` and
+  `markdown`); `MarkdownArticle` exposes `.text` so it drops into the existing
+  full-article context path. **No re-embedding, no index rebuild.**
+- **How it was run:** `vector_k7` on the char index, GT set, flipping `CONTEXT_SOURCE`
+  between `plain_text` and `markdown`, compared against the Checkpoint 3.1 plain-text run
+  (`retriever_active_vector_search`) — same retriever, index, and question set, so only the
+  context representation differs. Result in the next section.
+
+## Ablation result (Step 5): context representation — no measurable effect
+
+Matched comparison — **only the context representation differs**. Both runs are `vector_k7`,
+char index, GT set (19 Q), and article **recall is identical (0.899)**, which confirms retrieval
+was held constant (plain-text = Checkpoint 3.1 `retriever_active_vector_search`; markdown =
+Checkpoint 4.1 markdown run).
+
+| metric | plain_text | markdown | Δ (md − pt) |
+|---|---|---|---|
+| Retriever — overall quality | 0.747 | 0.754 | **+0.007** |
+| Retriever — exhaustive-list / time-filter | 0.340 | 0.367 | +0.027 |
+| Oracle (perfect context) — overall | 0.789 | 0.737 | **−0.053** |
+| Oracle — exhaustive-list / time-filter | 0.322 | 0.267 | −0.055 |
+
+Both overall deltas sit within run-to-run noise (3–5 runs each). **Conclusion: markdown context
+neither helped nor hurt.** The dominant failure family (exhaustive-list / time-filter) stayed at
+~0.34–0.37 regardless of format, and *even with perfect gold markdown articles* scored ~0.27. So
+the original hypothesis — "preserving tables in markdown will fix the table/aggregation
+questions" — is **not supported**. This clean ablation rules representation out as the cause.
+
+## Impact analysis (Step 6): the bottleneck is reasoning, not retrieval or representation
+
+Two suspects are now eliminated with evidence:
+
+- ❌ **Retrieval** — oracle ≈ retriever (gap ≈ 0): perfect gold articles don't beat retrieved ones.
+- ❌ **Representation** — markdown ≈ plain-text (Δ ≈ 0, above): clean tables don't beat mangled ones.
+- ✅ **Reasoning** — the model cannot reliably *enumerate → filter-by-year → aggregate* over a
+  table, even when the pristine table sits in the gold context. Format is irrelevant if the model
+  won't compute over it correctly.
+
+**Where the markdown work still pays off:** not prettier LLM context (a wash), but the
+**structured sidecar** — table headers+rows, categories, links — which is the substrate a
+reasoning fix needs (compute over structured rows, or decompose the question) instead of hoping
+the LLM reads a 30-row table correctly. It also remains the foundation for graph retrieval.
+
+**Next strategy (evidence-justified):** **query decomposition** (Lab 4.1) for the
+exhaustive-list / aggregation family — break each question into enumerate / filter / count steps —
+optionally paired with structured-table reasoning from the sidecar. Ruling out retrieval and
+representation is precisely what *justifies* choosing decomposition rather than guessing at it.
+
+
+# Decomposition
