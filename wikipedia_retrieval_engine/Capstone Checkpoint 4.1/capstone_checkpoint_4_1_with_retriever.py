@@ -328,6 +328,17 @@ def parse_args() -> argparse.Namespace:
         required=True,
         help="Directory in which RAGAS will save datasets and experiments.",
     )
+    parser.add_argument(
+        "--experiment-name",
+        "--config-name",
+        dest="experiment_name",
+        default="",
+        help=(
+            "Optional friendly comparison label saved with each result row, "
+            "for example vector_search_base. If omitted, the analyzer derives "
+            "the configuration name from run metadata."
+        ),
+    )
     return parser.parse_args()
 
 
@@ -495,7 +506,8 @@ def build_ragas_dataset(
 #    `format_full_articles_context`).
 # 3. Generates an answer from that retrieved context.
 # 4. Scores the answer with `correctness_metric` (`pass` / `partial` / `fail`).
-# 5. Records article-level recall against the labeled source articles.
+# 5. Records article-level recall against the labeled source articles, plus any
+#    optional `experiment_name`.
 #
 # `asyncio.run(main())` loads the Chroma index and article-text store, evaluates
 # the full ground-truth set, and writes `<output-dir>/experiments/<run_name>.csv`.
@@ -506,6 +518,7 @@ def build_retrieval_experiment(
     article_text_store,
     answer_llm: ChatOpenAI,
     ragas_judge,
+    experiment_name: str = "",
 ):
     """Return a RAGAS experiment that retrieves, answers from full articles, then judges."""
     @experiment()
@@ -562,6 +575,7 @@ def build_retrieval_experiment(
 
         return {
             **row,
+            "experiment_name": experiment_name,
             "evaluation_mode": "retrieved_full_article_context",
             "context_source": CONTEXT_SOURCE,
             "answer_model": LLM_MODEL,
@@ -594,6 +608,7 @@ async def main() -> None:
     args = parse_args()
     gt_path = args.gt_set.expanduser().resolve()
     output_dir = args.output_dir.expanduser().resolve()
+    experiment_name = args.experiment_name.strip()
     if output_dir.exists() and not output_dir.is_dir():
         raise NotADirectoryError(f"Output path is not a directory: {output_dir}")
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -635,11 +650,14 @@ async def main() -> None:
         article_text_store=article_text_store,
         answer_llm=answer_llm,
         ragas_judge=ragas_judge,
+        experiment_name=experiment_name,
     )
 
+    experiment_label = experiment_name or "auto-derived"
     print(
         f"Running retrieval evaluation on {len(dataset)} questions "
-        f"from {gt_path} with {retriever.settings()}..."
+        f"from {gt_path} with {retriever.settings()} "
+        f"(context_source={CONTEXT_SOURCE}, experiment_name={experiment_label})..."
     )
 
     results = await retrieval_experiment.arun(dataset)

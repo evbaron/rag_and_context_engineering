@@ -124,8 +124,9 @@ and known limitations in detail.
 ## Analyze RAGAS experiments
 
 `wikipedia_retrieval_engine/utils/analyze_ragas_experiments.py` recursively discovers
-RAGAS experiment CSVs, groups repeated runs by configuration metadata, recomputes
-article recall with normalized filenames, and creates a landscape PDF containing:
+RAGAS experiment CSVs, groups repeated runs by `experiment_name` / `config_name` when
+present and by derived configuration metadata otherwise, recomputes article recall
+with normalized filenames, and creates a landscape PDF containing:
 
 - PASS/PARTIAL/FAIL rates and the weighted quality index;
 - designated-source recall and full-source coverage;

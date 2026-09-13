@@ -302,6 +302,17 @@ def parse_args() -> argparse.Namespace:
         required=True,
         help="Directory in which RAGAS will save datasets and experiments.",
     )
+    parser.add_argument(
+        "--experiment-name",
+        "--config-name",
+        dest="experiment_name",
+        default="",
+        help=(
+            "Optional friendly comparison label saved with each result row, "
+            "for example oracle_markdown. If omitted, the analyzer derives "
+            "the configuration name from run metadata."
+        ),
+    )
     return parser.parse_args()
 
 
@@ -466,7 +477,8 @@ def build_ragas_dataset(
 #    from the store selected by `CONTEXT_SOURCE` (`plain_text` or `markdown`).
 # 2. Generates an answer from that context (`answer_from_context`).
 # 3. Scores the answer with `correctness_metric` (`pass` / `partial` / `fail`).
-# 4. Records `context_source` on each result row so runs can be compared.
+# 4. Records `context_source` and any optional `experiment_name` on each result row
+#    so runs can be compared.
 #
 # `asyncio.run(main())` evaluates the full ground-truth set and writes
 # `<output-dir>/experiments/<run_name>.csv`.
@@ -476,6 +488,7 @@ def build_oracle_experiment(
     article_text_store,
     answer_llm: ChatOpenAI,
     ragas_judge,
+    experiment_name: str = "",
 ):
     """Return a RAGAS experiment that answers from gold articles, then judges."""
     @experiment()
@@ -499,6 +512,7 @@ def build_oracle_experiment(
 
         return {
             **row,
+            "experiment_name": experiment_name,
             "evaluation_mode": "oracle_ground_truth_context",
             "context_source": CONTEXT_SOURCE,
             "answer_model": LLM_MODEL,
@@ -519,6 +533,7 @@ async def main() -> None:
     args = parse_args()
     gt_path = args.gt_set.expanduser().resolve()
     output_dir = args.output_dir.expanduser().resolve()
+    experiment_name = args.experiment_name.strip()
     if output_dir.exists() and not output_dir.is_dir():
         raise NotADirectoryError(f"Output path is not a directory: {output_dir}")
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -553,11 +568,14 @@ async def main() -> None:
         article_text_store=article_text_store,
         answer_llm=answer_llm,
         ragas_judge=ragas_judge,
+        experiment_name=experiment_name,
     )
 
+    experiment_label = experiment_name or "auto-derived"
     print(
         f"Running oracle evaluation on {len(dataset)} questions "
-        f"from {gt_path} (context_source={CONTEXT_SOURCE})..."
+        f"from {gt_path} "
+        f"(context_source={CONTEXT_SOURCE}, experiment_name={experiment_label})..."
     )
 
     results = await oracle_experiment.arun(dataset)

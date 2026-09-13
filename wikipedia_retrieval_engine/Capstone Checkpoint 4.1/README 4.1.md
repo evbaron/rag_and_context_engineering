@@ -127,6 +127,10 @@ named command-line arguments:
   `wikipedia_GT.csv` column schema.
 - `--output-dir`: the RAGAS root directory in which datasets and experiment CSVs
   will be saved. The directory is created when it does not exist.
+- `--experiment-name` / `--config-name`: optional comparison label written into
+  each result row. Use names like `oracle`, `oracle_markdown`, or
+  `vector_search_base`. If omitted, `analyze_ragas_experiments.py` derives the
+  configuration name from the run metadata as before.
 
 From the `rag_and_context_engineering` repository root, run the validation set with
 oracle context:
@@ -135,7 +139,8 @@ oracle context:
 cd rag_and_context_engineering/wikipedia_retrieval_engine
 python "Capstone Checkpoint 4.1/capstone_checkpoint_4_1_oracle_AI_only.py" \
   --gt-set "GT/wikipedia_GT_validation_set.csv" \
-  --output-dir "Capstone Checkpoint 4.1/ragas_validation_experiments"
+  --output-dir "Capstone Checkpoint 4.1/ragas_validation_experiments" \
+  --experiment-name oracle_markdown
 ```
 
 Run the same validation set through the active retriever configuration:
@@ -143,7 +148,8 @@ Run the same validation set through the active retriever configuration:
 ```bash
 python "Capstone Checkpoint 4.1/capstone_checkpoint_4_1_with_retriever.py" \
   --gt-set "GT/wikipedia_GT_validation_set.csv" \
-  --output-dir "Capstone Checkpoint 4.1/ragas_validation_experiments"
+  --output-dir "Capstone Checkpoint 4.1/ragas_validation_experiments" \
+  --experiment-name vector_search_base
 ```
 
 Using a separate output directory for validation prevents its results from being
@@ -164,4 +170,6 @@ python "utils/analyze_ragas_experiments.py" \
 
 Run this command from `rag_and_context_engineering/wikipedia_retrieval_engine`, the
 same directory selected by the `cd` command in the oracle example above. The analyzer
-reads saved CSV files and does not make LLM or API calls.
+reads saved CSV files and does not make LLM or API calls. When a CSV includes
+`experiment_name` or `config_name`, that value becomes the comparison group shown in
+the report; older or unnamed CSVs still use the analyzer's derived configuration name.

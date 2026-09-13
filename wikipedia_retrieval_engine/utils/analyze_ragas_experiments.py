@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Analyze RAGAS experiment CSVs and create a comparison PDF.
 
-The script recursively discovers experiment CSVs and groups repeated runs by the
+The script recursively discovers experiment CSVs and groups repeated runs by an
+explicit ``experiment_name`` / ``config_name`` when present, otherwise by the
 configuration metadata stored in each file. The primary comparison excludes files
 inside directories named ``pass_fail_only`` because those runs used an incompatible
 binary scoring framework.
@@ -298,6 +299,73 @@ def _configuration_metadata(first: pd.Series) -> tuple[str, str, int]:
     return config_id, display, order
 
 
+def _explicit_experiment_name(first: pd.Series) -> str:
+    """Read a user-provided comparison label from current or future CSV schemas."""
+    for column in ("experiment_name", "config_name"):
+        name = _as_text(first.get(column))
+        if name:
+            return name
+    return ""
+
+
+def _comparison_metadata(first: pd.Series) -> tuple[str, str, int, str, str, bool]:
+    """Resolve the grouping label, preserving the existing derived-label fallback."""
+    derived_id, derived_label, order = _configuration_metadata(first)
+    experiment_name = _explicit_experiment_name(first)
+    if experiment_name:
+        return (
+            f"experiment_name={experiment_name}",
+            experiment_name,
+            order,
+            derived_id,
+            derived_label,
+            True,
+        )
+    return derived_id, derived_label, order, derived_id, derived_label, False
+
+
+def _min_configuration_order(group: pd.DataFrame) -> int:
+    orders = pd.to_numeric(group["configuration_order"], errors="coerce").dropna()
+    return int(orders.min()) if not orders.empty else 90
+
+
+def _append_experiment_name_warnings(
+    rows: pd.DataFrame,
+    warnings: list[str],
+) -> None:
+    if "experiment_name_source" not in rows.columns:
+        return
+
+    provided = rows[rows["experiment_name_source"] == "provided"]
+    if provided.empty:
+        return
+
+    for name, group in provided.groupby("configuration", sort=True, dropna=False):
+        derived_ids = {
+            _as_text(value)
+            for value in group["derived_configuration_id"]
+            if _as_text(value)
+        }
+        if len(derived_ids) <= 1:
+            continue
+
+        derived_labels = sorted(
+            {
+                _as_text(value)
+                for value in group["derived_configuration"]
+                if _as_text(value)
+            }
+        )
+        shown_labels = ", ".join(derived_labels[:4])
+        if len(derived_labels) > 4:
+            shown_labels += ", ..."
+        warnings.append(
+            f"Experiment name {name!r} combines {len(derived_ids)} auto-derived "
+            f"configurations ({shown_labels}). Use distinct --experiment-name "
+            "values if these should be compared separately."
+        )
+
+
 def _file_digest(path: Path) -> str:
     digest = hashlib.sha256()
     with path.open("rb") as stream:
@@ -391,12 +459,26 @@ def load_experiments(
             excluded_files.append((relative_path, "no supported score rows"))
             continue
 
-        config_id, config_label, config_order = _configuration_metadata(
+        if "evaluation_mode" not in frame.columns:
+            frame["evaluation_mode"] = ""
+
+        (
+            config_id,
+            config_label,
+            config_order,
+            derived_config_id,
+            derived_config_label,
+            has_explicit_name,
+        ) = _comparison_metadata(
             frame.iloc[0]
         )
         frame["configuration_id"] = config_id
         frame["configuration"] = config_label
         frame["configuration_order"] = config_order
+        frame["experiment_name"] = config_label
+        frame["experiment_name_source"] = "provided" if has_explicit_name else "derived"
+        frame["derived_configuration_id"] = derived_config_id
+        frame["derived_configuration"] = derived_config_label
         frame["run_file"] = str(relative_path)
         frame["run_name"] = path.stem
         frame["run_mtime"] = path.stat().st_mtime
@@ -432,6 +514,10 @@ def load_experiments(
     # oracle and retriever schemas. This also avoids pandas' all-NA concat warning.
     frames = [frame.dropna(axis=1, how="all") for frame in frames]
     rows = pd.concat(frames, ignore_index=True, sort=False)
+    for column in ("article_recall_recomputed", "context_characters_numeric"):
+        if column not in rows.columns:
+            rows[column] = math.nan
+    _append_experiment_name_warnings(rows, warnings)
     unclassified = sorted(
         {
             _as_text(value)
@@ -480,7 +566,6 @@ def _build_run_summary(rows: pd.DataFrame) -> pd.DataFrame:
         "run_mtime",
         "configuration_id",
         "configuration",
-        "configuration_order",
     ]
     for keys, group in rows.groupby(group_columns, sort=False, dropna=False):
         (
@@ -489,8 +574,8 @@ def _build_run_summary(rows: pd.DataFrame) -> pd.DataFrame:
             run_mtime,
             config_id,
             configuration,
-            config_order,
         ) = keys
+        config_order = _min_configuration_order(group)
         recall = pd.to_numeric(
             group["article_recall_recomputed"], errors="coerce"
         ).dropna()
@@ -531,10 +616,10 @@ def _build_config_summary(
     group_columns = [
         "configuration_id",
         "configuration",
-        "configuration_order",
     ]
     for keys, group in rows.groupby(group_columns, sort=False, dropna=False):
-        config_id, configuration, config_order = keys
+        config_id, configuration = keys
+        config_order = _min_configuration_order(group)
         run_group = run_summary[
             run_summary["configuration_id"] == config_id
         ]
@@ -585,11 +670,11 @@ def _build_dimension_summary(
     group_columns = [
         "configuration_id",
         "configuration",
-        "configuration_order",
         dimension,
     ]
     for keys, group in rows.groupby(group_columns, sort=False, dropna=False):
-        config_id, configuration, config_order, group_value = keys
+        config_id, configuration, group_value = keys
+        config_order = _min_configuration_order(group)
         recall = pd.to_numeric(
             group["article_recall_recomputed"], errors="coerce"
         ).dropna()
@@ -650,8 +735,12 @@ def _task_priority_summary(data: AnalysisData) -> tuple[str, pd.DataFrame] | Non
         }
     )
 
+    oracle_config_ids = data.rows.loc[
+        data.rows["evaluation_mode"] == "oracle_ground_truth_context",
+        "configuration_id",
+    ].dropna().unique()
     oracle_configs = data.config_summary[
-        data.config_summary["configuration"] == "Oracle context"
+        data.config_summary["configuration_id"].isin(oracle_config_ids)
     ].sort_values(["cases", "configuration_id"], ascending=[False, True])
     if oracle_configs.empty:
         baseline["oracle_quality"] = math.nan
@@ -1698,7 +1787,7 @@ def create_pdf_report(
             ),
             Paragraph("Configuration grouping", styles["h2"]),
             _paragraph(
-                "Runs are grouped by evaluation mode, retriever kind and label, Top K, hybrid weights, answer model, and judge model. RAGAS-generated filenames identify individual runs but do not define configurations.",
+                "Runs are grouped by a CSV experiment_name or config_name when one is present. If no explicit name is present, grouping falls back to evaluation mode, context source, retriever kind and label, Top K, hybrid weights, answer model, and judge model. RAGAS-generated filenames identify individual runs but do not define configurations.",
                 styles["body"],
             ),
             Paragraph("Framework compatibility", styles["h2"]),
