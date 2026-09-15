@@ -76,10 +76,9 @@ from utils.ragas_eval import (
 # Retrieval config — held identical to the baseline so decomposition is the ONLY change.
 CHROMA_DB_NAME = "wikipedia_chars1600_overlap200"
 RETRIEVAL_TOP_K = 7
-# When True, also feed the decomposition's reasoning instructions into the answer step
-# (reasoning-decomposition). False = retrieval-decomposition only. Label runs distinctly
-# (e.g. --experiment-name vs_k7_md_decomposed_reasoned) so each lever stays measurable.
-USE_REASONING = True
+# Reasoning is applied per-question: the decomposition emits reasoning instructions only
+# for multi-step questions (else NONE, see _SYSTEM_PROMPT), so simple lookups run the
+# plain answer path — no toggle needed.
 
 
 # %% [markdown]
@@ -116,7 +115,7 @@ def build_advanced_experiment(
         article_recall = len(matched) / len(required_articles) if required_articles else 1.0
 
         answer_query = row["question"]
-        if USE_REASONING and reasoning:
+        if reasoning:
             answer_query = (
                 f"{row['question']}\n\nSteps to follow when answering:\n{reasoning}"
             )
@@ -135,7 +134,7 @@ def build_advanced_experiment(
             "evaluation_mode": "retrieved_full_article_context",
             "context_source": CONTEXT_SOURCE,
             "decompose": True,
-            "reasoning_used": bool(USE_REASONING and reasoning),
+            "reasoning_used": bool(reasoning),
             "answer_model": LLM_MODEL,
             "judge_model": JUDGE_MODEL,
             "retriever_kind": "vector_multistep",

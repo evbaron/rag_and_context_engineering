@@ -33,7 +33,8 @@ The sub-queries should be:
 - list specific terms and topics of interest to the original query
 
 In addition to sub-queries, analyze the original query and provide detailed instructions for the reasoning model to use once article retrieved.
-These instructions should be steps needed to answer the original query. 
+These instructions should be steps needed to answer the original query.
+Only provide reasoning instructions when the question requires MULTI-STEP reasoning over data — enumeration, filtering by year or criteria, counting, aggregation, or cross-referencing across articles. For a simple factual lookup that needs no such steps, output exactly: NONE. 
 Subqueries will be used for vector search retrival only, the reasoning instructions will be sent along with the original query to the reasoning model to synthesize the answer.
 Return Original Query, Sub-queries, and Reasoning instructions in a structured format with each item on a new line.
 
@@ -112,6 +113,8 @@ def _parse_decomposition(text: str, fallback_query: str) -> tuple[list[str], str
             pass
     reason = re.search(r"Reasoning instructions\s*:\s*(.+)", text, re.I | re.S)
     reasoning = reason.group(1).strip().strip('"') if reason else ""
+    if reasoning.strip().upper().rstrip(".") in {"", "NONE", "N/A", "NA"}:
+        reasoning = ""  # simple lookup — no multi-step reasoning needed (targeted reasoning)
     return (sub_queries or [fallback_query]), reasoning
 
 
