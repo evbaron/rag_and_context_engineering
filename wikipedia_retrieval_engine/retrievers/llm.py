@@ -86,3 +86,14 @@ def answer(
     response = client.invoke(messages)
     content = response.content if hasattr(response, "content") else response
     return content if isinstance(content, str) else str(content)
+
+
+def decompose_query(query: str, system_prompt, original_query: str, llm: ChatOpenAI | None = None) -> str:
+    """Decompose the query into a list of sub-queries and reasoning instructions."""
+    client = make_llm()
+    messages = [
+        SystemMessage(content=system_prompt),
+        HumanMessage(content=query),
+    ]
+    response = client.invoke(messages)
+    return response.content if hasattr(response, "content") else str(response)

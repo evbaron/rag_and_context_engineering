@@ -1467,6 +1467,56 @@ def _question_table(data: AnalysisData, styles: dict[str, ParagraphStyle]) -> Lo
     )
 
 
+def _question_recall_table(
+    data: AnalysisData, styles: dict[str, ParagraphStyle]
+) -> LongTable | None:
+    """Per-question article recall (retriever configurations only).
+
+    Mirrors _question_table, but each cell is the fraction of that question's
+    designated source articles that were retrieved — so retrieval misses are visible
+    per question, not just in the overall/per-configuration averages. Oracle
+    configurations have no retrieval and are omitted; returns None when no retrieval
+    rows carry a recall value.
+    """
+    retrieval = data.rows[
+        data.rows["evaluation_mode"].astype(str) != "oracle_ground_truth_context"
+    ]
+    if retrieval.empty or retrieval["article_recall_recomputed"].dropna().empty:
+        return None
+    pivot = retrieval.pivot_table(
+        index="question_id",
+        columns="configuration",
+        values="article_recall_recomputed",
+        aggfunc="mean",
+    )
+    configurations = [
+        c for c in data.config_summary["configuration"] if c in pivot.columns
+    ]
+    if not configurations:
+        return None
+    question_ids = sorted(pivot.index, key=_question_sort_key)
+    headers = ["Question"] + configurations
+    table_data: list[list[Any]] = [headers]
+    for question_id in question_ids:
+        row: list[Any] = [question_id]
+        for configuration in configurations:
+            value = (
+                pivot.at[question_id, configuration]
+                if configuration in pivot.columns
+                else math.nan
+            )
+            row.append("n/a" if pd.isna(value) else _percent(value))
+        table_data.append(row)
+    total_width = 640
+    first_width = 58
+    other_width = (total_width - first_width) / max(1, len(configurations))
+    return _styled_table(
+        table_data,
+        [first_width] + [other_width] * len(configurations),
+        long=True,
+    )
+
+
 def _task_priority_table(
     data: AnalysisData,
     styles: dict[str, ParagraphStyle],
@@ -1723,6 +1773,24 @@ def create_pdf_report(
             _question_table(data, styles),
         ]
     )
+
+    recall_table = _question_recall_table(data, styles)
+    if recall_table is not None:
+        story.extend(
+            [
+                Spacer(1, 10),
+                Paragraph("Per-question article recall", styles["h2"]),
+                Paragraph(
+                    "Fraction of each question's designated source articles that "
+                    "appeared in the retrieved set (retriever configurations only). "
+                    "1.00 = every gold article retrieved; lower values mark a retrieval "
+                    "miss — usually a multi-source question.",
+                    styles["body"],
+                ),
+                Spacer(1, 6),
+                recall_table,
+            ]
+        )
 
     attention_chart = _attention_chart(data)
     priority_table_result = _task_priority_table(data, styles)

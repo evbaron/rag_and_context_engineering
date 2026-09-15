@@ -114,6 +114,7 @@ from retrievers.corpus import (
 )
 from retrievers.llm import answer as answer_from_context
 from retrievers.llm import make_llm
+from retrievers.multistep import MultiStepRetriever
 
 from openai import OpenAI
 from ragas import Dataset, experiment
@@ -140,6 +141,12 @@ ARTICLE_MARKDOWN_STORE_NAME = "wikipedia_markdown"
 # Retrieval is UNCHANGED either way; only the full-article context differs, so a
 # plain_text->markdown comparison isolates the effect of context representation.
 CONTEXT_SOURCE = "markdown"
+
+# Retrieval strategy. When True, wrap retrieval in query decomposition: split the
+# question into sub-queries, run vector search for each IN PARALLEL, and merge
+# (MultiStepRetriever). Same Chroma index either way, so decompose on/off isolates the
+# effect of decomposition. Targets multi-article recall (e.g. GT03/GT09/GT14/GT16).
+DECOMPOSE = False
 
 # Checkpoint 2.1 baseline: hybrid, vector-heavy, k=7.
 # ------------_ RUN 1_ ------------
@@ -578,6 +585,7 @@ def build_retrieval_experiment(
             "experiment_name": experiment_name,
             "evaluation_mode": "retrieved_full_article_context",
             "context_source": CONTEXT_SOURCE,
+            "decompose": DECOMPOSE,
             "answer_model": LLM_MODEL,
             "judge_model": JUDGE_MODEL,
             "retriever_kind": BASELINE_RETRIEVER_SPEC.kind,
@@ -641,6 +649,14 @@ async def main() -> None:
         db=db,
         chroma_db_name=CHROMA_DB_NAME,
     )
+    if DECOMPOSE:
+        print("Retrieval: multistep query decomposition (parallel sub-query search)")
+        retriever = MultiStepRetriever(
+            db=db,  # reuse the already-loaded Chroma index (no reload)
+            chroma_db_name=CHROMA_DB_NAME,
+            top_k=RETRIEVAL_TOP_K,
+            label=f"{BASELINE_RETRIEVER_SPEC.label}_decomposed",
+        )
 
     answer_llm = make_llm()
     ragas_judge = make_judge()
