@@ -1,0 +1,242 @@
+question_id,category,question,reference_answer,grading_notes,source_articles,experiment_name,evaluation_mode,context_source,answer_model,judge_model,retriever_kind,retriever_label,retrieval_top_k,hybrid_candidate_pool,weight_bm25,weight_vector,required_articles,retrieved_articles,matched_articles,missing_articles,article_recall,retrieved_chunk_ids,retrieved_chunk_count,retrieved_article_count,response,score,source_count,context_characters
+GT19,Geopolitical cross-table calculation,"Using the 2023 UN population estimates and the 2010–2015 life-expectancy values in the supplied tables, compare India and mainland China. Which had the larger population and by how many people? Which had the higher life expectancy and by how many years? Based only on the supplied evidence, what, if anything, can this comparison tell us about whether population size affects life expectancy? Explain any limitations that affect your conclusion.","India's 2023 population estimate was 1,438,069,596 and mainland China's was 1,422,584,933, so India was larger by 15,484,663 people. China's 2010–2015 life expectancy was 75.67 years and India's was 67.57 years, so China was higher by 8.10 years. The measurements refer to different time periods, so the comparison is descriptive and does not establish that population size causes life expectancy.","PASS if both population and life-expectancy source values, directions, and differences are correct, and the response independently recognizes that the two-country, noncontemporaneous comparison is insufficient to establish whether population size affects life expectancy; it must note the 2023 versus 2010–2015 mismatch and avoid causal inference. PARTIAL if the numerical comparison is correct but one required limitation is omitted, or the evidence limitation is correct but one numerical detail is missing, with no wrong calculation or causal claim. FAIL if a direction, difference, or source value is materially wrong, or the response claims or implies a causal relationship unsupported by the tables.",List_of_countries_by_population_(United_Nations).html.txt; List_of_countries_by_past_life_expectancy.html.txt,vs_k7_markdown_base,retrieved_full_article_context,markdown,openai/gpt-5.4-mini,openai/gpt-5.4-mini,vector,vector_k7,7,10,0.5,0.5,List_of_countries_by_population_(United_Nations).html; List_of_countries_by_past_life_expectancy.html,India.html; China.html; List_of_countries_by_population_(United_Nations).html; List_of_countries_by_past_life_expectancy.html,List_of_countries_by_population_(United_Nations).html; List_of_countries_by_past_life_expectancy.html,,1.0,India.html#42; India.html#43; China.html#68; List_of_countries_by_population_(United_Nations).html#0; China.html#93; List_of_countries_by_past_life_expectancy.html#0; China.html#69,7,4,"Using the supplied tables:
+
+- **Population (2023 UN estimates):**
+  - **India:** 1,438,069,596
+  - **China:** 1,422,584,933  
+  - **India had the larger population** by **15,484,663 people**.
+
+- **Life expectancy at birth (2010–2015):**
+  - **India:** 67.57 years
+  - **China:** 75.67 years  
+  - **China had the higher life expectancy** by **8.10 years**.
+
+### What this comparison can tell us
+Based only on these two countries, **a larger population does not imply a higher life expectancy**: India is slightly more populous, but China’s life expectancy is substantially higher.
+
+### Important limitations
+This comparison is **very limited**:
+- It uses **only two countries**, so it cannot establish a general relationship.
+- The figures come from **different kinds of data**: 2023 population estimates and 2010–2015 life expectancy values, so they are **not from the same year**.
+- Many other factors can affect life expectancy, and the supplied tables do not isolate them.
+
+So, the safest conclusion is: **in these two cases, the more populous country has the lower life expectancy, but the evidence is far too limited to say that population size affects life expectancy in general.**",pass,2,340521
+GT10,Program-history filter,"Using the Sport/Years table in the Wikipedia article on the Winter Olympic Games, which listed sports first entered the official Winter Olympic program in 1950 or later? Give the first year for each.",Biathlon—1960; luge—1964; freestyle skiing—1992; short-track speed skating—1992; snowboarding—1998; ski mountaineering—2026.,"PASS if all six correct sport-year pairs are present and no earlier, demonstration, or returning sport is included. PARTIAL if one to five correct pairs are supplied with no wrong year or invalid sport. FAIL if any invalid or returning sport such as curling, skeleton, or bobsleigh is included, any stated first year is wrong, or the response confuses a return with a first appearance.",Winter_Olympic_Games.html.txt,vs_k7_markdown_base,retrieved_full_article_context,markdown,openai/gpt-5.4-mini,openai/gpt-5.4-mini,vector,vector_k7,7,10,0.5,0.5,Winter_Olympic_Games.html,Winter_Olympic_Games.html,Winter_Olympic_Games.html,,1.0,Winter_Olympic_Games.html#1; Winter_Olympic_Games.html#43; Winter_Olympic_Games.html#2; Winter_Olympic_Games.html#50; Winter_Olympic_Games.html#6; Winter_Olympic_Games.html#19; Winter_Olympic_Games.html#45,7,1,"Using the **Sport / Years** table, the sports that first entered the official Winter Olympic program in **1950 or later** are:
+
+- **Biathlon** — **1960**
+- **Luge** — **1964**
+- **Freestyle skiing** — **1992**
+- **Short track speed skating** — **1992**
+- **Snowboarding** — **1998**
+- **Skeleton** — **2002**
+- **Ski mountaineering** — **2026**
+
+These are the listed sports whose first year in the table is 1950 or later.",fail,1,89558
+GT11,Program-history filter,"Using the Sport/Years table in the Wikipedia article on the Summer Olympic Games, which listed sports first entered the official Summer Olympic program in 1950 or later? Give the first year for each.",Judo—1964; volleyball—1964; artistic swimming—1984; table tennis—1988; badminton—1992; baseball—1992; softball—1996; taekwondo—2000; triathlon—2000; rugby sevens—2016; 3x3 basketball—2020; karate—2020; skateboarding—2020; sport climbing—2020; surfing—2020; breaking—2024.,"PASS if all 16 qualifying table entries are paired with the correct first year and no invalid sport is added; capitalization and hyphenation variants are acceptable. PARTIAL if one to fifteen correct pairs are supplied with no wrong year or invalid sport. FAIL if any returning or pre-1950 sport such as golf, tennis, or archery is included, any stated first year is wrong, or an event or discipline not listed as a sport in the table is added.",Summer_Olympic_Games.html.txt,vs_k7_markdown_base,retrieved_full_article_context,markdown,openai/gpt-5.4-mini,openai/gpt-5.4-mini,vector,vector_k7,7,10,0.5,0.5,Summer_Olympic_Games.html,Summer_Olympic_Games.html,Summer_Olympic_Games.html,,1.0,Summer_Olympic_Games.html#27; Summer_Olympic_Games.html#26; Summer_Olympic_Games.html#29; Summer_Olympic_Games.html#36; Summer_Olympic_Games.html#30; Summer_Olympic_Games.html#34; Summer_Olympic_Games.html#1,7,1,"From the Sport/Years table, the listed sports that first entered the official Summer Olympic program in **1950 or later** are:
+
+- **Artistic swimming** — **1984**
+- **Badminton** — **1992**
+- **Basketball** — **1936** *(not 1950 or later, so excluded)*
+- **Breaking** — **2024**
+- **Canoeing** — **1936** *(excluded)*
+- **Cricket** — **1900, 2028** *(first year 1900, so excluded)*
+- **Football** — **1900** *(excluded)*
+- **Golf** — **2016**
+- **Judo** — **1964**
+- **Karate** — **2020**
+- **Rugby sevens** — **2016**
+- **Skateboarding** — **2020**
+- **Sport climbing** — **2020**
+- **Surfing** — **2020**
+- **Table tennis** — **1988**
+- **Taekwondo** — **2000**
+- **Triathlon** — **2000**
+
+So the sports first entering in **1950 or later** are:
+
+- **Artistic swimming — 1984**
+- **Badminton — 1992**
+- **Breaking — 2024**
+- **Golf — 2016**
+- **Judo — 1964**
+- **Karate — 2020**
+- **Rugby sevens — 2016**
+- **Skateboarding — 2020**
+- **Sport climbing — 2020**
+- **Surfing — 2020**
+- **Table tennis — 1988**
+- **Taekwondo — 2000**
+- **Triathlon — 2000**
+
+If you want, I can also give this as a clean two-column table.",fail,1,68589
+GT12,Historical entity resolution,"From 1900 through 2024, which Summer or Winter Olympic Games were hosted by a Russia-related state? For this question, include the Russian Empire, Soviet Union (USSR), and Russian Federation (Russia).","Two Games qualify: the 1980 Summer Olympics in Moscow, hosted by the Soviet Union, and the 2014 Winter Olympics in Sochi, hosted by Russia.","PASS if both Moscow 1980 Summer, hosted by the Soviet Union, and Sochi 2014 Winter, hosted by Russia, are correct and no nonqualifying Games are included. PARTIAL if exactly one qualifying Games-host relationship is fully correct and no invalid Games or state is added. FAIL if a nonqualifying Games or delegation label is counted as a host, a year, season, city, or host state is materially wrong, or the response materially contradicts itself.",List_of_Olympic_Games_host_cities.html.txt; Summer_Olympic_Games.html.txt; Winter_Olympic_Games.html.txt,vs_k7_markdown_base,retrieved_full_article_context,markdown,openai/gpt-5.4-mini,openai/gpt-5.4-mini,vector,vector_k7,7,10,0.5,0.5,List_of_Olympic_Games_host_cities.html; Summer_Olympic_Games.html; Winter_Olympic_Games.html,Summer_Olympic_Games.html; Winter_Olympic_Games.html; Unified_Team_at_the_Olympics.html; List_of_Olympic_Games_host_cities.html,List_of_Olympic_Games_host_cities.html; Summer_Olympic_Games.html; Winter_Olympic_Games.html,,1.0,Summer_Olympic_Games.html#30; Winter_Olympic_Games.html#3; Winter_Olympic_Games.html#47; Winter_Olympic_Games.html#28; Unified_Team_at_the_Olympics.html#3; List_of_Olympic_Games_host_cities.html#2; Unified_Team_at_the_Olympics.html#1,7,4,"From the provided articles, the Russia-related states hosted these Olympic Games between 1900 and 2024:
+
+- **1900–1912:** The **Russian Empire** is listed in the Unified Team article’s timeline, but **no host Games** are shown for those years in the provided host-city list.
+- **1980 Summer Olympics** — **Moscow, Soviet Union**
+- **2014 Winter Olympics** — **Sochi, Russia**
+
+The articles also mention that the **Soviet Union** hosted the 1980 Summer Games and that **Russia** hosted the 2014 Winter Games. I do not see any other Summer or Winter Olympics hosted by a Russia-related state in the provided context.",pass,3,199061
+GT03,Cross-article exhaustive intersection and winner classification,"Considering the complete winners-and-nominees lists for the 68th, 70th, and 74th Academy Awards, identify every person who was nominated at all three ceremonies. For each person, give at least one nominated work from each ceremony. Also determine whether each person won at any of those three ceremonies; if so, identify the ceremony, work, and award.",Seven people qualify. Kate Winslet: Sense and Sensibility; Titanic; Iris. James Horner: Apollo 13 or Braveheart; Titanic; A Beautiful Mind. John Williams: Nixon or Sabrina; Amistad; A.I. Artificial Intelligence or Harry Potter and the Sorcerer's Stone. Andy Nelson: Braveheart; L.A. Confidential; Moulin Rouge!. Anna Behlmer: Braveheart; L.A. Confidential; Moulin Rouge!. Kevin O'Connell: Crimson Tide; Con Air; Pearl Harbor. Greg Cannom: Roommates; Titanic; A Beautiful Mind. Only James Horner won at these ceremonies: at the 70th Academy Awards he won Best Original Dramatic Score for Titanic and shared Best Original Song for My Heart Will Go On with Will Jennings.,"PASS only if all seven qualifying people are identified—Kate Winslet, James Horner, John Williams, Andy Nelson, Anna Behlmer, Kevin O'Connell, and Greg Cannom—with at least one correct nominated work for each of the three ceremonies, and James Horner is correctly identified as the only one who won at these ceremonies, at the 70th for Titanic's original dramatic score and song. PARTIAL if one to six qualifying people are identified and every supplied person, ceremony-work association, and winner statement is correct, or if all seven are identified but some required nomination or winner detail is omitted. FAIL if any claimed person did not qualify, any ceremony-work association or winner claim is materially wrong, the response says nobody qualifies, or it materially contradicts itself; an incorrect addition takes precedence over incompleteness.",68th_Academy_Awards.html.txt; 70th_Academy_Awards.html.txt; 74th_Academy_Awards.html.txt,vs_k7_markdown_base,retrieved_full_article_context,markdown,openai/gpt-5.4-mini,openai/gpt-5.4-mini,vector,vector_k7,7,10,0.5,0.5,68th_Academy_Awards.html; 70th_Academy_Awards.html; 74th_Academy_Awards.html,Academy_Award_for_Best_Picture.html; List_of_Academy_Award_records.html; Academy_Award_for_Best_Director.html; 70th_Academy_Awards.html; List_of_accolades_received_by_Barbie_(film).html,70th_Academy_Awards.html,68th_Academy_Awards.html; 74th_Academy_Awards.html,0.3333333333333333,Academy_Award_for_Best_Picture.html#52; List_of_Academy_Award_records.html#45; Academy_Award_for_Best_Director.html#2; 70th_Academy_Awards.html#12; Academy_Award_for_Best_Director.html#23; 70th_Academy_Awards.html#1; List_of_accolades_received_by_Barbie_(film).html#1,7,5,"From the three ceremonies’ winners-and-nominees lists, the people who were **nominated at all three** of the 68th, 70th, and 74th Academy Awards are:
+
+1. **Steven Spielberg**
+   - **68th Academy Awards:** *Saving Private Ryan* — nominated for **Best Picture**
+   - **70th Academy Awards:** *Saving Private Ryan* — nominated for **Best Director**
+   - **74th Academy Awards:** *A.I. Artificial Intelligence* — nominated for **Best Picture**
+   - **Won at these three ceremonies?** Yes.
+     - **74th Academy Awards:** *A Beautiful Mind*? No, that was not Spielberg.
+     - In the provided context for these three ceremonies, Spielberg **did not win** at the 68th, 70th, or 74th Academy Awards.
+
+2. **James Cameron**
+   - **68th Academy Awards:** *Braveheart*? No — not Cameron. The relevant nomination here is **not shown in the provided context for the 68th ceremony**, so I can’t confirm him from the 68th winners-and-nominees list alone.
+   - **70th Academy Awards:** *Titanic* — nominated for **Best Picture** and **Best Director**
+   - **74th Academy Awards:** *The Lord of the Rings: The Fellowship of the Ring*? No — not Cameron.
+   - **Won at these three ceremonies?** Yes.
+     - **70th Academy Awards:** *Titanic* — **Best Picture** and **Best Director**
+
+3. **Roberto Benigni**
+   - **68th Academy Awards:** *Il Postino: The Postman* — nominated for **Best Picture**? No, not Benigni there.
+   - **70th Academy Awards:** *Life Is Beautiful* was not yet eligible; the 70th ceremony covers 1997 films.
+   - **74th Academy Awards:** *Life Is Beautiful* — nominated for **Best Actor**? No, that was earlier.
+   - **Won at these three ceremonies?** Not enough evidence in the provided three ceremony lists to confirm a three-ceremony overlap.
+
+I’m sorry, but I **can’t reliably identify the full set of people nominated at all three ceremonies from the provided context alone**, because the 68th and 74th ceremony lists in the context are incomplete/fragmentary in the material shown here, and I would need the full nominees for those ceremonies to cross-match accurately.
+
+If you want, I can still do a **best-effort overlap check using only the names explicitly visible in the provided excerpts**.",fail,3,465902
+GT02,Open-list question and quotations,"According to the Wikipedia article for the year 1580, identify three significant events recorded in its Events section. Give the date of each event and include a short quotation supporting each selection.","Any three accurately dated events from the article are acceptable. Example: 31 January—the death of Henry, King of Portugal triggered a succession crisis; 11 June—Juan de Garay founded the permanent settlement that became Buenos Aires; 26 September—Francis Drake returned to Plymouth after his circumnavigation.","PASS if exactly three valid Events-section events are supplied, each with the correct date and a faithful supporting excerpt; different valid events are acceptable. PARTIAL if one or two events are fully supported, or three valid events are given but a date or quotation is omitted, with no false event, date, or quotation. FAIL if any selected event is not in the Events section, any date is materially wrong, a quotation is fabricated, or the answer materially contradicts itself.",1580.html.txt,vs_k7_markdown_base,retrieved_full_article_context,markdown,openai/gpt-5.4-mini,openai/gpt-5.4-mini,vector,vector_k7,7,10,0.5,0.5,1580.html,1580.html; August_16.html; 1819.html; January_13.html,1580.html,,1.0,1580.html#1; 1580.html#0; August_16.html#0; 1819.html#1; 1580.html#4; January_13.html#0; 1580.html#3,7,4,"Here are three significant events from the Wikipedia article for **1580**:
+
+1. **January 31** — *Portuguese succession crisis of 1580*  
+   Quote: “The death of **Henry, King of Portugal**, with no direct heirs, leads to conflict between his potential successors…”
+
+2. **March 25** — *Iberian Union*  
+   Quote: “King **Philip II of Spain becomes King of Portugal** under the name Philip I, following the death without heirs of King Henry of Portugal…”
+
+3. **August 25** — *Battle of Alcântara*  
+   Quote: “Spanish armies… **defeat the armies of Portuguese claimant António, Prior of Crato**.”
+
+If you want, I can also give three different events from 1580 instead.",pass,1,192982
+GT13,Historical identity timeline,"According to the timeline and related appearances in the Wikipedia article on the Unified Team at the Olympics, which Russia-related Olympic identities appear from 1900 through 2024, and what years are associated with each?",Russian Empire—1900–1912; Soviet Union—1952–1988; Unified Team (EUN)—1992; Russia—1994–2016; Olympic Athletes from Russia (OAR)—2018; Russian Olympic Committee (ROC)—2020–2022; Individual Neutral Athletes (AIN)—2024.,"PASS if all seven identities are presented in chronological order with correct years or ranges; standard acronyms are acceptable when the identity is clear. PARTIAL if one to six identities and their years are correct, or all seven are present with a minor nonfalse omission, and no wrong identity, year, or ordering claim is added. FAIL if any identity or associated year is materially wrong, a required identity is explicitly denied, or the response materially contradicts itself.",Unified_Team_at_the_Olympics.html.txt,vs_k7_markdown_base,retrieved_full_article_context,markdown,openai/gpt-5.4-mini,openai/gpt-5.4-mini,vector,vector_k7,7,10,0.5,0.5,Unified_Team_at_the_Olympics.html,Unified_Team_at_the_Olympics.html; 2020_Summer_Olympics.html; Summer_Olympic_Games.html,Unified_Team_at_the_Olympics.html,,1.0,Unified_Team_at_the_Olympics.html#0; Unified_Team_at_the_Olympics.html#1; Unified_Team_at_the_Olympics.html#3; Unified_Team_at_the_Olympics.html#4; 2020_Summer_Olympics.html#45; Summer_Olympic_Games.html#30; Unified_Team_at_the_Olympics.html#2,7,3,"From the **Unified Team at the Olympics** timeline and the related references in the article, the Russia-related Olympic identities that appear are:
+
+- **Russian Empire** — **1900–1912**
+- **Soviet Union** — **1952–1988**
+- **Unified Team** — **1992**
+- **Russia** — **1994**
+- **Olympic Athletes from Russia** — **2018**
+- **Russian Olympic Committee** — **2020–2022**
+
+The article also notes that for **2024–present**, the Olympics use **Individual Neutral Athletes**, but that is not specifically Russia-named.
+
+From the **Summer Olympic Games** article, the related “medal leaders by year” list also shows:
+- **1992: Unified Team**
+- **1988: Soviet Union**
+- **1956 and 1960: Soviet Union**
+
+So, the Russia-related identities explicitly appearing are the ones above, with the years listed.",pass,1,203580
+GT04,Direct fact,Where were the 1972 Winter Olympics held?,"Sapporo, Hokkaido Prefecture, Japan.","PASS if Sapporo, Japan is stated; Hokkaido Prefecture is desirable but not required. PARTIAL if Sapporo is correctly stated but Japan is omitted, with no false location. FAIL if the location is wrong, unsupported, or materially contradictory.",1972_Winter_Olympics.html.txt,vs_k7_markdown_base,retrieved_full_article_context,markdown,openai/gpt-5.4-mini,openai/gpt-5.4-mini,vector,vector_k7,7,10,0.5,0.5,1972_Winter_Olympics.html,Winter_Olympic_Games.html; 1972_Winter_Olympics.html; 1992_Winter_Olympics.html,1972_Winter_Olympics.html,,1.0,Winter_Olympic_Games.html#14; 1972_Winter_Olympics.html#3; Winter_Olympic_Games.html#13; 1972_Winter_Olympics.html#0; 1992_Winter_Olympics.html#2; Winter_Olympic_Games.html#15; 1972_Winter_Olympics.html#4,7,3,"The **1972 Winter Olympics were held in Sapporo, Hokkaido Prefecture, Japan**. The article says they were “held from February 3 to 13, 1972, in **Sapporo**, Hokkaido Prefecture, Japan.”",pass,1,139327
+GT14,People connection: shared work and awards,How are Damien Chazelle and Emma Stone connected through La La Land and the 89th Academy Awards? State each person's role in the film and the award each won at that ceremony.,"Damien Chazelle directed La La Land and won the Academy Award for Best Director at the 89th Academy Awards. Emma Stone played Mia Dolan, the film's aspiring-actress lead, and won Best Actress. La La Land received 14 nominations and won six awards at the ceremony.","PASS if La La Land is identified and both relationship paths are complete: Chazelle as director and Best Director winner, and Stone as Mia Dolan or the film's lead actor and Best Actress winner. PARTIAL if one person's complete role-award path is correct, or both people are connected but one required role or award is omitted, with no false edge. FAIL if either role or award is wrong, the ceremony or shared film is wrong, or the response materially contradicts itself.",Damien_Chazelle.html.txt; Emma_Stone.html.txt; La_La_Land.html.txt; 89th_Academy_Awards.html.txt,vs_k7_markdown_base,retrieved_full_article_context,markdown,openai/gpt-5.4-mini,openai/gpt-5.4-mini,vector,vector_k7,7,10,0.5,0.5,Damien_Chazelle.html; Emma_Stone.html; La_La_Land.html; 89th_Academy_Awards.html,Damien_Chazelle.html; La_La_Land.html; 89th_Academy_Awards.html,Damien_Chazelle.html; La_La_Land.html; 89th_Academy_Awards.html,Emma_Stone.html,0.75,Damien_Chazelle.html#8; La_La_Land.html#0; La_La_Land.html#29; Damien_Chazelle.html#9; 89th_Academy_Awards.html#4; Damien_Chazelle.html#0; La_La_Land.html#10,7,3,"Damien Chazelle and Emma Stone are connected through *La La Land* because Chazelle **directed and wrote** the film, while Stone **starred as Amelia “Mia” Dolan**.
+
+At the **89th Academy Awards**:
+- **Damien Chazelle** won **Best Director** for *La La Land*.
+- **Emma Stone** won **Best Actress** for *La La Land*.
+
+As the article says, *La La Land* won six awards at that ceremony, including “**Best Director** for **Damien Chazelle**” and “**Best Actress** for **Emma Stone**.”",pass,4,122219
+GT05,Table lookup,"Which country won the most total medals at the 1972 Winter Olympics, and what was its medal breakdown?","The Soviet Union won the most medals: 16 total, consisting of 8 gold, 5 silver, and 3 bronze.","PASS only if the Soviet Union, 16 total medals, and the 8 gold, 5 silver, and 3 bronze breakdown are all correct. PARTIAL if the Soviet Union is correctly identified and either the correct total or a correct but incomplete breakdown is supplied, with no wrong medal value. FAIL if the country, total, or any stated medal count is wrong, or if gold-medal rank is substituted for total-medal rank.",1972_Winter_Olympics.html.txt,vs_k7_markdown_base,retrieved_full_article_context,markdown,openai/gpt-5.4-mini,openai/gpt-5.4-mini,vector,vector_k7,7,10,0.5,0.5,1972_Winter_Olympics.html,1972_Winter_Olympics.html; 1984_Summer_Olympics_medal_table.html; 1992_Winter_Olympics.html; 1988_Winter_Olympics.html,1972_Winter_Olympics.html,,1.0,1972_Winter_Olympics.html#6; 1972_Winter_Olympics.html#5; 1984_Summer_Olympics_medal_table.html#1; 1992_Winter_Olympics.html#11; 1972_Winter_Olympics.html#4; 1992_Winter_Olympics.html#12; 1988_Winter_Olympics.html#35,7,4,"The **Soviet Union** won the most total medals at the **1972 Winter Olympics**.
+
+Its medal breakdown was **8 gold, 5 silver, and 3 bronze**, for a **total of 16 medals**.",pass,1,142680
+GT15,People connection: repeated collaboration,How are filmmaker Chris Columbus and actor Daniel Radcliffe connected through the first two Harry Potter films? Name both films and give each person's role.,Chris Columbus directed Harry Potter and the Philosopher's Stone (released in the United States as Harry Potter and the Sorcerer's Stone) in 2001 and Harry Potter and the Chamber of Secrets in 2002. Daniel Radcliffe starred as Harry Potter in both films.,"PASS if both films are named and Columbus is correctly identified as director and Radcliffe as Harry Potter in both; either first-film title is acceptable. PARTIAL if one film and both roles are fully correct, or both films are named but one required role connection is omitted, with no false claim. FAIL if a film, person, or role is wrong, the explorer is confused with the filmmaker, or the response materially contradicts itself.",Chris_Columbus_(filmmaker).html.txt; Daniel_Radcliffe.html.txt,vs_k7_markdown_base,retrieved_full_article_context,markdown,openai/gpt-5.4-mini,openai/gpt-5.4-mini,vector,vector_k7,7,10,0.5,0.5,Chris_Columbus_(filmmaker).html; Daniel_Radcliffe.html,Daniel_Radcliffe.html; Harry_Potter_(film_series).html; Chris_Columbus_(filmmaker).html,Chris_Columbus_(filmmaker).html; Daniel_Radcliffe.html,,1.0,Daniel_Radcliffe.html#4; Harry_Potter_(film_series).html#5; Harry_Potter_(film_series).html#4; Chris_Columbus_(filmmaker).html#9; Daniel_Radcliffe.html#3; Chris_Columbus_(filmmaker).html#0; Chris_Columbus_(filmmaker).html#1,7,3,"Chris Columbus and Daniel Radcliffe are connected through the first two *Harry Potter* films:
+
+- **Harry Potter and the Philosopher’s Stone (2001)** — **Chris Columbus** was the **director**, and **Daniel Radcliffe** played **Harry Potter**.
+- **Harry Potter and the Chamber of Secrets (2002)** — **Chris Columbus** was again the **director**, and **Daniel Radcliffe** again played **Harry Potter**.
+
+The articles say Columbus “directed the film adaptations” of the first two novels, and Radcliffe is “best known for portraying the title character in all eight films” of the series.",pass,2,144436
+GT06,Process explanation,"According to the Wikipedia article on the Academy Award for Best Actor, how are nominees determined and how is the winner selected?",Nominees are determined by single transferable vote within the actors branch of the Academy of Motion Picture Arts and Sciences. The winner is selected by plurality vote among all eligible Academy voting members.,"PASS if both stages are correct: nomination by single transferable vote within the actors branch and winner selection by plurality vote of all eligible Academy voting members. PARTIAL if one stage is fully correct and the other is omitted or incomplete, with no false process claim. FAIL if either voting method, branch, or voting population is materially wrong, or if the response describes a different Academy Awards process.",Academy_Award_for_Best_Actor.html.txt,vs_k7_markdown_base,retrieved_full_article_context,markdown,openai/gpt-5.4-mini,openai/gpt-5.4-mini,vector,vector_k7,7,10,0.5,0.5,Academy_Award_for_Best_Actor.html,Academy_Award_for_Best_Picture.html; Academy_Award_for_Best_Actor.html; Academy_Award_for_Best_Director.html,Academy_Award_for_Best_Actor.html,,1.0,Academy_Award_for_Best_Picture.html#5; Academy_Award_for_Best_Actor.html#30; Academy_Award_for_Best_Director.html#1; Academy_Award_for_Best_Picture.html#0; Academy_Award_for_Best_Actor.html#5; Academy_Award_for_Best_Picture.html#52; Academy_Award_for_Best_Actor.html#1,7,3,"According to the article, **nominees are determined by single transferable vote within the actors branch of AMPAS**, and **winners are selected by a plurality vote from the entire eligible voting members of the Academy**.",pass,1,311085
+GT16,People connection: intermediary person,"Which person connects Bill Clinton and Barack Obama, and what documented relationship links that person to each man? Include the 2008 election connection and the later administration role.",Hillary Rodham Clinton is the intermediary. She is Bill Clinton's wife. She competed against Barack Obama for the 2008 Democratic presidential nomination and later served as Secretary of State in the Obama administration.,"PASS if Hillary Clinton is identified and all three edges are correct: Bill Clinton's spouse, Obama's 2008 Democratic primary opponent, and Secretary of State during Obama's presidency. PARTIAL if Hillary Clinton and one or two correct edges are supplied while the remaining edge is omitted, with no false relationship. FAIL if the intermediary is wrong, any relationship or role is materially wrong, a family relationship between Bill Clinton and Obama is implied, or the response materially contradicts itself.",Bill_Clinton.html.txt; Barack_Obama.html.txt,vs_k7_markdown_base,retrieved_full_article_context,markdown,openai/gpt-5.4-mini,openai/gpt-5.4-mini,vector,vector_k7,7,10,0.5,0.5,Bill_Clinton.html; Barack_Obama.html,President_of_the_United_States.html; Bill_Clinton.html,Bill_Clinton.html,Barack_Obama.html,0.5,President_of_the_United_States.html#55; Bill_Clinton.html#68; Bill_Clinton.html#63; Bill_Clinton.html#67; Bill_Clinton.html#73; Bill_Clinton.html#69; Bill_Clinton.html#1,7,2,"The person is **Bill Clinton himself**.
+
+- **Connection to Barack Obama in 2008:** the Bill Clinton article says he campaigned for Hillary Clinton in the 2008 Democratic presidential primary, then **“enthusiastically endorsed Obama at the 2008 Democratic National Convention”** and said Obama was **“ready to lead.”**
+- **Later administration role:** after Obama became president, Clinton was **named United Nations Special Envoy to Haiti in 2009**, and later Obama **asked Clinton and George W. Bush to lead efforts to aid Haiti** after the 2010 Haiti earthquake.
+
+So the documented link is that **Bill Clinton endorsed Obama in 2008 and later served in a Haiti-related role during Obama’s administration**.",fail,2,224127
+GT07,Temporal aggregation,"For films dated from 2000 through 2020 inclusive in the Wikipedia Best Actor winners list, which actor or actors won the Academy Award for Best Actor most often?",Sean Penn and Daniel Day-Lewis tied with two wins each. Penn won for Mystic River and Milk. Day-Lewis won for There Will Be Blood and Lincoln.,"PASS if both Sean Penn and Daniel Day-Lewis are named and each is credited with two wins; film titles are optional supporting evidence. PARTIAL if exactly one of the two tied actors is correctly named with two wins, or both are named but the shared count is omitted, with no false winner or count. FAIL if the maximum count is wrong, another actor is claimed as a leader, either required actor is assigned a wrong count, or the response materially contradicts itself.",Academy_Award_for_Best_Actor.html.txt,vs_k7_markdown_base,retrieved_full_article_context,markdown,openai/gpt-5.4-mini,openai/gpt-5.4-mini,vector,vector_k7,7,10,0.5,0.5,Academy_Award_for_Best_Actor.html,BAFTA_Award_for_Best_Actor_in_a_Supporting_Role.html; Academy_Award_for_Best_Actor.html; Academy_Award_for_Best_Supporting_Actor.html; List_of_Academy_Award_records.html,Academy_Award_for_Best_Actor.html,,1.0,BAFTA_Award_for_Best_Actor_in_a_Supporting_Role.html#1; Academy_Award_for_Best_Actor.html#25; Academy_Award_for_Best_Supporting_Actor.html#4; Academy_Award_for_Best_Actor.html#5; Academy_Award_for_Best_Supporting_Actor.html#23; List_of_Academy_Award_records.html#6; Academy_Award_for_Best_Supporting_Actor.html#1,7,4,"From the provided **Academy Award for Best Actor** list, the films dated **2000 through 2020 inclusive** show that **no single actor won more than once** in that span.
+
+The winners listed are:
+
+- **2000** — Russell Crowe, *Gladiator*
+- **2001** — Denzel Washington, *Training Day*
+- **2002** — Adrien Brody, *The Pianist*
+- **2003** — Sean Penn, *Mystic River*
+- **2004** — Jamie Foxx, *Ray*
+- **2005** — Philip Seymour Hoffman, *Capote*
+- **2006** — Forest Whitaker, *The Last King of Scotland*
+- **2007** — Daniel Day-Lewis, *There Will Be Blood*
+- **2008** — Sean Penn, *Milk*
+- **2009** — Jeff Bridges, *Crazy Heart*
+- **2010** — Colin Firth, *The King's Speech*
+- **2011** — Jean Dujardin, *The Artist*
+- **2012** — Daniel Day-Lewis, *Lincoln*
+- **2013** — Matthew McConaughey, *Dallas Buyers Club*
+- **2014** — Eddie Redmayne, *The Theory of Everything*
+- **2015** — Leonardo DiCaprio, *The Revenant*
+- **2016** — Casey Affleck, *Manchester by the Sea*
+- **2017** — Gary Oldman, *Darkest Hour*
+- **2018** — Rami Malek, *Bohemian Rhapsody*
+- **2019** — Joaquin Phoenix, *Joker*
+- **2020/21** — Anthony Hopkins, *The Father*
+
+The **most often** any actor appears as winner in that period is **2 wins**, shared by:
+
+- **Sean Penn** — 2003 and 2008
+- **Daniel Day-Lewis** — 2007 and 2012
+
+So the answer is: **Sean Penn and Daniel Day-Lewis, tied with 2 wins each.**",pass,1,371648
+GT17,Geopolitical state-formation timeline,"Using the India and Pakistan articles, construct a two-step post-colonial state-formation timeline: which two dominions resulted from the 1947 partition of British India, and which new country emerged from East Pakistan in 1971?","In 1947, British India was partitioned into the independent dominions of India and Pakistan. Pakistan initially had geographically separate eastern and western provinces. In 1971, East Pakistan seceded and became the independent country of Bangladesh.","PASS if India and Pakistan are correctly named as the 1947 dominions and East Pakistan is correctly linked to Bangladesh in 1971. PARTIAL if one timeline step is complete and correct while the other is omitted or incomplete, with no false state or year. FAIL if a country, predecessor relationship, or year is materially wrong, optional causal detail contradicts the articles, or the response materially contradicts itself.",India.html.txt; Pakistan.html.txt,vs_k7_markdown_base,retrieved_full_article_context,markdown,openai/gpt-5.4-mini,openai/gpt-5.4-mini,vector,vector_k7,7,10,0.5,0.5,India.html; Pakistan.html,Pakistan.html; India.html,India.html; Pakistan.html,,1.0,Pakistan.html#14; Pakistan.html#12; Pakistan.html#2; India.html#3; Pakistan.html#15; Pakistan.html#11; Pakistan.html#13,7,2,"The 1947 partition of British India created **two dominions**: **the Dominion of India** and **the Dominion of Pakistan**.
+
+Then, in 1971, **East Pakistan seceded and became Bangladesh**.
+
+Quoted from the articles:
+- India article: “the British Indian Empire was partitioned into two independent dominions—namely Pakistan and India.”
+- Pakistan article: “East Pakistan seceded as the new country of Bangladesh in 1971.”",pass,2,247024
+GT08,Uncertainty and conflicting estimates,"In the deadliest-earthquakes table, which earthquakes from 1976 onward have at least one reported fatality estimate above 100,000? Report the article's fatality figure or range and preserve any stated uncertainty.","The qualifying events are the 1976 Tangshan earthquake, the 2004 Indian Ocean earthquake and tsunami, and the 2010 Haiti earthquake. The article lists Tangshan as 300,000+ in the table while noting official and scholarly alternatives; the Indian Ocean event as 227,898; and Haiti as 46,000–316,000 with multiple attributed estimates.","PASS if all three qualifying events and their figures or ranges are correct, no nonqualifying event appears in the final qualifying set, and Tangshan and Haiti uncertainty is preserved. PARTIAL if one or two qualifying events are fully correct, or all three are present but a supported uncertainty detail is omitted, with no wrong event or figure. FAIL if a nonqualifying event is included as qualifying, any figure or threshold decision is materially wrong, or Haiti is reduced to one unqualified death figure.",Lists_of_earthquakes.html.txt,vs_k7_markdown_base,retrieved_full_article_context,markdown,openai/gpt-5.4-mini,openai/gpt-5.4-mini,vector,vector_k7,7,10,0.5,0.5,Lists_of_earthquakes.html,Lists_of_earthquakes.html,Lists_of_earthquakes.html,,1.0,Lists_of_earthquakes.html#0; Lists_of_earthquakes.html#2; Lists_of_earthquakes.html#8; Lists_of_earthquakes.html#31; Lists_of_earthquakes.html#27; Lists_of_earthquakes.html#7; Lists_of_earthquakes.html#11,7,1,"From the **deadliest earthquakes** table, the earthquakes **from 1976 onward** with at least one reported fatality estimate **above 100,000** are:
+
+- **1976 Tangshan earthquake** — **300,000+** deaths  
+- **2004 Indian Ocean earthquake and tsunami** — **227,898** deaths  
+- **2010 Haiti earthquake** — **46,000–316,000** deaths  
+  - This table gives a range that includes an estimate above 100,000, and notes: “Estimates vary from 316,000 … to 222,570 … to 158,000 … to between 46,000 and 85,000…”
+- **2023 Turkey–Syria earthquakes** — **59,488–62,013** deaths  
+  - This does **not** exceed 100,000, so it should **not** be included.
+- **2025 Myanmar earthquake** — **5,456** deaths  
+  - Not included.
+
+So the qualifying entries are:
+
+1. **1976 Tangshan earthquake** — **300,000+**
+2. **2004 Indian Ocean earthquake and tsunami** — **227,898**
+3. **2010 Haiti earthquake** — **46,000–316,000**",pass,1,86162
+GT01,Direct fact and quotation,"According to the Wikipedia article on the 100 metres, what is the current men's world record, who holds it, and when and where was it set? Include a short quotation from the article.","The current men's world record is 9.58 seconds, held by Usain Bolt of Jamaica. It was set at the 2009 World Athletics Championships final in Berlin, Germany, on 16 August 2009.","PASS only if all five required elements are correct—9.58 seconds; Usain Bolt; Jamaica; Berlin, Germany; and 16 August 2009—and a faithful short quotation is included. PARTIAL if the central answer is correct but one required element or the quotation is missing, with no false claim. FAIL if any required fact is wrong, the quotation is fabricated or materially altered, or the response materially contradicts itself.",100_metres.html.txt,vs_k7_markdown_base,retrieved_full_article_context,markdown,openai/gpt-5.4-mini,openai/gpt-5.4-mini,vector,vector_k7,7,10,0.5,0.5,100_metres.html,100_metres.html; Usain_Bolt.html,100_metres.html,,1.0,100_metres.html#5; 100_metres.html#42; 100_metres.html#0; 100_metres.html#1; Usain_Bolt.html#60; 100_metres.html#6; 100_metres.html#2,7,2,"According to the **100 metres** article, the current men's world record is **9.58 seconds**, held by **Usain Bolt** of Jamaica. It was set **on 16 August 2009 in Berlin, Germany**.
+
+Short quotation: **“The current men's world record of 9.58 s is held by Usain Bolt of Jamaica, set at the 2009 World Athletics Championships final in Berlin, Germany on 16 August 2009.”**",pass,1,216237
+GT18,Geopolitical entity relationships,"Explain the relationship among Vatican City, Rome, Italy, and the Holy See. How and when did Vatican City become an independent state?","Vatican City is a landlocked sovereign city-state and an enclave within the city of Rome, Italy. It is governed by the Holy See, which is itself a sovereign entity under international law, and is ruled by the pope. The Lateran Treaty between the Holy See and the Kingdom of Italy was signed on February 11, 1929; after ratification it took effect on June 7, 1929 and established the independent Vatican City State.","PASS if Vatican City is correctly described as an enclave within Rome, Italy; it is distinguished from the Holy See while the Holy See's governance is explained; and independence is attributed to the 1929 Lateran Treaty with at least one correctly labeled signing or effective date. PARTIAL if the central location and treaty are correct but one relationship or date detail is omitted, with no conflation or false claim. FAIL if the entities are materially conflated, the location, governing relationship, treaty, or year is wrong, or the response materially contradicts itself.",Vatican_City.html.txt,vs_k7_markdown_base,retrieved_full_article_context,markdown,openai/gpt-5.4-mini,openai/gpt-5.4-mini,vector,vector_k7,7,10,0.5,0.5,Vatican_City.html,Vatican_City.html; Lateran_Treaty.html,Vatican_City.html,,1.0,Vatican_City.html#2; Vatican_City.html#18; Lateran_Treaty.html#6; Vatican_City.html#0; Vatican_City.html#4; Vatican_City.html#28; Vatican_City.html#3,7,2,"Vatican City is described as **“a landlocked sovereign city-state”** that is **“an enclave within the city of Rome, Italy”** and serves as the administrative centre of the Catholic Church. It is **governed by the Holy See**, which is the sovereign entity that exercises the pope’s temporal power and diplomacy.
+
+So the relationship is:
+
+- **Rome** is the surrounding city.
+- **Italy** is the country containing Rome.
+- **Vatican City** is a tiny enclave inside Rome, within Italy.
+- **The Holy See** is the governing sovereign entity of Vatican City and the central authority of the Catholic Church.
+
+On how and when Vatican City became independent: the article says the modern state **“came into existence in 1929 via the Lateran Treaty”** between the Holy See and the Kingdom of Italy. The Lateran Treaty was **signed on 11 February 1929** and **took effect on 7 June 1929**. It **“established the independent state of Vatican City”** and recognized it as **“an independent state under the sovereignty of the Holy See.”**
+
+In short: Vatican City became an independent state **through the Lateran Treaty of 1929**, which ended the long “Roman Question” and created the modern Vatican City State.",pass,1,101926
+GT09,Cross-table comparison,"Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",The matched data show essentially no useful relationship between population size and life expectancy. Very large and very small countries occur across a wide range of life expectancies. The comparison is imperfect because population is from 2023 while life expectancy is from 2010–2015.,"PASS if the answer concludes that population size alone has little or no meaningful correlation with life expectancy, identifies both the 2023 and 2010–2015 periods, notes their mismatch, and makes no causal claim. PARTIAL if the qualitative conclusion is correct but one time-period or limitation detail is missing, with no unsupported causal claim. FAIL if a meaningful correlation or causal relationship is asserted without support, the qualitative direction is materially wrong, or the stated periods are materially wrong.",List_of_countries_by_population_(United_Nations).html.txt; List_of_countries_by_past_life_expectancy.html.txt,vs_k7_markdown_base,retrieved_full_article_context,markdown,openai/gpt-5.4-mini,openai/gpt-5.4-mini,vector,vector_k7,7,10,0.5,0.5,List_of_countries_by_population_(United_Nations).html; List_of_countries_by_past_life_expectancy.html,List_of_countries_by_past_life_expectancy.html; Demographics_of_Japan.html; India.html; Demographics_of_East_Timor.html,List_of_countries_by_past_life_expectancy.html,List_of_countries_by_population_(United_Nations).html,0.5,List_of_countries_by_past_life_expectancy.html#0; Demographics_of_Japan.html#28; List_of_countries_by_past_life_expectancy.html#15; India.html#43; Demographics_of_East_Timor.html#2; Demographics_of_Japan.html#29; Demographics_of_Japan.html#23,7,4,"No clear conclusion can be drawn from these two articles alone, and the data do **not** suggest a meaningful correlation.
+
+Using the 2023 population estimates from the country articles and the **2010–2015** life-expectancy values from the list:
+
+- **Japan**: population **123,400,000** (April 2025 infobox) / **124,352,000** in 2023; life expectancy **83.28** years in 2010–2015.
+- **India**: population **1.48 billion** (2026 estimate) / **about 1.43 billion** in 2023; life expectancy **67.57** years in 2010–2015.
+- **Timor-Leste**: population **1,445,006** (2022 est.); life expectancy **67.74** years in 2010–2015.
+
+Japan has a much smaller population than India but a much higher life expectancy, while Timor-Leste has a tiny population and a life expectancy similar to India’s. So from these examples, **population size does not appear to be meaningfully correlated with life expectancy**.
+
+Important caveat: the comparison is weakened by a **date mismatch**:
+- population figures are from **2023 estimates** in the country articles,
+- life expectancy figures are from **2010–2015** in the list article.
+
+Because the measurements are from different time periods, this is only a rough comparison, not a strict same-year analysis.",pass,2,267981

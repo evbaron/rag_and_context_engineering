@@ -167,6 +167,27 @@ comparison because those labels are not compatible with the final three-level ru
 Pass `--include-binary-oracle` only when intentionally reviewing those legacy runs;
 do not combine them with the final baseline statistics.
 
+## Check OpenRouter usage
+
+`wikipedia_retrieval_engine/utils/openrouter_usage.py` checks the OpenRouter API key
+used by the capstone scripts without printing the key itself. It reads
+`OPENROUTER_API_KEY` from the environment or a nearby `.env` file:
+
+```bash
+python wikipedia_retrieval_engine/utils/openrouter_usage.py
+```
+
+To log a post-run snapshot by experiment/config name:
+
+```bash
+python wikipedia_retrieval_engine/utils/openrouter_usage.py \
+  --experiment-name vector_search_base \
+  --log-csv "wikipedia_retrieval_engine/Capstone Checkpoint 4.1/openrouter_usage_log.csv"
+```
+
+Set `OPENROUTER_MANAGEMENT_KEY` when you also want account-level credit remaining or
+need to list/query managed keys.
+
 ## Current finding
 
 For the final controlled Checkpoint 3.1 comparison, vector retrieval at Top K = 7

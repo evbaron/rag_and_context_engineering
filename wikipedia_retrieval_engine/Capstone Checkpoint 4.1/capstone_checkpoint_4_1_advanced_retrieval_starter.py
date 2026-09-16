@@ -61,7 +61,9 @@ from utils.ragas_eval import (
     CONTEXT_SOURCE,
     JUDGE_MODEL,
     LLM_MODEL,
+    RateLimitBackoff,
     build_ragas_dataset,
+    call_with_rate_limit_backoff,
     correctness_metric,
     load_context_store,
     make_judge,
@@ -93,6 +95,7 @@ def build_advanced_experiment(
     article_text_store,
     answer_llm,
     ragas_judge,
+    rate_limit_backoff: RateLimitBackoff,
     experiment_name: str = "",
 ):
     """RAGAS experiment: decomposition retrieval -> full markdown context -> answer -> judge."""
@@ -120,13 +123,23 @@ def build_advanced_experiment(
                 f"{row['question']}\n\nSteps to follow when answering:\n{reasoning}"
             )
         if context.strip():
-            response = answer_from_context(
-                query=answer_query, context=context, llm=answer_llm
+            response = call_with_rate_limit_backoff(
+                lambda: answer_from_context(
+                    query=answer_query, context=context, llm=answer_llm
+                ),
+                rate_limit_backoff,
+                label=f"answer LLM for {row['question_id']}",
             )
         else:
             response = "I cannot answer because no Wikipedia articles were retrieved."
-        score = correctness_metric.score(
-            llm=ragas_judge, response=response, grading_notes=row["grading_notes"]
+        score = call_with_rate_limit_backoff(
+            lambda: correctness_metric.score(
+                llm=ragas_judge,
+                response=response,
+                grading_notes=row["grading_notes"],
+            ),
+            rate_limit_backoff,
+            label=f"RAGAS judge for {row['question_id']}",
         )
         return {
             **row,
@@ -163,6 +176,7 @@ async def main() -> None:
     gt_path = args.gt_set.expanduser().resolve()
     output_dir = args.output_dir.expanduser().resolve()
     experiment_name = args.experiment_name.strip()
+    rate_limit_backoff = RateLimitBackoff.from_args(args)
     output_dir.mkdir(parents=True, exist_ok=True)
 
     dataset = build_ragas_dataset(
@@ -186,13 +200,19 @@ async def main() -> None:
     answer_llm = make_llm()
     ragas_judge = make_judge()
     advanced_experiment = build_advanced_experiment(
-        retriever, article_text_store, answer_llm, ragas_judge, experiment_name
+        retriever,
+        article_text_store,
+        answer_llm,
+        ragas_judge,
+        rate_limit_backoff,
+        experiment_name,
     )
 
     print(
         f"Running ADVANCED (query decomposition) on {len(dataset)} questions from "
         f"{gt_path} (context_source={CONTEXT_SOURCE}, "
-        f"experiment_name={experiment_name or 'auto-derived'})..."
+        f"experiment_name={experiment_name or 'auto-derived'}, "
+        f"rate_limit_retries={rate_limit_backoff.retries})..."
     )
     results = await advanced_experiment.arun(dataset)
 

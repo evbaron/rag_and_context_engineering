@@ -111,6 +111,7 @@ from retrievers.corpus import (
 )
 from retrievers.llm import answer as answer_from_context
 from retrievers.llm import make_llm
+from utils.ragas_eval import RateLimitBackoff, call_with_rate_limit_backoff
 
 from openai import OpenAI
 from ragas import Dataset, experiment
@@ -313,6 +314,42 @@ def parse_args() -> argparse.Namespace:
             "the configuration name from run metadata."
         ),
     )
+    parser.add_argument(
+        "--rate-limit-retries",
+        type=int,
+        default=3,
+        help=(
+            "How many times to retry an OpenRouter 429/rate-limit error. "
+            "Use 0 to disable retry backoff."
+        ),
+    )
+    parser.add_argument(
+        "--rate-limit-backoff-initial",
+        type=float,
+        default=20.0,
+        help="Initial wait, in seconds, before the first 429 retry.",
+    )
+    parser.add_argument(
+        "--rate-limit-backoff-multiplier",
+        type=float,
+        default=2.0,
+        help="Multiplier applied after each 429 retry delay.",
+    )
+    parser.add_argument(
+        "--rate-limit-backoff-max",
+        type=float,
+        default=120.0,
+        help="Maximum wait, in seconds, before any single 429 retry.",
+    )
+    parser.add_argument(
+        "--rate-limit-backoff-jitter",
+        type=float,
+        default=0.15,
+        help=(
+            "Random jitter fraction added/subtracted from each 429 retry delay. "
+            "Use 0 for deterministic waits."
+        ),
+    )
     return parser.parse_args()
 
 
@@ -488,6 +525,7 @@ def build_oracle_experiment(
     article_text_store,
     answer_llm: ChatOpenAI,
     ragas_judge,
+    rate_limit_backoff: RateLimitBackoff,
     experiment_name: str = "",
 ):
     """Return a RAGAS experiment that answers from gold articles, then judges."""
@@ -498,16 +536,24 @@ def build_oracle_experiment(
             article_text_store,
         )
 
-        response = answer_from_context(
-            query=row["question"],
-            context=context,
-            llm=answer_llm,
+        response = call_with_rate_limit_backoff(
+            lambda: answer_from_context(
+                query=row["question"],
+                context=context,
+                llm=answer_llm,
+            ),
+            rate_limit_backoff,
+            label=f"answer LLM for {row['question_id']}",
         )
 
-        score = correctness_metric.score(
-            llm=ragas_judge,
-            response=response,
-            grading_notes=row["grading_notes"],
+        score = call_with_rate_limit_backoff(
+            lambda: correctness_metric.score(
+                llm=ragas_judge,
+                response=response,
+                grading_notes=row["grading_notes"],
+            ),
+            rate_limit_backoff,
+            label=f"RAGAS judge for {row['question_id']}",
         )
 
         return {
@@ -534,6 +580,7 @@ async def main() -> None:
     gt_path = args.gt_set.expanduser().resolve()
     output_dir = args.output_dir.expanduser().resolve()
     experiment_name = args.experiment_name.strip()
+    rate_limit_backoff = RateLimitBackoff.from_args(args)
     if output_dir.exists() and not output_dir.is_dir():
         raise NotADirectoryError(f"Output path is not a directory: {output_dir}")
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -568,6 +615,7 @@ async def main() -> None:
         article_text_store=article_text_store,
         answer_llm=answer_llm,
         ragas_judge=ragas_judge,
+        rate_limit_backoff=rate_limit_backoff,
         experiment_name=experiment_name,
     )
 
@@ -575,7 +623,8 @@ async def main() -> None:
     print(
         f"Running oracle evaluation on {len(dataset)} questions "
         f"from {gt_path} "
-        f"(context_source={CONTEXT_SOURCE}, experiment_name={experiment_label})..."
+        f"(context_source={CONTEXT_SOURCE}, experiment_name={experiment_label}, "
+        f"rate_limit_retries={rate_limit_backoff.retries})..."
     )
 
     results = await oracle_experiment.arun(dataset)

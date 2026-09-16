@@ -8,9 +8,13 @@ from __future__ import annotations
 
 import argparse
 import os
+import random
 import re
+import time
 from collections import Counter
+from dataclasses import dataclass
 from pathlib import Path
+from typing import Callable, TypeVar
 
 import pandas as pd
 from dotenv import load_dotenv
@@ -43,6 +47,107 @@ REQUIRED_GT_COLUMNS = {
     "Grading notes",
     "Source articles",
 }
+
+T = TypeVar("T")
+
+
+@dataclass(frozen=True)
+class RateLimitBackoff:
+    """Retry settings for OpenRouter 429/rate-limit errors."""
+
+    retries: int = 3
+    initial_seconds: float = 20.0
+    multiplier: float = 2.0
+    max_seconds: float = 120.0
+    jitter: float = 0.15
+
+    @classmethod
+    def from_args(cls, args: argparse.Namespace) -> "RateLimitBackoff":
+        return cls(
+            retries=max(0, args.rate_limit_retries),
+            initial_seconds=max(0.0, args.rate_limit_backoff_initial),
+            multiplier=max(1.0, args.rate_limit_backoff_multiplier),
+            max_seconds=max(0.0, args.rate_limit_backoff_max),
+            jitter=max(0.0, args.rate_limit_backoff_jitter),
+        )
+
+
+def _is_rate_limit_error(exc: Exception) -> bool:
+    """Return True for OpenRouter/OpenAI 429 errors and similar rate-limit text."""
+    status_code = getattr(exc, "status_code", None)
+    if status_code == 429:
+        return True
+
+    response = getattr(exc, "response", None)
+    if getattr(response, "status_code", None) == 429:
+        return True
+
+    text = str(exc).lower()
+    return "rate limit" in text or "code': 429" in text or '"code": 429' in text
+
+
+def _retry_after_from_error(exc: Exception) -> float | None:
+    """Best-effort extraction of server-provided retry delay, in seconds."""
+    response = getattr(exc, "response", None)
+    headers = getattr(response, "headers", None)
+    if not headers:
+        return None
+
+    retry_after = headers.get("retry-after") or headers.get("Retry-After")
+    if retry_after:
+        try:
+            return max(0.0, float(retry_after))
+        except ValueError:
+            return None
+
+    reset = headers.get("x-ratelimit-reset") or headers.get("X-RateLimit-Reset")
+    if reset:
+        try:
+            reset_value = float(reset)
+        except ValueError:
+            return None
+        if reset_value > 10_000_000_000:
+            reset_value = reset_value / 1000.0
+        return max(0.0, reset_value - time.time())
+
+    return None
+
+
+def call_with_rate_limit_backoff(
+    func: Callable[[], T],
+    backoff: RateLimitBackoff,
+    *,
+    label: str = "OpenRouter call",
+) -> T:
+    """Run a sync LLM/Judge call with configurable incremental backoff for 429s."""
+    attempt = 0
+    while True:
+        try:
+            return func()
+        except Exception as exc:
+            if not _is_rate_limit_error(exc) or attempt >= backoff.retries:
+                raise
+
+            retry_number = attempt + 1
+            server_delay = _retry_after_from_error(exc)
+            delay = (
+                server_delay
+                if server_delay is not None
+                else backoff.initial_seconds * (backoff.multiplier ** attempt)
+            )
+            if backoff.max_seconds:
+                delay = min(delay, backoff.max_seconds)
+            if backoff.jitter:
+                low = max(0.0, 1.0 - backoff.jitter)
+                high = 1.0 + backoff.jitter
+                delay *= random.uniform(low, high)
+
+            print(
+                f"{label} hit a rate limit; retry "
+                f"{retry_number}/{backoff.retries} in {delay:.1f}s..."
+            )
+            time.sleep(delay)
+            attempt += 1
 
 
 def check_api_key() -> str:
@@ -179,6 +284,42 @@ def parse_args() -> argparse.Namespace:
             "the configuration name from run metadata."
         ),
     )
+    parser.add_argument(
+        "--rate-limit-retries",
+        type=int,
+        default=3,
+        help=(
+            "How many times to retry an OpenRouter 429/rate-limit error. "
+            "Use 0 to disable retry backoff."
+        ),
+    )
+    parser.add_argument(
+        "--rate-limit-backoff-initial",
+        type=float,
+        default=20.0,
+        help="Initial wait, in seconds, before the first 429 retry.",
+    )
+    parser.add_argument(
+        "--rate-limit-backoff-multiplier",
+        type=float,
+        default=2.0,
+        help="Multiplier applied after each 429 retry delay.",
+    )
+    parser.add_argument(
+        "--rate-limit-backoff-max",
+        type=float,
+        default=120.0,
+        help="Maximum wait, in seconds, before any single 429 retry.",
+    )
+    parser.add_argument(
+        "--rate-limit-backoff-jitter",
+        type=float,
+        default=0.15,
+        help=(
+            "Random jitter fraction added/subtracted from each 429 retry delay. "
+            "Use 0 for deterministic waits."
+        ),
+    )
     return parser.parse_args()
 
 def build_ragas_dataset(
@@ -269,4 +410,3 @@ def save_results(results, output_dir: Path) -> Path:
     results_path = output_dir / "experiments" / f"{results.name}.csv"
     print(f"\nResults saved to: {results_path.resolve()}")
     return results_path
-

@@ -131,6 +131,27 @@ reads saved CSV files and does not make LLM or API calls. When a CSV includes
 `experiment_name` or `config_name`, that value becomes the comparison group shown in
 the report; older or unnamed CSVs still use the analyzer's derived configuration name.
 
+### Check OpenRouter usage after a run
+
+To check the OpenRouter key used by the capstone scripts:
+
+```bash
+python "utils/openrouter_usage.py"
+```
+
+To keep a lightweight usage trail by experiment/config name:
+
+```bash
+python "utils/openrouter_usage.py" \
+  --experiment-name vector_search_base \
+  --log-csv "Capstone Checkpoint 4.1/openrouter_usage_log.csv"
+```
+
+The script reads `OPENROUTER_API_KEY` from the environment or `.env`, prints
+key-specific usage, and appends a timestamped row when `--log-csv` is supplied.
+If `OPENROUTER_MANAGEMENT_KEY` is also set, it can include account-level credit
+remaining; otherwise it still reports the current key's usage and limit fields.
+
 ## Failure analysis: where the baseline breaks (baseline vs oracle)
 
 Ran the baseline retriever and the **oracle** (perfect / gold-article context) on the
@@ -332,6 +353,75 @@ occasional regressions on questions single-pass already handled — the cost/lat
 calls isn't repaid in aggregate on this corpus. The remaining hard questions (cross-article
 intersection, large tables) need structured-table computation.
 
+# Graph Retriever
+
+**What it does.** A second advanced lever (Lab 4.2 pattern), independent of decomposition.
+`retrievers/graph.py` builds a graph over the **sidecars** and expands retrieval along it:
+vector search finds *seed* articles, then we follow edges 1 hop to pull in *adjacent*
+articles the seed search missed. Three deterministic edge types:
+- **direct link** — article → in-corpus article it hyperlinks (`links.local`), directed.
+- **shared entity** — two articles link the same `/wiki/` target (`links.local` + `links.wiki`),
+  including out-of-corpus targets.
+- **shared category** — two articles share a `categories` value.
+
+**Build once, cache, tune freely.** `build_or_load_graph` writes a raw, parameter-free graph
+to `retrievers/db/graph/wikipedia_graph/graph.json` (~11 MB, 17k directed links / 79k entity
+buckets / 5.1k category buckets), version-stamped against the extractor so it rebuilds only when
+the corpus changes. **Every knob is applied at query time** (`GraphParams`: `max_bucket_size`,
+`min_shared`, `max_neighbors`, per-edge weights), so tuning never triggers a rebuild.
+
+## Edge shapes: the value of an edge is inversely proportional to its bucket size
+
+Measured over the 2,417 sidecars:
+
+| edge type | neighbors/article | biggest buckets (the noise) |
+|---|---|---|
+| direct link | ~7 (max 65), 5.8% isolated | hubs: United_States (406), WWII (294) |
+| shared entity | **~1,100 raw** | ISBN (574), IMDb (470), Wayback (348), US (406) |
+| shared category | small, spiky | **Living people (422)**, then ≤ ~50 |
+
+Raw shared-entity is unusable (every article links to boilerplate like ISBN/IMDb). But wherever an
+edge actually recovered a needed article, it was through a **tiny** bucket — `Jenny_Beavan` (3),
+`Indus_Valley_Civilisation` (2), `Micronesia` (4). **The signal is in the rare co-occurrences; the
+noise is in the common ones.** So one IDF-style rule governs all three edge types — weight ∝
+1/bucket-size, drop giant + identifier buckets — with **no per-theme logic**.
+
+## Article-recall harness (LLM-free, isolates retrieval)
+
+Before spending on a full RAGAS run, an LLM-free harness measured only the **retrieval** effect:
+for each GT question, are the gold articles present in **vector-only seeds** vs **seeds + graph
+neighbors**? (Only cost: embedding each question once — no answer LLM, no judge.)
+
+| config (GT, seed_k=7) | mean article-recall | articles/Q | gold recovered | questions fixed |
+|---|---|---|---|---|
+| vector-only | 0.899 | 2.9 | — | — |
+| **graph, max_neighbors=5** | **0.939** | 7.4 | **+2** | GT14, GT16 |
+| graph, max_neighbors=3 | 0.925 | 5.9 | +1 | GT16 |
+
+Graph recovered two gold articles single-pass missed — **GT14** `Emma_Stone` and **GT16**
+`Barack_Obama` — both via `link` + rare shared entities, flipping both questions to full recall.
+`min_shared` had no effect: the `max_neighbors` cap dominates (the top-N are already strongly
+connected), so `max_neighbors` is the real recall/noise dial.
+
+**Design validated — multi-seed accumulation.** From a *single* hub seed (`President_of_the_United_States`,
+which links every president), `Barack_Obama` ranked only **24th**. In the real run it is recovered,
+because the question-driven vector search seeds from several Obama-adjacent articles and its score
+accumulates across them. Single-seed-from-a-hub is the worst case; question-driven multi-seed is not.
+
+## What graph does and does not fix
+
+The lift is **real but modest (+0.040)** and lands exactly where the failure analysis predicted:
+the **entity-relationship / synthesis** family (the +0.133 oracle-gap, retrieval-limited group).
+The three still-missing gold articles — GT03 (68th/74th Academy Awards intersection) and GT09
+(population list) — are the **aggregation family**, which is **reasoning-bound, not retrieval-bound**;
+graph correctly leaves them unfixed. Cost: graph roughly doubles article context (2.9 → 7.4
+articles/Q), and on the 15 questions that already retrieved everything those extra articles carry
+no recall benefit — the precision risk a full quality eval must check.
+
+**Status.** Retrieval recall is measured (above). The **quality** eval — whether the recovered
+articles flip GT14/GT16 to *pass*, and whether the added context regresses easy questions — wires
+`GraphRetriever` into the RAGAS harness and is the next run (per discipline, 2–3× for variance).
+
 # Structured Table Computation
 
 **Proposal (not implemented — time).** The stuck questions (GT03 intersection, GT10/GT11 large
@@ -342,4 +432,3 @@ filter / count / intersection in **Python**, then hand the LLM the computed resu
 Deterministic aggregation can't miscount. Open piece: routing a question to the right table
 (heuristics over the question + the retrieved article's sidecar). This is the highest-leverage
 remaining lever for the aggregation family.
-
