@@ -418,9 +418,39 @@ graph correctly leaves them unfixed. Cost: graph roughly doubles article context
 articles/Q), and on the 15 questions that already retrieved everything those extra articles carry
 no recall benefit — the precision risk a full quality eval must check.
 
-**Status.** Retrieval recall is measured (above). The **quality** eval — whether the recovered
-articles flip GT14/GT16 to *pass*, and whether the added context regresses easy questions — wires
-`GraphRetriever` into the RAGAS harness and is the next run (per discipline, 2–3× for variance).
+## Full RAGAS evaluation (quality)
+
+Wiring `GraphRetriever` into the RAGAS harness surfaced a context-engineering wall first: the seed
+articles alone are already ~50–116k tokens, so adding *whole* neighbor articles overflowed the model
+context window (and the key's per-request credit budget) on 16/19 questions. The fix keeps the
+base-vs-graph comparison clean: **seed articles stay full** (identical to baseline), **graph neighbors
+are added as bounded lead snippets** (≤12k chars each), and answer output is capped
+(`capstone_checkpoint_4_1_graph_retrieval_starter.py`).
+
+Results (GT, 19 Q; each config is a mean of 3 runs):
+
+| config | mean article recall | mean answer quality |
+|---|---|---|
+| baseline (`vs_k7_markdown_base`) | 0.899 | 0.754 |
+| query decomposition (blanket / targeted) | 0.896 / 0.908 | 0.763 / 0.743 |
+| **graph (n5, 12k snippets)** | **0.939** | 0.754 |
+
+**Graph is the only advanced strategy that moved recall** (+0.040); decomposition barely touched it.
+Recall is **deterministic** — 0.939 on every run (retrieval makes no LLM call) — while quality varies
+run to run (0.711 / 0.737 / 0.816) on this small 19-question set. **Net answer quality is exactly flat
+(0.754 = baseline):** recovering the article does not convert the remaining fails, which are
+**reasoning/aggregation over tables** (GT03/10/11) — bound by synthesis, not retrieval (oracle ≈
+retriever). So for a *retrieval* objective, graph is a genuine win; its payoff in answer quality waits
+on the reasoning stage.
+
+**Content-strategy caveat (the reasoning bridge).** Full-article context was *safe* — the right article
+guarantees the fact is somewhere in context. Truncating neighbors to snippets reintroduces a "right
+article, wrong snippet" risk (GT16 recovered *Barack Obama* but scored PARTIAL — the answer-bearing
+section wasn't in the lead). Because **article recall is independent of the snippet strategy**, this
+does not affect the retrieval result; it is an *answer-quality* concern for the next module. Planned
+fix: **multi-hop section retrieval** — decomposed sub-queries select the right section from each graph
+neighbor (graph finds the article; sub-queries find the section; `GraphRetriever.article_sections`
+already does the single-query version) — feeding a dedicated reasoning stage.
 
 # Structured Table Computation
 

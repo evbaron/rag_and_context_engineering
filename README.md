@@ -19,21 +19,36 @@ rag_and_context_engineering/
 ├── README.md
 ├── test_setup.py
 └── wikipedia_retrieval_engine/
-    ├── Wikipedia/                         # local HTML corpus
+    ├── Wikipedia/                         # local HTML corpus (2,417 articles)
     ├── GT/
-    │   ├── wikipedia_GT.csv               # current 19-case evaluation set
+    │   ├── wikipedia_GT.csv               # canonical 19-case evaluation set (GT01–GT19)
+    │   ├── wikipedia_GT_validation_set.csv # 25-case held-out set (overfitting guard)
     │   └── capstone2.1_gt_cleanup_notes.md
-    ├── retrievers/                        # corpus, BM25, vector, hybrid, logging
+    ├── retrievers/                        # reusable retrieval library (see below)
+    │   ├── base.py                        # BaseRetriever, RetrieverSpec, normalize_scores
+    │   ├── corpus.py                      # loaders + DOM extractor (Markdown + JSON sidecar)
+    │   ├── bm25.py / vector.py / hybrid.py # lexical, vector, and fused retrievers
+    │   ├── multistep.py                   # query-decomposition retriever (Lab 4.1)
+    │   ├── graph.py                       # graph-augmented retriever (Lab 4.2)
+    │   ├── expansion.py                   # expand seed chunks → full article context
+    │   ├── evidence.py / llm.py           # evidence helpers; embeddings + answer/decompose LLM
     ├── utils/
-    │   └── analyze_ragas_experiments.py   # aggregate CSV runs and create a PDF
+    │   ├── ragas_eval.py                  # shared RAGAS harness (GT parse, LLM/judge, rate-limit)
+    │   ├── analyze_ragas_experiments.py   # aggregate CSV runs → PDF report
+    │   └── openrouter_usage.py            # check/log OpenRouter key usage
     ├── Capstone Checkpoint 1.1/
     ├── Capstone Checkpoint 2.1/
-    └── Capstone Checkpoint 3.1/
+    ├── Capstone Checkpoint 3.1/           # baseline retrieval + evaluation
+    └── Capstone Checkpoint 4.1/           # advanced retrieval (decomposition + graph)
 ```
 
 The checkpoint folders contain the assignment-specific scripts, evidence, reports,
-and technical notes. Reusable retrieval code lives in `retrievers/`, and utilities
-that operate across checkpoints live in `utils/`.
+and technical notes. Reusable retrieval code lives in `retrievers/` (each retriever
+implements `BaseRetriever.getTopK`), and utilities that operate across checkpoints
+live in `utils/`. The corpus is available in two representations: plain text
+(`wikipedia_plain_text`) and structure-preserving **Markdown + a JSON sidecar**
+(`wikipedia_markdown`, built by `corpus.build_or_load_markdown_store`) whose
+categories/links/tables are the substrate for the Checkpoint 4.1 graph.
 
 ## Ground-truth files
 
@@ -188,7 +203,7 @@ python wikipedia_retrieval_engine/utils/openrouter_usage.py \
 Set `OPENROUTER_MANAGEMENT_KEY` when you also want account-level credit remaining or
 need to list/query managed keys.
 
-## Current finding
+## Checkpoint 3.1 finding (baseline retrieval)
 
 For the final controlled Checkpoint 3.1 comparison, vector retrieval at Top K = 7
 outperformed the tested hybrid configuration with BM25/vector weights of 0.35/0.65.
@@ -207,3 +222,22 @@ of 0.340, a 64.0% failure rate, and an attention score of 66.0. Its oracle quali
 similarly low at 0.322, which shows that retrieval changes alone will not solve this
 class of failure. Direct fact or table lookup questions scored 1.000 under vector
 retrieval.
+
+## Checkpoint 4.1 finding (advanced retrieval)
+
+Checkpoint 4.1 re-architected the corpus (DOM extraction to Markdown + a JSON sidecar of
+categories, tables, and classified links) and added two advanced retrievers on top of the
+vector baseline: **query decomposition** (`retrievers/multistep.py`, Lab 4.1) and
+**graph-augmented retrieval** (`retrievers/graph.py`, Lab 4.2 — vector seeds expanded one hop
+along link / shared-entity / shared-category edges, weighted by rarity). Both are scored with the
+same RAGAS harness as the baseline; full detail and evidence are in
+`wikipedia_retrieval_engine/Capstone Checkpoint 4.1/README 4.1.md`.
+
+On the GT set (mean of 3 runs each), **graph retrieval is the only strategy that improved the
+retrieval metric** — mean article recall rose from **0.899 (baseline) to 0.939**, recovering
+multi-source articles single-pass missed (e.g. Barack Obama, Emma Stone). Recall is deterministic
+across runs; decomposition did not move it (0.896 / 0.908). **Answer quality stayed flat (~0.754
+across all configs)**: the remaining failures are reasoning and aggregation over large tables, which
+are bound by synthesis rather than retrieval (oracle ≈ retriever) and are deferred to the reasoning
+stage. This confirms the Checkpoint 3.1 conclusion from the other direction — retrieval was made
+measurably better, and answer quality still did not move, because the bottleneck is reasoning.
