@@ -8,7 +8,7 @@ from typing import Any
 from langchain_chroma import Chroma
 from langchain_core.documents import Document
 
-from .base import DEFAULT_TOP_K, BaseRetriever
+from .base import DEFAULT_TOP_K, ArticleCandidate, BaseRetriever
 from .corpus import (
     DEFAULT_CHROMA_DB_NAME,
     DEFAULT_CHROMA_DB_ROOT,
@@ -18,6 +18,7 @@ from .corpus import (
 from .llm import get_embeddings
 
 _EMBED_BATCH = 64
+_ARTICLE_CANDIDATE_MULTIPLIER = 4
 _VALID_DB_NAME = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]*$")
 
 
@@ -103,6 +104,68 @@ class VectorRetriever(BaseRetriever):
             (doc.metadata.get("source", "unknown"), doc.page_content, float(score))
             for doc, score in results
         ]
+
+    def getArticlesTopK(
+        self,
+        query: str,
+        k: int = 3,
+        *,
+        fetch_k: int | None = None,
+    ) -> list[ArticleCandidate]:
+        """Return the top-k unique articles as structured candidates.
+
+        Chroma ranks chunks, so ``getTopK(query, 3)`` can return three chunks from
+        one article. This method searches a larger chunk candidate pool and groups
+        the ranked results by article. Each ``ArticleCandidate`` retains the best
+        matching chunk, query, unique-article rank, and raw Chroma distance. Chroma
+        distances are lower-is-better.
+
+        ``fetch_k`` controls how many chunks are considered and defaults to four
+        times the requested article count. The method can return fewer than ``k``
+        articles when the candidate pool contains fewer unique article IDs. Increase
+        ``fetch_k`` when long articles dominate the nearest chunk results.
+        """
+
+        if k < 1:
+            raise ValueError("k must be at least 1.")
+        chunk_candidates = (
+            max(k, k * _ARTICLE_CANDIDATE_MULTIPLIER)
+            if fetch_k is None
+            else fetch_k
+        )
+        if chunk_candidates < k:
+            raise ValueError("fetch_k must be greater than or equal to k.")
+
+        results = self._db.similarity_search_with_score(
+            query,
+            k=chunk_candidates,
+        )
+        ranked_results = sorted(results, key=lambda item: float(item[1]))
+
+        article_hits: list[ArticleCandidate] = []
+        seen_articles: set[str] = set()
+        for document, score in ranked_results:
+            article = str(document.metadata.get("article") or "").strip()
+            if not article:
+                source = str(document.metadata.get("source") or "unknown")
+                article = source.split("#", 1)[0]
+            if article in seen_articles:
+                continue
+            seen_articles.add(article)
+            article_hits.append(
+                ArticleCandidate(
+                    source_article=article,
+                    representative_chunk=document.page_content,
+                    retrieval_query=query,
+                    discovered_by="vector",
+                    rank=len(article_hits) + 1,
+                    raw_score=float(score),
+                    score_semantics="lower_is_better",
+                )
+            )
+            if len(article_hits) == k:
+                break
+        return article_hits
 
     def settings(self) -> dict[str, Any]:
         return {

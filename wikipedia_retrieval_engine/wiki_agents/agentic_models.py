@@ -63,7 +63,9 @@ class DraftAnswer(BaseModel):
 
 
 class TableQueryPlan(BaseModel):
-    operation: Literal["lookup", "filter", "aggregate", "compare", "sort"]
+    operation: Literal[
+        "lookup", "filter", "aggregate", "compare", "sort", "timeline"
+    ]
     selected_columns: list[str]
     filters: dict[str, str]
     group_by: list[str]

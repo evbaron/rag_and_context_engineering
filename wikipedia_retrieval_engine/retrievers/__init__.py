@@ -19,6 +19,7 @@ from .base import (
     DEFAULT_TOP_K,
     DEFAULT_WEIGHT_BM25,
     DEFAULT_WEIGHT_VECTOR,
+    ArticleCandidate,
     BaseRetriever,
     RetrieverKind,
     RetrieverSpec,
@@ -133,6 +134,7 @@ def make_retriever(
 
 __all__ = [
     "BaseRetriever",
+    "ArticleCandidate",
     "Bm25Retriever",
     "VectorRetriever",
     "HybridRetriever",

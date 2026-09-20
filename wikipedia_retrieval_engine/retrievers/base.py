@@ -6,6 +6,8 @@ from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 from typing import Any, Literal
 
+from pydantic import BaseModel, Field
+
 RetrieverKind = Literal["bm25", "vector", "hybrid"]
 
 # Defaults only. Override per experiment via RetrieverSpec / constructor args.
@@ -24,6 +26,29 @@ _STOPWORDS = {
     "my", "our", "your", "his", "its", "their", "this", "that", "these", "those",
     "as", "if", "up", "out", "not", "no",
 }
+
+
+class ArticleCandidate(BaseModel):
+    """An article discovered during retrieval but not yet accepted as evidence."""
+
+    source_article: str = Field(min_length=1)
+    representative_chunk: str | None = None
+
+    retrieval_query: str = Field(min_length=1)
+    discovered_by: Literal["vector", "graph"]
+
+    rank: int = Field(ge=1)
+    raw_score: float
+    score_semantics: Literal[
+        "higher_is_better",
+        "lower_is_better",
+        "rank_only",
+        "unknown",
+    ]
+
+    # Used later when graph expansion discovers this article.
+    seed_articles: list[str] = Field(default_factory=list)
+    discovery_reasons: list[str] = Field(default_factory=list)
 
 
 @dataclass

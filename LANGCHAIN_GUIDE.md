@@ -1,12 +1,24 @@
 # LangChain tutorial, reference, and gotchas
 
-This is a Python-first guide for this repository. It targets the versions pinned in
-the repository-level `requirements.txt`, especially
+This is a Python-first learning and reference guide. Its examples reflect the
+versions pinned in this repository's `requirements.txt`, especially
 `langchain-core 1.3`, `langchain-openai 1.1`, and `langchain-chroma 1.1`.
+
+Read it independently to brush up on LangChain, LCEL, retrieval, structured output,
+tools, and LangGraph. Project links are included as concrete examples, while
+checkpoint-specific decisions and experiment notes live in the checkpoint READMEs.
 
 LangChain changes quickly. Treat the pinned requirements as the project's API
 contract; do not combine examples copied from older tutorials with this environment
 without checking their imports.
+
+Suggested reading path:
+
+- sections 1–5 for LangChain fundamentals and runnable execution;
+- sections 6–8 for documents, embeddings, Chroma, and transparent RAG;
+- sections 9–10 for structured output and tools;
+- sections 12–14 when debugging or migrating older examples; and
+- section 15 for LangGraph state, routing, persistence, and memory.
 
 ## 1. The useful mental model
 
@@ -52,7 +64,7 @@ Gotcha: installing `langchain-core` does not install every provider or vector-st
 adapter. Integration packages are intentionally separate. Prefer provider-specific
 imports over old examples that import everything from `langchain`.
 
-## 3. Setup for this repository
+## 3. Setup and provider configuration
 
 From `rag_and_context_engineering/`:
 
@@ -93,6 +105,12 @@ model = ChatOpenAI(
 
 Gotcha: `OPENROUTER_API_KEY` is not automatically treated as `OPENAI_API_KEY`.
 Passing `api_key` explicitly, as this repository does, avoids ambiguity.
+
+Current LangChain documentation also describes a dedicated
+[`langchain-openrouter` integration](https://docs.langchain.com/oss/python/integrations/chat/openrouter).
+This repository intentionally uses its pinned `langchain-openai` compatibility path.
+Do not mix the two imports without updating requirements and rerunning integration
+tests.
 
 ## 4. First model call: messages in, message out
 
@@ -484,7 +502,7 @@ When a RAG answer is wrong, inspect in this order:
 This sequence prevents a common failure mode: changing the prompt when the answer was
 never retrieved, or changing retrieval when the model ignored adequate evidence.
 
-## 15. Next checkpoint: agentic workflows with LangGraph
+## 15. Agentic workflows with LangGraph
 
 There are two different meanings of “graph” in this project:
 
@@ -521,18 +539,17 @@ Use deterministic code for constraints—attempt limits, permissions, required s
 and terminal conditions. Use an LLM only where semantic judgment is valuable, such
 as grading whether evidence answers a question or rewriting an ambiguous query.
 
-### Dependency plan
+### Installation
 
-LangGraph is not currently pinned in this repository's requirements. For the next
-checkpoint, install and test it in a branch or fresh environment, then pin the exact
-tested version alongside the existing LangChain packages:
+LangGraph is distributed separately from the core LangChain packages:
 
 ```bash
 pip install -U langgraph
 ```
 
-Do not add an unpinned dependency to the submission environment. Confirm its Python,
-`langchain-core`, and checkpoint-storage compatibility first.
+In a reproducible project, pin the exact tested version alongside the compatible
+LangChain packages. This repository's Checkpoint 5.1 README records its own dependency
+and implementation status.
 
 ### Core vocabulary
 
@@ -548,11 +565,13 @@ Do not add an unpinned dependency to the submission environment. Confirm its Pyt
   until `compile()` is called.
 - **Checkpointer** stores state snapshots for a thread so execution can resume.
 
-### Adaptive RAG graph for this project
+### Worked example: an adaptive RAG graph
 
-The following example deliberately reuses the project's retriever and model
-boundaries. It exposes retrieved documents in final state for evaluation and permits
-at most three retrieval attempts.
+The following example reuses this repository's retriever and model boundaries as a
+concrete illustration. It exposes retrieved documents in final state for evaluation
+and permits at most three retrieval attempts. The project-specific design that grows
+from this pattern is documented in
+[`Capstone Checkpoint 5.1/README 5.1.md`](wikipedia_retrieval_engine/Capstone%20Checkpoint%205.1/README%205.1.md).
 
 ```python
 from typing import Literal, TypedDict
@@ -923,10 +942,11 @@ The configured dimension must match the embedding model's actual output. Restric
 or private metadata into search. Items can opt out of indexing with `index=False`,
 or select specific fields with `index=["text"]` when calling `put`.
 
-Do not use the LangGraph store as a replacement for this project's Chroma corpus
-index. Chroma holds the governed Wikipedia evidence corpus and its chunk metadata;
-the store is better suited to small application memories, user preferences,
-feedback, and workflow artifacts.
+Do not use a LangGraph store as a replacement for a governed corpus index or artifact
+repository. A store is well suited to small application memories, preferences, and
+cross-thread records. Deterministic corpus-derived data generally belongs in a
+versioned offline build with a durable publication boundary. See the Checkpoint 5.1
+README for this repository's table-artifact decision.
 
 #### `InMemoryStore` gotchas
 
@@ -975,10 +995,10 @@ for update in rag_graph.stream(
 Full-state streaming can reveal internal or private fields, so do not assume an
 output schema redacts everything emitted by streaming.
 
-### Evaluation plan for an agentic graph
+### Evaluating an agentic graph
 
-Keep the existing fixed retrieval baseline. Compare the agentic graph against it on
-the same questions, models, corpus, index, answer prompt, and scoring rubric. Add:
+Compare an agentic graph with a fixed baseline while holding questions, models,
+corpus, prompts, and scoring rules constant. Record:
 
 - answer quality and designated-source recall;
 - number of retrieval attempts and LLM calls;
@@ -989,8 +1009,8 @@ the same questions, models, corpus, index, answer prompt, and scoring rubric. Ad
 - loop-limit, parser, provider, and node exceptions;
 - run-to-run route and answer stability.
 
-An agentic design is justified only if the quality or recoverability improvement is
-worth its additional latency, cost, and nondeterminism.
+An agentic design is useful only when its quality or recoverability improvement is
+worth the additional latency, cost, and nondeterminism.
 
 ### Agentic-graph failure modes
 
@@ -1015,7 +1035,7 @@ worth its additional latency, cost, and nondeterminism.
 - [`InMemoryStore` API reference](https://reference.langchain.com/python/langgraph.store/memory/InMemoryStore)
 - [Workflow and agent patterns](https://docs.langchain.com/oss/python/langgraph/workflows-agents)
 
-## 16. Project-specific examples
+## 16. Repository examples
 
 - `wikipedia_retrieval_engine/retrievers/llm.py` centralizes OpenRouter chat and
   embedding clients and keeps model calls outside ranking logic.
@@ -1025,15 +1045,23 @@ worth its additional latency, cost, and nondeterminism.
   fusion; examine its normalization before comparing raw scores.
 - `wikipedia_retrieval_engine/utils/ragas_eval.py` is the evaluation boundary; keep
   run metadata and exact contexts reproducible.
+- `wikipedia_retrieval_engine/Capstone Checkpoint 5.1/README 5.1.md` explains how
+  these primitives are being applied to an evidence-routing graph and specialized
+  table-analysis branch.
 
 ## 17. Primary references
 
+- [LangChain Learn: tutorials and conceptual guides](https://docs.langchain.com/oss/python/learn)
 - [LangChain Python overview](https://docs.langchain.com/oss/python/langchain/overview)
 - [Models and the standard invocation interface](https://docs.langchain.com/oss/python/langchain/models)
 - [Messages](https://docs.langchain.com/oss/python/langchain/messages)
 - [Structured output](https://docs.langchain.com/oss/python/langchain/structured-output)
 - [Chroma integration](https://docs.langchain.com/oss/python/integrations/vectorstores/chroma)
 - [Embedding integrations](https://docs.langchain.com/oss/python/integrations/embeddings)
+- [LangGraph overview](https://docs.langchain.com/oss/python/langgraph/overview)
+- [LangGraph Graph API](https://docs.langchain.com/oss/python/langgraph/graph-api)
+- [LangGraph persistence](https://docs.langchain.com/oss/python/langgraph/persistence)
+- [LangGraph workflows and agents](https://docs.langchain.com/oss/python/langgraph/workflows-agents)
 - [LangChain Python reference](https://reference.langchain.com/python/)
 
 Last reviewed against the official documentation: 2026-09-20.

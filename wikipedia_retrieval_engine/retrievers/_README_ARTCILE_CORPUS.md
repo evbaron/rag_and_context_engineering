@@ -3,10 +3,10 @@
 This document explains how the original Wikipedia HTML files become the different
 corpus representations used by the retrieval experiments.
 
-The source corpus contains approximately 2,417 Wikipedia HTML files:
+The source corpus contains 2,419 Wikipedia HTML files:
 
 ```text
-wikipedia_retrieval_engine/Wikipedia/
+wikipedia_retrieval_engine/Wikipedia Library/
 ```
 
 The preprocessing code is primarily in `retrievers/corpus.py`. Vector persistence is

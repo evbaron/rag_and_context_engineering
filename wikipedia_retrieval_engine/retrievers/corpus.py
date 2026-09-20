@@ -10,7 +10,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 ENGINE_ROOT = Path(__file__).resolve().parent.parent
-DEFAULT_WIKI_DIR = ENGINE_ROOT / "Wikipedia"
+DEFAULT_WIKI_DIR = ENGINE_ROOT / "Wikipedia Library"
 DEFAULT_CHROMA_DB_ROOT = Path(__file__).resolve().parent / "db"
 DEFAULT_CHROMA_DB_NAME = "wikipedia"
 DEFAULT_CHROMA_DIR = DEFAULT_CHROMA_DB_ROOT / DEFAULT_CHROMA_DB_NAME

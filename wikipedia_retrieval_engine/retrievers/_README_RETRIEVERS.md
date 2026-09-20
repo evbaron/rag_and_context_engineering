@@ -21,7 +21,7 @@ generation consistent and collecting comparable evidence.
 
 ```
 wikipedia_retrieval_engine/
-  Wikipedia/                          # ~2,400 HTML articles
+  Wikipedia Library/                  # ~2,400 HTML articles
   retrievers/
     __init__.py                       # public API + make_retriever()
     corpus.py                         # HTML → text chunks
@@ -90,7 +90,7 @@ Turns Wikipedia HTML into the units that BM25 and Chroma index.
 
 **Constants**
 
-- `DEFAULT_WIKI_DIR` — `wikipedia_retrieval_engine/Wikipedia`
+- `DEFAULT_WIKI_DIR` — `wikipedia_retrieval_engine/Wikipedia Library`
 - `DEFAULT_CHROMA_DB_ROOT` — `retrievers/db`
 - `DEFAULT_CHROMA_DB_NAME` — `wikipedia`
 - `DEFAULT_CHROMA_DIR` — compatibility constant for `retrievers/db/wikipedia`
@@ -242,6 +242,11 @@ the selected named directory if you intentionally need to rebuild it.
 `VectorRetriever`
 
 - `getTopK` calls `similarity_search_with_score`. The returned score is a **distance** (lower is closer).
+- `getArticlesTopK(query, k=3)` oversamples chunk results, groups them by source
+  article, and returns an `ArticleCandidate` containing the best matching chunk,
+  article-level rank, query, and raw distance for each of up to three unique
+  articles. Use `fetch_k=` to widen the chunk candidate pool when a long article
+  dominates the nearest results.
 - Metadata on each Chroma document: `source` (doc_id), `title`, `article` (filename).
 
 Requires `OPENROUTER_API_KEY` because both the initial document embeddings and every
@@ -505,4 +510,3 @@ intentionally rebuilding.
 `if __name__ == "__main__"` guard.
 - Do not commit `.env` or API keys. Chroma directories under `retrievers/db/` can be
 large; keep them local unless you intentionally version them.
-
