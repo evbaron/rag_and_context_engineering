@@ -14,6 +14,11 @@ require caution about causal inference.
 
 ## Repository guide
 
+For a practical introduction to the LangChain APIs used by this project—including
+LCEL, OpenRouter configuration, Chroma, RAG patterns, version migration, adaptive
+LangGraph workflows, and common failure modes—see
+[LangChain tutorial, reference, and gotchas](LANGCHAIN_GUIDE.md).
+
 ```text
 rag_and_context_engineering/
 ├── README.md
@@ -78,7 +83,7 @@ From this repository root:
 python3.12 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
-pip install -r "wikipedia_retrieval_engine/Capstone Checkpoint 3.1/requirements.txt"
+pip install -r requirements.txt
 ```
 
 Create a `.env` file in this directory and add the OpenRouter API key supplied for the
