@@ -121,7 +121,10 @@ class RetrievalNodesTests(unittest.TestCase):
 
         update = review_article_candidates(state, llm)
 
-        llm.with_structured_output.assert_called_once_with(ArticleReviewBatch)
+        llm.with_structured_output.assert_called_once_with(
+            ArticleReviewBatch,
+            method="function_calling",
+        )
         structured_reviewer.invoke.assert_called_once()
         messages = structured_reviewer.invoke.call_args.args[0]
         self.assertIn("Who won best picture?", messages[1].content)
@@ -266,7 +269,10 @@ class RetrievalNodesTests(unittest.TestCase):
 
         update = assess_evidence(state, llm)
 
-        llm.with_structured_output.assert_called_once_with(EvidenceAssessment)
+        llm.with_structured_output.assert_called_once_with(
+            EvidenceAssessment,
+            method="function_calling",
+        )
         structured_assessor.invoke.assert_called_once()
         messages = structured_assessor.invoke.call_args.args[0]
         self.assertIn("Who won Best Picture?", messages[1].content)

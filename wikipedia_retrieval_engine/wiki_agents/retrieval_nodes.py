@@ -40,6 +40,8 @@ Rules:
 - Set ready_to_answer to true only when every required fact is supported.
 - Describe which requirements are supported and which are still missing.
 - When facts may be in a table from a selected article, create a table_request.
+- Copy source_article exactly from the supplied reviews or evidence when creating
+  a table_request; do not invent or rename article identifiers.
 - Use table operations such as lookup, filter, aggregate, compare, sort, or
   timeline to describe the required table work.
 - When another retrieval call is required, create a retrieval_request containing
@@ -118,7 +120,10 @@ def review_article_candidates(
         for candidate in candidates
     )
 
-    structured_reviewer = llm.with_structured_output(ArticleReviewBatch)
+    structured_reviewer = llm.with_structured_output(
+        ArticleReviewBatch,
+        method="function_calling",
+    )
 
     result = structured_reviewer.invoke(
         [
@@ -302,7 +307,10 @@ def assess_evidence(
         for item in evidence
     ) or "(no evidence available)"
 
-    structured_assessor = llm.with_structured_output(EvidenceAssessment)
+    structured_assessor = llm.with_structured_output(
+        EvidenceAssessment,
+        method="function_calling",
+    )
     result = structured_assessor.invoke(
         [
             SystemMessage(content=EVIDENCE_ASSESSMENT_SYSTEM_PROMPT),
