@@ -12,8 +12,12 @@ from .base import DEFAULT_TOP_K, ArticleCandidate, BaseRetriever
 from .corpus import (
     DEFAULT_CHROMA_DB_NAME,
     DEFAULT_CHROMA_DB_ROOT,
+    DEFAULT_SECTION_CHROMA_DB_NAME,
+    DEFAULT_SECTION_MAX_CHARS,
+    DEFAULT_SECTION_OVERLAP,
     WikiChunk,
     load_wikipedia_chunks,
+    load_wikipedia_section_chunks,
 )
 from .llm import get_embeddings
 
@@ -75,6 +79,35 @@ def build_or_load_db(
     return db
 
 
+def build_or_load_section_db(
+    wiki_dir: str | Path | None = None,
+    chroma_db_name: str = DEFAULT_SECTION_CHROMA_DB_NAME,
+    *,
+    max_section_chars: int = DEFAULT_SECTION_MAX_CHARS,
+    overlap: int = DEFAULT_SECTION_OVERLAP,
+) -> Chroma:
+    """Load the section-aware index or build it from heading-based chunks.
+
+    This wrapper prevents a missing section index from silently falling back to
+    the character-based ``load_wikipedia_chunks`` strategy used by the baseline.
+    """
+
+    chroma_path = chroma_db_path(chroma_db_name)
+    if chroma_path.is_dir() and any(chroma_path.iterdir()):
+        return build_or_load_db(chroma_db_name=chroma_db_name)
+
+    chunks = load_wikipedia_section_chunks(
+        wiki_dir,
+        max_section_chars=max_section_chars,
+        overlap=overlap,
+    )
+    return build_or_load_db(
+        wiki_dir=wiki_dir,
+        chroma_db_name=chroma_db_name,
+        chunks=chunks,
+    )
+
+
 class VectorRetriever(BaseRetriever):
     def __init__(
         self,
@@ -95,6 +128,32 @@ class VectorRetriever(BaseRetriever):
                 chroma_db_name=chroma_db_name,
                 chunks=chunks,
             )
+        )
+
+    @classmethod
+    def for_section_index(
+        cls,
+        wiki_dir: str | Path | None = None,
+        chroma_db_name: str = DEFAULT_SECTION_CHROMA_DB_NAME,
+        *,
+        max_section_chars: int = DEFAULT_SECTION_MAX_CHARS,
+        overlap: int = DEFAULT_SECTION_OVERLAP,
+        top_k: int = DEFAULT_TOP_K,
+        label: str | None = None,
+    ) -> VectorRetriever:
+        """Construct a retriever backed by the section-aware Checkpoint 5.1 index."""
+
+        db = build_or_load_section_db(
+            wiki_dir=wiki_dir,
+            chroma_db_name=chroma_db_name,
+            max_section_chars=max_section_chars,
+            overlap=overlap,
+        )
+        return cls(
+            db=db,
+            chroma_db_name=chroma_db_name,
+            top_k=top_k,
+            label=label or "section_vector",
         )
 
     def getTopK(self, query: str, k: int | None = None) -> list[tuple[str, str, float]]:
@@ -145,17 +204,42 @@ class VectorRetriever(BaseRetriever):
         article_hits: list[ArticleCandidate] = []
         seen_articles: set[str] = set()
         for document, score in ranked_results:
-            article = str(document.metadata.get("article") or "").strip()
+            metadata = document.metadata
+            article = str(metadata.get("article") or "").strip()
             if not article:
-                source = str(document.metadata.get("source") or "unknown")
+                source = str(metadata.get("source") or "unknown")
                 article = source.split("#", 1)[0]
             if article in seen_articles:
                 continue
+            raw_section_path = metadata.get("section_path", "")
+            if isinstance(raw_section_path, (list, tuple)):
+                section_path = [
+                    str(part).strip()
+                    for part in raw_section_path
+                    if str(part).strip()
+                ]
+            else:
+                section_path = [
+                    part.strip()
+                    for part in str(raw_section_path).split(">")
+                    if part.strip()
+                ]
             seen_articles.add(article)
             article_hits.append(
                 ArticleCandidate(
                     source_article=article,
                     representative_chunk=document.page_content,
+                    representative_chunk_id=(
+                        str(metadata.get("source")).strip()
+                        if metadata.get("source")
+                        else None
+                    ),
+                    section_title=(
+                        str(metadata.get("section_title")).strip()
+                        if metadata.get("section_title")
+                        else (section_path[-1] if section_path else None)
+                    ),
+                    section_path=section_path,
                     retrieval_query=query,
                     discovered_by="vector",
                     rank=len(article_hits) + 1,
@@ -166,6 +250,37 @@ class VectorRetriever(BaseRetriever):
             if len(article_hits) == k:
                 break
         return article_hits
+
+    def getArticleSectionsTopK(
+        self,
+        query: str,
+        source_article: str,
+        k: int = 3,
+    ) -> list[tuple[Document, float]]:
+        """Return query-relevant chunks from one selected article.
+
+        The initial search chooses articles. This second, metadata-filtered
+        search chooses the useful sections inside each selected article, which
+        avoids sending an entire article or an arbitrary character prefix to
+        downstream nodes.
+        """
+
+        if not query.strip():
+            raise ValueError("query must not be empty.")
+        if not source_article.strip():
+            raise ValueError("source_article must not be empty.")
+        if k < 1:
+            raise ValueError("k must be at least 1.")
+
+        results = self._db.similarity_search_with_score(
+            query,
+            k=k,
+            filter={"article": source_article},
+        )
+        return [
+            (document, float(score))
+            for document, score in results
+        ]
 
     def settings(self) -> dict[str, Any]:
         return {

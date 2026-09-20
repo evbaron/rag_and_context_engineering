@@ -29,6 +29,9 @@ from .corpus import (
     DEFAULT_CHROMA_DB_NAME,
     DEFAULT_CHROMA_DB_ROOT,
     DEFAULT_CHROMA_DIR,
+    DEFAULT_SECTION_CHROMA_DB_NAME,
+    DEFAULT_SECTION_MAX_CHARS,
+    DEFAULT_SECTION_OVERLAP,
     DEFAULT_ARTICLE_TEXT_NAME,
     DEFAULT_ARTICLE_TEXT_ROOT,
     DEFAULT_WIKI_DIR,
@@ -48,7 +51,12 @@ from .expansion import (
     load_retrieved_article_texts,
     retrieved_article_names,
 )
-from .vector import VectorRetriever, build_or_load_db, chroma_db_path
+from .vector import (
+    VectorRetriever,
+    build_or_load_db,
+    build_or_load_section_db,
+    chroma_db_path,
+)
 
 
 def make_retriever(
@@ -150,11 +158,15 @@ __all__ = [
     "DEFAULT_ARTICLE_TEXT_NAME",
     "DEFAULT_CHROMA_DB_ROOT",
     "DEFAULT_CHROMA_DB_NAME",
+    "DEFAULT_SECTION_CHROMA_DB_NAME",
+    "DEFAULT_SECTION_MAX_CHARS",
+    "DEFAULT_SECTION_OVERLAP",
     "DEFAULT_TOP_K",
     "DEFAULT_CANDIDATE_POOL",
     "DEFAULT_WEIGHT_BM25",
     "DEFAULT_WEIGHT_VECTOR",
     "build_or_load_db",
+    "build_or_load_section_db",
     "chroma_db_path",
     "load_wikipedia_chunks",
     "load_wikipedia_section_chunks",

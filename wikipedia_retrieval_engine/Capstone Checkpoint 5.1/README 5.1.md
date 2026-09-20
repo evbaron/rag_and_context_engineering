@@ -35,7 +35,13 @@ Top K indiscriminately.
 user question
      |
      v
-initial retrieval
+section-aware vector retrieval
+     |
+     v
+diversify by article and review candidates
+     |
+     v
+promote selected representative chunks to initial evidence
      |
      v
 assess evidence completeness
@@ -53,6 +59,24 @@ The graph is deliberately constrained. The language model may judge evidence or
 produce a structured request, but application code owns the available routes,
 budgets, validation, and stopping rules. This keeps the behavior inspectable enough
 for a graded retrieval experiment.
+
+## Initial retrieval strategy
+
+Checkpoint 5.1 uses the existing heading-based Chroma index named
+`wikipedia_sections_max10000_no_overlap`. Its chunks retain the source article,
+section title, section hierarchy, and stable chunk ID.
+
+The global vector search considers more chunks than the requested article count and
+keeps the best chunk from each of up to three unique articles. This provides article
+diversity without discarding the evidence that caused each article to rank. After the
+article-review node rejects irrelevant candidates, those representative chunks are
+promoted directly to `EvidenceItem` objects.
+
+The graph does not immediately repeat the original query inside every selected
+article. It assesses the initial evidence first. Only `need_more_evidence` triggers a
+follow-up section search, using the focused missing-fact query produced by the
+assessment. This makes each loop change the retrieval request rather than returning
+more of the same context.
 
 ## Evidence assessment and routing
 
@@ -125,8 +149,8 @@ typed-state boundary.
 - `EvidenceAssessment` separates evidence grading from answering.
 - `DraftAnswer`, `AnswerClaim`, and `AnswerVerification` make claim-to-evidence
   checking explicit.
-- `AgentState` carries evidence, requests, route decisions, attempt budgets, draft
-  output, verification, and the termination reason through the graph.
+- `AgentState` contains only fields written by implemented graph nodes. New fields
+  are added just in time as later branches are built.
 
 Model and database clients do not belong in graph state. They should be constructed
 outside the state and injected into node functions or runtime context. Persisted or

@@ -5,8 +5,12 @@ from typing import get_type_hints
 
 from wikipedia_retrieval_engine.wiki_agents.agentic_models import (
     AgentState,
+    ArticleReview,
+    ArticleReviewBatch,
     AnswerVerification,
     EvidenceItem,
+    initial_agent_state,
+    retrieval_attempt_count,
 )
 
 
@@ -29,16 +33,62 @@ class AgenticModelsTests(unittest.TestCase):
         self.assertEqual(item.score_semantics, "lower_is_better")
         self.assertEqual(len(item.source_cells), 2)
 
+    def test_initial_agent_state_defaults_retrieval_attempts_to_zero(self) -> None:
+        state = initial_agent_state("Who won?")
+        self.assertEqual(state["question"], "Who won?")
+        self.assertEqual(state["retrieval_attempts"], 0)
+        self.assertEqual(retrieval_attempt_count({}), 0)
+        self.assertEqual(retrieval_attempt_count({"question": "x"}), 0)
+
     def test_agent_state_annotations_resolve(self) -> None:
         annotations = get_type_hints(AgentState)
-        self.assertIn("evidence", annotations)
-        self.assertIn("verification", annotations)
+        self.assertIn("question", annotations)
+        self.assertIn("retrieval_attempts", annotations)
+        self.assertIs(annotations["retrieval_attempts"], int)
 
         verification = AnswerVerification(
             supported=True,
             explanation="Every answer claim cites retrieved evidence.",
         )
         self.assertEqual(verification.unsupported_claims, [])
+
+    def test_article_review_captures_section_and_table_decision(self) -> None:
+        review = ArticleReview(
+            source_article="96th Academy Awards",
+            relevant=True,
+            reason="Contains the winners and nominees needed by the question.",
+            relevant_sections=["Winners and nominees"],
+            relevant_table_names=["Awards"],
+            needs_table_reader=True,
+        )
+        self.assertTrue(review.relevant)
+        self.assertEqual(review.relevant_sections, ["Winners and nominees"])
+        self.assertEqual(review.relevant_table_names, ["Awards"])
+        self.assertTrue(review.needs_table_reader)
+
+    def test_article_review_batch_groups_candidate_reviews(self) -> None:
+        batch = ArticleReviewBatch(
+            reviews=[
+                ArticleReview(
+                    source_article="96th Academy Awards",
+                    relevant=True,
+                    reason="Contains the requested winner information.",
+                    relevant_sections=["Winners and nominees"],
+                    relevant_table_names=["Awards"],
+                    needs_table_reader=True,
+                ),
+                ArticleReview(
+                    source_article="Academy Award",
+                    relevant=False,
+                    reason="General background does not answer the question.",
+                ),
+            ]
+        )
+
+        self.assertEqual(len(batch.reviews), 2)
+        self.assertTrue(batch.reviews[0].relevant)
+        self.assertFalse(batch.reviews[1].relevant)
+        self.assertEqual(batch.reviews[1].relevant_sections, [])
 
 
 if __name__ == "__main__":

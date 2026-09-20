@@ -1,10 +1,85 @@
+"""Structured payloads and shared state for the Checkpoint 5.1 graph.
+
+Only ``AgentState`` is graph state. The Pydantic models are typed payloads
+produced or consumed by individual nodes; they are not separate state objects.
+"""
+
 from __future__ import annotations
 
 from typing import Any, Literal, TypedDict
 
 from pydantic import BaseModel, Field
+from wikipedia_retrieval_engine.retrievers.base import ArticleCandidate
 
 
+class ArticleReview(BaseModel):
+    """The agent's evaluation of one retrieved article."""
+
+    source_article: str = Field(min_length=1)
+    relevant: bool
+    reason: str = Field(min_length=1)
+
+    relevant_sections: list[str] = Field(default_factory=list)
+    relevant_table_names: list[str] = Field(default_factory=list)
+
+    needs_table_reader: bool = False
+
+
+class ArticleReviewBatch(BaseModel):
+    """Structured result of reviewing all retrieved article candidates."""
+
+    reviews: list[ArticleReview] = Field(default_factory=list)
+
+
+# Active graph state. Add a field only when a node actually reads or writes it.
+class AgentState(TypedDict, total=False):
+    """The one shared state object passed through the LangGraph workflow."""
+
+    # Graph input and retrieval budget
+    question: str
+    retrieval_attempts: int
+
+    # retrieve_initial_articles output
+    article_candidates: list[ArticleCandidate]
+
+    # article_review_update output
+    article_reviews: list[ArticleReview]
+    selected_articles: list[str]
+    rejected_articles: list[str]
+
+    # collect_initial_evidence and follow-up retrieval output
+    evidence: list[EvidenceItem]
+
+    # assess_evidence output
+    assessment: EvidenceAssessment
+
+
+DEFAULT_RETRIEVAL_ATTEMPTS = 0
+
+
+def initial_agent_state(question: str) -> AgentState:
+    """Graph input with ``retrieval_attempts`` defaulted to 0.
+
+    TypedDict fields cannot have ``= 0`` in the class body. Call this (or pass
+    ``retrieval_attempts`` explicitly) when starting a run.
+    """
+
+    return {
+        "question": question,
+        "retrieval_attempts": DEFAULT_RETRIEVAL_ATTEMPTS,
+    }
+
+
+def retrieval_attempt_count(state: AgentState) -> int:
+    """Return the current retrieval count, defaulting to zero."""
+    return state.get(
+        "retrieval_attempts",
+        DEFAULT_RETRIEVAL_ATTEMPTS,
+    )
+
+
+# Later-stage payload contracts. They are documented in README 5.1 but are not
+# part of AgentState until their corresponding graph nodes are implemented.
 class EvidenceItem(BaseModel):
     """One evidence unit carried through retrieval, assessment, and answering.
 
@@ -130,34 +205,3 @@ class AnswerVerification(BaseModel):
     invalid_evidence_ids: list[str] = Field(default_factory=list)
     calculation_errors: list[str] = Field(default_factory=list)
     explanation: str
-
-
-class AgentState(TypedDict, total=False):
-    # Request
-    question: str
-    requirements: list[EvidenceRequirement]
-
-    # Retrieval
-    active_queries: list[str]
-    attempted_queries: list[str]
-    evidence: list[EvidenceItem]
-    seen_evidence_ids: list[str]
-
-    # Assessment
-    assessment: EvidenceAssessment
-    route: str
-
-    # Tables
-    table_requests: list[TableRequest]
-    table_artifacts: list[TableEvidence]
-
-    # Budgets
-    retrieval_attempts: int
-    table_attempts: int
-    answer_repairs: int
-
-    # Output
-    draft_answer: DraftAnswer
-    verification: AnswerVerification
-    final_answer: str
-    termination_reason: str

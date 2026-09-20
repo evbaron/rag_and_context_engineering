@@ -172,6 +172,20 @@ runs load the persisted Chroma collection but still embed each search query.
 python -c 'from wikipedia_retrieval_engine.retrievers.vector import build_or_load_db; build_or_load_db(chroma_db_name="wikipedia_chars1600_overlap200")'
 ```
 
+### Section-aware Chroma index for Checkpoint 5.1
+
+Checkpoint 5.1 retrieves heading-based chunks so each initial evidence item retains
+its article, section title, and section hierarchy. The first build embeds the full
+corpus; later runs reuse the stored collection.
+
+```bash
+python -c 'from wikipedia_retrieval_engine.retrievers.vector import build_or_load_section_db; build_or_load_section_db()'
+```
+
+The dedicated builder is intentional: if the section index is missing, it calls
+`load_wikipedia_section_chunks()` instead of silently rebuilding that database name
+with the baseline character-chunk strategy.
+
 ### Article relationship graph
 
 Build the Markdown sidecars first. The graph itself is deterministic and makes no LLM

@@ -33,6 +33,9 @@ class ArticleCandidate(BaseModel):
 
     source_article: str = Field(min_length=1)
     representative_chunk: str | None = None
+    representative_chunk_id: str | None = None
+    section_title: str | None = None
+    section_path: list[str] = Field(default_factory=list)
 
     retrieval_query: str = Field(min_length=1)
     discovered_by: Literal["vector", "graph"]
