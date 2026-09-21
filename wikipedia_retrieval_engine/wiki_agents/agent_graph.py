@@ -21,6 +21,7 @@ from wikipedia_retrieval_engine.wiki_agents.retrieval_nodes import (
     retrieve_graph_seeded_evidence,
     retrieve_initial_articles,
     retrieve_multistep_evidence,
+    retrieve_selected_article_sections,
     review_article_candidates,
 )
 from wikipedia_retrieval_engine.wiki_agents.run_logging import (
@@ -96,14 +97,22 @@ def build_retrieval_benchmark_graph(
     llm: BaseChatModel,
     run_logger: AgentRunLogger | None = None,
     *,
+    initial_article_top_k: int = 3,
+    sections_per_selected_article: int = 3,
     graph_params: GraphParams | None = None,
     sections_per_neighbor: int = 2,
+    max_graph_sections: int = 6,
     multistep_hits_per_request: int = 6,
 ) -> CompiledStateGraph:
     """Compile the retrieval-only VS → graph → multistep benchmark graph.
 
     Article names route retrieval. Only section chunks are added to evidence and
     therefore only section evidence reaches assessment and answering.
+
+    The initial stage seeds ``initial_article_top_k`` unique articles and then
+    deepens each selected article with ``sections_per_selected_article`` focused
+    sections, so the chunk that actually carries the answer (not just the highest
+    ranked prose chunk) is present before the first assessment.
     """
 
     workflow = StateGraph(AgentState)
@@ -112,13 +121,25 @@ def build_retrieval_benchmark_graph(
 
     workflow.add_node(
         "retrieve_initial_articles",
-        partial(retrieve_initial_articles, retriever=retriever),
+        partial(
+            retrieve_initial_articles,
+            retriever=retriever,
+            top_k=initial_article_top_k,
+        ),
     )
     workflow.add_node(
         "review_article_candidates",
         partial(review_article_candidates, llm=llm),
     )
     workflow.add_node("collect_initial_evidence", collect_initial_evidence)
+    workflow.add_node(
+        "deepen_selected_article_sections",
+        partial(
+            retrieve_selected_article_sections,
+            retriever=retriever,
+            sections_per_article=sections_per_selected_article,
+        ),
+    )
     workflow.add_node(
         "assess_evidence",
         partial(
@@ -135,6 +156,7 @@ def build_retrieval_benchmark_graph(
             graph=wiki_graph,
             graph_params=params,
             sections_per_neighbor=sections_per_neighbor,
+            max_graph_sections=max_graph_sections,
         ),
     )
     workflow.add_node(
@@ -153,7 +175,10 @@ def build_retrieval_benchmark_graph(
     workflow.add_edge(START, "retrieve_initial_articles")
     workflow.add_edge("retrieve_initial_articles", "review_article_candidates")
     workflow.add_edge("review_article_candidates", "collect_initial_evidence")
-    workflow.add_edge("collect_initial_evidence", "assess_evidence")
+    workflow.add_edge(
+        "collect_initial_evidence", "deepen_selected_article_sections"
+    )
+    workflow.add_edge("deepen_selected_article_sections", "assess_evidence")
     workflow.add_conditional_edges(
         "assess_evidence",
         route_retrieval_benchmark,

@@ -81,8 +81,20 @@ from wikipedia_retrieval_engine.wiki_agents.run_logging import AgentRunLogger
 
 # %%
 # These controls define the benchmark described in the Checkpoint 5.1 report.
-INITIAL_ARTICLE_TOP_K = 3
+# GT questions designate up to 4 articles (e.g. GT14: Chazelle + Emma Stone +
+# La La Land + 89th Academy Awards). A cap of 3 makes full initial-stage recall
+# impossible on those, so seed with 4 unique articles.
+INITIAL_ARTICLE_TOP_K = 4
+# Each selected article is deepened with this many focused sections on the initial
+# pass. Keeping only the single top-ranked chunk per article tends to grab the
+# prose preamble of a table article rather than the row-bearing section, so the
+# answer content can be absent even at article-recall = 1.0.
+SECTIONS_PER_SELECTED_ARTICLE = 3
 SECTIONS_PER_GRAPH_NEIGHBOR = 2
+# Global cap on graph-neighbor sections kept per expansion, ranked by match
+# distance across all neighbors. Prevents adjacent-but-wrong neighbors (sibling
+# award pages, medalist lists) from each contributing distractor chunks.
+MAX_GRAPH_SECTIONS = 4
 MULTISTEP_HITS_PER_REQUEST = 6
 GRAPH_PARAMS = GraphParams(
     max_bucket_size=50,
@@ -205,8 +217,10 @@ def build_agentic_experiment(
             "judge_model": JUDGE_MODEL,
             "retriever_kind": "vs_graph_multistep_sections",
             "initial_article_top_k": INITIAL_ARTICLE_TOP_K,
+            "sections_per_selected_article": SECTIONS_PER_SELECTED_ARTICLE,
             "graph_max_neighbors": GRAPH_PARAMS.max_neighbors,
             "sections_per_graph_neighbor": SECTIONS_PER_GRAPH_NEIGHBOR,
+            "max_graph_sections": MAX_GRAPH_SECTIONS,
             "multistep_hits_per_request": MULTISTEP_HITS_PER_REQUEST,
             "retrieval_attempts": attempts,
             "terminal_stage": _stage_name(attempts),
@@ -218,6 +232,7 @@ def build_agentic_experiment(
             ),
             "required_articles": "; ".join(required_articles),
             "retrieved_articles": "; ".join(retrieved_articles),
+            "retrieved_article_count": len(retrieved_articles),
             "matched_articles": "; ".join(matched),
             "missing_articles": "; ".join(missing),
             "article_recall": article_recall,
@@ -276,8 +291,11 @@ async def main() -> None:
         wiki_graph,
         agent_llm,
         run_logger,
+        initial_article_top_k=INITIAL_ARTICLE_TOP_K,
+        sections_per_selected_article=SECTIONS_PER_SELECTED_ARTICLE,
         graph_params=GRAPH_PARAMS,
         sections_per_neighbor=SECTIONS_PER_GRAPH_NEIGHBOR,
+        max_graph_sections=MAX_GRAPH_SECTIONS,
         multistep_hits_per_request=MULTISTEP_HITS_PER_REQUEST,
     )
 
@@ -293,8 +311,10 @@ async def main() -> None:
     print(
         f"Running retrieval-only agent on {len(dataset)} questions from {gt_path}\n"
         f"  initial article k={INITIAL_ARTICLE_TOP_K}\n"
+        f"  sections per selected article={SECTIONS_PER_SELECTED_ARTICLE}\n"
         f"  graph neighbors={GRAPH_PARAMS.max_neighbors}\n"
         f"  sections per graph neighbor={SECTIONS_PER_GRAPH_NEIGHBOR}\n"
+        f"  max graph sections kept={MAX_GRAPH_SECTIONS}\n"
         f"  multistep hits per request={MULTISTEP_HITS_PER_REQUEST}\n"
         f"  table requests=disabled\n"
         f"  evidence logs={run_logger.run_directory}"

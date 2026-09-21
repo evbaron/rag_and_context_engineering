@@ -13,6 +13,7 @@ from wikipedia_retrieval_engine.wiki_agents.agentic_models import (
     ArticleReviewBatch,
     EvidenceAssessment,
     EvidenceItem,
+    RetrievalRequest,
     retrieval_attempt_count,
 )
 
@@ -64,14 +65,23 @@ EvidenceRoute = Literal[
 def retrieve_initial_articles(
     state: AgentState,
     retriever: VectorRetriever,
+    *,
+    top_k: int = 3,
 ) -> AgentState:
-    """Find the initial article candidates for a question."""
+    """Find the initial article candidates for a question.
+
+    ``top_k`` is the number of unique articles to seed. It is a parameter (not a
+    hard-coded 3) so the benchmark can size the initial net to the question set;
+    e.g. GT questions designate up to four articles.
+    """
 
     question = state.get("question", "").strip()
     if not question:
         raise ValueError("Agent state must contain a non-empty question.")
+    if top_k < 1:
+        raise ValueError("top_k must be at least 1.")
 
-    article_candidates = retriever.getArticlesTopK(question, k=3)
+    article_candidates = retriever.getArticlesTopK(question, k=top_k)
 
     return {
         "article_candidates": article_candidates,
@@ -265,17 +275,22 @@ def retrieve_graph_seeded_evidence(
     *,
     graph_params: GraphParams | None = None,
     sections_per_neighbor: int = 2,
+    max_graph_sections: int = 6,
 ) -> AgentState:
     """Expand selected VS articles, then retrieve only relevant neighbor sections.
 
     The graph chooses related article names. It never supplies answer context itself.
     For every related article, the section-aware vector retriever selects the chunks
-    relevant to the assessor's missing-fact query, and only those chunks become
-    ``EvidenceItem`` objects.
+    relevant to the assessor's missing-fact query. All neighbor-section candidates
+    are then ranked by match distance and only the ``max_graph_sections`` best
+    become ``EvidenceItem`` objects, so a semantically adjacent but off-topic
+    neighbor cannot inject distractor chunks just for being a graph neighbor.
     """
 
     if sections_per_neighbor < 1:
         raise ValueError("sections_per_neighbor must be at least 1.")
+    if max_graph_sections < 1:
+        raise ValueError("max_graph_sections must be at least 1.")
 
     question = state.get("question", "").strip()
     if not question:
@@ -303,6 +318,13 @@ def retrieve_graph_seeded_evidence(
 
     params = graph_params or GraphParams()
     neighbors = graph.expand(seeds, params)
+
+    # Gather every candidate neighbor section first, then keep only the globally
+    # best-matching ones. Adding the top-k sections of *every* neighbor lets a
+    # semantically adjacent but wrong article (e.g. a sibling award page) inject
+    # distractor chunks; ranking all candidates by match distance and capping the
+    # total keeps the on-topic neighbors and drops that tail.
+    candidates: list[dict] = []
     for neighbor_rank, (article, graph_score, reasons) in enumerate(
         neighbors,
         start=1,
@@ -317,34 +339,57 @@ def retrieve_graph_seeded_evidence(
                 section_hits,
                 start=1,
             ):
-                metadata = document.metadata
-                evidence_id = str(
-                    metadata.get("source")
-                    or f"{article}#graph-section-{section_rank}"
-                )
-                if evidence_id in evidence_by_id:
-                    continue
-                section_title, section_path = _section_identity(metadata)
-                evidence_by_id[evidence_id] = EvidenceItem(
-                    evidence_id=evidence_id,
-                    source_article=article,
-                    content=document.page_content,
-                    evidence_type="graph",
-                    title=section_title or None,
-                    section_path=section_path,
-                    retrieval_query=retrieval_query,
-                    retriever="graph",
-                    rank=section_rank,
-                    raw_score=float(distance),
-                    score_semantics="lower_is_better",
-                    metadata={
-                        "retrieval_stage": "graph_seeded_sections",
-                        "seed_articles": seeds,
-                        "graph_neighbor_rank": neighbor_rank,
+                candidates.append(
+                    {
+                        "distance": float(distance),
+                        "neighbor_rank": neighbor_rank,
+                        "section_rank": section_rank,
+                        "article": article,
                         "graph_score": graph_score,
-                        "discovery_reasons": reasons,
-                    },
+                        "reasons": reasons,
+                        "document": document,
+                        "retrieval_query": retrieval_query,
+                    }
                 )
+
+    # Lower Chroma distance is a closer match, so the best candidates sort first.
+    candidates.sort(key=lambda item: item["distance"])
+
+    added = 0
+    for candidate in candidates:
+        if added >= max_graph_sections:
+            break
+        document = candidate["document"]
+        article = candidate["article"]
+        metadata = document.metadata
+        evidence_id = str(
+            metadata.get("source")
+            or f"{article}#graph-section-{candidate['section_rank']}"
+        )
+        if evidence_id in evidence_by_id:
+            continue
+        section_title, section_path = _section_identity(metadata)
+        evidence_by_id[evidence_id] = EvidenceItem(
+            evidence_id=evidence_id,
+            source_article=article,
+            content=document.page_content,
+            evidence_type="graph",
+            title=section_title or None,
+            section_path=section_path,
+            retrieval_query=candidate["retrieval_query"],
+            retriever="graph",
+            rank=candidate["section_rank"],
+            raw_score=candidate["distance"],
+            score_semantics="lower_is_better",
+            metadata={
+                "retrieval_stage": "graph_seeded_sections",
+                "seed_articles": seeds,
+                "graph_neighbor_rank": candidate["neighbor_rank"],
+                "graph_score": candidate["graph_score"],
+                "discovery_reasons": candidate["reasons"],
+            },
+        )
+        added += 1
 
     return {
         "evidence": list(evidence_by_id.values()),
@@ -446,27 +491,41 @@ def assess_evidence(
         else EvidenceAssessment.model_validate(result)
     )
 
-    if not allow_table_requests and assessment.table_requests:
-        raise ValueError(
-            "The retrieval-only evidence assessor produced a table request."
-        )
+    # Repair imperfect structured output instead of dropping the question.
+    # gpt-5.4-mini occasionally returns self-contradictory or incomplete
+    # assessments; a hard raise here silently removes that question from the
+    # benchmark, so coerce to a consistent, actionable state and keep going.
 
+    # Retrieval-only benchmark: the table reader is disabled, so ignore any
+    # table requests the model emitted rather than failing the run.
+    if not allow_table_requests and assessment.table_requests:
+        assessment.table_requests = []
+
+    # Trust the gaps over the flag: a "ready" verdict that still lists missing
+    # requirements, open requests, or unresolved conflicts is not actually
+    # ready, so keep the retrieval loop running.
     if assessment.ready_to_answer and (
         assessment.missing_requirements
         or assessment.retrieval_requests
         or assessment.table_requests
         or assessment.unresolved_conflicts
     ):
-        raise ValueError(
-            "A ready-to-answer assessment cannot contain missing requirements, "
-            "requests, or unresolved conflicts."
-        )
+        assessment.ready_to_answer = False
+
+    # A not-ready assessment with no actionable request would stall the loop.
+    # Fall back to re-querying the original question so retrieval can progress.
     if not assessment.ready_to_answer and not (
         assessment.retrieval_requests or assessment.table_requests
     ):
-        raise ValueError(
-            "An incomplete assessment must include a retrieval or table request."
-        )
+        assessment.retrieval_requests = [
+            RetrievalRequest(
+                missing_fact=(
+                    "; ".join(assessment.missing_requirements)
+                    or "Outstanding information required to answer the question."
+                ),
+                query=question,
+            )
+        ]
 
     return {
         "assessment": assessment,

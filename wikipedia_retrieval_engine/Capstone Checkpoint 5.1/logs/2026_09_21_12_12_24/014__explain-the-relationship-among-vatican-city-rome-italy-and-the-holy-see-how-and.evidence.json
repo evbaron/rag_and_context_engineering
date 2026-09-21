@@ -1,0 +1,149 @@
+{
+  "run_id": "2026_09_21_12_12_24",
+  "question_number": 14,
+  "logged_at": "2026-09-21T12:15:44-04:00",
+  "question": "Explain the relationship among Vatican City, Rome, Italy, and the Holy See. How and when did Vatican City become an independent state?",
+  "final_state": {
+    "question": "Explain the relationship among Vatican City, Rome, Italy, and the Holy See. How and when did Vatican City become an independent state?",
+    "retrieval_attempts": 1,
+    "article_candidates": [
+      {
+        "source_article": "Vatican_City.html",
+        "representative_chunk": "Article: Vatican City\nSection: Governance > State and Holy See\n\nThe Vatican City State, created in 1929 by the Lateran Pacts, provides the Holy See with a temporal jurisdiction and independence within a small territory. It is distinct from the Holy See. The state can thus be deemed a significant but not essential instrument of the Holy See. The Holy See itself has existed continuously as a juridical entity since Roman Imperial times and has been internationally recognized as a powerful and independent sovereign entity since Late Antiquity to the present, without interruption even at times when it was deprived of territory (e.g. 1870 to 1929).\n\nVatican City is one of the few widely recognized independent states that has not become a member of the United Nations.[70] The Holy See, which is distinct from Vatican City State, has permanent observer status, with all the rights of a full member except for a vote in the UN General Assembly.",
+        "representative_chunk_id": "Vatican_City.html#section-013-00",
+        "section_title": "State and Holy See",
+        "section_path": [
+          "Governance",
+          "State and Holy See"
+        ],
+        "retrieval_query": "Explain the relationship among Vatican City, Rome, Italy, and the Holy See. How and when did Vatican City become an independent state?",
+        "discovered_by": "vector",
+        "rank": 1,
+        "raw_score": 0.6198616623878479,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Lateran_Treaty.html",
+        "representative_chunk": "Article: Lateran Treaty\nSection: History\n\nFrancesco Pacelli was the right-hand man to Pius XI's Secretary of State Pietro Gasparri during the Lateran Treaty negotiations\nThe territory of Vatican City State, established by the Lateran Accords\nA map of Vatican City\n\nDuring the unification of Italy in the mid-19th century, the Papal States under Pope Pius IX resisted incorporation into the new nation, even as almost all the other Italian countries joined it; Camillo Cavour's dream of proclaiming the Kingdom of Italy from the steps of St. Peter's Basilica did not come to pass. The nascent Kingdom of Italy invaded and occupied Romagna (the eastern portion of the Papal States) in 1860, leaving only Lazio (Latium) in the pope's domains.[7]\n\nLatium, including Rome itself, was occupied and annexed in 1870. For the following sixty years, relations between the Papacy and the Italian government were hostile, and the sovereign rights of the pope became known as the Roman question.[8]\n\nThe Popes knew that Rome was irrevocably the capital of Italy. There was nothing they wanted less than to govern it or be burdened with a papal kingdom. What they wished was independence, a foothold on the earth that belonged to no other sovereign.[9]\n\nUnder the terms of the Law of Guarantees of 1871, the Italian government offered to Pius IX and his successors the use of, but not sovereignty over, the Vatican and Lateran Palaces and a yearly income of 3,250,000 Lire. The Holy See refused this settlement, on the grounds that the pope's spiritual jurisdiction required clear independence from any political power, and thereafter each pope considered himself a \"prisoner in the Vatican\". The Lateran Treaty ended this impasse.[10][11][12]\n\nNegotiations for the settlement of the Roman question began in 1926 between the Holy See and the Italian fascist government led by Prime Minister Benito Mussolini, and culminated in the agreements of the Lateran Pacts, signed—the Treaty says—for King Victor Emmanuel III by Mussolini and for Pope Pius XI by Cardinal Secretary of State Pietro Gasparri,[13] on 11 February 1929.[14] It was ratified on 7 June 1929.[15]\n\nThe agreements included a political treaty which created the state of the Vatican City and guaranteed full and independent sovereignty to the Holy See. The Pope was pledged to perpetual neutrality in international relations and to abstention from mediation in a controversy unless specifically requested by all parties. In the first article of the treaty, Italy reaffirmed the principle established in the 1848 Constitution of the Kingdom of Italy, that \"the Catholic, Apostolic and Roman Religion is the only religion of the State\".[16]\n\nThe attached financial agreement was accepted as settlement of all the claims of the Holy See against Italy from the loss of temporal power over the Papal States in 1870, though the sum agreed to was actually less than Italy had offered in 1871.[17] To commemorate the successful conclusion of the negotiations, Mussolini commissioned the Via della Conciliazione (\"Road of the Conciliation\"), which would symbolically link the Vatican City to the heart of Rome.[7]",
+        "representative_chunk_id": "Lateran_Treaty.html#section-002-00",
+        "section_title": "History",
+        "section_path": [
+          "History"
+        ],
+        "retrieval_query": "Explain the relationship among Vatican City, Rome, Italy, and the Holy See. How and when did Vatican City become an independent state?",
+        "discovered_by": "vector",
+        "rank": 2,
+        "raw_score": 0.8543757200241089,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      }
+    ],
+    "article_reviews": [
+      {
+        "source_article": "Vatican_City.html",
+        "relevant": true,
+        "reason": "The excerpt directly explains that Vatican City is distinct from the Holy See and that the state was created in 1929 by the Lateran Pacts, which is central to the question about the relationship and independence of Vatican City.",
+        "relevant_sections": [
+          "Governance > State and Holy See"
+        ],
+        "relevant_table_names": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Lateran_Treaty.html",
+        "relevant": true,
+        "reason": "This excerpt explains the historical relationship among Rome, Italy, the Holy See, and Vatican City, including Rome’s annexation by Italy and the 1929 Lateran Treaty that created Vatican City as an independent state.",
+        "relevant_sections": [
+          "History"
+        ],
+        "relevant_table_names": [],
+        "needs_table_reader": false
+      }
+    ],
+    "selected_articles": [
+      "Vatican_City.html",
+      "Lateran_Treaty.html"
+    ],
+    "rejected_articles": [],
+    "evidence": [
+      {
+        "evidence_id": "Vatican_City.html#section-013-00",
+        "source_article": "Vatican_City.html",
+        "content": "Article: Vatican City\nSection: Governance > State and Holy See\n\nThe Vatican City State, created in 1929 by the Lateran Pacts, provides the Holy See with a temporal jurisdiction and independence within a small territory. It is distinct from the Holy See. The state can thus be deemed a significant but not essential instrument of the Holy See. The Holy See itself has existed continuously as a juridical entity since Roman Imperial times and has been internationally recognized as a powerful and independent sovereign entity since Late Antiquity to the present, without interruption even at times when it was deprived of territory (e.g. 1870 to 1929).\n\nVatican City is one of the few widely recognized independent states that has not become a member of the United Nations.[70] The Holy See, which is distinct from Vatican City State, has permanent observer status, with all the rights of a full member except for a vote in the UN General Assembly.",
+        "evidence_type": "text",
+        "title": "State and Holy See",
+        "section_path": [
+          "Governance",
+          "State and Holy See"
+        ],
+        "retrieval_query": "Explain the relationship among Vatican City, Rome, Italy, and the Holy See. How and when did Vatican City become an independent state?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.6198616623878479,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "initial_article_retrieval",
+          "discovered_by": "vector"
+        }
+      },
+      {
+        "evidence_id": "Lateran_Treaty.html#section-002-00",
+        "source_article": "Lateran_Treaty.html",
+        "content": "Article: Lateran Treaty\nSection: History\n\nFrancesco Pacelli was the right-hand man to Pius XI's Secretary of State Pietro Gasparri during the Lateran Treaty negotiations\nThe territory of Vatican City State, established by the Lateran Accords\nA map of Vatican City\n\nDuring the unification of Italy in the mid-19th century, the Papal States under Pope Pius IX resisted incorporation into the new nation, even as almost all the other Italian countries joined it; Camillo Cavour's dream of proclaiming the Kingdom of Italy from the steps of St. Peter's Basilica did not come to pass. The nascent Kingdom of Italy invaded and occupied Romagna (the eastern portion of the Papal States) in 1860, leaving only Lazio (Latium) in the pope's domains.[7]\n\nLatium, including Rome itself, was occupied and annexed in 1870. For the following sixty years, relations between the Papacy and the Italian government were hostile, and the sovereign rights of the pope became known as the Roman question.[8]\n\nThe Popes knew that Rome was irrevocably the capital of Italy. There was nothing they wanted less than to govern it or be burdened with a papal kingdom. What they wished was independence, a foothold on the earth that belonged to no other sovereign.[9]\n\nUnder the terms of the Law of Guarantees of 1871, the Italian government offered to Pius IX and his successors the use of, but not sovereignty over, the Vatican and Lateran Palaces and a yearly income of 3,250,000 Lire. The Holy See refused this settlement, on the grounds that the pope's spiritual jurisdiction required clear independence from any political power, and thereafter each pope considered himself a \"prisoner in the Vatican\". The Lateran Treaty ended this impasse.[10][11][12]\n\nNegotiations for the settlement of the Roman question began in 1926 between the Holy See and the Italian fascist government led by Prime Minister Benito Mussolini, and culminated in the agreements of the Lateran Pacts, signed—the Treaty says—for King Victor Emmanuel III by Mussolini and for Pope Pius XI by Cardinal Secretary of State Pietro Gasparri,[13] on 11 February 1929.[14] It was ratified on 7 June 1929.[15]\n\nThe agreements included a political treaty which created the state of the Vatican City and guaranteed full and independent sovereignty to the Holy See. The Pope was pledged to perpetual neutrality in international relations and to abstention from mediation in a controversy unless specifically requested by all parties. In the first article of the treaty, Italy reaffirmed the principle established in the 1848 Constitution of the Kingdom of Italy, that \"the Catholic, Apostolic and Roman Religion is the only religion of the State\".[16]\n\nThe attached financial agreement was accepted as settlement of all the claims of the Holy See against Italy from the loss of temporal power over the Papal States in 1870, though the sum agreed to was actually less than Italy had offered in 1871.[17] To commemorate the successful conclusion of the negotiations, Mussolini commissioned the Via della Conciliazione (\"Road of the Conciliation\"), which would symbolically link the Vatican City to the heart of Rome.[7]",
+        "evidence_type": "text",
+        "title": "History",
+        "section_path": [
+          "History"
+        ],
+        "retrieval_query": "Explain the relationship among Vatican City, Rome, Italy, and the Holy See. How and when did Vatican City become an independent state?",
+        "retriever": "vector",
+        "rank": 2,
+        "raw_score": 0.8543757200241089,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "initial_article_retrieval",
+          "discovered_by": "vector"
+        }
+      }
+    ],
+    "assessment": {
+      "ready_to_answer": true,
+      "supported_requirements": [
+        "The Holy See is distinct from Vatican City State.",
+        "The Holy See has full and independent sovereignty; Vatican City provides it temporal jurisdiction and independence within a small territory.",
+        "Rome was occupied and annexed by Italy in 1870.",
+        "The Lateran Pacts/Treaty were signed on 11 February 1929 and ratified on 7 June 1929.",
+        "The Lateran Treaty created the state of Vatican City and guaranteed full and independent sovereignty to the Holy See."
+      ],
+      "missing_requirements": [],
+      "retrieval_requests": [],
+      "table_requests": [],
+      "unresolved_conflicts": [],
+      "explanation": "The supplied evidence directly supports the relationship among Vatican City, the Holy See, Rome, and Italy, and it states both how Vatican City became an independent state and when this occurred (via the Lateran Pacts in 1929)."
+    },
+    "assessment_history": [
+      {
+        "ready_to_answer": true,
+        "supported_requirements": [
+          "The Holy See is distinct from Vatican City State.",
+          "The Holy See has full and independent sovereignty; Vatican City provides it temporal jurisdiction and independence within a small territory.",
+          "Rome was occupied and annexed by Italy in 1870.",
+          "The Lateran Pacts/Treaty were signed on 11 February 1929 and ratified on 7 June 1929.",
+          "The Lateran Treaty created the state of Vatican City and guaranteed full and independent sovereignty to the Holy See."
+        ],
+        "missing_requirements": [],
+        "retrieval_requests": [],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The supplied evidence directly supports the relationship among Vatican City, the Holy See, Rome, and Italy, and it states both how Vatican City became an independent state and when this occurred (via the Lateran Pacts in 1929)."
+      }
+    ]
+  }
+}

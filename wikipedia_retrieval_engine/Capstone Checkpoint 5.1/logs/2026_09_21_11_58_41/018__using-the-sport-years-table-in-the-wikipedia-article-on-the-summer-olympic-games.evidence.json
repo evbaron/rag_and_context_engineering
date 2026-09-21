@@ -1,0 +1,152 @@
+{
+  "run_id": "2026_09_21_11_58_41",
+  "question_number": 18,
+  "logged_at": "2026-09-21T12:03:36-04:00",
+  "question": "Using the Sport/Years table in the Wikipedia article on the Summer Olympic Games, which listed sports first entered the official Summer Olympic program in 1950 or later? Give the first year for each.",
+  "final_state": {
+    "question": "Using the Sport/Years table in the Wikipedia article on the Summer Olympic Games, which listed sports first entered the official Summer Olympic program in 1950 or later? Give the first year for each.",
+    "retrieval_attempts": 1,
+    "article_candidates": [
+      {
+        "source_article": "Summer_Olympic_Games.html",
+        "representative_chunk": "Article: Summer Olympic Games\nSection: Sports\n\nMain article: Olympic sports\n\nThere has been a total of 42 sports, spanning 55 disciplines, included in the Olympic programme at one point or another in the history of the Games. The schedule has comprised 33 sports for the recent Summer Olympics (2020), with 32 sports planned for the next Summer Olympics (2024).\n\nThe various Olympic Sports federations are grouped under a common umbrella association, called the Association of Summer Olympic International Federations (ASOIF).\n\n  Current sport  \n  No longer included\n\nSport\nYears\n\n3x3 Basketball\nSince 2020\n\nArchery\n1900–1908, 1920, since 1972\n\nArtistic swimming\nSince 1984\n\nAthletics\nAll\n\nBadminton\nSince 1992\n\nBaseball\n1992–2008, 2020, 2028\n\nBasketball\nSince 1936\n\nBasque pelota\n1900\n\nBreaking\n2024\n\nBoxing\n1904, 1908, since 1920\n\nCanoeing\nSince 1936\n\nCricket\n1900, 2028\n\nCroquet\n1900\n\nCycling\nAll\n\nDiving\nSince 1904\n\nEquestrian\n1900, since 1912\n\nFencing\nAll\n\nField hockey\n1908, 1920, since 1928\n\nFlag football\n2028\n\nFootball\n1900–1928, since 1936\n\nGolf\n1900, 1904, since 2016\n\nGymnastics\nAll\n\nHandball\n1936, since 1972\n\nJeu de paume\n1908\n\nJudo\n1964, since 1972\n\nKarate\n2020\n\nLacrosse\n1904, 1908, 2028\n\nModern pentathlon\nSince 1912\n\nPolo\n1900, 1908, 1920, 1924, 1936\n\nRackets\n1908\n\nRoque\n1904\n\nRowing\nSince 1900\n\nRugby union\n1900, 1908, 1920, 1924\n\nRugby sevens\nSince 2016\n\nSailing\n1900, since 1908\n\nShooting\n1896, 1900, 1908–1924, since 1932\n\nSkateboarding\nSince 2020\n\nSoftball\n1996–2008, 2020, 2028\n\nSport climbing\nSince 2020\n\nSquash\n2028\n\nSurfing\nSince 2020\n\nSwimming\nAll\n\nTable tennis\nSince 1988\n\nTaekwondo\nSince 2000\n\nTennis\n1896–1924, since 1988\n\nTriathlon\nSince 2000\n\nTug of war\n1900–1920\n\nVolleyball\nSince 1964\n\nWater motorsports\n1908\n\nWater polo\nSince 1900\n\nWeightlifting\n1896, 1904, since 1920\n\nWrestling\n1896, since 1904",
+        "representative_chunk_id": "Summer_Olympic_Games.html#section-009-00",
+        "section_title": "Sports",
+        "section_path": [
+          "Sports"
+        ],
+        "retrieval_query": "Using the Sport/Years table in the Wikipedia article on the Summer Olympic Games, which listed sports first entered the official Summer Olympic program in 1950 or later? Give the first year for each.",
+        "discovered_by": "vector",
+        "rank": 1,
+        "raw_score": 0.6928961277008057,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Winter_Olympic_Games.html",
+        "representative_chunk": "Article: Winter Olympic Games\nSection: Sports > Current sports\n\nSport\n\nYears\n\nEvents\n\nEvents list\n\nAlpine skiing\n\nSince 1936\n\n10[170]\n\nMen's: downhill, super G, giant slalom, slalom, alpine combined.\n\nWomen's: downhill, super G, giant slalom, slalom, alpine combined.\n\nMixed parallel slalom.\n\nBiathlon\n\nSince 1960[b]\n\n11[171]\n\nMen's: sprint 10 km, individual 20 km, pursuit 12.5 km, mass start 15 km, relay 4×7.5 km.\n\nWomen's: sprint 7.5 km, individual 15 km, pursuit 10 km, mass start 12.5 km, relay 4×6 km.\n\nMixed relay 4×6 km.\n\nBobsleigh\n\n1924–1956, since 1964\n\n4[172]\n\nMen's: four-man race, two-man race. Women's: two-woman race, monobob race.\n\nCross-country skiing\n\nSince 1924\n\n12[173]\n\nMen's: sprint, team sprint, 15 km, 30 km skiathlon, 50 km mass start, 4×10 km relay.\n\nWomen's: sprint, team sprint, 10 km, 15 km skiathlon, 30 km mass start, 4×5 km relay.\n\nCurling\n\n1924, since 1998\n\n3[174]\n\nMen's, women's and mixed doubles tournaments.\n\nFigure skating\n\nSince 1924[i]\n\n5[175]\n\nMen's singles. Women's singles. Pairs. Ice dancing. Team event.\n\nFreestyle skiing\n\nSince 1992\n\n15[176]\n\nMen's: aerials, moguls, ski cross, halfpipe, big air, slopestyle.\n\nWomen's: aerials, moguls, ski cross, halfpipe, big air, slopestyle.\n\nMixed aerials.\n\nIce hockey\n\nSince 1924[ii]\n\n2[177]\n\nMen's and women's tournaments.\n\nLuge\n\nSince 1964\n\n5[178]\n\nMen's singles, Women's singles, Men's doubles, Women's doubles, mixed team relay.\n\nNordic combined\n\nSince 1924\n\n3[179]\n\nMen's 10 km individual normal hill, 10 km individual large hill, team 4×5 km large hill.\n\nShort track speed skating\n\nSince 1992\n\n9[180]\n\nMen's: 500 m, 1000 m, 1500 m, 5000 m relay.\n\nWomen's: 500 m, 1000 m, 1500 m, 3000 m relay.\n\nMixed 2000 m relay.\n\nSkeleton\n\n1928, 1948, Since 2002\n\n3[181]\n\nMen's and women's events.\n\nSki jumping\n\nSince 1924\n\n6[182]\n\nMen's: individual normal hill, individual large hill, team large hill.\n\nWomen's: individual normal hill.\n\nMixed team normal hill.\n\nSki mountaineering\n\nSince 2026[iii]\n\n3[183]\n\nMen's sprint.\n\nWomen's sprint.\n\nMixed relay.\n\nSnowboarding\n\nSince 1998\n\n11[184]\n\nMen's: snowboard cross, parallel, half-pipe, slopestyle, big air.\n\nWomen's: snowboard cross, parallel, half-pipe, slopestyle, big air.\n\nMixed snowboard cross.\n\nSpeed skating\n\nSince 1924\n\n14[185]\n\nMen's: 500 m, 1000 m, 1500 m, 5000 m, 10,000 m, mass start, team pursuit.\n\nWomen's: 500 m, 1000 m, 1500 m, 3000 m, 5000 m, mass start, team pursuit.\n\n^ Figure skating events were held at the 1908 and 1920 Summer Olympics.\n\n^ A men's ice hockey tournament was held at the 1920 Summer Olympics.\n\n^ Optional Sport at the 2026 Winter Olympics.",
+        "representative_chunk_id": "Winter_Olympic_Games.html#section-014-00",
+        "section_title": "Current sports",
+        "section_path": [
+          "Sports",
+          "Current sports"
+        ],
+        "retrieval_query": "Using the Sport/Years table in the Wikipedia article on the Summer Olympic Games, which listed sports first entered the official Summer Olympic program in 1950 or later? Give the first year for each.",
+        "discovered_by": "vector",
+        "rank": 2,
+        "raw_score": 0.8608185052871704,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "2020_Summer_Olympics.html",
+        "representative_chunk": "Article: 2020 Summer Olympics\nSection: The Games > Sports\n\nSee also: Olympic sports\n\nNippon Budokan\nAriake Arena\nAriake Gymnastics Centre\nTokyo Aquatics Centre\nYoyogi Gymnasium\nSaitama Super Arena\nRyogoku Kokugikan\nEnoshima Yacht Harbor, Kanagawa\nTsurigasaki Beach, Chiba\n\nThe event program for the Games was approved by the IOC executive board on June 9, 2017. IOC president Thomas Bach stated that their goal was to give the Games \"youthful\" and \"urban\" appeal, and to increase the number of female participants.[179][180]\n\nThe Games featured 339 medal events in 33 different sports, encompassing a total of 51 disciplines. Karate, sport climbing, surfing, and skateboarding made their Olympic debut, while baseball and softball also made a one-off return to the Summer Olympics for the first time since 2008. 15 new events within existing sports were also added, including 3×3 basketball, freestyle BMX, and the return of madison cycling, as well as nine new mixed events in several sports (table tennis, archery, judo, shooting (3), triathlon, 4 × 400 m relay running, and 4 × 100 m medley swimming).[181]\n\nIn the list below, the number of events in each discipline is noted in parentheses.[181]\n\n2020 Summer Olympic Sports program\n\nAquatics\n\n Artistic swimming (2)\n\n Diving (8)\n\n Marathon swimming (2)\n\n Swimming (35)\n\n Water polo (2)\n\n Archery (5)\n\n Athletics (48)\n\n Badminton (5)\n\nBaseball\n\n Baseball (1)\n\n Softball (1)\n\n Basketball\n\nBasketball (2)\n\n3×3 basketball (2)\n\n Boxing (13)\n\n Canoeing\n\nSlalom (4)\n\nSprint (12)\n\n Cycling\n\nBMX freestyle (2)\n\nBMX racing (2)\n\nMountain biking (2)\n\nRoad cycling (4)\n\nTrack cycling (12)\n\n Equestrian\n\nDressage (2)\n\nEventing (2)\n\nJumping (2)\n\n Fencing (12)\n\n Field hockey (2)\n\n Football (2)\n\n Golf (2)\n\n Gymnastics\n\nArtistic (14)\n\nRhythmic (2)\n\nTrampoline (2)\n\n Handball (2)\n\n Judo (15)\n\n Karate\n\nKata (2)\n\nKumite (6)\n\n Modern pentathlon (2)\n\n Rowing (14)\n\n Rugby sevens (2)\n\n Sailing (10)\n\n Shooting (15)\n\n Skateboarding (4)\n\n Sport climbing (2)\n\n Surfing (2)\n\n Table tennis (5)\n\n Taekwondo (8)\n\n Tennis (5)\n\n Triathlon (3)\n\n Volleyball\n\nVolleyball (2)\n\nBeach volleyball (2)\n\n Weightlifting (14)\n\n Wrestling\n\nFreestyle (12)\n\nGreco-Roman (6)",
+        "representative_chunk_id": "2020_Summer_Olympics.html#section-020-00",
+        "section_title": "Sports",
+        "section_path": [
+          "The Games",
+          "Sports"
+        ],
+        "retrieval_query": "Using the Sport/Years table in the Wikipedia article on the Summer Olympic Games, which listed sports first entered the official Summer Olympic program in 1950 or later? Give the first year for each.",
+        "discovered_by": "vector",
+        "rank": 3,
+        "raw_score": 0.8666402101516724,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      }
+    ],
+    "article_reviews": [
+      {
+        "source_article": "Summer_Olympic_Games.html",
+        "relevant": true,
+        "reason": "This article excerpt contains the Sport/Years table from the Summer Olympic Games page, which is the table needed to identify which sports first entered the official Summer Olympic program in 1950 or later and their first years.",
+        "relevant_sections": [
+          "Sports"
+        ],
+        "relevant_table_names": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Winter_Olympic_Games.html",
+        "relevant": false,
+        "reason": "This excerpt is about Winter Olympic sports, not the Summer Olympic Games Sport/Years table asked about in the question.",
+        "relevant_sections": [
+          "Sports > Current sports"
+        ],
+        "relevant_table_names": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "2020_Summer_Olympics.html",
+        "relevant": false,
+        "reason": "This excerpt lists the sports program for the 2020 Summer Olympics, but the question specifically asks for sports from the Sport/Years table in the Summer Olympic Games article, not the 2020 Games program.",
+        "relevant_sections": [
+          "The Games > Sports"
+        ],
+        "relevant_table_names": [],
+        "needs_table_reader": false
+      }
+    ],
+    "selected_articles": [
+      "Summer_Olympic_Games.html"
+    ],
+    "rejected_articles": [
+      "Winter_Olympic_Games.html",
+      "2020_Summer_Olympics.html"
+    ],
+    "evidence": [
+      {
+        "evidence_id": "Summer_Olympic_Games.html#section-009-00",
+        "source_article": "Summer_Olympic_Games.html",
+        "content": "Article: Summer Olympic Games\nSection: Sports\n\nMain article: Olympic sports\n\nThere has been a total of 42 sports, spanning 55 disciplines, included in the Olympic programme at one point or another in the history of the Games. The schedule has comprised 33 sports for the recent Summer Olympics (2020), with 32 sports planned for the next Summer Olympics (2024).\n\nThe various Olympic Sports federations are grouped under a common umbrella association, called the Association of Summer Olympic International Federations (ASOIF).\n\n  Current sport  \n  No longer included\n\nSport\nYears\n\n3x3 Basketball\nSince 2020\n\nArchery\n1900–1908, 1920, since 1972\n\nArtistic swimming\nSince 1984\n\nAthletics\nAll\n\nBadminton\nSince 1992\n\nBaseball\n1992–2008, 2020, 2028\n\nBasketball\nSince 1936\n\nBasque pelota\n1900\n\nBreaking\n2024\n\nBoxing\n1904, 1908, since 1920\n\nCanoeing\nSince 1936\n\nCricket\n1900, 2028\n\nCroquet\n1900\n\nCycling\nAll\n\nDiving\nSince 1904\n\nEquestrian\n1900, since 1912\n\nFencing\nAll\n\nField hockey\n1908, 1920, since 1928\n\nFlag football\n2028\n\nFootball\n1900–1928, since 1936\n\nGolf\n1900, 1904, since 2016\n\nGymnastics\nAll\n\nHandball\n1936, since 1972\n\nJeu de paume\n1908\n\nJudo\n1964, since 1972\n\nKarate\n2020\n\nLacrosse\n1904, 1908, 2028\n\nModern pentathlon\nSince 1912\n\nPolo\n1900, 1908, 1920, 1924, 1936\n\nRackets\n1908\n\nRoque\n1904\n\nRowing\nSince 1900\n\nRugby union\n1900, 1908, 1920, 1924\n\nRugby sevens\nSince 2016\n\nSailing\n1900, since 1908\n\nShooting\n1896, 1900, 1908–1924, since 1932\n\nSkateboarding\nSince 2020\n\nSoftball\n1996–2008, 2020, 2028\n\nSport climbing\nSince 2020\n\nSquash\n2028\n\nSurfing\nSince 2020\n\nSwimming\nAll\n\nTable tennis\nSince 1988\n\nTaekwondo\nSince 2000\n\nTennis\n1896–1924, since 1988\n\nTriathlon\nSince 2000\n\nTug of war\n1900–1920\n\nVolleyball\nSince 1964\n\nWater motorsports\n1908\n\nWater polo\nSince 1900\n\nWeightlifting\n1896, 1904, since 1920\n\nWrestling\n1896, since 1904",
+        "evidence_type": "text",
+        "title": "Sports",
+        "section_path": [
+          "Sports"
+        ],
+        "retrieval_query": "Using the Sport/Years table in the Wikipedia article on the Summer Olympic Games, which listed sports first entered the official Summer Olympic program in 1950 or later? Give the first year for each.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.6928961277008057,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "initial_article_retrieval",
+          "discovered_by": "vector"
+        }
+      }
+    ],
+    "assessment": {
+      "ready_to_answer": true,
+      "supported_requirements": [
+        "The Summer_Olympic_Games.html section 'Sports' provides the Sport/Years table.",
+        "The table entries allow identifying sports whose first listed year is 1950 or later.",
+        "The listed sports with first entry year >= 1950 are 3x3 Basketball (Since 2020), Artistic swimming (Since 1984), Badminton (Since 1992), Breaking (2024), Flag football (2028), Karate (2020), Rugby sevens (Since 2016), Skateboarding (Since 2020), Sport climbing (Since 2020), Squash (2028), Surfing (Since 2020), Table tennis (Since 1988), Taekwondo (Since 2000), Triathlon (Since 2000), and Volleyball (Since 1964)."
+      ],
+      "missing_requirements": [],
+      "retrieval_requests": [],
+      "table_requests": [],
+      "unresolved_conflicts": [],
+      "explanation": "The retrieved evidence directly contains the Sport/Years table from the Summer Olympic Games article, and it is sufficient to determine which sports first entered the official Summer Olympic program in 1950 or later and their first years."
+    },
+    "assessment_history": [
+      {
+        "ready_to_answer": true,
+        "supported_requirements": [
+          "The Summer_Olympic_Games.html section 'Sports' provides the Sport/Years table.",
+          "The table entries allow identifying sports whose first listed year is 1950 or later.",
+          "The listed sports with first entry year >= 1950 are 3x3 Basketball (Since 2020), Artistic swimming (Since 1984), Badminton (Since 1992), Breaking (2024), Flag football (2028), Karate (2020), Rugby sevens (Since 2016), Skateboarding (Since 2020), Sport climbing (Since 2020), Squash (2028), Surfing (Since 2020), Table tennis (Since 1988), Taekwondo (Since 2000), Triathlon (Since 2000), and Volleyball (Since 1964)."
+        ],
+        "missing_requirements": [],
+        "retrieval_requests": [],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The retrieved evidence directly contains the Sport/Years table from the Summer Olympic Games article, and it is sufficient to determine which sports first entered the official Summer Olympic program in 1950 or later and their first years."
+      }
+    ]
+  }
+}

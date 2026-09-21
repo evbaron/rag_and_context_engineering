@@ -204,11 +204,15 @@ class TableRequest(BaseModel):
 
 class EvidenceAssessment(BaseModel):
     ready_to_answer: bool
-    supported_requirements: list[str]
-    missing_requirements: list[str]
-    retrieval_requests: list[RetrievalRequest]
-    table_requests: list[TableRequest]
-    unresolved_conflicts: list[str]
+    # List fields default to empty so a structured-output response that omits a
+    # key (common with smaller models, especially table_requests when the table
+    # reader is disabled) is coerced to [] instead of raising a validation error
+    # that would silently drop the question from the benchmark.
+    supported_requirements: list[str] = Field(default_factory=list)
+    missing_requirements: list[str] = Field(default_factory=list)
+    retrieval_requests: list[RetrievalRequest] = Field(default_factory=list)
+    table_requests: list[TableRequest] = Field(default_factory=list)
+    unresolved_conflicts: list[str] = Field(default_factory=list)
     explanation: str
 
 

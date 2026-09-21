@@ -1,0 +1,896 @@
+{
+  "run_id": "2026_09_21_11_50_35",
+  "question_number": 15,
+  "logged_at": "2026-09-21T11:55:39-04:00",
+  "question": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+  "final_state": {
+    "question": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+    "retrieval_attempts": 3,
+    "article_candidates": [
+      {
+        "source_article": "List_of_countries_by_past_life_expectancy.html",
+        "representative_chunk": "Article: List of countries by past life expectancy\nSection: Lead\n\nLife expectancy by world region, from 1770 to 2023\n\nThis is a list of countries showing past life expectancy, ranging from 1950 to 2015 in five-year periods, as estimated by the 2017 revision of the World Population Prospects database by the United Nations Population Division. Life expectancy equals the average number of years a person born in a given country is expected to live if mortality rates at each age were to remain steady in the future. The life expectancy is shown as the average of males and females.",
+        "representative_chunk_id": "List_of_countries_by_past_life_expectancy.html#section-000-00",
+        "section_title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "discovered_by": "vector",
+        "rank": 1,
+        "raw_score": 0.8751159906387329,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Demographics_of_Japan.html",
+        "representative_chunk": "Article: Demographics of Japan\nSection: Vital statistics > Life expectancy > Historical data\n\nSources: Our World In Data and the United Nations.\n\n1865–1949\n\nYears\n\n1865\n\n1870\n\n1875\n\n1880\n\n1885\n\n1890\n\n1895\n\n1900\n\n1905\n\n1910\n\n1915\n\n1920\n\n1922\n\n1927\n\n1935\n\n1945\n\n1947\n\n1948\n\n1949\n\n1950[67]\n\nLife expectancy in Japan\n\n36.4\n\n36.6\n\n36.8\n\n37.0\n\n37.3\n\n37.7\n\n38.1\n\n38.6\n\n39.2\n\n40.0\n\n40.9\n\n42.0\n\n42.6\n\n45.7\n\n48.2\n\n30.5\n\n51.7\n\n56.8\n\n57.7\n\n59.2\n\n1950–2020\n\nPeriod\n\nLife expectancy in\n\nyears\n\nPeriod\n\nLife expectancy in\n\nyears\n\n1950–1955\n\n62.8\n\n1985–1990\n\n78.5\n\n1955–1960\n\n66.4\n\n1990–1995\n\n79.4\n\n1960–1965\n\n69.2\n\n1995–2000\n\n80.5\n\n1965–1970\n\n71.4\n\n2000–2005\n\n81.8\n\n1970–1975\n\n73.3\n\n2005–2010\n\n82.7\n\n1975–1980\n\n75.4\n\n2010–2015\n\n83.3\n\n1980–1985\n\n77.0\n\n2015–2020\n\n84.4\n\nSource: UN World Population Prospects",
+        "representative_chunk_id": "Demographics_of_Japan.html#section-014-00",
+        "section_title": "Historical data",
+        "section_path": [
+          "Vital statistics",
+          "Life expectancy",
+          "Historical data"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "discovered_by": "vector",
+        "rank": 2,
+        "raw_score": 1.0094525814056396,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Demographics_of_East_Timor.html",
+        "representative_chunk": "Article: Demographics of Timor-Leste\nSection: Vital statistics > Life expectancy at birth\n\nAverage life expectancy at age 0 of the total population.[10]\n\nPeriod\n\nLife expectancy\n\nin Years\n\nPeriod\n\nLife expectancy in\n\nYears\n\n1950–1955\n\n30.0\n\n1985–1990\n\n46.5\n\n1955–1960\n\n32.5\n\n1990–1995\n\n50.5\n\n1960–1965\n\n35.0\n\n1995–2000\n\n57.0\n\n1965–1970\n\n37.5\n\n2000–2005\n\n61.5\n\n1970–1975\n\n40.0\n\n2005–2010\n\n66.4\n\n1975–1980\n\n31.2\n\n2010–2015\n\n67.7\n\n1980–1985\n\n39.9",
+        "representative_chunk_id": "Demographics_of_East_Timor.html#section-007-00",
+        "section_title": "Life expectancy at birth",
+        "section_path": [
+          "Vital statistics",
+          "Life expectancy at birth"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "discovered_by": "vector",
+        "rank": 3,
+        "raw_score": 1.0302361249923706,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      }
+    ],
+    "article_reviews": [
+      {
+        "source_article": "List_of_countries_by_past_life_expectancy.html",
+        "relevant": false,
+        "reason": "The excerpt is a general description of a list of past life expectancy values by country, but it does not provide the 2023 population estimates or any country-by-country data needed to assess correlation with population size.",
+        "relevant_sections": [
+          "Lead"
+        ],
+        "relevant_table_names": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Demographics_of_Japan.html",
+        "relevant": true,
+        "reason": "The excerpt includes the 2010–2015 life expectancy value for Japan, which is one of the required facts for comparing against population estimates.",
+        "relevant_sections": [
+          "Vital statistics > Life expectancy > Historical data"
+        ],
+        "relevant_table_names": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Demographics_of_East_Timor.html",
+        "relevant": true,
+        "reason": "The excerpt includes the 2010–2015 life expectancy value for Timor-Leste, which is one of the required facts for comparing against population estimates.",
+        "relevant_sections": [
+          "Vital statistics > Life expectancy at birth"
+        ],
+        "relevant_table_names": [],
+        "needs_table_reader": false
+      }
+    ],
+    "selected_articles": [
+      "Demographics_of_Japan.html",
+      "Demographics_of_East_Timor.html"
+    ],
+    "rejected_articles": [
+      "List_of_countries_by_past_life_expectancy.html"
+    ],
+    "evidence": [
+      {
+        "evidence_id": "Demographics_of_Japan.html#section-014-00",
+        "source_article": "Demographics_of_Japan.html",
+        "content": "Article: Demographics of Japan\nSection: Vital statistics > Life expectancy > Historical data\n\nSources: Our World In Data and the United Nations.\n\n1865–1949\n\nYears\n\n1865\n\n1870\n\n1875\n\n1880\n\n1885\n\n1890\n\n1895\n\n1900\n\n1905\n\n1910\n\n1915\n\n1920\n\n1922\n\n1927\n\n1935\n\n1945\n\n1947\n\n1948\n\n1949\n\n1950[67]\n\nLife expectancy in Japan\n\n36.4\n\n36.6\n\n36.8\n\n37.0\n\n37.3\n\n37.7\n\n38.1\n\n38.6\n\n39.2\n\n40.0\n\n40.9\n\n42.0\n\n42.6\n\n45.7\n\n48.2\n\n30.5\n\n51.7\n\n56.8\n\n57.7\n\n59.2\n\n1950–2020\n\nPeriod\n\nLife expectancy in\n\nyears\n\nPeriod\n\nLife expectancy in\n\nyears\n\n1950–1955\n\n62.8\n\n1985–1990\n\n78.5\n\n1955–1960\n\n66.4\n\n1990–1995\n\n79.4\n\n1960–1965\n\n69.2\n\n1995–2000\n\n80.5\n\n1965–1970\n\n71.4\n\n2000–2005\n\n81.8\n\n1970–1975\n\n73.3\n\n2005–2010\n\n82.7\n\n1975–1980\n\n75.4\n\n2010–2015\n\n83.3\n\n1980–1985\n\n77.0\n\n2015–2020\n\n84.4\n\nSource: UN World Population Prospects",
+        "evidence_type": "text",
+        "title": "Historical data",
+        "section_path": [
+          "Vital statistics",
+          "Life expectancy",
+          "Historical data"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "vector",
+        "rank": 2,
+        "raw_score": 1.0094525814056396,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "initial_article_retrieval",
+          "discovered_by": "vector"
+        }
+      },
+      {
+        "evidence_id": "Demographics_of_East_Timor.html#section-007-00",
+        "source_article": "Demographics_of_East_Timor.html",
+        "content": "Article: Demographics of Timor-Leste\nSection: Vital statistics > Life expectancy at birth\n\nAverage life expectancy at age 0 of the total population.[10]\n\nPeriod\n\nLife expectancy\n\nin Years\n\nPeriod\n\nLife expectancy in\n\nYears\n\n1950–1955\n\n30.0\n\n1985–1990\n\n46.5\n\n1955–1960\n\n32.5\n\n1990–1995\n\n50.5\n\n1960–1965\n\n35.0\n\n1995–2000\n\n57.0\n\n1965–1970\n\n37.5\n\n2000–2005\n\n61.5\n\n1970–1975\n\n40.0\n\n2005–2010\n\n66.4\n\n1975–1980\n\n31.2\n\n2010–2015\n\n67.7\n\n1980–1985\n\n39.9",
+        "evidence_type": "text",
+        "title": "Life expectancy at birth",
+        "section_path": [
+          "Vital statistics",
+          "Life expectancy at birth"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "vector",
+        "rank": 3,
+        "raw_score": 1.0302361249923706,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "initial_article_retrieval",
+          "discovered_by": "vector"
+        }
+      },
+      {
+        "evidence_id": "Japan.html#section-022-00",
+        "source_article": "Japan.html",
+        "content": "Article: Japan\nSection: Demographics\n\nMain article: Demographics of Japan\n\nSee also: Japanese people and Ethnic groups of Japan\n\nView of Tokyo from the top of the Tokyo Skytree. The Greater Tokyo Area is ranked as the most populous metropolitan area in the world.\n\nJapan has a population of nearly 123 million, of whom almost 119 million are Japanese nationals; foreign residents make up the remainder, estimated at 3,743,000 as of September 2025.[234] Japan is one of the world's fastest aging countries and has the highest proportion of elderly citizens of any country, comprising one-third of its total population;[235] this is the result of a post–World War II baby boom, which was followed by an increase in life expectancy and a decrease in birth rates.[236]\n\nJapan has a total fertility rate of 1.2, which is below the replacement rate of 2.1, and is among the world's lowest:[237] it has a median age of 48.4, the highest in the world.[238] As of 2025[update], over 29.3% of the population is over 65, or more than one in four out of the Japanese population.[239] As a growing number of younger Japanese are not marrying or remaining childless,[240][241] Japan's population is expected to drop to around 88 million by 2065.[235]\n\nThe changes in demographic structure have created several social issues, particularly a decline in the workforce population and an increase in the cost of social security benefits.[240] The Government of Japan projects that there will be almost one elderly person for each person of working age by 2060.[238] Immigration and birth incentives are sometimes suggested as a solution to provide younger workers to support the nation's aging population.[242][243] On April 1, 2019, Japan's revised immigration law was enacted, protecting the rights of foreign workers to help reduce labor shortages in certain sectors.[244]\n\nIn 2023, 92% of the Japanese population lived in cities.[245] The capital city, Tokyo, has a population of 13.9 million (2022).[246] It is part of the Greater Tokyo Area, the biggest metropolitan area in the world with 37.4 million people (2024).[247] Japan is an ethnically and culturally homogeneous society,[248] with the Japanese people forming 97.4% of the country's population.[249] Minority ethnic groups in the country include the indigenous Ainu and Ryukyuan people.[250] Zainichi Koreans,[251] Chinese,[252] Filipinos,[253] Brazilians mostly of Japanese descent,[254] and Peruvians mostly of Japanese descent are also among Japan's small minority groups.[255] Burakumin make up a social minority group.[256]\n\n \n\nv\n\nt\n\ne\n\nLargest cities or towns in Japan\n\n2015 Census\n\nRank\n\nName\n\nPrefecture\n\nPop.\n\nRank\n\nName\n\nPrefecture\n\nPop.\n\n1\nTokyo\nTokyo\n9,272,740\n11\nHiroshima\nHiroshima\n1,194,034\n\n2\nYokohama\nKanagawa\n3,724,844\n12\nSendai\nMiyagi\n1,082,159\n\n3\nOsaka\nOsaka\n2,691,185\n13\nChiba\nChiba\n971,882\n\n4\nNagoya\nAichi\n2,295,638\n14\nKitakyushu\nFukuoka\n961,286\n\n5\nSapporo\nHokkaido\n1,952,356\n15\nSakai\nOsaka\n839,310\n\n6\nFukuoka\nFukuoka\n1,538,681\n16\nNiigata\nNiigata\n810,157\n\n7\nKobe\nHyōgo\n1,537,272\n17\nHamamatsu\nShizuoka\n797,980\n\n8\nKawasaki\nKanagawa\n1,475,213\n18\nKumamoto\nKumamoto\n740,822\n\n9\nKyoto\nKyoto\n1,475,183\n19\nSagamihara\nKanagawa\n720,780\n\n10\nSaitama\nSaitama\n1,263,979\n20\nOkayama\nOkayama\n719,474",
+        "evidence_type": "graph",
+        "title": "Demographics",
+        "section_path": [
+          "Demographics"
+        ],
+        "retrieval_query": "Japan 2023 population estimate Wikipedia or cited demographic estimate",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 0.8850045204162598,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "Demographics_of_Japan.html",
+            "Demographics_of_East_Timor.html"
+          ],
+          "graph_neighbor_rank": 1,
+          "graph_score": 13.540316613211354,
+          "discovery_reasons": [
+            "link",
+            "entity:Osaka(21)",
+            "entity:Empire_of_Japan(38)",
+            "entity:Yokohama(14)",
+            "entity:Okinawa_Prefecture(8)",
+            "entity:Nagoya(10)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Japan.html#section-025-00",
+        "source_article": "Japan.html",
+        "content": "Article: Japan\nSection: Demographics > Education\n\nMain article: Education in Japan\n\nStudents celebrating after the announcement of the results of the entrance examinations to the University of Tokyo\n\nSince the 1947 Fundamental Law of Education, compulsory education in Japan comprises elementary and junior high school, which together last for nine years.[274] Almost all children continue their education at a three-year senior high school.[275] The top-ranking university in Japan is the University of Tokyo.[276] Starting in April 2016, various schools began the academic year with elementary school and junior high school integrated into one nine-year compulsory schooling program. MEXT plans for this approach to be adopted nationwide.[277]\n\nThe Programme for International Student Assessment (PISA) coordinated by the OECD ranks the knowledge and skills of Japanese 15-year-olds as the third best in the world.[278] Japan is one of the top-performing OECD countries in reading literacy, math, and sciences with the average student scoring 520 and has one of the world's highest-educated labor forces among OECD countries.[279][278][280] It spent 7.4% of its total GDP on education in 2021.[281]\n\nIn 2023, Japan ranked third for the percentage of 25- to 64-year-olds that have attained tertiary education, at 56%.[282] Approximately 65.5% of Japanese aged 25 to 34 have some form of tertiary education qualification, with bachelor's degrees being held by 34.8% of Japanese aged 25 to 64, the second most in the OECD after South Korea.[282] Japanese women are more highly educated than the men: 59% of women possess a university degree, compared to 52% of men.[283]",
+        "evidence_type": "graph",
+        "title": "Education",
+        "section_path": [
+          "Demographics",
+          "Education"
+        ],
+        "retrieval_query": "Japan 2023 population estimate Wikipedia or cited demographic estimate",
+        "retriever": "graph",
+        "rank": 2,
+        "raw_score": 1.0220919847488403,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "Demographics_of_Japan.html",
+            "Demographics_of_East_Timor.html"
+          ],
+          "graph_neighbor_rank": 1,
+          "graph_score": 13.540316613211354,
+          "discovery_reasons": [
+            "link",
+            "entity:Osaka(21)",
+            "entity:Empire_of_Japan(38)",
+            "entity:Yokohama(14)",
+            "entity:Okinawa_Prefecture(8)",
+            "entity:Nagoya(10)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Honshu.html#section-006-00",
+        "source_article": "Honshu.html",
+        "content": "Article: Honshu\nSection: Geography > Population\n\nHonshu has a total population of 104 million people, according to a 2017 estimate, 81.3% of the entire population of Japan.[12] The largest city is Tokyo (population: 13,988,129),[23] the capital of Japan and part of the Greater Tokyo Area, the most populous metropolitan area in the world.",
+        "evidence_type": "graph",
+        "title": "Population",
+        "section_path": [
+          "Geography",
+          "Population"
+        ],
+        "retrieval_query": "Japan 2023 population estimate Wikipedia or cited demographic estimate",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 1.0301480293273926,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "Demographics_of_Japan.html",
+            "Demographics_of_East_Timor.html"
+          ],
+          "graph_neighbor_rank": 2,
+          "graph_score": 6.447820512820513,
+          "discovery_reasons": [
+            "link",
+            "entity:Osaka(21)",
+            "entity:Okinawa_Prefecture(8)",
+            "entity:Nagoya(10)",
+            "entity:Shizuoka_Prefecture(5)",
+            "entity:Gifu_Prefecture(5)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Honshu.html#section-000-00",
+        "source_article": "Honshu.html",
+        "content": "Article: Honshu\nSection: Lead\n\nLargest island of Japan\n\nHonshu\n\nNative name:\n本州\n\nA May 2003 satellite image of Honshu\n\nGeography\n\nLocation\n\nSea of Japan (North and West)\n\nPacific Ocean (South and East)\n\nCoordinates36°N 138°E﻿ / ﻿36°N 138°E﻿ / 36; 138\n\nArchipelagoJapanese archipelago\n\nArea227,960[1] km2 (88,020 sq mi)\n\nArea rank7th\n\nLength1,300 km (810 mi)\n\nWidth50–230 km (31–143 mi)\n\nCoastline10,084 km (6265.9 mi)\n\nHighest elevation3,776 m (12388 ft)\n\nHighest pointMount Fuji\n\nAdministration\n\nJapan\n\nPrefectures\n\nList of prefectures\n\nAichi\n\nAkita\n\nAomori\n\nChiba\n\nFukui\n\nFukushima\n\nGifu\n\nGunma\n\nHiroshima\n\nHyōgo\n\nIbaraki\n\nIshikawa\n\nIwate\n\nKanagawa\n\nKyoto\n\nMie\n\nMiyagi\n\nNagano\n\nNara\n\nNiigata\n\nOkayama\n\nOsaka\n\nSaitama\n\nShiga\n\nShimane\n\nShizuoka\n\nTochigi\n\nTokyo\n\nTottori\n\nToyama\n\nWakayama\n\nYamagata\n\nYamaguchi\n\nYamanashi\n\nLargest settlementTokyo (pop. 14,043,239[2])\n\nDemographics\n\nPopulation104,000,000[2] (2017)\n\nPop. density447/km2 (1158/sq mi)\n\nEthnic groupsJapanese\n\nAdditional information\n\nTime zone\n\nJapan Standard Time (UTC+9)\n\nHonshu (Japanese: 本州, Hepburn: Honshū; pronounced [hoꜜɰ̃.ɕɯː] ⓘ; lit. 'main province'), historically known as Akitsushima (秋津島; lit. 'dragonfly island') or Hondo (lit. 'mainland') ,[3][4][5][6] is the largest of Japan's four main islands.[7][8] It lies between the Pacific Ocean (east) and the Sea of Japan (west). It is the seventh-largest island in the world, and the second-most populous after the Indonesian island of Java.[9][10][11]\n\nHonshu had a population of 104 million as of 2017[update], constituting 81.3% of the entire population of Japan,[12] and mostly concentrated in the coastal areas and plains. Approximately 30% of the total population resides in the Greater Tokyo Area on the Kantō Plain. As the historical center of Japanese cultural and political power,[13] the island includes several past Japanese capitals, including Kyoto, Nara, and Kamakura. Much of the island's southern shore forms part of the Taiheiyō Belt, a megalopolis that spans several of the Japanese islands.[13] Honshu also contains Japan's highest mountain, Mount Fuji, and its largest lake, Lake Biwa.[14]\n\nMost of Japan's industry is located in a belt running along Honshu's southern coast, from Tokyo to Nagoya, Kyoto, Osaka, Kobe, and Hiroshima.[13][15] The island is linked to the other three major Japanese islands by a number of bridges and tunnels. The island primarily shares two climates, with Northern Honshu having four seasons with largely varying temperatures while the south experiences long, hot summers and cool to mild winters.[16]",
+        "evidence_type": "graph",
+        "title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Japan 2023 population estimate Wikipedia or cited demographic estimate",
+        "retriever": "graph",
+        "rank": 2,
+        "raw_score": 1.3334763050079346,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "Demographics_of_Japan.html",
+            "Demographics_of_East_Timor.html"
+          ],
+          "graph_neighbor_rank": 2,
+          "graph_score": 6.447820512820513,
+          "discovery_reasons": [
+            "link",
+            "entity:Osaka(21)",
+            "entity:Okinawa_Prefecture(8)",
+            "entity:Nagoya(10)",
+            "entity:Shizuoka_Prefecture(5)",
+            "entity:Gifu_Prefecture(5)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Honshu.html#section-011-00",
+        "source_article": "Honshu.html",
+        "content": "Article: Honshu\nSection: Economy\n\nHonshu island generates around US$3.5 trillion or more than 80% of Japan's GDP.[28]",
+        "evidence_type": "graph",
+        "title": "Economy",
+        "section_path": [
+          "Economy"
+        ],
+        "retrieval_query": "Timor-Leste 2023 population estimate Wikipedia or cited demographic estimate",
+        "retriever": "graph",
+        "rank": 2,
+        "raw_score": 1.677800178527832,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "Demographics_of_Japan.html",
+            "Demographics_of_East_Timor.html"
+          ],
+          "graph_neighbor_rank": 2,
+          "graph_score": 6.447820512820513,
+          "discovery_reasons": [
+            "link",
+            "entity:Osaka(21)",
+            "entity:Okinawa_Prefecture(8)",
+            "entity:Nagoya(10)",
+            "entity:Shizuoka_Prefecture(5)",
+            "entity:Gifu_Prefecture(5)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "2011_Tōhoku_earthquake_and_tsunami.html#section-032-00",
+        "source_article": "2011_Tōhoku_earthquake_and_tsunami.html",
+        "content": "Article: 2011 Tōhoku earthquake and tsunami\nSection: Scientific and research response\n\nFukushima radiation comparison to other incidents and standards, with graph of recorded radiation levels and specific accident events (Note: Does not include all radiation readings from Fukushima Daini site.)\n\nSeismologists anticipated a very large quake would strike in the same place as the 1923 Great Kantō earthquake—in the Sagami Trough, southwest of Tokyo.[60][388] The Japanese government had tracked plate movements since 1976 in preparation for the so-called Tokai earthquake, predicted to take place in that region.[389] However, occurring as it did 373 km (232 mi) north east of Tokyo, the Tōhoku earthquake came as a surprise to seismologists. While the Japan Trench was known for creating large quakes, it had not been expected to generate quakes above an 8.0 magnitude.[388][389] The Headquarters for Earthquake Research Promotion set up by the Japanese government then reassessed the long-term risk of trench-type earthquakes around Japan, and it was announced in November 2011 that research on the 869 Sanriku earthquake indicated that a similar earthquake with a magnitude of Mw 8.4–9.0 would take place off the Pacific coast of northeastern Japan, on average, every 600 years. Also, a tsunami-earthquake with a tsunami magnitude scales (Mt) between 8.6 and 9.0 (Similar to the 1896 Sanriku earthquake, the Mt for the 2011 Tōhoku earthquake was 9.1–9.4) had a 30% chance to occur within 30 years.[390][391]\n\nThe quake gave scientists the opportunity to collect a large amount of data to model the seismic events that took place in great detail.[65] This data is expected to be used in a variety of ways, providing unprecedented information about how buildings respond to shaking, and other effects.[392] Gravimetric data from the quake have been used to create a model for increased warning time compared to seismic models, as gravity fields travel faster than seismic waves.[393]\n\nResearchers have also analysed the economic effects of this earthquake and have developed models of the nationwide propagation via interfirm supply networks of the shock that originated in the Tōhoku region.[394][395]\n\nAfter the full extent of the disaster was known, researchers soon launched a project to gather all digital material relating to the disaster into an online searchable archive to form the basis of future research into the events during and after the disaster. The Japan Disasters Digital Archive is presented in English and Japanese and is hosted at the Reischauer Institute of Japanese Studies at Harvard University in Cambridge, Massachusetts.[396] Some of the first research to come from the archive was a 2014 paper from the Digital Methods Initiative in Amsterdam about patterns of Twitter usage around the time of the disaster.\n\nAfter the 2011 disaster, the United Nations International Strategy for Disaster Reduction held its World Conference on Disaster Risk Reduction in Tohoku in March 2015, which produced the Sendai Framework document to guide efforts by international development agencies to act before disasters instead of reacting to them after the fact. At this time Japan's Disaster Management Office (Naikakufu Bosai Keikaku) published a bi-lingual guide in Japanese and English, Disaster Management in Japan, to outline the several varieties of natural disaster and the preparations being made for the eventuality of each. In the fall of 2016, Japan's National Research Institute for Earth Science and Disaster Resilience (NIED; Japanese abbreviation, Bosai Kaken; full name Bousai Kagaku Gijutsu Kenkyusho) launched the online interactive \"Disaster Chronology Map for Japan, 416–2013\" (map labels in Japanese) to display in visual form the location, disaster time, and date across the islands.\n\nThe Japan Trench Fast Drilling Project, a scientific expedition conducted in 2012–2013, drilled ocean-floor boreholes through the fault zone of the earthquake and gathered important data about the rupture mechanism and physical properties of the fault that caused the 2011 earthquake and tsunami.[397][398]",
+        "evidence_type": "graph",
+        "title": "Scientific and research response",
+        "section_path": [
+          "Scientific and research response"
+        ],
+        "retrieval_query": "Japan 2023 population estimate Wikipedia or cited demographic estimate",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 1.2288415431976318,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "Demographics_of_Japan.html",
+            "Demographics_of_East_Timor.html"
+          ],
+          "graph_neighbor_rank": 3,
+          "graph_score": 5.938095238095241,
+          "discovery_reasons": [
+            "entity:Yokohama(14)",
+            "entity:Shizuoka_Prefecture(5)",
+            "entity:Gifu_Prefecture(5)",
+            "entity:Honshu(12)",
+            "entity:Iwate_Prefecture(6)",
+            "entity:Miyagi_Prefecture(7)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "2011_Tōhoku_earthquake_and_tsunami.html#section-000-00",
+        "source_article": "2011_Tōhoku_earthquake_and_tsunami.html",
+        "content": "Article: 2011 Tōhoku earthquake and tsunami\nSection: Lead\n\nMegathrust earthquake off Japan's east coast\n\n\"2011 Miyagi earthquake\" and \"3.11\" redirect here. For the aftershock that occurred on 7 April, see April 2011 Miyagi earthquake. For other uses, see 3/11 (disambiguation).\n\n2011 Tōhoku\n\nearthquake and tsunami\n\n東北地方太平洋沖地震\n\n東日本大震災\n\nA helicopter flies over the port of Sendai to deliver food to survivors\n\nTokyo\n\nSendai\n\nUTC time2011-03-11 05:46:24\n\nISC event16461282\n\nUSGS-ANSSComCat\n\nLocal date11 March 2011; 15 years ago (2011-03-11)\n\nLocal time14:46:24 JST\n\nDuration6 minutes\n\nMagnitude9.0–9.1 Mw\n\nDepth29 km (18 mi)\n\nEpicenter38°19′19″N 142°22′08″E﻿ / ﻿38.322°N 142.369°E﻿ / 38.322; 142.369\n\nFaultConvergent boundary between Pacific plate and Okhotsk microplate[1]\n\nTypeMegathrust\n\nAreas affected\n\nJapan (shaking, tsunami)\n\nPacific Rim (tsunami)\n\nTotal damageUS$360 billion (equivalent to $515.2 billion in 2025)\n\nMax. intensityJMA 7 (MMI IX)[2][3]\n\nPeak acceleration2.99 g\n\nPeak velocity117.41 cm/s\n\nTsunamiUp to 40.5 m (133 ft) in Miyako, Iwate, Tōhoku\n\nLandslidesYes\n\nForeshocksList of foreshocks and aftershocks of the 2011 Tōhoku earthquake\n\nAftershocks13,386 (as of 6 March 2018[update])[4]\n\nCasualties\n\n19,759 deaths,[5]\n\n6,242 injured,[6]\n\n2,553 missing[7]\n\nCitations[8][9][10][11][12][13]\n\nOn 11 March 2011, at 14:46:24 JST (05:46:24 UTC), a Mw 9.0–9.1 undersea megathrust earthquake occurred in the Pacific Ocean, 72 km (45 mi) east of the Oshika Peninsula of the Tōhoku region of Japan. It lasted approximately six minutes and caused a tsunami. It is sometimes known in Japan as the \"Great East Japan Earthquake Disaster\" (東日本大震災, Higashi Nihon Daishinsai), among other names.[en 1] It is often referred to by its numerical date, 3.11 (read San ten Ichi-ichi in Japanese).[30][31][32]\n\nThe earthquake was the most powerful ever recorded in Japan, and the fourth most powerful recorded in the world since modern seismography began in 1900.[33][34][35] It triggered powerful tsunami waves that may have reached heights of up to 40.5 meters (133 ft) in Miyako in Tōhoku's Iwate Prefecture,[36][37] and which, in the Sendai area, traveled at 700 km/h (435 mph)[38] and up to 10 km (6 mi) inland.[39] Residents of Sendai had only eight to ten minutes of warning, and more than a hundred evacuation sites were washed away.[38] The snowfall which accompanied the tsunami[40] and the freezing temperature hindered rescue works;[41] for instance, in Ishinomaki, the city with the most deaths,[42] the temperature was 0 °C (32 °F) as the tsunami hit.[43] Official figures released in 2021 reported 19,759 deaths,[44] 6,242 injured,[45] 284 firefighters dead from attempts to close preventative fire gates,[46] and 2,553 missing.[47] A report in 2015 found that 228,863 people were still living away from their home either temporarily or permanently.[48]\n\nThe tsunami caused the Fukushima Daiichi nuclear disaster, primarily the meltdowns of three of its reactors, the discharge of radioactive water in Fukushima and the associated evacuation zones affecting hundreds of thousands of residents.[49][50] Many electrical generators ran out of fuel. The loss of electrical power halted cooling systems, causing heat to build. Without ventilation, hydrogen gas accumulated within the upper refueling hall and exploded, forcefully ejecting the refueling hall's blast panels. Residents within a 20 km (12 mi) radius of the Fukushima Daiichi Nuclear Power Plant and a 10 km (6.2 mi) radius of the Fukushima Daini Nuclear Power Plant were evacuated.\n\nEarly estimates placed insured losses from the earthquake alone at US$14.5 to $34.6 billion.[51] The Bank of Japan offered ¥15 trillion (US$183 billion) to the banking system on 14 March 2011 in an effort to normalize market conditions.[52] The estimated economic damage amounted to over $300 billion, making it the costliest natural disaster in history.[53][54] According to a 2020 study, \"the earthquake and its aftermaths resulted in a 0.47 percentage point decline in Japan's real GDP growth in the year following the disaster\".[55]",
+        "evidence_type": "graph",
+        "title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Japan 2023 population estimate Wikipedia or cited demographic estimate",
+        "retriever": "graph",
+        "rank": 2,
+        "raw_score": 1.2904436588287354,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "Demographics_of_Japan.html",
+            "Demographics_of_East_Timor.html"
+          ],
+          "graph_neighbor_rank": 3,
+          "graph_score": 5.938095238095241,
+          "discovery_reasons": [
+            "entity:Yokohama(14)",
+            "entity:Shizuoka_Prefecture(5)",
+            "entity:Gifu_Prefecture(5)",
+            "entity:Honshu(12)",
+            "entity:Iwate_Prefecture(6)",
+            "entity:Miyagi_Prefecture(7)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "2011_Tōhoku_earthquake_and_tsunami.html#section-010-01",
+        "source_article": "2011_Tōhoku_earthquake_and_tsunami.html",
+        "content": "Article: 2011 Tōhoku earthquake and tsunami\nSection: Tsunami > Japan\n\nHowever, the strong quake had exceeded the measurement limit of all of the teleseismometers within Japan, and thus it was impossible to calculate the moment magnitude based on data from those seismometers. Another cause of delayed evacuations was the release of the second update on the tsunami warning long after the earthquake (28 minutes, according to observations); by that time, power failures and similar circumstances reportedly prevented the update from reaching some residents. Also, observed data from tidal meters that were located off the coast were not fully reflected in the second warning. Furthermore, shortly after the earthquake, some wave meters reported a fluctuation of \"20 centimeters (7.9 in)\", and this value was broadcast throughout the mass media and the warning system, which caused some residents to underestimate the danger of their situation and even delayed or suspended their evacuation.[185][186]\n\nIn response to the aforementioned shortcomings in the tsunami warning system, JMA began an investigation in 2011 and updated their system in 2013. In the updated system, for a powerful earthquake that is capable of causing the JMA magnitude scale to saturate, no quantitative prediction will be released in the initial warning; instead, there will be words that describe the situation's emergency. There are plans to install new teleseismometers with the ability to measure larger earthquakes, which would allow the calculation of a quake's moment magnitude scale in a timely manner. JMA also implemented a simpler empirical method to integrate, into a tsunami warning, data from GPS tidal meters as well as from undersea water pressure meters, and there are plans to install more of these meters and to develop further technology to utilize data observed by them. To prevent under-reporting of tsunami heights, early quantitative observation data that are smaller than the expected amplitude will be overridden and the public will instead be told that the situation is under observation. About 90 seconds after an earthquake, an additional report on the possibility of a tsunami will also be included in observation reports, in order to warn people before the JMA magnitude can be calculated.[185][186]",
+        "evidence_type": "graph",
+        "title": "Japan",
+        "section_path": [
+          "Tsunami",
+          "Japan"
+        ],
+        "retrieval_query": "Timor-Leste 2023 population estimate Wikipedia or cited demographic estimate",
+        "retriever": "graph",
+        "rank": 2,
+        "raw_score": 1.4753594398498535,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "Demographics_of_Japan.html",
+            "Demographics_of_East_Timor.html"
+          ],
+          "graph_neighbor_rank": 3,
+          "graph_score": 5.938095238095241,
+          "discovery_reasons": [
+            "entity:Yokohama(14)",
+            "entity:Shizuoka_Prefecture(5)",
+            "entity:Gifu_Prefecture(5)",
+            "entity:Honshu(12)",
+            "entity:Iwate_Prefecture(6)",
+            "entity:Miyagi_Prefecture(7)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Philippines.html#section-021-00",
+        "source_article": "Philippines.html",
+        "content": "Article: Philippines\nSection: Demographics\n\nMain article: Demographics of the Philippines\n\nSee also: List of cities in the Philippines\n\nIn July 2024, the Philippines had a population of 112,729,484.[11] More than 60 percent of the country's population live in the coastal zone.[485] In 2020, 54 percent lived in urban areas.[486] Manila, its capital, and Quezon City, the country's most populous city, are in Metro Manila. About 13.48 million people, 12 percent of the Philippines' population, live in Metro Manila,[486] the country's most populous metropolitan area[487] and the world's fifth most populous.[488] Between 1948 and 2010, the population of the Philippines increased almost fivefold, from 19 million to 92 million.[489]\n\nThe country's median age is 25.3, and 63.9 percent of its population is between 15 and 64 years old.[490] The Philippines' average annual population growth rate is decreasing,[491] although government attempts to further reduce population growth have been contentious.[492] The country reduced its poverty rate from 49.2 percent in 1985,[493] to 18.1 percent in 2021.[494] The Philippines' income inequality began to decline in 2012.[493]\n\n \n\nv\n\nt\n\ne\n\nLargest cities in the Philippines\n\n2024 Census of Population (POPCEN) Population Counts Declared Official by the President\n\nRank\n\nName\n\nRegion\n\nPop.\n\nRank\n\nName\n\nRegion\n\nPop.\n\n1\nQuezon City\nNational Capital Region\n3,084,270\n11\nCagayan de Oro\nNorthern Mindanao\n741,617\n\n2\nManila\nNational Capital Region\n1,902,590\n12\nValenzuela\nNational Capital Region\n725,173\n\n3\nDavao City\nDavao Region\n1,848,947\n13\nGeneral Santos\nSoccsksargen\n722,059\n\n4\nCaloocan\nNational Capital Region\n1,712,945\n14\nParañaque\nNational Capital Region\n703,245\n\n5\nTaguig\nNational Capital Region\n1,308,085\n15\nSan Jose del Monte\nCentral Luzon\n685,688\n\n6\nZamboanga City\nZamboanga Peninsula\n1,018,894\n16\nBacoor\nCalabarzon\n661,381\n\n7\nCebu City\nCentral Visayas\n965,332\n17\nBacolod\nNegros Island Region\n624,787\n\n8\nAntipolo\nCalabarzon\n913,712\n18\nLas Piñas\nNational Capital Region\n615,549\n\n9\nPasig\nNational Capital Region\n853,050\n19\nBiñan\nCalabarzon\n584,479\n\n10\nDasmariñas\nCalabarzon\n744,511\n20\nCalamba\nCalabarzon\n575,046",
+        "evidence_type": "graph",
+        "title": "Demographics",
+        "section_path": [
+          "Demographics"
+        ],
+        "retrieval_query": "Japan 2023 population estimate Wikipedia or cited demographic estimate",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 1.3233678340911865,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "Demographics_of_Japan.html",
+            "Demographics_of_East_Timor.html"
+          ],
+          "graph_neighbor_rank": 4,
+          "graph_score": 1.083076923076923,
+          "discovery_reasons": [
+            "link",
+            "entity:Literacy(10)",
+            "entity:Ethnic_group(26)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Philippines.html#section-025-00",
+        "source_article": "Philippines.html",
+        "content": "Article: Philippines\nSection: Demographics > Health\n\nMain article: Health in the Philippines\n\nLife expectancy in the Philippines, 1938–2021\n\nHealth care in the Philippines is provided by the national and local governments, although private payments account for most healthcare spending.[484]: 25–27 [559] Per-capita health expenditure in 2024 was ₱12,751 and health expenditures were 5.9 percent of the country's GDP.[560] The 2023 budget allocation for healthcare was ₱334.9 billion.[561] The 2019 enactment of the Universal Health Care Act by President Duterte facilitated the automatic enrollment of all Filipinos in the national health insurance program.[562][563] Since 2018, Malasakit Centers (one-stop shops) have been set up in several government-operated hospitals to provide medical and financial assistance to indigent patients.[564]\n\nAverage life expectancy in the Philippines as of 2023[update] is 70.48 years (66.97 years for males, and 74.15 years for females).[10] Access to medicine has improved due to increasing Filipino acceptance of generic drugs.[484]: 58  The country's leading causes of death in 2021 were ischaemic heart diseases, cerebrovascular diseases, COVID-19, neoplasms, and diabetes.[565] Communicable diseases are correlated with natural disasters, primarily floods.[566] One million Filipinos have active tuberculosis, the fourth highest global prevalence rate.[567]\n\nThe Philippines has 1,387 hospitals, 33 percent of which are government-run; 23,281 barangay health stations, 2,592 rural health units, 2,411 birthing homes, and 659 infirmaries provide primary care throughout the country.[568] Since 1967, the Philippines had become the largest global supplier of nurses;[569] seventy percent of nursing graduates go overseas to work, causing problems in retaining skilled practitioners.[570]",
+        "evidence_type": "graph",
+        "title": "Health",
+        "section_path": [
+          "Demographics",
+          "Health"
+        ],
+        "retrieval_query": "Japan 2023 population estimate Wikipedia or cited demographic estimate",
+        "retriever": "graph",
+        "rank": 2,
+        "raw_score": 1.3660058975219727,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "Demographics_of_Japan.html",
+            "Demographics_of_East_Timor.html"
+          ],
+          "graph_neighbor_rank": 4,
+          "graph_score": 1.083076923076923,
+          "discovery_reasons": [
+            "link",
+            "entity:Literacy(10)",
+            "entity:Ethnic_group(26)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Tagalog_language.html#section-007-00",
+        "source_article": "Tagalog_language.html",
+        "content": "Article: Tagalog language\nSection: Geographic distribution > Outside the Philippines\n\nCountries with more than 500,000 speakers\n\n  Countries with between 100,000–500,000 speakers\n\n  Countries where it is spoken by minor communities\n\nThe Tagalog caption (bottom-left) about venom at the California Academy of Sciences in San Francisco includes words that are uncommonly used in Metro Manila such as \"hungkag\" (hollow), \"sinisila\" (prey), \"mapanila\" (predator), \"tibò\" (stinger), and \"kabatiran\" (clue/knowledge/discernment).\n\nTagalog serves as the common language among Overseas Filipinos, though its use overseas is usually limited to communication among Filipino ethnic groups. The largest concentration of Tagalog speakers outside the Philippines is found in the United States, where the 2020 census reported (based on data collected in 2018) that it was the fourth most-spoken non-English language at home with over 1.7 million speakers, behind Spanish, French, and Chinese (with figures for Cantonese and Mandarin combined).[33]\n\nA study based on data from the United States Census Bureau's 2015 American Consumer Survey shows that Tagalog is the most commonly spoken non-English language after Spanish in California, Nevada, and Washington states.[34]\n\nTagalog is one of three recognized languages in San Francisco, California, along with Spanish and Chinese, making all essential city services be communicated using these languages along with English.[35] In Hawaii, state-funded entities are required to provide oral and written translations for everything in Tagalog and Ilocano.[36][37] Nevada provides Tagalog Election ballots.[38]\n\nOther countries with significant concentrations of overseas Filipinos and Tagalog speakers include Saudi Arabia with 938,490, Canada with 676,775, Japan with 313,588, United Arab Emirates with 541,593, Kuwait with 187,067, and Malaysia with 620,043.[39]",
+        "evidence_type": "graph",
+        "title": "Outside the Philippines",
+        "section_path": [
+          "Geographic distribution",
+          "Outside the Philippines"
+        ],
+        "retrieval_query": "Japan 2023 population estimate Wikipedia or cited demographic estimate",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 1.5901117324829102,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "Demographics_of_Japan.html",
+            "Demographics_of_East_Timor.html"
+          ],
+          "graph_neighbor_rank": 5,
+          "graph_score": 0.7192307692307691,
+          "discovery_reasons": [
+            "entity:Indonesian_language(13)",
+            "entity:Ethnic_group(26)",
+            "entity:Official_language(12)",
+            "entity:Tetum_language(2)",
+            "entity:Malay_trade_and_creole_languages(2)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Tagalog_language.html#section-034-00",
+        "source_article": "Tagalog_language.html",
+        "content": "Article: Tagalog language\nSection: See also\n\nFilipino language\n\nFilipino alphabet\n\nFilipino orthography\n\nKomisyon sa Wikang Filipino\n\nAbakada alphabet\n\nOld Tagalog\n\nTaglish\n\nTagalog Wikipedia\n\nLanguages of the Philippines\n\n<h2",
+        "evidence_type": "graph",
+        "title": "See also",
+        "section_path": [
+          "See also"
+        ],
+        "retrieval_query": "Japan 2023 population estimate Wikipedia or cited demographic estimate",
+        "retriever": "graph",
+        "rank": 2,
+        "raw_score": 1.7036957740783691,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "Demographics_of_Japan.html",
+            "Demographics_of_East_Timor.html"
+          ],
+          "graph_neighbor_rank": 5,
+          "graph_score": 0.7192307692307691,
+          "discovery_reasons": [
+            "entity:Indonesian_language(13)",
+            "entity:Ethnic_group(26)",
+            "entity:Official_language(12)",
+            "entity:Tetum_language(2)",
+            "entity:Malay_trade_and_creole_languages(2)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Tagalog_language.html#section-000-00",
+        "source_article": "Tagalog_language.html",
+        "content": "Article: Tagalog language\nSection: Lead\n\nAustronesian language spoken in the Philippines\n\nNot to be confused with Tagalag (or Tagalaka) language or Filipino language.\n\nTagalog\n\nWikang Tagalog\n\nᜏᜒᜃᜅ᜔ ᜆᜄᜎᜓᜄ᜔\n\nPronunciation[tɐˈɡaːloɡ] ⓘ\n\nNative toPhilippines\n\nRegionKatagalugan; Metro Manila (as Filipino), parts of Central Luzon, most of Calabarzon, parts of Mimaropa, northwestern Bicol Region, and Ilocos Region (southeast Pangasinan)\n\nEthnicityTagalog\n\nSpeakersL1: 33 million (2023)[1]\n\nL2: 54 million (2020)[1]\n\nTotal: 87 million (2020–2023)[1]\n\nLanguage family\n\nAustronesian\n\nMalayo-Polynesian\nPhilippine\nGreater Central Philippine\nCentral Philippine\nKasiguranin–Tagalog\nTagalog\n\nEarly forms\n\nProto-Austronesian\n\nProto-Malayo-Polynesian\n\nProto-Philippine\n\nOld Tagalog\n\nStandard forms\n\nFilipino\n\nDialects\n\nBataan\n\nBatangas\n\nBulacan\n\nLubang\n\nManila\n\nMarinduque\n\nPuray\n\nTanay–Paete (Eastern Rizal-Northern Laguna)\n\nTayabas[2]\n\nSoccsksargen (Mindanao)[3]\n\nWriting system\n\nAbakada alphabet\n\nPhilippine Braille\n\nBaybayin (cultural)\n\nJawi script (historical)[4]\n\nOfficial status\n\nRecognised minority\n\nlanguage in\n\nPhilippines (as a regional language and an auxiliary official language in the predominantly Tagalog-speaking areas of the Philippines)\n\nLanguage codes\n\nISO 639-1tl\n\nISO 639-2tgl\n\nISO 639-3tgl\n\nGlottologtaga1280  Tagalogic\n\ntaga1269  Tagalog-Filipino\n\ntaga1270  Tagalog\n\nLinguasphere31-CKA\n\nPredominantly Tagalog-speaking regions in the Philippines\n\nThis article contains Baybayin script. Without proper rendering support, you may see question marks, boxes, or other symbols instead of Baybayin characters.\n\nA Tagalog speaker, recorded in South Africa.\n\nTagalog (/təˈɡɑːlɒɡ/ tə-GAH-log,[5] native pronunciation: [tɐˈɡaːloɡ] ⓘ; Baybayin: ᜆᜄᜎᜓᜄ᜔) is an Austronesian language spoken as a first language by the ethnic Tagalog people, who make up a quarter of the population of the Philippines, and as a second language by the majority. Its standardized and codified form, Filipino, is the national language of the Philippines, and is one of the nation's two official languages, alongside English.\n\nTagalog is closely related to other Philippine languages, such as the Bikol languages, the Bisaya languages, Ilocano, Kapampangan, and Pangasinan, and more distantly to other Austronesian languages, such as the Formosan languages of Taiwan, Indonesian, Malay, Hawaiian, Māori, Malagasy, and many more.",
+        "evidence_type": "graph",
+        "title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Timor-Leste 2023 population estimate Wikipedia or cited demographic estimate",
+        "retriever": "graph",
+        "rank": 2,
+        "raw_score": 1.5475177764892578,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "Demographics_of_Japan.html",
+            "Demographics_of_East_Timor.html"
+          ],
+          "graph_neighbor_rank": 5,
+          "graph_score": 0.7192307692307691,
+          "discovery_reasons": [
+            "entity:Indonesian_language(13)",
+            "entity:Ethnic_group(26)",
+            "entity:Official_language(12)",
+            "entity:Tetum_language(2)",
+            "entity:Malay_trade_and_creole_languages(2)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Demographics_of_East_Timor.html#section-001-00",
+        "source_article": "Demographics_of_East_Timor.html",
+        "content": "Article: Demographics of Timor-Leste\nSection: Population size and structure\n\nTimor-Leste's population (1861-2011).\nPopulation, fertility rate and net reproduction rate, United Nations estimates\n\n1,242,000 (2017)\n\nPopulation census\nYearPop.±% p.a.\n\n1970 609,477—    \n\n1980 555,350−0.93%\n\n1990 747,557+3.02%\n\n2004 923,198+1.52%\n\n2010 1,066,409+2.43%\n\n2015 1,183,643+2.11%\n\n2022 1,341,737+1.81%\n\nSource: [1][2][3]",
+        "evidence_type": "text",
+        "title": null,
+        "section_path": [],
+        "retrieval_query": "Find 2023 population estimates for Japan and Timor-Leste, and if the question requires a correlation judgment, find whether the countries in the supplied articles have population estimates so we can compare population size against their 2010–2015 life expectancy values.",
+        "retriever": "vector",
+        "rank": 2,
+        "raw_score": 1.0887938250233036,
+        "score_semantics": "higher_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "targeted_multistep_sections",
+          "reasoning_instructions": "1) Retrieve the 2023 population estimate for Japan and for Timor-Leste. 2) If additional supplied articles are involved, identify which countries have both a population estimate and a 2010–2015 life expectancy value. 3) Extract the relevant population figures and the life expectancy values from the same articles or datasets. 4) Compare population size against life expectancy across the countries to assess whether a correlation judgment is being requested. 5) If correlation is needed, do not infer causation; only determine whether the data support a comparison or apparent association."
+        }
+      },
+      {
+        "evidence_id": "Demographics_of_Japan.html#section-001-00",
+        "source_article": "Demographics_of_Japan.html",
+        "content": "Article: Demographics of Japan\nSection: Historical overview\n\nHistorical population\nYearPop.±% p.a.\n\n1920 55,963,053—    \n\n1925 59,736,822+1.31%\n\n1930 64,450,005+1.53%\n\n1935 69,254,148+1.45%\n\n1940 73,114,308+1.09%\n\n1945 71,998,104−0.31%\n\n1950 83,199,637+2.93%\n\n1955 89,275,529+1.42%\n\n1960 93,418,501+0.91%\n\n1965 98,274,961+1.02%\n\n1970 103,720,060+1.08%\n\n1975 111,939,643+1.54%\n\n1980 117,060,396+0.90%\n\n1985 121,048,923+0.67%\n\n1990 123,611,167+0.42%\n\n1995 125,570,246+0.31%\n\n2000 126,925,843+0.21%\n\n2005 127,767,994+0.13%\n\n2010 128,057,352+0.05%\n\n2015 127,094,745−0.15%\n\n2020 126,146,099−0.15%\n\n2025 123,210,000−0.47%\n\nPopulation size may be affected by changes in administrative divisions.\n\nSee also: Demographics of the Empire of Japan and Demographic history of Japan before the Meiji Restoration\n\nAs of 2025, Japan was the world's twelfth-most populous country. Japan's population had declined by 0.8 percent from the time of the 2012 census, the first time it had declined since the 1945 census.[6]\n\nSince 2010, Japan has experienced net population loss due to falling birth rates and minimal immigration, despite having one of the highest life expectancies in the world, at 85.00 years in 2016. It stood at 81.25 in 2006.[7] Using the annual estimate for October of each year, the population peaked in 2008 at 128,083,960 and had fallen by 2,983,352 by October 2021.[8]\n\nBased on 2012 data from the National Institute of Population and Social Security Research, Japan's population will keep declining by about one million people every year in the coming decades, which would leave it with a population of around 70 million by 2060 and 42 million by early 22nd century if the current projections do not change.[9] More than 40% of the population is expected to be over the age of 65 in 2060.[10] In 2021, the population declined by 644,000, the largest drop on record since 1945 and also reflecting a record low of 831,000 births. In 2013, more than 20 percent of the population of Japan were aged 65 and over.[11] Many reasons are behind the decline, including the declining birthrates, as well as the ratio of men to women since the last measurements from the years of 2006 and 2010. According to the Japanese Health Ministry, the population is estimated to drop from its current state of 125.58 million to 86.74 million by the year 2060.[12]\n\nIn July 2000, the population consisted of 47,062,743 households, with 78.7% in urban areas. Japan has a high population density of 329.5 people per square kilometer. There are 1,523 persons per square kilometer of habitable land.\n\nJapan dropped steadily from the 5th most populous country in the world to the 12th over the period of 1964 to 2023.[13][14] Between 2010 to 2015, Japan's population shrank by almost a million,[15] and Japan lost a half-million in 2022 alone.[16] The number of Japanese citizens decreased by 801,000 to 122,423,038 in 2022 from a year earlier, which was the most severe decrease and the first time all 47 prefectures have suffered a decline since the launch of the poll in 1968. In early 2010, Japan's population reached 128,057,352. In the 2010s, the long-lasting effects of Japanese economic crisis during the Great Recession strongly slowed down immigration rates in Japan.\n\nIn March 2011, Japan was hit by an earthquake and tsunami, which caused the meltdown of the Fukushima nuclear plant. These disasters resulted in 20,000 deaths, a reduction of about 1.39 years in the average life expectancy, a decrease in birth rates, and the steepest decrease in immigration rates since the Chernobyl disaster in 1986.\n\nFrom January 2020 to the end of September 2021 and as a direct effect of COVID-19 pandemic, Japan registered at least 112,000 excess deaths,[17] a reduction of about 2.6 years in the average life expectancy, a noticeable decrease in birth rates and a marked decrease in immigration rates. The overall effect was a record population decline of 798,214 persons in that year, although the excess mortality rate for all causes has been estimated at between 100,000 and 130,000 deaths. It is the largest population decline recorded since World War I (1914–1918), Spanish flu pandemic (1918–1920), Great Kanto earthquake (1923), Showa Recession and Depression of 1930s, and Asia-Pacific War in World War II (1937–1945).[clarification needed]\n\nAccording to a demographic study conducted by Japanese Ministry of Internal Affairs and Communications, the Japanese population, including foreign residents, declined from 128 million people in 2010 to 124.3 million people in 2023, with a decrease of almost 511,000 people in one year.[18][19]\n\nView source data.\n\nView source data.\n\nView source data.\n\nView source data.\n\nView source data.",
+        "evidence_type": "text",
+        "title": null,
+        "section_path": [],
+        "retrieval_query": "Find 2023 population estimates for Japan and Timor-Leste, and if the question requires a correlation judgment, find whether the countries in the supplied articles have population estimates so we can compare population size against their 2010–2015 life expectancy values.",
+        "retriever": "vector",
+        "rank": 3,
+        "raw_score": 1.0,
+        "score_semantics": "higher_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "targeted_multistep_sections",
+          "reasoning_instructions": "1) Retrieve the 2023 population estimate for Japan and for Timor-Leste. 2) If additional supplied articles are involved, identify which countries have both a population estimate and a 2010–2015 life expectancy value. 3) Extract the relevant population figures and the life expectancy values from the same articles or datasets. 4) Compare population size against life expectancy across the countries to assess whether a correlation judgment is being requested. 5) If correlation is needed, do not infer causation; only determine whether the data support a comparison or apparent association."
+        }
+      },
+      {
+        "evidence_id": "List_of_countries_by_past_life_expectancy.html#section-000-00",
+        "source_article": "List_of_countries_by_past_life_expectancy.html",
+        "content": "Article: List of countries by past life expectancy\nSection: Lead\n\nLife expectancy by world region, from 1770 to 2023\n\nThis is a list of countries showing past life expectancy, ranging from 1950 to 2015 in five-year periods, as estimated by the 2017 revision of the World Population Prospects database by the United Nations Population Division. Life expectancy equals the average number of years a person born in a given country is expected to live if mortality rates at each age were to remain steady in the future. The life expectancy is shown as the average of males and females.",
+        "evidence_type": "text",
+        "title": null,
+        "section_path": [],
+        "retrieval_query": "Find 2023 population estimates for Japan and Timor-Leste, and if the question requires a correlation judgment, find whether the countries in the supplied articles have population estimates so we can compare population size against their 2010–2015 life expectancy values.",
+        "retriever": "vector",
+        "rank": 4,
+        "raw_score": 1.0,
+        "score_semantics": "higher_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "targeted_multistep_sections",
+          "reasoning_instructions": "1) Retrieve the 2023 population estimate for Japan and for Timor-Leste. 2) If additional supplied articles are involved, identify which countries have both a population estimate and a 2010–2015 life expectancy value. 3) Extract the relevant population figures and the life expectancy values from the same articles or datasets. 4) Compare population size against life expectancy across the countries to assess whether a correlation judgment is being requested. 5) If correlation is needed, do not infer causation; only determine whether the data support a comparison or apparent association."
+        }
+      },
+      {
+        "evidence_id": "Demographics_of_East_Timor.html#section-002-00",
+        "source_article": "Demographics_of_East_Timor.html",
+        "content": "Article: Demographics of Timor-Leste\nSection: Population size and structure > Age groups\n\nPopulation by Sex and Age Group (Census 11.VII.2015) [4]\n\nAge group\n\nMale\n\nFemale\n\nTotal\n\n%\n\nTotal\n\n601 112\n\n582 531\n\n1 183 643\n\n100\n\n0-4\n\n77 896\n\n72 410\n\n150 306\n\n12.70\n\n5-9\n\n80 377\n\n75 705\n\n156 082\n\n13.19\n\n10-14\n\n80 721\n\n75 548\n\n156 269\n\n13.20\n\n15-19\n\n69 839\n\n67 033\n\n136 872\n\n11.56\n\n20-24\n\n52 759\n\n54 244\n\n107 003\n\n9.04\n\n25-29\n\n45 486\n\n47 464\n\n92 950\n\n7.85\n\n30-34\n\n35 934\n\n36 461\n\n72 395\n\n6.12\n\n35-39\n\n24 245\n\n24 645\n\n48 890\n\n4.13\n\n40-44\n\n29 097\n\n26 779\n\n55 876\n\n4.72\n\n45-49\n\n25 044\n\n22 274\n\n47 318\n\n4.00\n\n50-54\n\n18 661\n\n16 776\n\n35 437\n\n2.99\n\n55-59\n\n14 436\n\n12 867\n\n27 303\n\n2.31\n\n60-64\n\n13 864\n\n14 516\n\n28 380\n\n2.40\n\n65-69\n\n14 611\n\n16 427\n\n31 038\n\n2.62\n\n70-74\n\n8 949\n\n9 204\n\n18 153\n\n1.53\n\n75-79\n\n4 862\n\n5 009\n\n9 961\n\n0.84\n\n80-84\n\n2 399\n\n2 798\n\n5 197\n\n0.44\n\n85+\n\n1 932\n\n2 281\n\n4 213\n\n0.36\n\nAge group\n\nMale\n\nFemale\n\nTotal\n\nPercent\n\n0-14\n\n238 994\n\n223 663\n\n462 657\n\n39.09\n\n15-64\n\n329 365\n\n323 059\n\n652 334\n\n55.11\n\n65+\n\n32 753\n\n35 809\n\n68 562\n\n5.79\n\nPopulation Estimates by Sex and Age Group (01.VII.2018) (Data refer to national projections.): [5]\n\nAge group\n\nMale\n\nFemale\n\nTotal\n\n%\n\nTotal\n\n642 639\n\n618 768\n\n1 261 407\n\n100\n\n0–4\n\n86 042\n\n78 681\n\n164 723\n\n13.06\n\n5–9\n\n84 950\n\n76 259\n\n161 209\n\n12.78\n\n10–14\n\n82 088\n\n75 015\n\n157 103\n\n12.45\n\n15–19\n\n75 602\n\n71 942\n\n147 544\n\n11.70\n\n20–24\n\n60 513\n\n60 703\n\n121 216\n\n9.61\n\n25–29\n\n46 777\n\n50 239\n\n97 016\n\n7.69\n\n30–34\n\n40 344\n\n42 718\n\n83 062\n\n6.58\n\n35–39\n\n28 909\n\n30 013\n\n58 922\n\n4.67\n\n40–44\n\n24 228\n\n23 965\n\n48 193\n\n3.82\n\n45–49\n\n27 718\n\n25 146\n\n52 864\n\n4.19\n\n50–54\n\n21 620\n\n19 325\n\n40 945\n\n3.25\n\n55–59\n\n16 674\n\n15 419\n\n32 093\n\n2.54\n\n60–64\n\n14 583\n\n14 712\n\n29 295\n\n2.32\n\n65-69\n\n11 764\n\n12 441\n\n24 205\n\n1.92\n\n70-74\n\n9 187\n\n9 388\n\n18 575\n\n1.47\n\n75-79\n\n6 452\n\n6 789\n\n13 241\n\n1.05\n\n80+\n\n5 188\n\n6 013\n\n11 201\n\n0.89\n\nAge group\n\nMale\n\nFemale\n\nTotal\n\nPercent\n\n0–14\n\n253 080\n\n229 955\n\n483 035\n\n38.29\n\n15–64\n\n356 968\n\n354 182\n\n711 150\n\n56.38\n\n65+\n\n32 591\n\n34 631\n\n67 222\n\n5.33",
+        "evidence_type": "text",
+        "title": null,
+        "section_path": [],
+        "retrieval_query": "Find 2023 population estimates for Japan and Timor-Leste, and if the question requires a correlation judgment, find whether the countries in the supplied articles have population estimates so we can compare population size against their 2010–2015 life expectancy values.",
+        "retriever": "vector",
+        "rank": 5,
+        "raw_score": 0.8183087176234152,
+        "score_semantics": "higher_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "targeted_multistep_sections",
+          "reasoning_instructions": "1) Retrieve the 2023 population estimate for Japan and for Timor-Leste. 2) If additional supplied articles are involved, identify which countries have both a population estimate and a 2010–2015 life expectancy value. 3) Extract the relevant population figures and the life expectancy values from the same articles or datasets. 4) Compare population size against life expectancy across the countries to assess whether a correlation judgment is being requested. 5) If correlation is needed, do not infer causation; only determine whether the data support a comparison or apparent association."
+        }
+      },
+      {
+        "evidence_id": "Demographics_of_East_Timor.html#section-000-00",
+        "source_article": "Demographics_of_East_Timor.html",
+        "content": "Article: Demographics of Timor-Leste\nSection: Lead\n\nDemographics of Timor-Leste\n\nPopulation pyramid of Timor-Leste in 2020\n\nPopulation1,445,006 (2022 est.)\n\nGrowth rate2.15% (2022 est.)\n\nBirth rate30.94 births/1,000 population (2022 est.)\n\nDeath rate5.61 deaths/1,000 population (2022 est.)\n\nLife expectancy69.92 years\n\n • male68.25 years\n\n • female71.7 years\n\nFertility rate4.21 children born/woman (2022 est.)\n\nInfant mortality rate33.69 deaths/1,000 live births\n\nNet migration rate-3.82 migrant(s)/1,000 population (2022 est.)\n\nAge structure\n\n0–14 years38.29%\n\n15–64 years56.38%\n\n65 and over5.33%\n\nSex ratio\n\nTotal1 male(s)/female (2022 est.)\n\nAt birth1.07 male(s)/female\n\nUnder 151.06 male(s)/female\n\n65 and over0.79 male(s)/female\n\nNationality\n\nNationalityTimorese\n\nThis is a demography of the population of Timor-Leste including population density, ethnicity, education level, health of the populace, economic status, religious affiliations and other aspects of the population.",
+        "evidence_type": "text",
+        "title": null,
+        "section_path": [],
+        "retrieval_query": "Find 2023 population estimates for Japan and Timor-Leste, and if the question requires a correlation judgment, find whether the countries in the supplied articles have population estimates so we can compare population size against their 2010–2015 life expectancy values.",
+        "retriever": "vector",
+        "rank": 6,
+        "raw_score": 0.7606233472588408,
+        "score_semantics": "higher_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "targeted_multistep_sections",
+          "reasoning_instructions": "1) Retrieve the 2023 population estimate for Japan and for Timor-Leste. 2) If additional supplied articles are involved, identify which countries have both a population estimate and a 2010–2015 life expectancy value. 3) Extract the relevant population figures and the life expectancy values from the same articles or datasets. 4) Compare population size against life expectancy across the countries to assess whether a correlation judgment is being requested. 5) If correlation is needed, do not infer causation; only determine whether the data support a comparison or apparent association."
+        }
+      }
+    ],
+    "assessment": {
+      "ready_to_answer": false,
+      "supported_requirements": [
+        "The supplied evidence supports the 2010–2015 life expectancy values for Japan (83.3) and Timor-Leste (67.7).",
+        "The evidence also supports that the life-expectancy source article covers 1950–2015 values, not 2023."
+      ],
+      "missing_requirements": [
+        "2023 population estimates for the countries being compared, from the relevant Wikipedia articles.",
+        "Enough country-by-country paired data to assess whether population size is meaningfully correlated with life expectancy; only two countries' life expectancy values are present, and only one of the country articles includes a population figure, but not a 2023 estimate in the provided excerpt for Timor-Leste."
+      ],
+      "retrieval_requests": [
+        {
+          "missing_fact": "2023 population estimate for Japan from a relevant Wikipedia article excerpt",
+          "query": "Japan 2023 population estimate Wikipedia article excerpt demographic population 2023 estimate",
+          "target_articles": [
+            "Japan.html",
+            "Demographics_of_Japan.html"
+          ],
+          "keywords": [
+            "2023",
+            "population",
+            "estimate",
+            "Japan"
+          ],
+          "preferred_retriever": "hybrid"
+        },
+        {
+          "missing_fact": "2023 population estimate for Timor-Leste from a relevant Wikipedia article excerpt",
+          "query": "Timor-Leste 2023 population estimate Wikipedia article excerpt demographic population 2023 estimate",
+          "target_articles": [
+            "Demographics_of_East_Timor.html",
+            "East_Timor.html",
+            "Timor-Leste.html"
+          ],
+          "keywords": [
+            "2023",
+            "population",
+            "estimate",
+            "Timor-Leste"
+          ],
+          "preferred_retriever": "hybrid"
+        },
+        {
+          "missing_fact": "Any additional country population estimates and matching life expectancy values needed to evaluate correlation beyond the two supplied country examples",
+          "query": "Wikipedia excerpt list of countries population estimate and life expectancy values 2010 2015 correlation population size life expectancy",
+          "target_articles": [
+            "Japan.html",
+            "Demographics_of_Japan.html",
+            "Demographics_of_East_Timor.html",
+            "List_of_countries_by_past_life_expectancy.html"
+          ],
+          "keywords": [
+            "population",
+            "life expectancy",
+            "2010-2015",
+            "2023",
+            "correlation"
+          ],
+          "preferred_retriever": "hybrid"
+        }
+      ],
+      "table_requests": [],
+      "unresolved_conflicts": [
+        "The question asks for 2023 population estimates, but the life-expectancy values are from 2010–2015 (and the supplied life-expectancy list article itself covers 1950–2015), so the comparison mixes different reference years."
+      ],
+      "explanation": "The evidence is not sufficient to determine whether population size is meaningfully correlated with life expectancy. We have life expectancy values for Japan and Timor-Leste, but not the needed 2023 population estimates for both countries, and we lack enough paired country data to support any correlation conclusion. The date mismatch should be noted because the population figures are requested for 2023 while the life expectancy figures are from 2010–2015, so the datasets are not contemporaneous."
+    },
+    "assessment_history": [
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "We have the 2010–2015 life expectancy values for Japan (83.3 years) and Timor-Leste (67.7 years)."
+        ],
+        "missing_requirements": [
+          "The 2023 population estimates for the countries in the supplied Wikipedia articles are not provided, so the population-size variable needed to assess correlation is missing.",
+          "Only two countries are evidenced here, which is insufficient to determine whether population size is meaningfully correlated with life expectancy across countries."
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "2023 population estimate for Japan",
+            "query": "Japan 2023 population estimate Wikipedia or cited demographic estimate",
+            "target_articles": [
+              "Demographics_of_Japan.html"
+            ],
+            "keywords": [
+              "2023 population estimate",
+              "Japan"
+            ],
+            "preferred_retriever": "hybrid"
+          },
+          {
+            "missing_fact": "2023 population estimate for Timor-Leste",
+            "query": "Timor-Leste 2023 population estimate Wikipedia or cited demographic estimate",
+            "target_articles": [
+              "Demographics_of_East_Timor.html"
+            ],
+            "keywords": [
+              "2023 population estimate",
+              "Timor-Leste"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The supplied evidence supports the life-expectancy values for the two countries, but it does not include the 2023 population estimates required to compare population size against life expectancy. Even with those values, two countries would not be enough to establish a meaningful correlation across countries. The response should also note the date mismatch between 2023 population estimates and 2010–2015 life expectancy figures."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "Japan 2010–2015 life expectancy is 83.3 years",
+          "Timor-Leste 2010–2015 life expectancy is 67.7 years",
+          "The evidence shows the relevant life-expectancy values come from 2010–2015 periods"
+        ],
+        "missing_requirements": [
+          "2023 population estimates for the countries in the supplied Wikipedia articles, needed to assess whether population size is correlated with life expectancy",
+          "A basis for comparing multiple countries' population sizes against their life expectancy values using the supplied evidence"
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "2023 population estimates for Japan and Timor-Leste, and enough additional country examples if needed to judge whether population size is meaningfully correlated with life expectancy",
+            "query": "Find 2023 population estimates for Japan and Timor-Leste, and if the question requires a correlation judgment, find whether the countries in the supplied articles have population estimates so we can compare population size against their 2010–2015 life expectancy values.",
+            "target_articles": [
+              "Japan.html",
+              "Demographics_of_Japan.html",
+              "Demographics_of_East_Timor.html",
+              "Philippines.html"
+            ],
+            "keywords": [
+              "2023 population estimate",
+              "Japan",
+              "Timor-Leste",
+              "2023",
+              "population",
+              "life expectancy",
+              "2010–2015"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [
+          "The question asks about population size correlation, but the supplied evidence only gives life expectancy values and no 2023 population estimates for the relevant countries."
+        ],
+        "explanation": "We can support the 2010–2015 life expectancy values for Japan and Timor-Leste from the supplied excerpts. However, the supplied evidence does not include the required 2023 population estimates for these countries, so we cannot determine whether population size is meaningfully correlated with life expectancy from the provided material alone. There is also a date mismatch: the population estimates are specified as 2023, while the life expectancy values are from 2010–2015."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "The supplied evidence supports the 2010–2015 life expectancy values for Japan (83.3) and Timor-Leste (67.7).",
+          "The evidence also supports that the life-expectancy source article covers 1950–2015 values, not 2023."
+        ],
+        "missing_requirements": [
+          "2023 population estimates for the countries being compared, from the relevant Wikipedia articles.",
+          "Enough country-by-country paired data to assess whether population size is meaningfully correlated with life expectancy; only two countries' life expectancy values are present, and only one of the country articles includes a population figure, but not a 2023 estimate in the provided excerpt for Timor-Leste."
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "2023 population estimate for Japan from a relevant Wikipedia article excerpt",
+            "query": "Japan 2023 population estimate Wikipedia article excerpt demographic population 2023 estimate",
+            "target_articles": [
+              "Japan.html",
+              "Demographics_of_Japan.html"
+            ],
+            "keywords": [
+              "2023",
+              "population",
+              "estimate",
+              "Japan"
+            ],
+            "preferred_retriever": "hybrid"
+          },
+          {
+            "missing_fact": "2023 population estimate for Timor-Leste from a relevant Wikipedia article excerpt",
+            "query": "Timor-Leste 2023 population estimate Wikipedia article excerpt demographic population 2023 estimate",
+            "target_articles": [
+              "Demographics_of_East_Timor.html",
+              "East_Timor.html",
+              "Timor-Leste.html"
+            ],
+            "keywords": [
+              "2023",
+              "population",
+              "estimate",
+              "Timor-Leste"
+            ],
+            "preferred_retriever": "hybrid"
+          },
+          {
+            "missing_fact": "Any additional country population estimates and matching life expectancy values needed to evaluate correlation beyond the two supplied country examples",
+            "query": "Wikipedia excerpt list of countries population estimate and life expectancy values 2010 2015 correlation population size life expectancy",
+            "target_articles": [
+              "Japan.html",
+              "Demographics_of_Japan.html",
+              "Demographics_of_East_Timor.html",
+              "List_of_countries_by_past_life_expectancy.html"
+            ],
+            "keywords": [
+              "population",
+              "life expectancy",
+              "2010-2015",
+              "2023",
+              "correlation"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [
+          "The question asks for 2023 population estimates, but the life-expectancy values are from 2010–2015 (and the supplied life-expectancy list article itself covers 1950–2015), so the comparison mixes different reference years."
+        ],
+        "explanation": "The evidence is not sufficient to determine whether population size is meaningfully correlated with life expectancy. We have life expectancy values for Japan and Timor-Leste, but not the needed 2023 population estimates for both countries, and we lack enough paired country data to support any correlation conclusion. The date mismatch should be noted because the population figures are requested for 2023 while the life expectancy figures are from 2010–2015, so the datasets are not contemporaneous."
+      }
+    ]
+  }
+}

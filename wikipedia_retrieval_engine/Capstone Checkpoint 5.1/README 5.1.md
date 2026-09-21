@@ -841,6 +841,116 @@ The table branch also needs focused fixtures beyond end-to-end RAGAS scoring:
 - missing or ambiguous legends, where the correct behavior is a warning or
   abstention rather than a guess.
 
+## Benchmark findings and retrieval tune-up (Phase 1)
+
+This section records the empirical results of the retrieval-only benchmark against
+the Checkpoint 4.1 baseline, the diagnosis of where quality is lost, and the
+Phase 1 retrieval changes made in response. Phase 2 (table reading) is gated on a
+clean conclusion here: retrieval must be demonstrably solid before table synthesis
+becomes the object of work.
+
+### Baseline and the context trade
+
+The 4.1 comparison point is the graph retriever (`vector_graph`): mean
+designated-article recall **0.939** over the full 19 GT questions, keeping about
+**7.4 articles** and roughly **260,000 context characters** per question. The 5.1
+retrieval-only agent sends about **15,000–18,000 characters** over **~3.5 articles**
+per question — an approximately **16× context reduction**. Article recall is not
+worse for finding articles; the two systems simply differ on breadth-vs-focus.
+
+Two facts make a naive recall comparison misleading:
+
+- **The metric is measured at a different stage.** 4.1 computes recall over the raw
+  retrieved set; 5.1 computes it over the *final evidence* after LLM article review
+  and selection, so a correct article the vector search found can be dropped by the
+  reviewer before it counts.
+- **Early 5.1 runs did not complete all 19 questions** (see below), so their
+  aggregates were computed over a biased subset that excluded hard table questions.
+
+### Honest full-19 baseline
+
+After the completion fix, four full-19 runs land at roughly **0.47–0.53 PASS** with
+mean article recall **~0.87–0.92**. Excluding the two ranked-list table questions
+(GT09/GT19, whose designated articles are large ranked tables), 5.1 recall
+(**0.91–0.97**) matches the 4.1 baseline (**0.96**). The earlier apparent ~0.61 PASS
+was inflated by incomplete runs silently dropping hard questions; ~0.49 over the
+full 19 is the honest baseline for the retrieval-only agent.
+
+Every stable failure is a **row-wise table operation** — cross-article intersection
+(GT03), temporal aggregation (GT07), table filter (GT08), and program-history filter
+(GT10/GT11). Prose and relationship questions pass stably. Because article recall is
+~0.91 and most failures occur at recall 1.0, the right article is retrieved and the
+answer is still wrong.
+
+### Why full-19 never completed (fixed)
+
+`assess_evidence` raised fatal errors on imperfect structured output: (1)
+`ready_to_answer=True` returned together with leftover missing requirements or
+requests; (2) the `table_requests` key omitted entirely, which the model rejected as
+a required field. Across the incomplete runs, the number of questions missing from
+the results equaled the number of these validation errors exactly.
+
+Fixes:
+
+- `EvidenceAssessment` list fields now default to empty, so an omitted key becomes
+  `[]` instead of a validation crash.
+- `assess_evidence` repairs rather than raises: it clears table requests in
+  retrieval-only mode, coerces `ready_to_answer` to `False` when any gap remains
+  (trust the gaps over the flag), and synthesizes a fallback retrieval request when
+  a not-ready assessment carries no actionable request.
+
+After these changes every run completes all 19 questions. `evidence_ready` is
+correspondingly lower and more honest, because the assessor can no longer claim
+readiness while still listing gaps.
+
+### Retrieval-quality diagnosis
+
+With completion fixed, the remaining quality gap is partly denominator (hard
+questions restored to the set) and partly a real effect on borderline questions.
+The absolute volume sent to the answer model is small (~15K characters, far below
+4.1's ~260K), so the cause is **not** context volume. The evidence logs show two
+retrieval-selection problems and one reasoning floor:
+
+- **Wrong section inside the right article.** The initial stage kept only the single
+  best-matching chunk per article. For a table article that top chunk is usually the
+  prose preamble, not the data rows. On GT07 the Best Actor "Winners and nominees"
+  chunk was the table key ("‡ indicates the winner…") with zero winner rows; the
+  actual rows arrived only later via multi-step retrieval.
+- **Graph-expansion contamination.** Graph-seeded retrieval added the top sections of
+  *every* neighbor unconditionally. Expanding an award seed pulled sibling awards
+  (Best Picture, Best Director, Best Supporting Actor, Golden Globe) whose
+  overlapping names and years actively mislead an aggregation over Best Actor.
+- **Table reasoning is the floor.** GT11 retrieved the correct Sport/Years section
+  with the answer data present, cleanly, without contamination or looping, and still
+  failed. Perfect retrieval, wrong answer: this is the Phase 2 ceiling and cannot be
+  moved by more or better retrieval.
+
+### Phase 1 changes
+
+1. **Initial article count is a parameter** (`initial_article_top_k`), not a
+   hard-coded 3. The node previously ignored the configured value; the benchmark now
+   seeds 4 unique articles to cover four-article questions such as GT14.
+2. **Selected-article deepening.** `retrieve_selected_article_sections` is wired into
+   the benchmark graph between evidence collection and assessment, so each selected
+   article contributes several focused sections (`sections_per_selected_article`) on
+   the initial pass. This gives the row-bearing chunk a chance to be present before
+   the first assessment. These are section-vector searches and add no LLM calls.
+3. **Graph contamination gating.** `retrieve_graph_seeded_evidence` now pools every
+   neighbor-section candidate, ranks them by match distance, and keeps only the
+   global best `max_graph_sections`, so adjacent-but-wrong neighbors are outcompeted
+   instead of each injecting distractor chunks.
+
+New diagnostic columns in the benchmark CSV: `retrieved_article_count`,
+`sections_per_selected_article`, and `max_graph_sections`.
+
+### Phase gate
+
+Phase 2 (enabling the table-reader branch) begins only when the benchmark shows the
+designated sections are present with the answer content and graph contamination is
+controlled, so that the remaining failures are attributable to table synthesis
+rather than to retrieval. The target conclusion is explicit: "article and section
+retrieval are solid; the failing answers are table synthesis."
+
 ## Risks and open questions
 
 - The evidence assessor can accept weak evidence or reject sufficient evidence; it
@@ -875,9 +985,16 @@ Implemented preparation:
 - bounded retrieval-only conditional routing through vector, graph-seeded, and
   targeted multi-step section evidence;
 - a Wikipedia-GT RAGAS harness that answers only from accumulated section evidence;
-  and
+- assessment-contract robustness: the assessor repairs contradictory or incomplete
+  structured output instead of raising, so every benchmark run completes all 19
+  questions (Phase 1);
+- a configurable initial article count and selected-article section deepening, so
+  the answer-bearing section is present before the first assessment (Phase 1);
+- graph-neighbor contamination gating by pooled distance ranking and a global cap
+  (Phase 1); and
 - focused tests for model contracts, table normalization, cache reuse, invalidation,
-  artifact loading, graph nodes, logging, table resolution, and plan validation.
+  artifact loading, graph nodes, logging, table resolution, and plan validation,
+  including selected-article deepening and graph-section ranking.
 
 Still to implement and evaluate:
 

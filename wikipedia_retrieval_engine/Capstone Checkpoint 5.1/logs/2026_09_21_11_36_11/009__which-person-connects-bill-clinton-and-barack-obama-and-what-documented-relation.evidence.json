@@ -1,0 +1,503 @@
+{
+  "run_id": "2026_09_21_11_36_11",
+  "question_number": 9,
+  "logged_at": "2026-09-21T11:38:25-04:00",
+  "question": "Which person connects Bill Clinton and Barack Obama, and what documented relationship links that person to each man? Include the 2008 election connection and the later administration role.",
+  "final_state": {
+    "question": "Which person connects Bill Clinton and Barack Obama, and what documented relationship links that person to each man? Include the 2008 election connection and the later administration role.",
+    "retrieval_attempts": 3,
+    "article_candidates": [
+      {
+        "source_article": "Bill_Clinton.html",
+        "representative_chunk": "Article: Bill Clinton\nSection: Post-presidency (2001–present) > 2008 presidential election\n\nClinton speaking at the 2008 Democratic National Convention\n\nDuring the 2008 Democratic presidential primary campaign, Clinton vigorously advocated on behalf of his wife, Hillary. Through speaking engagements and fundraisers, he was able to raise $10 million toward her campaign.[367] Some worried that as an ex-president, he was too active on the trail, too negative to Clinton rival Barack Obama, and alienating his supporters at home and abroad.[368] Many were especially critical of him following his remarks in the South Carolina primary, which Obama won. Later in the 2008 primaries, there was some infighting between Bill and Hillary's staffs, especially in Pennsylvania.[369] Considering Bill's remarks, many thought he could not rally Hillary supporters behind Obama after Obama won the primary.[370] Such remarks led to apprehension that the party would be split to the detriment of Obama's election. Fears were allayed August 27, 2008, when Clinton enthusiastically endorsed Obama at the 2008 Democratic National Convention, saying all his experience as president assures him that Obama is \"ready to lead\".[371] After Hillary Clinton's presidential campaign was over, Bill Clinton continued to raise funds to help pay off her campaign debt.[372][373]",
+        "representative_chunk_id": "Bill_Clinton.html#section-038-00",
+        "section_title": "2008 presidential election",
+        "section_path": [
+          "Post-presidency (2001–present)",
+          "2008 presidential election"
+        ],
+        "retrieval_query": "Which person connects Bill Clinton and Barack Obama, and what documented relationship links that person to each man? Include the 2008 election connection and the later administration role.",
+        "discovered_by": "vector",
+        "rank": 1,
+        "raw_score": 0.7616714239120483,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      }
+    ],
+    "article_reviews": [
+      {
+        "source_article": "Bill_Clinton.html",
+        "relevant": true,
+        "reason": "The excerpt directly discusses Bill Clinton's 2008 election role in relation to Barack Obama: Clinton was seen as too critical of Obama during the Democratic primary, and then formally endorsed Obama at the 2008 Democratic National Convention.",
+        "relevant_sections": [
+          "Post-presidency (2001–present) > 2008 presidential election"
+        ],
+        "relevant_table_names": [],
+        "needs_table_reader": false
+      }
+    ],
+    "selected_articles": [
+      "Bill_Clinton.html"
+    ],
+    "rejected_articles": [],
+    "evidence": [
+      {
+        "evidence_id": "Bill_Clinton.html#section-038-00",
+        "source_article": "Bill_Clinton.html",
+        "content": "Article: Bill Clinton\nSection: Post-presidency (2001–present) > 2008 presidential election\n\nClinton speaking at the 2008 Democratic National Convention\n\nDuring the 2008 Democratic presidential primary campaign, Clinton vigorously advocated on behalf of his wife, Hillary. Through speaking engagements and fundraisers, he was able to raise $10 million toward her campaign.[367] Some worried that as an ex-president, he was too active on the trail, too negative to Clinton rival Barack Obama, and alienating his supporters at home and abroad.[368] Many were especially critical of him following his remarks in the South Carolina primary, which Obama won. Later in the 2008 primaries, there was some infighting between Bill and Hillary's staffs, especially in Pennsylvania.[369] Considering Bill's remarks, many thought he could not rally Hillary supporters behind Obama after Obama won the primary.[370] Such remarks led to apprehension that the party would be split to the detriment of Obama's election. Fears were allayed August 27, 2008, when Clinton enthusiastically endorsed Obama at the 2008 Democratic National Convention, saying all his experience as president assures him that Obama is \"ready to lead\".[371] After Hillary Clinton's presidential campaign was over, Bill Clinton continued to raise funds to help pay off her campaign debt.[372][373]",
+        "evidence_type": "text",
+        "title": "2008 presidential election",
+        "section_path": [
+          "Post-presidency (2001–present)",
+          "2008 presidential election"
+        ],
+        "retrieval_query": "Which person connects Bill Clinton and Barack Obama, and what documented relationship links that person to each man? Include the 2008 election connection and the later administration role.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.7616714239120483,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "initial_article_retrieval",
+          "discovered_by": "vector"
+        }
+      },
+      {
+        "evidence_id": "George_W._Bush.html#section-049-00",
+        "source_article": "George_W._Bush.html",
+        "content": "Article: George W. Bush\nSection: Post-presidency (2009–present) > Collaborations\n\nPresident Obama with former presidents Clinton and Bush present the Clinton Bush Haiti Fund after the 2010 earthquake.\n\nIn January 2010, at President Obama's request, Bush and Bill Clinton established the Clinton Bush Haiti Fund to raise contributions for relief and recovery efforts after the 2010 Haiti earthquake earlier that month.[485] On May 2, 2011, President Obama called Bush, who was at a restaurant with his wife, to inform him that Osama bin Laden had been killed.[486] The Bushes joined the Obamas in New York City to mark the tenth anniversary of the September 11, 2001, terrorist attacks. At the Ground Zero memorial, Bush read a letter that President Abraham Lincoln wrote to a widow who had lost five sons during the Civil War.[487]\n\nOn September 7, 2017, Bush partnered with former presidents Jimmy Carter, George H. W. Bush, Bill Clinton, and Barack Obama to work with One America Appeal to help the victims of Hurricane Harvey and Hurricane Irma in the Gulf Coast and Texas communities.[488] Over the years, President Bush has had a good-natured friendship with Michelle Obama. \"President Bush and I, we are forever seatmates because of protocol, and that's how we sit at all the official functions,\" Obama told the Today Show. \"He's my partner in crime at every major thing where all the 'formers' gather. So we're together all the time.\"[489] Bush famously passed mints to Obama during the McCain funeral in September 2018 and gave them to her again during the funeral of his father in December 2018.[490]",
+        "evidence_type": "graph",
+        "title": "Collaborations",
+        "section_path": [
+          "Post-presidency (2009–present)",
+          "Collaborations"
+        ],
+        "retrieval_query": "Bill Clinton later administration role in Barack Obama administration relationship or appointment connection",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 0.9413395524024963,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "Bill_Clinton.html"
+          ],
+          "graph_neighbor_rank": 1,
+          "graph_score": 6.899346703263445,
+          "discovery_reasons": [
+            "link",
+            "entity:Dallas(48)",
+            "entity:Vice_President_of_the_United_States(48)",
+            "entity:2020_United_States_presidential_election(34)",
+            "entity:2016_United_States_presidential_election(40)",
+            "entity:Electoral_College_(United_States)(18)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "George_W._Bush.html#section-026-00",
+        "source_article": "George_W._Bush.html",
+        "content": "Article: George W. Bush\nSection: Presidency (2001–2009) > Foreign policy\n\nMain article: Foreign policy of the George W. Bush administration\n\nCountries visited by President George W. Bush during his time in office:\n  7 or more visits\n\n  6 visits\n\n  5 visits\n\n  4 visits\n\n  3 visits\n\n  2 visits\n\n  1 visit\n\nDuring his presidential campaign, Bush's foreign policy platform included support for stronger economic and political relationships with Latin America, especially Mexico, and a reduction of involvement in \"nation-building\" and other small-scale military engagements. The administration pursued a national missile defense.[218] Bush was an advocate of China's entry into the World Trade Organization.[219]\n\nBush began his second term with an emphasis on improving strained relations with European nations. He appointed long-time adviser Karen Hughes to oversee a global public relations campaign. Bush lauded the pro-democracy struggles in Georgia and Ukraine.[220]\n\nIn March 2006, Bush visited India in a trip focused particularly on areas of nuclear energy, counter-terrorism co-operation, and discussions that would eventually lead to the India–United States Civil Nuclear Agreement.[221][222] This was in stark contrast to decades of U.S. policy, such as the stance taken by his predecessor, Bill Clinton, whose approach and response to India after the 1998 nuclear tests has been characterized as \"sanctions and hectoring\".[223]\n\nMidway through Bush's second term, questions arose whether Bush was retreating from his freedom and democracy agenda, which was highlighted in policy changes toward some oil-rich former Soviet republics in central Asia.[224]\n\nPresident Bush with Russian president Vladimir Putin in Shanghai, October 21, 2001. Russia had cooperated with the U.S. in the war on terror.\n\nBush signed the Strategic Offensive Reductions Treaty with Russia. He withdrew U.S. support for several international agreements, including, in 2002, the Anti-Ballistic Missile Treaty (ABM) with Russia.[225] This marked the first time in post-World War II history that the United States had withdrawn from a major international arms treaty.[226] Russian president Vladimir Putin stated that American withdrawal from the ABM Treaty was a mistake.[227]\n\nBush emphasized a careful approach to the conflict between Israel and the Palestinians; he denounced Palestine Liberation Organization leader Yasser Arafat for his support of violence, but sponsored dialogues between Prime Minister Ariel Sharon and Palestinian National Authority president Mahmoud Abbas. Bush supported Sharon's unilateral disengagement plan, and lauded the democratic elections held in Palestine after Arafat's death.\n\nBush also expressed U.S. support for the defense of Taiwan following the stand-off in April 2001 with China over the Hainan Island incident, when an EP-3E Aries II surveillance aircraft collided with a People's Liberation Army Air Force jet, leading to the detention of U.S. personnel. From 2003 to 2004, Bush authorized U.S. military intervention in Haiti and Liberia to protect U.S. interests. Bush condemned the militia attacks Darfur and denounced the killings in Sudan as genocide.[228] Bush said an international peacekeeping presence was critical in Darfur, but he opposed referring the situation to the International Criminal Court.\n\nOn June 10, 2007, Bush met with Albanian Prime Minister Sali Berisha and became the first president to visit Albania.[229] He later voiced his support for the independence of Kosovo.[230]\n\nIn early 2008, Bush vowed full support for admitting Ukraine and Georgia into NATO[231] despite Russia's opposition to the further enlargement of NATO.[232] During the 2008 Russo-Georgian diplomatic crisis, Bush condemned Russia for recognizing the separatist government of South Ossetia.[233] When Russian troops invaded Georgia later that summer, Bush said: \"Bullying and intimidation are not acceptable ways to conduct foreign policy in the 21st century.\"[234]",
+        "evidence_type": "graph",
+        "title": "Foreign policy",
+        "section_path": [
+          "Presidency (2001–2009)",
+          "Foreign policy"
+        ],
+        "retrieval_query": "Bill Clinton later administration role in Barack Obama administration relationship or appointment connection",
+        "retriever": "graph",
+        "rank": 2,
+        "raw_score": 1.2241531610488892,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "Bill_Clinton.html"
+          ],
+          "graph_neighbor_rank": 1,
+          "graph_score": 6.899346703263445,
+          "discovery_reasons": [
+            "link",
+            "entity:Dallas(48)",
+            "entity:Vice_President_of_the_United_States(48)",
+            "entity:2020_United_States_presidential_election(34)",
+            "entity:2016_United_States_presidential_election(40)",
+            "entity:Electoral_College_(United_States)(18)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Barack_Obama.html#section-011-00",
+        "source_article": "Barack_Obama.html",
+        "content": "Article: Barack Obama\nSection: Legislative career > U.S. Senate (2005–2008)\n\nSee also: US Senate career of Barack Obama and List of bills sponsored by Barack Obama in the United States Senate\n\nOfficial portrait of Obama as a member of the United States Senate\n\nObama was sworn in as a senator on January 3, 2005,[151] becoming the only Senate member of the Congressional Black Caucus.[152] He introduced two initiatives that bore his name: Lugar–Obama, which expanded the Nunn–Lugar Cooperative Threat Reduction concept to conventional weapons;[153] and the Federal Funding Accountability and Transparency Act of 2006, which authorized the establishment of USAspending.gov, a web search engine on federal spending.[154] On June 3, 2008, Senator Obama—along with Senators Tom Carper, Tom Coburn, and John McCain—introduced follow-up legislation: Strengthening Transparency and Accountability in Federal Spending Act of 2008.[155] He also cosponsored the Secure America and Orderly Immigration Act.[156]\n\nIn December 2006, President Bush signed into law the Democratic Republic of the Congo Relief, Security, and Democracy Promotion Act, marking the first federal legislation to be enacted with Obama as its primary sponsor.[157][158] In January 2007, Obama and Senator Feingold introduced a corporate jet provision to the Honest Leadership and Open Government Act, which was signed into law in September 2007.[159][160]\n\nLater in 2007, Obama sponsored an amendment to the Defense Authorization Act to add safeguards for personality-disorder military discharges.[161] This amendment passed the full Senate in the spring of 2008.[162] He sponsored the Iran Sanctions Enabling Act supporting divestment of state pension funds from Iran's oil and gas industry, which was never enacted but later incorporated in the Comprehensive Iran Sanctions, Accountability, and Divestment Act of 2010;[163] and co-sponsored legislation to reduce risks of nuclear terrorism.[164] Obama also sponsored a Senate amendment to the State Children's Health Insurance Program, providing one year of job protection for family members caring for soldiers with combat-related injuries.[165]\n\nObama held assignments on the Senate Committees for Foreign Relations, Environment and Public Works, and Veterans' Affairs through December 2006.[166] In January 2007, he left the Environment and Public Works committee and took additional assignments with Health, Education, Labor and Pensions and Homeland Security and Governmental Affairs.[167] He also became Chairman of the Senate's subcommittee on European Affairs.[168] As a member of the Senate Foreign Relations Committee, Obama made official trips to Eastern Europe, the Middle East, Central Asia, and Africa. He met with Mahmoud Abbas before Abbas became President of the Palestinian National Authority and gave a speech at the University of Nairobi in which he condemned corruption within the Kenyan government.[169] Obama resigned his Senate seat on November 16, 2008, to focus on his transition period for the presidency.[170]",
+        "evidence_type": "graph",
+        "title": "U.S. Senate (2005–2008)",
+        "section_path": [
+          "Legislative career",
+          "U.S. Senate (2005–2008)"
+        ],
+        "retrieval_query": "Bill Clinton later administration role in Barack Obama administration relationship or appointment connection",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 0.9582131505012512,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "Bill_Clinton.html"
+          ],
+          "graph_neighbor_rank": 2,
+          "graph_score": 6.021319667256892,
+          "discovery_reasons": [
+            "link",
+            "entity:List_of_presidents_of_the_United_States(27)",
+            "entity:Vice_President_of_the_United_States(48)",
+            "entity:2020_United_States_presidential_election(34)",
+            "entity:Electoral_College_(United_States)(18)",
+            "entity:Shimon_Peres(8)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Barack_Obama.html#section-008-00",
+        "source_article": "Barack_Obama.html",
+        "content": "Article: Barack Obama\nSection: Legal career\n\nFrom 1994 to 2002, Obama served on the boards of directors of the Woods Fund of Chicago—which in 1985 had been the first foundation to fund the Developing Communities Project—and of the Joyce Foundation.[54] He served on the board of directors of the Chicago Annenberg Challenge from 1995 to 2002, as founding president and chairman of the board of directors from 1995 to 1999.[54] Obama's law license became inactive in 2007.[120][121]",
+        "evidence_type": "graph",
+        "title": "Legal career",
+        "section_path": [
+          "Legal career"
+        ],
+        "retrieval_query": "Bill Clinton later administration role in Barack Obama administration relationship or appointment connection",
+        "retriever": "graph",
+        "rank": 2,
+        "raw_score": 1.0203778743743896,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "Bill_Clinton.html"
+          ],
+          "graph_neighbor_rank": 2,
+          "graph_score": 6.021319667256892,
+          "discovery_reasons": [
+            "link",
+            "entity:List_of_presidents_of_the_United_States(27)",
+            "entity:Vice_President_of_the_United_States(48)",
+            "entity:2020_United_States_presidential_election(34)",
+            "entity:Electoral_College_(United_States)(18)",
+            "entity:Shimon_Peres(8)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Jimmy_Carter.html#section-034-00",
+        "source_article": "Jimmy_Carter.html",
+        "content": "Article: Jimmy Carter\nSection: Post-presidency (1981–2024) > Views on later presidents\n\nCarter meeting with his successor Ronald Reagan at the White House, October 1981\n\nCarter began his first year out of office with a pledge not to critique the Reagan administration, saying it was \"too early\".[354] He sided with Reagan on issues like building neutron arms after the Soviet invasion of Afghanistan,[355] but frequently spoke out against his administration, denouncing many of its actions in the Middle East.[356] He condemned the handling of the Sabra and Shatila massacre,[357] the lack of efforts to rescue and retrieve four American businessmen from West Beirut in 1984,[358] Reagan's support of the Strategic Defense Initiative in 1985,[359] and his claim of an international conspiracy on terrorism.[360] In 1987 he criticized Reagan for conceding to terrorist demands,[361] nominating Robert Bork for the Supreme Court,[362] and his handling of the Persian Gulf crisis.[363]\n\nOn January 16, 1989, before the inauguration of George H. W. Bush, Carter told Gerald Ford that Reagan had experienced a media honeymoon, saying that he believed Reagan's immediate successor would be less fortunate.[364]\n\nFormer presidents Bill Clinton (left) and Carter (right) with then-president Barack Obama (center) at the 50th Anniversary of the March on Washington for Jobs and Freedom at the Lincoln Memorial, August 2013\n\nCarter had a mostly poor relationship with Bill Clinton, who snubbed him from his inauguration ceremony. He questioned the Clinton administration's morality, particularly with respect to the Clinton–Lewinsky scandal and the pardon of Marc Rich.[365]\n\nIn July 2001, Carter said he was \"disappointed in almost everything\" President George W. Bush had done, but after the September 11 attacks, he offered only praise, calling on Americans to support Bush with \"complete unity\".[366] Later, Carter opposed the Iraq War[367] and what he considered an attempt by Bush and Tony Blair to oust Saddam Hussein with \"lies and misinterpretations\".[368] In 2004, Carter said he believed Bush had exploited the September 11 attacks.[369] In 2007, Carter said the Bush administration \"has been the worst in history\" on foreign affairs;[370] he later said he was just comparing Bush's tenure to Nixon's.[371] On the Bush administration's behalf, Tony Fratto responded that Carter's comments increased his irrelevance.[372]\n\nThough he praised President Barack Obama in the early part of his tenure,[373] Carter stated his disagreement with using drone strikes against suspected terrorists, Obama's choice to keep Guantanamo Bay detention camp open,[374] and the federal surveillance programs Edward Snowden revealed.[375][376]\n\nDuring Donald Trump's presidency, Carter spoke favorably of the chance for immigration reform[377] and criticized Trump for his handling of the US national anthem protests.[378] In an October 2017 interview with The New York Times, he said the media had covered Trump more harshly \"than any other president certainly that I've known about\".[379][380] In 2019, Trump called Carter and expressed concern that China was \"getting ahead\" of the United States. Carter agreed, saying that China's strength came from its lack of involvement in armed conflict and calling the US \"the most warlike nation in the history of the world.\"[381]\n\nIn July 2021, Carter gave his final recorded interview and said that President Biden had \"done very well\" in office.[382]",
+        "evidence_type": "graph",
+        "title": "Views on later presidents",
+        "section_path": [
+          "Post-presidency (1981–2024)",
+          "Views on later presidents"
+        ],
+        "retrieval_query": "Bill Clinton later administration role in Barack Obama administration relationship or appointment connection",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 1.0887484550476074,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "Bill_Clinton.html"
+          ],
+          "graph_neighbor_rank": 3,
+          "graph_score": 5.938134705324549,
+          "discovery_reasons": [
+            "link",
+            "entity:Southern_United_States(41)",
+            "entity:List_of_presidents_of_the_United_States(27)",
+            "entity:Vice_President_of_the_United_States(48)",
+            "entity:2016_United_States_presidential_election(40)",
+            "entity:Suharto(7)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Jimmy_Carter.html#section-010-00",
+        "source_article": "Jimmy_Carter.html",
+        "content": "Article: Jimmy Carter\nSection: 1976 presidential campaign > Transition\n\nMain article: Presidential transition of Jimmy Carter\n\nCarter walking with Ford in the White House Rose Garden following the election, November 22, 1976\n\nPreliminary planning for Carter's presidential transition had been underway for months before his election.[132][133] Carter had been the first presidential candidate to allot significant funds and a significant number of personnel to a pre-election transition planning effort, which then became standard practice.[134] He set a mold that influenced all future transitions to be larger, more methodical and more formal than they were.[134][133]\n\nOn November 22, 1976, Carter conducted his first visit to Washington, D.C. after being elected, meeting with director of the Office of Management and Budget (OMB) James Lynn and United States secretary of defense Donald Rumsfeld at the Blair House, and holding an afternoon meeting with President Ford at the White House.[135] The next day, he conferred with congressional leaders, saying that his meetings with cabinet members had been \"very helpful\" and that Ford had offered his assistance if he needed anything.[136] Relations between Ford and Carter were relatively cold during the transition.[137] During his transition, Carter announced the selection of numerous designees for positions in his administration.[138]\n\nA few weeks before his inauguration, Carter moved his peanut business into the hands of trustees to avoid a potential conflict of interest.[139] He also asked incoming members of his administration to divest themselves of assets through blind trusts.[140]",
+        "evidence_type": "graph",
+        "title": "Transition",
+        "section_path": [
+          "1976 presidential campaign",
+          "Transition"
+        ],
+        "retrieval_query": "Bill Clinton later administration role in Barack Obama administration relationship or appointment connection",
+        "retriever": "graph",
+        "rank": 2,
+        "raw_score": 1.1367145776748657,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "Bill_Clinton.html"
+          ],
+          "graph_neighbor_rank": 3,
+          "graph_score": 5.938134705324549,
+          "discovery_reasons": [
+            "link",
+            "entity:Southern_United_States(41)",
+            "entity:List_of_presidents_of_the_United_States(27)",
+            "entity:Vice_President_of_the_United_States(48)",
+            "entity:2016_United_States_presidential_election(40)",
+            "entity:Suharto(7)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Bill_Clinton.html#section-039-00",
+        "source_article": "Bill_Clinton.html",
+        "content": "Article: Bill Clinton\nSection: Post-presidency (2001–present) > After the 2008 election\n\nIn 2009, Clinton travelled to North Korea on behalf of two American journalists imprisoned there. Euna Lee and Laura Ling had been imprisoned for illegally entering the country from China.[374] Jimmy Carter had made a similar visit in 1994.[374] After Clinton met with North Korean leader Kim Jong-il, Kim issued a pardon.[375][376]\n\nSince then, Clinton has been assigned many other diplomatic missions. He was named United Nations Special Envoy to Haiti in 2009 following a series of hurricanes which caused $1 billion in damages.[377] Clinton organized a conference with the Inter-American Development Bank, where a new industrial park was discussed in an effort to \"build back better\".[378] In response to the 2010 Haiti earthquake, U.S. president Barack Obama announced that Clinton and George W. Bush would coordinate efforts to raise funds for Haiti's recovery.[379] Funds began pouring into Haiti, which led to funding becoming available for Caracol Industrial Park in a part of the country unaffected by the earthquake. While Hillary Clinton was in South Korea, she and Cheryl Mills worked to convince SAE-A, a large apparel subcontractor, to invest in Haiti despite the company's deep concerns about plans to raise the minimum wage. In the summer of 2010, the South Korean company signed a contract at the U.S. State Department, ensuring that the new industrial park would have a key tenant.[378] In 2010, Clinton announced support of, and delivered the keynote address for, the inauguration of NTR, Ireland's first environmental foundation.[380][381] At the 2012 Democratic National Convention, Clinton gave a widely praised speech nominating Barack Obama.[382]",
+        "evidence_type": "text",
+        "title": null,
+        "section_path": [],
+        "retrieval_query": "Which person is described as connecting Bill Clinton and Barack Obama, with a relationship to Bill Clinton in the 2008 election and a later administration role connected to Barack Obama?",
+        "retriever": "vector",
+        "rank": 2,
+        "raw_score": 1.3077848571592459,
+        "score_semantics": "higher_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "targeted_multistep_sections",
+          "reasoning_instructions": ""
+        }
+      },
+      {
+        "evidence_id": "Bill_Clinton.html#section-018-00",
+        "source_article": "Bill_Clinton.html",
+        "content": "Article: Bill Clinton\nSection: Presidency (1993–2001) > Second term (1997–2001) > Campaign finance controversies\n\nFurther information: Lincoln Bedroom for contributors controversy and 1996 United States campaign finance controversy\n\nIn February 1997 it was discovered upon documents being released by the Clinton Administration that 938 people had stayed at the White House and that 821 of them had made donations to the Democratic Party and got the opportunity to stay in the Lincoln bedroom as a result of the donations.[215][216] Some donors included Steven Spielberg, Tom Hanks, Jane Fonda, and Judy Collins. Top donors also got golf games and morning jogs with Clinton as a result of the contributions.[216] Janet Reno was called on to investigate the matter by Trent Lott, but she refused.[217]\n\nIn 1996, it was found that several Chinese foreigners made contributions to Clinton's reelection campaign and the Democratic National Committee with the backing of the People's Republic of China. Some of them also attempted to donate to Clinton's defense fund.[218] This violated United States law forbidding non-American citizens from making campaign contributions. Clinton and Al Gore also allegedly met with the foreign donors.[ii] A Republican investigation led by Fred Thompson found that Clinton was targeted by the Chinese government. However, Democratic senators Joe Lieberman and John Glenn said that the evidence showed that China only targeted congressional elections and not presidential elections.[223]",
+        "evidence_type": "text",
+        "title": null,
+        "section_path": [],
+        "retrieval_query": "Which person is described as connecting Bill Clinton and Barack Obama, with a relationship to Bill Clinton in the 2008 election and a later administration role connected to Barack Obama?",
+        "retriever": "vector",
+        "rank": 3,
+        "raw_score": 1.1379782363361595,
+        "score_semantics": "higher_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "targeted_multistep_sections",
+          "reasoning_instructions": ""
+        }
+      },
+      {
+        "evidence_id": "Bill_Clinton.html#section-035-00",
+        "source_article": "Bill_Clinton.html",
+        "content": "Article: Bill Clinton\nSection: Public image > Alleged affairs\n\nClinton has admitted to having extramarital affairs with singer Gennifer Flowers and Monica Lewinsky.[342] Actress Elizabeth Gracen,[343] Miss Arkansas winner Sally Perdue,[344] and Dolly Kyle Browning[345] all claimed that they had affairs with Clinton during his time as Governor of Arkansas. Browning later sued Clinton, Bruce Lindsey, Robert S. Bennett, and Jane Mayer, alleging they engaged in a conspiracy to attempt to block her from publishing a book loosely based on her relationship with Clinton and tried to defame him. However, Browning's lawsuit was dismissed.[346]",
+        "evidence_type": "text",
+        "title": null,
+        "section_path": [],
+        "retrieval_query": "Which person is described as connecting Bill Clinton and Barack Obama, with a relationship to Bill Clinton in the 2008 election and a later administration role connected to Barack Obama?",
+        "retriever": "vector",
+        "rank": 4,
+        "raw_score": 0.9730941986964385,
+        "score_semantics": "higher_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "targeted_multistep_sections",
+          "reasoning_instructions": ""
+        }
+      },
+      {
+        "evidence_id": "Bill_Clinton.html#section-032-00",
+        "source_article": "Bill_Clinton.html",
+        "content": "Article: Bill Clinton\nSection: Public image\n\nMain article: Public image of Bill Clinton\n\nClinton addressing the British Parliament on November 29, 1995\n\nClinton was the first baby boomer president.[294] Authors Martin Walker and Bob Woodward stated that Clinton's innovative use of sound bite-ready dialogue, personal charisma, and public perception-oriented campaigning were a major factor in his high public approval ratings.[295][296] When Clinton played the saxophone on The Arsenio Hall Show, he was described by some religious conservatives as \"the MTV president\".[297][298] Opponents sometimes referred to him as \"Slick Willie\", a nickname which was first applied to him in 1980 by Pine Bluff Commercial journalist Paul Greenberg;[299] Greenberg believed that Clinton was abandoning the progressive policies of previous Arkansas governors such as Winthrop Rockefeller, Dale Bumpers and David Pryor.[299] The claim \"Slick Willie\" would last throughout his presidency.[300] His folksy manner led him to be nicknamed Bubba starting from the 1992 presidential election.[301] Since 2000, he has frequently been referred to as \"The Big Dog\" or \"Big Dog\".[302][303] His prominent role in campaigning for Obama during the 2012 presidential election and his widely publicized speech at the 2012 Democratic National Convention, where he officially nominated Obama and criticized Republican nominee Mitt Romney and Republican policies in detail, earned him the nickname \"Explainer-in-Chief\".[304][305]\n\nClinton drew strong support from the African American community and insisted that the improvement of race relations would be a major theme of his presidency.[306] In 1998, Nobel laureate Toni Morrison called Clinton \"the first black president\", saying, \"Clinton displays almost every trope of blackness: single-parent household, born poor, working-class, saxophone-playing, McDonald's-and-junk-food-loving boy from Arkansas\".[307] Morrison noted that Clinton's sex life was scrutinized more than his career accomplishments, and she compared this to the stereotyping and double standards that, she said, black people typically endure.[307] Many viewed this comparison as unfair and disparaging both to Clinton and to the African-American community.[308]",
+        "evidence_type": "text",
+        "title": null,
+        "section_path": [],
+        "retrieval_query": "Which person is described as connecting Bill Clinton and Barack Obama, with a relationship to Bill Clinton in the 2008 election and a later administration role connected to Barack Obama?",
+        "retriever": "vector",
+        "rank": 5,
+        "raw_score": 0.9532769092225708,
+        "score_semantics": "higher_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "targeted_multistep_sections",
+          "reasoning_instructions": ""
+        }
+      },
+      {
+        "evidence_id": "Bill_Clinton.html#section-015-00",
+        "source_article": "Bill_Clinton.html",
+        "content": "Article: Bill Clinton\nSection: Presidency (1993–2001) > Second term (1997–2001) > Investigations\n\nIn November 1993, David Hale—the source of criminal allegations against Bill Clinton in the Whitewater controversy—alleged that while Governor of Arkansas, Clinton pressured Hale to provide an illegal $300,000 loan to Susan McDougal, the Clintons' partner in the Whitewater land deal.[187] A U.S. Securities and Exchange Commission investigation resulted in convictions against the McDougals for their role in the Whitewater project, but the Clintons themselves were never charged, and Clinton maintains his and his wife's innocence in the affair.[188] Investigations by Robert B. Fiske and Ken Starr found insufficient to evidence to prosecute the Clintons.[189][190]\n\nThe White House FBI files controversy of June 1996 arose concerning improper access by the White House to FBI security-clearance documents. Craig Livingstone, head of the White House Office of Personnel Security, improperly requested, and received from the FBI, background report files without asking permission of the subject individuals; many of these were employees of former Republican administrations.[191] In March 2000, Independent Counsel Robert Ray determined there was no credible evidence of any crime. Ray's report further stated, \"there was no substantial and credible evidence that any senior White House official was involved\" in seeking the files.[192]\n\nOn May 19, 1993, Clinton fired seven employees of the White House Travel Office. This caused the White House travel office controversy even though the travel office staff served at the pleasure of the president and could be dismissed without cause. The White House responded to the controversy by claiming that the firings were done in response to financial improprieties that had been revealed by a brief FBI investigation.[193] Critics contended that the firings had been done to allow friends of the Clintons to take over the travel business and the involvement of the FBI was unwarranted.[194] The House Government Reform and Oversight Committee issued a report which accused the Clinton administration of having obstructed their efforts to investigate the affair.[195] Special counsel Robert Fiske said that Hillary Clinton was involved in the firing and gave \"factually false\" testimony to the GAO, congress, and the independent counsel. However Fiske said there was not enough evidence to prosecute.[196][195]",
+        "evidence_type": "text",
+        "title": null,
+        "section_path": [],
+        "retrieval_query": "Which person is described as connecting Bill Clinton and Barack Obama, with a relationship to Bill Clinton in the 2008 election and a later administration role connected to Barack Obama?",
+        "retriever": "vector",
+        "rank": 6,
+        "raw_score": 0.7765228273561737,
+        "score_semantics": "higher_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "targeted_multistep_sections",
+          "reasoning_instructions": ""
+        }
+      }
+    ],
+    "assessment": {
+      "ready_to_answer": false,
+      "supported_requirements": [
+        "Bill Clinton is linked to Barack Obama through the 2008 election: Clinton endorsed Obama at the 2008 Democratic National Convention after the 2008 Democratic presidential primary.",
+        "Bill Clinton is linked to Barack Obama again later through an Obama-requested administration role: Clinton and George W. Bush coordinated/established the Clinton Bush Haiti Fund at President Obama's request, and Clinton was named United Nations Special Envoy to Haiti in 2009."
+      ],
+      "missing_requirements": [
+        "The question asks which person connects Bill Clinton and Barack Obama; the evidence supports Bill Clinton as the connecting person, but the relationship between Bill Clinton and Barack Obama beyond the election and later administration role is not separately and explicitly summarized in a single source.",
+        "If the answer requires a precise later 'administration role' wording, the evidence shows Clinton as a diplomatic envoy/U.N. Special Envoy to Haiti and as a coordinator at Obama's request, but does not explicitly label this as an 'administration role' in the excerpt."
+      ],
+      "retrieval_requests": [
+        {
+          "missing_fact": "Explicit identification of the person connecting Bill Clinton and Barack Obama, with documented relationship to each man, including the 2008 election connection and a later administration role phrased clearly.",
+          "query": "In Bill Clinton's article, identify how Bill Clinton connects to Barack Obama in the 2008 election and what later role Clinton held under Obama that can be described as an administration role.",
+          "target_articles": [
+            "Bill_Clinton.html"
+          ],
+          "keywords": [
+            "2008 Democratic National Convention",
+            "endorsed Obama",
+            "United Nations Special Envoy to Haiti",
+            "Obama's request",
+            "Clinton Bush Haiti Fund"
+          ],
+          "preferred_retriever": "hybrid"
+        }
+      ],
+      "table_requests": [],
+      "unresolved_conflicts": [],
+      "explanation": "The evidence is sufficient to infer that the connecting person is Bill Clinton and that he endorsed Obama in 2008, then later worked in an Obama-requested Haiti relief role and was named UN Special Envoy to Haiti. However, because the question explicitly asks for the documented relationship linking that person to each man and mentions a later administration role, I am not marking it fully ready without a more explicit source-backed statement tying those two relationships together in the requested form."
+    },
+    "assessment_history": [
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "Bill Clinton is the person connecting Bill Clinton and Barack Obama.",
+          "The documented relationship to Barack Obama is Clinton's 2008 election connection: he initially campaigned for Hillary Clinton, was criticized as too negative toward Obama, and then formally endorsed Obama at the 2008 Democratic National Convention."
+        ],
+        "missing_requirements": [
+          "A later administration role linking the same person to Barack Obama is not supported by the supplied evidence."
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Identify the later administration role that links Bill Clinton to Barack Obama, if any, in a reliable source excerpt.",
+            "query": "Bill Clinton later administration role in Barack Obama administration relationship or appointment connection",
+            "target_articles": [
+              "Bill_Clinton.html",
+              "Barack_Obama.html",
+              "Bill_Clinton_presidency_or_post-presidency_related_articles"
+            ],
+            "keywords": [
+              "Bill Clinton",
+              "Barack Obama",
+              "administration role",
+              "advisor",
+              "emissary",
+              "special role",
+              "Obama administration"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The supplied evidence fully supports the 2008 election connection between Bill Clinton and Barack Obama via Clinton's endorsement at the 2008 Democratic National Convention. However, no evidence here supports any later administration role between the same person and Barack Obama, so the question cannot yet be answered completely."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "Bill Clinton's relationship to Barack Obama in the 2008 election: Clinton endorsed Obama at the 2008 Democratic National Convention after being seen as too critical during the primary.",
+          "The question implies a person who connects Bill Clinton and Barack Obama via later administration role, but no evidence for that role is present in the supplied excerpts."
+        ],
+        "missing_requirements": [
+          "Identify the specific person who connects Bill Clinton and Barack Obama and document that person's later administration role.",
+          "Provide the later administration role linking that person to Barack Obama, and the documented relationship linking that person to Bill Clinton.",
+          "Clarify whether the intended person is Bill Clinton himself or another person (e.g., a spouse or staff member) because the supplied evidence does not establish a unique connecting person beyond Clinton's own endorsement of Obama."
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Identify the person who connects Bill Clinton and Barack Obama, along with the later administration role and documented relationship to each man.",
+            "query": "Which person is described as connecting Bill Clinton and Barack Obama, with a relationship to Bill Clinton in the 2008 election and a later administration role connected to Barack Obama?",
+            "target_articles": [
+              "Bill_Clinton.html",
+              "Barack_Obama.html",
+              "George_W._Bush.html"
+            ],
+            "keywords": [
+              "Bill Clinton",
+              "Barack Obama",
+              "2008 election",
+              "administration role",
+              "endorsed",
+              "appointed",
+              "advisor",
+              "staff",
+              "cabinet"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The supplied evidence clearly supports Bill Clinton's 2008 election connection to Barack Obama via his eventual endorsement at the Democratic National Convention, but it does not identify any additional person connecting the two men, nor any later administration role for that person. Because the question asks for both the person and the documented relationship to each man, more evidence is needed to determine the intended individual and role."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "Bill Clinton is linked to Barack Obama through the 2008 election: Clinton endorsed Obama at the 2008 Democratic National Convention after the 2008 Democratic presidential primary.",
+          "Bill Clinton is linked to Barack Obama again later through an Obama-requested administration role: Clinton and George W. Bush coordinated/established the Clinton Bush Haiti Fund at President Obama's request, and Clinton was named United Nations Special Envoy to Haiti in 2009."
+        ],
+        "missing_requirements": [
+          "The question asks which person connects Bill Clinton and Barack Obama; the evidence supports Bill Clinton as the connecting person, but the relationship between Bill Clinton and Barack Obama beyond the election and later administration role is not separately and explicitly summarized in a single source.",
+          "If the answer requires a precise later 'administration role' wording, the evidence shows Clinton as a diplomatic envoy/U.N. Special Envoy to Haiti and as a coordinator at Obama's request, but does not explicitly label this as an 'administration role' in the excerpt."
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Explicit identification of the person connecting Bill Clinton and Barack Obama, with documented relationship to each man, including the 2008 election connection and a later administration role phrased clearly.",
+            "query": "In Bill Clinton's article, identify how Bill Clinton connects to Barack Obama in the 2008 election and what later role Clinton held under Obama that can be described as an administration role.",
+            "target_articles": [
+              "Bill_Clinton.html"
+            ],
+            "keywords": [
+              "2008 Democratic National Convention",
+              "endorsed Obama",
+              "United Nations Special Envoy to Haiti",
+              "Obama's request",
+              "Clinton Bush Haiti Fund"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The evidence is sufficient to infer that the connecting person is Bill Clinton and that he endorsed Obama in 2008, then later worked in an Obama-requested Haiti relief role and was named UN Special Envoy to Haiti. However, because the question explicitly asks for the documented relationship linking that person to each man and mentions a later administration role, I am not marking it fully ready without a more explicit source-backed statement tying those two relationships together in the requested form."
+      }
+    ]
+  }
+}

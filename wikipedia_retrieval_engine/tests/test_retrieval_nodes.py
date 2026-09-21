@@ -323,6 +323,97 @@ class RetrievalNodesTests(unittest.TestCase):
             ["Seed.html"],
         )
 
+    def test_retrieve_initial_articles_forwards_top_k(self) -> None:
+        retriever = Mock(spec=VectorRetriever)
+        retriever.getArticlesTopK.return_value = []
+
+        update = retrieve_initial_articles(
+            {"question": "Who won?", "retrieval_attempts": 0},
+            retriever,
+            top_k=4,
+        )
+
+        retriever.getArticlesTopK.assert_called_once_with("Who won?", k=4)
+        self.assertEqual(update["retrieval_attempts"], 1)
+
+    def test_graph_seeded_retrieval_ranks_and_caps_neighbor_sections(self) -> None:
+        assessment = EvidenceAssessment(
+            ready_to_answer=False,
+            supported_requirements=[],
+            missing_requirements=["Need the related fact."],
+            retrieval_requests=[
+                RetrievalRequest(
+                    missing_fact="related fact",
+                    query="related fact query",
+                    preferred_retriever="graph",
+                )
+            ],
+            table_requests=[],
+            unresolved_conflicts=[],
+            explanation="Expand and retrieve the missing fact.",
+        )
+        state: AgentState = {
+            "question": "Original question",
+            "retrieval_attempts": 1,
+            "selected_articles": ["Seed.html"],
+            "evidence": [],
+            "assessment": assessment,
+        }
+        graph = Mock(spec=WikiGraph)
+        # Two neighbors: one on-topic (close match), one adjacent-but-wrong (far).
+        graph.expand.return_value = [
+            ("Good.html", 2.0, ["link"]),
+            ("Wrong.html", 1.9, ["link"]),
+        ]
+        good = Document(
+            page_content="On-topic neighbor content.",
+            metadata={
+                "source": "Good.html#s1",
+                "article": "Good.html",
+                "section_title": "A",
+                "section_path": "A",
+            },
+        )
+        wrong = Document(
+            page_content="Off-topic sibling content.",
+            metadata={
+                "source": "Wrong.html#s1",
+                "article": "Wrong.html",
+                "section_title": "B",
+                "section_path": "B",
+            },
+        )
+
+        def sections_for(query: str, article: str, k: int):
+            if article == "Good.html":
+                return [(good, 0.05)]
+            if article == "Wrong.html":
+                return [(wrong, 0.90)]
+            return []
+
+        retriever = Mock(spec=VectorRetriever)
+        retriever.getArticleSectionsTopK.side_effect = sections_for
+
+        update = retrieve_graph_seeded_evidence(
+            state,
+            retriever,
+            graph,
+            graph_params=GraphParams(max_neighbors=2),
+            sections_per_neighbor=2,
+            max_graph_sections=1,
+        )
+
+        added = [
+            item
+            for item in update["evidence"]
+            if item.metadata.get("retrieval_stage") == "graph_seeded_sections"
+        ]
+        # Only the single globally-best section survives the cap; the far,
+        # off-topic neighbor is dropped rather than contributing a distractor.
+        self.assertEqual(len(added), 1)
+        self.assertEqual(added[0].source_article, "Good.html")
+        self.assertEqual(update["retrieval_attempts"], 2)
+
     def test_assess_evidence_uses_structured_output(self) -> None:
         assessment = EvidenceAssessment(
             ready_to_answer=True,

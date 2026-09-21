@@ -112,20 +112,44 @@ class EvidenceIntakeGraphTests(unittest.TestCase):
         )
         retriever = Mock(spec=VectorRetriever)
         retriever.getArticlesTopK.return_value = [candidate]
-        retriever.getArticleSectionsTopK.return_value = [
-            (
-                Document(
-                    page_content="The graph neighbor describes the event but not its date.",
-                    metadata={
-                        "source": "Neighbor.html#section-002-00",
-                        "article": "Neighbor.html",
-                        "section_title": "Event",
-                        "section_path": "History > Event",
-                    },
-                ),
-                0.09,
-            )
-        ]
+
+        def sections_for(query: str, article: str, k: int):
+            # The initial-stage deepen step retrieves inside the selected seed;
+            # graph expansion retrieves inside the neighbor. Return distinct
+            # sections per article so both contributions are visible.
+            if article == "Seed.html":
+                return [
+                    (
+                        Document(
+                            page_content="Seed article detail about the event.",
+                            metadata={
+                                "source": "Seed.html#section-001-05",
+                                "article": "Seed.html",
+                                "section_title": "Detail",
+                                "section_path": "Overview > Detail",
+                            },
+                        ),
+                        0.05,
+                    )
+                ]
+            if article == "Neighbor.html":
+                return [
+                    (
+                        Document(
+                            page_content="The graph neighbor describes the event but not its date.",
+                            metadata={
+                                "source": "Neighbor.html#section-002-00",
+                                "article": "Neighbor.html",
+                                "section_title": "Event",
+                                "section_path": "History > Event",
+                            },
+                        ),
+                        0.09,
+                    )
+                ]
+            return []
+
+        retriever.getArticleSectionsTopK.side_effect = sections_for
 
         wiki_graph = Mock(spec=WikiGraph)
         wiki_graph.expand.return_value = [
@@ -232,11 +256,12 @@ class EvidenceIntakeGraphTests(unittest.TestCase):
 
         self.assertEqual(result["retrieval_attempts"], 3)
         self.assertEqual(len(result["assessment_history"]), 3)
-        self.assertEqual(len(result["evidence"]), 3)
+        self.assertEqual(len(result["evidence"]), 4)
         self.assertEqual(
             [item.metadata["retrieval_stage"] for item in result["evidence"]],
             [
                 "initial_article_retrieval",
+                "selected_article_sections",
                 "graph_seeded_sections",
                 "targeted_multistep_sections",
             ],
