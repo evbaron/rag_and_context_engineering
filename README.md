@@ -83,11 +83,13 @@ categories/links/tables are the substrate for the Checkpoint 4.1 graph.
   sidecars, tested query decomposition, and added a rarity-weighted article graph.
   Graph retrieval improved article recall, but answer quality remained limited by
   table aggregation and reasoning.
-- **Checkpoint 5.1 — agentic evidence reasoning.** Prepares a bounded graph that can
-  request targeted retrieval, route table questions to a structured analyzer, reason
-  only after evidence is sufficient, and verify claim-level provenance. The table
-  parser and offline artifact layer are implemented; graph orchestration is the next
-  implementation step.
+- **Checkpoint 5.1 — agentic evidence reasoning.** Implements a bounded retrieval
+  graph that starts with section-aware vector evidence, expands selected articles
+  through the Wikipedia graph when evidence is insufficient, and finally uses
+  targeted multi-step section retrieval. Its first RAGAS benchmark intentionally
+  disables table routing so retrieval gains can be measured independently. The rich
+  table parser, artifact store, planner, and deterministic executor remain ready for
+  the later table-enabled experiment.
 
 ## Ground-truth files
 

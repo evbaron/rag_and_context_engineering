@@ -1,0 +1,331 @@
+{
+  "run_id": "2026_09_21_10_15_34",
+  "question_number": 14,
+  "logged_at": "2026-09-21T10:20:29-04:00",
+  "question": "According to the Wikipedia article on the Academy Award for Best Actor, how are nominees determined and how is the winner selected?",
+  "final_state": {
+    "question": "According to the Wikipedia article on the Academy Award for Best Actor, how are nominees determined and how is the winner selected?",
+    "retrieval_attempts": 3,
+    "article_candidates": [
+      {
+        "source_article": "Academy_Award_for_Best_Actor.html",
+        "representative_chunk": "Article: Academy Award for Best Actor\nSection: Winners and nominees\n\nIn the following table, the years are listed as per Academy convention, and generally correspond to the year of film release in Los Angeles County; the ceremonies are always held the following year.[5] For the first five ceremonies, the eligibility period spanned twelve months, from August 1 to July 31.[6] For the 6th ceremony held in 1934, the eligibility period lasted from August 1, 1932, to December 31, 1933.[6] Since the 7th ceremony held in 1935, the period of eligibility became the full previous calendar year from January 1 to December 31.[6]\n\nTable key\n\n‡\n\nIndicates the winner\n\n§\n\nIndicates winner who refused the award\n\n†\n\nIndicates a posthumous winner\n\n†\n\nIndicates a posthumous nominee",
+        "representative_chunk_id": "Academy_Award_for_Best_Actor.html#section-002-00",
+        "section_title": "Winners and nominees",
+        "section_path": [
+          "Winners and nominees"
+        ],
+        "retrieval_query": "According to the Wikipedia article on the Academy Award for Best Actor, how are nominees determined and how is the winner selected?",
+        "discovered_by": "vector",
+        "rank": 1,
+        "raw_score": 0.6213912963867188,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Academy_Award_for_Best_Supporting_Actor.html",
+        "representative_chunk": "Article: Academy Award for Best Supporting Actor\nSection: Winners and nominees\n\nIn the following table, the years are listed as per Academy convention, and generally correspond to the year of film release in Los Angeles County; the ceremonies are always held the following year.[5] For the first five ceremonies, the eligibility period spanned twelve months, from August 1 to July 31.[6] For the 6th ceremony held in 1934, the eligibility period lasted from August 1, 1932, to December 31, 1933.[6] Since the 7th ceremony held in 1935, the period of eligibility became the full previous calendar year from January 1 to December 31.[6]\n\nTable key\n\n‡\n\nIndicates the winner\n\n†\n\nIndicates a posthumous winner\n\n†\n\nIndicates a posthumous nominee\n\n§\n\nIndicates actor who refused the nomination",
+        "representative_chunk_id": "Academy_Award_for_Best_Supporting_Actor.html#section-002-00",
+        "section_title": "Winners and nominees",
+        "section_path": [
+          "Winners and nominees"
+        ],
+        "retrieval_query": "According to the Wikipedia article on the Academy Award for Best Actor, how are nominees determined and how is the winner selected?",
+        "discovered_by": "vector",
+        "rank": 2,
+        "raw_score": 0.7008239030838013,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Academy_Award_for_Best_Picture.html",
+        "representative_chunk": "Article: Academy Award for Best Picture\nSection: Winners and nominees\n\nIn the list below, winners are listed first in the gold row, followed by the other nominees.[6] Except for the early years (when the Academy used a non-calendar year), the year shown is the one in which the film first premiered in Los Angeles County, California; normally this is also the year of first release, but it may be the year after first release (as with Casablanca and, if the film-festival premiere is considered, Crash and The Hurt Locker). This is also the year before the ceremony at which the award is given; for example, a film exhibited theatrically during 2005 was eligible for consideration for the 2005 Best Picture Oscar, awarded in 2006. The number of the ceremony (1st, 2nd, etc.) appears in parentheses after the awards year, linked to the article on that ceremony. Each individual entry shows the title followed by nominee.\n\nUntil 1950, the Best Picture award was given to the production company; from 1951 on, it has gone to the producer or producers. The Academy used the producer credits of the Producers Guild of America (PGA) until 1998, when all five producers of Shakespeare in Love made speeches after its win.[9][10] A three-producer limit has been applied some years since.[10][11] There was controversy over the exclusion of some PGA-credited producers of Crash and Little Miss Sunshine.[11] The Academy can make exceptions to the limit, as when Anthony Minghella and Sydney Pollack were posthumously among the four nominated for The Reader.[13] However, now any number of producers on a film can be nominated for Best Picture, should they be deemed eligible.\n\nFor the first ceremony, three films were nominated for the award. For the following three years, five films were nominated for the award. This was expanded to eight in 1933, to ten in 1934, and to twelve in 1935, before being dropped back to ten in 1937. In 1945, it was further reduced to five. This number remained until 2009, when the limit was raised to ten; it was adjusted from 2011 to 2020 to vary between five and ten, but has been a full ten since 2022.\n\nFor the first six ceremonies, the eligibility period spanned two calendar years. For example, the 2nd Academy Awards presented on April 3, 1930, recognized films that were released between August 1, 1928, and July 31, 1929. Starting with the 7th Academy Awards, held in 1935, the period of eligibility became the full previous calendar year from January 1 to December 31. This has been the rule every year since except 2020, when the end date was extended to February 28, 2021, due to the COVID-19 pandemic, and 2021, which was correspondingly limited to March 1 to December 31.\n\nSince 2023, the category's winners and nominees from the 1927/28 and 1928/29 ceremonies have entered the public domain.[82]\n\n  indicates the winner",
+        "representative_chunk_id": "Academy_Award_for_Best_Picture.html#section-020-00",
+        "section_title": "Winners and nominees",
+        "section_path": [
+          "Winners and nominees"
+        ],
+        "retrieval_query": "According to the Wikipedia article on the Academy Award for Best Actor, how are nominees determined and how is the winner selected?",
+        "discovered_by": "vector",
+        "rank": 3,
+        "raw_score": 0.7806482315063477,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      }
+    ],
+    "article_reviews": [
+      {
+        "source_article": "Academy_Award_for_Best_Actor.html",
+        "relevant": false,
+        "reason": "The excerpt only shows the winners-and-nominees table key and eligibility timing, but it does not explain how nominees are determined or how the winner is selected.",
+        "relevant_sections": [
+          "Winners and nominees"
+        ],
+        "relevant_table_names": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Academy_Award_for_Best_Supporting_Actor.html",
+        "relevant": false,
+        "reason": "This is the wrong award category and the excerpt only includes eligibility timing and table keys, not the nomination or winner-selection process asked about.",
+        "relevant_sections": [
+          "Winners and nominees"
+        ],
+        "relevant_table_names": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Academy_Award_for_Best_Picture.html",
+        "relevant": false,
+        "reason": "Although it discusses how Best Picture nominees and winners are presented and some nomination limits, it is about a different award category than Best Actor, so it does not answer the question as asked.",
+        "relevant_sections": [
+          "Winners and nominees"
+        ],
+        "relevant_table_names": [],
+        "needs_table_reader": false
+      }
+    ],
+    "selected_articles": [],
+    "rejected_articles": [
+      "Academy_Award_for_Best_Actor.html",
+      "Academy_Award_for_Best_Supporting_Actor.html",
+      "Academy_Award_for_Best_Picture.html"
+    ],
+    "evidence": [
+      {
+        "evidence_id": "Academy_Award_for_Best_Actor.html#section-002-00",
+        "source_article": "Academy_Award_for_Best_Actor.html",
+        "content": "Article: Academy Award for Best Actor\nSection: Winners and nominees\n\nIn the following table, the years are listed as per Academy convention, and generally correspond to the year of film release in Los Angeles County; the ceremonies are always held the following year.[5] For the first five ceremonies, the eligibility period spanned twelve months, from August 1 to July 31.[6] For the 6th ceremony held in 1934, the eligibility period lasted from August 1, 1932, to December 31, 1933.[6] Since the 7th ceremony held in 1935, the period of eligibility became the full previous calendar year from January 1 to December 31.[6]\n\nTable key\n\n‡\n\nIndicates the winner\n\n§\n\nIndicates winner who refused the award\n\n†\n\nIndicates a posthumous winner\n\n†\n\nIndicates a posthumous nominee",
+        "evidence_type": "text",
+        "title": null,
+        "section_path": [],
+        "retrieval_query": "Academy Award for Best Actor article how nominees are determined and how the winner is selected voting process nominations winner selection",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 3.0,
+        "score_semantics": "higher_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "targeted_multistep_sections",
+          "reasoning_instructions": ""
+        }
+      },
+      {
+        "evidence_id": "Academy_Award_for_Best_Supporting_Actor.html#section-002-00",
+        "source_article": "Academy_Award_for_Best_Supporting_Actor.html",
+        "content": "Article: Academy Award for Best Supporting Actor\nSection: Winners and nominees\n\nIn the following table, the years are listed as per Academy convention, and generally correspond to the year of film release in Los Angeles County; the ceremonies are always held the following year.[5] For the first five ceremonies, the eligibility period spanned twelve months, from August 1 to July 31.[6] For the 6th ceremony held in 1934, the eligibility period lasted from August 1, 1932, to December 31, 1933.[6] Since the 7th ceremony held in 1935, the period of eligibility became the full previous calendar year from January 1 to December 31.[6]\n\nTable key\n\n‡\n\nIndicates the winner\n\n†\n\nIndicates a posthumous winner\n\n†\n\nIndicates a posthumous nominee\n\n§\n\nIndicates actor who refused the nomination",
+        "evidence_type": "text",
+        "title": null,
+        "section_path": [],
+        "retrieval_query": "Academy Award for Best Actor article how nominees are determined and how the winner is selected voting process nominations winner selection",
+        "retriever": "vector",
+        "rank": 2,
+        "raw_score": 2.325481588523678,
+        "score_semantics": "higher_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "targeted_multistep_sections",
+          "reasoning_instructions": ""
+        }
+      },
+      {
+        "evidence_id": "Academy_Award_for_Best_Picture.html#section-000-00",
+        "source_article": "Academy_Award_for_Best_Picture.html",
+        "content": "Article: Academy Award for Best Picture\nSection: Lead\n\nAnnual award by the Academy of Motion Picture Arts and Sciences\n\nAcademy Award for Best Picture\n\nThe 98th recipients: Paul Thomas Anderson (pictured), Adam Somner (posth.), and Sara Murphy\n\nAwarded forBest Motion Picture of the Year\n\nCountryUnited States\n\nPresented byAcademy of Motion Picture Arts and Sciences (AMPAS)\n\nFirst awardMay 16, 1929; 96 years ago (1929-05-16) (for films released during the 1927/1928 film season)\n\nMost recent winnerOne Battle After Another (2025)\n\nWebsiteoscar.go.com/nominees/best-picture\n\nThe Academy Award for Best Picture is one of the Academy Awards (also known as Oscars) presented annually by the Academy of Motion Picture Arts and Sciences (AMPAS) since the awards debuted on May 16, 1929. This award goes to the producers of the film and is the only category in which every member of the Academy is eligible to submit a nomination and vote on the final ballot.[1] The Best Picture category is traditionally the final award of the night and is widely considered the most prestigious honor of the ceremony.[2][3][4]\n\nThe Grand Staircase columns at the Dolby Theatre in Hollywood, where the Academy Awards ceremonies have been held since 2002, showcase every film that has won the Best Picture title since the award's inception.[5] There have been 621 films nominated for Best Picture and 98 winners.[6]",
+        "evidence_type": "text",
+        "title": null,
+        "section_path": [],
+        "retrieval_query": "Academy Award for Best Actor article how nominees are determined and how the winner is selected voting process nominations winner selection",
+        "retriever": "vector",
+        "rank": 3,
+        "raw_score": 1.4879460700151008,
+        "score_semantics": "higher_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "targeted_multistep_sections",
+          "reasoning_instructions": ""
+        }
+      },
+      {
+        "evidence_id": "Academy_Award_for_Best_Picture.html#section-020-00",
+        "source_article": "Academy_Award_for_Best_Picture.html",
+        "content": "Article: Academy Award for Best Picture\nSection: Winners and nominees\n\nIn the list below, winners are listed first in the gold row, followed by the other nominees.[6] Except for the early years (when the Academy used a non-calendar year), the year shown is the one in which the film first premiered in Los Angeles County, California; normally this is also the year of first release, but it may be the year after first release (as with Casablanca and, if the film-festival premiere is considered, Crash and The Hurt Locker). This is also the year before the ceremony at which the award is given; for example, a film exhibited theatrically during 2005 was eligible for consideration for the 2005 Best Picture Oscar, awarded in 2006. The number of the ceremony (1st, 2nd, etc.) appears in parentheses after the awards year, linked to the article on that ceremony. Each individual entry shows the title followed by nominee.\n\nUntil 1950, the Best Picture award was given to the production company; from 1951 on, it has gone to the producer or producers. The Academy used the producer credits of the Producers Guild of America (PGA) until 1998, when all five producers of Shakespeare in Love made speeches after its win.[9][10] A three-producer limit has been applied some years since.[10][11] There was controversy over the exclusion of some PGA-credited producers of Crash and Little Miss Sunshine.[11] The Academy can make exceptions to the limit, as when Anthony Minghella and Sydney Pollack were posthumously among the four nominated for The Reader.[13] However, now any number of producers on a film can be nominated for Best Picture, should they be deemed eligible.\n\nFor the first ceremony, three films were nominated for the award. For the following three years, five films were nominated for the award. This was expanded to eight in 1933, to ten in 1934, and to twelve in 1935, before being dropped back to ten in 1937. In 1945, it was further reduced to five. This number remained until 2009, when the limit was raised to ten; it was adjusted from 2011 to 2020 to vary between five and ten, but has been a full ten since 2022.\n\nFor the first six ceremonies, the eligibility period spanned two calendar years. For example, the 2nd Academy Awards presented on April 3, 1930, recognized films that were released between August 1, 1928, and July 31, 1929. Starting with the 7th Academy Awards, held in 1935, the period of eligibility became the full previous calendar year from January 1 to December 31. This has been the rule every year since except 2020, when the end date was extended to February 28, 2021, due to the COVID-19 pandemic, and 2021, which was correspondingly limited to March 1 to December 31.\n\nSince 2023, the category's winners and nominees from the 1927/28 and 1928/29 ceremonies have entered the public domain.[82]\n\n  indicates the winner",
+        "evidence_type": "text",
+        "title": null,
+        "section_path": [],
+        "retrieval_query": "Academy Award for Best Actor article how nominees are determined and how the winner is selected voting process nominations winner selection",
+        "retriever": "vector",
+        "rank": 4,
+        "raw_score": 1.3707469721230963,
+        "score_semantics": "higher_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "targeted_multistep_sections",
+          "reasoning_instructions": ""
+        }
+      },
+      {
+        "evidence_id": "Academy_Award_for_Best_Actor.html#section-018-00",
+        "source_article": "Academy_Award_for_Best_Actor.html",
+        "content": "Article: Academy Award for Best Actor\nSection: See also\n\nAcademy Award for Best Actress\n\nAll Academy Award acting nominees\n\nList of actors with more than one Academy Award nomination in the acting categories\n\nList of actors with two or more Academy Awards in acting categories\n\nBAFTA Award for Best Actor in a Leading Role\n\nCésar Award for Best Actor\n\nCritics' Choice Movie Award for Best Actor\n\nGolden Globe Award for Best Actor in a Motion Picture – Drama\n\nGolden Globe Award for Best Actor in a Motion Picture – Musical or Comedy\n\nIndependent Spirit Award for Best Lead Performance\n\nActor Award for Outstanding Performance by a Male Actor in a Leading Role\n\nList of Academy Award–nominated films\n\n<h2",
+        "evidence_type": "text",
+        "title": null,
+        "section_path": [],
+        "retrieval_query": "Academy Award for Best Actor article how nominees are determined and how the winner is selected voting process nominations winner selection",
+        "retriever": "vector",
+        "rank": 5,
+        "raw_score": 1.0274355131784354,
+        "score_semantics": "higher_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "targeted_multistep_sections",
+          "reasoning_instructions": ""
+        }
+      },
+      {
+        "evidence_id": "Academy_Award_for_Best_Supporting_Actor.html#section-017-00",
+        "source_article": "Academy_Award_for_Best_Supporting_Actor.html",
+        "content": "Article: Academy Award for Best Supporting Actor\nSection: See also\n\nAcademy Award for Best Supporting Actress\n\nAll Academy Award acting nominees\n\nList of actors with more than one Academy Award nomination in the acting categories\n\nList of actors with two or more Academy Awards in acting categories\n\nList of awards for supporting actor\n\nList of Academy Award–nominated films\n\nGolden Globe Award for Best Supporting Actor – Motion Picture\n\nScreen Actors Guild Award for Outstanding Performance by a Male Actor in a Supporting Role\n\nBAFTA Award for Best Actor in a Supporting Role\n\nIndependent Spirit Award for Best Supporting Performance\n\nSatellite Award for Best Supporting Actor – Motion Picture\n\n<h2",
+        "evidence_type": "text",
+        "title": null,
+        "section_path": [],
+        "retrieval_query": "Academy Award for Best Actor article how nominees are determined and how the winner is selected voting process nominations winner selection",
+        "retriever": "vector",
+        "rank": 6,
+        "raw_score": 0.7579162469484905,
+        "score_semantics": "higher_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "targeted_multistep_sections",
+          "reasoning_instructions": ""
+        }
+      }
+    ],
+    "assessment": {
+      "ready_to_answer": false,
+      "supported_requirements": [
+        "The supplied evidence identifies the correct source article as Academy_Award_for_Best_Actor.html and confirms this is the Best Actor article.",
+        "The evidence confirms the article has a Winners and nominees section and provides table-key/eligibility-timing details."
+      ],
+      "missing_requirements": [
+        "How nominees are determined for the Academy Award for Best Actor.",
+        "How the winner is selected for the Academy Award for Best Actor."
+      ],
+      "retrieval_requests": [
+        {
+          "missing_fact": "How nominees for the Academy Award for Best Actor are determined and how the winner is selected",
+          "query": "Academy Award for Best Actor nomination process winner selected nominees determined voting procedure article",
+          "target_articles": [
+            "Academy_Award_for_Best_Actor.html"
+          ],
+          "keywords": [
+            "nominees determined",
+            "winner selected",
+            "voting",
+            "Academy Award for Best Actor"
+          ],
+          "preferred_retriever": "hybrid"
+        }
+      ],
+      "table_requests": [],
+      "unresolved_conflicts": [],
+      "explanation": "The evidence provided for Academy_Award_for_Best_Actor.html only covers eligibility timing and table notation in the Winners and nominees section. It does not explain the nomination process or the method used to select the winner, so the question cannot yet be answered in full."
+    },
+    "assessment_history": [
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [],
+        "missing_requirements": [
+          "How nominees for the Academy Award for Best Actor are determined",
+          "How the winner for the Academy Award for Best Actor is selected"
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "How nominees for the Academy Award for Best Actor are determined and how the winner is selected",
+            "query": "Wikipedia Academy Award for Best Actor nominees determined winner selected Academy of Motion Picture Arts and Sciences voting process",
+            "target_articles": [
+              "Academy_Award_for_Best_Actor.html"
+            ],
+            "keywords": [
+              "nominees",
+              "determined",
+              "winner selected",
+              "voting process",
+              "Academy Award for Best Actor"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The supplied reviews explicitly say the Best Actor article excerpt does not explain the nomination or winner-selection process, and no evidence excerpts are available. The other articles are irrelevant or about different awards, so the question cannot yet be answered from the provided evidence."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [],
+        "missing_requirements": [
+          "How nominees for the Academy Award for Best Actor are determined",
+          "How the winner for the Academy Award for Best Actor is selected"
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Determination of nominees and winner selection process for the Academy Award for Best Actor",
+            "query": "Academy Award for Best Actor article how nominees are determined and how the winner is selected voting process nominations winner selection",
+            "target_articles": [
+              "Academy_Award_for_Best_Actor.html"
+            ],
+            "keywords": [
+              "nominees determined",
+              "winner selected",
+              "voting",
+              "Academy Award for Best Actor"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The provided reviews for Academy_Award_for_Best_Actor.html do not contain the nomination or winner-selection process. The other reviewed articles are about different award categories and do not answer the question. No evidence excerpts are available to support the required facts."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "The supplied evidence identifies the correct source article as Academy_Award_for_Best_Actor.html and confirms this is the Best Actor article.",
+          "The evidence confirms the article has a Winners and nominees section and provides table-key/eligibility-timing details."
+        ],
+        "missing_requirements": [
+          "How nominees are determined for the Academy Award for Best Actor.",
+          "How the winner is selected for the Academy Award for Best Actor."
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "How nominees for the Academy Award for Best Actor are determined and how the winner is selected",
+            "query": "Academy Award for Best Actor nomination process winner selected nominees determined voting procedure article",
+            "target_articles": [
+              "Academy_Award_for_Best_Actor.html"
+            ],
+            "keywords": [
+              "nominees determined",
+              "winner selected",
+              "voting",
+              "Academy Award for Best Actor"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The evidence provided for Academy_Award_for_Best_Actor.html only covers eligibility timing and table notation in the Winners and nominees section. It does not explain the nomination process or the method used to select the winner, so the question cannot yet be answered in full."
+      }
+    ]
+  }
+}

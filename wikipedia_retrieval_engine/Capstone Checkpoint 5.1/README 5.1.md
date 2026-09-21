@@ -29,6 +29,52 @@ therefore address failures that a single fixed retrieve-then-answer pass cannot.
 This is a reasoning and orchestration checkpoint, not another attempt to increase
 Top K indiscriminately.
 
+## First benchmark: retrieval-only agent
+
+The first Checkpoint 5.1 benchmark intentionally leaves the table-reader route out
+of the running graph. Table parsing, artifact lookup, planning, and deterministic
+execution remain implemented and tested, but enabling them now would change two
+major variables at once: progressive retrieval and structured table reasoning.
+
+The retrieval-only experiment asks a narrower question: does evidence assessment
+improve results when it can escalate from section-aware vector search to graph-guided
+and multi-step section retrieval?
+
+```text
+section-aware VS: three unique article candidates
+     |
+     v
+review candidates and promote representative sections to evidence
+     |
+     v
+is the section evidence sufficient?
+     |
+     +-- yes --> answer from accumulated sections
+     |
+     +-- no --> expand selected VS articles through the Wikipedia graph
+                    |
+                    v
+              retrieve relevant sections inside graph neighbors
+                    |
+                    v
+              is the accumulated section evidence sufficient?
+                    |
+                    +-- yes --> answer from accumulated sections
+                    |
+                    +-- no --> targeted multi-step section retrieval
+                                      |
+                                      v
+                                final assessment --> answer or limitations
+```
+
+Article names are routing handles at every stage. Graph expansion returns related
+article names, after which the section-aware vector index selects evidence inside
+those articles using the assessor's focused missing-fact query. Neither full articles
+nor fixed leading-character slices are sent to assessment or answering.
+
+The table branch will be enabled in a later benchmark after this retrieval-only
+result establishes a clean comparison point.
+
 ## Proposed workflow
 
 ```text
@@ -60,8 +106,9 @@ produce a structured request, but application code owns the available routes,
 budgets, validation, and stopping rules. This keeps the behavior inspectable enough
 for a graded retrieval experiment.
 
-The currently compiled intake subgraph in
-[`agent_graph.py`](../wiki_agents/agent_graph.py) is:
+The original intake subgraph remains available for isolated testing. The retrieval
+benchmark graph in [`agent_graph.py`](../wiki_agents/agent_graph.py) currently owns
+evidence collection and assessment:
 
 ```text
 START
@@ -69,9 +116,110 @@ START
   -> review_article_candidates
   -> collect_initial_evidence
   -> assess_evidence
-  -> write_question_log
-  -> END
+       |-- sufficient -------------------------------> write_question_log -> END
+       |-- missing, attempt 1 -> graph sections ----> assess_evidence
+       |-- missing, attempt 2 -> multi-step sections -> assess_evidence
+       +-- missing after final attempt --------------> write_question_log -> END
 ```
+
+For this graph, `assess_evidence` runs in retrieval-only mode. The structured output
+must leave `table_requests` empty and express every missing fact as a focused
+`RetrievalRequest`. The graph has a business limit of three retrieval stages in
+addition to LangGraph's recursion backstop.
+
+### Complete benchmark run
+
+`graph.invoke(...)` is not currently the complete question-answering run. It returns
+the terminal retrieval state after `write_question_log`. The Checkpoint 5.1 harness
+then formats only the accumulated section-level `EvidenceItem` content, calls the
+answer model, asks RAGAS to judge that answer, and saves the result row.
+
+```text
+user question
+     |
+     v
+graph.invoke(initial_agent_state(question))
+     |
+     +-> section-aware vector retrieval: up to three articles
+     |       |
+     |       v
+     |   review candidates and collect representative sections
+     |       |
+     |       v
+     |   assess accumulated evidence
+     |       |
+     |       +-- ready ---------------------------------------+
+     |       |                                                |
+     |       +-- missing after vector search                  |
+     |       |       -> graph expansion from VS seeds         |
+     |       |       -> retrieve sections in graph neighbors  |
+     |       |       -> reassess                              |
+     |       |                                                |
+     |       +-- still missing                                |
+     |               -> targeted multi-step section retrieval |
+     |               -> final assessment                     |
+     |                                                        |
+     +-- ready or retrieval limit reached <-------------------+
+             |
+             v
+       write_question_log
+             |
+             v
+            END
+             |
+             v
+       return terminal AgentState
+             |
+             v
+format accumulated section evidence
+             |
+             v
+answer_from_context(question, context)     # currently outside the graph
+             |
+             v
+RAGAS correctness judge
+             |
+             v
+save benchmark result
+```
+
+This distinction matters for the evidence log: today it captures everything known
+by the retrieval graph, but it is written before the harness creates the final
+answer. Consequently, the per-question evidence JSON does not yet contain the
+answer, even though the CSV/JSON benchmark result does.
+
+The next graph change is to move grounded answering inside the graph. Both a
+positive sufficiency decision and exhaustion of the retrieval budget must reach the
+answer node; a budget-limited answer must state its evidence limitations rather than
+invent the missing facts.
+
+```text
+user question
+     |
+     v
+graph.invoke(...)
+     |
+     +-> retrieval and assessment loop
+             |
+             +-- evidence is sufficient --+
+             |                             |
+             +-- retrieval limit reached --+
+                                           |
+                                           v
+                                    answer_question
+                                           |
+                                           v
+                                  write_question_log
+                                           |
+                                           v
+                                          END
+```
+
+After that change, `answer_question` will return a partial state update such as
+`{"response": "..."}`, `write_question_log` will serialize the answer together with
+its supporting evidence and assessment history, and the harness will use
+`state["response"]` for RAGAS evaluation. RAGAS remains outside the agent graph: it
+measures the run and is not part of the agent's reasoning.
 
 ### How state moves through the current graph
 
@@ -192,7 +340,8 @@ Work performed:
   of the question;
 - records supported and missing requirements;
 - creates focused `RetrievalRequest` objects for missing prose or sources;
-- creates `TableRequest` objects only when table-native work is required; and
+- can create `TableRequest` objects when table-native work is required, although
+  the retrieval-only benchmark explicitly disables that output; and
 - rejects contradictory assessments, such as `ready_to_answer=True` together with
   missing requirements or unresolved requests.
 
@@ -201,21 +350,124 @@ Partial output:
 ```python
 {
     "assessment": EvidenceAssessment,
+    "assessment_history": list[EvidenceAssessment],
 }
 ```
 
 The assessment does not directly mutate the evidence and does not store a redundant
 route string. `route_after_evidence_assessment()` deterministically derives
 `ready_to_answer`, `need_table_reader`, or `need_more_evidence` from this object.
-The current intake-only graph records the assessment from which that decision is
-derived, but it does not follow the branch until the real destination nodes are
-implemented.
+The intake-only graph records the first assessment and stops. The benchmark graph
+uses `route_retrieval_benchmark()` to follow its bounded retrieval-only branches.
 
-#### `assess_evidence -> write_question_log`
+#### `assess_evidence -> conditional retrieval or termination`
 
 Input:
 
-- the complete accumulated `AgentState`;
+- `state["assessment"]`; and
+- `state["retrieval_attempts"]`.
+
+Work performed:
+
+- if the evidence is ready, terminates retrieval;
+- after the initial vector stage, routes missing evidence to graph-seeded section
+  retrieval;
+- after graph-seeded retrieval, routes missing evidence to targeted multi-step
+  section retrieval; and
+- after the final allowed retrieval stage, terminates retrieval even if the
+  assessment still records missing requirements.
+
+This is a routing function, so it chooses an edge and does not update state.
+
+#### Graph-seeded section retrieval -> `assess_evidence`
+
+Input:
+
+- `state["selected_articles"]`, used as graph seeds;
+- focused retrieval requests from `state["assessment"]`; and
+- the Wikipedia relationship graph and section-aware vector retriever bound when
+  the graph is built.
+
+Work performed:
+
+- finds related article names in the graph;
+- searches inside those articles with the assessor's missing-fact query;
+- adds only matching section chunks, never whole articles; and
+- increments `retrieval_attempts`.
+
+Partial output:
+
+```python
+{
+    "evidence": list[EvidenceItem],
+    "retrieval_attempts": previous_count + 1,
+}
+```
+
+The expanded evidence returns to `assess_evidence`, which appends another structured
+assessment to `assessment_history`.
+
+#### Targeted multi-step section retrieval -> `assess_evidence`
+
+Input:
+
+- the latest focused retrieval requests from `state["assessment"]`; and
+- the section-aware `MultiStepRetriever` bound when the graph is built.
+
+Work performed:
+
+- decomposes the unresolved information need into targeted retrieval work;
+- searches the section-aware index;
+- deduplicates new section chunks against accumulated evidence; and
+- increments `retrieval_attempts`.
+
+Partial output:
+
+```python
+{
+    "evidence": list[EvidenceItem],
+    "retrieval_attempts": previous_count + 1,
+}
+```
+
+The evidence is assessed one final time. A sufficient assessment ends retrieval;
+otherwise the business limit ends it with the missing requirements still visible.
+
+#### Planned terminal node: `answer_question -> write_question_log`
+
+Input:
+
+- `state["question"]`;
+- all accumulated section-level `state["evidence"]`; and
+- the final `state["assessment"]`, including any requirements still missing when
+  the retrieval limit was reached.
+
+Work to perform:
+
+- format the section evidence with evidence IDs, source articles, and section paths;
+- generate a grounded answer using only that evidence;
+- answer normally when the final assessment is sufficient; and
+- when the retrieval limit was reached without sufficient evidence, answer only
+  the supported portion and explicitly identify the limitation.
+
+Partial output:
+
+```python
+{
+    "response": str,
+}
+```
+
+Because this is the same terminal node for both outcomes, reaching the retrieval
+limit means “stop retrieving and answer with limitations,” not “skip answering.”
+Once implemented, logging moves after this node so the response and all evidence
+used to produce it are captured together.
+
+#### Terminal route -> `write_question_log`
+
+Input:
+
+- the complete accumulated `AgentState`; and
 - the run-level `AgentRunLogger`, bound to the node when the graph is built.
 
 Work performed:
@@ -233,22 +485,25 @@ Partial output:
 The logging node intentionally returns no state changes. Its only effect is writing
 the evidence file.
 
-#### `write_question_log -> END`
+#### `write_question_log -> END -> harness answer`
 
-`END` returns the accumulated state to the caller of `graph.invoke(...)`. At the
-current milestone, that final state contains the question, retrieval count,
-candidates, reviews, selected and rejected articles, initial evidence, and evidence
-assessment.
+`END` returns the accumulated state to the caller of `graph.invoke(...)`. The intake
+test graph still ends after the first assessment. The retrieval benchmark graph ends
+when evidence is sufficient or after the bounded vector, graph, and multi-step stages.
+Its terminal state also contains the accumulated section evidence and
+`assessment_history`. The current harness then formats that evidence and calls
+`answer_from_context`; answering is not yet a node in the compiled graph.
 
-The retriever and language model are constructed outside graph state and bound to
-their nodes when the graph is compiled. The temporary `END` after assessment avoids
-placeholder behavior: conditional edges will replace the current assessment-to-log
-terminal path only when the real answer, table-reader, and follow-up-retrieval nodes
-exist.
+Retrievers, the relationship graph, and the language model are constructed outside
+graph state and bound to their nodes when the graph is compiled. The retrieval-only
+graph uses real conditional destinations; the separate intake graph remains useful
+for focused tests of the initial prefix.
 
-`graph.compile(name="checkpoint_5_1_evidence_intake")` validates this node-and-edge
-definition and returns the executable graph used by `graph.invoke(...)`. The name is
-an observability label; it does not become part of `AgentState`.
+`graph.compile(...)` validates the node-and-edge definition and returns the executable
+graph used by `graph.invoke(...)`. The intake graph is named
+`checkpoint_5_1_evidence_intake`; the conditional benchmark is named
+`checkpoint_5_1_retrieval_benchmark`. These names are observability labels and do not
+become part of `AgentState`.
 
 ## Run evidence logs
 
@@ -270,6 +525,32 @@ rejected articles, evidence, assessment, and later-stage outputs as they are add
 The logger remains outside graph state so filesystem paths, locks, and file handles
 are never serialized as agent data. Writes use a temporary file followed by an
 atomic rename, and repeated questions receive distinct sequence numbers.
+
+## RAGAS retrieval-only harness
+
+The course starter file is now the Checkpoint 5.1 evaluation harness. It loads the
+same Wikipedia ground-truth schema and RAGAS correctness judge used in Checkpoint
+4.1, runs the retrieval-only LangGraph, answers from accumulated section evidence,
+and records article recall plus graph-specific diagnostics.
+
+From `wikipedia_retrieval_engine/`:
+
+```bash
+python "Capstone Checkpoint 5.1/capstone_checkpoint_5_1_agent_rag_starter.py" \
+  --gt-set "GT/wikipedia_GT.csv" \
+  --output-dir "Capstone Checkpoint 5.1/ragas_retrieval_only" \
+  --experiment-name agentic_sections_no_tables \
+  --limit 2
+```
+
+Remove `--limit 2` for the complete GT set. To run particular questions, repeat
+`--question-id`, for example `--question-id GT03 --question-id GT16`.
+
+Each result row includes the RAGAS verdict, designated-article recall, retrieval
+attempts, terminal stage, assessment route trace, evidence counts by stage, evidence
+IDs, context characters, and whether the final assessment considered the evidence
+sufficient. The per-question JSON logs retain every assessment in
+`assessment_history`.
 
 ## Initial retrieval strategy
 
@@ -337,6 +618,39 @@ table analyzer should return compact `TableEvidence`, including:
 
 The result re-enters the common evidence pool and is assessed again. The table branch
 does not bypass evidence sufficiency or answer verification.
+
+Table work is separated into three responsibilities:
+
+1. `find_table_candidates()` deterministically resolves the request's article and
+   ranks its prebuilt table artifacts using captions, sections, columns, legends,
+   row filters, and normalized row text. Explicit table IDs are authoritative and
+   invalid IDs are rejected rather than silently replaced.
+2. `plan_table_query()` gives the question, structured `TableRequest`, and a compact
+   view of the best candidates to a structured LLM call. It returns a
+   `TableQueryPlan` containing one immutable artifact ID, exact column names,
+   filters, grouping, sorting, and an optional supported calculation.
+3. `execute_table_query_plan()` executes the validated plan in Python and produces
+   `TableEvidence`. The model selects the intended operation, but it does not
+   perform counts, sorting, or arithmetic itself.
+
+The planner output is validated against the loaded artifact. A plan is rejected if
+it selects an artifact that was not offered, changes the requested operation, or
+invents a column. Query plans remain local to the table-reader branch for now; they
+will not add another `AgentState` field unless runtime logging or later nodes need
+to consume them.
+
+The executor currently supports row lookup/filtering, comparison projections,
+sorting/timelines, and grouped or ungrouped count, sum, minimum, maximum, and
+average operations. Text filters search both ordinary cell text and retained
+semantic fields. For example, a filter for `Pro Bowler` can match a cell containing
+`†` when the table legend maps that symbol to the requested meaning.
+
+Every contributing cell receives a stable coordinate such as
+`table-002-e731777dff:r17:c3`, based on the parser's original expanded-grid
+coordinates. `TableCellEvidence` retains the cell's plain and display text, bold and
+italic text, superscript/subscript annotations, background color, sortable value,
+and matched legend meanings. Thus a result can be compact while still preserving
+the winner/nominee or NFL-marker evidence needed by the later interpretation node.
 
 ### `ready_to_answer`
 
@@ -553,18 +867,24 @@ Implemented preparation:
 - stable source/table/artifact provenance;
 - compressed per-article artifact generation and atomic manifest publication;
 - read-only artifact discovery and loading; and
+- initial retrieval, article review, evidence collection, evidence assessment, and
+  route selection;
+- per-question terminal state logging;
+- deterministic table-request resolution and structured `TableQueryPlan` creation;
+- deterministic table-plan execution with rich cell-level provenance;
+- bounded retrieval-only conditional routing through vector, graph-seeded, and
+  targeted multi-step section evidence;
+- a Wikipedia-GT RAGAS harness that answers only from accumulated section evidence;
+  and
 - focused tests for model contracts, table normalization, cache reuse, invalidation,
-  and artifact loading.
+  artifact loading, graph nodes, logging, table resolution, and plan validation.
 
 Still to implement and evaluate:
 
-- LangGraph dependency pinning for the tested environment;
-- graph nodes and conditional routing;
-- conversion of existing retriever results into `EvidenceItem` objects;
-- evidence-assessment and query-rewrite prompts;
-- execution of `TableQueryPlan` operations over normalized rows;
+- conversion of executed table results into table-backed `EvidenceItem` objects;
+- table-reader branch wiring after the retrieval-only benchmark;
 - multi-table/multi-document joins;
-- grounded answer generation and verification nodes; and
+- in-graph grounded answer generation and verification nodes; and
 - controlled baseline-versus-agent evaluation.
 
 Keeping these lists separate is intentional: the parser and run-once artifact layer

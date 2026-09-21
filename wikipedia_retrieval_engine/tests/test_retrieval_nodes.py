@@ -5,12 +5,14 @@ from langchain_core.documents import Document
 from langchain_core.language_models.chat_models import BaseChatModel
 
 from wikipedia_retrieval_engine.retrievers.base import ArticleCandidate
+from wikipedia_retrieval_engine.retrievers.graph import GraphParams, WikiGraph
 from wikipedia_retrieval_engine.retrievers.vector import VectorRetriever
 from wikipedia_retrieval_engine.wiki_agents.agentic_models import (
     AgentState,
     ArticleReview,
     ArticleReviewBatch,
     EvidenceAssessment,
+    EvidenceItem,
     RetrievalRequest,
     TableRequest,
 )
@@ -18,6 +20,7 @@ from wikipedia_retrieval_engine.wiki_agents.retrieval_nodes import (
     assess_evidence,
     article_review_update,
     collect_initial_evidence,
+    retrieve_graph_seeded_evidence,
     retrieve_initial_articles,
     retrieve_selected_article_sections,
     review_article_candidates,
@@ -239,6 +242,85 @@ class RetrievalNodesTests(unittest.TestCase):
         self.assertEqual(
             evidence[0].metadata["retrieval_stage"],
             "initial_article_retrieval",
+        )
+
+    def test_graph_seeded_retrieval_adds_only_relevant_neighbor_sections(self) -> None:
+        existing = EvidenceItem(
+            evidence_id="Seed.html#section-001-00",
+            source_article="Seed.html",
+            content="Initial vector evidence.",
+            retrieval_query="Original question",
+            retriever="vector",
+        )
+        assessment = EvidenceAssessment(
+            ready_to_answer=False,
+            supported_requirements=["The seed entity is identified."],
+            missing_requirements=["The related event date is missing."],
+            retrieval_requests=[
+                RetrievalRequest(
+                    missing_fact="The related event date",
+                    query="related event exact date",
+                    target_articles=[],
+                    keywords=["event", "date"],
+                    preferred_retriever="graph",
+                )
+            ],
+            table_requests=[],
+            unresolved_conflicts=[],
+            explanation="Follow related articles and retrieve the date section.",
+        )
+        state: AgentState = {
+            "question": "Original question",
+            "retrieval_attempts": 1,
+            "selected_articles": ["Seed.html"],
+            "evidence": [existing],
+            "assessment": assessment,
+        }
+        graph_params = GraphParams(max_neighbors=2)
+        graph = Mock(spec=WikiGraph)
+        graph.expand.return_value = [
+            ("Neighbor.html", 1.25, ["link", "entity:Event(2)"])
+        ]
+        section = Document(
+            page_content="The related event occurred on June 1, 2020.",
+            metadata={
+                "source": "Neighbor.html#section-004-00",
+                "article": "Neighbor.html",
+                "section_title": "History",
+                "section_path": "Events > History",
+            },
+        )
+        retriever = Mock(spec=VectorRetriever)
+        retriever.getArticleSectionsTopK.return_value = [(section, 0.08)]
+
+        update = retrieve_graph_seeded_evidence(
+            state,
+            retriever,
+            graph,
+            graph_params=graph_params,
+            sections_per_neighbor=2,
+        )
+
+        graph.expand.assert_called_once_with(["Seed.html"], graph_params)
+        retriever.getArticleSectionsTopK.assert_called_once_with(
+            "related event exact date",
+            "Neighbor.html",
+            k=2,
+        )
+        self.assertEqual(update["retrieval_attempts"], 2)
+        self.assertEqual(len(update["evidence"]), 2)
+        graph_evidence = update["evidence"][1]
+        self.assertEqual(graph_evidence.evidence_type, "graph")
+        self.assertEqual(graph_evidence.source_article, "Neighbor.html")
+        self.assertEqual(graph_evidence.section_path, ["Events", "History"])
+        self.assertEqual(graph_evidence.retriever, "graph")
+        self.assertEqual(
+            graph_evidence.metadata["retrieval_stage"],
+            "graph_seeded_sections",
+        )
+        self.assertEqual(
+            graph_evidence.metadata["seed_articles"],
+            ["Seed.html"],
         )
 
     def test_assess_evidence_uses_structured_output(self) -> None:

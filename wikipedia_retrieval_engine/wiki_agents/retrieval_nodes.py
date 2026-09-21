@@ -5,6 +5,8 @@ from typing import Literal
 from langchain_core.language_models.chat_models import BaseChatModel
 from langchain_core.messages import HumanMessage, SystemMessage
 
+from wikipedia_retrieval_engine.retrievers.graph import GraphParams, WikiGraph
+from wikipedia_retrieval_engine.retrievers.multistep import MultiStepRetriever
 from wikipedia_retrieval_engine.retrievers.vector import VectorRetriever
 from wikipedia_retrieval_engine.wiki_agents.agentic_models import (
     AgentState,
@@ -237,23 +239,7 @@ def retrieve_selected_article_sections(
                 metadata.get("source")
                 or f"{source_article}#retrieved-section-{rank}"
             )
-            raw_section_path = metadata.get("section_path", "")
-            if isinstance(raw_section_path, (list, tuple)):
-                section_path = [
-                    str(part).strip()
-                    for part in raw_section_path
-                    if str(part).strip()
-                ]
-            else:
-                section_path = [
-                    part.strip()
-                    for part in str(raw_section_path).split(">")
-                    if part.strip()
-                ]
-            section_title = str(
-                metadata.get("section_title")
-                or (section_path[-1] if section_path else "")
-            ).strip()
+            section_title, section_path = _section_identity(metadata)
 
             evidence_by_id[evidence_id] = EvidenceItem(
                 evidence_id=evidence_id,
@@ -272,9 +258,128 @@ def retrieve_selected_article_sections(
     return {"evidence": list(evidence_by_id.values())}
 
 
+def retrieve_graph_seeded_evidence(
+    state: AgentState,
+    retriever: VectorRetriever,
+    graph: WikiGraph,
+    *,
+    graph_params: GraphParams | None = None,
+    sections_per_neighbor: int = 2,
+) -> AgentState:
+    """Expand selected VS articles, then retrieve only relevant neighbor sections.
+
+    The graph chooses related article names. It never supplies answer context itself.
+    For every related article, the section-aware vector retriever selects the chunks
+    relevant to the assessor's missing-fact query, and only those chunks become
+    ``EvidenceItem`` objects.
+    """
+
+    if sections_per_neighbor < 1:
+        raise ValueError("sections_per_neighbor must be at least 1.")
+
+    question = state.get("question", "").strip()
+    if not question:
+        raise ValueError("Agent state must contain a non-empty question.")
+
+    seeds = list(dict.fromkeys(state.get("selected_articles", [])))
+    existing_evidence = state.get("evidence", [])
+    evidence_by_id = {item.evidence_id: item for item in existing_evidence}
+    next_attempt = retrieval_attempt_count(state) + 1
+    if not seeds:
+        return {
+            "evidence": list(evidence_by_id.values()),
+            "retrieval_attempts": next_attempt,
+        }
+
+    assessment = state.get("assessment")
+    retrieval_queries = (
+        [request.query.strip() for request in assessment.retrieval_requests]
+        if assessment is not None
+        else []
+    )
+    retrieval_queries = list(
+        dict.fromkeys(query for query in retrieval_queries if query)
+    ) or [question]
+
+    params = graph_params or GraphParams()
+    neighbors = graph.expand(seeds, params)
+    for neighbor_rank, (article, graph_score, reasons) in enumerate(
+        neighbors,
+        start=1,
+    ):
+        for retrieval_query in retrieval_queries:
+            section_hits = retriever.getArticleSectionsTopK(
+                retrieval_query,
+                article,
+                k=sections_per_neighbor,
+            )
+            for section_rank, (document, distance) in enumerate(
+                section_hits,
+                start=1,
+            ):
+                metadata = document.metadata
+                evidence_id = str(
+                    metadata.get("source")
+                    or f"{article}#graph-section-{section_rank}"
+                )
+                if evidence_id in evidence_by_id:
+                    continue
+                section_title, section_path = _section_identity(metadata)
+                evidence_by_id[evidence_id] = EvidenceItem(
+                    evidence_id=evidence_id,
+                    source_article=article,
+                    content=document.page_content,
+                    evidence_type="graph",
+                    title=section_title or None,
+                    section_path=section_path,
+                    retrieval_query=retrieval_query,
+                    retriever="graph",
+                    rank=section_rank,
+                    raw_score=float(distance),
+                    score_semantics="lower_is_better",
+                    metadata={
+                        "retrieval_stage": "graph_seeded_sections",
+                        "seed_articles": seeds,
+                        "graph_neighbor_rank": neighbor_rank,
+                        "graph_score": graph_score,
+                        "discovery_reasons": reasons,
+                    },
+                )
+
+    return {
+        "evidence": list(evidence_by_id.values()),
+        "retrieval_attempts": next_attempt,
+    }
+
+
+def _section_identity(metadata: dict) -> tuple[str, list[str]]:
+    """Normalize section title/path metadata emitted by Chroma."""
+
+    raw_section_path = metadata.get("section_path", "")
+    if isinstance(raw_section_path, (list, tuple)):
+        section_path = [
+            str(part).strip()
+            for part in raw_section_path
+            if str(part).strip()
+        ]
+    else:
+        section_path = [
+            part.strip()
+            for part in str(raw_section_path).split(">")
+            if part.strip()
+        ]
+    section_title = str(
+        metadata.get("section_title")
+        or (section_path[-1] if section_path else "")
+    ).strip()
+    return section_title, section_path
+
+
 def assess_evidence(
     state: AgentState,
     llm: BaseChatModel,
+    *,
+    allow_table_requests: bool = True,
 ) -> AgentState:
     """Assess completeness and produce requests for the graph's next branch."""
 
@@ -311,9 +416,21 @@ def assess_evidence(
         EvidenceAssessment,
         method="function_calling",
     )
+    benchmark_constraint = ""
+    if not allow_table_requests:
+        benchmark_constraint = (
+            "\n\nRetrieval-only benchmark constraint:\n"
+            "- The table-reader tool is unavailable in this experiment.\n"
+            "- Always leave table_requests empty.\n"
+            "- If evidence is missing even when it may appear in a table, create a "
+            "focused retrieval_request for the missing fact instead."
+        )
+
     result = structured_assessor.invoke(
         [
-            SystemMessage(content=EVIDENCE_ASSESSMENT_SYSTEM_PROMPT),
+            SystemMessage(
+                content=EVIDENCE_ASSESSMENT_SYSTEM_PROMPT + benchmark_constraint
+            ),
             HumanMessage(
                 content=(
                     f"Question:\n{question}\n\n"
@@ -328,6 +445,11 @@ def assess_evidence(
         if isinstance(result, EvidenceAssessment)
         else EvidenceAssessment.model_validate(result)
     )
+
+    if not allow_table_requests and assessment.table_requests:
+        raise ValueError(
+            "The retrieval-only evidence assessor produced a table request."
+        )
 
     if assessment.ready_to_answer and (
         assessment.missing_requirements
@@ -346,7 +468,72 @@ def assess_evidence(
             "An incomplete assessment must include a retrieval or table request."
         )
 
-    return {"assessment": assessment}
+    return {
+        "assessment": assessment,
+        "assessment_history": [
+            *state.get("assessment_history", []),
+            assessment,
+        ],
+    }
+
+
+def retrieve_multistep_evidence(
+    state: AgentState,
+    retriever: MultiStepRetriever,
+    *,
+    hits_per_request: int = 6,
+) -> AgentState:
+    """Run targeted query decomposition and retain its section chunks as evidence."""
+
+    if hits_per_request < 1:
+        raise ValueError("hits_per_request must be at least 1.")
+
+    question = state.get("question", "").strip()
+    if not question:
+        raise ValueError("Agent state must contain a non-empty question.")
+
+    assessment = state.get("assessment")
+    retrieval_queries = (
+        [request.query.strip() for request in assessment.retrieval_requests]
+        if assessment is not None
+        else []
+    )
+    retrieval_queries = list(
+        dict.fromkeys(query for query in retrieval_queries if query)
+    ) or [question]
+
+    evidence_by_id = {
+        item.evidence_id: item
+        for item in state.get("evidence", [])
+    }
+    for retrieval_query in retrieval_queries:
+        hits, reasoning = retriever.retrieve_with_reasoning(
+            retrieval_query,
+            k=hits_per_request,
+        )
+        for rank, (doc_id, content, score) in enumerate(hits, start=1):
+            if doc_id in evidence_by_id:
+                continue
+            source_article = doc_id.split("#", 1)[0]
+            evidence_by_id[doc_id] = EvidenceItem(
+                evidence_id=doc_id,
+                source_article=source_article,
+                content=content,
+                retrieval_query=retrieval_query,
+                retriever="vector",
+                rank=rank,
+                raw_score=float(score),
+                score_semantics="higher_is_better",
+                metadata={
+                    "retrieval_stage": "targeted_multistep_sections",
+                    "reasoning_instructions": reasoning,
+                },
+            )
+
+    return {
+        "evidence": list(evidence_by_id.values()),
+        "retrieval_attempts": retrieval_attempt_count(state) + 1,
+    }
 
 
 def route_after_evidence_assessment(state: AgentState) -> EvidenceRoute:

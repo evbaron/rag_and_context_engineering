@@ -52,6 +52,7 @@ class AgentState(TypedDict, total=False):
 
     # assess_evidence output
     assessment: EvidenceAssessment
+    assessment_history: list[EvidenceAssessment]
 
 
 DEFAULT_RETRIEVAL_ATTEMPTS = 0
@@ -138,26 +139,49 @@ class DraftAnswer(BaseModel):
 
 
 class TableQueryPlan(BaseModel):
+    """Validated instructions for reading one normalized table artifact."""
+
+    artifact_id: str = Field(min_length=1)
     operation: Literal[
         "lookup", "filter", "aggregate", "compare", "sort", "timeline"
     ]
-    selected_columns: list[str]
-    filters: dict[str, str]
-    group_by: list[str]
-    calculation: str | None
-    sort_column: str | None
-    sort_direction: Literal["ascending", "descending"] | None
-    limit: int | None
+    selected_columns: list[str] = Field(default_factory=list)
+    filters: dict[str, str] = Field(default_factory=dict)
+    group_by: list[str] = Field(default_factory=list)
+    calculation: Literal["count", "sum", "min", "max", "average"] | None = None
+    calculation_column: str | None = None
+    sort_column: str | None = None
+    sort_direction: Literal["ascending", "descending"] | None = None
+    limit: int | None = Field(default=None, ge=1)
+
+
+class TableCellEvidence(BaseModel):
+    """Rich semantics for one selected source cell."""
+
+    source_cell: str = Field(min_length=1)
+    row_number: int = Field(ge=1)
+    column: str = Field(min_length=1)
+    text: str
+    display_text: str
+    is_bold: bool = False
+    is_italic: bool = False
+    bold_text: list[str] = Field(default_factory=list)
+    italic_text: list[str] = Field(default_factory=list)
+    annotations: list[dict[str, Any]] = Field(default_factory=list)
+    background_color: str | None = None
+    sort_value: str | None = None
+    legend_matches: list[str] = Field(default_factory=list)
 
 
 class TableEvidence(BaseModel):
     request_id: str
     artifact_id: str
     result_rows: list[dict[str, str | int | float]]
-    calculation: str | None
+    calculation: str | None = None
     source_cells: list[str]  # e.g. table-002:r17:c3
+    cell_details: list[TableCellEvidence] = Field(default_factory=list)
     sufficient: bool
-    warnings: list[str]
+    warnings: list[str] = Field(default_factory=list)
 
 
 class TableRequest(BaseModel):

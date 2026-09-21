@@ -90,7 +90,7 @@ def answer(
 
 def decompose_query(query: str, system_prompt, original_query: str, llm: ChatOpenAI | None = None) -> str:
     """Decompose the query into a list of sub-queries and reasoning instructions."""
-    client = make_llm()
+    client = llm or make_llm()
     messages = [
         SystemMessage(content=system_prompt),
         HumanMessage(content=query),

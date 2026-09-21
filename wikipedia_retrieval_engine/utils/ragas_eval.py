@@ -285,6 +285,24 @@ def parse_args() -> argparse.Namespace:
         ),
     )
     parser.add_argument(
+        "--limit",
+        type=int,
+        default=None,
+        help=(
+            "Optional number of ground-truth rows to run. Omit for the full set."
+        ),
+    )
+    parser.add_argument(
+        "--question-id",
+        dest="question_ids",
+        action="append",
+        default=None,
+        help=(
+            "Run one ground-truth question ID. Repeat this option to select "
+            "multiple IDs in the supplied order."
+        ),
+    )
+    parser.add_argument(
         "--rate-limit-retries",
         type=int,
         default=3,

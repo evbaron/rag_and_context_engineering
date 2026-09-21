@@ -1,260 +1,316 @@
-r"""Capstone Checkpoint 5.1 — Designing and Evaluating an Agent-Based RAG System (starter).
-Jupytext-style cell markers (# %% / # %% [markdown]) — runnable as a
-plain script AND openable as cells in VS Code/PyCharm/Jupytext.
+r"""Checkpoint 5.1 retrieval-only agent benchmark over the Wikipedia GT set.
+
+This remains the course-facing harness. Production state, nodes, routing, retrieval,
+and logging live in ``wiki_agents`` and ``retrievers``.
+
+The benchmark intentionally disables table requests. Its bounded workflow is:
+
+    section-aware vector search
+        -> evidence assessment
+        -> graph expansion from selected VS articles
+        -> section retrieval inside graph-neighbor articles
+        -> evidence assessment
+        -> targeted multi-step section retrieval
+        -> final evidence assessment
+
+Article names are routing handles only. The answer model receives accumulated section
+``EvidenceItem`` content—never full articles and never fixed leading-character slices.
+
+Run from ``wikipedia_retrieval_engine/``:
+
+    python "Capstone Checkpoint 5.1/capstone_checkpoint_5_1_agent_rag_starter.py" \
+        --gt-set "GT/wikipedia_GT.csv" \
+        --output-dir "Capstone Checkpoint 5.1/ragas_retrieval_only" \
+        --experiment-name agentic_sections_no_tables
+
+Use ``--limit 2`` for a smoke test or repeat ``--question-id GT01`` to select IDs.
 """
-
-# %% [markdown]
-# # Capstone Checkpoint 5.1 — Designing and Evaluating an Agent-Based RAG System
-# **MO-LLM Module 5 -  Required Capstone Checkpoint (120 minutes)**
-#
-# ## What this checkpoint is
-#
-# This is the final build step of your capstone. You will turn the retrieval system you've
-# developed into an **agent-based RAG system**. Instead of a fixed pipeline, an agent
-# decides at each step whether it has enough information, what to retrieve next, which
-# tool to use, or whether to answer. This activity allows you to apply the Module 5 labs (Lab 5.1's agentic
-# retriever and Lab 5.2's tool-using agent) to your capstone scenario.
-#
-# The graded deliverable is your completed Capstone Checkpoint 5.1 worksheet. This script is a
-# runnable demonstration of an agentic loop on a tiny sample corpus so you can see the
-# decision-making before adapting it to your full system.
-#
-# **Learning outcomes (Module 5):**
-# 1. Build an agent-based system that integrates retrieval and external tools.
-# 2. Use system prompts to guide agent behavior and decision-making.
-# 3. Design workflows that coordinate retrieval, reasoning, and tool use in a RAG system.
-# 4. Evaluate an agentic workflow against a fixed retrieval pipeline.
-# 5. Design workflows that coordinate retrieval, reasoning, and tool use within a RAG system.
-# 6. Build an agent-based system that integrates retrieval and external tools to complete user tasks.
-
-# %% [markdown]
-# ## Step 1 — Keep your capstone scenario
-#
-# Use the **same scenario** you chose in Checkpoint 1.1 and have built on since.
-#
-# | Scenario | Corpus | Useful agent tools/actions |
-# |---|---|---|
-# | **Research Paper Navigator** | ~150 research-paper PDFs | semantic search; "find papers by author/year"; "follow citations"; ask a clarifying question |
-# | **Wikipedia Retrieval Engine** | ~2,400 Wikipedia HTML articles | semantic search; "find by category"; "follow links"; ask a clarifying question |
-#
-# An agent shines when one query isn't enough — it can search, look at what it found,
-# and decide to search again (or use a different tool) before answering.
-
-# %% [markdown]
-# ## Setup (~5 min)
-#
-# 1. **Python 3.11 or 3.12**
-# 2. `pip install langchain-openai langchain-core python-dotenv`
-# 3. Get a free OpenRouter key at <https://openrouter.ai/keys>. The labs use the paid
-#    `openai/gpt-5.4-mini` model, which is covered by the course credits.
-# 4. Create a `.env` file next to this script: `OPENROUTER_API_KEY=sk-or-v1-...`
-#
-# This runs on a tiny built-in sample corpus, so you do not need to prepare your own
-# dataset. It still requires an OpenRouter API key to run the LLM (it is not offline or
-# free of API calls). The built-in corpus is deliberately minimal: It only demonstrates
-# the agent control flow, not retrieval quality, and it is unrelated to your capstone:
-# Howerver, your design should target your own capstone corpus. Your full agent is what you describe
-# in the written submission.
 
 # %%
 from __future__ import annotations
 
+import asyncio
+import sys
 import warnings
+from pathlib import Path
+
 warnings.filterwarnings("ignore")
 
-import json
-import os
-import re
-from datetime import datetime
-from pathlib import Path
-from typing import Any
+try:
+    _HERE = Path(__file__).resolve().parent
+except NameError:
+    _HERE = Path.cwd()
+_ENGINE = _HERE.parent
+_PACKAGE_ROOT = _ENGINE.parent
+for path in (_PACKAGE_ROOT, _ENGINE):
+    if str(path) not in sys.path:
+        sys.path.insert(0, str(path))
 
-from dotenv import load_dotenv
-from langchain_core.messages import HumanMessage, SystemMessage
-from langchain_openai import ChatOpenAI
+from ragas import experiment
+
+from wikipedia_retrieval_engine.retrievers import DEFAULT_SECTION_CHROMA_DB_NAME
+from wikipedia_retrieval_engine.retrievers.corpus import build_or_load_markdown_store
+from wikipedia_retrieval_engine.retrievers.graph import GraphParams, build_or_load_graph
+from wikipedia_retrieval_engine.retrievers.llm import answer as answer_from_context
+from wikipedia_retrieval_engine.retrievers.multistep import MultiStepRetriever
+from wikipedia_retrieval_engine.retrievers.vector import VectorRetriever
+from wikipedia_retrieval_engine.utils.ragas_eval import (
+    JUDGE_MODEL,
+    LLM_MODEL,
+    RateLimitBackoff,
+    build_ragas_dataset,
+    call_with_rate_limit_backoff,
+    correctness_metric,
+    make_judge,
+    make_llm,
+    parse_args,
+    parse_source_articles,
+    print_score_summary,
+    save_results,
+)
+from wikipedia_retrieval_engine.wiki_agents.agent_graph import (
+    build_retrieval_benchmark_graph,
+)
+from wikipedia_retrieval_engine.wiki_agents.agentic_models import (
+    AgentState,
+    EvidenceItem,
+    initial_agent_state,
+)
+from wikipedia_retrieval_engine.wiki_agents.run_logging import AgentRunLogger
+
 
 # %%
-OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
-LLM_MODEL = "openai/gpt-5.4-mini"
-TEMPERATURE = 0.2
-MAX_STEPS = 3
-LOG_PATH = Path.cwd() / "checkpoint_5_1_agent.log"
-
-# === SET THIS to the scenario you chose in Checkpoint 1.1 ===
-SCENARIO = "research_papers"   # "research_papers" or "wikipedia"
-
-DECIDE_SYSTEM = (
-    "You are an agent retrieving from a small document collection. Given the question, "
-    "the queries already run, and the documents found so far, decide what to do next. "
-    'Respond with ONLY a JSON object: {"done": true|false, "new_queries": ["..."], '
-    '"reasoning": "..."}. Set done=true when you have enough to answer; otherwise give '
-    "1-2 new_queries targeting what is still missing (do not repeat past queries)."
+# These controls define the benchmark described in the Checkpoint 5.1 report.
+INITIAL_ARTICLE_TOP_K = 3
+SECTIONS_PER_GRAPH_NEIGHBOR = 2
+MULTISTEP_HITS_PER_REQUEST = 6
+GRAPH_PARAMS = GraphParams(
+    max_bucket_size=50,
+    min_shared=1,
+    max_neighbors=5,
+    max_neighbors_per_seed=3,
 )
-ANSWER_SYSTEM = (
-    "You are a helpful assistant. Answer the question using ONLY the provided documents, "
-    "quoting where you can. If they do not contain the answer, say so."
-)
+RECURSION_LIMIT = 12
+
+_CONTEXT_SEPARATOR = "\n\n" + "=" * 80 + "\n\n"
 
 
-# %%
-def check_api_key() -> str:
-    load_dotenv()
-    key = os.getenv("OPENROUTER_API_KEY")
-    if not key:
-        raise RuntimeError(
-            "OPENROUTER_API_KEY not set. Grab a free key at https://openrouter.ai/keys, "
-            "put it in a .env file next to this script, and rerun."
+def format_section_evidence(evidence: list[EvidenceItem]) -> str:
+    """Format exactly the accumulated section evidence sent to the answer model."""
+
+    blocks: list[str] = []
+    for item in evidence:
+        section = " > ".join(item.section_path) or item.title or "(section unknown)"
+        stage = item.metadata.get("retrieval_stage", "unknown")
+        blocks.append(
+            f"[Evidence ID: {item.evidence_id}]\n"
+            f"Source article: {item.source_article}\n"
+            f"Section: {section}\n"
+            f"Retrieval stage: {stage}\n"
+            f"{item.content.strip()}"
         )
-    return key
+    return _CONTEXT_SEPARATOR.join(blocks)
 
 
-def make_llm() -> ChatOpenAI:
-    return ChatOpenAI(model=LLM_MODEL, temperature=TEMPERATURE,
-                      api_key=check_api_key(), base_url=OPENROUTER_BASE_URL)
+def _required_articles(source_cell: str) -> list[str]:
+    return [
+        article.removesuffix(".txt")
+        for article in parse_source_articles(source_cell)
+    ]
 
 
-def log(label: str, text: str) -> None:
-    ts = datetime.now().isoformat(timespec="seconds")
-    with LOG_PATH.open("a", encoding="utf-8") as fh:
-        fh.write(f"[{ts}] {label}\n{text}\n{'-' * 72}\n")
+def _stage_name(retrieval_attempts: int) -> str:
+    return {
+        1: "vector_sections",
+        2: "graph_seeded_sections",
+        3: "targeted_multistep_sections",
+    }.get(retrieval_attempts, f"retrieval_attempt_{retrieval_attempts}")
 
 
-# %% [markdown]
-# ## A tiny sample corpus + a keyword retriever (provided)
+def build_agentic_experiment(
+    agent_graph,
+    answer_llm,
+    ragas_judge,
+    rate_limit_backoff: RateLimitBackoff,
+    experiment_name: str,
+):
+    """Create the RAGAS case function for the retrieval-only LangGraph."""
 
-# %%
-SAMPLE_DOCS = [
-    {"id": "d1", "text": "Program synthesis generates programs from a specification, such as input-output examples."},
-    {"id": "d2", "text": "The sketching approach lets a programmer leave holes in a program for a synthesizer to fill."},
-    {"id": "d3", "text": "Retrieval-augmented generation grounds a model's answers in retrieved documents to reduce hallucination."},
-    {"id": "d4", "text": "An agentic retriever decides at each step whether it has enough information or should search again."},
-    {"id": "d5", "text": "A tool-using agent chooses among actions — search, look up by date, ask the user — to complete a task."},
-    {"id": "d6", "text": "Evaluating an agent compares its answers and cost against a fixed single-pass pipeline."},
-]
-DOC_BY_ID = {d["id"]: d for d in SAMPLE_DOCS}
+    @experiment()
+    async def run_agentic_case(row: dict) -> dict:
+        state: AgentState = call_with_rate_limit_backoff(
+            lambda: agent_graph.invoke(
+                initial_agent_state(row["question"]),
+                config={"recursion_limit": RECURSION_LIMIT},
+            ),
+            rate_limit_backoff,
+            label=f"agent graph for {row['question_id']}",
+        )
 
+        evidence = state.get("evidence", [])
+        context = format_section_evidence(evidence)
+        if context.strip():
+            response = call_with_rate_limit_backoff(
+                lambda: answer_from_context(
+                    query=row["question"],
+                    context=context,
+                    llm=answer_llm,
+                ),
+                rate_limit_backoff,
+                label=f"answer LLM for {row['question_id']}",
+            )
+        else:
+            response = "I cannot answer because no relevant Wikipedia sections were retrieved."
 
-def retrieve(query: str, k: int = 2) -> list[str]:
-    q = set(re.findall(r"[a-z0-9]+", query.lower()))
-    scored = [(d["id"], len(q & set(re.findall(r"[a-z0-9]+", d["text"].lower())))) for d in SAMPLE_DOCS]
-    scored.sort(key=lambda x: x[1], reverse=True)
-    return [doc_id for doc_id, s in scored[:k] if s > 0]
+        score = call_with_rate_limit_backoff(
+            lambda: correctness_metric.score(
+                llm=ragas_judge,
+                response=response,
+                grading_notes=row["grading_notes"],
+            ),
+            rate_limit_backoff,
+            label=f"RAGAS judge for {row['question_id']}",
+        )
 
+        required_articles = _required_articles(row["source_articles"])
+        retrieved_articles = list(
+            dict.fromkeys(item.source_article for item in evidence)
+        )
+        retrieved_set = set(retrieved_articles)
+        matched = [article for article in required_articles if article in retrieved_set]
+        missing = [article for article in required_articles if article not in retrieved_set]
+        article_recall = (
+            len(matched) / len(required_articles)
+            if required_articles
+            else 1.0
+        )
 
-def decide(llm: ChatOpenAI, question: str, collected: dict[str, str], executed: list[str]) -> dict:
-    docs = "\n".join(f"[{i}] {DOC_BY_ID[i]['text']}" for i in collected) or "(none yet)"
-    user = f"Question: {question}\n\nQueries run: {executed or '(none)'}\n\nDocuments so far:\n{docs}"
-    raw = llm.invoke([SystemMessage(content=DECIDE_SYSTEM), HumanMessage(content=user)]).content.strip()
-    if raw.startswith("```"):
-        raw = raw.split("\n", 1)[-1].rsplit("```", 1)[0]
-    try:
-        d = json.loads(raw)
-        return {"done": bool(d.get("done", True)), "new_queries": d.get("new_queries", []) or [],
-                "reasoning": d.get("reasoning", "")}
-    except (json.JSONDecodeError, ValueError):
-        return {"done": True, "new_queries": [], "reasoning": "parse-fail -> stop"}
+        attempts = state.get("retrieval_attempts", 0)
+        assessment = state["assessment"]
+        history = state.get("assessment_history", [])
+        route_trace = [
+            "ready_to_answer" if item.ready_to_answer else "need_more_evidence"
+            for item in history
+        ]
+        stage_counts: dict[str, int] = {}
+        for item in evidence:
+            stage = str(item.metadata.get("retrieval_stage", "unknown"))
+            stage_counts[stage] = stage_counts.get(stage, 0) + 1
 
-
-def agentic_answer(llm: ChatOpenAI, question: str) -> str:
-    """Provided: a minimal agentic loop — retrieve, decide whether to continue, repeat."""
-    collected: dict[str, str] = {}
-    executed: list[str] = []
-    pending = [question]
-    for step in range(MAX_STEPS):
-        for q in pending:
-            for doc_id in retrieve(q):
-                collected[doc_id] = DOC_BY_ID[doc_id]["text"]
-            executed.append(q)
-        d = decide(llm, question, collected, executed)
-        print(f"  step {step + 1}: have {sorted(collected)}  -> done={d['done']}  ({d['reasoning'][:60]})")
-        if d["done"] or not d["new_queries"]:
-            break
-        pending = d["new_queries"]
-    context = "\n\n".join(f"[{i}] {collected[i]}" for i in collected)
-    return llm.invoke([SystemMessage(content=ANSWER_SYSTEM),
-                       HumanMessage(content=f"Documents:\n{context}\n\nQuestion: {question}")]).content
-
-
-# %% [markdown]
-# ## Step 2 — Your agent design (TODO)
-#
-# Design the agent you will build for **your** scenario. Return a dictionary with the keys
-# below — this is the plan you implement in your real system and describe in the report.
-
-# %%
-def my_agent_plan() -> dict[str, Any]:
-    """Return your agent design for your chosen scenario.
-
-    TODO — your turn. Return a dictionary with these keys:
-      - "tools": list[str]      — the actions/tools your agent can take (e.g.,
-                                  ["semantic_search", "find_by_author", "follow_citation",
-                                   "clarify", "answer"]).
-      - "stop_condition": str   — how the agent decides it has enough to answer.
-      - "system_prompt_idea": str — one or two sentences on how you'll instruct the agent
-                                  to choose actions (this is what "guiding agent behavior
-                                  with system prompts" means).
-      - "test_tasks": list[str] — 2-3 questions for your scenario that need more than one
-                                  retrieval step (so the agentic loop earns its keep).
-
-    Example (illustrative — replace with your own scenario):
         return {
-            "tools": ["semantic_search", "find_by_author", "clarify", "answer"],
-            "stop_condition": "the retrieved passages cover every part of the question",
-            "system_prompt_idea": "Search first; clarify only if the request is ambiguous; "
-                                  "answer once the retrieved text supports a grounded reply.",
-            "test_tasks": [
-                "What changed between the v1 and v2 proposals, and who approved it?",
-                "Summarize the budget decisions discussed across Q1 and Q2.",
-            ],
+            **row,
+            "experiment_name": experiment_name,
+            "evaluation_mode": "agentic_section_evidence_no_tables",
+            "answer_model": LLM_MODEL,
+            "judge_model": JUDGE_MODEL,
+            "retriever_kind": "vs_graph_multistep_sections",
+            "initial_article_top_k": INITIAL_ARTICLE_TOP_K,
+            "graph_max_neighbors": GRAPH_PARAMS.max_neighbors,
+            "sections_per_graph_neighbor": SECTIONS_PER_GRAPH_NEIGHBOR,
+            "multistep_hits_per_request": MULTISTEP_HITS_PER_REQUEST,
+            "retrieval_attempts": attempts,
+            "terminal_stage": _stage_name(attempts),
+            "evidence_ready": assessment.ready_to_answer,
+            "route_trace": " -> ".join(route_trace),
+            "assessment_explanation": assessment.explanation,
+            "evidence_stage_counts": "; ".join(
+                f"{stage}={count}" for stage, count in sorted(stage_counts.items())
+            ),
+            "required_articles": "; ".join(required_articles),
+            "retrieved_articles": "; ".join(retrieved_articles),
+            "matched_articles": "; ".join(matched),
+            "missing_articles": "; ".join(missing),
+            "article_recall": article_recall,
+            "evidence_ids": "; ".join(item.evidence_id for item in evidence),
+            "evidence_count": len(evidence),
+            "context_characters": len(context),
+            "response": response,
+            "score": score.value,
+            "source_count": len(required_articles),
         }
 
-    Delete the raise NotImplementedError line once your code works.
-    """
-    raise NotImplementedError("my_agent_plan() — see the TODO above.")
+    return run_agentic_case
 
-
-# %% [markdown]
-# ## Step 3 — Run the agentic loop and capture the evidence
-#
-# Runs the provided agentic loop on a multistep question (watch it retrieve, decide,
-# and retrieve again), then prints your plan. Reproduce this in your real system for the
-# report and compare it against your fixed Checkpoint 2.1 retriever on the same task.
 
 # %%
-def run() -> None:
-    llm = make_llm()
-    question = "How does an agentic retriever differ from a fixed pipeline, and how is it evaluated?"
-    print(f"Checkpoint 5.1 — agentic RAG demo  |  scenario: {SCENARIO}")
-    print(f"Question: {question}\n")
-    answer = agentic_answer(llm, question)
-    print(f"\nAgent answer:\n{answer}\n")
-    log("AGENTIC", f"Q: {question}\nA: {answer}")
-    try:
-        print("Your agent plan:")
-        print(json.dumps(my_agent_plan(), indent=2))
-    except NotImplementedError as e:
-        print(f"[my_agent_plan not done yet] {e}")
-    print("=" * 72)
-    print("Done. Build this agent for your real system and compare it to your 2.1 baseline.")
+async def main() -> None:
+    args = parse_args()
+    if args.limit is not None and args.limit < 1:
+        raise ValueError("--limit must be at least 1.")
+
+    gt_path = args.gt_set.expanduser().resolve()
+    output_dir = args.output_dir.expanduser().resolve()
+    experiment_name = args.experiment_name.strip() or "agentic_sections_no_tables"
+    rate_limit_backoff = RateLimitBackoff.from_args(args)
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    dataset = build_ragas_dataset(
+        gt_path=gt_path,
+        output_dir=output_dir,
+        dataset_suffix="agentic_section_inputs",
+        limit=args.limit,
+        question_ids=args.question_ids,
+    )
+
+    print("Loading section-aware retrieval resources...")
+    retriever = VectorRetriever.for_section_index(
+        top_k=INITIAL_ARTICLE_TOP_K,
+        label=f"section_vector_articles_k{INITIAL_ARTICLE_TOP_K}",
+    )
+    agent_llm = make_llm()
+    multistep_retriever = MultiStepRetriever(
+        llm=agent_llm,
+        chroma_db_name=DEFAULT_SECTION_CHROMA_DB_NAME,
+        top_k=MULTISTEP_HITS_PER_REQUEST,
+        label="targeted_multistep_sections",
+    )
+
+    # Markdown sidecars load the article relationship graph only. Full article
+    # markdown is never assembled into answer context.
+    relationship_store = build_or_load_markdown_store()
+    wiki_graph = build_or_load_graph(relationship_store)
+    run_logger = AgentRunLogger()
+    agent_graph = build_retrieval_benchmark_graph(
+        retriever,
+        multistep_retriever,
+        wiki_graph,
+        agent_llm,
+        run_logger,
+        graph_params=GRAPH_PARAMS,
+        sections_per_neighbor=SECTIONS_PER_GRAPH_NEIGHBOR,
+        multistep_hits_per_request=MULTISTEP_HITS_PER_REQUEST,
+    )
+
+    ragas_judge = make_judge()
+    agentic_experiment = build_agentic_experiment(
+        agent_graph,
+        agent_llm,
+        ragas_judge,
+        rate_limit_backoff,
+        experiment_name,
+    )
+
+    print(
+        f"Running retrieval-only agent on {len(dataset)} questions from {gt_path}\n"
+        f"  initial article k={INITIAL_ARTICLE_TOP_K}\n"
+        f"  graph neighbors={GRAPH_PARAMS.max_neighbors}\n"
+        f"  sections per graph neighbor={SECTIONS_PER_GRAPH_NEIGHBOR}\n"
+        f"  multistep hits per request={MULTISTEP_HITS_PER_REQUEST}\n"
+        f"  table requests=disabled\n"
+        f"  evidence logs={run_logger.run_directory}"
+    )
+    results = await agentic_experiment.arun(dataset)
+
+    print_score_summary(results)
+    for row in results:
+        print(
+            f"  {row['question_id']}: stage={row['terminal_stage']} "
+            f"ready={row['evidence_ready']} recall={row['article_recall']:.2f} "
+            f"verdict={row['score'].upper()} "
+            f"missing={row['missing_articles'] or '(none)'}"
+        )
+    save_results(results, output_dir)
 
 
-run()
-
-# %% [markdown]
-# ## Step 4 — Your written submission (the graded deliverable)
-#
-# The deliverable is a **written submission** (suggested length: 500-750 words). Cover the following:
-#
-# 1. **System overview**: State your scenario and the retrieval system you built (2.1–4.1).
-# 2. **Agent design**: Describe the actions/tools your agent can take, and how a **system prompt**
-#    guides it to choose among them (retrieve, use a tool, clarify, or answer).
-# 3. **Workflow**: Explain how retrieval, reasoning, and tool use are coordinated across steps,
-#    and how the agent decides it has enough information to answer.
-# 4. **Evaluation**: Compare the agent-based system against your fixed Checkpoint 2.1/3.1
-#    pipeline on a few representative tasks. Did multi-step decision-making improve the
-#    answers? At what cost (extra model calls, latency)?
-# 5. **Reflection**: When an agentic approach adds value vs. when a simpler pipeline is
-#    better, and the limitations/trade-offs of increasingly autonomous systems.
-#
-# Include evidence (sample tasks, the agent's step-by-step decisions from a log, before/
-# after comparison).
+if __name__ == "__main__":
+    asyncio.run(main())

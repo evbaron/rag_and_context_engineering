@@ -8,12 +8,19 @@ from langchain_core.language_models.chat_models import BaseChatModel
 from langgraph.graph import END, START, StateGraph
 from langgraph.graph.state import CompiledStateGraph
 
+from wikipedia_retrieval_engine.retrievers.graph import GraphParams, WikiGraph
+from wikipedia_retrieval_engine.retrievers.multistep import MultiStepRetriever
 from wikipedia_retrieval_engine.retrievers.vector import VectorRetriever
-from wikipedia_retrieval_engine.wiki_agents.agentic_models import AgentState
+from wikipedia_retrieval_engine.wiki_agents.agentic_models import (
+    AgentState,
+    retrieval_attempt_count,
+)
 from wikipedia_retrieval_engine.wiki_agents.retrieval_nodes import (
     assess_evidence,
     collect_initial_evidence,
+    retrieve_graph_seeded_evidence,
     retrieve_initial_articles,
+    retrieve_multistep_evidence,
     review_article_candidates,
 )
 from wikipedia_retrieval_engine.wiki_agents.run_logging import (
@@ -63,3 +70,101 @@ def build_evidence_intake_graph(
     graph.add_edge("write_question_log", END)
 
     return graph.compile(name="checkpoint_5_1_evidence_intake")
+
+
+def route_retrieval_benchmark(state: AgentState) -> str:
+    """Choose the next bounded retrieval stage, or finish with current evidence."""
+
+    assessment = state.get("assessment")
+    if assessment is None:
+        raise ValueError("Agent state does not contain an evidence assessment.")
+    if assessment.ready_to_answer:
+        return "finish"
+
+    attempts = retrieval_attempt_count(state)
+    if attempts == 1:
+        return "graph_seeded_sections"
+    if attempts == 2:
+        return "multistep_sections"
+    return "finish"
+
+
+def build_retrieval_benchmark_graph(
+    retriever: VectorRetriever,
+    multistep_retriever: MultiStepRetriever,
+    wiki_graph: WikiGraph,
+    llm: BaseChatModel,
+    run_logger: AgentRunLogger | None = None,
+    *,
+    graph_params: GraphParams | None = None,
+    sections_per_neighbor: int = 2,
+    multistep_hits_per_request: int = 6,
+) -> CompiledStateGraph:
+    """Compile the retrieval-only VS → graph → multistep benchmark graph.
+
+    Article names route retrieval. Only section chunks are added to evidence and
+    therefore only section evidence reaches assessment and answering.
+    """
+
+    workflow = StateGraph(AgentState)
+    logger = run_logger or AgentRunLogger()
+    params = graph_params or GraphParams()
+
+    workflow.add_node(
+        "retrieve_initial_articles",
+        partial(retrieve_initial_articles, retriever=retriever),
+    )
+    workflow.add_node(
+        "review_article_candidates",
+        partial(review_article_candidates, llm=llm),
+    )
+    workflow.add_node("collect_initial_evidence", collect_initial_evidence)
+    workflow.add_node(
+        "assess_evidence",
+        partial(
+            assess_evidence,
+            llm=llm,
+            allow_table_requests=False,
+        ),
+    )
+    workflow.add_node(
+        "retrieve_graph_seeded_sections",
+        partial(
+            retrieve_graph_seeded_evidence,
+            retriever=retriever,
+            graph=wiki_graph,
+            graph_params=params,
+            sections_per_neighbor=sections_per_neighbor,
+        ),
+    )
+    workflow.add_node(
+        "retrieve_multistep_sections",
+        partial(
+            retrieve_multistep_evidence,
+            retriever=multistep_retriever,
+            hits_per_request=multistep_hits_per_request,
+        ),
+    )
+    workflow.add_node(
+        "write_question_log",
+        partial(write_question_log, logger=logger),
+    )
+
+    workflow.add_edge(START, "retrieve_initial_articles")
+    workflow.add_edge("retrieve_initial_articles", "review_article_candidates")
+    workflow.add_edge("review_article_candidates", "collect_initial_evidence")
+    workflow.add_edge("collect_initial_evidence", "assess_evidence")
+    workflow.add_conditional_edges(
+        "assess_evidence",
+        route_retrieval_benchmark,
+        {
+            "graph_seeded_sections": "retrieve_graph_seeded_sections",
+            "multistep_sections": "retrieve_multistep_sections",
+            "finish": "write_question_log",
+        },
+    )
+    workflow.add_edge("retrieve_graph_seeded_sections", "assess_evidence")
+    workflow.add_edge("retrieve_multistep_sections", "assess_evidence")
+    workflow.add_edge("write_question_log", END)
+
+    return workflow.compile(name="checkpoint_5_1_retrieval_benchmark")
