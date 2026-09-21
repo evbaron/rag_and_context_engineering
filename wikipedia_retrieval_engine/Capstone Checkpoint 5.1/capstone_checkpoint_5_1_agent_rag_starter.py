@@ -81,6 +81,15 @@ from wikipedia_retrieval_engine.wiki_agents.run_logging import AgentRunLogger
 
 # %%
 # These controls define the benchmark described in the Checkpoint 5.1 report.
+# Retriever strategy per stage. "multistep_entity" decomposes the question into one
+# clean full-name query per named/implied entity at the initial stage, so entities a
+# blunt query buries (e.g. GT16's Barack Obama) are retrieved at rank 1; graph
+# expansion is the repeated escalation. Set INITIAL_RETRIEVER = "vector" to reproduce
+# the plain-vector baseline for A/B, or "multistep" for sub-topic decomposition.
+INITIAL_RETRIEVER = "multistep_entity"  # "vector" | "multistep" | "multistep_entity"
+REPEATED_RETRIEVERS = ("graph_seeded",)  # escalation stages after the initial one
+INITIAL_SUBQUERY_TOP_K = 2
+INITIAL_MAX_CANDIDATES = 8
 # GT questions designate up to 4 articles (e.g. GT14: Chazelle + Emma Stone +
 # La La Land + 89th Academy Awards). A cap of 3 makes full initial-stage recall
 # impossible on those, so seed with 4 unique articles.
@@ -132,8 +141,9 @@ def _required_articles(source_cell: str) -> list[str]:
 
 
 def _stage_name(retrieval_attempts: int) -> str:
+    if retrieval_attempts == 1:
+        return f"{INITIAL_RETRIEVER}_initial"
     return {
-        1: "vector_sections",
         2: "graph_seeded_sections",
         3: "targeted_multistep_sections",
     }.get(retrieval_attempts, f"retrieval_attempt_{retrieval_attempts}")
@@ -209,6 +219,13 @@ def build_agentic_experiment(
             stage = str(item.metadata.get("retrieval_stage", "unknown"))
             stage_counts[stage] = stage_counts.get(stage, 0) + 1
 
+        # Phase 2 signal: which kept articles flagged that answering needs a table.
+        reviews = state.get("article_reviews", [])
+        tables_flagged = any(r.needs_table_reader for r in reviews if r.relevant)
+        flagged_tables = sorted(
+            {t for r in reviews if r.relevant for t in (r.relevant_table_names or [])}
+        )
+
         return {
             **row,
             "experiment_name": experiment_name,
@@ -216,6 +233,8 @@ def build_agentic_experiment(
             "answer_model": LLM_MODEL,
             "judge_model": JUDGE_MODEL,
             "retriever_kind": "vs_graph_multistep_sections",
+            "initial_retriever": INITIAL_RETRIEVER,
+            "repeated_retrievers": "->".join(REPEATED_RETRIEVERS),
             "initial_article_top_k": INITIAL_ARTICLE_TOP_K,
             "sections_per_selected_article": SECTIONS_PER_SELECTED_ARTICLE,
             "graph_max_neighbors": GRAPH_PARAMS.max_neighbors,
@@ -230,6 +249,8 @@ def build_agentic_experiment(
             "evidence_stage_counts": "; ".join(
                 f"{stage}={count}" for stage, count in sorted(stage_counts.items())
             ),
+            "tables_flagged": tables_flagged,
+            "flagged_tables": "; ".join(flagged_tables),
             "required_articles": "; ".join(required_articles),
             "retrieved_articles": "; ".join(retrieved_articles),
             "retrieved_article_count": len(retrieved_articles),
@@ -291,7 +312,12 @@ async def main() -> None:
         wiki_graph,
         agent_llm,
         run_logger,
+        markdown_store=relationship_store,
+        initial_retriever=INITIAL_RETRIEVER,
+        repeated_retrievers=REPEATED_RETRIEVERS,
         initial_article_top_k=INITIAL_ARTICLE_TOP_K,
+        initial_subquery_top_k=INITIAL_SUBQUERY_TOP_K,
+        initial_max_candidates=INITIAL_MAX_CANDIDATES,
         sections_per_selected_article=SECTIONS_PER_SELECTED_ARTICLE,
         graph_params=GRAPH_PARAMS,
         sections_per_neighbor=SECTIONS_PER_GRAPH_NEIGHBOR,
@@ -310,6 +336,8 @@ async def main() -> None:
 
     print(
         f"Running retrieval-only agent on {len(dataset)} questions from {gt_path}\n"
+        f"  initial retriever={INITIAL_RETRIEVER}\n"
+        f"  repeated retrievers={' -> '.join(REPEATED_RETRIEVERS)}\n"
         f"  initial article k={INITIAL_ARTICLE_TOP_K}\n"
         f"  sections per selected article={SECTIONS_PER_SELECTED_ARTICLE}\n"
         f"  graph neighbors={GRAPH_PARAMS.max_neighbors}\n"

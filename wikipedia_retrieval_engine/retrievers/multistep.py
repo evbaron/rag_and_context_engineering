@@ -47,6 +47,32 @@ Reasoning instructions: "List the best picture and best actor for each year sinc
 """
 
 
+_ENTITY_SYSTEM_PROMPT = """
+You decompose a question into vector-search sub-queries whose job is to retrieve the exact Wikipedia ARTICLES the question depends on.
+Emit one sub-query per distinct entity the question names or directly implies: each PERSON, PLACE, ORGANIZATION, EVENT, AWARD, or WORK.
+
+Rules for each sub-query:
+- Use the full canonical article name of the entity ("Barack Obama", not "the 2008 candidate"; "Academy Award for Best Actor", not "best actor oscar").
+- One entity per sub-query. NEVER combine two entities in one sub-query, and NEVER write an analytical or relational sentence.
+- Include an entity only if retrieving its article helps answer the question.
+- Produce 1-5 sub-queries; do not repeat an entity.
+
+In addition, provide reasoning instructions for the answer step ONLY when the question needs multi-step reasoning over the retrieved data — enumeration, filtering by year or criteria, counting, aggregation, or cross-referencing. For a simple lookup, output exactly: NONE.
+Return Original Query, Sub-queries (a JSON list of strings), and Reasoning instructions, each on a new line.
+
+Example:
+Original Query: "Which person connects Bill Clinton and Barack Obama, and what documented relationship links that person to each man?"
+Sub-queries: ["Bill Clinton", "Barack Obama", "Hillary Clinton"]
+Reasoning instructions: "Identify the person linked to both men and state each documented relationship (spouse, election opponent, cabinet role)."
+
+Example:
+Original Query: "Using the Sport/Years table in the Wikipedia article on the Summer Olympic Games, which listed sports first entered the official program in 1950 or later?"
+Sub-queries: ["Summer Olympic Games"]
+Reasoning instructions: "From the Sport/Years table, list the sports whose first official year is 1950 or later."
+
+"""
+
+
 def chroma_db_path(chroma_db_name: str = DEFAULT_CHROMA_DB_NAME) -> Path:
     """Return ``retrievers/db/<name>`` after validating the directory name."""
     if not _VALID_DB_NAME.fullmatch(chroma_db_name) or chroma_db_name in {".", ".."}:
@@ -141,6 +167,29 @@ class MultiStepRetriever(BaseRetriever):
                 chunks=chunks,
             )
         )
+
+    def decompose(self, query: str) -> tuple[list[str], str]:
+        """Decompose a query into sub-topic sub-queries plus reasoning instructions.
+
+        Exposes only the decomposition step (no retrieval) so an initial-stage
+        node can reuse it to seed article discovery per entity/sub-topic while
+        keeping the existing article-candidate pipeline. Falls back to
+        ``[query]`` if the model output cannot be parsed.
+        """
+        raw = decompose_query(query, _SYSTEM_PROMPT, query, self.llm)
+        return _parse_decomposition(raw, query)
+
+    def decompose_entities(self, query: str) -> tuple[list[str], str]:
+        """Decompose into one full-name sub-query per named/implied entity.
+
+        Tuned for retrieving the exact articles a question is about. Unlike
+        :meth:`decompose` (broader sub-topic queries), this emits clean canonical
+        entity names — ``"Barack Obama"`` rather than an analytical sentence — so
+        an explicitly-named article a blunt query buries is retrieved at rank 1.
+        Falls back to ``[query]`` if the model output cannot be parsed.
+        """
+        raw = decompose_query(query, _ENTITY_SYSTEM_PROMPT, query, self.llm)
+        return _parse_decomposition(raw, query)
 
     def retrieve_with_reasoning(
         self, query: str, k: int | None = None

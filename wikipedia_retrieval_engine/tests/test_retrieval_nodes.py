@@ -5,7 +5,9 @@ from langchain_core.documents import Document
 from langchain_core.language_models.chat_models import BaseChatModel
 
 from wikipedia_retrieval_engine.retrievers.base import ArticleCandidate
+from wikipedia_retrieval_engine.retrievers.corpus import MarkdownArticleStore
 from wikipedia_retrieval_engine.retrievers.graph import GraphParams, WikiGraph
+from wikipedia_retrieval_engine.retrievers.multistep import MultiStepRetriever
 from wikipedia_retrieval_engine.retrievers.vector import VectorRetriever
 from wikipedia_retrieval_engine.wiki_agents.agentic_models import (
     AgentState,
@@ -20,9 +22,12 @@ from wikipedia_retrieval_engine.wiki_agents.retrieval_nodes import (
     assess_evidence,
     article_review_update,
     collect_initial_evidence,
+    load_selected_sections,
     retrieve_graph_seeded_evidence,
     retrieve_initial_articles,
+    retrieve_initial_articles_decomposed,
     retrieve_selected_article_sections,
+    review_and_select_from_toc,
     review_article_candidates,
     route_after_evidence_assessment,
 )
@@ -323,6 +328,123 @@ class RetrievalNodesTests(unittest.TestCase):
             ["Seed.html"],
         )
 
+    def test_retrieve_initial_articles_decomposed_merges_subquery_candidates(
+        self,
+    ) -> None:
+        multistep = Mock()
+        multistep.decompose.return_value = (["Barack Obama", "Bill Clinton"], "")
+
+        def article(name: str, query: str, distance: float, rank: int = 1):
+            return ArticleCandidate(
+                source_article=name,
+                retrieval_query=query,
+                discovered_by="vector",
+                rank=rank,
+                raw_score=distance,
+                score_semantics="lower_is_better",
+            )
+
+        def top_k(query: str, k: int):
+            if query == "Barack Obama":
+                return [article("Barack_Obama.html", query, 0.30)]
+            if query == "Bill Clinton":
+                return [article("Bill_Clinton.html", query, 0.20)]
+            # the full-question query returns the blunt result that buries Obama
+            return [
+                article("Bill_Clinton.html", query, 0.25),
+                article("George_W._Bush.html", query, 0.40, rank=2),
+            ]
+
+        retriever = Mock(spec=VectorRetriever)
+        retriever.getArticlesTopK.side_effect = top_k
+
+        update = retrieve_initial_articles_decomposed(
+            {
+                "question": "Which person connects Bill Clinton and Barack Obama?",
+                "retrieval_attempts": 0,
+            },
+            retriever,
+            multistep,
+            top_k=4,
+            per_subquery_k=2,
+            max_candidates=8,
+        )
+
+        articles = [c.source_article for c in update["article_candidates"]]
+        # Both named entities are surfaced (Obama would be buried by the blunt query).
+        self.assertIn("Barack_Obama.html", articles)
+        self.assertIn("Bill_Clinton.html", articles)
+        # Deduplicated across queries, keeping the best (lowest) distance.
+        self.assertEqual(len(articles), len(set(articles)))
+        self.assertEqual(articles[0], "Bill_Clinton.html")  # 0.20 is closest
+        self.assertEqual(update["article_candidates"][0].rank, 1)
+        self.assertEqual(update["retrieval_attempts"], 1)
+        multistep.decompose.assert_called_once()
+
+    def test_decompose_entities_parses_full_name_queries(self) -> None:
+        llm = Mock()
+        llm.invoke.return_value = Mock(
+            content=(
+                "Original Query: q\n"
+                'Sub-queries: ["Bill Clinton", "Barack Obama"]\n'
+                "Reasoning instructions: NONE"
+            )
+        )
+        retriever = MultiStepRetriever(llm=llm, db=Mock())
+
+        queries, reasoning = retriever.decompose_entities(
+            "Which person connects Bill Clinton and Barack Obama?"
+        )
+
+        self.assertEqual(queries, ["Bill Clinton", "Barack Obama"])
+        self.assertEqual(reasoning, "")
+
+    def test_decomposed_entity_mode_uses_entity_decomposition(self) -> None:
+        multistep = Mock(spec=MultiStepRetriever)
+        multistep.decompose_entities.return_value = (["Barack Obama"], "")
+
+        def top_k(query: str, k: int):
+            if query == "Barack Obama":
+                return [
+                    ArticleCandidate(
+                        source_article="Barack_Obama.html",
+                        retrieval_query=query,
+                        discovered_by="vector",
+                        rank=1,
+                        raw_score=0.30,
+                        score_semantics="lower_is_better",
+                    )
+                ]
+            return [
+                ArticleCandidate(
+                    source_article="Bill_Clinton.html",
+                    retrieval_query=query,
+                    discovered_by="vector",
+                    rank=1,
+                    raw_score=0.25,
+                    score_semantics="lower_is_better",
+                )
+            ]
+
+        retriever = Mock(spec=VectorRetriever)
+        retriever.getArticlesTopK.side_effect = top_k
+
+        update = retrieve_initial_articles_decomposed(
+            {
+                "question": "Which person connects Bill Clinton and Barack Obama?",
+                "retrieval_attempts": 0,
+            },
+            retriever,
+            multistep,
+            decompose_mode="entity",
+        )
+
+        multistep.decompose_entities.assert_called_once()
+        multistep.decompose.assert_not_called()
+        articles = [c.source_article for c in update["article_candidates"]]
+        self.assertIn("Barack_Obama.html", articles)
+        self.assertIn("Bill_Clinton.html", articles)
+
     def test_retrieve_initial_articles_forwards_top_k(self) -> None:
         retriever = Mock(spec=VectorRetriever)
         retriever.getArticlesTopK.return_value = []
@@ -413,6 +535,132 @@ class RetrievalNodesTests(unittest.TestCase):
         self.assertEqual(len(added), 1)
         self.assertEqual(added[0].source_article, "Good.html")
         self.assertEqual(update["retrieval_attempts"], 2)
+
+    def test_review_and_select_from_toc_judges_by_toc_not_snippet(self) -> None:
+        candidate = ArticleCandidate(
+            source_article="68th_Academy_Awards.html",
+            retrieval_query="68th Academy Awards",
+            discovered_by="vector",
+            rank=1,
+            raw_score=0.30,
+            score_semantics="lower_is_better",
+        )
+        markdown_store = Mock(spec=MarkdownArticleStore)
+        markdown_store.has_article.return_value = True
+        markdown_store.load_metadata.return_value = {
+            "sections": [
+                {"title": "Winners and nominees"},
+                {"title": "See also"},
+            ],
+            "tables": [{"caption": "Winners"}],
+        }
+        review_runner = Mock()
+        review_runner.invoke.return_value = ArticleReviewBatch(
+            reviews=[
+                ArticleReview(
+                    source_article="68th_Academy_Awards.html",
+                    relevant=True,
+                    reason="Correct ceremony article.",
+                    relevant_sections=["Winners and nominees"],
+                    needs_table_reader=True,
+                )
+            ]
+        )
+        llm = Mock(spec=BaseChatModel)
+        llm.with_structured_output.return_value = review_runner
+
+        update = review_and_select_from_toc(
+            {
+                "question": "Who was nominated at the 68th Academy Awards?",
+                "article_candidates": [candidate],
+            },
+            llm,
+            markdown_store,
+        )
+
+        self.assertEqual(update["selected_articles"], ["68th_Academy_Awards.html"])
+        review = update["article_reviews"][0]
+        self.assertEqual(review.relevant_sections, ["Winners and nominees"])
+        self.assertTrue(review.needs_table_reader)
+        # The section list (TOC), not a snippet, was shown to the model.
+        human_message = review_runner.invoke.call_args.args[0][1].content
+        self.assertIn("Winners and nominees", human_message)
+        self.assertIn("Table of contents", human_message)
+
+    def test_review_and_select_from_toc_never_rejects_all(self) -> None:
+        candidates = [
+            ArticleCandidate(
+                source_article=name,
+                retrieval_query="q",
+                discovered_by="vector",
+                rank=rank,
+                raw_score=0.1 * rank,
+                score_semantics="lower_is_better",
+            )
+            for rank, name in enumerate(["A.html", "B.html"], start=1)
+        ]
+        markdown_store = Mock(spec=MarkdownArticleStore)
+        markdown_store.has_article.return_value = True
+        markdown_store.load_metadata.return_value = {"sections": [], "tables": []}
+        review_runner = Mock()
+        review_runner.invoke.return_value = ArticleReviewBatch(
+            reviews=[
+                ArticleReview(source_article="A.html", relevant=False, reason="no"),
+                ArticleReview(source_article="B.html", relevant=False, reason="no"),
+            ]
+        )
+        llm = Mock(spec=BaseChatModel)
+        llm.with_structured_output.return_value = review_runner
+
+        update = review_and_select_from_toc(
+            {"question": "q", "article_candidates": candidates},
+            llm,
+            markdown_store,
+        )
+
+        # An empty selection would starve graph expansion, so the best-ranked
+        # candidate is kept even when the model rejects everything.
+        self.assertEqual(update["selected_articles"], ["A.html"])
+
+    def test_load_selected_sections_pulls_named_sections(self) -> None:
+        review = ArticleReview(
+            source_article="68th_Academy_Awards.html",
+            relevant=True,
+            reason="Correct source.",
+            relevant_sections=["Winners and nominees"],
+            relevant_table_names=["Table 1: Winners"],
+            needs_table_reader=True,
+        )
+        document = Document(
+            page_content="Best Picture: Braveheart ...",
+            metadata={
+                "source": "68th_Academy_Awards.html#Winners_and_nominees-0",
+                "article": "68th_Academy_Awards.html",
+                "section_title": "Winners and nominees",
+                "section_path": "Winners and nominees",
+            },
+        )
+        retriever = Mock(spec=VectorRetriever)
+        retriever.getArticleSectionsTopK.return_value = [(document, 0.05)]
+
+        update = load_selected_sections(
+            {
+                "question": "Who was nominated at the 68th Academy Awards?",
+                "article_reviews": [review],
+                "evidence": [],
+            },
+            retriever,
+        )
+
+        retriever.getArticleSectionsTopK.assert_called_once_with(
+            "Winners and nominees", "68th_Academy_Awards.html", k=1
+        )
+        evidence = update["evidence"]
+        self.assertEqual(len(evidence), 1)
+        item = evidence[0]
+        self.assertEqual(item.metadata["retrieval_stage"], "toc_selected_section")
+        self.assertEqual(item.metadata["requested_section"], "Winners and nominees")
+        self.assertTrue(item.metadata["needs_table_reader"])
 
     def test_assess_evidence_uses_structured_output(self) -> None:
         assessment = EvidenceAssessment(

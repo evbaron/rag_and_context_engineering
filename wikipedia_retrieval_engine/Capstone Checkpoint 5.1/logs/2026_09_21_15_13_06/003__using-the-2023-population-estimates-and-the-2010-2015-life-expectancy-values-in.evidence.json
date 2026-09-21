@@ -1,0 +1,793 @@
+{
+  "run_id": "2026_09_21_15_13_06",
+  "question_number": 3,
+  "logged_at": "2026-09-21T15:13:49-04:00",
+  "question": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+  "final_state": {
+    "question": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+    "retrieval_attempts": 2,
+    "article_candidates": [
+      {
+        "source_article": "List_of_countries_by_past_life_expectancy.html",
+        "representative_chunk": "Article: List of countries by past life expectancy\nSection: Lead\n\nLife expectancy by world region, from 1770 to 2023\n\nThis is a list of countries showing past life expectancy, ranging from 1950 to 2015 in five-year periods, as estimated by the 2017 revision of the World Population Prospects database by the United Nations Population Division. Life expectancy equals the average number of years a person born in a given country is expected to live if mortality rates at each age were to remain steady in the future. The life expectancy is shown as the average of males and females.",
+        "representative_chunk_id": "List_of_countries_by_past_life_expectancy.html#section-000-00",
+        "section_title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Wikipedia article 2010–2015 life expectancy by country",
+        "discovered_by": "vector",
+        "rank": 1,
+        "raw_score": 0.7178060412406921,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Demographics_of_East_Timor.html",
+        "representative_chunk": "Article: Demographics of Timor-Leste\nSection: Vital statistics > Life expectancy at birth\n\nAverage life expectancy at age 0 of the total population.[10]\n\nPeriod\n\nLife expectancy\n\nin Years\n\nPeriod\n\nLife expectancy in\n\nYears\n\n1950–1955\n\n30.0\n\n1985–1990\n\n46.5\n\n1955–1960\n\n32.5\n\n1990–1995\n\n50.5\n\n1960–1965\n\n35.0\n\n1995–2000\n\n57.0\n\n1965–1970\n\n37.5\n\n2000–2005\n\n61.5\n\n1970–1975\n\n40.0\n\n2005–2010\n\n66.4\n\n1975–1980\n\n31.2\n\n2010–2015\n\n67.7\n\n1980–1985\n\n39.9",
+        "representative_chunk_id": "Demographics_of_East_Timor.html#section-007-00",
+        "section_title": "Life expectancy at birth",
+        "section_path": [
+          "Vital statistics",
+          "Life expectancy at birth"
+        ],
+        "retrieval_query": "Wikipedia article 2010–2015 life expectancy by country",
+        "discovered_by": "vector",
+        "rank": 2,
+        "raw_score": 0.902698278427124,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "List_of_countries_by_population_(United_Nations).html",
+        "representative_chunk": "Article: List of countries and dependencies by population (United Nations)\nSection: Lead\n\nUN list of countries and territories by population\n\nStatistical subregions as defined by the United Nations Statistics Division[1]\n\nThis is the list of countries and other inhabited territories of the world by estimated total population. It is based on estimates published by the United Nations in the 2024 revision of World Population Prospects. It presents population estimates from 1950 to the present.[2]",
+        "representative_chunk_id": "List_of_countries_by_population_(United_Nations).html#section-000-00",
+        "section_title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Wikipedia article 2023 country population estimates by country",
+        "discovered_by": "vector",
+        "rank": 3,
+        "raw_score": 0.9636849164962769,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Demographics_of_Japan.html",
+        "representative_chunk": "Article: Demographics of Japan\nSection: Vital statistics > Life expectancy > Historical data\n\nSources: Our World In Data and the United Nations.\n\n1865–1949\n\nYears\n\n1865\n\n1870\n\n1875\n\n1880\n\n1885\n\n1890\n\n1895\n\n1900\n\n1905\n\n1910\n\n1915\n\n1920\n\n1922\n\n1927\n\n1935\n\n1945\n\n1947\n\n1948\n\n1949\n\n1950[67]\n\nLife expectancy in Japan\n\n36.4\n\n36.6\n\n36.8\n\n37.0\n\n37.3\n\n37.7\n\n38.1\n\n38.6\n\n39.2\n\n40.0\n\n40.9\n\n42.0\n\n42.6\n\n45.7\n\n48.2\n\n30.5\n\n51.7\n\n56.8\n\n57.7\n\n59.2\n\n1950–2020\n\nPeriod\n\nLife expectancy in\n\nyears\n\nPeriod\n\nLife expectancy in\n\nyears\n\n1950–1955\n\n62.8\n\n1985–1990\n\n78.5\n\n1955–1960\n\n66.4\n\n1990–1995\n\n79.4\n\n1960–1965\n\n69.2\n\n1995–2000\n\n80.5\n\n1965–1970\n\n71.4\n\n2000–2005\n\n81.8\n\n1970–1975\n\n73.3\n\n2005–2010\n\n82.7\n\n1975–1980\n\n75.4\n\n2010–2015\n\n83.3\n\n1980–1985\n\n77.0\n\n2015–2020\n\n84.4\n\nSource: UN World Population Prospects",
+        "representative_chunk_id": "Demographics_of_Japan.html#section-014-00",
+        "section_title": "Historical data",
+        "section_path": [
+          "Vital statistics",
+          "Life expectancy",
+          "Historical data"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "discovered_by": "vector",
+        "rank": 4,
+        "raw_score": 1.0092647075653076,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "India.html",
+        "representative_chunk": "Article: India\nSection: Demographics\n\nMain article: Demographics of India\n\nWith an estimated 1,428,627,663 residents in 2023, India is the world's most populous country.[303] 1,210,193,422 residents were reported in the 2011 provisional census report.[304] The median age was 28.7 in 2020.[273] Medical advances made in the last 50 years as well as increased agricultural productivity brought about by the \"Green Revolution\" have caused India's population to grow rapidly,[305] though India's decennial rates of growth are decreasing: its population grew by 17.64% from 2001 to 2011,[306] compared to 21.54% growth in the previous decade (1991–2001).[306] The first post-colonial census, conducted in 1951, counted 361 million people.[307] The life expectancy at birth has increased from 49.7 years in 1970–1975 to 72.0 years in 2023.[308][309] The under-five mortality rate for the country was 113 per 1,000 live births in 1994 whereas in 2018 it reduced to 41.1 per 1,000 live births.[308]\n\nThe human sex ratio, according to the 2011 census, is 940 females per 1,000 males.[304] Female infanticide in India, and lately female foeticide, have created lop-sided gender ratios; the number of missing women in the country quadrupled from 15 million to 63 million during the period 1964–2014, faster than the population growth during the same period.[310] According to an Indian government study, an additional 21 million girls are unwanted and do not receive adequate care.[311] Despite a government ban on sex-selective foeticide, the practice has far from stopped.[312]\n\nMigration from rural to urban areas has been an important dynamic in India's recent history. The number of people living in urban areas grew by 31.2% between 1991 and 2001.[313] In 2001, over 70% lived in rural areas.[314][315] The level of urbanisation increased further from 27.81% in the 2001 census to 31.16% in the 2011 census. The slowing down of the overall population growth rate was due to the sharp decline in the growth rate in rural areas since 1991.[316] In the 2011 census, there were 53 million-plus urban agglomerations in India. Among them Mumbai, Delhi, Kolkata, Chennai, Bengaluru, Hyderabad and Ahmedabad, in decreasing order by population.[317]\n\nThe historical development of life expectancy in India from 1881 to 2023\n\nThe child mortality rate in India from 1960 to 2023",
+        "representative_chunk_id": "India.html#section-018-00",
+        "section_title": "Demographics",
+        "section_path": [
+          "Demographics"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "discovered_by": "vector",
+        "rank": 5,
+        "raw_score": 1.0463781356811523,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      }
+    ],
+    "article_reviews": [
+      {
+        "source_article": "List_of_countries_by_past_life_expectancy.html",
+        "relevant": true,
+        "reason": "This article provides past life-expectancy values for countries, including the 2010–2015 period requested. It is directly relevant for extracting the life-expectancy side of the comparison.",
+        "relevant_sections": [
+          "Lead"
+        ],
+        "relevant_table_names": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Demographics_of_East_Timor.html",
+        "relevant": true,
+        "reason": "The excerpt includes a life-expectancy table with the 2010–2015 value for Timor-Leste, which can be paired with the population estimate article to assess whether population size relates to life expectancy.",
+        "relevant_sections": [
+          "Vital statistics > Life expectancy at birth"
+        ],
+        "relevant_table_names": [],
+        "needs_table_reader": true
+      },
+      {
+        "source_article": "List_of_countries_by_population_(United_Nations).html",
+        "relevant": true,
+        "reason": "This article contains estimated total population figures from the United Nations, which are needed for the population-size side of the question; the comparison across countries requires extracting and comparing tabular population data.",
+        "relevant_sections": [
+          "Lead"
+        ],
+        "relevant_table_names": [],
+        "needs_table_reader": true
+      },
+      {
+        "source_article": "Demographics_of_Japan.html",
+        "relevant": true,
+        "reason": "The excerpt includes a 2010–2015 life-expectancy value for Japan, relevant for comparing against population estimates in the population article.",
+        "relevant_sections": [
+          "Vital statistics > Life expectancy > Historical data"
+        ],
+        "relevant_table_names": [],
+        "needs_table_reader": true
+      },
+      {
+        "source_article": "India.html",
+        "relevant": true,
+        "reason": "The excerpt explicitly gives a 2023 population estimate and a life-expectancy figure, but the life expectancy is for 2023 rather than the requested 2010–2015 period. It is still relevant because it signals the kind of date mismatch the user asks to mention, and provides one country example, though the exact comparison would need the 2010–2015 life-expectancy value from the other articles.",
+        "relevant_sections": [
+          "Demographics"
+        ],
+        "relevant_table_names": [],
+        "needs_table_reader": false
+      }
+    ],
+    "selected_articles": [
+      "List_of_countries_by_past_life_expectancy.html",
+      "Demographics_of_East_Timor.html",
+      "List_of_countries_by_population_(United_Nations).html",
+      "Demographics_of_Japan.html",
+      "India.html"
+    ],
+    "rejected_articles": [],
+    "evidence": [
+      {
+        "evidence_id": "List_of_countries_by_past_life_expectancy.html#section-000-00",
+        "source_article": "List_of_countries_by_past_life_expectancy.html",
+        "content": "Article: List of countries by past life expectancy\nSection: Lead\n\nLife expectancy by world region, from 1770 to 2023\n\nThis is a list of countries showing past life expectancy, ranging from 1950 to 2015 in five-year periods, as estimated by the 2017 revision of the World Population Prospects database by the United Nations Population Division. Life expectancy equals the average number of years a person born in a given country is expected to live if mortality rates at each age were to remain steady in the future. The life expectancy is shown as the average of males and females.",
+        "evidence_type": "text",
+        "title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.8751028776168823,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "selected_article_sections"
+        }
+      },
+      {
+        "evidence_id": "Demographics_of_East_Timor.html#section-007-00",
+        "source_article": "Demographics_of_East_Timor.html",
+        "content": "Article: Demographics of Timor-Leste\nSection: Vital statistics > Life expectancy at birth\n\nAverage life expectancy at age 0 of the total population.[10]\n\nPeriod\n\nLife expectancy\n\nin Years\n\nPeriod\n\nLife expectancy in\n\nYears\n\n1950–1955\n\n30.0\n\n1985–1990\n\n46.5\n\n1955–1960\n\n32.5\n\n1990–1995\n\n50.5\n\n1960–1965\n\n35.0\n\n1995–2000\n\n57.0\n\n1965–1970\n\n37.5\n\n2000–2005\n\n61.5\n\n1970–1975\n\n40.0\n\n2005–2010\n\n66.4\n\n1975–1980\n\n31.2\n\n2010–2015\n\n67.7\n\n1980–1985\n\n39.9",
+        "evidence_type": "text",
+        "title": "Life expectancy at birth",
+        "section_path": [
+          "Vital statistics",
+          "Life expectancy at birth"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 1.0301685333251953,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "selected_article_sections"
+        }
+      },
+      {
+        "evidence_id": "List_of_countries_by_population_(United_Nations).html#section-000-00",
+        "source_article": "List_of_countries_by_population_(United_Nations).html",
+        "content": "Article: List of countries and dependencies by population (United Nations)\nSection: Lead\n\nUN list of countries and territories by population\n\nStatistical subregions as defined by the United Nations Statistics Division[1]\n\nThis is the list of countries and other inhabited territories of the world by estimated total population. It is based on estimates published by the United Nations in the 2024 revision of World Population Prospects. It presents population estimates from 1950 to the present.[2]",
+        "evidence_type": "text",
+        "title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 1.2218103408813477,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "selected_article_sections"
+        }
+      },
+      {
+        "evidence_id": "Demographics_of_Japan.html#section-014-00",
+        "source_article": "Demographics_of_Japan.html",
+        "content": "Article: Demographics of Japan\nSection: Vital statistics > Life expectancy > Historical data\n\nSources: Our World In Data and the United Nations.\n\n1865–1949\n\nYears\n\n1865\n\n1870\n\n1875\n\n1880\n\n1885\n\n1890\n\n1895\n\n1900\n\n1905\n\n1910\n\n1915\n\n1920\n\n1922\n\n1927\n\n1935\n\n1945\n\n1947\n\n1948\n\n1949\n\n1950[67]\n\nLife expectancy in Japan\n\n36.4\n\n36.6\n\n36.8\n\n37.0\n\n37.3\n\n37.7\n\n38.1\n\n38.6\n\n39.2\n\n40.0\n\n40.9\n\n42.0\n\n42.6\n\n45.7\n\n48.2\n\n30.5\n\n51.7\n\n56.8\n\n57.7\n\n59.2\n\n1950–2020\n\nPeriod\n\nLife expectancy in\n\nyears\n\nPeriod\n\nLife expectancy in\n\nyears\n\n1950–1955\n\n62.8\n\n1985–1990\n\n78.5\n\n1955–1960\n\n66.4\n\n1990–1995\n\n79.4\n\n1960–1965\n\n69.2\n\n1995–2000\n\n80.5\n\n1965–1970\n\n71.4\n\n2000–2005\n\n81.8\n\n1970–1975\n\n73.3\n\n2005–2010\n\n82.7\n\n1975–1980\n\n75.4\n\n2010–2015\n\n83.3\n\n1980–1985\n\n77.0\n\n2015–2020\n\n84.4\n\nSource: UN World Population Prospects",
+        "evidence_type": "text",
+        "title": "Historical data",
+        "section_path": [
+          "Vital statistics",
+          "Life expectancy",
+          "Historical data"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 1.0092647075653076,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "selected_article_sections"
+        }
+      },
+      {
+        "evidence_id": "India.html#section-018-00",
+        "source_article": "India.html",
+        "content": "Article: India\nSection: Demographics\n\nMain article: Demographics of India\n\nWith an estimated 1,428,627,663 residents in 2023, India is the world's most populous country.[303] 1,210,193,422 residents were reported in the 2011 provisional census report.[304] The median age was 28.7 in 2020.[273] Medical advances made in the last 50 years as well as increased agricultural productivity brought about by the \"Green Revolution\" have caused India's population to grow rapidly,[305] though India's decennial rates of growth are decreasing: its population grew by 17.64% from 2001 to 2011,[306] compared to 21.54% growth in the previous decade (1991–2001).[306] The first post-colonial census, conducted in 1951, counted 361 million people.[307] The life expectancy at birth has increased from 49.7 years in 1970–1975 to 72.0 years in 2023.[308][309] The under-five mortality rate for the country was 113 per 1,000 live births in 1994 whereas in 2018 it reduced to 41.1 per 1,000 live births.[308]\n\nThe human sex ratio, according to the 2011 census, is 940 females per 1,000 males.[304] Female infanticide in India, and lately female foeticide, have created lop-sided gender ratios; the number of missing women in the country quadrupled from 15 million to 63 million during the period 1964–2014, faster than the population growth during the same period.[310] According to an Indian government study, an additional 21 million girls are unwanted and do not receive adequate care.[311] Despite a government ban on sex-selective foeticide, the practice has far from stopped.[312]\n\nMigration from rural to urban areas has been an important dynamic in India's recent history. The number of people living in urban areas grew by 31.2% between 1991 and 2001.[313] In 2001, over 70% lived in rural areas.[314][315] The level of urbanisation increased further from 27.81% in the 2001 census to 31.16% in the 2011 census. The slowing down of the overall population growth rate was due to the sharp decline in the growth rate in rural areas since 1991.[316] In the 2011 census, there were 53 million-plus urban agglomerations in India. Among them Mumbai, Delhi, Kolkata, Chennai, Bengaluru, Hyderabad and Ahmedabad, in decreasing order by population.[317]\n\nThe historical development of life expectancy in India from 1881 to 2023\n\nThe child mortality rate in India from 1960 to 2023",
+        "evidence_type": "text",
+        "title": "Demographics",
+        "section_path": [
+          "Demographics"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 1.0463781356811523,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "selected_article_sections"
+        }
+      },
+      {
+        "evidence_id": "List_of_countries_by_past_life_expectancy.html#section-001-02",
+        "source_article": "List_of_countries_by_past_life_expectancy.html",
+        "content": "Article: List of countries by past life expectancy\nSection: List of countries 1950 to 2015 (United Nations)\n\n53.67\n56.97\n60.23\n\n Northern Africa\n42.27\n45.82\n48.60\n51.12\n53.18\n56.27\n59.77\n62.85\n64.56\n66.39\n67.92\n69.63\n71.07\n\n Sub-Saharan Africa\n36.33\n38.51\n40.73\n42.70\n44.80\n46.75\n48.18\n49.11\n48.86\n49.39\n50.70\n54.29\n57.88\n\n Western Africa\n33.55\n35.50\n37.61\n39.50\n41.80\n44.42\n46.71\n47.67\n48.13\n48.21\n49.30\n52.33\n54.74\n\n Middle Africa\n36.91\n38.45\n40.01\n41.82\n43.99\n45.57\n47.07\n47.96\n48.46\n48.17\n50.79\n54.42\n57.42\n\n Eastern Africa\n37.00\n39.45\n42.06\n44.13\n45.96\n47.55\n48.17\n48.86\n47.58\n49.57\n51.98\n57.04\n61.45\n\n Southern Africa\n47.81\n50.58\n52.43\n54.23\n56.10\n57.01\n58.21\n60.79\n61.94\n58.47\n53.19\n52.99\n59.31\n\n ASIA\n42.33\n44.54\n46.50\n52.81\n56.51\n59.33\n61.57\n63.57\n65.16\n66.69\n68.65\n70.34\n71.81\n\n Western Asia\n43.76\n46.93\n50.14\n53.78\n57.01\n60.23\n62.57\n65.38\n67.26\n69.19\n70.85\n72.03\n72.77\n\n Central Asia\n54.67\n56.73\n58.77\n60.74\n62.26\n63.29\n64.70\n66.09\n65.06\n64.39\n65.82\n67.50\n69.76\n\n Southern Asia\n37.02\n40.26\n43.43\n46.64\n49.36\n52.74\n54.83\n57.02\n59.65\n61.95\n63.99\n65.93\n67.88\n\n Eastern Asia\n45.60\n46.64\n46.97\n57.03\n62.86\n66.52\n68.70\n69.90\n70.78\n71.93\n74.19\n75.74\n76.76\n\n Southeast Asia\n46.48\n49.97\n52.84\n55.52\n56.67\n58.08\n61.95\n64.20\n65.69\n67.02\n68.13\n69.36\n70.50\n\n OCEANIA\n61.58\n63.37\n64.40\n65.41\n66.87\n68.67\n70.43\n71.43\n73.04\n74.19\n75.67\n77.02\n77.93\n\n Australia/New Zealand\n69.44\n70.46\n70.92\n70.92\n71.75\n73.41\n74.85\n75.88\n77.46\n78.63\n80.11\n81.28\n82.14\n\n Polynesia\n50.39\n53.90\n56.08\n58.31\n60.29\n62.26\n64.81\n66.72\n68.50\n70.13\n71.58\n73.20\n74.53\n\n Melanesia\n40.50\n43.27\n45.54\n49.14\n52.20\n55.47\n58.43\n59.20\n60.78\n62.19\n63.67\n65.21\n66.12\n\n Micronesia\n53.50\n55.43\n57.69\n59.79\n61.92\n63.50\n64.60\n65.98\n67.55\n69.39\n70.92\n71.95\n72.81\n\n World\n46.98\n49.33\n51.17\n55.48\n58.14\n60.30\n62.06\n63.68\n64.59\n65.67\n67.20\n69.07\n70.79",
+        "evidence_type": "text",
+        "title": "List of countries 1950 to 2015 (United Nations)",
+        "section_path": [
+          "List of countries 1950 to 2015 (United Nations)"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "vector",
+        "rank": 2,
+        "raw_score": 1.0188672542572021,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "selected_article_sections"
+        }
+      },
+      {
+        "evidence_id": "List_of_countries_by_past_life_expectancy.html#section-002-00",
+        "source_article": "List_of_countries_by_past_life_expectancy.html",
+        "content": "Article: List of countries by past life expectancy\nSection: List of countries before 1950\n\nLife expectancy at birth (both genders)[2]\n\nCountry\n\n1543\n\n1683\n\n1771\n\n1810\n\n1830\n\n1851\n\n1860\n\n1870\n\n1882\n\n1890\n\n1895\n\n1900\n\n1905\n\n1910\n\n1915\n\n1920\n\n1925\n\n1930\n\n1935\n\n1940\n\n1949\n\n \n\n Australia\n\n52.95\n\n57.00\n\n59.32\n63.16\n64.89\n65.09\n66.29\n69.13\n\n Austria\n\n34.40\n34.40\n\n41.73\n\n63.42\n\n Argentina\n\n33.10\n34.00\n33.30\n39.00\n39.70\n44.20\n46.20\n48.65\n50.60\n52.55\n54.45\n56.45\n64.36\n\n Bangladesh\n\n25.50\n\n Belarus\n\n36.20\n\n Belgium\n\n41.88\n45.07\n40.90\n\n44.09\n45.43\n46.52\n49.92\n51.31\n\n53.59\n57.09\n57.10\n59.93\n55.94\n65.43\n\n Bolivia\n\n28.00\n\n28.00\n\n31.00\n33.00\n33.00\n\n36.00\n\n Brazil\n\n29.00\n\n31.00\n\n32.00\n\n34.00\n\n37.00\n\n Bulgaria\n\n40.20\n43.30\n\n48.30\n\n57.94\n\n Canada\n\n41.06\n41.60\n42.56\n\n48.42\n\n52.14\n59.23\n58.91\n62.40\n63.96\n67.59\n\n China\n\n32.00\n\n41.00\n\n Chile\n\n29.00\n\n30.00\n\n35.00\n\n38.00\n\n Colombia\n\n29.00\n\n31.00\n\n32.00\n\n34.00\n\n38.00\n\n Costa Rica\n\n32.00\n\n33.00\n\n37.00\n\n42.00\n\n49.00\n\n Cuba\n\n32.00\n34.16\n36.00\n36.29\n39.00\n38.76\n42.00\n44.57\n45.00\n\n Cyprus\n\n38.51\n\n45.00\n\n47.47\n\n48.46\n\n Czech Republic\n\n40.27\n\n44.31\n\n55.55\n\n Denmark\n\n33.00\n\n44.49\n45.05\n45.97\n\n47.24\n50.83\n51.87\n54.31\n58.03\n58.38\n57.56\n61.91\n62.27\n62.86\n66.25\n70.13\n\n Egypt\n\n35.40\n33.20\n34.40\n36.70\n\n El Salvador\n\n28.00\n\n36.00\n\n Estonia\n\n43.10\n\n56.27\n\n Finland\n\n35.80\n\n35.10\n32.10\n41.57\n40.40\n44.45\n47.58\n41.74\n45.99\n48.49\n49.50\n47.53\n53.39\n55.16\n57.36\n46.60\n61.86\n\n France\n\n40.05\n39.59\n41.77\n43.32\n36.69\n43.08\n43.32\n45.13\n45.01\n48.30\n51.33\n36.25\n51.53\n54.33\n56.83\n58.29\n49.55\n64.89\n\n Germany\n\n42.38\n\n45.45\n\n40.52\n\n57.42\n\n61.50\n\n67.25\n\n Greece\n\n37.10\n38.50\n\n44.65\n\n51.56\n\n54.34\n61.54\n\n Guatemala\n\n24.00\n\n24.00\n\n25.00\n\n25.00\n\n29.00\n\n Guyana\n\n41.42\n\n Honduras\n\n29.00\n\n34.00\n\n36.00\n\n Hungary\n\n37.34\n\n39.76\n\n42.06\n\n50.21\n\n61.29\n\n Iceland\n\n30.07\n19.77\n38.34\n17.76\n36.58\n52.48\n46.65\n49.50\n52.65\n53.64\n54.56\n58.29\n60.25\n59.47\n65.77\n71.43\n\n India\n\n25.44\n24.27\n\n23.49\n23.98\n23.15\n24.02\n24.86\n27.61\n29.31\n30.95\n32.59\n35.84\n\n Italy\n\n29.70\n34.29\n38.53\n39.64\n41.67\n43.90\n46.71\n42.49\n45.47\n51.27\n55.16\n56.20\n56.95\n64.11\n\n Jamaica\n\n40.10\n34.30\n37.10\n37.80\n37.60\n36.70\n37.00\n35.40\n38.90\n45.30\n44.00\n47.60\n53.90\n\n Japan\n\n36.43\n36.59\n37.04\n37.68\n38.10\n38.60\n39.22\n39.97\n40.90\n42.04\n\n57.71\n\n Kazakhstan\n\n23.58\n23.59\n\n28.10\n\n30.60\n\n48.24\n42.47\n54.34\n\n Lithuania\n\n41.70\n\n50.50\n\n Luxembourg\n\n46.21\n49.66\n51.47\n54.62\n54.79\n56.80\n59.10\n61.95\n64.84\n\n Mexico\n\n29.52\n25.00\n26.80\n28.00\n\n34.00\n32.10\n34.00\n40.40\n39.00\n45.80\n\n New Zealand\n\n68.95\n\n Netherlands\n\n39.99\n36.92\n37.32\n43.74\n44.36\n46.63\n48.38\n52.05\n55.10\n57.20\n57.79\n63.12\n64.67\n66.50\n65.40\n70.28\n\n Nicaragua\n\n24.00\n\n28.00\n\n34.00\n\n Norway\n\n49.72\n49.98\n50.58\n47.37\n48.61\n52.79\n52.47\n55.10\n57.99\n58.16\n58.86\n62.51\n64.00\n65.83\n65.88\n71.53\n\n Portugal\n\n51.39\n55.34\n\n Paraguay\n\n25.00\n\n29.00\n\n33.00\n\n38.00\n\n42.00\n\n Peru\n\n37.00\n\n Panama\n\n36.00\n39.60\n42.00\n\n Russia\n\n30.50\n\n20.50\n35.20\n36.50\n\n41.20\n55.00\n\n Sri Lanka\n\n46.30\n45.20\n55.50\n\n Spain\n\n29.50\n31.80\n\n34.80\n\n40.78\n42.97\n39.22\n46.88\n49.26\n52.64\n48.44\n60.96\n\n Slovakia\n\n49.90\n\n Sweden\n\n31.97\n40.96\n43.58\n48.44\n44.97\n48.53\n50.44\n54.13\n52.21\n54.50\n57.76\n57.17\n58.78\n62.55\n63.18\n64.85\n66.72\n70.79\n\n Switzerland\n\n42.98\n44.95\n46.85\n47.48\n49.66\n52.93\n55.90\n54.33\n59.92\n61.47\n62.10\n63.54\n67.94\n\n Uruguay\n\n49.00\n\n52.00\n\n52.00\n\n50.00\n\n58.00\n61.00\n\n Ukraine\n\n36.60\n\n49.80\n60.60\n\n United States\n\n39.41\n45.21\n\n48.70\n50.30\n51.80\n55.10\n55.40\n58.50\n59.60\n60.89\n63.23\n67.63\n\n United Kingdom\n33.94\n31.27\n39.09\n40.58\n\n40.95\n41.97\n40.60\n43.99\n44.12\n45.41\n45.62\n49.92\n53.56\n51.21\n57.26\n58.43\n60.78\n61.96\n60.88\n68.11\n\n Venezuela\n\n28.00\n\n29.00\n\n31.00\n\n38.00\n\n<h2",
+        "evidence_type": "text",
+        "title": "List of countries before 1950",
+        "section_path": [
+          "List of countries before 1950"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "vector",
+        "rank": 3,
+        "raw_score": 1.1450836658477783,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "selected_article_sections"
+        }
+      },
+      {
+        "evidence_id": "Demographics_of_East_Timor.html#section-001-00",
+        "source_article": "Demographics_of_East_Timor.html",
+        "content": "Article: Demographics of Timor-Leste\nSection: Population size and structure\n\nTimor-Leste's population (1861-2011).\nPopulation, fertility rate and net reproduction rate, United Nations estimates\n\n1,242,000 (2017)\n\nPopulation census\nYearPop.±% p.a.\n\n1970 609,477—    \n\n1980 555,350−0.93%\n\n1990 747,557+3.02%\n\n2004 923,198+1.52%\n\n2010 1,066,409+2.43%\n\n2015 1,183,643+2.11%\n\n2022 1,341,737+1.81%\n\nSource: [1][2][3]",
+        "evidence_type": "text",
+        "title": "Population size and structure",
+        "section_path": [
+          "Population size and structure"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "vector",
+        "rank": 2,
+        "raw_score": 1.191088080406189,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "selected_article_sections"
+        }
+      },
+      {
+        "evidence_id": "Demographics_of_East_Timor.html#section-002-00",
+        "source_article": "Demographics_of_East_Timor.html",
+        "content": "Article: Demographics of Timor-Leste\nSection: Population size and structure > Age groups\n\nPopulation by Sex and Age Group (Census 11.VII.2015) [4]\n\nAge group\n\nMale\n\nFemale\n\nTotal\n\n%\n\nTotal\n\n601 112\n\n582 531\n\n1 183 643\n\n100\n\n0-4\n\n77 896\n\n72 410\n\n150 306\n\n12.70\n\n5-9\n\n80 377\n\n75 705\n\n156 082\n\n13.19\n\n10-14\n\n80 721\n\n75 548\n\n156 269\n\n13.20\n\n15-19\n\n69 839\n\n67 033\n\n136 872\n\n11.56\n\n20-24\n\n52 759\n\n54 244\n\n107 003\n\n9.04\n\n25-29\n\n45 486\n\n47 464\n\n92 950\n\n7.85\n\n30-34\n\n35 934\n\n36 461\n\n72 395\n\n6.12\n\n35-39\n\n24 245\n\n24 645\n\n48 890\n\n4.13\n\n40-44\n\n29 097\n\n26 779\n\n55 876\n\n4.72\n\n45-49\n\n25 044\n\n22 274\n\n47 318\n\n4.00\n\n50-54\n\n18 661\n\n16 776\n\n35 437\n\n2.99\n\n55-59\n\n14 436\n\n12 867\n\n27 303\n\n2.31\n\n60-64\n\n13 864\n\n14 516\n\n28 380\n\n2.40\n\n65-69\n\n14 611\n\n16 427\n\n31 038\n\n2.62\n\n70-74\n\n8 949\n\n9 204\n\n18 153\n\n1.53\n\n75-79\n\n4 862\n\n5 009\n\n9 961\n\n0.84\n\n80-84\n\n2 399\n\n2 798\n\n5 197\n\n0.44\n\n85+\n\n1 932\n\n2 281\n\n4 213\n\n0.36\n\nAge group\n\nMale\n\nFemale\n\nTotal\n\nPercent\n\n0-14\n\n238 994\n\n223 663\n\n462 657\n\n39.09\n\n15-64\n\n329 365\n\n323 059\n\n652 334\n\n55.11\n\n65+\n\n32 753\n\n35 809\n\n68 562\n\n5.79\n\nPopulation Estimates by Sex and Age Group (01.VII.2018) (Data refer to national projections.): [5]\n\nAge group\n\nMale\n\nFemale\n\nTotal\n\n%\n\nTotal\n\n642 639\n\n618 768\n\n1 261 407\n\n100\n\n0–4\n\n86 042\n\n78 681\n\n164 723\n\n13.06\n\n5–9\n\n84 950\n\n76 259\n\n161 209\n\n12.78\n\n10–14\n\n82 088\n\n75 015\n\n157 103\n\n12.45\n\n15–19\n\n75 602\n\n71 942\n\n147 544\n\n11.70\n\n20–24\n\n60 513\n\n60 703\n\n121 216\n\n9.61\n\n25–29\n\n46 777\n\n50 239\n\n97 016\n\n7.69\n\n30–34\n\n40 344\n\n42 718\n\n83 062\n\n6.58\n\n35–39\n\n28 909\n\n30 013\n\n58 922\n\n4.67\n\n40–44\n\n24 228\n\n23 965\n\n48 193\n\n3.82\n\n45–49\n\n27 718\n\n25 146\n\n52 864\n\n4.19\n\n50–54\n\n21 620\n\n19 325\n\n40 945\n\n3.25\n\n55–59\n\n16 674\n\n15 419\n\n32 093\n\n2.54\n\n60–64\n\n14 583\n\n14 712\n\n29 295\n\n2.32\n\n65-69\n\n11 764\n\n12 441\n\n24 205\n\n1.92\n\n70-74\n\n9 187\n\n9 388\n\n18 575\n\n1.47\n\n75-79\n\n6 452\n\n6 789\n\n13 241\n\n1.05\n\n80+\n\n5 188\n\n6 013\n\n11 201\n\n0.89\n\nAge group\n\nMale\n\nFemale\n\nTotal\n\nPercent\n\n0–14\n\n253 080\n\n229 955\n\n483 035\n\n38.29\n\n15–64\n\n356 968\n\n354 182\n\n711 150\n\n56.38\n\n65+\n\n32 591\n\n34 631\n\n67 222\n\n5.33",
+        "evidence_type": "text",
+        "title": "Age groups",
+        "section_path": [
+          "Population size and structure",
+          "Age groups"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "vector",
+        "rank": 3,
+        "raw_score": 1.2032207250595093,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "selected_article_sections"
+        }
+      },
+      {
+        "evidence_id": "List_of_countries_by_population_(United_Nations).html#section-002-00",
+        "source_article": "List_of_countries_by_population_(United_Nations).html",
+        "content": "Article: List of countries and dependencies by population (United Nations)\nSection: See also > World\n\nList of countries and dependencies by population\n\nList of countries by past and projected future population\n\nList of countries by population in 1000\n\nList of countries by population in 1500\n\nList of countries by population in 1600\n\nList of countries by population in 1700\n\nList of countries by population in 1800\n\nList of countries by population in 1900\n\nList of countries by population in 1939\n\nList of countries by population in 1989\n\nList of countries by population in 2000\n\nList of countries by population in 2005\n\nList of countries by population in 2010\n\nList of countries by population in 2015\n\nWorld population",
+        "evidence_type": "text",
+        "title": "World",
+        "section_path": [
+          "See also",
+          "World"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "vector",
+        "rank": 2,
+        "raw_score": 1.238759994506836,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "selected_article_sections"
+        }
+      },
+      {
+        "evidence_id": "List_of_countries_by_population_(United_Nations).html#section-006-00",
+        "source_article": "List_of_countries_by_population_(United_Nations).html",
+        "content": "Article: List of countries and dependencies by population (United Nations)\nSection: See also > Others\n\nList of European Union member states by population\n\nList of member states of the Commonwealth of Nations by population\n\nList of population concern organizations",
+        "evidence_type": "text",
+        "title": "Others",
+        "section_path": [
+          "See also",
+          "Others"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "vector",
+        "rank": 3,
+        "raw_score": 1.3240894079208374,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "selected_article_sections"
+        }
+      },
+      {
+        "evidence_id": "Demographics_of_Japan.html#section-013-00",
+        "source_article": "Demographics_of_Japan.html",
+        "content": "Article: Demographics of Japan\nSection: Vital statistics > Life expectancy\n\nMain article: List of Japanese prefectures by life expectancy\n\nLife expectancy in Japan since 1865[60]\nLife expectancy in Japan since 1960 by gender[61]\nLife expectancy map for 2020[62]\n\nJapan consistently ranks among the highest in the world for overall life expectancy, holding the top position for women and one of the highest for men. As of 2024 data, life expectancy is approximately 87.13 years for females and 81.09 years for males. Historically, life expectancy was much lower, with a significant increase after World War II.[63]\n\nBefore World War II, Japan's life expectancy was significantly lower than its current, world-leading figures, but it was already steadily improving from the late 19th century onward. Throughout the first half of the 20th century, life expectancy remained under 50 years for both men and women.[64] The progress during this period was primarily driven by initial reductions in mortality from infectious and parasitic diseases.[65]\n\nFollowing the End of World War II, Japan experienced a rapid and sustained increase in longevity, driven initially by a sharp decline in infectious disease mortality and later by advancements in chronic disease management. Universal Health Coverage and government-led campaigns targeting Non-Communicable Diseases (NCDs), notably through salt-reduction efforts to combat stroke.[63]\n\nAge\n\n2010\n\n2020\n\n2023\n\noverall\n\nmale\n\nfemale\n\nsex gap\n\noverall\n\nmale\n\nfemale\n\nsex gap\n\noverall\n\nmale\n\nfemale\n\nsex gap\n\n0\n82.95\n79.51\n86.24\n6.73\n84.71\n81.58\n87.73\n6.15\n84.14\n81.10\n87.16\n6.06\n\n1\n82.14\n78.71\n85.43\n6.72\n83.86\n80.73\n86.89\n6.16\n83.29\n80.25\n86.31\n6.06\n\n5\n78.22\n74.79\n81.49\n6.70\n79.91\n76.78\n82.92\n6.14\n79.35\n76.30\n82.37\n6.07\n\n10\n73.25\n69.82\n76.53\n6.71\n74.93\n71.80\n77.95\n6.15\n74.37\n71.33\n77.39\n6.06\n\n15\n68.28\n64.86\n71.55\n6.69\n69.96\n66.83\n72.98\n6.15\n69.41\n66.36\n72.43\n6.07\n\n20\n63.36\n59.95\n66.61\n6.66\n65.03\n61.92\n68.03\n6.11\n64.49\n61.45\n67.50\n6.05\n\n25\n58.49\n55.13\n61.69\n6.56\n60.15\n57.07\n63.11\n6.04\n59.60\n56.59\n62.59\n6.00\n\n30\n53.62\n50.30\n56.78\n6.48\n55.26\n52.20\n58.19\n5.99\n54.71\n51.73\n57.67\n5.94\n\n35\n48.77\n45.48\n51.89\n6.41\n50.38\n47.35\n53.27\n5.92\n49.84\n46.88\n52.76\n5.88\n\n40\n43.95\n40.69\n47.03\n6.34\n45.52\n42.52\n48.39\n5.87\n44.99\n42.06\n47.88\n5.82\n\n45\n39.20\n35.98\n42.21\n6.23\n40.72\n37.74\n43.55\n5.81\n40.19\n37.29\n43.03\n5.74\n\n50\n34.54\n31.39\n37.46\n6.07\n36.00\n33.06\n38.77\n5.71\n35.46\n32.60\n38.25\n5.65\n\n55\n30.00\n26.95\n32.80\n5.85\n31.39\n28.52\n34.08\n5.56\n30.86\n28.06\n33.56\n5.50\n\n60\n25.62\n22.71\n28.22\n5.51\n26.91\n24.15\n29.45\n5.30\n26.38\n23.69\n28.94\n5.25\n\n65\n21.41\n18.70\n23.74\n5.04\n22.58\n19.99\n24.90\n4.91\n22.06\n19.54\n24.40\n4.86\n\n70\n17.38\n14.92\n19.37\n4.45\n18.47\n16.11\n20.48\n4.37\n17.95\n15.66\n19.98\n4.32\n\n75\n13.59\n11.40\n15.21\n3.81\n14.62\n12.56\n16.24\n3.68\n14.13\n12.15\n15.77\n3.62\n\n80\n10.22\n8.36\n11.40\n3.04\n11.08\n9.36\n12.28\n2.92\n10.65\n9.01\n11.85\n2.84\n\n85\n7.38\n5.94\n8.08\n2.14\n7.98\n6.61\n8.77\n2.16\n7.61\n6.34\n8.38\n2.04\n\n90\n5.11\n4.14\n5.47\n1.33\n5.53\n4.54\n5.94\n1.40\n5.19\n4.29\n5.59\n1.30\n\n95\n3.48\n2.89\n3.63\n0.74\n3.75\n3.11\n3.91\n0.80\n3.50\n2.95\n3.65\n0.70\n\n100\n2.38\n2.09\n2.43\n0.34\n2.52\n2.19\n2.58\n0.39\n2.36\n2.08\n2.40\n0.32\n\n105\n1.73\n1.61\n1.74\n0.13\n1.79\n1.65\n1.80\n0.15\n1.69\n1.58\n1.69\n0.11\n\n110\n1.36\n1.34\n1.36\n0.02\n1.39\n1.34\n1.39\n0.05\n1.33\n1.30\n1.33\n0.03\n\nData source: National Institute of Population and Social Security Research[66]",
+        "evidence_type": "text",
+        "title": "Life expectancy",
+        "section_path": [
+          "Vital statistics",
+          "Life expectancy"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "vector",
+        "rank": 2,
+        "raw_score": 1.0448729991912842,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "selected_article_sections"
+        }
+      },
+      {
+        "evidence_id": "Demographics_of_Japan.html#section-005-00",
+        "source_article": "Demographics_of_Japan.html",
+        "content": "Article: Demographics of Japan\nSection: Population > Age structure\n\nMain article: Aging of Japan\n\nMedian age by country\n\nThe age structure of Japan is highly unique and is characterized by a \"super-aged\" society and it is the oldest population structure in the world.[31] This demographic profile results from the combination of a high life expectancy and a persistently low total fertility rate (TFR). The age distribution is often described as a constrictive or inverted pyramid shape, with a narrow base (few young people) and a large bulge in the middle and upper ages.[32]\n\nOverview of the changing age distribution 1935–2020[33]\n\nYear\n\nTotal population\n\n(census;\n\nthousands)\n\nPopulation by age (%)\n\n0–14\n\n15–64\n\n65+\n\n1935\n\n69,254\n\n36.9%\n\n58.5%\n\n4.7%\n\n1940\n\n73,114\n\n36.1%\n\n59.2%\n\n5.7%\n\n1945\n\n71,998\n\n36.8%\n\n58.1%\n\n5.1%\n\n1950\n\n83,199\n\n35.4%\n\n59.6%\n\n4.9%\n\n1955\n\n89,275\n\n33.4%\n\n61.2%\n\n5.3%\n\n1960\n\n93,418\n\n30.2%\n\n64.1%\n\n5.7%\n\n1965\n\n98,274\n\n25.7%\n\n68.0%\n\n6.3%\n\n1970\n\n103,720\n\n24.0%\n\n68.9%\n\n7.1%\n\n1975\n\n111,939\n\n24.3%\n\n67.7%\n\n7.9%\n\n1980\n\n117,060\n\n23.5%\n\n67.3%\n\n9.1%\n\n1985\n\n121,048\n\n21.5%\n\n68.2%\n\n10.3%\n\n1990\n\n123,611\n\n18.2%\n\n69.5%\n\n12.0%\n\n1995\n\n125,570\n\n15.9%\n\n69.4%\n\n14.5%\n\n2000\n\n126,925\n\n14.6%\n\n67.9%\n\n17.3%\n\n2005\n\n127,767\n\n13.7%\n\n65.8%\n\n20.1%\n\n2010\n\n128,057\n\n13.2%\n\n63.7%\n\n23.1%\n\n2015\n\n127,094\n\n12.6%\n\n60.7%\n\n26.6%\n\n2020\n\n126,226\n\n12.0%\n\n59.3%\n\n28.8%\n\n2025\n\n123,400\n\n10.5%\n\n59.4%\n\n30.1%\n\nPopulation projections for Japan (National Institute of Population and Social Security Research, 2023)\n\nPopulation pyramids of Japan 2065 (middle-birth, middle-death scenario case)[34]\n\nJapan demographic transition 1888–2019\n\nJapan's population is aging faster than that of any other nation.[35] The population of those 65 years or older roughly doubled in 24 years, from 7.1% of the population in 1970 to 14.1% in 1994. The same increase took 61 years in Italy, 85 years in Sweden, and 115 years in France.[36] In 2014, 26% of Japan's population was estimated to be 65 years or older,[33] and the Health and Welfare Ministry has estimated that over-65s will account for 40% of the population by 2060.[37] The demographic shift in Japan's age profile has triggered concerns about the nation's economic future and the viability of its welfare state.[38]\n\n1888\n\n1920 (1st national census of population)\n\n1925 (2nd national census of population)\n\n1930 (3rd national census of population)\n\n1935 (4th national census of population)\n\n1940 (5th national census of population)\n\n1947 (6th national census of population)\n\n1950 (7th national census of population)\n\n1955 (8th national census of population)\n\n1960 (9th national census of population)\n\n1965 (10th national census of population)\n\n1970 (11th national census of population)\n\n1975 (12th national census of population)\n\n1980 (13th national census of population)\n\n1985 (14th national census of population)\n\n1990 (15th national census of population)\n\n1995 (16th national census of population)\n\n2000 (17th national census of population)\n\n2005 (18th national census of population)\n\n2010 (19th national census of population)\n\n2015 (20th national census of population)\n\n2019 estimate\n\nLive births and deaths of Japan (1946–2019)",
+        "evidence_type": "text",
+        "title": "Age structure",
+        "section_path": [
+          "Population",
+          "Age structure"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "vector",
+        "rank": 3,
+        "raw_score": 1.124789834022522,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "selected_article_sections"
+        }
+      },
+      {
+        "evidence_id": "India.html#section-022-00",
+        "source_article": "India.html",
+        "content": "Article: India\nSection: Demographics > Health\n\nMain article: Health in India\n\nImmunisation health workers in 2006. Eight years later, and three years after India's last case of polio, the WHO declared India to be polio-free.[344]\n\nIndia bears a disproportionately large burden of the world's tuberculosis rates, with World Health Organization (WHO) statistics for 2022 estimating 2.8 million new infections annually, accounting for 26% of the global total.[345] It is estimated that approximately 40% of the population of India carry tuberculosis infection.[346]\n\nIn 2018 chronic obstructive pulmonary disease was the leading cause of death after heart disease. The 10 most polluted cities in the world are all in India with more than 140 million people breathing air 10 times or more over the WHO safe limit. In 2017, air pollution killed 1.24 million Indians.[347]",
+        "evidence_type": "text",
+        "title": "Health",
+        "section_path": [
+          "Demographics",
+          "Health"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "vector",
+        "rank": 2,
+        "raw_score": 1.3459573984146118,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "selected_article_sections"
+        }
+      },
+      {
+        "evidence_id": "India.html#section-000-00",
+        "source_article": "India.html",
+        "content": "Article: India\nSection: Lead\n\nCountry in South Asia\n\nThis article is about the country. For other uses, see India (disambiguation).\n\nRepublic of India\n\nBhārat Gaṇarājya\n\nFlag\n\nState emblem\n\nMotto: Satyameva Jayate (Sanskrit)\n\"Truth Alone Triumphs\"[1]\n\nAnthem: Jana Gana Mana (Hindi)[a][2][3]\n\n\"Thou Art the Ruler of the Minds of All People\"[4][2]\n\nNational song: Vande Mataram (Sanskrit)[c]\n\n\"I Bow to Thee, Mother\"[b][1][2]\n\n  Territory controlled by India\n\n  Territory claimed but not controlled\n\nCapitalNew Delhi\n\n28°36′50″N 77°12′30″E﻿ / ﻿28.61389°N 77.20833°E﻿ / 28.61389; 77.20833\n\nLargest city by city proper populationMumbai\n\nLargest city by metropolitan area populationDelhi\n\nOfficial languages\n\nHindi\n\nEnglish[d][8]\n\nRecognised regional languages\n\nState level and Eighth Schedule[9]\n\nEighth Schedule\n\nAssamese\n\nBengali\n\nBoro\n\nDogri\n\nGujarati\n\nHindi\n\nKannada\n\nKashmiri\n\nKonkani\n\nMaithili\n\nMalayalam\n\nManipuri\n\nMarathi\n\nNepali\n\nOdia\n\nPunjabi\n\nSanskrit\n\nSantali\n\nSindhi\n\nTamil\n\nTelugu\n\nUrdu\n\nState level[e]\n\nGaro\n\nKhasi\n\nKokborok\n\nLepcha\n\nMizo\n\nSikkimese\n\nall the 8th scheduled languages – except Sindhi, Kashmiri and Dogri[f]\n\nNative languages424 languages[g]\n\nReligion\n(2011)[11]\n\n79.8% Hinduism\n\n14.2% Islam\n\n2.3% Christianity\n\n1.7% Sikhism\n\n0.7% Buddhism\n\n0.4% Jainism\n\n0.23% unaffiliated\n\n0.65% other\n\nDemonyms\n\nIndian\n\nothers\n\nGovernmentFederal parliamentary republic\n\n• President\nDroupadi Murmu\n\n• Vice President\nC. P. Radhakrishnan\n\n• Prime Minister\nNarendra Modi\n\nLegislatureParliament\n\n• Upper house\nRajya Sabha\n\n• Lower house\nLok Sabha\n\nIndependence \nfrom the United Kingdom\n\n• Dominion\n15 August 1947\n\n• Republic\n26 January 1950\n\nArea\n\n• Total\n3,287,263 km2 (1,269,219 sq mi)[7][h] (7th)\n\n• Water (%)\n9.6\n\nPopulation\n\n• 2026 estimate\n1.48 billion[13] (1st)\n\n• 2011 census\n1,210,854,977[14][15] (2nd)\n\n• Density\n434.1/km2 (1,124.3/sq mi) (30th)\n\nGDP (PPP)2026 estimate\n\n• Total\n$18.902 trillion[16] (3rd)\n\n• Per capita\n$12,801[16] (121st)\n\nGDP (nominal)2026 estimate\n\n• Total\n$4.153 trillion[16] (6th)\n\n• Per capita\n$2,813[16] (148th)\n\nGini (2022) 25.5[17]\n\nlow inequality\n\nHDI (2023) 0.685[18]\n\nmedium (130th)\n\nCurrencyIndian rupee (₹) (INR)\n\nTime zoneUTC+05:30 (IST)\n\nDate format\n\ndd-mm-yyyy[i]\n\nCalling code+91\n\nISO 3166 codeIN\n\nInternet TLD.in (others)\n\nIndia, officially the Republic of India,[j][20] is a country in South Asia. It is the seventh-largest country by area; the most populous country since 2023;[21] and, since its independence in 1947, the world's most populous democracy.[22][23][24] Bounded by the Indian Ocean on the south, the Arabian Sea on the southwest, and the Bay of Bengal on the southeast, it shares land borders with Pakistan to the west;[k] China, Nepal, and Bhutan to the north; and Bangladesh and Myanmar to the east. In the Indian Ocean, India is near Sri Lanka and the Maldives. Its Andaman and Nicobar Islands share a maritime border with Myanmar, Thailand, and Indonesia.\n\nModern humans arrived on the Indian subcontinent from Africa no later than 55,000 years ago.[26][27][28] Their long occupation, predominantly in isolation as hunter-gatherers, has made the region highly diverse.[29] Settled life emerged on the subcontinent in the western margins of the Indus river basin 9,000 years ago, evolving gradually into the Indus Valley Civilisation of the third millennium BCE.[30] By 1200 BCE, an archaic form of Sanskrit, an Indo-European language, had diffused into India from the northwest.[31][32] Its hymns recorded the early dawnings of Hinduism in India.[33] India's pre-existing Dravidian languages were supplanted in the northern regions.[34] By 400 BCE, caste had emerged within Hinduism,[35] and Buddhism and Jainism had arisen, proclaiming social orders unlinked to heredity.[36] Early political consolidations gave rise to the loose-knit Maurya and Gupta Empires.[37] During this era, there was a flourishing of creativity in art, architecture, and writing,[38] the status of women declined,[39] and untouchability became an organised belief.[l][40] In South India, the Middle kingdoms exported Dravidian language scripts and religious cultures to the kingdoms of Southeast Asia.[41]\n\nIn the 1st millennium Islam, Christianity, Judaism, and Zoroastrianism became established on India's southern and western coasts.[42] Early in the 2nd millennium Muslim armies from Central Asia intermittently overran India's northern plains.[43] The resulting Delhi Sultanate drew northern India into the cosmopolitan networks of medieval Islam.[44] In south India, the Vijayanagara Empire created a long-lasting composite Hindu culture.[45] In the Punjab, Sikhism emerged, rejecting institutionalised religion.[46] The Mughal Empire ushered in two centuries of economic expansion and relative peace,[47] and left a rich architectural legacy.[48][49] Gradually expanding rule of the British East India Company turned India into a colonial economy but consolidated its sovereignty.[50] British Crown rule began in 1858. The rights promised to Indians were granted slowly,[51][52] but technological changes were introduced, and modern ideas of education and the public life took root.[53] A nationalist movement emerged in India, the first in the non-European British Empire and an influence on other nationalist movements.[54][55] Noted for nonviolent resistance after 1920,[56] it became the primary factor in ending British rule.[57] In 1947, the British Indian Empire was partitioned into two independent dominions, a Hindu-majority dominion of India and a Muslim-majority dominion of Pakistan. A large-scale loss of life and an unprecedented migration accompanied the partition.[58]\n\nIndia has been a federal republic since 1950, governed through a democratic parliamentary system. It is a pluralistic, multilingual and multi-ethnic society. India's population grew from 361 million in 1951 to over 1.4 billion in 2023.[59] During this time, its nominal per capita income increased from US$64 annually to US$2,601, and its literacy rate from 16.6% to 74%.[60] The Indian economy has since become a fast-growing major economy and a hub for information technology, with an expanding middle class.[61] India has reduced its poverty rate, though at the cost of increasing economic inequality.[62] It is a nuclear-weapon state that ranks high in military expenditure. It has disputes over Kashmir with its neighbours, Pakistan and China, unresolved since the mid-20th century.[63] Among the socio-economic challenges India faces are gender inequality, child malnutrition,[64] and rising levels of air pollution.[65] India's land is megadiverse with four biodiversity hotspots. India's wildlife, which has traditionally been viewed with tolerance in its culture, is supported in protected habitats.[66]",
+        "evidence_type": "text",
+        "title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "vector",
+        "rank": 3,
+        "raw_score": 1.4899427890777588,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "selected_article_sections"
+        }
+      },
+      {
+        "evidence_id": "Japan.html#section-022-00",
+        "source_article": "Japan.html",
+        "content": "Article: Japan\nSection: Demographics\n\nMain article: Demographics of Japan\n\nSee also: Japanese people and Ethnic groups of Japan\n\nView of Tokyo from the top of the Tokyo Skytree. The Greater Tokyo Area is ranked as the most populous metropolitan area in the world.\n\nJapan has a population of nearly 123 million, of whom almost 119 million are Japanese nationals; foreign residents make up the remainder, estimated at 3,743,000 as of September 2025.[234] Japan is one of the world's fastest aging countries and has the highest proportion of elderly citizens of any country, comprising one-third of its total population;[235] this is the result of a post–World War II baby boom, which was followed by an increase in life expectancy and a decrease in birth rates.[236]\n\nJapan has a total fertility rate of 1.2, which is below the replacement rate of 2.1, and is among the world's lowest:[237] it has a median age of 48.4, the highest in the world.[238] As of 2025[update], over 29.3% of the population is over 65, or more than one in four out of the Japanese population.[239] As a growing number of younger Japanese are not marrying or remaining childless,[240][241] Japan's population is expected to drop to around 88 million by 2065.[235]\n\nThe changes in demographic structure have created several social issues, particularly a decline in the workforce population and an increase in the cost of social security benefits.[240] The Government of Japan projects that there will be almost one elderly person for each person of working age by 2060.[238] Immigration and birth incentives are sometimes suggested as a solution to provide younger workers to support the nation's aging population.[242][243] On April 1, 2019, Japan's revised immigration law was enacted, protecting the rights of foreign workers to help reduce labor shortages in certain sectors.[244]\n\nIn 2023, 92% of the Japanese population lived in cities.[245] The capital city, Tokyo, has a population of 13.9 million (2022).[246] It is part of the Greater Tokyo Area, the biggest metropolitan area in the world with 37.4 million people (2024).[247] Japan is an ethnically and culturally homogeneous society,[248] with the Japanese people forming 97.4% of the country's population.[249] Minority ethnic groups in the country include the indigenous Ainu and Ryukyuan people.[250] Zainichi Koreans,[251] Chinese,[252] Filipinos,[253] Brazilians mostly of Japanese descent,[254] and Peruvians mostly of Japanese descent are also among Japan's small minority groups.[255] Burakumin make up a social minority group.[256]\n\n \n\nv\n\nt\n\ne\n\nLargest cities or towns in Japan\n\n2015 Census\n\nRank\n\nName\n\nPrefecture\n\nPop.\n\nRank\n\nName\n\nPrefecture\n\nPop.\n\n1\nTokyo\nTokyo\n9,272,740\n11\nHiroshima\nHiroshima\n1,194,034\n\n2\nYokohama\nKanagawa\n3,724,844\n12\nSendai\nMiyagi\n1,082,159\n\n3\nOsaka\nOsaka\n2,691,185\n13\nChiba\nChiba\n971,882\n\n4\nNagoya\nAichi\n2,295,638\n14\nKitakyushu\nFukuoka\n961,286\n\n5\nSapporo\nHokkaido\n1,952,356\n15\nSakai\nOsaka\n839,310\n\n6\nFukuoka\nFukuoka\n1,538,681\n16\nNiigata\nNiigata\n810,157\n\n7\nKobe\nHyōgo\n1,537,272\n17\nHamamatsu\nShizuoka\n797,980\n\n8\nKawasaki\nKanagawa\n1,475,213\n18\nKumamoto\nKumamoto\n740,822\n\n9\nKyoto\nKyoto\n1,475,183\n19\nSagamihara\nKanagawa\n720,780\n\n10\nSaitama\nSaitama\n1,263,979\n20\nOkayama\nOkayama\n719,474",
+        "evidence_type": "graph",
+        "title": "Demographics",
+        "section_path": [
+          "Demographics"
+        ],
+        "retrieval_query": "Japan 2023 population estimate official/UN",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 0.9971925616264343,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "List_of_countries_by_past_life_expectancy.html",
+            "Demographics_of_East_Timor.html",
+            "List_of_countries_by_population_(United_Nations).html",
+            "Demographics_of_Japan.html",
+            "India.html"
+          ],
+          "graph_neighbor_rank": 1,
+          "graph_score": 13.540316613211354,
+          "discovery_reasons": [
+            "link",
+            "entity:Osaka(21)",
+            "entity:Empire_of_Japan(38)",
+            "entity:Yokohama(14)",
+            "entity:Okinawa_Prefecture(8)",
+            "entity:Nagoya(10)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Japan.html#section-025-00",
+        "source_article": "Japan.html",
+        "content": "Article: Japan\nSection: Demographics > Education\n\nMain article: Education in Japan\n\nStudents celebrating after the announcement of the results of the entrance examinations to the University of Tokyo\n\nSince the 1947 Fundamental Law of Education, compulsory education in Japan comprises elementary and junior high school, which together last for nine years.[274] Almost all children continue their education at a three-year senior high school.[275] The top-ranking university in Japan is the University of Tokyo.[276] Starting in April 2016, various schools began the academic year with elementary school and junior high school integrated into one nine-year compulsory schooling program. MEXT plans for this approach to be adopted nationwide.[277]\n\nThe Programme for International Student Assessment (PISA) coordinated by the OECD ranks the knowledge and skills of Japanese 15-year-olds as the third best in the world.[278] Japan is one of the top-performing OECD countries in reading literacy, math, and sciences with the average student scoring 520 and has one of the world's highest-educated labor forces among OECD countries.[279][278][280] It spent 7.4% of its total GDP on education in 2021.[281]\n\nIn 2023, Japan ranked third for the percentage of 25- to 64-year-olds that have attained tertiary education, at 56%.[282] Approximately 65.5% of Japanese aged 25 to 34 have some form of tertiary education qualification, with bachelor's degrees being held by 34.8% of Japanese aged 25 to 64, the second most in the OECD after South Korea.[282] Japanese women are more highly educated than the men: 59% of women possess a university degree, compared to 52% of men.[283]",
+        "evidence_type": "graph",
+        "title": "Education",
+        "section_path": [
+          "Demographics",
+          "Education"
+        ],
+        "retrieval_query": "Japan 2023 population estimate official/UN",
+        "retriever": "graph",
+        "rank": 2,
+        "raw_score": 1.075103759765625,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "List_of_countries_by_past_life_expectancy.html",
+            "Demographics_of_East_Timor.html",
+            "List_of_countries_by_population_(United_Nations).html",
+            "Demographics_of_Japan.html",
+            "India.html"
+          ],
+          "graph_neighbor_rank": 1,
+          "graph_score": 13.540316613211354,
+          "discovery_reasons": [
+            "link",
+            "entity:Osaka(21)",
+            "entity:Empire_of_Japan(38)",
+            "entity:Yokohama(14)",
+            "entity:Okinawa_Prefecture(8)",
+            "entity:Nagoya(10)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Japan.html#section-026-00",
+        "source_article": "Japan.html",
+        "content": "Article: Japan\nSection: Demographics > Health\n\nMain articles: Health in Japan and Health care system in Japan\n\nUniversity of Tokyo Hospital\n\nHealth care in Japan is provided by national and local governments. Payment for personal medical services is offered through a universal health insurance system that provides relative equality of access, with fees set by a government committee. People without insurance through employers can participate in a national health insurance program administered by local governments.[284] Since 1973, all elderly persons have been covered by government-sponsored insurance.[285]\n\nJapan spent 11.42% of its total GDP on healthcare in 2022.[286] In 2020, the overall life expectancy in Japan at birth was 85 years (82 years for men and 88 years for women),[287][288] the highest in the world;[289] while it had a very low infant mortality rate (2 per 1,000 live births).[290] Since 1981, the principal cause of death in Japan is cancer, which accounted for 27% of the total deaths in 2018—followed by cardiovascular diseases, which led to 15% of the deaths.[291] Japan has one of the world's highest suicide rates, which is considered a major social issue.[292] Another significant public health issue is smoking among Japanese men.[293] Japan has the lowest rate of heart disease in the OECD, and the lowest level of dementia among developed countries.[294]",
+        "evidence_type": "graph",
+        "title": "Health",
+        "section_path": [
+          "Demographics",
+          "Health"
+        ],
+        "retrieval_query": "countries with 2023 population estimates and 2010-2015 life expectancy values from the supplied Wikipedia articles",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 1.2907130718231201,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "List_of_countries_by_past_life_expectancy.html",
+            "Demographics_of_East_Timor.html",
+            "List_of_countries_by_population_(United_Nations).html",
+            "Demographics_of_Japan.html",
+            "India.html"
+          ],
+          "graph_neighbor_rank": 1,
+          "graph_score": 13.540316613211354,
+          "discovery_reasons": [
+            "link",
+            "entity:Osaka(21)",
+            "entity:Empire_of_Japan(38)",
+            "entity:Yokohama(14)",
+            "entity:Okinawa_Prefecture(8)",
+            "entity:Nagoya(10)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Pakistan.html#section-032-00",
+        "source_article": "Pakistan.html",
+        "content": "Article: Pakistan\nSection: Demographics\n\nMain article: Demographics of Pakistan\n\nFurther information: Overseas Pakistani\n\nPopulation Density per square kilometre of each Pakistani District as of the 2017 Pakistan Census\n\nPopulation of each Pakistani District as of the 2017 Pakistan Census\n\nThis section is an excerpt from Demographics of Pakistan.\n\nPakistan had a population of 241,499,431 according to the final results of the 2023 census.[508] This figure includes the country's four provinces e.g. Punjab, Sindh, Khyber Pakhtunkhwa, Balochistan and the Islamabad Capital Territory. Azad Kashmir and Gilgit-Baltistan's census data is yet to be approved by CCI Council of Pakistan. Pakistan is the world's fifth–most populous country.[509]\n\nBetween 1951 and 2023, Pakistan's population expanded over sevenfold, going from 33.7 million to 241.5 million. The country has a relatively high, although declining, growth rate supported by high birth rates and low death rates. Between 1998 and 2017, the average annual population growth rate stood at +2.40%.[510]\n\nDramatic social changes have led to urbanization and the emergence of two megacities: Karachi and Lahore. The country's urban population more than tripled between 1981 and 2017 (from 23.8 million to 75.7 million), as Pakistan's urbanisation rate rose from 28.2% to 36.4%. Even with this, the nation's urbanisation rate remains one of the lowest in the world, and in 2017, over 130 million Pakistanis (making up nearly 65% of the population) lived in rural areas.\n\nDue to a high fertility rate, which was estimated at 3.5 in 2022, Pakistan has one of the world's youngest populations. The 2017 census recorded that 40.3% of the country's population was under the age of 15, while only 3.7% of Pakistanis were aged 65 or more.[511] The median age of the country was 19,[511] while its sex ratio was recorded to be 105 males per 100 females.[512] Pakistan ranked last (148th of 148 countries) on the Global Gender Gap Index, with a gender parity score of 56.7%, reflecting one of the lowest levels of gender equality globally.[513]\n\nThe demographic history of Pakistan from the ancient Indus Valley civilization to the modern era includes the arrival and settlement of many cultures and ethnic groups in the modern region of Pakistan from Eurasia and the nearby Middle East. Because of this, Pakistan has a multicultural, multilinguistic, and multiethnic society. Pakistan is also thought to have the world's fourth-largest refugee population, estimated at 1.4 million in mid-2021 by the UNHCR.[514]",
+        "evidence_type": "graph",
+        "title": "Demographics",
+        "section_path": [
+          "Demographics"
+        ],
+        "retrieval_query": "countries with 2023 population estimates and 2010-2015 life expectancy values from the supplied Wikipedia articles",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 1.3319196701049805,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "List_of_countries_by_past_life_expectancy.html",
+            "Demographics_of_East_Timor.html",
+            "List_of_countries_by_population_(United_Nations).html",
+            "Demographics_of_Japan.html",
+            "India.html"
+          ],
+          "graph_neighbor_rank": 2,
+          "graph_score": 11.499537872909995,
+          "discovery_reasons": [
+            "link",
+            "entity:Mughal_Empire(18)",
+            "entity:Arabian_Sea(3)",
+            "entity:Mahatma_Gandhi(20)",
+            "entity:Punjab_region(7)",
+            "entity:British_Raj(31)"
+          ]
+        }
+      }
+    ],
+    "assessment": {
+      "ready_to_answer": false,
+      "supported_requirements": [
+        "The supplied evidence supports 2010–2015 life expectancy values for some countries, including Timor-Leste and Japan.",
+        "The supplied evidence supports that the population article contains UN estimated total population figures from 2024 revision, and that India has a 2023 population estimate.",
+        "The supplied evidence supports that there is a date mismatch concern because the population sources are 2023/2024-era estimates while the life-expectancy values requested are from 2010–2015."
+      ],
+      "missing_requirements": [
+        "We do not have the specific 2023 population estimates for the same countries whose 2010–2015 life expectancies are in the evidence, except an India example that is not paired with a 2010–2015 life-expectancy value.",
+        "We do not have enough country-by-country paired data points to judge whether population size is meaningfully correlated with life expectancy across countries."
+      ],
+      "retrieval_requests": [
+        {
+          "missing_fact": "Country-by-country 2023 population estimates for the countries used in the life-expectancy comparison (e.g., Timor-Leste, Japan, India and any others needed) so the relationship can be assessed.",
+          "query": "Find 2023 population estimates for the countries appearing in the supplied life-expectancy evidence, especially Timor-Leste and Japan, and if possible a small set of contrasting countries with different population sizes.",
+          "target_articles": [
+            "List_of_countries_by_population_(United_Nations).html",
+            "Timor-Leste-related article if available",
+            "Japan.html",
+            "India.html"
+          ],
+          "keywords": [
+            "2023 population estimate",
+            "country population",
+            "Timor-Leste",
+            "Japan",
+            "India",
+            "United Nations"
+          ],
+          "preferred_retriever": "hybrid"
+        },
+        {
+          "missing_fact": "A sufficient set of country pairs or a tabular extraction from the population article showing which countries have large/small populations alongside their 2010–2015 life expectancy values to evaluate correlation.",
+          "query": "Retrieve paired country data combining 2023 population estimates with 2010–2015 life expectancy values for multiple countries so correlation can be assessed.",
+          "target_articles": [
+            "List_of_countries_by_past_life_expectancy.html",
+            "List_of_countries_by_population_(United_Nations).html",
+            "Demographics_of_East_Timor.html",
+            "Demographics_of_Japan.html",
+            "India.html"
+          ],
+          "keywords": [
+            "paired data",
+            "2010–2015 life expectancy",
+            "2023 population estimate",
+            "correlation",
+            "countries"
+          ],
+          "preferred_retriever": "hybrid"
+        }
+      ],
+      "table_requests": [],
+      "unresolved_conflicts": [],
+      "explanation": "The evidence is enough to identify the relevant time windows and confirm that the requested sources are about population estimates and 2010–2015 life expectancy, but it does not provide enough matched country-level data to determine whether population size is meaningfully correlated with life expectancy. The date mismatch should be mentioned: the population figures are 2023/2024-era estimates, while the life expectancy values are from 2010–2015, so the comparison is cross-time and not strictly contemporaneous."
+    },
+    "assessment_history": [
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "We have 2010–2015 life-expectancy values for Timor-Leste (67.7) and Japan (83.3) from the supplied evidence.",
+          "We have 2023 population information for India (1,428,627,663) and the population-article context that the UN list provides population estimates from 1950 to the present."
+        ],
+        "missing_requirements": [
+          "A sufficiently broad set of country pairings linking 2023 population estimates with 2010–2015 life expectancy values across multiple countries is missing, so correlation cannot be assessed from the supplied excerpts alone.",
+          "The required 2023 population estimates for the same countries as the life-expectancy values are not directly provided in the excerpts for Timor-Leste and Japan.",
+          "No evidence supports a conclusion about whether any observed relationship is 'meaningful' across countries.",
+          "The date mismatch needs explicit support tying 2023 population estimates to 2010–2015 life expectancy across the compared countries."
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "2023 population estimate for Timor-Leste (to pair with its 2010–2015 life expectancy value).",
+            "query": "Timor-Leste 2023 population estimate official/UN",
+            "target_articles": [
+              "Demographics_of_East_Timor.html",
+              "List_of_countries_by_population_(United_Nations).html"
+            ],
+            "keywords": [
+              "Timor-Leste",
+              "2023",
+              "population estimate",
+              "United Nations"
+            ],
+            "preferred_retriever": "hybrid"
+          },
+          {
+            "missing_fact": "2023 population estimate for Japan (to pair with its 2010–2015 life expectancy value).",
+            "query": "Japan 2023 population estimate official/UN",
+            "target_articles": [
+              "Demographics_of_Japan.html",
+              "List_of_countries_by_population_(United_Nations).html"
+            ],
+            "keywords": [
+              "Japan",
+              "2023",
+              "population estimate",
+              "United Nations"
+            ],
+            "preferred_retriever": "hybrid"
+          },
+          {
+            "missing_fact": "A set of country examples with both 2023 population estimates and 2010–2015 life expectancy values sufficient to judge correlation.",
+            "query": "countries with 2023 population estimates and 2010-2015 life expectancy values from the supplied Wikipedia articles",
+            "target_articles": [
+              "List_of_countries_by_population_(United_Nations).html",
+              "List_of_countries_by_past_life_expectancy.html",
+              "Demographics_of_East_Timor.html",
+              "Demographics_of_Japan.html"
+            ],
+            "keywords": [
+              "2023 population",
+              "2010–2015 life expectancy",
+              "country comparison",
+              "correlation"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The current evidence confirms the life-expectancy period requested and provides at least one 2023 population example, but it does not provide matching population and life-expectancy values for the same set of countries needed to evaluate correlation. Without aligned country-level pairs, I cannot conclude whether population size is meaningfully correlated with life expectancy. The user’s date-mismatch point is also only partially evidenced: the population data are 2023 estimates, while the life expectancy values are from 2010–2015."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "The supplied evidence supports 2010–2015 life expectancy values for some countries, including Timor-Leste and Japan.",
+          "The supplied evidence supports that the population article contains UN estimated total population figures from 2024 revision, and that India has a 2023 population estimate.",
+          "The supplied evidence supports that there is a date mismatch concern because the population sources are 2023/2024-era estimates while the life-expectancy values requested are from 2010–2015."
+        ],
+        "missing_requirements": [
+          "We do not have the specific 2023 population estimates for the same countries whose 2010–2015 life expectancies are in the evidence, except an India example that is not paired with a 2010–2015 life-expectancy value.",
+          "We do not have enough country-by-country paired data points to judge whether population size is meaningfully correlated with life expectancy across countries."
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Country-by-country 2023 population estimates for the countries used in the life-expectancy comparison (e.g., Timor-Leste, Japan, India and any others needed) so the relationship can be assessed.",
+            "query": "Find 2023 population estimates for the countries appearing in the supplied life-expectancy evidence, especially Timor-Leste and Japan, and if possible a small set of contrasting countries with different population sizes.",
+            "target_articles": [
+              "List_of_countries_by_population_(United_Nations).html",
+              "Timor-Leste-related article if available",
+              "Japan.html",
+              "India.html"
+            ],
+            "keywords": [
+              "2023 population estimate",
+              "country population",
+              "Timor-Leste",
+              "Japan",
+              "India",
+              "United Nations"
+            ],
+            "preferred_retriever": "hybrid"
+          },
+          {
+            "missing_fact": "A sufficient set of country pairs or a tabular extraction from the population article showing which countries have large/small populations alongside their 2010–2015 life expectancy values to evaluate correlation.",
+            "query": "Retrieve paired country data combining 2023 population estimates with 2010–2015 life expectancy values for multiple countries so correlation can be assessed.",
+            "target_articles": [
+              "List_of_countries_by_past_life_expectancy.html",
+              "List_of_countries_by_population_(United_Nations).html",
+              "Demographics_of_East_Timor.html",
+              "Demographics_of_Japan.html",
+              "India.html"
+            ],
+            "keywords": [
+              "paired data",
+              "2010–2015 life expectancy",
+              "2023 population estimate",
+              "correlation",
+              "countries"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The evidence is enough to identify the relevant time windows and confirm that the requested sources are about population estimates and 2010–2015 life expectancy, but it does not provide enough matched country-level data to determine whether population size is meaningfully correlated with life expectancy. The date mismatch should be mentioned: the population figures are 2023/2024-era estimates, while the life expectancy values are from 2010–2015, so the comparison is cross-time and not strictly contemporaneous."
+      }
+    ]
+  }
+}

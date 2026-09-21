@@ -9,12 +9,14 @@ from langchain_core.documents import Document
 from langchain_core.language_models.chat_models import BaseChatModel
 
 from wikipedia_retrieval_engine.retrievers.base import ArticleCandidate
+from wikipedia_retrieval_engine.retrievers.corpus import MarkdownArticleStore
 from wikipedia_retrieval_engine.retrievers.graph import GraphParams, WikiGraph
 from wikipedia_retrieval_engine.retrievers.multistep import MultiStepRetriever
 from wikipedia_retrieval_engine.retrievers.vector import VectorRetriever
 from wikipedia_retrieval_engine.wiki_agents.agent_graph import (
     build_evidence_intake_graph,
     build_retrieval_benchmark_graph,
+    make_retrieval_benchmark_router,
 )
 from wikipedia_retrieval_engine.wiki_agents.agentic_models import (
     ArticleReview,
@@ -174,9 +176,16 @@ class EvidenceIntakeGraphTests(unittest.TestCase):
                     source_article="Seed.html",
                     relevant=True,
                     reason="The seed identifies the event.",
+                    relevant_sections=["Overview"],
                 )
             ]
         )
+        markdown_store = Mock(spec=MarkdownArticleStore)
+        markdown_store.has_article.return_value = True
+        markdown_store.load_metadata.return_value = {
+            "sections": [{"level": 2, "id": "Overview", "title": "Overview"}],
+            "tables": [],
+        }
         assessment_runner = Mock()
         assessment_runner.invoke.side_effect = [
             EvidenceAssessment(
@@ -245,6 +254,7 @@ class EvidenceIntakeGraphTests(unittest.TestCase):
                 wiki_graph,
                 llm,
                 logger,
+                markdown_store=markdown_store,
                 graph_params=graph_params,
                 sections_per_neighbor=2,
                 multistep_hits_per_request=6,
@@ -256,16 +266,17 @@ class EvidenceIntakeGraphTests(unittest.TestCase):
 
         self.assertEqual(result["retrieval_attempts"], 3)
         self.assertEqual(len(result["assessment_history"]), 3)
-        self.assertEqual(len(result["evidence"]), 4)
+        self.assertEqual(len(result["evidence"]), 3)
         self.assertEqual(
             [item.metadata["retrieval_stage"] for item in result["evidence"]],
             [
-                "initial_article_retrieval",
-                "selected_article_sections",
+                "toc_selected_section",
                 "graph_seeded_sections",
                 "targeted_multistep_sections",
             ],
         )
+        # The TOC review judged the article from its section list, not a snippet.
+        markdown_store.load_metadata.assert_called_with("Seed.html")
         wiki_graph.expand.assert_called_once_with(["Seed.html"], graph_params)
         multistep.retrieve_with_reasoning.assert_called_once_with(
             "related event June exact date",
@@ -273,6 +284,212 @@ class EvidenceIntakeGraphTests(unittest.TestCase):
         )
         self.assertTrue(result["assessment"].ready_to_answer)
         self.assertEqual(len(log_files), 1)
+
+
+class ConfigurableRetrieverTests(unittest.TestCase):
+    def test_router_follows_configured_repeated_sequence(self) -> None:
+        not_ready = EvidenceAssessment(
+            ready_to_answer=False,
+            missing_requirements=["x"],
+            retrieval_requests=[RetrievalRequest(missing_fact="x", query="x")],
+            explanation="not ready",
+        )
+        ready = EvidenceAssessment(ready_to_answer=True, explanation="ready")
+
+        one_stage = make_retrieval_benchmark_router(("graph_seeded",))
+        self.assertEqual(
+            one_stage({"assessment": not_ready, "retrieval_attempts": 1}),
+            "retrieve_graph_seeded_sections",
+        )
+        # Only one repeated stage configured -> finish after it.
+        self.assertEqual(
+            one_stage({"assessment": not_ready, "retrieval_attempts": 2}),
+            "finish",
+        )
+        # Ready short-circuits regardless of attempt count.
+        self.assertEqual(
+            one_stage({"assessment": ready, "retrieval_attempts": 1}),
+            "finish",
+        )
+
+        two_stage = make_retrieval_benchmark_router(("graph_seeded", "multistep"))
+        self.assertEqual(
+            two_stage({"assessment": not_ready, "retrieval_attempts": 2}),
+            "retrieve_multistep_sections",
+        )
+
+    def test_multistep_initial_decomposes_before_retrieval(self) -> None:
+        candidate = ArticleCandidate(
+            source_article="Barack_Obama.html",
+            representative_chunk="Obama served as the 44th president.",
+            representative_chunk_id="Barack_Obama.html#section-000-00",
+            section_title="Lead",
+            section_path=["Lead"],
+            retrieval_query="Barack Obama",
+            discovered_by="vector",
+            rank=1,
+            raw_score=0.30,
+            score_semantics="lower_is_better",
+        )
+        retriever = Mock(spec=VectorRetriever)
+        retriever.getArticlesTopK.return_value = [candidate]
+        retriever.getArticleSectionsTopK.return_value = [
+            (
+                Document(
+                    page_content="Obama detail section.",
+                    metadata={
+                        "source": "Barack_Obama.html#section-001-00",
+                        "article": "Barack_Obama.html",
+                        "section_title": "Presidency",
+                        "section_path": "Presidency",
+                    },
+                ),
+                0.10,
+            )
+        ]
+        multistep = Mock(spec=MultiStepRetriever)
+        multistep.decompose.return_value = (["Barack Obama"], "")
+        wiki_graph = Mock(spec=WikiGraph)
+        markdown_store = Mock(spec=MarkdownArticleStore)
+        markdown_store.has_article.return_value = True
+        markdown_store.load_metadata.return_value = {"sections": [], "tables": []}
+
+        review_runner = Mock()
+        review_runner.invoke.return_value = ArticleReviewBatch(
+            reviews=[
+                ArticleReview(
+                    source_article="Barack_Obama.html",
+                    relevant=True,
+                    reason="Names the person.",
+                )
+            ]
+        )
+        assess_runner = Mock()
+        assess_runner.invoke.return_value = EvidenceAssessment(
+            ready_to_answer=True,
+            supported_requirements=["The connection is supported."],
+            explanation="Sufficient.",
+        )
+        llm = Mock(spec=BaseChatModel)
+
+        def structured_output(schema: type, **kwargs):
+            if schema is ArticleReviewBatch:
+                return review_runner
+            if schema is EvidenceAssessment:
+                return assess_runner
+            raise AssertionError(f"Unexpected schema: {schema}")
+
+        llm.with_structured_output.side_effect = structured_output
+
+        with TemporaryDirectory() as directory:
+            logger = AgentRunLogger(
+                directory, started_at=datetime(2026, 9, 21, 1, 2, 3)
+            )
+            graph = build_retrieval_benchmark_graph(
+                retriever,
+                multistep,
+                wiki_graph,
+                llm,
+                logger,
+                markdown_store=markdown_store,
+                initial_retriever="multistep",
+                repeated_retrievers=("graph_seeded",),
+            )
+            result = graph.invoke(
+                initial_agent_state(
+                    "Which person connects Bill Clinton and Barack Obama?"
+                )
+            )
+
+        multistep.decompose.assert_called_once()
+        self.assertEqual(result["retrieval_attempts"], 1)
+        self.assertTrue(result["assessment"].ready_to_answer)
+        self.assertIn(
+            "Barack_Obama.html",
+            [item.source_article for item in result["evidence"]],
+        )
+
+    def test_multistep_entity_initial_uses_entity_decomposition(self) -> None:
+        candidate = ArticleCandidate(
+            source_article="Barack_Obama.html",
+            representative_chunk="Obama served as the 44th president.",
+            representative_chunk_id="Barack_Obama.html#section-000-00",
+            section_title="Lead",
+            section_path=["Lead"],
+            retrieval_query="Barack Obama",
+            discovered_by="vector",
+            rank=1,
+            raw_score=0.30,
+            score_semantics="lower_is_better",
+        )
+        retriever = Mock(spec=VectorRetriever)
+        retriever.getArticlesTopK.return_value = [candidate]
+        retriever.getArticleSectionsTopK.return_value = [
+            (
+                Document(
+                    page_content="Obama detail section.",
+                    metadata={
+                        "source": "Barack_Obama.html#section-001-00",
+                        "article": "Barack_Obama.html",
+                        "section_title": "Presidency",
+                        "section_path": "Presidency",
+                    },
+                ),
+                0.10,
+            )
+        ]
+        multistep = Mock(spec=MultiStepRetriever)
+        multistep.decompose_entities.return_value = (["Barack Obama"], "")
+        wiki_graph = Mock(spec=WikiGraph)
+        markdown_store = Mock(spec=MarkdownArticleStore)
+        markdown_store.has_article.return_value = True
+        markdown_store.load_metadata.return_value = {"sections": [], "tables": []}
+
+        review_runner = Mock()
+        review_runner.invoke.return_value = ArticleReviewBatch(
+            reviews=[
+                ArticleReview(
+                    source_article="Barack_Obama.html",
+                    relevant=True,
+                    reason="Names the person.",
+                )
+            ]
+        )
+        assess_runner = Mock()
+        assess_runner.invoke.return_value = EvidenceAssessment(
+            ready_to_answer=True,
+            supported_requirements=["Supported."],
+            explanation="Sufficient.",
+        )
+        llm = Mock(spec=BaseChatModel)
+        llm.with_structured_output.side_effect = (
+            lambda schema, **kw: review_runner
+            if schema is ArticleReviewBatch
+            else assess_runner
+        )
+
+        with TemporaryDirectory() as directory:
+            logger = AgentRunLogger(
+                directory, started_at=datetime(2026, 9, 21, 1, 2, 3)
+            )
+            graph = build_retrieval_benchmark_graph(
+                retriever,
+                multistep,
+                wiki_graph,
+                llm,
+                logger,
+                markdown_store=markdown_store,
+                initial_retriever="multistep_entity",
+                repeated_retrievers=("graph_seeded",),
+            )
+            graph.invoke(
+                initial_agent_state(
+                    "Which person connects Bill Clinton and Barack Obama?"
+                )
+            )
+
+        multistep.decompose_entities.assert_called_once()
+        multistep.decompose.assert_not_called()
 
 
 if __name__ == "__main__":

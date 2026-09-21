@@ -5,11 +5,14 @@ from typing import Literal
 from langchain_core.language_models.chat_models import BaseChatModel
 from langchain_core.messages import HumanMessage, SystemMessage
 
+from wikipedia_retrieval_engine.retrievers.base import ArticleCandidate
+from wikipedia_retrieval_engine.retrievers.corpus import MarkdownArticleStore
 from wikipedia_retrieval_engine.retrievers.graph import GraphParams, WikiGraph
 from wikipedia_retrieval_engine.retrievers.multistep import MultiStepRetriever
 from wikipedia_retrieval_engine.retrievers.vector import VectorRetriever
 from wikipedia_retrieval_engine.wiki_agents.agentic_models import (
     AgentState,
+    ArticleReview,
     ArticleReviewBatch,
     EvidenceAssessment,
     EvidenceItem,
@@ -31,6 +34,24 @@ For every candidate article:
   are explicitly identifiable from the provided excerpt.
 - Return exactly one review for every candidate.
 - Do not use outside knowledge.
+""".strip()
+
+TOC_REVIEW_SYSTEM_PROMPT = """
+You choose which retrieved Wikipedia articles to use and which of their sections to read, for a user's question.
+
+For each candidate article you are shown its title, its table of contents (section names), and a short list of the tables it contains. You are NOT shown section text — judge from the article's identity and its section list, not from a snippet.
+
+Return exactly one review per candidate article:
+- relevant: true if the article is a correct source for the question. Judge whether the article is on-topic and whether its sections could hold the needed facts. Do NOT reject an article just because no single section obviously answers the whole question.
+- reason: one brief sentence.
+- relevant_sections: the exact section names (copied from the table of contents) whose content should be read. Pick the sections that hold the needed facts (e.g. "Winners and nominees"), not overview, "See also", or reference sections. If the article is relevant, list at least one section.
+- relevant_table_names: labels (copied exactly) of any listed tables the question needs.
+- needs_table_reader: true if answering requires reading, filtering, aggregating, counting, or comparing rows of a table.
+
+Rules:
+- Copy source_article, section names, and table labels exactly; never invent or rename them.
+- Keep an article that is the right source even if you are unsure which single section answers it — list the plausible sections.
+- Do not use outside knowledge and do not answer the question.
 """.strip()
 
 EVIDENCE_ASSESSMENT_SYSTEM_PROMPT = """
@@ -82,6 +103,69 @@ def retrieve_initial_articles(
         raise ValueError("top_k must be at least 1.")
 
     article_candidates = retriever.getArticlesTopK(question, k=top_k)
+
+    return {
+        "article_candidates": article_candidates,
+        "retrieval_attempts": retrieval_attempt_count(state) + 1,
+    }
+
+
+def retrieve_initial_articles_decomposed(
+    state: AgentState,
+    retriever: VectorRetriever,
+    multistep: MultiStepRetriever,
+    *,
+    top_k: int = 4,
+    per_subquery_k: int = 2,
+    max_candidates: int = 8,
+    decompose_mode: Literal["subtopic", "entity"] = "subtopic",
+) -> AgentState:
+    """Initial article discovery via query decomposition.
+
+    Reuses the multi-step retriever's decomposition to split the question into
+    sub-queries, retrieves article candidates for each with the section-aware
+    vector retriever, and merges them (best distance per article). Entities a
+    single blunt question query buries — e.g. GT16's ``Barack_Obama`` — are then
+    reliably surfaced. The full question is always included as one of the
+    queries, so this stage's candidate set is a superset of the plain-vector
+    stage and recall cannot regress.
+
+    ``decompose_mode`` selects the decomposition style:
+
+    - ``"subtopic"`` — the 4.1 decomposer's broader sub-topic queries.
+    - ``"entity"`` — one clean full-name query per named/implied entity, which
+      probes show retrieves the exact designated article at rank 1.
+    """
+
+    question = state.get("question", "").strip()
+    if not question:
+        raise ValueError("Agent state must contain a non-empty question.")
+    if top_k < 1 or per_subquery_k < 1 or max_candidates < 1:
+        raise ValueError("top_k, per_subquery_k, and max_candidates must be >= 1.")
+
+    if decompose_mode == "entity":
+        sub_queries, _reasoning = multistep.decompose_entities(question)
+    else:
+        sub_queries, _reasoning = multistep.decompose(question)
+    queries = list(
+        dict.fromkeys(
+            [question, *(q.strip() for q in sub_queries if q.strip())]
+        )
+    )
+
+    best_by_article: dict[str, ArticleCandidate] = {}
+    for query in queries:
+        k = top_k if query == question else per_subquery_k
+        for candidate in retriever.getArticlesTopK(query, k=k):
+            existing = best_by_article.get(candidate.source_article)
+            if existing is None or candidate.raw_score < existing.raw_score:
+                best_by_article[candidate.source_article] = candidate
+
+    ranked = sorted(best_by_article.values(), key=lambda c: c.raw_score)
+    article_candidates = [
+        candidate.model_copy(update={"rank": index})
+        for index, candidate in enumerate(ranked[:max_candidates], start=1)
+    ]
 
     return {
         "article_candidates": article_candidates,
@@ -212,6 +296,207 @@ def collect_initial_evidence(state: AgentState) -> AgentState:
                 "discovered_by": candidate.discovered_by,
             },
         )
+
+    return {"evidence": list(evidence_by_id.values())}
+
+
+def _article_toc(
+    markdown_store: MarkdownArticleStore, source: str
+) -> tuple[list[str], list[str]]:
+    """Return (section titles, table labels) for one article from its sidecar."""
+
+    if not markdown_store.has_article(source):
+        return [], []
+    try:
+        meta = markdown_store.load_metadata(source)
+    except (OSError, ValueError):
+        return [], []
+
+    section_titles = [
+        str(section.get("title", "")).strip()
+        for section in (meta.get("sections") or [])
+        if isinstance(section, dict) and str(section.get("title", "")).strip()
+    ]
+    table_labels: list[str] = []
+    for index, table in enumerate(meta.get("tables") or [], start=1):
+        if not isinstance(table, dict):
+            continue
+        caption = str(table.get("caption") or "").strip()
+        if not caption:
+            headers = table.get("headers") or []
+            caption = (str(headers[0])[:60].strip() if headers else "") or "unlabeled"
+        table_labels.append(f"Table {index}: {caption}")
+    return section_titles, table_labels
+
+
+def review_and_select_from_toc(
+    state: AgentState,
+    llm: BaseChatModel,
+    markdown_store: MarkdownArticleStore,
+    *,
+    max_tables_listed: int = 8,
+) -> AgentState:
+    """Judge each candidate article and select its sections in one structured call.
+
+    The model sees each candidate's title, table of contents, and table labels —
+    never a single snippet — so it judges the *article* (is this the right source
+    and do its sections hold the facts) rather than whether one arbitrary chunk
+    answers the question. This avoids rejecting a correct article because its
+    top-ranked chunk happened to be "See also" or the lead infobox.
+
+    Output reuses ``ArticleReview``: ``relevant_sections`` are the section titles
+    to read, ``relevant_table_names`` and ``needs_table_reader`` flag table work
+    (the Phase 2 signal). The result is repaired, never raised: an omitted review
+    defaults to kept, and if the model rejects every candidate the best-ranked one
+    is kept so selection is never empty (which would starve graph expansion).
+    """
+
+    question = state.get("question", "").strip()
+    if not question:
+        raise ValueError("Agent state must contain a non-empty question.")
+
+    candidates = state.get("article_candidates", [])
+    if not candidates:
+        return article_review_update(ArticleReviewBatch())
+
+    blocks = []
+    for candidate in candidates:
+        section_titles, table_labels = _article_toc(
+            markdown_store, candidate.source_article
+        )
+        toc = ", ".join(section_titles) if section_titles else "(no section list available)"
+        tables = (
+            "; ".join(table_labels[:max_tables_listed])
+            if table_labels
+            else "(no tables listed)"
+        )
+        blocks.append(
+            f"Source article: {candidate.source_article}\n"
+            f"Table of contents: {toc}\n"
+            f"Tables: {tables}"
+        )
+
+    structured_reviewer = llm.with_structured_output(
+        ArticleReviewBatch,
+        method="function_calling",
+    )
+    result = structured_reviewer.invoke(
+        [
+            SystemMessage(content=TOC_REVIEW_SYSTEM_PROMPT),
+            HumanMessage(
+                content=(
+                    f"Question:\n{question}\n\n"
+                    f"Candidate articles:\n" + "\n\n".join(blocks)
+                )
+            ),
+        ]
+    )
+    batch = (
+        result
+        if isinstance(result, ArticleReviewBatch)
+        else ArticleReviewBatch.model_validate(result)
+    )
+
+    # Reconcile to exactly the candidate set (repair, never raise): use the model's
+    # review when present, default an omitted one to kept.
+    by_source = {review.source_article: review for review in batch.reviews}
+    reviews: list[ArticleReview] = []
+    for candidate in candidates:
+        review = by_source.get(candidate.source_article)
+        if review is None:
+            review = ArticleReview(
+                source_article=candidate.source_article,
+                relevant=True,
+                reason="(no explicit review returned; kept)",
+            )
+        reviews.append(review)
+
+    # Never reject everything — an empty selection guarantees failure and starves
+    # graph expansion, which seeds from the selected articles.
+    if not any(review.relevant for review in reviews):
+        best_article = min(candidates, key=lambda c: c.rank).source_article
+        for review in reviews:
+            if review.source_article == best_article:
+                review.relevant = True
+                review.reason = "(kept as best-ranked candidate; review rejected all)"
+                break
+
+    return article_review_update(ArticleReviewBatch(reviews=reviews))
+
+
+def load_selected_sections(
+    state: AgentState,
+    retriever: VectorRetriever,
+    *,
+    hits_per_section: int = 1,
+    fallback_sections: int = 2,
+) -> AgentState:
+    """Load the TOC-selected sections of each kept article into evidence.
+
+    Retrieves each requested section by name inside its article (so the section
+    that holds the facts is fetched, not the top-ranked prose chunk). When a kept
+    article names no sections, falls back to a question-driven search inside it.
+    Table flags from the review are carried into evidence metadata for Phase 2.
+    """
+
+    question = state.get("question", "").strip()
+    if not question:
+        raise ValueError("Agent state must contain a non-empty question.")
+    if hits_per_section < 1 or fallback_sections < 1:
+        raise ValueError("hits_per_section and fallback_sections must be >= 1.")
+
+    reviews = state.get("article_reviews", [])
+    evidence_by_id = {
+        item.evidence_id: item for item in state.get("evidence", [])
+    }
+
+    for review in reviews:
+        if not review.relevant:
+            continue
+        section_names = [
+            name.strip()
+            for name in (review.relevant_sections or [])
+            if name and name.strip()
+        ]
+        if section_names:
+            plan = [
+                (name, name, hits_per_section, "toc_selected_section")
+                for name in section_names
+            ]
+        else:
+            plan = [(question, None, fallback_sections, "toc_fallback_sections")]
+
+        for query, requested_section, k, stage in plan:
+            section_hits = retriever.getArticleSectionsTopK(
+                query, review.source_article, k=k
+            )
+            for rank, (document, distance) in enumerate(section_hits, start=1):
+                metadata = document.metadata
+                evidence_id = str(
+                    metadata.get("source")
+                    or f"{review.source_article}#toc-{requested_section or 'q'}-{rank}"
+                )
+                if evidence_id in evidence_by_id:
+                    continue
+                section_title, section_path = _section_identity(metadata)
+                evidence_by_id[evidence_id] = EvidenceItem(
+                    evidence_id=evidence_id,
+                    source_article=review.source_article,
+                    content=document.page_content,
+                    title=section_title or None,
+                    section_path=section_path,
+                    retrieval_query=query,
+                    retriever="vector",
+                    rank=rank,
+                    raw_score=float(distance),
+                    score_semantics="lower_is_better",
+                    metadata={
+                        "retrieval_stage": stage,
+                        "requested_section": requested_section,
+                        "needs_table_reader": bool(review.needs_table_reader),
+                        "flagged_tables": list(review.relevant_table_names or []),
+                    },
+                )
 
     return {"evidence": list(evidence_by_id.values())}
 

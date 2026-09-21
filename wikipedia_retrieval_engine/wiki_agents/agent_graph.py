@@ -3,11 +3,13 @@
 from __future__ import annotations
 
 from functools import partial
+from typing import Literal, Sequence
 
 from langchain_core.language_models.chat_models import BaseChatModel
 from langgraph.graph import END, START, StateGraph
 from langgraph.graph.state import CompiledStateGraph
 
+from wikipedia_retrieval_engine.retrievers.corpus import MarkdownArticleStore
 from wikipedia_retrieval_engine.retrievers.graph import GraphParams, WikiGraph
 from wikipedia_retrieval_engine.retrievers.multistep import MultiStepRetriever
 from wikipedia_retrieval_engine.retrievers.vector import VectorRetriever
@@ -18,12 +20,22 @@ from wikipedia_retrieval_engine.wiki_agents.agentic_models import (
 from wikipedia_retrieval_engine.wiki_agents.retrieval_nodes import (
     assess_evidence,
     collect_initial_evidence,
+    load_selected_sections,
     retrieve_graph_seeded_evidence,
     retrieve_initial_articles,
+    retrieve_initial_articles_decomposed,
     retrieve_multistep_evidence,
-    retrieve_selected_article_sections,
+    review_and_select_from_toc,
     review_article_candidates,
 )
+
+# Retriever strategy names used by the configurable benchmark graph.
+InitialRetriever = Literal["vector", "multistep", "multistep_entity"]
+RepeatedRetriever = Literal["graph_seeded", "multistep"]
+_REPEATED_EDGE = {
+    "graph_seeded": "retrieve_graph_seeded_sections",
+    "multistep": "retrieve_multistep_sections",
+}
 from wikipedia_retrieval_engine.wiki_agents.run_logging import (
     AgentRunLogger,
     write_question_log,
@@ -73,21 +85,30 @@ def build_evidence_intake_graph(
     return graph.compile(name="checkpoint_5_1_evidence_intake")
 
 
-def route_retrieval_benchmark(state: AgentState) -> str:
-    """Choose the next bounded retrieval stage, or finish with current evidence."""
+def make_retrieval_benchmark_router(
+    repeated_retrievers: Sequence[RepeatedRetriever],
+):
+    """Build the conditional-edge router for a configured repeated-stage sequence.
 
-    assessment = state.get("assessment")
-    if assessment is None:
-        raise ValueError("Agent state does not contain an evidence assessment.")
-    if assessment.ready_to_answer:
+    ``repeated_retrievers`` is the ordered list of retrieval stages to try after
+    the initial stage, one per unsatisfied assessment. The initial stage sets
+    ``retrieval_attempts`` to 1, so the stage index is ``attempts - 1``. When the
+    sequence is exhausted the graph finishes with whatever evidence it has.
+    """
+
+    def route_retrieval_benchmark(state: AgentState) -> str:
+        assessment = state.get("assessment")
+        if assessment is None:
+            raise ValueError("Agent state does not contain an evidence assessment.")
+        if assessment.ready_to_answer:
+            return "finish"
+
+        index = retrieval_attempt_count(state) - 1
+        if 0 <= index < len(repeated_retrievers):
+            return _REPEATED_EDGE[repeated_retrievers[index]]
         return "finish"
 
-    attempts = retrieval_attempt_count(state)
-    if attempts == 1:
-        return "graph_seeded_sections"
-    if attempts == 2:
-        return "multistep_sections"
-    return "finish"
+    return route_retrieval_benchmark
 
 
 def build_retrieval_benchmark_graph(
@@ -97,47 +118,81 @@ def build_retrieval_benchmark_graph(
     llm: BaseChatModel,
     run_logger: AgentRunLogger | None = None,
     *,
+    markdown_store: MarkdownArticleStore,
+    initial_retriever: InitialRetriever = "vector",
+    repeated_retrievers: Sequence[RepeatedRetriever] = ("graph_seeded", "multistep"),
     initial_article_top_k: int = 3,
+    initial_subquery_top_k: int = 2,
+    initial_max_candidates: int = 8,
     sections_per_selected_article: int = 3,
     graph_params: GraphParams | None = None,
     sections_per_neighbor: int = 2,
     max_graph_sections: int = 6,
     multistep_hits_per_request: int = 6,
 ) -> CompiledStateGraph:
-    """Compile the retrieval-only VS → graph → multistep benchmark graph.
+    """Compile the configurable retrieval-only benchmark graph.
 
-    Article names route retrieval. Only section chunks are added to evidence and
-    therefore only section evidence reaches assessment and answering.
+    The initial and repeated retrieval stages are pluggable:
 
-    The initial stage seeds ``initial_article_top_k`` unique articles and then
-    deepens each selected article with ``sections_per_selected_article`` focused
-    sections, so the chunk that actually carries the answer (not just the highest
-    ranked prose chunk) is present before the first assessment.
+    - ``initial_retriever="vector"`` seeds articles from one blunt vector search
+      over the question; ``"multistep"`` decomposes into broader sub-topic
+      sub-queries; ``"multistep_entity"`` decomposes into one clean full-name
+      query per named/implied entity, so explicitly-named articles a blunt query
+      buries are retrieved at rank 1.
+    - ``repeated_retrievers`` is the ordered escalation tried after the initial
+      stage, one stage per unsatisfied assessment, drawn from ``"graph_seeded"``
+      and ``"multistep"``.
+
+    After the initial stage, one fused call judges each candidate by its table of
+    contents (not a snippet) and selects the sections to read; those sections are
+    then loaded into evidence. Table needs are flagged (`needs_table_reader`) as
+    the Phase 2 signal. Only section chunks ever enter evidence.
     """
 
     workflow = StateGraph(AgentState)
     logger = run_logger or AgentRunLogger()
     params = graph_params or GraphParams()
 
-    workflow.add_node(
-        "retrieve_initial_articles",
-        partial(
+    if initial_retriever in ("multistep", "multistep_entity"):
+        initial_node = partial(
+            retrieve_initial_articles_decomposed,
+            retriever=retriever,
+            multistep=multistep_retriever,
+            top_k=initial_article_top_k,
+            per_subquery_k=initial_subquery_top_k,
+            max_candidates=initial_max_candidates,
+            decompose_mode=(
+                "entity" if initial_retriever == "multistep_entity" else "subtopic"
+            ),
+        )
+    elif initial_retriever == "vector":
+        initial_node = partial(
             retrieve_initial_articles,
             retriever=retriever,
             top_k=initial_article_top_k,
+        )
+    else:
+        raise ValueError(f"Unknown initial_retriever: {initial_retriever!r}")
+
+    unknown_repeated = [r for r in repeated_retrievers if r not in _REPEATED_EDGE]
+    if unknown_repeated:
+        raise ValueError(f"Unknown repeated_retrievers: {unknown_repeated}")
+
+    workflow.add_node("retrieve_initial_articles", initial_node)
+    workflow.add_node(
+        "review_and_select_from_toc",
+        partial(
+            review_and_select_from_toc,
+            llm=llm,
+            markdown_store=markdown_store,
         ),
     )
     workflow.add_node(
-        "review_article_candidates",
-        partial(review_article_candidates, llm=llm),
-    )
-    workflow.add_node("collect_initial_evidence", collect_initial_evidence)
-    workflow.add_node(
-        "deepen_selected_article_sections",
+        "load_selected_sections",
         partial(
-            retrieve_selected_article_sections,
+            load_selected_sections,
             retriever=retriever,
-            sections_per_article=sections_per_selected_article,
+            fallback_sections=sections_per_selected_article,
         ),
     )
     workflow.add_node(
@@ -173,18 +228,15 @@ def build_retrieval_benchmark_graph(
     )
 
     workflow.add_edge(START, "retrieve_initial_articles")
-    workflow.add_edge("retrieve_initial_articles", "review_article_candidates")
-    workflow.add_edge("review_article_candidates", "collect_initial_evidence")
-    workflow.add_edge(
-        "collect_initial_evidence", "deepen_selected_article_sections"
-    )
-    workflow.add_edge("deepen_selected_article_sections", "assess_evidence")
+    workflow.add_edge("retrieve_initial_articles", "review_and_select_from_toc")
+    workflow.add_edge("review_and_select_from_toc", "load_selected_sections")
+    workflow.add_edge("load_selected_sections", "assess_evidence")
     workflow.add_conditional_edges(
         "assess_evidence",
-        route_retrieval_benchmark,
+        make_retrieval_benchmark_router(tuple(repeated_retrievers)),
         {
-            "graph_seeded_sections": "retrieve_graph_seeded_sections",
-            "multistep_sections": "retrieve_multistep_sections",
+            "retrieve_graph_seeded_sections": "retrieve_graph_seeded_sections",
+            "retrieve_multistep_sections": "retrieve_multistep_sections",
             "finish": "write_question_log",
         },
     )

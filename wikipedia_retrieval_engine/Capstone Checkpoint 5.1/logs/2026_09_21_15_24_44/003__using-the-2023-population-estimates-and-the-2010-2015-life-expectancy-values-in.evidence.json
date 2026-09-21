@@ -1,0 +1,529 @@
+{
+  "run_id": "2026_09_21_15_24_44",
+  "question_number": 3,
+  "logged_at": "2026-09-21T15:25:30-04:00",
+  "question": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+  "final_state": {
+    "question": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+    "retrieval_attempts": 2,
+    "article_candidates": [
+      {
+        "source_article": "List_of_countries_by_past_life_expectancy.html",
+        "representative_chunk": "Article: List of countries by past life expectancy\nSection: Lead\n\nLife expectancy by world region, from 1770 to 2023\n\nThis is a list of countries showing past life expectancy, ranging from 1950 to 2015 in five-year periods, as estimated by the 2017 revision of the World Population Prospects database by the United Nations Population Division. Life expectancy equals the average number of years a person born in a given country is expected to live if mortality rates at each age were to remain steady in the future. The life expectancy is shown as the average of males and females.",
+        "representative_chunk_id": "List_of_countries_by_past_life_expectancy.html#section-000-00",
+        "section_title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Wikipedia article 2010–2015 life expectancy values by country",
+        "discovered_by": "vector",
+        "rank": 1,
+        "raw_score": 0.7263509035110474,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "List_of_countries_by_population_(United_Nations).html",
+        "representative_chunk": "Article: List of countries and dependencies by population (United Nations)\nSection: Lead\n\nUN list of countries and territories by population\n\nStatistical subregions as defined by the United Nations Statistics Division[1]\n\nThis is the list of countries and other inhabited territories of the world by estimated total population. It is based on estimates published by the United Nations in the 2024 revision of World Population Prospects. It presents population estimates from 1950 to the present.[2]",
+        "representative_chunk_id": "List_of_countries_by_population_(United_Nations).html#section-000-00",
+        "section_title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Wikipedia article 2023 country population estimates list by country",
+        "discovered_by": "vector",
+        "rank": 2,
+        "raw_score": 0.8666207194328308,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Demographics_of_East_Timor.html",
+        "representative_chunk": "Article: Demographics of Timor-Leste\nSection: Vital statistics > Life expectancy at birth\n\nAverage life expectancy at age 0 of the total population.[10]\n\nPeriod\n\nLife expectancy\n\nin Years\n\nPeriod\n\nLife expectancy in\n\nYears\n\n1950–1955\n\n30.0\n\n1985–1990\n\n46.5\n\n1955–1960\n\n32.5\n\n1990–1995\n\n50.5\n\n1960–1965\n\n35.0\n\n1995–2000\n\n57.0\n\n1965–1970\n\n37.5\n\n2000–2005\n\n61.5\n\n1970–1975\n\n40.0\n\n2005–2010\n\n66.4\n\n1975–1980\n\n31.2\n\n2010–2015\n\n67.7\n\n1980–1985\n\n39.9",
+        "representative_chunk_id": "Demographics_of_East_Timor.html#section-007-00",
+        "section_title": "Life expectancy at birth",
+        "section_path": [
+          "Vital statistics",
+          "Life expectancy at birth"
+        ],
+        "retrieval_query": "Wikipedia article 2010–2015 life expectancy values by country",
+        "discovered_by": "vector",
+        "rank": 3,
+        "raw_score": 0.8979341387748718,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Demographics_of_Japan.html",
+        "representative_chunk": "Article: Demographics of Japan\nSection: Vital statistics > Life expectancy > Historical data\n\nSources: Our World In Data and the United Nations.\n\n1865–1949\n\nYears\n\n1865\n\n1870\n\n1875\n\n1880\n\n1885\n\n1890\n\n1895\n\n1900\n\n1905\n\n1910\n\n1915\n\n1920\n\n1922\n\n1927\n\n1935\n\n1945\n\n1947\n\n1948\n\n1949\n\n1950[67]\n\nLife expectancy in Japan\n\n36.4\n\n36.6\n\n36.8\n\n37.0\n\n37.3\n\n37.7\n\n38.1\n\n38.6\n\n39.2\n\n40.0\n\n40.9\n\n42.0\n\n42.6\n\n45.7\n\n48.2\n\n30.5\n\n51.7\n\n56.8\n\n57.7\n\n59.2\n\n1950–2020\n\nPeriod\n\nLife expectancy in\n\nyears\n\nPeriod\n\nLife expectancy in\n\nyears\n\n1950–1955\n\n62.8\n\n1985–1990\n\n78.5\n\n1955–1960\n\n66.4\n\n1990–1995\n\n79.4\n\n1960–1965\n\n69.2\n\n1995–2000\n\n80.5\n\n1965–1970\n\n71.4\n\n2000–2005\n\n81.8\n\n1970–1975\n\n73.3\n\n2005–2010\n\n82.7\n\n1975–1980\n\n75.4\n\n2010–2015\n\n83.3\n\n1980–1985\n\n77.0\n\n2015–2020\n\n84.4\n\nSource: UN World Population Prospects",
+        "representative_chunk_id": "Demographics_of_Japan.html#section-014-00",
+        "section_title": "Historical data",
+        "section_path": [
+          "Vital statistics",
+          "Life expectancy",
+          "Historical data"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "discovered_by": "vector",
+        "rank": 4,
+        "raw_score": 1.0092647075653076,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "India.html",
+        "representative_chunk": "Article: India\nSection: Demographics\n\nMain article: Demographics of India\n\nWith an estimated 1,428,627,663 residents in 2023, India is the world's most populous country.[303] 1,210,193,422 residents were reported in the 2011 provisional census report.[304] The median age was 28.7 in 2020.[273] Medical advances made in the last 50 years as well as increased agricultural productivity brought about by the \"Green Revolution\" have caused India's population to grow rapidly,[305] though India's decennial rates of growth are decreasing: its population grew by 17.64% from 2001 to 2011,[306] compared to 21.54% growth in the previous decade (1991–2001).[306] The first post-colonial census, conducted in 1951, counted 361 million people.[307] The life expectancy at birth has increased from 49.7 years in 1970–1975 to 72.0 years in 2023.[308][309] The under-five mortality rate for the country was 113 per 1,000 live births in 1994 whereas in 2018 it reduced to 41.1 per 1,000 live births.[308]\n\nThe human sex ratio, according to the 2011 census, is 940 females per 1,000 males.[304] Female infanticide in India, and lately female foeticide, have created lop-sided gender ratios; the number of missing women in the country quadrupled from 15 million to 63 million during the period 1964–2014, faster than the population growth during the same period.[310] According to an Indian government study, an additional 21 million girls are unwanted and do not receive adequate care.[311] Despite a government ban on sex-selective foeticide, the practice has far from stopped.[312]\n\nMigration from rural to urban areas has been an important dynamic in India's recent history. The number of people living in urban areas grew by 31.2% between 1991 and 2001.[313] In 2001, over 70% lived in rural areas.[314][315] The level of urbanisation increased further from 27.81% in the 2001 census to 31.16% in the 2011 census. The slowing down of the overall population growth rate was due to the sharp decline in the growth rate in rural areas since 1991.[316] In the 2011 census, there were 53 million-plus urban agglomerations in India. Among them Mumbai, Delhi, Kolkata, Chennai, Bengaluru, Hyderabad and Ahmedabad, in decreasing order by population.[317]\n\nThe historical development of life expectancy in India from 1881 to 2023\n\nThe child mortality rate in India from 1960 to 2023",
+        "representative_chunk_id": "India.html#section-018-00",
+        "section_title": "Demographics",
+        "section_path": [
+          "Demographics"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "discovered_by": "vector",
+        "rank": 5,
+        "raw_score": 1.0463781356811523,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      }
+    ],
+    "article_reviews": [
+      {
+        "source_article": "List_of_countries_by_past_life_expectancy.html",
+        "relevant": true,
+        "reason": "This article contains the 2010–2015 life-expectancy values needed to compare against population estimates from the other supplied article.",
+        "relevant_sections": [
+          "Lead"
+        ],
+        "relevant_table_names": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "List_of_countries_by_population_(United_Nations).html",
+        "relevant": true,
+        "reason": "This article contains the country population estimates needed for the comparison, including the 2023 population estimates referenced in the question.",
+        "relevant_sections": [
+          "Lead"
+        ],
+        "relevant_table_names": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Demographics_of_East_Timor.html",
+        "relevant": false,
+        "reason": "This excerpt only provides Timor-Leste life-expectancy values and does not clearly supply the broad country set needed for comparing population size with life expectancy across the supplied articles.",
+        "relevant_sections": [
+          "Vital statistics > Life expectancy at birth"
+        ],
+        "relevant_table_names": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Demographics_of_Japan.html",
+        "relevant": false,
+        "reason": "This excerpt only provides Japan life-expectancy values and is not necessary for the requested cross-country comparison using the two main supplied articles.",
+        "relevant_sections": [
+          "Vital statistics > Life expectancy > Historical data"
+        ],
+        "relevant_table_names": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "India.html",
+        "relevant": false,
+        "reason": "This excerpt gives India-specific 2023 population and life-expectancy figures, but the question asks about whether country population size is meaningfully correlated with life expectancy using the two supplied Wikipedia articles overall, not a single-country example.",
+        "relevant_sections": [
+          "Demographics"
+        ],
+        "relevant_table_names": [],
+        "needs_table_reader": false
+      }
+    ],
+    "selected_articles": [
+      "List_of_countries_by_past_life_expectancy.html",
+      "List_of_countries_by_population_(United_Nations).html"
+    ],
+    "rejected_articles": [
+      "Demographics_of_East_Timor.html",
+      "Demographics_of_Japan.html",
+      "India.html"
+    ],
+    "evidence": [
+      {
+        "evidence_id": "List_of_countries_by_past_life_expectancy.html#section-000-00",
+        "source_article": "List_of_countries_by_past_life_expectancy.html",
+        "content": "Article: List of countries by past life expectancy\nSection: Lead\n\nLife expectancy by world region, from 1770 to 2023\n\nThis is a list of countries showing past life expectancy, ranging from 1950 to 2015 in five-year periods, as estimated by the 2017 revision of the World Population Prospects database by the United Nations Population Division. Life expectancy equals the average number of years a person born in a given country is expected to live if mortality rates at each age were to remain steady in the future. The life expectancy is shown as the average of males and females.",
+        "evidence_type": "text",
+        "title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.8750657439231873,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "selected_article_sections"
+        }
+      },
+      {
+        "evidence_id": "List_of_countries_by_population_(United_Nations).html#section-000-00",
+        "source_article": "List_of_countries_by_population_(United_Nations).html",
+        "content": "Article: List of countries and dependencies by population (United Nations)\nSection: Lead\n\nUN list of countries and territories by population\n\nStatistical subregions as defined by the United Nations Statistics Division[1]\n\nThis is the list of countries and other inhabited territories of the world by estimated total population. It is based on estimates published by the United Nations in the 2024 revision of World Population Prospects. It presents population estimates from 1950 to the present.[2]",
+        "evidence_type": "text",
+        "title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 1.2218103408813477,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "selected_article_sections"
+        }
+      },
+      {
+        "evidence_id": "List_of_countries_by_past_life_expectancy.html#section-001-02",
+        "source_article": "List_of_countries_by_past_life_expectancy.html",
+        "content": "Article: List of countries by past life expectancy\nSection: List of countries 1950 to 2015 (United Nations)\n\n53.67\n56.97\n60.23\n\n Northern Africa\n42.27\n45.82\n48.60\n51.12\n53.18\n56.27\n59.77\n62.85\n64.56\n66.39\n67.92\n69.63\n71.07\n\n Sub-Saharan Africa\n36.33\n38.51\n40.73\n42.70\n44.80\n46.75\n48.18\n49.11\n48.86\n49.39\n50.70\n54.29\n57.88\n\n Western Africa\n33.55\n35.50\n37.61\n39.50\n41.80\n44.42\n46.71\n47.67\n48.13\n48.21\n49.30\n52.33\n54.74\n\n Middle Africa\n36.91\n38.45\n40.01\n41.82\n43.99\n45.57\n47.07\n47.96\n48.46\n48.17\n50.79\n54.42\n57.42\n\n Eastern Africa\n37.00\n39.45\n42.06\n44.13\n45.96\n47.55\n48.17\n48.86\n47.58\n49.57\n51.98\n57.04\n61.45\n\n Southern Africa\n47.81\n50.58\n52.43\n54.23\n56.10\n57.01\n58.21\n60.79\n61.94\n58.47\n53.19\n52.99\n59.31\n\n ASIA\n42.33\n44.54\n46.50\n52.81\n56.51\n59.33\n61.57\n63.57\n65.16\n66.69\n68.65\n70.34\n71.81\n\n Western Asia\n43.76\n46.93\n50.14\n53.78\n57.01\n60.23\n62.57\n65.38\n67.26\n69.19\n70.85\n72.03\n72.77\n\n Central Asia\n54.67\n56.73\n58.77\n60.74\n62.26\n63.29\n64.70\n66.09\n65.06\n64.39\n65.82\n67.50\n69.76\n\n Southern Asia\n37.02\n40.26\n43.43\n46.64\n49.36\n52.74\n54.83\n57.02\n59.65\n61.95\n63.99\n65.93\n67.88\n\n Eastern Asia\n45.60\n46.64\n46.97\n57.03\n62.86\n66.52\n68.70\n69.90\n70.78\n71.93\n74.19\n75.74\n76.76\n\n Southeast Asia\n46.48\n49.97\n52.84\n55.52\n56.67\n58.08\n61.95\n64.20\n65.69\n67.02\n68.13\n69.36\n70.50\n\n OCEANIA\n61.58\n63.37\n64.40\n65.41\n66.87\n68.67\n70.43\n71.43\n73.04\n74.19\n75.67\n77.02\n77.93\n\n Australia/New Zealand\n69.44\n70.46\n70.92\n70.92\n71.75\n73.41\n74.85\n75.88\n77.46\n78.63\n80.11\n81.28\n82.14\n\n Polynesia\n50.39\n53.90\n56.08\n58.31\n60.29\n62.26\n64.81\n66.72\n68.50\n70.13\n71.58\n73.20\n74.53\n\n Melanesia\n40.50\n43.27\n45.54\n49.14\n52.20\n55.47\n58.43\n59.20\n60.78\n62.19\n63.67\n65.21\n66.12\n\n Micronesia\n53.50\n55.43\n57.69\n59.79\n61.92\n63.50\n64.60\n65.98\n67.55\n69.39\n70.92\n71.95\n72.81\n\n World\n46.98\n49.33\n51.17\n55.48\n58.14\n60.30\n62.06\n63.68\n64.59\n65.67\n67.20\n69.07\n70.79",
+        "evidence_type": "text",
+        "title": "List of countries 1950 to 2015 (United Nations)",
+        "section_path": [
+          "List of countries 1950 to 2015 (United Nations)"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "vector",
+        "rank": 2,
+        "raw_score": 1.0188572406768799,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "selected_article_sections"
+        }
+      },
+      {
+        "evidence_id": "List_of_countries_by_past_life_expectancy.html#section-002-00",
+        "source_article": "List_of_countries_by_past_life_expectancy.html",
+        "content": "Article: List of countries by past life expectancy\nSection: List of countries before 1950\n\nLife expectancy at birth (both genders)[2]\n\nCountry\n\n1543\n\n1683\n\n1771\n\n1810\n\n1830\n\n1851\n\n1860\n\n1870\n\n1882\n\n1890\n\n1895\n\n1900\n\n1905\n\n1910\n\n1915\n\n1920\n\n1925\n\n1930\n\n1935\n\n1940\n\n1949\n\n \n\n Australia\n\n52.95\n\n57.00\n\n59.32\n63.16\n64.89\n65.09\n66.29\n69.13\n\n Austria\n\n34.40\n34.40\n\n41.73\n\n63.42\n\n Argentina\n\n33.10\n34.00\n33.30\n39.00\n39.70\n44.20\n46.20\n48.65\n50.60\n52.55\n54.45\n56.45\n64.36\n\n Bangladesh\n\n25.50\n\n Belarus\n\n36.20\n\n Belgium\n\n41.88\n45.07\n40.90\n\n44.09\n45.43\n46.52\n49.92\n51.31\n\n53.59\n57.09\n57.10\n59.93\n55.94\n65.43\n\n Bolivia\n\n28.00\n\n28.00\n\n31.00\n33.00\n33.00\n\n36.00\n\n Brazil\n\n29.00\n\n31.00\n\n32.00\n\n34.00\n\n37.00\n\n Bulgaria\n\n40.20\n43.30\n\n48.30\n\n57.94\n\n Canada\n\n41.06\n41.60\n42.56\n\n48.42\n\n52.14\n59.23\n58.91\n62.40\n63.96\n67.59\n\n China\n\n32.00\n\n41.00\n\n Chile\n\n29.00\n\n30.00\n\n35.00\n\n38.00\n\n Colombia\n\n29.00\n\n31.00\n\n32.00\n\n34.00\n\n38.00\n\n Costa Rica\n\n32.00\n\n33.00\n\n37.00\n\n42.00\n\n49.00\n\n Cuba\n\n32.00\n34.16\n36.00\n36.29\n39.00\n38.76\n42.00\n44.57\n45.00\n\n Cyprus\n\n38.51\n\n45.00\n\n47.47\n\n48.46\n\n Czech Republic\n\n40.27\n\n44.31\n\n55.55\n\n Denmark\n\n33.00\n\n44.49\n45.05\n45.97\n\n47.24\n50.83\n51.87\n54.31\n58.03\n58.38\n57.56\n61.91\n62.27\n62.86\n66.25\n70.13\n\n Egypt\n\n35.40\n33.20\n34.40\n36.70\n\n El Salvador\n\n28.00\n\n36.00\n\n Estonia\n\n43.10\n\n56.27\n\n Finland\n\n35.80\n\n35.10\n32.10\n41.57\n40.40\n44.45\n47.58\n41.74\n45.99\n48.49\n49.50\n47.53\n53.39\n55.16\n57.36\n46.60\n61.86\n\n France\n\n40.05\n39.59\n41.77\n43.32\n36.69\n43.08\n43.32\n45.13\n45.01\n48.30\n51.33\n36.25\n51.53\n54.33\n56.83\n58.29\n49.55\n64.89\n\n Germany\n\n42.38\n\n45.45\n\n40.52\n\n57.42\n\n61.50\n\n67.25\n\n Greece\n\n37.10\n38.50\n\n44.65\n\n51.56\n\n54.34\n61.54\n\n Guatemala\n\n24.00\n\n24.00\n\n25.00\n\n25.00\n\n29.00\n\n Guyana\n\n41.42\n\n Honduras\n\n29.00\n\n34.00\n\n36.00\n\n Hungary\n\n37.34\n\n39.76\n\n42.06\n\n50.21\n\n61.29\n\n Iceland\n\n30.07\n19.77\n38.34\n17.76\n36.58\n52.48\n46.65\n49.50\n52.65\n53.64\n54.56\n58.29\n60.25\n59.47\n65.77\n71.43\n\n India\n\n25.44\n24.27\n\n23.49\n23.98\n23.15\n24.02\n24.86\n27.61\n29.31\n30.95\n32.59\n35.84\n\n Italy\n\n29.70\n34.29\n38.53\n39.64\n41.67\n43.90\n46.71\n42.49\n45.47\n51.27\n55.16\n56.20\n56.95\n64.11\n\n Jamaica\n\n40.10\n34.30\n37.10\n37.80\n37.60\n36.70\n37.00\n35.40\n38.90\n45.30\n44.00\n47.60\n53.90\n\n Japan\n\n36.43\n36.59\n37.04\n37.68\n38.10\n38.60\n39.22\n39.97\n40.90\n42.04\n\n57.71\n\n Kazakhstan\n\n23.58\n23.59\n\n28.10\n\n30.60\n\n48.24\n42.47\n54.34\n\n Lithuania\n\n41.70\n\n50.50\n\n Luxembourg\n\n46.21\n49.66\n51.47\n54.62\n54.79\n56.80\n59.10\n61.95\n64.84\n\n Mexico\n\n29.52\n25.00\n26.80\n28.00\n\n34.00\n32.10\n34.00\n40.40\n39.00\n45.80\n\n New Zealand\n\n68.95\n\n Netherlands\n\n39.99\n36.92\n37.32\n43.74\n44.36\n46.63\n48.38\n52.05\n55.10\n57.20\n57.79\n63.12\n64.67\n66.50\n65.40\n70.28\n\n Nicaragua\n\n24.00\n\n28.00\n\n34.00\n\n Norway\n\n49.72\n49.98\n50.58\n47.37\n48.61\n52.79\n52.47\n55.10\n57.99\n58.16\n58.86\n62.51\n64.00\n65.83\n65.88\n71.53\n\n Portugal\n\n51.39\n55.34\n\n Paraguay\n\n25.00\n\n29.00\n\n33.00\n\n38.00\n\n42.00\n\n Peru\n\n37.00\n\n Panama\n\n36.00\n39.60\n42.00\n\n Russia\n\n30.50\n\n20.50\n35.20\n36.50\n\n41.20\n55.00\n\n Sri Lanka\n\n46.30\n45.20\n55.50\n\n Spain\n\n29.50\n31.80\n\n34.80\n\n40.78\n42.97\n39.22\n46.88\n49.26\n52.64\n48.44\n60.96\n\n Slovakia\n\n49.90\n\n Sweden\n\n31.97\n40.96\n43.58\n48.44\n44.97\n48.53\n50.44\n54.13\n52.21\n54.50\n57.76\n57.17\n58.78\n62.55\n63.18\n64.85\n66.72\n70.79\n\n Switzerland\n\n42.98\n44.95\n46.85\n47.48\n49.66\n52.93\n55.90\n54.33\n59.92\n61.47\n62.10\n63.54\n67.94\n\n Uruguay\n\n49.00\n\n52.00\n\n52.00\n\n50.00\n\n58.00\n61.00\n\n Ukraine\n\n36.60\n\n49.80\n60.60\n\n United States\n\n39.41\n45.21\n\n48.70\n50.30\n51.80\n55.10\n55.40\n58.50\n59.60\n60.89\n63.23\n67.63\n\n United Kingdom\n33.94\n31.27\n39.09\n40.58\n\n40.95\n41.97\n40.60\n43.99\n44.12\n45.41\n45.62\n49.92\n53.56\n51.21\n57.26\n58.43\n60.78\n61.96\n60.88\n68.11\n\n Venezuela\n\n28.00\n\n29.00\n\n31.00\n\n38.00\n\n<h2",
+        "evidence_type": "text",
+        "title": "List of countries before 1950",
+        "section_path": [
+          "List of countries before 1950"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "vector",
+        "rank": 3,
+        "raw_score": 1.1450293064117432,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "selected_article_sections"
+        }
+      },
+      {
+        "evidence_id": "List_of_countries_by_population_(United_Nations).html#section-002-00",
+        "source_article": "List_of_countries_by_population_(United_Nations).html",
+        "content": "Article: List of countries and dependencies by population (United Nations)\nSection: See also > World\n\nList of countries and dependencies by population\n\nList of countries by past and projected future population\n\nList of countries by population in 1000\n\nList of countries by population in 1500\n\nList of countries by population in 1600\n\nList of countries by population in 1700\n\nList of countries by population in 1800\n\nList of countries by population in 1900\n\nList of countries by population in 1939\n\nList of countries by population in 1989\n\nList of countries by population in 2000\n\nList of countries by population in 2005\n\nList of countries by population in 2010\n\nList of countries by population in 2015\n\nWorld population",
+        "evidence_type": "text",
+        "title": "World",
+        "section_path": [
+          "See also",
+          "World"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "vector",
+        "rank": 2,
+        "raw_score": 1.238759994506836,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "selected_article_sections"
+        }
+      },
+      {
+        "evidence_id": "List_of_countries_by_population_(United_Nations).html#section-006-00",
+        "source_article": "List_of_countries_by_population_(United_Nations).html",
+        "content": "Article: List of countries and dependencies by population (United Nations)\nSection: See also > Others\n\nList of European Union member states by population\n\nList of member states of the Commonwealth of Nations by population\n\nList of population concern organizations",
+        "evidence_type": "text",
+        "title": "Others",
+        "section_path": [
+          "See also",
+          "Others"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "vector",
+        "rank": 3,
+        "raw_score": 1.3240894079208374,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "selected_article_sections"
+        }
+      },
+      {
+        "evidence_id": "List_of_sovereign_states.html#section-000-00",
+        "source_article": "List_of_sovereign_states.html",
+        "content": "Article: List of sovereign states\nSection: Lead\n\n\"List of countries\" and \"List of nations\" redirect here. For other lists of countries, see Lists of sovereign states and dependent territories. For non-sovereign dependencies, see Dependent territory.\n\nFlags of the 193 United Nations member and 2 non-member GA observer states in front of the Palace of Nations in Geneva, Switzerland\n\nThe following is a list providing an overview of sovereign states around the world with information on their status and recognition of their sovereignty.\n\nThe 205 listed states can be divided into three categories based on membership within the United Nations System: 193 UN member states,[1] two UN General Assembly non-member observer states, and ten other states. The sovereignty dispute column indicates states having undisputed sovereignty (189 states, of which there are 188 UN member states and one UN General Assembly non-member observer state), states having disputed sovereignty (14 states, of which there are five UN member states, one UN General Assembly non-member observer state, and eight de facto states), and states having a special political status (two states, both in free association with New Zealand).\n\nCompiling a list such as this can be complicated and controversial, as there is no definition that is binding on all the members of the community of nations concerning the criteria for statehood. For more information on the criteria used to determine the contents of this list, please see the criteria for inclusion section below. The list is intended to include entities that have been recognised as having de facto status as sovereign states, and inclusion should not be seen as an endorsement of any specific claim to statehood in legal terms.\n\nContents: \n\nList of states\n\nUN member states and General Assembly observer states\n\nA\n\nB\n\nC\n\nD\n\nE\n\nF\n\nG\n\nH\n\nI\n\nJ\n\nK\n\nL\n\nM\n\nN\n\nO\n\nP\n\nQ\n\nR\n\nS\n\nT\n\nU\n\nV\n\nY\n\nZ\n\nOther states\n\nBibliography\n\nSee also\n\nNotes\n\nReferences",
+        "evidence_type": "graph",
+        "title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Retrieve the 2023 population estimates from List_of_countries_by_population_(United_Nations) for the countries in the comparison",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 1.2335641384124756,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "List_of_countries_by_past_life_expectancy.html",
+            "List_of_countries_by_population_(United_Nations).html"
+          ],
+          "graph_neighbor_rank": 1,
+          "graph_score": 9.995911546850078,
+          "discovery_reasons": [
+            "entity:The_Bahamas(19)",
+            "entity:Guadeloupe(11)",
+            "entity:The_Gambia(11)",
+            "entity:Aruba(11)",
+            "entity:United_States_Virgin_Islands(14)",
+            "entity:New_Caledonia(14)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "List_of_national_capitals_by_latitude.html#section-001-00",
+        "source_article": "List_of_national_capitals_by_latitude.html",
+        "content": "Article: List of national capitals by latitude\nSection: See also\n\nList of capital cities by elevation\n\nList of national capitals by population\n\nList of national capitals by area",
+        "evidence_type": "graph",
+        "title": "See also",
+        "section_path": [
+          "See also"
+        ],
+        "retrieval_query": "Retrieve the 2023 population estimates from List_of_countries_by_population_(United_Nations) for the countries in the comparison",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 1.2375457286834717,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "List_of_countries_by_past_life_expectancy.html",
+            "List_of_countries_by_population_(United_Nations).html"
+          ],
+          "graph_neighbor_rank": 2,
+          "graph_score": 7.07800975565882,
+          "discovery_reasons": [
+            "entity:Monaco(29)",
+            "entity:Bulgaria(44)",
+            "entity:Jamaica(42)",
+            "entity:Ivory_Coast(20)",
+            "entity:Trinidad_and_Tobago(21)",
+            "entity:Kenya(44)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Lists_of_earthquakes.html#section-010-00",
+        "source_article": "Lists_of_earthquakes.html",
+        "content": "Article: Lists of earthquakes\nSection: Lists by time period > By decade\n\n2001–2010\n\n2011–2020\n\n2021–present",
+        "evidence_type": "graph",
+        "title": "By decade",
+        "section_path": [
+          "Lists by time period",
+          "By decade"
+        ],
+        "retrieval_query": "Retrieve the 2010–2015 life expectancy values from List_of_countries_by_past_life_expectancy for the countries in the comparison",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 1.2668873071670532,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "List_of_countries_by_past_life_expectancy.html",
+            "List_of_countries_by_population_(United_Nations).html"
+          ],
+          "graph_neighbor_rank": 3,
+          "graph_score": 5.704649458304793,
+          "discovery_reasons": [
+            "entity:Monaco(29)",
+            "entity:Bulgaria(44)",
+            "entity:Jamaica(42)",
+            "entity:Trinidad_and_Tobago(21)",
+            "entity:Kenya(44)",
+            "entity:Saint_Lucia(17)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "List_of_sovereign_states.html#section-001-00",
+        "source_article": "List_of_sovereign_states.html",
+        "content": "Article: List of sovereign states\nSection: Criteria for inclusion\n\nThe dominant customary international law standard of statehood is the declarative theory of statehood, which was codified by the Montevideo Convention of 1933. The Convention defines the state as a person of international law if it \"possess[es] the following qualifications: (a) a permanent population; (b) a defined territory; (c) government; and (d) a capacity to enter into relations with the other states\" so long as it was not \"obtained by force whether this consists in the employment of arms, in threatening diplomatic representations, or in any other effective coercive measure\".[2]\n\nDebate exists on the degree to which recognition should be included as a criterion of statehood.[citation needed] The declarative theory of statehood argues that statehood is purely objective and recognition of a state by other states is irrelevant. On the other end of the spectrum, the constitutive theory of statehood defines a state as a person under international law only if it is recognised as sovereign by other states. For the purposes of this list, included are all polities that consider themselves sovereign states (through a declaration of independence or some other means) and either:\n\nare often regarded as satisfying the declarative theory of statehood, or\n\nare recognised as a sovereign state by at least one UN member state\n\nIn some cases, there is a divergence of opinion over the interpretation of the first point, and whether an entity satisfies it is disputed. Unique political entities which fail to meet the classification of a sovereign state are considered proto-states.[3][4]\n\nOn the basis of the above criteria, this list includes the following 205 entities:[a][b]\n\n204 states recognised by at least one UN member state\n\nOne state (Transnistria) that satisfies the declarative theory of statehood and is recognised only by non-UN member states\n\nThe table includes bullets in the right-hand column representing entities that are either not sovereign states or have a close association to another sovereign state. It also includes subnational areas where the sovereignty of the titular state is limited by an international agreement. Taken together, these include:\n\nEntities that are in a free association relationship with another state\n\nTwo entities controlled by Pakistan which are neither sovereign states, dependent territories, nor part of another state: Azad Kashmir and Gilgit-Baltistan\n\nDependent territories of another state, as well as areas that exhibit many characteristics of dependent territories according to the dependent territory page\n\nSubnational entities created by international agreements",
+        "evidence_type": "graph",
+        "title": "Criteria for inclusion",
+        "section_path": [
+          "Criteria for inclusion"
+        ],
+        "retrieval_query": "Retrieve the 2023 population estimates from List_of_countries_by_population_(United_Nations) for the countries in the comparison",
+        "retriever": "graph",
+        "rank": 2,
+        "raw_score": 1.3283865451812744,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "List_of_countries_by_past_life_expectancy.html",
+            "List_of_countries_by_population_(United_Nations).html"
+          ],
+          "graph_neighbor_rank": 1,
+          "graph_score": 9.995911546850078,
+          "discovery_reasons": [
+            "entity:The_Bahamas(19)",
+            "entity:Guadeloupe(11)",
+            "entity:The_Gambia(11)",
+            "entity:Aruba(11)",
+            "entity:United_States_Virgin_Islands(14)",
+            "entity:New_Caledonia(14)"
+          ]
+        }
+      }
+    ],
+    "assessment": {
+      "ready_to_answer": false,
+      "supported_requirements": [
+        "The supplied evidence supports that the life-expectancy source covers country life expectancy values for 1950–2015 in five-year periods, and that the population source covers UN population estimates from 1950 to the present.",
+        "The evidence supports the presence of a date mismatch: life expectancy is from a 2017 revision dataset for 1950–2015, while the population estimates are from the 2024 revision and include 2023."
+      ],
+      "missing_requirements": [
+        "The evidence does not supply the actual 2023 population estimates and the corresponding 2010–2015 life-expectancy values for enough countries to assess whether population size is meaningfully correlated with life expectancy.",
+        "No direct cross-country comparison or statistical relationship is provided in the excerpts."
+      ],
+      "retrieval_requests": [
+        {
+          "missing_fact": "Cross-country 2023 population estimates paired with 2010–2015 life-expectancy values for the same countries, sufficient to judge correlation.",
+          "query": "Retrieve the relevant rows or summary from List_of_countries_by_population_(United_Nations) and List_of_countries_by_past_life_expectancy that show 2023 population estimates and 2010–2015 life expectancy values for multiple countries, especially a broad range of population sizes.",
+          "target_articles": [
+            "List_of_countries_by_population_(United_Nations).html",
+            "List_of_countries_by_past_life_expectancy.html"
+          ],
+          "keywords": [
+            "2023 population",
+            "2010–2015 life expectancy",
+            "country",
+            "population estimates",
+            "life expectancy values"
+          ],
+          "preferred_retriever": "hybrid"
+        }
+      ],
+      "table_requests": [],
+      "unresolved_conflicts": [],
+      "explanation": "The excerpts only establish that one article contains population estimates and the other contains past life expectancy values, but they do not provide the concrete country-by-country figures needed to evaluate whether population size is meaningfully correlated with life expectancy. A conclusion about correlation would require the actual paired data or a summarized comparison. The date mismatch is visible in the source descriptions, but not enough paired data is available to determine the relationship."
+    },
+    "assessment_history": [
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "The supplied life-expectancy article is about past life expectancy values for countries, with data ranging from 1950 to 2015 in five-year periods, and it states the values are based on UN World Population Prospects.",
+          "The supplied population article is about country and territory population estimates based on the 2024 revision of World Population Prospects and presents estimates from 1950 to the present."
+        ],
+        "missing_requirements": [
+          "The actual 2023 population estimates for the relevant countries are not present in the excerpts.",
+          "The actual 2010–2015 life-expectancy values for the relevant countries are not present in the excerpts.",
+          "No paired country-level data are available in the excerpts to assess whether population size is meaningfully correlated with life expectancy.",
+          "The question asks for a conclusion about correlation across the two articles, which requires comparable country-level values from both datasets."
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Country-level 2023 population estimates needed to compare against life expectancy",
+            "query": "Retrieve the 2023 population estimates from List_of_countries_by_population_(United_Nations) for the countries in the comparison",
+            "target_articles": [
+              "List_of_countries_by_population_(United_Nations).html"
+            ],
+            "keywords": [
+              "2023",
+              "population estimates",
+              "countries",
+              "United Nations"
+            ],
+            "preferred_retriever": "hybrid"
+          },
+          {
+            "missing_fact": "Country-level 2010–2015 life-expectancy values needed for the same countries",
+            "query": "Retrieve the 2010–2015 life expectancy values from List_of_countries_by_past_life_expectancy for the countries in the comparison",
+            "target_articles": [
+              "List_of_countries_by_past_life_expectancy.html"
+            ],
+            "keywords": [
+              "2010–2015",
+              "life expectancy",
+              "countries",
+              "United Nations"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The excerpts establish only that one article contains past life expectancy values (including the 2010–2015 period) and the other contains population estimates including 2023, but they do not provide the country-level values needed to determine whether population size is meaningfully correlated with life expectancy. A date mismatch is also implied: the population data are from 2023/2024-revision estimates, whereas the life expectancy data are 2010–2015."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "The supplied evidence supports that the life-expectancy source covers country life expectancy values for 1950–2015 in five-year periods, and that the population source covers UN population estimates from 1950 to the present.",
+          "The evidence supports the presence of a date mismatch: life expectancy is from a 2017 revision dataset for 1950–2015, while the population estimates are from the 2024 revision and include 2023."
+        ],
+        "missing_requirements": [
+          "The evidence does not supply the actual 2023 population estimates and the corresponding 2010–2015 life-expectancy values for enough countries to assess whether population size is meaningfully correlated with life expectancy.",
+          "No direct cross-country comparison or statistical relationship is provided in the excerpts."
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Cross-country 2023 population estimates paired with 2010–2015 life-expectancy values for the same countries, sufficient to judge correlation.",
+            "query": "Retrieve the relevant rows or summary from List_of_countries_by_population_(United_Nations) and List_of_countries_by_past_life_expectancy that show 2023 population estimates and 2010–2015 life expectancy values for multiple countries, especially a broad range of population sizes.",
+            "target_articles": [
+              "List_of_countries_by_population_(United_Nations).html",
+              "List_of_countries_by_past_life_expectancy.html"
+            ],
+            "keywords": [
+              "2023 population",
+              "2010–2015 life expectancy",
+              "country",
+              "population estimates",
+              "life expectancy values"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The excerpts only establish that one article contains population estimates and the other contains past life expectancy values, but they do not provide the concrete country-by-country figures needed to evaluate whether population size is meaningfully correlated with life expectancy. A conclusion about correlation would require the actual paired data or a summarized comparison. The date mismatch is visible in the source descriptions, but not enough paired data is available to determine the relationship."
+      }
+    ]
+  }
+}
