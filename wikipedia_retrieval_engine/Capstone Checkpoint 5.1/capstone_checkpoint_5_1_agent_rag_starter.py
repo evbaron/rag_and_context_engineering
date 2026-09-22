@@ -1,9 +1,10 @@
-r"""Checkpoint 5.1 retrieval-only agent benchmark over the Wikipedia GT set.
+r"""Checkpoint 5.1 TOC-and-table agent benchmark over the Wikipedia GT set.
 
 This remains the course-facing harness. Production state, nodes, routing, retrieval,
 and logging live in ``wiki_agents`` and ``retrievers``.
 
-The benchmark intentionally disables table requests. Its bounded workflow is:
+The benchmark loads normalized tables selected during TOC review and enables a
+bounded deterministic table-plan/execute/reassess branch. Its workflow is:
 
     section-aware vector search
         -> evidence assessment
@@ -13,15 +14,16 @@ The benchmark intentionally disables table requests. Its bounded workflow is:
         -> targeted multi-step section retrieval
         -> final evidence assessment
 
-Article names are routing handles only. The answer model receives accumulated section
-``EvidenceItem`` content—never full articles and never fixed leading-character slices.
+Article names are routing handles only. The answer model receives accumulated
+section and selected normalized-table ``EvidenceItem`` content—never full articles
+and never fixed leading-character slices.
 
 Run from ``wikipedia_retrieval_engine/``:
 
     python "Capstone Checkpoint 5.1/capstone_checkpoint_5_1_agent_rag_starter.py" \
         --gt-set "GT/wikipedia_GT.csv" \
-        --output-dir "Capstone Checkpoint 5.1/ragas_retrieval_only" \
-        --experiment-name agentic_sections_no_tables
+        --output-dir "Capstone Checkpoint 5.1/ragas_agent_toc_and_tables" \
+        --experiment-name agentic_toc_with_table_computation
 
 Use ``--limit 2`` for a smoke test or repeat ``--question-id GT01`` to select IDs.
 """
@@ -54,6 +56,7 @@ from wikipedia_retrieval_engine.retrievers.graph import GraphParams, build_or_lo
 from wikipedia_retrieval_engine.retrievers.llm import answer as answer_from_context
 from wikipedia_retrieval_engine.retrievers.multistep import MultiStepRetriever
 from wikipedia_retrieval_engine.retrievers.vector import VectorRetriever
+from wikipedia_retrieval_engine.utils.wiki_table_store import TableArtifactStore
 from wikipedia_retrieval_engine.utils.ragas_eval import (
     JUDGE_MODEL,
     LLM_MODEL,
@@ -70,6 +73,7 @@ from wikipedia_retrieval_engine.utils.ragas_eval import (
 )
 from wikipedia_retrieval_engine.wiki_agents.agent_graph import (
     build_retrieval_benchmark_graph,
+    retrieval_stage_name,
 )
 from wikipedia_retrieval_engine.wiki_agents.agentic_models import (
     AgentState,
@@ -105,19 +109,24 @@ SECTIONS_PER_GRAPH_NEIGHBOR = 2
 # award pages, medalist lists) from each contributing distractor chunks.
 MAX_GRAPH_SECTIONS = 4
 MULTISTEP_HITS_PER_REQUEST = 6
+MAX_TABLE_ROUNDS = 2
+MAX_TABLE_REQUESTS_PER_ROUND = 6
 GRAPH_PARAMS = GraphParams(
     max_bucket_size=50,
     min_shared=1,
     max_neighbors=5,
     max_neighbors_per_seed=3,
 )
-RECURSION_LIMIT = 12
+# Raised for the table branch: the node path is initial prefix + up to
+# max_table_rounds table-compute rounds + the repeated retrieval stages, each an
+# extra branch→assess pair, which exceeds the old cap of 12.
+RECURSION_LIMIT = 30
 
 _CONTEXT_SEPARATOR = "\n\n" + "=" * 80 + "\n\n"
 
 
 def format_section_evidence(evidence: list[EvidenceItem]) -> str:
-    """Format exactly the accumulated section evidence sent to the answer model."""
+    """Format accumulated section and normalized-table answer evidence."""
 
     blocks: list[str] = []
     for item in evidence:
@@ -140,15 +149,6 @@ def _required_articles(source_cell: str) -> list[str]:
     ]
 
 
-def _stage_name(retrieval_attempts: int) -> str:
-    if retrieval_attempts == 1:
-        return f"{INITIAL_RETRIEVER}_initial"
-    return {
-        2: "graph_seeded_sections",
-        3: "targeted_multistep_sections",
-    }.get(retrieval_attempts, f"retrieval_attempt_{retrieval_attempts}")
-
-
 def build_agentic_experiment(
     agent_graph,
     answer_llm,
@@ -156,7 +156,7 @@ def build_agentic_experiment(
     rate_limit_backoff: RateLimitBackoff,
     experiment_name: str,
 ):
-    """Create the RAGAS case function for the retrieval-only LangGraph."""
+    """Create the RAGAS case function for the TOC-and-table LangGraph."""
 
     @experiment()
     async def run_agentic_case(row: dict) -> dict:
@@ -211,7 +211,13 @@ def build_agentic_experiment(
         assessment = state["assessment"]
         history = state.get("assessment_history", [])
         route_trace = [
-            "ready_to_answer" if item.ready_to_answer else "need_more_evidence"
+            (
+                "ready_to_answer"
+                if item.ready_to_answer
+                else "need_table_reader"
+                if item.table_requests
+                else "need_more_evidence"
+            )
             for item in history
         ]
         stage_counts: dict[str, int] = {}
@@ -221,18 +227,41 @@ def build_agentic_experiment(
 
         # Phase 2 signal: which kept articles flagged that answering needs a table.
         reviews = state.get("article_reviews", [])
-        tables_flagged = any(r.needs_table_reader for r in reviews if r.relevant)
+        tables_flagged = any(
+            r.needs_table_reader or r.relevant_table_ids or r.relevant_table_names
+            for r in reviews
+            if r.relevant
+        )
         flagged_tables = sorted(
             {t for r in reviews if r.relevant for t in (r.relevant_table_names or [])}
+        )
+        flagged_table_ids = sorted(
+            {t for r in reviews if r.relevant for t in (r.relevant_table_ids or [])}
+        )
+        table_attempts = state.get("table_attempts", 0)
+        computed_table_evidence = [
+            item
+            for item in evidence
+            if item.metadata.get("retrieval_stage") == "table_computation"
+        ]
+        retrieval_terminal_stage = retrieval_stage_name(
+            attempts,
+            initial_retriever=INITIAL_RETRIEVER,
+            repeated_retrievers=REPEATED_RETRIEVERS,
+        )
+        terminal_stage = (
+            f"{retrieval_terminal_stage}+table_compute_{table_attempts}"
+            if table_attempts
+            else retrieval_terminal_stage
         )
 
         return {
             **row,
             "experiment_name": experiment_name,
-            "evaluation_mode": "agentic_section_evidence_no_tables",
+            "evaluation_mode": "agentic_toc_with_table_computation",
             "answer_model": LLM_MODEL,
             "judge_model": JUDGE_MODEL,
-            "retriever_kind": "vs_graph_multistep_sections",
+            "retriever_kind": "configurable_toc_sections_and_tables",
             "initial_retriever": INITIAL_RETRIEVER,
             "repeated_retrievers": "->".join(REPEATED_RETRIEVERS),
             "initial_article_top_k": INITIAL_ARTICLE_TOP_K,
@@ -242,7 +271,7 @@ def build_agentic_experiment(
             "max_graph_sections": MAX_GRAPH_SECTIONS,
             "multistep_hits_per_request": MULTISTEP_HITS_PER_REQUEST,
             "retrieval_attempts": attempts,
-            "terminal_stage": _stage_name(attempts),
+            "terminal_stage": terminal_stage,
             "evidence_ready": assessment.ready_to_answer,
             "route_trace": " -> ".join(route_trace),
             "assessment_explanation": assessment.explanation,
@@ -251,6 +280,12 @@ def build_agentic_experiment(
             ),
             "tables_flagged": tables_flagged,
             "flagged_tables": "; ".join(flagged_tables),
+            "flagged_table_ids": "; ".join(flagged_table_ids),
+            "table_attempts": table_attempts,
+            "table_computation_evidence_count": len(computed_table_evidence),
+            "computed_table_artifact_ids": "; ".join(
+                item.table_id or "" for item in computed_table_evidence
+            ),
             "required_articles": "; ".join(required_articles),
             "retrieved_articles": "; ".join(retrieved_articles),
             "retrieved_article_count": len(retrieved_articles),
@@ -276,7 +311,9 @@ async def main() -> None:
 
     gt_path = args.gt_set.expanduser().resolve()
     output_dir = args.output_dir.expanduser().resolve()
-    experiment_name = args.experiment_name.strip() or "agentic_sections_no_tables"
+    experiment_name = (
+        args.experiment_name.strip() or "agentic_toc_with_table_computation"
+    )
     rate_limit_backoff = RateLimitBackoff.from_args(args)
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -305,6 +342,9 @@ async def main() -> None:
     # markdown is never assembled into answer context.
     relationship_store = build_or_load_markdown_store()
     wiki_graph = build_or_load_graph(relationship_store)
+    # Rowspan-expanded table artifacts (aligned rows + cell markers) for the
+    # table-flagged JSON evidence and the deterministic executor.
+    table_store = TableArtifactStore.open()
     run_logger = AgentRunLogger()
     agent_graph = build_retrieval_benchmark_graph(
         retriever,
@@ -313,6 +353,7 @@ async def main() -> None:
         agent_llm,
         run_logger,
         markdown_store=relationship_store,
+        table_store=table_store,
         initial_retriever=INITIAL_RETRIEVER,
         repeated_retrievers=REPEATED_RETRIEVERS,
         initial_article_top_k=INITIAL_ARTICLE_TOP_K,
@@ -323,6 +364,8 @@ async def main() -> None:
         sections_per_neighbor=SECTIONS_PER_GRAPH_NEIGHBOR,
         max_graph_sections=MAX_GRAPH_SECTIONS,
         multistep_hits_per_request=MULTISTEP_HITS_PER_REQUEST,
+        max_table_rounds=MAX_TABLE_ROUNDS,
+        max_table_requests_per_round=MAX_TABLE_REQUESTS_PER_ROUND,
     )
 
     ragas_judge = make_judge()
@@ -335,7 +378,7 @@ async def main() -> None:
     )
 
     print(
-        f"Running retrieval-only agent on {len(dataset)} questions from {gt_path}\n"
+        f"Running TOC-and-table agent on {len(dataset)} questions from {gt_path}\n"
         f"  initial retriever={INITIAL_RETRIEVER}\n"
         f"  repeated retrievers={' -> '.join(REPEATED_RETRIEVERS)}\n"
         f"  initial article k={INITIAL_ARTICLE_TOP_K}\n"
@@ -344,7 +387,9 @@ async def main() -> None:
         f"  sections per graph neighbor={SECTIONS_PER_GRAPH_NEIGHBOR}\n"
         f"  max graph sections kept={MAX_GRAPH_SECTIONS}\n"
         f"  multistep hits per request={MULTISTEP_HITS_PER_REQUEST}\n"
-        f"  table requests=disabled\n"
+        f"  normalized table evidence=enabled\n"
+        f"  table computation rounds={MAX_TABLE_ROUNDS}\n"
+        f"  table requests per round={MAX_TABLE_REQUESTS_PER_ROUND}\n"
         f"  evidence logs={run_logger.run_directory}"
     )
     results = await agentic_experiment.arun(dataset)

@@ -24,7 +24,8 @@ import csv
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from collections import defaultdict
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 from urllib.error import HTTPError, URLError
@@ -148,6 +149,35 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         default=DEFAULT_TIMEOUT_SECONDS,
         help=f"HTTP timeout in seconds (default: {DEFAULT_TIMEOUT_SECONDS:g}).",
     )
+    parser.add_argument(
+        "--analytics",
+        action="store_true",
+        help="Query the OpenRouter analytics API (day x dimension usage) and exit.",
+    )
+    parser.add_argument(
+        "--analytics-days",
+        type=int,
+        default=14,
+        help="Analytics look-back window in days (default: 14).",
+    )
+    parser.add_argument(
+        "--analytics-dimension",
+        default="model",
+        help=(
+            "Analytics group-by dimension: model, app, provider, api_key_id, "
+            "origin, ... (default: model)."
+        ),
+    )
+    parser.add_argument(
+        "--analytics-granularity",
+        default="day",
+        help="Analytics time bucket: hour, day, week, month (default: day).",
+    )
+    parser.add_argument(
+        "--analytics-csv",
+        type=Path,
+        help="Optional path to write the raw day x dimension analytics rows as CSV.",
+    )
     return parser.parse_args(argv)
 
 
@@ -233,6 +263,47 @@ def api_get(
     except json.JSONDecodeError as exc:
         raise OpenRouterUsageError(
             f"OpenRouter returned non-JSON response for {path}: {body[:200]}"
+        ) from exc
+    if not isinstance(payload, dict):
+        raise OpenRouterUsageError(f"Unexpected response shape for {path}: {payload!r}")
+    return payload
+
+
+def api_post(
+    base_url: str,
+    path: str,
+    token: str,
+    body: dict[str, Any],
+    *,
+    timeout: float,
+) -> dict[str, Any]:
+    request = Request(
+        endpoint(base_url, path),
+        data=json.dumps(body).encode("utf-8"),
+        headers={
+            "Authorization": f"Bearer {token}",
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+        },
+        method="POST",
+    )
+    try:
+        with urlopen(request, timeout=timeout) as response:
+            body_text = response.read().decode("utf-8")
+    except HTTPError as exc:
+        detail = exc.read().decode("utf-8", errors="replace").strip()
+        message = f"OpenRouter returned HTTP {exc.code} for {path}"
+        if detail:
+            message = f"{message}: {detail}"
+        raise OpenRouterUsageError(message) from exc
+    except URLError as exc:
+        raise OpenRouterUsageError(f"Could not reach OpenRouter: {exc.reason}") from exc
+
+    try:
+        payload = json.loads(body_text)
+    except json.JSONDecodeError as exc:
+        raise OpenRouterUsageError(
+            f"OpenRouter returned non-JSON response for {path}: {body_text[:200]}"
         ) from exc
     if not isinstance(payload, dict):
         raise OpenRouterUsageError(f"Unexpected response shape for {path}: {payload!r}")
@@ -411,12 +482,156 @@ def warn_if_low(
         )
 
 
+ANALYTICS_METRICS = [
+    "request_count",
+    "total_usage",
+    "tokens_prompt",
+    "tokens_completion",
+    "tokens_total",
+    "cached_tokens",
+]
+
+
+def query_analytics(
+    base_url: str,
+    token: str,
+    *,
+    days: int,
+    dimension: str,
+    granularity: str,
+    timeout: float,
+) -> list[dict[str, Any]]:
+    """Return day x <dimension> usage rows from the OpenRouter analytics API.
+
+    Analytics requires a management key. Each row looks like
+    ``{"date__day": "...", "<dimension>": "...", "request_count": N, ...}``.
+    """
+    end = datetime.now(timezone.utc)
+    start = (end - timedelta(days=days)).replace(
+        hour=0, minute=0, second=0, microsecond=0
+    )
+    body = {
+        "metrics": ANALYTICS_METRICS,
+        "dimensions": [dimension],
+        "granularity": granularity,
+        "time_range": {
+            "start": start.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "end": end.strftime("%Y-%m-%dT%H:%M:%SZ"),
+        },
+        "limit": 1000,
+    }
+    payload = api_post(base_url, "/analytics/query", token, body, timeout=timeout)
+    data = payload.get("data", payload)
+    rows = data.get("data", data) if isinstance(data, dict) else data
+    if not isinstance(rows, list):
+        raise OpenRouterUsageError(
+            "OpenRouter analytics response did not contain a rows list."
+        )
+    return [row for row in rows if isinstance(row, dict)]
+
+
+def _metric(row: dict[str, Any], name: str) -> float:
+    number = as_number(row.get(name))
+    return 0.0 if number is None else number
+
+
+def print_analytics(rows: list[dict[str, Any]], dimension: str) -> None:
+    """Print per-dimension totals and daily totals with derived cost ratios."""
+    by_dim: dict[str, dict[str, float]] = defaultdict(lambda: defaultdict(float))
+    by_day: dict[str, dict[str, float]] = defaultdict(lambda: defaultdict(float))
+    for row in rows:
+        key = str(row.get(dimension) or "(none)")
+        day = str(row.get("date__day") or "")[:10]
+        for metric in ANALYTICS_METRICS:
+            value = _metric(row, metric)
+            by_dim[key][metric] += value
+            by_day[day][metric] += value
+
+    print(f"OpenRouter analytics - totals by {dimension}")
+    header = (
+        f"{dimension[:24]:24} {'reqs':>8} {'spend$':>10} {'prompt_tok':>12} "
+        f"{'compl_tok':>11} {'cached_tok':>11} {'$/1k_tok':>9} {'$/req':>9} {'cache%':>7}"
+    )
+    print(header)
+    print("-" * len(header))
+    for key, agg in sorted(
+        by_dim.items(), key=lambda item: item[1]["total_usage"], reverse=True
+    ):
+        reqs = agg["request_count"]
+        spend = agg["total_usage"]
+        total_tok = agg["tokens_total"]
+        prompt_tok = agg["tokens_prompt"]
+        cached = agg["cached_tokens"]
+        per_1k = (spend / total_tok * 1000) if total_tok else 0.0
+        per_req = (spend / reqs) if reqs else 0.0
+        cache_pct = (cached / prompt_tok * 100) if prompt_tok else 0.0
+        name = key if len(key) <= 24 else key[:23] + "*"
+        print(
+            f"{name:24} {reqs:>8,.0f} {spend:>10.4f} {prompt_tok:>12,.0f} "
+            f"{agg['tokens_completion']:>11,.0f} {cached:>11,.0f} "
+            f"{per_1k:>9.4f} {per_req:>9.5f} {cache_pct:>6.0f}%"
+        )
+
+    print()
+    print("Daily totals (all values combined)")
+    day_header = (
+        f"{'date':12} {'reqs':>8} {'spend$':>10} {'tokens_total':>13} {'cached_tok':>11}"
+    )
+    print(day_header)
+    print("-" * len(day_header))
+    for day in sorted(by_day):
+        agg = by_day[day]
+        if not agg["request_count"] and not agg["total_usage"]:
+            continue
+        print(
+            f"{day:12} {agg['request_count']:>8,.0f} {agg['total_usage']:>10.4f} "
+            f"{agg['tokens_total']:>13,.0f} {agg['cached_tokens']:>11,.0f}"
+        )
+
+
+def write_analytics_csv(
+    rows: list[dict[str, Any]], path: Path, dimension: str
+) -> None:
+    """Write the raw day x dimension rows so they can be pivoted for a report."""
+    path = path.expanduser().resolve()
+    path.parent.mkdir(parents=True, exist_ok=True)
+    columns = ["date__day", dimension, *ANALYTICS_METRICS]
+    with path.open("w", newline="", encoding="utf-8") as stream:
+        writer = csv.DictWriter(stream, fieldnames=columns, extrasaction="ignore")
+        writer.writeheader()
+        for row in rows:
+            writer.writerow({column: row.get(column) for column in columns})
+    print(f"\nAnalytics rows written to: {path}")
+
+
 def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv)
     load_env_files(args.env_file)
 
     try:
         management_key = get_optional_env(args.management_key_env)
+
+        if args.analytics:
+            if not management_key:
+                raise OpenRouterUsageError(
+                    "Analytics requires a management key. Set "
+                    f"{args.management_key_env} in your .env or environment."
+                )
+            rows = query_analytics(
+                args.base_url,
+                management_key,
+                days=args.analytics_days,
+                dimension=args.analytics_dimension,
+                granularity=args.analytics_granularity,
+                timeout=args.timeout,
+            )
+            if args.json:
+                print(json.dumps({"rows": rows}, indent=2, sort_keys=True))
+            else:
+                print_analytics(rows, args.analytics_dimension)
+            if args.analytics_csv:
+                write_analytics_csv(rows, args.analytics_csv, args.analytics_dimension)
+            return 0
 
         if args.list_keys:
             token = management_key or get_required_env(args.key_env)

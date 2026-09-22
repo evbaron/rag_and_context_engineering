@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import unittest
 from datetime import datetime
+from pathlib import Path
 from tempfile import TemporaryDirectory
 from unittest.mock import Mock
 
@@ -13,16 +14,24 @@ from wikipedia_retrieval_engine.retrievers.corpus import MarkdownArticleStore
 from wikipedia_retrieval_engine.retrievers.graph import GraphParams, WikiGraph
 from wikipedia_retrieval_engine.retrievers.multistep import MultiStepRetriever
 from wikipedia_retrieval_engine.retrievers.vector import VectorRetriever
+from wikipedia_retrieval_engine.utils.wiki_table_store import (
+    TableArtifactStore,
+    build_table_artifact_store,
+)
 from wikipedia_retrieval_engine.wiki_agents.agent_graph import (
     build_evidence_intake_graph,
     build_retrieval_benchmark_graph,
     make_retrieval_benchmark_router,
+    retrieval_stage_name,
 )
 from wikipedia_retrieval_engine.wiki_agents.agentic_models import (
     ArticleReview,
     ArticleReviewBatch,
     EvidenceAssessment,
     RetrievalRequest,
+    TablePredicate,
+    TableQueryPlan,
+    TableRequest,
     initial_agent_state,
 )
 from wikipedia_retrieval_engine.wiki_agents.run_logging import AgentRunLogger
@@ -152,6 +161,9 @@ class EvidenceIntakeGraphTests(unittest.TestCase):
             return []
 
         retriever.getArticleSectionsTopK.side_effect = sections_for
+        retriever.getArticleSectionTopK.side_effect = (
+            lambda query, article, section_title, k: sections_for(query, article, k)
+        )
 
         wiki_graph = Mock(spec=WikiGraph)
         wiki_graph.expand.return_value = [
@@ -255,6 +267,7 @@ class EvidenceIntakeGraphTests(unittest.TestCase):
                 llm,
                 logger,
                 markdown_store=markdown_store,
+                table_store=Mock(spec=TableArtifactStore),
                 graph_params=graph_params,
                 sections_per_neighbor=2,
                 multistep_hits_per_request=6,
@@ -287,6 +300,32 @@ class EvidenceIntakeGraphTests(unittest.TestCase):
 
 
 class ConfigurableRetrieverTests(unittest.TestCase):
+    def test_terminal_stage_name_uses_configured_retriever_sequence(self) -> None:
+        self.assertEqual(
+            retrieval_stage_name(
+                1,
+                initial_retriever="multistep_entity",
+                repeated_retrievers=("multistep", "graph_seeded"),
+            ),
+            "multistep_entity_initial",
+        )
+        self.assertEqual(
+            retrieval_stage_name(
+                2,
+                initial_retriever="vector",
+                repeated_retrievers=("multistep", "graph_seeded"),
+            ),
+            "targeted_multistep_sections",
+        )
+        self.assertEqual(
+            retrieval_stage_name(
+                3,
+                initial_retriever="vector",
+                repeated_retrievers=("multistep", "graph_seeded"),
+            ),
+            "graph_seeded_sections",
+        )
+
     def test_router_follows_configured_repeated_sequence(self) -> None:
         not_ready = EvidenceAssessment(
             ready_to_answer=False,
@@ -317,6 +356,213 @@ class ConfigurableRetrieverTests(unittest.TestCase):
             two_stage({"assessment": not_ready, "retrieval_attempts": 2}),
             "retrieve_multistep_sections",
         )
+
+    def test_router_prioritizes_table_work_and_honors_its_budget(self) -> None:
+        table_request = TableRequest(
+            missing_fact="Teams with at least 1,000 points",
+            source_article="Scores.html",
+            table_id="Scores.html::table-001",
+            operation="filter",
+            columns_needed=["Team", "Points"],
+        )
+        table_only = EvidenceAssessment(
+            ready_to_answer=False,
+            missing_requirements=["The qualifying rows are not computed."],
+            table_requests=[table_request],
+            explanation="Run the deterministic table executor.",
+        )
+        table_and_retrieval = table_only.model_copy(
+            update={
+                "retrieval_requests": [
+                    RetrievalRequest(missing_fact="More context", query="scores")
+                ]
+            }
+        )
+        router = make_retrieval_benchmark_router(
+            ("graph_seeded",),
+            max_table_rounds=1,
+        )
+
+        self.assertEqual(
+            router(
+                {
+                    "assessment": table_only,
+                    "retrieval_attempts": 1,
+                    "table_attempts": 0,
+                }
+            ),
+            "compute_requested_tables",
+        )
+        self.assertEqual(
+            router(
+                {
+                    "assessment": table_only,
+                    "retrieval_attempts": 1,
+                    "table_attempts": 1,
+                }
+            ),
+            "finish",
+        )
+        self.assertEqual(
+            router(
+                {
+                    "assessment": table_and_retrieval,
+                    "retrieval_attempts": 1,
+                    "table_attempts": 1,
+                }
+            ),
+            "retrieve_graph_seeded_sections",
+        )
+
+    def test_graph_executes_table_request_then_reassesses(self) -> None:
+        article_html = """
+        <div class="mw-parser-output">
+          <h2>Scores</h2>
+          <table class="wikitable"><caption>Season scores</caption>
+            <tr><th>Team</th><th>Points</th></tr>
+            <tr><td>Team A</td><td>1,200</td></tr>
+            <tr><td>Team B</td><td>800</td></tr>
+          </table>
+        </div>
+        """
+        candidate = ArticleCandidate(
+            source_article="Scores.html",
+            representative_chunk="The article contains season scores.",
+            representative_chunk_id="Scores.html#section-001-00",
+            section_title="Scores",
+            section_path=["Scores"],
+            retrieval_query="Which teams scored at least 1,000 points?",
+            discovered_by="vector",
+            rank=1,
+            raw_score=0.04,
+            score_semantics="lower_is_better",
+        )
+        retriever = Mock(spec=VectorRetriever)
+        retriever.getArticlesTopK.return_value = [candidate]
+        retriever.getArticleSectionTopK.return_value = [
+            (
+                Document(
+                    page_content="The season scores appear in the table.",
+                    metadata={
+                        "source": "Scores.html#section-001-00",
+                        "article": "Scores.html",
+                        "section_title": "Scores",
+                        "section_path": "Scores",
+                    },
+                ),
+                0.04,
+            )
+        ]
+        multistep = Mock(spec=MultiStepRetriever)
+        wiki_graph = Mock(spec=WikiGraph)
+        markdown_store = Mock(spec=MarkdownArticleStore)
+        markdown_store.has_article.return_value = True
+        markdown_store.load_metadata.return_value = {
+            "sections": [{"level": 2, "id": "Scores", "title": "Scores"}],
+            "tables": [],
+        }
+
+        with TemporaryDirectory() as directory:
+            wiki_dir = Path(directory) / "Wikipedia Library"
+            wiki_dir.mkdir()
+            (wiki_dir / "Scores.html").write_text(article_html, encoding="utf-8")
+            table_store = build_table_artifact_store(
+                wiki_dir,
+                Path(directory) / "table_artifacts",
+            )
+            table_entry = table_store.list_tables("Scores.html")[0]
+
+            review_runner = Mock()
+            review_runner.invoke.return_value = ArticleReviewBatch(
+                reviews=[
+                    ArticleReview(
+                        source_article="Scores.html",
+                        relevant=True,
+                        reason="The Scores section contains the required rows.",
+                        relevant_sections=["Scores"],
+                        relevant_table_ids=[table_entry.artifact_id],
+                        needs_table_reader=True,
+                    )
+                ]
+            )
+            assessment_runner = Mock()
+            assessment_runner.invoke.side_effect = [
+                EvidenceAssessment(
+                    ready_to_answer=False,
+                    supported_requirements=["The source table is present."],
+                    missing_requirements=["Qualifying rows must be filtered."],
+                    table_requests=[
+                        TableRequest(
+                            missing_fact="Teams with at least 1,000 points",
+                            source_article="Scores.html",
+                            table_id=table_entry.artifact_id,
+                            operation="filter",
+                            columns_needed=["Team", "Points"],
+                        )
+                    ],
+                    explanation="Compute the numeric threshold.",
+                ),
+                EvidenceAssessment(
+                    ready_to_answer=True,
+                    supported_requirements=["The filtered row is computed."],
+                    explanation="The computed table evidence is sufficient.",
+                ),
+            ]
+            planner_runner = Mock()
+            planner_runner.invoke.return_value = TableQueryPlan(
+                artifact_id=table_entry.artifact_id,
+                operation="filter",
+                selected_columns=["Team", "Points"],
+                predicates=[
+                    TablePredicate(column="Points", op="num_gte", value=1000)
+                ],
+            )
+            llm = Mock(spec=BaseChatModel)
+
+            def structured_output(schema: type, **kwargs):
+                self.assertEqual(kwargs, {"method": "function_calling"})
+                if schema is ArticleReviewBatch:
+                    return review_runner
+                if schema is EvidenceAssessment:
+                    return assessment_runner
+                if schema is TableQueryPlan:
+                    return planner_runner
+                raise AssertionError(f"Unexpected structured schema: {schema}")
+
+            llm.with_structured_output.side_effect = structured_output
+            logger = AgentRunLogger(
+                directory,
+                started_at=datetime(2026, 9, 22, 1, 2, 3),
+            )
+            graph = build_retrieval_benchmark_graph(
+                retriever,
+                multistep,
+                wiki_graph,
+                llm,
+                logger,
+                markdown_store=markdown_store,
+                table_store=table_store,
+                repeated_retrievers=(),
+                max_table_rounds=1,
+            )
+            result = graph.invoke(
+                initial_agent_state("Which teams scored at least 1,000 points?")
+            )
+            log_files = list(logger.run_directory.glob("*.evidence.json"))
+
+        computed = [
+            item
+            for item in result["evidence"]
+            if item.metadata.get("retrieval_stage") == "table_computation"
+        ]
+        self.assertEqual(result["table_attempts"], 1)
+        self.assertEqual(len(result["assessment_history"]), 2)
+        self.assertTrue(result["assessment"].ready_to_answer)
+        self.assertEqual(len(computed), 1)
+        self.assertIn("Team A", computed[0].content)
+        self.assertNotIn('"Team": "Team B"', computed[0].content)
+        self.assertTrue(computed[0].source_cells)
+        self.assertEqual(len(log_files), 1)
 
     def test_multistep_initial_decomposes_before_retrieval(self) -> None:
         candidate = ArticleCandidate(
@@ -392,6 +638,7 @@ class ConfigurableRetrieverTests(unittest.TestCase):
                 llm,
                 logger,
                 markdown_store=markdown_store,
+                table_store=Mock(spec=TableArtifactStore),
                 initial_retriever="multistep",
                 repeated_retrievers=("graph_seeded",),
             )
@@ -479,6 +726,7 @@ class ConfigurableRetrieverTests(unittest.TestCase):
                 llm,
                 logger,
                 markdown_store=markdown_store,
+                table_store=Mock(spec=TableArtifactStore),
                 initial_retriever="multistep_entity",
                 repeated_retrievers=("graph_seeded",),
             )

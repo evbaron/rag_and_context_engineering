@@ -1,0 +1,321 @@
+{
+  "run_id": "2026_09_22_14_07_10",
+  "question_number": 9,
+  "logged_at": "2026-09-22T14:15:20-04:00",
+  "question": "Using the Sport/Years table in the Wikipedia article on the Summer Olympic Games, which listed sports first entered the official Summer Olympic program in 1950 or later? Give the first year for each.",
+  "final_state": {
+    "question": "Using the Sport/Years table in the Wikipedia article on the Summer Olympic Games, which listed sports first entered the official Summer Olympic program in 1950 or later? Give the first year for each.",
+    "retrieval_attempts": 1,
+    "table_attempts": 1,
+    "article_candidates": [
+      {
+        "source_article": "Summer_Olympic_Games.html",
+        "representative_chunk": "Article: Summer Olympic Games\nSection: Lead\n\nMajor international multi-sport event\n\n\"Summer Olympics\" and \"Olympic Summer Games\" redirect here. For the video game, see Olympic Summer Games (video game). For the most recent event, see 2024 Summer Olympics.\n\nOlympic Games\n\nMain topics\n\nBids\n\nBoycotts\n\nCeremonies\n\nCharter\n\nDoping\n\nHost cities\n\nIFs\n\nIOC\n\nMedal\n\nMedal tables\n\nMedalists\n\nNOCs\n\nOlympism\n\nPierre de Coubertin Medal\n\nScandals and controversies\n\nSports\n\nSymbols (Mascots)\n\nTelevision\n\nTorch relays\n\nVenues\n\nVillages\n\nWomen participation\n\nGames\n\nSummer\n\nWinter\n\nYouth\n\nEsports\n\nContinental games\n\nAfrican\n\nAsian\n\nEuropean\n\nPacific\n\nPan American\n\nRegional games\n\nAmericas\n\nBolivarian\n\nCentral\n\nSouth\n\nAsia\n\nCentral\n\nEast\n\nSouth\n\nSoutheast\n\nWest\n\nOther\n\nEuropean small states\n\nMediterranean\n\nMicronesian\n\nDefunct games\n\nAncient\n\nEsports Series\n\nIntercalated\n\nv\n\nt\n\ne\n\nSummer Olympic Games\n\nThe Olympic flame in Paris during the 2024 Summer Olympics\n\nGames\n\n1896\n\n1900\n\n1904\n\n1908\n\n1912\n\n1920\n\n1924\n\n1928\n\n1932\n\n1936\n\n1948\n\n1952\n\n1956\n\n1960\n\n1964\n\n1968\n\n1972\n\n1976\n\n1980\n\n1984\n\n1988\n\n1992\n\n1996\n\n2000\n\n2004\n\n2008\n\n2012\n\n2016\n\n2020\n\n2024\n\nSports\n\nArchery\n\nArtistic swimming\n\nAthletics\n\nBadminton\n\nBaseball\n\nBasketball\n\nBeach volleyball\n\nBoxing\n\nCanoeing\n\nCycling\n\nDiving\n\nEquestrian\n\nField hockey\n\nFencing\n\nFootball\n\nGymnastics\n\nGolf\n\nHandball\n\nJudo\n\nLacrosse\n\nModern pentathlon\n\nRowing\n\nRugby sevens\n\nSailing\n\nShooting\n\nSkateboarding\n\nSoftball\n\nSport climbing\n\nSurfing\n\nSwimming\n\nTable tennis\n\nTaekwondo\n\nTennis\n\nTriathlon\n\nVolleyball\n\nWater polo\n\nWeightlifting\n\nWrestling\n\nThe Summer Olympic Games, also known as the Summer Olympics or the Games of the Olympiad, are a major international multi-sport event normally held once every four years. The inaugural Games took place in 1896 in Athens, then part of the Kingdom of Greece, and the most recent was held in 2024 in Paris, France. This was the first international multi-sport event of its kind, organised by the International Olympic Committee (IOC) founded by Pierre de Coubertin.[1] The tradition of awarding medals began in 1904; in each Olympic event, gold medals are awarded for first place, silver medals for second place, and bronze medals for third place. The Winter Olympic Games were created out of the success of the Summer Olympic Games, which are regarded as the largest and most prestigious multi-sport international event in the world.\n\nThe Summer Olympics have increased in scope from a 42-event competition programme in 1896 with fewer than 250 male competitors from 14 nations, to 339 events in 2021 (2020 Summer Olympics) with 11,319 competitors (almost half of whom were women) from 206 nations. The Games have been held in nineteen countries over five continents: four times in the United States (1904, 1932, 1984, and 1996), three times in Great Britain (1908, 1948, and 2012) and in France (1900, 1924, and 2024), twice each in Greece (1896 and 2004), Germany (1936 and 1972), Australia (1956 and 2000), and Japan (1964 and 2020), and once each in Sweden (1912), Belgium (1920), the Netherlands (1928), Finland (1952), Italy (1960), Mexico (1968), Canada (1976), Russia (1980), South Korea (1988), Spain (1992), China (2008), and Brazil (2016).\n\nLondon and Paris have hosted three times, while Los Angeles, Athens, and Tokyo have each hosted twice; Los Angeles will host the Games for the third time in 2028.[2] Only three countries have won at least one medal in every Summer Olympic Games: Australia, France and Great Britain. Only Great Britain has won at least a gold medal in every edition. The United States leads the all-time medal count for the Summer Olympics and has topped the medal table on 19 separate occasions, followed by the USSR (seven times, including the 1992 'Unified Team'), and France, Great Britain, Germany and China (once each).",
+        "representative_chunk_id": "Summer_Olympic_Games.html#section-000-00",
+        "section_title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Summer Olympic Games",
+        "discovered_by": "vector",
+        "rank": 1,
+        "raw_score": 0.6863224506378174,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "List_of_Olympic_Games_host_cities.html",
+        "representative_chunk": "Article: List of Olympic Games host cities\nSection: Olympic Games host cities > Host cities for Summer and Winter Olympic Games\n\nKey\n\n †  Cancelled\n\n §  Postponed\n\nCity\n\nCountry\n\nYear\n\nRegion\n\nSummer\n\nWinter\n\nOpening ceremony\n\nClosing ceremony\n\nRef.\n\nAthens\n\nGreece\n\n1896\n\nEurope\n\nS005I\n\n6 April 1896\n\n15 April 1896\n\nParis\n\nFrance\n\n1900\n\nS005II\n\n14 May 1900\n\n28 October 1900\n\nSt. Louis[a]\n\nUnited States\n\n1904\n\nNorth America\n\nS005III\n\n1 July 1904\n\n23 November 1904\n\nLondon[b]\n\nUnited Kingdom\n\n1908\n\nEurope\n\nS005IV\n\n27 April 1908\n\n31 October 1908\n\nStockholm\n\nSweden\n\n1912\n\nS005V\n\n6 July 1912\n\n22 July 1912\n\n†\n\nBerlin\n\nGermany\n\n1916\n\nS006VI\n\nCancelled due to WWI\n\n[11]\n\nAntwerp[c]\n\nBelgium\n\n1920\n\nS007VII\n\n14 August 1920\n\n12 September 1920\n\n[12]\n\nChamonix\n\nFrance\n\n1924\n\nW001I\n\n25 January 1924\n\n5 February 1924\n\n[13]\n\nParis\n\nS008VIII\n\n5 July 1924\n\n27 July 1924\n\n[14]\n\nSt. Moritz\n\n Switzerland\n\n1928\n\nW002II\n\n11 February 1928\n\n19 February 1928\n\n[15]\n\nAmsterdam\n\nNetherlands\n\nS009IX\n\n28 July 1928\n\n12 August 1928\n\n[16]\n\nLake Placid\n\nUnited States\n\n1932\n\nNorth America\n\nW003III\n\n4 February 1932\n\n13 February 1932\n\n[17]\n\nLos Angeles\n\nS010X\n\n30 July 1932\n\n14 August 1932\n\n[18]\n\nGarmisch-Partenkirchen\n\nGermany\n\n1936\n\nEurope\n\nW004IV\n\n6 February 1936\n\n16 February 1936\n\n[19]\n\nBerlin\n\nS011XI\n\n1 August 1936\n\n16 August 1936\n\n[20]\n\n†\n\nSapporo\n\nGarmisch-Partenkirchen[d]\n\nJapan\n\nGermany\n\n1940\n\nAsia\n\nEurope\n\nVW005a\n\nCancelled due to WWII\n\n[11]\n\n†\n\nTokyo\n\nHelsinki[e]\n\nJapan\n\nFinland\n\nXII\n\n†\n\nCortina d'Ampezzo\n\nItaly\n\n1944\n\nEurope\n\nV\n\n†\n\nLondon\n\nUnited Kingdom\n\nXIIIS013\n\nSt. Moritz\n\n Switzerland\n\n1948\n\nW005cV\n\n30 January 1948\n\n8 February 1948\n\nLondon\n\nUnited Kingdom\n\nS014XIV\n\n29 July 1948\n\n14 August 1948\n\nOslo\n\nNorway\n\n1952\n\nW006VI\n\n14 February 1952\n\n25 February 1952\n\nHelsinki\n\nFinland\n\nS015XV\n\n19 July 1952\n\n3 August 1952\n\nCortina d'Ampezzo\n\nItaly\n\n1956\n\nW007VII\n\n26 January 1956\n\n5 February 1956\n\nMelbourne\n\nStockholm[f]\n\nAustralia\n\nSweden\n\nOceania\n\nEurope\n\nS016XVI\n\n22 November 1956\n\n10 June 1956\n\n8 December 1956\n\n17 June 1956\n\n[22]\n\nSquaw Valley[g]\n\nUnited States\n\n1960\n\nNorth America\n\nW008VIII\n\n18 February 1960\n\n28 February 1960\n\nRome\n\nItaly\n\nEurope\n\nS017XVII\n\n27 August 1960\n\n11 September 1960\n\nInnsbruck\n\nAustria\n\n1964\n\nW009IX\n\n29 January 1964\n\n9 February 1964\n\nTokyo\n\nJapan\n\nAsia\n\nS018XVIII\n\n10 October 1964\n\n24 October 1964\n\nGrenoble\n\nFrance\n\n1968\n\nEurope\n\nW010X\n\n6 February 1968\n\n18 February 1968\n\nMexico City\n\nMexico\n\nNorth America\n\nS019XIX\n\n12 October 1968\n\n27 October 1968\n\nSapporo\n\nJapan\n\n1972\n\nAsia\n\nW011XI\n\n3 February 1972\n\n13 February 1972\n\nMunich\n\nWest Germany\n\nEurope\n\nS020XX\n\n26 August 1972\n\n11 September 1972[h]\n\nInnsbruck[i]\n\nAustria\n\n1976\n\nW012XII\n\n4 February 1976\n\n15 February 1976\n\nMontreal\n\nCanada\n\nNorth America\n\nS021XXI\n\n17 July 1976\n\n1 August 1976\n\nLake Placid\n\nUnited States\n\n1980\n\nW013XIII\n\n13 February 1980\n\n24 February 1980\n\nMoscow\n\nSoviet Union[j]\n\nEurope\n\nS022XXII\n\n19 July 1980\n\n3 August 1980\n\nSarajevo\n\nYugoslavia[k]\n\n1984\n\nW014XIV\n\n8 February 1984\n\n19 February 1984\n\nLos Angeles\n\nUnited States\n\nNorth America\n\nS023XXIII\n\n28 July 1984\n\n12 August 1984\n\nCalgary\n\nCanada\n\n1988\n\nW015XV\n\n13 February 1988\n\n28 February 1988\n\nSeoul\n\nSouth Korea\n\nAsia\n\nS024XXIV\n\n17 September 1988\n\n2 October 1988\n\nAlbertville\n\nFrance\n\n1992\n\nEurope\n\nW016XVI\n\n8 February 1992\n\n23 February 1992\n\nBarcelona\n\nSpain\n\nS025XXV\n\n25 July 1992\n\n9 August 1992\n\nLillehammer\n\nNorway\n\n1994\n\nW017XVII\n\n12 February 1994\n\n27 February 1994\n\nAtlanta\n\nUnited States\n\n1996\n\nNorth America\n\nS026XXVI\n\n19 July 1996\n\n4 August 1996\n\nNagano\n\nJapan\n\n1998\n\nAsia\n\nW018XVIII\n\n7 February 1998\n\n22 February 1998\n\nSydney\n\nAustralia\n\n2000\n\nOceania\n\nS027XXVII\n\n15 September 2000\n\n1 October 2000\n\nSalt Lake City\n\nUnited States\n\n2002\n\nNorth America\n\nW019XIX\n\n8 February 2002\n\n24 February 2002\n\nAthens\n\nGreece\n\n2004\n\nEurope\n\nS028XXVIII\n\n13 August 2004\n\n29 August 2004\n\nTurin\n\nItaly\n\n2006\n\nW020XX\n\n10 February 2006\n\n26 February 2006\n\nBeijing[l]\n\nChina\n\n2008\n\nAsia\n\nS029XXIX\n\n8 August 2008\n\n24 August 2008\n\n[24]\n\nVancouver\n\nCanada\n\n2010\n\nNorth America\n\nW021XXI\n\n12 February 2010\n\n28 February 2010\n\nLondon\n\nUnited Kingdom\n\n2012\n\nEurope\n\nS030XXX\n\n27 July 2012\n\n12 August 2012\n\nSochi\n\nRussia[j]\n\n2014\n\nW022XXII\n\n7 February 2014\n\n23 February 2014\n\nRio de Janeiro\n\nBrazil\n\n2016\n\nSouth America\n\nS031XXXI\n\n5 August 2016\n\n21 August 2016\n\nPyeongchang\n\nSouth Korea\n\n2018\n\nAsia\n\nW023XXIII\n\n9 February 2018\n\n25 February 2018\n\n§\n\nTokyo\n\nJapan\n\n2020\n\nS032XXXII\n\n23 July 2021[m]\n\n8 August 2021[m]\n\nBeijing\n\nChina\n\n2022\n\nW024XXIV\n\n4 February 2022\n\n20 February 2022\n\nParis[n]\n\nFrance\n\n2024\n\nEurope\n\nS033XXXIII\n\n26 July 2024\n\n11 August 2024\n\nMilan\n\nCortina d'Ampezzo\n\nItaly\n\n2026\n\nW025XXV\n\n6 February 2026\n\n22 February 2026\n\nLos Angeles\n\nUnited States\n\n2028\n\nNorth America\n\nS034XXXIV\n\n14 July 2028\n\n30 July 2028\n\nFrench Alps[o]\n\nFrance\n\n2030\n\nEurope\n\nW026XXVI\n\n1 February 2030\n\n17 February 2030\n\nBrisbane\n\nAustralia\n\n2032\n\nOceania\n\nS035XXXV\n\n23 July 2032\n\n8 August 2032\n\nSalt Lake City\n\nUnited States\n\n2034\n\nNorth America\n\nW027XXVII\n\n3 February 2034\n\n19 February 2034\n\nThe 1906 Intercalated Games, which took place in Athens, are no longer officially recognized by the IOC as an official Olympic Games.\n\nThe IOC has also entered \"privileged dialogue\" with Switzerland for the 2038 Winter Games.[27]",
+        "representative_chunk_id": "List_of_Olympic_Games_host_cities.html#section-001-00",
+        "section_title": "Host cities for Summer and Winter Olympic Games",
+        "section_path": [
+          "Olympic Games host cities",
+          "Host cities for Summer and Winter Olympic Games"
+        ],
+        "retrieval_query": "Summer Olympic Games",
+        "discovered_by": "vector",
+        "rank": 2,
+        "raw_score": 0.7403545379638672,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Winter_Olympic_Games.html",
+        "representative_chunk": "Article: Winter Olympic Games\nSection: Sports > Current sports\n\nSport\n\nYears\n\nEvents\n\nEvents list\n\nAlpine skiing\n\nSince 1936\n\n10[170]\n\nMen's: downhill, super G, giant slalom, slalom, alpine combined.\n\nWomen's: downhill, super G, giant slalom, slalom, alpine combined.\n\nMixed parallel slalom.\n\nBiathlon\n\nSince 1960[b]\n\n11[171]\n\nMen's: sprint 10 km, individual 20 km, pursuit 12.5 km, mass start 15 km, relay 4×7.5 km.\n\nWomen's: sprint 7.5 km, individual 15 km, pursuit 10 km, mass start 12.5 km, relay 4×6 km.\n\nMixed relay 4×6 km.\n\nBobsleigh\n\n1924–1956, since 1964\n\n4[172]\n\nMen's: four-man race, two-man race. Women's: two-woman race, monobob race.\n\nCross-country skiing\n\nSince 1924\n\n12[173]\n\nMen's: sprint, team sprint, 15 km, 30 km skiathlon, 50 km mass start, 4×10 km relay.\n\nWomen's: sprint, team sprint, 10 km, 15 km skiathlon, 30 km mass start, 4×5 km relay.\n\nCurling\n\n1924, since 1998\n\n3[174]\n\nMen's, women's and mixed doubles tournaments.\n\nFigure skating\n\nSince 1924[i]\n\n5[175]\n\nMen's singles. Women's singles. Pairs. Ice dancing. Team event.\n\nFreestyle skiing\n\nSince 1992\n\n15[176]\n\nMen's: aerials, moguls, ski cross, halfpipe, big air, slopestyle.\n\nWomen's: aerials, moguls, ski cross, halfpipe, big air, slopestyle.\n\nMixed aerials.\n\nIce hockey\n\nSince 1924[ii]\n\n2[177]\n\nMen's and women's tournaments.\n\nLuge\n\nSince 1964\n\n5[178]\n\nMen's singles, Women's singles, Men's doubles, Women's doubles, mixed team relay.\n\nNordic combined\n\nSince 1924\n\n3[179]\n\nMen's 10 km individual normal hill, 10 km individual large hill, team 4×5 km large hill.\n\nShort track speed skating\n\nSince 1992\n\n9[180]\n\nMen's: 500 m, 1000 m, 1500 m, 5000 m relay.\n\nWomen's: 500 m, 1000 m, 1500 m, 3000 m relay.\n\nMixed 2000 m relay.\n\nSkeleton\n\n1928, 1948, Since 2002\n\n3[181]\n\nMen's and women's events.\n\nSki jumping\n\nSince 1924\n\n6[182]\n\nMen's: individual normal hill, individual large hill, team large hill.\n\nWomen's: individual normal hill.\n\nMixed team normal hill.\n\nSki mountaineering\n\nSince 2026[iii]\n\n3[183]\n\nMen's sprint.\n\nWomen's sprint.\n\nMixed relay.\n\nSnowboarding\n\nSince 1998\n\n11[184]\n\nMen's: snowboard cross, parallel, half-pipe, slopestyle, big air.\n\nWomen's: snowboard cross, parallel, half-pipe, slopestyle, big air.\n\nMixed snowboard cross.\n\nSpeed skating\n\nSince 1924\n\n14[185]\n\nMen's: 500 m, 1000 m, 1500 m, 5000 m, 10,000 m, mass start, team pursuit.\n\nWomen's: 500 m, 1000 m, 1500 m, 3000 m, 5000 m, mass start, team pursuit.\n\n^ Figure skating events were held at the 1908 and 1920 Summer Olympics.\n\n^ A men's ice hockey tournament was held at the 1920 Summer Olympics.\n\n^ Optional Sport at the 2026 Winter Olympics.",
+        "representative_chunk_id": "Winter_Olympic_Games.html#section-014-00",
+        "section_title": "Current sports",
+        "section_path": [
+          "Sports",
+          "Current sports"
+        ],
+        "retrieval_query": "Using the Sport/Years table in the Wikipedia article on the Summer Olympic Games, which listed sports first entered the official Summer Olympic program in 1950 or later? Give the first year for each.",
+        "discovered_by": "vector",
+        "rank": 3,
+        "raw_score": 0.8608185052871704,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "2020_Summer_Olympics.html",
+        "representative_chunk": "Article: 2020 Summer Olympics\nSection: The Games > Sports\n\nSee also: Olympic sports\n\nNippon Budokan\nAriake Arena\nAriake Gymnastics Centre\nTokyo Aquatics Centre\nYoyogi Gymnasium\nSaitama Super Arena\nRyogoku Kokugikan\nEnoshima Yacht Harbor, Kanagawa\nTsurigasaki Beach, Chiba\n\nThe event program for the Games was approved by the IOC executive board on June 9, 2017. IOC president Thomas Bach stated that their goal was to give the Games \"youthful\" and \"urban\" appeal, and to increase the number of female participants.[179][180]\n\nThe Games featured 339 medal events in 33 different sports, encompassing a total of 51 disciplines. Karate, sport climbing, surfing, and skateboarding made their Olympic debut, while baseball and softball also made a one-off return to the Summer Olympics for the first time since 2008. 15 new events within existing sports were also added, including 3×3 basketball, freestyle BMX, and the return of madison cycling, as well as nine new mixed events in several sports (table tennis, archery, judo, shooting (3), triathlon, 4 × 400 m relay running, and 4 × 100 m medley swimming).[181]\n\nIn the list below, the number of events in each discipline is noted in parentheses.[181]\n\n2020 Summer Olympic Sports program\n\nAquatics\n\n Artistic swimming (2)\n\n Diving (8)\n\n Marathon swimming (2)\n\n Swimming (35)\n\n Water polo (2)\n\n Archery (5)\n\n Athletics (48)\n\n Badminton (5)\n\nBaseball\n\n Baseball (1)\n\n Softball (1)\n\n Basketball\n\nBasketball (2)\n\n3×3 basketball (2)\n\n Boxing (13)\n\n Canoeing\n\nSlalom (4)\n\nSprint (12)\n\n Cycling\n\nBMX freestyle (2)\n\nBMX racing (2)\n\nMountain biking (2)\n\nRoad cycling (4)\n\nTrack cycling (12)\n\n Equestrian\n\nDressage (2)\n\nEventing (2)\n\nJumping (2)\n\n Fencing (12)\n\n Field hockey (2)\n\n Football (2)\n\n Golf (2)\n\n Gymnastics\n\nArtistic (14)\n\nRhythmic (2)\n\nTrampoline (2)\n\n Handball (2)\n\n Judo (15)\n\n Karate\n\nKata (2)\n\nKumite (6)\n\n Modern pentathlon (2)\n\n Rowing (14)\n\n Rugby sevens (2)\n\n Sailing (10)\n\n Shooting (15)\n\n Skateboarding (4)\n\n Sport climbing (2)\n\n Surfing (2)\n\n Table tennis (5)\n\n Taekwondo (8)\n\n Tennis (5)\n\n Triathlon (3)\n\n Volleyball\n\nVolleyball (2)\n\nBeach volleyball (2)\n\n Weightlifting (14)\n\n Wrestling\n\nFreestyle (12)\n\nGreco-Roman (6)",
+        "representative_chunk_id": "2020_Summer_Olympics.html#section-020-00",
+        "section_title": "Sports",
+        "section_path": [
+          "The Games",
+          "Sports"
+        ],
+        "retrieval_query": "Using the Sport/Years table in the Wikipedia article on the Summer Olympic Games, which listed sports first entered the official Summer Olympic program in 1950 or later? Give the first year for each.",
+        "discovered_by": "vector",
+        "rank": 4,
+        "raw_score": 0.8666402101516724,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "1988_Summer_Olympics.html",
+        "representative_chunk": "Article: 1988 Summer Olympics\nSection: Sports\n\nThis section may require cleanup to meet Wikipedia's quality standards. The specific problem is: Unusual bullet point format. Please help improve this section if you can. (August 2023) (Learn how and when to remove this message)\n\nThe 1988 Summer Olympics featured 23 different sports encompassing 31 disciplines, and medals were awarded in 237 events. In the list below, the number of events in each discipline is noted in parentheses.\n\nAquatics\n\n Diving (4)\n\n Swimming (31)\n\n Synchronized swimming (2)\n\n Water polo (1)\n\n Archery (4)\n\n Athletics (42)\n\n Basketball (2)\n\n Boxing (12)\n\n Canoeing (12)\n\n Cycling\n\nRoad (3)\n\nTrack (6)\n\n Equestrian\n\nDressage (2)\n\nEventing (2)\n\nShow jumping (2)\n\n Fencing (8)\n\n Field hockey (2)\n\n Football (1)\n\n Gymnastics\n\nArtistic (14)\n\nRhythmic (1)\n\n Handball (2)\n\n Judo (7)\n\n Modern pentathlon (2)\n\n Rowing (14)\n\n Sailing (8)\n\n Shooting (13)\n\n Table tennis (4)\n\n Tennis (4)\n\n Volleyball (2)\n\n Weightlifting (10)\n\n Wrestling\n\nFreestyle (10)\n\nGreco-Roman (10)\n\nErich Buljung shows a silver medal he won in the 10m air pistol competition at the 1988 Summer Olympics.",
+        "representative_chunk_id": "1988_Summer_Olympics.html#section-010-00",
+        "section_title": "Sports",
+        "section_path": [
+          "Sports"
+        ],
+        "retrieval_query": "Using the Sport/Years table in the Wikipedia article on the Summer Olympic Games, which listed sports first entered the official Summer Olympic program in 1950 or later? Give the first year for each.",
+        "discovered_by": "vector",
+        "rank": 5,
+        "raw_score": 0.8776707649230957,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      }
+    ],
+    "article_reviews": [
+      {
+        "source_article": "Summer_Olympic_Games.html",
+        "relevant": true,
+        "reason": "This article has the Sports section with the Sport, Years table needed to identify which sports first appeared in 1950 or later.",
+        "relevant_sections": [
+          "Sports"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [
+          "a1f3375102832f54dd7f5b64"
+        ],
+        "needs_table_reader": true
+      },
+      {
+        "source_article": "List_of_Olympic_Games_host_cities.html",
+        "relevant": false,
+        "reason": "This article is about host cities and does not contain the sports history table needed for the question.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Winter_Olympic_Games.html",
+        "relevant": false,
+        "reason": "This is about the Winter Olympics, not the Summer Olympic program asked about here.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "2020_Summer_Olympics.html",
+        "relevant": false,
+        "reason": "This article covers one edition of the Games, not the historical Sport/Years table for the Summer Olympic Games article.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "1988_Summer_Olympics.html",
+        "relevant": false,
+        "reason": "This article is about a single Summer Olympics edition and does not provide the requested historical sports table.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      }
+    ],
+    "selected_articles": [
+      "Summer_Olympic_Games.html"
+    ],
+    "rejected_articles": [
+      "List_of_Olympic_Games_host_cities.html",
+      "Winter_Olympic_Games.html",
+      "2020_Summer_Olympics.html",
+      "1988_Summer_Olympics.html"
+    ],
+    "evidence": [
+      {
+        "evidence_id": "Summer_Olympic_Games.html#section-009-00",
+        "source_article": "Summer_Olympic_Games.html",
+        "content": "Article: Summer Olympic Games\nSection: Sports\n\nMain article: Olympic sports\n\nThere has been a total of 42 sports, spanning 55 disciplines, included in the Olympic programme at one point or another in the history of the Games. The schedule has comprised 33 sports for the recent Summer Olympics (2020), with 32 sports planned for the next Summer Olympics (2024).\n\nThe various Olympic Sports federations are grouped under a common umbrella association, called the Association of Summer Olympic International Federations (ASOIF).\n\n  Current sport  \n  No longer included\n\nSport\nYears\n\n3x3 Basketball\nSince 2020\n\nArchery\n1900–1908, 1920, since 1972\n\nArtistic swimming\nSince 1984\n\nAthletics\nAll\n\nBadminton\nSince 1992\n\nBaseball\n1992–2008, 2020, 2028\n\nBasketball\nSince 1936\n\nBasque pelota\n1900\n\nBreaking\n2024\n\nBoxing\n1904, 1908, since 1920\n\nCanoeing\nSince 1936\n\nCricket\n1900, 2028\n\nCroquet\n1900\n\nCycling\nAll\n\nDiving\nSince 1904\n\nEquestrian\n1900, since 1912\n\nFencing\nAll\n\nField hockey\n1908, 1920, since 1928\n\nFlag football\n2028\n\nFootball\n1900–1928, since 1936\n\nGolf\n1900, 1904, since 2016\n\nGymnastics\nAll\n\nHandball\n1936, since 1972\n\nJeu de paume\n1908\n\nJudo\n1964, since 1972\n\nKarate\n2020\n\nLacrosse\n1904, 1908, 2028\n\nModern pentathlon\nSince 1912\n\nPolo\n1900, 1908, 1920, 1924, 1936\n\nRackets\n1908\n\nRoque\n1904\n\nRowing\nSince 1900\n\nRugby union\n1900, 1908, 1920, 1924\n\nRugby sevens\nSince 2016\n\nSailing\n1900, since 1908\n\nShooting\n1896, 1900, 1908–1924, since 1932\n\nSkateboarding\nSince 2020\n\nSoftball\n1996–2008, 2020, 2028\n\nSport climbing\nSince 2020\n\nSquash\n2028\n\nSurfing\nSince 2020\n\nSwimming\nAll\n\nTable tennis\nSince 1988\n\nTaekwondo\nSince 2000\n\nTennis\n1896–1924, since 1988\n\nTriathlon\nSince 2000\n\nTug of war\n1900–1920\n\nVolleyball\nSince 1964\n\nWater motorsports\n1908\n\nWater polo\nSince 1900\n\nWeightlifting\n1896, 1904, since 1920\n\nWrestling\n1896, since 1904",
+        "evidence_type": "text",
+        "title": "Sports",
+        "section_path": [
+          "Sports"
+        ],
+        "retrieval_query": "Using the Sport/Years table in the Wikipedia article on the Summer Olympic Games, which listed sports first entered the official Summer Olympic program in 1950 or later? Give the first year for each.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.6928961277008057,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Sports",
+          "needs_table_reader": true,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "a1f3375102832f54dd7f5b64"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Summer_Olympic_Games.html#table-001-87425e4487",
+        "source_article": "Summer_Olympic_Games.html",
+        "content": "Structured table (JSON rows, one object per row — read values directly from these rows; do not rely on prior knowledge).\n{\"artifact_id\": \"a1f3375102832f54dd7f5b64\", \"table_id\": \"table-001-87425e4487\", \"caption\": null, \"section\": \"Sports\", \"columns\": [\"Sport\", \"Years\"], \"legends\": [], \"rows\": [{\"row_number\": 1, \"values\": {\"Sport\": \"3x3 Basketball\", \"Years\": \"Since 2020\"}, \"semantic_signals\": {}}, {\"row_number\": 2, \"values\": {\"Sport\": \"Archery\", \"Years\": \"1900–1908, 1920, since 1972\"}, \"semantic_signals\": {}}, {\"row_number\": 3, \"values\": {\"Sport\": \"Artistic swimming\", \"Years\": \"Since 1984\"}, \"semantic_signals\": {}}, {\"row_number\": 4, \"values\": {\"Sport\": \"Athletics\", \"Years\": \"All\"}, \"semantic_signals\": {}}, {\"row_number\": 5, \"values\": {\"Sport\": \"Badminton\", \"Years\": \"Since 1992\"}, \"semantic_signals\": {}}, {\"row_number\": 6, \"values\": {\"Sport\": \"Baseball\", \"Years\": \"1992–2008, 2020, 2028\"}, \"semantic_signals\": {}}, {\"row_number\": 7, \"values\": {\"Sport\": \"Basketball\", \"Years\": \"Since 1936\"}, \"semantic_signals\": {}}, {\"row_number\": 8, \"values\": {\"Sport\": \"Basque pelota\", \"Years\": \"1900\"}, \"semantic_signals\": {\"Sport\": {\"source_cell\": \"table-001-87425e4487:r9:c1\", \"display_text\": \"Basque pelota\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#d3d3d3\", \"sort_value\": null, \"legend_matches\": []}, \"Years\": {\"source_cell\": \"table-001-87425e4487:r9:c2\", \"display_text\": \"1900\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#d3d3d3\", \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 9, \"values\": {\"Sport\": \"Breaking\", \"Years\": \"2024\"}, \"semantic_signals\": {\"Sport\": {\"source_cell\": \"table-001-87425e4487:r10:c1\", \"display_text\": \"Breaking\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#d3d3d3\", \"sort_value\": null, \"legend_matches\": []}, \"Years\": {\"source_cell\": \"table-001-87425e4487:r10:c2\", \"display_text\": \"2024\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#d3d3d3\", \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 10, \"values\": {\"Sport\": \"Boxing\", \"Years\": \"1904, 1908, since 1920\"}, \"semantic_signals\": {}}, {\"row_number\": 11, \"values\": {\"Sport\": \"Canoeing\", \"Years\": \"Since 1936\"}, \"semantic_signals\": {}}, {\"row_number\": 12, \"values\": {\"Sport\": \"Cricket\", \"Years\": \"1900, 2028\"}, \"semantic_signals\": {}}, {\"row_number\": 13, \"values\": {\"Sport\": \"Croquet\", \"Years\": \"1900\"}, \"semantic_signals\": {\"Sport\": {\"source_cell\": \"table-001-87425e4487:r14:c1\", \"display_text\": \"Croquet\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#d3d3d3\", \"sort_value\": null, \"legend_matches\": []}, \"Years\": {\"source_cell\": \"table-001-87425e4487:r14:c2\", \"display_text\": \"1900\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#d3d3d3\", \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 14, \"values\": {\"Sport\": \"Cycling\", \"Years\": \"All\"}, \"semantic_signals\": {}}, {\"row_number\": 15, \"values\": {\"Sport\": \"Diving\", \"Years\": \"Since 1904\"}, \"semantic_signals\": {}}, {\"row_number\": 16, \"values\": {\"Sport\": \"Equestrian\", \"Years\": \"1900, since 1912\"}, \"semantic_signals\": {}}, {\"row_number\": 17, \"values\": {\"Sport\": \"Fencing\", \"Years\": \"All\"}, \"semantic_signals\": {}}, {\"row_number\": 18, \"values\": {\"Sport\": \"Field hockey\", \"Years\": \"1908, 1920, since 1928\"}, \"semantic_signals\": {}}, {\"row_number\": 19, \"values\": {\"Sport\": \"Flag football\", \"Years\": \"2028\"}, \"semantic_signals\": {}}, {\"row_number\": 20, \"values\": {\"Sport\": \"Football\", \"Years\": \"1900–1928, since 1936\"}, \"semantic_signals\": {}}, {\"row_number\": 21, \"values\": {\"Sport\": \"Golf\", \"Years\": \"1900, 1904, since 2016\"}, \"semantic_signals\": {}}, {\"row_number\": 22, \"values\": {\"Sport\": \"Gymnastics\", \"Years\": \"All\"}, \"semantic_signals\": {}}, {\"row_number\": 23, \"values\": {\"Sport\": \"Handball\", \"Years\": \"1936, since 1972\"}, \"semantic_signals\": {}}, {\"row_number\": 24, \"values\": {\"Sport\": \"Jeu de paume\", \"Years\": \"1908\"}, \"semantic_signals\": {\"Sport\": {\"source_cell\": \"table-001-87425e4487:r25:c1\", \"display_text\": \"Jeu de paume\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#d3d3d3\", \"sort_value\": null, \"legend_matches\": []}, \"Years\": {\"source_cell\": \"table-001-87425e4487:r25:c2\", \"display_text\": \"1908\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#d3d3d3\", \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 25, \"values\": {\"Sport\": \"Judo\", \"Years\": \"1964, since 1972\"}, \"semantic_signals\": {}}, {\"row_number\": 26, \"values\": {\"Sport\": \"Karate\", \"Years\": \"2020\"}, \"semantic_signals\": {\"Sport\": {\"source_cell\": \"table-001-87425e4487:r27:c1\", \"display_text\": \"Karate\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#d3d3d3\", \"sort_value\": null, \"legend_matches\": []}, \"Years\": {\"source_cell\": \"table-001-87425e4487:r27:c2\", \"display_text\": \"2020\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#d3d3d3\", \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 27, \"values\": {\"Sport\": \"Lacrosse\", \"Years\": \"1904, 1908, 2028\"}, \"semantic_signals\": {}}, {\"row_number\": 28, \"values\": {\"Sport\": \"Modern pentathlon\", \"Years\": \"Since 1912\"}, \"semantic_signals\": {}}, {\"row_number\": 29, \"values\": {\"Sport\": \"Polo\", \"Years\": \"1900, 1908, 1920, 1924, 1936\"}, \"semantic_signals\": {\"Sport\": {\"source_cell\": \"table-001-87425e4487:r30:c1\", \"display_text\": \"Polo\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#d3d3d3\", \"sort_value\": null, \"legend_matches\": []}, \"Years\": {\"source_cell\": \"table-001-87425e4487:r30:c2\", \"display_text\": \"1900, 1908, 1920, 1924, 1936\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#d3d3d3\", \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 30, \"values\": {\"Sport\": \"Rackets\", \"Years\": \"1908\"}, \"semantic_signals\": {\"Sport\": {\"source_cell\": \"table-001-87425e4487:r31:c1\", \"display_text\": \"Rackets\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#d3d3d3\", \"sort_value\": null, \"legend_matches\": []}, \"Years\": {\"source_cell\": \"table-001-87425e4487:r31:c2\", \"display_text\": \"1908\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#d3d3d3\", \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 31, \"values\": {\"Sport\": \"Roque\", \"Years\": \"1904\"}, \"semantic_signals\": {\"Sport\": {\"source_cell\": \"table-001-87425e4487:r32:c1\", \"display_text\": \"Roque\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#d3d3d3\", \"sort_value\": null, \"legend_matches\": []}, \"Years\": {\"source_cell\": \"table-001-87425e4487:r32:c2\", \"display_text\": \"1904\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#d3d3d3\", \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 32, \"values\": {\"Sport\": \"Rowing\", \"Years\": \"Since 1900\"}, \"semantic_signals\": {}}]}\n(NOTE: showing 32 of 52 rows to fit the context budget; the deterministic table executor reads the full table.)",
+        "evidence_type": "table",
+        "title": "table-001-87425e4487",
+        "section_path": [
+          "Sports"
+        ],
+        "retrieval_query": "Using the Sport/Years table in the Wikipedia article on the Summer Olympic Games, which listed sports first entered the official Summer Olympic program in 1950 or later? Give the first year for each.",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "a1f3375102832f54dd7f5b64",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_id": "table-001-87425e4487",
+          "n_rows": 52,
+          "rows_rendered": 52,
+          "needs_table_reader": true
+        }
+      },
+      {
+        "evidence_id": "Summer_Olympic_Games.html#table-001-87425e4487#computed-table-r1-1-d013ce894c91",
+        "source_article": "Summer_Olympic_Games.html",
+        "content": "Deterministic table-computation result. Use the computed rows/calculation below rather than recomputing them.\n{\n  \"table_request\": {\n    \"missing_fact\": \"Identify all sports in the Summer_Olympic_Games.html Sport/Years table whose first entry into the official Summer Olympic program was in 1950 or later, and give the first year for each.\",\n    \"source_article\": \"Summer_Olympic_Games.html\",\n    \"table_id\": \"a1f3375102832f54dd7f5b64\",\n    \"expected_caption\": null,\n    \"operation\": \"filter\",\n    \"columns_needed\": [],\n    \"row_filters\": {},\n    \"comparison_key\": null\n  },\n  \"query_plan\": {\n    \"artifact_id\": \"a1f3375102832f54dd7f5b64\",\n    \"operation\": \"filter\",\n    \"selected_columns\": [\n      \"Sport\",\n      \"Years\"\n    ],\n    \"filters\": {},\n    \"predicates\": [\n      {\n        \"column\": \"Years\",\n        \"op\": \"year_min_gte\",\n        \"value\": 1950,\n        \"value2\": null\n      }\n    ],\n    \"group_by\": [],\n    \"calculation\": null,\n    \"calculation_column\": null,\n    \"sort_column\": null,\n    \"sort_direction\": null,\n    \"limit\": 100\n  },\n  \"result\": {\n    \"request_id\": \"table-r1-1-d013ce894c91\",\n    \"artifact_id\": \"a1f3375102832f54dd7f5b64\",\n    \"result_rows\": [\n      {\n        \"Sport\": \"3x3 Basketball\",\n        \"Years\": \"Since 2020\"\n      },\n      {\n        \"Sport\": \"Artistic swimming\",\n        \"Years\": \"Since 1984\"\n      },\n      {\n        \"Sport\": \"Badminton\",\n        \"Years\": \"Since 1992\"\n      },\n      {\n        \"Sport\": \"Baseball\",\n        \"Years\": \"1992–2008, 2020, 2028\"\n      },\n      {\n        \"Sport\": \"Breaking\",\n        \"Years\": \"2024\"\n      },\n      {\n        \"Sport\": \"Flag football\",\n        \"Years\": \"2028\"\n      },\n      {\n        \"Sport\": \"Judo\",\n        \"Years\": \"1964, since 1972\"\n      },\n      {\n        \"Sport\": \"Karate\",\n        \"Years\": \"2020\"\n      },\n      {\n        \"Sport\": \"Rugby sevens\",\n        \"Years\": \"Since 2016\"\n      },\n      {\n        \"Sport\": \"Skateboarding\",\n        \"Years\": \"Since 2020\"\n      },\n      {\n        \"Sport\": \"Softball\",\n        \"Years\": \"1996–2008, 2020, 2028\"\n      },\n      {\n        \"Sport\": \"Sport climbing\",\n        \"Years\": \"Since 2020\"\n      },\n      {\n        \"Sport\": \"Squash\",\n        \"Years\": \"2028\"\n      },\n      {\n        \"Sport\": \"Surfing\",\n        \"Years\": \"Since 2020\"\n      },\n      {\n        \"Sport\": \"Table tennis\",\n        \"Years\": \"Since 1988\"\n      },\n      {\n        \"Sport\": \"Taekwondo\",\n        \"Years\": \"Since 2000\"\n      },\n      {\n        \"Sport\": \"Triathlon\",\n        \"Years\": \"Since 2000\"\n      },\n      {\n        \"Sport\": \"Volleyball\",\n        \"Years\": \"Since 1964\"\n      }\n    ],\n    \"calculation\": null,\n    \"source_cells\": [\n      \"table-001-87425e4487:r2:c1\",\n      \"table-001-87425e4487:r2:c2\",\n      \"table-001-87425e4487:r4:c1\",\n      \"table-001-87425e4487:r4:c2\",\n      \"table-001-87425e4487:r6:c1\",\n      \"table-001-87425e4487:r6:c2\",\n      \"table-001-87425e4487:r7:c1\",\n      \"table-001-87425e4487:r7:c2\",\n      \"table-001-87425e4487:r10:c1\",\n      \"table-001-87425e4487:r10:c2\",\n      \"table-001-87425e4487:r20:c1\",\n      \"table-001-87425e4487:r20:c2\",\n      \"table-001-87425e4487:r26:c1\",\n      \"table-001-87425e4487:r26:c2\",\n      \"table-001-87425e4487:r27:c1\",\n      \"table-001-87425e4487:r27:c2\",\n      \"table-001-87425e4487:r35:c1\",\n      \"table-001-87425e4487:r35:c2\",\n      \"table-001-87425e4487:r38:c1\",\n      \"table-001-87425e4487:r38:c2\",\n      \"table-001-87425e4487:r39:c1\",\n      \"table-001-87425e4487:r39:c2\",\n      \"table-001-87425e4487:r40:c1\",\n      \"table-001-87425e4487:r40:c2\",\n      \"table-001-87425e4487:r41:c1\",\n      \"table-001-87425e4487:r41:c2\",\n      \"table-001-87425e4487:r42:c1\",\n      \"table-001-87425e4487:r42:c2\",\n      \"table-001-87425e4487:r44:c1\",\n      \"table-001-87425e4487:r44:c2\",\n      \"table-001-87425e4487:r45:c1\",\n      \"table-001-87425e4487:r45:c2\",\n      \"table-001-87425e4487:r47:c1\",\n      \"table-001-87425e4487:r47:c2\",\n      \"table-001-87425e4487:r49:c1\",\n      \"table-001-87425e4487:r49:c2\"\n    ],\n    \"cell_details\": [\n      {\n        \"source_cell\": \"table-001-87425e4487:r2:c1\",\n        \"row_number\": 1,\n        \"column\": \"Sport\",\n        \"text\": \"3x3 Basketball\",\n        \"display_text\": \"3x3 Basketball\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r2:c2\",\n        \"row_number\": 1,\n        \"column\": \"Years\",\n        \"text\": \"Since 2020\",\n        \"display_text\": \"Since 2020\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r4:c1\",\n        \"row_number\": 3,\n        \"column\": \"Sport\",\n        \"text\": \"Artistic swimming\",\n        \"display_text\": \"Artistic swimming\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r4:c2\",\n        \"row_number\": 3,\n        \"column\": \"Years\",\n        \"text\": \"Since 1984\",\n        \"display_text\": \"Since 1984\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r6:c1\",\n        \"row_number\": 5,\n        \"column\": \"Sport\",\n        \"text\": \"Badminton\",\n        \"display_text\": \"Badminton\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r6:c2\",\n        \"row_number\": 5,\n        \"column\": \"Years\",\n        \"text\": \"Since 1992\",\n        \"display_text\": \"Since 1992\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r7:c1\",\n        \"row_number\": 6,\n        \"column\": \"Sport\",\n        \"text\": \"Baseball\",\n        \"display_text\": \"Baseball\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r7:c2\",\n        \"row_number\": 6,\n        \"column\": \"Years\",\n        \"text\": \"1992–2008, 2020, 2028\",\n        \"display_text\": \"1992–2008, 2020, 2028\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r10:c1\",\n        \"row_number\": 9,\n        \"column\": \"Sport\",\n        \"text\": \"Breaking\",\n        \"display_text\": \"Breaking\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": \"#d3d3d3\",\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r10:c2\",\n        \"row_number\": 9,\n        \"column\": \"Years\",\n        \"text\": \"2024\",\n        \"display_text\": \"2024\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": \"#d3d3d3\",\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r20:c1\",\n        \"row_number\": 19,\n        \"column\": \"Sport\",\n        \"text\": \"Flag football\",\n        \"display_text\": \"Flag football\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r20:c2\",\n        \"row_number\": 19,\n        \"column\": \"Years\",\n        \"text\": \"2028\",\n        \"display_text\": \"2028\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r26:c1\",\n        \"row_number\": 25,\n        \"column\": \"Sport\",\n        \"text\": \"Judo\",\n        \"display_text\": \"Judo\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r26:c2\",\n        \"row_number\": 25,\n        \"column\": \"Years\",\n        \"text\": \"1964, since 1972\",\n        \"display_text\": \"1964, since 1972\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r27:c1\",\n        \"row_number\": 26,\n        \"column\": \"Sport\",\n        \"text\": \"Karate\",\n        \"display_text\": \"Karate\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": \"#d3d3d3\",\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r27:c2\",\n        \"row_number\": 26,\n        \"column\": \"Years\",\n        \"text\": \"2020\",\n        \"display_text\": \"2020\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": \"#d3d3d3\",\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r35:c1\",\n        \"row_number\": 34,\n        \"column\": \"Sport\",\n        \"text\": \"Rugby sevens\",\n        \"display_text\": \"Rugby sevens\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r35:c2\",\n        \"row_number\": 34,\n        \"column\": \"Years\",\n        \"text\": \"Since 2016\",\n        \"display_text\": \"Since 2016\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r38:c1\",\n        \"row_number\": 37,\n        \"column\": \"Sport\",\n        \"text\": \"Skateboarding\",\n        \"display_text\": \"Skateboarding\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r38:c2\",\n        \"row_number\": 37,\n        \"column\": \"Years\",\n        \"text\": \"Since 2020\",\n        \"display_text\": \"Since 2020\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r39:c1\",\n        \"row_number\": 38,\n        \"column\": \"Sport\",\n        \"text\": \"Softball\",\n        \"display_text\": \"Softball\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r39:c2\",\n        \"row_number\": 38,\n        \"column\": \"Years\",\n        \"text\": \"1996–2008, 2020, 2028\",\n        \"display_text\": \"1996–2008, 2020, 2028\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r40:c1\",\n        \"row_number\": 39,\n        \"column\": \"Sport\",\n        \"text\": \"Sport climbing\",\n        \"display_text\": \"Sport climbing\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r40:c2\",\n        \"row_number\": 39,\n        \"column\": \"Years\",\n        \"text\": \"Since 2020\",\n        \"display_text\": \"Since 2020\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r41:c1\",\n        \"row_number\": 40,\n        \"column\": \"Sport\",\n        \"text\": \"Squash\",\n        \"display_text\": \"Squash\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r41:c2\",\n        \"row_number\": 40,\n        \"column\": \"Years\",\n        \"text\": \"2028\",\n        \"display_text\": \"2028\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r42:c1\",\n        \"row_number\": 41,\n        \"column\": \"Sport\",\n        \"text\": \"Surfing\",\n        \"display_text\": \"Surfing\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r42:c2\",\n        \"row_number\": 41,\n        \"column\": \"Years\",\n        \"text\": \"Since 2020\",\n        \"display_text\": \"Since 2020\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r44:c1\",\n        \"row_number\": 43,\n        \"column\": \"Sport\",\n        \"text\": \"Table tennis\",\n        \"display_text\": \"Table tennis\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r44:c2\",\n        \"row_number\": 43,\n        \"column\": \"Years\",\n        \"text\": \"Since 1988\",\n        \"display_text\": \"Since 1988\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r45:c1\",\n        \"row_number\": 44,\n        \"column\": \"Sport\",\n        \"text\": \"Taekwondo\",\n        \"display_text\": \"Taekwondo\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r45:c2\",\n        \"row_number\": 44,\n        \"column\": \"Years\",\n        \"text\": \"Since 2000\",\n        \"display_text\": \"Since 2000\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r47:c1\",\n        \"row_number\": 46,\n        \"column\": \"Sport\",\n        \"text\": \"Triathlon\",\n        \"display_text\": \"Triathlon\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r47:c2\",\n        \"row_number\": 46,\n        \"column\": \"Years\",\n        \"text\": \"Since 2000\",\n        \"display_text\": \"Since 2000\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r49:c1\",\n        \"row_number\": 48,\n        \"column\": \"Sport\",\n        \"text\": \"Volleyball\",\n        \"display_text\": \"Volleyball\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-87425e4487:r49:c2\",\n        \"row_number\": 48,\n        \"column\": \"Years\",\n        \"text\": \"Since 1964\",\n        \"display_text\": \"Since 1964\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      }\n    ],\n    \"sufficient\": true,\n    \"warnings\": []\n  }\n}",
+        "evidence_type": "table",
+        "title": "Computed table result: Identify all sports in the Summer_Olympic_Games.html Sport/Years table whose first entry into the official Summer Olympic program was in 1950 or later, and give the first year for each.",
+        "section_path": [
+          "Sports"
+        ],
+        "retrieval_query": "Using the Sport/Years table in the Wikipedia article on the Summer Olympic Games, which listed sports first entered the official Summer Olympic program in 1950 or later? Give the first year for each.",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "a1f3375102832f54dd7f5b64",
+        "source_cells": [
+          "table-001-87425e4487:r2:c1",
+          "table-001-87425e4487:r2:c2",
+          "table-001-87425e4487:r4:c1",
+          "table-001-87425e4487:r4:c2",
+          "table-001-87425e4487:r6:c1",
+          "table-001-87425e4487:r6:c2",
+          "table-001-87425e4487:r7:c1",
+          "table-001-87425e4487:r7:c2",
+          "table-001-87425e4487:r10:c1",
+          "table-001-87425e4487:r10:c2",
+          "table-001-87425e4487:r20:c1",
+          "table-001-87425e4487:r20:c2",
+          "table-001-87425e4487:r26:c1",
+          "table-001-87425e4487:r26:c2",
+          "table-001-87425e4487:r27:c1",
+          "table-001-87425e4487:r27:c2",
+          "table-001-87425e4487:r35:c1",
+          "table-001-87425e4487:r35:c2",
+          "table-001-87425e4487:r38:c1",
+          "table-001-87425e4487:r38:c2",
+          "table-001-87425e4487:r39:c1",
+          "table-001-87425e4487:r39:c2",
+          "table-001-87425e4487:r40:c1",
+          "table-001-87425e4487:r40:c2",
+          "table-001-87425e4487:r41:c1",
+          "table-001-87425e4487:r41:c2",
+          "table-001-87425e4487:r42:c1",
+          "table-001-87425e4487:r42:c2",
+          "table-001-87425e4487:r44:c1",
+          "table-001-87425e4487:r44:c2",
+          "table-001-87425e4487:r45:c1",
+          "table-001-87425e4487:r45:c2",
+          "table-001-87425e4487:r47:c1",
+          "table-001-87425e4487:r47:c2",
+          "table-001-87425e4487:r49:c1",
+          "table-001-87425e4487:r49:c2"
+        ],
+        "metadata": {
+          "retrieval_stage": "table_computation",
+          "table_request_id": "table-r1-1-d013ce894c91",
+          "operation": "filter",
+          "calculation": null,
+          "table_computation_sufficient": true,
+          "warnings": []
+        }
+      }
+    ],
+    "assessment": {
+      "ready_to_answer": true,
+      "supported_requirements": [
+        "The Summer_Olympic_Games.html Sport/Years table identifies sports whose first listed year is 1950 or later.",
+        "The computed table result provides the complete filtered set of sports meeting the 1950-or-later criterion and their first years."
+      ],
+      "missing_requirements": [],
+      "retrieval_requests": [],
+      "table_requests": [],
+      "unresolved_conflicts": [],
+      "explanation": "The supplied deterministic table-computation result is sufficient to answer the question directly. It lists every sport in the Summer Olympic Games Sport/Years table whose first entry into the official Summer Olympic program was 1950 or later, along with the corresponding year(s)."
+    },
+    "assessment_history": [
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "The source article Summer_Olympic_Games.html is relevant and contains the Sports section with the Sport, Years table.",
+          "The table excerpt supports identifying several sports and their first listed years, including examples like 3x3 Basketball (2020), Artistic swimming (1984), Badminton (1992), Baseball (1992), and others."
+        ],
+        "missing_requirements": [
+          "The full set of sports that first entered the official Summer Olympic program in 1950 or later cannot be determined from the truncated excerpt alone; the remaining rows of the Sport/Years table are needed to find every qualifying sport and its first year."
+        ],
+        "retrieval_requests": [],
+        "table_requests": [
+          {
+            "missing_fact": "Identify all sports in the Summer_Olympic_Games.html Sport/Years table whose first entry into the official Summer Olympic program was in 1950 or later, and give the first year for each.",
+            "source_article": "Summer_Olympic_Games.html",
+            "table_id": "a1f3375102832f54dd7f5b64",
+            "expected_caption": null,
+            "operation": "filter",
+            "columns_needed": [],
+            "row_filters": {},
+            "comparison_key": null
+          }
+        ],
+        "unresolved_conflicts": [],
+        "explanation": "The evidence clearly shows the relevant article and table, but only a partial set of rows is visible in the excerpt. Because the question asks for all listed sports meeting a year threshold, we need table computation over the full table (or the missing rows) to ensure completeness. The current excerpt is not sufficient to confidently enumerate every qualifying sport."
+      },
+      {
+        "ready_to_answer": true,
+        "supported_requirements": [
+          "The Summer_Olympic_Games.html Sport/Years table identifies sports whose first listed year is 1950 or later.",
+          "The computed table result provides the complete filtered set of sports meeting the 1950-or-later criterion and their first years."
+        ],
+        "missing_requirements": [],
+        "retrieval_requests": [],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The supplied deterministic table-computation result is sufficient to answer the question directly. It lists every sport in the Summer Olympic Games Sport/Years table whose first entry into the official Summer Olympic program was 1950 or later, along with the corresponding year(s)."
+      }
+    ]
+  }
+}

@@ -26,6 +26,7 @@ from ragas.metrics import DiscreteMetric
 
 from retrievers import build_or_load_article_text_store, format_full_articles_context
 from retrievers.corpus import build_or_load_markdown_store
+from retrievers.llm import openrouter_headers
 
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 LLM_MODEL = "openai/gpt-5.4-mini"   # answer LLM (OpenRouter); covered by course credits
@@ -169,6 +170,7 @@ def make_llm() -> ChatOpenAI:
         temperature=TEMPERATURE,
         api_key=check_api_key(),
         base_url=OPENROUTER_BASE_URL,
+        default_headers=openrouter_headers("WRE retriever"),
     )
 
 def make_judge():
@@ -180,7 +182,11 @@ def make_judge():
     api_key = check_api_key()
     return llm_factory(
         JUDGE_MODEL,
-        client=OpenAI(api_key=api_key, base_url=OPENROUTER_BASE_URL),
+        client=OpenAI(
+            api_key=api_key,
+            base_url=OPENROUTER_BASE_URL,
+            default_headers=openrouter_headers("WRE judge"),
+        ),
     )
 
 def parse_source_articles(source_cell: str) -> list[str]:

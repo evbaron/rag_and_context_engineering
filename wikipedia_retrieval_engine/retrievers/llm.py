@@ -13,6 +13,19 @@ LLM_MODEL = "openai/gpt-5.4-mini"
 EMBEDDING_MODEL = "openai/text-embedding-3-small"
 TEMPERATURE = 0.2
 
+# OpenRouter app attribution. These two HTTP headers are surfaced by OpenRouter
+# analytics as the `app` (X-Title) and `origin` (HTTP-Referer) dimensions, so
+# retriever, embedding, and judge calls can be told apart even though they all
+# use the same model. A localhost referer keeps this project out of OpenRouter's
+# public app rankings.
+OPENROUTER_REFERER = "http://localhost/wikipedia-retrieval-engine"
+
+
+def openrouter_headers(app_title: str) -> dict[str, str]:
+    """Tag every OpenRouter call with an app name so usage can be split per role."""
+    return {"HTTP-Referer": OPENROUTER_REFERER, "X-Title": app_title}
+
+
 SYSTEM_PROMPT = """You are a helpful assistant for a Wikipedia retrieval engine. \
 You answer questions by drawing information exclusively from the Wikipedia articles \
 provided to you as context in each message.
@@ -48,12 +61,17 @@ def require_api_key() -> str:
     return key
 
 
-def make_llm(model: str = LLM_MODEL, temperature: float = TEMPERATURE) -> ChatOpenAI:
+def make_llm(
+    model: str = LLM_MODEL,
+    temperature: float = TEMPERATURE,
+    app_title: str = "WRE retriever",
+) -> ChatOpenAI:
     return ChatOpenAI(
         model=model,
         temperature=temperature,
         api_key=require_api_key(),
         base_url=OPENROUTER_BASE_URL,
+        default_headers=openrouter_headers(app_title),
     )
 
 
@@ -62,6 +80,7 @@ def get_embeddings(model: str = EMBEDDING_MODEL) -> OpenAIEmbeddings:
         model=model,
         api_key=require_api_key(),
         base_url=OPENROUTER_BASE_URL,
+        default_headers=openrouter_headers("WRE embedding"),
     )
 
 

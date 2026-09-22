@@ -11,6 +11,7 @@ from wikipedia_retrieval_engine.utils.wiki_table_store import (
     build_table_artifact_store,
 )
 from wikipedia_retrieval_engine.wiki_agents.agentic_models import (
+    TablePredicate,
     TableQueryPlan,
     TableRequest,
 )
@@ -47,6 +48,13 @@ ARTICLE_HTML = """
     <tr><th>Player</th><th>Position</th></tr>
     <tr><td>Player A<sup>†</sup></td><td>QB</td></tr>
     <tr><td>Player B</td><td>WR</td></tr>
+  </table>
+  <h2>Ranges</h2>
+  <table class="wikitable"><caption>Historical adjustments</caption>
+    <tr><th>Name</th><th>Years</th><th>Change</th></tr>
+    <tr><td>Early</td><td>1998–2004</td><td>−12.5</td></tr>
+    <tr><td>Recent</td><td>2012–2018</td><td>.5</td></tr>
+    <tr><td>Accounting</td><td>2020</td><td>($1,200.50)</td></tr>
   </table>
 </div>
 """
@@ -350,6 +358,114 @@ class TableNodeTests(unittest.TestCase):
         )
         self.assertEqual(player_detail.annotations[0]["text"], "†")
         self.assertEqual(player_detail.legend_matches, ["Pro Bowler"])
+
+    def test_execute_numeric_predicate_preserves_signed_values(self) -> None:
+        adjustments = self.store.find_tables(
+            "Historical adjustments",
+            source_article="95th_Academy_Awards.html",
+            limit=1,
+        )[0]
+        plan = TableQueryPlan(
+            artifact_id=adjustments.artifact_id,
+            operation="filter",
+            selected_columns=["Name", "Change"],
+            predicates=[
+                TablePredicate(column="Change", op="num_lt", value=0),
+            ],
+        )
+
+        evidence = execute_table_query_plan(
+            plan,
+            self.store,
+            request_id="table-request-signed",
+        )
+
+        self.assertTrue(evidence.sufficient)
+        self.assertEqual(
+            evidence.result_rows,
+            [
+                {"Name": "Early", "Change": "−12.5"},
+                {"Name": "Accounting", "Change": "($1,200.50)"},
+            ],
+        )
+        self.assertTrue(evidence.source_cells)
+
+    def test_execute_year_predicate_uses_years_inside_ranges(self) -> None:
+        adjustments = self.store.find_tables(
+            "Historical adjustments",
+            source_article="95th_Academy_Awards.html",
+            limit=1,
+        )[0]
+        plan = TableQueryPlan(
+            artifact_id=adjustments.artifact_id,
+            operation="filter",
+            selected_columns=["Name", "Years"],
+            predicates=[
+                TablePredicate(column="Years", op="year_min_gte", value=2010),
+            ],
+        )
+
+        evidence = execute_table_query_plan(
+            plan,
+            self.store,
+            request_id="table-request-years",
+        )
+
+        self.assertEqual(
+            evidence.result_rows,
+            [
+                {"Name": "Recent", "Years": "2012–2018"},
+                {"Name": "Accounting", "Years": "2020"},
+            ],
+        )
+
+    def test_execute_equals_predicate_compares_the_plain_cell_value(self) -> None:
+        adjustments = self.store.find_tables(
+            "Historical adjustments",
+            source_article="95th_Academy_Awards.html",
+            limit=1,
+        )[0]
+        plan = TableQueryPlan(
+            artifact_id=adjustments.artifact_id,
+            operation="filter",
+            selected_columns=["Name", "Change"],
+            predicates=[
+                TablePredicate(column="Name", op="equals", value="recent"),
+            ],
+        )
+
+        evidence = execute_table_query_plan(
+            plan,
+            self.store,
+            request_id="table-request-equals",
+        )
+
+        self.assertEqual(
+            evidence.result_rows,
+            [{"Name": "Recent", "Change": ".5"}],
+        )
+
+    def test_execute_predicate_rejects_unknown_column(self) -> None:
+        adjustments = self.store.find_tables(
+            "Historical adjustments",
+            source_article="95th_Academy_Awards.html",
+            limit=1,
+        )[0]
+        plan = TableQueryPlan(
+            artifact_id=adjustments.artifact_id,
+            operation="filter",
+            selected_columns=["Name"],
+            predicates=[
+                TablePredicate(column="Invented", op="num_gt", value=1),
+            ],
+        )
+
+        with self.assertRaisesRegex(ValueError, "unknown columns"):
+            execute_table_query_plan(
+                plan,
+                self.store,
+                request_id="table-request-unknown",
+            )
 
 
 if __name__ == "__main__":

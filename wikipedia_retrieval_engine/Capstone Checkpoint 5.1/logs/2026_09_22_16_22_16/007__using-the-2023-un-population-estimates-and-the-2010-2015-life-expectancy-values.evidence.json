@@ -1,0 +1,746 @@
+{
+  "run_id": "2026_09_22_16_22_16",
+  "question_number": 7,
+  "logged_at": "2026-09-22T16:24:49-04:00",
+  "question": "Using the 2023 UN population estimates and the 2010–2015 life-expectancy values in the supplied tables, compare India and mainland China. Which had the larger population and by how many people? Which had the higher life expectancy and by how many years? Based only on the supplied evidence, what, if anything, can this comparison tell us about whether population size affects life expectancy? Explain any limitations that affect your conclusion.",
+  "final_state": {
+    "question": "Using the 2023 UN population estimates and the 2010–2015 life-expectancy values in the supplied tables, compare India and mainland China. Which had the larger population and by how many people? Which had the higher life expectancy and by how many years? Based only on the supplied evidence, what, if anything, can this comparison tell us about whether population size affects life expectancy? Explain any limitations that affect your conclusion.",
+    "retrieval_attempts": 2,
+    "table_attempts": 2,
+    "article_candidates": [
+      {
+        "source_article": "India.html",
+        "representative_chunk": "Article: India\nSection: Demographics\n\nMain article: Demographics of India\n\nWith an estimated 1,428,627,663 residents in 2023, India is the world's most populous country.[303] 1,210,193,422 residents were reported in the 2011 provisional census report.[304] The median age was 28.7 in 2020.[273] Medical advances made in the last 50 years as well as increased agricultural productivity brought about by the \"Green Revolution\" have caused India's population to grow rapidly,[305] though India's decennial rates of growth are decreasing: its population grew by 17.64% from 2001 to 2011,[306] compared to 21.54% growth in the previous decade (1991–2001).[306] The first post-colonial census, conducted in 1951, counted 361 million people.[307] The life expectancy at birth has increased from 49.7 years in 1970–1975 to 72.0 years in 2023.[308][309] The under-five mortality rate for the country was 113 per 1,000 live births in 1994 whereas in 2018 it reduced to 41.1 per 1,000 live births.[308]\n\nThe human sex ratio, according to the 2011 census, is 940 females per 1,000 males.[304] Female infanticide in India, and lately female foeticide, have created lop-sided gender ratios; the number of missing women in the country quadrupled from 15 million to 63 million during the period 1964–2014, faster than the population growth during the same period.[310] According to an Indian government study, an additional 21 million girls are unwanted and do not receive adequate care.[311] Despite a government ban on sex-selective foeticide, the practice has far from stopped.[312]\n\nMigration from rural to urban areas has been an important dynamic in India's recent history. The number of people living in urban areas grew by 31.2% between 1991 and 2001.[313] In 2001, over 70% lived in rural areas.[314][315] The level of urbanisation increased further from 27.81% in the 2001 census to 31.16% in the 2011 census. The slowing down of the overall population growth rate was due to the sharp decline in the growth rate in rural areas since 1991.[316] In the 2011 census, there were 53 million-plus urban agglomerations in India. Among them Mumbai, Delhi, Kolkata, Chennai, Bengaluru, Hyderabad and Ahmedabad, in decreasing order by population.[317]\n\nThe historical development of life expectancy in India from 1881 to 2023\n\nThe child mortality rate in India from 1960 to 2023",
+        "representative_chunk_id": "India.html#section-018-00",
+        "section_title": "Demographics",
+        "section_path": [
+          "Demographics"
+        ],
+        "retrieval_query": "Using the 2023 UN population estimates and the 2010–2015 life-expectancy values in the supplied tables, compare India and mainland China. Which had the larger population and by how many people? Which had the higher life expectancy and by how many years? Based only on the supplied evidence, what, if anything, can this comparison tell us about whether population size affects life expectancy? Explain any limitations that affect your conclusion.",
+        "discovered_by": "vector",
+        "rank": 1,
+        "raw_score": 0.743328332901001,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "List_of_countries_by_past_life_expectancy.html",
+        "representative_chunk": "Article: List of countries by past life expectancy\nSection: Lead\n\nLife expectancy by world region, from 1770 to 2023\n\nThis is a list of countries showing past life expectancy, ranging from 1950 to 2015 in five-year periods, as estimated by the 2017 revision of the World Population Prospects database by the United Nations Population Division. Life expectancy equals the average number of years a person born in a given country is expected to live if mortality rates at each age were to remain steady in the future. The life expectancy is shown as the average of males and females.",
+        "representative_chunk_id": "List_of_countries_by_past_life_expectancy.html#section-000-00",
+        "section_title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Using the 2023 UN population estimates and the 2010–2015 life-expectancy values in the supplied tables, compare India and mainland China. Which had the larger population and by how many people? Which had the higher life expectancy and by how many years? Based only on the supplied evidence, what, if anything, can this comparison tell us about whether population size affects life expectancy? Explain any limitations that affect your conclusion.",
+        "discovered_by": "vector",
+        "rank": 2,
+        "raw_score": 0.932543158531189,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "China.html",
+        "representative_chunk": "Article: China\nSection: Demographics\n\nMain article: Demographics of China\n\nMap of China's population density across third-level administrative divisions. Based on the results of the 2020 census.\n\nThe 2020 Chinese census recorded the population as approximately 1,411,778,724. About 17.95% were 14 years old or younger, 63.35% were between 15 and 59 years old, and 18.7% were over 60 years old.[438] Between 2010 and 2020, the average population growth rate was 0.53%.[438] Since 2022, deaths have outpaced births in the country.[439] In 2023, the total fertility rate was reported to be 1.09, ranking among the lowest in the world.[440] In 2023, National Bureau of Statistics estimated that the population fell 850,000 from 2021 to 2022, the first decline since 1961.[441] In 2025, China's population officially stood at 1.404 billion with births at 7.92 million, the lowest recorded birthrate since at least 1949.[439]",
+        "representative_chunk_id": "China.html#section-038-00",
+        "section_title": "Demographics",
+        "section_path": [
+          "Demographics"
+        ],
+        "retrieval_query": "Using the 2023 UN population estimates and the 2010–2015 life-expectancy values in the supplied tables, compare India and mainland China. Which had the larger population and by how many people? Which had the higher life expectancy and by how many years? Based only on the supplied evidence, what, if anything, can this comparison tell us about whether population size affects life expectancy? Explain any limitations that affect your conclusion.",
+        "discovered_by": "vector",
+        "rank": 3,
+        "raw_score": 0.9409664273262024,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Demographics_of_Japan.html",
+        "representative_chunk": "Article: Demographics of Japan\nSection: Vital statistics > Life expectancy > Historical data\n\nSources: Our World In Data and the United Nations.\n\n1865–1949\n\nYears\n\n1865\n\n1870\n\n1875\n\n1880\n\n1885\n\n1890\n\n1895\n\n1900\n\n1905\n\n1910\n\n1915\n\n1920\n\n1922\n\n1927\n\n1935\n\n1945\n\n1947\n\n1948\n\n1949\n\n1950[67]\n\nLife expectancy in Japan\n\n36.4\n\n36.6\n\n36.8\n\n37.0\n\n37.3\n\n37.7\n\n38.1\n\n38.6\n\n39.2\n\n40.0\n\n40.9\n\n42.0\n\n42.6\n\n45.7\n\n48.2\n\n30.5\n\n51.7\n\n56.8\n\n57.7\n\n59.2\n\n1950–2020\n\nPeriod\n\nLife expectancy in\n\nyears\n\nPeriod\n\nLife expectancy in\n\nyears\n\n1950–1955\n\n62.8\n\n1985–1990\n\n78.5\n\n1955–1960\n\n66.4\n\n1990–1995\n\n79.4\n\n1960–1965\n\n69.2\n\n1995–2000\n\n80.5\n\n1965–1970\n\n71.4\n\n2000–2005\n\n81.8\n\n1970–1975\n\n73.3\n\n2005–2010\n\n82.7\n\n1975–1980\n\n75.4\n\n2010–2015\n\n83.3\n\n1980–1985\n\n77.0\n\n2015–2020\n\n84.4\n\nSource: UN World Population Prospects",
+        "representative_chunk_id": "Demographics_of_Japan.html#section-014-00",
+        "section_title": "Historical data",
+        "section_path": [
+          "Vital statistics",
+          "Life expectancy",
+          "Historical data"
+        ],
+        "retrieval_query": "Using the 2023 UN population estimates and the 2010–2015 life-expectancy values in the supplied tables, compare India and mainland China. Which had the larger population and by how many people? Which had the higher life expectancy and by how many years? Based only on the supplied evidence, what, if anything, can this comparison tell us about whether population size affects life expectancy? Explain any limitations that affect your conclusion.",
+        "discovered_by": "vector",
+        "rank": 4,
+        "raw_score": 1.0460436344146729,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      }
+    ],
+    "article_reviews": [
+      {
+        "source_article": "India.html",
+        "relevant": false,
+        "reason": "This article is about India generally, but its listed tables are unrelated to population or life expectancy comparisons.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "List_of_countries_by_past_life_expectancy.html",
+        "relevant": true,
+        "reason": "This article contains the 2010–2015 UN life-expectancy table needed to compare India and China.",
+        "relevant_sections": [
+          "List of countries 1950 to 2015 (United Nations)"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [
+          "f78c88bb2cc8d51807cf2abc"
+        ],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "China.html",
+        "relevant": false,
+        "reason": "This article is about China generally, but its listed table is administrative divisions rather than population or life expectancy.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Demographics_of_Japan.html",
+        "relevant": true,
+        "reason": "This article contains life-expectancy tables, including 2010 values, but it is not the source for India/China population figures.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [
+          "3a9ed4ca2395b55cd56d462d",
+          "342ff0daadac70acc54d0bfc",
+          "46272a175a1420b36289a0bd"
+        ],
+        "needs_table_reader": false
+      }
+    ],
+    "selected_articles": [
+      "List_of_countries_by_past_life_expectancy.html",
+      "Demographics_of_Japan.html"
+    ],
+    "rejected_articles": [
+      "India.html",
+      "China.html"
+    ],
+    "evidence": [
+      {
+        "evidence_id": "List_of_countries_by_past_life_expectancy.html#section-001-02",
+        "source_article": "List_of_countries_by_past_life_expectancy.html",
+        "content": "Article: List of countries by past life expectancy\nSection: List of countries 1950 to 2015 (United Nations)\n\n53.67\n56.97\n60.23\n\n Northern Africa\n42.27\n45.82\n48.60\n51.12\n53.18\n56.27\n59.77\n62.85\n64.56\n66.39\n67.92\n69.63\n71.07\n\n Sub-Saharan Africa\n36.33\n38.51\n40.73\n42.70\n44.80\n46.75\n48.18\n49.11\n48.86\n49.39\n50.70\n54.29\n57.88\n\n Western Africa\n33.55\n35.50\n37.61\n39.50\n41.80\n44.42\n46.71\n47.67\n48.13\n48.21\n49.30\n52.33\n54.74\n\n Middle Africa\n36.91\n38.45\n40.01\n41.82\n43.99\n45.57\n47.07\n47.96\n48.46\n48.17\n50.79\n54.42\n57.42\n\n Eastern Africa\n37.00\n39.45\n42.06\n44.13\n45.96\n47.55\n48.17\n48.86\n47.58\n49.57\n51.98\n57.04\n61.45\n\n Southern Africa\n47.81\n50.58\n52.43\n54.23\n56.10\n57.01\n58.21\n60.79\n61.94\n58.47\n53.19\n52.99\n59.31\n\n ASIA\n42.33\n44.54\n46.50\n52.81\n56.51\n59.33\n61.57\n63.57\n65.16\n66.69\n68.65\n70.34\n71.81\n\n Western Asia\n43.76\n46.93\n50.14\n53.78\n57.01\n60.23\n62.57\n65.38\n67.26\n69.19\n70.85\n72.03\n72.77\n\n Central Asia\n54.67\n56.73\n58.77\n60.74\n62.26\n63.29\n64.70\n66.09\n65.06\n64.39\n65.82\n67.50\n69.76\n\n Southern Asia\n37.02\n40.26\n43.43\n46.64\n49.36\n52.74\n54.83\n57.02\n59.65\n61.95\n63.99\n65.93\n67.88\n\n Eastern Asia\n45.60\n46.64\n46.97\n57.03\n62.86\n66.52\n68.70\n69.90\n70.78\n71.93\n74.19\n75.74\n76.76\n\n Southeast Asia\n46.48\n49.97\n52.84\n55.52\n56.67\n58.08\n61.95\n64.20\n65.69\n67.02\n68.13\n69.36\n70.50\n\n OCEANIA\n61.58\n63.37\n64.40\n65.41\n66.87\n68.67\n70.43\n71.43\n73.04\n74.19\n75.67\n77.02\n77.93\n\n Australia/New Zealand\n69.44\n70.46\n70.92\n70.92\n71.75\n73.41\n74.85\n75.88\n77.46\n78.63\n80.11\n81.28\n82.14\n\n Polynesia\n50.39\n53.90\n56.08\n58.31\n60.29\n62.26\n64.81\n66.72\n68.50\n70.13\n71.58\n73.20\n74.53\n\n Melanesia\n40.50\n43.27\n45.54\n49.14\n52.20\n55.47\n58.43\n59.20\n60.78\n62.19\n63.67\n65.21\n66.12\n\n Micronesia\n53.50\n55.43\n57.69\n59.79\n61.92\n63.50\n64.60\n65.98\n67.55\n69.39\n70.92\n71.95\n72.81\n\n World\n46.98\n49.33\n51.17\n55.48\n58.14\n60.30\n62.06\n63.68\n64.59\n65.67\n67.20\n69.07\n70.79",
+        "evidence_type": "text",
+        "title": "List of countries 1950 to 2015 (United Nations)",
+        "section_path": [
+          "List of countries 1950 to 2015 (United Nations)"
+        ],
+        "retrieval_query": "Using the 2023 UN population estimates and the 2010–2015 life-expectancy values in the supplied tables, compare India and mainland China. Which had the larger population and by how many people? Which had the higher life expectancy and by how many years? Based only on the supplied evidence, what, if anything, can this comparison tell us about whether population size affects life expectancy? Explain any limitations that affect your conclusion.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.9909548759460449,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "List of countries 1950 to 2015 (United Nations)",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "f78c88bb2cc8d51807cf2abc"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Demographics_of_Japan.html#section-014-00",
+        "source_article": "Demographics_of_Japan.html",
+        "content": "Article: Demographics of Japan\nSection: Vital statistics > Life expectancy > Historical data\n\nSources: Our World In Data and the United Nations.\n\n1865–1949\n\nYears\n\n1865\n\n1870\n\n1875\n\n1880\n\n1885\n\n1890\n\n1895\n\n1900\n\n1905\n\n1910\n\n1915\n\n1920\n\n1922\n\n1927\n\n1935\n\n1945\n\n1947\n\n1948\n\n1949\n\n1950[67]\n\nLife expectancy in Japan\n\n36.4\n\n36.6\n\n36.8\n\n37.0\n\n37.3\n\n37.7\n\n38.1\n\n38.6\n\n39.2\n\n40.0\n\n40.9\n\n42.0\n\n42.6\n\n45.7\n\n48.2\n\n30.5\n\n51.7\n\n56.8\n\n57.7\n\n59.2\n\n1950–2020\n\nPeriod\n\nLife expectancy in\n\nyears\n\nPeriod\n\nLife expectancy in\n\nyears\n\n1950–1955\n\n62.8\n\n1985–1990\n\n78.5\n\n1955–1960\n\n66.4\n\n1990–1995\n\n79.4\n\n1960–1965\n\n69.2\n\n1995–2000\n\n80.5\n\n1965–1970\n\n71.4\n\n2000–2005\n\n81.8\n\n1970–1975\n\n73.3\n\n2005–2010\n\n82.7\n\n1975–1980\n\n75.4\n\n2010–2015\n\n83.3\n\n1980–1985\n\n77.0\n\n2015–2020\n\n84.4\n\nSource: UN World Population Prospects",
+        "evidence_type": "text",
+        "title": "Historical data",
+        "section_path": [
+          "Vital statistics",
+          "Life expectancy",
+          "Historical data"
+        ],
+        "retrieval_query": "Using the 2023 UN population estimates and the 2010–2015 life-expectancy values in the supplied tables, compare India and mainland China. Which had the larger population and by how many people? Which had the higher life expectancy and by how many years? Based only on the supplied evidence, what, if anything, can this comparison tell us about whether population size affects life expectancy? Explain any limitations that affect your conclusion.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 1.0459681749343872,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_fallback_sections",
+          "requested_section": null,
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "3a9ed4ca2395b55cd56d462d",
+            "342ff0daadac70acc54d0bfc",
+            "46272a175a1420b36289a0bd"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Demographics_of_Japan.html#section-013-00",
+        "source_article": "Demographics_of_Japan.html",
+        "content": "Article: Demographics of Japan\nSection: Vital statistics > Life expectancy\n\nMain article: List of Japanese prefectures by life expectancy\n\nLife expectancy in Japan since 1865[60]\nLife expectancy in Japan since 1960 by gender[61]\nLife expectancy map for 2020[62]\n\nJapan consistently ranks among the highest in the world for overall life expectancy, holding the top position for women and one of the highest for men. As of 2024 data, life expectancy is approximately 87.13 years for females and 81.09 years for males. Historically, life expectancy was much lower, with a significant increase after World War II.[63]\n\nBefore World War II, Japan's life expectancy was significantly lower than its current, world-leading figures, but it was already steadily improving from the late 19th century onward. Throughout the first half of the 20th century, life expectancy remained under 50 years for both men and women.[64] The progress during this period was primarily driven by initial reductions in mortality from infectious and parasitic diseases.[65]\n\nFollowing the End of World War II, Japan experienced a rapid and sustained increase in longevity, driven initially by a sharp decline in infectious disease mortality and later by advancements in chronic disease management. Universal Health Coverage and government-led campaigns targeting Non-Communicable Diseases (NCDs), notably through salt-reduction efforts to combat stroke.[63]\n\nAge\n\n2010\n\n2020\n\n2023\n\noverall\n\nmale\n\nfemale\n\nsex gap\n\noverall\n\nmale\n\nfemale\n\nsex gap\n\noverall\n\nmale\n\nfemale\n\nsex gap\n\n0\n82.95\n79.51\n86.24\n6.73\n84.71\n81.58\n87.73\n6.15\n84.14\n81.10\n87.16\n6.06\n\n1\n82.14\n78.71\n85.43\n6.72\n83.86\n80.73\n86.89\n6.16\n83.29\n80.25\n86.31\n6.06\n\n5\n78.22\n74.79\n81.49\n6.70\n79.91\n76.78\n82.92\n6.14\n79.35\n76.30\n82.37\n6.07\n\n10\n73.25\n69.82\n76.53\n6.71\n74.93\n71.80\n77.95\n6.15\n74.37\n71.33\n77.39\n6.06\n\n15\n68.28\n64.86\n71.55\n6.69\n69.96\n66.83\n72.98\n6.15\n69.41\n66.36\n72.43\n6.07\n\n20\n63.36\n59.95\n66.61\n6.66\n65.03\n61.92\n68.03\n6.11\n64.49\n61.45\n67.50\n6.05\n\n25\n58.49\n55.13\n61.69\n6.56\n60.15\n57.07\n63.11\n6.04\n59.60\n56.59\n62.59\n6.00\n\n30\n53.62\n50.30\n56.78\n6.48\n55.26\n52.20\n58.19\n5.99\n54.71\n51.73\n57.67\n5.94\n\n35\n48.77\n45.48\n51.89\n6.41\n50.38\n47.35\n53.27\n5.92\n49.84\n46.88\n52.76\n5.88\n\n40\n43.95\n40.69\n47.03\n6.34\n45.52\n42.52\n48.39\n5.87\n44.99\n42.06\n47.88\n5.82\n\n45\n39.20\n35.98\n42.21\n6.23\n40.72\n37.74\n43.55\n5.81\n40.19\n37.29\n43.03\n5.74\n\n50\n34.54\n31.39\n37.46\n6.07\n36.00\n33.06\n38.77\n5.71\n35.46\n32.60\n38.25\n5.65\n\n55\n30.00\n26.95\n32.80\n5.85\n31.39\n28.52\n34.08\n5.56\n30.86\n28.06\n33.56\n5.50\n\n60\n25.62\n22.71\n28.22\n5.51\n26.91\n24.15\n29.45\n5.30\n26.38\n23.69\n28.94\n5.25\n\n65\n21.41\n18.70\n23.74\n5.04\n22.58\n19.99\n24.90\n4.91\n22.06\n19.54\n24.40\n4.86\n\n70\n17.38\n14.92\n19.37\n4.45\n18.47\n16.11\n20.48\n4.37\n17.95\n15.66\n19.98\n4.32\n\n75\n13.59\n11.40\n15.21\n3.81\n14.62\n12.56\n16.24\n3.68\n14.13\n12.15\n15.77\n3.62\n\n80\n10.22\n8.36\n11.40\n3.04\n11.08\n9.36\n12.28\n2.92\n10.65\n9.01\n11.85\n2.84\n\n85\n7.38\n5.94\n8.08\n2.14\n7.98\n6.61\n8.77\n2.16\n7.61\n6.34\n8.38\n2.04\n\n90\n5.11\n4.14\n5.47\n1.33\n5.53\n4.54\n5.94\n1.40\n5.19\n4.29\n5.59\n1.30\n\n95\n3.48\n2.89\n3.63\n0.74\n3.75\n3.11\n3.91\n0.80\n3.50\n2.95\n3.65\n0.70\n\n100\n2.38\n2.09\n2.43\n0.34\n2.52\n2.19\n2.58\n0.39\n2.36\n2.08\n2.40\n0.32\n\n105\n1.73\n1.61\n1.74\n0.13\n1.79\n1.65\n1.80\n0.15\n1.69\n1.58\n1.69\n0.11\n\n110\n1.36\n1.34\n1.36\n0.02\n1.39\n1.34\n1.39\n0.05\n1.33\n1.30\n1.33\n0.03\n\nData source: National Institute of Population and Social Security Research[66]",
+        "evidence_type": "text",
+        "title": "Life expectancy",
+        "section_path": [
+          "Vital statistics",
+          "Life expectancy"
+        ],
+        "retrieval_query": "Using the 2023 UN population estimates and the 2010–2015 life-expectancy values in the supplied tables, compare India and mainland China. Which had the larger population and by how many people? Which had the higher life expectancy and by how many years? Based only on the supplied evidence, what, if anything, can this comparison tell us about whether population size affects life expectancy? Explain any limitations that affect your conclusion.",
+        "retriever": "vector",
+        "rank": 2,
+        "raw_score": 1.085308313369751,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_fallback_sections",
+          "requested_section": null,
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "3a9ed4ca2395b55cd56d462d",
+            "342ff0daadac70acc54d0bfc",
+            "46272a175a1420b36289a0bd"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Demographics_of_Japan.html#section-005-00",
+        "source_article": "Demographics_of_Japan.html",
+        "content": "Article: Demographics of Japan\nSection: Population > Age structure\n\nMain article: Aging of Japan\n\nMedian age by country\n\nThe age structure of Japan is highly unique and is characterized by a \"super-aged\" society and it is the oldest population structure in the world.[31] This demographic profile results from the combination of a high life expectancy and a persistently low total fertility rate (TFR). The age distribution is often described as a constrictive or inverted pyramid shape, with a narrow base (few young people) and a large bulge in the middle and upper ages.[32]\n\nOverview of the changing age distribution 1935–2020[33]\n\nYear\n\nTotal population\n\n(census;\n\nthousands)\n\nPopulation by age (%)\n\n0–14\n\n15–64\n\n65+\n\n1935\n\n69,254\n\n36.9%\n\n58.5%\n\n4.7%\n\n1940\n\n73,114\n\n36.1%\n\n59.2%\n\n5.7%\n\n1945\n\n71,998\n\n36.8%\n\n58.1%\n\n5.1%\n\n1950\n\n83,199\n\n35.4%\n\n59.6%\n\n4.9%\n\n1955\n\n89,275\n\n33.4%\n\n61.2%\n\n5.3%\n\n1960\n\n93,418\n\n30.2%\n\n64.1%\n\n5.7%\n\n1965\n\n98,274\n\n25.7%\n\n68.0%\n\n6.3%\n\n1970\n\n103,720\n\n24.0%\n\n68.9%\n\n7.1%\n\n1975\n\n111,939\n\n24.3%\n\n67.7%\n\n7.9%\n\n1980\n\n117,060\n\n23.5%\n\n67.3%\n\n9.1%\n\n1985\n\n121,048\n\n21.5%\n\n68.2%\n\n10.3%\n\n1990\n\n123,611\n\n18.2%\n\n69.5%\n\n12.0%\n\n1995\n\n125,570\n\n15.9%\n\n69.4%\n\n14.5%\n\n2000\n\n126,925\n\n14.6%\n\n67.9%\n\n17.3%\n\n2005\n\n127,767\n\n13.7%\n\n65.8%\n\n20.1%\n\n2010\n\n128,057\n\n13.2%\n\n63.7%\n\n23.1%\n\n2015\n\n127,094\n\n12.6%\n\n60.7%\n\n26.6%\n\n2020\n\n126,226\n\n12.0%\n\n59.3%\n\n28.8%\n\n2025\n\n123,400\n\n10.5%\n\n59.4%\n\n30.1%\n\nPopulation projections for Japan (National Institute of Population and Social Security Research, 2023)\n\nPopulation pyramids of Japan 2065 (middle-birth, middle-death scenario case)[34]\n\nJapan demographic transition 1888–2019\n\nJapan's population is aging faster than that of any other nation.[35] The population of those 65 years or older roughly doubled in 24 years, from 7.1% of the population in 1970 to 14.1% in 1994. The same increase took 61 years in Italy, 85 years in Sweden, and 115 years in France.[36] In 2014, 26% of Japan's population was estimated to be 65 years or older,[33] and the Health and Welfare Ministry has estimated that over-65s will account for 40% of the population by 2060.[37] The demographic shift in Japan's age profile has triggered concerns about the nation's economic future and the viability of its welfare state.[38]\n\n1888\n\n1920 (1st national census of population)\n\n1925 (2nd national census of population)\n\n1930 (3rd national census of population)\n\n1935 (4th national census of population)\n\n1940 (5th national census of population)\n\n1947 (6th national census of population)\n\n1950 (7th national census of population)\n\n1955 (8th national census of population)\n\n1960 (9th national census of population)\n\n1965 (10th national census of population)\n\n1970 (11th national census of population)\n\n1975 (12th national census of population)\n\n1980 (13th national census of population)\n\n1985 (14th national census of population)\n\n1990 (15th national census of population)\n\n1995 (16th national census of population)\n\n2000 (17th national census of population)\n\n2005 (18th national census of population)\n\n2010 (19th national census of population)\n\n2015 (20th national census of population)\n\n2019 estimate\n\nLive births and deaths of Japan (1946–2019)",
+        "evidence_type": "text",
+        "title": "Age structure",
+        "section_path": [
+          "Population",
+          "Age structure"
+        ],
+        "retrieval_query": "Using the 2023 UN population estimates and the 2010–2015 life-expectancy values in the supplied tables, compare India and mainland China. Which had the larger population and by how many people? Which had the higher life expectancy and by how many years? Based only on the supplied evidence, what, if anything, can this comparison tell us about whether population size affects life expectancy? Explain any limitations that affect your conclusion.",
+        "retriever": "vector",
+        "rank": 3,
+        "raw_score": 1.163616418838501,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_fallback_sections",
+          "requested_section": null,
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "3a9ed4ca2395b55cd56d462d",
+            "342ff0daadac70acc54d0bfc",
+            "46272a175a1420b36289a0bd"
+          ]
+        }
+      },
+      {
+        "evidence_id": "List_of_countries_by_past_life_expectancy.html#table-001-9a1e32e929",
+        "source_article": "List_of_countries_by_past_life_expectancy.html",
+        "content": "Structured table (JSON rows, one object per row — read values directly from these rows; do not rely on prior knowledge).\n{\"artifact_id\": \"f78c88bb2cc8d51807cf2abc\", \"table_id\": \"table-001-9a1e32e929\", \"caption\": \"Life expectancy at birth for both genders (in years)\", \"section\": \"List of countries 1950 to 2015 (United Nations)\", \"columns\": [\"Location\", \"1950– 1955\", \"1955– 1960\", \"1960– 1965\", \"1965– 1970\", \"1970– 1975\", \"1975– 1980\", \"1980– 1985\", \"1985– 1990\", \"1990– 1995\", \"1995– 2000\", \"2000– 2005\", \"2005– 2010\", \"2010– 2015\"], \"legends\": [], \"rows\": [{\"row_number\": 1, \"values\": {\"Location\": \"Afghanistan *\", \"1950– 1955\": \"28.61\", \"1955– 1960\": \"31.12\", \"1960– 1965\": \"33.41\", \"1965– 1970\": \"35.58\", \"1970– 1975\": \"37.83\", \"1975– 1980\": \"40.39\", \"1980– 1985\": \"43.56\", \"1985– 1990\": \"47.70\", \"1990– 1995\": \"51.74\", \"1995– 2000\": \"54.17\", \"2000– 2005\": \"56.89\", \"2005– 2010\": \"60.03\", \"2010– 2015\": \"62.25\"}, \"semantic_signals\": {\"1950– 1955\": {\"source_cell\": \"table-001-9a1e32e929:r2:c2\", \"display_text\": \"28.61\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fdc9c9\", \"sort_value\": null, \"legend_matches\": []}, \"1955– 1960\": {\"source_cell\": \"table-001-9a1e32e929:r2:c3\", \"display_text\": \"31.12\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fccbcc\", \"sort_value\": null, \"legend_matches\": []}, \"1960– 1965\": {\"source_cell\": \"table-001-9a1e32e929:r2:c4\", \"display_text\": \"33.41\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fccdce\", \"sort_value\": null, \"legend_matches\": []}, \"1965– 1970\": {\"source_cell\": \"table-001-9a1e32e929:r2:c5\", \"display_text\": \"35.58\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fccfd0\", \"sort_value\": null, \"legend_matches\": []}, \"1970– 1975\": {\"source_cell\": \"table-001-9a1e32e929:r2:c6\", \"display_text\": \"37.83\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fcd2d2\", \"sort_value\": null, \"legend_matches\": []}, \"1975– 1980\": {\"source_cell\": \"table-001-9a1e32e929:r2:c7\", \"display_text\": \"40.39\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fcd4d5\", \"sort_value\": null, \"legend_matches\": []}, \"1980– 1985\": {\"source_cell\": \"table-001-9a1e32e929:r2:c8\", \"display_text\": \"43.56\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fbd7d8\", \"sort_value\": null, \"legend_matches\": []}, \"1985– 1990\": {\"source_cell\": \"table-001-9a1e32e929:r2:c9\", \"display_text\": \"47.70\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fbdbdb\", \"sort_value\": null, \"legend_matches\": []}, \"1990– 1995\": {\"source_cell\": \"table-001-9a1e32e929:r2:c10\", \"display_text\": \"51.74\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fbdedf\", \"sort_value\": null, \"legend_matches\": []}, \"1995– 2000\": {\"source_cell\": \"table-001-9a1e32e929:r2:c11\", \"display_text\": \"54.17\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fbe0e1\", \"sort_value\": null, \"legend_matches\": []}, \"2000– 2005\": {\"source_cell\": \"table-001-9a1e32e929:r2:c12\", \"display_text\": \"56.89\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fae3e3\", \"sort_value\": null, \"legend_matches\": []}, \"2005– 2010\": {\"source_cell\": \"table-001-9a1e32e929:r2:c13\", \"display_text\": \"60.03\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fae5e6\", \"sort_value\": null, \"legend_matches\": []}, \"2010– 2015\": {\"source_cell\": \"table-001-9a1e32e929:r2:c14\", \"display_text\": \"62.25\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fae7e8\", \"sort_value\": null, \"legend_matches\": []}}}]}\n(NOTE: showing 1 of 230 rows to fit the context budget; the deterministic table executor reads the full table.)",
+        "evidence_type": "table",
+        "title": "Life expectancy at birth for both genders (in years)",
+        "section_path": [
+          "List of countries 1950 to 2015 (United Nations)"
+        ],
+        "retrieval_query": "Using the 2023 UN population estimates and the 2010–2015 life-expectancy values in the supplied tables, compare India and mainland China. Which had the larger population and by how many people? Which had the higher life expectancy and by how many years? Based only on the supplied evidence, what, if anything, can this comparison tell us about whether population size affects life expectancy? Explain any limitations that affect your conclusion.",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "f78c88bb2cc8d51807cf2abc",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_id": "table-001-9a1e32e929",
+          "n_rows": 230,
+          "rows_rendered": 230,
+          "needs_table_reader": false
+        }
+      },
+      {
+        "evidence_id": "Demographics_of_Japan.html#table-015-29140252c8",
+        "source_article": "Demographics_of_Japan.html",
+        "content": "Structured table (JSON rows, one object per row — read values directly from these rows; do not rely on prior knowledge).\n{\"artifact_id\": \"3a9ed4ca2395b55cd56d462d\", \"table_id\": \"table-015-29140252c8\", \"caption\": null, \"section\": \"Vital statistics > Life expectancy\", \"columns\": [\"Age\", \"2010 / overall\", \"2010 / male\", \"2010 / female\", \"2010 / sex gap\", \"2020 / overall\", \"2020 / male\", \"2020 / female\", \"2020 / sex gap\", \"2023 / overall\", \"2023 / male\", \"2023 / female\", \"2023 / sex gap\"], \"legends\": [], \"rows\": [{\"row_number\": 1, \"values\": {\"Age\": \"0\", \"2010 / overall\": \"82.95\", \"2010 / male\": \"79.51\", \"2010 / female\": \"86.24\", \"2010 / sex gap\": \"6.73\", \"2020 / overall\": \"84.71\", \"2020 / male\": \"81.58\", \"2020 / female\": \"87.73\", \"2020 / sex gap\": \"6.15\", \"2023 / overall\": \"84.14\", \"2023 / male\": \"81.10\", \"2023 / female\": \"87.16\", \"2023 / sex gap\": \"6.06\"}, \"semantic_signals\": {\"2010 / overall\": {\"source_cell\": \"table-015-29140252c8:r3:c2\", \"display_text\": \"82.95\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#e0ffd8\", \"sort_value\": null, \"legend_matches\": []}, \"2010 / male\": {\"source_cell\": \"table-015-29140252c8:r3:c3\", \"display_text\": \"79.51\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#eaf3ff\", \"sort_value\": null, \"legend_matches\": []}, \"2010 / female\": {\"source_cell\": \"table-015-29140252c8:r3:c4\", \"display_text\": \"86.24\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fee7f6\", \"sort_value\": null, \"legend_matches\": []}, \"2020 / overall\": {\"source_cell\": \"table-015-29140252c8:r3:c6\", \"display_text\": \"84.71\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#e0ffd8\", \"sort_value\": null, \"legend_matches\": []}, \"2020 / male\": {\"source_cell\": \"table-015-29140252c8:r3:c7\", \"display_text\": \"81.58\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#eaf3ff\", \"sort_value\": null, \"legend_matches\": []}, \"2020 / female\": {\"source_cell\": \"table-015-29140252c8:r3:c8\", \"display_text\": \"87.73\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fee7f6\", \"sort_value\": null, \"legend_matches\": []}, \"2023 / overall\": {\"source_cell\": \"table-015-29140252c8:r3:c10\", \"display_text\": \"84.14\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#e0ffd8\", \"sort_value\": null, \"legend_matches\": []}, \"2023 / male\": {\"source_cell\": \"table-015-29140252c8:r3:c11\", \"display_text\": \"81.10\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#eaf3ff\", \"sort_value\": null, \"legend_matches\": []}, \"2023 / female\": {\"source_cell\": \"table-015-29140252c8:r3:c12\", \"display_text\": \"87.16\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fee7f6\", \"sort_value\": null, \"legend_matches\": []}}}]}\n(NOTE: showing 1 of 24 rows to fit the context budget; the deterministic table executor reads the full table.)",
+        "evidence_type": "table",
+        "title": "table-015-29140252c8",
+        "section_path": [
+          "Vital statistics",
+          "Life expectancy"
+        ],
+        "retrieval_query": "Using the 2023 UN population estimates and the 2010–2015 life-expectancy values in the supplied tables, compare India and mainland China. Which had the larger population and by how many people? Which had the higher life expectancy and by how many years? Based only on the supplied evidence, what, if anything, can this comparison tell us about whether population size affects life expectancy? Explain any limitations that affect your conclusion.",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "3a9ed4ca2395b55cd56d462d",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_id": "table-015-29140252c8",
+          "n_rows": 24,
+          "rows_rendered": 24,
+          "needs_table_reader": false
+        }
+      },
+      {
+        "evidence_id": "Demographics_of_Japan.html#table-017-6b49822576",
+        "source_article": "Demographics_of_Japan.html",
+        "content": "Structured table (JSON rows, one object per row — read values directly from these rows; do not rely on prior knowledge).\n{\"artifact_id\": \"342ff0daadac70acc54d0bfc\", \"table_id\": \"table-017-6b49822576\", \"caption\": null, \"section\": \"Vital statistics > Life expectancy > Historical data\", \"columns\": [\"Period\", \"Life expectancy in years\", \"Period__2\", \"Life expectancy in years__2\"], \"legends\": [], \"rows\": [{\"row_number\": 1, \"values\": {\"Period\": \"1950–1955\", \"Life expectancy in years\": \"62.8\", \"Period__2\": \"1985–1990\", \"Life expectancy in years__2\": \"78.5\"}, \"semantic_signals\": {}}, {\"row_number\": 2, \"values\": {\"Period\": \"1955–1960\", \"Life expectancy in years\": \"66.4\", \"Period__2\": \"1990–1995\", \"Life expectancy in years__2\": \"79.4\"}, \"semantic_signals\": {}}, {\"row_number\": 3, \"values\": {\"Period\": \"1960–1965\", \"Life expectancy in years\": \"69.2\", \"Period__2\": \"1995–2000\", \"Life expectancy in years__2\": \"80.5\"}, \"semantic_signals\": {}}, {\"row_number\": 4, \"values\": {\"Period\": \"1965–1970\", \"Life expectancy in years\": \"71.4\", \"Period__2\": \"2000–2005\", \"Life expectancy in years__2\": \"81.8\"}, \"semantic_signals\": {}}, {\"row_number\": 5, \"values\": {\"Period\": \"1970–1975\", \"Life expectancy in years\": \"73.3\", \"Period__2\": \"2005–2010\", \"Life expectancy in years__2\": \"82.7\"}, \"semantic_signals\": {}}, {\"row_number\": 6, \"values\": {\"Period\": \"1975–1980\", \"Life expectancy in years\": \"75.4\", \"Period__2\": \"2010–2015\", \"Life expectancy in years__2\": \"83.3\"}, \"semantic_signals\": {}}, {\"row_number\": 7, \"values\": {\"Period\": \"1980–1985\", \"Life expectancy in years\": \"77.0\", \"Period__2\": \"2015–2020\", \"Life expectancy in years__2\": \"84.4\"}, \"semantic_signals\": {}}]}",
+        "evidence_type": "table",
+        "title": "table-017-6b49822576",
+        "section_path": [
+          "Vital statistics",
+          "Life expectancy",
+          "Historical data"
+        ],
+        "retrieval_query": "Using the 2023 UN population estimates and the 2010–2015 life-expectancy values in the supplied tables, compare India and mainland China. Which had the larger population and by how many people? Which had the higher life expectancy and by how many years? Based only on the supplied evidence, what, if anything, can this comparison tell us about whether population size affects life expectancy? Explain any limitations that affect your conclusion.",
+        "retriever": "table",
+        "rank": 2,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "342ff0daadac70acc54d0bfc",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_id": "table-017-6b49822576",
+          "n_rows": 7,
+          "rows_rendered": 7,
+          "needs_table_reader": false
+        }
+      },
+      {
+        "evidence_id": "Demographics_of_Japan.html#table-016-0fbd68246c",
+        "source_article": "Demographics_of_Japan.html",
+        "content": "Structured table (JSON rows, one object per row — read values directly from these rows; do not rely on prior knowledge).\n{\"artifact_id\": \"46272a175a1420b36289a0bd\", \"table_id\": \"table-016-0fbd68246c\", \"caption\": null, \"section\": \"Vital statistics > Life expectancy > Historical data\", \"columns\": [\"Years\", \"1865\", \"1870\", \"1875\", \"1880\", \"1885\", \"1890\", \"1895\", \"1900\", \"1905\", \"1910\", \"1915\", \"1920\", \"1922\", \"1927\", \"1935\", \"1945\", \"1947\", \"1948\", \"1949\", \"1950\"], \"legends\": [], \"rows\": [{\"row_number\": 1, \"values\": {\"Years\": \"Life expectancy in Japan\", \"1865\": \"36.4\", \"1870\": \"36.6\", \"1875\": \"36.8\", \"1880\": \"37.0\", \"1885\": \"37.3\", \"1890\": \"37.7\", \"1895\": \"38.1\", \"1900\": \"38.6\", \"1905\": \"39.2\", \"1910\": \"40.0\", \"1915\": \"40.9\", \"1920\": \"42.0\", \"1922\": \"42.6\", \"1927\": \"45.7\", \"1935\": \"48.2\", \"1945\": \"30.5\", \"1947\": \"51.7\", \"1948\": \"56.8\", \"1949\": \"57.7\", \"1950\": \"59.2\"}, \"semantic_signals\": {}}]}",
+        "evidence_type": "table",
+        "title": "table-016-0fbd68246c",
+        "section_path": [
+          "Vital statistics",
+          "Life expectancy",
+          "Historical data"
+        ],
+        "retrieval_query": "Using the 2023 UN population estimates and the 2010–2015 life-expectancy values in the supplied tables, compare India and mainland China. Which had the larger population and by how many people? Which had the higher life expectancy and by how many years? Based only on the supplied evidence, what, if anything, can this comparison tell us about whether population size affects life expectancy? Explain any limitations that affect your conclusion.",
+        "retriever": "table",
+        "rank": 3,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "46272a175a1420b36289a0bd",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_id": "table-016-0fbd68246c",
+          "n_rows": 1,
+          "rows_rendered": 1,
+          "needs_table_reader": false
+        }
+      },
+      {
+        "evidence_id": "List_of_countries_by_population_(United_Nations).html#section-007-00",
+        "source_article": "List_of_countries_by_population_(United_Nations).html",
+        "content": "Article: List of countries and dependencies by population (United Nations)\nSection: Explanatory notes\n\n^ Refers to mainland China only. The UN source document states: \"For statistical purposes, the data for China do not include special administrative regions (SAR) of China (Hong Kong and Macau) and Taiwan.\"\n\n^ Including  Zanzibar.\n\n^ Refers to Metropolitan France only.\n\n^ Including the  Canary Islands,  Ceuta, and  Melilla.\n\n^ Including  Crimea, the  Donetsk People's Republic, the  Luhansk People's Republic, and  Sevastopol.\n\n^ Including  Christmas Island, the  Cocos (Keeling) Islands, and  Norfolk Island.\n\n^ Listed as China, Taiwan Province of China.\n\n^ Including  Somaliland.\n\n^ Refers to the European Netherlands only.\n\n^ Including the  Azores and  Madeira.\n\n^ Listed as China, Hong Kong SAR.\n\n^ Excluding  Kosovo.\n\n^ Including  Åland.\n\n^ Including  Svalbard and Jan Mayen.\n\n^ Including East Jerusalem.\n\n^ Including  Abkhazia and  South Ossetia.\n\n^ Including  Transnistria.\n\n^ Listed as Kosovo (under UNSC res. 1244).\n\n^ Including  Northern Cyprus.\n\n^ Listed as China, Macao SAR.\n\n^ Listed as  Bonaire,  Sint Eustatius and  Saba.\n\n^ Including  Saint Helena,  Ascension, and  Tristan da Cunha.\n\n^ Listed as Holy See.\n\n<h2",
+        "evidence_type": "graph",
+        "title": "Explanatory notes",
+        "section_path": [
+          "Explanatory notes"
+        ],
+        "retrieval_query": "2023 UN population estimates India mainland China compare population difference",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 1.0906059741973877,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "List_of_countries_by_past_life_expectancy.html",
+            "Demographics_of_Japan.html"
+          ],
+          "graph_neighbor_rank": 4,
+          "graph_score": 1.5745168713498245,
+          "discovery_reasons": [
+            "entity:The_Bahamas(19)",
+            "entity:Guadeloupe(11)",
+            "entity:The_Gambia(11)",
+            "entity:Aruba(11)",
+            "entity:United_States_Virgin_Islands(14)",
+            "entity:East_Asia(15)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "List_of_countries_by_population_(United_Nations).html#section-000-00",
+        "source_article": "List_of_countries_by_population_(United_Nations).html",
+        "content": "Article: List of countries and dependencies by population (United Nations)\nSection: Lead\n\nUN list of countries and territories by population\n\nStatistical subregions as defined by the United Nations Statistics Division[1]\n\nThis is the list of countries and other inhabited territories of the world by estimated total population. It is based on estimates published by the United Nations in the 2024 revision of World Population Prospects. It presents population estimates from 1950 to the present.[2]",
+        "evidence_type": "graph",
+        "title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "2023 UN population estimates India mainland China compare population difference",
+        "retriever": "graph",
+        "rank": 2,
+        "raw_score": 1.1119258403778076,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "List_of_countries_by_past_life_expectancy.html",
+            "Demographics_of_Japan.html"
+          ],
+          "graph_neighbor_rank": 4,
+          "graph_score": 1.5745168713498245,
+          "discovery_reasons": [
+            "entity:The_Bahamas(19)",
+            "entity:Guadeloupe(11)",
+            "entity:The_Gambia(11)",
+            "entity:Aruba(11)",
+            "entity:United_States_Virgin_Islands(14)",
+            "entity:East_Asia(15)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "List_of_countries_by_population_(United_Nations).html#section-001-00",
+        "source_article": "List_of_countries_by_population_(United_Nations).html",
+        "content": "Article: List of countries and dependencies by population (United Nations)\nSection: List\n\nData are mid-year estimates from the United Nations and are for 2022 and 2023.[2]\n\nList of countries and inhabited territories by total population. United Nations\n\nCountry or territory\n\nPopulation\n\n(1 July 2022)\n\nPopulation\n\n(1 July 2023)\n\nChange\n\n(%)\n\nUN continental\n\nregion[1]\n\nUN statistical\n\nsubregion[1]\n\n World\n8,021,407,192\n8,091,734,930\n+0.88%\n–\n–\n\n India\n1,425,423,212\n1,438,069,596\n+0.89%\nAsia\nSouthern Asia\n\n China[a]\n1,425,179,569\n1,422,584,933\n−0.18%\nAsia\nEastern Asia\n\n United States\n341,534,046\n343,477,335\n+0.57%\nAmericas\nNorthern America\n\n Indonesia\n278,830,529\n281,190,067\n+0.85%\nAsia\nSouth-eastern Asia\n\n Pakistan\n243,700,667\n247,504,495\n+1.56%\nAsia\nSouthern Asia\n\n Nigeria\n223,150,896\n227,882,945\n+2.12%\nAfrica\nWestern Africa\n\n Brazil\n210,306,415\n211,140,729\n+0.40%\nAmericas\nSouth America\n\n Bangladesh\n169,384,897\n171,466,990\n+1.23%\nAsia\nSouthern Asia\n\n Russia\n145,579,899\n145,440,500\n−0.10%\nEurope\nEastern Europe\n\n Mexico\n128,613,117\n129,739,759\n+0.88%\nAmericas\nCentral America\n\n Ethiopia\n125,384,287\n128,691,692\n+2.64%\nAfrica\nEastern Africa\n\n Japan\n124,997,578\n124,370,947\n−0.50%\nAsia\nEastern Asia\n\n Philippines\n113,964,338\n114,891,199\n+0.81%\nAsia\nSouth-eastern Asia\n\n Egypt\n112,618,250\n114,535,772\n+1.70%\nAfrica\nNorthern Africa\n\n DR Congo\n102,396,968\n105,789,731\n+3.31%\nAfrica\nMiddle Africa\n\n Vietnam\n99,680,655\n100,352,192\n+0.67%\nAsia\nSouth-eastern Asia\n\n Iran\n89,524,246\n90,608,707\n+1.21%\nAsia\nSouthern Asia\n\n Turkey\n87,058,473\n87,270,501\n+0.24%\nAsia\nWestern Asia\n\n Germany\n84,086,227\n84,548,231\n+0.55%\nEurope\nWestern Europe\n\n Thailand\n71,735,329\n71,702,435\n−0.05%\nAsia\nSouth-eastern Asia\n\nUnited Kingdom\n68,179,315\n68,682,962\n+0.74%\nEurope\nNorthern Europe\n\n Tanzania[b]\n64,711,821\n66,617,606\n+2.95%\nAfrica\nEastern Africa\n\n France[c]\n66,277,409\n66,438,822\n+0.24%\nEurope\nWestern Europe\n\n South Africa\n62,378,410\n63,212,384\n+1.34%\nAfrica\nSouthern Africa\n\n Italy\n59,619,115\n59,499,453\n−0.20%\nEurope\nSouthern Europe\n\n Kenya\n54,252,461\n55,339,003\n+2.00%\nAfrica\nEastern Africa\n\n Myanmar\n53,756,787\n54,133,798\n+0.70%\nAsia\nSouth-eastern Asia\n\n Colombia\n51,737,944\n52,321,152\n+1.13%\nAmericas\nSouth America\n\n South Korea\n51,782,512\n51,748,739\n−0.07%\nAsia\nEastern Asia\n\n Sudan\n49,383,346\n50,042,791\n+1.34%\nAfrica\nNorthern Africa\n\n Uganda\n47,312,719\n48,656,601\n+2.84%\nAfrica\nEastern Africa\n\n Spain[d]\n47,828,382\n47,911,579\n+0.17%\nEurope\nSouthern Europe\n\n Algeria\n45,477,389\n46,164,219\n+1.51%\nAfrica\nNorthern Africa\n\n Argentina\n45,407,904\n45,538,401\n+0.29%\nAmericas\nSouth America\n\n Iraq\n44,070,551\n45,074,049\n+2.28%\nAsia\nWestern Asia\n\n Afghanistan\n40,578,842\n41,454,761\n+2.16%\nAsia\nSouthern Asia\n\n Yemen\n38,222,876\n39,390,799\n+3.06%\nAsia\nWestern Asia\n\n Canada\n38,821,259\n39,299,105\n+1.23%\nAmericas\nNorthern America\n\n Poland\n38,385,739\n38,762,844\n+0.98%\nEurope\nEastern Europe\n\n Ukraine[e]\n41,048,766\n37,732,836\n−8.08%\nEurope\nEastern Europe\n\n Morocco\n37,329,064\n37,712,505\n+1.03%\nAfrica\nNorthern Africa\n\n Angola\n35,635,029\n36,749,906\n+3.13%\nAfrica\nMiddle Africa\n\n Uzbekistan\n34,938,955\n35,652,307\n+2.04%\nAsia\nCentral Asia\n\n Malaysia\n34,695,493\n35,126,298\n+1.24%\nAsia\nSouth-eastern Asia\n\n Peru\n33,475,438\n33,845,617\n+1.11%\nAmericas\nSouth America\n\n Ghana\n33,149,152\n33,787,914\n+1.93%\nAfrica\nWestern Africa\n\n Mozambique\n32,656,246\n33,635,160\n+3.00%\nAfrica\nEastern Africa\n\n Saudi Arabia\n32,175,352\n32,264,292\n+0.28%\nAsia\nWestern Asia\n\n Madagascar\n30,437,261\n31,195,932\n+2.49%\nAfrica\nEastern Africa\n\n Ivory Coast\n30,395,002\n31,165,654\n+2.54%\nAfrica\nWestern Africa\n\n   Nepal\n29,715,436\n29,964,614\n+0.84%\nAsia\nSouthern Asia\n\n Cameroon\n27,632,771\n28,372,687\n+2.68%\nAfrica\nMiddle Africa\n\n Venezuela\n28,213,017\n28,300,854\n+0.31%\nAmericas\nSouth America\n\n Australia[f]\n26,200,984\n26,451,124\n+0.95%\nOceania\nAustralia and New Zealand\n\n North Korea\n26,329,845\n26,418,204\n+0.34%\nAsia\nEastern Asia\n\n Niger\n25,311,973\n26,159,867\n+3.35%\nAfrica\nWestern Africa\n\n Mali\n23,072,640\n23,769,127\n+3.02%\nAfrica\nWestern Africa\n\nSyria\n22,462,173\n23,594,623\n+5.04%\nAsia\nWestern Asia\n\n Taiwan[g]\n23,420,111\n23,317,145\n−0.44%\nAsia\nEastern Asia\n\n Burkina Faso\n22,509,038\n23,025,776\n+2.30%\nAfrica\nWestern Africa\n\n Sri Lanka\n22,834,965\n22,971,617\n+0.60%\nAsia\nSouthern Asia\n\n Malawi\n20,568,728\n21,104,482\n+2.60%\nAfrica\nEastern Africa\n\n Zambia\n20,152,938\n20,723,965\n+2.83%\nAfrica\nEastern Africa\n\n Kazakhstan\n20,034,609\n20,330,104\n+1.47%\nAsia\nCentral Asia\n\n Chile\n19,553,036\n19,658,835\n+0.54%\nAmericas\nSouth America\n\n Chad\n18,455,316\n19,319,064\n+4.68%\nAfrica\nMiddle Africa\n\n Romania\n19,166,772\n19,118,479\n−0.25%\nEurope\nEastern Europe\n\n Somalia[h]\n17,801,897\n18,358,615\n+3.13%\nAfrica\nEastern Africa\n\n Guatemala\n17,847,877\n18,124,838\n+1.55%\nAmericas\nCentral America\n\n Senegal\n17,651,103\n18,077,573\n+2.42%\nAfrica\nWestern Africa\n\n Netherlands[i]\n17,904,421\n18,092,524\n+1.05%\nEurope\nWestern Europe\n\n Ecuador\n17,823,897\n17,980,083\n+0.88%\nAmericas\nSouth America\n\n Cambodia\n17,201,724\n17,423,880\n+1.29%\nAsia\nSouth-eastern Asia\n\n Zimbabwe\n16,069,056\n16,340,822\n+1.69%\nAfrica\nEastern Africa\n\n Guinea\n14,055,137\n14,405,465\n+2.49%\nAfrica\nWestern Africa\n\n Benin\n13,759,501\n14,111,034\n+2.55%\nAfrica\nWestern Africa\n\n Rwanda\n13,651,030\n13,954,471\n+2.22%\nAfrica\nEastern Africa\n\n Burundi\n13,321,097\n13,689,450\n+2.77%\nAfrica\nEastern Africa\n\n Bolivia\n12,077,154\n12,244,159\n+1.38%\nAmericas\nSouth America\n\n Tunisia\n12,119,334\n12,200,431\n+0.67%\nAfrica\nNorthern Africa\n\n Belgium\n11,641,820\n11,712,893\n+0.61%\nEurope\nWestern Europe\n\n Haiti\n11,503,606\n11,637,398\n+1.16%\nAmericas\nCaribbean\n\n South Sudan\n11,021,177\n11,483,374\n+4.19%\nAfrica\nEastern Africa\n\n Jordan\n11,256,263\n11,439,213\n+1.63%\nAsia\nWestern Asia\n\n Dominican Republic\n11,230,734\n11,331,265\n+0.90%\nAmericas\nCaribbean\n\n Cuba\n11,059,820\n11,019,931\n−0.36%\nAmericas\nCaribbean\n\n Czechia\n10,673,213\n10,809,716\n+1.28%\nEurope\nEastern Europe\n\n Honduras\n10,463,872\n10,644,851\n+1.73%\nAmericas\nCentral America\n\n United Arab Emirates\n10,242,086\n10,642,081\n+3.91%\nAsia\nWestern Asia\n\n Sweden\n10,487,338\n10,551,494\n+0.61%\nEurope\nNorthern Europe\n\n Portugal[j]\n10,417,073\n10,430,738\n+0.13%\nEurope\nSouthern Europe\n\n Tajikistan\n10,182,222\n10,389,799\n+2.04%\nAsia\nCentral Asia\n\n Papua New Guinea\n10,203,169\n10,389,635\n+1.83%\nOceania\nMelanesia\n\n Azerbaijan\n10,295,304\n10,318,207\n+0.22%\nAsia\nWestern Asia\n\n Greece\n10,412,480\n10,242,908\n−1.63%\nEurope\nSouthern Europe\n\n Hungary\n9,964,306\n9,686,463\n−2.79%\nEurope\nEastern Europe\n\n Togo\n9,089,738\n9,304,337\n+2.36%\nAfrica\nWestern Africa\n\n Israel\n9,103,151\n9,256,314\n+1.68%\nAsia\nWestern Asia\n\n Austria\n9,064,677\n9,130,429\n+0.73%\nEurope\nWestern Europe\n\n Belarus\n9,173,237\n9,115,680\n−0.63%\nEurope\nEastern Europe\n\n  Switzerland\n8,792,182\n8,870,561\n+0.89%\nEurope\nWestern Europe\n\n Sierra Leone\n8,276,807\n8,460,512\n+2.22%\nAfrica\nWestern Africa\n\n Laos\n7,559,007\n7,664,993\n+1.40%\nAsia\nSouth-eastern Asia\n\n Hong Kong (China)[k]\n7,465,915\n7,442,734\n−0.31%\nAsia\nEastern Asia\n\n Turkmenistan\n7,230,193\n7,364,438\n+1.86%\nAsia\nCentral Asia\n\n Libya\n7,223,805\n7,305,659\n+1.13%\nAfrica\nNorthern Africa\n\n Kyrgyzstan\n6,955,788\n7,073,516\n+1.69%\nAsia\nCentral Asia\n\n Paraguay\n6,760,464\n6,844,146\n+1.24%\nAmericas\nSouth America\n\n Nicaragua\n6,730,654\n6,823,613\n+1.38%\nAmericas\nCentral America\n\n Bulgaria\n6,825,864\n6,795,803\n−0.44%\nEurope\nEastern Europe\n\n Serbia[l]\n6,791,213\n6,773,201\n−0.27%\nEurope\nSouthern Europe\n\n El Salvador\n6,280,319\n6,309,624\n+0.47%\nAmericas\nCentral America\n\n Congo\n6,035,104\n6,182,885\n+2.45%\nAfrica\nMiddle Africa\n\n Denmark\n5,902,904\n5,948,136\n+0.77%\nEurope\nNorthern Europe\n\n Singapore\n5,649,885\n5,789,090\n+2.46%\nAsia\nSouth-eastern Asia\n\n Lebanon\n5,744,489\n5,733,493\n−0.19%\nAsia\nWestern Asia\n\n Finland[m]\n5,569,299\n5,601,185\n+0.57%\nEurope\nNorthern Europe\n\n Norway[n]\n5,457,801\n5,519,167\n+1.12%\nEurope\nNorthern Europe\n\n Slovakia\n5,473,197\n5,518,055\n+0.82%\nEurope\nEastern Europe\n\n Liberia\n5,373,294\n5,493,031\n+2.23%\nAfrica\nWestern Africa\n\n Palestine[o]\n5,305,270\n5,409,202\n+1.96%\nAsia\nWestern Asia\n\n Ireland\n5,110,016\n5,196,630\n+1.69%\nEurope\nNorthern Europe\n\n New Zealand\n5,131,734\n5,172,836\n+0.80%\nOceania\nAustralia and New Zealand\n\n Central African Republic\n5,098,039\n5,152,421\n+1.07%\nAfrica\nMiddle Africa\n\n Costa Rica\n5,081,765\n5,105,525\n+0.47%\nAmericas\nCentral America\n\n Oman\n4,730,226\n5,049,269\n+6.74%\nAsia\nWestern Asia\n\n Mauritania\n4,875,637\n5,022,441\n+3.01%\nAfrica\nWestern Africa\n\n Kuwait\n4,589,511\n4,838,782\n+5.43%\nAsia\nWestern Asia\n\n Panama\n4,400,773\n4,458,759\n+1.32%\nAmericas\nCentral America\n\n Croatia\n3,907,027\n3,896,023\n−0.28%\nEurope\nSouthern Europe\n\n Georgia[p]\n3,794,784\n3,807,492\n+0.33%\nAsia\nWestern Asia\n\n Eritrea\n3,409,447\n3,470,390\n+1.79%\nAfrica\nEastern Africa\n\n Mongolia\n3,386,015\n3,431,932\n+1.36%\nAsia\nEastern Asia\n\n Uruguay\n3,390,913\n3,388,081\n−0.08%\nAmericas\nSouth America\n\n Puerto Rico (United States)\n3,240,968\n3,242,023\n+0.03%\nAmericas\nCaribbean\n\n Bosnia and Herzegovina\n3,204,802\n3,185,073\n−0.62%\nEurope\nSouthern Europe\n\n Moldova[q]\n3,039,985\n3,067,070\n+0.89%\nEurope\nEastern Europe\n\n Qatar\n2,892,455\n2,979,082\n+2.99%\nAsia\nWestern Asia\n\n Namibia\n2,889,662\n2,963,095\n+2.54%\nAfrica\nSouthern Africa\n\n Armenia\n2,880,874\n2,943,393\n+2.17%\nAsia\nWestern Asia\n\n Lithuania\n2,816,919\n2,854,099\n+1.32%\nEurope\nNorthern Europe\n\n Jamaica\n2,839,144\n2,839,786\n+0.02%\nAmericas\nCaribbean\n\n Albania\n2,827,608\n2,811,655\n−0.56%\nEurope\nSouthern Europe\n\n Gambia\n2,636,470\n2,697,845\n+2.33%\nAfrica\nWestern Africa\n\n Gabon\n2,430,747\n2,484,789\n+2.22%\nAfrica\nMiddle Africa\n\n Botswana\n2,439,892\n2,480,244\n+1.65%\nAfrica\nSouthern Africa\n\n Lesotho\n2,286,110\n2,311,472\n+1.11%\nAfrica\nSouthern Africa\n\n Guinea-Bissau\n2,105,529\n2,153,339\n+2.27%\nAfrica\nWestern Africa\n\n Slovenia\n2,115,228\n2,118,396\n+0.15%\nEurope\nSouthern Europe\n\n Latvia\n1,881,063\n1,882,396\n+0.07%\nEurope\nNorthern Europe\n\n Equatorial Guinea\n1,803,545\n1,847,549\n+2.44%\nAfrica\nMiddle Africa\n\n North Macedonia\n1,840,233\n1,831,802\n−0.46%\nEurope\nSouthern Europe\n\n Kosovo[r]\n1,717,946\n1,700,031\n−1.04%\nEurope\nSouthern Europe\n\n Bahrain\n1,533,459\n1,569,666\n+2.36%\nAsia\nWestern Asia\n\n Trinidad and Tobago\n1,495,921\n1,502,932\n+0.47%\nAmericas",
+        "evidence_type": "graph",
+        "title": "List",
+        "section_path": [
+          "List"
+        ],
+        "retrieval_query": "2010–2015 life expectancy India mainland China UN table values",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 1.2271757125854492,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "List_of_countries_by_past_life_expectancy.html",
+            "Demographics_of_Japan.html"
+          ],
+          "graph_neighbor_rank": 4,
+          "graph_score": 1.5745168713498245,
+          "discovery_reasons": [
+            "entity:The_Bahamas(19)",
+            "entity:Guadeloupe(11)",
+            "entity:The_Gambia(11)",
+            "entity:Aruba(11)",
+            "entity:United_States_Virgin_Islands(14)",
+            "entity:East_Asia(15)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Honshu.html#section-006-00",
+        "source_article": "Honshu.html",
+        "content": "Article: Honshu\nSection: Geography > Population\n\nHonshu has a total population of 104 million people, according to a 2017 estimate, 81.3% of the entire population of Japan.[12] The largest city is Tokyo (population: 13,988,129),[23] the capital of Japan and part of the Greater Tokyo Area, the most populous metropolitan area in the world.",
+        "evidence_type": "graph",
+        "title": "Population",
+        "section_path": [
+          "Geography",
+          "Population"
+        ],
+        "retrieval_query": "2023 UN population estimates India mainland China compare population difference",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 1.3029570579528809,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "List_of_countries_by_past_life_expectancy.html",
+            "Demographics_of_Japan.html"
+          ],
+          "graph_neighbor_rank": 2,
+          "graph_score": 6.447820512820513,
+          "discovery_reasons": [
+            "link",
+            "entity:Osaka(21)",
+            "entity:Okinawa_Prefecture(8)",
+            "entity:Nagoya(10)",
+            "entity:Shizuoka_Prefecture(5)",
+            "entity:Gifu_Prefecture(5)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "List_of_countries_by_past_life_expectancy.html#table-001-9a1e32e929#computed-table-r1-1-6f338511baf4",
+        "source_article": "List_of_countries_by_past_life_expectancy.html",
+        "content": "Deterministic table-computation result. Use the computed rows/calculation below rather than recomputing them.\n{\n  \"table_request\": {\n    \"missing_fact\": \"Exact 2010–2015 life-expectancy values for India and mainland China from the UN life-expectancy table, and the comparison/difference between them.\",\n    \"source_article\": \"List_of_countries_by_past_life_expectancy.html\",\n    \"table_id\": \"table-001-9a1e32e929\",\n    \"expected_caption\": null,\n    \"operation\": \"compare\",\n    \"columns_needed\": [],\n    \"row_filters\": {},\n    \"comparison_key\": null\n  },\n  \"query_plan\": {\n    \"artifact_id\": \"f78c88bb2cc8d51807cf2abc\",\n    \"operation\": \"compare\",\n    \"selected_columns\": [\n      \"Location\",\n      \"2010– 2015\"\n    ],\n    \"filters\": {},\n    \"predicates\": [\n      {\n        \"column\": \"Location\",\n        \"op\": \"contains\",\n        \"value\": \"India\",\n        \"value2\": null\n      },\n      {\n        \"column\": \"Location\",\n        \"op\": \"contains\",\n        \"value\": \"China\",\n        \"value2\": null\n      }\n    ],\n    \"group_by\": [],\n    \"calculation\": null,\n    \"calculation_column\": null,\n    \"sort_column\": null,\n    \"sort_direction\": null,\n    \"limit\": 10\n  },\n  \"result\": {\n    \"request_id\": \"table-r1-1-6f338511baf4\",\n    \"artifact_id\": \"f78c88bb2cc8d51807cf2abc\",\n    \"result_rows\": [],\n    \"calculation\": null,\n    \"source_cells\": [],\n    \"cell_details\": [],\n    \"sufficient\": false,\n    \"warnings\": [\n      \"No table rows matched the query-plan filters.\"\n    ]\n  }\n}",
+        "evidence_type": "table",
+        "title": "Computed table result: Exact 2010–2015 life-expectancy values for India and mainland China from the UN life-expectancy table, and the comparison/difference between them.",
+        "section_path": [
+          "List of countries 1950 to 2015 (United Nations)"
+        ],
+        "retrieval_query": "Using the 2023 UN population estimates and the 2010–2015 life-expectancy values in the supplied tables, compare India and mainland China. Which had the larger population and by how many people? Which had the higher life expectancy and by how many years? Based only on the supplied evidence, what, if anything, can this comparison tell us about whether population size affects life expectancy? Explain any limitations that affect your conclusion.",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "f78c88bb2cc8d51807cf2abc",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "table_computation",
+          "table_request_id": "table-r1-1-6f338511baf4",
+          "operation": "compare",
+          "calculation": null,
+          "table_computation_sufficient": false,
+          "warnings": [
+            "No table rows matched the query-plan filters."
+          ]
+        }
+      },
+      {
+        "evidence_id": "List_of_countries_by_population_(United_Nations).html#table-001-661817a094#computed-table-r2-1-3368c587c856",
+        "source_article": "List_of_countries_by_population_(United_Nations).html",
+        "content": "Deterministic table-computation result. Use the computed rows/calculation below rather than recomputing them.\n{\n  \"table_request\": {\n    \"missing_fact\": \"Exact 2023 population values for India and mainland China, and the population difference between them.\",\n    \"source_article\": \"List_of_countries_by_population_(United_Nations).html\",\n    \"table_id\": null,\n    \"expected_caption\": null,\n    \"operation\": \"compare\",\n    \"columns_needed\": [],\n    \"row_filters\": {},\n    \"comparison_key\": null\n  },\n  \"query_plan\": {\n    \"artifact_id\": \"42b2a22b344089fe838ed6f3\",\n    \"operation\": \"compare\",\n    \"selected_columns\": [\n      \"Country or territory\",\n      \"Population (1 July 2023)\"\n    ],\n    \"filters\": {},\n    \"predicates\": [\n      {\n        \"column\": \"Country or territory\",\n        \"op\": \"equals\",\n        \"value\": \"India\",\n        \"value2\": null\n      },\n      {\n        \"column\": \"Country or territory\",\n        \"op\": \"contains\",\n        \"value\": \"China\",\n        \"value2\": null\n      }\n    ],\n    \"group_by\": [],\n    \"calculation\": null,\n    \"calculation_column\": null,\n    \"sort_column\": null,\n    \"sort_direction\": null,\n    \"limit\": 2\n  },\n  \"result\": {\n    \"request_id\": \"table-r2-1-3368c587c856\",\n    \"artifact_id\": \"42b2a22b344089fe838ed6f3\",\n    \"result_rows\": [],\n    \"calculation\": null,\n    \"source_cells\": [],\n    \"cell_details\": [],\n    \"sufficient\": false,\n    \"warnings\": [\n      \"Superscript/subscript annotations are available in row_cells.\",\n      \"No table rows matched the query-plan filters.\"\n    ]\n  }\n}",
+        "evidence_type": "table",
+        "title": "Computed table result: Exact 2023 population values for India and mainland China, and the population difference between them.",
+        "section_path": [
+          "List"
+        ],
+        "retrieval_query": "Using the 2023 UN population estimates and the 2010–2015 life-expectancy values in the supplied tables, compare India and mainland China. Which had the larger population and by how many people? Which had the higher life expectancy and by how many years? Based only on the supplied evidence, what, if anything, can this comparison tell us about whether population size affects life expectancy? Explain any limitations that affect your conclusion.",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "42b2a22b344089fe838ed6f3",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "table_computation",
+          "table_request_id": "table-r2-1-3368c587c856",
+          "operation": "compare",
+          "calculation": null,
+          "table_computation_sufficient": false,
+          "warnings": [
+            "Superscript/subscript annotations are available in row_cells.",
+            "No table rows matched the query-plan filters."
+          ]
+        }
+      },
+      {
+        "evidence_id": "List_of_countries_by_past_life_expectancy.html#computed-table-r2-2-65f1ed4f5ef0-failed",
+        "source_article": "List_of_countries_by_past_life_expectancy.html",
+        "content": "Table computation could not satisfy this request.\n{\n  \"table_request\": {\n    \"missing_fact\": \"Exact 2010–2015 life-expectancy values for India and mainland China, and the life-expectancy difference between them.\",\n    \"source_article\": \"List_of_countries_by_past_life_expectancy.html\",\n    \"table_id\": \"table-001-9a1e32e929\",\n    \"expected_caption\": null,\n    \"operation\": \"compare\",\n    \"columns_needed\": [],\n    \"row_filters\": {},\n    \"comparison_key\": null\n  },\n  \"error\": \"2 validation errors for TableQueryPlan\\npredicates.0.op\\n  Field required [type=missing, input_value={'column': 'Location', 'equals': 'India *'}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\\npredicates.1.op\\n  Field required [type=missing, input_value={'column': 'Location', 'contains': 'China'}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\"\n}",
+        "evidence_type": "table",
+        "title": "Unresolved table request: Exact 2010–2015 life-expectancy values for India and mainland China, and the life-expectancy difference between them.",
+        "section_path": [],
+        "retrieval_query": "Using the 2023 UN population estimates and the 2010–2015 life-expectancy values in the supplied tables, compare India and mainland China. Which had the larger population and by how many people? Which had the higher life expectancy and by how many years? Based only on the supplied evidence, what, if anything, can this comparison tell us about whether population size affects life expectancy? Explain any limitations that affect your conclusion.",
+        "retriever": "table",
+        "rank": 2,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "table-001-9a1e32e929",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "table_computation",
+          "table_request_id": "table-r2-2-65f1ed4f5ef0",
+          "operation": "compare",
+          "table_computation_sufficient": false,
+          "warnings": [
+            "2 validation errors for TableQueryPlan\npredicates.0.op\n  Field required [type=missing, input_value={'column': 'Location', 'equals': 'India *'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\npredicates.1.op\n  Field required [type=missing, input_value={'column': 'Location', 'contains': 'China'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing"
+          ]
+        }
+      }
+    ],
+    "assessment": {
+      "ready_to_answer": false,
+      "supported_requirements": [
+        "The supplied evidence identifies the relevant 2023 UN population table for India and mainland China in List_of_countries_by_population_(United_Nations).html and the relevant 2010–2015 UN life-expectancy table in List_of_countries_by_past_life_expectancy.html.",
+        "The population evidence includes India 2023 = 1,438,069,596 and China 2023 = 1,422,584,933.",
+        "The life-expectancy evidence includes the 2010–2015 period values in the supplied table artifact, but the exact India and mainland China rows/values are not yet extracted in the evidence shown."
+      ],
+      "missing_requirements": [
+        "The exact 2010–2015 life-expectancy values for India and mainland China, and the difference between them, are not directly supported in the supplied excerpts.",
+        "A comparison conclusion about whether population size affects life expectancy cannot be supported causally from these two country comparisons alone; this requires an explicit caution/limitation framing based on the evidence."
+      ],
+      "retrieval_requests": [
+        {
+          "missing_fact": "Exact 2010–2015 life-expectancy values for India and mainland China from the UN life-expectancy table, and their difference.",
+          "query": "Find the 2010–2015 life expectancy values for India and mainland China in List_of_countries_by_past_life_expectancy.html and compare them.",
+          "target_articles": [
+            "List_of_countries_by_past_life_expectancy.html"
+          ],
+          "keywords": [
+            "India",
+            "China",
+            "mainland China",
+            "2010–2015",
+            "life expectancy"
+          ],
+          "preferred_retriever": "hybrid"
+        }
+      ],
+      "table_requests": [],
+      "unresolved_conflicts": [
+        "The earlier table-computation attempts failed because the query did not match the table rows; the exact life-expectancy values still need to be retrieved/computed from the supplied UN table."
+      ],
+      "explanation": "The supplied evidence is sufficient to answer the 2023 population comparison between India and mainland China, but not sufficient to answer the 2010–2015 life-expectancy comparison because the exact country rows/values are not shown in the excerpts and the table-computation result failed. The causal interpretation asked in the final part should be limited to a non-causal statement: at most, this single comparison can show whether the country with the larger population also had higher life expectancy in these two cases, but it cannot establish that population size affects life expectancy because many confounders are uncontrolled and only two countries are compared."
+    },
+    "assessment_history": [
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "2010–2015 life expectancy values are available from the supplied table article for comparing India and mainland China.",
+          "The evidence includes a life-expectancy table artifact from List_of_countries_by_past_life_expectancy.html."
+        ],
+        "missing_requirements": [
+          "The 2023 UN population estimates for India and mainland China are not present in the supplied evidence.",
+          "The specific 2010–2015 life-expectancy values for India and mainland China are not yet extracted from the supplied table evidence in a directly readable way."
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "2023 UN population estimate for India and mainland China, and the difference between them",
+            "query": "2023 UN population estimates India mainland China compare population difference",
+            "target_articles": [
+              "India.html",
+              "China.html",
+              "List of countries by population estimates"
+            ],
+            "keywords": [
+              "2023 UN population estimates",
+              "India",
+              "mainland China",
+              "population"
+            ],
+            "preferred_retriever": "hybrid"
+          },
+          {
+            "missing_fact": "2010–2015 life-expectancy values for India and mainland China and the difference between them",
+            "query": "2010–2015 life expectancy India mainland China UN table values",
+            "target_articles": [
+              "List_of_countries_by_past_life_expectancy.html"
+            ],
+            "keywords": [
+              "2010–2015",
+              "life expectancy",
+              "India",
+              "China"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The supplied evidence clearly contains the relevant life-expectancy table source, but the actual India and mainland China values are not exposed in the excerpt, and there is no population evidence at all. Because the question requires both population comparison and life-expectancy comparison, plus an interpretive conclusion, the evidence is insufficient to answer fully. A table lookup or additional retrieval is needed for the exact rows/values for India and mainland China in both datasets."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "The supplied population evidence identifies 2023 mid-year estimates for India (1,438,069,596) and mainland China (1,422,584,933).",
+          "The supplied life-expectancy evidence identifies 2010–2015 values for India and mainland China in the UN table."
+        ],
+        "missing_requirements": [
+          "The exact 2010–2015 life-expectancy values for India and mainland China are not directly visible in the supplied excerpt; they need a table lookup from the relevant life-expectancy table.",
+          "A computation of the population difference and life-expectancy difference is needed to answer 'by how many' precisely."
+        ],
+        "retrieval_requests": [],
+        "table_requests": [
+          {
+            "missing_fact": "Exact 2010–2015 life-expectancy values for India and mainland China from the UN life-expectancy table, and the comparison/difference between them.",
+            "source_article": "List_of_countries_by_past_life_expectancy.html",
+            "table_id": "table-001-9a1e32e929",
+            "expected_caption": null,
+            "operation": "compare",
+            "columns_needed": [],
+            "row_filters": {},
+            "comparison_key": null
+          }
+        ],
+        "unresolved_conflicts": [],
+        "explanation": "We have enough evidence to identify the 2023 populations for India and mainland China, but the 2010–2015 life-expectancy values for those two countries are not present in the visible excerpt. Since the question requires a direct comparison and numerical differences, we need a table lookup/comparison on the life-expectancy table. The supplied evidence also does not support any causal conclusion about whether population size affects life expectancy; at most, it could support a non-causal comparison after the missing values are obtained."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "The 2023 UN population estimates for India and mainland China are available in List_of_countries_by_population_(United_Nations).html#section-001-00.",
+          "The 2010–2015 life-expectancy values are available in List_of_countries_by_past_life_expectancy.html#table-001-9a1e32e929.",
+          "The supplied population source explicitly notes that 'China' refers to mainland China only."
+        ],
+        "missing_requirements": [
+          "The exact 2023 population values for India and mainland China need to be extracted and compared, including the numerical difference.",
+          "The exact 2010–2015 life-expectancy values for India and mainland China need to be extracted and compared, including the numerical difference.",
+          "A comparison-based conclusion about whether population size affects life expectancy cannot be supported from these two country examples alone without additional evidence or caveats."
+        ],
+        "retrieval_requests": [],
+        "table_requests": [
+          {
+            "missing_fact": "Exact 2023 population values for India and mainland China, and the population difference between them.",
+            "source_article": "List_of_countries_by_population_(United_Nations).html",
+            "table_id": null,
+            "expected_caption": null,
+            "operation": "compare",
+            "columns_needed": [],
+            "row_filters": {},
+            "comparison_key": null
+          },
+          {
+            "missing_fact": "Exact 2010–2015 life-expectancy values for India and mainland China, and the life-expectancy difference between them.",
+            "source_article": "List_of_countries_by_past_life_expectancy.html",
+            "table_id": "table-001-9a1e32e929",
+            "expected_caption": null,
+            "operation": "compare",
+            "columns_needed": [],
+            "row_filters": {},
+            "comparison_key": null
+          }
+        ],
+        "unresolved_conflicts": [],
+        "explanation": "The evidence includes the relevant population and life-expectancy sources, but the needed country-specific values and differences are not yet directly extracted in the supplied evidence. The life-expectancy table has the correct artifact ID, while the population list is present only as a text excerpt without a deterministic comparison result for India vs. mainland China. A causal or general conclusion about whether population size affects life expectancy would require caution because this is only a two-country comparison and does not control for confounders or establish causation."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "The supplied evidence identifies the relevant 2023 UN population table for India and mainland China in List_of_countries_by_population_(United_Nations).html and the relevant 2010–2015 UN life-expectancy table in List_of_countries_by_past_life_expectancy.html.",
+          "The population evidence includes India 2023 = 1,438,069,596 and China 2023 = 1,422,584,933.",
+          "The life-expectancy evidence includes the 2010–2015 period values in the supplied table artifact, but the exact India and mainland China rows/values are not yet extracted in the evidence shown."
+        ],
+        "missing_requirements": [
+          "The exact 2010–2015 life-expectancy values for India and mainland China, and the difference between them, are not directly supported in the supplied excerpts.",
+          "A comparison conclusion about whether population size affects life expectancy cannot be supported causally from these two country comparisons alone; this requires an explicit caution/limitation framing based on the evidence."
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Exact 2010–2015 life-expectancy values for India and mainland China from the UN life-expectancy table, and their difference.",
+            "query": "Find the 2010–2015 life expectancy values for India and mainland China in List_of_countries_by_past_life_expectancy.html and compare them.",
+            "target_articles": [
+              "List_of_countries_by_past_life_expectancy.html"
+            ],
+            "keywords": [
+              "India",
+              "China",
+              "mainland China",
+              "2010–2015",
+              "life expectancy"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [
+          "The earlier table-computation attempts failed because the query did not match the table rows; the exact life-expectancy values still need to be retrieved/computed from the supplied UN table."
+        ],
+        "explanation": "The supplied evidence is sufficient to answer the 2023 population comparison between India and mainland China, but not sufficient to answer the 2010–2015 life-expectancy comparison because the exact country rows/values are not shown in the excerpts and the table-computation result failed. The causal interpretation asked in the final part should be limited to a non-causal statement: at most, this single comparison can show whether the country with the larger population also had higher life expectancy in these two cases, but it cannot establish that population size affects life expectancy because many confounders are uncontrolled and only two countries are compared."
+      }
+    ]
+  }
+}

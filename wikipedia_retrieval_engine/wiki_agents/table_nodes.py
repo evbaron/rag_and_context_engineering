@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 from pathlib import Path
@@ -15,10 +16,14 @@ from wikipedia_retrieval_engine.utils.wiki_table_store import (
 )
 from wikipedia_retrieval_engine.utils.wiki_table_parser import NormalizedTable
 from wikipedia_retrieval_engine.wiki_agents.agentic_models import (
+    AgentState,
+    EvidenceItem,
     TableCellEvidence,
     TableEvidence,
+    TablePredicate,
     TableQueryPlan,
     TableRequest,
+    table_attempt_count,
 )
 
 
@@ -32,6 +37,19 @@ Rules:
 - selected_columns are the columns whose cells the executor should return.
 - filters map an exact column name to a case-insensitive text value that must occur
   in that cell. They identify rows; they do not extract or calculate the answer.
+- predicates perform deterministic comparisons over an exact column. Use text
+  predicates for contains/equals, numeric predicates for thresholds or ranges,
+  and year predicates for cells containing one or more years. Never ask the model
+  to perform the comparison itself.
+- num_gt/num_gte/num_lt/num_lte compare the first number in a cell;
+  num_any_gt/num_any_gte test every number.
+- Year predicates read the years in a cell. year_min_gte / year_min_lte compare
+  the EARLIEST (first) year in the cell — use these for "first entered",
+  "debuted", "first appeared", "first year", or "since" questions (e.g. a sport
+  whose FIRST Olympic year is 1950 or later: a cell like "1900-1908, 1920, since
+  1972" has earliest year 1900 and must NOT match year_min_gte 1950). Use
+  year_any_gte / year_any_lte / year_between only when the question asks whether
+  the entity appeared AT ALL within a period, so any single matching year counts.
 - group_by and sort_column must also use exact column names.
 - calculation, when required, must be count, sum, min, max, or average.
 - calculation_column identifies the exact numeric column for sum, min, max, or
@@ -278,6 +296,7 @@ def _validate_table_query_plan(
         *plan.selected_columns,
         *plan.filters.keys(),
         *plan.group_by,
+        *(predicate.column for predicate in plan.predicates),
     }
     if plan.sort_column:
         referenced_columns.add(plan.sort_column)
@@ -289,6 +308,7 @@ def _validate_table_query_plan(
             f"Table planner invented columns for {plan.artifact_id}: "
             f"{unknown_columns}. Available columns: {table.columns}."
         )
+    _validate_predicates(plan.predicates)
     if not plan.selected_columns:
         raise ValueError("Table query plan must select at least one column.")
     if plan.operation in {"sort", "timeline"} and not plan.sort_column:
@@ -324,7 +344,7 @@ def execute_table_query_plan(
     matched_indexes = [
         index
         for index, row in enumerate(table.rows)
-        if _row_matches(table, index, row, plan.filters)
+        if _row_matches(table, index, row, plan.filters, plan.predicates)
     ]
     warnings = list(table.warnings)
     if not matched_indexes:
@@ -390,6 +410,133 @@ def execute_table_query_plan(
     )
 
 
+def compute_requested_tables(
+    state: AgentState,
+    table_store: TableArtifactStore,
+    llm: BaseChatModel,
+    *,
+    max_requests_per_round: int = 6,
+) -> AgentState:
+    """Plan and execute the current assessment's bounded table requests.
+
+    Successful and insufficient results both become ordinary ``EvidenceItem``
+    objects, so the same assessor can judge them on the next graph pass. Expected
+    schema/artifact failures are also recorded as insufficient evidence instead
+    of silently dropping the entire benchmark question.
+    """
+
+    if max_requests_per_round < 1:
+        raise ValueError("max_requests_per_round must be at least 1.")
+    question = state.get("question", "").strip()
+    if not question:
+        raise ValueError("Agent state must contain a non-empty question.")
+    assessment = state.get("assessment")
+    if assessment is None:
+        raise ValueError("Agent state does not contain an evidence assessment.")
+
+    requests = assessment.table_requests[:max_requests_per_round]
+    if not requests:
+        raise ValueError("The table-computation node received no table requests.")
+
+    next_round = table_attempt_count(state) + 1
+    evidence_by_id = {
+        item.evidence_id: item for item in state.get("evidence", [])
+    }
+    for request_index, request in enumerate(requests, start=1):
+        request_digest = hashlib.sha256(
+            request.model_dump_json().encode("utf-8")
+        ).hexdigest()[:12]
+        request_id = f"table-r{next_round}-{request_index}-{request_digest}"
+        try:
+            plan = plan_table_query(
+                question,
+                request,
+                table_store,
+                llm,
+            )
+            result = execute_table_query_plan(
+                plan,
+                table_store,
+                request_id=request_id,
+            )
+            table = table_store.load_artifact(result.artifact_id)
+            payload = {
+                "table_request": request.model_dump(mode="json"),
+                "query_plan": plan.model_dump(mode="json"),
+                "result": result.model_dump(mode="json"),
+            }
+            evidence_id = (
+                f"{table.source_article}#{table.table_id}#computed-{request_id}"
+            )
+            evidence_by_id[evidence_id] = EvidenceItem(
+                evidence_id=evidence_id,
+                source_article=table.source_article,
+                content=(
+                    "Deterministic table-computation result. Use the computed "
+                    "rows/calculation below rather than recomputing them.\n"
+                    + json.dumps(payload, indent=2, ensure_ascii=False)
+                ),
+                evidence_type="table",
+                title=f"Computed table result: {request.missing_fact}",
+                section_path=list(table.section_path),
+                retrieval_query=question,
+                retriever="table",
+                rank=request_index,
+                raw_score=0.0,
+                score_semantics="rank_only",
+                table_id=result.artifact_id,
+                source_cells=result.source_cells,
+                metadata={
+                    "retrieval_stage": "table_computation",
+                    "table_request_id": request_id,
+                    "operation": plan.operation,
+                    "calculation": result.calculation,
+                    "table_computation_sufficient": result.sufficient,
+                    "warnings": result.warnings,
+                },
+            )
+        except (KeyError, OSError, RuntimeError, ValueError) as error:
+            # A malformed model plan or missing artifact is evidence that this
+            # request was not satisfied. Provider/rate-limit errors are not
+            # caught here so the harness's normal retry behavior still applies.
+            evidence_id = f"{request.source_article}#computed-{request_id}-failed"
+            evidence_by_id[evidence_id] = EvidenceItem(
+                evidence_id=evidence_id,
+                source_article=request.source_article,
+                content=(
+                    "Table computation could not satisfy this request.\n"
+                    + json.dumps(
+                        {
+                            "table_request": request.model_dump(mode="json"),
+                            "error": str(error),
+                        },
+                        indent=2,
+                        ensure_ascii=False,
+                    )
+                ),
+                evidence_type="table",
+                title=f"Unresolved table request: {request.missing_fact}",
+                retrieval_query=question,
+                retriever="table",
+                rank=request_index,
+                raw_score=0.0,
+                score_semantics="rank_only",
+                table_id=request.table_id,
+                metadata={
+                    "retrieval_stage": "table_computation",
+                    "table_request_id": request_id,
+                    "operation": request.operation,
+                    "table_computation_sufficient": False,
+                    "warnings": [str(error)],
+                },
+            )
+
+    return {
+        "evidence": list(evidence_by_id.values()),
+        "table_attempts": next_round,
+    }
+
+
 def _validate_executable_plan(
     plan: TableQueryPlan,
     table: NormalizedTable,
@@ -401,6 +548,7 @@ def _validate_executable_plan(
         *plan.selected_columns,
         *plan.filters.keys(),
         *plan.group_by,
+        *(predicate.column for predicate in plan.predicates),
     }
     for optional_column in (plan.sort_column, plan.calculation_column):
         if optional_column:
@@ -410,6 +558,7 @@ def _validate_executable_plan(
         raise ValueError(
             f"Table query plan references unknown columns: {unknown_columns}."
         )
+    _validate_predicates(plan.predicates)
     if not plan.selected_columns:
         raise ValueError("Table query plan must select at least one column.")
     if plan.operation in {"sort", "timeline"} and not plan.sort_column:
@@ -430,16 +579,43 @@ def _row_matches(
     row_index: int,
     row: dict[str, str],
     filters: dict[str, str],
+    predicates: list[TablePredicate],
 ) -> bool:
-    """Apply case-insensitive contains filters to text and semantic cell fields."""
+    """Apply text filters and deterministic predicates to one normalized row."""
 
-    rich_row = table.row_cells[row_index] if row_index < len(table.row_cells) else {}
     for column, expected in filters.items():
-        cell = rich_row.get(column)
-        if cell is None:
-            haystack = row.get(column, "")
+        haystack = _cell_search_text(table, row_index, row, column)
+        if _normalized_text(expected) not in _normalized_text(haystack):
+            return False
+    for predicate in predicates:
+        # Exact and numeric comparisons use the cell's value/sort value, not the
+        # appended footnotes and legends used for semantic contains matching.
+        if predicate.op == "contains":
+            haystack = _cell_search_text(
+                table, row_index, row, predicate.column
+            )
+        elif predicate.op == "equals":
+            haystack = row.get(predicate.column, "")
         else:
-            haystack = " ".join(
+            haystack = _cell_sort_text(table, row_index, predicate.column)
+        if not _predicate_passes(haystack, predicate):
+            return False
+    return True
+
+
+def _cell_search_text(
+    table: NormalizedTable,
+    row_index: int,
+    row: dict[str, str],
+    column: str,
+) -> str:
+    """Combine a cell's plain value with its retained semantic signals."""
+
+    values = [row.get(column, "")]
+    if row_index < len(table.row_cells):
+        cell = table.row_cells[row_index].get(column)
+        if cell is not None:
+            values.extend(
                 [
                     cell.text,
                     cell.display_text,
@@ -452,9 +628,7 @@ def _row_matches(
                     cell.sort_value or "",
                 ]
             )
-        if _normalized_text(expected) not in _normalized_text(haystack):
-            return False
-    return True
+    return " ".join(value for value in values if value)
 
 
 def _sort_row_indexes(
@@ -560,6 +734,7 @@ def _provenance_columns(plan: TableQueryPlan) -> list[str]:
         *plan.selected_columns,
         *plan.filters.keys(),
         *plan.group_by,
+        *(predicate.column for predicate in plan.predicates),
     ]
     if plan.sort_column:
         columns.append(plan.sort_column)
@@ -613,18 +788,166 @@ def _collect_cell_provenance(
     return source_cells, details
 
 
-def _parse_number(value: str) -> int | float | None:
-    normalized = value.strip().replace(",", "").replace("$", "")
-    normalized = normalized.removesuffix("%").strip("*†‡ ")
-    negative = normalized.startswith("(") and normalized.endswith(")")
-    if negative:
-        normalized = normalized[1:-1].strip()
-    if not re.fullmatch(r"[-+]?\d+(?:\.\d+)?", normalized):
+_NUMBER_TOKEN = re.compile(
+    r"(?<![\w.])"
+    r"(?P<open>\()?"
+    r"(?P<number>[-+]?(?:\d+(?:\.\d*)?|\.\d+))"
+    r"(?P<close>\))?"
+    r"(?![\w.])"
+)
+_NUMERIC_PREDICATES = {
+    "num_gt",
+    "num_gte",
+    "num_lt",
+    "num_lte",
+    "num_between",
+    "num_any_gt",
+    "num_any_gte",
+}
+_YEAR_PREDICATES = {
+    "year_min_gte",
+    "year_min_lte",
+    "year_any_gte",
+    "year_any_lte",
+    "year_between",
+}
+
+
+def _extract_numbers(value: object) -> list[float]:
+    """Extract signed values, currency, percentages, and accounting negatives."""
+
+    normalized = (
+        re.sub(r"\[[^\]]*\]", " ", str(value))
+        .replace("\u00ad", "")
+        .replace(",", "")
+        .replace("$", "")
+        .replace("€", "")
+        .replace("£", "")
+        .replace("−", "-")
+        .replace("﹣", "-")
+        .replace("－", "-")
+    )
+    numbers: list[float] = []
+    for match in _NUMBER_TOKEN.finditer(normalized):
+        try:
+            parsed = float(match.group("number"))
+        except ValueError:
+            continue
+        if (
+            match.group("open")
+            and match.group("close")
+            and not match.group("number").startswith("-")
+        ):
+            parsed = -parsed
+        numbers.append(parsed)
+    return numbers
+
+
+def _parse_number(value: object) -> int | float | None:
+    numbers = _extract_numbers(value)
+    if not numbers:
         return None
-    parsed = float(normalized)
-    if negative:
-        parsed = -parsed
+    parsed = numbers[0]
     return int(parsed) if parsed.is_integer() else parsed
+
+
+def _extract_years(value: object) -> list[int]:
+    return [
+        int(year)
+        for year in re.findall(
+            r"(?<!\d)(1[5-9]\d{2}|20\d{2})(?!\d)",
+            str(value),
+        )
+    ]
+
+
+def _validate_predicates(predicates: list[TablePredicate]) -> None:
+    """Reject incomplete comparison plans before any table rows are evaluated."""
+
+    for predicate in predicates:
+        if predicate.value is None:
+            raise ValueError(
+                f"Table predicate {predicate.op!r} requires a value."
+            )
+        if predicate.op.endswith("between") and predicate.value2 is None:
+            raise ValueError(
+                f"Table predicate {predicate.op!r} requires value2."
+            )
+        if predicate.op in _NUMERIC_PREDICATES | _YEAR_PREDICATES:
+            lower = _parse_number(predicate.value)
+            upper = (
+                _parse_number(predicate.value2)
+                if predicate.value2 is not None
+                else None
+            )
+            if lower is None:
+                raise ValueError(
+                    f"Table predicate {predicate.op!r} has a non-numeric value."
+                )
+            if predicate.op.endswith("between"):
+                if upper is None:
+                    raise ValueError(
+                        f"Table predicate {predicate.op!r} has a non-numeric value2."
+                    )
+                if lower > upper:
+                    raise ValueError(
+                        f"Table predicate {predicate.op!r} has reversed bounds."
+                    )
+
+
+def _predicate_passes(cell: str, predicate: TablePredicate) -> bool:
+    """Evaluate one validated text, numeric, or year predicate."""
+
+    if predicate.op == "contains":
+        return _normalized_text(str(predicate.value)) in _normalized_text(cell)
+    if predicate.op == "equals":
+        return _normalized_text(cell) == _normalized_text(str(predicate.value))
+
+    lower = _parse_number(predicate.value)
+    if lower is None:
+        return False
+
+    if predicate.op in _NUMERIC_PREDICATES:
+        numbers = _extract_numbers(cell)
+        if not numbers:
+            return False
+        if predicate.op == "num_gt":
+            return numbers[0] > lower
+        if predicate.op == "num_gte":
+            return numbers[0] >= lower
+        if predicate.op == "num_lt":
+            return numbers[0] < lower
+        if predicate.op == "num_lte":
+            return numbers[0] <= lower
+        if predicate.op == "num_any_gt":
+            return any(number > lower for number in numbers)
+        if predicate.op == "num_any_gte":
+            return any(number >= lower for number in numbers)
+        if predicate.op == "num_between":
+            upper = _parse_number(predicate.value2)
+            return upper is not None and any(
+                lower <= number <= upper for number in numbers
+            )
+
+    if predicate.op in _YEAR_PREDICATES:
+        years = _extract_years(cell)
+        if not years:
+            return False
+        if predicate.op == "year_min_gte":
+            return min(years) >= lower
+        if predicate.op == "year_min_lte":
+            return min(years) <= lower
+        if predicate.op == "year_any_gte":
+            return any(year >= lower for year in years)
+        if predicate.op == "year_any_lte":
+            return any(year <= lower for year in years)
+        if predicate.op == "year_between":
+            upper = _parse_number(predicate.value2)
+            return upper is not None and any(
+                lower <= year <= upper for year in years
+            )
+
+    return False
 
 
 def _normalized_text(value: str) -> str:

@@ -167,9 +167,9 @@
     <div class="eyebrow">Wikipedia Retrieval Engine · capstone lineage</div>
     <h1>Retriever Phylogeny</h1>
     <p class="thesis">Every checkpoint branched into approaches; RAGAS applied two selection pressures.
-      <b>Retrieval recall kept climbing — .90 → .94 → .96+</b> — while
-      <b>answer quality stayed capped near .75</b>. The gap named the real bottleneck at the very start
-      (a counting question that failed even with the right text) and it is still unsolved: reasoning over tables, now Phase&nbsp;2.</p>
+      Through Phase 1, <b>retrieval recall kept climbing — .90 → .94 → .97</b> — while
+      <b>answer quality stayed flat</b>, naming the real bottleneck early: reasoning over tables.
+      <b>Phase 2 is now moving quality</b> — aligned JSON tables, then deterministic computation over the same rows.</p>
     <div class="herogrid">
       <div>
         <div class="statuslegend" id="legend"></div>
@@ -303,18 +303,12 @@ const N = [
   {cp:"5.1",name:"Agentic loop v1",st:"abandon",fam:"agentic",recall:0.886,quality:0.60,
    blurb:"Vector → graph → multi-step, with an assessor.",
    what:"First agentic build: initial vector articles, an evidence-assessment loop escalating to graph then multi-step section retrieval. Only sections enter context (kills the 260k-char problem).",
-   why:"Out of the gate it scored below the 4.1 graph survivor (recall 0.886) and crashed on some questions — a starting point, not the answer.",
-   verdict:"Reworked — the substrate for the tune-up below."},
-  {cp:"5.1",name:"Retrieval tune-up",st:"survivor",fam:"agentic",recall:0.963,quality:0.66,
-   blurb:"k=4 + section deepen + graph-contamination cap.",
-   what:"Three fixes: seed 4 articles (not 3), deepen each with focused sections, and rank+cap graph-neighbor sections so siblings can't contaminate.",
-   why:"Recall 0.886 → 0.963 at ~14× less context — finally past the 4.1 graph baseline (0.939).",
-   verdict:"Survived — cleared the 'beat 4.1' bar on recall.",
-   range:"0.930–1.000"},
+   why:"Out of the gate it scored below the 4.1 graph survivor (recall 0.886) — the loop worked, but its initial-retrieval and article-selection stages were the wrong shape.",
+   verdict:"Reworked — the substrate the initial-retriever and selection forks below refine."},
   {cp:"5.1",name:"Initial: multi-step (sub-topic)",st:"abandon",fam:"initial retriever",recall:0.951,quality:0.62,
    blurb:"Reuse the 4.1 decomposer as the initial stage.",
    what:"Lead with the sub-topic decomposer to surface named entities (chasing GT16, where Obama was buried).",
-   why:"It emitted entity-diluted analytical queries ('2008 Obama…Clinton campaign advisor' → retrieves Clinton, not Obama). A wash — recall 0.951, below the tune-up.",
+   why:"It emitted entity-diluted analytical queries ('2008 Obama…Clinton campaign advisor' → retrieves Clinton, not Obama). A wash — recall 0.951, below the entity variant beside it.",
    verdict:"Abandoned — right idea, wrong query shape."},
   {cp:"5.1",name:"Initial: multi-step (entity)",st:"survivor",fam:"initial retriever",recall:0.97,quality:0.62,
    blurb:"Decompose into clean canonical entity names.",
@@ -326,17 +320,28 @@ const N = [
    what:"The original review node judged each article by its single top-ranked snippet.",
    why:"For entity queries that snippet was often 'See also' or the lead infobox, so it rejected correct articles — GT03 rejected all 7 → recall 0.0. The bottleneck moved from finding to keeping.",
    verdict:"Abandoned — judging an article by one snippet is the flaw."},
-  {cp:"5.1",name:"Review: TOC judge + select",st:"current",fam:"selection",recall:0.974,quality:0.588,
+  {cp:"5.1",name:"Review: TOC judge + select",st:"survivor",fam:"selection",recall:0.974,quality:0.588,
    blurb:"Judge by table-of-contents; pick sections; flag tables.",
    what:"One fused call reads each article's table of contents (not a snippet), keeps the right sources, selects the sections to read, and flags which need a table tool.",
-   why:"Three runs, recall 0.974 and rock-stable — 18 of 19 questions at recall 1.0 (GT03 went 0.0 → 1.0). Quality index 0.59: the non-passes are now mostly partial, and all but one (GT19) sit at recall 1.0.",
-   verdict:"Phase gate met — retrieval is solved; every remaining failure but one fails with its sections present. The bottleneck is synthesis.",
+   why:"Three runs, recall 0.974 and rock-stable — 18 of 19 questions at recall 1.0 (GT03 went 0.0 → 1.0). Quality index 0.59: the non-passes now fail with the right sections in hand, which points the finger squarely at synthesis.",
+   verdict:"Phase 1 head — article and section retrieval are solved. The remaining failures fail with sections present: table synthesis (Phase 2).",
    range:"0.974–0.974"},
-  {cp:"5.1",name:"Table reading",st:"next",fam:"synthesis",recall:null,quality:null,
-   blurb:"Read / filter / aggregate table rows.",
-   what:"Enable the built-but-disabled table-reader branch (parser, artifact store, planner, executor) so flagged table questions are computed, not guessed.",
-   why:"Retrieval is now solved (recall 0.974, 18/19 at recall 1.0); the surviving failures fail at recall 1.0 — pure table synthesis. The agent already flags which questions need the table tool (GT03/07/08/10/11/…). This is the bottleneck first seen at 2.1's counting question and quantified by 3.1's oracle probe (0.789).",
-   verdict:"The next phase — where answer quality should finally move."},
+  {cp:"5.1",name:"Tables: sidecar JSON",st:"abandon",fam:"phase 2 · representation",recall:0.974,quality:0.58,
+   blurb:"Raw 4.1 sidecar rows as JSON evidence.",
+   what:"First Phase-2 try: hand the model the article's table as structured JSON (from the 4.1 sidecar), no executor.",
+   why:"A wash (PASS ≈ 0.42). The sidecar isn't rowspan-expanded, so award tables (GT03/GT07) misalign — a name lands in the Year column — and every filter or lookup reads the wrong cell.",
+   verdict:"Abandoned — right idea, wrong JSON (two versions exist; this one isn't aligned)."},
+  {cp:"5.1",name:"Tables: aligned JSON (read)",st:"survivor",fam:"phase 2 · representation",recall:0.974,quality:0.70,
+   blurb:"Rowspan-aligned NormalizedTable rows, additive.",
+   what:"Read from the 5.1 NormalizedTable store (rowspan expanded, winner marks kept), keep the section too, and tighten the table flag.",
+   why:"Representation alone was a real lift — PASS ≈ 0.39 → 0.58, quality ≈ 0.59 → 0.70, recall unchanged. A clean, row-aligned table is enough for single-table filters and lookups.",
+   verdict:"Survived — the fair, aligned representation. Bigger gain than expected.",
+   range:"PASS 0.53–0.63"},
+  {cp:"5.1",name:"Table executor (compute)",st:"current",fam:"phase 2 · computation",recall:0.974,quality:0.70,
+   blurb:"Deterministic predicates over the aligned rows.",
+   what:"When the assessor flags a row-wise operation, a planner emits text/numeric/year predicates and Python — not the model — filters, counts, and aggregates, returning exact source cells.",
+   why:"The compute-bound questions (GT07 winner-count, GT10/GT11 first-year filter, GT03 intersection) don't clear on reading alone. Validated in isolation on GT08/10/11; the in-graph run is settling around PASS ≈ 0.65.",
+   verdict:"Current — the last increment, where answer quality finally moves past what retrieval could do."},
 ];
 
 const legend = document.getElementById('legend');

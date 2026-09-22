@@ -9,6 +9,16 @@ from wikipedia_retrieval_engine.retrievers.corpus import MarkdownArticleStore
 from wikipedia_retrieval_engine.retrievers.graph import GraphParams, WikiGraph
 from wikipedia_retrieval_engine.retrievers.multistep import MultiStepRetriever
 from wikipedia_retrieval_engine.retrievers.vector import VectorRetriever
+from wikipedia_retrieval_engine.utils.wiki_table_parser import (
+    CellAnnotation,
+    NormalizedCell,
+    NormalizedTable,
+    TableLegend,
+)
+from wikipedia_retrieval_engine.utils.wiki_table_store import (
+    TableArtifactStore,
+    TableCatalogEntry,
+)
 from wikipedia_retrieval_engine.wiki_agents.agentic_models import (
     AgentState,
     ArticleReview,
@@ -623,6 +633,77 @@ class RetrievalNodesTests(unittest.TestCase):
         # candidate is kept even when the model rejects everything.
         self.assertEqual(update["selected_articles"], ["A.html"])
 
+    def test_toc_review_ranks_late_decade_tables_before_prompt_truncation(self) -> None:
+        candidate = ArticleCandidate(
+            source_article="Academy_Award_for_Best_Actor.html",
+            retrieval_query="actors from 2000 through 2020",
+            discovered_by="vector",
+            rank=1,
+            raw_score=0.1,
+            score_semantics="lower_is_better",
+        )
+        markdown_store = Mock(spec=MarkdownArticleStore)
+        markdown_store.has_article.return_value = True
+        markdown_store.load_metadata.return_value = {
+            "sections": [
+                {"title": "Winners and nominees"},
+                {"title": "2000s"},
+                {"title": "2010s"},
+                {"title": "2020s"},
+            ],
+            "tables": [],
+        }
+        entries = [
+            TableCatalogEntry(
+                artifact_id=f"artifact-{decade}",
+                source_article="Academy_Award_for_Best_Actor.html",
+                table_id=f"table-{index:03d}",
+                table_role="data",
+                caption=None,
+                section_path=["Winners and nominees", f"{decade}s"],
+                columns=["Year", "Actor", "Film"],
+                row_count=50,
+            )
+            for index, decade in enumerate(range(1920, 2030, 10), start=2)
+        ]
+        table_store = Mock(spec=TableArtifactStore)
+        table_store.list_tables.return_value = entries
+
+        selected_ids = ["artifact-2000", "artifact-2010", "artifact-2020"]
+        review_runner = Mock()
+        review_runner.invoke.return_value = ArticleReviewBatch(
+            reviews=[
+                ArticleReview(
+                    source_article="Academy_Award_for_Best_Actor.html",
+                    relevant=True,
+                    reason="The requested decades are listed here.",
+                    relevant_sections=["2000s", "2010s", "2020s"],
+                    relevant_table_ids=selected_ids,
+                )
+            ]
+        )
+        llm = Mock(spec=BaseChatModel)
+        llm.with_structured_output.return_value = review_runner
+
+        update = review_and_select_from_toc(
+            {
+                "question": "Which actors won from 2000 through 2020?",
+                "article_candidates": [candidate],
+            },
+            llm,
+            markdown_store,
+            table_store=table_store,
+            max_tables_listed=3,
+        )
+
+        prompt = review_runner.invoke.call_args.args[0][1].content
+        for artifact_id in selected_ids:
+            self.assertIn(f"Artifact ID: {artifact_id}", prompt)
+        self.assertEqual(
+            update["article_reviews"][0].relevant_table_ids,
+            selected_ids,
+        )
+
     def test_load_selected_sections_pulls_named_sections(self) -> None:
         review = ArticleReview(
             source_article="68th_Academy_Awards.html",
@@ -642,7 +723,7 @@ class RetrievalNodesTests(unittest.TestCase):
             },
         )
         retriever = Mock(spec=VectorRetriever)
-        retriever.getArticleSectionsTopK.return_value = [(document, 0.05)]
+        retriever.getArticleSectionTopK.return_value = [(document, 0.05)]
 
         update = load_selected_sections(
             {
@@ -653,8 +734,11 @@ class RetrievalNodesTests(unittest.TestCase):
             retriever,
         )
 
-        retriever.getArticleSectionsTopK.assert_called_once_with(
-            "Winners and nominees", "68th_Academy_Awards.html", k=1
+        retriever.getArticleSectionTopK.assert_called_once_with(
+            "Who was nominated at the 68th Academy Awards?",
+            "68th_Academy_Awards.html",
+            "Winners and nominees",
+            k=1,
         )
         evidence = update["evidence"]
         self.assertEqual(len(evidence), 1)
@@ -663,30 +747,65 @@ class RetrievalNodesTests(unittest.TestCase):
         self.assertEqual(item.metadata["requested_section"], "Winners and nominees")
         self.assertTrue(item.metadata["needs_table_reader"])
 
+    def test_load_selected_sections_does_not_accept_a_different_heading(self) -> None:
+        review = ArticleReview(
+            source_article="Academy_Award_for_Best_Actor.html",
+            relevant=True,
+            reason="Correct source.",
+            relevant_sections=["2000s"],
+        )
+        retriever = Mock(spec=VectorRetriever)
+        retriever.getArticleSectionTopK.return_value = []
+
+        update = load_selected_sections(
+            {
+                "question": "Who won between 2000 and 2009?",
+                "article_reviews": [review],
+                "evidence": [],
+            },
+            retriever,
+        )
+
+        retriever.getArticleSectionTopK.assert_called_once_with(
+            "Who won between 2000 and 2009?",
+            "Academy_Award_for_Best_Actor.html",
+            "2000s",
+            k=1,
+        )
+        retriever.getArticleSectionsTopK.assert_not_called()
+        self.assertEqual(update["evidence"], [])
+
     def test_load_selected_tables_adds_json_table_evidence(self) -> None:
         review = ArticleReview(
             source_article="Lists_of_earthquakes.html",
             relevant=True,
             reason="Contains the deadliest-earthquakes table.",
             relevant_sections=["Deadliest earthquakes"],
-            relevant_table_names=["Table 1: Deadliest"],
+            relevant_table_names=["deadliest fatalities"],
             needs_table_reader=True,
         )
-        markdown_store = Mock(spec=MarkdownArticleStore)
-        markdown_store.has_article.return_value = True
-        markdown_store.load_metadata.return_value = {
-            "tables": [
-                {
-                    "caption": None,
-                    "headers": ["Event", "Date", "Fatalities"],
-                    "rows": [
-                        ["1976 Tangshan earthquake", "July 27, 1976", "300,000+"],
-                        ["2004 Indian Ocean", "December 26, 2004", "227,898"],
-                    ],
-                    "n_rows": 2,
-                }
-            ]
-        }
+        entry = TableCatalogEntry(
+            artifact_id="art-1",
+            source_article="Lists_of_earthquakes.html",
+            table_id="table-001",
+            table_role="wikitable",
+            caption="Deadliest earthquakes",
+            section_path=["Deadliest earthquakes"],
+            columns=["Event", "Date", "Fatalities"],
+            row_count=2,
+        )
+        normalized = Mock()
+        normalized.columns = ["Event", "Date", "Fatalities"]
+        normalized.rows = [
+            {"Event": "1976 Tangshan earthquake", "Date": "July 27, 1976", "Fatalities": "300,000+"},
+            {"Event": "2004 Indian Ocean", "Date": "December 26, 2004", "Fatalities": "227,898"},
+        ]
+        normalized.row_cells = []
+        normalized.legends = []
+        store = Mock(spec=TableArtifactStore)
+        store.has_article.return_value = True
+        store.list_tables.return_value = [entry]
+        store.load_artifact.return_value = normalized
 
         update = load_selected_tables(
             {
@@ -694,16 +813,17 @@ class RetrievalNodesTests(unittest.TestCase):
                 "article_reviews": [review],
                 "evidence": [],
             },
-            markdown_store,
+            store,
         )
 
         evidence = update["evidence"]
         self.assertEqual(len(evidence), 1)
         item = evidence[0]
         self.assertEqual(item.evidence_type, "table")
+        self.assertEqual(item.table_id, "art-1")
         self.assertEqual(item.metadata["retrieval_stage"], "toc_selected_table")
         self.assertTrue(item.metadata["needs_table_reader"])
-        # Rendered as JSON rows keyed by column, not flattened prose.
+        # Rendered as aligned JSON rows keyed by column, not flattened prose.
         self.assertIn("Tangshan", item.content)
         self.assertIn('"Event"', item.content)
 
@@ -711,18 +831,155 @@ class RetrievalNodesTests(unittest.TestCase):
         review = ArticleReview(
             source_article="A.html", relevant=True, reason="kept but no table need"
         )  # needs_table_reader defaults False, no relevant_table_names
-        markdown_store = Mock(spec=MarkdownArticleStore)
-        markdown_store.has_article.return_value = True
-        markdown_store.load_metadata.return_value = {
-            "tables": [{"headers": ["a"], "rows": [["1"]], "n_rows": 1}]
-        }
+        store = Mock(spec=TableArtifactStore)  # must not be queried
 
         update = load_selected_tables(
             {"question": "q", "article_reviews": [review], "evidence": []},
-            markdown_store,
+            store,
         )
 
         self.assertEqual(update["evidence"], [])
+        store.list_tables.assert_not_called()
+
+    def test_load_selected_tables_honors_all_explicit_artifact_ids(self) -> None:
+        artifact_ids = ["artifact-2000", "artifact-2010", "artifact-2020"]
+        review = ArticleReview(
+            source_article="Academy_Award_for_Best_Actor.html",
+            relevant=True,
+            reason="All three decades are required.",
+            relevant_table_ids=artifact_ids,
+        )
+        entries = [
+            TableCatalogEntry(
+                artifact_id=artifact_id,
+                source_article="Academy_Award_for_Best_Actor.html",
+                table_id=f"table-{index}",
+                table_role="data",
+                caption=None,
+                section_path=["Winners and nominees", decade],
+                columns=["Year", "Actor"],
+                row_count=1,
+            )
+            for index, (artifact_id, decade) in enumerate(
+                zip(artifact_ids, ["2000s", "2010s", "2020s"]),
+                start=10,
+            )
+        ]
+        tables = {
+            entry.artifact_id: NormalizedTable(
+                artifact_id=entry.artifact_id,
+                source_article=entry.source_article,
+                table_id=entry.table_id,
+                caption=None,
+                section_path=entry.section_path,
+                columns=entry.columns,
+                rows=[{"Year": entry.section_path[-1], "Actor": "Winner"}],
+                warnings=[],
+                source_hash="hash",
+                parser_version="test",
+                html_hash="html",
+            )
+            for entry in entries
+        }
+        store = Mock(spec=TableArtifactStore)
+        store.has_article.return_value = True
+        store.list_tables.return_value = entries
+        store.load_artifact.side_effect = tables.__getitem__
+
+        update = load_selected_tables(
+            {
+                "question": "Which actors won from 2000 through 2020?",
+                "article_reviews": [review],
+                "evidence": [],
+            },
+            store,
+            max_tables_per_article=1,
+        )
+
+        table_evidence = [
+            item for item in update["evidence"] if item.evidence_type == "table"
+        ]
+        self.assertEqual(
+            [item.table_id for item in table_evidence],
+            artifact_ids,
+        )
+
+    def test_table_json_retains_winner_markers_legends_and_annotations(self) -> None:
+        review = ArticleReview(
+            source_article="Academy_Awards.html",
+            relevant=True,
+            reason="Contains the winner table.",
+            relevant_table_ids=["artifact-awards"],
+        )
+        entry = TableCatalogEntry(
+            artifact_id="artifact-awards",
+            source_article="Academy_Awards.html",
+            table_id="table-001",
+            table_role="data",
+            caption="Winners and nominees",
+            section_path=["Awards"],
+            columns=["Film"],
+            row_count=1,
+            legend_meanings=["Indicates the winner"],
+        )
+        winner_cell = NormalizedCell(
+            text="Moonlight",
+            display_text="Moonlight ‡",
+            is_header=False,
+            is_bold=True,
+            bold_text=["Moonlight"],
+            annotations=[
+                CellAnnotation(
+                    position="superscript",
+                    text="‡",
+                    role="marker",
+                    note="Indicates the winner",
+                )
+            ],
+            legend_matches=["Indicates the winner"],
+            origin_row=1,
+            origin_column=0,
+        )
+        table = NormalizedTable(
+            artifact_id=entry.artifact_id,
+            source_article=entry.source_article,
+            table_id=entry.table_id,
+            caption=entry.caption,
+            section_path=entry.section_path,
+            columns=entry.columns,
+            rows=[{"Film": "Moonlight"}],
+            warnings=[],
+            source_hash="hash",
+            parser_version="test",
+            row_cells=[{"Film": winner_cell}],
+            legends=[
+                TableLegend(
+                    kind="symbol",
+                    symbol="‡",
+                    meaning="Indicates the winner",
+                )
+            ],
+            html_hash="html",
+        )
+        store = Mock(spec=TableArtifactStore)
+        store.has_article.return_value = True
+        store.list_tables.return_value = [entry]
+        store.load_artifact.return_value = table
+
+        update = load_selected_tables(
+            {
+                "question": "Which film won?",
+                "article_reviews": [review],
+                "evidence": [],
+            },
+            store,
+        )
+
+        content = update["evidence"][0].content
+        self.assertIn('"is_bold": true', content)
+        self.assertIn('"display_text": "Moonlight ‡"', content)
+        self.assertIn('"legend_matches": ["Indicates the winner"]', content)
+        self.assertIn('"source_cell": "table-001:r2:c1"', content)
 
     def test_assess_evidence_uses_structured_output(self) -> None:
         assessment = EvidenceAssessment(

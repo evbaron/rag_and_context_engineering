@@ -282,6 +282,46 @@ class VectorRetriever(BaseRetriever):
             for document, score in results
         ]
 
+    def getArticleSectionTopK(
+        self,
+        query: str,
+        source_article: str,
+        section_title: str,
+        k: int = 3,
+    ) -> list[tuple[Document, float]]:
+        """Return chunks from one exact article section.
+
+        ``getArticleSectionsTopK`` searches anywhere inside an article. This
+        stricter variant is used after an agent selects a heading from the table
+        of contents: the heading is a metadata constraint, not merely another
+        semantic-search query. Nested sections that share the same final title
+        may still contribute, but chunks from differently named sections cannot.
+        """
+
+        if not query.strip():
+            raise ValueError("query must not be empty.")
+        if not source_article.strip():
+            raise ValueError("source_article must not be empty.")
+        if not section_title.strip():
+            raise ValueError("section_title must not be empty.")
+        if k < 1:
+            raise ValueError("k must be at least 1.")
+
+        results = self._db.similarity_search_with_score(
+            query,
+            k=k,
+            filter={
+                "$and": [
+                    {"article": {"$eq": source_article}},
+                    {"section_title": {"$eq": section_title}},
+                ]
+            },
+        )
+        return [
+            (document, float(score))
+            for document, score in results
+        ]
+
     def settings(self) -> dict[str, Any]:
         return {
             "kind": "vector",

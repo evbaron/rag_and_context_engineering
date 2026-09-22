@@ -12,6 +12,12 @@ from wikipedia_retrieval_engine.retrievers.corpus import MarkdownArticleStore
 from wikipedia_retrieval_engine.retrievers.graph import GraphParams, WikiGraph
 from wikipedia_retrieval_engine.retrievers.multistep import MultiStepRetriever
 from wikipedia_retrieval_engine.retrievers.vector import VectorRetriever
+from wikipedia_retrieval_engine.utils.wiki_table_parser import NormalizedTable
+from wikipedia_retrieval_engine.utils.wiki_table_store import (
+    TableArtifactStore,
+    TableCatalogEntry,
+)
+from wikipedia_retrieval_engine.wiki_agents.table_nodes import resolve_source_article
 from wikipedia_retrieval_engine.wiki_agents.agentic_models import (
     AgentState,
     ArticleReview,
@@ -47,8 +53,11 @@ Return exactly one review per candidate article:
 - relevant: true if the article is a correct source for the question. Judge whether the article is on-topic and whether its sections could hold the needed facts. Do NOT reject an article just because no single section obviously answers the whole question.
 - reason: one brief sentence.
 - relevant_sections: the exact section names (copied from the table of contents) whose content should be read. Pick the sections that hold the needed facts (e.g. "Winners and nominees"), not overview, "See also", or reference sections. If the article is relevant, list at least one section.
-- relevant_table_names: labels (copied exactly) of any listed tables the question needs.
-- needs_table_reader: true if answering requires reading, filtering, aggregating, counting, or comparing rows of a table.
+- relevant_table_ids: stable Artifact ID values (copied exactly) for every listed
+  table the question needs. Select every table needed for a multi-period or
+  cross-table question.
+- relevant_table_names: use only when a legacy table listing has no Artifact ID.
+- needs_table_reader: true ONLY when answering requires COMPUTING over table rows — filtering rows by a numeric or date threshold, counting, aggregating (sum/min/max/average), sorting, or intersecting rows across tables. Set it FALSE when the answer is a single looked-up value, a quotation, a date, or prose, even if the article contains tables.
 
 Rules:
 - Copy source_article, section names, and table labels exactly; never invent or rename them.
@@ -68,8 +77,19 @@ Rules:
 - When facts may be in a table from a selected article, create a table_request.
 - Copy source_article exactly from the supplied reviews or evidence when creating
   a table_request; do not invent or rename article identifiers.
+- When a relevant table artifact ID is supplied, copy it into table_id. Create a
+  separate table_request for each artifact needed by a multi-table question.
 - Use table operations such as lookup, filter, aggregate, compare, sort, or
   timeline to describe the required table work.
+- Questions requiring row filtering, numeric/date thresholds, counting,
+  aggregation, comparison, or sorting are not ready merely because raw table rows
+  are present. Request table computation unless a deterministic
+  table_computation evidence item already supplies the required result. A simple
+  single-value lookup you can read directly does not need a table_request.
+- Keep each table_request MINIMAL: set only missing_fact, source_article, table_id,
+  and operation. Do NOT fill row_filters, columns_needed, thresholds, or years —
+  the table tool derives the exact predicates itself. Never put a number in
+  row_filters.
 - When another retrieval call is required, create a retrieval_request containing
   the missing fact, a focused query, useful keywords, and likely target articles.
 - Do not create a table request merely because an article contains any table.
@@ -331,12 +351,127 @@ def _article_toc(
     return section_titles, table_labels
 
 
+def _table_tokens(value: str) -> set[str]:
+    """Normalize small variations used when ranking table catalog metadata."""
+
+    aliases = {
+        "nominated": "nominate",
+        "nomination": "nominate",
+        "nominations": "nominate",
+        "nominee": "nominate",
+        "nominees": "nominate",
+        "winning": "win",
+        "winner": "win",
+        "winners": "win",
+        "won": "win",
+    }
+    tokens: set[str] = set()
+    for token in re.findall(r"[a-z0-9]+", value.casefold()):
+        if len(token) < 2:
+            continue
+        if re.fullmatch(r"\d{4}s", token):
+            token = token[:-1]
+        tokens.add(aliases.get(token, token))
+    return tokens
+
+
+def _table_catalog_label(entry: TableCatalogEntry) -> str:
+    """Expose an immutable table identity plus enough metadata to select it."""
+
+    section = " > ".join(entry.section_path) or "(no section)"
+    caption = str(entry.caption or "").strip() or "(no caption)"
+    columns = ", ".join(entry.columns) or "(no columns)"
+    return (
+        f"Artifact ID: {entry.artifact_id} | Table ID: {entry.table_id} | "
+        f"Section: {section} | Caption: {caption} | Columns: {columns}"
+    )
+
+
+def _rank_table_catalog_for_question(
+    catalog: list[TableCatalogEntry],
+    question: str,
+) -> list[TableCatalogEntry]:
+    """Rank all table metadata before applying the prompt-size limit.
+
+    Decade sections receive an additional range-aware score. This makes a
+    question spanning 2000 through 2020 surface the 2000s, 2010s, and 2020s
+    tables even when those tables have identical columns and no captions.
+    """
+
+    question_tokens = _table_tokens(question)
+    years = [int(value) for value in re.findall(r"\b(?:18|19|20)\d{2}\b", question)]
+    year_start = min(years) if years else None
+    year_end = max(years) if years else None
+
+    def score(entry: TableCatalogEntry) -> int:
+        metadata = " ".join(
+            [
+                entry.caption or "",
+                *entry.section_path,
+                *entry.columns,
+                *entry.legend_meanings,
+            ]
+        )
+        value = len(question_tokens & _table_tokens(metadata))
+        if year_start is not None and year_end is not None:
+            for decade_text in re.findall(r"\b((?:18|19|20)\d{2})s\b", metadata):
+                decade = int(decade_text)
+                if decade <= year_end and decade + 9 >= year_start:
+                    value += 10
+        return value
+
+    indexed = list(enumerate(catalog))
+    indexed.sort(key=lambda item: (score(item[1]), -item[0]), reverse=True)
+    return [entry for _, entry in indexed]
+
+
+def _table_labels_for_review(
+    *,
+    source_article: str,
+    question: str,
+    sidecar_labels: list[str],
+    table_store: TableArtifactStore | None,
+    max_tables_listed: int,
+) -> tuple[list[str], set[str]]:
+    """Return ranked prompt labels and the artifact IDs offered to the model."""
+
+    if max_tables_listed < 1:
+        return [], set()
+
+    if table_store is not None:
+        try:
+            catalog = list(table_store.list_tables(source_article))
+        except (KeyError, OSError, TypeError, ValueError):
+            catalog = []
+        if catalog:
+            ranked = _rank_table_catalog_for_question(catalog, question)
+            offered = ranked[:max_tables_listed]
+            return (
+                [_table_catalog_label(entry) for entry in offered],
+                {entry.artifact_id for entry in offered},
+            )
+
+    # Legacy sidecars have no stable table identity. Rank the complete list
+    # before truncating rather than always exposing only its leading entries.
+    question_tokens = _table_tokens(question)
+    ranked_labels = sorted(
+        enumerate(sidecar_labels),
+        key=lambda item: (
+            len(question_tokens & _table_tokens(item[1])),
+            -item[0],
+        ),
+        reverse=True,
+    )
+    return [label for _, label in ranked_labels[:max_tables_listed]], set()
+
+
 def review_and_select_from_toc(
     state: AgentState,
     llm: BaseChatModel,
     markdown_store: MarkdownArticleStore,
     *,
-    max_tables_listed: int = 8,
+    table_store: TableArtifactStore | None = None,
+    max_tables_listed: int = 12,
 ) -> AgentState:
     """Judge each candidate article and select its sections in one structured call.
 
@@ -347,10 +482,11 @@ def review_and_select_from_toc(
     top-ranked chunk happened to be "See also" or the lead infobox.
 
     Output reuses ``ArticleReview``: ``relevant_sections`` are the section titles
-    to read, ``relevant_table_names`` and ``needs_table_reader`` flag table work
-    (the Phase 2 signal). The result is repaired, never raised: an omitted review
-    defaults to kept, and if the model rejects every candidate the best-ranked one
-    is kept so selection is never empty (which would starve graph expansion).
+    to read, ``relevant_table_ids`` are immutable normalized artifacts, and
+    ``needs_table_reader`` flags computation-oriented table work. The result is
+    repaired, never raised: an omitted review defaults to kept, and if the model
+    rejects every candidate the best-ranked one is kept so selection is never
+    empty (which would starve graph expansion).
     """
 
     question = state.get("question", "").strip()
@@ -362,13 +498,24 @@ def review_and_select_from_toc(
         return article_review_update(ArticleReviewBatch())
 
     blocks = []
+    section_names_by_source: dict[str, set[str]] = {}
+    offered_table_ids_by_source: dict[str, set[str]] = {}
     for candidate in candidates:
         section_titles, table_labels = _article_toc(
             markdown_store, candidate.source_article
         )
+        section_names_by_source[candidate.source_article] = set(section_titles)
+        table_labels, offered_table_ids = _table_labels_for_review(
+            source_article=candidate.source_article,
+            question=question,
+            sidecar_labels=table_labels,
+            table_store=table_store,
+            max_tables_listed=max_tables_listed,
+        )
+        offered_table_ids_by_source[candidate.source_article] = offered_table_ids
         toc = ", ".join(section_titles) if section_titles else "(no section list available)"
         tables = (
-            "; ".join(table_labels[:max_tables_listed])
+            "; ".join(table_labels)
             if table_labels
             else "(no tables listed)"
         )
@@ -411,6 +558,29 @@ def review_and_select_from_toc(
                 relevant=True,
                 reason="(no explicit review returned; kept)",
             )
+        valid_sections = section_names_by_source[candidate.source_article]
+        offered_table_ids = offered_table_ids_by_source[candidate.source_article]
+        # Preserve an explicit but invalid ID so the loader returns no table
+        # instead of falling back to a different semantic match.
+        selected_ids = list(review.relevant_table_ids)
+        # Accept an artifact ID copied as part of a label, but never allow an
+        # invented ID to select a different table by semantic fallback.
+        for label in review.relevant_table_names:
+            selected_ids.extend(
+                table_id
+                for table_id in offered_table_ids
+                if table_id in label
+            )
+        review = review.model_copy(
+            update={
+                "relevant_sections": [
+                    section
+                    for section in review.relevant_sections
+                    if section in valid_sections
+                ],
+                "relevant_table_ids": list(dict.fromkeys(selected_ids)),
+            }
+        )
         reviews.append(review)
 
     # Never reject everything — an empty selection guarantees failure and starves
@@ -469,9 +639,19 @@ def load_selected_sections(
             plan = [(question, None, fallback_sections, "toc_fallback_sections")]
 
         for query, requested_section, k, stage in plan:
-            section_hits = retriever.getArticleSectionsTopK(
-                query, review.source_article, k=k
-            )
+            if requested_section is not None:
+                section_hits = retriever.getArticleSectionTopK(
+                    question,
+                    review.source_article,
+                    requested_section,
+                    k=k,
+                )
+                retrieval_query = question
+            else:
+                section_hits = retriever.getArticleSectionsTopK(
+                    query, review.source_article, k=k
+                )
+                retrieval_query = query
             for rank, (document, distance) in enumerate(section_hits, start=1):
                 metadata = document.metadata
                 evidence_id = str(
@@ -487,7 +667,7 @@ def load_selected_sections(
                     content=document.page_content,
                     title=section_title or None,
                     section_path=section_path,
-                    retrieval_query=query,
+                    retrieval_query=retrieval_query,
                     retriever="vector",
                     rank=rank,
                     raw_score=float(distance),
@@ -497,6 +677,7 @@ def load_selected_sections(
                         "requested_section": requested_section,
                         "needs_table_reader": bool(review.needs_table_reader),
                         "flagged_tables": list(review.relevant_table_names or []),
+                        "flagged_table_ids": list(review.relevant_table_ids or []),
                     },
                 )
 
@@ -509,159 +690,279 @@ def _clean_cell(value: object) -> str:
     return str(value).replace("­", "").strip()
 
 
-def _render_table_json(table: dict, *, max_rows: int = 300) -> str:
-    """Render one sidecar table as structured JSON rows the model can read.
+def _rank_catalog_entries(
+    review: ArticleReview,
+    catalog: list[TableCatalogEntry],
+    question: str,
+    *,
+    max_tables: int,
+) -> list[TableCatalogEntry]:
+    """Rank an article's stored tables by relevance to the question.
 
-    A JSON row-object rendering out-reads the flattened section text on table
-    questions (the model can address cells by column), so table-flagged articles
-    contribute their table this way instead of as more flattened prose.
+    Scores each catalog entry on how well its caption, section, columns, and
+    legend meanings overlap the question (and, double-weighted, the table names
+    the review called out). Keeps the best ``max_tables``; if nothing overlaps,
+    falls back to the single largest table (the article was flagged as needing
+    one). Ranking the aligned catalog avoids the fragile sidecar "Table N"
+    index mapping.
     """
 
-    headers = [_clean_cell(h) for h in (table.get("headers") or [])]
-    rows = table.get("rows") or []
-    truncated = len(rows) > max_rows
-    body = [
-        {
-            (headers[i] if i < len(headers) else f"col_{i + 1}"): _clean_cell(cell)
-            for i, cell in enumerate(row)
-        }
-        for row in rows[:max_rows]
-    ]
-    payload = {
-        "caption": _clean_cell(table.get("caption") or "") or None,
-        "columns": headers,
-        "rows": body,
-    }
-    text = (
-        "Structured table (JSON rows) — read values directly from these rows; "
-        "do not rely on prior knowledge.\n"
-        + json.dumps(payload, ensure_ascii=False)
-    )
-    if truncated:
-        text += f"\n(NOTE: showing the first {max_rows} of {len(rows)} rows.)"
-    return text
+    by_artifact_id = {entry.artifact_id: entry for entry in catalog}
+    by_table_id = {entry.table_id.casefold(): entry for entry in catalog}
 
+    if review.relevant_table_ids:
+        # Stable IDs are authoritative. Invalid IDs select nothing; silently
+        # replacing one with a semantically similar table is worse than missing
+        # evidence because it can support a false answer.
+        return [
+            by_artifact_id[artifact_id]
+            for artifact_id in dict.fromkeys(review.relevant_table_ids)
+            if artifact_id in by_artifact_id
+        ]
 
-def _resolve_table_indices(
-    review, tables: list, question: str, *, max_tables: int
-) -> list[int]:
-    """Pick the most relevant table(s) to load for a table-flagged article.
+    exact_entries: list[TableCatalogEntry] = []
+    for selection in review.relevant_table_names or []:
+        normalized = selection.strip().casefold()
+        match = by_artifact_id.get(selection.strip()) or by_table_id.get(normalized)
+        if match is None:
+            matching = [
+                entry
+                for entry in catalog
+                if normalized
+                in {
+                    _table_catalog_label(entry).casefold(),
+                    str(entry.caption or "").strip().casefold(),
+                    " > ".join(entry.section_path).casefold(),
+                }
+            ]
+            if len(matching) == 1:
+                match = matching[0]
+        if match is not None and match.artifact_id not in {
+            entry.artifact_id for entry in exact_entries
+        }:
+            exact_entries.append(match)
+    if exact_entries:
+        # Explicit multi-table selections are all honored. ``max_rows`` in the
+        # renderer remains the context budget for each selected artifact.
+        return exact_entries
 
-    Ranks the tables the review named ("Table N: ...") by how well their
-    caption/headers match the question and keeps the best ``max_tables`` — so a
-    fatalities question loads the deadliest-earthquakes table, not the adjacent
-    "Rank" table. If the review named none, ranks all tables the same way; if
-    nothing matches, falls back to one table (best named, else the largest) since
-    the article was flagged as needing one.
-    """
-
-    if not tables:
-        return []
-
-    tokens = {w for w in re.findall(r"[a-z]{4,}", question.lower())}
-
-    def relevance(index: int) -> int:
-        hay = (
-            _clean_cell(tables[index].get("caption") or "")
-            + " "
-            + " ".join(_clean_cell(h) for h in (tables[index].get("headers") or []))
-        ).lower()
-        return sum(1 for w in tokens if w in hay)
-
-    named: list[int] = []
+    tokens = _table_tokens(question)
+    name_tokens: set[str] = set()
     for label in review.relevant_table_names or []:
-        match = re.search(r"table\s+(\d+)", str(label), flags=re.IGNORECASE)
-        if match:
-            index = int(match.group(1)) - 1
-            if 0 <= index < len(tables):
-                named.append(index)
-    named = list(dict.fromkeys(named))
+        name_tokens |= _table_tokens(str(label))
 
-    pool = named if named else list(range(len(tables)))
-    pool.sort(key=lambda i: (relevance(i), tables[i].get("n_rows", 0)), reverse=True)
+    def score(entry) -> int:
+        hay = " ".join(
+            [
+                entry.caption or "",
+                " ".join(entry.section_path or []),
+                " ".join(entry.columns or []),
+                " ".join(entry.legend_meanings or []),
+            ]
+        )
+        hay_tokens = _table_tokens(hay)
+        return len(tokens & hay_tokens) + 2 * len(
+            name_tokens & hay_tokens
+        )
 
-    chosen = [i for i in pool if relevance(i) > 0][:max_tables]
-    if chosen:
-        return chosen
-    if named:
-        return [pool[0]]
-    return [max(range(len(tables)), key=lambda i: tables[i].get("n_rows", 0))]
+    ranked = sorted(catalog, key=lambda e: (score(e), e.row_count), reverse=True)
+    chosen = [e for e in ranked if score(e) > 0][:max_tables]
+    return chosen or ranked[:1]
+
+
+def _render_normalized_table_json(
+    entry: TableCatalogEntry,
+    table: NormalizedTable,
+    *,
+    max_rows: int,
+    max_chars: int = 8000,
+) -> str:
+    """Render aligned rows plus the rich semantics needed to interpret them.
+
+    ``max_chars`` bounds the rendered evidence so a huge ranked-list table cannot
+    overflow the model's context window; the deterministic executor still reads
+    the full artifact, so trimming the evidence rows is safe.
+    """
+
+    rows: list[dict[str, object]] = []
+    for row_index, row in enumerate(table.rows[:max_rows]):
+        semantic_signals: dict[str, dict[str, object]] = {}
+        rich_row = (
+            table.row_cells[row_index]
+            if row_index < len(table.row_cells)
+            else {}
+        )
+        for column, cell in rich_row.items():
+            signals: dict[str, object] = {
+                "source_cell": (
+                    f"{table.table_id}:r{cell.origin_row + 1}:"
+                    f"c{cell.origin_column + 1}"
+                ),
+                "display_text": cell.display_text,
+                "is_bold": cell.is_bold,
+                "is_italic": cell.is_italic,
+                "bold_text": cell.bold_text,
+                "italic_text": cell.italic_text,
+                "annotations": [
+                    annotation.model_dump(mode="json")
+                    for annotation in cell.annotations
+                ],
+                "background_color": cell.background_color,
+                "sort_value": cell.sort_value,
+                "legend_matches": cell.legend_matches,
+            }
+            has_meaningful_signal = (
+                cell.display_text != cell.text
+                or cell.is_bold
+                or cell.is_italic
+                or bool(cell.bold_text)
+                or bool(cell.italic_text)
+                or bool(cell.annotations)
+                or bool(cell.background_color)
+                or bool(cell.sort_value)
+                or bool(cell.legend_matches)
+            )
+            if has_meaningful_signal:
+                semantic_signals[column] = signals
+        rows.append(
+            {
+                "row_number": row_index + 1,
+                "values": {
+                    key: _clean_cell(value)
+                    for key, value in row.items()
+                },
+                "semantic_signals": semantic_signals,
+            }
+        )
+    header = (
+        "Structured table (JSON rows, one object per row — read values directly "
+        "from these rows; do not rely on prior knowledge).\n"
+    )
+
+    def _payload(row_limit: int) -> str:
+        return json.dumps(
+            {
+                "artifact_id": entry.artifact_id,
+                "table_id": entry.table_id,
+                "caption": _clean_cell(entry.caption or "") or None,
+                "section": " > ".join(entry.section_path or []) or None,
+                "columns": [_clean_cell(c) for c in table.columns],
+                "legends": [legend.model_dump(mode="json") for legend in table.legends],
+                "rows": rows[:row_limit],
+            },
+            ensure_ascii=False,
+        )
+
+    shown = len(rows)
+    body = _payload(shown)
+    while shown > 1 and len(header) + len(body) > max_chars:
+        shown = max(1, int(shown * max_chars / (len(header) + len(body))) - 1)
+        body = _payload(shown)
+
+    text = header + body
+    total = len(table.rows)
+    if shown < total:
+        text += (
+            f"\n(NOTE: showing {shown} of {total} rows to fit the context budget; "
+            "the deterministic table executor reads the full table.)"
+        )
+    return text
 
 
 def load_selected_tables(
     state: AgentState,
-    markdown_store: MarkdownArticleStore,
+    table_store: TableArtifactStore,
     *,
     max_tables_per_article: int = 1,
     max_rows: int = 300,
+    max_total_rows_per_article: int = 600,
 ) -> AgentState:
-    """Attach flagged articles' tables as structured-JSON evidence.
+    """Attach flagged articles' rowspan-expanded tables as structured-JSON evidence.
 
-    For each kept article the TOC review marked ``needs_table_reader`` (or named
-    tables for), load the best-matching table(s) from the sidecar as JSON
-    ``EvidenceItem``s, and replace that article's flattened section evidence with
-    them — the structured table is the better representation, and sending both
-    just dilutes the context. This is the "TOC + JSON tables" cut: the model reads
-    the rows itself; no deterministic executor yet. Only one table per article by
-    default, so a multi-table article does not flood the context.
+    Reads from the NormalizedTable artifact store (rowspan/colspan expanded,
+    winner markers and legends retained), not the raw sidecar whose rows misalign
+    on merged award tables. For each kept article the TOC review flagged, load all
+    explicitly selected artifacts. ``max_tables_per_article`` limits only the
+    semantic fallback used when the review supplied no resolvable artifact ID.
+    ``max_rows`` and ``max_total_rows_per_article`` divide a bounded row budget
+    across every selected artifact. The deterministic executor computes over
+    these same aligned rows.
     """
 
     reviews = state.get("article_reviews", [])
     evidence_by_id = {item.evidence_id: item for item in state.get("evidence", [])}
     question = state.get("question", "").strip()
-    table_backed_articles: set[str] = set()
+    if (
+        max_tables_per_article < 1
+        or max_rows < 1
+        or max_total_rows_per_article < 1
+    ):
+        raise ValueError(
+            "max_tables_per_article, max_rows, and "
+            "max_total_rows_per_article must be at least 1."
+        )
 
     for review in reviews:
         if not review.relevant:
             continue
-        if not (review.needs_table_reader or review.relevant_table_names):
-            continue
-        if not markdown_store.has_article(review.source_article):
+        if not (
+            review.needs_table_reader
+            or review.relevant_table_ids
+            or review.relevant_table_names
+        ):
             continue
         try:
-            tables = markdown_store.load_metadata(review.source_article).get("tables") or []
-        except (OSError, ValueError):
+            article = resolve_source_article(review.source_article, table_store)
+        except (KeyError, ValueError):
             continue
-        for index in _resolve_table_indices(
-            review, tables, question, max_tables=max_tables_per_article
-        ):
-            table_backed_articles.add(review.source_article)
-            table = tables[index]
-            evidence_id = f"{review.source_article}#table-{index + 1}"
+        catalog = table_store.list_tables(article)
+        if not catalog:
+            continue
+        selected_entries = _rank_catalog_entries(
+            review, catalog, question, max_tables=max_tables_per_article
+        )
+        rows_per_table = max(
+            1,
+            min(
+                max_rows,
+                max_total_rows_per_article // max(len(selected_entries), 1),
+            ),
+        )
+        for table_rank, entry in enumerate(selected_entries, start=1):
+            evidence_id = f"{entry.source_article}#{entry.table_id}"
             if evidence_id in evidence_by_id:
+                continue
+            try:
+                table = table_store.load_artifact(entry.artifact_id)
+            except (OSError, ValueError, KeyError):
                 continue
             evidence_by_id[evidence_id] = EvidenceItem(
                 evidence_id=evidence_id,
-                source_article=review.source_article,
-                content=_render_table_json(table, max_rows=max_rows),
+                source_article=entry.source_article,
+                content=_render_normalized_table_json(
+                    entry,
+                    table,
+                    max_rows=rows_per_table,
+                ),
                 evidence_type="table",
-                title=_clean_cell(table.get("caption") or "") or f"Table {index + 1}",
-                section_path=[],
+                title=_clean_cell(entry.caption or "") or entry.table_id,
+                section_path=list(entry.section_path or []),
                 retrieval_query=question,
                 retriever="table",
-                rank=index + 1,
+                rank=table_rank,
                 raw_score=0.0,
                 score_semantics="rank_only",
+                table_id=entry.artifact_id,
                 metadata={
                     "retrieval_stage": "toc_selected_table",
-                    "table_index": index + 1,
-                    "n_rows": table.get("n_rows"),
+                    "table_id": entry.table_id,
+                    "n_rows": entry.row_count,
+                    "rows_rendered": min(entry.row_count, rows_per_table),
                     "needs_table_reader": bool(review.needs_table_reader),
                 },
             )
 
-    # A table-backed article contributes its structured table, not the redundant
-    # flattened section that carries the same rows as noise.
-    _section_stages = {"toc_selected_section", "toc_fallback_sections"}
-    evidence = [
-        item
-        for item in evidence_by_id.values()
-        if not (
-            item.source_article in table_backed_articles
-            and item.metadata.get("retrieval_stage") in _section_stages
-        )
-    ]
-    return {"evidence": evidence}
+    return {"evidence": list(evidence_by_id.values())}
 
 
 def retrieve_selected_article_sections(
@@ -890,7 +1191,9 @@ def assess_evidence(
             f"Reason: {review.reason}\n"
             f"Needs table reader: {review.needs_table_reader}\n"
             f"Relevant sections: {', '.join(review.relevant_sections) or '(none)'}\n"
-            f"Relevant tables: {', '.join(review.relevant_table_names) or '(none)'}"
+            f"Relevant tables: {', '.join(review.relevant_table_names) or '(none)'}\n"
+            f"Relevant table artifact IDs: "
+            f"{', '.join(review.relevant_table_ids) or '(none)'}"
         )
         for review in reviews
     ) or "(no article reviews available)"
@@ -900,6 +1203,8 @@ def assess_evidence(
             f"Evidence ID: {item.evidence_id}\n"
             f"Source article: {item.source_article}\n"
             f"Section: {' > '.join(item.section_path) or item.title or '(unknown)'}\n"
+            f"Evidence type: {item.evidence_type}\n"
+            f"Retrieval stage: {item.metadata.get('retrieval_stage', 'unknown')}\n"
             f"Content:\n{item.content}"
         )
         for item in evidence
@@ -919,25 +1224,50 @@ def assess_evidence(
             "focused retrieval_request for the missing fact instead."
         )
 
-    result = structured_assessor.invoke(
-        [
-            SystemMessage(
-                content=EVIDENCE_ASSESSMENT_SYSTEM_PROMPT + benchmark_constraint
-            ),
-            HumanMessage(
-                content=(
-                    f"Question:\n{question}\n\n"
-                    f"Article reviews:\n{review_context}\n\n"
-                    f"Retrieved evidence:\n{evidence_context}"
-                )
-            ),
-        ]
-    )
-    assessment = (
-        result
-        if isinstance(result, EvidenceAssessment)
-        else EvidenceAssessment.model_validate(result)
-    )
+    messages = [
+        SystemMessage(
+            content=EVIDENCE_ASSESSMENT_SYSTEM_PROMPT + benchmark_constraint
+        ),
+        HumanMessage(
+            content=(
+                f"Question:\n{question}\n\n"
+                f"Article reviews:\n{review_context}\n\n"
+                f"Retrieved evidence:\n{evidence_context}"
+            )
+        ),
+    ]
+    # Malformed structured output (often a bad table_request) must never drop the
+    # question. Retry once with the schema error as a correction, then fall back to
+    # a safe not-ready assessment that keeps the loop going.
+    try:
+        result = structured_assessor.invoke(messages)
+    except Exception as parse_error:  # noqa: BLE001 - any parse/validation failure
+        correction = SystemMessage(
+            content=(
+                "Your previous response failed schema validation:\n"
+                f"{parse_error}\n"
+                "Return a valid EvidenceAssessment. Keep each table_request minimal — "
+                "only missing_fact, source_article, table_id, and a valid operation "
+                "(lookup/filter/aggregate/compare/sort/timeline); never put numbers "
+                "in row_filters."
+            )
+        )
+        try:
+            result = structured_assessor.invoke([*messages, correction])
+        except Exception:  # noqa: BLE001
+            result = None
+
+    if result is None:
+        assessment = EvidenceAssessment(
+            ready_to_answer=False,
+            explanation="Assessment output could not be parsed; continuing retrieval.",
+        )
+    else:
+        assessment = (
+            result
+            if isinstance(result, EvidenceAssessment)
+            else EvidenceAssessment.model_validate(result)
+        )
 
     # Repair imperfect structured output instead of dropping the question.
     # gpt-5.4-mini occasionally returns self-contradictory or incomplete

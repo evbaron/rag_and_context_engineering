@@ -13,9 +13,11 @@ from wikipedia_retrieval_engine.retrievers.corpus import MarkdownArticleStore
 from wikipedia_retrieval_engine.retrievers.graph import GraphParams, WikiGraph
 from wikipedia_retrieval_engine.retrievers.multistep import MultiStepRetriever
 from wikipedia_retrieval_engine.retrievers.vector import VectorRetriever
+from wikipedia_retrieval_engine.utils.wiki_table_store import TableArtifactStore
 from wikipedia_retrieval_engine.wiki_agents.agentic_models import (
     AgentState,
     retrieval_attempt_count,
+    table_attempt_count,
 )
 from wikipedia_retrieval_engine.wiki_agents.retrieval_nodes import (
     assess_evidence,
@@ -29,6 +31,9 @@ from wikipedia_retrieval_engine.wiki_agents.retrieval_nodes import (
     review_and_select_from_toc,
     review_article_candidates,
 )
+from wikipedia_retrieval_engine.wiki_agents.table_nodes import (
+    compute_requested_tables,
+)
 
 # Retriever strategy names used by the configurable benchmark graph.
 InitialRetriever = Literal["vector", "multistep", "multistep_entity"]
@@ -36,6 +41,10 @@ RepeatedRetriever = Literal["graph_seeded", "multistep"]
 _REPEATED_EDGE = {
     "graph_seeded": "retrieve_graph_seeded_sections",
     "multistep": "retrieve_multistep_sections",
+}
+_RETRIEVAL_STAGE_LABEL = {
+    "graph_seeded": "graph_seeded_sections",
+    "multistep": "targeted_multistep_sections",
 }
 from wikipedia_retrieval_engine.wiki_agents.run_logging import (
     AgentRunLogger,
@@ -88,6 +97,8 @@ def build_evidence_intake_graph(
 
 def make_retrieval_benchmark_router(
     repeated_retrievers: Sequence[RepeatedRetriever],
+    *,
+    max_table_rounds: int = 0,
 ):
     """Build the conditional-edge router for a configured repeated-stage sequence.
 
@@ -95,7 +106,11 @@ def make_retrieval_benchmark_router(
     the initial stage, one per unsatisfied assessment. The initial stage sets
     ``retrieval_attempts`` to 1, so the stage index is ``attempts - 1``. When the
     sequence is exhausted the graph finishes with whatever evidence it has.
+    Table requests take priority while their independent round budget remains.
     """
+
+    if max_table_rounds < 0:
+        raise ValueError("max_table_rounds must be non-negative.")
 
     def route_retrieval_benchmark(state: AgentState) -> str:
         assessment = state.get("assessment")
@@ -104,12 +119,37 @@ def make_retrieval_benchmark_router(
         if assessment.ready_to_answer:
             return "finish"
 
+        if assessment.table_requests:
+            if table_attempt_count(state) < max_table_rounds:
+                return "compute_requested_tables"
+            if not assessment.retrieval_requests:
+                return "finish"
+
         index = retrieval_attempt_count(state) - 1
         if 0 <= index < len(repeated_retrievers):
             return _REPEATED_EDGE[repeated_retrievers[index]]
         return "finish"
 
     return route_retrieval_benchmark
+
+
+def retrieval_stage_name(
+    retrieval_attempts: int,
+    *,
+    initial_retriever: InitialRetriever,
+    repeated_retrievers: Sequence[RepeatedRetriever],
+) -> str:
+    """Describe the actual terminal retrieval stage for experiment metadata."""
+
+    if retrieval_attempts < 1:
+        return "retrieval_not_started"
+    if retrieval_attempts == 1:
+        return f"{initial_retriever}_initial"
+
+    repeated_index = retrieval_attempts - 2
+    if 0 <= repeated_index < len(repeated_retrievers):
+        return _RETRIEVAL_STAGE_LABEL[repeated_retrievers[repeated_index]]
+    return f"retrieval_attempt_{retrieval_attempts}"
 
 
 def build_retrieval_benchmark_graph(
@@ -120,6 +160,7 @@ def build_retrieval_benchmark_graph(
     run_logger: AgentRunLogger | None = None,
     *,
     markdown_store: MarkdownArticleStore,
+    table_store: TableArtifactStore,
     initial_retriever: InitialRetriever = "vector",
     repeated_retrievers: Sequence[RepeatedRetriever] = ("graph_seeded", "multistep"),
     initial_article_top_k: int = 3,
@@ -130,8 +171,10 @@ def build_retrieval_benchmark_graph(
     sections_per_neighbor: int = 2,
     max_graph_sections: int = 6,
     multistep_hits_per_request: int = 6,
+    max_table_rounds: int = 2,
+    max_table_requests_per_round: int = 6,
 ) -> CompiledStateGraph:
-    """Compile the configurable retrieval-only benchmark graph.
+    """Compile the configurable TOC, section, and table-evidence graph.
 
     The initial and repeated retrieval stages are pluggable:
 
@@ -145,9 +188,9 @@ def build_retrieval_benchmark_graph(
       and ``"multistep"``.
 
     After the initial stage, one fused call judges each candidate by its table of
-    contents (not a snippet) and selects the sections to read; those sections are
-    then loaded into evidence. Table needs are flagged (`needs_table_reader`) as
-    the Phase 2 signal. Only section chunks ever enter evidence.
+    contents (not a snippet) and selects exact sections and stable table artifact
+    IDs. Section chunks and the explicitly selected normalized table artifacts are
+    then loaded into evidence before assessment.
     """
 
     workflow = StateGraph(AgentState)
@@ -178,6 +221,10 @@ def build_retrieval_benchmark_graph(
     unknown_repeated = [r for r in repeated_retrievers if r not in _REPEATED_EDGE]
     if unknown_repeated:
         raise ValueError(f"Unknown repeated_retrievers: {unknown_repeated}")
+    if max_table_rounds < 0:
+        raise ValueError("max_table_rounds must be non-negative.")
+    if max_table_requests_per_round < 1:
+        raise ValueError("max_table_requests_per_round must be at least 1.")
 
     workflow.add_node("retrieve_initial_articles", initial_node)
     workflow.add_node(
@@ -186,6 +233,7 @@ def build_retrieval_benchmark_graph(
             review_and_select_from_toc,
             llm=llm,
             markdown_store=markdown_store,
+            table_store=table_store,
         ),
     )
     workflow.add_node(
@@ -198,14 +246,23 @@ def build_retrieval_benchmark_graph(
     )
     workflow.add_node(
         "load_selected_tables",
-        partial(load_selected_tables, markdown_store=markdown_store),
+        partial(load_selected_tables, table_store=table_store),
     )
     workflow.add_node(
         "assess_evidence",
         partial(
             assess_evidence,
             llm=llm,
-            allow_table_requests=False,
+            allow_table_requests=max_table_rounds > 0,
+        ),
+    )
+    workflow.add_node(
+        "compute_requested_tables",
+        partial(
+            compute_requested_tables,
+            table_store=table_store,
+            llm=llm,
+            max_requests_per_round=max_table_requests_per_round,
         ),
     )
     workflow.add_node(
@@ -239,13 +296,18 @@ def build_retrieval_benchmark_graph(
     workflow.add_edge("load_selected_tables", "assess_evidence")
     workflow.add_conditional_edges(
         "assess_evidence",
-        make_retrieval_benchmark_router(tuple(repeated_retrievers)),
+        make_retrieval_benchmark_router(
+            tuple(repeated_retrievers),
+            max_table_rounds=max_table_rounds,
+        ),
         {
+            "compute_requested_tables": "compute_requested_tables",
             "retrieve_graph_seeded_sections": "retrieve_graph_seeded_sections",
             "retrieve_multistep_sections": "retrieve_multistep_sections",
             "finish": "write_question_log",
         },
     )
+    workflow.add_edge("compute_requested_tables", "assess_evidence")
     workflow.add_edge("retrieve_graph_seeded_sections", "assess_evidence")
     workflow.add_edge("retrieve_multistep_sections", "assess_evidence")
     workflow.add_edge("write_question_log", END)

@@ -9,8 +9,11 @@ from wikipedia_retrieval_engine.wiki_agents.agentic_models import (
     ArticleReviewBatch,
     AnswerVerification,
     EvidenceItem,
+    TablePredicate,
+    TableQueryPlan,
     initial_agent_state,
     retrieval_attempt_count,
+    table_attempt_count,
 )
 
 
@@ -33,18 +36,23 @@ class AgenticModelsTests(unittest.TestCase):
         self.assertEqual(item.score_semantics, "lower_is_better")
         self.assertEqual(len(item.source_cells), 2)
 
-    def test_initial_agent_state_defaults_retrieval_attempts_to_zero(self) -> None:
+    def test_initial_agent_state_defaults_attempt_counts_to_zero(self) -> None:
         state = initial_agent_state("Who won?")
         self.assertEqual(state["question"], "Who won?")
         self.assertEqual(state["retrieval_attempts"], 0)
+        self.assertEqual(state["table_attempts"], 0)
         self.assertEqual(retrieval_attempt_count({}), 0)
         self.assertEqual(retrieval_attempt_count({"question": "x"}), 0)
+        self.assertEqual(table_attempt_count({}), 0)
+        self.assertEqual(table_attempt_count({"question": "x"}), 0)
 
     def test_agent_state_annotations_resolve(self) -> None:
         annotations = get_type_hints(AgentState)
         self.assertIn("question", annotations)
         self.assertIn("retrieval_attempts", annotations)
         self.assertIs(annotations["retrieval_attempts"], int)
+        self.assertIn("table_attempts", annotations)
+        self.assertIs(annotations["table_attempts"], int)
 
         verification = AnswerVerification(
             supported=True,
@@ -89,6 +97,19 @@ class AgenticModelsTests(unittest.TestCase):
         self.assertTrue(batch.reviews[0].relevant)
         self.assertFalse(batch.reviews[1].relevant)
         self.assertEqual(batch.reviews[1].relevant_sections, [])
+
+    def test_table_query_plan_carries_deterministic_predicates(self) -> None:
+        plan = TableQueryPlan(
+            artifact_id="Scores.html::table-001",
+            operation="filter",
+            selected_columns=["Team", "Points"],
+            predicates=[
+                TablePredicate(column="Points", op="num_gte", value=1000),
+            ],
+        )
+
+        self.assertEqual(plan.predicates[0].column, "Points")
+        self.assertEqual(plan.predicates[0].op, "num_gte")
 
 
 if __name__ == "__main__":

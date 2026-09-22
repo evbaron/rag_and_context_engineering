@@ -21,6 +21,9 @@ class ArticleReview(BaseModel):
 
     relevant_sections: list[str] = Field(default_factory=list)
     relevant_table_names: list[str] = Field(default_factory=list)
+    # Stable IDs from the normalized table-artifact catalog. Names remain as a
+    # backwards-compatible hint for sidecars that do not have an artifact store.
+    relevant_table_ids: list[str] = Field(default_factory=list)
 
     needs_table_reader: bool = False
 
@@ -38,6 +41,7 @@ class AgentState(TypedDict, total=False):
     # Graph input and retrieval budget
     question: str
     retrieval_attempts: int
+    table_attempts: int
 
     # retrieve_initial_articles output
     article_candidates: list[ArticleCandidate]
@@ -56,6 +60,7 @@ class AgentState(TypedDict, total=False):
 
 
 DEFAULT_RETRIEVAL_ATTEMPTS = 0
+DEFAULT_TABLE_ATTEMPTS = 0
 
 
 def initial_agent_state(question: str) -> AgentState:
@@ -68,6 +73,7 @@ def initial_agent_state(question: str) -> AgentState:
     return {
         "question": question,
         "retrieval_attempts": DEFAULT_RETRIEVAL_ATTEMPTS,
+        "table_attempts": DEFAULT_TABLE_ATTEMPTS,
     }
 
 
@@ -79,8 +85,14 @@ def retrieval_attempt_count(state: AgentState) -> int:
     )
 
 
-# Later-stage payload contracts. They are documented in README 5.1 but are not
-# part of AgentState until their corresponding graph nodes are implemented.
+def table_attempt_count(state: AgentState) -> int:
+    """Return the completed table-computation rounds, defaulting to zero."""
+
+    return state.get("table_attempts", DEFAULT_TABLE_ATTEMPTS)
+
+
+# Node payload contracts. These models keep the one shared ``AgentState`` small
+# while making each node's input/output fields explicit and validated.
 class EvidenceItem(BaseModel):
     """One evidence unit carried through retrieval, assessment, and answering.
 
@@ -138,6 +150,30 @@ class DraftAnswer(BaseModel):
     limitations: list[str]
 
 
+class TablePredicate(BaseModel):
+    """One deterministic row-selection test against a normalized table cell."""
+
+    column: str = Field(min_length=1)
+    op: Literal[
+        "contains",
+        "equals",
+        "num_gt",
+        "num_gte",
+        "num_lt",
+        "num_lte",
+        "num_between",
+        "num_any_gt",
+        "num_any_gte",
+        "year_min_gte",
+        "year_min_lte",
+        "year_any_gte",
+        "year_any_lte",
+        "year_between",
+    ]
+    value: str | float | int | None = None
+    value2: str | float | int | None = None
+
+
 class TableQueryPlan(BaseModel):
     """Validated instructions for reading one normalized table artifact."""
 
@@ -147,6 +183,7 @@ class TableQueryPlan(BaseModel):
     ]
     selected_columns: list[str] = Field(default_factory=list)
     filters: dict[str, str] = Field(default_factory=dict)
+    predicates: list[TablePredicate] = Field(default_factory=list)
     group_by: list[str] = Field(default_factory=list)
     calculation: Literal["count", "sum", "min", "max", "average"] | None = None
     calculation_column: str | None = None
@@ -198,7 +235,10 @@ class TableRequest(BaseModel):
         "timeline",
     ]
     columns_needed: list[str] = Field(default_factory=list)
-    row_filters: dict[str, str] = Field(default_factory=dict)
+    # Values are coerced to str: the assessor sometimes emits a numeric threshold
+    # (e.g. a year) here, which must not crash the whole assessment. The executor's
+    # planner derives the real predicates, so this is only a candidate-ranking hint.
+    row_filters: dict[str, str | int | float] = Field(default_factory=dict)
     comparison_key: str | None = None
 
 

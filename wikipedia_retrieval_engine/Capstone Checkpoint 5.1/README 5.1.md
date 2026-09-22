@@ -36,28 +36,33 @@ fraction of the context, and will isolate whether the remaining failures are
 retrieval or table synthesis. The bar is explicit: **do better than 4.1, or the
 added machinery isn't worth it.**
 
-## 2. Approach: a retrieval-only benchmark first
+## 2. Approach: retrieval first, then bounded table computation
 
-The table-reader branch is implemented but **deliberately disabled** for this
-benchmark. Enabling it would change two variables at once (progressive retrieval
-*and* table reasoning). The retrieval-only benchmark answers a narrower question:
-does the assessment loop, with section-level evidence, retrieve solidly enough
-that any remaining failures are attributable to synthesis rather than retrieval?
+The first benchmark deliberately disabled tables so progressive retrieval and table
+reasoning were not changed at the same time. Those retrieval-only results remain the
+baseline described in §§3–5. The current harness runs the next controlled step: the
+TOC reviewer selects stable normalized-table artifact IDs, those artifacts enter
+evidence alongside exact section chunks, and the assessor may request bounded,
+deterministic computation over a selected artifact.
 
 ```text
 START
   -> retrieve initial articles        (configurable: vector | multi-step)
-  -> review article candidates         (LLM keeps/rejects)
-  -> collect initial evidence          (promote selected representative chunks)
-  -> deepen selected article sections  (top-N sections per selected article)
-  -> assess evidence  --ready--------------------------> answer + log -> END
-       |-- not ready --> repeated retriever(s) --------> assess (loop)
-       +-- budget exhausted ----------------------------> answer + log -> END
+  -> review candidate TOCs            (keep/reject; select headings + artifact IDs)
+  -> load exact selected sections     (article + section metadata filter)
+  -> load selected normalized tables  (aligned rows + rich cell semantics)
+  -> assess evidence
+       |-- table request + budget --> plan + execute table --> assess (loop)
+       |-- retrieval request ------> next configured retriever --> assess (loop)
+       +-- ready/budgets exhausted --> write terminal-state log --> END
+                                                                    |
+                                                                    v
+                                                       harness answer model + RAGAS
 ```
 
-Only **section chunks** ever enter evidence; article names are routing handles.
-The answer model receives accumulated section evidence — never whole articles and
-never fixed leading-character slices.
+Only selected **section chunks and normalized table artifacts** enter evidence;
+article names remain routing handles. Whole articles and fixed leading-character
+slices are never sent to the answer model.
 
 Per-run evidence is written to `logs/YYYY_MM_DD_HH_MM_SS/NNN__<slug>.evidence.json`
 (one file per question, full terminal state). RAGAS scores the run and writes a
@@ -237,6 +242,40 @@ The recall-0.0 collapse is gone.
 This is still a **retrieval/selection** fix: it makes the right data present and
 flags the table need. Reading and synthesizing the table is Phase 2.
 
+### Step 6 — Phase 2: aligned tables (representation) then computation
+
+Phase 2 began by asking the cheaper question first: does *reading* the table (as
+structured rows) fix the synthesis failures, or is *computation* required? The
+answer came in two parts.
+
+**Two JSON tables exist, and it mattered.** The corpus has two machine-readable
+renderings of every table: the 4.1 **sidecar** (`corpus.py`, rows as lists, no
+rowspan expansion) and the 5.1 **NormalizedTable** artifacts (`wiki_table_parser`
++ `wiki_table_store`, rowspan/colspan expanded, winner markers and legends kept).
+The first "TOC + JSON tables" run used the **sidecar** and came out a wash
+(PASS ≈ 0.42) — because merged award tables (Academy Awards → GT03/GT07) misalign
+in the sidecar (a name lands in the `Year` column), and an over-eager
+`needs_table_reader` flag plus a section-drop rule regressed quotation questions
+(GT01/GT13). Two fixes followed: keep the table **additive** (don't drop the
+section), tighten the flag, and read from the **aligned NormalizedTable**.
+
+**Aligned representation alone was a real lift.** With those fixes, giving the
+model the aligned JSON table (no executor) moved PASS from ≈ 0.39 to **≈ 0.58**
+and quality from ≈ 0.59 to **≈ 0.70**, recall unchanged at 0.974. Reading a clean,
+row-aligned table is enough for single-table *filters* and lookups.
+
+**Computation is the last increment.** Aggregation, date/year-range filtering, and
+winner-dedupe (GT07/GT10/GT11/GT03) still don't clear on reading alone. The
+deterministic executor computes these over the *same aligned rows* — text/numeric/
+year predicates (`>`, `≥`, `between`, min/first-year) and count/sum/min/max/average,
+run in Python, not the model (§5, §7). An isolated check confirmed it computes
+GT08/GT10/GT11 correctly; the in-graph `table_nodes` mode is the current run
+(early full result PASS ≈ 0.65, still settling).
+
+Sequence of PASS on the GT set: retrieval-only ≈ 0.39 → aligned JSON tables ≈ 0.58
+→ + deterministic executor ≈ 0.65 (in progress). Recall stays 0.974 throughout —
+this phase moves *answer quality*, which retrieval could not.
+
 ## 4. Configurable retriever architecture
 
 The benchmark graph takes the retrieval strategy per stage as configuration
@@ -318,13 +357,38 @@ one fails with its sections present — table synthesis.** The non-passes are no
 mostly *partial* (right data, incomplete answer), the signature of a synthesis
 ceiling rather than a retrieval one.
 
-The retriever even generates the Phase 2 worklist: `needs_table_reader` flagged
+The retriever even generated the Phase 2 worklist: `needs_table_reader` flagged
 **GT01, GT03, GT05, GT07, GT08, GT09, GT10, GT11, GT12, GT13, GT14, GT19**. Phase 2
 enables the `need_table_reader` branch (parser, artifact store, planner, executor
 already implemented and tested; see §7) and the assessor routing that sends those
 flagged questions to it rather than answering from a flattened chunk. The one
 retrieval loose end (GT19) is the same ranked-list-table family as GT09 — likely
 resolved by the table reader too.
+
+### Current experiment — deterministic table computation
+
+The harness now crosses the Phase 2 boundary:
+
+- the TOC prompt ranks the complete normalized table catalog before truncating it;
+- each offered table includes an immutable artifact ID plus its section, caption,
+  and columns;
+- exact IDs are authoritative, so an explicitly selected winners table cannot be
+  silently replaced with a semantically similar box-office table;
+- multi-period questions may select multiple artifacts from the same article;
+- a bounded row budget is divided across all explicitly selected artifacts; and
+- rendered rows retain bold/italic markers, superscript/subscript annotations,
+  colors, legends, and stable source-cell coordinates.
+- when the assessor identifies a row-wise operation, a structured planner may use
+  only the selected artifact's real columns and emits deterministic text, numeric,
+  or year predicates;
+- Python—not the LLM—filters, sorts, counts, or aggregates the rows and returns
+  the exact contributing source-cell coordinates; and
+- the computed result becomes a normal `EvidenceItem`, after which the same
+  evidence assessor decides whether another table/retrieval round is needed.
+
+This is a distinct experiment mode,
+`agentic_toc_with_table_computation`; it must not be combined with the
+earlier `agentic_section_evidence_no_tables` results as if they were one setup.
 
 ## 6. Shared state and data contracts
 
@@ -337,15 +401,21 @@ boundary. Key types:
 - `ArticleCandidate` — an article discovered during retrieval, not yet evidence.
 - `EvidenceAssessment` — separates evidence grading from answering; list fields
   default to empty so imperfect structured output is repaired, not fatal.
-- `RetrievalRequest` / `TableRequest` / `TableQueryPlan` / `TableEvidence` — the
-  retrieval and (Phase 2) table branches.
+- `RetrievalRequest` / `TableRequest` — actionable gaps emitted by assessment.
+- `TablePredicate` / `TableQueryPlan` — schema-constrained instructions for the
+  deterministic executor; missing columns and malformed thresholds fail closed.
+- `TableEvidence` — computed rows, optional calculation, warnings, and exact source
+  cells returned by the executor.
+- `AgentState.table_attempts` — a table-loop budget independent of retrieval
+  attempts, preventing repeated table requests from cycling forever.
 
 Model and DB clients are constructed outside graph state and injected into nodes;
 persisted state stays serializable and never contains API keys.
 
-## 7. Table branch (Phase 2, implemented but disabled)
+## 7. Table branch (enabled)
 
-The table machinery is built and tested, gated off for the retrieval benchmark:
+The parser, artifact-intake, planner, and deterministic executor now run in the
+harness:
 
 - **Rich parser** ([wiki_table_parser.py](../utils/wiki_table_parser.py)) — expands
   rowspan/colspan to a logical grid while keeping original coordinates; combines
@@ -362,6 +432,14 @@ The table machinery is built and tested, gated off for the retrieval benchmark:
   artifacts; `plan_table_query()` produces a validated `TableQueryPlan` (the model
   picks the operation, not the arithmetic); `execute_table_query_plan()` runs it in
   Python and returns `TableEvidence` with exact source-cell provenance.
+- **Graph node** — `compute_requested_tables()` executes the assessor's bounded
+  `TableRequest` list, records success or an expected schema/artifact failure as
+  evidence, increments `table_attempts`, and routes back to `assess_evidence`.
+
+The router gives a pending table request priority while table budget remains. When
+that budget is exhausted, it can still use an available retrieval request; otherwise
+it exits cleanly with the evidence accumulated so far. The defaults are two table
+rounds and six requests per round.
 
 ## 8. Reproduce
 
@@ -371,7 +449,7 @@ From `wikipedia_retrieval_engine/`:
 python "Capstone Checkpoint 5.1/capstone_checkpoint_5_1_agent_rag_starter.py" \
   --gt-set "GT/wikipedia_GT.csv" \
   --output-dir "Capstone Checkpoint 5.1/ragas_test_GT_5.1" \
-  --experiment-name agent_multistep_entity
+  --experiment-name agentic_toc_with_table_computation
 ```
 
 `--limit N` for a smoke test; repeat `--question-id GT16` to select questions.
@@ -423,19 +501,25 @@ Implemented:
   settled initial retriever;
 - a fused TOC-based selection stage (`review_and_select_from_toc` +
   `load_selected_sections`): judges each article by its table of contents, selects
-  the sections to read, and flags table needs for Phase 2 — replacing snippet
-  review, which rejected correct articles on a `See also`/lead chunk;
+  exact sections and stable table artifact IDs — replacing snippet review, which
+  rejected correct articles on a `See also`/lead chunk;
+- exact article-and-heading retrieval for TOC-selected sections;
+- additive normalized-table evidence with multi-table selection, a bounded row
+  budget, and rich cell/legend semantics;
 - assessment-contract repair so every run completes all 19 questions;
 - deterministic table resolution, `TableQueryPlan` creation, and plan execution
-  with cell-level provenance (gated off in this benchmark);
-- a Wikipedia-GT RAGAS harness answering only from accumulated section evidence;
+  with validated text/numeric/year predicates and cell-level provenance;
+- a bounded `need_table_reader` graph branch that converts executed results into
+  answer-visible `EvidenceItem` objects and reassesses the combined evidence;
+- a Wikipedia-GT RAGAS harness with separately labeled section-only and
+  table-computation experiment modes;
 - focused tests for models, parsing, store cache/invalidation, graph nodes,
   routing, decomposed initial retrieval, selected-article deepening, graph-section
   ranking, and logging.
 
-Still to implement (Phase 2):
+Still to implement:
 
-- convert executed table results into table-backed `EvidenceItem` objects;
-- wire the `need_table_reader` branch and the assessor routing it needs;
-- multi-table / multi-document joins;
+- deterministic multi-table / multi-document joins (the current branch can execute
+  several independent requests, then leaves cross-result synthesis to the answer
+  model);
 - in-graph grounded answering and verification nodes.
