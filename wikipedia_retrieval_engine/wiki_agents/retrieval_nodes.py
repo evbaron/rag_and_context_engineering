@@ -25,6 +25,7 @@ from wikipedia_retrieval_engine.wiki_agents.agentic_models import (
     EvidenceAssessment,
     EvidenceItem,
     RetrievalRequest,
+    TableRequest,
     retrieval_attempt_count,
 )
 
@@ -1289,6 +1290,36 @@ def assess_evidence(
         or assessment.unresolved_conflicts
     ):
         assessment.ready_to_answer = False
+
+    # Single table gateway: every relevant selected table must pass through the
+    # deterministic executor before we answer, rather than letting the model read
+    # rows off the page. The planner classifies each request (lookup vs filter/
+    # aggregate/...) via operation="auto". Extraction is additive, so prose and
+    # quotation evidence is preserved untouched; a table only adds a deterministic
+    # result. This stands down once a table_computation result already exists so
+    # the loop cannot spin on it.
+    if allow_table_requests:
+        needs_extraction = any(
+            review.relevant and review.relevant_table_ids for review in reviews
+        )
+        already_computed = any(
+            item.metadata.get("retrieval_stage") == "table_computation"
+            for item in evidence
+        )
+        if needs_extraction and not already_computed:
+            assessment.ready_to_answer = False
+            if not assessment.table_requests:
+                assessment.table_requests = [
+                    TableRequest(
+                        missing_fact=question,
+                        source_article=review.source_article,
+                        table_id=table_id,
+                        operation="auto",
+                    )
+                    for review in reviews
+                    if review.relevant and review.relevant_table_ids
+                    for table_id in review.relevant_table_ids
+                ]
 
     # A not-ready assessment with no actionable request would stall the loop.
     # Fall back to re-querying the original question so retrieval can progress.

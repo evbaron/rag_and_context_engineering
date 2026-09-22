@@ -264,17 +264,59 @@ model the aligned JSON table (no executor) moved PASS from ≈ 0.39 to **≈ 0.5
 and quality from ≈ 0.59 to **≈ 0.70**, recall unchanged at 0.974. Reading a clean,
 row-aligned table is enough for single-table *filters* and lookups.
 
-**Computation is the last increment.** Aggregation, date/year-range filtering, and
-winner-dedupe (GT07/GT10/GT11/GT03) still don't clear on reading alone. The
-deterministic executor computes these over the *same aligned rows* — text/numeric/
-year predicates (`>`, `≥`, `between`, min/first-year) and count/sum/min/max/average,
-run in Python, not the model (§5, §7). An isolated check confirmed it computes
-GT08/GT10/GT11 correctly; the in-graph `table_nodes` mode is the current run
-(early full result PASS ≈ 0.65, still settling).
+**Computation was correct — but routing was a coin-flip.** Aggregation,
+date/year-range filtering, and winner-dedupe (GT07/GT10/GT11/GT03) don't clear on
+reading alone, so a deterministic executor computes them over the *same aligned
+rows* — text/numeric/year predicates (`>`, `≥`, `between`, min/first-year) and
+count/sum/min/max/average, run in Python, not the model (§5, §7). In isolation it
+was correct (GT08/GT10/GT11). In-graph it under-delivered (PASS ≈ 0.65) for a
+subtle reason the logs exposed: the executor ran only when the **assessor chose to
+request it**, and the assessor kept rationalizing "I can read this directly." GT10
+was the tell — it passed exactly when the executor fired and failed when it didn't.
+
+### Step 7 — the table gateway: route every table through the executor
+
+The fix was to stop letting the assessor decide *whether* to compute. Any relevant
+selected table is now forced through the executor; the **planner** classifies each
+request itself (an `auto` operation → `lookup` to extract cells, or
+`filter`/`aggregate`/… to compute). Extraction is **additive**, so prose and
+quotations keep their text — the safety property that lets us route ~14 of 19
+questions through compute without risk. Mechanically this changed no graph edges:
+the gateway (in `assess_evidence`) synthesizes one request per flagged table id,
+and the existing compute node loops over them.
+
+Result over **4 full-19 runs** (`agentic_search_lookup_and_compute`):
+
+| metric | Phase-1 head (table reader off) | aligned JSON read | table gateway |
+| --- | --- | --- | --- |
+| article recall | 0.974 | 0.974 | **1.000** |
+| answer quality | 0.588 | ≈ 0.70 | **0.789** |
+| strict PASS | 0.386 | ≈ 0.58 | **0.750** |
+
+The designed win: GT10's coin-flip is gone (reliable pass). Bonus: GT08 0.38 → 1.0.
+Sentinels held — the quotation (GT01) and lookup (GT05) questions both stayed at
+1.0 despite now routing through the executor, so deterministic extraction never
+diluted them.
+
+The remaining ceiling is now **non-routing**, and cleanly localized:
+
+- **GT03** — the Academy Awards nominee tables are *layout tables* (positional
+  columns; each cell is an entire award category's nominees as one text blob). The
+  gateway correctly fires a `lookup` on all three ceremonies, but there are no
+  per-nominee rows to extract — this needs a parser-level fix (exploding layout
+  tables into rows), not routing.
+- **GT07** — planner counting winners within a year range (plan correctness).
+- **GT11** — answer scope: the question says "1950 or later" but the graded scope
+  caps at 2024, so the two 2028 sports are penalized.
+
+Recall reaches **1.000** in these runs (GT19's earlier context-length crash is
+resolved), so retrieval is fully solved; the open work is table representation and
+planner correctness.
 
 Sequence of PASS on the GT set: retrieval-only ≈ 0.39 → aligned JSON tables ≈ 0.58
-→ + deterministic executor ≈ 0.65 (in progress). Recall stays 0.974 throughout —
-this phase moves *answer quality*, which retrieval could not.
+→ deterministic executor (assessor-gated) ≈ 0.65 → **table gateway 0.75** (4-run
+mean). Recall 0.90 → 0.94 → **1.000**. This phase moves *answer quality*, which
+retrieval could not.
 
 ## 4. Configurable retriever architecture
 
@@ -365,9 +407,10 @@ flagged questions to it rather than answering from a flattened chunk. The one
 retrieval loose end (GT19) is the same ranked-list-table family as GT09 — likely
 resolved by the table reader too.
 
-### Current experiment — deterministic table computation
+### The table branch — deterministic table computation
 
-The harness now crosses the Phase 2 boundary:
+The harness crosses the Phase 2 boundary (this is the machinery the Step 7 gateway
+drives on every relevant table):
 
 - the TOC prompt ranks the complete normalized table catalog before truncating it;
 - each offered table includes an immutable artifact ID plus its section, caption,
@@ -484,8 +527,9 @@ python -m unittest discover -s wikipedia_retrieval_engine/tests -p "test_*.py"
   calibration.
 - Multi-step decomposition is LLM-driven, so the initial stage is now
   nondeterministic; run 3–4 times and compare per-question, not single aggregates.
-- GT09/GT19 (ranked-list-table articles) still show intermittent recall loss — the
-  same table root cause, surfacing in retrieval.
+- Recall is now 1.000 across the 4-run gateway set (GT09/GT19 resolved). The
+  residual table gap is *representation*, not retrieval: layout tables (GT03) whose
+  cells are text blobs rather than rows.
 - Agentic routing adds latency and nondeterminism; justified only because targeted
   evaluation now shows recall above the 4.1 baseline at ~14× less context.
 
@@ -511,6 +555,11 @@ Implemented:
   with validated text/numeric/year predicates and cell-level provenance;
 - a bounded `need_table_reader` graph branch that converts executed results into
   answer-visible `EvidenceItem` objects and reassesses the combined evidence;
+- the single-table **gateway**: every relevant selected table is forced through the
+  executor (no "read it directly" carve-out), the planner classifies each request
+  via an `auto` operation (lookup vs filter/aggregate/…), and extraction is additive
+  so prose/quotations are preserved — quality 0.789, PASS 0.750, recall 1.000
+  (4-run mean, `agentic_search_lookup_and_compute`);
 - a Wikipedia-GT RAGAS harness with separately labeled section-only and
   table-computation experiment modes;
 - focused tests for models, parsing, store cache/invalidation, graph nodes,
@@ -519,7 +568,11 @@ Implemented:
 
 Still to implement:
 
-- deterministic multi-table / multi-document joins (the current branch can execute
-  several independent requests, then leaves cross-result synthesis to the answer
-  model);
+- **layout-table explosion**: the Academy Awards nominee tables (GT03) are
+  presentation tables — positional columns, each cell an entire category's nominees
+  as one text blob. The parser should detect these and explode them into
+  per-nominee rows so the executor has rows to extract;
+- planner correctness for counting-within-a-range aggregates (GT07);
+- deterministic multi-table / multi-document joins (the gateway can execute several
+  independent requests, then leaves cross-result synthesis to the answer model);
 - in-graph grounded answering and verification nodes.

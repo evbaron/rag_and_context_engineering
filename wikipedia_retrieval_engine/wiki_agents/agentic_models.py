@@ -227,6 +227,10 @@ class TableRequest(BaseModel):
     table_id: str | None = None
     expected_caption: str | None = None
     operation: Literal[
+        # "auto" marks a code-synthesized request (the single-table gateway): the
+        # assessor did not specify an operation, so the planner classifies it as
+        # lookup vs filter/aggregate/etc. from the question and table schema.
+        "auto",
         "lookup",
         "filter",
         "aggregate",

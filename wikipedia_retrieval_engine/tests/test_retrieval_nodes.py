@@ -1018,6 +1018,97 @@ class RetrievalNodesTests(unittest.TestCase):
         self.assertIn("Who won Best Picture?", messages[1].content)
         self.assertEqual(update["assessment"], assessment)
 
+    def test_assess_evidence_gateway_forces_extraction_for_each_flagged_table(
+        self,
+    ) -> None:
+        # Single-table gateway: a "read it directly" assessment over relevant
+        # flagged tables is overridden into one auto table_request per table id,
+        # so the executor runs before we answer.
+        assessment = EvidenceAssessment(
+            ready_to_answer=True,
+            explanation="The rows are present; I can read the answer directly.",
+        )
+        structured_assessor = Mock()
+        structured_assessor.invoke.return_value = assessment
+        llm = Mock(spec=BaseChatModel)
+        llm.with_structured_output.return_value = structured_assessor
+        state: AgentState = {
+            "question": "Which nominees appear at all three ceremonies?",
+            "article_reviews": [
+                ArticleReview(
+                    source_article="68th_Academy_Awards.html",
+                    relevant=True,
+                    reason="Has the nominee table.",
+                    relevant_table_ids=["table-001", "table-002"],
+                ),
+                ArticleReview(
+                    source_article="70th_Academy_Awards.html",
+                    relevant=True,
+                    reason="Has the nominee table.",
+                    relevant_table_ids=["table-003"],
+                ),
+                ArticleReview(
+                    source_article="off_topic.html",
+                    relevant=False,
+                    reason="Not relevant.",
+                    relevant_table_ids=["table-999"],
+                ),
+            ],
+            "evidence": [],
+        }
+
+        update = assess_evidence(state, llm)
+        result = update["assessment"]
+
+        self.assertFalse(result.ready_to_answer)
+        # One request per table id, only for relevant reviews (irrelevant skipped).
+        self.assertEqual(len(result.table_requests), 3)
+        self.assertTrue(
+            all(req.operation == "auto" for req in result.table_requests)
+        )
+        self.assertEqual(
+            {req.table_id for req in result.table_requests},
+            {"table-001", "table-002", "table-003"},
+        )
+
+    def test_assess_evidence_gateway_stands_down_after_computation(self) -> None:
+        # Once a table_computation result exists, the gateway must not re-fire, so
+        # a genuine "ready" answer over the computed evidence can proceed.
+        assessment = EvidenceAssessment(
+            ready_to_answer=True,
+            explanation="The computed table result answers the question.",
+        )
+        structured_assessor = Mock()
+        structured_assessor.invoke.return_value = assessment
+        llm = Mock(spec=BaseChatModel)
+        llm.with_structured_output.return_value = structured_assessor
+        state: AgentState = {
+            "question": "Which nominees appear at all three ceremonies?",
+            "article_reviews": [
+                ArticleReview(
+                    source_article="68th_Academy_Awards.html",
+                    relevant=True,
+                    reason="Has the nominee table.",
+                    relevant_table_ids=["table-001"],
+                ),
+            ],
+            "evidence": [
+                EvidenceItem(
+                    evidence_id="68th_Academy_Awards.html#table-001#computed-x",
+                    source_article="68th_Academy_Awards.html",
+                    content="Deterministic table-computation result. ...",
+                    evidence_type="table",
+                    metadata={"retrieval_stage": "table_computation"},
+                )
+            ],
+        }
+
+        update = assess_evidence(state, llm)
+        result = update["assessment"]
+
+        self.assertTrue(result.ready_to_answer)
+        self.assertEqual(result.table_requests, [])
+
     def test_route_after_evidence_assessment_selects_each_branch(self) -> None:
         ready = EvidenceAssessment(
             ready_to_answer=True,

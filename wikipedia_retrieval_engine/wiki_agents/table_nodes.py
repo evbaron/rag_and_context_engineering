@@ -32,7 +32,14 @@ You plan one operation over normalized Wikipedia table artifacts.
 
 Rules:
 - Choose exactly one artifact_id from the supplied candidates.
-- Preserve the requested operation exactly.
+- If the request operation is "auto", choose the single operation that fits the
+  question: "lookup" to read specific cells or a whole column with no computation;
+  "filter" to select rows by a predicate; "aggregate" to count/sum/min/max/average;
+  "compare"/"sort"/"timeline" as appropriate. Otherwise preserve the requested
+  operation exactly.
+- For a lookup/extraction, put the columns the answer needs in selected_columns and
+  return the relevant rows; use predicates only to narrow which rows, never to
+  compute the answer. To read a whole column, use no predicates.
 - Use only exact column names shown for the chosen artifact.
 - selected_columns are the columns whose cells the executor should return.
 - filters map an exact column name to a case-insensitive text value that must occur
@@ -285,7 +292,10 @@ def _validate_table_query_plan(
             "Table planner selected an artifact that was not supplied: "
             f"{plan.artifact_id}"
         )
-    if plan.operation != request.operation:
+    # "auto" requests carry no operation intent to preserve: the assessor did not
+    # choose one (single-table gateway), so the planner is free to classify the
+    # request. Any explicit operation is still held to exactly, as before.
+    if request.operation != "auto" and plan.operation != request.operation:
         raise ValueError(
             "Table planner changed the requested operation from "
             f"{request.operation!r} to {plan.operation!r}."

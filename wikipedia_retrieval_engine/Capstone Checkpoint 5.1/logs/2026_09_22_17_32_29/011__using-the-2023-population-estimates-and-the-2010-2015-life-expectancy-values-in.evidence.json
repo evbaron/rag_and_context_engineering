@@ -1,0 +1,587 @@
+{
+  "run_id": "2026_09_22_17_32_29",
+  "question_number": 11,
+  "logged_at": "2026-09-22T17:36:45-04:00",
+  "question": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+  "final_state": {
+    "question": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+    "retrieval_attempts": 2,
+    "table_attempts": 1,
+    "article_candidates": [
+      {
+        "source_article": "List_of_countries_by_past_life_expectancy.html",
+        "representative_chunk": "Article: List of countries by past life expectancy\nSection: Lead\n\nLife expectancy by world region, from 1770 to 2023\n\nThis is a list of countries showing past life expectancy, ranging from 1950 to 2015 in five-year periods, as estimated by the 2017 revision of the World Population Prospects database by the United Nations Population Division. Life expectancy equals the average number of years a person born in a given country is expected to live if mortality rates at each age were to remain steady in the future. The life expectancy is shown as the average of males and females.",
+        "representative_chunk_id": "List_of_countries_by_past_life_expectancy.html#section-000-00",
+        "section_title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "List of countries by life expectancy",
+        "discovered_by": "vector",
+        "rank": 1,
+        "raw_score": 0.5222421288490295,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "List_of_countries_by_population_(United_Nations).html",
+        "representative_chunk": "Article: List of countries and dependencies by population (United Nations)\nSection: Lead\n\nUN list of countries and territories by population\n\nStatistical subregions as defined by the United Nations Statistics Division[1]\n\nThis is the list of countries and other inhabited territories of the world by estimated total population. It is based on estimates published by the United Nations in the 2024 revision of World Population Prospects. It presents population estimates from 1950 to the present.[2]",
+        "representative_chunk_id": "List_of_countries_by_population_(United_Nations).html#section-000-00",
+        "section_title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "List of countries by population (United Nations)",
+        "discovered_by": "vector",
+        "rank": 2,
+        "raw_score": 0.6266894340515137,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "List_of_United_States_cities_by_population.html",
+        "representative_chunk": "Article: List of United States cities by population\nSection: 50 states and the District of Columbia > Distribution\n\nThe total 2020 enumerated population of all incorporated municipalities over 100,000 is 96,598,047, representing 29.14% of the United States population (excluding territories) and covering a total land area of 29,588 square miles (76,630 km2). The mean municipality population is 301,765, and the mean density is 4,151 inhabitants per square mile (1,603/km2).\n\nPopulation\n\nNumber of municipal governments\n\n1,000,000+\n11\n\n900,000–999,999\n4\n\n800,000–899,999\n2\n\n700,000–799,999\n5\n\n600,000–699,999\n7\n\n500,000–599,999\n9\n\n400,000–499,999\n14\n\n300,000–399,999\n20\n\n200,000–299,999\n56\n\n100,000–199,999\n218\n\nTotal\n346\n\nState\n\nNumber of listed municipalities\n\nCalifornia\n\n76\n\nTexas\n\n44\n\nFlorida\n\n27\n\nArizona\n\n13\n\nColorado\n\n12\n\nNorth Carolina, Washington\n\n10\n\nMassachusetts\n\n9\n\nGeorgia, Illinois, Michigan, Virginia\n\n8\n\nNew Jersey\n\n7\n\nIndiana, Missouri, New York, Ohio, Oregon, Tennessee\n\n6\n\nAlabama, Connecticut, Kansas, Nevada, Utah\n\n5\n\nLouisiana, Oklahoma\n\n4\n\nIdaho, Iowa, Minnesota, New Mexico, Pennsylvania, South Carolina, Wisconsin\n\n3\n\nArkansas, Kentucky, Nebraska\n\n2\n\nAlaska, District of Columbia, Hawaii, Maryland, Mississippi, Montana, New Hampshire, North Dakota, Rhode Island, South Dakota\n\n1\n\nDelaware, Maine, Vermont, West Virginia, Wyoming\n\n0",
+        "representative_chunk_id": "List_of_United_States_cities_by_population.html#section-002-00",
+        "section_title": "Distribution",
+        "section_path": [
+          "50 states and the District of Columbia",
+          "Distribution"
+        ],
+        "retrieval_query": "List of countries by population (United Nations)",
+        "discovered_by": "vector",
+        "rank": 3,
+        "raw_score": 0.9250664114952087,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Demographics_of_East_Timor.html",
+        "representative_chunk": "Article: Demographics of Timor-Leste\nSection: Vital statistics > Life expectancy at birth\n\nAverage life expectancy at age 0 of the total population.[10]\n\nPeriod\n\nLife expectancy\n\nin Years\n\nPeriod\n\nLife expectancy in\n\nYears\n\n1950–1955\n\n30.0\n\n1985–1990\n\n46.5\n\n1955–1960\n\n32.5\n\n1990–1995\n\n50.5\n\n1960–1965\n\n35.0\n\n1995–2000\n\n57.0\n\n1965–1970\n\n37.5\n\n2000–2005\n\n61.5\n\n1970–1975\n\n40.0\n\n2005–2010\n\n66.4\n\n1975–1980\n\n31.2\n\n2010–2015\n\n67.7\n\n1980–1985\n\n39.9",
+        "representative_chunk_id": "Demographics_of_East_Timor.html#section-007-00",
+        "section_title": "Life expectancy at birth",
+        "section_path": [
+          "Vital statistics",
+          "Life expectancy at birth"
+        ],
+        "retrieval_query": "List of countries by life expectancy",
+        "discovered_by": "vector",
+        "rank": 4,
+        "raw_score": 0.9688339233398438,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Demographics_of_Japan.html",
+        "representative_chunk": "Article: Demographics of Japan\nSection: Vital statistics > Life expectancy > Historical data\n\nSources: Our World In Data and the United Nations.\n\n1865–1949\n\nYears\n\n1865\n\n1870\n\n1875\n\n1880\n\n1885\n\n1890\n\n1895\n\n1900\n\n1905\n\n1910\n\n1915\n\n1920\n\n1922\n\n1927\n\n1935\n\n1945\n\n1947\n\n1948\n\n1949\n\n1950[67]\n\nLife expectancy in Japan\n\n36.4\n\n36.6\n\n36.8\n\n37.0\n\n37.3\n\n37.7\n\n38.1\n\n38.6\n\n39.2\n\n40.0\n\n40.9\n\n42.0\n\n42.6\n\n45.7\n\n48.2\n\n30.5\n\n51.7\n\n56.8\n\n57.7\n\n59.2\n\n1950–2020\n\nPeriod\n\nLife expectancy in\n\nyears\n\nPeriod\n\nLife expectancy in\n\nyears\n\n1950–1955\n\n62.8\n\n1985–1990\n\n78.5\n\n1955–1960\n\n66.4\n\n1990–1995\n\n79.4\n\n1960–1965\n\n69.2\n\n1995–2000\n\n80.5\n\n1965–1970\n\n71.4\n\n2000–2005\n\n81.8\n\n1970–1975\n\n73.3\n\n2005–2010\n\n82.7\n\n1975–1980\n\n75.4\n\n2010–2015\n\n83.3\n\n1980–1985\n\n77.0\n\n2015–2020\n\n84.4\n\nSource: UN World Population Prospects",
+        "representative_chunk_id": "Demographics_of_Japan.html#section-014-00",
+        "section_title": "Historical data",
+        "section_path": [
+          "Vital statistics",
+          "Life expectancy",
+          "Historical data"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "discovered_by": "vector",
+        "rank": 5,
+        "raw_score": 1.0092647075653076,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "India.html",
+        "representative_chunk": "Article: India\nSection: Demographics\n\nMain article: Demographics of India\n\nWith an estimated 1,428,627,663 residents in 2023, India is the world's most populous country.[303] 1,210,193,422 residents were reported in the 2011 provisional census report.[304] The median age was 28.7 in 2020.[273] Medical advances made in the last 50 years as well as increased agricultural productivity brought about by the \"Green Revolution\" have caused India's population to grow rapidly,[305] though India's decennial rates of growth are decreasing: its population grew by 17.64% from 2001 to 2011,[306] compared to 21.54% growth in the previous decade (1991–2001).[306] The first post-colonial census, conducted in 1951, counted 361 million people.[307] The life expectancy at birth has increased from 49.7 years in 1970–1975 to 72.0 years in 2023.[308][309] The under-five mortality rate for the country was 113 per 1,000 live births in 1994 whereas in 2018 it reduced to 41.1 per 1,000 live births.[308]\n\nThe human sex ratio, according to the 2011 census, is 940 females per 1,000 males.[304] Female infanticide in India, and lately female foeticide, have created lop-sided gender ratios; the number of missing women in the country quadrupled from 15 million to 63 million during the period 1964–2014, faster than the population growth during the same period.[310] According to an Indian government study, an additional 21 million girls are unwanted and do not receive adequate care.[311] Despite a government ban on sex-selective foeticide, the practice has far from stopped.[312]\n\nMigration from rural to urban areas has been an important dynamic in India's recent history. The number of people living in urban areas grew by 31.2% between 1991 and 2001.[313] In 2001, over 70% lived in rural areas.[314][315] The level of urbanisation increased further from 27.81% in the 2001 census to 31.16% in the 2011 census. The slowing down of the overall population growth rate was due to the sharp decline in the growth rate in rural areas since 1991.[316] In the 2011 census, there were 53 million-plus urban agglomerations in India. Among them Mumbai, Delhi, Kolkata, Chennai, Bengaluru, Hyderabad and Ahmedabad, in decreasing order by population.[317]\n\nThe historical development of life expectancy in India from 1881 to 2023\n\nThe child mortality rate in India from 1960 to 2023",
+        "representative_chunk_id": "India.html#section-018-00",
+        "section_title": "Demographics",
+        "section_path": [
+          "Demographics"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "discovered_by": "vector",
+        "rank": 6,
+        "raw_score": 1.0463781356811523,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      }
+    ],
+    "article_reviews": [
+      {
+        "source_article": "List_of_countries_by_past_life_expectancy.html",
+        "relevant": true,
+        "reason": "This article contains the 2010–2015 life-expectancy table needed for the comparison.",
+        "relevant_sections": [
+          "List of countries 1950 to 2015 (United Nations)"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [
+          "f78c88bb2cc8d51807cf2abc"
+        ],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "List_of_countries_by_population_(United_Nations).html",
+        "relevant": true,
+        "reason": "This article contains the 2023 population estimates needed for the comparison.",
+        "relevant_sections": [
+          "List"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [
+          "42b2a22b344089fe838ed6f3"
+        ],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "List_of_United_States_cities_by_population.html",
+        "relevant": false,
+        "reason": "This article is about U.S. cities, not country population or life expectancy.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Demographics_of_East_Timor.html",
+        "relevant": false,
+        "reason": "This article is country-specific and does not provide the cross-country population-and-life-expectancy comparison needed.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Demographics_of_Japan.html",
+        "relevant": false,
+        "reason": "This article is country-specific and not the right source for a cross-country correlation question.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "India.html",
+        "relevant": false,
+        "reason": "This article is about India and does not provide the needed cross-country population and life-expectancy comparison.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      }
+    ],
+    "selected_articles": [
+      "List_of_countries_by_past_life_expectancy.html",
+      "List_of_countries_by_population_(United_Nations).html"
+    ],
+    "rejected_articles": [
+      "List_of_United_States_cities_by_population.html",
+      "Demographics_of_East_Timor.html",
+      "Demographics_of_Japan.html",
+      "India.html"
+    ],
+    "evidence": [
+      {
+        "evidence_id": "List_of_countries_by_past_life_expectancy.html#section-001-02",
+        "source_article": "List_of_countries_by_past_life_expectancy.html",
+        "content": "Article: List of countries by past life expectancy\nSection: List of countries 1950 to 2015 (United Nations)\n\n53.67\n56.97\n60.23\n\n Northern Africa\n42.27\n45.82\n48.60\n51.12\n53.18\n56.27\n59.77\n62.85\n64.56\n66.39\n67.92\n69.63\n71.07\n\n Sub-Saharan Africa\n36.33\n38.51\n40.73\n42.70\n44.80\n46.75\n48.18\n49.11\n48.86\n49.39\n50.70\n54.29\n57.88\n\n Western Africa\n33.55\n35.50\n37.61\n39.50\n41.80\n44.42\n46.71\n47.67\n48.13\n48.21\n49.30\n52.33\n54.74\n\n Middle Africa\n36.91\n38.45\n40.01\n41.82\n43.99\n45.57\n47.07\n47.96\n48.46\n48.17\n50.79\n54.42\n57.42\n\n Eastern Africa\n37.00\n39.45\n42.06\n44.13\n45.96\n47.55\n48.17\n48.86\n47.58\n49.57\n51.98\n57.04\n61.45\n\n Southern Africa\n47.81\n50.58\n52.43\n54.23\n56.10\n57.01\n58.21\n60.79\n61.94\n58.47\n53.19\n52.99\n59.31\n\n ASIA\n42.33\n44.54\n46.50\n52.81\n56.51\n59.33\n61.57\n63.57\n65.16\n66.69\n68.65\n70.34\n71.81\n\n Western Asia\n43.76\n46.93\n50.14\n53.78\n57.01\n60.23\n62.57\n65.38\n67.26\n69.19\n70.85\n72.03\n72.77\n\n Central Asia\n54.67\n56.73\n58.77\n60.74\n62.26\n63.29\n64.70\n66.09\n65.06\n64.39\n65.82\n67.50\n69.76\n\n Southern Asia\n37.02\n40.26\n43.43\n46.64\n49.36\n52.74\n54.83\n57.02\n59.65\n61.95\n63.99\n65.93\n67.88\n\n Eastern Asia\n45.60\n46.64\n46.97\n57.03\n62.86\n66.52\n68.70\n69.90\n70.78\n71.93\n74.19\n75.74\n76.76\n\n Southeast Asia\n46.48\n49.97\n52.84\n55.52\n56.67\n58.08\n61.95\n64.20\n65.69\n67.02\n68.13\n69.36\n70.50\n\n OCEANIA\n61.58\n63.37\n64.40\n65.41\n66.87\n68.67\n70.43\n71.43\n73.04\n74.19\n75.67\n77.02\n77.93\n\n Australia/New Zealand\n69.44\n70.46\n70.92\n70.92\n71.75\n73.41\n74.85\n75.88\n77.46\n78.63\n80.11\n81.28\n82.14\n\n Polynesia\n50.39\n53.90\n56.08\n58.31\n60.29\n62.26\n64.81\n66.72\n68.50\n70.13\n71.58\n73.20\n74.53\n\n Melanesia\n40.50\n43.27\n45.54\n49.14\n52.20\n55.47\n58.43\n59.20\n60.78\n62.19\n63.67\n65.21\n66.12\n\n Micronesia\n53.50\n55.43\n57.69\n59.79\n61.92\n63.50\n64.60\n65.98\n67.55\n69.39\n70.92\n71.95\n72.81\n\n World\n46.98\n49.33\n51.17\n55.48\n58.14\n60.30\n62.06\n63.68\n64.59\n65.67\n67.20\n69.07\n70.79",
+        "evidence_type": "text",
+        "title": "List of countries 1950 to 2015 (United Nations)",
+        "section_path": [
+          "List of countries 1950 to 2015 (United Nations)"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 1.0188572406768799,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "List of countries 1950 to 2015 (United Nations)",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "f78c88bb2cc8d51807cf2abc"
+          ]
+        }
+      },
+      {
+        "evidence_id": "List_of_countries_by_population_(United_Nations).html#section-001-00",
+        "source_article": "List_of_countries_by_population_(United_Nations).html",
+        "content": "Article: List of countries and dependencies by population (United Nations)\nSection: List\n\nData are mid-year estimates from the United Nations and are for 2022 and 2023.[2]\n\nList of countries and inhabited territories by total population. United Nations\n\nCountry or territory\n\nPopulation\n\n(1 July 2022)\n\nPopulation\n\n(1 July 2023)\n\nChange\n\n(%)\n\nUN continental\n\nregion[1]\n\nUN statistical\n\nsubregion[1]\n\n World\n8,021,407,192\n8,091,734,930\n+0.88%\n–\n–\n\n India\n1,425,423,212\n1,438,069,596\n+0.89%\nAsia\nSouthern Asia\n\n China[a]\n1,425,179,569\n1,422,584,933\n−0.18%\nAsia\nEastern Asia\n\n United States\n341,534,046\n343,477,335\n+0.57%\nAmericas\nNorthern America\n\n Indonesia\n278,830,529\n281,190,067\n+0.85%\nAsia\nSouth-eastern Asia\n\n Pakistan\n243,700,667\n247,504,495\n+1.56%\nAsia\nSouthern Asia\n\n Nigeria\n223,150,896\n227,882,945\n+2.12%\nAfrica\nWestern Africa\n\n Brazil\n210,306,415\n211,140,729\n+0.40%\nAmericas\nSouth America\n\n Bangladesh\n169,384,897\n171,466,990\n+1.23%\nAsia\nSouthern Asia\n\n Russia\n145,579,899\n145,440,500\n−0.10%\nEurope\nEastern Europe\n\n Mexico\n128,613,117\n129,739,759\n+0.88%\nAmericas\nCentral America\n\n Ethiopia\n125,384,287\n128,691,692\n+2.64%\nAfrica\nEastern Africa\n\n Japan\n124,997,578\n124,370,947\n−0.50%\nAsia\nEastern Asia\n\n Philippines\n113,964,338\n114,891,199\n+0.81%\nAsia\nSouth-eastern Asia\n\n Egypt\n112,618,250\n114,535,772\n+1.70%\nAfrica\nNorthern Africa\n\n DR Congo\n102,396,968\n105,789,731\n+3.31%\nAfrica\nMiddle Africa\n\n Vietnam\n99,680,655\n100,352,192\n+0.67%\nAsia\nSouth-eastern Asia\n\n Iran\n89,524,246\n90,608,707\n+1.21%\nAsia\nSouthern Asia\n\n Turkey\n87,058,473\n87,270,501\n+0.24%\nAsia\nWestern Asia\n\n Germany\n84,086,227\n84,548,231\n+0.55%\nEurope\nWestern Europe\n\n Thailand\n71,735,329\n71,702,435\n−0.05%\nAsia\nSouth-eastern Asia\n\nUnited Kingdom\n68,179,315\n68,682,962\n+0.74%\nEurope\nNorthern Europe\n\n Tanzania[b]\n64,711,821\n66,617,606\n+2.95%\nAfrica\nEastern Africa\n\n France[c]\n66,277,409\n66,438,822\n+0.24%\nEurope\nWestern Europe\n\n South Africa\n62,378,410\n63,212,384\n+1.34%\nAfrica\nSouthern Africa\n\n Italy\n59,619,115\n59,499,453\n−0.20%\nEurope\nSouthern Europe\n\n Kenya\n54,252,461\n55,339,003\n+2.00%\nAfrica\nEastern Africa\n\n Myanmar\n53,756,787\n54,133,798\n+0.70%\nAsia\nSouth-eastern Asia\n\n Colombia\n51,737,944\n52,321,152\n+1.13%\nAmericas\nSouth America\n\n South Korea\n51,782,512\n51,748,739\n−0.07%\nAsia\nEastern Asia\n\n Sudan\n49,383,346\n50,042,791\n+1.34%\nAfrica\nNorthern Africa\n\n Uganda\n47,312,719\n48,656,601\n+2.84%\nAfrica\nEastern Africa\n\n Spain[d]\n47,828,382\n47,911,579\n+0.17%\nEurope\nSouthern Europe\n\n Algeria\n45,477,389\n46,164,219\n+1.51%\nAfrica\nNorthern Africa\n\n Argentina\n45,407,904\n45,538,401\n+0.29%\nAmericas\nSouth America\n\n Iraq\n44,070,551\n45,074,049\n+2.28%\nAsia\nWestern Asia\n\n Afghanistan\n40,578,842\n41,454,761\n+2.16%\nAsia\nSouthern Asia\n\n Yemen\n38,222,876\n39,390,799\n+3.06%\nAsia\nWestern Asia\n\n Canada\n38,821,259\n39,299,105\n+1.23%\nAmericas\nNorthern America\n\n Poland\n38,385,739\n38,762,844\n+0.98%\nEurope\nEastern Europe\n\n Ukraine[e]\n41,048,766\n37,732,836\n−8.08%\nEurope\nEastern Europe\n\n Morocco\n37,329,064\n37,712,505\n+1.03%\nAfrica\nNorthern Africa\n\n Angola\n35,635,029\n36,749,906\n+3.13%\nAfrica\nMiddle Africa\n\n Uzbekistan\n34,938,955\n35,652,307\n+2.04%\nAsia\nCentral Asia\n\n Malaysia\n34,695,493\n35,126,298\n+1.24%\nAsia\nSouth-eastern Asia\n\n Peru\n33,475,438\n33,845,617\n+1.11%\nAmericas\nSouth America\n\n Ghana\n33,149,152\n33,787,914\n+1.93%\nAfrica\nWestern Africa\n\n Mozambique\n32,656,246\n33,635,160\n+3.00%\nAfrica\nEastern Africa\n\n Saudi Arabia\n32,175,352\n32,264,292\n+0.28%\nAsia\nWestern Asia\n\n Madagascar\n30,437,261\n31,195,932\n+2.49%\nAfrica\nEastern Africa\n\n Ivory Coast\n30,395,002\n31,165,654\n+2.54%\nAfrica\nWestern Africa\n\n   Nepal\n29,715,436\n29,964,614\n+0.84%\nAsia\nSouthern Asia\n\n Cameroon\n27,632,771\n28,372,687\n+2.68%\nAfrica\nMiddle Africa\n\n Venezuela\n28,213,017\n28,300,854\n+0.31%\nAmericas\nSouth America\n\n Australia[f]\n26,200,984\n26,451,124\n+0.95%\nOceania\nAustralia and New Zealand\n\n North Korea\n26,329,845\n26,418,204\n+0.34%\nAsia\nEastern Asia\n\n Niger\n25,311,973\n26,159,867\n+3.35%\nAfrica\nWestern Africa\n\n Mali\n23,072,640\n23,769,127\n+3.02%\nAfrica\nWestern Africa\n\nSyria\n22,462,173\n23,594,623\n+5.04%\nAsia\nWestern Asia\n\n Taiwan[g]\n23,420,111\n23,317,145\n−0.44%\nAsia\nEastern Asia\n\n Burkina Faso\n22,509,038\n23,025,776\n+2.30%\nAfrica\nWestern Africa\n\n Sri Lanka\n22,834,965\n22,971,617\n+0.60%\nAsia\nSouthern Asia\n\n Malawi\n20,568,728\n21,104,482\n+2.60%\nAfrica\nEastern Africa\n\n Zambia\n20,152,938\n20,723,965\n+2.83%\nAfrica\nEastern Africa\n\n Kazakhstan\n20,034,609\n20,330,104\n+1.47%\nAsia\nCentral Asia\n\n Chile\n19,553,036\n19,658,835\n+0.54%\nAmericas\nSouth America\n\n Chad\n18,455,316\n19,319,064\n+4.68%\nAfrica\nMiddle Africa\n\n Romania\n19,166,772\n19,118,479\n−0.25%\nEurope\nEastern Europe\n\n Somalia[h]\n17,801,897\n18,358,615\n+3.13%\nAfrica\nEastern Africa\n\n Guatemala\n17,847,877\n18,124,838\n+1.55%\nAmericas\nCentral America\n\n Senegal\n17,651,103\n18,077,573\n+2.42%\nAfrica\nWestern Africa\n\n Netherlands[i]\n17,904,421\n18,092,524\n+1.05%\nEurope\nWestern Europe\n\n Ecuador\n17,823,897\n17,980,083\n+0.88%\nAmericas\nSouth America\n\n Cambodia\n17,201,724\n17,423,880\n+1.29%\nAsia\nSouth-eastern Asia\n\n Zimbabwe\n16,069,056\n16,340,822\n+1.69%\nAfrica\nEastern Africa\n\n Guinea\n14,055,137\n14,405,465\n+2.49%\nAfrica\nWestern Africa\n\n Benin\n13,759,501\n14,111,034\n+2.55%\nAfrica\nWestern Africa\n\n Rwanda\n13,651,030\n13,954,471\n+2.22%\nAfrica\nEastern Africa\n\n Burundi\n13,321,097\n13,689,450\n+2.77%\nAfrica\nEastern Africa\n\n Bolivia\n12,077,154\n12,244,159\n+1.38%\nAmericas\nSouth America\n\n Tunisia\n12,119,334\n12,200,431\n+0.67%\nAfrica\nNorthern Africa\n\n Belgium\n11,641,820\n11,712,893\n+0.61%\nEurope\nWestern Europe\n\n Haiti\n11,503,606\n11,637,398\n+1.16%\nAmericas\nCaribbean\n\n South Sudan\n11,021,177\n11,483,374\n+4.19%\nAfrica\nEastern Africa\n\n Jordan\n11,256,263\n11,439,213\n+1.63%\nAsia\nWestern Asia\n\n Dominican Republic\n11,230,734\n11,331,265\n+0.90%\nAmericas\nCaribbean\n\n Cuba\n11,059,820\n11,019,931\n−0.36%\nAmericas\nCaribbean\n\n Czechia\n10,673,213\n10,809,716\n+1.28%\nEurope\nEastern Europe\n\n Honduras\n10,463,872\n10,644,851\n+1.73%\nAmericas\nCentral America\n\n United Arab Emirates\n10,242,086\n10,642,081\n+3.91%\nAsia\nWestern Asia\n\n Sweden\n10,487,338\n10,551,494\n+0.61%\nEurope\nNorthern Europe\n\n Portugal[j]\n10,417,073\n10,430,738\n+0.13%\nEurope\nSouthern Europe\n\n Tajikistan\n10,182,222\n10,389,799\n+2.04%\nAsia\nCentral Asia\n\n Papua New Guinea\n10,203,169\n10,389,635\n+1.83%\nOceania\nMelanesia\n\n Azerbaijan\n10,295,304\n10,318,207\n+0.22%\nAsia\nWestern Asia\n\n Greece\n10,412,480\n10,242,908\n−1.63%\nEurope\nSouthern Europe\n\n Hungary\n9,964,306\n9,686,463\n−2.79%\nEurope\nEastern Europe\n\n Togo\n9,089,738\n9,304,337\n+2.36%\nAfrica\nWestern Africa\n\n Israel\n9,103,151\n9,256,314\n+1.68%\nAsia\nWestern Asia\n\n Austria\n9,064,677\n9,130,429\n+0.73%\nEurope\nWestern Europe\n\n Belarus\n9,173,237\n9,115,680\n−0.63%\nEurope\nEastern Europe\n\n  Switzerland\n8,792,182\n8,870,561\n+0.89%\nEurope\nWestern Europe\n\n Sierra Leone\n8,276,807\n8,460,512\n+2.22%\nAfrica\nWestern Africa\n\n Laos\n7,559,007\n7,664,993\n+1.40%\nAsia\nSouth-eastern Asia\n\n Hong Kong (China)[k]\n7,465,915\n7,442,734\n−0.31%\nAsia\nEastern Asia\n\n Turkmenistan\n7,230,193\n7,364,438\n+1.86%\nAsia\nCentral Asia\n\n Libya\n7,223,805\n7,305,659\n+1.13%\nAfrica\nNorthern Africa\n\n Kyrgyzstan\n6,955,788\n7,073,516\n+1.69%\nAsia\nCentral Asia\n\n Paraguay\n6,760,464\n6,844,146\n+1.24%\nAmericas\nSouth America\n\n Nicaragua\n6,730,654\n6,823,613\n+1.38%\nAmericas\nCentral America\n\n Bulgaria\n6,825,864\n6,795,803\n−0.44%\nEurope\nEastern Europe\n\n Serbia[l]\n6,791,213\n6,773,201\n−0.27%\nEurope\nSouthern Europe\n\n El Salvador\n6,280,319\n6,309,624\n+0.47%\nAmericas\nCentral America\n\n Congo\n6,035,104\n6,182,885\n+2.45%\nAfrica\nMiddle Africa\n\n Denmark\n5,902,904\n5,948,136\n+0.77%\nEurope\nNorthern Europe\n\n Singapore\n5,649,885\n5,789,090\n+2.46%\nAsia\nSouth-eastern Asia\n\n Lebanon\n5,744,489\n5,733,493\n−0.19%\nAsia\nWestern Asia\n\n Finland[m]\n5,569,299\n5,601,185\n+0.57%\nEurope\nNorthern Europe\n\n Norway[n]\n5,457,801\n5,519,167\n+1.12%\nEurope\nNorthern Europe\n\n Slovakia\n5,473,197\n5,518,055\n+0.82%\nEurope\nEastern Europe\n\n Liberia\n5,373,294\n5,493,031\n+2.23%\nAfrica\nWestern Africa\n\n Palestine[o]\n5,305,270\n5,409,202\n+1.96%\nAsia\nWestern Asia\n\n Ireland\n5,110,016\n5,196,630\n+1.69%\nEurope\nNorthern Europe\n\n New Zealand\n5,131,734\n5,172,836\n+0.80%\nOceania\nAustralia and New Zealand\n\n Central African Republic\n5,098,039\n5,152,421\n+1.07%\nAfrica\nMiddle Africa\n\n Costa Rica\n5,081,765\n5,105,525\n+0.47%\nAmericas\nCentral America\n\n Oman\n4,730,226\n5,049,269\n+6.74%\nAsia\nWestern Asia\n\n Mauritania\n4,875,637\n5,022,441\n+3.01%\nAfrica\nWestern Africa\n\n Kuwait\n4,589,511\n4,838,782\n+5.43%\nAsia\nWestern Asia\n\n Panama\n4,400,773\n4,458,759\n+1.32%\nAmericas\nCentral America\n\n Croatia\n3,907,027\n3,896,023\n−0.28%\nEurope\nSouthern Europe\n\n Georgia[p]\n3,794,784\n3,807,492\n+0.33%\nAsia\nWestern Asia\n\n Eritrea\n3,409,447\n3,470,390\n+1.79%\nAfrica\nEastern Africa\n\n Mongolia\n3,386,015\n3,431,932\n+1.36%\nAsia\nEastern Asia\n\n Uruguay\n3,390,913\n3,388,081\n−0.08%\nAmericas\nSouth America\n\n Puerto Rico (United States)\n3,240,968\n3,242,023\n+0.03%\nAmericas\nCaribbean\n\n Bosnia and Herzegovina\n3,204,802\n3,185,073\n−0.62%\nEurope\nSouthern Europe\n\n Moldova[q]\n3,039,985\n3,067,070\n+0.89%\nEurope\nEastern Europe\n\n Qatar\n2,892,455\n2,979,082\n+2.99%\nAsia\nWestern Asia\n\n Namibia\n2,889,662\n2,963,095\n+2.54%\nAfrica\nSouthern Africa\n\n Armenia\n2,880,874\n2,943,393\n+2.17%\nAsia\nWestern Asia\n\n Lithuania\n2,816,919\n2,854,099\n+1.32%\nEurope\nNorthern Europe\n\n Jamaica\n2,839,144\n2,839,786\n+0.02%\nAmericas\nCaribbean\n\n Albania\n2,827,608\n2,811,655\n−0.56%\nEurope\nSouthern Europe\n\n Gambia\n2,636,470\n2,697,845\n+2.33%\nAfrica\nWestern Africa\n\n Gabon\n2,430,747\n2,484,789\n+2.22%\nAfrica\nMiddle Africa\n\n Botswana\n2,439,892\n2,480,244\n+1.65%\nAfrica\nSouthern Africa\n\n Lesotho\n2,286,110\n2,311,472\n+1.11%\nAfrica\nSouthern Africa\n\n Guinea-Bissau\n2,105,529\n2,153,339\n+2.27%\nAfrica\nWestern Africa\n\n Slovenia\n2,115,228\n2,118,396\n+0.15%\nEurope\nSouthern Europe\n\n Latvia\n1,881,063\n1,882,396\n+0.07%\nEurope\nNorthern Europe\n\n Equatorial Guinea\n1,803,545\n1,847,549\n+2.44%\nAfrica\nMiddle Africa\n\n North Macedonia\n1,840,233\n1,831,802\n−0.46%\nEurope\nSouthern Europe\n\n Kosovo[r]\n1,717,946\n1,700,031\n−1.04%\nEurope\nSouthern Europe\n\n Bahrain\n1,533,459\n1,569,666\n+2.36%\nAsia\nWestern Asia\n\n Trinidad and Tobago\n1,495,921\n1,502,932\n+0.47%\nAmericas",
+        "evidence_type": "text",
+        "title": "List",
+        "section_path": [
+          "List"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 1.4247392416000366,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "List",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "42b2a22b344089fe838ed6f3"
+          ]
+        }
+      },
+      {
+        "evidence_id": "List_of_countries_by_past_life_expectancy.html#table-001-9a1e32e929",
+        "source_article": "List_of_countries_by_past_life_expectancy.html",
+        "content": "Structured table (JSON rows, one object per row — read values directly from these rows; do not rely on prior knowledge).\n{\"artifact_id\": \"f78c88bb2cc8d51807cf2abc\", \"table_id\": \"table-001-9a1e32e929\", \"caption\": \"Life expectancy at birth for both genders (in years)\", \"section\": \"List of countries 1950 to 2015 (United Nations)\", \"columns\": [\"Location\", \"1950– 1955\", \"1955– 1960\", \"1960– 1965\", \"1965– 1970\", \"1970– 1975\", \"1975– 1980\", \"1980– 1985\", \"1985– 1990\", \"1990– 1995\", \"1995– 2000\", \"2000– 2005\", \"2005– 2010\", \"2010– 2015\"], \"legends\": [], \"rows\": [{\"row_number\": 1, \"values\": {\"Location\": \"Afghanistan *\", \"1950– 1955\": \"28.61\", \"1955– 1960\": \"31.12\", \"1960– 1965\": \"33.41\", \"1965– 1970\": \"35.58\", \"1970– 1975\": \"37.83\", \"1975– 1980\": \"40.39\", \"1980– 1985\": \"43.56\", \"1985– 1990\": \"47.70\", \"1990– 1995\": \"51.74\", \"1995– 2000\": \"54.17\", \"2000– 2005\": \"56.89\", \"2005– 2010\": \"60.03\", \"2010– 2015\": \"62.25\"}, \"semantic_signals\": {\"1950– 1955\": {\"source_cell\": \"table-001-9a1e32e929:r2:c2\", \"display_text\": \"28.61\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fdc9c9\", \"sort_value\": null, \"legend_matches\": []}, \"1955– 1960\": {\"source_cell\": \"table-001-9a1e32e929:r2:c3\", \"display_text\": \"31.12\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fccbcc\", \"sort_value\": null, \"legend_matches\": []}, \"1960– 1965\": {\"source_cell\": \"table-001-9a1e32e929:r2:c4\", \"display_text\": \"33.41\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fccdce\", \"sort_value\": null, \"legend_matches\": []}, \"1965– 1970\": {\"source_cell\": \"table-001-9a1e32e929:r2:c5\", \"display_text\": \"35.58\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fccfd0\", \"sort_value\": null, \"legend_matches\": []}, \"1970– 1975\": {\"source_cell\": \"table-001-9a1e32e929:r2:c6\", \"display_text\": \"37.83\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fcd2d2\", \"sort_value\": null, \"legend_matches\": []}, \"1975– 1980\": {\"source_cell\": \"table-001-9a1e32e929:r2:c7\", \"display_text\": \"40.39\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fcd4d5\", \"sort_value\": null, \"legend_matches\": []}, \"1980– 1985\": {\"source_cell\": \"table-001-9a1e32e929:r2:c8\", \"display_text\": \"43.56\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fbd7d8\", \"sort_value\": null, \"legend_matches\": []}, \"1985– 1990\": {\"source_cell\": \"table-001-9a1e32e929:r2:c9\", \"display_text\": \"47.70\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fbdbdb\", \"sort_value\": null, \"legend_matches\": []}, \"1990– 1995\": {\"source_cell\": \"table-001-9a1e32e929:r2:c10\", \"display_text\": \"51.74\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fbdedf\", \"sort_value\": null, \"legend_matches\": []}, \"1995– 2000\": {\"source_cell\": \"table-001-9a1e32e929:r2:c11\", \"display_text\": \"54.17\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fbe0e1\", \"sort_value\": null, \"legend_matches\": []}, \"2000– 2005\": {\"source_cell\": \"table-001-9a1e32e929:r2:c12\", \"display_text\": \"56.89\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fae3e3\", \"sort_value\": null, \"legend_matches\": []}, \"2005– 2010\": {\"source_cell\": \"table-001-9a1e32e929:r2:c13\", \"display_text\": \"60.03\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fae5e6\", \"sort_value\": null, \"legend_matches\": []}, \"2010– 2015\": {\"source_cell\": \"table-001-9a1e32e929:r2:c14\", \"display_text\": \"62.25\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fae7e8\", \"sort_value\": null, \"legend_matches\": []}}}]}\n(NOTE: showing 1 of 230 rows to fit the context budget; the deterministic table executor reads the full table.)",
+        "evidence_type": "table",
+        "title": "Life expectancy at birth for both genders (in years)",
+        "section_path": [
+          "List of countries 1950 to 2015 (United Nations)"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "f78c88bb2cc8d51807cf2abc",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_id": "table-001-9a1e32e929",
+          "n_rows": 230,
+          "rows_rendered": 230,
+          "needs_table_reader": false
+        }
+      },
+      {
+        "evidence_id": "List_of_countries_by_population_(United_Nations).html#table-001-661817a094",
+        "source_article": "List_of_countries_by_population_(United_Nations).html",
+        "content": "Structured table (JSON rows, one object per row — read values directly from these rows; do not rely on prior knowledge).\n{\"artifact_id\": \"42b2a22b344089fe838ed6f3\", \"table_id\": \"table-001-661817a094\", \"caption\": \"List of countries and inhabited territories by total population. United Nations\", \"section\": \"List\", \"columns\": [\"Country or territory\", \"Population (1 July 2022)\", \"Population (1 July 2023)\", \"Change (%)\", \"UN continental region\", \"UN statistical subregion\"], \"legends\": [], \"rows\": [{\"row_number\": 1, \"values\": {\"Country or territory\": \"World\", \"Population (1 July 2022)\": \"8,021,407,192\", \"Population (1 July 2023)\": \"8,091,734,930\", \"Change (%)\": \"+0.88%\", \"UN continental region\": \"–\", \"UN statistical subregion\": \"–\"}, \"semantic_signals\": {\"Country or territory\": {\"source_cell\": \"table-001-661817a094:r2:c1\", \"display_text\": \"World\", \"is_bold\": true, \"is_italic\": false, \"bold_text\": [\"World\"], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}, \"Change (%)\": {\"source_cell\": \"table-001-661817a094:r2:c4\", \"display_text\": \"+0.88%\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"6999880000000000000♠\", \"legend_matches\": []}}}, {\"row_number\": 2, \"values\": {\"Country or territory\": \"India\", \"Population (1 July 2022)\": \"1,425,423,212\", \"Population (1 July 2023)\": \"1,438,069,596\", \"Change (%)\": \"+0.89%\", \"UN continental region\": \"Asia\", \"UN statistical subregion\": \"Southern Asia\"}, \"semantic_signals\": {\"Country or territory\": {\"source_cell\": \"table-001-661817a094:r3:c1\", \"display_text\": \"India\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"India\", \"legend_matches\": []}, \"Change (%)\": {\"source_cell\": \"table-001-661817a094:r3:c4\", \"display_text\": \"+0.89%\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"6999890000000000000♠\", \"legend_matches\": []}}}, {\"row_number\": 3, \"values\": {\"Country or territory\": \"China\", \"Population (1 July 2022)\": \"1,425,179,569\", \"Population (1 July 2023)\": \"1,422,584,933\", \"Change (%)\": \"−0.18%\", \"UN continental region\": \"Asia\", \"UN statistical subregion\": \"Eastern Asia\"}, \"semantic_signals\": {\"Country or territory\": {\"source_cell\": \"table-001-661817a094:r4:c1\", \"display_text\": \"China [ a ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ a ]\", \"role\": \"reference\", \"target\": \"cite_note-3\", \"note\": \"Refers to mainland China only. The UN source document states: \\\"For statistical purposes, the data for China do not include special administrative regions (SAR) of China ( Hong Kong and Macau ) and Taiwan .\\\"\"}], \"background_color\": null, \"sort_value\": \"China\", \"legend_matches\": []}, \"Change (%)\": {\"source_cell\": \"table-001-661817a094:r4:c4\", \"display_text\": \"−0.18%\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"3000820000000000000♠\", \"legend_matches\": []}}}, {\"row_number\": 4, \"values\": {\"Country or territory\": \"United States\", \"Population (1 July 2022)\": \"341,534,046\", \"Population (1 July 2023)\": \"343,477,335\", \"Change (%)\": \"+0.57%\", \"UN continental region\": \"Americas\", \"UN statistical subregion\": \"Northern America\"}, \"semantic_signals\": {\"Country or territory\": {\"source_cell\": \"table-001-661817a094:r5:c1\", \"display_text\": \"United States\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"United States\", \"legend_matches\": []}, \"Change (%)\": {\"source_cell\": \"table-001-661817a094:r5:c4\", \"display_text\": \"+0.57%\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"6999570000000000000♠\", \"legend_matches\": []}}}, {\"row_number\": 5, \"values\": {\"Country or territory\": \"Indonesia\", \"Population (1 July 2022)\": \"278,830,529\", \"Population (1 July 2023)\": \"281,190,067\", \"Change (%)\": \"+0.85%\", \"UN continental region\": \"Asia\", \"UN statistical subregion\": \"South-eastern Asia\"}, \"semantic_signals\": {\"Country or territory\": {\"source_cell\": \"table-001-661817a094:r6:c1\", \"display_text\": \"Indonesia\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"Indonesia\", \"legend_matches\": []}, \"Change (%)\": {\"source_cell\": \"table-001-661817a094:r6:c4\", \"display_text\": \"+0.85%\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"6999850000000000000♠\", \"legend_matches\": []}}}, {\"row_number\": 6, \"values\": {\"Country or territory\": \"Pakistan\", \"Population (1 July 2022)\": \"243,700,667\", \"Population (1 July 2023)\": \"247,504,495\", \"Change (%)\": \"+1.56%\", \"UN continental region\": \"Asia\", \"UN statistical subregion\": \"Southern Asia\"}, \"semantic_signals\": {\"Country or territory\": {\"source_cell\": \"table-001-661817a094:r7:c1\", \"display_text\": \"Pakistan\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"Pakistan\", \"legend_matches\": []}, \"Change (%)\": {\"source_cell\": \"table-001-661817a094:r7:c4\", \"display_text\": \"+1.56%\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"7000156000000000000♠\", \"legend_matches\": []}}}, {\"row_number\": 7, \"values\": {\"Country or territory\": \"Nigeria\", \"Population (1 July 2022)\": \"223,150,896\", \"Population (1 July 2023)\": \"227,882,945\", \"Change (%)\": \"+2.12%\", \"UN continental region\": \"Africa\", \"UN statistical subregion\": \"Western Africa\"}, \"semantic_signals\": {\"Country or territory\": {\"source_cell\": \"table-001-661817a094:r8:c1\", \"display_text\": \"Nigeria\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"Nigeria\", \"legend_matches\": []}, \"Change (%)\": {\"source_cell\": \"table-001-661817a094:r8:c4\", \"display_text\": \"+2.12%\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"7000212000000000000♠\", \"legend_matches\": []}}}, {\"row_number\": 8, \"values\": {\"Country or territory\": \"Brazil\", \"Population (1 July 2022)\": \"210,306,415\", \"Population (1 July 2023)\": \"211,140,729\", \"Change (%)\": \"+0.40%\", \"UN continental region\": \"Americas\", \"UN statistical subregion\": \"South America\"}, \"semantic_signals\": {\"Country or territory\": {\"source_cell\": \"table-001-661817a094:r9:c1\", \"display_text\": \"Brazil\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"Brazil\", \"legend_matches\": []}, \"Change (%)\": {\"source_cell\": \"table-001-661817a094:r9:c4\", \"display_text\": \"+0.40%\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"6999400000000000000♠\", \"legend_matches\": []}}}]}\n(NOTE: showing 8 of 238 rows to fit the context budget; the deterministic table executor reads the full table.)",
+        "evidence_type": "table",
+        "title": "List of countries and inhabited territories by total population. United Nations",
+        "section_path": [
+          "List"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "42b2a22b344089fe838ed6f3",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_id": "table-001-661817a094",
+          "n_rows": 238,
+          "rows_rendered": 238,
+          "needs_table_reader": false
+        }
+      },
+      {
+        "evidence_id": "List_of_countries_by_population_(United_Nations).html#table-001-661817a094#computed-table-r1-1-c32848db5ea5",
+        "source_article": "List_of_countries_by_population_(United_Nations).html",
+        "content": "Deterministic table-computation result. Use the computed rows/calculation below rather than recomputing them.\n{\n  \"table_request\": {\n    \"missing_fact\": \"A computed assessment of whether 2023 population size is meaningfully correlated with 2010–2015 life expectancy across countries, including the direction/strength of the relationship.\",\n    \"source_article\": \"List_of_countries_by_population_(United_Nations).html\",\n    \"table_id\": \"42b2a22b344089fe838ed6f3\",\n    \"expected_caption\": null,\n    \"operation\": \"compare\",\n    \"columns_needed\": [],\n    \"row_filters\": {},\n    \"comparison_key\": null\n  },\n  \"query_plan\": {\n    \"artifact_id\": \"42b2a22b344089fe838ed6f3\",\n    \"operation\": \"compare\",\n    \"selected_columns\": [\n      \"Country or territory\",\n      \"Population (1 July 2023)\"\n    ],\n    \"filters\": {},\n    \"predicates\": [\n      {\n        \"column\": \"Country or territory\",\n        \"op\": \"contains\",\n        \"value\": \"\",\n        \"value2\": null\n      }\n    ],\n    \"group_by\": [],\n    \"calculation\": null,\n    \"calculation_column\": null,\n    \"sort_column\": null,\n    \"sort_direction\": null,\n    \"limit\": 5\n  },\n  \"result\": {\n    \"request_id\": \"table-r1-1-c32848db5ea5\",\n    \"artifact_id\": \"42b2a22b344089fe838ed6f3\",\n    \"result_rows\": [\n      {\n        \"Country or territory\": \"World\",\n        \"Population (1 July 2023)\": \"8,091,734,930\"\n      },\n      {\n        \"Country or territory\": \"India\",\n        \"Population (1 July 2023)\": \"1,438,069,596\"\n      },\n      {\n        \"Country or territory\": \"China\",\n        \"Population (1 July 2023)\": \"1,422,584,933\"\n      },\n      {\n        \"Country or territory\": \"United States\",\n        \"Population (1 July 2023)\": \"343,477,335\"\n      },\n      {\n        \"Country or territory\": \"Indonesia\",\n        \"Population (1 July 2023)\": \"281,190,067\"\n      }\n    ],\n    \"calculation\": null,\n    \"source_cells\": [\n      \"table-001-661817a094:r2:c1\",\n      \"table-001-661817a094:r2:c3\",\n      \"table-001-661817a094:r3:c1\",\n      \"table-001-661817a094:r3:c3\",\n      \"table-001-661817a094:r4:c1\",\n      \"table-001-661817a094:r4:c3\",\n      \"table-001-661817a094:r5:c1\",\n      \"table-001-661817a094:r5:c3\",\n      \"table-001-661817a094:r6:c1\",\n      \"table-001-661817a094:r6:c3\"\n    ],\n    \"cell_details\": [\n      {\n        \"source_cell\": \"table-001-661817a094:r2:c1\",\n        \"row_number\": 1,\n        \"column\": \"Country or territory\",\n        \"text\": \"World\",\n        \"display_text\": \"World\",\n        \"is_bold\": true,\n        \"is_italic\": false,\n        \"bold_text\": [\n          \"World\"\n        ],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-661817a094:r2:c3\",\n        \"row_number\": 1,\n        \"column\": \"Population (1 July 2023)\",\n        \"text\": \"8,091,734,930\",\n        \"display_text\": \"8,091,734,930\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-661817a094:r3:c1\",\n        \"row_number\": 2,\n        \"column\": \"Country or territory\",\n        \"text\": \"India\",\n        \"display_text\": \"India\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": \"India\",\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-661817a094:r3:c3\",\n        \"row_number\": 2,\n        \"column\": \"Population (1 July 2023)\",\n        \"text\": \"1,438,069,596\",\n        \"display_text\": \"1,438,069,596\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-661817a094:r4:c1\",\n        \"row_number\": 3,\n        \"column\": \"Country or territory\",\n        \"text\": \"China\",\n        \"display_text\": \"China [ a ]\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [\n          {\n            \"position\": \"superscript\",\n            \"text\": \"[ a ]\",\n            \"role\": \"reference\",\n            \"target\": \"cite_note-3\",\n            \"note\": \"Refers to mainland China only. The UN source document states: \\\"For statistical purposes, the data for China do not include special administrative regions (SAR) of China ( Hong Kong and Macau ) and Taiwan .\\\"\"\n          }\n        ],\n        \"background_color\": null,\n        \"sort_value\": \"China\",\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-661817a094:r4:c3\",\n        \"row_number\": 3,\n        \"column\": \"Population (1 July 2023)\",\n        \"text\": \"1,422,584,933\",\n        \"display_text\": \"1,422,584,933\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-661817a094:r5:c1\",\n        \"row_number\": 4,\n        \"column\": \"Country or territory\",\n        \"text\": \"United States\",\n        \"display_text\": \"United States\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": \"United States\",\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-661817a094:r5:c3\",\n        \"row_number\": 4,\n        \"column\": \"Population (1 July 2023)\",\n        \"text\": \"343,477,335\",\n        \"display_text\": \"343,477,335\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-661817a094:r6:c1\",\n        \"row_number\": 5,\n        \"column\": \"Country or territory\",\n        \"text\": \"Indonesia\",\n        \"display_text\": \"Indonesia\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": \"Indonesia\",\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-661817a094:r6:c3\",\n        \"row_number\": 5,\n        \"column\": \"Population (1 July 2023)\",\n        \"text\": \"281,190,067\",\n        \"display_text\": \"281,190,067\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      }\n    ],\n    \"sufficient\": true,\n    \"warnings\": [\n      \"Superscript/subscript annotations are available in row_cells.\"\n    ]\n  }\n}",
+        "evidence_type": "table",
+        "title": "Computed table result: A computed assessment of whether 2023 population size is meaningfully correlated with 2010–2015 life expectancy across countries, including the direction/strength of the relationship.",
+        "section_path": [
+          "List"
+        ],
+        "retrieval_query": "Using the 2023 population estimates and the 2010–2015 life-expectancy values in the two supplied Wikipedia articles, is country population size meaningfully correlated with life expectancy? Explain the conclusion and mention the date mismatch.",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "42b2a22b344089fe838ed6f3",
+        "source_cells": [
+          "table-001-661817a094:r2:c1",
+          "table-001-661817a094:r2:c3",
+          "table-001-661817a094:r3:c1",
+          "table-001-661817a094:r3:c3",
+          "table-001-661817a094:r4:c1",
+          "table-001-661817a094:r4:c3",
+          "table-001-661817a094:r5:c1",
+          "table-001-661817a094:r5:c3",
+          "table-001-661817a094:r6:c1",
+          "table-001-661817a094:r6:c3"
+        ],
+        "metadata": {
+          "retrieval_stage": "table_computation",
+          "table_request_id": "table-r1-1-c32848db5ea5",
+          "operation": "compare",
+          "calculation": null,
+          "table_computation_sufficient": true,
+          "warnings": [
+            "Superscript/subscript annotations are available in row_cells."
+          ]
+        }
+      },
+      {
+        "evidence_id": "South_America.html#section-031-00",
+        "source_article": "South_America.html",
+        "content": "Article: South America\nSection: Demographics\n\nMain article: Demographics of South America\n\nSee also: List of South American countries by population and List of South American countries by life expectancy\n\nSatellite view of South America at night from NASA, showing the contrast between heavily populated coastal areas and the more remote regions of the Amazonian interior and Patagonia\n\nSouth America has a population of over 428 million people. They are distributed as to form a \"hollow continent\" with most of the population concentrated around the margins of the continent.[48] On one hand, there are several sparsely populated areas such as tropical forests, the Atacama Desert and the icy portions of Patagonia. On the other hand, the continent presents regions of high population density, such as the great urban centers. The population is formed by descendants of Europeans (mainly Spaniards, Portuguese and Italians), Africans and Amerindians. There is a high percentage of Mestizos that vary greatly in composition by place. There is a population of about 5 million Asians, mostly East Asians, especially in Brazil, Peru, and Argentina. The two main languages are by far Spanish and Portuguese, followed by English, French and Dutch in smaller numbers.",
+        "evidence_type": "graph",
+        "title": "Demographics",
+        "section_path": [
+          "Demographics"
+        ],
+        "retrieval_query": "Compare the 2023 population estimates with the 2010–2015 life expectancy values for the same countries and determine whether population size is meaningfully correlated with life expectancy.",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 1.2986228466033936,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "List_of_countries_by_past_life_expectancy.html",
+            "List_of_countries_by_population_(United_Nations).html"
+          ],
+          "graph_neighbor_rank": 4,
+          "graph_score": 1.1655844155844155,
+          "discovery_reasons": [
+            "link",
+            "entity:Aruba(11)",
+            "entity:Caribbean(33)",
+            "entity:Central_America(12)",
+            "entity:French_Guiana(14)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "South_America.html#section-036-00",
+        "source_article": "South_America.html",
+        "content": "Article: South America\nSection: Demographics > Populace\n\nWhile Brazil, Argentina, and Colombia maintain the largest populations, large city populations are not restricted to those nations. The top ten largest South American metropolitan areas by population as of 2015, based on national censuses:\n\nMetro Area\n\nPopulation\n\nArea\n\nCountry\n\nSão Paulo\n\n21,090,792\n\n7,947 km2 (3,068 sq mi)\n\nBrazil\n\nBuenos Aires\n\n13,693,657\n\n3,830 km2 (1,480 sq mi)\n\nArgentina\n\nRio de Janeiro\n\n13,131,431\n\n6,744 km2 (2,604 sq mi)\n\nBrazil\n\nLima\n\n9,904,727\n\n2,819 km2 (1,088 sq mi)\n\nPeru\n\nBogotá\n\n9,800,225\n\n4,200 km2 (1,600 sq mi)\n\nColombia\n\nSantiago\n\n6,683,852\n\n15,403 km2 (5,947 sq mi)\n\nChile\n\nBelo Horizonte\n\n5,829,923\n\n9,467 km2 (3,655 sq mi)\n\nBrazil\n\nCaracas\n\n5,322,310\n\n4,715 km2 (1,820 sq mi)\n\nVenezuela\n\nPorto Alegre\n\n4,258,926\n\n10,232 km2 (3,951 sq mi)\n\nBrazil\n\nBrasília\n\n4,201,737\n\n56,433 km2 (21,789 sq mi)\n\nBrazil\n\nFive of the top ten metropolitan areas are in Brazil. These metropolitan areas all have a population of above 4 million and include the São Paulo metropolitan area, Rio de Janeiro metropolitan area, and Belo Horizonte metropolitan area. Whilst the majority of the largest metropolitan areas are within Brazil, Argentina is host to the second largest metropolitan area by population in South America: the Buenos Aires metropolitan region, with a population in excess of 13 million.\n\nSouth America has been witness to the growth of megapolitan areas. In Brazil four megaregions exist including the Expanded Metropolitan Complex of São Paulo with more than 32 million inhabitants. The others are the Greater Rio, Greater Belo Horizonte and Greater Porto Alegre. Colombia also has four megaregions which comprise 72% of its population, followed by Venezuela, Argentina and Peru which are also homes of megaregions.\n\nSouth American cities\n\nSão Paulo\n\nBuenos Aires\n\nRio de Janeiro\n\nSantiago",
+        "evidence_type": "graph",
+        "title": "Populace",
+        "section_path": [
+          "Demographics",
+          "Populace"
+        ],
+        "retrieval_query": "Compare the 2023 population estimates with the 2010–2015 life expectancy values for the same countries and determine whether population size is meaningfully correlated with life expectancy.",
+        "retriever": "graph",
+        "rank": 2,
+        "raw_score": 1.322593331336975,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "List_of_countries_by_past_life_expectancy.html",
+            "List_of_countries_by_population_(United_Nations).html"
+          ],
+          "graph_neighbor_rank": 4,
+          "graph_score": 1.1655844155844155,
+          "discovery_reasons": [
+            "link",
+            "entity:Aruba(11)",
+            "entity:Caribbean(33)",
+            "entity:Central_America(12)",
+            "entity:French_Guiana(14)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Lists_of_earthquakes.html#section-005-00",
+        "source_article": "Lists_of_earthquakes.html",
+        "content": "Article: Lists of earthquakes\nSection: Strongest earthquakes by magnitude > Strongest earthquakes by magnitude each year since 1907\n\nYear\n\nDate\n\nMag­ni­tu­de\n\nLocation\n\nDepth (km)\n\nMMI\n\nDeaths\n\nInju­ries\n\n1907\n\nJanuary 4, 1907[59]\n\n8.2\n\nDutch East Indies, Sumatra\n\n25.0\n\nIV-V\n\n2,188\n\n-\n\n1908\n\nMarch 26, 1908[60]\n\n7.5\n\nMexico, Guerrero\n\n25.0\n\n–\n\n-\n\n-\n\n1909\n\nJuly 7, 1909[61]\n\n7.7\n\nAfghanistan, Badakhshan\n\n200.0\n\n–\n\n-\n\n-\n\n1910\n\nApril 12, 1910[62]\n\n8.1\n\nSakishima Islands-Taiwan region\n\n235.0\n\n–\n\n60\n\n-\n\n1911\n\nJune 15, 1911[63]\n\n7.9\n\nJapan, Ryukyu Islands\n\n150.0\n\nIX\n\n-\n\n-\n\n1912\n\nMay 23, 1912[64]\n\n7.9\n\nMyanmar, Shan\n\n15.0\n\nIX\n\n-\n\n-\n\n1913\n\nMarch 14, 1913[65]\n\n7.9\n\nPhilippines, Mindanao\n\n15.0\n\nIX\n\n138\n\n-\n\n1914\n\nMay 26, 1914[66]\n\n8.2\n\nDutch East Indies, Papua\n\n15.0\n\n-\n\n100+\n\n-\n\n1915\n\nMay 1, 1915[67]\n\n7.8\n\nRussian Empire, Kuril Islands\n\n30.0\n\n-\n\n–\n\n-\n\n1916\n\nJanuary 1, 1916[68]\n\n8.0\n\nTerritory of New Guinea, East New Britain\n\n35.0\n\n-\n\n–\n\n-\n\n1917\n\nMay 1, 1917[69]\n\n8.2\n\nNew Zealand, Kermadec Islands\n\n15.0\n\n-\n\n–\n\n-\n\n1918\n\nAugust 15, 1918[70]\n\n8.3\n\nPhilippines, Mindanao\n\n20.0\n\n-\n\n52\n\n-\n\n1919\n\nApril 30, 1919[71]\n\n8.1\n\nTonga\n\n25.0\n\n-\n\n–\n\n-\n\n1920\n\nJune 5, 1920[72]\n\n8.2\n\nTaiwan, Hualien\n\n20.0\n\nVII\n\n–\n\n-\n\n1921\n\nNovember 15, 1921[73]\n\n7.8\n\nAfghanistan, Badakhshan\n\n240.0\n\nV\n\n–\n\n-\n\n1922\n\nNovember 11, 1922[74]\n\n8.3–8.6\n\nChile, Atacama\n\n70.0\n\n-\n\n500\n\n-\n\n1923\n\nFebruary 3, 1923[75]\n\n8.4\n\nSoviet Union, Kamchatka Krai\n\n15.0\n\n-\n\n3\n\n-\n\n1924\n\nApril 10, 1924[76]\n\n8.1\n\nPhilippines, Mindanao\n\n15.0\n\n-\n\n500\n\n-\n\n1925\n\nNovember 10, 1925[77]\n\n7.3\n\nDutch East Indies, Papua\n\n15.0\n\n-\n\n-\n\n-\n\n1926\n\nOctober 26, 1926[78]\n\n7.6\n\nDutch East Indies, Papua\n\n35.0\n\n-\n\n-\n\n-\n\n1927\n\nMay 22, 1927[79]\n\n7.7\n\nRepublic of China, Gansu\n\n15.0\n\n-\n\n40,900\n\n-\n\n1928\n\nJune 17, 1928[80]\n\n8.0\n\nMexico, Oaxaca\n\n15.0\n\n-\n\n4\n\n-\n\n1929\n\nJune 26, 1929[81]\n\n8.1\n\nUnited Kingdom, South Sandwich Islands region\n\n15.0\n\n-\n\n-\n\n-\n\n1930\n\nDecember 3, 1930[82]\n\n7.5\n\nBritish Burma, Bago\n\n10.0\n\nIX\n\n30\n\n-\n\n1931\n\nJune 3, 1931[83]\n\n7.9\n\nChina, Xinjiang\n\n10.0\n\nX\n\n10,000\n\n-\n\n1932\n\nJune 3, 1932[84]\n\n8.1\n\nMexico, Jalisco\n\n35.0\n\nX\n\n400\n\n-\n\n1933\n\nMarch 2, 1933[48]\n\n8.4–8.5\n\nJapan, Sanriku coast\n\n15.0\n\nV\n\n3,000\n\n-\n\n1934\n\nJanuary 15, 1934[85]\n\n8.0\n\n  Nepal, Sagarmatha Zone\n\n15.0\n\nX\n\n10,700\n\n-\n\n1935\n\nSeptember 20, 1935[86]\n\n7.8\n\nNew Guinea, Sandaun Province\n\n35.0\n\nVII\n\n0\n\n0\n\n1936\n\nApril 1, 1936[87]\n\n7.8\n\nDutch East Indies, Talaud Islands\n\n35.0\n\nIX\n\n0\n\n0\n\n1937\n\nJanuary 7, 1937[88]\n\n7.8\n\n China, Qinghai\n\n15.0\n\nVIII\n\n0\n\n0\n\n1938\n\nFebruary 1, 1938[89][46]\n\n8.5–8.6\n\nDutch East Indies, Maluku offshore\n\n60.0\n\nVII\n\n0\n\n0\n\n1939\n\nDecember 21, 1939[90]\n\n8.1\n\nDutch East Indies, Central Sulawesi offshore\n\n150.0\n\nVII\n\n0\n\n0\n\n1940\n\nMay 24, 1940\n\n8.2\n\nPeru, Lima\n\n45.0\n\nVIII\n\n179–300\n\n3,500\n\n1941\n\nNovember 18, 1941\n\n8.0\n\n Japan, Miyazaki offshore\n\n35.0\n\nVII\n\n2\n\n0\n\n1942\n\nAugust 24, 1942\n\n8.2\n\nPeru, Ica\n\n35.0\n\nIX\n\n30\n\n25\n\n1943\n\nApril 6, 1943\n\n8.1\n\nChile, Coquimbo\n\n35.0\n\nVIII\n\n11\n\n0\n\n1944\n\nDecember 7, 1944\n\n8.1\n\n Japan, Wakayama offshore\n\n30.0\n\nVIII\n\n1,223\n\n2,135\n\n1945\n\nNovember 27, 1945\n\n8.1\n\n India, Balochistan offshore\n\n15.0\n\nX\n\n4,000\n\n0\n\n1946\n\nApril 1, 1946\n\n8.6\n\nUnited States, Alaska offshore\n\n15.0\n\nVI\n\n173\n\n0\n\n1947\n\nMay 27, 1947[91]\n\n7.6\n\nDutch East Indies, Papua offshore\n\n15.0\n\nVI\n\n0\n\n0\n\nNovember 1, 1947\n\nPeru, Junin\n\n20.0\n\nIX\n\n233\n\n0\n\n1948\n\nJanuary 24, 1948\n\n7.8\n\nPhilippines, Panay\n\n15.0\n\nX\n\n50\n\n0\n\n1949\n\nAugust 22, 1949\n\n8.0\n\nCanada, Haida Gwaii\n\n10.0\n\nVIII\n\n0\n\n0\n\n1950\n\nAugust 15, 1950\n\n8.6\n\nIndia–China, Assam–Tibet border region\n\n15.0\n\nXI\n\n4,800\n\n0\n\n1951\n\nNovember 24, 1951\n\n7.8\n\nTaiwan, East Rift Valley\n\n30.0\n\nVII\n\n85\n\n1,200\n\n1952\n\nNovember 4, 1952\n\n9.0\n\nSoviet Union, Kamchatka\n\n21.6\n\nXI\n\n2,336\n\n0\n\n1953\n\nNovember 25, 1953[92]\n\n7.9\n\nJapan, Yokohama\n\n25.0\n\nV\n\n1\n\n0\n\n1954\n\nMarch 29, 1954[93]\n\n7.8\n\n Spain, Andalusia\n\n626.2\n\nIV\n\n0\n\n0\n\n1955\n\nFebruary 27, 1955[94]\n\n7.5\n\nNew Zealand, Kermadec Islands\n\n15.0\n\nI\n\n0\n\n0\n\n1956\n\nJuly 9, 1956\n\n7.7\n\nGreece, Dodecanese Islands\n\n20.0\n\nIX\n\n56\n\n0\n\n1957\n\nMarch 9, 1957\n\n8.6\n\nUnited States, Aleutian Islands, Alaska\n\n25.0\n\nVIII\n\n2\n\n0\n\n1958\n\nNovember 6, 1958\n\n8.3\n\nSoviet Union, Kuril Islands\n\n35.0\n\nX\n\n0\n\n51\n\n1959\n\nMay 4, 1959\n\n7.9\n\nSoviet Union, Kamchatka\n\n55.0\n\nVIII\n\n1\n\n13\n\n1960\n\nMay 22, 1960\n\n9.5\n\nChile, Valdivia\n\n25.0\n\nXII\n\n2,000\n\n4,000\n\n1961\n\nAugust 19, 1961[95]\n\n7.6\n\nPeru, Madre de Dios Region\n\n612.2\n\nIV\n\n0\n\n0\n\n1962\n\nMay 21, 1962[96]\n\n7.5\n\nFiji offshore\n\n390.0\n\nI\n\n0\n\n0\n\n1963\n\nOctober 13, 1963\n\n8.5\n\nSoviet Union, Kuril Islands\n\n35.0\n\nIX\n\n0\n\n0\n\n1964\n\nMarch 27, 1964\n\n9.2–9.3\n\nUnited States, Alaska, Prince William Sound\n\n25.0\n\nXI\n\n131\n\n0\n\n1965\n\nFebruary 3, 1965\n\n8.7\n\nUnited States, Alaska, Aleutian Islands\n\n30.3\n\nVI\n\n0\n\n0\n\n1966\n\nOctober 17, 1966\n\n8.1\n\nPeru, Arequipa\n\n38.0\n\nIX\n\n125\n\n3,000\n\n1967\n\nJuly 22, 1967\n\n7.3\n\nTurkey, Sakarya Province\n\n30.0\n\nX\n\n86\n\n0\n\n1968\n\nMay 16, 1968\n\n8.3\n\nJapan, Hokkaidō\n\n26.0\n\nVIII\n\n52\n\n330\n\n1969\n\nAugust 11, 1969[97]\n\n8.2\n\nSoviet Union, Kuril Islands\n\n30.0\n\nVIII\n\n0\n\n0\n\n1970\n\nJuly 31, 1970\n\n8.0\n\nColombia, Amazonas Department\n\n644.8\n\nIV\n\n1\n\n4\n\n1971\n\nJuly 26, 1971\n\n8.0\n\nPapua New Guinea, Kokopo\n\n37.0\n\nIX\n\n3\n\n5\n\n1972\n\n1972[98]\n\n8.0\n\nPhilippines, Mindanao\n\n60.0\n\nVII\n\n0\n\n0\n\n1973\n\nJune 17, 1973\n\n7.8\n\nJapan, Hokkaidō\n\n43.3\n\nVIII\n\n0\n\n27\n\n1974\n\nOctober 3, 1974\n\n8.1\n\nPeru, Lima\n\n13.0\n\nIX\n\n78\n\n2,400\n\n1975\n\nMay 26, 1975\n\n7.8\n\nnorth Atlantic Ocean\n\n33.0\n\nVI\n\n0\n\n0\n\n1976\n\nAugust 17, 1976\n\n8.0\n\nPhilippines, Moro Gulf\n\n33.0\n\nVIII\n\n8,000\n\n10,000\n\n1977\n\nAugust 19, 1977\n\n8.3\n\nIndonesia, Bima\n\n25.0\n\nVI\n\n189\n\n1,100\n\n1978\n\nJune 12, 1978\n\n7.6\n\nJapan, Miyagi\n\n44.0\n\nVIII\n\n28\n\n1,325\n\n1979\n\nDecember 12, 1979\n\n8.1\n\nColombia, Nariño offshore\n\nEcuador, Esmeraldas offshore\n\n24.0\n\nIX\n\n600\n\n0\n\n1980\n\nJuly 17, 1980[99]\n\n7.7\n\nSolomon Islands, Santa Cruz Islands\n\n33.0\n\nVI\n\n0\n\n0\n\n1981\n\nSeptember 1, 1981[100]\n\n7.5\n\nNew Zealand, offshore\n\n25.0\n\nIV\n\n0\n\n0\n\n1982\n\nJune 19, 1982\n\n7.3\n\nEl Salvador, offshore\n\n73.0\n\nVII\n\n43\n\n0\n\n1983\n\nMarch 18, 1983[101]\n\n7.7\n\nPapua New Guinea, New Ireland\n\n70.0\n\nVII\n\n0\n\n0\n\nMay 26, 1983\n\nJapan, off the coast of Honshu\n\n15.1\n\nVIII\n\n104\n\n324\n\n1984\n\nFebruary 7, 1984[102]\n\n7.5\n\nSolomon Islands, Honiara\n\n18.1\n\nVIII\n\n0\n\n0\n\n1985\n\nSeptember 19, 1985\n\n8.0\n\nMexico, Mexico City\n\n27.9\n\nIX\n\n5,000-45,000\n\n40,000\n\n1986\n\nMay 7, 1986[103]\n\n8.0\n\nUnited States, Aleutian Islands, Alaska\n\n19.0\n\nVII\n\n0\n\n0\n\n1987\n\nNovember 30, 1987[104]\n\n7.8\n\nUnited States, Gulf of Alaska\n\n10.0\n\nVI\n\n0\n\n0\n\n1988\n\nMarch 6, 1988[105]\n\n7.7\n\nUnited States, Gulf of Alaska\n\n15.0\n\nV\n\n0\n\n0\n\n1989\n\nMay 23, 1989[106]\n\n8.0\n\nAustralia, Macquarie Island\n\n10.0\n\nV\n\n0\n\n0\n\n1990\n\nJuly 16, 1990\n\n7.7\n\nPhilippines, Luzon\n\n24.4\n\nIX\n\n1,621\n\n3,000\n\n1991\n\nApril 22, 1991\n\n7.7\n\nCosta Rica, Limón\n\n10.0\n\nIX\n\n127\n\n759\n\n1992\n\nDecember 12, 1992\n\n7.8\n\nIndonesia, Sunda Islands\n\n23.5\n\nVIII\n\n2,500\n\n0\n\n1993\n\nAugust 8, 1993\n\n7.8\n\nGuam, Offshore\n\n59.3\n\nIX\n\n0\n\n71\n\n1994\n\nOctober 5, 1994\n\n8.3\n\nRussia, Kuril Islands\n\n3.0\n\nIX\n\n12\n\n1,742\n\n1995\n\nOctober 9, 1995\n\n8.1\n\nMexico, Colima\n\n33.0\n\nVIII\n\n49\n\n100\n\nJuly 30, 1995\n\nChile, Antofagasta\n\n40.0\n\nVII\n\n3\n\n58\n\n1996\n\nFebruary 17, 1996\n\n8.2\n\nIndonesia, Biak\n\n11.5\n\nVIII\n\n166\n\n423\n\n1997\n\nDecember 5, 1997[107]\n\n7.8\n\nRussia, Kamchatka Peninsula\n\n23.5\n\nVIII\n\n0\n\n0\n\n1998\n\nMarch 25, 1998\n\n8.1\n\nAntarctica, Balleny Islands\n\n10.0\n\n0\n\n0\n\n1999\n\nSeptember 21, 1999\n\n7.6\n\nTaiwan, Nantou County\n\n15.5\n\nIX\n\n2,444\n\n11,305\n\n2000\n\nNovember 16, 2000\n\n8.0\n\nPapua New Guinea, New Ireland\n\n13.0\n\nVII\n\n2\n\n0\n\n2001\n\nJune 23, 2001\n\n8.4\n\nPeru, Arequipa\n\n33.0\n\nVIII\n\n145\n\n2,713\n\n2002\n\nNovember 3, 2002\n\n7.9\n\nUnited States, Alaska\n\n4.2\n\nIX\n\n0\n\n1\n\n2003\n\nSeptember 26, 2003\n\n8.3\n\nJapan, Hokkaidō\n\n23.5\n\nIX\n\n0\n\n849\n\n2004\n\nDecember 26, 2004\n\n9.3\n\nIndonesia, Sumatra\n\n10.0\n\nIX\n\n227,898\n\n125,000\n\n2005\n\nMarch 28, 2005\n\n8.6\n\nIndonesia, Simeulue\n\n21.0\n\nIX\n\n1313\n\n300\n\n2006\n\nNovember 15, 2006\n\n8.3\n\nRussia, Kuril Islands\n\n10.0\n\nVI\n\n0\n\n1\n\n2007\n\nSeptember 12, 2007\n\n8.4–8.5\n\nIndonesia, Sumatra\n\n34.0\n\nVIII\n\n23\n\n0\n\n2008\n\nMay 12, 2008\n\n7.9\n\nChina, Sichuan\n\n19.0\n\nXI\n\n87,587\n\n374,177\n\n2009\n\nSeptember 29, 2009\n\n8.1\n\nSamoa, Offshore\n\n18.0\n\nVII\n\n189\n\n7\n\n2010\n\nFebruary 27, 2010\n\n8.8\n\nChile, Concepción\n\n22.9\n\nIX\n\n550\n\n12,000\n\n2011\n\nMarch 11, 2011\n\n9.0–9.1\n\nJapan, Honshu\n\n29.0\n\nIX\n\n19,747\n\n6,000\n\n2012\n\nApril 11, 2012\n\n8.6\n\nIndonesia, Indian Ocean\n\n20.0\n\nVII\n\n10\n\n12\n\n2013\n\nMay 24, 2013\n\n8.3\n\nRussia, Sea of Okhotsk\n\n598.1\n\nVI\n\n0\n\n0\n\n2014\n\nApril 1, 2014\n\n8.2\n\nChile, Iquique\n\n25.0\n\nVIII\n\n6\n\n9\n\n2015\n\nSeptember 16, 2015\n\n8.3\n\nChile, Coquimbo\n\n22.4\n\nIX\n\n21\n\n34\n\n2016\n\nDecember 17, 2016\n\n7.9\n\nPapua New Guinea, New Ireland\n\n94.5\n\nVII\n\n0\n\n0\n\n2017\n\nSeptember 7, 2017\n\n8.2\n\nMexico, Chiapas\n\n47.4\n\nIX\n\n98\n\n250\n\n2018\n\nAugust 19, 2018\n\n8.2\n\nFiji, offshore\n\n600.0\n\nV\n\n0\n\n0\n\n2019\n\nMay 26, 2019\n\n8.0\n\nPeru, Loreto\n\n122.6\n\nVIII\n\n2\n\n0\n\n2020\n\nJuly 22, 2020\n\n7.8\n\nUnited States, Alaska Peninsula offshore\n\n28.0\n\nVII\n\n0\n\n0\n\n2021\n\nJuly 28, 2021\n\n8.2\n\nUnited States, Alaska Peninsula offshore\n\n32.2\n\nVII\n\n0\n\n0\n\n2022\n\nSeptember 11, 2022\n\n7.6\n\nPapua New Guinea, Morobe\n\n61.4\n\nVIII\n\n21\n\n42\n\nSeptember 19, 2022\n\nMexico, Michoacán\n\n25.5\n\nVIII\n\n2\n\n35\n\n2023\n\nFebruary 6, 2023\n\n7.8\n\nTurkey, Southeastern Anatolia\n\n17.9\n\nXII\n\n59,488–62,013\n\n121,704\n\n2024\n\nJanuary 1, 2024\n\n7.5\n\nJapan, Ishikawa\n\n10.0\n\nX\n\n645\n\n1,393\n\n2025\n\nJuly 30, 2025\n\n8.8\n\nRussia, Kamchatka Peninsula\n\n35.0\n\nIX\n\n1\n\n25",
+        "evidence_type": "graph",
+        "title": "Strongest earthquakes by magnitude each year since 1907",
+        "section_path": [
+          "Strongest earthquakes by magnitude",
+          "Strongest earthquakes by magnitude each year since 1907"
+        ],
+        "retrieval_query": "Compare the 2023 population estimates with the 2010–2015 life expectancy values for the same countries and determine whether population size is meaningfully correlated with life expectancy.",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 1.3949916362762451,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "List_of_countries_by_past_life_expectancy.html",
+            "List_of_countries_by_population_(United_Nations).html"
+          ],
+          "graph_neighbor_rank": 3,
+          "graph_score": 5.704649458304793,
+          "discovery_reasons": [
+            "entity:Monaco(29)",
+            "entity:Bulgaria(44)",
+            "entity:Jamaica(42)",
+            "entity:Trinidad_and_Tobago(21)",
+            "entity:Kenya(44)",
+            "entity:Saint_Lucia(17)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Lists_of_earthquakes.html#section-002-00",
+        "source_article": "Lists_of_earthquakes.html",
+        "content": "Article: Lists of earthquakes\nSection: Deadliest earthquakes > Deadliest earthquakes by year since 1920\n\nDate\n\nMagni­tude\n\nLocation\n\nDepth (km)\n\nMMI\n\nDeaths\n\nNotes\n\nDecember 16, 1920\n\n7.9\n\nChina, Ningxia\n\n15.0\n\nXII\n\n273,407\n\nNovember 11, 1922\n\n8.3–8.6\n\nChile, Atacama\n\n35.0\n\nXI\n\n1,000\n\nSeptember 1, 1923\n\n7.9–8.2\n\nJapan, Kanagawa Prefecture\n\n23.0\n\nXI\n\n142,800\n\nApril 14, 1924\n\n8.3\n\nPhilippines, Davao Region\n\n15.0\n\nIX\n\n500\n\nMarch 16, 1925\n\n6.9–7.0\n\nChina, Yunnan\n\n26.0\n\nIX\n\n5,000\n\nOctober 22, 1926\n\n6.0\n\nTurkey, Kars Province\n\n7.0\n\nIX\n\n360\n\nMay 22, 1927\n\n7.7\n\nChina, Gansu\n\n15.0\n\nXI\n\n40,912\n\nDecember 1, 1928\n\n7.6\n\nChile, Maule Region\n\n20.0\n\nIX\n\n279\n\nMay 1, 1929\n\n7.2\n\nTurkmen Soviet Socialist Republic, Ahal Region\n\n10.0\n\nIX\n\n3,257–3,800\n\nJuly 23, 1930\n\n6.6\n\nItaly, Irpinia\n\n15.0\n\nX\n\n1,404\n\nAugust 10, 1931\n\n8.0\n\nChina, Xinjiang Province\n\n20.0\n\nXI\n\n10,000\n\nMay 20, 1932\n\n5.4\n\nPersia, Mazandaran province\n\n12.0\n\nVIII\n\n1,070\n\nAugust 25, 1933\n\n7.3\n\nChina, Sichuan Province\n\n15.0\n\nX\n\n6,865–9,300\n\nJanuary 15, 1934\n\n8.0\n\n  Nepal, Koshi\n\n15.0\n\nX\n\n10,700–12,000\n\nMay 30, 1935\n\n7.7\n\nBritish Raj, Khanate of Kalat\n\n15.0\n\nX\n\n30,000–60,000\n\nApril 1, 1936\n\n6.8\n\nChina, Guangxi Province\n\n0.0\n\nIX\n\n1,001\n\nJuly 31, 1937\n\n6.9\n\nChina, Shandong Province\n\n25.0\n\nIX\n\n3,252\n\nApril 19, 1938\n\n6.6\n\nTurkey, Kırşehir Province\n\n10.0\n\nIX\n\n224\n\nDecember 26, 1939\n\n7.8\n\nTurkey, Erzincan Province\n\n20.0\n\nXII\n\n32,700–32,968\n\nNovember 10, 1940\n\n7.7\n\nRomania, Vrancea County\n\n133.0\n\nX\n\n1,000\n\nJanuary 11, 1941\n\n5.8–6.5\n\nYemen, Razih District\n\n35.0\n\nVIII\n\n1,200\n\nDecember 20, 1942\n\n7.0\n\nTurkey, Erbaa\n\n10.0\n\nIX\n\n3,000\n\nNovember 26, 1943\n\n7.5\n\nTurkey, Çankırı\n\n20.0\n\nXI\n\n2,824–5,000\n\nJanuary 15, 1944\n\n7.0\n\nArgentina, San Juan\n\n15.0\n\nIX\n\n10,000\n\nNovember 27, 1945\n\n8.1\n\nBritish Raj, Makran Coast\n\n15.0\n\nX\n\n300–4,000\n\nAugust 4, 1946\n\n7.8\n\nDominican Republic, Samaná\n\n15.0\n\nIX\n\n2,550\n\nNovember 1, 1947\n\n7.7\n\nPeru, Junín Province\n\n20.0\n\nIX\n\n233–2,233\n\nOctober 5, 1948\n\n7.3\n\nSoviet Union, Turkmen Soviet Socialist Republic\n\n15.0\n\nX\n\n10,000–110,000\n\nJuly 10, 1949\n\n7.5\n\nSoviet Union, Tajik Soviet Socialist Republic\n\n18.0\n\nIX\n\n7,200\n\nAugust 15, 1950\n\n8.6\n\nIndia, Assam\n\n15.0\n\nXI\n\n4,800\n\nMay 6, 1951\n\n5.9–6.2\n\nEl Salvador, Usulután\n\n85.0\n\nVIII\n\n400–1,100\n\nNovember 4, 1952\n\n9.0\n\nSoviet Union, Russian Soviet Socialist Republic\n\n21.6\n\nXI\n\n2,336\n\nMarch 18, 1953\n\n7.5\n\nTurkey, Balıkesir Province\n\n10.0\n\nIX\n\n1,070\n\nSeptember 9, 1954\n\n6.7\n\nFrance, Chlef Province, Algeria\n\n15.0\n\nXI\n\n1,243–1,409\n\nMarch 31, 1955\n\n7.4\n\nPhilippines, Western Mindanao\n\n35.0\n\nVIII\n\n465\n\nOctober 31, 1956\n\n6.4\n\nIran, Hormozgan\n\n15.0\n\nVII\n\n347\n\nDecember 13, 1957\n\n6.5\n\nIran, Hamadan\n\n15.0\n\nVII\n\n1,130\n\nAugust 16, 1958\n\n6.7\n\nIran, Lorestan\n\n15.0\n\nVII\n\n132\n\nAugust 18, 1959\n\n7.3\n\nUnited States, Montana\n\n5.0\n\nX\n\n28\n\nFebruary 29, 1960\n\n5.8\n\nMorocco, Souss-Massa\n\n15.0\n\nX\n\n12,000–15,000\n\nJune 11, 1961\n\n6.4\n\nIran, Fars province\n\n15.0\n\nVIII\n\n60\n\nSeptember 1, 1962\n\n7.1\n\nIran, Qazvin province\n\n10.0\n\nIX\n\n12,225\n\nJuly 26, 1963\n\n6.1\n\nYugoslavia, Macedonia\n\n15.0\n\nX\n\n1,070\n\nMarch 28, 1964\n\n9.2–9.3\n\nUnited States, Alaska\n\n25.0\n\nXI\n\n131\n\nMarch 28, 1965\n\n7.4–7.6\n\nChile, Valparaíso Region\n\n70.0\n\nIX\n\n400–500\n\nMarch 22, 1966\n\n6.8\n\nChina, Hebei\n\n20.0\n\nIX\n\n8,064\n\nJuly 30, 1967\n\n6.6\n\nVenezuela, Vargas\n\n25.0\n\nVIII\n\n225–300\n\nAugust 31, 1968\n\n7.1\n\nIran, South Khorasan province\n\n10.0\n\nX\n\n15,900\n\nJuly 25, 1969\n\n6.4\n\nChina, Guangdong\n\n20.0\n\nVIII\n\n3,000\n\nMay 31, 1970\n\n7.9\n\nPeru, Ancash\n\n45.0\n\nVIII\n\n66,794–70,000\n\nMay 22, 1971\n\n6.6\n\nTurkey, Bingöl\n\n10.0\n\nVIII\n\n875[26]\n\nApril 10, 1972\n\n6.7\n\nIran, Fars\n\n10.0\n\nIX\n\n5,374\n\nFebruary 6, 1973\n\n7.6\n\nChina, Sichuan\n\n11.0\n\nX\n\n2,175–2,204\n\nMay 10, 1974\n\n7.1\n\nChina, Yunnan\n\n14.0\n\nIX\n\n1,641–20,000\n\nSeptember 6, 1975\n\n6.7\n\nTurkey, Diyarbakır\n\n26.0\n\nIX\n\n2,311\n\nJuly 27, 1976\n\n7.6\n\nChina, Hebei\n\n12.2\n\nXI\n\n242,719–655,000\n\nMarch 4, 1977\n\n7.5\n\nRomania, Vrancea\n\n85.3\n\nIX\n\n1,700\n\nSeptember 16, 1978\n\n7.4\n\nIran, Yazd\n\n33.0\n\nIX\n\n15,000–25,000\n\nDecember 12, 1979\n\n8.2\n\nColombia, Nariño\n\n33.0\n\nIX\n\n300–600\n\nOctober 10, 1980\n\n7.1\n\nAlgeria, Chlef\n\n10.0\n\nX\n\n2,633–5,000\n\nJune 11, 1981\n\n6.6\n\nIran, Kerman\n\n33.0\n\nVIII\n\n3,000\n\nDecember 13, 1982\n\n6.2\n\nNorth Yemen, Dhamar\n\n10.0\n\nVIII\n\n2,800\n\nOctober 30, 1983\n\n6.6\n\nTurkey, Erzurum\n\n15.0\n\nIX\n\n1,340\n\nSeptember 13, 1984\n\n6.3\n\nJapan, Nagano\n\n2.0\n\nVIII\n\n14\n\nSeptember 19, 1985\n\n8.0\n\nMexico, Michoacán\n\n20.0\n\nIX\n\n5,000–45,000\n\nOctober 10, 1986\n\n5.7\n\nEl Salvador, San Salvador\n\n10.0\n\nIX\n\n1,000–1,500\n\nMarch 6, 1987\n\n7.1\n\nEcuador, Sucumbíos\n\n10.0\n\nIX\n\n1,000\n\nDecember 7, 1988\n\n6.8\n\nSoviet Union, Armenian Soviet Socialist Republic\n\n5.0\n\nX\n\n25,000–50,000\n\nJanuary 22, 1989\n\n5.3\n\nSoviet Union, Tajik Soviet Socialist Republic\n\n33.0\n\nVII\n\n274\n\nJune 20, 1990\n\n7.4\n\nIran, Gilan\n\n18.5\n\nX\n\n35,000–40,000\n\nOctober 19, 1991\n\n6.8\n\nIndia, Uttarkashi\n\n11.6\n\nIX\n\n768–2,000[27]\n\nDecember 12, 1992\n\n7.8\n\nIndonesia, Flores Sea offshore\n\n27.7\n\nVIII\n\n2,500[28]\n\nSeptember 29, 1993\n\n6.2\n\nIndia, Latur\n\n10.0\n\nVIII\n\n9,748\n\nJune 6, 1994\n\n6.8\n\nColombia, Cauca\n\n12.1\n\nIX\n\n1,100\n\nJanuary 16, 1995\n\n6.9\n\nJapan, Kobe\n\n21.9\n\nXI\n\n5,502–6,434\n\nFebruary 3, 1996\n\n6.6\n\nChina, Yunnan\n\n10.0\n\nX\n\n309–322\n\nMay 10, 1997\n\n7.3\n\nIran, Khorasan\n\n10.0\n\nX\n\n1,567\n\nMay 30, 1998\n\n6.5\n\nAfghanistan, Takhar\n\n33.0\n\nVII\n\n4,000–4,500\n\nAugust 17, 1999\n\n7.6\n\nTurkey, İzmit\n\n17.0\n\nX\n\n17,127–18,373\n\nJune 4, 2000\n\n7.9\n\nIndonesia, Enggano Island offshore\n\n44.0\n\nVI\n\n103[29]\n\nJanuary 26, 2001\n\n7.6\n\nIndia, Bhuj\n\n16.0\n\nX\n\n13,805–20,023\n\nMarch 25, 2002\n\n6.1\n\nAfghanistan, Baghlan Province\n\n8.0\n\nVII\n\n1,200\n\nDecember 26, 2003\n\n6.6\n\nIran, Bam\n\n15.0\n\nIX\n\n34,000\n\nDecember 26, 2004\n\n9.1–9.3\n\nIndonesia, Sumatra offshore\n\n30.0\n\nIX\n\n227,898\n\nOctober 8, 2005\n\n7.6\n\nPakistan, Balakot\n\n15.0\n\nXI\n\n86,000–87,351\n\nMay 26, 2006\n\n6.4\n\nIndonesia, Yogyakarta\n\n10.0\n\nIX\n\n5,749[30]\n\nAugust 15, 2007\n\n8.0\n\nPeru, Ica offshore\n\n39.0\n\nIX\n\n595\n\nMay 12, 2008\n\n7.9\n\nChina, Sichuan\n\n19.0\n\nXI\n\n87,587\n\nSeptember 30, 2009\n\n7.6\n\nIndonesia, Padang offshore\n\n90.0\n\nVII[31]\n\n1,115\n\nJanuary 12, 2010\n\n7.0\n\nHaiti, Léogâne\n\n13.0\n\nX\n\n46,000–160,000\n\nMarch 11, 2011\n\n9.1\n\nJapan, Sendai offshore\n\n29.0\n\nXI\n\n19,759\n\nThe following tsunami led to about 18,500 deaths.\n\nAugust 11, 2012\n\n6.4\n\nIran, East Azerbaijan\n\n9.0\n\nVIII\n\n306\n\nSeptember 24, 2013\n\n7.7\n\nPakistan, Balochistan\n\n15.0\n\nIX\n\n825\n\nAugust 3, 2014\n\n6.1\n\nChina, Yunnan\n\n10.0\n\nIX\n\n617\n\nApril 25, 2015\n\n7.8\n\n  Nepal, Gorkha District\n\n8.2\n\nX\n\n8,962\n\nApril 16, 2016\n\n7.8\n\nEcuador, Esmeraldas\n\n20.6\n\nVIII[32]\n\n676\n\nNovember 12, 2017\n\n7.3\n\nIran–Iraq border Region\n\n19.0\n\nIX\n\n630\n\nSeptember 28, 2018\n\n7.5\n\nIndonesia, Palu\n\n20.0\n\nX\n\n4,340\n\nNovember 26, 2019\n\n6.4\n\nAlbania, Durrës\n\n10.0\n\nVIII\n\n51\n\nOctober 30, 2020\n\n7.0\n\nGreece\n\nTurkey\n\nAegean Sea\n\n21.0\n\nVIII\n\n119\n\nAugust 14, 2021\n\n7.2\n\nHaiti, Nippes\n\n10.0\n\nIX\n\n2,248\n\nJune 21, 2022\n\n6.0\n\nAfghanistan, Khost\n\n10.0\n\nVIII\n\n1,052–1,163\n\nFebruary 6, 2023\n\n7.8 & 7.7\n\nTurkey, Southeastern Anatolia\n\nSyria, Aleppo and Idlib\n\n10.0 & 7.4\n\nXII\n\n59,488–62,013\n\nThese were two earthquakes of magnitudes 7.8 and 7.7.\n\nJanuary 1, 2024\n\n7.5\n\nJapan, Ishikawa\n\n10.0\n\nX\n\n645\n\nMarch 28, 2025\n\n7.7\n\nMyanmar, Sagaing Region\n\nThailand\n\n10.0\n\nX\n\n5,456",
+        "evidence_type": "graph",
+        "title": "Deadliest earthquakes by year since 1920",
+        "section_path": [
+          "Deadliest earthquakes",
+          "Deadliest earthquakes by year since 1920"
+        ],
+        "retrieval_query": "Compare the 2023 population estimates with the 2010–2015 life expectancy values for the same countries and determine whether population size is meaningfully correlated with life expectancy.",
+        "retriever": "graph",
+        "rank": 2,
+        "raw_score": 1.411863088607788,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "List_of_countries_by_past_life_expectancy.html",
+            "List_of_countries_by_population_(United_Nations).html"
+          ],
+          "graph_neighbor_rank": 3,
+          "graph_score": 5.704649458304793,
+          "discovery_reasons": [
+            "entity:Monaco(29)",
+            "entity:Bulgaria(44)",
+            "entity:Jamaica(42)",
+            "entity:Trinidad_and_Tobago(21)",
+            "entity:Kenya(44)",
+            "entity:Saint_Lucia(17)"
+          ]
+        }
+      }
+    ],
+    "assessment": {
+      "ready_to_answer": false,
+      "supported_requirements": [
+        "The supplied articles include 2023 population estimates from List_of_countries_by_population_(United_Nations).html and 2010–2015 life expectancy values from List_of_countries_by_past_life_expectancy.html.",
+        "The evidence establishes that the two measures come from different reference periods, so a date mismatch exists: population is 2023 while life expectancy is 2010–2015."
+      ],
+      "missing_requirements": [
+        "A computed cross-country assessment of whether population size is meaningfully correlated with life expectancy, including the direction and strength of the relationship.",
+        "The relevant country-by-country pairing between 2023 population and 2010–2015 life expectancy values across countries is not provided in a computed form."
+      ],
+      "retrieval_requests": [
+        {
+          "missing_fact": "Computed cross-country correlation or comparable assessment between 2023 population size and 2010–2015 life expectancy across countries.",
+          "query": "Need a deterministic comparison across countries of 2023 population and 2010–2015 life expectancy to determine whether the relationship is meaningful and its direction/strength.",
+          "target_articles": [
+            "List_of_countries_by_population_(United_Nations).html",
+            "List_of_countries_by_past_life_expectancy.html"
+          ],
+          "keywords": [
+            "correlation",
+            "compare",
+            "2023 population",
+            "2010–2015 life expectancy",
+            "countries"
+          ],
+          "preferred_retriever": "hybrid"
+        }
+      ],
+      "table_requests": [],
+      "unresolved_conflicts": [],
+      "explanation": "We have the two source tables and can identify the date mismatch, but we do not yet have a computed cross-country result showing whether larger populations are associated with higher or lower life expectancy. Because the question asks for a conclusion about correlation, the evidence is insufficient without an actual comparison/correlation computation across matched countries."
+    },
+    "assessment_history": [
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "The supplied evidence includes 2023 population estimates from List_of_countries_by_population_(United_Nations).html and 2010–2015 life-expectancy values from List_of_countries_by_past_life_expectancy.html.",
+          "The evidence also establishes that the life-expectancy data are from 2010–2015, while the population data are mid-year 2023 estimates, so there is a date mismatch that should be mentioned."
+        ],
+        "missing_requirements": [
+          "A computed comparison/correlation result showing whether country population size is meaningfully correlated with life expectancy across the two articles."
+        ],
+        "retrieval_requests": [],
+        "table_requests": [
+          {
+            "missing_fact": "A computed assessment of whether 2023 population size is meaningfully correlated with 2010–2015 life expectancy across countries, including the direction/strength of the relationship.",
+            "source_article": "List_of_countries_by_population_(United_Nations).html",
+            "table_id": "42b2a22b344089fe838ed6f3",
+            "expected_caption": null,
+            "operation": "compare",
+            "columns_needed": [],
+            "row_filters": {},
+            "comparison_key": null
+          }
+        ],
+        "unresolved_conflicts": [],
+        "explanation": "We have the two relevant datasets and the date mismatch, but the question asks for an overall correlation judgment ('meaningfully correlated'), which requires a computed comparison across matched country rows rather than just raw values. The table reader should join the population and life-expectancy tables by country and assess the relationship."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "The supplied evidence includes 2023 population estimates for countries from List_of_countries_by_population_(United_Nations).html.",
+          "The supplied evidence includes 2010–2015 life-expectancy values from List_of_countries_by_past_life_expectancy.html."
+        ],
+        "missing_requirements": [
+          "A computed cross-country assessment of whether 2023 population size is meaningfully correlated with 2010–2015 life expectancy.",
+          "A conclusion about the direction/strength of the relationship based on the paired country values.",
+          "An explicit mention of the date mismatch between 2023 population estimates and 2010–2015 life-expectancy values."
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Computed assessment of correlation between 2023 population size and 2010–2015 life expectancy across countries, including whether the relationship is meaningful and its direction/strength.",
+            "query": "Compare the 2023 population estimates with the 2010–2015 life expectancy values for the same countries and determine whether population size is meaningfully correlated with life expectancy.",
+            "target_articles": [
+              "List_of_countries_by_population_(United_Nations).html",
+              "List_of_countries_by_past_life_expectancy.html"
+            ],
+            "keywords": [
+              "2023 population",
+              "2010–2015 life expectancy",
+              "correlation",
+              "country"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The excerpts show the needed source tables, but not the paired, cross-country computation or a concluded assessment of correlation. The question also explicitly asks for the date mismatch, which should be stated in the final answer but is not itself a computed fact. A deterministic comparison/aggregation over the two tables is needed before answering confidently."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "The supplied articles include 2023 population estimates from List_of_countries_by_population_(United_Nations).html and 2010–2015 life expectancy values from List_of_countries_by_past_life_expectancy.html.",
+          "The evidence establishes that the two measures come from different reference periods, so a date mismatch exists: population is 2023 while life expectancy is 2010–2015."
+        ],
+        "missing_requirements": [
+          "A computed cross-country assessment of whether population size is meaningfully correlated with life expectancy, including the direction and strength of the relationship.",
+          "The relevant country-by-country pairing between 2023 population and 2010–2015 life expectancy values across countries is not provided in a computed form."
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Computed cross-country correlation or comparable assessment between 2023 population size and 2010–2015 life expectancy across countries.",
+            "query": "Need a deterministic comparison across countries of 2023 population and 2010–2015 life expectancy to determine whether the relationship is meaningful and its direction/strength.",
+            "target_articles": [
+              "List_of_countries_by_population_(United_Nations).html",
+              "List_of_countries_by_past_life_expectancy.html"
+            ],
+            "keywords": [
+              "correlation",
+              "compare",
+              "2023 population",
+              "2010–2015 life expectancy",
+              "countries"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "We have the two source tables and can identify the date mismatch, but we do not yet have a computed cross-country result showing whether larger populations are associated with higher or lower life expectancy. Because the question asks for a conclusion about correlation, the evidence is insufficient without an actual comparison/correlation computation across matched countries."
+      }
+    ]
+  }
+}

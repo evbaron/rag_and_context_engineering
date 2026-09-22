@@ -167,9 +167,10 @@
     <div class="eyebrow">Wikipedia Retrieval Engine · capstone lineage</div>
     <h1>Retriever Phylogeny</h1>
     <p class="thesis">Every checkpoint branched into approaches; RAGAS applied two selection pressures.
-      Through Phase 1, <b>retrieval recall kept climbing — .90 → .94 → .97</b> — while
+      Through Phase 1, <b>retrieval recall kept climbing — .90 → .94 → 1.00</b> — while
       <b>answer quality stayed flat</b>, naming the real bottleneck early: reasoning over tables.
-      <b>Phase 2 is now moving quality</b> — aligned JSON tables, then deterministic computation over the same rows.</p>
+      <b>Phase 2 moved quality</b> — aligned JSON tables, then a table gateway that routes every table
+      through a deterministic executor — lifting quality to <b>.79 at perfect recall</b>.</p>
     <div class="herogrid">
       <div>
         <div class="statuslegend" id="legend"></div>
@@ -178,7 +179,7 @@
       <div class="chartcard">
         <h3>Two metrics, two stories</h3>
         <div class="chartsub">survivor of each checkpoint · RAGAS · GT set</div>
-        <svg id="chart" viewBox="0 0 340 172" role="img" aria-label="Recall rose across checkpoints while answer quality stayed flat"></svg>
+        <svg id="chart" viewBox="0 0 340 172" role="img" aria-label="Recall rose to 1.0 across checkpoints; answer quality stayed flat through Phase 1 then rose to .79 in Phase 2"></svg>
         <div class="clegend">
           <span><i class="swatch" style="background:var(--recall)"></i>article recall</span>
           <span><i class="swatch" style="background:var(--quality)"></i>answer quality</span>
@@ -191,7 +192,7 @@
     Reconstructed from the repo's <b>git history</b> (35 commits, 23 Aug – 21 Sep 2026), the <b>RAGAS experiment CSVs</b>
     (<span class="mono">retriever_kind · article_recall · score</span>), and the <b>checkpoint READMEs</b>.
     Card numbers are GT-set survivor means; ranges and validation-set figures appear in the detail panel where recorded.
-    1.1–2.1 predate the recall metric. 5.1 answer quality is measured honestly over all 19 questions with the table-reader still disabled, so its dip is missing capability, not worse reasoning.
+    1.1–2.1 predate the recall metric. Within 5.1, quality first dipped to .59 at the Phase-1 retrieval head (table reader still off — missing capability, not worse reasoning), then Phase 2's table gateway recovered it to .79 at recall 1.00. Phase-2 figures are 4-run means over all 19 questions.
   </footer>
 </div>
 
@@ -337,11 +338,17 @@ const N = [
    why:"Representation alone was a real lift — PASS ≈ 0.39 → 0.58, quality ≈ 0.59 → 0.70, recall unchanged. A clean, row-aligned table is enough for single-table filters and lookups.",
    verdict:"Survived — the fair, aligned representation. Bigger gain than expected.",
    range:"PASS 0.53–0.63"},
-  {cp:"5.1",name:"Table executor (compute)",st:"current",fam:"phase 2 · computation",recall:0.974,quality:0.70,
+  {cp:"5.1",name:"Table executor (compute)",st:"survivor",fam:"phase 2 · computation",recall:1.00,quality:0.70,
    blurb:"Deterministic predicates over the aligned rows.",
-   what:"When the assessor flags a row-wise operation, a planner emits text/numeric/year predicates and Python — not the model — filters, counts, and aggregates, returning exact source cells.",
-   why:"The compute-bound questions (GT07 winner-count, GT10/GT11 first-year filter, GT03 intersection) don't clear on reading alone. Validated in isolation on GT08/10/11; the in-graph run is settling around PASS ≈ 0.65.",
-   verdict:"Current — the last increment, where answer quality finally moves past what retrieval could do."},
+   what:"A planner emits text/numeric/year predicates and Python — not the model — filters, counts, and aggregates the rows, returning exact source cells.",
+   why:"Correct in isolation (GT08/10/11), but reaching it depended on the assessor choosing to request it — and it kept rationalizing 'I can read this directly.' GT10 was a coin-flip: it passed exactly when the executor fired and failed when it didn't.",
+   verdict:"Survived as the compute engine — but its routing was the coin-flip the gateway below fixes."},
+  {cp:"5.1",name:"Table gateway (lookup + compute)",st:"current",fam:"phase 2 · routing",recall:1.00,quality:0.79,
+   blurb:"Every relevant table routes through the executor; planner picks read vs compute.",
+   what:"Drops the 'simple lookup, read directly' carve-out: any relevant selected table is forced through the executor. The planner classifies each request itself (lookup to extract cells, filter/aggregate to compute) via an auto operation. Extraction is additive, so prose and quotations keep their text.",
+   why:"Kills the assessor coin-flip. Quality 0.70 → 0.79 and strict PASS 0.62 → 0.75 at recall 1.000, over 4 runs. GT10 becomes a reliable pass; GT08 jumped 0.38 → 1.0 as a bonus; the quotation (GT01) and lookup (GT05) sentinels held — deterministic extraction never diluted them.",
+   verdict:"Current survivor — routing is solved. The ceiling is now non-routing: layout-table parsing (GT03), planner counting-in-range (GT07), and answer scope (GT11).",
+   range:"PASS 0.68–0.79"},
 ];
 
 const legend = document.getElementById('legend');
@@ -405,21 +412,22 @@ document.getElementById('closebtn').addEventListener('click',closeDrawer);
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer();});
 
 (function(){
-  const data=[{x:"3.1",r:0.899,q:0.747},{x:"4.1",r:0.939,q:0.744},{x:"5.1",r:0.974,q:0.588}];
+  const data=[{x:"3.1",r:0.899,q:0.747},{x:"4.1",r:0.939,q:0.744},{x:"5.1",r:1.000,q:0.789}];
   const W=340,H=172,L=34,R=14,T=16,B=30;
   const x=i=>L+i*((W-L-R)/(data.length-1));
   const lo=0.60,hi=1.0, y=v=>T+(1-(v-lo)/(hi-lo))*(H-T-B);
   const NS="http://www.w3.org/2000/svg",svg=document.getElementById('chart');
   const el=(t,a)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);return e;};
+  const lab=v=>v>=1?'1.0':'.'+Math.round(v*100);
   [0.6,0.7,0.8,0.9,1.0].forEach(v=>{
     svg.appendChild(el('line',{x1:L,x2:W-R,y1:y(v),y2:y(v),stroke:'var(--line)','stroke-width':1}));
-    const t=el('text',{x:L-6,y:y(v)+3,'text-anchor':'end','font-size':9,'font-family':'var(--mono)',fill:'var(--ink-faint)'});t.textContent='.'+Math.round(v*100);svg.appendChild(t);
+    const t=el('text',{x:L-6,y:y(v)+3,'text-anchor':'end','font-size':9,'font-family':'var(--mono)',fill:'var(--ink-faint)'});t.textContent=lab(v);svg.appendChild(t);
   });
   data.forEach((d,i)=>{const t=el('text',{x:x(i),y:H-9,'text-anchor':'middle','font-size':10,'font-family':'var(--mono)',fill:'var(--ink-soft)'});t.textContent=d.x;svg.appendChild(t);});
   const line=(key,color)=>{
     svg.appendChild(el('path',{d:data.map((d,i)=>(i?'L':'M')+x(i)+' '+y(d[key])).join(' '),fill:'none',stroke:color,'stroke-width':2.4,'stroke-linejoin':'round','stroke-linecap':'round'}));
     data.forEach((d,i)=>{svg.appendChild(el('circle',{cx:x(i),cy:y(d[key]),r:3.4,fill:color}));
-      const t=el('text',{x:x(i),y:y(d[key])-8,'text-anchor':'middle','font-size':9.5,'font-weight':600,'font-family':'var(--mono)',fill:color});t.textContent='.'+Math.round(d[key]*100);svg.appendChild(t);});
+      const t=el('text',{x:x(i),y:y(d[key])-8,'text-anchor':'middle','font-size':9.5,'font-weight':600,'font-family':'var(--mono)',fill:color});t.textContent=lab(d[key]);svg.appendChild(t);});
   };
   line('r','var(--recall)');line('q','var(--quality)');
 })();
