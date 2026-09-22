@@ -26,6 +26,10 @@ Checkpoint READMEs record the project decisions and experimental evidence:
 - [Checkpoint 4.1 advanced retrieval](wikipedia_retrieval_engine/Capstone%20Checkpoint%204.1/README%204.1.md)
 - [Checkpoint 5.1 agentic evidence graph](wikipedia_retrieval_engine/Capstone%20Checkpoint%205.1/README%205.1.md)
 
+For the evolution at a glance — every retriever/approach tried, survived, or abandoned
+across checkpoints 1.1–5.1, with both RAGAS metrics (recall and answer quality) at each
+fork — open the interactive [**Retriever Phylogeny**](retriever_phylogeny.html) in a browser.
+
 ```text
 rag_and_context_engineering/
 ├── README.md

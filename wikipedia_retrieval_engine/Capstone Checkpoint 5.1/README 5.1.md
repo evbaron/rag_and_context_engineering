@@ -301,23 +301,30 @@ vector-initial tune-up (recall 0.963) is the next benchmark run.
 
 ## 5. Phase gate → Phase 2 (table reading)
 
-The retrieval-only benchmark has done its job. Of the five table questions, all
-now fail with their designated sections **present and uncontaminated** (recall
-1.0):
+**The gate is met.** The full pipeline — `multistep_entity` initial retriever +
+fused TOC judge-and-select + graph — over three runs:
 
-| table question | article recall | passes |
-|---|---|---|
-| GT03 (cross-article intersection) | 1.00 | 0/4 |
-| GT07 (temporal aggregation) | 1.00 | 1/4 |
-| GT08 (table filter) | 1.00 | 2/4 |
-| GT10 (program filter) | 1.00 | 0/4 |
-| GT11 (program filter) | 1.00 | 0/4 |
+| metric | result |
+|---|---|
+| article recall | **0.974**, identical across all 3 runs |
+| questions at recall 1.0 | **18 / 19** (GT03 went 0.0 → 1.0) |
+| retrieval-limited failures | **1** — GT19 (UN population ranked-list article) |
+| synthesis-limited non-passes | **12**, all at recall 1.0 (GT02, GT03, GT06–13, GT16, GT17) |
+| answer quality index / PASS | 0.588 / 0.386 (honest full-19, table-reader off) |
 
-This is the gate condition: **article and section retrieval are solid; the failing
-answers are table synthesis.** Phase 2 enables the `need_table_reader` branch (the
-parser, artifact store, planner, and executor are already implemented and tested;
-see §7). Enabling it requires the assessor to route table operations to the table
-reader rather than declaring a flattened chunk "sufficient."
+This is the gate condition, in the starkest form yet: **article and section
+retrieval are solved (0.974, stable, 18/19 perfect); every remaining failure but
+one fails with its sections present — table synthesis.** The non-passes are now
+mostly *partial* (right data, incomplete answer), the signature of a synthesis
+ceiling rather than a retrieval one.
+
+The retriever even generates the Phase 2 worklist: `needs_table_reader` flagged
+**GT01, GT03, GT05, GT07, GT08, GT09, GT10, GT11, GT12, GT13, GT14, GT19**. Phase 2
+enables the `need_table_reader` branch (parser, artifact store, planner, executor
+already implemented and tested; see §7) and the assessor routing that sends those
+flagged questions to it rather than answering from a flattened chunk. The one
+retrieval loose end (GT19) is the same ranked-list-table family as GT09 — likely
+resolved by the table reader too.
 
 ## 6. Shared state and data contracts
 

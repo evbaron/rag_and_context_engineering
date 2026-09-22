@@ -1,0 +1,846 @@
+{
+  "run_id": "2026_09_21_19_46_08",
+  "question_number": 2,
+  "logged_at": "2026-09-21T19:46:45-04:00",
+  "question": "Considering the complete winners-and-nominees lists for the 68th, 70th, and 74th Academy Awards, identify every person who was nominated at all three ceremonies. For each person, give at least one nominated work from each ceremony. Also determine whether each person won at any of those three ceremonies; if so, identify the ceremony, work, and award.",
+  "final_state": {
+    "question": "Considering the complete winners-and-nominees lists for the 68th, 70th, and 74th Academy Awards, identify every person who was nominated at all three ceremonies. For each person, give at least one nominated work from each ceremony. Also determine whether each person won at any of those three ceremonies; if so, identify the ceremony, work, and award.",
+    "retrieval_attempts": 2,
+    "article_candidates": [
+      {
+        "source_article": "74th_Academy_Awards.html",
+        "representative_chunk": "Article: 74th Academy Awards\nSection: Lead\n\nAward ceremony for films of 2001\n\n74th Academy Awards\n\nOfficial poster by Alex Ross[1]\n\nDateMarch 24, 2002\n\nSiteKodak Theatre\n\nHollywood, Los Angeles, California, U.S.\n\nHosted byWhoopi Goldberg\n\nPreshow hostsChris Connelly\n\nLeeza Gibbons\n\nAnanda Lewis[2]\n\nProduced byLaura Ziskin\n\nDirected byLouis J. Horvitz\n\nHighlights\n\nBest PictureA Beautiful Mind\n\nMost awardsA Beautiful Mind and The Lord of the Rings: The Fellowship of the Ring (4)\n\nMost nominationsThe Lord of the Rings: The Fellowship of the Ring (13)\n\nTV in the United States\n\nNetworkABC\n\nDuration4 hours, 23 minutes[3]\n\nRatings41.82 million\n\n25.54% (Nielsen ratings)\n\n← 73rd\n\nAcademy Awards\n\n75th →\n\nThe 74th Academy Awards ceremony, presented by the Academy of Motion Picture Arts and Sciences (AMPAS), took place on March 24, 2002, at the Kodak Theatre in Hollywood, Los Angeles. During the ceremony, AMPAS presented Academy Awards (commonly referred to as Oscars) in 24 categories honoring films released in 2001. The ceremony, televised in the United States by ABC, was produced by Laura Ziskin and directed by Louis J. Horvitz.[4][5] Actress Whoopi Goldberg hosted the show for the fourth time.[6] She first hosted the 66th ceremony held in 1994 and had last hosted the 71st ceremony in 1999.[7] Three weeks earlier, in a ceremony held at the Regent Beverly Wilshire Hotel in Beverly Hills, California, on March 2, the Academy Awards for Technical Achievement were presented by host Charlize Theron.[8]\n\nA Beautiful Mind won four awards, including Best Picture.[9][10] Other winners included The Lord of the Rings: The Fellowship of the Ring with four awards, Black Hawk Down and Moulin Rouge! with two, and The Accountant, For the Birds, Gosford Park, Iris, Monster's Ball, Monsters, Inc., Murder on a Sunday Morning, No Man's Land, Pearl Harbor, Shrek, Thoth, and Training Day with one. Despite a record length of four hours and twenty-three minutes, the telecast garnered nearly 42 million viewers in the United States.[11]",
+        "representative_chunk_id": "74th_Academy_Awards.html#section-000-00",
+        "section_title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "74th Academy Awards",
+        "discovered_by": "vector",
+        "rank": 1,
+        "raw_score": 0.6551920175552368,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "89th_Academy_Awards.html",
+        "representative_chunk": "Article: 89th Academy Awards\nSection: Notes and references\n\n<h3",
+        "representative_chunk_id": "89th_Academy_Awards.html#section-018-00",
+        "section_title": "Notes and references",
+        "section_path": [
+          "Notes and references"
+        ],
+        "retrieval_query": "74th Academy Awards",
+        "discovered_by": "vector",
+        "rank": 2,
+        "raw_score": 0.6896023750305176,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "68th_Academy_Awards.html",
+        "representative_chunk": "Article: 68th Academy Awards\nSection: See also\n\n2nd Screen Actors Guild Awards\n\n16th Golden Raspberry Awards\n\n38th Grammy Awards\n\n48th Primetime Emmy Awards\n\n49th British Academy Film Awards\n\n50th Tony Awards\n\n53rd Golden Globe Awards\n\nList of submissions to the 68th Academy Awards for Best Foreign Language Film\n\n<h2",
+        "representative_chunk_id": "68th_Academy_Awards.html#section-017-00",
+        "section_title": "See also",
+        "section_path": [
+          "See also"
+        ],
+        "retrieval_query": "68th Academy Awards",
+        "discovered_by": "vector",
+        "rank": 3,
+        "raw_score": 0.6923917531967163,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "70th_Academy_Awards.html",
+        "representative_chunk": "Article: 70th Academy Awards\nSection: See also\n\nFilm portal\n\nLos Angeles portal\n\n4th Screen Actors Guild Awards\n\n18th Golden Raspberry Awards\n\n40th Grammy Awards\n\n51st British Academy Film Awards\n\n52nd Tony Awards\n\n55th Golden Globe Awards\n\nList of submissions to the 70th Academy Awards for Best Foreign Language Film\n\n<h2",
+        "representative_chunk_id": "70th_Academy_Awards.html#section-013-00",
+        "section_title": "See also",
+        "section_path": [
+          "See also"
+        ],
+        "retrieval_query": "70th Academy Awards",
+        "discovered_by": "vector",
+        "rank": 4,
+        "raw_score": 0.6980612277984619,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Academy_Award_for_Best_Actor.html",
+        "representative_chunk": "Article: Academy Award for Best Actor\nSection: Winners and nominees\n\nIn the following table, the years are listed as per Academy convention, and generally correspond to the year of film release in Los Angeles County; the ceremonies are always held the following year.[5] For the first five ceremonies, the eligibility period spanned twelve months, from August 1 to July 31.[6] For the 6th ceremony held in 1934, the eligibility period lasted from August 1, 1932, to December 31, 1933.[6] Since the 7th ceremony held in 1935, the period of eligibility became the full previous calendar year from January 1 to December 31.[6]\n\nTable key\n\n‡\n\nIndicates the winner\n\n§\n\nIndicates winner who refused the award\n\n†\n\nIndicates a posthumous winner\n\n†\n\nIndicates a posthumous nominee",
+        "representative_chunk_id": "Academy_Award_for_Best_Actor.html#section-002-00",
+        "section_title": "Winners and nominees",
+        "section_path": [
+          "Winners and nominees"
+        ],
+        "retrieval_query": "Considering the complete winners-and-nominees lists for the 68th, 70th, and 74th Academy Awards, identify every person who was nominated at all three ceremonies. For each person, give at least one nominated work from each ceremony. Also determine whether each person won at any of those three ceremonies; if so, identify the ceremony, work, and award.",
+        "discovered_by": "vector",
+        "rank": 5,
+        "raw_score": 0.7720097899436951,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Academy_Award_for_Best_Picture.html",
+        "representative_chunk": "Article: Academy Award for Best Picture\nSection: Winners and nominees\n\nIn the list below, winners are listed first in the gold row, followed by the other nominees.[6] Except for the early years (when the Academy used a non-calendar year), the year shown is the one in which the film first premiered in Los Angeles County, California; normally this is also the year of first release, but it may be the year after first release (as with Casablanca and, if the film-festival premiere is considered, Crash and The Hurt Locker). This is also the year before the ceremony at which the award is given; for example, a film exhibited theatrically during 2005 was eligible for consideration for the 2005 Best Picture Oscar, awarded in 2006. The number of the ceremony (1st, 2nd, etc.) appears in parentheses after the awards year, linked to the article on that ceremony. Each individual entry shows the title followed by nominee.\n\nUntil 1950, the Best Picture award was given to the production company; from 1951 on, it has gone to the producer or producers. The Academy used the producer credits of the Producers Guild of America (PGA) until 1998, when all five producers of Shakespeare in Love made speeches after its win.[9][10] A three-producer limit has been applied some years since.[10][11] There was controversy over the exclusion of some PGA-credited producers of Crash and Little Miss Sunshine.[11] The Academy can make exceptions to the limit, as when Anthony Minghella and Sydney Pollack were posthumously among the four nominated for The Reader.[13] However, now any number of producers on a film can be nominated for Best Picture, should they be deemed eligible.\n\nFor the first ceremony, three films were nominated for the award. For the following three years, five films were nominated for the award. This was expanded to eight in 1933, to ten in 1934, and to twelve in 1935, before being dropped back to ten in 1937. In 1945, it was further reduced to five. This number remained until 2009, when the limit was raised to ten; it was adjusted from 2011 to 2020 to vary between five and ten, but has been a full ten since 2022.\n\nFor the first six ceremonies, the eligibility period spanned two calendar years. For example, the 2nd Academy Awards presented on April 3, 1930, recognized films that were released between August 1, 1928, and July 31, 1929. Starting with the 7th Academy Awards, held in 1935, the period of eligibility became the full previous calendar year from January 1 to December 31. This has been the rule every year since except 2020, when the end date was extended to February 28, 2021, due to the COVID-19 pandemic, and 2021, which was correspondingly limited to March 1 to December 31.\n\nSince 2023, the category's winners and nominees from the 1927/28 and 1928/29 ceremonies have entered the public domain.[82]\n\n  indicates the winner",
+        "representative_chunk_id": "Academy_Award_for_Best_Picture.html#section-020-00",
+        "section_title": "Winners and nominees",
+        "section_path": [
+          "Winners and nominees"
+        ],
+        "retrieval_query": "Considering the complete winners-and-nominees lists for the 68th, 70th, and 74th Academy Awards, identify every person who was nominated at all three ceremonies. For each person, give at least one nominated work from each ceremony. Also determine whether each person won at any of those three ceremonies; if so, identify the ceremony, work, and award.",
+        "discovered_by": "vector",
+        "rank": 6,
+        "raw_score": 0.8053213357925415,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Academy_Award_for_Best_Supporting_Actor.html",
+        "representative_chunk": "Article: Academy Award for Best Supporting Actor\nSection: Winners and nominees\n\nIn the following table, the years are listed as per Academy convention, and generally correspond to the year of film release in Los Angeles County; the ceremonies are always held the following year.[5] For the first five ceremonies, the eligibility period spanned twelve months, from August 1 to July 31.[6] For the 6th ceremony held in 1934, the eligibility period lasted from August 1, 1932, to December 31, 1933.[6] Since the 7th ceremony held in 1935, the period of eligibility became the full previous calendar year from January 1 to December 31.[6]\n\nTable key\n\n‡\n\nIndicates the winner\n\n†\n\nIndicates a posthumous winner\n\n†\n\nIndicates a posthumous nominee\n\n§\n\nIndicates actor who refused the nomination",
+        "representative_chunk_id": "Academy_Award_for_Best_Supporting_Actor.html#section-002-00",
+        "section_title": "Winners and nominees",
+        "section_path": [
+          "Winners and nominees"
+        ],
+        "retrieval_query": "Considering the complete winners-and-nominees lists for the 68th, 70th, and 74th Academy Awards, identify every person who was nominated at all three ceremonies. For each person, give at least one nominated work from each ceremony. Also determine whether each person won at any of those three ceremonies; if so, identify the ceremony, work, and award.",
+        "discovered_by": "vector",
+        "rank": 7,
+        "raw_score": 0.8113340139389038,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      }
+    ],
+    "article_reviews": [
+      {
+        "source_article": "74th_Academy_Awards.html",
+        "relevant": true,
+        "reason": "This ceremony page contains the winners-and-nominees lists needed to identify nominees and winners at the 74th Academy Awards.",
+        "relevant_sections": [
+          "Winners and nominees",
+          "Awards"
+        ],
+        "relevant_table_names": [
+          "Table 1: Best Picture A Beautiful Mind – Brian Grazer and Ron Howard,",
+          "Table 4: Name(s)",
+          "Table 5: Name(s)"
+        ],
+        "needs_table_reader": true
+      },
+      {
+        "source_article": "89th_Academy_Awards.html",
+        "relevant": false,
+        "reason": "This is not one of the three ceremonies being compared, so it is not needed for the answer.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "68th_Academy_Awards.html",
+        "relevant": true,
+        "reason": "This ceremony page contains the winners-and-nominees lists needed to identify nominees and winners at the 68th Academy Awards.",
+        "relevant_sections": [
+          "Winners and nominees",
+          "Awards"
+        ],
+        "relevant_table_names": [
+          "Table 1: Best Picture Braveheart – Mel Gibson, Bruce Davey and Alan L",
+          "Table 4: Name(s)",
+          "Table 5: Name(s)"
+        ],
+        "needs_table_reader": true
+      },
+      {
+        "source_article": "70th_Academy_Awards.html",
+        "relevant": true,
+        "reason": "This ceremony page contains the winners-and-nominees lists needed to identify nominees and winners at the 70th Academy Awards.",
+        "relevant_sections": [
+          "Winners and nominees",
+          "Awards"
+        ],
+        "relevant_table_names": [
+          "Table 1: Best Picture Titanic – James Cameron and Jon Landau, produce",
+          "Table 4: Name(s)",
+          "Table 5: Name(s)"
+        ],
+        "needs_table_reader": true
+      },
+      {
+        "source_article": "Academy_Award_for_Best_Actor.html",
+        "relevant": false,
+        "reason": "This category page is broader than the three specific ceremonies and is not the direct source for complete ceremony nominee lists.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Academy_Award_for_Best_Picture.html",
+        "relevant": false,
+        "reason": "This category page is about the Best Picture award overall, not the complete nominee lists for the three specific ceremonies.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Academy_Award_for_Best_Supporting_Actor.html",
+        "relevant": false,
+        "reason": "This category page is broader than the three specific ceremonies and is not the direct source for complete ceremony nominee lists.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "needs_table_reader": false
+      }
+    ],
+    "selected_articles": [
+      "74th_Academy_Awards.html",
+      "68th_Academy_Awards.html",
+      "70th_Academy_Awards.html"
+    ],
+    "rejected_articles": [
+      "89th_Academy_Awards.html",
+      "Academy_Award_for_Best_Actor.html",
+      "Academy_Award_for_Best_Picture.html",
+      "Academy_Award_for_Best_Supporting_Actor.html"
+    ],
+    "evidence": [
+      {
+        "evidence_id": "74th_Academy_Awards.html#section-001-00",
+        "source_article": "74th_Academy_Awards.html",
+        "content": "Article: 74th Academy Awards\nSection: Winners and nominees\n\nThe nominees for the 74th Academy Awards were announced on February 12, 2002, at the Samuel Goldwyn Theater in Beverly Hills, California, by Frank Pierson, president of the academy, and the actress Marcia Gay Harden.[12] The Lord of the Rings: The Fellowship of the Ring earned the most nominations with thirteen. It was the seventh film to earn that many nominations. A Beautiful Mind and Moulin Rouge! tied for second place with eight apiece.[13][14]\n\nThe winners were announced during the awards ceremony on March 24, 2002.[15] By virtue of its latest Best Picture victory for A Beautiful Mind, DreamWorks became the second film studio to release three consecutive Best Picture winners; the studio had previously released American Beauty and Gladiator.[16] Denzel Washington was the second African-American to win the Academy Award for Best Actor, following Sidney Poitier for 1963's Lilies of the Field.[9] Halle Berry became the first, and as of 2026[update], only, African-American to win the Academy Award for Best Actress.[9] Nominated for their performances as the title character in Iris, Best Actress nominee Judi Dench and Best Supporting Actress nominee Kate Winslet became the second pair of actresses nominated for portraying the same character in the same film, following Best Actress nominee Winslet and Best Supporting Actress nominee Gloria Stuart as Rose in 1997's Titanic.[13]",
+        "evidence_type": "text",
+        "title": "Winners and nominees",
+        "section_path": [
+          "Winners and nominees"
+        ],
+        "retrieval_query": "Winners and nominees",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.9903240203857422,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Winners and nominees",
+          "needs_table_reader": true,
+          "flagged_tables": [
+            "Table 1: Best Picture A Beautiful Mind – Brian Grazer and Ron Howard,",
+            "Table 4: Name(s)",
+            "Table 5: Name(s)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "74th_Academy_Awards.html#section-005-00",
+        "source_article": "74th_Academy_Awards.html",
+        "content": "Article: 74th Academy Awards\nSection: Winners and nominees > Films with multiple nominations and awards\n\nSee also: Films with the most Academy Award nominations per ceremony\n\nSee also: Films with the most Academy Awards per ceremony\n\nFilms with multiple nominations\n\nNominations\n\nFilm\n\n13\n\nThe Lord of the Rings: The Fellowship of the Ring\n\n8\n\nA Beautiful Mind\n\nMoulin Rouge!\n\n7\n\nGosford Park\n\n5\n\nAmélie\n\nIn the Bedroom\n\n4\n\nBlack Hawk Down\n\nMonsters, Inc.\n\nPearl Harbor\n\n3\n\nHarry Potter and the Sorcerer's Stone\n\nIris\n\n2\n\nA.I. Artificial Intelligence\n\nAli\n\nMemento\n\nMonster's Ball\n\nShrek\n\nTraining Day\n\nFilms with multiple awards\n\nAwards\n\nFilm\n\n4\n\nA Beautiful Mind\n\nThe Lord of the Rings: The Fellowship of the Ring\n\n2\n\nBlack Hawk Down\n\nMoulin Rouge!",
+        "evidence_type": "text",
+        "title": "Films with multiple nominations and awards",
+        "section_path": [
+          "Winners and nominees",
+          "Films with multiple nominations and awards"
+        ],
+        "retrieval_query": "Awards",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 1.1568291187286377,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Awards",
+          "needs_table_reader": true,
+          "flagged_tables": [
+            "Table 1: Best Picture A Beautiful Mind – Brian Grazer and Ron Howard,",
+            "Table 4: Name(s)",
+            "Table 5: Name(s)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "68th_Academy_Awards.html#section-007-00",
+        "source_article": "68th_Academy_Awards.html",
+        "content": "Article: 68th Academy Awards\nSection: Presenters and performers > Presenters\n\nName(s)\n\nRole\n\nLes Marshak\nAnnouncer for the 68th annual Academy Awards\n\nPierce Brosnan\n\nNaomi Campbell\n\nClaudia Schiffer\nPresenters of the award for Best Costume Design\n\nDianne Wiest\nPresenter of the award for Best Supporting Actor\n\nJohn Travolta\nPresenter of the film Apollo 13 on the Best Picture segment\n\nAlicia Silverstone\nPresenter of the award for Best Makeup\n\nEmma Thompson\nPresenter of the award for Best Art Direction\n\nChris O'Donnell\nIntroducer of the performance of Best Original Song nominee \"Moonlight\"\n\nRobin Williams\nPresenter of the Honorary Award to Chuck Jones and the Special Achievement Award to John Lasseter who comes onto the stage with a Sheriff Woody doll and a Buzz Lightyear action figure. As they come to life, Tom Hanks and Tim Allen reprise their respective voice roles.\n\nKareem Abdul-Jabbar\n\nJackie Chan\nPresenters of the awards for Best Live Action Short Film and Best Animated Short Film\n\nSandra Bullock\nPresenter of the award Best Sound Effects Editing\n\nSteven Seagal\nPresenter of the award Best Sound\n\nJeremy Irons\nPresenter of the film Braveheart on the Best Picture segment\n\nMartin Landau\nPresenter of the award for Best Supporting Actress\n\nJim Carrey\nPresenter of the award for Best Cinematography\n\nGoldie Hawn\n\nKurt Russell\nPresenters of the award for Best Film Editing\n\nRichard Dreyfuss\nPresenter of the segment of the Academy Awards for Technical Achievement and the Gordon E. Sawyer Award\n\nWinona Ryder\nIntroducer of the performance of Best Original Song nominee \"Dead Man Walking\"\n\nWill Smith\nPresenter of the award for Best Visual Effects\n\nAnjelica Huston\nPresenter of the film Sense and Sensibility on the Best Picture segment\n\nNicolas Cage\n\nElisabeth Shue\nPresenters of the awards for Best Documentary Short Subject and Best Documentary Feature\n\nNathan Lane\nIntroducer of the performance of Best Original Song nominee \"Colors of the Wind\"\n\nMel Gibson\nPresenter of the award Best Foreign Language Film\n\nSteven Spielberg\nPresenter of the Honorary Award to Kirk Douglas\n\nQuincy Jones\n\nSharon Stone\nPresenters of the awards for Best Original Musical or Comedy Score and Best Original Dramatic Score\n\nLiam Neeson\nPresenter of the film Il Postino: The Postman on the Best Picture segment\n\nArthur Hiller (AMPAS President)\nPresenter of the \"In Memoriam\" tribute\n\nJimmy Smits\nIntroducer of the performance of Best Original Song nominee \"Have You Ever Really Loved a Woman?\"\n\nSusan Sarandon\nPresenter of the award for Best Screenplay Written Directly for the Screen\n\nAnthony Hopkins\nPresenter of the award for Best Screenplay Based on Material Previously Produced or Published\n\nChristopher Reeve\nPresenter of the montage on films that address social issues\n\nAngela Bassett\n\nLaurence Fishburne\nPresenters of the award for Best Original Song\n\nNicole Kidman\nPresenter of the film Babe on the Best Picture segment\n\nRobert Zemeckis\nPresenter of the award Best Director\n\nTom Hanks\nPresenter of the award for Best Actress\n\nJessica Lange\nPresenter of the award for Best Actor\n\nSidney Poitier\nPresenter of the award for Best Picture",
+        "evidence_type": "text",
+        "title": "Presenters",
+        "section_path": [
+          "Presenters and performers",
+          "Presenters"
+        ],
+        "retrieval_query": "Winners and nominees",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 1.0129317045211792,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Winners and nominees",
+          "needs_table_reader": true,
+          "flagged_tables": [
+            "Table 1: Best Picture Braveheart – Mel Gibson, Bruce Davey and Alan L",
+            "Table 4: Name(s)",
+            "Table 5: Name(s)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "68th_Academy_Awards.html#section-005-00",
+        "source_article": "68th_Academy_Awards.html",
+        "content": "Article: 68th Academy Awards\nSection: Winners and nominees > Multiple nominations and awards\n\nThe following 19 films received multiple nominations:\n\nNominations\n\nFilm\n\n10\n\nBraveheart\n\n9\n\nApollo 13\n\n7\n\nBabe\n\nSense and Sensibility\n\n5\n\nIl Postino: The Postman\n\n4\n\nDead Man Walking\n\nLeaving Las Vegas\n\nNixon\n\n3\n\nBatman Forever\n\nCrimson Tide\n\nToy Story[a]\n\n2\n\n12 Monkeys\n\nA Little Princess\n\nMighty Aphrodite\n\nPocahontas\n\nRestoration\n\nRichard III\n\nSabrina\n\nThe Usual Suspects\n\nThe following five films received multiple awards:\n\nAwards\n\nFilm\n\n5\n\nBraveheart\n\n2\n\nApollo 13\n\nPocahontas\n\nRestoration\n\nThe Usual Suspects",
+        "evidence_type": "text",
+        "title": "Multiple nominations and awards",
+        "section_path": [
+          "Winners and nominees",
+          "Multiple nominations and awards"
+        ],
+        "retrieval_query": "Awards",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 1.1996195316314697,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Awards",
+          "needs_table_reader": true,
+          "flagged_tables": [
+            "Table 1: Best Picture Braveheart – Mel Gibson, Bruce Davey and Alan L",
+            "Table 4: Name(s)",
+            "Table 5: Name(s)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "70th_Academy_Awards.html#section-001-00",
+        "source_article": "70th_Academy_Awards.html",
+        "content": "Article: 70th Academy Awards\nSection: Winners and nominees\n\nThe nominees for the 70th Academy Awards were announced on February 10, 1998, at the Samuel Goldwyn Theater in Beverly Hills, California, by Robert Rehme, president of the academy, and actress Geena Davis.[11] Titanic led all nominees with fourteen nominations; Good Will Hunting and L.A. Confidential came in second with nine apiece.[12]\n\nThe winners were announced during the awards ceremony on March 23, 1998. With eleven awards, Titanic tied with Ben-Hur (1959) for the most Academy Awards in Oscar history.[13][a] It also became the first film to win Best Picture without a screenwriting nomination since The Sound of Music (1965).[15] Jack Nicholson became the fourth performer to win at least three acting Oscars.[16] Both Nicholson and Helen Hunt won for their roles in As Good as It Gets, making it the seventh film to win both lead acting awards.[17] Nominated for their performances as Rose DeWitt Bukater in Titanic, Best Actress nominee Kate Winslet and Best Supporting Actress nominee Gloria Stuart became the first pair of actresses nominated for portraying the same character in the same film.[18][19]",
+        "evidence_type": "text",
+        "title": "Winners and nominees",
+        "section_path": [
+          "Winners and nominees"
+        ],
+        "retrieval_query": "Winners and nominees",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 1.0398212671279907,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Winners and nominees",
+          "needs_table_reader": true,
+          "flagged_tables": [
+            "Table 1: Best Picture Titanic – James Cameron and Jon Landau, produce",
+            "Table 4: Name(s)",
+            "Table 5: Name(s)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "70th_Academy_Awards.html#section-003-00",
+        "source_article": "70th_Academy_Awards.html",
+        "content": "Article: 70th Academy Awards\nSection: Winners and nominees > Honorary Award\n\nTo Stanley Donen in appreciation of a body of work marked by grace, elegance, wit and visual innovation.[21]",
+        "evidence_type": "text",
+        "title": "Honorary Award",
+        "section_path": [
+          "Winners and nominees",
+          "Honorary Award"
+        ],
+        "retrieval_query": "Awards",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 1.1851208209991455,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Awards",
+          "needs_table_reader": true,
+          "flagged_tables": [
+            "Table 1: Best Picture Titanic – James Cameron and Jon Landau, produce",
+            "Table 4: Name(s)",
+            "Table 5: Name(s)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "74th_Academy_Awards.html#table-1",
+        "source_article": "74th_Academy_Awards.html",
+        "content": "Structured table (JSON rows) — read values directly from these rows; do not rely on prior knowledge.\n{\"caption\": null, \"columns\": [\"Best Picture A Beautiful Mind – Brian Grazer and Ron Howard, producers ‡ Gosford Park – Robert Altman, Bob Balaban and David Levy, producers In the Bedroom – Graham Leader, Ross Katz and Todd Field, producers The Lord of the Rings: The Fellowship of the Ring – Peter Jackson, Fran Walsh and Barrie M. Osborne, producers Moulin Rouge! – Martin Brown, Baz Luhrmann and Fred Baron, producers\", \"Best Directing Ron Howard – A Beautiful Mind ‡ Ridley Scott – Black Hawk Down Robert Altman – Gosford Park Peter Jackson – The Lord of the Rings: The Fellowship of the Ring David Lynch – Mulholland Drive\"], \"rows\": [{\"Best Picture A Beautiful Mind – Brian Grazer and Ron Howard, producers ‡ Gosford Park – Robert Altman, Bob Balaban and David Levy, producers In the Bedroom – Graham Leader, Ross Katz and Todd Field, producers The Lord of the Rings: The Fellowship of the Ring – Peter Jackson, Fran Walsh and Barrie M. Osborne, producers Moulin Rouge! – Martin Brown, Baz Luhrmann and Fred Baron, producers\": \"Best Actor in a Leading Role Denzel Washington – Training Day as Alonzo Harris ‡ Russell Crowe – A Beautiful Mind as John Forbes Nash Jr. Sean Penn – I Am Sam as Sam Dawson Will Smith – Ali as Muhammad Ali Tom Wilkinson – In the Bedroom as Dr. Matthew Fowler\", \"Best Directing Ron Howard – A Beautiful Mind ‡ Ridley Scott – Black Hawk Down Robert Altman – Gosford Park Peter Jackson – The Lord of the Rings: The Fellowship of the Ring David Lynch – Mulholland Drive\": \"Best Actress in a Leading Role Halle Berry – Monster's Ball as Leticia Musgrove ‡ Judi Dench – Iris as Iris Murdoch Nicole Kidman – Moulin Rouge! as Satine Sissy Spacek – In the Bedroom as Ruth Fowler Renée Zellweger – Bridget Jones's Diary as Bridget Jones\"}, {\"Best Picture A Beautiful Mind – Brian Grazer and Ron Howard, producers ‡ Gosford Park – Robert Altman, Bob Balaban and David Levy, producers In the Bedroom – Graham Leader, Ross Katz and Todd Field, producers The Lord of the Rings: The Fellowship of the Ring – Peter Jackson, Fran Walsh and Barrie M. Osborne, producers Moulin Rouge! – Martin Brown, Baz Luhrmann and Fred Baron, producers\": \"Best Actor in a Supporting Role Jim Broadbent – Iris as John Bayley ‡ Ethan Hawke – Training Day as Officer Jake Hoyt Ben Kingsley – Sexy Beast as Don Logan Ian McKellen – The Lord of the Rings: The Fellowship of the Ring as Gandalf Jon Voight – Ali as Howard Cosell\", \"Best Directing Ron Howard – A Beautiful Mind ‡ Ridley Scott – Black Hawk Down Robert Altman – Gosford Park Peter Jackson – The Lord of the Rings: The Fellowship of the Ring David Lynch – Mulholland Drive\": \"Best Actress in a Supporting Role Jennifer Connelly – A Beautiful Mind as Alicia de Lardé-Nash ‡ Helen Mirren – Gosford Park as Jane Wilson Maggie Smith – Gosford Park as Constance Trentham Marisa Tomei – In the Bedroom as Natalie Strout Kate Winslet – Iris as Iris Murdoch\"}, {\"Best Picture A Beautiful Mind – Brian Grazer and Ron Howard, producers ‡ Gosford Park – Robert Altman, Bob Balaban and David Levy, producers In the Bedroom – Graham Leader, Ross Katz and Todd Field, producers The Lord of the Rings: The Fellowship of the Ring – Peter Jackson, Fran Walsh and Barrie M. Osborne, producers Moulin Rouge! – Martin Brown, Baz Luhrmann and Fred Baron, producers\": \"Best Writing (Screenplay Written Directly for the Screen) Gosford Park – Julian Fellowes ‡ Amélie – Guillaume Laurant and Jean-Pierre Jeunet Memento – Christopher Nolan and Jonathan Nolan Monster's Ball – Milo Addica and Will Rokos The Royal Tenenbaums – Wes Anderson and Owen Wilson\", \"Best Directing Ron Howard – A Beautiful Mind ‡ Ridley Scott – Black Hawk Down Robert Altman – Gosford Park Peter Jackson – The Lord of the Rings: The Fellowship of the Ring David Lynch – Mulholland Drive\": \"Best Writing (Screenplay Based on Material Previously Produced or Published) A Beautiful Mind – Akiva Goldsman based on the book by Sylvia Nasar ‡ Ghost World – Daniel Clowes and Terry Zwigoff based on the comic book by Daniel Clowes In the Bedroom – Rob Festinger and Todd Field based on the story \\\" Killings \\\" by Andre Dubus The Lord of the Rings: The Fellowship of the Ring – Fran Walsh, Philippa Boyens, and Peter Jackson based on the book by J. R. R. Tolkien Shrek – Ted Elliott, Terry Rossio, Joe Stillman, and Roger S. H. Schulman based on the book by William Steig\"}, {\"Best Picture A Beautiful Mind – Brian Grazer and Ron Howard, producers ‡ Gosford Park – Robert Altman, Bob Balaban and David Levy, producers In the Bedroom – Graham Leader, Ross Katz and Todd Field, producers The Lord of the Rings: The Fellowship of the Ring – Peter Jackson, Fran Walsh and Barrie M. Osborne, producers Moulin Rouge! – Martin Brown, Baz Luhrmann and Fred Baron, producers\": \"Best Animated Feature Film Shrek – Aron Warner ‡ Jimmy Neutron: Boy Genius – Steve Oedekerk and John A. Davis Monsters, Inc. – Pete Docter and John Lasseter\", \"Best Directing Ron Howard – A Beautiful Mind ‡ Ridley Scott – Black Hawk Down Robert Altman – Gosford Park Peter Jackson – The Lord of the Rings: The Fellowship of the Ring David Lynch – Mulholland Drive\": \"Best Foreign Language Film No Man's Land ( Bosnia and Herzegovina ) in Bosnian – Danis Tanović ‡ Amélie ( France ) in French – Jean-Pierre Jeunet Elling ( Norway ) in Norwegian – Petter Næss Lagaan ( India ) in Hindi – Ashutosh Gowariker Son of the Bride ( Argentina ) in Spanish – Juan José Campanella\"}, {\"Best Picture A Beautiful Mind – Brian Grazer and Ron Howard, producers ‡ Gosford Park – Robert Altman, Bob Balaban and David Levy, producers In the Bedroom – Graham Leader, Ross Katz and Todd Field, producers The Lord of the Rings: The Fellowship of the Ring – Peter Jackson, Fran Walsh and Barrie M. Osborne, producers Moulin Rouge! – Martin Brown, Baz Luhrmann and Fred Baron, producers\": \"Best Documentary (Feature) Murder on a Sunday Morning – Jean-Xavier de Lestrade and Denis Poncet ‡ Children Underground – Edet Belzberg LaLee's Kin: The Legacy of Cotton – Susan Froemke and Deborah Dickson Promises – Justine Shapiro and B.Z. Goldberg War Photographer – Christian Frei\", \"Best Directing Ron Howard – A Beautiful Mind ‡ Ridley Scott – Black Hawk Down Robert Altman – Gosford Park Peter Jackson – The Lord of the Rings: The Fellowship of the Ring David Lynch – Mulholland Drive\": \"Best Documentary (Short Subject) Thoth – Sarah Kernochan and Lynn Appelle ‡ Artists and Orphans: A True Drama – Lianne Klapper McNally Sing! – Freida Lee Mock and Jessica Sanders\"}, {\"Best Picture A Beautiful Mind – Brian Grazer and Ron Howard, producers ‡ Gosford Park – Robert Altman, Bob Balaban and David Levy, producers In the Bedroom – Graham Leader, Ross Katz and Todd Field, producers The Lord of the Rings: The Fellowship of the Ring – Peter Jackson, Fran Walsh and Barrie M. Osborne, producers Moulin Rouge! – Martin Brown, Baz Luhrmann and Fred Baron, producers\": \"Best Short Film (Live Action) The Accountant – Ray McKinnon and Lisa Blount ‡ Copy Shop – Virgil Widrich Gregor's Greatest Invention – Johannes Kiefer A Man Thing (Meska Sprawa) – Sławomir Fabicki and Bogumil Godfrejow Speed for Thespians – Kalman Apple and Shameela Bakhsh\", \"Best Directing Ron Howard – A Beautiful Mind ‡ Ridley Scott – Black Hawk Down Robert Altman – Gosford Park Peter Jackson – The Lord of the Rings: The Fellowship of the Ring David Lynch – Mulholland Drive\": \"Best Short Film (Animated) For the Birds – Ralph Eggleston ‡ Fifty Percent Grey – Ruairí Robinson and Seamus Byrne Give Up Yer Aul Sins – Cathal Gaffney and Darragh O'Connell Strange Invaders – Cordell Barker Stubble Trouble – Joseph E. Merideth\"}, {\"Best Picture A Beautiful Mind – Brian Grazer and Ron Howard, producers ‡ Gosford Park – Robert Altman, Bob Balaban and David Levy, producers In the Bedroom – Graham Leader, Ross Katz and Todd Field, producers The Lord of the Rings: The Fellowship of the Ring – Peter Jackson, Fran Walsh and Barrie M. Osborne, producers Moulin Rouge! – Martin Brown, Baz Luhrmann and Fred Baron, producers\": \"Best Music (Original Score) The Lord of the Rings: The Fellowship of the Ring — Howard Shore ‡ A.I. Artificial Intelligence — John Williams A Beautiful Mind — James Horner Harry Potter and the Sorcerer's Stone — John Williams Monsters, Inc. — Randy Newman\", \"Best Directing Ron Howard – A Beautiful Mind ‡ Ridley Scott – Black Hawk Down Robert Altman – Gosford Park Peter Jackson – The Lord of the Rings: The Fellowship of the Ring David Lynch – Mulholland Drive\": \"Best Music (Original Song) \\\" If I Didn't Have You \\\" from Monsters, Inc. – Music and Lyrics by Randy Newman ‡ \\\" May It Be \\\" from The Lord of the Rings: The Fellowship of the Ring – Music and Lyrics by Enya, Nicky Ryan, and Roma Ryan \\\" There You'll Be \\\" from Pearl Harbor – Music and Lyrics by Diane Warren \\\" Until... \\\" from Kate & Leopold – Music and Lyrics by Sting \\\" Vanilla Sky \\\" from Vanilla Sky – Music and Lyrics by Paul McCartney\"}, {\"Best Picture A Beautiful Mind – Brian Grazer and Ron Howard, producers ‡ Gosford Park – Robert Altman, Bob Balaban and David Levy, producers In the Bedroom – Graham Leader, Ross Katz and Todd Field, producers The Lord of the Rings: The Fellowship of the Ring – Peter Jackson, Fran Walsh and Barrie M. Osborne, producers Moulin Rouge! – Martin Brown, Baz Luhrmann and Fred Baron, producers\": \"Best Sound Black Hawk Down – Michael Minkler, Myron Nettinga and Chris Munro ‡ Amélie – Vincent Arnardi, Guillaume Leriche and Jean Umansky The Lord of the Rings: The Fellowship of the Ring – Christopher Boyes, Michael Semanick, Gethin Creagh and Hammond Peek Moulin Rouge! – Andy Nelson, Anna Behlmer, Roger Savage and Guntis Sics Pearl Harbor – Kevin O'Connell, Greg P. Russell, and Peter J. Devlin\", \"Best Directing Ron Howard – A Beautiful Mind ‡ Ridley Scott – Black Hawk Down Robert Altman – Gosford Park Peter Jackson – The Lord of the Rings: The Fellowship of the Ring David Lynch – Mulholland Drive\": \"Best Sound Editing Pearl Harbor – George Watters II and Christopher Boyes ‡ Monsters, Inc. – Gary Rydstrom and Michael Silvers\"}, {\"Best Picture A Beautiful Mind – Brian Grazer and Ron Howard, producers ‡ Gosford Park – Robert Altman, Bob Balaban and David Levy, producers In the Bedroom – Graham Leader, Ross Katz and Todd Field, producers The Lord of the Rings: The Fellowship of the Ring – Peter Jackson, Fran Walsh and Barrie M. Osborne, producers Moulin Rouge! – Martin Brown, Baz Luhrmann and Fred Baron, producers\": \"Best Art Direction Moulin Rouge! – Art Direction: Catherine Martin; Set Decoration: Brigitte Broch ‡ Amélie – Art Direction: Aline Bonetto; Set Decoration: Marie-Laure Valla Gosford Park – Art Direction: Stephen Altman; Set Decoration: Anna Pinnock Harry Potter and the Sorcerer's Stone – Art Direction: Stuart Craig; Set Decoration: Stephenie McMillan The Lord of the Rings: The Fellowship of the Ring – Art Direction: Grant Major; Set Decoration: Dan Hennah\", \"Best Directing Ron Howard – A Beautiful Mind ‡ Ridley Scott – Black Hawk Down Robert Altman – Gosford Park Peter Jackson – The Lord of the Rings: The Fellowship of the Ring David Lynch – Mulholland Drive\": \"Best Cinematography The Lord of the Rings: The Fellowship of the Ring – Andrew Lesnie ‡ Amélie – Bruno Delbonnel Black Hawk Down – Sławomir Idziak The Man Who Wasn't There – Roger Deakins Moulin Rouge! – Donald M. McAlpine\"}, {\"Best Picture A Beautiful Mind – Brian Grazer and Ron Howard, producers ‡ Gosford Park – Robert Altman, Bob Balaban and David Levy, producers In the Bedroom – Graham Leader, Ross Katz and Todd Field, producers The Lord of the Rings: The Fellowship of the Ring – Peter Jackson, Fran Walsh and Barrie M. Osborne, producers Moulin Rouge! – Martin Brown, Baz Luhrmann and Fred Baron, producers\": \"Best Makeup The Lord of the Rings: The Fellowship of the Ring – Peter Owen and Richard Taylor ‡ A Beautiful Mind – Greg Cannom and Colleen Callaghan Moulin Rouge! – Maurizio Silvi and Aldo Signoretti\", \"Best Directing Ron Howard – A Beautiful Mind ‡ Ridley Scott – Black Hawk Down Robert Altman – Gosford Park Peter Jackson – The Lord of the Rings: The Fellowship of the Ring David Lynch – Mulholland Drive\": \"Best Costume Design Moulin Rouge! – Catherine Martin and Angus Strathie ‡ The Affair of the Necklace – Milena Canonero Gosford Park – Jenny Beavan Harry Potter and the Sorcerer's Stone – Judianna Makovsky The Lord of the Rings: The Fellowship of the Ring – Ngila Dickson and Richard Taylor\"}, {\"Best Picture A Beautiful Mind – Brian Grazer and Ron Howard, producers ‡ Gosford Park – Robert Altman, Bob Balaban and David Levy, producers In the Bedroom – Graham Leader, Ross Katz and Todd Field, producers The Lord of the Rings: The Fellowship of the Ring – Peter Jackson, Fran Walsh and Barrie M. Osborne, producers Moulin Rouge! – Martin Brown, Baz Luhrmann and Fred Baron, producers\": \"Best Film Editing Black Hawk Down – Pietro Scalia ‡ A Beautiful Mind – Mike Hill and Dan Hanley The Lord of the Rings: The Fellowship of the Ring – John Gilbert Memento – Dody Dorn Moulin Rouge! – Jill Bilcock\", \"Best Directing Ron Howard – A Beautiful Mind ‡ Ridley Scott – Black Hawk Down Robert Altman – Gosford Park Peter Jackson – The Lord of the Rings: The Fellowship of the Ring David Lynch – Mulholland Drive\": \"Best Visual Effects The Lord of the Rings: The Fellowship of the Ring – Jim Rygiel, Randall William Cook, Richard Taylor and Mark Stetson ‡ A.I. Artificial Intelligence – Dennis Muren, Scott Farrar, Stan Winston and Michael Lantieri Pearl Harbor – Eric Brevig, John Frazier, Ed Hirsh and Ben Snow\"}]}",
+        "evidence_type": "table",
+        "title": "Table 1",
+        "section_path": [],
+        "retrieval_query": "Considering the complete winners-and-nominees lists for the 68th, 70th, and 74th Academy Awards, identify every person who was nominated at all three ceremonies. For each person, give at least one nominated work from each ceremony. Also determine whether each person won at any of those three ceremonies; if so, identify the ceremony, work, and award.",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_index": 1,
+          "n_rows": 11,
+          "needs_table_reader": true
+        }
+      },
+      {
+        "evidence_id": "74th_Academy_Awards.html#table-4",
+        "source_article": "74th_Academy_Awards.html",
+        "content": "Structured table (JSON rows) — read values directly from these rows; do not rely on prior knowledge.\n{\"caption\": null, \"columns\": [\"Name(s)\", \"Role\"], \"rows\": [{\"Name(s)\": \"Donald Sutherland Glenn Close\", \"Role\": \"Announcers for the 74th annual Academy Awards\"}, {\"Name(s)\": \"Tom Cruise\", \"Role\": \"Presenter of the Errol Morris montage on movie memories\"}, {\"Name(s)\": \"Benicio del Toro\", \"Role\": \"Presenter of the award for Best Supporting Actress\"}, {\"Name(s)\": \"Frank Pierson (AMPAS President)\", \"Role\": \"Giver of remarks welcoming guests to the awards ceremony\"}, {\"Name(s)\": \"Will Smith\", \"Role\": \"Presenter the award for Best Film Editing\"}, {\"Name(s)\": \"Ryan Phillippe Reese Witherspoon\", \"Role\": \"Presenters of the award for Best Makeup\"}, {\"Name(s)\": \"Whoopi Goldberg\", \"Role\": \"Presenter of the film In the Bedroom on the Best Picture segment\"}, {\"Name(s)\": \"Ben Stiller Owen Wilson\", \"Role\": \"Presenters of the award for Best Costume Design\"}, {\"Name(s)\": \"Woody Allen\", \"Role\": \"Presenter of the New York City films tribute montage directed by Nora Ephron\"}, {\"Name(s)\": \"Jodie Foster\", \"Role\": \"Presenter of the award for Best Cinematography\"}, {\"Name(s)\": \"Whoopi Goldberg\", \"Role\": \"Presenter of the film Gosford Park on the Best Picture segment\"}, {\"Name(s)\": \"Helen Hunt\", \"Role\": \"Presenter of the Documentary films tribute montage directed by Penelope Spheeris\"}, {\"Name(s)\": \"Samuel L. Jackson\", \"Role\": \"Presenter of the awards for Best Documentary Feature and Best Documentary Short Subject\"}, {\"Name(s)\": \"Cameron Diaz\", \"Role\": \"Presenter of the award for Best Art Direction\"}, {\"Name(s)\": \"Charlize Theron (pre-recorded footage)\", \"Role\": \"Presenter of the award for Academy Scientific and Technical Award and the Gordon E. Sawyer Award\"}, {\"Name(s)\": \"Nathan Lane\", \"Role\": \"Presenter of the award for Best Animated Feature Film\"}, {\"Name(s)\": \"Halle Berry\", \"Role\": \"Presenter of the award for Best Sound and Best Sound Editing\"}, {\"Name(s)\": \"Marcia Gay Harden\", \"Role\": \"Presenter of the award for Best Supporting Actor\"}, {\"Name(s)\": \"Whoopi Goldberg\", \"Role\": \"Presenter of the film The Lord of the Rings: The Fellowship of the Ring on the Best Picture segment\"}, {\"Name(s)\": \"Ian McKellen Maggie Smith\", \"Role\": \"Introducers of the performance by Cirque du Soleil\"}, {\"Name(s)\": \"Kirsten Dunst Tobey Maguire\", \"Role\": \"Presenters of the award for Best Visual Effects\"}, {\"Name(s)\": \"Ali MacGraw Ryan O'Neal\", \"Role\": \"Presenters of the Jean Hersholt Humanitarian Award to Arthur Hiller\"}, {\"Name(s)\": \"Ben Kingsley\", \"Role\": \"Presenter of the tribute to musical scores in films conducted by John Williams\"}, {\"Name(s)\": \"Sandra Bullock Hugh Grant\", \"Role\": \"Presenters of the award for Best Original Score\"}, {\"Name(s)\": \"Walter Mirisch Denzel Washington\", \"Role\": \"Presenters of the Academy Honorary Award to Sidney Poitier\"}, {\"Name(s)\": \"Hugh Jackman Naomi Watts\", \"Role\": \"Presenters of the award for Best Live Action Short Film and Best Animated Short Film\"}, {\"Name(s)\": \"Josh Hartnett\", \"Role\": \"Introducer of the performances of the Best Original Song nominees\"}, {\"Name(s)\": \"Jennifer Lopez\", \"Role\": \"Presenter of the award for Best Original Song\"}, {\"Name(s)\": \"Ethan Hawke Gwyneth Paltrow\", \"Role\": \"Presenters of the award for Best Screenplay Based on Material Previously Produced or Published/Adapted Screenplay and Best Screenplay Written Directly for the Screen/Original Screenplay\"}, {\"Name(s)\": \"Sharon Stone John Travolta\", \"Role\": \"Presenters of the award for Best Foreign Language Film\"}, {\"Name(s)\": \"Kevin Spacey\", \"Role\": \"Presenter of the In Memoriam Tribute\"}, {\"Name(s)\": \"Whoopi Goldberg\", \"Role\": \"Presenter of the film Moulin Rouge! on the Best Picture segment\"}, {\"Name(s)\": \"Barbra Streisand\", \"Role\": \"Presenter of the Academy Honorary Award to Robert Redford\"}, {\"Name(s)\": \"Russell Crowe\", \"Role\": \"Presenter of the award for Best Actress\"}, {\"Name(s)\": \"Whoopi Goldberg\", \"Role\": \"Presenter of the film A Beautiful Mind on the Best Picture segment\"}, {\"Name(s)\": \"Julia Roberts\", \"Role\": \"Presenter of the award for Best Actor\"}, {\"Name(s)\": \"Mel Gibson\", \"Role\": \"Presenter of the award for Best Director\"}, {\"Name(s)\": \"Tom Hanks\", \"Role\": \"Presenter of the award for Best Picture\"}]}",
+        "evidence_type": "table",
+        "title": "Table 4",
+        "section_path": [],
+        "retrieval_query": "Considering the complete winners-and-nominees lists for the 68th, 70th, and 74th Academy Awards, identify every person who was nominated at all three ceremonies. For each person, give at least one nominated work from each ceremony. Also determine whether each person won at any of those three ceremonies; if so, identify the ceremony, work, and award.",
+        "retriever": "table",
+        "rank": 4,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_index": 4,
+          "n_rows": 38,
+          "needs_table_reader": true
+        }
+      },
+      {
+        "evidence_id": "74th_Academy_Awards.html#table-5",
+        "source_article": "74th_Academy_Awards.html",
+        "content": "Structured table (JSON rows) — read values directly from these rows; do not rely on prior knowledge.\n{\"caption\": null, \"columns\": [\"Name(s)\", \"Role\", \"Performed\"], \"rows\": [{\"Name(s)\": \"John Williams\", \"Role\": \"Musical arranger and conductor\", \"Performed\": \"Orchestral medley of themes from various film scores.\"}, {\"Name(s)\": \"Cirque du Soleil\", \"Role\": \"Performers\", \"Performed\": \"Special performance in a tribute to movie visual effects\"}, {\"Name(s)\": \"Sting\", \"Role\": \"Performer\", \"Performed\": \"\\\" Until \\\" from Kate & Leopold\"}, {\"Name(s)\": \"Enya\", \"Role\": \"Performer\", \"Performed\": \"\\\" May it Be \\\" from The Lord of the Rings: The Fellowship of the Ring\"}, {\"Name(s)\": \"John Goodman Randy Newman\", \"Role\": \"Performers\", \"Performed\": \"\\\" If I Didn't Have You \\\" from Monsters, Inc.\"}, {\"Name(s)\": \"Faith Hill\", \"Role\": \"Performer\", \"Performed\": \"\\\" There You'll Be \\\" from Pearl Harbor\"}, {\"Name(s)\": \"Paul McCartney\", \"Role\": \"Performer\", \"Performed\": \"\\\" Vanilla Sky \\\" from Vanilla Sky\"}]}",
+        "evidence_type": "table",
+        "title": "Table 5",
+        "section_path": [],
+        "retrieval_query": "Considering the complete winners-and-nominees lists for the 68th, 70th, and 74th Academy Awards, identify every person who was nominated at all three ceremonies. For each person, give at least one nominated work from each ceremony. Also determine whether each person won at any of those three ceremonies; if so, identify the ceremony, work, and award.",
+        "retriever": "table",
+        "rank": 5,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_index": 5,
+          "n_rows": 7,
+          "needs_table_reader": true
+        }
+      },
+      {
+        "evidence_id": "68th_Academy_Awards.html#table-1",
+        "source_article": "68th_Academy_Awards.html",
+        "content": "Structured table (JSON rows) — read values directly from these rows; do not rely on prior knowledge.\n{\"caption\": null, \"columns\": [\"Best Picture Braveheart – Mel Gibson, Bruce Davey and Alan Ladd Jr., producers Apollo 13 – Brian Grazer, producer Babe – George Miller, Doug Mitchell and Bill Miller, producers Il Postino: The Postman – Mario Cecchi Gori ( posthumous nomination ), Vittorio Cecchi Gori and Gaetano Daniele, producers Sense and Sensibility – Lindsay Doran, producer\", \"Best Directing Mel Gibson – Braveheart Chris Noonan – Babe Tim Robbins – Dead Man Walking Mike Figgis – Leaving Las Vegas Michael Radford – Il Postino: The Postman\"], \"rows\": [{\"Best Picture Braveheart – Mel Gibson, Bruce Davey and Alan Ladd Jr., producers Apollo 13 – Brian Grazer, producer Babe – George Miller, Doug Mitchell and Bill Miller, producers Il Postino: The Postman – Mario Cecchi Gori ( posthumous nomination ), Vittorio Cecchi Gori and Gaetano Daniele, producers Sense and Sensibility – Lindsay Doran, producer\": \"Best Actor in a Leading Role Nicolas Cage – Leaving Las Vegas as Ben Sanderson Richard Dreyfuss – Mr. Holland's Opus as Glenn Holland Anthony Hopkins – Nixon as Richard Nixon Sean Penn – Dead Man Walking as Matthew Poncelet Massimo Troisi ( posthumous nomination ) – Il Postino: The Postman as Mario Ruoppolo\", \"Best Directing Mel Gibson – Braveheart Chris Noonan – Babe Tim Robbins – Dead Man Walking Mike Figgis – Leaving Las Vegas Michael Radford – Il Postino: The Postman\": \"Best Actress in a Leading Role Susan Sarandon – Dead Man Walking as Helen Prejean Elisabeth Shue – Leaving Las Vegas as Sera Sharon Stone – Casino as Ginger McKenna Meryl Streep – The Bridges of Madison County as Francesca Johnson Emma Thompson – Sense and Sensibility as Elinor Dashwood\"}, {\"Best Picture Braveheart – Mel Gibson, Bruce Davey and Alan Ladd Jr., producers Apollo 13 – Brian Grazer, producer Babe – George Miller, Doug Mitchell and Bill Miller, producers Il Postino: The Postman – Mario Cecchi Gori ( posthumous nomination ), Vittorio Cecchi Gori and Gaetano Daniele, producers Sense and Sensibility – Lindsay Doran, producer\": \"Best Actor in a Supporting Role Kevin Spacey – The Usual Suspects as Roger \\\"Verbal\\\" Kint / Keyser Söze James Cromwell – Babe as Farmer Arthur Hoggett Ed Harris – Apollo 13 as Gene Kranz Brad Pitt – 12 Monkeys as Jeffrey Goines Tim Roth – Rob Roy as Archibald Cunningham\", \"Best Directing Mel Gibson – Braveheart Chris Noonan – Babe Tim Robbins – Dead Man Walking Mike Figgis – Leaving Las Vegas Michael Radford – Il Postino: The Postman\": \"Best Actress in a Supporting Role Mira Sorvino – Mighty Aphrodite as Linda Ash Joan Allen – Nixon as Pat Nixon Kathleen Quinlan – Apollo 13 as Marilyn Gerlach Lovell Mare Winningham – Georgia as Georgia Flood Kate Winslet – Sense and Sensibility as Marianne Dashwood\"}, {\"Best Picture Braveheart – Mel Gibson, Bruce Davey and Alan Ladd Jr., producers Apollo 13 – Brian Grazer, producer Babe – George Miller, Doug Mitchell and Bill Miller, producers Il Postino: The Postman – Mario Cecchi Gori ( posthumous nomination ), Vittorio Cecchi Gori and Gaetano Daniele, producers Sense and Sensibility – Lindsay Doran, producer\": \"Best Writing (Screenplay Written Directly for the Screen) The Usual Suspects – Christopher McQuarrie Braveheart – Randall Wallace Mighty Aphrodite – Woody Allen Nixon – Oliver Stone, Christopher Wilkinson and Stephen J. Rivele Toy Story – Joss Whedon, Andrew Stanton, Joel Cohen, Alec Sokolow, John Lasseter, Pete Docter and Joe Ranft\", \"Best Directing Mel Gibson – Braveheart Chris Noonan – Babe Tim Robbins – Dead Man Walking Mike Figgis – Leaving Las Vegas Michael Radford – Il Postino: The Postman\": \"Best Writing (Screenplay Based on Material Previously Produced or Published) Sense and Sensibility – Emma Thompson adapted from the novel by Jane Austen Apollo 13 – Al Reinert and William Broyles Jr. based on the book Lost Moon by Jim Lovell and Jeffrey Kluger Babe – George Miller and Chris Noonan based on the book The Sheep-Pig by Dick King-Smith Leaving Las Vegas – Mike Figgis based on the novel by John O'Brien Il Postino: The Postman – Michael Radford, Anna Pavignano, Furio Scarpelli, Giacomo Scarpelli and Massimo Troisi ( posthumous nomination ) based on the novel Ardiente paciencia by Antonio Skármeta\"}, {\"Best Picture Braveheart – Mel Gibson, Bruce Davey and Alan Ladd Jr., producers Apollo 13 – Brian Grazer, producer Babe – George Miller, Doug Mitchell and Bill Miller, producers Il Postino: The Postman – Mario Cecchi Gori ( posthumous nomination ), Vittorio Cecchi Gori and Gaetano Daniele, producers Sense and Sensibility – Lindsay Doran, producer\": \"Best Foreign Language Film Antonia's Line ( The Netherlands ) in Dutch – Marleen Gorris, director All Things Fair ( Sweden ) in Swedish – Bo Widerberg, director Dust of Life ( Algeria ) in French – Rachid Bouchareb, director O Quatrilho ( Brazil ) in Portuguese and Italian – Fábio Barreto, director The Star Maker ( Italy ) in Italian – Giuseppe Tornatore, director\", \"Best Directing Mel Gibson – Braveheart Chris Noonan – Babe Tim Robbins – Dead Man Walking Mike Figgis – Leaving Las Vegas Michael Radford – Il Postino: The Postman\": \"Best Documentary (Feature) Anne Frank Remembered – Jon Blair The Battle Over Citizen Kane – Thomas Lennon and Michael Epstein Fiddlefest—Roberta Tzavaras and Her East Harlem Violin Program – Allan Miller and Walter Scheuer Hank Aaron: Chasing the Dream – Mike Tollin and Fredric Golding Troublesome Creek: A Midwestern – Jeanne Jordan and Steven Ascher\"}, {\"Best Picture Braveheart – Mel Gibson, Bruce Davey and Alan Ladd Jr., producers Apollo 13 – Brian Grazer, producer Babe – George Miller, Doug Mitchell and Bill Miller, producers Il Postino: The Postman – Mario Cecchi Gori ( posthumous nomination ), Vittorio Cecchi Gori and Gaetano Daniele, producers Sense and Sensibility – Lindsay Doran, producer\": \"Best Documentary (Short Subject) One Survivor Remembers – Kary Antholis Jim Dine: A Self-Portrait on the Walls – Nancy Dine and Richard Stilwell The Living Sea – Greg MacGillivray and Alec Lorimore Never Give Up: The 20th Century Odyssey of Herbert Zipper – Terry Sanders and Freida Lee Mock The Shadow of Hate – Charles Guggenheim\", \"Best Directing Mel Gibson – Braveheart Chris Noonan – Babe Tim Robbins – Dead Man Walking Mike Figgis – Leaving Las Vegas Michael Radford – Il Postino: The Postman\": \"Best Short Film (Live Action) Lieberman in Love – Christine Lahti and Jana Sue Memel Brooms – Luke Cresswell and Steve McNicholas Duke of Groove – Griffin Dunne and Thom Colwell Little Surprises – Jeff Goldblum and Tikki Goldberg Tuesday Morning Ride – Dianne Houston and Joy Ryan\"}, {\"Best Picture Braveheart – Mel Gibson, Bruce Davey and Alan Ladd Jr., producers Apollo 13 – Brian Grazer, producer Babe – George Miller, Doug Mitchell and Bill Miller, producers Il Postino: The Postman – Mario Cecchi Gori ( posthumous nomination ), Vittorio Cecchi Gori and Gaetano Daniele, producers Sense and Sensibility – Lindsay Doran, producer\": \"Best Short Film (Animated) A Close Shave – Nick Park The Chicken from Outer Space – John R. Dilworth The End – Chris Landreth and Robin Barger Gagarin – Alexiy Kharitidi Runaway Brain – Chris Bailey\", \"Best Directing Mel Gibson – Braveheart Chris Noonan – Babe Tim Robbins – Dead Man Walking Mike Figgis – Leaving Las Vegas Michael Radford – Il Postino: The Postman\": \"Best Music (Original Dramatic Score) Il Postino: The Postman – Luis Bacalov Apollo 13 – James Horner Braveheart – James Horner Nixon – John Williams Sense and Sensibility – Patrick Doyle\"}, {\"Best Picture Braveheart – Mel Gibson, Bruce Davey and Alan Ladd Jr., producers Apollo 13 – Brian Grazer, producer Babe – George Miller, Doug Mitchell and Bill Miller, producers Il Postino: The Postman – Mario Cecchi Gori ( posthumous nomination ), Vittorio Cecchi Gori and Gaetano Daniele, producers Sense and Sensibility – Lindsay Doran, producer\": \"Best Music (Original Musical or Comedy Score) Pocahontas – Music by Alan Menken; lyrics by Stephen Schwartz; orchestral score by Alan Menken The American President – Marc Shaiman Sabrina – John Williams Toy Story – Randy Newman Unstrung Heroes – Thomas Newman\", \"Best Directing Mel Gibson – Braveheart Chris Noonan – Babe Tim Robbins – Dead Man Walking Mike Figgis – Leaving Las Vegas Michael Radford – Il Postino: The Postman\": \"Best Music (Original Song) \\\" Colors of the Wind \\\" from Pocahontas – Music by Alan Menken; lyrics by Stephen Schwartz \\\"Dead Man Walkin'\\\" from Dead Man Walking – Music and lyrics by Bruce Springsteen \\\" Have You Ever Really Loved a Woman \\\" from Don Juan DeMarco – Music and lyrics by Michael Kamen, Bryan Adams and Robert John Lange \\\"Moonlight\\\" from Sabrina – Music by John Williams; lyrics by Alan and Marilyn Bergman \\\" You've Got a Friend in Me \\\" from Toy Story – Music and lyrics by Randy Newman\"}, {\"Best Picture Braveheart – Mel Gibson, Bruce Davey and Alan Ladd Jr., producers Apollo 13 – Brian Grazer, producer Babe – George Miller, Doug Mitchell and Bill Miller, producers Il Postino: The Postman – Mario Cecchi Gori ( posthumous nomination ), Vittorio Cecchi Gori and Gaetano Daniele, producers Sense and Sensibility – Lindsay Doran, producer\": \"Best Sound Apollo 13 – Rick Dior, Steve Pederson, Scott Millan and David MacMillan Batman Forever – Donald O. Mitchell, Frank A. Montaño, Michael Herbick and Petur Hliddal Braveheart – Andy Nelson, Scott Millan, Anna Behlmer and Brian Simmons Crimson Tide – Kevin O'Connell, Rick Kline, Gregory H. Watkins and William B. Kaplan Waterworld – Steve Maslow, Gregg Landaker and Keith A. Wester\", \"Best Directing Mel Gibson – Braveheart Chris Noonan – Babe Tim Robbins – Dead Man Walking Mike Figgis – Leaving Las Vegas Michael Radford – Il Postino: The Postman\": \"Best Sound Effects Editing Braveheart – Lon Bender and Per Hallberg Batman Forever – John Leveque and Bruce Stambler Crimson Tide – George Watters II\"}, {\"Best Picture Braveheart – Mel Gibson, Bruce Davey and Alan Ladd Jr., producers Apollo 13 – Brian Grazer, producer Babe – George Miller, Doug Mitchell and Bill Miller, producers Il Postino: The Postman – Mario Cecchi Gori ( posthumous nomination ), Vittorio Cecchi Gori and Gaetano Daniele, producers Sense and Sensibility – Lindsay Doran, producer\": \"Best Art Direction Restoration – Art Direction and Set Decoration: Eugenio Zanetti Apollo 13 – Art Direction: Michael Corenblith; Set Decoration: Merideth Boswell Babe – Art Direction: Roger Ford; Set Decoration: Kerrie Brown A Little Princess – Art Direction: Bo Welch; Set Decoration: Cheryl Carasik Richard III – Art Direction and Set Decoration: Tony Burrough\", \"Best Directing Mel Gibson – Braveheart Chris Noonan – Babe Tim Robbins – Dead Man Walking Mike Figgis – Leaving Las Vegas Michael Radford – Il Postino: The Postman\": \"Best Cinematography Braveheart – John Toll Batman Forever – Stephen Goldblatt A Little Princess – Emmanuel Lubezki Sense and Sensibility – Michael Coulter Shanghai Triad – Lü Yue\"}, {\"Best Picture Braveheart – Mel Gibson, Bruce Davey and Alan Ladd Jr., producers Apollo 13 – Brian Grazer, producer Babe – George Miller, Doug Mitchell and Bill Miller, producers Il Postino: The Postman – Mario Cecchi Gori ( posthumous nomination ), Vittorio Cecchi Gori and Gaetano Daniele, producers Sense and Sensibility – Lindsay Doran, producer\": \"Best Makeup Braveheart – Peter Frampton, Paul Pattison and Lois Burwell My Family, Mi Familia – Ken Diaz and Mark Sanchez Roommates – Greg Cannom, Bob Laden and Colleen Callaghan\", \"Best Directing Mel Gibson – Braveheart Chris Noonan – Babe Tim Robbins – Dead Man Walking Mike Figgis – Leaving Las Vegas Michael Radford – Il Postino: The Postman\": \"Best Costume Design Restoration – James Acheson 12 Monkeys – Julie Weiss Braveheart – Charles Knode Richard III – Shuna Harwood Sense and Sensibility – Jenny Beavan and John Bright\"}, {\"Best Picture Braveheart – Mel Gibson, Bruce Davey and Alan Ladd Jr., producers Apollo 13 – Brian Grazer, producer Babe – George Miller, Doug Mitchell and Bill Miller, producers Il Postino: The Postman – Mario Cecchi Gori ( posthumous nomination ), Vittorio Cecchi Gori and Gaetano Daniele, producers Sense and Sensibility – Lindsay Doran, producer\": \"Best Film Editing Apollo 13 – Mike Hill and Daniel P. Hanley Babe – Marcus D'Arcy and Jay Friedkin Braveheart – Steven Rosenblum Crimson Tide – Chris Lebenzon Seven – Richard Francis-Bruce\", \"Best Directing Mel Gibson – Braveheart Chris Noonan – Babe Tim Robbins – Dead Man Walking Mike Figgis – Leaving Las Vegas Michael Radford – Il Postino: The Postman\": \"Best Visual Effects Babe – Scott E. Anderson, Charles Gibson, Neal Scanlan and John Cox Apollo 13 – Robert Legato, Michael Kanfer, Leslie Ekker and Matt Sweeney\"}]}",
+        "evidence_type": "table",
+        "title": "Table 1",
+        "section_path": [],
+        "retrieval_query": "Considering the complete winners-and-nominees lists for the 68th, 70th, and 74th Academy Awards, identify every person who was nominated at all three ceremonies. For each person, give at least one nominated work from each ceremony. Also determine whether each person won at any of those three ceremonies; if so, identify the ceremony, work, and award.",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_index": 1,
+          "n_rows": 11,
+          "needs_table_reader": true
+        }
+      },
+      {
+        "evidence_id": "68th_Academy_Awards.html#table-4",
+        "source_article": "68th_Academy_Awards.html",
+        "content": "Structured table (JSON rows) — read values directly from these rows; do not rely on prior knowledge.\n{\"caption\": null, \"columns\": [\"Name(s)\", \"Role\"], \"rows\": [{\"Name(s)\": \"Les Marshak\", \"Role\": \"Announcer for the 68th annual Academy Awards\"}, {\"Name(s)\": \"Pierce Brosnan Naomi Campbell Claudia Schiffer\", \"Role\": \"Presenters of the award for Best Costume Design\"}, {\"Name(s)\": \"Dianne Wiest\", \"Role\": \"Presenter of the award for Best Supporting Actor\"}, {\"Name(s)\": \"John Travolta\", \"Role\": \"Presenter of the film Apollo 13 on the Best Picture segment\"}, {\"Name(s)\": \"Alicia Silverstone\", \"Role\": \"Presenter of the award for Best Makeup\"}, {\"Name(s)\": \"Emma Thompson\", \"Role\": \"Presenter of the award for Best Art Direction\"}, {\"Name(s)\": \"Chris O'Donnell\", \"Role\": \"Introducer of the performance of Best Original Song nominee \\\"Moonlight\\\"\"}, {\"Name(s)\": \"Robin Williams\", \"Role\": \"Presenter of the Honorary Award to Chuck Jones and the Special Achievement Award to John Lasseter who comes onto the stage with a Sheriff Woody doll and a Buzz Lightyear action figure. As they come to life, Tom Hanks and Tim Allen reprise their respective voice roles.\"}, {\"Name(s)\": \"Kareem Abdul-Jabbar Jackie Chan\", \"Role\": \"Presenters of the awards for Best Live Action Short Film and Best Animated Short Film\"}, {\"Name(s)\": \"Sandra Bullock\", \"Role\": \"Presenter of the award Best Sound Effects Editing\"}, {\"Name(s)\": \"Steven Seagal\", \"Role\": \"Presenter of the award Best Sound\"}, {\"Name(s)\": \"Jeremy Irons\", \"Role\": \"Presenter of the film Braveheart on the Best Picture segment\"}, {\"Name(s)\": \"Martin Landau\", \"Role\": \"Presenter of the award for Best Supporting Actress\"}, {\"Name(s)\": \"Jim Carrey\", \"Role\": \"Presenter of the award for Best Cinematography\"}, {\"Name(s)\": \"Goldie Hawn Kurt Russell\", \"Role\": \"Presenters of the award for Best Film Editing\"}, {\"Name(s)\": \"Richard Dreyfuss\", \"Role\": \"Presenter of the segment of the Academy Awards for Technical Achievement and the Gordon E. Sawyer Award\"}, {\"Name(s)\": \"Winona Ryder\", \"Role\": \"Introducer of the performance of Best Original Song nominee \\\"Dead Man Walking\\\"\"}, {\"Name(s)\": \"Will Smith\", \"Role\": \"Presenter of the award for Best Visual Effects\"}, {\"Name(s)\": \"Anjelica Huston\", \"Role\": \"Presenter of the film Sense and Sensibility on the Best Picture segment\"}, {\"Name(s)\": \"Nicolas Cage Elisabeth Shue\", \"Role\": \"Presenters of the awards for Best Documentary Short Subject and Best Documentary Feature\"}, {\"Name(s)\": \"Nathan Lane\", \"Role\": \"Introducer of the performance of Best Original Song nominee \\\" Colors of the Wind \\\"\"}, {\"Name(s)\": \"Mel Gibson\", \"Role\": \"Presenter of the award Best Foreign Language Film\"}, {\"Name(s)\": \"Steven Spielberg\", \"Role\": \"Presenter of the Honorary Award to Kirk Douglas\"}, {\"Name(s)\": \"Quincy Jones Sharon Stone\", \"Role\": \"Presenters of the awards for Best Original Musical or Comedy Score and Best Original Dramatic Score\"}, {\"Name(s)\": \"Liam Neeson\", \"Role\": \"Presenter of the film Il Postino: The Postman on the Best Picture segment\"}, {\"Name(s)\": \"Arthur Hiller (AMPAS President)\", \"Role\": \"Presenter of the \\\" In Memoriam \\\" tribute\"}, {\"Name(s)\": \"Jimmy Smits\", \"Role\": \"Introducer of the performance of Best Original Song nominee \\\" Have You Ever Really Loved a Woman? \\\"\"}, {\"Name(s)\": \"Susan Sarandon\", \"Role\": \"Presenter of the award for Best Screenplay Written Directly for the Screen\"}, {\"Name(s)\": \"Anthony Hopkins\", \"Role\": \"Presenter of the award for Best Screenplay Based on Material Previously Produced or Published\"}, {\"Name(s)\": \"Christopher Reeve\", \"Role\": \"Presenter of the montage on films that address social issues\"}, {\"Name(s)\": \"Angela Bassett Laurence Fishburne\", \"Role\": \"Presenters of the award for Best Original Song\"}, {\"Name(s)\": \"Nicole Kidman\", \"Role\": \"Presenter of the film Babe on the Best Picture segment\"}, {\"Name(s)\": \"Robert Zemeckis\", \"Role\": \"Presenter of the award Best Director\"}, {\"Name(s)\": \"Tom Hanks\", \"Role\": \"Presenter of the award for Best Actress\"}, {\"Name(s)\": \"Jessica Lange\", \"Role\": \"Presenter of the award for Best Actor\"}, {\"Name(s)\": \"Sidney Poitier\", \"Role\": \"Presenter of the award for Best Picture\"}]}",
+        "evidence_type": "table",
+        "title": "Table 4",
+        "section_path": [],
+        "retrieval_query": "Considering the complete winners-and-nominees lists for the 68th, 70th, and 74th Academy Awards, identify every person who was nominated at all three ceremonies. For each person, give at least one nominated work from each ceremony. Also determine whether each person won at any of those three ceremonies; if so, identify the ceremony, work, and award.",
+        "retriever": "table",
+        "rank": 4,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_index": 4,
+          "n_rows": 36,
+          "needs_table_reader": true
+        }
+      },
+      {
+        "evidence_id": "68th_Academy_Awards.html#table-5",
+        "source_article": "68th_Academy_Awards.html",
+        "content": "Structured table (JSON rows) — read values directly from these rows; do not rely on prior knowledge.\n{\"caption\": null, \"columns\": [\"Name(s)\", \"Role\", \"Performed\"], \"rows\": [{\"Name(s)\": \"Tom Scott\", \"Role\": \"Musical arranger\", \"Performed\": \"Orchestral\"}, {\"Name(s)\": \"Gloria Estefan\", \"Role\": \"Performer\", \"Performed\": \"\\\"Moonlight\\\" from Sabrina\"}, {\"Name(s)\": \"Lyle Lovett Randy Newman\", \"Role\": \"Performers\", \"Performed\": \"\\\" You've Got a Friend in Me \\\" from Toy Story\"}, {\"Name(s)\": \"Stomp\", \"Role\": \"Performers\", \"Performed\": \"Best Sound Effects Editing montage\"}, {\"Name(s)\": \"Bruce Springsteen\", \"Role\": \"Performer\", \"Performed\": \"\\\" Dead Man Walkin' \\\" from Dead Man Walking\"}, {\"Name(s)\": \"Savion Glover\", \"Role\": \"Performer\", \"Performed\": \"\\\" Singin' in the Rain \\\" tap-dance tribute to Gene Kelly\"}, {\"Name(s)\": \"Vanessa Williams\", \"Role\": \"Performer\", \"Performed\": \"\\\" Colors of the Wind \\\" from Pocahontas\"}, {\"Name(s)\": \"Bryan Adams\", \"Role\": \"Performer\", \"Performed\": \"\\\" Have You Ever Really Loved a Woman? \\\" from Don Juan DeMarco\"}, {\"Name(s)\": \"Take 6\", \"Role\": \"Performers\", \"Performed\": \"Best Original Song medley\"}]}",
+        "evidence_type": "table",
+        "title": "Table 5",
+        "section_path": [],
+        "retrieval_query": "Considering the complete winners-and-nominees lists for the 68th, 70th, and 74th Academy Awards, identify every person who was nominated at all three ceremonies. For each person, give at least one nominated work from each ceremony. Also determine whether each person won at any of those three ceremonies; if so, identify the ceremony, work, and award.",
+        "retriever": "table",
+        "rank": 5,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_index": 5,
+          "n_rows": 9,
+          "needs_table_reader": true
+        }
+      },
+      {
+        "evidence_id": "70th_Academy_Awards.html#table-1",
+        "source_article": "70th_Academy_Awards.html",
+        "content": "Structured table (JSON rows) — read values directly from these rows; do not rely on prior knowledge.\n{\"caption\": null, \"columns\": [\"Best Picture Titanic – James Cameron and Jon Landau, producers ‡ As Good as It Gets – James L. Brooks, Bridget Johnson and Kristi Zea, producers The Full Monty – Uberto Pasolini, producer Good Will Hunting – Lawrence Bender, producer L.A. Confidential – Arnon Milchan, Curtis Hanson and Michael Nathanson, producers\", \"Best Directing James Cameron – Titanic ‡ Peter Cattaneo – The Full Monty Gus Van Sant – Good Will Hunting Curtis Hanson – L.A. Confidential Atom Egoyan – The Sweet Hereafter\"], \"rows\": [{\"Best Picture Titanic – James Cameron and Jon Landau, producers ‡ As Good as It Gets – James L. Brooks, Bridget Johnson and Kristi Zea, producers The Full Monty – Uberto Pasolini, producer Good Will Hunting – Lawrence Bender, producer L.A. Confidential – Arnon Milchan, Curtis Hanson and Michael Nathanson, producers\": \"Best Actor in a Leading Role Jack Nicholson – As Good as It Gets as Melvin Udall ‡ Matt Damon – Good Will Hunting as Will Hunting Robert Duvall – The Apostle as Euliss \\\"Sonny\\\" Dewey, a.k.a. \\\"The Apostle E.F.\\\" Peter Fonda – Ulee's Gold as Ulysses \\\"Ulee\\\" Jackson Dustin Hoffman – Wag the Dog as Stanley Motss\", \"Best Directing James Cameron – Titanic ‡ Peter Cattaneo – The Full Monty Gus Van Sant – Good Will Hunting Curtis Hanson – L.A. Confidential Atom Egoyan – The Sweet Hereafter\": \"Best Actress in a Leading Role Helen Hunt – As Good as It Gets as Carol Connelly ‡ Helena Bonham Carter – The Wings of the Dove as Kate Croy Julie Christie – Afterglow as Phyllis Mann Judi Dench – Mrs Brown as Queen Victoria Kate Winslet – Titanic as Rose DeWitt Bukater\"}, {\"Best Picture Titanic – James Cameron and Jon Landau, producers ‡ As Good as It Gets – James L. Brooks, Bridget Johnson and Kristi Zea, producers The Full Monty – Uberto Pasolini, producer Good Will Hunting – Lawrence Bender, producer L.A. Confidential – Arnon Milchan, Curtis Hanson and Michael Nathanson, producers\": \"Best Actor in a Supporting Role Robin Williams – Good Will Hunting as Dr. Sean Maguire ‡ Robert Forster – Jackie Brown as Max Cherry Anthony Hopkins – Amistad as John Quincy Adams Greg Kinnear – As Good as It Gets as Simon Bishop Burt Reynolds – Boogie Nights as Jack Horner\", \"Best Directing James Cameron – Titanic ‡ Peter Cattaneo – The Full Monty Gus Van Sant – Good Will Hunting Curtis Hanson – L.A. Confidential Atom Egoyan – The Sweet Hereafter\": \"Best Actress in a Supporting Role Kim Basinger – L.A. Confidential as Lynn Bracken ‡ Joan Cusack – In & Out as Emily Montgomery Minnie Driver – Good Will Hunting as Skylar Julianne Moore – Boogie Nights as Amber Waves/Maggie Gloria Stuart – Titanic as Rose Dawson Calvert\"}, {\"Best Picture Titanic – James Cameron and Jon Landau, producers ‡ As Good as It Gets – James L. Brooks, Bridget Johnson and Kristi Zea, producers The Full Monty – Uberto Pasolini, producer Good Will Hunting – Lawrence Bender, producer L.A. Confidential – Arnon Milchan, Curtis Hanson and Michael Nathanson, producers\": \"Best Writing (Screenplay Written Directly for the Screen) Good Will Hunting – Matt Damon and Ben Affleck ‡ As Good as It Gets – Mark Andrus and James L. Brooks Boogie Nights – Paul Thomas Anderson Deconstructing Harry – Woody Allen The Full Monty – Simon Beaufoy\", \"Best Directing James Cameron – Titanic ‡ Peter Cattaneo – The Full Monty Gus Van Sant – Good Will Hunting Curtis Hanson – L.A. Confidential Atom Egoyan – The Sweet Hereafter\": \"Best Writing (Screenplay Based on Material Previously Produced or Published) L.A. Confidential – Brian Helgeland and Curtis Hanson; from the novel by James Ellroy ‡ Donnie Brasco – Paul Attanasio; based on the book Donnie Brasco: My Undercover Life in the Mafia by Joseph D. Pistone with Richard Woodley The Sweet Hereafter – Atom Egoyan; adapted from the novel by Russell Banks Wag the Dog – David Mamet and Hilary Henkin; from the novel American Hero by Larry Beinhart The Wings of the Dove – Hossein Amini; adapted from the novel by Henry James\"}, {\"Best Picture Titanic – James Cameron and Jon Landau, producers ‡ As Good as It Gets – James L. Brooks, Bridget Johnson and Kristi Zea, producers The Full Monty – Uberto Pasolini, producer Good Will Hunting – Lawrence Bender, producer L.A. Confidential – Arnon Milchan, Curtis Hanson and Michael Nathanson, producers\": \"Best Foreign Language Film Character ( Netherlands ) in Dutch – Mike van Diem ‡ Beyond Silence ( Germany ) in German – Caroline Link Four Days in September ( Brazil ) in Portuguese – Bruno Barreto Secrets of the Heart ( Spain ) in Spanish – Montxo Armendáriz The Thief ( Russia ) in Russian – Pavel Chukhray\", \"Best Directing James Cameron – Titanic ‡ Peter Cattaneo – The Full Monty Gus Van Sant – Good Will Hunting Curtis Hanson – L.A. Confidential Atom Egoyan – The Sweet Hereafter\": \"Best Documentary (Feature) The Long Way Home – Rabbi Marvin Hier and Richard Trank ‡ 4 Little Girls – Spike Lee and Sam Pollard Ayn Rand: A Sense of Life – Michael Paxton Colors Straight Up – Michèle Ohayon and Julia Schachter Waco: The Rules of Engagement – Dan Gifford and William Gazecki\"}, {\"Best Picture Titanic – James Cameron and Jon Landau, producers ‡ As Good as It Gets – James L. Brooks, Bridget Johnson and Kristi Zea, producers The Full Monty – Uberto Pasolini, producer Good Will Hunting – Lawrence Bender, producer L.A. Confidential – Arnon Milchan, Curtis Hanson and Michael Nathanson, producers\": \"Best Documentary (Short Subject) A Story of Healing – Donna Dewey and Carol Pasternak ‡ Alaska: Spirit of the Wild – George Casey and Paul Novros Amazon – Kieth Merrill and Jonathan Stern Family Video Diaries: Daughter of the Bride – Terri Randall Still Kicking: The Fabulous Palm Springs Follies – Mel Damski and Andrea Blaugrund Nevins\", \"Best Directing James Cameron – Titanic ‡ Peter Cattaneo – The Full Monty Gus Van Sant – Good Will Hunting Curtis Hanson – L.A. Confidential Atom Egoyan – The Sweet Hereafter\": \"Best Short Film (Live Action) Visas and Virtue – Chris Tashima and Chris Donahue ‡ Dance Lexie Dance – Pearse Moore and Tim Loane It's Good to Talk – Roger Goldby and Barney Reisz Sweethearts? – Birger Larsen and Thomas Lydholm Wolfgang – Anders Thomas Jensen and Kim Magnusson\"}, {\"Best Picture Titanic – James Cameron and Jon Landau, producers ‡ As Good as It Gets – James L. Brooks, Bridget Johnson and Kristi Zea, producers The Full Monty – Uberto Pasolini, producer Good Will Hunting – Lawrence Bender, producer L.A. Confidential – Arnon Milchan, Curtis Hanson and Michael Nathanson, producers\": \"Best Short Film (Animated) Geri's Game – Jan Pinkava ‡ Famous Fred – Joanna Quinn The Old Lady and the Pigeons – Sylvain Chomet Redux Riding Hood – Steve Moore and Dan O'Shannon Rusalka – Alexander Petrov\", \"Best Directing James Cameron – Titanic ‡ Peter Cattaneo – The Full Monty Gus Van Sant – Good Will Hunting Curtis Hanson – L.A. Confidential Atom Egoyan – The Sweet Hereafter\": \"Best Music (Original Dramatic Score) Titanic – James Horner ‡ Amistad – John Williams Good Will Hunting – Danny Elfman Kundun – Philip Glass L.A. Confidential – Jerry Goldsmith\"}, {\"Best Picture Titanic – James Cameron and Jon Landau, producers ‡ As Good as It Gets – James L. Brooks, Bridget Johnson and Kristi Zea, producers The Full Monty – Uberto Pasolini, producer Good Will Hunting – Lawrence Bender, producer L.A. Confidential – Arnon Milchan, Curtis Hanson and Michael Nathanson, producers\": \"Best Music (Original Musical or Comedy Score) The Full Monty – Anne Dudley ‡ Anastasia – Music by Stephen Flaherty; lyrics by Lynn Ahrens; orchestral score by David Newman As Good as It Gets – Hans Zimmer Men in Black – Danny Elfman My Best Friend's Wedding – James Newton Howard\", \"Best Directing James Cameron – Titanic ‡ Peter Cattaneo – The Full Monty Gus Van Sant – Good Will Hunting Curtis Hanson – L.A. Confidential Atom Egoyan – The Sweet Hereafter\": \"Best Music (Original Song) \\\" My Heart Will Go On \\\" from Titanic – Music by James Horner; lyrics by Will Jennings ‡ \\\" Go the Distance \\\" from Hercules – Music by Alan Menken; lyrics by David Zippel \\\" Journey to the Past \\\" from Anastasia – Music by Stephen Flaherty; lyrics by Lynn Ahrens \\\" How Do I Live \\\" from Con Air – Music and lyrics by Diane Warren \\\" Miss Misery \\\" from Good Will Hunting – Music and lyrics by Elliott Smith\"}, {\"Best Picture Titanic – James Cameron and Jon Landau, producers ‡ As Good as It Gets – James L. Brooks, Bridget Johnson and Kristi Zea, producers The Full Monty – Uberto Pasolini, producer Good Will Hunting – Lawrence Bender, producer L.A. Confidential – Arnon Milchan, Curtis Hanson and Michael Nathanson, producers\": \"Best Sound Titanic – Gary Rydstrom, Tom Johnson, Gary Summers and Mark Ulano ‡ Air Force One – Paul Massey, Rick Kline, Doug Hemphill and Keith A. Wester Con Air – Kevin O'Connell, Greg P. Russell and Art Rochester Contact – Randy Thom, Tom Johnson, Dennis S. Sands and William B. Kaplan L.A. Confidential – Andy Nelson, Anna Behlmer and Kirk Francis\", \"Best Directing James Cameron – Titanic ‡ Peter Cattaneo – The Full Monty Gus Van Sant – Good Will Hunting Curtis Hanson – L.A. Confidential Atom Egoyan – The Sweet Hereafter\": \"Best Sound Effects Editing Titanic – Christopher Boyes and Tom Bellfort ‡ Face/Off – Mark P. Stoeckinger and Per Hallberg The Fifth Element – Mark Mangini\"}, {\"Best Picture Titanic – James Cameron and Jon Landau, producers ‡ As Good as It Gets – James L. Brooks, Bridget Johnson and Kristi Zea, producers The Full Monty – Uberto Pasolini, producer Good Will Hunting – Lawrence Bender, producer L.A. Confidential – Arnon Milchan, Curtis Hanson and Michael Nathanson, producers\": \"Best Art Direction Titanic – Art Direction: Peter Lamont; Set Decoration: Michael D. Ford ‡ Gattaca – Art Direction: Jan Roelfs; Set Decoration: Nancy Nye Kundun – Art Direction: Dante Ferretti; Set Decoration: Francesca Lo Schiavo L.A. Confidential – Art Direction: Jeannine Oppewall; Set Decoration: Jay Hart Men in Black – Art Direction: Bo Welch; Set Decoration: Cheryl Carasik\", \"Best Directing James Cameron – Titanic ‡ Peter Cattaneo – The Full Monty Gus Van Sant – Good Will Hunting Curtis Hanson – L.A. Confidential Atom Egoyan – The Sweet Hereafter\": \"Best Cinematography Titanic – Russell Carpenter ‡ Amistad – Janusz Kamiński Kundun – Roger Deakins L.A. Confidential – Dante Spinotti The Wings of the Dove – Eduardo Serra\"}, {\"Best Picture Titanic – James Cameron and Jon Landau, producers ‡ As Good as It Gets – James L. Brooks, Bridget Johnson and Kristi Zea, producers The Full Monty – Uberto Pasolini, producer Good Will Hunting – Lawrence Bender, producer L.A. Confidential – Arnon Milchan, Curtis Hanson and Michael Nathanson, producers\": \"Best Makeup Men in Black – Rick Baker and David LeRoy Anderson ‡ Mrs Brown – Lisa Westcott, Veronica Brebner and Beverley Binda Titanic – Tina Earnshaw, Greg Cannom and Simon Thompson\", \"Best Directing James Cameron – Titanic ‡ Peter Cattaneo – The Full Monty Gus Van Sant – Good Will Hunting Curtis Hanson – L.A. Confidential Atom Egoyan – The Sweet Hereafter\": \"Best Costume Design Titanic – Deborah Lynn Scott ‡ Amistad – Ruth E. Carter Kundun – Dante Ferretti Oscar and Lucinda – Janet Patterson The Wings of the Dove – Sandy Powell\"}, {\"Best Picture Titanic – James Cameron and Jon Landau, producers ‡ As Good as It Gets – James L. Brooks, Bridget Johnson and Kristi Zea, producers The Full Monty – Uberto Pasolini, producer Good Will Hunting – Lawrence Bender, producer L.A. Confidential – Arnon Milchan, Curtis Hanson and Michael Nathanson, producers\": \"Best Film Editing Titanic – Conrad Buff, James Cameron and Richard A. Harris ‡ Air Force One – Richard Francis-Bruce As Good as It Gets – Richard Marks Good Will Hunting – Pietro Scalia L.A. Confidential – Peter Honess\", \"Best Directing James Cameron – Titanic ‡ Peter Cattaneo – The Full Monty Gus Van Sant – Good Will Hunting Curtis Hanson – L.A. Confidential Atom Egoyan – The Sweet Hereafter\": \"Best Visual Effects Titanic – Robert Legato, Mark Lasoff, Thomas L. Fisher and Michael Kanfer ‡ The Lost World: Jurassic Park – Dennis Muren, Stan Winston, Randal M. Dutra and Michael Lantieri Starship Troopers – Phil Tippett, Scott E. Anderson, Alec Gillis and John Richardson\"}]}",
+        "evidence_type": "table",
+        "title": "Table 1",
+        "section_path": [],
+        "retrieval_query": "Considering the complete winners-and-nominees lists for the 68th, 70th, and 74th Academy Awards, identify every person who was nominated at all three ceremonies. For each person, give at least one nominated work from each ceremony. Also determine whether each person won at any of those three ceremonies; if so, identify the ceremony, work, and award.",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_index": 1,
+          "n_rows": 11,
+          "needs_table_reader": true
+        }
+      },
+      {
+        "evidence_id": "70th_Academy_Awards.html#table-4",
+        "source_article": "70th_Academy_Awards.html",
+        "content": "Structured table (JSON rows) — read values directly from these rows; do not rely on prior knowledge.\n{\"caption\": null, \"columns\": [\"Name(s)\", \"Role\"], \"rows\": [{\"Name(s)\": \"Norman Rose\", \"Role\": \"Announcer for the 70th annual Academy Awards\"}, {\"Name(s)\": \"Robert Rehme (AMPAS President)\", \"Role\": \"Gave opening remarks welcoming guests to the awards ceremony\"}, {\"Name(s)\": \"Cuba Gooding Jr.\", \"Role\": \"Presenter of the award for Best Supporting Actress\"}, {\"Name(s)\": \"Elisabeth Shue\", \"Role\": \"Presenter of the award for Best Costume Design\"}, {\"Name(s)\": \"Dustin Hoffman\", \"Role\": \"Presenter of the 70 years of Best Picture winners montage\"}, {\"Name(s)\": \"Neve Campbell\", \"Role\": \"Presenter of the performances of Best Original Song nominees \\\" Journey to the Past \\\" and \\\" Go the Distance \\\"\"}, {\"Name(s)\": \"Arnold Schwarzenegger\", \"Role\": \"Presenter of the film Titanic on the Best Picture segment\"}, {\"Name(s)\": \"Mira Sorvino\", \"Role\": \"Presenter of the award for Best Supporting Actor\"}, {\"Name(s)\": \"Cameron Diaz\", \"Role\": \"Presenter of the award for Best Sound\"}, {\"Name(s)\": \"Mike Myers\", \"Role\": \"Presenter of the award for Sound Effects Editing\"}, {\"Name(s)\": \"Sigourney Weaver\", \"Role\": \"Presenter of the film As Good as It Gets on the Best Picture segment\"}, {\"Name(s)\": \"Helen Hunt\", \"Role\": \"Presenter of the award for Best Visual Effects\"}, {\"Name(s)\": \"Fay Wray\", \"Role\": \"Introducer of presenters Ben Affleck and Matt Damon\"}, {\"Name(s)\": \"Ben Affleck Matt Damon\", \"Role\": \"Presenters of the awards for Best Live Action Short Film and Best Animated Short Film\"}, {\"Name(s)\": \"Geoffrey Rush\", \"Role\": \"Presenter of the award for Best Actress\"}, {\"Name(s)\": \"Antonio Banderas\", \"Role\": \"Presenter of the award for Best Original Dramatic Score\"}, {\"Name(s)\": \"Jennifer Lopez\", \"Role\": \"Introducer of the special dance number to the tune of the nominees for Best Original Musical or Comedy Score and presenter of the award for Best Original Musical or Comedy Score\"}, {\"Name(s)\": \"Drew Barrymore\", \"Role\": \"Presenter of the award for Best Makeup\"}, {\"Name(s)\": \"Alec Baldwin\", \"Role\": \"Presenter of the film L.A. Confidential on the Best Picture segment\"}, {\"Name(s)\": \"Samuel L. Jackson\", \"Role\": \"Presenter of the award for Best Film Editing\"}, {\"Name(s)\": \"Ashley Judd\", \"Role\": \"Presenter of the segment of the Academy Awards for Technical Achievement and the Gordon E. Sawyer Award\"}, {\"Name(s)\": \"Martin Scorsese\", \"Role\": \"Presenter of the Honorary Academy Award to Stanley Donen\"}, {\"Name(s)\": \"Matt Dillon\", \"Role\": \"Presenter of the film Good Will Hunting on the Best Picture segment\"}, {\"Name(s)\": \"Madonna\", \"Role\": \"Introducer of the performances of Best Original Song nominees \\\" How Do I Live \\\", \\\" Miss Misery \\\" and \\\" My Heart Will Go On \\\" and presenter of the award for Best Original Song\"}, {\"Name(s)\": \"Djimon Hounsou\", \"Role\": \"Presenter of the Best Documentary Short\"}, {\"Name(s)\": \"Robert De Niro\", \"Role\": \"Presenter of the Best Documentary Feature\"}, {\"Name(s)\": \"Whoopi Goldberg\", \"Role\": \"Presenter of the In Memoriam tribute\"}, {\"Name(s)\": \"Meg Ryan\", \"Role\": \"Presenter of the award for Best Art Direction\"}, {\"Name(s)\": \"Robin Williams\", \"Role\": \"Presenter of the 70 Years of Oscars montage\"}, {\"Name(s)\": \"Frances McDormand\", \"Role\": \"Presenter of the award for Best Actor\"}, {\"Name(s)\": \"Sharon Stone\", \"Role\": \"Presenter of the award for Best Foreign Language Film\"}, {\"Name(s)\": \"Jack Lemmon Walter Matthau\", \"Role\": \"Presenters of the awards for Best Screenplay Based on Material Previously Produced or Published and Best Original Screenplay/Screenplay Written Directly for the Screen\"}, {\"Name(s)\": \"Geena Davis\", \"Role\": \"Presenter of the film The Full Monty on the Best Picture segment\"}, {\"Name(s)\": \"Denzel Washington\", \"Role\": \"Presenter of the award for Best Cinematography\"}, {\"Name(s)\": \"Susan Sarandon\", \"Role\": \"Presenter of the Oscar Family Album segment\"}, {\"Name(s)\": \"Warren Beatty\", \"Role\": \"Presenter of the award for Best Director\"}, {\"Name(s)\": \"Sean Connery\", \"Role\": \"Presenter of the award for Best Picture\"}]}",
+        "evidence_type": "table",
+        "title": "Table 4",
+        "section_path": [],
+        "retrieval_query": "Considering the complete winners-and-nominees lists for the 68th, 70th, and 74th Academy Awards, identify every person who was nominated at all three ceremonies. For each person, give at least one nominated work from each ceremony. Also determine whether each person won at any of those three ceremonies; if so, identify the ceremony, work, and award.",
+        "retriever": "table",
+        "rank": 4,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_index": 4,
+          "n_rows": 37,
+          "needs_table_reader": true
+        }
+      },
+      {
+        "evidence_id": "70th_Academy_Awards.html#table-5",
+        "source_article": "70th_Academy_Awards.html",
+        "content": "Structured table (JSON rows) — read values directly from these rows; do not rely on prior knowledge.\n{\"caption\": null, \"columns\": [\"Name(s)\", \"Role\", \"Performed\"], \"rows\": [{\"Name(s)\": \"Jerry Goldsmith\", \"Role\": \"Composer\", \"Performed\": \"\\\" Fanfare for Oscar \\\"\"}, {\"Name(s)\": \"Bill Conti\", \"Role\": \"Musical arranger\", \"Performed\": \"Orchestral\"}, {\"Name(s)\": \"Billy Crystal\", \"Role\": \"Performer\", \"Performed\": \"Opening number: Titanic (to the tune of \\\" The Ballad of Gilligan's Isle \\\" from Gilligan's Island ), As Good as It Gets (to the tune of \\\" Let's Call the Whole Thing Off \\\" from Shall We Dance ), Good Will Hunting (to the tune of \\\" Night and Day \\\" from The Gay Divorcee ), L.A. Confidential (to the tune of \\\" Fascinating Rhythm \\\" by George Gershwin ) and The Full Monty (to the tune \\\" Hello, Dolly! \\\" from Hello, Dolly! ) [ 24 ]\"}, {\"Name(s)\": \"Michael Bolton\", \"Role\": \"Performer\", \"Performed\": \"\\\" Go the Distance \\\" from Hercules\"}, {\"Name(s)\": \"Aaliyah\", \"Role\": \"Performer\", \"Performed\": \"\\\" Journey to the Past \\\" from Anastasia\"}, {\"Name(s)\": \"Trisha Yearwood\", \"Role\": \"Performer\", \"Performed\": \"\\\" How Do I Live \\\" from Con Air\"}, {\"Name(s)\": \"Elliott Smith\", \"Role\": \"Performer\", \"Performed\": \"\\\" Miss Misery \\\" from Good Will Hunting\"}, {\"Name(s)\": \"Celine Dion\", \"Role\": \"Performer\", \"Performed\": \"\\\" My Heart Will Go On \\\" from Titanic\"}]}",
+        "evidence_type": "table",
+        "title": "Table 5",
+        "section_path": [],
+        "retrieval_query": "Considering the complete winners-and-nominees lists for the 68th, 70th, and 74th Academy Awards, identify every person who was nominated at all three ceremonies. For each person, give at least one nominated work from each ceremony. Also determine whether each person won at any of those three ceremonies; if so, identify the ceremony, work, and award.",
+        "retriever": "table",
+        "rank": 5,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_index": 5,
+          "n_rows": 8,
+          "needs_table_reader": true
+        }
+      },
+      {
+        "evidence_id": "Academy_Award_for_Best_Picture.html#section-020-00",
+        "source_article": "Academy_Award_for_Best_Picture.html",
+        "content": "Article: Academy Award for Best Picture\nSection: Winners and nominees\n\nIn the list below, winners are listed first in the gold row, followed by the other nominees.[6] Except for the early years (when the Academy used a non-calendar year), the year shown is the one in which the film first premiered in Los Angeles County, California; normally this is also the year of first release, but it may be the year after first release (as with Casablanca and, if the film-festival premiere is considered, Crash and The Hurt Locker). This is also the year before the ceremony at which the award is given; for example, a film exhibited theatrically during 2005 was eligible for consideration for the 2005 Best Picture Oscar, awarded in 2006. The number of the ceremony (1st, 2nd, etc.) appears in parentheses after the awards year, linked to the article on that ceremony. Each individual entry shows the title followed by nominee.\n\nUntil 1950, the Best Picture award was given to the production company; from 1951 on, it has gone to the producer or producers. The Academy used the producer credits of the Producers Guild of America (PGA) until 1998, when all five producers of Shakespeare in Love made speeches after its win.[9][10] A three-producer limit has been applied some years since.[10][11] There was controversy over the exclusion of some PGA-credited producers of Crash and Little Miss Sunshine.[11] The Academy can make exceptions to the limit, as when Anthony Minghella and Sydney Pollack were posthumously among the four nominated for The Reader.[13] However, now any number of producers on a film can be nominated for Best Picture, should they be deemed eligible.\n\nFor the first ceremony, three films were nominated for the award. For the following three years, five films were nominated for the award. This was expanded to eight in 1933, to ten in 1934, and to twelve in 1935, before being dropped back to ten in 1937. In 1945, it was further reduced to five. This number remained until 2009, when the limit was raised to ten; it was adjusted from 2011 to 2020 to vary between five and ten, but has been a full ten since 2022.\n\nFor the first six ceremonies, the eligibility period spanned two calendar years. For example, the 2nd Academy Awards presented on April 3, 1930, recognized films that were released between August 1, 1928, and July 31, 1929. Starting with the 7th Academy Awards, held in 1935, the period of eligibility became the full previous calendar year from January 1 to December 31. This has been the rule every year since except 2020, when the end date was extended to February 28, 2021, due to the COVID-19 pandemic, and 2021, which was correspondingly limited to March 1 to December 31.\n\nSince 2023, the category's winners and nominees from the 1927/28 and 1928/29 ceremonies have entered the public domain.[82]\n\n  indicates the winner",
+        "evidence_type": "graph",
+        "title": "Winners and nominees",
+        "section_path": [
+          "Winners and nominees"
+        ],
+        "retrieval_query": "From the full winners-and-nominees lists for the 68th, 70th, and 74th Academy Awards, determine for each person appearing at all three ceremonies whether they won any award at those ceremonies, and identify the ceremony, work, and award.",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 0.7135868072509766,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "74th_Academy_Awards.html",
+            "68th_Academy_Awards.html",
+            "70th_Academy_Awards.html"
+          ],
+          "graph_neighbor_rank": 4,
+          "graph_score": 9.539732570142869,
+          "discovery_reasons": [
+            "link",
+            "entity:Wes_Anderson(17)",
+            "entity:Walt_Disney_Pictures(29)",
+            "entity:Robert_Redford(20)",
+            "entity:Will_Smith(20)",
+            "entity:Academy_Award_for_Best_Director(45)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "78th_Academy_Awards.html#section-011-00",
+        "source_article": "78th_Academy_Awards.html",
+        "content": "Article: 78th Academy Awards\nSection: Ceremony information > Ratings and reception\n\nThe American telecast on ABC drew in an average of 38.94 million people over its length, which was an 8% decrease from the previous year's ceremony.[56] Additionally, the show earned lower Nielsen ratings compared to the previous ceremony with 23.0% of households watching over a 35 share.[57] Furthermore, it garnered a lower 18–49 demo rating with a 13.9 rating among viewers in that demographic.[57]\n\nIn July 2006, the ceremony presentation received nine nominations at the 58th Primetime Emmys.[58] The following month, the ceremony won four of those nominations for Outstanding Art Direction for a Variety, Music Program, or Special (Roy Christopher and Jeff Richman), Outstanding Directing for a Variety, Music, or Comedy Program (Louis J. Horvitz), Outstanding Main Title Design (Renato Grgic, Alen Petkovic, Kristijan Petrovic, and Jon Teschner), and Outstanding Sound Mixing for a Variety, Music, or Animation Series or Special (Patrick Baltzell, Robert Douglass, Edward J. Greene, Jamie Santos, and Tom Vicari).[59]",
+        "evidence_type": "graph",
+        "title": "Ratings and reception",
+        "section_path": [
+          "Ceremony information",
+          "Ratings and reception"
+        ],
+        "retrieval_query": "From the full winners-and-nominees lists for the 68th, 70th, and 74th Academy Awards, determine for each person appearing at all three ceremonies whether they won any award at those ceremonies, and identify the ceremony, work, and award.",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 0.8237044811248779,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "74th_Academy_Awards.html",
+            "68th_Academy_Awards.html",
+            "70th_Academy_Awards.html"
+          ],
+          "graph_neighbor_rank": 2,
+          "graph_score": 10.101566219020846,
+          "discovery_reasons": [
+            "entity:Jennifer_Lopez(21)",
+            "entity:Nielsen_ratings(34)",
+            "entity:John_Williams(18)",
+            "entity:Whoopi_Goldberg(24)",
+            "entity:Halle_Berry(16)",
+            "entity:Sandra_Bullock(16)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "78th_Academy_Awards.html#section-001-00",
+        "source_article": "78th_Academy_Awards.html",
+        "content": "Article: 78th Academy Awards\nSection: Winners and nominees\n\nThe nominees for the 78th Academy Awards were announced on January 31, 2006, at the Samuel Goldwyn Theater in the academy's Beverly Hills headquarters by Sid Ganis, president of the academy, and actress Mira Sorvino.[10] Brokeback Mountain earned the most nominations with eight total; Crash, Good Night, and Good Luck, and Memoirs of a Geisha tied for second with six nominations each.[11] All five Best Picture nominees received corresponding Best Director nominations (the fourth occurrence in Oscar history since the Best Picture nominees roster was limited to five films).[12]\n\nThe winners were announced during the awards ceremony on March 5, 2006.[13] Crash was the first Best Picture winner since 1976's Rocky to win only three Oscars[14] and the first Best Picture winner since 1981's Chariots of Fire to not win Best Director or any of the acting categories. Best Director winner Ang Lee became the first non-Caucasian winner of that category.[15] For this first time since the 34th ceremony in 1962, all four acting winners were first-time nominees.[16][17] At age 20, Keira Knightley was the second-youngest Best Actress nominee for her performance as Elizabeth Bennet in Pride & Prejudice. Best Supporting Actor winner George Clooney was the fifth person to receive acting, directing, and screenwriting nominations in the same year and the first person to achieve this feat for two different films.[18] By virtue of his nominations for both Memoirs of a Geisha and Munich, composer John Williams earned a total of 45 nominations tying him with Alfred Newman as the second most nominated individual in Oscar history.[a][19] \"It's Hard out Here for a Pimp\" became the second rap song to win Best Original Song and the first such song to be performed at an Oscars ceremony.[20]",
+        "evidence_type": "graph",
+        "title": "Winners and nominees",
+        "section_path": [
+          "Winners and nominees"
+        ],
+        "retrieval_query": "From the full winners-and-nominees lists for the 68th, 70th, and 74th Academy Awards, determine for each person appearing at all three ceremonies whether they won any award at those ceremonies, and identify the ceremony, work, and award.",
+        "retriever": "graph",
+        "rank": 2,
+        "raw_score": 0.8451923727989197,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "74th_Academy_Awards.html",
+            "68th_Academy_Awards.html",
+            "70th_Academy_Awards.html"
+          ],
+          "graph_neighbor_rank": 2,
+          "graph_score": 10.101566219020846,
+          "discovery_reasons": [
+            "entity:Jennifer_Lopez(21)",
+            "entity:Nielsen_ratings(34)",
+            "entity:John_Williams(18)",
+            "entity:Whoopi_Goldberg(24)",
+            "entity:Halle_Berry(16)",
+            "entity:Sandra_Bullock(16)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "List_of_Academy_Award_records.html#section-010-00",
+        "source_article": "List_of_Academy_Award_records.html",
+        "content": "Article: List of Academy Award records\nSection: Miscellaneous records\n\nMost films nominated for and won in a single category\n\n1942, with 24 films nominated for Best Documentary Feature Film and 4 winners (Shorts and features competed in a single category)\n\nMost losses by a single film: 12\n\nSinners (2025), with 16 nominations and four wins (Best Actor, Best Original Screenplay, Best Cinematography and Best Original Score)\n\nPerson nominated in the most decades\n\nJohn Williams:\n\n1960s: 1967, 1969 (2 nominations)\n\n1970s: 1971, 1972 (2 nominations), 1973 (3 nominations), 1974, 1975, 1977 (2 nominations), 1978\n\n1980s: 1980, 1981, 1982 (2 nominations), 1983, 1984 (2 nominations), 1987 (2 nominations), 1988, 1989 (2 nominations)\n\n1990s: 1990 (2 nominations), 1991 (2 nominations), 1993, 1995 (3 nominations), 1996, 1997, 1998, 1999\n\n2000s: 2000, 2001 (2 nominations), 2002, 2004, 2005 (2 nominations)\n\n2010s: 2011 (2 nominations), 2012, 2013, 2015, 2017, 2019\n\n2020s: 2022, 2023\n\nPeople who won both a Nobel Prize and an Oscar\n\nGeorge Bernard Shaw: Won the Nobel Prize in Literature in 1925, and an Oscar for Best Adapted Screenplay for the film Pygmalion in 1938\n\nBob Dylan: Won an Oscar for Best Original Song for the song \"Things Have Changed\" from Wonder Boys in 2000, and the Nobel Prize in Literature in 2016\n\nOnly person to win both a Booker Prize and an Oscar\n\nRuth Prawer Jhabvala: Won the Booker Prize for Heat and Dust in 1975, and two Oscars for Best Adapted Screenplay for the films A Room with a View in 1986 and Howards End in 1992\n\nPeople who won both a Pulitzer Prize and an Oscar\n\nMstyslav Chernov: Won an Oscar for Best Documentary Feature Film for the film 20 Days in Mariupol in 2023, and the Pulitzer Prize for Public Service in 2023\n\nAaron Copland: Won an Oscar for Best Original Score for the film The Heiress in 1949, and the Pulitzer Prize for Music in 1945\n\nJohn Corigliano: Won an Oscar for Best Original Score for the film The Red Violin in 1999, and the Pulitzer Prize for Music in 2001\n\nBob Dylan: Won an Oscar for Best Original Song for the song \"Things Have Changed\" from Wonder Boys in 2000, and an additional citation in the Pulitzer Prize for Music in 2006\n\nHorton Foote: Won two Oscars; Best Adapted Screenplay for the film To Kill a Mockingbird in 1962, and Best Original Screenplay for the film Tender Mercies in 1983, and the Pulitzer Prize for Drama in 1995\n\nMarvin Hamlisch: Won three Oscars in 1973; Best Score-Adaptation or Treatment for the film The Sting, and Best Original Score and Best Original Song for the title song of the film The Way We Were, and the Pulitzer Prize for Drama in 1976\n\nOscar Hammerstein II: Won two Oscars; Best Original Song for the songs \"The Last Time I Saw Paris\" from the film Lady Be Good in 1941, and \"It Might as Well Be Spring\" from the film State Fair in 1945, and the Pulitzer Prize for Drama in 1950, along with an additional citation in 1943\n\nSidney Howard: Posthumously won an Oscar for Best Adapted Screenplay for the film Gone With the Wind in 1939, and the Pulitzer Prize for Drama in 1925\n\nWilliam Inge: Won an Oscar for Best Original Screenplay for the film Splendor in the Grass in 1961, and the Pulitzer Prize for Drama in 1953\n\nFrank Loesser: Won an Oscar for Best Original Song for the song \"Baby, It's Cold Outside\" from the film Neptune's Daughter in 1949, and the Pulitzer Prize for Drama in 1962\n\nLarry McMurtry: Won an Oscar for Best Adapted Screenplay for the film Brokeback Mountain in 2005, and the Pulitzer Prize for Fiction for his novel Lonesome Dove in 1985\n\nRichard Rodgers: Won an Oscar for Best Original Song for the song \"It Might as Well Be Spring\" from the film State Fair in 1945, and the Pulitzer Prize for Drama in 1950, along with an additional citation in 1943\n\nWilliam Saroyan: Won an Oscar for Best Story, Screenplay for the film The Human Comedy in 1943, and the Pulitzer Prize for Drama in 1940\n\nJohn Patrick Shanley: Won an Oscar for Best Original Screenplay for the film Moonstruck in 1987, and the Pulitzer Prize for Drama in 2005\n\nRobert E. Sherwood: Won an Oscar for Best Adapted Screenplay for the film The Best Years of Our Lives in 1946, and the Pulitzer Prize for Drama in 1936, 1939, and 1941, and the Pulitzer Prize for Biography or Autobiography in 1949\n\nStephen Sondheim: Won an Oscar for Best Original Song for the song \"Sooner or Later (I Always Get My Man)\" from the film Dick Tracy in 1990, and the Pulitzer Prize for Drama in 1985\n\nAlfred Uhry: Won an Oscar for Best Adapted Screenplay for the film Driving Miss Daisy in 1989, and the Pulitzer Prize for Drama for the stage version in 1988\n\nOnly person to win both an Olympic medal and an Oscar\n\nKobe Bryant: Won gold medals in Basketball in 2008 and 2012, and an Oscar for Best Animated Short Film in 2017 for the film Dear Basketball\n\nOnly person to win for Acting and Songwriting\n\nBarbra Streisand won Best Actress for Funny Girl (1968) and Best Original Song for \"Evergreen\", the love theme from the film A Star Is Born (1976).\n\nOnly person to win for Acting and Writing\n\nEmma Thompson won Best Actress for Howards End (1992) and Best Adapted Screenplay for the film Sense and Sensibility (1995).\n\nOnly person to win for Acting and Directing\n\nTo date, technically no one has. However Lee Grant won for Best Supporting Actress for Shampoo (1975) and she directed the Best Documentary Feature, Down and Out in America (1986), but under the Academy rules at the time, only producers were eligible to win the award, so the award went to her producer husband and another co-producer. Under the present rules, the director would now be recognized with the Oscar.\n\nOnly person to win for Directing, Editing, and Writing\n\nSean Baker won Best Director, Best Original Screenplay, and Best Editing for Anora (2024); as an Anora producer, he also received an Oscar for Best Picture.\n\nOnly person nominated for Acting, Writing, Producing, and Directing for the same film\n\nWarren Beatty was nominated in the four categories for Heaven Can Wait (1978), and again for Reds (1981).\n\nCitizen Kane was nominated in the four categories, but at the time, the studio rather than the individual producer was eligible for the Best Picture award, meaning that writer/director/producer/actor Orson Welles was not nominated as a producer.\n\nOnly person to win for Directing, Editing, Producing, and Writing for the same film\n\nSean Baker for Anora (2024), which also makes him the only person to win four Academy Awards in one night for the same film.\n\nOnly person to receive every nomination in a category\n\nStephen Bosustow received all three nominations for Short Subjects, Cartoons in 1956, winning for Magoo's Puddle Jumper.\n\nOnly actor to win an Oscar for portraying a real Oscar winner\n\nCate Blanchett won Best Supporting Actress for portraying Katharine Hepburn in The Aviator (2004).\n\nNote: Renée Zellweger won Best Actress for portraying Judy Garland in Judy (2019). Garland received the Academy Juvenile Award, an honorary award, but never won a competitive Oscar.\n\nOnly actor to win an Oscar for portraying a fictional Oscar nominee\n\nMaggie Smith won Best Supporting Actress for playing an Oscar loser in California Suite (1978).\n\nOnly actor to appear in multiple films with the most Oscar wins\n\nBernard Hill had supporting roles in Titanic (1997) and The Lord of the Rings: The Return of the King (2003), with 11 Oscars each.\n\nOnly actor to win multiple Oscars for portraying Holocaust survivors: Adrien Brody (2)\n\nPolish pianist Władysław Szpilman in Roman Polanski's war drama The Pianist (2002), based on Szpilman.\n\nHungarian brutalist architect László Tóth in Brady Corbet's period epic The Brutalist (2024), partially inspired by Marcel Breuer.[a]\n\nMost total nominations without a win\n\nOne person has received 17 nominations and no competitive wins:\n\nDiane Warren in the Best Original Song category, including nine consecutive nominations from 2017 to 2025 (She received a Academy Honorary Award in 2022)[42]\n\nGreg P. Russell has received 16 nominations in the Best Sound Mixing category, not including his nomination at the 89th Academy Awards for 13 Hours: The Secret Soldiers of Benghazi, which was revoked the day before the ceremony[43]\n\nMost total nominations before receiving an award\n\nFilm composer Victor Young was nominated 21 times without winning. He was often nominated multiple times in one year; twice, he was nominated four times at the same Oscars. He won posthumously for Around the World in 80 Days (1956).\n\nSound re-recording mixer Kevin O'Connell comes in at a close second, with 20 unsuccessful nominations from 1983 until 2016, when he finally won for Hacksaw Ridge.\n\nMost nominations for a living person\n\nFilm composer John Williams with 54\n\nOnly write-in nominee to win a competitive award\n\nCinematographer Hal Mohr for A Midsummer Night's Dream (1935)\n\nMost categories to have been nominated in\n\nKenneth Branagh: 8 nominations in 7 categories, winning once\n\nBest Picture\n\nBest Director\n\nBest Original Screenplay\n\nBest Adapted Screenplay\n\nBest Actor\n\nBest Supporting Actor\n\nBest Live Action Short Film\n\nAlfonso Cuarón: 11 nominations in 7 categories, winning four\n\nBest Picture\n\nBest Director\n\nBest Original Screenplay\n\nBest Adapted Screenplay\n\nBest Film Editing\n\nBest Cinematography\n\nBest Live Action Short Film\n\nNote: Cuarón's film Roma also won Best International Feature Film, but as the category is awarded to the country rather than the producer or director, this does not count towards his wins and nominations.\n\nMost nominated woman\n\nCostume designer Edith Head with 35\n\nHighest \"perfect score\"\n\nThe record is 4 nominations and 4 wins, shared by sound editor Mark Berger, visual effects supervisor Paul Lambert and filmmaker Sean Baker.\n\nMost nominations for directing\n\nWilliam Wyler with 12 nominations\n\nMost nominations for directing without an award\n\n[44] All received 5 nominations\n\nRobert Altman\n\nClarence Brown\n\nAlfred Hitchcock\n\nKing Vidor",
+        "evidence_type": "graph",
+        "title": "Miscellaneous records",
+        "section_path": [
+          "Miscellaneous records"
+        ],
+        "retrieval_query": "From the full winners-and-nominees lists for the 68th, 70th, and 74th Academy Awards, determine for each person appearing at all three ceremonies whether they won any award at those ceremonies, and identify the ceremony, work, and award.",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 0.8726474046707153,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "74th_Academy_Awards.html",
+            "68th_Academy_Awards.html",
+            "70th_Academy_Awards.html"
+          ],
+          "graph_neighbor_rank": 1,
+          "graph_score": 12.236518816781047,
+          "discovery_reasons": [
+            "link",
+            "entity:Renée_Zellweger(8)",
+            "entity:John_Williams(18)",
+            "entity:Kate_Winslet(18)",
+            "entity:Halle_Berry(16)",
+            "entity:Helen_Mirren(12)"
+          ]
+        }
+      }
+    ],
+    "assessment": {
+      "ready_to_answer": false,
+      "supported_requirements": [
+        "The evidence includes complete nominees/winners lists for the 68th, 70th, and 74th Academy Awards from their ceremony pages/tables.",
+        "The evidence supports identifying nominees and winners within each of the three ceremonies."
+      ],
+      "missing_requirements": [
+        "The evidence is not yet sufficient to determine every person nominated at all three ceremonies, because we need to cross-match nominee names across all three complete ceremony nominee lists.",
+        "For each overlapping person, we still need at least one nominated work from each ceremony, which requires extracting nominee/work pairs across the three ceremonies in a consolidated way.",
+        "We also need to determine which of those overlapping people won at any of the three ceremonies, and if so, the ceremony, work, and award; this requires explicit winner identification for each shared person across the three ceremonies."
+      ],
+      "retrieval_requests": [
+        {
+          "missing_fact": "Identify all people who were nominated at the 68th, 70th, and 74th Academy Awards, with at least one nominated work from each ceremony for each person, and note any wins among those three ceremonies.",
+          "query": "Cross-reference the complete nominee and winner lists for the 68th, 70th, and 74th Academy Awards to find every individual nominated at all three ceremonies, and collect one nominated work from each ceremony plus any win details at those ceremonies.",
+          "target_articles": [
+            "68th_Academy_Awards.html",
+            "70th_Academy_Awards.html",
+            "74th_Academy_Awards.html"
+          ],
+          "keywords": [
+            "nominees",
+            "winners",
+            "Best Actor",
+            "Best Actress",
+            "Best Supporting Actor",
+            "Best Supporting Actress",
+            "Best Director",
+            "Best Picture",
+            "screenplay",
+            "music",
+            "shared nominees"
+          ],
+          "preferred_retriever": "hybrid"
+        }
+      ],
+      "table_requests": [],
+      "unresolved_conflicts": [],
+      "explanation": "The supplied evidence confirms these are the correct ceremony pages and contains partial table/section excerpts, but it does not yet explicitly enumerate the full nominee sets in a way that allows reliable cross-comparison to find everyone who appears in all three ceremonies. Since the table-reader is unavailable in this experiment, we should request focused retrieval of the full nominee/work data rather than table extraction."
+    },
+    "assessment_history": [
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "The supplied evidence includes the winners-and-nominees lists for the 68th, 70th, and 74th Academy Awards, so the relevant ceremonies are present.",
+          "Some nominee works can be directly identified from the table evidence, such as A Beautiful Mind, Braveheart, Titanic, Good Will Hunting, The Lord of the Rings: The Fellowship of the Ring, and others."
+        ],
+        "missing_requirements": [
+          "A complete cross-ceremony identification of every person nominated at all three ceremonies is not supported by the supplied excerpts alone.",
+          "For each such person, at least one nominated work from each of the 68th, 70th, and 74th ceremonies is not fully supported without extracting and comparing all nominee names across the three full ceremony lists.",
+          "Whether each shared nominee won at any of those three ceremonies, including the ceremony, work, and award, is not fully supported for all candidates because the evidence excerpts do not provide the full nominee lists in a directly comparable form across all categories/ceremonies."
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Complete set of people nominated at all three ceremonies, with at least one nominated work from each ceremony for every person.",
+            "query": "Find the full nominees lists for the 68th, 70th, and 74th Academy Awards and identify the people who appear as nominees in all three ceremonies, along with one nominated work from each ceremony for each shared person.",
+            "target_articles": [
+              "68th_Academy_Awards.html",
+              "70th_Academy_Awards.html",
+              "74th_Academy_Awards.html"
+            ],
+            "keywords": [
+              "nominees",
+              "winners and nominees",
+              "Academy Awards",
+              "shared nominees",
+              "all three ceremonies"
+            ],
+            "preferred_retriever": "hybrid"
+          },
+          {
+            "missing_fact": "Whether each person who appears at all three ceremonies won at any of those ceremonies, and if so the ceremony, work, and award.",
+            "query": "From the full winners-and-nominees lists for the 68th, 70th, and 74th Academy Awards, determine for each person appearing at all three ceremonies whether they won any award at those ceremonies, and identify the ceremony, work, and award.",
+            "target_articles": [
+              "68th_Academy_Awards.html",
+              "70th_Academy_Awards.html",
+              "74th_Academy_Awards.html"
+            ],
+            "keywords": [
+              "won",
+              "award winners",
+              "nominees",
+              "ceremony",
+              "work",
+              "award"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The provided evidence clearly shows that the three ceremony pages are relevant, and it exposes several nominee/work entries and winner indicators. However, the excerpts do not supply a complete, directly comparable set of all nominees across the three ceremonies. Answering the question requires a full intersection of nominee names across all categories for 68th, 70th, and 74th, plus the winning status for each shared person. That cross-ceremony synthesis cannot be completed reliably from the supplied excerpts alone, so additional retrieval is needed."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "The evidence includes complete nominees/winners lists for the 68th, 70th, and 74th Academy Awards from their ceremony pages/tables.",
+          "The evidence supports identifying nominees and winners within each of the three ceremonies."
+        ],
+        "missing_requirements": [
+          "The evidence is not yet sufficient to determine every person nominated at all three ceremonies, because we need to cross-match nominee names across all three complete ceremony nominee lists.",
+          "For each overlapping person, we still need at least one nominated work from each ceremony, which requires extracting nominee/work pairs across the three ceremonies in a consolidated way.",
+          "We also need to determine which of those overlapping people won at any of the three ceremonies, and if so, the ceremony, work, and award; this requires explicit winner identification for each shared person across the three ceremonies."
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Identify all people who were nominated at the 68th, 70th, and 74th Academy Awards, with at least one nominated work from each ceremony for each person, and note any wins among those three ceremonies.",
+            "query": "Cross-reference the complete nominee and winner lists for the 68th, 70th, and 74th Academy Awards to find every individual nominated at all three ceremonies, and collect one nominated work from each ceremony plus any win details at those ceremonies.",
+            "target_articles": [
+              "68th_Academy_Awards.html",
+              "70th_Academy_Awards.html",
+              "74th_Academy_Awards.html"
+            ],
+            "keywords": [
+              "nominees",
+              "winners",
+              "Best Actor",
+              "Best Actress",
+              "Best Supporting Actor",
+              "Best Supporting Actress",
+              "Best Director",
+              "Best Picture",
+              "screenplay",
+              "music",
+              "shared nominees"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The supplied evidence confirms these are the correct ceremony pages and contains partial table/section excerpts, but it does not yet explicitly enumerate the full nominee sets in a way that allows reliable cross-comparison to find everyone who appears in all three ceremonies. Since the table-reader is unavailable in this experiment, we should request focused retrieval of the full nominee/work data rather than table extraction."
+      }
+    ]
+  }
+}

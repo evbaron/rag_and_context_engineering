@@ -23,6 +23,7 @@ from wikipedia_retrieval_engine.wiki_agents.retrieval_nodes import (
     article_review_update,
     collect_initial_evidence,
     load_selected_sections,
+    load_selected_tables,
     retrieve_graph_seeded_evidence,
     retrieve_initial_articles,
     retrieve_initial_articles_decomposed,
@@ -661,6 +662,67 @@ class RetrievalNodesTests(unittest.TestCase):
         self.assertEqual(item.metadata["retrieval_stage"], "toc_selected_section")
         self.assertEqual(item.metadata["requested_section"], "Winners and nominees")
         self.assertTrue(item.metadata["needs_table_reader"])
+
+    def test_load_selected_tables_adds_json_table_evidence(self) -> None:
+        review = ArticleReview(
+            source_article="Lists_of_earthquakes.html",
+            relevant=True,
+            reason="Contains the deadliest-earthquakes table.",
+            relevant_sections=["Deadliest earthquakes"],
+            relevant_table_names=["Table 1: Deadliest"],
+            needs_table_reader=True,
+        )
+        markdown_store = Mock(spec=MarkdownArticleStore)
+        markdown_store.has_article.return_value = True
+        markdown_store.load_metadata.return_value = {
+            "tables": [
+                {
+                    "caption": None,
+                    "headers": ["Event", "Date", "Fatalities"],
+                    "rows": [
+                        ["1976 Tangshan earthquake", "July 27, 1976", "300,000+"],
+                        ["2004 Indian Ocean", "December 26, 2004", "227,898"],
+                    ],
+                    "n_rows": 2,
+                }
+            ]
+        }
+
+        update = load_selected_tables(
+            {
+                "question": "which earthquakes since 1976 had over 100,000 deaths",
+                "article_reviews": [review],
+                "evidence": [],
+            },
+            markdown_store,
+        )
+
+        evidence = update["evidence"]
+        self.assertEqual(len(evidence), 1)
+        item = evidence[0]
+        self.assertEqual(item.evidence_type, "table")
+        self.assertEqual(item.metadata["retrieval_stage"], "toc_selected_table")
+        self.assertTrue(item.metadata["needs_table_reader"])
+        # Rendered as JSON rows keyed by column, not flattened prose.
+        self.assertIn("Tangshan", item.content)
+        self.assertIn('"Event"', item.content)
+
+    def test_load_selected_tables_skips_unflagged_articles(self) -> None:
+        review = ArticleReview(
+            source_article="A.html", relevant=True, reason="kept but no table need"
+        )  # needs_table_reader defaults False, no relevant_table_names
+        markdown_store = Mock(spec=MarkdownArticleStore)
+        markdown_store.has_article.return_value = True
+        markdown_store.load_metadata.return_value = {
+            "tables": [{"headers": ["a"], "rows": [["1"]], "n_rows": 1}]
+        }
+
+        update = load_selected_tables(
+            {"question": "q", "article_reviews": [review], "evidence": []},
+            markdown_store,
+        )
+
+        self.assertEqual(update["evidence"], [])
 
     def test_assess_evidence_uses_structured_output(self) -> None:
         assessment = EvidenceAssessment(

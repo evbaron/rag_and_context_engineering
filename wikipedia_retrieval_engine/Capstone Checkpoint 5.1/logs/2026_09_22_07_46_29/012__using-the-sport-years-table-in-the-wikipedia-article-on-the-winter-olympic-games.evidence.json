@@ -1,0 +1,208 @@
+{
+  "run_id": "2026_09_22_07_46_29",
+  "question_number": 12,
+  "logged_at": "2026-09-22T07:50:03-04:00",
+  "question": "Using the Sport/Years table in the Wikipedia article on the Winter Olympic Games, which listed sports first entered the official Winter Olympic program in 1950 or later? Give the first year for each.",
+  "final_state": {
+    "question": "Using the Sport/Years table in the Wikipedia article on the Winter Olympic Games, which listed sports first entered the official Winter Olympic program in 1950 or later? Give the first year for each.",
+    "retrieval_attempts": 1,
+    "article_candidates": [
+      {
+        "source_article": "Winter_Olympic_Games.html",
+        "representative_chunk": "Article: Winter Olympic Games\nSection: Sports\n\nThe Olympic Charter limits winter sports to \"those sports which are practised on snow or ice\".[168] Since 1992 a number of new sports have been added to the Olympic programme, which include short-track speed skating, snowboarding, freestyle and moguls skiing. The addition of these events has broadened the appeal of the Winter Olympics beyond Europe and North America. While European powers such as Norway and Germany still dominate the traditional Winter Olympic sports, countries such as South Korea, Australia and Canada are finding success in these new sports. The results are more parity in the national medal tables, more interest in the Winter Olympics, and higher global television ratings.[169]",
+        "representative_chunk_id": "Winter_Olympic_Games.html#section-013-00",
+        "section_title": "Sports",
+        "section_path": [
+          "Sports"
+        ],
+        "retrieval_query": "Winter Olympic Games",
+        "discovered_by": "vector",
+        "rank": 1,
+        "raw_score": 0.6848679780960083,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "List_of_Olympic_Games_host_cities.html",
+        "representative_chunk": "Article: List of Olympic Games host cities\nSection: Olympic Games host cities > Host cities for Summer and Winter Olympic Games\n\nKey\n\n †  Cancelled\n\n §  Postponed\n\nCity\n\nCountry\n\nYear\n\nRegion\n\nSummer\n\nWinter\n\nOpening ceremony\n\nClosing ceremony\n\nRef.\n\nAthens\n\nGreece\n\n1896\n\nEurope\n\nS005I\n\n6 April 1896\n\n15 April 1896\n\nParis\n\nFrance\n\n1900\n\nS005II\n\n14 May 1900\n\n28 October 1900\n\nSt. Louis[a]\n\nUnited States\n\n1904\n\nNorth America\n\nS005III\n\n1 July 1904\n\n23 November 1904\n\nLondon[b]\n\nUnited Kingdom\n\n1908\n\nEurope\n\nS005IV\n\n27 April 1908\n\n31 October 1908\n\nStockholm\n\nSweden\n\n1912\n\nS005V\n\n6 July 1912\n\n22 July 1912\n\n†\n\nBerlin\n\nGermany\n\n1916\n\nS006VI\n\nCancelled due to WWI\n\n[11]\n\nAntwerp[c]\n\nBelgium\n\n1920\n\nS007VII\n\n14 August 1920\n\n12 September 1920\n\n[12]\n\nChamonix\n\nFrance\n\n1924\n\nW001I\n\n25 January 1924\n\n5 February 1924\n\n[13]\n\nParis\n\nS008VIII\n\n5 July 1924\n\n27 July 1924\n\n[14]\n\nSt. Moritz\n\n Switzerland\n\n1928\n\nW002II\n\n11 February 1928\n\n19 February 1928\n\n[15]\n\nAmsterdam\n\nNetherlands\n\nS009IX\n\n28 July 1928\n\n12 August 1928\n\n[16]\n\nLake Placid\n\nUnited States\n\n1932\n\nNorth America\n\nW003III\n\n4 February 1932\n\n13 February 1932\n\n[17]\n\nLos Angeles\n\nS010X\n\n30 July 1932\n\n14 August 1932\n\n[18]\n\nGarmisch-Partenkirchen\n\nGermany\n\n1936\n\nEurope\n\nW004IV\n\n6 February 1936\n\n16 February 1936\n\n[19]\n\nBerlin\n\nS011XI\n\n1 August 1936\n\n16 August 1936\n\n[20]\n\n†\n\nSapporo\n\nGarmisch-Partenkirchen[d]\n\nJapan\n\nGermany\n\n1940\n\nAsia\n\nEurope\n\nVW005a\n\nCancelled due to WWII\n\n[11]\n\n†\n\nTokyo\n\nHelsinki[e]\n\nJapan\n\nFinland\n\nXII\n\n†\n\nCortina d'Ampezzo\n\nItaly\n\n1944\n\nEurope\n\nV\n\n†\n\nLondon\n\nUnited Kingdom\n\nXIIIS013\n\nSt. Moritz\n\n Switzerland\n\n1948\n\nW005cV\n\n30 January 1948\n\n8 February 1948\n\nLondon\n\nUnited Kingdom\n\nS014XIV\n\n29 July 1948\n\n14 August 1948\n\nOslo\n\nNorway\n\n1952\n\nW006VI\n\n14 February 1952\n\n25 February 1952\n\nHelsinki\n\nFinland\n\nS015XV\n\n19 July 1952\n\n3 August 1952\n\nCortina d'Ampezzo\n\nItaly\n\n1956\n\nW007VII\n\n26 January 1956\n\n5 February 1956\n\nMelbourne\n\nStockholm[f]\n\nAustralia\n\nSweden\n\nOceania\n\nEurope\n\nS016XVI\n\n22 November 1956\n\n10 June 1956\n\n8 December 1956\n\n17 June 1956\n\n[22]\n\nSquaw Valley[g]\n\nUnited States\n\n1960\n\nNorth America\n\nW008VIII\n\n18 February 1960\n\n28 February 1960\n\nRome\n\nItaly\n\nEurope\n\nS017XVII\n\n27 August 1960\n\n11 September 1960\n\nInnsbruck\n\nAustria\n\n1964\n\nW009IX\n\n29 January 1964\n\n9 February 1964\n\nTokyo\n\nJapan\n\nAsia\n\nS018XVIII\n\n10 October 1964\n\n24 October 1964\n\nGrenoble\n\nFrance\n\n1968\n\nEurope\n\nW010X\n\n6 February 1968\n\n18 February 1968\n\nMexico City\n\nMexico\n\nNorth America\n\nS019XIX\n\n12 October 1968\n\n27 October 1968\n\nSapporo\n\nJapan\n\n1972\n\nAsia\n\nW011XI\n\n3 February 1972\n\n13 February 1972\n\nMunich\n\nWest Germany\n\nEurope\n\nS020XX\n\n26 August 1972\n\n11 September 1972[h]\n\nInnsbruck[i]\n\nAustria\n\n1976\n\nW012XII\n\n4 February 1976\n\n15 February 1976\n\nMontreal\n\nCanada\n\nNorth America\n\nS021XXI\n\n17 July 1976\n\n1 August 1976\n\nLake Placid\n\nUnited States\n\n1980\n\nW013XIII\n\n13 February 1980\n\n24 February 1980\n\nMoscow\n\nSoviet Union[j]\n\nEurope\n\nS022XXII\n\n19 July 1980\n\n3 August 1980\n\nSarajevo\n\nYugoslavia[k]\n\n1984\n\nW014XIV\n\n8 February 1984\n\n19 February 1984\n\nLos Angeles\n\nUnited States\n\nNorth America\n\nS023XXIII\n\n28 July 1984\n\n12 August 1984\n\nCalgary\n\nCanada\n\n1988\n\nW015XV\n\n13 February 1988\n\n28 February 1988\n\nSeoul\n\nSouth Korea\n\nAsia\n\nS024XXIV\n\n17 September 1988\n\n2 October 1988\n\nAlbertville\n\nFrance\n\n1992\n\nEurope\n\nW016XVI\n\n8 February 1992\n\n23 February 1992\n\nBarcelona\n\nSpain\n\nS025XXV\n\n25 July 1992\n\n9 August 1992\n\nLillehammer\n\nNorway\n\n1994\n\nW017XVII\n\n12 February 1994\n\n27 February 1994\n\nAtlanta\n\nUnited States\n\n1996\n\nNorth America\n\nS026XXVI\n\n19 July 1996\n\n4 August 1996\n\nNagano\n\nJapan\n\n1998\n\nAsia\n\nW018XVIII\n\n7 February 1998\n\n22 February 1998\n\nSydney\n\nAustralia\n\n2000\n\nOceania\n\nS027XXVII\n\n15 September 2000\n\n1 October 2000\n\nSalt Lake City\n\nUnited States\n\n2002\n\nNorth America\n\nW019XIX\n\n8 February 2002\n\n24 February 2002\n\nAthens\n\nGreece\n\n2004\n\nEurope\n\nS028XXVIII\n\n13 August 2004\n\n29 August 2004\n\nTurin\n\nItaly\n\n2006\n\nW020XX\n\n10 February 2006\n\n26 February 2006\n\nBeijing[l]\n\nChina\n\n2008\n\nAsia\n\nS029XXIX\n\n8 August 2008\n\n24 August 2008\n\n[24]\n\nVancouver\n\nCanada\n\n2010\n\nNorth America\n\nW021XXI\n\n12 February 2010\n\n28 February 2010\n\nLondon\n\nUnited Kingdom\n\n2012\n\nEurope\n\nS030XXX\n\n27 July 2012\n\n12 August 2012\n\nSochi\n\nRussia[j]\n\n2014\n\nW022XXII\n\n7 February 2014\n\n23 February 2014\n\nRio de Janeiro\n\nBrazil\n\n2016\n\nSouth America\n\nS031XXXI\n\n5 August 2016\n\n21 August 2016\n\nPyeongchang\n\nSouth Korea\n\n2018\n\nAsia\n\nW023XXIII\n\n9 February 2018\n\n25 February 2018\n\n§\n\nTokyo\n\nJapan\n\n2020\n\nS032XXXII\n\n23 July 2021[m]\n\n8 August 2021[m]\n\nBeijing\n\nChina\n\n2022\n\nW024XXIV\n\n4 February 2022\n\n20 February 2022\n\nParis[n]\n\nFrance\n\n2024\n\nEurope\n\nS033XXXIII\n\n26 July 2024\n\n11 August 2024\n\nMilan\n\nCortina d'Ampezzo\n\nItaly\n\n2026\n\nW025XXV\n\n6 February 2026\n\n22 February 2026\n\nLos Angeles\n\nUnited States\n\n2028\n\nNorth America\n\nS034XXXIV\n\n14 July 2028\n\n30 July 2028\n\nFrench Alps[o]\n\nFrance\n\n2030\n\nEurope\n\nW026XXVI\n\n1 February 2030\n\n17 February 2030\n\nBrisbane\n\nAustralia\n\n2032\n\nOceania\n\nS035XXXV\n\n23 July 2032\n\n8 August 2032\n\nSalt Lake City\n\nUnited States\n\n2034\n\nNorth America\n\nW027XXVII\n\n3 February 2034\n\n19 February 2034\n\nThe 1906 Intercalated Games, which took place in Athens, are no longer officially recognized by the IOC as an official Olympic Games.\n\nThe IOC has also entered \"privileged dialogue\" with Switzerland for the 2038 Winter Games.[27]",
+        "representative_chunk_id": "List_of_Olympic_Games_host_cities.html#section-001-00",
+        "section_title": "Host cities for Summer and Winter Olympic Games",
+        "section_path": [
+          "Olympic Games host cities",
+          "Host cities for Summer and Winter Olympic Games"
+        ],
+        "retrieval_query": "Winter Olympic Games",
+        "discovered_by": "vector",
+        "rank": 2,
+        "raw_score": 0.7514820098876953,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Summer_Olympic_Games.html",
+        "representative_chunk": "Article: Summer Olympic Games\nSection: Sports\n\nMain article: Olympic sports\n\nThere has been a total of 42 sports, spanning 55 disciplines, included in the Olympic programme at one point or another in the history of the Games. The schedule has comprised 33 sports for the recent Summer Olympics (2020), with 32 sports planned for the next Summer Olympics (2024).\n\nThe various Olympic Sports federations are grouped under a common umbrella association, called the Association of Summer Olympic International Federations (ASOIF).\n\n  Current sport  \n  No longer included\n\nSport\nYears\n\n3x3 Basketball\nSince 2020\n\nArchery\n1900–1908, 1920, since 1972\n\nArtistic swimming\nSince 1984\n\nAthletics\nAll\n\nBadminton\nSince 1992\n\nBaseball\n1992–2008, 2020, 2028\n\nBasketball\nSince 1936\n\nBasque pelota\n1900\n\nBreaking\n2024\n\nBoxing\n1904, 1908, since 1920\n\nCanoeing\nSince 1936\n\nCricket\n1900, 2028\n\nCroquet\n1900\n\nCycling\nAll\n\nDiving\nSince 1904\n\nEquestrian\n1900, since 1912\n\nFencing\nAll\n\nField hockey\n1908, 1920, since 1928\n\nFlag football\n2028\n\nFootball\n1900–1928, since 1936\n\nGolf\n1900, 1904, since 2016\n\nGymnastics\nAll\n\nHandball\n1936, since 1972\n\nJeu de paume\n1908\n\nJudo\n1964, since 1972\n\nKarate\n2020\n\nLacrosse\n1904, 1908, 2028\n\nModern pentathlon\nSince 1912\n\nPolo\n1900, 1908, 1920, 1924, 1936\n\nRackets\n1908\n\nRoque\n1904\n\nRowing\nSince 1900\n\nRugby union\n1900, 1908, 1920, 1924\n\nRugby sevens\nSince 2016\n\nSailing\n1900, since 1908\n\nShooting\n1896, 1900, 1908–1924, since 1932\n\nSkateboarding\nSince 2020\n\nSoftball\n1996–2008, 2020, 2028\n\nSport climbing\nSince 2020\n\nSquash\n2028\n\nSurfing\nSince 2020\n\nSwimming\nAll\n\nTable tennis\nSince 1988\n\nTaekwondo\nSince 2000\n\nTennis\n1896–1924, since 1988\n\nTriathlon\nSince 2000\n\nTug of war\n1900–1920\n\nVolleyball\nSince 1964\n\nWater motorsports\n1908\n\nWater polo\nSince 1900\n\nWeightlifting\n1896, 1904, since 1920\n\nWrestling\n1896, since 1904",
+        "representative_chunk_id": "Summer_Olympic_Games.html#section-009-00",
+        "section_title": "Sports",
+        "section_path": [
+          "Sports"
+        ],
+        "retrieval_query": "Using the Sport/Years table in the Wikipedia article on the Winter Olympic Games, which listed sports first entered the official Winter Olympic program in 1950 or later? Give the first year for each.",
+        "discovered_by": "vector",
+        "rank": 3,
+        "raw_score": 0.8618329763412476,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "1992_Winter_Olympics.html",
+        "representative_chunk": "Article: 1992 Winter Olympics\nSection: Sports\n\nThere were 57 events contested in 6 sports (12 disciplines). See the medal winners, ordered by sport:\n\n Alpine skiing (10) (details)\n\n Biathlon (6) (details)\n\n Bobsleigh (2) (details)\n\n Cross-country skiing (10) (details)\n\n Figure skating (4) (details)\n\n Freestyle skiing (2) (details)\n\n Ice hockey (1) (details)\n\n Luge (3) (details)\n\n Nordic combined (2) (details)\n\n Ski jumping (3) (details)\n\n Short track speed skating (4) (details)\n\n Speed skating (10) (details)",
+        "representative_chunk_id": "1992_Winter_Olympics.html#section-007-00",
+        "section_title": "Sports",
+        "section_path": [
+          "Sports"
+        ],
+        "retrieval_query": "Using the Sport/Years table in the Wikipedia article on the Winter Olympic Games, which listed sports first entered the official Winter Olympic program in 1950 or later? Give the first year for each.",
+        "discovered_by": "vector",
+        "rank": 4,
+        "raw_score": 0.8701170682907104,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "1988_Winter_Olympics.html",
+        "representative_chunk": "Article: 1988 Winter Olympics\nSection: Sports\n\nThere were 46 events contested in 6 sports (10 disciplines). In addition, there were 22 events in 4 demonstration sports and disciplines that have no official status in the overall medal tally.\n\n1988 Olympic Winter Games Sports program\n\n Alpine skiing (10) (details)\n\n Biathlon (3) (details)\n\n Bobsleigh (2) (details)\n\n Cross-country skiing (8) (details)\n\n Figure skating (4) (details)\n\n Ice hockey (1) (details)\n\n Luge (3) (details)\n\n Nordic combined (2) (details)\n\n Ski jumping (3) (details)\n\n Speed skating (10) (details)\n\nDemonstration Sports (No official medals awarded)\n\nCurling (2) (details)\n\nDisabled skiing (4) (details)\n\nFreestyle skiing (6) (details)\n\nShort track speed skating (10) (details)",
+        "representative_chunk_id": "1988_Winter_Olympics.html#section-005-00",
+        "section_title": "Sports",
+        "section_path": [
+          "Sports"
+        ],
+        "retrieval_query": "Using the Sport/Years table in the Wikipedia article on the Winter Olympic Games, which listed sports first entered the official Winter Olympic program in 1950 or later? Give the first year for each.",
+        "discovered_by": "vector",
+        "rank": 5,
+        "raw_score": 0.8752323985099792,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      }
+    ],
+    "article_reviews": [
+      {
+        "source_article": "Winter_Olympic_Games.html",
+        "relevant": true,
+        "reason": "This article is directly about the Winter Olympic Games and includes a Sports section with a sport/year table needed for the question.",
+        "relevant_sections": [
+          "Sports",
+          "Current sports",
+          "Demonstration events"
+        ],
+        "relevant_table_names": [
+          "Table 1: Sport"
+        ],
+        "needs_table_reader": true
+      },
+      {
+        "source_article": "List_of_Olympic_Games_host_cities.html",
+        "relevant": false,
+        "reason": "This article is about host cities, not the Winter Olympic sports program or sport entry years.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Summer_Olympic_Games.html",
+        "relevant": false,
+        "reason": "This article concerns the Summer Games and its sports table, which is not the source needed for Winter Olympic program years.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "1992_Winter_Olympics.html",
+        "relevant": false,
+        "reason": "This article is about a single Winter Olympics edition and its sports listing, not the overall Winter Olympic Games sport-by-year table.",
+        "relevant_sections": [
+          "Sports",
+          "Demonstration sports"
+        ],
+        "relevant_table_names": [
+          "Table 8: Winter Olympics"
+        ],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "1988_Winter_Olympics.html",
+        "relevant": false,
+        "reason": "This article is about a single Winter Olympics edition and its sports program, not the overall Winter Olympic Games sport-by-year table.",
+        "relevant_sections": [
+          "Sports"
+        ],
+        "relevant_table_names": [
+          "Table 4: 1988 Olympic Winter Games Sports program"
+        ],
+        "needs_table_reader": false
+      }
+    ],
+    "selected_articles": [
+      "Winter_Olympic_Games.html"
+    ],
+    "rejected_articles": [
+      "List_of_Olympic_Games_host_cities.html",
+      "Summer_Olympic_Games.html",
+      "1992_Winter_Olympics.html",
+      "1988_Winter_Olympics.html"
+    ],
+    "evidence": [
+      {
+        "evidence_id": "Winter_Olympic_Games.html#table-1",
+        "source_article": "Winter_Olympic_Games.html",
+        "content": "Structured table (JSON rows) — read values directly from these rows; do not rely on prior knowledge.\n{\"caption\": null, \"columns\": [\"Sport\", \"Years\", \"Events\", \"Events list\"], \"rows\": [{\"Sport\": \"Alpine skiing\", \"Years\": \"Since 1936\", \"Events\": \"10 [ 170 ]\", \"Events list\": \"Men's: downhill, super G, giant slalom, slalom, alpine combined. Women's: downhill, super G, giant slalom, slalom, alpine combined. Mixed parallel slalom.\"}, {\"Sport\": \"Biathlon\", \"Years\": \"Since 1960 [ b ]\", \"Events\": \"11 [ 171 ]\", \"Events list\": \"Men's: sprint 10 km, individual 20 km, pursuit 12.5 km, mass start 15 km, relay 4×7.5 km. Women's: sprint 7.5 km, individual 15 km, pursuit 10 km, mass start 12.5 km, relay 4×6 km. Mixed relay 4×6 km.\"}, {\"Sport\": \"Bobsleigh\", \"Years\": \"1924–1956, since 1964\", \"Events\": \"4 [ 172 ]\", \"Events list\": \"Men's: four-man race, two-man race. Women's: two-woman race, monobob race.\"}, {\"Sport\": \"Cross-country skiing\", \"Years\": \"Since 1924\", \"Events\": \"12 [ 173 ]\", \"Events list\": \"Men's: sprint, team sprint, 15 km, 30 km skiathlon, 50 km mass start, 4×10 km relay. Women's: sprint, team sprint, 10 km, 15 km skiathlon, 30 km mass start, 4×5 km relay.\"}, {\"Sport\": \"Curling\", \"Years\": \"1924, since 1998\", \"Events\": \"3 [ 174 ]\", \"Events list\": \"Men's, women's and mixed doubles tournaments.\"}, {\"Sport\": \"Figure skating\", \"Years\": \"Since 1924 [ i ]\", \"Events\": \"5 [ 175 ]\", \"Events list\": \"Men's singles. Women's singles. Pairs. Ice dancing. Team event.\"}, {\"Sport\": \"Freestyle skiing\", \"Years\": \"Since 1992\", \"Events\": \"15 [ 176 ]\", \"Events list\": \"Men's: aerials, moguls, ski cross, halfpipe, big air, slopestyle. Women's: aerials, moguls, ski cross, halfpipe, big air, slopestyle. Mixed aerials.\"}, {\"Sport\": \"Ice hockey\", \"Years\": \"Since 1924 [ ii ]\", \"Events\": \"2 [ 177 ]\", \"Events list\": \"Men's and women's tournaments.\"}, {\"Sport\": \"Luge\", \"Years\": \"Since 1964\", \"Events\": \"5 [ 178 ]\", \"Events list\": \"Men's singles, Women's singles, Men's doubles, Women's doubles, mixed team relay.\"}, {\"Sport\": \"Nordic combined\", \"Years\": \"Since 1924\", \"Events\": \"3 [ 179 ]\", \"Events list\": \"Men's 10 km individual normal hill, 10 km individual large hill, team 4×5 km large hill.\"}, {\"Sport\": \"Short track speed skating\", \"Years\": \"Since 1992\", \"Events\": \"9 [ 180 ]\", \"Events list\": \"Men's: 500 m, 1000 m, 1500 m, 5000 m relay. Women's: 500 m, 1000 m, 1500 m, 3000 m relay. Mixed 2000 m relay.\"}, {\"Sport\": \"Skeleton\", \"Years\": \"1928, 1948, Since 2002\", \"Events\": \"3 [ 181 ]\", \"Events list\": \"Men's and women's events.\"}, {\"Sport\": \"Ski jumping\", \"Years\": \"Since 1924\", \"Events\": \"6 [ 182 ]\", \"Events list\": \"Men's: individual normal hill, individual large hill, team large hill. Women's: individual normal hill. Mixed team normal hill.\"}, {\"Sport\": \"Ski mountaineering\", \"Years\": \"Since 2026 [ iii ]\", \"Events\": \"3 [ 183 ]\", \"Events list\": \"Men's sprint. Women's sprint. Mixed relay.\"}, {\"Sport\": \"Snowboarding\", \"Years\": \"Since 1998\", \"Events\": \"11 [ 184 ]\", \"Events list\": \"Men's: snowboard cross, parallel, half-pipe, slopestyle, big air. Women's: snowboard cross, parallel, half-pipe, slopestyle, big air. Mixed snowboard cross.\"}, {\"Sport\": \"Speed skating\", \"Years\": \"Since 1924\", \"Events\": \"14 [ 185 ]\", \"Events list\": \"Men's: 500 m, 1000 m, 1500 m, 5000 m, 10,000 m, mass start, team pursuit. Women's: 500 m, 1000 m, 1500 m, 3000 m, 5000 m, mass start, team pursuit.\"}]}",
+        "evidence_type": "table",
+        "title": "Table 1",
+        "section_path": [],
+        "retrieval_query": "Using the Sport/Years table in the Wikipedia article on the Winter Olympic Games, which listed sports first entered the official Winter Olympic program in 1950 or later? Give the first year for each.",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_index": 1,
+          "n_rows": 16,
+          "needs_table_reader": true
+        }
+      }
+    ],
+    "assessment": {
+      "ready_to_answer": true,
+      "supported_requirements": [
+        "The Winter_Olympic_Games.html Sport table provides the official Winter Olympic program sports and their first listed years.",
+        "Sports first entering in 1950 or later can be determined by filtering the Years column for first years >= 1950."
+      ],
+      "missing_requirements": [],
+      "retrieval_requests": [],
+      "table_requests": [],
+      "unresolved_conflicts": [],
+      "explanation": "The supplied table directly lists each sport and the years it has been in the Winter Olympic program. The question asks which listed sports first entered in 1950 or later and the first year for each. From the rows shown, the needed years are explicitly available, so no further retrieval is required."
+    },
+    "assessment_history": [
+      {
+        "ready_to_answer": true,
+        "supported_requirements": [
+          "The Winter_Olympic_Games.html Sport table provides the official Winter Olympic program sports and their first listed years.",
+          "Sports first entering in 1950 or later can be determined by filtering the Years column for first years >= 1950."
+        ],
+        "missing_requirements": [],
+        "retrieval_requests": [],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The supplied table directly lists each sport and the years it has been in the Winter Olympic program. The question asks which listed sports first entered in 1950 or later and the first year for each. From the rows shown, the needed years are explicitly available, so no further retrieval is required."
+      }
+    ]
+  }
+}

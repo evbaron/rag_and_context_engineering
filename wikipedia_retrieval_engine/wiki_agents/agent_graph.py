@@ -21,6 +21,7 @@ from wikipedia_retrieval_engine.wiki_agents.retrieval_nodes import (
     assess_evidence,
     collect_initial_evidence,
     load_selected_sections,
+    load_selected_tables,
     retrieve_graph_seeded_evidence,
     retrieve_initial_articles,
     retrieve_initial_articles_decomposed,
@@ -196,6 +197,10 @@ def build_retrieval_benchmark_graph(
         ),
     )
     workflow.add_node(
+        "load_selected_tables",
+        partial(load_selected_tables, markdown_store=markdown_store),
+    )
+    workflow.add_node(
         "assess_evidence",
         partial(
             assess_evidence,
@@ -230,7 +235,8 @@ def build_retrieval_benchmark_graph(
     workflow.add_edge(START, "retrieve_initial_articles")
     workflow.add_edge("retrieve_initial_articles", "review_and_select_from_toc")
     workflow.add_edge("review_and_select_from_toc", "load_selected_sections")
-    workflow.add_edge("load_selected_sections", "assess_evidence")
+    workflow.add_edge("load_selected_sections", "load_selected_tables")
+    workflow.add_edge("load_selected_tables", "assess_evidence")
     workflow.add_conditional_edges(
         "assess_evidence",
         make_retrieval_benchmark_router(tuple(repeated_retrievers)),

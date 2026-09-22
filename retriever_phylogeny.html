@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Retriever Phylogeny</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+  html{-webkit-text-size-adjust:100%}
+  :root{
+    padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px);
+    --bg:#f5f7f9; --surface:#ffffff; --surface-2:#eef1f5; --sunk:#e7ebf0;
+    --ink:#1a1e26; --ink-soft:#586173; --ink-faint:#8a93a3; --line:#d7dde5;
+    --spine:#9aa7b6;
+    --survivor:#157a54; --survivor-bg:#e4f3ec;
+    --abandon:#8a919c; --abandon-bg:#edeff2;
+    --probe:#3a4db3; --probe-bg:#e8eaf8;
+    --current:#b25e18; --current-bg:#f8ecda;
+    --next:#6a4ba6; --next-bg:#efe9f7;
+    --recall:#0e7c8f; --quality:#b25e18;
+    --shadow:0 1px 2px rgba(20,28,40,.06),0 6px 20px rgba(20,28,40,.06);
+    --display:"Fraunces",Georgia,serif;
+    --body:"IBM Plex Sans",system-ui,sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,monospace;
+  }
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+    --bg:#0e1217; --surface:#161b22; --surface-2:#1b212a; --sunk:#11151b;
+    --ink:#e7ebf1; --ink-soft:#9aa5b4; --ink-faint:#6b7480; --line:#28303b;
+    --spine:#3a4553;
+    --survivor:#54c491; --survivor-bg:#132720;
+    --abandon:#727b87; --abandon-bg:#191e26;
+    --probe:#8494ec; --probe-bg:#161c33;
+    --current:#dd964e; --current-bg:#271d10;
+    --next:#a488d8; --next-bg:#1f1830;
+    --recall:#39b6cc; --quality:#dd964e;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);
+  }}
+  :root[data-theme="dark"]{
+    --bg:#0e1217; --surface:#161b22; --surface-2:#1b212a; --sunk:#11151b;
+    --ink:#e7ebf1; --ink-soft:#9aa5b4; --ink-faint:#6b7480; --line:#28303b;
+    --spine:#3a4553;
+    --survivor:#54c491; --survivor-bg:#132720;
+    --abandon:#727b87; --abandon-bg:#191e26;
+    --probe:#8494ec; --probe-bg:#161c33;
+    --current:#dd964e; --current-bg:#271d10;
+    --next:#a488d8; --next-bg:#1f1830;
+    --recall:#39b6cc; --quality:#dd964e;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  img{max-width:100%} [hidden]{display:none!important}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);
+    font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1160px;margin:0 auto;padding-inline:20px;padding-block:0}
+  h1,h2,h3{margin:0;font-family:var(--display);font-weight:600;text-wrap:balance;letter-spacing:-.01em}
+  .mono{font-family:var(--mono)}
+
+  header.hero{padding-block:40px 26px;border-bottom:1px solid var(--line)}
+  .eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint)}
+  h1{font-size:clamp(30px,5.2vw,52px);line-height:1.02;margin-top:10px}
+  .thesis{margin-top:14px;max-width:62ch;color:var(--ink-soft);font-size:16px}
+  .thesis b{color:var(--ink);font-weight:600}
+  .herogrid{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:end;margin-top:26px}
+  @media(max-width:760px){.herogrid{grid-template-columns:1fr;gap:22px}}
+  .chartcard{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 16px 12px;box-shadow:var(--shadow)}
+  .chartcard h3{font-family:var(--body);font-weight:600;font-size:12.5px;letter-spacing:.02em;color:var(--ink-soft);margin-bottom:2px}
+  .chartsub{font-size:11.5px;color:var(--ink-faint);margin-bottom:6px}
+  svg{display:block;max-width:100%}
+  .clegend{display:flex;gap:16px;margin-top:6px;font-size:11.5px;font-family:var(--mono);flex-wrap:wrap}
+  .clegend span{display:inline-flex;align-items:center;gap:6px;color:var(--ink-soft)}
+  .swatch{width:14px;height:3px;border-radius:2px;display:inline-block}
+  .statuslegend{display:flex;flex-wrap:wrap;gap:8px 14px;margin-top:18px}
+  .chip{display:inline-flex;align-items:center;gap:7px;font-size:12px;color:var(--ink-soft)}
+  .dot{width:10px;height:10px;border-radius:50%;flex:none}
+  .d-survivor{background:var(--survivor)} .d-abandon{background:var(--abandon)}
+  .d-probe{background:var(--probe)} .d-current{background:var(--current)}
+  .d-next{background:var(--next)} .d-tool{background:var(--recall)}
+  .hint{font-size:12px;color:var(--ink-faint);margin-top:10px}
+
+  main{padding-block:8px 60px}
+  .cp{display:grid;grid-template-columns:130px 1fr;gap:22px;position:relative}
+  @media(max-width:680px){.cp{grid-template-columns:1fr;gap:8px}}
+  .rail{position:relative;padding-top:26px}
+  .rail::before{content:"";position:absolute;left:15px;top:0;bottom:-8px;width:2px;background:var(--spine)}
+  .cp:last-child .rail::before{bottom:auto;height:40px}
+  .node-dot{position:absolute;left:8px;top:26px;width:16px;height:16px;border-radius:50%;background:var(--surface);border:3px solid var(--spine);z-index:2}
+  .cp-label{position:relative;padding-left:34px}
+  .cp-num{font-family:var(--display);font-size:22px;font-weight:600;line-height:1}
+  .cp-date{font-family:var(--mono);font-size:11px;color:var(--ink-faint);margin-top:3px}
+  .cp-theme{font-size:12.5px;color:var(--ink-soft);margin-top:6px;max-width:16ch}
+  @media(max-width:680px){
+    .rail{display:none}
+    .cp-label{padding-left:0;padding-top:24px;border-top:1px solid var(--line);margin-top:6px}
+    .cp-num::before{content:"● ";color:var(--spine);font-size:14px}
+  }
+  .band{padding-top:22px;padding-bottom:14px}
+  .band-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(212px,1fr));gap:12px}
+
+  .card{position:relative;text-align:left;width:100%;background:var(--surface);color:inherit;
+    border:1px solid var(--line);border-left:4px solid var(--abandon);border-radius:12px;
+    padding:13px 13px 12px;cursor:pointer;font:inherit;box-shadow:var(--shadow);
+    transition:transform .12s ease,box-shadow .12s ease}
+  .card:hover{transform:translateY(-2px)}
+  .card:focus-visible{outline:2px solid var(--recall);outline-offset:2px}
+  .card.s-survivor{border-left-color:var(--survivor)}
+  .card.s-abandon{border-left-color:var(--abandon);opacity:.72;background:var(--abandon-bg)}
+  .card.s-probe{border-left-color:var(--probe)}
+  .card.s-current{border-left-color:var(--current);background:var(--current-bg)}
+  .card.s-next{border-left-color:var(--next);background:var(--next-bg);border-style:dashed}
+  .card.s-tool{border-left-color:var(--recall)}
+  .card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+  .card h3{font-family:var(--body);font-weight:600;font-size:14.5px;line-height:1.2}
+  .fam{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);margin-top:3px}
+  .tag{font-family:var(--mono);font-size:9.5px;letter-spacing:.07em;text-transform:uppercase;padding:3px 6px;border-radius:20px;white-space:nowrap;flex:none}
+  .t-survivor{background:var(--survivor-bg);color:var(--survivor)}
+  .t-abandon{background:var(--sunk);color:var(--abandon)}
+  .t-probe{background:var(--probe-bg);color:var(--probe)}
+  .t-current{background:var(--current-bg);color:var(--current)}
+  .t-next{background:var(--next-bg);color:var(--next)}
+  .t-tool{background:var(--surface-2);color:var(--recall)}
+  .blurb{font-size:12.5px;color:var(--ink-soft);margin-top:7px}
+  .metrics{display:flex;gap:14px;margin-top:11px}
+  .metric{flex:1;min-width:0}
+  .metric .ml{font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;color:var(--ink-faint);display:flex;justify-content:space-between}
+  .metric .mval{color:var(--ink)}
+  .bar{height:5px;border-radius:3px;background:var(--sunk);margin-top:4px;overflow:hidden}
+  .bar>i{display:block;height:100%;border-radius:3px}
+  .bar.r>i{background:var(--recall)} .bar.q>i{background:var(--quality)}
+
+  .scrim{position:fixed;inset:0;background:rgba(12,16,22,.44);opacity:0;pointer-events:none;transition:opacity .18s ease;z-index:40}
+  .scrim.open{opacity:1;pointer-events:auto}
+  aside.drawer{position:fixed;top:0;right:0;height:100%;width:min(430px,92vw);z-index:50;
+    background:var(--surface);border-left:1px solid var(--line);box-shadow:-12px 0 40px rgba(12,16,22,.2);
+    transform:translateX(100%);transition:transform .22s cubic-bezier(.2,.7,.2,1);
+    display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px)}
+  aside.drawer.open{transform:none}
+  .dr-head{padding:20px 22px 14px;border-bottom:1px solid var(--line)}
+  .dr-body{padding:18px 22px 44px;overflow-y:auto}
+  .dr-kind{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint)}
+  .dr-title{font-family:var(--display);font-size:24px;font-weight:600;margin-top:8px;line-height:1.1}
+  .dr-tagline{color:var(--ink-soft);font-size:13px;margin-top:8px}
+  .dr-metrics{display:flex;gap:12px;margin-top:16px}
+  .dr-metric{flex:1;background:var(--surface-2);border-radius:10px;padding:10px 12px}
+  .dr-metric .k{font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:var(--ink-faint);text-transform:uppercase}
+  .dr-metric .v{font-family:var(--mono);font-size:22px;font-weight:600;margin-top:3px}
+  .dr-metric .rng{font-family:var(--mono);font-size:10px;color:var(--ink-faint);margin-top:2px}
+  .dr-metric.r .v{color:var(--recall)} .dr-metric.q .v{color:var(--quality)}
+  .dr-sec{margin-top:20px}
+  .dr-sec h4{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 6px}
+  .dr-sec p{margin:0;font-size:13.5px;color:var(--ink)}
+  .dr-note{font-size:12px;color:var(--ink-soft);margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+  .verdict{border-left:3px solid var(--survivor);padding-left:12px}
+  .verdict.s-abandon{border-color:var(--abandon)} .verdict.s-probe{border-color:var(--probe)}
+  .verdict.s-current{border-color:var(--current)} .verdict.s-next{border-color:var(--next)} .verdict.s-tool{border-color:var(--recall)}
+  .closebtn{position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink-soft);font-size:17px;cursor:pointer;line-height:1}
+  .closebtn:focus-visible{outline:2px solid var(--recall);outline-offset:2px}
+  footer{border-top:1px solid var(--line);padding-block:20px 34px;color:var(--ink-faint);font-size:12px}
+  footer b{color:var(--ink-soft);font-weight:600}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow">Wikipedia Retrieval Engine · capstone lineage</div>
+    <h1>Retriever Phylogeny</h1>
+    <p class="thesis">Every checkpoint branched into approaches; RAGAS applied two selection pressures.
+      <b>Retrieval recall kept climbing — .90 → .94 → .96+</b> — while
+      <b>answer quality stayed capped near .75</b>. The gap named the real bottleneck at the very start
+      (a counting question that failed even with the right text) and it is still unsolved: reasoning over tables, now Phase&nbsp;2.</p>
+    <div class="herogrid">
+      <div>
+        <div class="statuslegend" id="legend"></div>
+        <p class="hint">Tap any node for what was tried, both metrics (with run range and validation-set figure where recorded), and why it survived or was abandoned.</p>
+      </div>
+      <div class="chartcard">
+        <h3>Two metrics, two stories</h3>
+        <div class="chartsub">survivor of each checkpoint · RAGAS · GT set</div>
+        <svg id="chart" viewBox="0 0 340 172" role="img" aria-label="Recall rose across checkpoints while answer quality stayed flat"></svg>
+        <div class="clegend">
+          <span><i class="swatch" style="background:var(--recall)"></i>article recall</span>
+          <span><i class="swatch" style="background:var(--quality)"></i>answer quality</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main id="timeline"></main>
+  <footer>
+    Reconstructed from the repo's <b>git history</b> (35 commits, 23 Aug – 21 Sep 2026), the <b>RAGAS experiment CSVs</b>
+    (<span class="mono">retriever_kind · article_recall · score</span>), and the <b>checkpoint READMEs</b>.
+    Card numbers are GT-set survivor means; ranges and validation-set figures appear in the detail panel where recorded.
+    1.1–2.1 predate the recall metric. 5.1 answer quality is measured honestly over all 19 questions with the table-reader still disabled, so its dip is missing capability, not worse reasoning.
+  </footer>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Approach detail">
+  <button class="closebtn" id="closebtn" aria-label="Close">✕</button>
+  <div class="dr-head">
+    <div class="dr-kind" id="dr-kind"></div>
+    <div class="dr-title" id="dr-title"></div>
+    <div class="dr-tagline" id="dr-tagline"></div>
+    <div class="dr-metrics" id="dr-metrics"></div>
+  </div>
+  <div class="dr-body" id="dr-body"></div>
+</aside>
+
+<script>
+const CPS = [
+  {cp:"1.1", date:"23 Aug", theme:"Pre-RAG baseline"},
+  {cp:"2.1", date:"29–30 Aug", theme:"First RAG framework"},
+  {cp:"3.1", date:"6–7 Sep", theme:"Eval framework + oracle ceiling"},
+  {cp:"4.1", date:"13–15 Sep", theme:"Advanced retrieval"},
+  {cp:"5.1", date:"20–21 Sep", theme:"Agentic retriever"},
+];
+const STATUS = {
+  survivor:{tag:"survived",cls:"survivor"}, abandon:{tag:"abandoned",cls:"abandon"},
+  probe:{tag:"ceiling probe",cls:"probe"}, tool:{tag:"kept as tool",cls:"tool"},
+  current:{tag:"current",cls:"current"}, next:{tag:"next · phase 2",cls:"next"},
+};
+const N = [
+  // 1.1
+  {cp:"1.1",name:"No-RAG baseline",st:"probe",fam:"baseline",recall:null,quality:null,
+   blurb:"Raw LLM answers, no retrieval.",
+   what:"The starting point: questions sent straight to the answer model with no Wikipedia corpus attached (baseline_starter.py, two logged runs).",
+   why:"Established the un-grounded floor. It already hinted at the theme to come — questions needing counting/aggregation were shaky even before retrieval was in the picture.",
+   verdict:"Root of the tree — everything after adds retrieval on top."},
+  // 2.1 — retrievers
+  {cp:"2.1",name:"BM25 (lexical)",st:"abandon",fam:"retriever",recall:null,quality:null,
+   blurb:"Sparse keyword matching.",
+   what:"One of three retrievers in the first RAG framework, tested across all three chunking strategies.",
+   why:"Lexical matches didn't beat dense search on this corpus; survived only as the BM25 half of hybrid, then dropped for good in 3.1.",
+   verdict:"Abandoned as a standalone retriever."},
+  {cp:"2.1",name:"Hybrid (BM25+vector)",st:"abandon",fam:"retriever",recall:null,quality:null,
+   blurb:"Weighted sparse + dense blend.",
+   what:"BM25 and vector fused under several weightings (e.g. 35/65) across the three chunkings.",
+   why:"Never clearly beat pure vector and dragged in extra context; formally measured and rejected in 3.1.",
+   verdict:"Abandoned after the 3.1 head-to-head."},
+  {cp:"2.1",name:"Vector search (Chroma)",st:"survivor",fam:"retriever",recall:null,quality:null,
+   blurb:"Dense embedding retrieval — the trunk.",
+   what:"Chroma dense-embedding search, the retriever every later checkpoint builds on.",
+   why:"Strongest single retriever across the manually reviewed 2.1 experiments.",
+   verdict:"Survived — the backbone of the whole tree."},
+  // 2.1 — chunking / context strategy
+  {cp:"2.1",name:"Character chunks",st:"abandon",fam:"context strategy",recall:null,quality:null,
+   blurb:"1,600 chars, 200 overlap (~58k chunks).",
+   what:"Fixed-width character windows — the first indexing scheme.",
+   why:"Good enough to *identify* the right article, but as final context it clipped long articles (e.g. the 1580 events question needed more of the year).",
+   verdict:"Kept only to select articles, not as answer context."},
+  {cp:"2.1",name:"Header-section chunks",st:"tool",fam:"context strategy",recall:null,quality:null,
+   blurb:"h2–h6 hierarchy, ≤10k (~41k chunks).",
+   what:"Chunks aligned to Wikipedia heading structure instead of arbitrary character windows.",
+   why:"Set aside at 2.1 in favor of full articles — but revived as the core section index that 4.1 and 5.1 retrieve against.",
+   verdict:"Dormant then revived — the section index of today."},
+  {cp:"2.1",name:"Full-article context",st:"survivor",fam:"context strategy",recall:null,quality:null,
+   blurb:"Chunks select articles; send whole article.",
+   what:"Use retrieved chunks to identify articles, then send each selected article's complete text.",
+   why:"Consistently produced the most complete answers at 2.1; carried into 3.1/4.1 — until its ~130–260k-char context became the problem 5.1 replaced with sections.",
+   verdict:"Survived through 4.1; retired in 5.1 for section evidence."},
+  // 3.1
+  {cp:"3.1",name:"Oracle context",st:"probe",fam:"ceiling test",recall:null,quality:0.789,
+   blurb:"Perfect articles handed to the model.",
+   what:"Bypasses retrieval entirely: the designated source articles are fed straight to the answer model — a ceiling test for answering.",
+   why:"Quality reached only 0.789, not 1.0. Even with perfect articles, complex/table questions failed — the first *quantified* proof that reasoning, not retrieval, is the ceiling.",
+   verdict:"Diagnostic probe — set the reasoning ceiling that still governs Phase 2.",
+   rvalid:null,qvalid:null},
+  {cp:"3.1",name:"Vector · K=7",st:"survivor",fam:"retriever",recall:0.899,quality:0.747,
+   blurb:"Top-7 seeds → full articles.",
+   what:"Vector retrieval at K=7, collapsing duplicate articles and expanding to full article text.",
+   why:"Best tested end-to-end: higher quality and recall than hybrid, at far less context.",
+   verdict:"Survived — the 4.1 baseline to beat."},
+  {cp:"3.1",name:"Hybrid · K=7 (35/65)",st:"abandon",fam:"retriever",recall:0.882,quality:0.705,
+   blurb:"BM25 0.35 / vector 0.65.",
+   what:"Hybrid at K=7 with a candidate pool of 10.",
+   why:"Lower quality and recall than pure vector, and ~45% more context. BM25's lexical hits didn't compensate.",
+   verdict:"Abandoned — scoped to this corpus, but decisive."},
+  // 4.1
+  {cp:"4.1",name:"Top-K depth (5 → 7)",st:"tool",fam:"tuning",recall:0.899,quality:0.754,
+   blurb:"K=5 vs K=7 sweep.",
+   what:"Both retrieval depths were run under otherwise-fixed settings.",
+   why:"K=7 recovered more designated articles than K=5 without derailing quality.",
+   verdict:"K=7 kept as the standard depth."},
+  {cp:"4.1",name:"Markdown vs plain-text",st:"abandon",fam:"representation",recall:0.899,quality:0.744,
+   blurb:"Cleaner representation, same text.",
+   what:"Controlled ablation: clean markdown (with table structure) vs plain text.",
+   why:"Markdown ≈ plain-text — recall held, quality flat. Presentation was not the lever.",
+   verdict:"Abandoned as a lever (the extractor stayed; it just wasn't the win)."},
+  {cp:"4.1",name:"Decomposition + reasoning",st:"tool",fam:"reasoning",recall:0.902,quality:0.756,
+   blurb:"Split the query, add reasoning steps.",
+   what:"MultiStep retriever: an LLM splits the question into sub-queries and appends reasoning instructions to the answer prompt.",
+   why:"A targeted tool — fixed some single-table aggregations (GT07 0.50→0.88) and lifted multi-article recall — but overall quality stayed flat and it could regress easy questions.",
+   verdict:"Kept as a tool, not adopted as the main path.",
+   range:"0.882–0.939", rvalid:0.967},
+  {cp:"4.1",name:"Graph retriever",st:"survivor",fam:"retriever",recall:0.939,quality:0.719,
+   blurb:"Vector seeds → 1-hop graph expansion.",
+   what:"Self-seeds with vector search, then follows the article relationship graph one hop to related articles.",
+   why:"The only lever that moved recall — 0.899 → 0.939 on the GT set. (On the validation set vector and graph tied at 0.973 — the gain was GT-specific.) Answer quality still flat.",
+   verdict:"Survived — the recall champion and 5.1's benchmark to beat.",
+   rvalid:0.973},
+  // 5.1
+  {cp:"5.1",name:"Agentic loop v1",st:"abandon",fam:"agentic",recall:0.886,quality:0.60,
+   blurb:"Vector → graph → multi-step, with an assessor.",
+   what:"First agentic build: initial vector articles, an evidence-assessment loop escalating to graph then multi-step section retrieval. Only sections enter context (kills the 260k-char problem).",
+   why:"Out of the gate it scored below the 4.1 graph survivor (recall 0.886) and crashed on some questions — a starting point, not the answer.",
+   verdict:"Reworked — the substrate for the tune-up below."},
+  {cp:"5.1",name:"Retrieval tune-up",st:"survivor",fam:"agentic",recall:0.963,quality:0.66,
+   blurb:"k=4 + section deepen + graph-contamination cap.",
+   what:"Three fixes: seed 4 articles (not 3), deepen each with focused sections, and rank+cap graph-neighbor sections so siblings can't contaminate.",
+   why:"Recall 0.886 → 0.963 at ~14× less context — finally past the 4.1 graph baseline (0.939).",
+   verdict:"Survived — cleared the 'beat 4.1' bar on recall.",
+   range:"0.930–1.000"},
+  {cp:"5.1",name:"Initial: multi-step (sub-topic)",st:"abandon",fam:"initial retriever",recall:0.951,quality:0.62,
+   blurb:"Reuse the 4.1 decomposer as the initial stage.",
+   what:"Lead with the sub-topic decomposer to surface named entities (chasing GT16, where Obama was buried).",
+   why:"It emitted entity-diluted analytical queries ('2008 Obama…Clinton campaign advisor' → retrieves Clinton, not Obama). A wash — recall 0.951, below the tune-up.",
+   verdict:"Abandoned — right idea, wrong query shape."},
+  {cp:"5.1",name:"Initial: multi-step (entity)",st:"survivor",fam:"initial retriever",recall:0.97,quality:0.62,
+   blurb:"Decompose into clean canonical entity names.",
+   what:"A new entity prompt: one full-name query per named/implied entity ('Bill Clinton', 'Barack Obama', 'Hillary Clinton'). Each retrieves its article at rank 1.",
+   why:"Validated live — GT16 and GT14 surface all their designated articles. Firms up recall; it can't move answer quality (that's synthesis).",
+   verdict:"Survived — the settled initial retriever."},
+  {cp:"5.1",name:"Review: snippet judge",st:"abandon",fam:"selection",recall:0.864,quality:0.58,
+   blurb:"Keep/reject an article by one chunk.",
+   what:"The original review node judged each article by its single top-ranked snippet.",
+   why:"For entity queries that snippet was often 'See also' or the lead infobox, so it rejected correct articles — GT03 rejected all 7 → recall 0.0. The bottleneck moved from finding to keeping.",
+   verdict:"Abandoned — judging an article by one snippet is the flaw."},
+  {cp:"5.1",name:"Review: TOC judge + select",st:"current",fam:"selection",recall:0.974,quality:0.588,
+   blurb:"Judge by table-of-contents; pick sections; flag tables.",
+   what:"One fused call reads each article's table of contents (not a snippet), keeps the right sources, selects the sections to read, and flags which need a table tool.",
+   why:"Three runs, recall 0.974 and rock-stable — 18 of 19 questions at recall 1.0 (GT03 went 0.0 → 1.0). Quality index 0.59: the non-passes are now mostly partial, and all but one (GT19) sit at recall 1.0.",
+   verdict:"Phase gate met — retrieval is solved; every remaining failure but one fails with its sections present. The bottleneck is synthesis.",
+   range:"0.974–0.974"},
+  {cp:"5.1",name:"Table reading",st:"next",fam:"synthesis",recall:null,quality:null,
+   blurb:"Read / filter / aggregate table rows.",
+   what:"Enable the built-but-disabled table-reader branch (parser, artifact store, planner, executor) so flagged table questions are computed, not guessed.",
+   why:"Retrieval is now solved (recall 0.974, 18/19 at recall 1.0); the surviving failures fail at recall 1.0 — pure table synthesis. The agent already flags which questions need the table tool (GT03/07/08/10/11/…). This is the bottleneck first seen at 2.1's counting question and quantified by 3.1's oracle probe (0.789).",
+   verdict:"The next phase — where answer quality should finally move."},
+];
+
+const legend = document.getElementById('legend');
+[["survivor","survived"],["tool","kept as tool"],["probe","ceiling probe"],
+ ["abandon","abandoned"],["current","current"],["next","phase 2 next"]].forEach(([k,label])=>{
+  const c=document.createElement('span');c.className='chip';
+  c.innerHTML=`<span class="dot d-${k}"></span>${label}`;legend.appendChild(c);
+});
+
+const tl=document.getElementById('timeline');
+CPS.forEach(cpo=>{
+  const nodes=N.filter(n=>n.cp===cpo.cp);
+  const row=document.createElement('section');row.className='cp';
+  row.innerHTML=`
+    <div class="rail"><span class="node-dot"></span>
+      <div class="cp-label"><div class="cp-num">${cpo.cp}</div><div class="cp-date">${cpo.date}</div><div class="cp-theme">${cpo.theme}</div></div>
+    </div>
+    <div class="band"><div class="band-grid"></div></div>`;
+  const grid=row.querySelector('.band-grid');
+  nodes.forEach(n=>grid.appendChild(makeCard(n)));
+  tl.appendChild(row);
+});
+
+function pct(v){return v==null?null:Math.round(v*100)}
+function fmt(v){const p=pct(v);return p==null?'—':'.'+String(p).padStart(2,'0')}
+function makeCard(n){
+  const s=STATUS[n.st];
+  const b=document.createElement('button');b.className=`card s-${s.cls}`;b.type='button';
+  const m=(label,cls,v)=>`<div class="metric"><div class="ml"><span>${label}</span><span class="mval">${fmt(v)}</span></div>
+      <div class="bar ${cls}"><i style="width:${pct(v)==null?0:pct(v)}%"></i></div></div>`;
+  b.innerHTML=`
+    <div class="card-top"><div><h3>${n.name}</h3><div class="fam">${n.fam}</div></div><span class="tag t-${s.cls}">${s.tag}</span></div>
+    <div class="blurb">${n.blurb}</div>
+    <div class="metrics">${m('recall','r',n.recall)}${m('quality','q',n.quality)}</div>`;
+  b.addEventListener('click',()=>openDrawer(n));
+  return b;
+}
+
+const scrim=document.getElementById('scrim'),drawer=document.getElementById('drawer');
+function openDrawer(n){
+  const s=STATUS[n.st];
+  document.getElementById('dr-kind').textContent=`Checkpoint ${n.cp} · ${n.fam} · ${s.tag}`;
+  document.getElementById('dr-title').textContent=n.name;
+  document.getElementById('dr-tagline').textContent=n.blurb;
+  const cell=(k,cls,v,rng)=>`<div class="dr-metric ${cls}"><div class="k">${k}</div><div class="v">${fmt(v)}</div>${rng?`<div class="rng">${rng}</div>`:''}</div>`;
+  document.getElementById('dr-metrics').innerHTML=
+    cell('recall','r',n.recall,n.range?('runs '+n.range):null)+cell('quality','q',n.quality,null);
+  let note='';
+  if(n.rvalid!=null) note+=`Validation-set recall: <b>${fmt(n.rvalid)}</b>. `;
+  if(n.recall==null && n.quality==null) note+='No RAGAS figure recorded at this stage.';
+  document.getElementById('dr-body').innerHTML=`
+    <div class="dr-sec"><h4>What it was</h4><p>${n.what}</p></div>
+    <div class="dr-sec"><h4>What the metrics said</h4><p>${n.why}</p></div>
+    <div class="dr-sec"><h4>Verdict</h4><p class="verdict s-${s.cls}">${n.verdict}</p></div>
+    ${note?`<div class="dr-note">${note}</div>`:''}`;
+  scrim.classList.add('open');drawer.classList.add('open');drawer.setAttribute('aria-hidden','false');
+}
+function closeDrawer(){scrim.classList.remove('open');drawer.classList.remove('open');drawer.setAttribute('aria-hidden','true');}
+scrim.addEventListener('click',closeDrawer);
+document.getElementById('closebtn').addEventListener('click',closeDrawer);
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer();});
+
+(function(){
+  const data=[{x:"3.1",r:0.899,q:0.747},{x:"4.1",r:0.939,q:0.744},{x:"5.1",r:0.974,q:0.588}];
+  const W=340,H=172,L=34,R=14,T=16,B=30;
+  const x=i=>L+i*((W-L-R)/(data.length-1));
+  const lo=0.60,hi=1.0, y=v=>T+(1-(v-lo)/(hi-lo))*(H-T-B);
+  const NS="http://www.w3.org/2000/svg",svg=document.getElementById('chart');
+  const el=(t,a)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);return e;};
+  [0.6,0.7,0.8,0.9,1.0].forEach(v=>{
+    svg.appendChild(el('line',{x1:L,x2:W-R,y1:y(v),y2:y(v),stroke:'var(--line)','stroke-width':1}));
+    const t=el('text',{x:L-6,y:y(v)+3,'text-anchor':'end','font-size':9,'font-family':'var(--mono)',fill:'var(--ink-faint)'});t.textContent='.'+Math.round(v*100);svg.appendChild(t);
+  });
+  data.forEach((d,i)=>{const t=el('text',{x:x(i),y:H-9,'text-anchor':'middle','font-size':10,'font-family':'var(--mono)',fill:'var(--ink-soft)'});t.textContent=d.x;svg.appendChild(t);});
+  const line=(key,color)=>{
+    svg.appendChild(el('path',{d:data.map((d,i)=>(i?'L':'M')+x(i)+' '+y(d[key])).join(' '),fill:'none',stroke:color,'stroke-width':2.4,'stroke-linejoin':'round','stroke-linecap':'round'}));
+    data.forEach((d,i)=>{svg.appendChild(el('circle',{cx:x(i),cy:y(d[key]),r:3.4,fill:color}));
+      const t=el('text',{x:x(i),y:y(d[key])-8,'text-anchor':'middle','font-size':9.5,'font-weight':600,'font-family':'var(--mono)',fill:color});t.textContent='.'+Math.round(d[key]*100);svg.appendChild(t);});
+  };
+  line('r','var(--recall)');line('q','var(--quality)');
+})();
+</script>
+</body>
+</html>

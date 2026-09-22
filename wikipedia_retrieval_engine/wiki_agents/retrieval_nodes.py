@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import json
+import re
 from typing import Literal
 
 from langchain_core.language_models.chat_models import BaseChatModel
@@ -499,6 +501,167 @@ def load_selected_sections(
                 )
 
     return {"evidence": list(evidence_by_id.values())}
+
+
+def _clean_cell(value: object) -> str:
+    """Drop soft hyphens and normalize a table cell to plain text."""
+
+    return str(value).replace("­", "").strip()
+
+
+def _render_table_json(table: dict, *, max_rows: int = 300) -> str:
+    """Render one sidecar table as structured JSON rows the model can read.
+
+    A JSON row-object rendering out-reads the flattened section text on table
+    questions (the model can address cells by column), so table-flagged articles
+    contribute their table this way instead of as more flattened prose.
+    """
+
+    headers = [_clean_cell(h) for h in (table.get("headers") or [])]
+    rows = table.get("rows") or []
+    truncated = len(rows) > max_rows
+    body = [
+        {
+            (headers[i] if i < len(headers) else f"col_{i + 1}"): _clean_cell(cell)
+            for i, cell in enumerate(row)
+        }
+        for row in rows[:max_rows]
+    ]
+    payload = {
+        "caption": _clean_cell(table.get("caption") or "") or None,
+        "columns": headers,
+        "rows": body,
+    }
+    text = (
+        "Structured table (JSON rows) — read values directly from these rows; "
+        "do not rely on prior knowledge.\n"
+        + json.dumps(payload, ensure_ascii=False)
+    )
+    if truncated:
+        text += f"\n(NOTE: showing the first {max_rows} of {len(rows)} rows.)"
+    return text
+
+
+def _resolve_table_indices(
+    review, tables: list, question: str, *, max_tables: int
+) -> list[int]:
+    """Pick the most relevant table(s) to load for a table-flagged article.
+
+    Ranks the tables the review named ("Table N: ...") by how well their
+    caption/headers match the question and keeps the best ``max_tables`` — so a
+    fatalities question loads the deadliest-earthquakes table, not the adjacent
+    "Rank" table. If the review named none, ranks all tables the same way; if
+    nothing matches, falls back to one table (best named, else the largest) since
+    the article was flagged as needing one.
+    """
+
+    if not tables:
+        return []
+
+    tokens = {w for w in re.findall(r"[a-z]{4,}", question.lower())}
+
+    def relevance(index: int) -> int:
+        hay = (
+            _clean_cell(tables[index].get("caption") or "")
+            + " "
+            + " ".join(_clean_cell(h) for h in (tables[index].get("headers") or []))
+        ).lower()
+        return sum(1 for w in tokens if w in hay)
+
+    named: list[int] = []
+    for label in review.relevant_table_names or []:
+        match = re.search(r"table\s+(\d+)", str(label), flags=re.IGNORECASE)
+        if match:
+            index = int(match.group(1)) - 1
+            if 0 <= index < len(tables):
+                named.append(index)
+    named = list(dict.fromkeys(named))
+
+    pool = named if named else list(range(len(tables)))
+    pool.sort(key=lambda i: (relevance(i), tables[i].get("n_rows", 0)), reverse=True)
+
+    chosen = [i for i in pool if relevance(i) > 0][:max_tables]
+    if chosen:
+        return chosen
+    if named:
+        return [pool[0]]
+    return [max(range(len(tables)), key=lambda i: tables[i].get("n_rows", 0))]
+
+
+def load_selected_tables(
+    state: AgentState,
+    markdown_store: MarkdownArticleStore,
+    *,
+    max_tables_per_article: int = 1,
+    max_rows: int = 300,
+) -> AgentState:
+    """Attach flagged articles' tables as structured-JSON evidence.
+
+    For each kept article the TOC review marked ``needs_table_reader`` (or named
+    tables for), load the best-matching table(s) from the sidecar as JSON
+    ``EvidenceItem``s, and replace that article's flattened section evidence with
+    them — the structured table is the better representation, and sending both
+    just dilutes the context. This is the "TOC + JSON tables" cut: the model reads
+    the rows itself; no deterministic executor yet. Only one table per article by
+    default, so a multi-table article does not flood the context.
+    """
+
+    reviews = state.get("article_reviews", [])
+    evidence_by_id = {item.evidence_id: item for item in state.get("evidence", [])}
+    question = state.get("question", "").strip()
+    table_backed_articles: set[str] = set()
+
+    for review in reviews:
+        if not review.relevant:
+            continue
+        if not (review.needs_table_reader or review.relevant_table_names):
+            continue
+        if not markdown_store.has_article(review.source_article):
+            continue
+        try:
+            tables = markdown_store.load_metadata(review.source_article).get("tables") or []
+        except (OSError, ValueError):
+            continue
+        for index in _resolve_table_indices(
+            review, tables, question, max_tables=max_tables_per_article
+        ):
+            table_backed_articles.add(review.source_article)
+            table = tables[index]
+            evidence_id = f"{review.source_article}#table-{index + 1}"
+            if evidence_id in evidence_by_id:
+                continue
+            evidence_by_id[evidence_id] = EvidenceItem(
+                evidence_id=evidence_id,
+                source_article=review.source_article,
+                content=_render_table_json(table, max_rows=max_rows),
+                evidence_type="table",
+                title=_clean_cell(table.get("caption") or "") or f"Table {index + 1}",
+                section_path=[],
+                retrieval_query=question,
+                retriever="table",
+                rank=index + 1,
+                raw_score=0.0,
+                score_semantics="rank_only",
+                metadata={
+                    "retrieval_stage": "toc_selected_table",
+                    "table_index": index + 1,
+                    "n_rows": table.get("n_rows"),
+                    "needs_table_reader": bool(review.needs_table_reader),
+                },
+            )
+
+    # A table-backed article contributes its structured table, not the redundant
+    # flattened section that carries the same rows as noise.
+    _section_stages = {"toc_selected_section", "toc_fallback_sections"}
+    evidence = [
+        item
+        for item in evidence_by_id.values()
+        if not (
+            item.source_article in table_backed_articles
+            and item.metadata.get("retrieval_stage") in _section_stages
+        )
+    ]
+    return {"evidence": evidence}
 
 
 def retrieve_selected_article_sections(
