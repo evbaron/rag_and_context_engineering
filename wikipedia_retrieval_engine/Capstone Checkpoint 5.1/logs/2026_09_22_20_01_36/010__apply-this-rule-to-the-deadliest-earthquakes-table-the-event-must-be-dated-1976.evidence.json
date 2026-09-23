@@ -1,0 +1,490 @@
+{
+  "run_id": "2026_09_22_20_01_36",
+  "question_number": 10,
+  "logged_at": "2026-09-22T20:04:50-04:00",
+  "question": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+  "final_state": {
+    "question": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+    "retrieval_attempts": 2,
+    "table_attempts": 2,
+    "article_candidates": [
+      {
+        "source_article": "Lists_of_earthquakes.html",
+        "representative_chunk": "Article: Lists of earthquakes\nSection: See also\n\nEarth sciences portal\n\nList of deadly earthquakes since 1900\n\nList of historical earthquakes\n\nList of megathrust earthquakes\n\nList of natural disasters by death toll\n\n<h2",
+        "representative_chunk_id": "Lists_of_earthquakes.html#section-014-00",
+        "section_title": "See also",
+        "section_path": [
+          "See also"
+        ],
+        "retrieval_query": "List of deadliest earthquakes",
+        "discovered_by": "vector",
+        "rank": 1,
+        "raw_score": 0.5775228142738342,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "1964_Alaska_earthquake.html",
+        "representative_chunk": "Article: 1964 Alaska earthquake\nSection: Death toll, damage, and casualties > Elsewhere\n\nA winter scene of a \"ghost forest\" that was killed and preserved by salt water along with ruined buildings at the site of the former town of Portage, 2011\n\nTen people were killed by the tsunami in Crescent City, California, and one other man was killed near Requa, California after being swept out to sea while fishing in the Klamath River.[23][24] Four children were killed while camping with their parents on the Oregon coast at Beverly Beach State Park.[24][25] An additional death that is sometimes attributed to the tsunami took place in Bolinas, California; a fisherman wading into a seaside channel at Duxbury Point was swept into the ocean by a strong surge that took place 13 hours after the initial tidal surge.[24][26] Crescent City was particularly hard-hit, with 30 blocks destroyed, representing half of the city's waterfront business district.[27] The total damage to Crescent City was estimated at $7.4 million[28] ($76 million in 2025 dollars). Other coastal towns and harbors in the Pacific Northwest, California, and Hawaii were damaged, often extensively. Damage to harbors and boats occurred as far south as Long Beach, California.[24][29] Effects of the earthquake were even noted as far east as Freeport, Texas, where tide gauges recorded waves similar to seismic surface waves.[30] Seiches were detected in wells in countries around the world, including England, Namibia, and Australia.[18]: 145",
+        "representative_chunk_id": "1964_Alaska_earthquake.html#section-007-00",
+        "section_title": "Elsewhere",
+        "section_path": [
+          "Death toll, damage, and casualties",
+          "Elsewhere"
+        ],
+        "retrieval_query": "2004 Indian Ocean earthquake and tsunami",
+        "discovered_by": "vector",
+        "rank": 2,
+        "raw_score": 0.9948331117630005,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "2011_Tōhoku_earthquake_and_tsunami.html",
+        "representative_chunk": "Article: 2011 Tōhoku earthquake and tsunami\nSection: Earthquake > Energy\n\nThe surface energy of the seismic waves from the earthquake was calculated to be 1.9×1017 joules,[85] which is nearly double that of the 9.1 Mw 2004 Indian Ocean earthquake and tsunami that killed 230,000 people. If harnessed, the seismic energy from this earthquake would power a city the size of Los Angeles for an entire year.[63] The seismic moment (M0), which represents a physical size for the event, was calculated by the USGS at 3.9×1022 joules,[86] slightly less than the 2004 Indian Ocean quake.",
+        "representative_chunk_id": "2011_Tōhoku_earthquake_and_tsunami.html#section-003-00",
+        "section_title": "Energy",
+        "section_path": [
+          "Earthquake",
+          "Energy"
+        ],
+        "retrieval_query": "2004 Indian Ocean earthquake and tsunami",
+        "discovered_by": "vector",
+        "rank": 3,
+        "raw_score": 0.9976946711540222,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Haitian_Revolution.html",
+        "representative_chunk": "Article: Haitian Revolution\nSection: War of independence > Haitian victory\n\nRochambeau, seeing defeat inevitable, procrastinated until the last possible moment, but eventually was forced to surrender to the British commander—by the end of the month the garrison was starving, having reached the conclusion at a council of war that surrender was the only way to escape from this \"place of death\".[117] Commodore Loring, however, refused the French permission to sail and agreed terms with Dessalines that permitted them to safely evacuate provided they had left the port by 1 December. On the night of 30 November 1803, 8,000 French soldiers and hundreds of white civilians boarded the British ships to take them away.[117] One of Rochambeau's ships was almost wrecked while leaving the harbour, but was saved by a British lieutenant acting alone, who not only rescued the 900 people on board, but also refloated the ship. At Môle-Saint-Nicolas, General Louis de Noailles refused to surrender and instead sailed to Havana, Cuba in a fleet of small vessels on 3 December, but was intercepted and mortally wounded by a Royal Navy frigate. Soon after, the few remaining French-held towns in Saint-Domingue surrendered to the Royal Navy to prevent massacres by the Haitian army. Meanwhile, Dessalines led the rebellion until its completion, when the French forces were finally defeated by the end of 1803.[30]\n\nOn 1 January 1804, from the city of Gonaïves, Dessalines officially declared the former colony's independence, renaming it \"Haiti\" after the indigenous Arawak name. Although he lasted from 1804 to 1806, several changes began taking place in Haiti. The independence of Haiti was a major blow to France and its colonial empire, but the French state would take several decades to recognize the loss of the colony. As the French retreated, Haiti, which had once been called the \"Pearl of the Antilles\", the richest French colony in the world, was impoverished, as its economy was in ruins after the revolution. Haiti struggled to recover economically from the war.[118] The Haitians had paid a high price for their freedom, losing about 200,000 dead between 1791 and 1803, and unlike the majority of the European dead, who were killed by yellow fever, the majority of the Haitian dead were the victims of violence.[51]",
+        "representative_chunk_id": "Haitian_Revolution.html#section-026-00",
+        "section_title": "Haitian victory",
+        "section_path": [
+          "War of independence",
+          "Haitian victory"
+        ],
+        "retrieval_query": "2010 Haiti earthquake",
+        "discovered_by": "vector",
+        "rank": 4,
+        "raw_score": 1.1515930891036987,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      }
+    ],
+    "article_reviews": [
+      {
+        "source_article": "Lists_of_earthquakes.html",
+        "relevant": true,
+        "reason": "This article contains the deadliest earthquakes table needed to filter by date and fatalities threshold.",
+        "relevant_sections": [
+          "Deadliest earthquakes"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [
+          "03f3ff2f648c9549d23585b4"
+        ],
+        "needs_table_reader": true
+      },
+      {
+        "source_article": "1964_Alaska_earthquake.html",
+        "relevant": false,
+        "reason": "This is a single earthquake article and not the source of the deadliest-earthquakes table.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "2011_Tōhoku_earthquake_and_tsunami.html",
+        "relevant": false,
+        "reason": "This is a specific event article, not the deadliest-earthquakes list required for the query.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Haitian_Revolution.html",
+        "relevant": false,
+        "reason": "This historical article is unrelated to earthquakes and does not contain the needed table.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      }
+    ],
+    "selected_articles": [
+      "Lists_of_earthquakes.html"
+    ],
+    "rejected_articles": [
+      "1964_Alaska_earthquake.html",
+      "2011_Tōhoku_earthquake_and_tsunami.html",
+      "Haitian_Revolution.html"
+    ],
+    "evidence": [
+      {
+        "evidence_id": "Lists_of_earthquakes.html#section-001-00",
+        "source_article": "Lists_of_earthquakes.html",
+        "content": "Article: Lists of earthquakes\nSection: Deadliest earthquakes\n\nSee also: List of deadliest 20th-century earthquakes per year and List of deadliest 21st-century earthquakes per year\n\nThe following is a summary list of earthquakes with over approximately 100,000 deaths.[1] The 893 Ardabil earthquake is most likely the same as the 893 Dvin earthquake, due to misreading of the Arabic word for Dvin, \"Dabil\" as \"Ardabil\".[2][3]\n\nEvent\n\nDate\n\nLocation\n\nFatal­ities\n\nMagni­tude\n\nNotes on fatalities\n\n1976 Tangshan earthquake\n\nJuly 27, 1976\n\nHebei, China\n\n300,000+[4]\n\n7.6\n\nInternal Tangshan reports found 263,299 local deaths. Official nationwide deaths stated to be 242,769. Scholars estimated >300,000.[4][5]\n\n1920 Haiyuan earthquake\n\nDecember 16, 1920\n\nNingxia–Gansu, China\n\n273,400\n\n7.8\n\nPreviously cited death toll was 230,000 and this figure was revised in 2010.[6][7]\n\n526 Antioch earthquake\n\nMay 21, 526\n\nAntioch, Byzantine Empire (modern-day Turkey)\n\n250,000[8]\n\n7.0[9]\n\nProcopius (II.14.6), sources based on John of Ephesus.\n\n1139 Ganja earthquake\n\nSeptember 30, 1139\n\nGanja, Seljuk Empire (modern-day Azerbaijan)\n\n230,000–300,000[10]\n7.0 Mw \nDeath toll may have been a historical conflation with earthquakes on November 1137 in the Jazira plain and the 1138 Aleppo earthquake.[11]\n\n2004 Indian Ocean earthquake and tsunami\n\nDecember 26, 2004\n\nSumatra, Indonesia\n\n227,898\n\n9.2\n\nDeath toll includes those missing and presumed dead.[10]\n\n1303 Hongdong earthquake\n\nJuly 25, 1303\n\nShanxi, Yuan dynasty (modern-day China)\n\n200,000[12]\n\n8.0\n\n856 Damghan earthquake\n\nDecember 22, 856\n\nDamghan, Abbasid Caliphate (modern-day Iran)\n\n200,000\n\n7.9 Ms\n\n1138 Aleppo earthquake\n\nOctober 11, 1138\n\nAleppo, Seljuk Empire (modern-day Syria)\n\n130,000–230,000[13]\n\n7.1[13]\n\nThe figure of 230,000 dead is based on a historical conflation of this earthquake with earthquakes in November 1137 on the Jazira plain and the 1139 Ganja earthquake in the Azerbaijani city of Ganja. The first mention of a 230,000 death toll was by Ibn Taghribirdi in the fifteenth century.[11]\n\n533 Aleppo earthquake\n\nNovember 29, 533\n\nAleppo, Byzantine Empire (modern-day Syria)\n\n130,000[14]\nUnknown\n\n1908 Messina earthquake\n\nDecember 28, 1908\n\nMessina, Kingdom of Italy\n\n120,000[15]\n\n7.1 Ms \n\nThe epicentre was in the Strait of Messina which separates Sicily from the Italian mainland, affecting also the city of Reggio Calabria.[16]\n\n1948 Ashgabat earthquake\n\nOctober 5, 1948\n\nAshgabat, Turkmen SSR (modern-day Turkmen­istan)\n\n110,000\n\n7.3 Ms\n\nPreviously cited death toll was 10,000 until a news release on December 9, 1988, advised that the correct death toll was 110,000.[10]\n\n1923 Great Kantō earthquake\n\nSeptember 1, 1923\n\nKantō region, Japan\n\n105,385[17]\n\n7.9\n\nCasualty estimates range from 100,000 to 142,800, the latter figure including 40,000 missing later presumed dead.\n\n1556 Shaanxi earthquake\n\nJanuary 23, 1556\n\nShaanxi, modern-day China\n\n100,000\n\n8.0\n\nDirect deaths thought to be just over 100,000 while about 730,000 people died from famines or migrated elsewhere.[18][19][20][21]\n\n2010 Haiti earthquake\n\nJanuary 12, 2010\n\nHaiti\n\n46,000–316,000\n\n7.0\n\nEstimates vary from 316,000 (Haitian government) to 222,570 (UN OCHA estimate)[22] to 158,000 (Medicine, Conflict and Survival) to between 46,000 and 85,000 (report commissioned by USAID).[23][24]\n\n1290 Zhili earthquake\n\nSeptember 27, 1290\n\nNingcheng, Yuan dynasty (modern-day China)\n\n7,000–100,000\n\n6.8 Ms \n\nEstimates also suggests lower values of at least 7,000.[25]",
+        "evidence_type": "text",
+        "title": "Deadliest earthquakes",
+        "section_path": [
+          "Deadliest earthquakes"
+        ],
+        "retrieval_query": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.7433789968490601,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Deadliest earthquakes",
+          "needs_table_reader": true,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "03f3ff2f648c9549d23585b4"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Lists_of_earthquakes.html#table-001-41923bbcc1",
+        "source_article": "Lists_of_earthquakes.html",
+        "content": "Structured table (JSON rows, one object per row — read values directly from these rows; do not rely on prior knowledge).\n{\"artifact_id\": \"03f3ff2f648c9549d23585b4\", \"table_id\": \"table-001-41923bbcc1\", \"caption\": null, \"section\": \"Deadliest earthquakes\", \"columns\": [\"Event\", \"Date\", \"Location\", \"Fatalities\", \"Magnitude\", \"Notes on fatalities\"], \"legends\": [], \"rows\": [{\"row_number\": 1, \"values\": {\"Event\": \"1976 Tangshan earthquake\", \"Date\": \"July 27, 1976\", \"Location\": \"Hebei, China\", \"Fatal­ities\": \"300,000+\", \"Magni­tude\": \"7.6\", \"Notes on fatalities\": \"Internal Tangshan reports found 263,299 local deaths. Official nationwide deaths stated to be 242,769. Scholars estimated >300,000.\"}, \"semantic_signals\": {\"Date\": {\"source_cell\": \"table-001-41923bbcc1:r2:c2\", \"display_text\": \"July 27, 1976\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"000000001976-07-27-0000\", \"legend_matches\": []}, \"Location\": {\"source_cell\": \"table-001-41923bbcc1:r2:c3\", \"display_text\": \"Hebei, China\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"China !\", \"legend_matches\": []}, \"Fatal­ities\": {\"source_cell\": \"table-001-41923bbcc1:r2:c4\", \"display_text\": \"300,000+ [ 4 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 4 ]\", \"role\": \"reference\", \"target\": \"cite_note-year40-4\", \"note\": \"王瓒玮 (July 28, 2016). \\\"唐山大地震四十年：反思与\\\"记忆\\\" \\\" . 东方历史评论 . 广东省东方历史研究基金会. Reprinted as: 王瓒玮 (July 28, 2016). \\\"唐山大地震40年：从死亡人数到天灾还是人祸仍是一地鸡毛\\\" . 界面新闻 . Archived from the original on January 15, 2021.\"}], \"background_color\": null, \"sort_value\": \"242469\", \"legend_matches\": []}, \"Notes on fatalities\": {\"source_cell\": \"table-001-41923bbcc1:r2:c6\", \"display_text\": \"Internal Tangshan reports found 263,299 local deaths. Official nationwide deaths stated to be 242,769. Scholars estimated >300,000. [ 4 ] [ 5 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 4 ]\", \"role\": \"reference\", \"target\": \"cite_note-year40-4\", \"note\": \"王瓒玮 (July 28, 2016). \\\"唐山大地震四十年：反思与\\\"记忆\\\" \\\" . 东方历史评论 . 广东省东方历史研究基金会. Reprinted as: 王瓒玮 (July 28, 2016). \\\"唐山大地震40年：从死亡人数到天灾还是人祸仍是一地鸡毛\\\" . 界面新闻 . Archived from the original on January 15, 2021.\"}, {\"position\": \"superscript\", \"text\": \"[ 5 ]\", \"role\": \"reference\", \"target\": \"cite_note-Xia_Mingfang-5\", \"note\": \"夏明方 (2020). \\\"家庭的解体与重生：历史视野下的唐山大地震\\\" . In 夏明方 (ed.). 文明的\\\"双相\\\"——灾害与历史的缠绕 . 广西师范大学出版社. p. 79. Archived from the original on July 22, 2020 – via 澎湃新闻, 13 July 2020.\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 2, \"values\": {\"Event\": \"1920 Haiyuan earthquake\", \"Date\": \"December 16, 1920\", \"Location\": \"Ningxia – Gansu , China\", \"Fatal­ities\": \"273,400\", \"Magni­tude\": \"7.8\", \"Notes on fatalities\": \"Previously cited death toll was 230,000 and this figure was revised in 2010.\"}, \"semantic_signals\": {\"Date\": {\"source_cell\": \"table-001-41923bbcc1:r3:c2\", \"display_text\": \"December 16, 1920\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"000000001920-12-16-0000\", \"legend_matches\": []}, \"Location\": {\"source_cell\": \"table-001-41923bbcc1:r3:c3\", \"display_text\": \"Ningxia – Gansu , China\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"Republic of China (1912–1949) !\", \"legend_matches\": []}, \"Fatal­ities\": {\"source_cell\": \"table-001-41923bbcc1:r3:c4\", \"display_text\": \"273,400\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"273400\", \"legend_matches\": []}, \"Notes on fatalities\": {\"source_cell\": \"table-001-41923bbcc1:r3:c6\", \"display_text\": \"Previously cited death toll was 230,000 and this figure was revised in 2010. [ 6 ] [ 7 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 6 ]\", \"role\": \"reference\", \"target\": \"cite_note-news.xinhuanet.com-6\", \"note\": \"\\\"Death toll of 1920 China earthquake higher than previously estimated\\\" . Xinhua News Agency. Archived from the original on August 20, 2013.\"}, {\"position\": \"superscript\", \"text\": \"[ 7 ]\", \"role\": \"reference\", \"target\": \"cite_note-Utsu-7\", \"note\": \"Utsu, T. \\\"Search Page\\\" . Catalog of Damaging Earthquakes in the World (Through 2008) . Retrieved June 3, 2010 .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}]}\n(NOTE: showing 2 of 15 rows to fit the context budget; the deterministic table executor reads the full table.)",
+        "evidence_type": "table",
+        "title": "table-001-41923bbcc1",
+        "section_path": [
+          "Deadliest earthquakes"
+        ],
+        "retrieval_query": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "03f3ff2f648c9549d23585b4",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_id": "table-001-41923bbcc1",
+          "n_rows": 15,
+          "rows_rendered": 15,
+          "needs_table_reader": true
+        }
+      },
+      {
+        "evidence_id": "Lists_of_earthquakes.html#table-001-41923bbcc1#computed-table-r1-1-eadbd84cfbee",
+        "source_article": "Lists_of_earthquakes.html",
+        "content": "Deterministic table-computation result. Use the computed rows/calculation below rather than recomputing them.\n{\n  \"table_request\": {\n    \"missing_fact\": \"Determine all rows in the deadliest-earthquakes table dated 1976 or later with at least one fatality estimate over 100,000, and report each remaining event's death figure or range exactly as the article presents it, preserving disagreements among estimates.\",\n    \"source_article\": \"Lists_of_earthquakes.html\",\n    \"table_id\": \"03f3ff2f648c9549d23585b4\",\n    \"expected_caption\": null,\n    \"operation\": \"filter\",\n    \"columns_needed\": [],\n    \"row_filters\": {},\n    \"comparison_key\": null\n  },\n  \"query_plan\": {\n    \"artifact_id\": \"03f3ff2f648c9549d23585b4\",\n    \"operation\": \"filter\",\n    \"selected_columns\": [\n      \"Event\",\n      \"Date\",\n      \"Fatal­ities\",\n      \"Notes on fatalities\"\n    ],\n    \"filters\": {},\n    \"predicates\": [\n      {\n        \"column\": \"Date\",\n        \"op\": \"year_min_gte\",\n        \"value\": 1976,\n        \"value2\": null\n      },\n      {\n        \"column\": \"Fatal­ities\",\n        \"op\": \"num_any_gt\",\n        \"value\": 100000,\n        \"value2\": null\n      }\n    ],\n    \"group_by\": [],\n    \"calculation\": null,\n    \"calculation_column\": null,\n    \"sort_column\": null,\n    \"sort_direction\": null,\n    \"limit\": 20\n  },\n  \"result\": {\n    \"request_id\": \"table-r1-1-eadbd84cfbee\",\n    \"artifact_id\": \"03f3ff2f648c9549d23585b4\",\n    \"result_rows\": [],\n    \"calculation\": null,\n    \"source_cells\": [],\n    \"cell_details\": [],\n    \"sufficient\": false,\n    \"warnings\": [\n      \"Superscript/subscript annotations are available in row_cells.\",\n      \"No table rows matched the query-plan filters.\"\n    ]\n  }\n}",
+        "evidence_type": "table",
+        "title": "Computed table result: Determine all rows in the deadliest-earthquakes table dated 1976 or later with at least one fatality estimate over 100,000, and report each remaining event's death figure or range exactly as the article presents it, preserving disagreements among estimates.",
+        "section_path": [
+          "Deadliest earthquakes"
+        ],
+        "retrieval_query": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "03f3ff2f648c9549d23585b4",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "table_computation",
+          "table_request_id": "table-r1-1-eadbd84cfbee",
+          "operation": "filter",
+          "calculation": null,
+          "table_computation_sufficient": false,
+          "warnings": [
+            "Superscript/subscript annotations are available in row_cells.",
+            "No table rows matched the query-plan filters."
+          ]
+        }
+      },
+      {
+        "evidence_id": "Lists_of_earthquakes.html#table-001-41923bbcc1#computed-table-r2-1-2b5259f24dfd",
+        "source_article": "Lists_of_earthquakes.html",
+        "content": "Deterministic table-computation result. Use the computed rows/calculation below rather than recomputing them.\n{\n  \"table_request\": {\n    \"missing_fact\": \"Resolve which deadliest-earthquakes rows dated 1976 or later have at least one fatality estimate over 100,000, and return the exact remaining events with their reported death figure(s)/range(s).\",\n    \"source_article\": \"Lists_of_earthquakes.html\",\n    \"table_id\": \"03f3ff2f648c9549d23585b4\",\n    \"expected_caption\": null,\n    \"operation\": \"filter\",\n    \"columns_needed\": [],\n    \"row_filters\": {},\n    \"comparison_key\": null\n  },\n  \"query_plan\": {\n    \"artifact_id\": \"03f3ff2f648c9549d23585b4\",\n    \"operation\": \"filter\",\n    \"selected_columns\": [\n      \"Event\",\n      \"Date\",\n      \"Fatal­ities\",\n      \"Notes on fatalities\"\n    ],\n    \"filters\": {},\n    \"predicates\": [\n      {\n        \"column\": \"Date\",\n        \"op\": \"year_min_gte\",\n        \"value\": 1976,\n        \"value2\": null\n      },\n      {\n        \"column\": \"Fatal­ities\",\n        \"op\": \"num_any_gt\",\n        \"value\": 100000,\n        \"value2\": null\n      }\n    ],\n    \"group_by\": [],\n    \"calculation\": null,\n    \"calculation_column\": null,\n    \"sort_column\": null,\n    \"sort_direction\": null,\n    \"limit\": 50\n  },\n  \"result\": {\n    \"request_id\": \"table-r2-1-2b5259f24dfd\",\n    \"artifact_id\": \"03f3ff2f648c9549d23585b4\",\n    \"result_rows\": [],\n    \"calculation\": null,\n    \"source_cells\": [],\n    \"cell_details\": [],\n    \"sufficient\": false,\n    \"warnings\": [\n      \"Superscript/subscript annotations are available in row_cells.\",\n      \"No table rows matched the query-plan filters.\"\n    ]\n  }\n}",
+        "evidence_type": "table",
+        "title": "Computed table result: Resolve which deadliest-earthquakes rows dated 1976 or later have at least one fatality estimate over 100,000, and return the exact remaining events with their reported death figure(s)/range(s).",
+        "section_path": [
+          "Deadliest earthquakes"
+        ],
+        "retrieval_query": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "03f3ff2f648c9549d23585b4",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "table_computation",
+          "table_request_id": "table-r2-1-2b5259f24dfd",
+          "operation": "filter",
+          "calculation": null,
+          "table_computation_sufficient": false,
+          "warnings": [
+            "Superscript/subscript annotations are available in row_cells.",
+            "No table rows matched the query-plan filters."
+          ]
+        }
+      },
+      {
+        "evidence_id": "List_of_countries_by_population_(United_Nations).html#section-000-00",
+        "source_article": "List_of_countries_by_population_(United_Nations).html",
+        "content": "Article: List of countries and dependencies by population (United Nations)\nSection: Lead\n\nUN list of countries and territories by population\n\nStatistical subregions as defined by the United Nations Statistics Division[1]\n\nThis is the list of countries and other inhabited territories of the world by estimated total population. It is based on estimates published by the United Nations in the 2024 revision of World Population Prospects. It presents population estimates from 1950 to the present.[2]",
+        "evidence_type": "graph",
+        "title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 1.5228359699249268,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "Lists_of_earthquakes.html"
+          ],
+          "graph_neighbor_rank": 3,
+          "graph_score": 5.704649458304793,
+          "discovery_reasons": [
+            "entity:Monaco(29)",
+            "entity:Bulgaria(44)",
+            "entity:Jamaica(42)",
+            "entity:Trinidad_and_Tobago(21)",
+            "entity:Kenya(44)",
+            "entity:Saint_Lucia(17)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "List_of_sovereign_states.html#section-001-00",
+        "source_article": "List_of_sovereign_states.html",
+        "content": "Article: List of sovereign states\nSection: Criteria for inclusion\n\nThe dominant customary international law standard of statehood is the declarative theory of statehood, which was codified by the Montevideo Convention of 1933. The Convention defines the state as a person of international law if it \"possess[es] the following qualifications: (a) a permanent population; (b) a defined territory; (c) government; and (d) a capacity to enter into relations with the other states\" so long as it was not \"obtained by force whether this consists in the employment of arms, in threatening diplomatic representations, or in any other effective coercive measure\".[2]\n\nDebate exists on the degree to which recognition should be included as a criterion of statehood.[citation needed] The declarative theory of statehood argues that statehood is purely objective and recognition of a state by other states is irrelevant. On the other end of the spectrum, the constitutive theory of statehood defines a state as a person under international law only if it is recognised as sovereign by other states. For the purposes of this list, included are all polities that consider themselves sovereign states (through a declaration of independence or some other means) and either:\n\nare often regarded as satisfying the declarative theory of statehood, or\n\nare recognised as a sovereign state by at least one UN member state\n\nIn some cases, there is a divergence of opinion over the interpretation of the first point, and whether an entity satisfies it is disputed. Unique political entities which fail to meet the classification of a sovereign state are considered proto-states.[3][4]\n\nOn the basis of the above criteria, this list includes the following 205 entities:[a][b]\n\n204 states recognised by at least one UN member state\n\nOne state (Transnistria) that satisfies the declarative theory of statehood and is recognised only by non-UN member states\n\nThe table includes bullets in the right-hand column representing entities that are either not sovereign states or have a close association to another sovereign state. It also includes subnational areas where the sovereignty of the titular state is limited by an international agreement. Taken together, these include:\n\nEntities that are in a free association relationship with another state\n\nTwo entities controlled by Pakistan which are neither sovereign states, dependent territories, nor part of another state: Azad Kashmir and Gilgit-Baltistan\n\nDependent territories of another state, as well as areas that exhibit many characteristics of dependent territories according to the dependent territory page\n\nSubnational entities created by international agreements",
+        "evidence_type": "graph",
+        "title": "Criteria for inclusion",
+        "section_path": [
+          "Criteria for inclusion"
+        ],
+        "retrieval_query": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 1.5517473220825195,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "Lists_of_earthquakes.html"
+          ],
+          "graph_neighbor_rank": 1,
+          "graph_score": 6.7564881459329555,
+          "discovery_reasons": [
+            "entity:Monaco(29)",
+            "entity:Bulgaria(44)",
+            "entity:Jamaica(42)",
+            "entity:Trinidad_and_Tobago(21)",
+            "entity:Kenya(44)",
+            "entity:Saint_Lucia(17)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "List_of_countries_by_population_(United_Nations).html#section-007-00",
+        "source_article": "List_of_countries_by_population_(United_Nations).html",
+        "content": "Article: List of countries and dependencies by population (United Nations)\nSection: Explanatory notes\n\n^ Refers to mainland China only. The UN source document states: \"For statistical purposes, the data for China do not include special administrative regions (SAR) of China (Hong Kong and Macau) and Taiwan.\"\n\n^ Including  Zanzibar.\n\n^ Refers to Metropolitan France only.\n\n^ Including the  Canary Islands,  Ceuta, and  Melilla.\n\n^ Including  Crimea, the  Donetsk People's Republic, the  Luhansk People's Republic, and  Sevastopol.\n\n^ Including  Christmas Island, the  Cocos (Keeling) Islands, and  Norfolk Island.\n\n^ Listed as China, Taiwan Province of China.\n\n^ Including  Somaliland.\n\n^ Refers to the European Netherlands only.\n\n^ Including the  Azores and  Madeira.\n\n^ Listed as China, Hong Kong SAR.\n\n^ Excluding  Kosovo.\n\n^ Including  Åland.\n\n^ Including  Svalbard and Jan Mayen.\n\n^ Including East Jerusalem.\n\n^ Including  Abkhazia and  South Ossetia.\n\n^ Including  Transnistria.\n\n^ Listed as Kosovo (under UNSC res. 1244).\n\n^ Including  Northern Cyprus.\n\n^ Listed as China, Macao SAR.\n\n^ Listed as  Bonaire,  Sint Eustatius and  Saba.\n\n^ Including  Saint Helena,  Ascension, and  Tristan da Cunha.\n\n^ Listed as Holy See.\n\n<h2",
+        "evidence_type": "graph",
+        "title": "Explanatory notes",
+        "section_path": [
+          "Explanatory notes"
+        ],
+        "retrieval_query": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+        "retriever": "graph",
+        "rank": 2,
+        "raw_score": 1.562195062637329,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "Lists_of_earthquakes.html"
+          ],
+          "graph_neighbor_rank": 3,
+          "graph_score": 5.704649458304793,
+          "discovery_reasons": [
+            "entity:Monaco(29)",
+            "entity:Bulgaria(44)",
+            "entity:Jamaica(42)",
+            "entity:Trinidad_and_Tobago(21)",
+            "entity:Kenya(44)",
+            "entity:Saint_Lucia(17)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "List_of_national_capitals_by_latitude.html#section-002-00",
+        "source_article": "List_of_national_capitals_by_latitude.html",
+        "content": "Article: List of national capitals by latitude\nSection: Footnotes\n\n<h2",
+        "evidence_type": "graph",
+        "title": "Footnotes",
+        "section_path": [
+          "Footnotes"
+        ],
+        "retrieval_query": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 1.5936888456344604,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "Lists_of_earthquakes.html"
+          ],
+          "graph_neighbor_rank": 2,
+          "graph_score": 6.503244275252553,
+          "discovery_reasons": [
+            "entity:Monaco(29)",
+            "entity:Bulgaria(44)",
+            "entity:Jamaica(42)",
+            "entity:Trinidad_and_Tobago(21)",
+            "entity:Kenya(44)",
+            "entity:Saint_Lucia(17)"
+          ]
+        }
+      }
+    ],
+    "assessment": {
+      "ready_to_answer": false,
+      "supported_requirements": [
+        "The deadliest-earthquakes table is identified in Lists_of_earthquakes.html and the relevant artifact_id is supplied.",
+        "The table-computation evidence already applies the requested filters (date 1976 or later and at least one fatality estimate over 100,000) and returns no matching rows."
+      ],
+      "missing_requirements": [],
+      "retrieval_requests": [
+        {
+          "missing_fact": "Outstanding information required to answer the question.",
+          "query": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+          "target_articles": [],
+          "keywords": [],
+          "preferred_retriever": "hybrid"
+        }
+      ],
+      "table_requests": [],
+      "unresolved_conflicts": [
+        "The provided deterministic table-computation result indicates no rows match the stated rule, so there are no remaining events to list."
+      ],
+      "explanation": "The supplied evidence is sufficient to answer the question. The deterministic table-computation on the deadliest-earthquakes table using the filters 'Date year >= 1976' and 'any fatalities > 100,000' yields an empty result set. Therefore, no events remain under the stated rule, and there are no death figures or ranges to report. Because the result is empty, no additional table work or retrieval is needed."
+    },
+    "assessment_history": [
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "The relevant source article and table artifact for the deadliest-earthquakes table are identified.",
+          "The table text shows that 1976 Tangshan earthquake and 2010 Haiti earthquake are dated 1976 or later.",
+          "The table text shows at least one fatality estimate exceeding 100,000 for the 1976 Tangshan earthquake (300,000+), and for the 2010 Haiti earthquake (46,000–316,000)."
+        ],
+        "missing_requirements": [
+          "A deterministic filtered result set confirming which events remain after applying both conditions to the full deadliest-earthquakes table, including any additional qualifying events beyond those visible in the excerpt.",
+          "A complete report of how the article presents each remaining event’s death figure or range, preserving disagreements among estimates, requires table computation over the full table."
+        ],
+        "retrieval_requests": [],
+        "table_requests": [
+          {
+            "missing_fact": "Determine all rows in the deadliest-earthquakes table dated 1976 or later with at least one fatality estimate over 100,000, and report each remaining event's death figure or range exactly as the article presents it, preserving disagreements among estimates.",
+            "source_article": "Lists_of_earthquakes.html",
+            "table_id": "03f3ff2f648c9549d23585b4",
+            "expected_caption": null,
+            "operation": "filter",
+            "columns_needed": [],
+            "row_filters": {},
+            "comparison_key": null
+          }
+        ],
+        "unresolved_conflicts": [],
+        "explanation": "The excerpt demonstrates two qualifying rows, but the question asks for the complete set remaining after filtering the entire deadliest-earthquakes table and how each death figure/range is reported. Because the table is only partially shown in the evidence and the answer depends on filtering all rows, a table computation is needed before answering."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "The source article is identified as Lists_of_earthquakes.html and the relevant section/table is Deadliest earthquakes.",
+          "The table evidence provides the exact event/date/fatality notes for at least one qualifying event in 1976 or later with fatalities over 100,000. In the visible rows, 1976 Tangshan earthquake is dated July 27, 1976 and has fatalities 300,000+ with notes: internal reports 263,299, official nationwide deaths 242,769, scholars estimated >300,000."
+        ],
+        "missing_requirements": [],
+        "retrieval_requests": [],
+        "table_requests": [
+          {
+            "missing_fact": "Resolve which deadliest-earthquakes rows dated 1976 or later have at least one fatality estimate over 100,000, and return the exact remaining events with their reported death figure(s)/range(s).",
+            "source_article": "Lists_of_earthquakes.html",
+            "table_id": "03f3ff2f648c9549d23585b4",
+            "expected_caption": null,
+            "operation": "filter",
+            "columns_needed": [],
+            "row_filters": {},
+            "comparison_key": null
+          }
+        ],
+        "unresolved_conflicts": [
+          "A deterministic table-computation result claims no table rows matched the filter 'dated 1976 or later AND at least one fatality estimate over 100,000', which conflicts with the visible table row for the 1976 Tangshan earthquake that clearly satisfies the condition."
+        ],
+        "explanation": "The supplied evidence is not yet reliable enough to answer definitively because the computed table result contradicts the visible table row excerpt. Since the user asks which events remain after filtering and to report each death figure/range, the conflict must be resolved before answering. The visible excerpt suggests Tangshan remains and likely no other 1976+ events exceed 100,000 in the deadliest-earthquakes table, but the table computation says zero rows matched. A resolving table computation or retrieval is needed to confirm the full filtered set and preserve the article's exact reported death figures/ranges."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "The deadliest-earthquakes table is from Lists_of_earthquakes.html and the relevant rows/evidence are supplied.",
+          "The table-computation evidence shows that no rows satisfy both filters: date 1976 or later and at least one fatalities estimate over 100,000."
+        ],
+        "missing_requirements": [],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Outstanding information required to answer the question.",
+            "query": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+            "target_articles": [],
+            "keywords": [],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [
+          "The user asks which events remain after applying the filter, but the deterministic table-computation result returns no matching rows."
+        ],
+        "explanation": "The supplied table evidence is sufficient to conclude that no events remain under the stated rule. Because the computed filter result is empty, there are no remaining events to report, and therefore no death-figure/range descriptions to preserve."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "The deadliest-earthquakes table is identified in Lists_of_earthquakes.html and the relevant artifact_id is supplied.",
+          "The table-computation evidence already applies the requested filters (date 1976 or later and at least one fatality estimate over 100,000) and returns no matching rows."
+        ],
+        "missing_requirements": [],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Outstanding information required to answer the question.",
+            "query": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+            "target_articles": [],
+            "keywords": [],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [
+          "The provided deterministic table-computation result indicates no rows match the stated rule, so there are no remaining events to list."
+        ],
+        "explanation": "The supplied evidence is sufficient to answer the question. The deterministic table-computation on the deadliest-earthquakes table using the filters 'Date year >= 1976' and 'any fatalities > 100,000' yields an empty result set. Therefore, no events remain under the stated rule, and there are no death figures or ranges to report. Because the result is empty, no additional table work or retrieval is needed."
+      }
+    ]
+  }
+}

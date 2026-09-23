@@ -318,6 +318,77 @@ Sequence of PASS on the GT set: retrieval-only ≈ 0.39 → aligned JSON tables 
 mean). Recall 0.90 → 0.94 → **1.000**. This phase moves *answer quality*, which
 retrieval could not.
 
+### Step 8 — validation set: the single-section tradeoff surfaces
+
+The GT set is what we tuned against, so the honest test is the held-out **25-question
+validation set**. Run there, the gateway is **worse than 4.1 on quality** — the first
+time 5.1 has lost to the previous checkpoint on any metric:
+
+| config | article recall | answer quality |
+| --- | --- | --- |
+| **5.1 gateway** | **1.000** | 0.845 |
+| 4.1 graph | 0.973 | **0.885** |
+| 4.1 multistep | 0.953 | 0.845 |
+
+5.1 still **beats 4.1 on recall everywhere**, and its quality ties 4.1-multistep, but
+it trails the 4.1 **graph** config by 0.04. The per-question routing trace splits that
+gap into two independent causes:
+
+- **Cause A — the executor can *hurt*.** VAL05 (temporal aggregation) is flagged,
+  routes through compute (`tcalc=3–4`), and **fails all four runs** — 4.1 scored 0.50
+  hand-reading the same table; our planner computes the wrong thing and scores 0.0
+  (the GT07 bug, again). VAL06 (uncertainty/conflict) is destabilized by a forced
+  deterministic result (1.00 → 0.62) — a table row is the wrong evidence for "how do
+  the sources conflict?"
+- **Cause B — single-section evidence *starves* synthesis.** VAL09 (people
+  connection) and VAL15 (process explanation) never touch a table
+  (`needs_table_reader=False`, `tcalc=0`) yet still drop from 4.1's 1.00 to 0.62/0.75.
+  They fail purely because 5.1 feeds the model **one section**, where 4.1 fed fuller
+  article/graph context.
+
+This is the same tradeoff the 3.1 **oracle** comparison predicted (GT16 1.0 → 0.38,
+GT19 0.94 → 0.50 on the GT set): the identical GT quality (oracle 0.789 = gateway
+0.789) was a *reshuffle*, not a match — the table gateway won the compute questions
+and the single-section pipeline quietly gave it back on synthesis questions. The
+validation set, being **synthesis-heavy** (7 "process explanation" plus several
+"uncertainty" questions, few pure table questions), turns that hidden tradeoff into a
+visible regression.
+
+**Why this justifies a new route.** Every prior checkpoint's core strength was
+*breadth of context*: 2.1–4.1 answered from whole articles, and 4.1's graph retriever
+widened context further. **5.1 is the first checkpoint to restrict evidence to a
+single section** — a deliberate bet that bought perfect recall, table precision, and
+~14× less context, but it *removed the breadth that carried synthesis questions*. The
+section bet and the breadth those questions need are in direct tension, and no
+existing branch resolves it: the graph route adds *neighbor* sections (often
+off-topic), and the table route only fires on table questions. Synthesis questions
+that are not ready need **more of their own article**, not a table and not a neighbor.
+That is a distinct retrieval need → a distinct route (Step 9).
+
+### Step 9 — the breadth route: `article_broaden`
+
+A new repeated retriever, `article_broaden`
+([`retrieve_broadened_article_sections`](../wiki_agents/retrieval_nodes.py)): when an
+unsatisfied assessment escalates to it, it pulls the top `broaden_sections_k` (default
+8) sections of each **already-selected** article by relevance to the question, and
+adds them to evidence. It is deliberately narrow in scope:
+
+- **Only the selected articles** — not graph neighbors (the graph route already owns
+  multi-article recall, and neighbors are often off-topic for a synthesis question).
+- **Additive and deduped** — it never drops the TOC-selected section or the table
+  evidence; it only contributes sections *beyond* the one already picked, so it
+  restores 2.1–4.1's breadth without discarding 5.1's precision.
+- **Sits after `graph_seeded` in the escalation sequence**
+  (`REPEATED_RETRIEVERS = ("graph_seeded", "article_broaden")`), so a question that is
+  still not ready after recall-oriented expansion gets a breadth round before the
+  answer.
+
+This directly targets the Cause-B losses (VAL09, VAL15; GT16, GT19) without touching
+the table path or the recall wins. It does **not** address Cause A (the executor
+hurting VAL05/VAL06) — that is a separate planner-precision fix. Pending its own
+validation + GT run to confirm it recovers the synthesis questions without diluting
+the questions that already pass.
+
 ## 4. Configurable retriever architecture
 
 The benchmark graph takes the retrieval strategy per stage as configuration

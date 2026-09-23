@@ -1,0 +1,705 @@
+{
+  "run_id": "2026_09_23_08_43_55",
+  "question_number": 23,
+  "logged_at": "2026-09-23T08:53:23-04:00",
+  "question": "Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?",
+  "final_state": {
+    "question": "Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?",
+    "retrieval_attempts": 1,
+    "table_attempts": 1,
+    "article_candidates": [
+      {
+        "source_article": "Neil_Armstrong.html",
+        "representative_chunk": "Article: Neil Armstrong\nSection: Lead\n\nAmerican astronaut (1930–2012)\n\nFor other uses, see Neil Armstrong (disambiguation).\n\nNeil Armstrong\n\nArmstrong in 1969\n\nBorn\nNeil Alden Armstrong\n\n(1930-08-05)August 5, 1930\n\nWashington Township, Ohio, U.S.\n\nDiedAugust 25, 2012(2012-08-25) (aged 82)\n\nFairfield, Ohio, U.S.\n\nEducationPurdue University (BS)\n\nUniversity of Southern California (MS)\n\nSpouses\n\nJanet Shearon\n\n​\n\n​\n(m. 1956; div. 1994)​\n\nCarol Knight\n\n​\n(m. 1994)​\n\nChildren3\n\nAwards\n\nPresidential Medal of Freedom\n\nCongressional Space Medal of Honor\n\nCongressional Gold Medal\n\nNASA Distinguished Service Medal\n\nNASA Exceptional Service Medal\n\nAir Medal (3)\n\nSpace career\n\nUSAF / NASA astronaut\n\nRankLieutenant, USN\n\nTime in space\n8d 14h 12m\n\nSelection\n\nUSAF Man in Space Soonest (1958)\n\nUSAF Dyna-Soar (1960)\n\nNASA Group 2 (1962)\n\nTotal EVAs\n1\n\nTotal EVA time\n2h 31m\n\nMissions\n\nGemini 8\n\nApollo 11\n\nMission insignia\n\nRetirementAugust 1971\n\nArmstrong's voice\n\nArmstrong's \"One small step\" speech\n\nRecorded July 20, 1969\n\nSignature\n\nNeil Alden Armstrong (August 5, 1930 – August 25, 2012) was an American astronaut and aeronautical engineer who, as the commander of the 1969 Apollo 11 mission, became the first person to walk on the Moon. He was also a naval aviator, test pilot and university professor.\n\nArmstrong was born and raised near Wapakoneta, Ohio. He entered Purdue University, studying aeronautical engineering, with the United States Navy paying his tuition under the Holloway Plan. He became a midshipman in 1949 and a naval aviator the following year. He saw action in the Korean War, flying the Grumman F9F Panther from the aircraft carrier USS Essex. After the war, he completed his bachelor's degree at Purdue and became a test pilot at the National Advisory Committee for Aeronautics (NACA) High-Speed Flight Station at Edwards Air Force Base in California. He was the project pilot on Century Series fighters and flew the North American X-15 seven times. He was also a participant in the U.S. Air Force's Man in Space Soonest and X-20 Dyna-Soar human spaceflight programs.\n\nArmstrong joined the NASA Astronaut Corps in the second group, which was selected in 1962. He made his first spaceflight as command pilot of Gemini 8 in March 1966, becoming NASA's first civilian astronaut to fly in space. During this mission with pilot David Scott, he performed the first docking of two spacecraft; the mission was aborted after Armstrong used some of his re-entry control fuel to stabilize a dangerous roll caused by a stuck thruster. During training for Armstrong's second and last spaceflight as commander of Apollo 11, he had to eject from the Lunar Landing Research Vehicle moments before a crash.\n\nOn July 20, 1969, Armstrong and Apollo 11 Lunar Module (LM) pilot Buzz Aldrin became the first people to land on the Moon, and the next day they spent two and a half hours outside the Lunar Module Eagle spacecraft while Michael Collins remained in lunar orbit in the Apollo Command Module Columbia. When Armstrong first stepped onto the lunar surface, he famously said: \"That's one small step for [a] man, one giant leap for mankind.\"[1][2][3][4] It was broadcast live to an estimated 530 million viewers worldwide. Apollo 11 was a major U.S. victory in the Space Race, by fulfilling a national goal proposed in 1961 by President John F. Kennedy \"of landing a man on the Moon and returning him safely to the Earth\" before the end of the decade. Along with Collins and Aldrin, Armstrong was awarded the Presidential Medal of Freedom by President Richard Nixon and received the 1969 Collier Trophy. President Jimmy Carter presented him with the Congressional Space Medal of Honor in 1978, he was inducted into the National Aviation Hall of Fame in 1979, and with his former crewmates received the Congressional Gold Medal in 2009.\n\nAfter he resigned from NASA in 1971, Armstrong taught in the Department of Aerospace Engineering at the University of Cincinnati until 1979. He served on the Apollo 13 accident investigation and on the Rogers Commission, which investigated the Space Shuttle Challenger disaster. In 2012, Armstrong died due to complications resulting from coronary bypass surgery, at the age of 82.",
+        "representative_chunk_id": "Neil_Armstrong.html#section-000-00",
+        "section_title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Neil Armstrong",
+        "discovered_by": "vector",
+        "rank": 1,
+        "raw_score": 0.5674471855163574,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Moon_landing.html",
+        "representative_chunk": "Article: Moon landing\nSection: Human Moon landings (1969–1972) > Apollo missions\n\nAstronaut Buzz Aldrin, Lunar Module pilot of the first lunar landing mission, poses for a photograph beside the deployed United States flag during an Apollo 11 Extravehicular Activity (EVA) on the lunar surface.\n\nTwenty-four U.S. astronauts traveled to the Moon's vicinity under the Apollo program. Three made the trip twice, and twelve walked on its surface. Apollo 8 and Apollo 10 remained in lunar orbit. Apollo 10 included undocking and Descent Orbit Insertion (DOI), followed by LM staging to CSM redocking. Apollo 13, originally scheduled as a landing, ended up as a lunar flyby by means of free return trajectory. Apollo 7 and Apollo 9 remained in Earth orbit. Apart from the inherent dangers of crewed Moon expeditions as seen with Apollo 13, one reason for their cessation according to astronaut Alan Bean is the cost it imposes in government subsidies.[58]",
+        "representative_chunk_id": "Moon_landing.html#section-018-00",
+        "section_title": "Apollo missions",
+        "section_path": [
+          "Human Moon landings (1969–1972)",
+          "Apollo missions"
+        ],
+        "retrieval_query": "Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?",
+        "discovered_by": "vector",
+        "rank": 2,
+        "raw_score": 0.6411640644073486,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Apollo_11.html",
+        "representative_chunk": "Article: Apollo 11\nSection: Lead\n\nFirst crewed Moon landing (1969)\n\n\"First Moon landing\" and \"The Moon landing\" redirect here. For earlier uncrewed Moon landings, see Moon landing.\n\nThis article is about the 1969 crewed lunar mission. For other uses, see Apollo 11 (disambiguation).\n\nApollo 11\n\nBuzz Aldrin on the Moon in a photograph taken by Neil Armstrong, who can be seen in the visor reflection along with Earth, the Lunar Module Eagle, and the U.S. flag[1]\n\nMission typeCrewed lunar landing (G)\n\nOperatorNASA\n\nCOSPAR ID\n\nCSM: 1969-059A\n\nLM: 1969-059C\n\nSATCAT no.\n\nCSM: 4039[2]\n\nLM: 4041[3]\n\nMission duration8 days, 3 hours, 18 minutes, 35 seconds\n\nSpacecraft properties\n\nSpacecraft\n\nApollo CSM-107\n\nApollo LM-5\n\nManufacturer\n\nCSM: North American Rockwell[4]\n\nLM: Grumman[4]\n\nLaunch mass109,646 lb (49,735 kg)[5]\n\nLanding mass10,873 lb (4,932 kg)\n\nCrew\n\nCrew size3\n\nMembers\n\nNeil Armstrong\n\nMichael Collins\n\nBuzz Aldrin\n\nCallsign\n\nCSM: Columbia\n\nLM: Eagle\n\nOn surface: Tranquility Base\n\nStart of mission\n\nLaunch dateJuly 16, 1969, 13:32:00 (1969-07-16UTC13:32Z) UTC (9:32:00 am EDT)[6]\n\nRocketSaturn V SA-506\n\nLaunch siteKennedy, LC‑39A\n\nEnd of mission\n\nRecovered byUSS Hornet\n\nLanding dateJuly 24, 1969, 16:50:35 (1969-07-24UTC16:50:36Z) UTC\n\nLanding site\n\nNorth Pacific Ocean\n\n(13°19′N 169°9′W﻿ / ﻿13.317°N 169.150°W﻿ / 13.317; -169.150﻿ (Apollo 11 splashdown))\n\nOrbital parameters\n\nReference systemSelenocentric\n\nPeriselene altitude100.9 km (54.5 nmi; 62.7 mi)[7]\n\nAposelene altitude122.4 km (66.1 nmi; 76.1 mi)[7]\n\nInclination1.25°[7]\n\nPeriod2 hours[7]\n\nEpochJuly 19, 1969, 21:44 UTC[7]\n\nLunar orbiter\n\nSpacecraft componentApollo command and service module\n\nOrbital insertionJuly 19, 1969, 17:21:50 UTC[8]\n\nOrbital departureJuly 22, 1969, 04:55:42 UTC[9]\n\nOrbits30\n\nLunar lander\n\nSpacecraft componentApollo Lunar Module\n\nLanding dateJuly 20, 1969, 20:17:40 UTC[10]\n\nReturn launchJuly 21, 1969, 17:54:00 UTC[11]\n\nLanding site\n\nTranquility Base,\n\nMare Tranquillitatis\n\n(0°40′27″N 23°28′23″E﻿ / ﻿0.67416°N 23.47314°E﻿ / 0.67416; 23.47314)[12]\n\nSample mass47.51 lb (21.55 kg)\n\nSurface EVAs1\n\nEVA duration2 hours, 31 minutes, 40 seconds\n\nDocking with Lunar module\n\nDocking dateJuly 16, 1969, 16:56:03 UTC[8]\n\nUndocking dateJuly 20, 1969, 17:44:00 UTC[13]\n\nTime docked96 hours, 47 minutes, 57 seconds\n\nDocking with Lunar module ascent stage\n\nDocking dateJuly 21, 1969, 21:35:00 UTC[9]\n\nUndocking dateJuly 21, 1969, 23:41:31 UTC[9]\n\nTime docked2 hours, 6 minutes, 31 seconds\n\nMission insignia\n\nLeft to right: Armstrong, Collins, and Aldrin\nApollo program\n\n← Apollo 10\n\nApollo 12 →\n\nApollo 11 (July 16–24, 1969) was the American spaceflight that first landed humans on the Moon, and the fifth crewed mission of NASA's Apollo program. The mission was crewed by Commander Neil Armstrong, Command Module Pilot Michael Collins, and Lunar Module Pilot Edwin \"Buzz\" Aldrin, all of whom were on their second and final spaceflight.\n\nLaunched atop a Saturn V rocket from Kennedy Space Center in Florida on July 16 at 13:32 UTC, the Apollo spacecraft consisted of three parts: the command module (CM), which housed the three astronauts and was the only part to return to Earth; the service module (SM), which provided propulsion, electrical power, oxygen, and water to the command module; and the Lunar Module (LM), which had two stages—a descent stage with a large engine and fuel tanks for landing on the Moon, and a lighter ascent stage containing a cabin for two astronauts and a small engine to return them to lunar orbit. After a three-day transit, Armstrong and Aldrin descended to the surface aboard the LM Eagle, landing in the Sea of Tranquility (Mare Tranquillitatis) on July 20 at 20:17 UTC while Collins remained in lunar orbit aboard the CM Columbia. Armstrong became the first human to walk on the Moon approximately six hours after landing, followed by Aldrin nineteen minutes later. Together they spent around two and a half hours walking on the surface, planting an American flag, speaking by telephone with President Richard Nixon, deploying scientific instruments, and collecting 21.5 kg (47.5 lb) of lunar material. After more than 21 hours on the surface, they rejoined Collins in lunar orbit, and the crew returned safely to Earth on July 24, splashing down in the Pacific Ocean.\n\nApollo 11 was the culmination of the Space Race, a geopolitical competition between the United States and the Soviet Union rooted in Cold War rivalry. It fulfilled a national goal set by President John F. Kennedy in May 1961, who had challenged the United States to land a man on the Moon and return him safely before the end of the decade. The program overcame a severe setback with the fatal Apollo 1 launchpad fire in January 1967 and drew on technologies developed through the preceding Mercury and Gemini programs. The Soviet Union, despite early leads in spaceflight, was unable to match the Saturn V rocket, and its uncrewed lunar probe Luna 15 crashed on the Moon on July 21, while Neil Armstrong and Buzz Aldrin were still on the lunar surface.\n\nArmstrong's moonwalk was broadcast live to an estimated 600 million viewers, roughly one-fifth of the world's population, making it among the most-watched television events in history. Stepping onto the lunar surface, Armstrong declared: \"That's one small step for [a] man, one giant leap for mankind.\" Lunar samples returned by the mission led to the identification of three previously unrecognized minerals, and scientific instruments deployed on the surface continued returning data for years afterwards. The crew were honoured with ticker-tape parades, a world goodwill tour, and the Presidential Medal of Freedom. The command module Columbia is preserved at the National Air and Space Museum in Washington, D.C., while the descent stage of Eagle remains on the lunar surface.",
+        "representative_chunk_id": "Apollo_11.html#section-000-00",
+        "section_title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?",
+        "discovered_by": "vector",
+        "rank": 3,
+        "raw_score": 0.6454788446426392,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "List_of_Apollo_missions.html",
+        "representative_chunk": "Article: List of Apollo missions\nSection: Lead\n\nMissions and flights of NASA's Apollo Program\n\nApollo 11, the mission to land the first men on the Moon, launched on July 16, 1969, from Kennedy Space Center Launch Complex 39A\n\nThe Apollo program was a United States human spaceflight program carried out from 1961 to 1972 by the National Aeronautics and Space Administration (NASA), which landed the first astronauts on the Moon.[1] The program used the Saturn IB and Saturn V launch vehicles to lift the Command/Service Module (CSM) and Lunar Module (LM) spacecraft into space, and the Little Joe II rocket to test a launch escape system which was expected to carry the astronauts to safety in the event of a Saturn failure.[2] Uncrewed test flights beginning in 1966 demonstrated the safety of the launch vehicles and spacecraft to carry astronauts, and four crewed flights beginning in October 1968 demonstrated the ability of the spacecraft to carry out a lunar landing mission.\n\nApollo achieved the first crewed lunar landing on the Apollo 11 mission, when Neil Armstrong and Buzz Aldrin landed their LM Eagle in the Sea of Tranquility and walked on the lunar surface, while Michael Collins remained in lunar orbit in the CSM Columbia, and all three landed safely on Earth on July 24, 1969.[3] Five subsequent missions landed astronauts on various lunar sites, ending in December 1972 with 12 men having walked on the Moon[4] and 842 pounds (382 kg) of lunar rocks and soil samples returned to Earth, greatly contributing to the understanding of the Moon's composition and geological history.[5]\n\nTwo Apollo missions were failures: a 1967 cabin fire killed the entire Apollo 1 crew during a ground test in preparation for what was to be the first crewed flight;[6] and the third landing attempt on Apollo 13 was aborted by an oxygen tank explosion en route to the Moon, which disabled the CSM Odyssey's electrical power and life support systems, and made the propulsion system unsafe to use. The crew circled the Moon and were returned safely to Earth using the LM Aquarius as a \"lifeboat\" for these functions.[7]",
+        "representative_chunk_id": "List_of_Apollo_missions.html#section-000-00",
+        "section_title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?",
+        "discovered_by": "vector",
+        "rank": 4,
+        "raw_score": 0.6524280309677124,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Apollo_program.html",
+        "representative_chunk": "Article: Apollo program\nSection: Development history > Production lunar landings\n\nIn November 1969, Charles \"Pete\" Conrad became the third person to step onto the Moon, which he did while speaking more informally than had Armstrong:\n\nWhoopee! Man, that may have been a small one for Neil, but that's a long one for me.\n\n— Pete Conrad[113]\n\nApollo production crewed lunar landing mission patches. Click on a patch to read the main article about that mission.\n\nConrad and rookie Alan L. Bean made a precision landing of Apollo 12 within walking distance of the Surveyor 3 uncrewed lunar probe, which had landed in April 1967 on the Ocean of Storms. The command module pilot was Gemini veteran Richard F. Gordon Jr. Conrad and Bean carried the first lunar surface color television camera, but it was damaged when accidentally pointed into the Sun. They made two EVAs totaling 7 hours and 45 minutes.[110] On one, they walked to the Surveyor, photographed it, and removed some parts which they returned to Earth.[114]\n\nThe contracted batch of 15 Saturn Vs was enough for lunar landing missions through Apollo 20. Shortly after Apollo 11, NASA publicized a preliminary list of eight more planned landing sites after Apollo 12, with plans to increase the mass of the CSM and LM for the last five missions, along with the payload capacity of the Saturn V. These final missions would combine the I and J types in the 1967 list, allowing the CMP to operate a package of lunar orbital sensors and cameras while his companions were on the surface, and allowing them to stay on the Moon for over three days. These missions would also carry the Lunar Roving Vehicle (LRV) increasing the exploration area and allowing televised liftoff of the LM. Also, the Block II spacesuit was revised for the extended missions to allow greater flexibility and visibility for driving the LRV.[115]\n\nApollo landings on the Moon, 1969–1972\n\nThe success of the first two landings allowed the remaining missions to be crewed with a single veteran as commander, with two rookies. Apollo 13 launched Lovell, Jack Swigert, and Fred Haise in April 1970, headed for the Fra Mauro formation. But two days out, a liquid oxygen tank exploded, disabling the service module and forcing the crew to use the LM as a \"lifeboat\" to return to Earth. Another NASA review board was convened to determine the cause, which turned out to be a combination of damage of the tank in the factory, and a subcontractor not making a tank component according to updated design specifications.[54] Apollo was grounded again, for the remainder of 1970 while the oxygen tank was redesigned and an extra one was added.[116]",
+        "representative_chunk_id": "Apollo_program.html#section-026-00",
+        "section_title": "Production lunar landings",
+        "section_path": [
+          "Development history",
+          "Production lunar landings"
+        ],
+        "retrieval_query": "Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?",
+        "discovered_by": "vector",
+        "rank": 5,
+        "raw_score": 0.6874049305915833,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Apollo_12.html",
+        "representative_chunk": "Article: Apollo 12\nSection: Mission highlights\n\nApollo 12 launches from Kennedy Space Center, November 14, 1969",
+        "representative_chunk_id": "Apollo_12.html#section-008-00",
+        "section_title": "Mission highlights",
+        "section_path": [
+          "Mission highlights"
+        ],
+        "retrieval_query": "Apollo 11",
+        "discovered_by": "vector",
+        "rank": 6,
+        "raw_score": 0.7858347296714783,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      }
+    ],
+    "article_reviews": [
+      {
+        "source_article": "Neil_Armstrong.html",
+        "relevant": true,
+        "reason": "This biography includes Apollo 11 and the first Moon walk details needed for Armstrong's role and landing sequence.",
+        "relevant_sections": [
+          "Apollo 11",
+          "Voyage to the Moon",
+          "First Moon walk"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Moon_landing.html",
+        "relevant": true,
+        "reason": "This overview article contains the Apollo-era human Moon landing section and a table that can support identifying the Apollo 11 crew and landing context.",
+        "relevant_sections": [
+          "Human Moon landings (1969–1972)",
+          "Human Moon landings",
+          "Apollo missions"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [
+          "63fe439f4b0ed1ddc5c2d5ae"
+        ],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Apollo_11.html",
+        "relevant": true,
+        "reason": "This is the primary mission article and its personnel, lunar descent, landing, lunar surface operations, and lunar orbit sections should contain the astronaut roles and who stayed in orbit.",
+        "relevant_sections": [
+          "Personnel",
+          "Mission",
+          "Launch and flight to lunar orbit",
+          "Lunar descent",
+          "Landing",
+          "Lunar surface operations",
+          "Lunar ascent",
+          "Columbia in lunar orbit"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [
+          "1863f4c857b1a5c8cfd1b897"
+        ],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "List_of_Apollo_missions.html",
+        "relevant": false,
+        "reason": "It is a program index rather than a source for the specific Apollo 11 crew roles and landing sequence.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Apollo_program.html",
+        "relevant": false,
+        "reason": "This is a broad program overview and is not the best source for the specific Apollo 11 astronaut roles and landing order.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Apollo_12.html",
+        "relevant": false,
+        "reason": "This article is about Apollo 12, not Apollo 11.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      }
+    ],
+    "selected_articles": [
+      "Neil_Armstrong.html",
+      "Moon_landing.html",
+      "Apollo_11.html"
+    ],
+    "rejected_articles": [
+      "List_of_Apollo_missions.html",
+      "Apollo_program.html",
+      "Apollo_12.html"
+    ],
+    "evidence": [
+      {
+        "evidence_id": "Neil_Armstrong.html#section-010-00",
+        "source_article": "Neil_Armstrong.html",
+        "content": "Article: Neil Armstrong\nSection: Astronaut career > Apollo program > Apollo 11\n\nMain article: Apollo 11\n\nThe Apollo 11 crew: Armstrong, Michael Collins, and Buzz Aldrin.\n\nAfter Armstrong served as backup commander for Apollo 8, Slayton offered him the post of commander of Apollo 11 on December 23, 1968, as Apollo 8 orbited the Moon.[112] According to Armstrong's 2005 biography, Slayton told him that although the planned crew was Commander Armstrong, Lunar Module Pilot Buzz Aldrin, and Command Module Pilot Michael Collins, he was offering Armstrong the chance to replace Aldrin with Jim Lovell. After thinking it over for a day, Armstrong told Slayton he would stick with Aldrin, as he had no difficulty working with him and thought Lovell deserved his own command. Replacing Aldrin with Lovell would have made Lovell the lunar module pilot, unofficially the lowest ranked member, and Armstrong could not justify placing Lovell, the commander of Gemini 12, in the number 3 position of the crew.[113] The crew of Apollo 11 was assigned on January 9, 1969, as Armstrong, Collins, and Aldrin, with Lovell, Anders, and Fred Haise as the backup crew.[114]\n\nAccording to Chris Kraft, a March 1969 meeting among Slayton, George Low, Bob Gilruth, and Kraft determined that Armstrong would be the first person on the Moon, in part because NASA management saw him as a person who did not have a large ego. A press conference on April 14, 1969, gave the design of the LM cabin as the reason for Armstrong's being first; the hatch opened inwards and to the right, making it difficult for the LM pilot, on the right-hand side, to exit first. At the time of their meeting, the four men did not know about the hatch consideration. The first knowledge of the meeting outside the small group came when Kraft wrote his book.[115][116] Methods of circumventing this difficulty existed, but it is not known if these were considered at the time. Slayton added, \"Secondly, just on a pure protocol basis, I figured the commander ought to be the first guy out ... I changed it as soon as I found they had the time line that showed that. Bob Gilruth approved my decision.\"[117]",
+        "evidence_type": "text",
+        "title": "Apollo 11",
+        "section_path": [
+          "Astronaut career",
+          "Apollo program",
+          "Apollo 11"
+        ],
+        "retrieval_query": "Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.7488763332366943,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Apollo 11",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": []
+        }
+      },
+      {
+        "evidence_id": "Neil_Armstrong.html#section-011-00",
+        "source_article": "Neil_Armstrong.html",
+        "content": "Article: Neil Armstrong\nSection: Astronaut career > Apollo program > Voyage to the Moon\n\nA Saturn V rocket launched Apollo 11 from Launch Complex 39A at the Kennedy Space Center on July 16, 1969, at 13:32:00 UTC (09:32:00 EDT local time).[118] Armstrong's wife Janet and two sons watched from a yacht moored on the Banana River.[119] During the launch, Armstrong's heart rate peaked at 110 beats per minute.[120] He found the first stage the loudest, much noisier than the Gemini 8 Titan II launch. The Apollo command module was relatively roomy compared with the Gemini spacecraft. None of the Apollo 11 crew suffered space sickness, as some members of previous crews had. Armstrong was especially glad about this, as he had been prone to motion sickness as a child and could experience nausea after long periods of aerobatics.[121]\n\nArmstrong in the lunar module after the completion of the EVA\n\nApollo 11's objective was to land safely on the Moon, rather than to touch down at a precise location. Three minutes into the lunar descent, Armstrong noted that craters were passing about two seconds too early, which meant the Lunar Module Eagle would probably touch down several miles (kilometres) beyond the planned landing zone.[122] As the Eagle's landing radar acquired the surface, several computer error alarms sounded. The first was a code 1202 alarm, and even with their extensive training, neither Armstrong nor Aldrin knew what this code meant. They promptly received word from CAPCOM Charles Duke in Houston that the alarms were not a concern; the 1202 and 1201 alarms were caused by executive overflows in the lunar module guidance computer. In 2007, Aldrin said the overflows were caused by his own counter-checklist choice of leaving the docking radar on during the landing process, causing the computer to process unnecessary radar data. When it did not have enough time to execute all tasks, the computer dropped the lower-priority ones, triggering the alarms. Aldrin said he decided to leave the radar on in case an abort was necessary when re-docking with the Apollo command module; he did not realize it would cause the processing overflows.[123]\n\nArmstrong lands the Lunar Module Eagle on the Moon, July 20, 1969.\n\nWhen Armstrong noticed they were heading toward a landing area that seemed unsafe, he took manual control of the LM and attempted to find a safer area. This took longer than expected, and longer than most simulations had taken.[124] For this reason, Mission Control was concerned that the LM was running low on fuel.[125] On landing, Aldrin and Armstrong believed they had 40 seconds of fuel left, including the 20 seconds' worth which had to be saved in the event of an abort.[126] During training, Armstrong had, on several occasions, landed with fewer than 15 seconds of fuel; he was also confident the LM could survive a fall of up to 50 feet (15 m). Post-mission analysis showed that at touchdown there were 45 to 50 seconds of propellant burn time left.[127]\n\nThe landing on the surface of the Moon occurred several seconds after 20:17:40 UTC on July 20, 1969.[128] One of three 67-inch (170 cm) probes attached to three of the LM's four legs made contact with the surface, a panel light in the LM illuminated, and Aldrin called out, \"Contact light.\" Armstrong shut the engine off and said, \"Shutdown.\" As the LM settled onto the surface, Aldrin said, \"Okay, engine stop\"; then they both called out some post-landing checklist items. After a 10-second pause, Duke acknowledged the landing with, \"We copy you down, Eagle.\" Armstrong confirmed the landing to Mission Control and the world with the words, \"Houston, Tranquility Base here. The Eagle has landed.\" Aldrin and Armstrong celebrated with a brisk handshake and pat on the back. They then returned to the checklist of contingency tasks, should an emergency liftoff become necessary.[129][130][131] After Armstrong confirmed touch down, Duke re-acknowledged, adding a comment about the flight crew's relief: \"Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.\"[126] During the landing, Armstrong's heart rate ranged from 100 to 150 beats per minute.[132]",
+        "evidence_type": "text",
+        "title": "Voyage to the Moon",
+        "section_path": [
+          "Astronaut career",
+          "Apollo program",
+          "Voyage to the Moon"
+        ],
+        "retrieval_query": "Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.7893224954605103,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Voyage to the Moon",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": []
+        }
+      },
+      {
+        "evidence_id": "Neil_Armstrong.html#section-012-00",
+        "source_article": "Neil_Armstrong.html",
+        "content": "Article: Neil Armstrong\nSection: Astronaut career > Apollo program > First Moon walk\n\nSee also: Apollo 11 § Lunar surface operations\n\nArmstrong describes the lunar surface.\n\nThe flight plan called for a crew rest period before leaving the module, but Armstrong asked for this to be moved to earlier in the evening, Houston time. When he and Aldrin were ready to go outside, Eagle was depressurized, the hatch was opened, and Armstrong made his way down the ladder.[133] At the bottom of the ladder, while standing on a Lunar Module landing pad, Armstrong said, \"I'm going to step off the LM now\". He turned and set his left boot on the lunar surface at 02:56 UTC July 21, 1969,[134] then said, \"That's one small step for [a] man, one giant leap for mankind.\"[135] The exact time of Armstrong's first step on the Moon is unclear.[136]\n\nArmstrong prepared his famous epigram on his own.[137] In a post-flight press conference, he said that he chose the words \"just prior to leaving the LM.\"[138] In a 1983 interview in Esquire magazine, he explained to George Plimpton: \"I always knew there was a good chance of being able to return to Earth, but I thought the chances of a successful touch down on the moon surface were about even money—fifty–fifty ... Most people don't realize how difficult the mission was. So it didn't seem to me there was much point in thinking of something to say if we'd have to abort landing.\"[137] In 2012, his brother Dean Armstrong said that Neil showed him a draft of the line months before the launch.[139] Historian Andrew Chaikin, who interviewed Armstrong in 1988 for his book A Man on the Moon, disputed that Armstrong claimed to have conceived the line during the mission.[140]\n\nRecordings of Armstrong's transmission do not provide evidence for the indefinite article \"a\" before \"man\", though NASA and Armstrong insisted for years that static obscured it. Armstrong stated he would never make such a mistake, but after repeated listenings to recordings, he eventually conceded he must have dropped the \"a\".[135] He later said he \"would hope that history would grant me leeway for dropping the syllable and understand that it was certainly intended, even if it was not said—although it might actually have been\".[141] There have since been claims and counter-claims about whether acoustic analysis of the recording reveals the presence of the missing \"a\";[135][142] Peter Shann Ford, an Australian computer programmer, conducted a digital audio analysis and claims that Armstrong did say \"a man\", but the \"a\" was inaudible due to the limitations of communications technology of the time.[135][143][144] Ford and James R. Hansen, Armstrong's authorized biographer, presented these findings to Armstrong and NASA representatives, who conducted their own analysis.[145] Armstrong found Ford's analysis \"persuasive\".[146][147] Linguists David Beaver and Mark Liberman wrote of their skepticism of Ford's claims on the blog Language Log.[148] A 2016 peer-reviewed study again concluded Armstrong had included the article.[149] NASA's transcript continues to show the \"a\" in parentheses.[150]\n\nWhen Armstrong made his proclamation, Voice of America was rebroadcast live by the BBC and many other stations worldwide. An estimated 530 million people viewed the event,[151] 20 percent out of a world population of approximately 3.6 billion.[152][153] \n\nQ: Did you misspeak?\n\nA: There isn't any way of knowing.\n\nQ: Several sources say you did.\n\nA: I mean, there isn't any way of my knowing. When I listen to the tape, I can't hear the 'a', but that doesn't mean it wasn't there, because that was the fastest VOX ever built. There was no mike-switch — it was a voice-operated key or VOX. In a helmet you find you lose a lot of syllables. Sometimes a short syllable like 'a' might not be transmitted. However, when I listen to it, I can't hear it. But the 'a' is implied, so I'm happy if they just put it in parentheses.\n\n— Omni, June 1982, p. 126\n\nArmstrong on the Moon\n\nAbout 19 minutes after Armstrong's first step, Aldrin joined him on the surface, becoming the second human to walk on the Moon. They began their tasks of investigating how easily a person could operate on the lunar surface. Armstrong unveiled a plaque commemorating the flight, and with Aldrin, planted the flag of the United States. Although Armstrong had wanted the flag to be draped on the flagpole,[154] it was decided to use a metal rod to hold it horizontally.[155] However, the rod did not fully extend, leaving the flag with a slightly wavy appearance, as if there were a breeze.[156] Shortly after the flag planting, President Richard Nixon spoke to them by telephone from his office. He spoke for about a minute, after which Armstrong responded for about thirty seconds.[157] In the Apollo 11 photographic record, there are only five images of Armstrong partly shown or reflected. The mission was planned to the minute, with the majority of photographic tasks performed by Armstrong with the single Hasselblad camera.[158]\n\nAfter helping to set up the Early Apollo Scientific Experiment Package, Armstrong went for a walk to what is now known as East Crater, 65 yards (59 m) east of the LM, the greatest distance traveled from the LM on the mission. His final task was to remind Aldrin to leave a small package of memorial items to Soviet cosmonauts Yuri Gagarin and Vladimir Komarov, and Apollo 1 astronauts Grissom, White and Chaffee.[159] The Apollo 11 EVA lasted two and a half hours.[160] Each of the subsequent five landings was allotted a progressively longer EVA period; the crew of Apollo 17 spent over 22 hours exploring the lunar surface.[160] In a 2010 interview, Armstrong explained that NASA limited their Moon walk because they were unsure how the space suits would cope with the Moon's extremely high temperature.[161]",
+        "evidence_type": "text",
+        "title": "First Moon walk",
+        "section_path": [
+          "Astronaut career",
+          "Apollo program",
+          "First Moon walk"
+        ],
+        "retrieval_query": "Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.7685260772705078,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "First Moon walk",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": []
+        }
+      },
+      {
+        "evidence_id": "Moon_landing.html#section-019-00",
+        "source_article": "Moon_landing.html",
+        "content": "Article: Moon landing\nSection: Human Moon landings (1969–1972) > Human Moon landings\n\nMission name\n\nLunar lander\n\nLunar landing date\n\nLunar liftoff date\n\nLunar landing site\n\nDuration on lunar surface (DD:HH:MM)\n\nCrew\n\nNumber of EVAs\n\nTotal EVA Time (HH:MM)\n\nApollo 11\n\nEagle\n\n20 July 1969\n\n21 July 1969\n\nSea of Tranquility\n\n0:21:31\n\nNeil Armstrong, Edwin \"Buzz\" Aldrin\n\n1\n\n2:31\n\nApollo 12\n\nIntrepid\n\n19 November 1969\n\n21 November 1969\n\nOcean of Storms\n\n1:07:31\n\nCharles \"Pete\" Conrad, Alan Bean\n\n2\n\n7:45\n\nApollo 14\n\nAntares\n\n5 February 1971\n\n6 February 1971\n\nFra Mauro\n\n1:09:30\n\nAlan B. Shepard, Edgar Mitchell\n\n2\n\n9:21\n\nApollo 15\n\nFalcon\n\n30 July 1971\n\n2 August 1971\n\nHadley Rille\n\n2:18:55\n\nDavid Scott, James Irwin\n\n3\n\n18:33\n\nApollo 16\n\nOrion\n\n21 April 1972\n\n24 April 1972\n\nDescartes Highlands\n\n2:23:02\n\nJohn Young, Charles Duke\n\n3\n\n20:14\n\nApollo 17\n\nChallenger\n\n11 December 1972\n\n14 December 1972\n\nTaurus–Littrow\n\n3:02:59\n\nEugene Cernan, Harrison \"Jack\" Schmitt\n\n3\n\n22:04",
+        "evidence_type": "text",
+        "title": "Human Moon landings",
+        "section_path": [
+          "Human Moon landings (1969–1972)",
+          "Human Moon landings"
+        ],
+        "retrieval_query": "Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.7695155143737793,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Human Moon landings",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "63fe439f4b0ed1ddc5c2d5ae"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Moon_landing.html#section-018-00",
+        "source_article": "Moon_landing.html",
+        "content": "Article: Moon landing\nSection: Human Moon landings (1969–1972) > Apollo missions\n\nAstronaut Buzz Aldrin, Lunar Module pilot of the first lunar landing mission, poses for a photograph beside the deployed United States flag during an Apollo 11 Extravehicular Activity (EVA) on the lunar surface.\n\nTwenty-four U.S. astronauts traveled to the Moon's vicinity under the Apollo program. Three made the trip twice, and twelve walked on its surface. Apollo 8 and Apollo 10 remained in lunar orbit. Apollo 10 included undocking and Descent Orbit Insertion (DOI), followed by LM staging to CSM redocking. Apollo 13, originally scheduled as a landing, ended up as a lunar flyby by means of free return trajectory. Apollo 7 and Apollo 9 remained in Earth orbit. Apart from the inherent dangers of crewed Moon expeditions as seen with Apollo 13, one reason for their cessation according to astronaut Alan Bean is the cost it imposes in government subsidies.[58]",
+        "evidence_type": "text",
+        "title": "Apollo missions",
+        "section_path": [
+          "Human Moon landings (1969–1972)",
+          "Apollo missions"
+        ],
+        "retrieval_query": "Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.6413265466690063,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Apollo missions",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "63fe439f4b0ed1ddc5c2d5ae"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Apollo_11.html#section-002-00",
+        "source_article": "Apollo_11.html",
+        "content": "Article: Apollo 11\nSection: Personnel\n\nPart of a series on\n\nApollo 11\n\nCrew\n\nNeil Armstrong · Buzz Aldrin · Michael Collins\n\nSpacecraft\n\nCM-107 Columbia · Lunar Module Eagle\n\nLanding site\n\nTranquility Base\n\nRecovery vessels\n\nHelicopter 66 · USS Hornet\n\nCommemoration\n\nAnniversaries · 50th Anniversary commemorative coins · Eisenhower dollar · Anthony dollar\n\nRelated\n\nBritish TV coverage · Goodwill messages · In popular culture · Lunar sample display · Missing tapes\n\nv\n\nt\n\ne",
+        "evidence_type": "text",
+        "title": "Personnel",
+        "section_path": [
+          "Personnel"
+        ],
+        "retrieval_query": "Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.7373902797698975,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Personnel",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "1863f4c857b1a5c8cfd1b897"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Apollo_11.html#section-015-00",
+        "source_article": "Apollo_11.html",
+        "content": "Article: Apollo 11\nSection: Mission > Launch and flight to lunar orbit\n\nThe Apollo 11 Saturn V space vehicle lifts off with astronauts Neil A. Armstrong, Michael Collins and Edwin E. Aldrin Jr. at 9:32 am. EDT July 16, 1969, from Kennedy Space Center's Launch Complex 39A.\n\nAn estimated one million spectators watched the launch of Apollo 11 from the highways and beaches in the vicinity of the launch site. Dignitaries included the Chief of Staff of the United States Army, General William Westmoreland, four cabinet members, 19 state governors, 40 mayors, 60 ambassadors and 200 congressmen. Vice President Spiro Agnew viewed the launch with former president Lyndon B. Johnson and his wife Lady Bird Johnson.[99][104] Around 3,500 media representatives were present.[105] About two-thirds were from the United States; the rest came from 55 other countries. The launch was televised live in 33 countries, with an estimated 25 million viewers in the United States alone. Millions more around the world listened to radio broadcasts.[104][99] President Richard Nixon viewed the launch from his office in the White House with his NASA liaison officer, Apollo astronaut Frank Borman.[106] Lodging near Cape Canaveral was reported as being booked months ahead in advance for the launch by a Florida newspaper.[107]\n\nSaturn V AS-506 launched Apollo 11 on July 16, 1969, at 13:32:00 UTC (9:32:00 EDT).[6] At 13.2 seconds into the flight, the vehicle began to roll into its flight azimuth of 72.058°. Full shutdown of the first-stage engines occurred about 2 minutes and 42 seconds into the mission, followed by separation of the S-IC and ignition of the S-II engines. The second stage engines then cut off and separated at about 9 minutes and 8 seconds, allowing the first ignition of the S-IVB engine a few seconds later.[8]\n\nApollo 11 entered a near-circular Earth orbit at an altitude of 100.4 nautical miles (185.9 km) by 98.9 nautical miles (183.2 km), twelve minutes into its flight. After one and a half orbits, which took around two and a half hours, a second ignition of the S-IVB engine pushed the spacecraft onto its trajectory toward the Moon with the trans-lunar injection (TLI) burn, which took about 5 minutes and 47 seconds and started at 16:16:16 UTC. About 30 minutes later, with Collins in the left seat and at the controls, the transposition, docking, and extraction maneuver was performed. This involved separating Columbia from the spent S-IVB stage, turning around, and docking with Eagle still attached to the stage. After the LM was extracted, the combined spacecraft headed for the Moon, while the rocket stage flew on a trajectory past the Moon.[108][8] This was done to avoid the third stage colliding with the spacecraft, the Earth, or the Moon. A slingshot effect from passing around the Moon threw it into an orbit around the Sun.[109]\n\nOn July 19 at 17:21:50 UTC, Apollo 11 passed behind the Moon and fired its service propulsion engine to enter lunar orbit.[8][110] In the thirty orbits that followed, the crew saw passing views of their landing site in the southern Sea of Tranquility about 12 miles (19 km) southwest of the crater Sabine D. The site was selected in part because it had been characterized as relatively flat and smooth by the automated Ranger 8 and Surveyor 5 landers and the Lunar Orbiter mapping spacecraft, and because it was unlikely to present major landing or EVA challenges.[111] It lay about 25 kilometers (16 mi) southeast of the Surveyor 5 landing site, and 68 kilometers (42 mi) southwest of Ranger 8's crash site.[112]",
+        "evidence_type": "text",
+        "title": "Launch and flight to lunar orbit",
+        "section_path": [
+          "Mission",
+          "Launch and flight to lunar orbit"
+        ],
+        "retrieval_query": "Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.6776896715164185,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Launch and flight to lunar orbit",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "1863f4c857b1a5c8cfd1b897"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Apollo_11.html#section-016-00",
+        "source_article": "Apollo_11.html",
+        "content": "Article: Apollo 11\nSection: Mission > Lunar descent\n\nColumbia in lunar orbit, photographed from Eagle\n\nAt 12:52:00 UTC on July 20, Aldrin and Armstrong entered Eagle, and began the final preparations for lunar descent.[8] At 17:44:00 Eagle separated from Columbia.[13] Collins, alone aboard Columbia, inspected Eagle as it pirouetted before him to ensure the craft was not damaged, and that the landing gear was correctly deployed.[113][114] Armstrong exclaimed: \"The Eagle has wings!\"[114]\n\nAs the descent began, Armstrong and Aldrin found themselves passing landmarks on the surface two or three seconds early, and reported that they were \"long\"; they would land miles west of their target point. Eagle was traveling too fast. The problem could have been mascons—concen­tra­tions of high mass in a region or regions of the Moon's crust that contains a gravitational anomaly, potentially altering Eagle's trajectory. Flight Director Gene Kranz speculated that it could have resulted from extra air pressure in the docking tunnel, or a result of Eagle's pirouette maneuver.[115][116]\n\nFive minutes into the descent burn, and 6,000 feet (1,800 m) above the surface of the Moon, the LM guidance computer (LGC) distracted the crew with the first of several unexpected 1201 and 1202 program alarms. Inside Mission Control Center, computer engineer Jack Garman told Guidance Officer Steve Bales it was safe to continue the descent, and this was relayed to the crew. The program alarms indicated \"executive overflows\", meaning the guidance computer could not complete all its tasks in real-time and had to postpone some of them.[117][118] Margaret Hamilton, the Director of Apollo Flight Computer Programming at the MIT Charles Stark Draper Laboratory later recalled:\n\nEagle in lunar orbit photographed from Columbia\n\nTo blame the computer for the Apollo 11 problems is like blaming the person who spots a fire and calls the fire department. Actually, the computer was programmed to do more than recognize error conditions. A complete set of recovery programs was incorporated into the software. The software's action, in this case, was to eliminate lower priority tasks and re-establish the more important ones. The computer, rather than almost forcing an abort, prevented an abort. If the computer hadn't recognized this problem and taken recovery action, I doubt if Apollo 11 would have been the successful Moon landing it was.[119]\n\nDuring the mission, the cause was diagnosed as the rendezvous radar switch being in the wrong position, causing the computer to process data from both the rendezvous and landing radars at the same time.[120][121] Software engineer Don Eyles concluded in a 2005 Guidance and Control Conference paper that the problem was due to a hardware design bug previously seen during testing of the first uncrewed LM in Apollo 5. Having the rendezvous radar on (so it was warmed up in case of an emergency landing abort) should have been irrelevant to the computer, but an electrical phasing mismatch between two parts of the rendezvous radar system could cause the stationary antenna to appear to the computer as dithering back and forth between two positions, depending upon how the hardware randomly powered up. The extra spurious cycle stealing, as the rendezvous radar updated an involuntary counter, caused the computer alarms.[122]",
+        "evidence_type": "text",
+        "title": "Lunar descent",
+        "section_path": [
+          "Mission",
+          "Lunar descent"
+        ],
+        "retrieval_query": "Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 1.0509703159332275,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Lunar descent",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "1863f4c857b1a5c8cfd1b897"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Apollo_11.html#section-017-00",
+        "source_article": "Apollo_11.html",
+        "content": "Article: Apollo 11\nSection: Mission > Landing\n\nArmstrong pilots Eagle to its landing on the Moon, July 20, 1969.\n\nWhen Armstrong again looked outside, he saw that the computer's landing system was targeting a boulder-strewn area just north and east of a 300-foot-diameter (91 m) crater (later determined to be West crater), so he took semi-automatic control.[123][124] Armstrong considered landing short of the boulder field so they could collect geological samples from it, but could not since their horizontal velocity was too high. Throughout the descent, Aldrin called out navigation data to Armstrong, who was busy piloting Eagle.[125]\n\nArmstrong found a clear patch of ground and maneuvered the spacecraft towards it. As he got closer, now 250 feet (76 m) above the surface, he discovered his new landing site had a crater in it. Now 107 feet (33 m) above the surface, Armstrong knew their propellant supply was dwindling and was determined to land at the first possible landing site. He cleared the crater and found another patch of level ground. They were now 100 feet (30 m) from the surface, with only 90 seconds of propellant remaining. Lunar dust kicked up by the LM's engine began to impair his ability to determine the spacecraft's motion. Some large rocks jutted out of the dust cloud, and Armstrong focused on them during his descent so he could determine the spacecraft's speed.[126]\n\nA light informed Aldrin that at least one of the 67-inch (170 cm) probes hanging from Eagle's footpads had touched the surface a few moments before the landing and he said: \"Contact light!\" Armstrong was supposed to immediately shut the engine down, as the engineers suspected the pressure caused by the engine's own exhaust reflecting off the lunar surface could make it explode, but he forgot. Three seconds later, Eagle landed and Armstrong shut the engine down.[127] Aldrin immediately said \"Okay, engine stop. ACA—out of detent.\" Armstrong acknowledged: \"Out of detent. Auto.\" Aldrin continued: \"Mode control—both auto. Descent engine command override off. Engine arm—off. 413 is in.\"[128]\n\nThe landing site relative to West crater\n\nACA was the Attitude Control Assembly—the LM's control stick. Output went to the LGC to command the reaction control system (RCS) jets to fire. \"Out of Detent\" meant the stick had moved away from its centered position; it was spring-centered like the turn indicator in a car. Address 413 of the Abort Guidance System (AGS) contained the variable that indicated the LM had landed.[10]\n\nEagle landed at 20:17:40 UTC on Sunday July 20 with 216 pounds (98 kg) of usable fuel remaining. Information available to the crew and mission controllers during the landing showed the LM had enough fuel for another 25 seconds of powered flight before an abort without touchdown would have become unsafe,[10][129] but post-mission analysis showed that the real figure was probably closer to 50 seconds.[130] Apollo 11 landed with less fuel than most subsequent missions, and the astronauts encountered a premature low fuel warning. This was later found to be the result of the propellant sloshing more than expected, uncovering a fuel sensor. On subsequent missions, extra anti-slosh baffles were added to the tanks to prevent this.[10]\n\nArmstrong acknowledged Aldrin's completion of the post-landing checklist with \"Engine arm is off\", before responding to the CAPCOM, Charles Duke, with the words, \"Houston, Tranquility Base here. The Eagle has landed.\" Armstrong's unrehearsed change of call sign from \"Eagle\" to \"Tranquility Base\" emphasized to listeners that landing was complete and successful.[131][better source needed] Duke expressed the relief at Mission Control: \"Roger, Twan—Tranquility, we copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.\"[10][132]\n\nA 3-D view from the Lunar Reconnaissance Orbiter (LRO) of the Apollo 11 landing site\n\nTwo and a half hours after landing, before preparations began for the EVA, Aldrin radioed to Earth:\n\nThis is the LM pilot. I'd like to take this opportunity to ask every person listening in, whoever and wherever they may be, to pause for a moment and contemplate the events of the past few hours and to give thanks in his or her own way.[133]\n\nHe then took communion privately. At this time NASA was still fighting a lawsuit brought by atheist Madalyn Murray O'Hair (who had objected to the Apollo 8 crew reading from the Book of Genesis) demanding that their astronauts refrain from broadcasting religious activities while in space. For this reason, Aldrin chose to refrain from directly mentioning taking communion on the Moon. Aldrin was an elder at the Webster Presbyterian Church, and his communion kit was prepared by the pastor of the church, Dean Woodruff. Webster Presbyterian possesses the chalice used on the Moon and commemorates the event each year on the Sunday closest to July 20.[134] The schedule for the mission called for the astronauts to follow the landing with a five-hour sleep period, but they chose to begin preparations for the EVA early, thinking they would be unable to sleep.[135]",
+        "evidence_type": "text",
+        "title": "Landing",
+        "section_path": [
+          "Mission",
+          "Landing"
+        ],
+        "retrieval_query": "Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.8915957808494568,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Landing",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "1863f4c857b1a5c8cfd1b897"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Apollo_11.html#section-018-00",
+        "source_article": "Apollo_11.html",
+        "content": "Article: Apollo 11\nSection: Mission > Lunar surface operations\n\nMain article: Tranquility Base\n\nPreparations for Neil Armstrong and Buzz Aldrin to walk on the Moon began at 23:43 UTC.[13] These took longer than expected; three and a half hours instead of two.[136] During training on Earth, everything required had been neatly laid out in advance, but on the Moon the cabin contained a large number of other items as well, such as checklists, food packets, and tools.[137] Six hours and thirty-nine minutes after landing, Armstrong and Aldrin were ready to go outside, and Eagle was depressurized.[138]\n\nEagle's hatch was opened at 02:39:33.[13] Armstrong initially had some difficulties squeezing through the hatch with his portable life support system (PLSS).[136] Some of the highest heart rates recorded from Apollo astronauts occurred during LM egress and ingress.[139] At 02:51 Armstrong began his descent to the lunar surface. The remote-control unit on his chest kept him from seeing his feet. Climbing down the nine-rung ladder, Armstrong pulled a D-ring to deploy the modular equipment stowage assembly (MESA) folded against Eagle's side and activate the TV camera.[140][141]\n\nApollo 11 used slow-scan television (TV) incompatible with broadcast TV, so it was displayed on a special monitor and a conventional TV camera viewed this monitor (thus, a broadcast of a broadcast), significantly reducing the quality of the picture.[142] The signal was received at Goldstone in the United States, but with better fidelity by Honeysuckle Creek Tracking Station near Canberra in Australia. Minutes later the feed was switched to the more sensitive Parkes radio telescope in Australia.[143] Despite some technical and weather difficulties, black and white images of the first lunar EVA were received and broadcast to at least 600 million people on Earth.[143] Copies of this video in broadcast format were saved and are widely available, but recordings of the original slow scan source transmission from the lunar surface were likely destroyed during routine magnetic tape re-use at NASA.[142]\n\nVideo of Neil Armstrong and the first step on the Moon\n\nThat's one small step ...\n\nProblems playing this file? See media help.\n\nAfter describing the surface dust as \"very fine-grained\" and \"almost like a powder\",[141] at 02:56:15,[144] six and a half hours after landing, Armstrong stepped off Eagle's landing pad and declared: \"That's one small step for [a] man, one giant leap for mankind.\"[b][146][147]\n\nArmstrong intended to say \"That's one small step for a man\", but the word \"a\" is not audible in the transmission, and thus was not initially reported by most observers of the live broadcast. When later asked about his quote, Armstrong said he believed he said \"for a man\", and subsequent printed versions of the quote included the \"a\" in square brackets. One explanation for the absence may be that his accent caused him to slur the words \"for a\" together; another is the intermittent nature of the audio and video links to Earth, partly because of storms near Parkes Observatory. A more recent digital analysis of the tape claims to reveal the \"a\" may have been spoken but obscured by static. Other analysis points to the claims of static and slurring as \"face-saving fabrication\", and that Armstrong himself later admitted to misspeaking the line.[148][149][150]\n\nAbout seven minutes after stepping onto the Moon's surface, Armstrong collected a contingency soil sample using a sample bag on a stick. He then folded the bag and tucked it into a pocket on his right thigh. This was to guarantee there would be some lunar soil brought back in case an emergency required the astronauts to abandon the EVA and return to the LM.[151] Twelve minutes after the sample was collected,[146] he removed the TV camera from the MESA and made a panoramic sweep, then mounted it on a tripod.[136] The TV camera cable remained partly coiled and presented a tripping hazard throughout the EVA. Still photography was accomplished with a Hasselblad camera that could be operated hand-held or mounted on Armstrong's Apollo space suit.[152] Aldrin joined Armstrong on the surface. He described the view with the simple phrase: \"Magnificent desolation.\"[141]\n\nArmstrong said moving in the lunar gravity, one-sixth of Earth's, was \"even perhaps easier than the simulations ... It's absolutely no trouble to walk around.\"[141] Aldrin joined him on the surface and tested methods for moving around, including two-footed kangaroo hops. The PLSS backpack created a tendency to tip backward, but neither astronaut had serious problems maintaining balance. Loping became the preferred method of movement. The astronauts reported that they needed to plan their movements six or seven steps ahead. The fine soil was quite slippery. Aldrin remarked that moving from sunlight into Eagle's shadow produced no temperature change inside the suit, but the helmet was warmer in sunlight, so he felt cooler in shadow.[141] The MESA failed to provide a stable work platform and was in shadow, slowing work somewhat. As they worked, the moonwalkers kicked up gray dust, which soiled the outer part of their suits.[152]\n\nAldrin salutes the deployed United States flag on the lunar surface.\n\nThe astronauts planted the Lunar Flag Assembly containing a flag of the United States on the lunar surface, in clear view of the TV camera. Aldrin remembered, \"Of all the jobs I had to do on the Moon the one I wanted to go the smoothest was the flag raising.\"[153] But the astronauts struggled with the telescoping rod and could only insert the pole about 2 inches (5 cm) into the hard lunar surface. Aldrin was afraid it might topple in front of TV viewers, but gave \"a crisp West Point salute\".[153]\n\nBefore Aldrin could take a photo of Armstrong with the flag, President Richard Nixon spoke to them through a telephone-radio transmission, which Nixon called \"the most historic phone call ever made from the White House.\"[154] Nixon originally had a long speech prepared to read during the phone call, but Frank Borman, who was at the White House as a NASA liaison during Apollo 11, convinced Nixon to keep his words brief.[155]\n\nNixon: Hello, Neil and Buzz. I'm talking to you by telephone from the Oval Room at the White House. And this certainly has to be the most historic telephone call ever made from the White House. I just can't tell you how proud we all are of what you have done. For every American, this has to be the proudest day of our lives. And for people all over the world, I am sure that they too join with Americans in recognizing what an immense feat this is. Because of what you have done, the heavens have become a part of man's world. And as you talk to us from the Sea of Tranquility, it inspires us to redouble our efforts to bring peace and tranquility to Earth. For one priceless moment in the whole history of man, all the people on this Earth are truly one: one in their pride in what you have done, and one in our prayers that you will return safely to Earth.\n\nArmstrong: Thank you, Mr. President. It's a great honor and privilege for us to be here, representing not only the United States, but men of peace of all nations, and with interest and a curiosity, and men with a vision for the future. It's an honor for us to be able to participate here today.\n\nNixon: Thank you very much, and I look forward, all of us look forward, to seeing you on the Hornet on Thursday.[156][157]\n\nAldrin's bootprint, part of an experiment to test the properties of the lunar regolith\n\nThey deployed the EASEP, which included a Passive Seismic Experiment Package used to measure moonquakes and a retroreflector array used for the lunar laser ranging experiment.[158] Then Armstrong walked 196 feet (60 m) from the LM to take photographs at the rim of Little West Crater while Aldrin collected two core samples. He used the geologist's hammer to pound in the tubes—the only time the hammer was used on Apollo 11—but was unable to penetrate more than 6 inches (15 cm) deep. The astronauts then collected rock samples using scoops and tongs on extension handles.[159]\n\nMany of the surface activities took longer than expected, so they had to stop documenting sample collection halfway through the allotted 34 minutes. Aldrin shoveled 6 kilograms (13 lb) of soil into the box of rocks to pack them in tightly.[159] Two types of rocks were found in the geological samples: basalt and breccia.[160] Three new minerals were discovered in the rock samples collected by the astronauts: armalcolite, tranquillityite, and pyroxferroite. Armalcolite was named after Armstrong, Aldrin, and Collins. All have subsequently been found on Earth.[161]\n\nThe plaque left on the ladder of Eagle\n\nWhile on the surface, Armstrong uncovered a plaque mounted on the LM ladder, bearing two drawings of Earth (of the Western and Eastern Hemispheres), an inscription, and signatures of the astronauts and President Nixon. The inscription read:\n\nHere men from the planet Earth first set foot upon the Moon July 1969, A. D. We came in peace for all mankind.[141]\n\nAt the behest of the Nixon administration to add a reference to God, NASA included the vague date as a reason to include A.D., which stands for Anno Domini (\"in the year of our Lord\").[162]\n\nMission Control used a coded phrase to warn Armstrong his metabolic rates were high, and that he should slow down. He was moving rapidly from task to task as time ran out. As metabolic rates remained generally lower than expected for both astronauts throughout the walk, Mission Control granted the astronauts a 15-minute extension.[158] In a 2010 interview, Armstrong explained that NASA limited the first moonwalk's time and distance because there was no empirical proof of how much cooling water the astronauts' PLSS backpacks would consume to handle their body heat generation while working on the Moon.[163]",
+        "evidence_type": "text",
+        "title": "Lunar surface operations",
+        "section_path": [
+          "Mission",
+          "Lunar surface operations"
+        ],
+        "retrieval_query": "Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.8164223432540894,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Lunar surface operations",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "1863f4c857b1a5c8cfd1b897"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Apollo_11.html#section-019-00",
+        "source_article": "Apollo_11.html",
+        "content": "Article: Apollo 11\nSection: Mission > Lunar ascent\n\nAldrin entered Eagle first. With some difficulty the astronauts lifted film and two sample boxes containing 21.55 kilograms (47.5 lb) of lunar surface material to the LM hatch using a flat cable pulley device called the Lunar Equipment Conveyor (LEC). This proved to be an inefficient tool, and later missions preferred to carry equipment and samples up to the LM by hand.[136] Armstrong reminded Aldrin of a bag of memorial items in his sleeve pocket, and Aldrin tossed the bag down. Armstrong then jumped onto the ladder's third rung, and climbed into the LM. After transferring to LM life support, the explorers lightened the ascent stage for the return to lunar orbit by tossing out their PLSS backpacks, lunar overshoes, an empty Hasselblad camera, and other equipment.[164][165] The hatch was closed again at 05:11:13. They then pressurized the LM and settled down to sleep.[166]\n\nAldrin next to the Passive Seismic Experiment Package with the Lunar Module Eagle in the background\n\nPresidential speech writer William Safire had prepared an In Event of Moon Disaster announcement for Nixon to read in the event the Apollo 11 astronauts were stranded on the Moon.[167] The remarks were in a memo from Safire to Nixon's White House Chief of Staff H. R. Haldeman, in which Safire suggested a protocol the administration might follow in reaction to such a disaster.[168][169] According to the plan, Mission Control would \"close down communications\" with the LM, and a clergyman would \"commend their souls to the deepest of the deep\" in a public ritual likened to burial at sea. The last line of the prepared text contained an allusion to Rupert Brooke's World War I poem \"The Soldier\".[169] The script for the speech does not make reference to Collins; as he remained onboard Columbia in orbit around the Moon, it was expected that he would be able to return the module to Earth in the event of a mission failure.[170]\n\nWhile moving inside the cabin, Aldrin accidentally damaged the circuit breaker that would arm the main engine for liftoff from the Moon. There was a concern this would prevent firing the engine, stranding them on the Moon. The nonconductive tip of a Duro felt-tip pen[171] was sufficient to activate the switch.[166]\n\nAfter more than 21+1⁄2 hours on the lunar surface, in addition to the scientific instruments, the astronauts left behind: an Apollo 1 mission patch in memory of astronauts Roger Chaffee, Gus Grissom, and Edward White, who died when their command module caught fire during a test in January 1967; two memorial medals of Soviet cosmonauts Vladimir Komarov and Yuri Gagarin, who died in 1967 and 1968 respectively; a memorial bag containing a gold replica of an olive branch as a traditional symbol of peace; and a silicon message disk carrying the goodwill statements by presidents Eisenhower, Kennedy, Johnson, and Nixon along with messages from leaders of 73 countries around the world.[172] The disk also carries a listing of the leadership of the US Congress, a listing of members of the four committees of the House and Senate responsible for the NASA legislation, and the names of NASA's past and then-current top management.[173]\n\nA map of the Tranquility Base landing site and photos taken\n\nAfter about seven hours of rest, the crew was awakened by Houston to prepare for the return flight.\nAt that time, unknown to them, some hundred kilometers away from them the Soviet probe Luna 15 was about to descend and impact. Despite having been known to be orbiting the Moon at the same time, through a ground-breaking precautious goodwill exchange of data, the mission control of Luna 15 unexpectedly hastened its robotic sample-return mission, initiating descent, in an attempt to return before Apollo 11.[174] Just two hours before Apollo 11's launch, Luna 15 crashed at 15:50 UTC, with British astronomers monitoring Luna 15 and recording the situation one commented: \"I say, this has really been drama of the highest order\",[175] bringing the Space Race to a culmination.[176]\n\nRoughly two hours later, at 17:54:00 UTC, the Apollo 11 crew on the surface safely lifted off in Eagle's ascent stage to rejoin Collins aboard Columbia in lunar orbit.[146] Film taken from the LM ascent stage upon liftoff from the Moon reveals the American flag, planted some 25 feet (8 m) from the descent stage, whipping violently in the exhaust of the ascent stage engine. Aldrin looked up in time to witness the flag topple: \"The ascent stage of the LM separated ... I was concentrating on the computers, and Neil was studying the attitude indicator, but I looked up long enough to see the flag fall over.\"[177] Subsequent Apollo missions planted their flags farther from the LM.[178]",
+        "evidence_type": "text",
+        "title": "Lunar ascent",
+        "section_path": [
+          "Mission",
+          "Lunar ascent"
+        ],
+        "retrieval_query": "Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.7443073391914368,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Lunar ascent",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "1863f4c857b1a5c8cfd1b897"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Apollo_11.html#section-020-00",
+        "source_article": "Apollo_11.html",
+        "content": "Article: Apollo 11\nSection: Mission > Columbia in lunar orbit\n\nDuring his day flying solo around the Moon, Collins never felt lonely. Although it has been said \"not since Adam has any human known such solitude\",[179] Collins felt very much a part of the mission. In his autobiography he wrote: \"this venture has been structured for three men, and I consider my third to be as necessary as either of the other two\".[179] In the 48 minutes of each orbit when he was out of radio contact with the Earth while Columbia passed round the far side of the Moon, the feeling he reported was not fear or loneliness, but rather \"awareness, anticipation, satisfaction, confidence, almost exultation\".[179]\n\nOne of Collins' first tasks was to identify the Lunar Module on the ground. To give Collins an idea where to look, Mission Control radioed that they believed the Lunar Module landed about 4 miles (6.4 km) off target. Each time he passed over the suspected lunar landing site, he tried in vain to find the module. On his first orbits on the back side of the Moon, Collins performed maintenance activities such as dumping excess water produced by the fuel cells and preparing the cabin for Armstrong and Aldrin to return.[180]\n\nJust before he reached the dark side on the third orbit, Mission Control informed Collins there was a problem with the temperature of the coolant. If it became too cold, parts of Columbia might freeze. Mission Control advised him to assume manual control and implement Environmental Control System Malfunction Procedure 17. Instead, Collins flicked the switch on the system from automatic to manual and back to automatic again, and carried on with normal housekeeping chores, while keeping an eye on the temperature.[181]\n\nWhen Columbia came back around to the near side of the Moon again, Collins was able to report that the problem had been resolved. For the next couple of orbits, he described his time on the back side of the Moon as \"relaxing\". After Aldrin and Armstrong completed their EVA, Collins slept so he could be rested for the rendezvous. While the flight plan called for Eagle to meet up with Columbia, Collins was prepared for a contingency in which he would fly Columbia down to meet Eagle.[181]",
+        "evidence_type": "text",
+        "title": "Columbia in lunar orbit",
+        "section_path": [
+          "Mission",
+          "Columbia in lunar orbit"
+        ],
+        "retrieval_query": "Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.8773990869522095,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Columbia in lunar orbit",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "1863f4c857b1a5c8cfd1b897"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Moon_landing.html#table-008-a66471a90d",
+        "source_article": "Moon_landing.html",
+        "content": "Structured table (JSON rows, one object per row — read values directly from these rows; do not rely on prior knowledge).\n{\"artifact_id\": \"63fe439f4b0ed1ddc5c2d5ae\", \"table_id\": \"table-008-a66471a90d\", \"caption\": null, \"section\": \"Human Moon landings (1969–1972) > Human Moon landings\", \"columns\": [\"Mission name\", \"Lunar lander\", \"Lunar landing date\", \"Lunar liftoff date\", \"Lunar landing site\", \"Duration on lunar surface (DD:HH:MM)\", \"Crew\", \"Number of EVAs\", \"Total EVA Time (HH:MM)\"], \"legends\": [], \"rows\": [{\"row_number\": 1, \"values\": {\"Mission name\": \"Apollo 11\", \"Lunar lander\": \"Eagle\", \"Lunar landing date\": \"20 July 1969\", \"Lunar liftoff date\": \"21 July 1969\", \"Lunar landing site\": \"Sea of Tranquility\", \"Duration on lunar surface (DD:HH:MM)\": \"0:21:31\", \"Crew\": \"Neil Armstrong , Edwin \\\"Buzz\\\" Aldrin\", \"Number of EVAs\": \"1\", \"Total EVA Time (HH:MM)\": \"2:31\"}, \"semantic_signals\": {\"Lunar lander\": {\"source_cell\": \"table-008-a66471a90d:r2:c2\", \"display_text\": \"Eagle\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Eagle\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 2, \"values\": {\"Mission name\": \"Apollo 12\", \"Lunar lander\": \"Intrepid\", \"Lunar landing date\": \"19 November 1969\", \"Lunar liftoff date\": \"21 November 1969\", \"Lunar landing site\": \"Ocean of Storms\", \"Duration on lunar surface (DD:HH:MM)\": \"1:07:31\", \"Crew\": \"Charles \\\"Pete\\\" Conrad , Alan Bean\", \"Number of EVAs\": \"2\", \"Total EVA Time (HH:MM)\": \"7:45\"}, \"semantic_signals\": {\"Lunar lander\": {\"source_cell\": \"table-008-a66471a90d:r3:c2\", \"display_text\": \"Intrepid\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Intrepid\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 3, \"values\": {\"Mission name\": \"Apollo 14\", \"Lunar lander\": \"Antares\", \"Lunar landing date\": \"5 February 1971\", \"Lunar liftoff date\": \"6 February 1971\", \"Lunar landing site\": \"Fra Mauro\", \"Duration on lunar surface (DD:HH:MM)\": \"1:09:30\", \"Crew\": \"Alan B. Shepard , Edgar Mitchell\", \"Number of EVAs\": \"2\", \"Total EVA Time (HH:MM)\": \"9:21\"}, \"semantic_signals\": {\"Lunar lander\": {\"source_cell\": \"table-008-a66471a90d:r4:c2\", \"display_text\": \"Antares\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Antares\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 4, \"values\": {\"Mission name\": \"Apollo 15\", \"Lunar lander\": \"Falcon\", \"Lunar landing date\": \"30 July 1971\", \"Lunar liftoff date\": \"2 August 1971\", \"Lunar landing site\": \"Hadley Rille\", \"Duration on lunar surface (DD:HH:MM)\": \"2:18:55\", \"Crew\": \"David Scott , James Irwin\", \"Number of EVAs\": \"3\", \"Total EVA Time (HH:MM)\": \"18:33\"}, \"semantic_signals\": {\"Lunar lander\": {\"source_cell\": \"table-008-a66471a90d:r5:c2\", \"display_text\": \"Falcon\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Falcon\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 5, \"values\": {\"Mission name\": \"Apollo 16\", \"Lunar lander\": \"Orion\", \"Lunar landing date\": \"21 April 1972\", \"Lunar liftoff date\": \"24 April 1972\", \"Lunar landing site\": \"Descartes Highlands\", \"Duration on lunar surface (DD:HH:MM)\": \"2:23:02\", \"Crew\": \"John Young , Charles Duke\", \"Number of EVAs\": \"3\", \"Total EVA Time (HH:MM)\": \"20:14\"}, \"semantic_signals\": {\"Lunar lander\": {\"source_cell\": \"table-008-a66471a90d:r6:c2\", \"display_text\": \"Orion\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Orion\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 6, \"values\": {\"Mission name\": \"Apollo 17\", \"Lunar lander\": \"Challenger\", \"Lunar landing date\": \"11 December 1972\", \"Lunar liftoff date\": \"14 December 1972\", \"Lunar landing site\": \"Taurus–Littrow\", \"Duration on lunar surface (DD:HH:MM)\": \"3:02:59\", \"Crew\": \"Eugene Cernan , Harrison \\\"Jack\\\" Schmitt\", \"Number of EVAs\": \"3\", \"Total EVA Time (HH:MM)\": \"22:04\"}, \"semantic_signals\": {\"Lunar lander\": {\"source_cell\": \"table-008-a66471a90d:r7:c2\", \"display_text\": \"Challenger\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Challenger\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}]}",
+        "evidence_type": "table",
+        "title": "table-008-a66471a90d",
+        "section_path": [
+          "Human Moon landings (1969–1972)",
+          "Human Moon landings"
+        ],
+        "retrieval_query": "Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "63fe439f4b0ed1ddc5c2d5ae",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_id": "table-008-a66471a90d",
+          "n_rows": 6,
+          "rows_rendered": 6,
+          "needs_table_reader": false
+        }
+      },
+      {
+        "evidence_id": "Apollo_11.html#table-001-36a35fd6a0",
+        "source_article": "Apollo_11.html",
+        "content": "Structured table (JSON rows, one object per row — read values directly from these rows; do not rely on prior knowledge).\n{\"artifact_id\": \"1863f4c857b1a5c8cfd1b897\", \"table_id\": \"table-001-36a35fd6a0\", \"caption\": null, \"section\": \"Personnel > Prime crew\", \"columns\": [\"Position\", \"Astronaut\", \"Astronaut__2\"], \"legends\": [], \"rows\": [{\"row_number\": 1, \"values\": {\"Position\": \"Commander\", \"Astronaut\": \"Neil Armstrong Second and last spaceflight\", \"Astronaut__2\": \"Neil Armstrong Second and last spaceflight\"}, \"semantic_signals\": {}}, {\"row_number\": 2, \"values\": {\"Position\": \"Command Module Pilot\", \"Astronaut\": \"Michael Collins Second and last spaceflight\", \"Astronaut__2\": \"Michael Collins Second and last spaceflight\"}, \"semantic_signals\": {}}, {\"row_number\": 3, \"values\": {\"Position\": \"Lunar Module Pilot\", \"Astronaut\": \"Edwin \\\"Buzz\\\" Aldrin Jr. Second and last spaceflight\", \"Astronaut__2\": \"Edwin \\\"Buzz\\\" Aldrin Jr. Second and last spaceflight\"}, \"semantic_signals\": {}}]}",
+        "evidence_type": "table",
+        "title": "table-001-36a35fd6a0",
+        "section_path": [
+          "Personnel",
+          "Prime crew"
+        ],
+        "retrieval_query": "Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "1863f4c857b1a5c8cfd1b897",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_id": "table-001-36a35fd6a0",
+          "n_rows": 3,
+          "rows_rendered": 3,
+          "needs_table_reader": false
+        }
+      },
+      {
+        "evidence_id": "Moon_landing.html#table-008-a66471a90d#computed-table-r1-1-bcbc7787286b",
+        "source_article": "Moon_landing.html",
+        "content": "Deterministic table-computation result. Use the computed rows/calculation below rather than recomputing them.\n{\n  \"table_request\": {\n    \"missing_fact\": \"Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?\",\n    \"source_article\": \"Moon_landing.html\",\n    \"table_id\": \"63fe439f4b0ed1ddc5c2d5ae\",\n    \"expected_caption\": null,\n    \"operation\": \"auto\",\n    \"columns_needed\": [],\n    \"row_filters\": {},\n    \"comparison_key\": null\n  },\n  \"query_plan\": {\n    \"artifact_id\": \"63fe439f4b0ed1ddc5c2d5ae\",\n    \"operation\": \"lookup\",\n    \"selected_columns\": [\n      \"Mission name\",\n      \"Lunar lander\",\n      \"Crew\",\n      \"Lunar landing site\"\n    ],\n    \"filters\": {\n      \"Mission name\": \"Apollo 11\"\n    },\n    \"predicates\": [],\n    \"group_by\": [],\n    \"calculation\": null,\n    \"calculation_column\": null,\n    \"sort_column\": null,\n    \"sort_direction\": null,\n    \"limit\": null\n  },\n  \"result\": {\n    \"request_id\": \"table-r1-1-bcbc7787286b\",\n    \"artifact_id\": \"63fe439f4b0ed1ddc5c2d5ae\",\n    \"result_rows\": [\n      {\n        \"Mission name\": \"Apollo 11\",\n        \"Lunar lander\": \"Eagle\",\n        \"Crew\": \"Neil Armstrong , Edwin \\\"Buzz\\\" Aldrin\",\n        \"Lunar landing site\": \"Sea of Tranquility\"\n      }\n    ],\n    \"calculation\": null,\n    \"source_cells\": [\n      \"table-008-a66471a90d:r2:c1\",\n      \"table-008-a66471a90d:r2:c2\",\n      \"table-008-a66471a90d:r2:c7\",\n      \"table-008-a66471a90d:r2:c5\"\n    ],\n    \"cell_details\": [\n      {\n        \"source_cell\": \"table-008-a66471a90d:r2:c1\",\n        \"row_number\": 1,\n        \"column\": \"Mission name\",\n        \"text\": \"Apollo 11\",\n        \"display_text\": \"Apollo 11\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-008-a66471a90d:r2:c2\",\n        \"row_number\": 1,\n        \"column\": \"Lunar lander\",\n        \"text\": \"Eagle\",\n        \"display_text\": \"Eagle\",\n        \"is_bold\": false,\n        \"is_italic\": true,\n        \"bold_text\": [],\n        \"italic_text\": [\n          \"Eagle\"\n        ],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-008-a66471a90d:r2:c7\",\n        \"row_number\": 1,\n        \"column\": \"Crew\",\n        \"text\": \"Neil Armstrong , Edwin \\\"Buzz\\\" Aldrin\",\n        \"display_text\": \"Neil Armstrong , Edwin \\\"Buzz\\\" Aldrin\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-008-a66471a90d:r2:c5\",\n        \"row_number\": 1,\n        \"column\": \"Lunar landing site\",\n        \"text\": \"Sea of Tranquility\",\n        \"display_text\": \"Sea of Tranquility\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      }\n    ],\n    \"sufficient\": true,\n    \"warnings\": []\n  }\n}",
+        "evidence_type": "table",
+        "title": "Computed table result: Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?",
+        "section_path": [
+          "Human Moon landings (1969–1972)",
+          "Human Moon landings"
+        ],
+        "retrieval_query": "Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "63fe439f4b0ed1ddc5c2d5ae",
+        "source_cells": [
+          "table-008-a66471a90d:r2:c1",
+          "table-008-a66471a90d:r2:c2",
+          "table-008-a66471a90d:r2:c7",
+          "table-008-a66471a90d:r2:c5"
+        ],
+        "metadata": {
+          "retrieval_stage": "table_computation",
+          "table_request_id": "table-r1-1-bcbc7787286b",
+          "operation": "lookup",
+          "calculation": null,
+          "table_computation_sufficient": true,
+          "warnings": []
+        }
+      },
+      {
+        "evidence_id": "Apollo_11.html#table-001-36a35fd6a0#computed-table-r1-2-e64d462b0694",
+        "source_article": "Apollo_11.html",
+        "content": "Deterministic table-computation result. Use the computed rows/calculation below rather than recomputing them.\n{\n  \"table_request\": {\n    \"missing_fact\": \"Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?\",\n    \"source_article\": \"Apollo_11.html\",\n    \"table_id\": \"1863f4c857b1a5c8cfd1b897\",\n    \"expected_caption\": null,\n    \"operation\": \"auto\",\n    \"columns_needed\": [],\n    \"row_filters\": {},\n    \"comparison_key\": null\n  },\n  \"query_plan\": {\n    \"artifact_id\": \"1863f4c857b1a5c8cfd1b897\",\n    \"operation\": \"lookup\",\n    \"selected_columns\": [\n      \"Position\",\n      \"Astronaut\"\n    ],\n    \"filters\": {},\n    \"predicates\": [],\n    \"group_by\": [],\n    \"calculation\": null,\n    \"calculation_column\": null,\n    \"sort_column\": null,\n    \"sort_direction\": null,\n    \"limit\": 3\n  },\n  \"result\": {\n    \"request_id\": \"table-r1-2-e64d462b0694\",\n    \"artifact_id\": \"1863f4c857b1a5c8cfd1b897\",\n    \"result_rows\": [\n      {\n        \"Position\": \"Commander\",\n        \"Astronaut\": \"Neil Armstrong Second and last spaceflight\"\n      },\n      {\n        \"Position\": \"Command Module Pilot\",\n        \"Astronaut\": \"Michael Collins Second and last spaceflight\"\n      },\n      {\n        \"Position\": \"Lunar Module Pilot\",\n        \"Astronaut\": \"Edwin \\\"Buzz\\\" Aldrin Jr. Second and last spaceflight\"\n      }\n    ],\n    \"calculation\": null,\n    \"source_cells\": [\n      \"table-001-36a35fd6a0:r2:c1\",\n      \"table-001-36a35fd6a0:r2:c2\",\n      \"table-001-36a35fd6a0:r3:c1\",\n      \"table-001-36a35fd6a0:r3:c2\",\n      \"table-001-36a35fd6a0:r4:c1\",\n      \"table-001-36a35fd6a0:r4:c2\"\n    ],\n    \"cell_details\": [\n      {\n        \"source_cell\": \"table-001-36a35fd6a0:r2:c1\",\n        \"row_number\": 1,\n        \"column\": \"Position\",\n        \"text\": \"Commander\",\n        \"display_text\": \"Commander\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-36a35fd6a0:r2:c2\",\n        \"row_number\": 1,\n        \"column\": \"Astronaut\",\n        \"text\": \"Neil Armstrong Second and last spaceflight\",\n        \"display_text\": \"Neil Armstrong Second and last spaceflight\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-36a35fd6a0:r3:c1\",\n        \"row_number\": 2,\n        \"column\": \"Position\",\n        \"text\": \"Command Module Pilot\",\n        \"display_text\": \"Command Module Pilot\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-36a35fd6a0:r3:c2\",\n        \"row_number\": 2,\n        \"column\": \"Astronaut\",\n        \"text\": \"Michael Collins Second and last spaceflight\",\n        \"display_text\": \"Michael Collins Second and last spaceflight\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-36a35fd6a0:r4:c1\",\n        \"row_number\": 3,\n        \"column\": \"Position\",\n        \"text\": \"Lunar Module Pilot\",\n        \"display_text\": \"Lunar Module Pilot\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-36a35fd6a0:r4:c2\",\n        \"row_number\": 3,\n        \"column\": \"Astronaut\",\n        \"text\": \"Edwin \\\"Buzz\\\" Aldrin Jr. Second and last spaceflight\",\n        \"display_text\": \"Edwin \\\"Buzz\\\" Aldrin Jr. Second and last spaceflight\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      }\n    ],\n    \"sufficient\": true,\n    \"warnings\": [\n      \"Blank or duplicate column names were made unique.\",\n      \"Expanded rowspan/colspan values into the logical grid.\"\n    ]\n  }\n}",
+        "evidence_type": "table",
+        "title": "Computed table result: Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?",
+        "section_path": [
+          "Personnel",
+          "Prime crew"
+        ],
+        "retrieval_query": "Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?",
+        "retriever": "table",
+        "rank": 2,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "1863f4c857b1a5c8cfd1b897",
+        "source_cells": [
+          "table-001-36a35fd6a0:r2:c1",
+          "table-001-36a35fd6a0:r2:c2",
+          "table-001-36a35fd6a0:r3:c1",
+          "table-001-36a35fd6a0:r3:c2",
+          "table-001-36a35fd6a0:r4:c1",
+          "table-001-36a35fd6a0:r4:c2"
+        ],
+        "metadata": {
+          "retrieval_stage": "table_computation",
+          "table_request_id": "table-r1-2-e64d462b0694",
+          "operation": "lookup",
+          "calculation": null,
+          "table_computation_sufficient": true,
+          "warnings": [
+            "Blank or duplicate column names were made unique.",
+            "Expanded rowspan/colspan values into the logical grid."
+          ]
+        }
+      }
+    ],
+    "assessment": {
+      "ready_to_answer": true,
+      "supported_requirements": [
+        "Apollo 11 crew roles are supported: Neil Armstrong = Commander, Michael Collins = Command Module Pilot, Edwin \"Buzz\" Aldrin Jr. = Lunar Module Pilot.",
+        "The spacecraft are supported: Columbia (Command Module) and Eagle (Lunar Module).",
+        "The lunar landing location is supported: Sea of Tranquility / Tranquility Base.",
+        "Who walked on the Moon and the order are supported: Armstrong was first, Aldrin was second.",
+        "Who remained in lunar orbit is supported: Michael Collins remained aboard Columbia in lunar orbit."
+      ],
+      "missing_requirements": [],
+      "retrieval_requests": [],
+      "table_requests": [],
+      "unresolved_conflicts": [],
+      "explanation": "The supplied evidence is sufficient to answer all parts. The personnel table and mission text identify the three crew members and their roles, the mission text identifies Columbia and Eagle and states Collins stayed aboard Columbia in lunar orbit, and the moonwalk sections establish that Armstrong stepped onto the Moon first and Aldrin joined him about 19 minutes later. The landing site is given as Sea of Tranquility / Tranquility Base."
+    },
+    "assessment_history": [
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "Apollo 11 mission roles are supported: Armstrong = Commander, Collins = Command Module Pilot, Aldrin = Lunar Module Pilot.",
+          "The spacecraft are supported: Columbia (command module) and Eagle (lunar module).",
+          "The lunar landing location is supported: Sea of Tranquility / Tranquility Base.",
+          "The walk order is supported: Armstrong first, Aldrin second.",
+          "Who remained in lunar orbit is supported: Michael Collins stayed aboard Columbia in lunar orbit while Armstrong and Aldrin were on the surface."
+        ],
+        "missing_requirements": [],
+        "retrieval_requests": [],
+        "table_requests": [
+          {
+            "missing_fact": "Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?",
+            "source_article": "Moon_landing.html",
+            "table_id": "63fe439f4b0ed1ddc5c2d5ae",
+            "expected_caption": null,
+            "operation": "auto",
+            "columns_needed": [],
+            "row_filters": {},
+            "comparison_key": null
+          },
+          {
+            "missing_fact": "Map the three Apollo 11 astronauts to their mission roles, spacecraft, and locations during the lunar landing. Who walked on the Moon, in what order, and who remained in lunar orbit?",
+            "source_article": "Apollo_11.html",
+            "table_id": "1863f4c857b1a5c8cfd1b897",
+            "expected_caption": null,
+            "operation": "auto",
+            "columns_needed": [],
+            "row_filters": {},
+            "comparison_key": null
+          }
+        ],
+        "unresolved_conflicts": [],
+        "explanation": "The supplied evidence fully supports mapping each Apollo 11 astronaut to mission role, spacecraft, and location during landing, as well as the moonwalk order and the astronaut who remained in lunar orbit. The mission personnel table gives the roles, the personnel section names the spacecraft, the landing/surface sections identify Eagle on the Moon and Columbia in lunar orbit, the First Moon walk and surface operations sections show Armstrong stepped onto the Moon first and Aldrin followed, and the lunar orbit section states Collins remained aboard Columbia."
+      },
+      {
+        "ready_to_answer": true,
+        "supported_requirements": [
+          "Apollo 11 crew roles are supported: Neil Armstrong = Commander, Michael Collins = Command Module Pilot, Edwin \"Buzz\" Aldrin Jr. = Lunar Module Pilot.",
+          "The spacecraft are supported: Columbia (Command Module) and Eagle (Lunar Module).",
+          "The lunar landing location is supported: Sea of Tranquility / Tranquility Base.",
+          "Who walked on the Moon and the order are supported: Armstrong was first, Aldrin was second.",
+          "Who remained in lunar orbit is supported: Michael Collins remained aboard Columbia in lunar orbit."
+        ],
+        "missing_requirements": [],
+        "retrieval_requests": [],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The supplied evidence is sufficient to answer all parts. The personnel table and mission text identify the three crew members and their roles, the mission text identifies Columbia and Eagle and states Collins stayed aboard Columbia in lunar orbit, and the moonwalk sections establish that Armstrong stepped onto the Moon first and Aldrin joined him about 19 minutes later. The landing site is given as Sea of Tranquility / Tranquility Base."
+      }
+    ]
+  }
+}

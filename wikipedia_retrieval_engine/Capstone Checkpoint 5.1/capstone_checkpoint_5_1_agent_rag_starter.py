@@ -91,7 +91,11 @@ from wikipedia_retrieval_engine.wiki_agents.run_logging import AgentRunLogger
 # expansion is the repeated escalation. Set INITIAL_RETRIEVER = "vector" to reproduce
 # the plain-vector baseline for A/B, or "multistep" for sub-topic decomposition.
 INITIAL_RETRIEVER = "multistep_entity"  # "vector" | "multistep" | "multistep_entity"
-REPEATED_RETRIEVERS = ("graph_seeded",)  # escalation stages after the initial one
+# Escalation stages after the initial one. article_broaden first — recall is already
+# 1.000, so the first escalation's job is context breadth for synthesis questions the
+# single-section bet starves (validation §3 Step 8-10); graph_seeded stays as the
+# fallback for questions that genuinely need another article.
+REPEATED_RETRIEVERS = ("article_broaden", "graph_seeded")
 INITIAL_SUBQUERY_TOP_K = 2
 INITIAL_MAX_CANDIDATES = 8
 # GT questions designate up to 4 articles (e.g. GT14: Chazelle + Emma Stone +

@@ -34,6 +34,7 @@ from wikipedia_retrieval_engine.wiki_agents.retrieval_nodes import (
     collect_initial_evidence,
     load_selected_sections,
     load_selected_tables,
+    retrieve_broadened_article_sections,
     retrieve_graph_seeded_evidence,
     retrieve_initial_articles,
     retrieve_initial_articles_decomposed,
@@ -747,6 +748,79 @@ class RetrievalNodesTests(unittest.TestCase):
         self.assertEqual(item.metadata["requested_section"], "Winners and nominees")
         self.assertTrue(item.metadata["needs_table_reader"])
 
+    def test_broaden_adds_more_sections_additively(self) -> None:
+        # The breadth route widens the selected article beyond its picked section,
+        # keeping existing evidence and bumping the retrieval counter.
+        existing = EvidenceItem(
+            evidence_id="Barack_Obama.html#Early_life-0",
+            source_article="Barack_Obama.html",
+            content="Early life ...",
+            metadata={"retrieval_stage": "toc_selected_section"},
+        )
+        docs = [
+            (Document(page_content="Political career ...", metadata={
+                "source": "Barack_Obama.html#Political_career-0",
+                "article": "Barack_Obama.html", "section_title": "Political career"}), 0.10),
+            (Document(page_content="Presidency ...", metadata={
+                "source": "Barack_Obama.html#Presidency-0",
+                "article": "Barack_Obama.html", "section_title": "Presidency"}), 0.20),
+        ]
+        retriever = Mock(spec=VectorRetriever)
+        retriever.getArticleSectionsTopK.return_value = docs
+
+        update = retrieve_broadened_article_sections(
+            {
+                "question": "How did Obama's career progress?",
+                "selected_articles": ["Barack_Obama.html"],
+                "evidence": [existing],
+                "retrieval_attempts": 1,
+            },
+            retriever,
+            broaden_k=8,
+        )
+
+        retriever.getArticleSectionsTopK.assert_called_once_with(
+            "How did Obama's career progress?", "Barack_Obama.html", k=8
+        )
+        evidence = update["evidence"]
+        self.assertEqual(len(evidence), 3)  # existing + 2 broadened
+        stages = [it.metadata["retrieval_stage"] for it in evidence]
+        self.assertEqual(stages.count("broadened_article_sections"), 2)
+        self.assertIn("toc_selected_section", stages)  # existing preserved
+        self.assertEqual(update["retrieval_attempts"], 2)
+
+    def test_broaden_dedups_already_loaded_sections(self) -> None:
+        # A section already in evidence must not be duplicated by the breadth route.
+        existing = EvidenceItem(
+            evidence_id="Barack_Obama.html#Presidency-0",
+            source_article="Barack_Obama.html",
+            content="Presidency ...",
+            metadata={"retrieval_stage": "toc_selected_section"},
+        )
+        docs = [
+            (Document(page_content="Presidency ...", metadata={
+                "source": "Barack_Obama.html#Presidency-0", "article": "Barack_Obama.html"}), 0.10),
+            (Document(page_content="Post-presidency ...", metadata={
+                "source": "Barack_Obama.html#Post_presidency-0", "article": "Barack_Obama.html"}), 0.20),
+        ]
+        retriever = Mock(spec=VectorRetriever)
+        retriever.getArticleSectionsTopK.return_value = docs
+
+        update = retrieve_broadened_article_sections(
+            {
+                "question": "What did Obama do?",
+                "selected_articles": ["Barack_Obama.html"],
+                "evidence": [existing],
+                "retrieval_attempts": 2,
+            },
+            retriever,
+        )
+
+        ids = [it.evidence_id for it in update["evidence"]]
+        self.assertEqual(len(ids), 2)  # existing + only the new one
+        self.assertEqual(ids.count("Barack_Obama.html#Presidency-0"), 1)
+        self.assertIn("Barack_Obama.html#Post_presidency-0", ids)
+
     def test_load_selected_sections_does_not_accept_a_different_heading(self) -> None:
         review = ArticleReview(
             source_article="Academy_Award_for_Best_Actor.html",
@@ -1108,6 +1182,51 @@ class RetrievalNodesTests(unittest.TestCase):
 
         self.assertTrue(result.ready_to_answer)
         self.assertEqual(result.table_requests, [])
+
+    def _ready_non_table_state(self, attempts: int):
+        assessment = EvidenceAssessment(
+            ready_to_answer=True,
+            explanation="One section looks sufficient.",
+        )
+        structured = Mock()
+        structured.invoke.return_value = assessment
+        llm = Mock(spec=BaseChatModel)
+        llm.with_structured_output.return_value = structured
+        state: AgentState = {
+            "question": "How did the program evolve over time?",
+            "article_reviews": [
+                ArticleReview(
+                    source_article="Some_Process.html",
+                    relevant=True,
+                    reason="Describes the process.",
+                )  # no relevant_table_ids -> a non-table synthesis question
+            ],
+            "selected_articles": ["Some_Process.html"],
+            "evidence": [],
+            "retrieval_attempts": attempts,
+        }
+        return state, llm
+
+    def test_breadth_nudge_denies_first_pass_ready_for_non_table_question(self) -> None:
+        # With the nudge on, a non-table question cannot finish on its initial single
+        # section: readiness is denied so the loop takes one breadth escalation.
+        state, llm = self._ready_non_table_state(attempts=1)
+        update = assess_evidence(state, llm, breadth_nudge=True)
+        self.assertFalse(update["assessment"].ready_to_answer)
+
+    def test_breadth_nudge_off_by_default(self) -> None:
+        # Default (e.g. the simple intake graph, which has no breadth route): the
+        # assessor's first-pass "ready" is honored.
+        state, llm = self._ready_non_table_state(attempts=1)
+        update = assess_evidence(state, llm)
+        self.assertTrue(update["assessment"].ready_to_answer)
+
+    def test_breadth_nudge_stands_down_after_one_escalation(self) -> None:
+        # Once the question has escalated (attempts >= 2), the nudge no longer fires,
+        # so a genuine "ready" over the broadened evidence proceeds (bounded loop).
+        state, llm = self._ready_non_table_state(attempts=2)
+        update = assess_evidence(state, llm, breadth_nudge=True)
+        self.assertTrue(update["assessment"].ready_to_answer)
 
     def test_route_after_evidence_assessment_selects_each_branch(self) -> None:
         ready = EvidenceAssessment(

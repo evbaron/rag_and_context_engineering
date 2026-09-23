@@ -1018,6 +1018,68 @@ def retrieve_selected_article_sections(
     return {"evidence": list(evidence_by_id.values())}
 
 
+def retrieve_broadened_article_sections(
+    state: AgentState,
+    retriever: VectorRetriever,
+    *,
+    broaden_k: int = 8,
+) -> AgentState:
+    """Widen context on the already-selected articles for synthesis questions.
+
+    5.1 restricts initial evidence to the TOC-selected sections — a bet that bought
+    perfect recall and table precision, but starves questions whose answer is spread
+    across an article (people-connection, process-explanation), which 2.1-4.1
+    answered from full-article context. This escalation pulls the top ``broaden_k``
+    sections of each kept article by relevance to the question, adding the breadth
+    those questions need. It is additive (never drops existing evidence, and dedups
+    by section id, so it only contributes sections beyond the ones already selected)
+    and it touches neither the graph route (neighbor articles) nor the table route.
+    """
+
+    if broaden_k < 1:
+        raise ValueError("broaden_k must be at least 1.")
+
+    question = state.get("question", "").strip()
+    if not question:
+        raise ValueError("Agent state must contain a non-empty question.")
+
+    seeds = list(dict.fromkeys(state.get("selected_articles", [])))
+    evidence_by_id = {
+        item.evidence_id: item for item in state.get("evidence", [])
+    }
+    for source_article in seeds:
+        section_hits = retriever.getArticleSectionsTopK(
+            question, source_article, k=broaden_k
+        )
+        for rank, (document, distance) in enumerate(section_hits, start=1):
+            metadata = document.metadata
+            evidence_id = str(
+                metadata.get("source")
+                or f"{source_article}#broaden-{rank}"
+            )
+            if evidence_id in evidence_by_id:
+                continue
+            section_title, section_path = _section_identity(metadata)
+            evidence_by_id[evidence_id] = EvidenceItem(
+                evidence_id=evidence_id,
+                source_article=source_article,
+                content=document.page_content,
+                title=section_title or None,
+                section_path=section_path,
+                retrieval_query=question,
+                retriever="vector",
+                rank=rank,
+                raw_score=float(distance),
+                score_semantics="lower_is_better",
+                metadata={"retrieval_stage": "broadened_article_sections"},
+            )
+
+    return {
+        "evidence": list(evidence_by_id.values()),
+        "retrieval_attempts": retrieval_attempt_count(state) + 1,
+    }
+
+
 def retrieve_graph_seeded_evidence(
     state: AgentState,
     retriever: VectorRetriever,
@@ -1175,6 +1237,7 @@ def assess_evidence(
     llm: BaseChatModel,
     *,
     allow_table_requests: bool = True,
+    breadth_nudge: bool = False,
 ) -> AgentState:
     """Assess completeness and produce requests for the graph's next branch."""
 
@@ -1320,6 +1383,26 @@ def assess_evidence(
                     if review.relevant and review.relevant_table_ids
                     for table_id in review.relevant_table_ids
                 ]
+
+    # Breadth nudge: a non-table question answered straight from its initial single
+    # section is often starved -- the assessor calls "ready" on one section and
+    # answers partially (validation Step 8). Deny that first-pass "ready" so the
+    # question takes one escalation (article_broaden leads the repeated sequence) and
+    # gets the fuller article context 2.1-4.1 had. Fires only at the initial pass
+    # (attempts <= 1): after one escalation the assessor's verdict is honored, so the
+    # loop stays bounded and a question that truly needs only its one section costs a
+    # single extra round, not many. Table questions are handled by the gateway above.
+    is_table_question = any(
+        review.relevant and review.relevant_table_ids for review in reviews
+    )
+    if (
+        breadth_nudge
+        and not is_table_question
+        and assessment.ready_to_answer
+        and retrieval_attempt_count(state) <= 1
+        and state.get("selected_articles")
+    ):
+        assessment.ready_to_answer = False
 
     # A not-ready assessment with no actionable request would stall the loop.
     # Fall back to re-querying the original question so retrieval can progress.

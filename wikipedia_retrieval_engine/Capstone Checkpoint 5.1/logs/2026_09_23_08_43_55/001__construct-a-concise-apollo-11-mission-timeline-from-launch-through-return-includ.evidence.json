@@ -1,0 +1,636 @@
+{
+  "run_id": "2026_09_23_08_43_55",
+  "question_number": 1,
+  "logged_at": "2026-09-23T08:44:18-04:00",
+  "question": "Construct a concise Apollo 11 mission timeline from launch through return. Include the launch date and place, lunar landing date and site, surface activity, reunion with the orbiting crew member, and splashdown date and ocean.",
+  "final_state": {
+    "question": "Construct a concise Apollo 11 mission timeline from launch through return. Include the launch date and place, lunar landing date and site, surface activity, reunion with the orbiting crew member, and splashdown date and ocean.",
+    "retrieval_attempts": 1,
+    "table_attempts": 1,
+    "article_candidates": [
+      {
+        "source_article": "Apollo_program.html",
+        "representative_chunk": "Article: Apollo program\nSection: Spacecraft > Apollo Lunar Module\n\nMain article: Apollo Lunar Module\n\nApollo 11 Lunar Module Eagle (and Buzz Aldrin) on the Moon, photographed by Neil Armstrong\n\nThe Apollo Lunar Module (LM) was designed to descend from lunar orbit to land two astronauts on the Moon and take them back to orbit to rendezvous with the command module. Not designed to fly through the Earth's atmosphere or return to Earth, its fuselage was designed totally without aerodynamic considerations and was of an extremely lightweight construction. It consisted of separate descent and ascent stages, each with its own engine. The descent stage contained storage for the descent propellant, surface stay consumables, and surface exploration equipment. The ascent stage contained the crew cabin, ascent propellant, and a reaction control system. The initial LM model weighed approximately 33,300 pounds (15,100 kg), and allowed surface stays up to around 34 hours. An extended lunar module (ELM) weighed over 36,200 pounds (16,400 kg), and allowed surface stays of more than three days.[56] The contract for design and construction of the lunar module was awarded to Grumman Aircraft Engineering Corporation, and the project was overseen by Thomas J. Kelly.[58]",
+        "representative_chunk_id": "Apollo_program.html#section-011-00",
+        "section_title": "Apollo Lunar Module",
+        "section_path": [
+          "Spacecraft",
+          "Apollo Lunar Module"
+        ],
+        "retrieval_query": "Apollo Lunar Module Eagle",
+        "discovered_by": "vector",
+        "rank": 1,
+        "raw_score": 0.5450625419616699,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Apollo_11.html",
+        "representative_chunk": "Article: Apollo 11\nSection: Mission > Launch and flight to lunar orbit\n\nThe Apollo 11 Saturn V space vehicle lifts off with astronauts Neil A. Armstrong, Michael Collins and Edwin E. Aldrin Jr. at 9:32 am. EDT July 16, 1969, from Kennedy Space Center's Launch Complex 39A.\n\nAn estimated one million spectators watched the launch of Apollo 11 from the highways and beaches in the vicinity of the launch site. Dignitaries included the Chief of Staff of the United States Army, General William Westmoreland, four cabinet members, 19 state governors, 40 mayors, 60 ambassadors and 200 congressmen. Vice President Spiro Agnew viewed the launch with former president Lyndon B. Johnson and his wife Lady Bird Johnson.[99][104] Around 3,500 media representatives were present.[105] About two-thirds were from the United States; the rest came from 55 other countries. The launch was televised live in 33 countries, with an estimated 25 million viewers in the United States alone. Millions more around the world listened to radio broadcasts.[104][99] President Richard Nixon viewed the launch from his office in the White House with his NASA liaison officer, Apollo astronaut Frank Borman.[106] Lodging near Cape Canaveral was reported as being booked months ahead in advance for the launch by a Florida newspaper.[107]\n\nSaturn V AS-506 launched Apollo 11 on July 16, 1969, at 13:32:00 UTC (9:32:00 EDT).[6] At 13.2 seconds into the flight, the vehicle began to roll into its flight azimuth of 72.058°. Full shutdown of the first-stage engines occurred about 2 minutes and 42 seconds into the mission, followed by separation of the S-IC and ignition of the S-II engines. The second stage engines then cut off and separated at about 9 minutes and 8 seconds, allowing the first ignition of the S-IVB engine a few seconds later.[8]\n\nApollo 11 entered a near-circular Earth orbit at an altitude of 100.4 nautical miles (185.9 km) by 98.9 nautical miles (183.2 km), twelve minutes into its flight. After one and a half orbits, which took around two and a half hours, a second ignition of the S-IVB engine pushed the spacecraft onto its trajectory toward the Moon with the trans-lunar injection (TLI) burn, which took about 5 minutes and 47 seconds and started at 16:16:16 UTC. About 30 minutes later, with Collins in the left seat and at the controls, the transposition, docking, and extraction maneuver was performed. This involved separating Columbia from the spent S-IVB stage, turning around, and docking with Eagle still attached to the stage. After the LM was extracted, the combined spacecraft headed for the Moon, while the rocket stage flew on a trajectory past the Moon.[108][8] This was done to avoid the third stage colliding with the spacecraft, the Earth, or the Moon. A slingshot effect from passing around the Moon threw it into an orbit around the Sun.[109]\n\nOn July 19 at 17:21:50 UTC, Apollo 11 passed behind the Moon and fired its service propulsion engine to enter lunar orbit.[8][110] In the thirty orbits that followed, the crew saw passing views of their landing site in the southern Sea of Tranquility about 12 miles (19 km) southwest of the crater Sabine D. The site was selected in part because it had been characterized as relatively flat and smooth by the automated Ranger 8 and Surveyor 5 landers and the Lunar Orbiter mapping spacecraft, and because it was unlikely to present major landing or EVA challenges.[111] It lay about 25 kilometers (16 mi) southeast of the Surveyor 5 landing site, and 68 kilometers (42 mi) southwest of Ranger 8's crash site.[112]",
+        "representative_chunk_id": "Apollo_11.html#section-015-00",
+        "section_title": "Launch and flight to lunar orbit",
+        "section_path": [
+          "Mission",
+          "Launch and flight to lunar orbit"
+        ],
+        "retrieval_query": "Apollo 11",
+        "discovered_by": "vector",
+        "rank": 2,
+        "raw_score": 0.6916812658309937,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Moon_landing.html",
+        "representative_chunk": "Article: Moon landing\nSection: Human Moon landings (1969–1972) > Human Moon landings\n\nMission name\n\nLunar lander\n\nLunar landing date\n\nLunar liftoff date\n\nLunar landing site\n\nDuration on lunar surface (DD:HH:MM)\n\nCrew\n\nNumber of EVAs\n\nTotal EVA Time (HH:MM)\n\nApollo 11\n\nEagle\n\n20 July 1969\n\n21 July 1969\n\nSea of Tranquility\n\n0:21:31\n\nNeil Armstrong, Edwin \"Buzz\" Aldrin\n\n1\n\n2:31\n\nApollo 12\n\nIntrepid\n\n19 November 1969\n\n21 November 1969\n\nOcean of Storms\n\n1:07:31\n\nCharles \"Pete\" Conrad, Alan Bean\n\n2\n\n7:45\n\nApollo 14\n\nAntares\n\n5 February 1971\n\n6 February 1971\n\nFra Mauro\n\n1:09:30\n\nAlan B. Shepard, Edgar Mitchell\n\n2\n\n9:21\n\nApollo 15\n\nFalcon\n\n30 July 1971\n\n2 August 1971\n\nHadley Rille\n\n2:18:55\n\nDavid Scott, James Irwin\n\n3\n\n18:33\n\nApollo 16\n\nOrion\n\n21 April 1972\n\n24 April 1972\n\nDescartes Highlands\n\n2:23:02\n\nJohn Young, Charles Duke\n\n3\n\n20:14\n\nApollo 17\n\nChallenger\n\n11 December 1972\n\n14 December 1972\n\nTaurus–Littrow\n\n3:02:59\n\nEugene Cernan, Harrison \"Jack\" Schmitt\n\n3\n\n22:04",
+        "representative_chunk_id": "Moon_landing.html#section-019-00",
+        "section_title": "Human Moon landings",
+        "section_path": [
+          "Human Moon landings (1969–1972)",
+          "Human Moon landings"
+        ],
+        "retrieval_query": "Construct a concise Apollo 11 mission timeline from launch through return. Include the launch date and place, lunar landing date and site, surface activity, reunion with the orbiting crew member, and splashdown date and ocean.",
+        "discovered_by": "vector",
+        "rank": 3,
+        "raw_score": 0.7255276441574097,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "List_of_Apollo_missions.html",
+        "representative_chunk": "Article: List of Apollo missions\nSection: Lead\n\nMissions and flights of NASA's Apollo Program\n\nApollo 11, the mission to land the first men on the Moon, launched on July 16, 1969, from Kennedy Space Center Launch Complex 39A\n\nThe Apollo program was a United States human spaceflight program carried out from 1961 to 1972 by the National Aeronautics and Space Administration (NASA), which landed the first astronauts on the Moon.[1] The program used the Saturn IB and Saturn V launch vehicles to lift the Command/Service Module (CSM) and Lunar Module (LM) spacecraft into space, and the Little Joe II rocket to test a launch escape system which was expected to carry the astronauts to safety in the event of a Saturn failure.[2] Uncrewed test flights beginning in 1966 demonstrated the safety of the launch vehicles and spacecraft to carry astronauts, and four crewed flights beginning in October 1968 demonstrated the ability of the spacecraft to carry out a lunar landing mission.\n\nApollo achieved the first crewed lunar landing on the Apollo 11 mission, when Neil Armstrong and Buzz Aldrin landed their LM Eagle in the Sea of Tranquility and walked on the lunar surface, while Michael Collins remained in lunar orbit in the CSM Columbia, and all three landed safely on Earth on July 24, 1969.[3] Five subsequent missions landed astronauts on various lunar sites, ending in December 1972 with 12 men having walked on the Moon[4] and 842 pounds (382 kg) of lunar rocks and soil samples returned to Earth, greatly contributing to the understanding of the Moon's composition and geological history.[5]\n\nTwo Apollo missions were failures: a 1967 cabin fire killed the entire Apollo 1 crew during a ground test in preparation for what was to be the first crewed flight;[6] and the third landing attempt on Apollo 13 was aborted by an oxygen tank explosion en route to the Moon, which disabled the CSM Odyssey's electrical power and life support systems, and made the propulsion system unsafe to use. The crew circled the Moon and were returned safely to Earth using the LM Aquarius as a \"lifeboat\" for these functions.[7]",
+        "representative_chunk_id": "List_of_Apollo_missions.html#section-000-00",
+        "section_title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Construct a concise Apollo 11 mission timeline from launch through return. Include the launch date and place, lunar landing date and site, surface activity, reunion with the orbiting crew member, and splashdown date and ocean.",
+        "discovered_by": "vector",
+        "rank": 4,
+        "raw_score": 0.7268966436386108,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Apollo_12.html",
+        "representative_chunk": "Article: Apollo 12\nSection: Mission highlights\n\nApollo 12 launches from Kennedy Space Center, November 14, 1969",
+        "representative_chunk_id": "Apollo_12.html#section-008-00",
+        "section_title": "Mission highlights",
+        "section_path": [
+          "Mission highlights"
+        ],
+        "retrieval_query": "Apollo 11",
+        "discovered_by": "vector",
+        "rank": 5,
+        "raw_score": 0.7860046625137329,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Neil_Armstrong.html",
+        "representative_chunk": "Article: Neil Armstrong\nSection: Life after Apollo > NASA commissions\n\nIn 1970, after an explosion aboard Apollo 13 aborted its lunar landing, Armstrong was part of Edgar Cortright's investigation of the mission. He produced a detailed chronology of the flight. He determined that a 28-volt thermostat switch in an oxygen tank, which was supposed to have been replaced with a 65-volt version, led to the explosion. Cortright's report recommended the entire tank be redesigned at a cost of $40 million. Many NASA managers, including Armstrong, opposed the recommendation, since only the thermostat switch had caused the problem. They lost the argument, and the tanks were redesigned.[177]\n\nIn 1986, President Ronald Reagan asked Armstrong to join the Rogers Commission investigating the Space Shuttle Challenger disaster. Armstrong was made vice chairman of the commission and held private interviews with contacts he had developed over the years to help determine the cause of the disaster. He helped limit the committee's recommendations to nine, believing that if there were too many, NASA would not act on them.[178]\n\nMichael Collins, President George W. Bush, Neil Armstrong, and Buzz Aldrin during celebrations of the 35th anniversary of the Apollo 11 flight, July 21, 2004\n\nArmstrong was appointed to a fourteen-member commission by President Reagan to develop a plan for American civilian spaceflight in the 21st century. The commission was chaired by former NASA administrator Dr. Thomas O. Paine, with whom Armstrong had worked during the Apollo program. The group published a book titled Pioneering the Space Frontier: The Report on the National Commission on Space, recommending a permanent lunar base by 2006, and sending people to Mars by 2015. The recommendations were largely ignored, overshadowed by the Challenger disaster.[179]\n\nArmstrong and his wife attended the memorial service for the victims of the Space Shuttle Columbia disaster in 2003, at the invitation of President George W. Bush.[180]",
+        "representative_chunk_id": "Neil_Armstrong.html#section-016-00",
+        "section_title": "NASA commissions",
+        "section_path": [
+          "Life after Apollo",
+          "NASA commissions"
+        ],
+        "retrieval_query": "Michael Collins",
+        "discovered_by": "vector",
+        "rank": 6,
+        "raw_score": 0.9341859817504883,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Apollo_9.html",
+        "representative_chunk": "Article: Apollo 9\nSection: Planning and training\n\nMcDivitt, Scott, and Schweickart train for the AS-205/208 mission in the first Block II spacecraft and space suits, which still had most of the fire hazards the Apollo 1 spacecraft had.\n\nApollo 9's main purpose was to qualify the LM for crewed lunar flight, demonstrating that it could perform the maneuvers in space that would be needed for a lunar landing, including docking with the CSM.[30] Colin Burgess and Francis French, in their book about the Apollo Program, deemed McDivitt's crew among the best trained ever—they had worked together since January 1966, at first as backups for Apollo 1, and they always had the assignment of being the first to fly the LM. Flight Director Gene Kranz deemed the Apollo 9 crew the best prepared for their mission, and felt Scott was an extremely knowledgeable CMP.[31] Crew members underwent 1,800 hours of mission-specific training, about seven hours for every hour they would spend in flight. Their training started on the day before the Apollo 1 fire, in the very first Block II spacecraft in which they were originally intended to fly. They took part in the vehicle checkouts for the CSM at North American Rockwell's facility in Downey, California, and for the LM at Grumman's plant in Bethpage, New York. They also participated in testing of the modules at the launch site.[32]\n\nAmong the types of the training which the crew underwent were simulations of zero-G, both underwater and in the Vomit Comet. During these exercises, they practiced for the planned extravehicular activities (EVAs). They traveled to Cambridge, Massachusetts, for training on the Apollo Guidance Computer (AGC) at MIT. The crew studied the sky at the Morehead Planetarium and at the Griffith Planetarium, especially focusing on the 37 stars used by the AGC. They each spent more than 300 hours in the CM and LM simulators at Kennedy Space Center (KSC) and at Houston, some involving live participation by Mission Control. Additional time was spent in simulators in other locations.[33]\n\nThe launch vehicle for Apollo 9 being taken to Pad 39A\n\nThe first mission to use the CSM, the LM and a Saturn V, Apollo 9 allowed the launch preparations team at KSC its first opportunity to simulate the launch of a lunar landing mission. The LM arrived from Grumman in June 1968 and was subjected to extensive testing including in the altitude chamber, simulating space conditions. As this occurred, other technicians assembled the Saturn V inside the Vehicle Assembly Building (VAB). The CM and SM arrived in October, but even the experienced KSC team from North American had trouble joining them together. When the lander was done with the altitude chamber, the CSM took its place, letting the LM be available for installation of equipment such as rendezvous radar and antennas. There were no lengthy delays, and on January 3, 1969, the launch vehicle was taken out of the VAB and moved to Launch Complex 39A by crawler. Flight readiness reviews for the CM, the LM, and the Saturn V were held and passed in the following weeks.[34]",
+        "representative_chunk_id": "Apollo_9.html#section-004-00",
+        "section_title": "Planning and training",
+        "section_path": [
+          "Planning and training"
+        ],
+        "retrieval_query": "Kennedy Space Center Launch Complex 39A",
+        "discovered_by": "vector",
+        "rank": 7,
+        "raw_score": 1.0678510665893555,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "C_è_la_luna_mezzo_mare.html",
+        "representative_chunk": "Article: C'è la luna mezzo mare\nSection: Notable recordings\n\nThe song has been notably recorded with the following performers and titles:[2][3][8]\n\n1927: Paolo Citorello, \"Luna mezzomare (Moonlight at Sea)\" (Brunswick Records – 58042)\n\n1928: Rosina Gioiosa, \"Mi vogghiu maritari (I Want to Get Married)\" (Brunswick Records – 58073)\n\n1929: Paolo Citorello, \"Mamma a cu m'addari\"\n\n1930: Paolo Citorello, \"Mi vulissi maritari (I Want to Get Married)\"\n\n1930s: Silvia Coruzzolo, \"A luna mezzo o mare\"\n\n1930s: I Diavoli, \"La luna in mezzo al mare (A luna mmezzu 'u mari)\"\n\n1938: Rudy Vallée, \"Oh! Ma-Ma! (The Butcher Boy)\", 1975 compilation Jukebox Saturday Night. 96 Great Jukebox Hits (Reader's Digest – RDA 139-A)\n\n1938: Billy Cotton and His Band, \"Oh! Ma-Ma\" (Rex – 9309)\n\n1938: Joe Loss and His Band, \"Oh! Ma-Ma!\" (Regal Zonophone Records – MR 2785)\n\n1938: Dick Robertson and His Orchestra, \"Oh! Ma-Ma! (The Butcher Boy)\" (Decca Records – 1726)\n\n1938: Gracie Fields, \"Oh! Ma-Ma (The Butcher Boy)\" (Rex – 9350)\n\n1938: Guy Lombardo and His Royal Canadians \"Oh! Ma-Ma (The Butcher Boy)\" (Victor – 25857)\n\n1938: Nat Gonella & His Georgians \"Oh! Ma-Ma\" (Odeon Records – O.F. 5712)\n\n1938: George Hall, \"Oh! Ma Ma (The Butcher Boy)\"\n\n1938: Andrews Sisters, \"Oh! Ma-Ma! (The Butcher Boy)\" (Decca Records – 1859); 1957 album Andrews Sisters by Popular Demand (Decca Records – DL 8360)\n\n1938: Gail Reese and Glenn Miller Orchestra, \"Oh! Ma-Ma! (The Butcher Boy)\", 2001 album The Complete Sustaining Broadcasts: Volume 3 - On the Sentimental Side (Jazz Band Records – EBCD 2180/81-2)\n\n1939: Paolo Dones, \"'A luna 'mmenzu 'u mari!\" (Columbia Records – 14359-F)\n\n1940: Trio Vocale Sorelle Lescano, \"Ohi Ma - Ma! (Parlophon – G.P. 92840)\n\n1946: Rose Marie, \"Chena a luna\", 1953 album Show Stoppers (Mercury Records – MG 25143)\n\n1951: Dean Martin, \"Luna mezzo mare\" (Capitol Records – 1724); 1993 album Pardners (Fremus – CDFR 0507)\n\n1954: Guy Lombardo and His Royal Canadians, \"Oh! Ma-Ma\" (Disque \"Gramophone\" – K-8170); album Guy Lombardo Plays (RCA Camden – CAL-255)\n\n1958: Lou Monte, \"Lazy Mary (Luna mezz 'o mare)\", album Lou Monte Sings For You (Per te) (RCA Victor – LPM-1651)\n\n1958: Johnny Puleo and His Harmonica Gang, \"C'è la luna in mezzo mare\", album Molto Italiano! (Audio Fidelity Records – AFLP 1883)\n\n1960: The Mills Brothers, \"Oh! Ma-Ma! (The Butcher Boy)\" (Dot Records – 45-16049); 1974 album The Best of The Mills Brothers Volume II (Famous Twinsets – PAS-2-1027)\n\n1961: Marianne, \"Oh! Ma-Ma!\" (Sonet Records – T 8109)\n\n1961: Louis Prima, \"Oh Ma Ma Twist\" (Dot Records – 45-16301); 1962 compilation Februar I/1962 (Telefunken – MU 4)\n\n1962: Marino Marini and his quartet \"Oh! Ma-Ma Twist\" (durium - Ld A 7201)\n\n1963: Louis Prima, \"Che-la-luna\" (Prima Magnagroove – PS 3001); 1964 album The King of Clubs (Prima Magnagroove – PM 3003)\n\n1973: Salix Alba, \"Oh Mama\" (Disques Vogue – VB. 278); album Salix Alba (Disques Vogue – CLPVB)\n\n1975: I' Liguri, \"Luna mezzo o mare\", album I' Liguri (Complex IV – XPL-1055)\n\n1979: De Deurzakkers, \"Oh, Mama\" (Philips - 6012 880)\n\n1983: Stars on 45, album Star Sisters Album (Delta – DEL 7018)\n\n1999: Frank Simms, \"Luna mezzo mare\", compilation Mickey Blue Eyes (Milan Records – 73138-35888-2)\n\n2002: Enrique Rodríguez and his Orchestra, album El \"Chato\" Flores en el recuerdo (EMI – 7243 5 41705 2 2)\n\n2005: Patrizio Buanne, \"Luna mezz'o mare\", album Patrizio The Italian (Universal Music TV – 9871823)\n\n2013: Guido Luciani, \"Luna mezzo mare\", album That's amore! A night in Little Italy (Somerset Group)\n\n2015: Famiglia Amica Valenza, \"C'è la luna mezz'o mare\"\n\nxxxx: Len Hughes and his Orchestra \"Oh! Ma-Ma!\" (Tempo - 667)\n\nxxxx: Kristian Haugers Danseorkester – \"Oh, Ma-Ma\" (Telefunken – T-8198)\n\n<h2",
+        "representative_chunk_id": "C_è_la_luna_mezzo_mare.html#section-003-00",
+        "section_title": "Notable recordings",
+        "section_path": [
+          "Notable recordings"
+        ],
+        "retrieval_query": "Mare Tranquillitatis",
+        "discovered_by": "vector",
+        "rank": 8,
+        "raw_score": 1.32594633102417,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      }
+    ],
+    "article_reviews": [
+      {
+        "source_article": "Apollo_program.html",
+        "relevant": true,
+        "reason": "This program overview includes mission summaries and likely covers Apollo 11 in context, but it is less direct than the mission article.",
+        "relevant_sections": [
+          "Mission summary",
+          "Production lunar landings"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [
+          "cd77f82093a4f04b4027c374"
+        ],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Apollo_11.html",
+        "relevant": true,
+        "reason": "This is the direct mission article and contains the launch, landing, surface operations, return, and splashdown sections needed for a timeline.",
+        "relevant_sections": [
+          "Mission",
+          "Launch and flight to lunar orbit",
+          "Lunar descent",
+          "Landing",
+          "Lunar surface operations",
+          "Lunar ascent",
+          "Columbia in lunar orbit",
+          "Return",
+          "Splashdown and quarantine"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Moon_landing.html",
+        "relevant": false,
+        "reason": "This is a broad topic article about lunar landings generally, not the Apollo 11 mission timeline specifically.",
+        "relevant_sections": [
+          "Human Moon landings (1969–1972)"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [
+          "63fe439f4b0ed1ddc5c2d5ae"
+        ],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "List_of_Apollo_missions.html",
+        "relevant": false,
+        "reason": "This list article can identify Apollo 11 among missions, but it is not the best source for the detailed launch-to-return timeline requested.",
+        "relevant_sections": [
+          "Crewed missions"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [
+          "86b83cfe0ee9c40f201d77dd"
+        ],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Apollo_12.html",
+        "relevant": false,
+        "reason": "This article is about Apollo 12, not Apollo 11.",
+        "relevant_sections": [
+          "Mission highlights",
+          "Launch",
+          "Lunar orbit and Moon landing",
+          "Lunar surface activities",
+          "Return",
+          "Splashdown"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Neil_Armstrong.html",
+        "relevant": false,
+        "reason": "This biography is about Neil Armstrong and may mention Apollo 11, but it is not the best source for the full mission timeline.",
+        "relevant_sections": [
+          "Apollo 11",
+          "Voyage to the Moon",
+          "First Moon walk",
+          "Return to Earth"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Apollo_9.html",
+        "relevant": false,
+        "reason": "This article is about Apollo 9, not Apollo 11.",
+        "relevant_sections": [
+          "Mission highlights"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "C_è_la_luna_mezzo_mare.html",
+        "relevant": false,
+        "reason": "This is unrelated to the Apollo 11 mission timeline.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      }
+    ],
+    "selected_articles": [
+      "Apollo_program.html",
+      "Apollo_11.html"
+    ],
+    "rejected_articles": [
+      "Moon_landing.html",
+      "List_of_Apollo_missions.html",
+      "Apollo_12.html",
+      "Neil_Armstrong.html",
+      "Apollo_9.html",
+      "C_è_la_luna_mezzo_mare.html"
+    ],
+    "evidence": [
+      {
+        "evidence_id": "Apollo_program.html#section-030-00",
+        "source_article": "Apollo_program.html",
+        "content": "Article: Apollo program\nSection: Mission summary\n\nFor a more comprehensive list, see List of Apollo missions.\n\nMission\nDate\nLV\nCSM\nLM\nCrew\nSummary\n\nAS-201\nFeb 26, 1966\nAS-201\nCSM-009\n—N/a\n—N/a\nFirst flight of Saturn IB and Block I CSM; suborbital to Atlantic Ocean; qualified heat shield to orbital reentry speed.\n\nAS-203\nJul 5, 1966\nAS-203\n—N/a\n—N/a\n—N/a\nNo spacecraft; observations of liquid hydrogen fuel behavior in orbit to support design of S-IVB restart capability.\n\nAS-202\nAug 25, 1966\nAS-202\nCSM-011\n—N/a\n—N/a\nSuborbital flight of CSM to Pacific Ocean.\n\nApollo 1\nFeb 21, 1967\nSA-204\nCSM-012\n—N/a\nGus Grissom\n\nEd White\n\nRoger B. Chaffee\nNot flown. All crew members died in a fire during a launch pad test on January 27, 1967.\n\nApollo 4\nNov 9, 1967\nSA-501\nCSM-017\nLTA-10R\n—N/a\nFirst test flight of Saturn V, placed a CSM in a high Earth orbit; demonstrated S-IVB restart; qualified CM heat shield to lunar reentry speed.\n\nApollo 5\nJan 22–23, 1968\nSA-204\n—N/a\nLM-1\n—N/a\nEarth orbital flight test of LM, launched on Saturn IB; demonstrated ascent and descent propulsion; human-rated the LM. No crew.\n\nApollo 6\nApr 4, 1968\nSA-502\nCM-020\n\nSM-014\nLTA-2R\n—N/a\nUncrewed, second flight of Saturn V, attempted demonstration of trans-lunar injection, and direct-return abort using SM engine; three engine failures, including failure of S-IVB restart. Flight controllers used SM engine to repeat Apollo 4's flight profile. Human-rated the Saturn V.\n\nApollo 7\nOct 11–22, 1968\nSA-205\nCSM-101\n—N/a\nWally Schirra\n\nWalt Cunningham\n\nDonn Eisele\nFirst crewed Earth orbital demonstration of Block II CSM, launched on Saturn IB. First live television broadcast from a crewed mission.\n\nApollo 8\nDec 21–27, 1968\nSA-503\nCSM-103\nLTA-B\nFrank Borman\n\nJames Lovell\n\nWilliam Anders\nFirst crewed flight of Saturn V; First crewed flight to Moon; CSM made 10 lunar orbits in 20 hours.\n\nApollo 9\nMar 3–13, 1969\nSA-504\nCSM-104\n\nGumdrop\nLM-3\n\nSpider\nJames McDivitt\n\nDavid Scott\n\nRussell Schweickart\nSecond crewed flight of Saturn V; First crewed flight of CSM and LM in Earth orbit; demonstrated portable life support system to be used on the lunar surface.\n\nApollo 10\nMay 18–26, 1969\nSA-505\nCSM-106\n\nCharlie Brown\nLM-4\n\nSnoopy\nThomas Stafford\n\nJohn Young\n\nEugene Cernan\nDress rehearsal for first lunar landing; flew LM down to 50,000 ft (15 km; 9.5 mi) from lunar surface.\n\nApollo 11\nJul 16–24, 1969\nSA-506\nCSM-107\n\nColumbia\nLM-5 Eagle\nNeil Armstrong\n\nMichael Collins\n\nBuzz Aldrin\nFirst landing, in Tranquility Base, Sea of Tranquility. Surface EVA time: 2h 31m. Samples returned: 47.51 lb (21.55 kg).\n\nApollo 12\nNov 14–24, 1969\nSA-507\nCSM-108\n\nYankee Clipper\nLM-6\n\nIntrepid\nPete Conrad\n\nRichard Gordon\n\nAlan Bean\nSecond landing, in Ocean of Storms near Surveyor 3. Surface EVA time: 7h 45m. Samples returned: 75.62 lb (34.30 kg).\n\nApollo 13\nApr 11–17, 1970\nSA-508\nCSM-109\n\nOdyssey\nLM-7\n\nAquarius\nJames Lovell\n\nJack Swigert\n\nFred Haise\nThird landing attempt aborted in transit to the Moon, due to SM failure. Crew used LM as \"lifeboat\" to return to Earth. Mission called a \"successful failure\".[128]\n\nApollo 14\nJan 31 – Feb 9, 1971\nSA-509\nCSM-110\n\nKitty Hawk\nLM-8\n\nAntares\nAlan Shepard\n\nStuart Roosa\n\nEdgar Mitchell\nThird landing, in Fra Mauro formation. Surface EVA time: 9h 21m. Samples returned: 94.35 lb (42.80 kg).\n\nApollo 15\nJul 26 – Aug 7, 1971\nSA-510\nCSM-112\n\nEndeavour\nLM-10\n\nFalcon\nDavid Scott\n\nAlfred Worden\n\nJames Irwin\nFourth landing, in Hadley-Apennine. First extended mission, used Rover on Moon. Surface EVA time: 18h 33m. Samples returned: 169.10 lb (76.70 kg).\n\nApollo 16\nApr 16–27, 1972\nSA-511\nCSM-113\n\nCasper\nLM-11\n\nOrion\nJohn Young\n\nKen Mattingly\n\nCharles Duke\nFifth landing, in Plain of Descartes. Second extended mission, used Rover on Moon. Surface EVA time: 20h 14m. Samples returned: 207.89 lb (94.30 kg).\n\nApollo 17\nDec 7–19, 1972\nSA-512\nCSM-114\n\nAmerica\nLM-12\n\nChallenger\nEugene Cernan\n\nRonald Evans\n\nHarrison Schmitt\nOnly Saturn V night launch. Sixth landing, in Taurus–Littrow. Third extended mission, used Rover on Moon. First geologist on the Moon. Apollo's last crewed Moon landing. Surface EVA time: 22h 2m. Samples returned: 243.40 lb (110.40 kg).\n\nSource: Apollo by the Numbers: A Statistical Reference (Orloff 2004).[129]",
+        "evidence_type": "text",
+        "title": "Mission summary",
+        "section_path": [
+          "Mission summary"
+        ],
+        "retrieval_query": "Construct a concise Apollo 11 mission timeline from launch through return. Include the launch date and place, lunar landing date and site, surface activity, reunion with the orbiting crew member, and splashdown date and ocean.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.8350281715393066,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Mission summary",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "cd77f82093a4f04b4027c374"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Apollo_program.html#section-026-00",
+        "source_article": "Apollo_program.html",
+        "content": "Article: Apollo program\nSection: Development history > Production lunar landings\n\nIn November 1969, Charles \"Pete\" Conrad became the third person to step onto the Moon, which he did while speaking more informally than had Armstrong:\n\nWhoopee! Man, that may have been a small one for Neil, but that's a long one for me.\n\n— Pete Conrad[113]\n\nApollo production crewed lunar landing mission patches. Click on a patch to read the main article about that mission.\n\nConrad and rookie Alan L. Bean made a precision landing of Apollo 12 within walking distance of the Surveyor 3 uncrewed lunar probe, which had landed in April 1967 on the Ocean of Storms. The command module pilot was Gemini veteran Richard F. Gordon Jr. Conrad and Bean carried the first lunar surface color television camera, but it was damaged when accidentally pointed into the Sun. They made two EVAs totaling 7 hours and 45 minutes.[110] On one, they walked to the Surveyor, photographed it, and removed some parts which they returned to Earth.[114]\n\nThe contracted batch of 15 Saturn Vs was enough for lunar landing missions through Apollo 20. Shortly after Apollo 11, NASA publicized a preliminary list of eight more planned landing sites after Apollo 12, with plans to increase the mass of the CSM and LM for the last five missions, along with the payload capacity of the Saturn V. These final missions would combine the I and J types in the 1967 list, allowing the CMP to operate a package of lunar orbital sensors and cameras while his companions were on the surface, and allowing them to stay on the Moon for over three days. These missions would also carry the Lunar Roving Vehicle (LRV) increasing the exploration area and allowing televised liftoff of the LM. Also, the Block II spacesuit was revised for the extended missions to allow greater flexibility and visibility for driving the LRV.[115]\n\nApollo landings on the Moon, 1969–1972\n\nThe success of the first two landings allowed the remaining missions to be crewed with a single veteran as commander, with two rookies. Apollo 13 launched Lovell, Jack Swigert, and Fred Haise in April 1970, headed for the Fra Mauro formation. But two days out, a liquid oxygen tank exploded, disabling the service module and forcing the crew to use the LM as a \"lifeboat\" to return to Earth. Another NASA review board was convened to determine the cause, which turned out to be a combination of damage of the tank in the factory, and a subcontractor not making a tank component according to updated design specifications.[54] Apollo was grounded again, for the remainder of 1970 while the oxygen tank was redesigned and an extra one was added.[116]",
+        "evidence_type": "text",
+        "title": "Production lunar landings",
+        "section_path": [
+          "Development history",
+          "Production lunar landings"
+        ],
+        "retrieval_query": "Construct a concise Apollo 11 mission timeline from launch through return. Include the launch date and place, lunar landing date and site, surface activity, reunion with the orbiting crew member, and splashdown date and ocean.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.7926722764968872,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Production lunar landings",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "cd77f82093a4f04b4027c374"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Apollo_11.html#section-015-00",
+        "source_article": "Apollo_11.html",
+        "content": "Article: Apollo 11\nSection: Mission > Launch and flight to lunar orbit\n\nThe Apollo 11 Saturn V space vehicle lifts off with astronauts Neil A. Armstrong, Michael Collins and Edwin E. Aldrin Jr. at 9:32 am. EDT July 16, 1969, from Kennedy Space Center's Launch Complex 39A.\n\nAn estimated one million spectators watched the launch of Apollo 11 from the highways and beaches in the vicinity of the launch site. Dignitaries included the Chief of Staff of the United States Army, General William Westmoreland, four cabinet members, 19 state governors, 40 mayors, 60 ambassadors and 200 congressmen. Vice President Spiro Agnew viewed the launch with former president Lyndon B. Johnson and his wife Lady Bird Johnson.[99][104] Around 3,500 media representatives were present.[105] About two-thirds were from the United States; the rest came from 55 other countries. The launch was televised live in 33 countries, with an estimated 25 million viewers in the United States alone. Millions more around the world listened to radio broadcasts.[104][99] President Richard Nixon viewed the launch from his office in the White House with his NASA liaison officer, Apollo astronaut Frank Borman.[106] Lodging near Cape Canaveral was reported as being booked months ahead in advance for the launch by a Florida newspaper.[107]\n\nSaturn V AS-506 launched Apollo 11 on July 16, 1969, at 13:32:00 UTC (9:32:00 EDT).[6] At 13.2 seconds into the flight, the vehicle began to roll into its flight azimuth of 72.058°. Full shutdown of the first-stage engines occurred about 2 minutes and 42 seconds into the mission, followed by separation of the S-IC and ignition of the S-II engines. The second stage engines then cut off and separated at about 9 minutes and 8 seconds, allowing the first ignition of the S-IVB engine a few seconds later.[8]\n\nApollo 11 entered a near-circular Earth orbit at an altitude of 100.4 nautical miles (185.9 km) by 98.9 nautical miles (183.2 km), twelve minutes into its flight. After one and a half orbits, which took around two and a half hours, a second ignition of the S-IVB engine pushed the spacecraft onto its trajectory toward the Moon with the trans-lunar injection (TLI) burn, which took about 5 minutes and 47 seconds and started at 16:16:16 UTC. About 30 minutes later, with Collins in the left seat and at the controls, the transposition, docking, and extraction maneuver was performed. This involved separating Columbia from the spent S-IVB stage, turning around, and docking with Eagle still attached to the stage. After the LM was extracted, the combined spacecraft headed for the Moon, while the rocket stage flew on a trajectory past the Moon.[108][8] This was done to avoid the third stage colliding with the spacecraft, the Earth, or the Moon. A slingshot effect from passing around the Moon threw it into an orbit around the Sun.[109]\n\nOn July 19 at 17:21:50 UTC, Apollo 11 passed behind the Moon and fired its service propulsion engine to enter lunar orbit.[8][110] In the thirty orbits that followed, the crew saw passing views of their landing site in the southern Sea of Tranquility about 12 miles (19 km) southwest of the crater Sabine D. The site was selected in part because it had been characterized as relatively flat and smooth by the automated Ranger 8 and Surveyor 5 landers and the Lunar Orbiter mapping spacecraft, and because it was unlikely to present major landing or EVA challenges.[111] It lay about 25 kilometers (16 mi) southeast of the Surveyor 5 landing site, and 68 kilometers (42 mi) southwest of Ranger 8's crash site.[112]",
+        "evidence_type": "text",
+        "title": "Launch and flight to lunar orbit",
+        "section_path": [
+          "Mission",
+          "Launch and flight to lunar orbit"
+        ],
+        "retrieval_query": "Construct a concise Apollo 11 mission timeline from launch through return. Include the launch date and place, lunar landing date and site, surface activity, reunion with the orbiting crew member, and splashdown date and ocean.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.708005964756012,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Launch and flight to lunar orbit",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": []
+        }
+      },
+      {
+        "evidence_id": "Apollo_11.html#section-016-00",
+        "source_article": "Apollo_11.html",
+        "content": "Article: Apollo 11\nSection: Mission > Lunar descent\n\nColumbia in lunar orbit, photographed from Eagle\n\nAt 12:52:00 UTC on July 20, Aldrin and Armstrong entered Eagle, and began the final preparations for lunar descent.[8] At 17:44:00 Eagle separated from Columbia.[13] Collins, alone aboard Columbia, inspected Eagle as it pirouetted before him to ensure the craft was not damaged, and that the landing gear was correctly deployed.[113][114] Armstrong exclaimed: \"The Eagle has wings!\"[114]\n\nAs the descent began, Armstrong and Aldrin found themselves passing landmarks on the surface two or three seconds early, and reported that they were \"long\"; they would land miles west of their target point. Eagle was traveling too fast. The problem could have been mascons—concen­tra­tions of high mass in a region or regions of the Moon's crust that contains a gravitational anomaly, potentially altering Eagle's trajectory. Flight Director Gene Kranz speculated that it could have resulted from extra air pressure in the docking tunnel, or a result of Eagle's pirouette maneuver.[115][116]\n\nFive minutes into the descent burn, and 6,000 feet (1,800 m) above the surface of the Moon, the LM guidance computer (LGC) distracted the crew with the first of several unexpected 1201 and 1202 program alarms. Inside Mission Control Center, computer engineer Jack Garman told Guidance Officer Steve Bales it was safe to continue the descent, and this was relayed to the crew. The program alarms indicated \"executive overflows\", meaning the guidance computer could not complete all its tasks in real-time and had to postpone some of them.[117][118] Margaret Hamilton, the Director of Apollo Flight Computer Programming at the MIT Charles Stark Draper Laboratory later recalled:\n\nEagle in lunar orbit photographed from Columbia\n\nTo blame the computer for the Apollo 11 problems is like blaming the person who spots a fire and calls the fire department. Actually, the computer was programmed to do more than recognize error conditions. A complete set of recovery programs was incorporated into the software. The software's action, in this case, was to eliminate lower priority tasks and re-establish the more important ones. The computer, rather than almost forcing an abort, prevented an abort. If the computer hadn't recognized this problem and taken recovery action, I doubt if Apollo 11 would have been the successful Moon landing it was.[119]\n\nDuring the mission, the cause was diagnosed as the rendezvous radar switch being in the wrong position, causing the computer to process data from both the rendezvous and landing radars at the same time.[120][121] Software engineer Don Eyles concluded in a 2005 Guidance and Control Conference paper that the problem was due to a hardware design bug previously seen during testing of the first uncrewed LM in Apollo 5. Having the rendezvous radar on (so it was warmed up in case of an emergency landing abort) should have been irrelevant to the computer, but an electrical phasing mismatch between two parts of the rendezvous radar system could cause the stationary antenna to appear to the computer as dithering back and forth between two positions, depending upon how the hardware randomly powered up. The extra spurious cycle stealing, as the rendezvous radar updated an involuntary counter, caused the computer alarms.[122]",
+        "evidence_type": "text",
+        "title": "Lunar descent",
+        "section_path": [
+          "Mission",
+          "Lunar descent"
+        ],
+        "retrieval_query": "Construct a concise Apollo 11 mission timeline from launch through return. Include the launch date and place, lunar landing date and site, surface activity, reunion with the orbiting crew member, and splashdown date and ocean.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 1.088598608970642,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Lunar descent",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": []
+        }
+      },
+      {
+        "evidence_id": "Apollo_11.html#section-017-00",
+        "source_article": "Apollo_11.html",
+        "content": "Article: Apollo 11\nSection: Mission > Landing\n\nArmstrong pilots Eagle to its landing on the Moon, July 20, 1969.\n\nWhen Armstrong again looked outside, he saw that the computer's landing system was targeting a boulder-strewn area just north and east of a 300-foot-diameter (91 m) crater (later determined to be West crater), so he took semi-automatic control.[123][124] Armstrong considered landing short of the boulder field so they could collect geological samples from it, but could not since their horizontal velocity was too high. Throughout the descent, Aldrin called out navigation data to Armstrong, who was busy piloting Eagle.[125]\n\nArmstrong found a clear patch of ground and maneuvered the spacecraft towards it. As he got closer, now 250 feet (76 m) above the surface, he discovered his new landing site had a crater in it. Now 107 feet (33 m) above the surface, Armstrong knew their propellant supply was dwindling and was determined to land at the first possible landing site. He cleared the crater and found another patch of level ground. They were now 100 feet (30 m) from the surface, with only 90 seconds of propellant remaining. Lunar dust kicked up by the LM's engine began to impair his ability to determine the spacecraft's motion. Some large rocks jutted out of the dust cloud, and Armstrong focused on them during his descent so he could determine the spacecraft's speed.[126]\n\nA light informed Aldrin that at least one of the 67-inch (170 cm) probes hanging from Eagle's footpads had touched the surface a few moments before the landing and he said: \"Contact light!\" Armstrong was supposed to immediately shut the engine down, as the engineers suspected the pressure caused by the engine's own exhaust reflecting off the lunar surface could make it explode, but he forgot. Three seconds later, Eagle landed and Armstrong shut the engine down.[127] Aldrin immediately said \"Okay, engine stop. ACA—out of detent.\" Armstrong acknowledged: \"Out of detent. Auto.\" Aldrin continued: \"Mode control—both auto. Descent engine command override off. Engine arm—off. 413 is in.\"[128]\n\nThe landing site relative to West crater\n\nACA was the Attitude Control Assembly—the LM's control stick. Output went to the LGC to command the reaction control system (RCS) jets to fire. \"Out of Detent\" meant the stick had moved away from its centered position; it was spring-centered like the turn indicator in a car. Address 413 of the Abort Guidance System (AGS) contained the variable that indicated the LM had landed.[10]\n\nEagle landed at 20:17:40 UTC on Sunday July 20 with 216 pounds (98 kg) of usable fuel remaining. Information available to the crew and mission controllers during the landing showed the LM had enough fuel for another 25 seconds of powered flight before an abort without touchdown would have become unsafe,[10][129] but post-mission analysis showed that the real figure was probably closer to 50 seconds.[130] Apollo 11 landed with less fuel than most subsequent missions, and the astronauts encountered a premature low fuel warning. This was later found to be the result of the propellant sloshing more than expected, uncovering a fuel sensor. On subsequent missions, extra anti-slosh baffles were added to the tanks to prevent this.[10]\n\nArmstrong acknowledged Aldrin's completion of the post-landing checklist with \"Engine arm is off\", before responding to the CAPCOM, Charles Duke, with the words, \"Houston, Tranquility Base here. The Eagle has landed.\" Armstrong's unrehearsed change of call sign from \"Eagle\" to \"Tranquility Base\" emphasized to listeners that landing was complete and successful.[131][better source needed] Duke expressed the relief at Mission Control: \"Roger, Twan—Tranquility, we copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again. Thanks a lot.\"[10][132]\n\nA 3-D view from the Lunar Reconnaissance Orbiter (LRO) of the Apollo 11 landing site\n\nTwo and a half hours after landing, before preparations began for the EVA, Aldrin radioed to Earth:\n\nThis is the LM pilot. I'd like to take this opportunity to ask every person listening in, whoever and wherever they may be, to pause for a moment and contemplate the events of the past few hours and to give thanks in his or her own way.[133]\n\nHe then took communion privately. At this time NASA was still fighting a lawsuit brought by atheist Madalyn Murray O'Hair (who had objected to the Apollo 8 crew reading from the Book of Genesis) demanding that their astronauts refrain from broadcasting religious activities while in space. For this reason, Aldrin chose to refrain from directly mentioning taking communion on the Moon. Aldrin was an elder at the Webster Presbyterian Church, and his communion kit was prepared by the pastor of the church, Dean Woodruff. Webster Presbyterian possesses the chalice used on the Moon and commemorates the event each year on the Sunday closest to July 20.[134] The schedule for the mission called for the astronauts to follow the landing with a five-hour sleep period, but they chose to begin preparations for the EVA early, thinking they would be unable to sleep.[135]",
+        "evidence_type": "text",
+        "title": "Landing",
+        "section_path": [
+          "Mission",
+          "Landing"
+        ],
+        "retrieval_query": "Construct a concise Apollo 11 mission timeline from launch through return. Include the launch date and place, lunar landing date and site, surface activity, reunion with the orbiting crew member, and splashdown date and ocean.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.8478725552558899,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Landing",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": []
+        }
+      },
+      {
+        "evidence_id": "Apollo_11.html#section-018-00",
+        "source_article": "Apollo_11.html",
+        "content": "Article: Apollo 11\nSection: Mission > Lunar surface operations\n\nMain article: Tranquility Base\n\nPreparations for Neil Armstrong and Buzz Aldrin to walk on the Moon began at 23:43 UTC.[13] These took longer than expected; three and a half hours instead of two.[136] During training on Earth, everything required had been neatly laid out in advance, but on the Moon the cabin contained a large number of other items as well, such as checklists, food packets, and tools.[137] Six hours and thirty-nine minutes after landing, Armstrong and Aldrin were ready to go outside, and Eagle was depressurized.[138]\n\nEagle's hatch was opened at 02:39:33.[13] Armstrong initially had some difficulties squeezing through the hatch with his portable life support system (PLSS).[136] Some of the highest heart rates recorded from Apollo astronauts occurred during LM egress and ingress.[139] At 02:51 Armstrong began his descent to the lunar surface. The remote-control unit on his chest kept him from seeing his feet. Climbing down the nine-rung ladder, Armstrong pulled a D-ring to deploy the modular equipment stowage assembly (MESA) folded against Eagle's side and activate the TV camera.[140][141]\n\nApollo 11 used slow-scan television (TV) incompatible with broadcast TV, so it was displayed on a special monitor and a conventional TV camera viewed this monitor (thus, a broadcast of a broadcast), significantly reducing the quality of the picture.[142] The signal was received at Goldstone in the United States, but with better fidelity by Honeysuckle Creek Tracking Station near Canberra in Australia. Minutes later the feed was switched to the more sensitive Parkes radio telescope in Australia.[143] Despite some technical and weather difficulties, black and white images of the first lunar EVA were received and broadcast to at least 600 million people on Earth.[143] Copies of this video in broadcast format were saved and are widely available, but recordings of the original slow scan source transmission from the lunar surface were likely destroyed during routine magnetic tape re-use at NASA.[142]\n\nVideo of Neil Armstrong and the first step on the Moon\n\nThat's one small step ...\n\nProblems playing this file? See media help.\n\nAfter describing the surface dust as \"very fine-grained\" and \"almost like a powder\",[141] at 02:56:15,[144] six and a half hours after landing, Armstrong stepped off Eagle's landing pad and declared: \"That's one small step for [a] man, one giant leap for mankind.\"[b][146][147]\n\nArmstrong intended to say \"That's one small step for a man\", but the word \"a\" is not audible in the transmission, and thus was not initially reported by most observers of the live broadcast. When later asked about his quote, Armstrong said he believed he said \"for a man\", and subsequent printed versions of the quote included the \"a\" in square brackets. One explanation for the absence may be that his accent caused him to slur the words \"for a\" together; another is the intermittent nature of the audio and video links to Earth, partly because of storms near Parkes Observatory. A more recent digital analysis of the tape claims to reveal the \"a\" may have been spoken but obscured by static. Other analysis points to the claims of static and slurring as \"face-saving fabrication\", and that Armstrong himself later admitted to misspeaking the line.[148][149][150]\n\nAbout seven minutes after stepping onto the Moon's surface, Armstrong collected a contingency soil sample using a sample bag on a stick. He then folded the bag and tucked it into a pocket on his right thigh. This was to guarantee there would be some lunar soil brought back in case an emergency required the astronauts to abandon the EVA and return to the LM.[151] Twelve minutes after the sample was collected,[146] he removed the TV camera from the MESA and made a panoramic sweep, then mounted it on a tripod.[136] The TV camera cable remained partly coiled and presented a tripping hazard throughout the EVA. Still photography was accomplished with a Hasselblad camera that could be operated hand-held or mounted on Armstrong's Apollo space suit.[152] Aldrin joined Armstrong on the surface. He described the view with the simple phrase: \"Magnificent desolation.\"[141]\n\nArmstrong said moving in the lunar gravity, one-sixth of Earth's, was \"even perhaps easier than the simulations ... It's absolutely no trouble to walk around.\"[141] Aldrin joined him on the surface and tested methods for moving around, including two-footed kangaroo hops. The PLSS backpack created a tendency to tip backward, but neither astronaut had serious problems maintaining balance. Loping became the preferred method of movement. The astronauts reported that they needed to plan their movements six or seven steps ahead. The fine soil was quite slippery. Aldrin remarked that moving from sunlight into Eagle's shadow produced no temperature change inside the suit, but the helmet was warmer in sunlight, so he felt cooler in shadow.[141] The MESA failed to provide a stable work platform and was in shadow, slowing work somewhat. As they worked, the moonwalkers kicked up gray dust, which soiled the outer part of their suits.[152]\n\nAldrin salutes the deployed United States flag on the lunar surface.\n\nThe astronauts planted the Lunar Flag Assembly containing a flag of the United States on the lunar surface, in clear view of the TV camera. Aldrin remembered, \"Of all the jobs I had to do on the Moon the one I wanted to go the smoothest was the flag raising.\"[153] But the astronauts struggled with the telescoping rod and could only insert the pole about 2 inches (5 cm) into the hard lunar surface. Aldrin was afraid it might topple in front of TV viewers, but gave \"a crisp West Point salute\".[153]\n\nBefore Aldrin could take a photo of Armstrong with the flag, President Richard Nixon spoke to them through a telephone-radio transmission, which Nixon called \"the most historic phone call ever made from the White House.\"[154] Nixon originally had a long speech prepared to read during the phone call, but Frank Borman, who was at the White House as a NASA liaison during Apollo 11, convinced Nixon to keep his words brief.[155]\n\nNixon: Hello, Neil and Buzz. I'm talking to you by telephone from the Oval Room at the White House. And this certainly has to be the most historic telephone call ever made from the White House. I just can't tell you how proud we all are of what you have done. For every American, this has to be the proudest day of our lives. And for people all over the world, I am sure that they too join with Americans in recognizing what an immense feat this is. Because of what you have done, the heavens have become a part of man's world. And as you talk to us from the Sea of Tranquility, it inspires us to redouble our efforts to bring peace and tranquility to Earth. For one priceless moment in the whole history of man, all the people on this Earth are truly one: one in their pride in what you have done, and one in our prayers that you will return safely to Earth.\n\nArmstrong: Thank you, Mr. President. It's a great honor and privilege for us to be here, representing not only the United States, but men of peace of all nations, and with interest and a curiosity, and men with a vision for the future. It's an honor for us to be able to participate here today.\n\nNixon: Thank you very much, and I look forward, all of us look forward, to seeing you on the Hornet on Thursday.[156][157]\n\nAldrin's bootprint, part of an experiment to test the properties of the lunar regolith\n\nThey deployed the EASEP, which included a Passive Seismic Experiment Package used to measure moonquakes and a retroreflector array used for the lunar laser ranging experiment.[158] Then Armstrong walked 196 feet (60 m) from the LM to take photographs at the rim of Little West Crater while Aldrin collected two core samples. He used the geologist's hammer to pound in the tubes—the only time the hammer was used on Apollo 11—but was unable to penetrate more than 6 inches (15 cm) deep. The astronauts then collected rock samples using scoops and tongs on extension handles.[159]\n\nMany of the surface activities took longer than expected, so they had to stop documenting sample collection halfway through the allotted 34 minutes. Aldrin shoveled 6 kilograms (13 lb) of soil into the box of rocks to pack them in tightly.[159] Two types of rocks were found in the geological samples: basalt and breccia.[160] Three new minerals were discovered in the rock samples collected by the astronauts: armalcolite, tranquillityite, and pyroxferroite. Armalcolite was named after Armstrong, Aldrin, and Collins. All have subsequently been found on Earth.[161]\n\nThe plaque left on the ladder of Eagle\n\nWhile on the surface, Armstrong uncovered a plaque mounted on the LM ladder, bearing two drawings of Earth (of the Western and Eastern Hemispheres), an inscription, and signatures of the astronauts and President Nixon. The inscription read:\n\nHere men from the planet Earth first set foot upon the Moon July 1969, A. D. We came in peace for all mankind.[141]\n\nAt the behest of the Nixon administration to add a reference to God, NASA included the vague date as a reason to include A.D., which stands for Anno Domini (\"in the year of our Lord\").[162]\n\nMission Control used a coded phrase to warn Armstrong his metabolic rates were high, and that he should slow down. He was moving rapidly from task to task as time ran out. As metabolic rates remained generally lower than expected for both astronauts throughout the walk, Mission Control granted the astronauts a 15-minute extension.[158] In a 2010 interview, Armstrong explained that NASA limited the first moonwalk's time and distance because there was no empirical proof of how much cooling water the astronauts' PLSS backpacks would consume to handle their body heat generation while working on the Moon.[163]",
+        "evidence_type": "text",
+        "title": "Lunar surface operations",
+        "section_path": [
+          "Mission",
+          "Lunar surface operations"
+        ],
+        "retrieval_query": "Construct a concise Apollo 11 mission timeline from launch through return. Include the launch date and place, lunar landing date and site, surface activity, reunion with the orbiting crew member, and splashdown date and ocean.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.8572626113891602,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Lunar surface operations",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": []
+        }
+      },
+      {
+        "evidence_id": "Apollo_11.html#section-019-00",
+        "source_article": "Apollo_11.html",
+        "content": "Article: Apollo 11\nSection: Mission > Lunar ascent\n\nAldrin entered Eagle first. With some difficulty the astronauts lifted film and two sample boxes containing 21.55 kilograms (47.5 lb) of lunar surface material to the LM hatch using a flat cable pulley device called the Lunar Equipment Conveyor (LEC). This proved to be an inefficient tool, and later missions preferred to carry equipment and samples up to the LM by hand.[136] Armstrong reminded Aldrin of a bag of memorial items in his sleeve pocket, and Aldrin tossed the bag down. Armstrong then jumped onto the ladder's third rung, and climbed into the LM. After transferring to LM life support, the explorers lightened the ascent stage for the return to lunar orbit by tossing out their PLSS backpacks, lunar overshoes, an empty Hasselblad camera, and other equipment.[164][165] The hatch was closed again at 05:11:13. They then pressurized the LM and settled down to sleep.[166]\n\nAldrin next to the Passive Seismic Experiment Package with the Lunar Module Eagle in the background\n\nPresidential speech writer William Safire had prepared an In Event of Moon Disaster announcement for Nixon to read in the event the Apollo 11 astronauts were stranded on the Moon.[167] The remarks were in a memo from Safire to Nixon's White House Chief of Staff H. R. Haldeman, in which Safire suggested a protocol the administration might follow in reaction to such a disaster.[168][169] According to the plan, Mission Control would \"close down communications\" with the LM, and a clergyman would \"commend their souls to the deepest of the deep\" in a public ritual likened to burial at sea. The last line of the prepared text contained an allusion to Rupert Brooke's World War I poem \"The Soldier\".[169] The script for the speech does not make reference to Collins; as he remained onboard Columbia in orbit around the Moon, it was expected that he would be able to return the module to Earth in the event of a mission failure.[170]\n\nWhile moving inside the cabin, Aldrin accidentally damaged the circuit breaker that would arm the main engine for liftoff from the Moon. There was a concern this would prevent firing the engine, stranding them on the Moon. The nonconductive tip of a Duro felt-tip pen[171] was sufficient to activate the switch.[166]\n\nAfter more than 21+1⁄2 hours on the lunar surface, in addition to the scientific instruments, the astronauts left behind: an Apollo 1 mission patch in memory of astronauts Roger Chaffee, Gus Grissom, and Edward White, who died when their command module caught fire during a test in January 1967; two memorial medals of Soviet cosmonauts Vladimir Komarov and Yuri Gagarin, who died in 1967 and 1968 respectively; a memorial bag containing a gold replica of an olive branch as a traditional symbol of peace; and a silicon message disk carrying the goodwill statements by presidents Eisenhower, Kennedy, Johnson, and Nixon along with messages from leaders of 73 countries around the world.[172] The disk also carries a listing of the leadership of the US Congress, a listing of members of the four committees of the House and Senate responsible for the NASA legislation, and the names of NASA's past and then-current top management.[173]\n\nA map of the Tranquility Base landing site and photos taken\n\nAfter about seven hours of rest, the crew was awakened by Houston to prepare for the return flight.\nAt that time, unknown to them, some hundred kilometers away from them the Soviet probe Luna 15 was about to descend and impact. Despite having been known to be orbiting the Moon at the same time, through a ground-breaking precautious goodwill exchange of data, the mission control of Luna 15 unexpectedly hastened its robotic sample-return mission, initiating descent, in an attempt to return before Apollo 11.[174] Just two hours before Apollo 11's launch, Luna 15 crashed at 15:50 UTC, with British astronomers monitoring Luna 15 and recording the situation one commented: \"I say, this has really been drama of the highest order\",[175] bringing the Space Race to a culmination.[176]\n\nRoughly two hours later, at 17:54:00 UTC, the Apollo 11 crew on the surface safely lifted off in Eagle's ascent stage to rejoin Collins aboard Columbia in lunar orbit.[146] Film taken from the LM ascent stage upon liftoff from the Moon reveals the American flag, planted some 25 feet (8 m) from the descent stage, whipping violently in the exhaust of the ascent stage engine. Aldrin looked up in time to witness the flag topple: \"The ascent stage of the LM separated ... I was concentrating on the computers, and Neil was studying the attitude indicator, but I looked up long enough to see the flag fall over.\"[177] Subsequent Apollo missions planted their flags farther from the LM.[178]",
+        "evidence_type": "text",
+        "title": "Lunar ascent",
+        "section_path": [
+          "Mission",
+          "Lunar ascent"
+        ],
+        "retrieval_query": "Construct a concise Apollo 11 mission timeline from launch through return. Include the launch date and place, lunar landing date and site, surface activity, reunion with the orbiting crew member, and splashdown date and ocean.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.7618556022644043,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Lunar ascent",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": []
+        }
+      },
+      {
+        "evidence_id": "Apollo_11.html#section-020-00",
+        "source_article": "Apollo_11.html",
+        "content": "Article: Apollo 11\nSection: Mission > Columbia in lunar orbit\n\nDuring his day flying solo around the Moon, Collins never felt lonely. Although it has been said \"not since Adam has any human known such solitude\",[179] Collins felt very much a part of the mission. In his autobiography he wrote: \"this venture has been structured for three men, and I consider my third to be as necessary as either of the other two\".[179] In the 48 minutes of each orbit when he was out of radio contact with the Earth while Columbia passed round the far side of the Moon, the feeling he reported was not fear or loneliness, but rather \"awareness, anticipation, satisfaction, confidence, almost exultation\".[179]\n\nOne of Collins' first tasks was to identify the Lunar Module on the ground. To give Collins an idea where to look, Mission Control radioed that they believed the Lunar Module landed about 4 miles (6.4 km) off target. Each time he passed over the suspected lunar landing site, he tried in vain to find the module. On his first orbits on the back side of the Moon, Collins performed maintenance activities such as dumping excess water produced by the fuel cells and preparing the cabin for Armstrong and Aldrin to return.[180]\n\nJust before he reached the dark side on the third orbit, Mission Control informed Collins there was a problem with the temperature of the coolant. If it became too cold, parts of Columbia might freeze. Mission Control advised him to assume manual control and implement Environmental Control System Malfunction Procedure 17. Instead, Collins flicked the switch on the system from automatic to manual and back to automatic again, and carried on with normal housekeeping chores, while keeping an eye on the temperature.[181]\n\nWhen Columbia came back around to the near side of the Moon again, Collins was able to report that the problem had been resolved. For the next couple of orbits, he described his time on the back side of the Moon as \"relaxing\". After Aldrin and Armstrong completed their EVA, Collins slept so he could be rested for the rendezvous. While the flight plan called for Eagle to meet up with Columbia, Collins was prepared for a contingency in which he would fly Columbia down to meet Eagle.[181]",
+        "evidence_type": "text",
+        "title": "Columbia in lunar orbit",
+        "section_path": [
+          "Mission",
+          "Columbia in lunar orbit"
+        ],
+        "retrieval_query": "Construct a concise Apollo 11 mission timeline from launch through return. Include the launch date and place, lunar landing date and site, surface activity, reunion with the orbiting crew member, and splashdown date and ocean.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.8922886848449707,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Columbia in lunar orbit",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": []
+        }
+      },
+      {
+        "evidence_id": "Apollo_11.html#section-021-00",
+        "source_article": "Apollo_11.html",
+        "content": "Article: Apollo 11\nSection: Mission > Return\n\nEagle's ascent stage approaching Columbia\n\nEagle rendezvoused with Columbia at 21:24 UTC on July 21, and the two docked at 21:35. Eagle's ascent stage was jettisoned into lunar orbit at 23:41.[9] Just before the Apollo 12 flight, it was noted that Eagle was still likely to be orbiting the Moon. Later NASA reports mentioned that Eagle's orbit had decayed, resulting in it impacting in an \"uncertain location\" on the lunar surface.[182] In 2021, however, some calculations show that the lander may still be in orbit.[183]\n\nOn July 23, the last night before splashdown, the three astronauts made a television broadcast in which Collins commented: \"All this is possible only through the blood, sweat, and tears of a number of people ... All you see is the three of us, but beneath the surface are thousands and thousands of others, and to all of those, I would like to say, 'Thank you very much'.\"[184] Aldrin added: \"This has been far more than three men on a mission to the Moon; more, still, than the efforts of a government and industry team; more, even, than the efforts of one nation. We feel that this stands as a symbol of the insatiable curiosity of all mankind to explore the unknown ...\"[184]\n\nArmstrong concluded:\n\nThe responsibility for this flight lies first with history and with the giants of science who have preceded this effort; next with the American people, who have, through their will, indicated their desire; next with four administrations and their Congresses, for implementing that will; and then, with the agency and industry teams that built our spacecraft, the Saturn, the Columbia, the Eagle, and the little EMU, the spacesuit and backpack that was our small spacecraft out on the lunar surface. We would like to give special thanks to all those Americans who built the spacecraft; who did the construction, design, the tests, and put their hearts and all their abilities into those craft. To those people tonight, we give a special thank you, and to all the other people that are listening and watching tonight, God bless you. Good night from Apollo 11.[184]\n\nOn the return to Earth, a bearing at the Guam tracking station failed, potentially preventing communication on the last segment of the Earth return. A regular repair was not possible in the available time but the station director, Charles Force, had his ten-year-old son Greg use his small hands to reach into the housing and pack it with grease. Greg was later thanked by Armstrong.[185]",
+        "evidence_type": "text",
+        "title": "Return",
+        "section_path": [
+          "Mission",
+          "Return"
+        ],
+        "retrieval_query": "Construct a concise Apollo 11 mission timeline from launch through return. Include the launch date and place, lunar landing date and site, surface activity, reunion with the orbiting crew member, and splashdown date and ocean.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.7914927005767822,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Return",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": []
+        }
+      },
+      {
+        "evidence_id": "Apollo_11.html#section-022-00",
+        "source_article": "Apollo_11.html",
+        "content": "Article: Apollo 11\nSection: Mission > Splashdown and quarantine\n\nColumbia floats on the ocean as Navy divers assist in retrieving the astronauts.\n\nThe aircraft carrier USS Hornet, under the command of Captain Carl J. Seiberlich,[186] was selected as the primary recovery ship (PRS) for Apollo 11 on June 5, replacing her sister ship, the LPH USS Princeton, which had recovered Apollo 10 on May 26. Hornet was then at her home port of Long Beach, California.[187] On reaching Pearl Harbor on July 5, Hornet embarked the Sikorsky SH-3 Sea King helicopters of HS-4, a unit which specialized in recovery of Apollo spacecraft, specialized divers of UDT Detachment Apollo, a 35-man NASA recovery team, and about 120 media representatives. To make room, most of Hornet's air wing was left behind in Long Beach. Special recovery equipment was also loaded, including a boilerplate command module used for training.[188]\n\nOn July 12, with Apollo 11 still on the launch pad, Hornet departed Pearl Harbor for the recovery area in the central Pacific,[189] in the vicinity of 10°36′N 172°24′E﻿ / ﻿10.600°N 172.400°E﻿ / 10.600; 172.400.[190] A presidential party consisting of Nixon, Borman, Secretary of State William P. Rogers and National Security Advisor Henry Kissinger flew to Johnston Atoll on Air Force One, then to the command ship USS Arlington in Marine One. After a night on board, they would fly to Hornet in Marine One for a few hours of ceremonies. On arrival aboard Hornet, the party was greeted by the Commander-in-Chief, Pacific Command (CINCPAC), Admiral John S. McCain Jr., and NASA Administrator Thomas O. Paine, who flew to Hornet from Pago Pago in one of Hornet's carrier onboard delivery aircraft.[191]\n\nWeather satellites were not yet common, but US Air Force Captain Hank Brandli had access to top-secret spy satellite images. He realized that a storm front was headed for the Apollo recovery area. Poor visibility which could make locating the capsule difficult, and strong upper-level winds which \"would have ripped their parachutes to shreds\" according to Brandli, posed a serious threat to the safety of the mission.[192] Brandli alerted Navy Captain Willard S. Houston Jr., the commander of the Fleet Weather Center at Pearl Harbor, who had the required security clearance. On their recommendation, Rear Admiral Donald C. Davis, commander of Manned Spaceflight Recovery Forces, Pacific, advised NASA to change the recovery area, each man risking his career. A new location was selected 215 nautical miles (398 km) northeast.[193][194]\n\nThis altered the flight plan. A different sequence of computer programs was used, one never before attempted. In a conventional entry, trajectory event P64 was followed by P67. For a skip-out re-entry, P65 and P66 were employed to handle the exit and entry parts of the skip. In this case, because they were extending the re-entry but not actually skipping out, P66 was not invoked and instead, P65 led directly to P67. The crew were also warned they would not be in a full-lift (heads-down) attitude when they entered P67.[193] The first program's acceleration subjected the astronauts to 6.5 standard gravities (64 m/s2); the second, to 6.0 standard gravities (59 m/s2).[195]\n\nBefore dawn on July 24, Hornet launched four Sea King helicopters and three Grumman E-1 Tracers. Two of the E-1s were designated as \"air boss\" while the third acted as a communications relay aircraft. Two of the Sea Kings carried divers and recovery equipment. The third carried photographic equipment, and the fourth carried the decontamination swimmer and the flight surgeon.[196] At 16:44 UTC (05:44 local time) Columbia's drogue parachutes were deployed. This was observed by the helicopters. Seven minutes later Columbia struck the water forcefully 2,660 km (1,440 nmi) east of Wake Island, 380 km (210 nmi) south of Johnston Atoll, and 24 km (13 nmi) from Hornet,[9][193] at 13°19′N 169°9′W﻿ / ﻿13.317°N 169.150°W﻿ / 13.317; -169.150.[197] 82 °F (28 °C) with 6 feet (1.8 m) seas and winds at 17 knots (31 km/h; 20 mph) from the east were reported under broken clouds at 1,500 feet (460 m) with visibility of 10 nautical miles (19 km; 12 mi) at the recovery site.[198] Reconnaissance aircraft flying to the original splashdown location reported the conditions Brandli and Houston had predicted.[199]\n\nDuring splashdown, Columbia landed upside down but was righted within ten minutes by flotation bags activated by the astronauts.[200] A diver from the Navy helicopter hovering above attached a sea anchor to prevent it from drifting.[201] More divers attached flotation collars to stabilize the module and positioned rafts for astronaut extraction.[202]\n\nCrew of Apollo 11 in quarantine after returning to Earth, visited by Richard Nixon\n\nApollo 11 Mobile Quarantine Facility on display at the Steven F. Udvar-Hazy Center in Virginia in 2009\n\nThe divers then passed biological isolation garments (BIGs) to the astronauts, and assisted them into the life raft. The possibility of bringing back pathogens from the lunar surface was considered remote, but NASA took precautions at the recovery site. The astronauts were rubbed down with a sodium hypochlorite solution and Columbia wiped with povidone-iodine to remove any lunar dust that might be present. The astronauts were winched on board the recovery helicopter. BIGs were worn until they reached isolation facilities on board Hornet. The raft containing decontamination materials was intentionally sunk.[200]\n\nAfter touchdown on Hornet at 17:53 UTC, the helicopter was lowered by the elevator into the hangar bay, where the astronauts walked the 30 feet (9.1 m) to the mobile quarantine facility (MQF), where they would begin the Earth-based portion of their 21 days of quarantine.[203] This practice would continue for two more Apollo missions, Apollo 12 and Apollo 14, before the Moon was proven to be barren of life, and the quarantine process dropped.[204][205] Nixon welcomed the astronauts back to Earth. He told them: \"[A]s a result of what you've done, the world has never been closer together before.\"[206]\n\nAfter Nixon departed, Hornet was brought alongside the 5-short-ton (4.5 t) Columbia, which was lifted aboard by the ship's crane, placed on a dolly and moved next to the MQF. It was then attached to the MQF with a flexible tunnel, allowing the lunar samples, film, data tapes and other items to be removed. Hornet returned to Pearl Harbor, where the MQF was loaded onto a Lockheed C-141 Starlifter and airlifted to the Manned Spacecraft Center. The astronauts arrived at the Lunar Receiving Laboratory at 10:00 UTC on July 28. Columbia was taken to Ford Island for deactivation, and its pyrotechnics made safe. It was then taken to Hickham Air Force Base, from whence it was flown to Houston in a Douglas C-133 Cargomaster, reaching the Lunar Receiving Laboratory on July 30.[207]\n\nIn accordance with the Extra-Terrestrial Exposure Law, a set of regulations promulgated by NASA on July 16 to codify its quarantine protocol,[208] the astronauts continued in quarantine. After three weeks in confinement (first in the Apollo spacecraft, then in their trailer on Hornet, and finally in the Lunar Receiving Laboratory), the astronauts were given a clean bill of health.[209] On August 10, 1969, the Interagency Committee on Back Contamination met in Atlanta and lifted the quarantine on the astronauts, on those who had joined them in quarantine (NASA physician William Carpentier and MQF project engineer John Hirasaki),[210] and on Columbia itself. Loose equipment from the spacecraft remained in isolation until the lunar samples were released for study.[211]\n\nAugust 13, 1969, New York City",
+        "evidence_type": "text",
+        "title": "Splashdown and quarantine",
+        "section_path": [
+          "Mission",
+          "Splashdown and quarantine"
+        ],
+        "retrieval_query": "Construct a concise Apollo 11 mission timeline from launch through return. Include the launch date and place, lunar landing date and site, surface activity, reunion with the orbiting crew member, and splashdown date and ocean.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.9263921976089478,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Splashdown and quarantine",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": []
+        }
+      },
+      {
+        "evidence_id": "Apollo_program.html#table-001-8d92501f1f",
+        "source_article": "Apollo_program.html",
+        "content": "Structured table (JSON rows, one object per row — read values directly from these rows; do not rely on prior knowledge).\n{\"artifact_id\": \"cd77f82093a4f04b4027c374\", \"table_id\": \"table-001-8d92501f1f\", \"caption\": null, \"section\": \"Mission summary\", \"columns\": [\"Mission\", \"Date\", \"LV\", \"CSM\", \"LM\", \"Crew\", \"Summary\"], \"legends\": [], \"rows\": [{\"row_number\": 1, \"values\": {\"Mission\": \"AS-201\", \"Date\": \"Feb 26, 1966\", \"LV\": \"AS-201\", \"CSM\": \"CSM-009\", \"LM\": \"— N/a\", \"Crew\": \"— N/a\", \"Summary\": \"First flight of Saturn IB and Block I CSM; suborbital to Atlantic Ocean; qualified heat shield to orbital reentry speed.\"}, \"semantic_signals\": {\"LM\": {\"source_cell\": \"table-001-8d92501f1f:r2:c5\", \"display_text\": \"— N/a\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"var(--background-color-interactive,#ececec)\", \"sort_value\": null, \"legend_matches\": []}, \"Crew\": {\"source_cell\": \"table-001-8d92501f1f:r2:c6\", \"display_text\": \"— N/a\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"var(--background-color-interactive,#ececec)\", \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 2, \"values\": {\"Mission\": \"AS-203\", \"Date\": \"Jul 5, 1966\", \"LV\": \"AS-203\", \"CSM\": \"— N/a\", \"LM\": \"— N/a\", \"Crew\": \"— N/a\", \"Summary\": \"No spacecraft; observations of liquid hydrogen fuel behavior in orbit to support design of S-IVB restart capability.\"}, \"semantic_signals\": {\"CSM\": {\"source_cell\": \"table-001-8d92501f1f:r3:c4\", \"display_text\": \"— N/a\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"var(--background-color-interactive,#ececec)\", \"sort_value\": null, \"legend_matches\": []}, \"LM\": {\"source_cell\": \"table-001-8d92501f1f:r3:c5\", \"display_text\": \"— N/a\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"var(--background-color-interactive,#ececec)\", \"sort_value\": null, \"legend_matches\": []}, \"Crew\": {\"source_cell\": \"table-001-8d92501f1f:r3:c6\", \"display_text\": \"— N/a\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"var(--background-color-interactive,#ececec)\", \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 3, \"values\": {\"Mission\": \"AS-202\", \"Date\": \"Aug 25, 1966\", \"LV\": \"AS-202\", \"CSM\": \"CSM-011\", \"LM\": \"— N/a\", \"Crew\": \"— N/a\", \"Summary\": \"Suborbital flight of CSM to Pacific Ocean.\"}, \"semantic_signals\": {\"LM\": {\"source_cell\": \"table-001-8d92501f1f:r4:c5\", \"display_text\": \"— N/a\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"var(--background-color-interactive,#ececec)\", \"sort_value\": null, \"legend_matches\": []}, \"Crew\": {\"source_cell\": \"table-001-8d92501f1f:r4:c6\", \"display_text\": \"— N/a\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"var(--background-color-interactive,#ececec)\", \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 4, \"values\": {\"Mission\": \"Apollo 1\", \"Date\": \"Feb 21, 1967\", \"LV\": \"SA-204\", \"CSM\": \"CSM-012\", \"LM\": \"— N/a\", \"Crew\": \"Gus Grissom Ed White Roger B. Chaffee\", \"Summary\": \"Not flown. All crew members died in a fire during a launch pad test on January 27, 1967.\"}, \"semantic_signals\": {\"LM\": {\"source_cell\": \"table-001-8d92501f1f:r5:c5\", \"display_text\": \"— N/a\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"var(--background-color-interactive,#ececec)\", \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 5, \"values\": {\"Mission\": \"Apollo 4\", \"Date\": \"Nov 9, 1967\", \"LV\": \"SA-501\", \"CSM\": \"CSM-017\", \"LM\": \"LTA-10R\", \"Crew\": \"— N/a\", \"Summary\": \"First test flight of Saturn V, placed a CSM in a high Earth orbit; demonstrated S-IVB restart; qualified CM heat shield to lunar reentry speed.\"}, \"semantic_signals\": {\"Crew\": {\"source_cell\": \"table-001-8d92501f1f:r6:c6\", \"display_text\": \"— N/a\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"var(--background-color-interactive,#ececec)\", \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 6, \"values\": {\"Mission\": \"Apollo 5\", \"Date\": \"Jan 22–23, 1968\", \"LV\": \"SA-204\", \"CSM\": \"— N/a\", \"LM\": \"LM-1\", \"Crew\": \"— N/a\", \"Summary\": \"Earth orbital flight test of LM, launched on Saturn IB; demonstrated ascent and descent propulsion; human-rated the LM. No crew.\"}, \"semantic_signals\": {\"CSM\": {\"source_cell\": \"table-001-8d92501f1f:r7:c4\", \"display_text\": \"— N/a\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"var(--background-color-interactive,#ececec)\", \"sort_value\": null, \"legend_matches\": []}, \"Crew\": {\"source_cell\": \"table-001-8d92501f1f:r7:c6\", \"display_text\": \"— N/a\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"var(--background-color-interactive,#ececec)\", \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 7, \"values\": {\"Mission\": \"Apollo 6\", \"Date\": \"Apr 4, 1968\", \"LV\": \"SA-502\", \"CSM\": \"CM-020 SM-014\", \"LM\": \"LTA-2R\", \"Crew\": \"— N/a\", \"Summary\": \"Uncrewed, second flight of Saturn V, attempted demonstration of trans-lunar injection, and direct-return abort using SM engine; three engine failures, including failure of S-IVB restart. Flight controllers used SM engine to repeat Apollo 4's flight profile. Human-rated the Saturn V.\"}, \"semantic_signals\": {\"Crew\": {\"source_cell\": \"table-001-8d92501f1f:r8:c6\", \"display_text\": \"— N/a\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"var(--background-color-interactive,#ececec)\", \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 8, \"values\": {\"Mission\": \"Apollo 7\", \"Date\": \"Oct 11–22, 1968\", \"LV\": \"SA-205\", \"CSM\": \"CSM-101\", \"LM\": \"— N/a\", \"Crew\": \"Wally Schirra Walt Cunningham Donn Eisele\", \"Summary\": \"First crewed Earth orbital demonstration of Block II CSM, launched on Saturn IB. First live television broadcast from a crewed mission.\"}, \"semantic_signals\": {\"LM\": {\"source_cell\": \"table-001-8d92501f1f:r9:c5\", \"display_text\": \"— N/a\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"var(--background-color-interactive,#ececec)\", \"sort_value\": null, \"legend_matches\": []}}}]}\n(NOTE: showing 8 of 18 rows to fit the context budget; the deterministic table executor reads the full table.)",
+        "evidence_type": "table",
+        "title": "table-001-8d92501f1f",
+        "section_path": [
+          "Mission summary"
+        ],
+        "retrieval_query": "Construct a concise Apollo 11 mission timeline from launch through return. Include the launch date and place, lunar landing date and site, surface activity, reunion with the orbiting crew member, and splashdown date and ocean.",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "cd77f82093a4f04b4027c374",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_id": "table-001-8d92501f1f",
+          "n_rows": 18,
+          "rows_rendered": 18,
+          "needs_table_reader": false
+        }
+      },
+      {
+        "evidence_id": "Apollo_program.html#table-001-8d92501f1f#computed-table-r1-1-252646796b6a",
+        "source_article": "Apollo_program.html",
+        "content": "Deterministic table-computation result. Use the computed rows/calculation below rather than recomputing them.\n{\n  \"table_request\": {\n    \"missing_fact\": \"Construct a concise Apollo 11 mission timeline from launch through return. Include the launch date and place, lunar landing date and site, surface activity, reunion with the orbiting crew member, and splashdown date and ocean.\",\n    \"source_article\": \"Apollo_program.html\",\n    \"table_id\": \"cd77f82093a4f04b4027c374\",\n    \"expected_caption\": null,\n    \"operation\": \"auto\",\n    \"columns_needed\": [],\n    \"row_filters\": {},\n    \"comparison_key\": null\n  },\n  \"query_plan\": {\n    \"artifact_id\": \"cd77f82093a4f04b4027c374\",\n    \"operation\": \"lookup\",\n    \"selected_columns\": [\n      \"Mission\",\n      \"Date\",\n      \"Summary\"\n    ],\n    \"filters\": {},\n    \"predicates\": [\n      {\n        \"column\": \"Mission\",\n        \"op\": \"contains\",\n        \"value\": \"Apollo 11\",\n        \"value2\": null\n      }\n    ],\n    \"group_by\": [],\n    \"calculation\": null,\n    \"calculation_column\": null,\n    \"sort_column\": null,\n    \"sort_direction\": null,\n    \"limit\": 1\n  },\n  \"result\": {\n    \"request_id\": \"table-r1-1-252646796b6a\",\n    \"artifact_id\": \"cd77f82093a4f04b4027c374\",\n    \"result_rows\": [\n      {\n        \"Mission\": \"Apollo 11\",\n        \"Date\": \"Jul 16–24, 1969\",\n        \"Summary\": \"First landing, in Tranquility Base , Sea of Tranquility . Surface EVA time: 2h 31m. Samples returned: 47.51 lb (21.55 kg).\"\n      }\n    ],\n    \"calculation\": null,\n    \"source_cells\": [\n      \"table-001-8d92501f1f:r13:c1\",\n      \"table-001-8d92501f1f:r13:c2\",\n      \"table-001-8d92501f1f:r13:c7\"\n    ],\n    \"cell_details\": [\n      {\n        \"source_cell\": \"table-001-8d92501f1f:r13:c1\",\n        \"row_number\": 12,\n        \"column\": \"Mission\",\n        \"text\": \"Apollo 11\",\n        \"display_text\": \"Apollo 11\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-8d92501f1f:r13:c2\",\n        \"row_number\": 12,\n        \"column\": \"Date\",\n        \"text\": \"Jul 16–24, 1969\",\n        \"display_text\": \"Jul 16–24, 1969\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-8d92501f1f:r13:c7\",\n        \"row_number\": 12,\n        \"column\": \"Summary\",\n        \"text\": \"First landing, in Tranquility Base , Sea of Tranquility . Surface EVA time: 2h 31m. Samples returned: 47.51 lb (21.55 kg).\",\n        \"display_text\": \"First landing, in Tranquility Base , Sea of Tranquility . Surface EVA time: 2h 31m. Samples returned: 47.51 lb (21.55 kg).\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      }\n    ],\n    \"sufficient\": true,\n    \"warnings\": [\n      \"Superscript/subscript annotations are available in row_cells.\"\n    ]\n  }\n}",
+        "evidence_type": "table",
+        "title": "Computed table result: Construct a concise Apollo 11 mission timeline from launch through return. Include the launch date and place, lunar landing date and site, surface activity, reunion with the orbiting crew member, and splashdown date and ocean.",
+        "section_path": [
+          "Mission summary"
+        ],
+        "retrieval_query": "Construct a concise Apollo 11 mission timeline from launch through return. Include the launch date and place, lunar landing date and site, surface activity, reunion with the orbiting crew member, and splashdown date and ocean.",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "cd77f82093a4f04b4027c374",
+        "source_cells": [
+          "table-001-8d92501f1f:r13:c1",
+          "table-001-8d92501f1f:r13:c2",
+          "table-001-8d92501f1f:r13:c7"
+        ],
+        "metadata": {
+          "retrieval_stage": "table_computation",
+          "table_request_id": "table-r1-1-252646796b6a",
+          "operation": "lookup",
+          "calculation": null,
+          "table_computation_sufficient": true,
+          "warnings": [
+            "Superscript/subscript annotations are available in row_cells."
+          ]
+        }
+      }
+    ],
+    "assessment": {
+      "ready_to_answer": true,
+      "supported_requirements": [
+        "Launch date and place are supported by Apollo_11.html: July 16, 1969 from Kennedy Space Center's Launch Complex 39A.",
+        "Lunar landing date and site are supported by Apollo_11.html: July 20, 1969 at Tranquility Base / Sea of Tranquility.",
+        "Surface activity is supported by Apollo_11.html: lunar EVA began about 6.5 hours after landing and lasted 2h 31m per the program summary; Armstrong and Aldrin walked on the Moon, deployed experiments, and collected samples.",
+        "Reunion with the orbiting crew member is supported by Apollo_11.html: Eagle rendezvoused with Columbia at 21:24 UTC on July 21 and docked at 21:35.",
+        "Splashdown date and ocean are supported by Apollo_11.html: July 24, 1969 in the Pacific Ocean (central Pacific; near Wake Island/Johnston Atoll)."
+      ],
+      "missing_requirements": [],
+      "retrieval_requests": [],
+      "table_requests": [],
+      "unresolved_conflicts": [],
+      "explanation": "The supplied evidence is sufficient to answer the timeline request. Apollo_11.html provides the launch, landing, EVA/surface operations, rendezvous with Collins in Columbia, and splashdown details. The Apollo program table corroborates the landing site and EVA duration, but the mission article alone already supports the needed facts. The question asks for a concise timeline, so a brief chronological summary can be constructed directly from the excerpts."
+    },
+    "assessment_history": [
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "Apollo 11 launch date and place are supported: July 16, 1969 from Kennedy Space Center's Launch Complex 39A.",
+          "Apollo 11 lunar landing date and site are supported: July 20, 1969 at Tranquility Base in the Sea of Tranquility.",
+          "Surface activity is supported: first EVA began after landing; Armstrong and Aldrin walked on the Moon for about 2h 31m surface EVA total per mission summary, with the detailed section noting preparations, egress, first step, flag planting, experiments, sample collection, and a total stay of more than 21.5 hours on the lunar surface before ascent.",
+          "Reunion with the orbiting crew member is supported: Eagle rendezvoused with Columbia at 21:24 UTC on July 21, and docked at 21:35.",
+          "Splashdown date and ocean are supported: July 24, 1969 in the Pacific Ocean/central Pacific near Wake Island and Johnston Atoll."
+        ],
+        "missing_requirements": [],
+        "retrieval_requests": [],
+        "table_requests": [
+          {
+            "missing_fact": "Construct a concise Apollo 11 mission timeline from launch through return. Include the launch date and place, lunar landing date and site, surface activity, reunion with the orbiting crew member, and splashdown date and ocean.",
+            "source_article": "Apollo_program.html",
+            "table_id": "cd77f82093a4f04b4027c374",
+            "expected_caption": null,
+            "operation": "auto",
+            "columns_needed": [],
+            "row_filters": {},
+            "comparison_key": null
+          }
+        ],
+        "unresolved_conflicts": [],
+        "explanation": "The supplied Apollo 11 article excerpts contain all requested timeline facts directly. No table computation is needed because the question asks for a concise narrative timeline and the facts are present in text. The Apollo program mission-summary table also corroborates the mission date, landing site, and surface EVA time, but the Apollo 11 sections are sufficient on their own."
+      },
+      {
+        "ready_to_answer": true,
+        "supported_requirements": [
+          "Launch date and place are supported by Apollo_11.html: July 16, 1969 from Kennedy Space Center's Launch Complex 39A.",
+          "Lunar landing date and site are supported by Apollo_11.html: July 20, 1969 at Tranquility Base / Sea of Tranquility.",
+          "Surface activity is supported by Apollo_11.html: lunar EVA began about 6.5 hours after landing and lasted 2h 31m per the program summary; Armstrong and Aldrin walked on the Moon, deployed experiments, and collected samples.",
+          "Reunion with the orbiting crew member is supported by Apollo_11.html: Eagle rendezvoused with Columbia at 21:24 UTC on July 21 and docked at 21:35.",
+          "Splashdown date and ocean are supported by Apollo_11.html: July 24, 1969 in the Pacific Ocean (central Pacific; near Wake Island/Johnston Atoll)."
+        ],
+        "missing_requirements": [],
+        "retrieval_requests": [],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The supplied evidence is sufficient to answer the timeline request. Apollo_11.html provides the launch, landing, EVA/surface operations, rendezvous with Collins in Columbia, and splashdown details. The Apollo program table corroborates the landing site and EVA duration, but the mission article alone already supports the needed facts. The question asks for a concise timeline, so a brief chronological summary can be constructed directly from the excerpts."
+      }
+    ]
+  }
+}

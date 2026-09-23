@@ -24,6 +24,7 @@ from wikipedia_retrieval_engine.wiki_agents.retrieval_nodes import (
     collect_initial_evidence,
     load_selected_sections,
     load_selected_tables,
+    retrieve_broadened_article_sections,
     retrieve_graph_seeded_evidence,
     retrieve_initial_articles,
     retrieve_initial_articles_decomposed,
@@ -37,14 +38,16 @@ from wikipedia_retrieval_engine.wiki_agents.table_nodes import (
 
 # Retriever strategy names used by the configurable benchmark graph.
 InitialRetriever = Literal["vector", "multistep", "multistep_entity"]
-RepeatedRetriever = Literal["graph_seeded", "multistep"]
+RepeatedRetriever = Literal["graph_seeded", "multistep", "article_broaden"]
 _REPEATED_EDGE = {
     "graph_seeded": "retrieve_graph_seeded_sections",
     "multistep": "retrieve_multistep_sections",
+    "article_broaden": "retrieve_broadened_sections",
 }
 _RETRIEVAL_STAGE_LABEL = {
     "graph_seeded": "graph_seeded_sections",
     "multistep": "targeted_multistep_sections",
+    "article_broaden": "broadened_article_sections",
 }
 from wikipedia_retrieval_engine.wiki_agents.run_logging import (
     AgentRunLogger,
@@ -171,6 +174,7 @@ def build_retrieval_benchmark_graph(
     sections_per_neighbor: int = 2,
     max_graph_sections: int = 6,
     multistep_hits_per_request: int = 6,
+    broaden_sections_k: int = 8,
     max_table_rounds: int = 2,
     max_table_requests_per_round: int = 6,
 ) -> CompiledStateGraph:
@@ -254,6 +258,9 @@ def build_retrieval_benchmark_graph(
             assess_evidence,
             llm=llm,
             allow_table_requests=max_table_rounds > 0,
+            # Only nudge non-table questions off a first-pass "ready" when the
+            # breadth escalation actually exists in the sequence to catch them.
+            breadth_nudge="article_broaden" in repeated_retrievers,
         ),
     )
     workflow.add_node(
@@ -285,6 +292,14 @@ def build_retrieval_benchmark_graph(
         ),
     )
     workflow.add_node(
+        "retrieve_broadened_sections",
+        partial(
+            retrieve_broadened_article_sections,
+            retriever=retriever,
+            broaden_k=broaden_sections_k,
+        ),
+    )
+    workflow.add_node(
         "write_question_log",
         partial(write_question_log, logger=logger),
     )
@@ -304,12 +319,14 @@ def build_retrieval_benchmark_graph(
             "compute_requested_tables": "compute_requested_tables",
             "retrieve_graph_seeded_sections": "retrieve_graph_seeded_sections",
             "retrieve_multistep_sections": "retrieve_multistep_sections",
+            "retrieve_broadened_sections": "retrieve_broadened_sections",
             "finish": "write_question_log",
         },
     )
     workflow.add_edge("compute_requested_tables", "assess_evidence")
     workflow.add_edge("retrieve_graph_seeded_sections", "assess_evidence")
     workflow.add_edge("retrieve_multistep_sections", "assess_evidence")
+    workflow.add_edge("retrieve_broadened_sections", "assess_evidence")
     workflow.add_edge("write_question_log", END)
 
     return workflow.compile(name="checkpoint_5_1_retrieval_benchmark")
