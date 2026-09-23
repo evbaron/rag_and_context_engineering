@@ -15,6 +15,7 @@
     --ink:#1a1e26; --ink-soft:#586173; --ink-faint:#8a93a3; --line:#d7dde5;
     --spine:#9aa7b6;
     --survivor:#157a54; --survivor-bg:#e4f3ec;
+    --built:#43708f; --built-bg:#e8eef4;
     --abandon:#8a919c; --abandon-bg:#edeff2;
     --probe:#3a4db3; --probe-bg:#e8eaf8;
     --current:#b25e18; --current-bg:#f8ecda;
@@ -30,6 +31,7 @@
     --ink:#e7ebf1; --ink-soft:#9aa5b4; --ink-faint:#6b7480; --line:#28303b;
     --spine:#3a4553;
     --survivor:#54c491; --survivor-bg:#132720;
+    --built:#82abcf; --built-bg:#131c26;
     --abandon:#727b87; --abandon-bg:#191e26;
     --probe:#8494ec; --probe-bg:#161c33;
     --current:#dd964e; --current-bg:#271d10;
@@ -42,6 +44,7 @@
     --ink:#e7ebf1; --ink-soft:#9aa5b4; --ink-faint:#6b7480; --line:#28303b;
     --spine:#3a4553;
     --survivor:#54c491; --survivor-bg:#132720;
+    --built:#82abcf; --built-bg:#131c26;
     --abandon:#727b87; --abandon-bg:#191e26;
     --probe:#8494ec; --probe-bg:#161c33;
     --current:#dd964e; --current-bg:#271d10;
@@ -67,7 +70,7 @@
   .chartcard{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 16px 12px;box-shadow:var(--shadow)}
   .chartcard h3{font-family:var(--body);font-weight:600;font-size:12.5px;letter-spacing:.02em;color:var(--ink-soft);margin-bottom:2px}
   .chartsub{font-size:11.5px;color:var(--ink-faint);margin-bottom:6px}
-  svg{display:block;max-width:100%}
+  svg{display:block;max-width:100%;overflow:visible}
   .clegend{display:flex;gap:16px;margin-top:6px;font-size:11.5px;font-family:var(--mono);flex-wrap:wrap}
   .clegend span{display:inline-flex;align-items:center;gap:6px;color:var(--ink-soft)}
   .swatch{width:14px;height:3px;border-radius:2px;display:inline-block}
@@ -77,11 +80,13 @@
   .d-survivor{background:var(--survivor)} .d-abandon{background:var(--abandon)}
   .d-probe{background:var(--probe)} .d-current{background:var(--current)}
   .d-next{background:var(--next)} .d-tool{background:var(--recall)}
+  .d-built{background:var(--built)}
   .hint{font-size:12px;color:var(--ink-faint);margin-top:10px}
 
   main{padding-block:8px 60px}
-  .cp{display:grid;grid-template-columns:130px 1fr;gap:22px;position:relative}
-  @media(max-width:680px){.cp{grid-template-columns:1fr;gap:8px}}
+  .cp{display:grid;grid-template-columns:116px 1fr 172px;gap:20px;position:relative}
+  @media(max-width:900px){.cp{grid-template-columns:116px 1fr}.valcol{grid-column:2/3}}
+  @media(max-width:680px){.cp{grid-template-columns:1fr;gap:8px}.valcol{grid-column:1/-1}}
   .rail{position:relative;padding-top:26px}
   .rail::before{content:"";position:absolute;left:15px;top:0;bottom:-8px;width:2px;background:var(--spine)}
   .cp:last-child .rail::before{bottom:auto;height:40px}
@@ -98,13 +103,24 @@
   .band{padding-top:22px;padding-bottom:14px}
   .band-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(212px,1fr));gap:12px}
 
+  .valcol{padding-top:22px;display:flex;align-items:flex-start}
+  .valtile{width:100%;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--recall);border-radius:12px;padding:11px 12px;box-shadow:var(--shadow)}
+  .valtile.empty{border-left-color:var(--line);background:transparent;box-shadow:none;opacity:.55}
+  .valtile .vlabel{font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint)}
+  .valtile .vrow{display:flex;justify-content:space-between;align-items:baseline;margin-top:7px}
+  .valtile .vk{font-size:11px;color:var(--ink-soft)}
+  .valtile .vv{font-family:var(--mono);font-weight:600;font-size:16px;line-height:1}
+  .valtile .vv.r{color:var(--recall)} .valtile .vv.q{color:var(--quality)}
+  .valtile .vnote{font-size:10px;color:var(--ink-faint);margin-top:9px;line-height:1.3}
+
   .card{position:relative;text-align:left;width:100%;background:var(--surface);color:inherit;
     border:1px solid var(--line);border-left:4px solid var(--abandon);border-radius:12px;
     padding:13px 13px 12px;cursor:pointer;font:inherit;box-shadow:var(--shadow);
     transition:transform .12s ease,box-shadow .12s ease}
   .card:hover{transform:translateY(-2px)}
   .card:focus-visible{outline:2px solid var(--recall);outline-offset:2px}
-  .card.s-survivor{border-left-color:var(--survivor)}
+  .card.s-survivor{border-left:5px solid var(--survivor);background:var(--survivor-bg);box-shadow:0 0 0 1px var(--survivor),var(--shadow)}
+  .card.s-built{border-left-color:var(--built)}
   .card.s-abandon{border-left-color:var(--abandon);opacity:.72;background:var(--abandon-bg)}
   .card.s-probe{border-left-color:var(--probe)}
   .card.s-current{border-left-color:var(--current);background:var(--current-bg)}
@@ -114,7 +130,8 @@
   .card h3{font-family:var(--body);font-weight:600;font-size:14.5px;line-height:1.2}
   .fam{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);margin-top:3px}
   .tag{font-family:var(--mono);font-size:9.5px;letter-spacing:.07em;text-transform:uppercase;padding:3px 6px;border-radius:20px;white-space:nowrap;flex:none}
-  .t-survivor{background:var(--survivor-bg);color:var(--survivor)}
+  .t-survivor{background:var(--survivor);color:var(--surface)}
+  .t-built{background:var(--built-bg);color:var(--built)}
   .t-abandon{background:var(--sunk);color:var(--abandon)}
   .t-probe{background:var(--probe-bg);color:var(--probe)}
   .t-current{background:var(--current-bg);color:var(--current)}
@@ -153,7 +170,7 @@
   .dr-note{font-size:12px;color:var(--ink-soft);margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
   .verdict{border-left:3px solid var(--survivor);padding-left:12px}
   .verdict.s-abandon{border-color:var(--abandon)} .verdict.s-probe{border-color:var(--probe)}
-  .verdict.s-current{border-color:var(--current)} .verdict.s-next{border-color:var(--next)} .verdict.s-tool{border-color:var(--recall)}
+  .verdict.s-current{border-color:var(--current)} .verdict.s-next{border-color:var(--next)} .verdict.s-tool{border-color:var(--recall)} .verdict.s-built{border-color:var(--built)}
   .closebtn{position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink-soft);font-size:17px;cursor:pointer;line-height:1}
   .closebtn:focus-visible{outline:2px solid var(--recall);outline-offset:2px}
   footer{border-top:1px solid var(--line);padding-block:20px 34px;color:var(--ink-faint);font-size:12px}
@@ -170,16 +187,19 @@
       Through Phase 1, <b>retrieval recall kept climbing — .90 → .94 → 1.00</b> — while
       <b>answer quality stayed flat</b>, naming the real bottleneck early: reasoning over tables.
       <b>Phase 2 moved quality</b> — aligned JSON tables, then a table gateway that routes every table
-      through a deterministic executor — lifting quality to <b>.79 at perfect recall</b>.</p>
+      through a deterministic executor — lifting quality to <b>.79 at perfect recall</b>.
+      The held-out <b>validation set</b> (the far-right tiles) is the honest check: recall climbed
+      to <b>1.00</b> while quality held near <b>.88–.91</b> — the agent's win is <b>recall, ~14× less
+      context, and deterministic tables</b>, not raw quality over a strong fixed baseline.</p>
     <div class="herogrid">
       <div>
         <div class="statuslegend" id="legend"></div>
-        <p class="hint">Tap any node for what was tried, both metrics (with run range and validation-set figure where recorded), and why it survived or was abandoned.</p>
+        <p class="hint">Each row is a checkpoint: the <b>test-set approaches</b> it tried (the rich journey) and, on the far right, that checkpoint's single <b>validation-set</b> result. One <b>survivor</b> reaches today's system; the green lineage is what it was <b>built on</b>. Tap any test tile for detail.</p>
       </div>
       <div class="chartcard">
-        <h3>Two metrics, two stories</h3>
-        <div class="chartsub">survivor of each checkpoint · RAGAS · GT set</div>
-        <svg id="chart" viewBox="0 0 340 172" role="img" aria-label="Recall rose to 1.0 across checkpoints; answer quality stayed flat through Phase 1 then rose to .79 in Phase 2"></svg>
+        <h3>Test set · survivor progression</h3>
+        <div class="chartsub">survivor of each checkpoint · RAGAS · GT-19</div>
+        <svg id="chart" viewBox="0 0 340 172" role="img" aria-label="On the GT test set, recall rose to 1.0 across checkpoints while answer quality stayed flat through Phase 1 then rose to .79 in Phase 2"></svg>
         <div class="clegend">
           <span><i class="swatch" style="background:var(--recall)"></i>article recall</span>
           <span><i class="swatch" style="background:var(--quality)"></i>answer quality</span>
@@ -191,8 +211,8 @@
   <footer>
     Reconstructed from the repo's <b>git history</b> (35 commits, 23 Aug – 21 Sep 2026), the <b>RAGAS experiment CSVs</b>
     (<span class="mono">retriever_kind · article_recall · score</span>), and the <b>checkpoint READMEs</b>.
-    Card numbers are GT-set survivor means; ranges and validation-set figures appear in the detail panel where recorded.
-    1.1–2.1 predate the recall metric. Within 5.1, quality first dipped to .59 at the Phase-1 retrieval head (table reader still off — missing capability, not worse reasoning), then Phase 2's table gateway recovered it to .79 at recall 1.00. Phase-2 figures are 4-run means over all 19 questions.
+    Test tiles carry GT-set survivor means; the far-right tile on each row is that checkpoint's held-out <b>validation-set</b> result (the validation set enters at 3.1).
+    1.1–2.1 predate the recall metric. Within 5.1, GT quality first dipped to .59 at the Phase-1 retrieval head (table reader still off — missing capability, not worse reasoning), then the table gateway recovered it to .79; the breadth survivor then closed the validation gap (.845 → .880) at recall 1.00. Phase-2 figures are 4-run means.
   </footer>
 </div>
 
@@ -217,8 +237,9 @@ const CPS = [
   {cp:"5.1", date:"20–21 Sep", theme:"Agentic retriever"},
 ];
 const STATUS = {
-  survivor:{tag:"survived",cls:"survivor"}, abandon:{tag:"abandoned",cls:"abandon"},
-  probe:{tag:"ceiling probe",cls:"probe"}, tool:{tag:"kept as tool",cls:"tool"},
+  survivor:{tag:"survivor",cls:"survivor"}, built:{tag:"built on",cls:"built"},
+  abandon:{tag:"abandoned",cls:"abandon"}, probe:{tag:"ceiling probe",cls:"probe"},
+  tool:{tag:"kept as tool",cls:"tool"},
   current:{tag:"current",cls:"current"}, next:{tag:"next · phase 2",cls:"next"},
 };
 const N = [
@@ -239,7 +260,7 @@ const N = [
    what:"BM25 and vector fused under several weightings (e.g. 35/65) across the three chunkings.",
    why:"Never clearly beat pure vector and dragged in extra context; formally measured and rejected in 3.1.",
    verdict:"Abandoned after the 3.1 head-to-head."},
-  {cp:"2.1",name:"Vector search (Chroma)",st:"survivor",fam:"retriever",recall:null,quality:null,
+  {cp:"2.1",name:"Vector search (Chroma)",st:"built",fam:"retriever",recall:null,quality:null,
    blurb:"Dense embedding retrieval — the trunk.",
    what:"Chroma dense-embedding search, the retriever every later checkpoint builds on.",
    why:"Strongest single retriever across the manually reviewed 2.1 experiments.",
@@ -255,7 +276,7 @@ const N = [
    what:"Chunks aligned to Wikipedia heading structure instead of arbitrary character windows.",
    why:"Set aside at 2.1 in favor of full articles — but revived as the core section index that 4.1 and 5.1 retrieve against.",
    verdict:"Dormant then revived — the section index of today."},
-  {cp:"2.1",name:"Full-article context",st:"survivor",fam:"context strategy",recall:null,quality:null,
+  {cp:"2.1",name:"Full-article context",st:"built",fam:"context strategy",recall:null,quality:null,
    blurb:"Chunks select articles; send whole article.",
    what:"Use retrieved chunks to identify articles, then send each selected article's complete text.",
    why:"Consistently produced the most complete answers at 2.1; carried into 3.1/4.1 — until its ~130–260k-char context became the problem 5.1 replaced with sections.",
@@ -267,7 +288,7 @@ const N = [
    why:"Quality reached only 0.789, not 1.0. Even with perfect articles, complex/table questions failed — the first *quantified* proof that reasoning, not retrieval, is the ceiling.",
    verdict:"Diagnostic probe — set the reasoning ceiling that still governs Phase 2.",
    rvalid:null,qvalid:null},
-  {cp:"3.1",name:"Vector · K=7",st:"survivor",fam:"retriever",recall:0.899,quality:0.747,
+  {cp:"3.1",name:"Vector · K=7",st:"built",fam:"retriever",recall:0.899,quality:0.747,
    blurb:"Top-7 seeds → full articles.",
    what:"Vector retrieval at K=7, collapsing duplicate articles and expanding to full article text.",
    why:"Best tested end-to-end: higher quality and recall than hybrid, at far less context.",
@@ -294,7 +315,7 @@ const N = [
    why:"A targeted tool — fixed some single-table aggregations (GT07 0.50→0.88) and lifted multi-article recall — but overall quality stayed flat and it could regress easy questions.",
    verdict:"Kept as a tool, not adopted as the main path.",
    range:"0.882–0.939", rvalid:0.967},
-  {cp:"4.1",name:"Graph retriever",st:"survivor",fam:"retriever",recall:0.939,quality:0.719,
+  {cp:"4.1",name:"Graph retriever",st:"built",fam:"retriever",recall:0.939,quality:0.719,
    blurb:"Vector seeds → 1-hop graph expansion.",
    what:"Self-seeds with vector search, then follows the article relationship graph one hop to related articles.",
    why:"The only lever that moved recall — 0.899 → 0.939 on the GT set. (On the validation set vector and graph tied at 0.973 — the gain was GT-specific.) Answer quality still flat.",
@@ -311,7 +332,7 @@ const N = [
    what:"Lead with the sub-topic decomposer to surface named entities (chasing GT16, where Obama was buried).",
    why:"It emitted entity-diluted analytical queries ('2008 Obama…Clinton campaign advisor' → retrieves Clinton, not Obama). A wash — recall 0.951, below the entity variant beside it.",
    verdict:"Abandoned — right idea, wrong query shape."},
-  {cp:"5.1",name:"Initial: multi-step (entity)",st:"survivor",fam:"initial retriever",recall:0.97,quality:0.62,
+  {cp:"5.1",name:"Initial: multi-step (entity)",st:"built",fam:"initial retriever",recall:0.97,quality:0.62,
    blurb:"Decompose into clean canonical entity names.",
    what:"A new entity prompt: one full-name query per named/implied entity ('Bill Clinton', 'Barack Obama', 'Hillary Clinton'). Each retrieves its article at rank 1.",
    why:"Validated live — GT16 and GT14 surface all their designated articles. Firms up recall; it can't move answer quality (that's synthesis).",
@@ -321,7 +342,7 @@ const N = [
    what:"The original review node judged each article by its single top-ranked snippet.",
    why:"For entity queries that snippet was often 'See also' or the lead infobox, so it rejected correct articles — GT03 rejected all 7 → recall 0.0. The bottleneck moved from finding to keeping.",
    verdict:"Abandoned — judging an article by one snippet is the flaw."},
-  {cp:"5.1",name:"Review: TOC judge + select",st:"survivor",fam:"selection",recall:0.974,quality:0.588,
+  {cp:"5.1",name:"Review: TOC judge + select",st:"built",fam:"selection",recall:0.974,quality:0.588,
    blurb:"Judge by table-of-contents; pick sections; flag tables.",
    what:"One fused call reads each article's table of contents (not a snippet), keeps the right sources, selects the sections to read, and flags which need a table tool.",
    why:"Three runs, recall 0.974 and rock-stable — 18 of 19 questions at recall 1.0 (GT03 went 0.0 → 1.0). Quality index 0.59: the non-passes now fail with the right sections in hand, which points the finger squarely at synthesis.",
@@ -332,48 +353,71 @@ const N = [
    what:"First Phase-2 try: hand the model the article's table as structured JSON (from the 4.1 sidecar), no executor.",
    why:"A wash (PASS ≈ 0.42). The sidecar isn't rowspan-expanded, so award tables (GT03/GT07) misalign — a name lands in the Year column — and every filter or lookup reads the wrong cell.",
    verdict:"Abandoned — right idea, wrong JSON (two versions exist; this one isn't aligned)."},
-  {cp:"5.1",name:"Tables: aligned JSON (read)",st:"survivor",fam:"phase 2 · representation",recall:0.974,quality:0.70,
+  {cp:"5.1",name:"Tables: aligned JSON (read)",st:"built",fam:"phase 2 · representation",recall:0.974,quality:0.70,
    blurb:"Rowspan-aligned NormalizedTable rows, additive.",
    what:"Read from the 5.1 NormalizedTable store (rowspan expanded, winner marks kept), keep the section too, and tighten the table flag.",
    why:"Representation alone was a real lift — PASS ≈ 0.39 → 0.58, quality ≈ 0.59 → 0.70, recall unchanged. A clean, row-aligned table is enough for single-table filters and lookups.",
    verdict:"Survived — the fair, aligned representation. Bigger gain than expected.",
    range:"PASS 0.53–0.63"},
-  {cp:"5.1",name:"Table executor (compute)",st:"survivor",fam:"phase 2 · computation",recall:1.00,quality:0.70,
+  {cp:"5.1",name:"Table executor (compute)",st:"built",fam:"phase 2 · computation",recall:1.00,quality:0.70,
    blurb:"Deterministic predicates over the aligned rows.",
    what:"A planner emits text/numeric/year predicates and Python — not the model — filters, counts, and aggregates the rows, returning exact source cells.",
    why:"Correct in isolation (GT08/10/11), but reaching it depended on the assessor choosing to request it — and it kept rationalizing 'I can read this directly.' GT10 was a coin-flip: it passed exactly when the executor fired and failed when it didn't.",
    verdict:"Survived as the compute engine — but its routing was the coin-flip the gateway below fixes."},
-  {cp:"5.1",name:"Table gateway (lookup + compute)",st:"current",fam:"phase 2 · routing",recall:1.00,quality:0.79,
+  {cp:"5.1",name:"Table gateway (lookup + compute)",st:"built",fam:"phase 2 · routing",recall:1.00,quality:0.79,
    blurb:"Every relevant table routes through the executor; planner picks read vs compute.",
    what:"Drops the 'simple lookup, read directly' carve-out: any relevant selected table is forced through the executor. The planner classifies each request itself (lookup to extract cells, filter/aggregate to compute) via an auto operation. Extraction is additive, so prose and quotations keep their text.",
-   why:"Kills the assessor coin-flip. Quality 0.70 → 0.79 and strict PASS 0.62 → 0.75 at recall 1.000, over 4 runs. GT10 becomes a reliable pass; GT08 jumped 0.38 → 1.0 as a bonus; the quotation (GT01) and lookup (GT05) sentinels held — deterministic extraction never diluted them.",
-   verdict:"Current survivor — routing is solved. The ceiling is now non-routing: layout-table parsing (GT03), planner counting-in-range (GT07), and answer scope (GT11).",
+   why:"Kills the assessor coin-flip. GT quality 0.70 → 0.79 and strict PASS 0.62 → 0.75 at recall 1.000, over 4 runs. GT10 becomes a reliable pass; GT08 jumped 0.38 → 1.0 as a bonus; the quotation (GT01) and lookup (GT05) sentinels held — deterministic extraction never diluted them.",
+   verdict:"Survived — table routing is solved on GT. But the held-out validation set then exposed that its single-section evidence starves synthesis questions → the breadth route below.",
    range:"PASS 0.68–0.79"},
+  {cp:"5.1",name:"Context breadth (broaden + nudge)",st:"survivor",fam:"phase 2 · context",recall:1.00,quality:0.78,
+   blurb:"Non-table questions escalate into fuller article context before answering.",
+   what:"A new article_broaden route widens the selected articles (top-k sections), and a readiness nudge stops the assessor from answering a non-table question straight from its single initial section — forcing one breadth round first. Additive; table questions still go through the gateway.",
+   why:"The held-out validation set showed 5.1's single-section bet had dipped quality below Checkpoint 4.1 on synthesis questions (people-connection, process-explanation) the assessor answered from one section. Breadth recovered them (VAL06 .62→1.0, VAL15 .75→1.0): validation quality 0.845 → 0.880, matching 4.1's 0.885, at recall 1.000. Clean-passers held; GT (table-heavy) stays ~flat.",
+   verdict:"The survivor — the retriever in today's system. Closes the validation gap to the prior checkpoint at perfect recall and far less context. Remaining ceiling is non-routing: layout tables (GT03), range-count planner (GT07), aggregation (VAL05).",
+   rvalid:1.00, qvalid:0.880,
+   range:"val 0.845→0.880"},
 ];
 
 const legend = document.getElementById('legend');
-[["survivor","survived"],["tool","kept as tool"],["probe","ceiling probe"],
- ["abandon","abandoned"],["current","current"],["next","phase 2 next"]].forEach(([k,label])=>{
+[["survivor","survivor · current system"],["built","built on"],["tool","kept as tool"],
+ ["probe","ceiling probe"],["abandon","abandoned"]].forEach(([k,label])=>{
   const c=document.createElement('span');c.className='chip';
   c.innerHTML=`<span class="dot d-${k}"></span>${label}`;legend.appendChild(c);
 });
+
+// One validation-set result per checkpoint (the checkpoint's best fixed/agent survivor
+// on the held-out 25). Earlier checkpoints predate the validation set.
+const VAL = {
+  "3.1":{r:0.973,q:0.907,note:"fixed K=7 baseline"},
+  "4.1":{r:0.973,q:0.885,note:"graph retriever"},
+  "5.1":{r:1.000,q:0.880,note:"breadth survivor"},
+};
 
 const tl=document.getElementById('timeline');
 CPS.forEach(cpo=>{
   const nodes=N.filter(n=>n.cp===cpo.cp);
   const row=document.createElement('section');row.className='cp';
+  const v=VAL[cpo.cp];
+  const valTile = v
+    ? `<div class="valtile"><div class="vlabel">validation set</div>
+         <div class="vrow"><span class="vk">recall</span><span class="vv r">${fmt(v.r)}</span></div>
+         <div class="vrow"><span class="vk">quality</span><span class="vv q">${fmt(v.q)}</span></div>
+         <div class="vnote">${v.note}</div></div>`
+    : `<div class="valtile empty"><div class="vlabel">validation set</div><div class="vnote">not yet introduced</div></div>`;
   row.innerHTML=`
     <div class="rail"><span class="node-dot"></span>
       <div class="cp-label"><div class="cp-num">${cpo.cp}</div><div class="cp-date">${cpo.date}</div><div class="cp-theme">${cpo.theme}</div></div>
     </div>
-    <div class="band"><div class="band-grid"></div></div>`;
+    <div class="band"><div class="band-grid"></div></div>
+    <div class="valcol">${valTile}</div>`;
   const grid=row.querySelector('.band-grid');
   nodes.forEach(n=>grid.appendChild(makeCard(n)));
   tl.appendChild(row);
 });
 
 function pct(v){return v==null?null:Math.round(v*100)}
-function fmt(v){const p=pct(v);return p==null?'—':'.'+String(p).padStart(2,'0')}
+function fmt(v){const p=pct(v);return p==null?'—':(v>=1?'1.0':'.'+String(p).padStart(2,'0'))}
 function makeCard(n){
   const s=STATUS[n.st];
   const b=document.createElement('button');b.className=`card s-${s.cls}`;b.type='button';
@@ -398,6 +442,7 @@ function openDrawer(n){
     cell('recall','r',n.recall,n.range?('runs '+n.range):null)+cell('quality','q',n.quality,null);
   let note='';
   if(n.rvalid!=null) note+=`Validation-set recall: <b>${fmt(n.rvalid)}</b>. `;
+  if(n.qvalid!=null) note+=`Validation-set quality: <b>${fmt(n.qvalid)}</b> (vs 4.1's .88). `;
   if(n.recall==null && n.quality==null) note+='No RAGAS figure recorded at this stage.';
   document.getElementById('dr-body').innerHTML=`
     <div class="dr-sec"><h4>What it was</h4><p>${n.what}</p></div>
@@ -412,24 +457,30 @@ document.getElementById('closebtn').addEventListener('click',closeDrawer);
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer();});
 
 (function(){
-  const data=[{x:"3.1",r:0.899,q:0.747},{x:"4.1",r:0.939,q:0.744},{x:"5.1",r:1.000,q:0.789}];
-  const W=340,H=172,L=34,R=14,T=16,B=30;
-  const x=i=>L+i*((W-L-R)/(data.length-1));
-  const lo=0.60,hi=1.0, y=v=>T+(1-(v-lo)/(hi-lo))*(H-T-B);
-  const NS="http://www.w3.org/2000/svg",svg=document.getElementById('chart');
+  const NS="http://www.w3.org/2000/svg";
   const el=(t,a)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);return e;};
   const lab=v=>v>=1?'1.0':'.'+Math.round(v*100);
-  [0.6,0.7,0.8,0.9,1.0].forEach(v=>{
-    svg.appendChild(el('line',{x1:L,x2:W-R,y1:y(v),y2:y(v),stroke:'var(--line)','stroke-width':1}));
-    const t=el('text',{x:L-6,y:y(v)+3,'text-anchor':'end','font-size':9,'font-family':'var(--mono)',fill:'var(--ink-faint)'});t.textContent=lab(v);svg.appendChild(t);
-  });
-  data.forEach((d,i)=>{const t=el('text',{x:x(i),y:H-9,'text-anchor':'middle','font-size':10,'font-family':'var(--mono)',fill:'var(--ink-soft)'});t.textContent=d.x;svg.appendChild(t);});
-  const line=(key,color)=>{
-    svg.appendChild(el('path',{d:data.map((d,i)=>(i?'L':'M')+x(i)+' '+y(d[key])).join(' '),fill:'none',stroke:color,'stroke-width':2.4,'stroke-linejoin':'round','stroke-linecap':'round'}));
-    data.forEach((d,i)=>{svg.appendChild(el('circle',{cx:x(i),cy:y(d[key]),r:3.4,fill:color}));
-      const t=el('text',{x:x(i),y:y(d[key])-8,'text-anchor':'middle','font-size':9.5,'font-weight':600,'font-family':'var(--mono)',fill:color});t.textContent=lab(d[key]);svg.appendChild(t);});
-  };
-  line('r','var(--recall)');line('q','var(--quality)');
+  function draw(svgId, data){
+    const svg=document.getElementById(svgId);
+    if(!svg) return;
+    const W=340,H=172,L=34,R=14,T=16,B=30;
+    const x=i=>L+i*((W-L-R)/(data.length-1));
+    const lo=0.60,hi=1.0, y=v=>T+(1-(v-lo)/(hi-lo))*(H-T-B);
+    [0.6,0.7,0.8,0.9,1.0].forEach(v=>{
+      svg.appendChild(el('line',{x1:L,x2:W-R,y1:y(v),y2:y(v),stroke:'var(--line)','stroke-width':1}));
+      const t=el('text',{x:L-6,y:y(v)+3,'text-anchor':'end','font-size':9,'font-family':'var(--mono)',fill:'var(--ink-faint)'});t.textContent=lab(v);svg.appendChild(t);
+    });
+    data.forEach((d,i)=>{const t=el('text',{x:x(i),y:H-9,'text-anchor':'middle','font-size':10,'font-family':'var(--mono)',fill:'var(--ink-soft)'});t.textContent=d.x;svg.appendChild(t);});
+    const line=(key,color)=>{
+      svg.appendChild(el('path',{d:data.map((d,i)=>(i?'L':'M')+x(i)+' '+y(d[key])).join(' '),fill:'none',stroke:color,'stroke-width':2.4,'stroke-linejoin':'round','stroke-linecap':'round'}));
+      data.forEach((d,i)=>{svg.appendChild(el('circle',{cx:x(i),cy:y(d[key]),r:3.4,fill:color}));
+        const t=el('text',{x:x(i),y:y(d[key])-8,'text-anchor':'middle','font-size':9.5,'font-weight':600,'font-family':'var(--mono)',fill:color});t.textContent=lab(d[key]);svg.appendChild(t);});
+    };
+    line('r','var(--recall)');line('q','var(--quality)');
+  }
+  // The tuned GT test set, one survivor per checkpoint. (Per-checkpoint validation
+  // now lives as the far-right tile on each timeline row.)
+  draw('chart',[{x:"3.1",r:0.899,q:0.747},{x:"4.1",r:0.939,q:0.744},{x:"5.1",r:1.000,q:0.789}]);
 })();
 </script>
 </body>

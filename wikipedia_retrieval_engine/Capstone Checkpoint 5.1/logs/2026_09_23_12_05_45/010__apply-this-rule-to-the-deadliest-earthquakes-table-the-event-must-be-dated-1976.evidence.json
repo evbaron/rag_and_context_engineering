@@ -1,0 +1,379 @@
+{
+  "run_id": "2026_09_23_12_05_45",
+  "question_number": 10,
+  "logged_at": "2026-09-23T12:10:07-04:00",
+  "question": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+  "final_state": {
+    "question": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+    "retrieval_attempts": 2,
+    "table_attempts": 1,
+    "article_candidates": [
+      {
+        "source_article": "Lists_of_earthquakes.html",
+        "representative_chunk": "Article: Lists of earthquakes\nSection: Deadliest earthquakes\n\nSee also: List of deadliest 20th-century earthquakes per year and List of deadliest 21st-century earthquakes per year\n\nThe following is a summary list of earthquakes with over approximately 100,000 deaths.[1] The 893 Ardabil earthquake is most likely the same as the 893 Dvin earthquake, due to misreading of the Arabic word for Dvin, \"Dabil\" as \"Ardabil\".[2][3]\n\nEvent\n\nDate\n\nLocation\n\nFatal­ities\n\nMagni­tude\n\nNotes on fatalities\n\n1976 Tangshan earthquake\n\nJuly 27, 1976\n\nHebei, China\n\n300,000+[4]\n\n7.6\n\nInternal Tangshan reports found 263,299 local deaths. Official nationwide deaths stated to be 242,769. Scholars estimated >300,000.[4][5]\n\n1920 Haiyuan earthquake\n\nDecember 16, 1920\n\nNingxia–Gansu, China\n\n273,400\n\n7.8\n\nPreviously cited death toll was 230,000 and this figure was revised in 2010.[6][7]\n\n526 Antioch earthquake\n\nMay 21, 526\n\nAntioch, Byzantine Empire (modern-day Turkey)\n\n250,000[8]\n\n7.0[9]\n\nProcopius (II.14.6), sources based on John of Ephesus.\n\n1139 Ganja earthquake\n\nSeptember 30, 1139\n\nGanja, Seljuk Empire (modern-day Azerbaijan)\n\n230,000–300,000[10]\n7.0 Mw \nDeath toll may have been a historical conflation with earthquakes on November 1137 in the Jazira plain and the 1138 Aleppo earthquake.[11]\n\n2004 Indian Ocean earthquake and tsunami\n\nDecember 26, 2004\n\nSumatra, Indonesia\n\n227,898\n\n9.2\n\nDeath toll includes those missing and presumed dead.[10]\n\n1303 Hongdong earthquake\n\nJuly 25, 1303\n\nShanxi, Yuan dynasty (modern-day China)\n\n200,000[12]\n\n8.0\n\n856 Damghan earthquake\n\nDecember 22, 856\n\nDamghan, Abbasid Caliphate (modern-day Iran)\n\n200,000\n\n7.9 Ms\n\n1138 Aleppo earthquake\n\nOctober 11, 1138\n\nAleppo, Seljuk Empire (modern-day Syria)\n\n130,000–230,000[13]\n\n7.1[13]\n\nThe figure of 230,000 dead is based on a historical conflation of this earthquake with earthquakes in November 1137 on the Jazira plain and the 1139 Ganja earthquake in the Azerbaijani city of Ganja. The first mention of a 230,000 death toll was by Ibn Taghribirdi in the fifteenth century.[11]\n\n533 Aleppo earthquake\n\nNovember 29, 533\n\nAleppo, Byzantine Empire (modern-day Syria)\n\n130,000[14]\nUnknown\n\n1908 Messina earthquake\n\nDecember 28, 1908\n\nMessina, Kingdom of Italy\n\n120,000[15]\n\n7.1 Ms \n\nThe epicentre was in the Strait of Messina which separates Sicily from the Italian mainland, affecting also the city of Reggio Calabria.[16]\n\n1948 Ashgabat earthquake\n\nOctober 5, 1948\n\nAshgabat, Turkmen SSR (modern-day Turkmen­istan)\n\n110,000\n\n7.3 Ms\n\nPreviously cited death toll was 10,000 until a news release on December 9, 1988, advised that the correct death toll was 110,000.[10]\n\n1923 Great Kantō earthquake\n\nSeptember 1, 1923\n\nKantō region, Japan\n\n105,385[17]\n\n7.9\n\nCasualty estimates range from 100,000 to 142,800, the latter figure including 40,000 missing later presumed dead.\n\n1556 Shaanxi earthquake\n\nJanuary 23, 1556\n\nShaanxi, modern-day China\n\n100,000\n\n8.0\n\nDirect deaths thought to be just over 100,000 while about 730,000 people died from famines or migrated elsewhere.[18][19][20][21]\n\n2010 Haiti earthquake\n\nJanuary 12, 2010\n\nHaiti\n\n46,000–316,000\n\n7.0\n\nEstimates vary from 316,000 (Haitian government) to 222,570 (UN OCHA estimate)[22] to 158,000 (Medicine, Conflict and Survival) to between 46,000 and 85,000 (report commissioned by USAID).[23][24]\n\n1290 Zhili earthquake\n\nSeptember 27, 1290\n\nNingcheng, Yuan dynasty (modern-day China)\n\n7,000–100,000\n\n6.8 Ms \n\nEstimates also suggests lower values of at least 7,000.[25]",
+        "representative_chunk_id": "Lists_of_earthquakes.html#section-001-00",
+        "section_title": "Deadliest earthquakes",
+        "section_path": [
+          "Deadliest earthquakes"
+        ],
+        "retrieval_query": "Deadliest earthquakes",
+        "discovered_by": "vector",
+        "rank": 1,
+        "raw_score": 0.7403749823570251,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "2011_Tōhoku_earthquake_and_tsunami.html",
+        "representative_chunk": "Article: 2011 Tōhoku earthquake and tsunami\nSection: Casualties > Japan > Key statistics\n\n7\n\n119\n\n2,732\n\n98\n\n785\n\n-\n\nYaita\n\n-\n\n-\n\n-\n\n51\n\n90\n\n2,903\n\n21\n\n563\n\n-\n\nNasushiobara\n\n-\n\n-\n\n5\n\n12\n\n38\n\n1,272\n\n-\n\n377\n\n-\n\nSakura\n\n-\n\n-\n\n11\n\n2\n\n25\n\n2,556\n\n12\n\n866\n\n-\n\nNasukarasuyama\n\n2\n\n-\n\n7\n\n66\n\n135\n\n3,203\n\n-\n\n193\n\n-\n\nShimotsuke\n\n-\n\n-\n\n20\n\n-\n\n13\n\n1,048\n\n23\n\n-\n\n-\n\nMashiko\n\n-\n\n-\n\n7\n\n14\n\n155\n\n2,100\n\n57\n\n360\n\n-\n\nMotegi\n\n-\n\n-\n\n-\n\n-\n\n12\n\n2,012\n\n-\n\n188\n\n-\n\nIchikai\n\n-\n\n-\n\n3\n\n16\n\n69\n\n1,966\n\n14\n\n628\n\n-\n\nHaga\n\n1\n\n-\n\n28\n\n16\n\n133\n\n2,366\n\n44\n\n797\n\n-\n\nMibu\n\n-\n\n-\n\n-\n\n-\n\n5\n\n438\n\n2\n\n100\n\n-\n\nTakanezawa\n\n-\n\n-\n\n8\n\n7\n\n717\n\n2,716\n\n1\n\n353\n\n-\n\nNasu\n\n-\n\n-\n\n3\n\n40\n\n143\n\n1,568\n\n65\n\n295\n\n-\n\nNakagawa\n\n-\n\n-\n\n1\n\n7\n\n67\n\n3,162\n\n14\n\n189\n\n-\n\nSubtotal\n\n4\n\n-\n\n133\n\n261\n\n2,118\n\n74,173\n\n718\n\n9,706\n\n-\n\nGumna\n\nMaebashi\n\n-\n\n-\n\n1\n\n-\n\n-\n\n2,211\n\n-\n\n-\n\n-\n\nTakasaki\n\n-\n\n-\n\n6\n\n-\n\n2\n\n1,194\n\n-\n\n-\n\n2\n\nKiryū\n\n-\n\n-\n\n1\n\n-\n\n2\n\n3,168\n\n-\n\n-\n\n-\n\nIsesaki\n\n-\n\n-\n\n7\n\n-\n\n-\n\n2,706\n\n-\n\n-\n\n-\n\nŌta\n\n-\n\n-\n\n11\n\n-\n\n-\n\n2,473\n\n-\n\n-\n\n-\n\nNumata\n\n-\n\n-\n\n1\n\n-\n\n-\n\n56\n\n-\n\n-\n\n-\n\nTatebayashi\n\n1\n\n-\n\n1\n\n-\n\n-\n\n990\n\n-\n\n-\n\n-\n\nShibukawa\n\n-\n\n-\n\n2\n\n-\n\n1\n\n740\n\n-\n\n-\n\n-\n\nTomioka\n\n-\n\n-\n\n4\n\n-\n\n-\n\n21\n\n-\n\n-\n\n-\n\nAnnaka\n\n-\n\n-\n\n2\n\n-\n\n-\n\n139\n\n-\n\n-\n\n-\n\nYoshioka\n\n-\n\n-\n\n1\n\n-\n\n-\n\n4\n\n-\n\n-\n\n-\n\nNakanojō\n\n-\n\n-\n\n1\n\n-\n\n-\n\n2\n\n-\n\n-\n\n-\n\nKusatsu\n\n-\n\n-\n\n1\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\nItakura, Gunma\n\n-\n\n-\n\n1\n\n-\n\n-\n\n243\n\n-\n\n-\n\n-\n\nŌizumi\n\n-\n\n-\n\n-\n\n-\n\n2\n\n1,122\n\n-\n\n-\n\n-\n\nŌra\n\n-\n\n-\n\n2\n\n-\n\n-\n\n1,210\n\n-\n\n-\n\n-\n\nSubtotal\n\n1\n\n-\n\n42\n\n-\n\n7\n\n17,679\n\n-\n\n-\n\n2\n\nSaitama\n\nSaitama\n\n1\n\n-\n\n15\n\n2\n\n43\n\n1,064\n\n-\n\n-\n\n1\n\nKawagoe\n\n-\n\n-\n\n8\n\n-\n\n-\n\n46\n\n-\n\n-\n\n1\n\nKumagaya\n\n-\n\n-\n\n-\n\n1\n\n2\n\n962\n\n-\n\n-\n\n-\n\nKawaguchi\n\n-\n\n-\n\n3\n\n1\n\n3\n\n200\n\n-\n\n-\n\n2\n\nGyōda\n\n-\n\n-\n\n4\n\n-\n\n-\n\n857\n\n-\n\n-\n\n-\n\nTokorozawa\n\n-\n\n-\n\n2\n\n-\n\n-\n\n31\n\n-\n\n-\n\n-\n\nKazo\n\n-\n\n-\n\n3\n\n7\n\n32\n\n3,424\n\n95\n\n-\n\n-\n\nKasukabe\n\n-\n\n-\n\n13\n\n-\n\n4\n\n350\n\n-\n\n-\n\n1\n\nHanyū\n\n-\n\n-\n\n4\n\n-\n\n4\n\n1,052\n\n-\n\n-\n\n-\n\nKōnosu\n\n-\n\n-\n\n-\n\n-\n\n1\n\n1,645\n\n-\n\n-\n\n1\n\nFukaya\n\n-\n\n-\n\n1\n\n-\n\n-\n\n73\n\n-\n\n-\n\n1\n\nAgeo\n\n-\n\n-\n\n4\n\n-\n\n2\n\n343\n\n-\n\n-\n\n-\n\nSōka\n\n-\n\n-\n\n10\n\n-\n\n-\n\n50\n\n-\n\n-\n\n1\n\nKoshigaya\n\n-\n\n-\n\n8\n\n-\n\n-\n\n29\n\n-\n\n-\n\n1\n\nToda\n\n-\n\n-\n\n7\n\n-\n\n-\n\n94\n\n-\n\n-\n\n-\n\nHatogaya\n\n-\n\n-\n\n3\n\n-\n\n-\n\n31\n\n-\n\n-\n\n-\n\nAsaka\n\n-\n\n-\n\n2\n\n-\n\n3\n\n35\n\n-\n\n-\n\n-\n\nAsaka\n\n-\n\n-\n\n1\n\n-\n\n-\n\n21\n\n-\n\n-\n\n-\n\nKuki\n\n-\n\n-\n\n5\n\n12\n\n102\n\n507\n\n-\n\n-\n\n-\n\nMisato\n\n-\n\n-\n\n3\n\n-\n\n-\n\n178\n\n-\n\n-\n\n-\n\nSatte\n\n-\n\n-\n\n1\n\n-\n\n-\n\n428\n\n-\n\n-\n\n-\n\nTsurugashima\n\n-\n\n-\n\n1\n\n-\n\n-\n\n68\n\n-\n\n-\n\n-\n\nYoshikawa\n\n-\n\n-\n\n-\n\n-\n\n1\n\n222\n\n-\n\n-\n\n-\n\nFujimino\n\n-\n\n-\n\n1\n\n-\n\n-\n\n12\n\n-\n\n-\n\n-\n\nOgano\n\n-\n\n-\n\n1\n\n-\n\n-\n\n4\n\n-\n\n-\n\n-\n\nMiyajima\n\n-\n\n-\n\n-\n\n-\n\n2\n\n419\n\n-\n\n-\n\n-\n\nSugito\n\n-\n\n-\n\n4\n\n1\n\n-\n\n376\n\n-\n\n-\n\n-\n\nSubtotal\n\n1\n\n-\n\n104\n\n24\n\n199\n\n16,511\n\n95\n\n-\n\n12\n\nChiba\n\nChiba\n\n-\n\n-\n\n20\n\n30\n\n646\n\n4,508\n\n-\n\n-\n\n5\n\nChōshi\n\n-\n\n-\n\n20\n\n30\n\n148\n\n2,424\n\n-\n\n-\n\n1\n\nIchikawa\n\n-\n\n-\n\n4\n\n10\n\n42\n\n866\n\n-\n\n-\n\n2\n\nFunabashi\n\n1\n\n-\n\n33\n\n13\n\n477\n\n4,803\n\n1\n\n31\n\n1\n\nMatsudo\n\n-\n\n-\n\n14\n\n8\n\n134\n\n1,792\n\n-\n\n10\n\n-\n\nNoda\n\n1\n\n-\n\n5\n\n1\n\n7\n\n1,935\n\n-\n\n-\n\n1\n\nMobara\n\n-\n\n-\n\n-\n\n-\n\n2\n\n68\n\n-\n\n-\n\n-\n\nNarita\n\n-\n\n-\n\n17\n\n4\n\n68\n\n1,327\n\n-\n\n7\n\n-\n\nSakura\n\n-\n\n-\n\n3\n\n33\n\n240\n\n1,669\n\n-\n\n8\n\n-\n\nTōgane\n\n-\n\n-\n\n2\n\n4\n\n15\n\n164\n\n-\n\n-\n\n-\n\nAsahi\n\n14\n\n2\n\n12\n\n318\n\n916\n\n2,546\n\n-\n\n-\n\n2\n\nNarashino\n\n1\n\n-\n\n7\n\n9\n\n717\n\n4,619\n\n-\n\n-\n\n1\n\nKashiwa\n\n1\n\n-\n\n24\n\n1\n\n17\n\n4,803\n\n-\n\n-\n\n-\n\nKatsuura\n\n-\n\n-\n\n2\n\n-\n\n-\n\n1\n\n-\n\n-\n\n-\n\nIchihara\n\n-\n\n-\n\n6\n\n-\n\n1\n\n1,171\n\n-\n\n-\n\n-\n\nNagareyama\n\n-\n\n-\n\n1\n\n-\n\n-\n\n1,077\n\n-\n\n-\n\n-\n\nYachiyo\n\n1\n\n-\n\n3\n\n6\n\n24\n\n1,507\n\n-\n\n-\n\n2\n\nAbiko\n\n-\n\n-\n\n2\n\n134\n\n101\n\n3,323\n\n-\n\n19\n\n-\n\nKamogawa\n\n-\n\n-\n\n2\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\nKamagaya\n\n-\n\n-\n\n5\n\n-\n\n9\n\n810\n\n-\n\n-\n\n-\n\nKimitsu\n\n-\n\n-\n\n2\n\n-\n\n-\n\n10\n\n-\n\n-\n\n-\n\nUrayasu\n\n-\n\n-\n\n29\n\n10\n\n3,649\n\n5,111\n\n1\n\n93\n\n-\n\nYotsukaidō\n\n-\n\n-\n\n-\n\n-\n\n1\n\n532\n\n-\n\n-\n\n-\n\nSodegaura\n\n-\n\n-\n\n-\n\n-\n\n1\n\n25\n\n-\n\n-\n\n-\n\nYachimata\n\n-\n\n-\n\n2\n\n-\n\n-\n\n284\n\n-\n\n-\n\n-\n\nInzai\n\n-\n\n-\n\n7\n\n11\n\n79\n\n2,222\n\n-\n\n-\n\n-\n\nShiroi\n\n-\n\n-\n\n2\n\n-\n\n-\n\n422\n\n-\n\n-\n\n-\n\nTomisato\n\n-\n\n-\n\n3\n\n11\n\n7\n\n687\n\n-\n\n-\n\n-\n\nTomisato\n\n-\n\n-\n\n-\n\n7\n\n20\n\n1,701\n\n-\n\n12\n\n-\n\nKatori\n\n-\n\n-\n\n4\n\n96\n\n2,216\n\n1,764\n\n-\n\n439\n\n-\n\nSanmu\n\n1\n\n-\n\n2\n\n43\n\n442\n\n291\n\n-\n\n126\n\n-\n\nIsumi\n\n-\n\n-\n\n2\n\n-\n\n1\n\n56\n\n-\n\n-\n\n-\n\nŌamishirasato\n\n-\n\n-\n\n26\n\n-\n\n1\n\n58\n\n-\n\n-\n\n1\n\nShisui\n\n-\n\n-\n\n-\n\n1\n\n1\n\n252\n\n-\n\n-\n\n1\n\nSakae\n\n-\n\n-\n\n-\n\n10\n\n109\n\n1,103\n\n-\n\n77\n\n-\n\nKōzaki\n\n-\n\n-\n\n1\n\n5\n\n92\n\n193\n\n-\n\n-\n\n-\n\nTako\n\n-\n\n-\n\n-\n\n2\n\n6\n\n1,036\n\n-\n\n-\n\n-\n\nTōnoshō\n\n1\n\n-\n\n4\n\n3\n\n10\n\n1,800\n\n-\n\n-\n\n-\n\nKujūkuri\n\n-\n\n-\n\n1\n\n-\n\n103\n\n40\n\n-\n\n-\n\n-\n\nShibayama\n\n-\n\n-\n\n-\n\n-\n\n3\n\n104\n\n-\n\n-\n\n-\n\nYokoshibahikari\n\n-\n\n-\n\n1\n\n6\n\n8\n\n282\n\n-\n\n5\n\n-\n\nShirako\n\n1\n\n-\n\n-\n\n1\n\n-\n\n-\n\n-\n\n-\n\n-\n\nSubtotal\n\n22\n\n2\n\n268\n\n807\n\n10,313\n\n57,449\n\n12\n\n827\n\n18\n\nTokyo\n\nChiyoda\n\n2\n\n-\n\n28\n\n-\n\n4\n\n66\n\n-\n\n61\n\n3\n\nChūō\n\n-\n\n-\n\n2\n\n-\n\n-\n\n66\n\n-\n\n-\n\n-\n\nMinato\n\n-\n\n-\n\n-\n\n2\n\n21\n\n79\n\n14\n\n8\n\n7\n\nBunkyō\n\n-\n\n-\n\n1\n\n-\n\n3\n\n203\n\n-\n\n39\n\n-\n\nTaitō\n\n-\n\n-\n\n5\n\n2\n\n18\n\n201\n\n-\n\n52\n\n-\n\nSumida\n\n-\n\n-\n\n-\n\n5\n\n44\n\n521\n\n-\n\n116\n\n2\n\nKōtō\n\n2\n\n-\n\n-\n\n1\n\n22\n\n374\n\n-\n\n16\n\n2\n\nŌta\n\n-\n\n-\n\n-\n\n-\n\n2\n\n84\n\n92\n\n22\n\n-\n\nŌta\n\n-\n\n-\n\n1\n\n-\n\n6\n\n139\n\n48\n\n7\n\n1\n\nSuginami\n\n-\n\n-\n\n10\n\n1\n\n22\n\n970\n\n-\n\n-\n\n1\n\nKita\n\n-\n\n-\n\n1\n\n3\n\n24\n\n487\n\n46\n\n17\n\n-\n\nArakawa\n\n-\n\n-\n\n1\n\n1\n\n7\n\n158\n\n3\n\n1\n\n-\n\nItabashi\n\n-\n\n-\n\n-\n\n2\n\n10\n\n194\n\n43\n\n80\n\n-\n\nAdachi\n\n-\n\n-\n\n34\n\n3\n\n17\n\n518\n\n-\n\n173\n\n3\n\nKatsushika\n\n-\n\n-\n\n9\n\n-\n\n13\n\n271\n\n33\n\n61\n\n-\n\nEdogawa\n\n1\n\n-\n\n-\n\n-\n\n10\n\n408\n\n4\n\n-\n\n1\n\nMitaka\n\n-\n\n-\n\n8\n\n-\n\n-\n\n99\n\n48\n\n3\n\n1\n\nFuchū\n\n-\n\n-\n\n2\n\n-\n\n-\n\n-\n\n-\n\n-\n\n1\n\nMachida\n\n2\n\n-\n\n15\n\n-\n\n-\n\n187\n\n69\n\n-\n\n-\n\nTama\n\n1\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n1\n\nInagi\n\n-\n\n-\n\n1\n\n-\n\n-\n\n11\n\n-\n\n6\n\n1\n\nHamura\n\n-\n\n-\n\n1\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\nSubtotal\n\n8\n\n-\n\n119\n\n20\n\n223\n\n6,570\n\n419\n\n786\n\n35\n\nKanagawa\n\nYokohama\n\n2\n\n-\n\n76\n\n-\n\n29\n\n233\n\n-\n\n12\n\n3\n\nKawasaki\n\n2\n\n-\n\n17\n\n-\n\n-\n\n133\n\n-\n\n-\n\n2\n\nSagamihara\n\n-\n\n-\n\n7\n\n-\n\n-\n\n20\n\n-\n\n-\n\n-\n\nYokosuka\n\n-\n\n-\n\n1\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\nHiratsuka\n\n-\n\n-\n\n2\n\n-\n\n-\n\n16\n\n-\n\n-\n\n-\n\nFujisawa\n\n1\n\n-\n\n8\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\nOdawara\n\n-\n\n-\n\n9\n\n-\n\n-\n\n23\n\n-\n\n-\n\n-\n\nChigasaki\n\n-\n\n-\n\n3\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\nHadano\n\n-\n\n-\n\n2\n\n-\n\n12\n\n16\n\n-\n\n-\n\n-\n\nAtsugi\n\n-\n\n-\n\n2\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\nYamato\n\n-\n\n-\n\n1\n\n-\n\n-\n\n1\n\n-\n\n-\n\n1\n\nEbina\n\n1\n\n-\n\n1\n\n-\n\n-\n\n1\n\n-\n\n1\n\n-\n\nMinamiashigara\n\n-\n\n-\n\n4\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\nHayama\n\n-\n\n-\n\n1\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\nHakone\n\n-\n\n-\n\n2\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\nYugawara\n\n-\n\n-\n\n1\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\nSubtotal\n\n6\n\n-\n\n137\n\n-\n\n41\n\n459\n\n-\n\n13\n\n6\n\nNiigata\n\nNagaoka\n\n-\n\n-\n\n1\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\nTōkamachi\n\n-\n\n-\n\n1\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\nMinamiuonuma\n\n-\n\n-\n\n1\n\n-\n\n-\n\n9\n\n-\n\n1\n\n-\n\nSubtotal\n\n-\n\n-\n\n3\n\n-\n\n-\n\n17\n\n4\n\n5\n\n-\n\nYamanashi\n\nKōfu\n\n-\n\n-\n\n1\n\n-\n\n-\n\n-\n\n1\n\n1\n\n-\n\nFuefuki\n\n-\n\n-\n\n1\n\n-\n\n-\n\n2\n\n-\n\n-\n\n-\n\nSubtotal\n\n-\n\n-\n\n2\n\n-\n\n-\n\n4\n\n1\n\n1\n\n-\n\nNagano\n\nKomagane\n\n-\n\n-\n\n1\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\nSubtotal\n\n-\n\n-\n\n1\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\nShizuoka\n\nFuji\n\n-\n\n-\n\n1\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\nGotemba\n\n-\n\n-\n\n2\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\nSubtotal\n\n-\n\n-\n\n3\n\n-\n\n-\n\n13\n\n-\n\n-\n\n-\n\nMie\n\nYokkaichi\n\n-\n\n-\n\n1\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\nSubtotal\n\n-\n\n-\n\n1\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\nOsaka\n\nYokkaichi\n\n-\n\n-\n\n1\n\n-\n\n-\n\n-\n\n3\n\n-\n\n-\n\nSubtotal\n\n-\n\n-\n\n1\n\n-\n\n-\n\n-\n\n3\n\n-\n\n-\n\nKōchi\n\nKuroshio\n\n-\n\n-\n\n1\n\n-\n\n-\n\n-\n\n3\n\n-\n\n-\n\nSubtotal\n\n-\n\n-\n\n1\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\nTotal\n\n19,759\n\n2,553\n\n6,242\n\n122,006\n\n283,160\n\n749,934\n\n14,527\n\n92,892\n\n330\n\nThe official figures released in 2021 reported 19,759 deaths,[218] 6,242 injured,[219] and 2,553 missing.[220] There were 10,567 deaths in Miyagi, 5,145 in Iwate, 3,920 in Fukushima, 66 in Ibaraki, 22 in Chiba, eight in Tokyo, six in Kanagawa, four in Tochigi, three each in Aomori and Yamagata, and one each in Gunma, Saitama and Hokkaido.[42] The leading causes of death were drowning (90.64% or 14,308 bodies), burning (0.9% or 145 bodies) and others (4.2% or 667 bodies, mostly crushed by heavy objects).[216] Injuries related to nuclear exposure or the discharge of radioactive water in Fukushima are difficult to trace as 60% of the 20,000 workers on-site declined to participate in state-sponsored free health checks.[221]\n\nElderly aged over 60 account for 65.8% of all deaths, as shown on the table to the right.[216]\n\nFor the purpose of relief fund, an \"earthquake-related death\" was defined to include \"Physical and mental fatigue caused by life in temporary shelter\", \"Physical and mental fatigue caused by evacuation\", \"Delayed treatment due to an inoperative hospital\", \"Physical and mental fatigue caused by stress from the earthquake and tsunami\". A few cases of suicide are also included. Most of these deaths occurred during the first six months after the earthquake and the number dropped thereafter, but as time has passed, the number has continued to increase. Most of these deaths occurred in Fukushima Prefecture, where the prefectural government has suggested that they could be due to evacuations caused by the Fukushima Daiichi nuclear disaster.[222] Within Fukushima Prefecture, these indirect casualties have already resulted in more deaths than the number of people killed directly by earthquake and tsunami.[223][224][225]",
+        "representative_chunk_id": "2011_Tōhoku_earthquake_and_tsunami.html#section-014-01",
+        "section_title": "Key statistics",
+        "section_path": [
+          "Casualties",
+          "Japan",
+          "Key statistics"
+        ],
+        "retrieval_query": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+        "discovered_by": "vector",
+        "rank": 2,
+        "raw_score": 1.0283595323562622,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "1964_Alaska_earthquake.html",
+        "representative_chunk": "Article: 1964 Alaska earthquake\nSection: Death toll, damage, and casualties > Elsewhere\n\nA winter scene of a \"ghost forest\" that was killed and preserved by salt water along with ruined buildings at the site of the former town of Portage, 2011\n\nTen people were killed by the tsunami in Crescent City, California, and one other man was killed near Requa, California after being swept out to sea while fishing in the Klamath River.[23][24] Four children were killed while camping with their parents on the Oregon coast at Beverly Beach State Park.[24][25] An additional death that is sometimes attributed to the tsunami took place in Bolinas, California; a fisherman wading into a seaside channel at Duxbury Point was swept into the ocean by a strong surge that took place 13 hours after the initial tidal surge.[24][26] Crescent City was particularly hard-hit, with 30 blocks destroyed, representing half of the city's waterfront business district.[27] The total damage to Crescent City was estimated at $7.4 million[28] ($76 million in 2025 dollars). Other coastal towns and harbors in the Pacific Northwest, California, and Hawaii were damaged, often extensively. Damage to harbors and boats occurred as far south as Long Beach, California.[24][29] Effects of the earthquake were even noted as far east as Freeport, Texas, where tide gauges recorded waves similar to seismic surface waves.[30] Seiches were detected in wells in countries around the world, including England, Namibia, and Australia.[18]: 145",
+        "representative_chunk_id": "1964_Alaska_earthquake.html#section-007-00",
+        "section_title": "Elsewhere",
+        "section_path": [
+          "Death toll, damage, and casualties",
+          "Elsewhere"
+        ],
+        "retrieval_query": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+        "discovered_by": "vector",
+        "rank": 3,
+        "raw_score": 1.0289876461029053,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      }
+    ],
+    "article_reviews": [
+      {
+        "source_article": "Lists_of_earthquakes.html",
+        "relevant": true,
+        "reason": "This list article contains the deadliest earthquakes table needed to filter by date and fatalities.",
+        "relevant_sections": [
+          "Deadliest earthquakes"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [
+          "table-001-41923bbcc1"
+        ],
+        "needs_table_reader": true
+      },
+      {
+        "source_article": "2011_Tōhoku_earthquake_and_tsunami.html",
+        "relevant": false,
+        "reason": "This is a single earthquake article, not the source for the deadliest-earthquakes list and its date/fatality filtering.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "1964_Alaska_earthquake.html",
+        "relevant": false,
+        "reason": "This article is about one earthquake and has no listed tables for the deadliest-earthquakes table being queried.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      }
+    ],
+    "selected_articles": [
+      "Lists_of_earthquakes.html"
+    ],
+    "rejected_articles": [
+      "2011_Tōhoku_earthquake_and_tsunami.html",
+      "1964_Alaska_earthquake.html"
+    ],
+    "evidence": [
+      {
+        "evidence_id": "Lists_of_earthquakes.html#section-001-00",
+        "source_article": "Lists_of_earthquakes.html",
+        "content": "Article: Lists of earthquakes\nSection: Deadliest earthquakes\n\nSee also: List of deadliest 20th-century earthquakes per year and List of deadliest 21st-century earthquakes per year\n\nThe following is a summary list of earthquakes with over approximately 100,000 deaths.[1] The 893 Ardabil earthquake is most likely the same as the 893 Dvin earthquake, due to misreading of the Arabic word for Dvin, \"Dabil\" as \"Ardabil\".[2][3]\n\nEvent\n\nDate\n\nLocation\n\nFatal­ities\n\nMagni­tude\n\nNotes on fatalities\n\n1976 Tangshan earthquake\n\nJuly 27, 1976\n\nHebei, China\n\n300,000+[4]\n\n7.6\n\nInternal Tangshan reports found 263,299 local deaths. Official nationwide deaths stated to be 242,769. Scholars estimated >300,000.[4][5]\n\n1920 Haiyuan earthquake\n\nDecember 16, 1920\n\nNingxia–Gansu, China\n\n273,400\n\n7.8\n\nPreviously cited death toll was 230,000 and this figure was revised in 2010.[6][7]\n\n526 Antioch earthquake\n\nMay 21, 526\n\nAntioch, Byzantine Empire (modern-day Turkey)\n\n250,000[8]\n\n7.0[9]\n\nProcopius (II.14.6), sources based on John of Ephesus.\n\n1139 Ganja earthquake\n\nSeptember 30, 1139\n\nGanja, Seljuk Empire (modern-day Azerbaijan)\n\n230,000–300,000[10]\n7.0 Mw \nDeath toll may have been a historical conflation with earthquakes on November 1137 in the Jazira plain and the 1138 Aleppo earthquake.[11]\n\n2004 Indian Ocean earthquake and tsunami\n\nDecember 26, 2004\n\nSumatra, Indonesia\n\n227,898\n\n9.2\n\nDeath toll includes those missing and presumed dead.[10]\n\n1303 Hongdong earthquake\n\nJuly 25, 1303\n\nShanxi, Yuan dynasty (modern-day China)\n\n200,000[12]\n\n8.0\n\n856 Damghan earthquake\n\nDecember 22, 856\n\nDamghan, Abbasid Caliphate (modern-day Iran)\n\n200,000\n\n7.9 Ms\n\n1138 Aleppo earthquake\n\nOctober 11, 1138\n\nAleppo, Seljuk Empire (modern-day Syria)\n\n130,000–230,000[13]\n\n7.1[13]\n\nThe figure of 230,000 dead is based on a historical conflation of this earthquake with earthquakes in November 1137 on the Jazira plain and the 1139 Ganja earthquake in the Azerbaijani city of Ganja. The first mention of a 230,000 death toll was by Ibn Taghribirdi in the fifteenth century.[11]\n\n533 Aleppo earthquake\n\nNovember 29, 533\n\nAleppo, Byzantine Empire (modern-day Syria)\n\n130,000[14]\nUnknown\n\n1908 Messina earthquake\n\nDecember 28, 1908\n\nMessina, Kingdom of Italy\n\n120,000[15]\n\n7.1 Ms \n\nThe epicentre was in the Strait of Messina which separates Sicily from the Italian mainland, affecting also the city of Reggio Calabria.[16]\n\n1948 Ashgabat earthquake\n\nOctober 5, 1948\n\nAshgabat, Turkmen SSR (modern-day Turkmen­istan)\n\n110,000\n\n7.3 Ms\n\nPreviously cited death toll was 10,000 until a news release on December 9, 1988, advised that the correct death toll was 110,000.[10]\n\n1923 Great Kantō earthquake\n\nSeptember 1, 1923\n\nKantō region, Japan\n\n105,385[17]\n\n7.9\n\nCasualty estimates range from 100,000 to 142,800, the latter figure including 40,000 missing later presumed dead.\n\n1556 Shaanxi earthquake\n\nJanuary 23, 1556\n\nShaanxi, modern-day China\n\n100,000\n\n8.0\n\nDirect deaths thought to be just over 100,000 while about 730,000 people died from famines or migrated elsewhere.[18][19][20][21]\n\n2010 Haiti earthquake\n\nJanuary 12, 2010\n\nHaiti\n\n46,000–316,000\n\n7.0\n\nEstimates vary from 316,000 (Haitian government) to 222,570 (UN OCHA estimate)[22] to 158,000 (Medicine, Conflict and Survival) to between 46,000 and 85,000 (report commissioned by USAID).[23][24]\n\n1290 Zhili earthquake\n\nSeptember 27, 1290\n\nNingcheng, Yuan dynasty (modern-day China)\n\n7,000–100,000\n\n6.8 Ms \n\nEstimates also suggests lower values of at least 7,000.[25]",
+        "evidence_type": "text",
+        "title": "Deadliest earthquakes",
+        "section_path": [
+          "Deadliest earthquakes"
+        ],
+        "retrieval_query": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.7435181140899658,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Deadliest earthquakes",
+          "needs_table_reader": true,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "table-001-41923bbcc1"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Lists_of_earthquakes.html#table-001-41923bbcc1#computed-table-r1-1-dace40610711",
+        "source_article": "Lists_of_earthquakes.html",
+        "content": "Deterministic table-computation result. Use the computed rows/calculation below rather than recomputing them.\n{\n  \"table_request\": {\n    \"missing_fact\": \"Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.\",\n    \"source_article\": \"Lists_of_earthquakes.html\",\n    \"table_id\": \"table-001-41923bbcc1\",\n    \"expected_caption\": null,\n    \"operation\": \"auto\",\n    \"columns_needed\": [],\n    \"row_filters\": {},\n    \"comparison_key\": null\n  },\n  \"query_plan\": {\n    \"artifact_id\": \"03f3ff2f648c9549d23585b4\",\n    \"operation\": \"filter\",\n    \"selected_columns\": [\n      \"Event\",\n      \"Date\",\n      \"Fatal­ities\",\n      \"Notes on fatalities\"\n    ],\n    \"filters\": {},\n    \"predicates\": [\n      {\n        \"column\": \"Date\",\n        \"op\": \"year_min_gte\",\n        \"value\": 1976,\n        \"value2\": null\n      },\n      {\n        \"column\": \"Fatal­ities\",\n        \"op\": \"num_any_gt\",\n        \"value\": 100000,\n        \"value2\": null\n      }\n    ],\n    \"group_by\": [],\n    \"calculation\": null,\n    \"calculation_column\": null,\n    \"sort_column\": null,\n    \"sort_direction\": null,\n    \"limit\": 20\n  },\n  \"result\": {\n    \"request_id\": \"table-r1-1-dace40610711\",\n    \"artifact_id\": \"03f3ff2f648c9549d23585b4\",\n    \"result_rows\": [],\n    \"calculation\": null,\n    \"source_cells\": [],\n    \"cell_details\": [],\n    \"sufficient\": false,\n    \"warnings\": [\n      \"Superscript/subscript annotations are available in row_cells.\",\n      \"No table rows matched the query-plan filters.\"\n    ]\n  }\n}",
+        "evidence_type": "table",
+        "title": "Computed table result: Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+        "section_path": [
+          "Deadliest earthquakes"
+        ],
+        "retrieval_query": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "03f3ff2f648c9549d23585b4",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "table_computation",
+          "table_request_id": "table-r1-1-dace40610711",
+          "operation": "filter",
+          "calculation": null,
+          "table_computation_sufficient": false,
+          "warnings": [
+            "Superscript/subscript annotations are available in row_cells.",
+            "No table rows matched the query-plan filters."
+          ]
+        }
+      },
+      {
+        "evidence_id": "Lists_of_earthquakes.html#section-014-00",
+        "source_article": "Lists_of_earthquakes.html",
+        "content": "Article: Lists of earthquakes\nSection: See also\n\nEarth sciences portal\n\nList of deadly earthquakes since 1900\n\nList of historical earthquakes\n\nList of megathrust earthquakes\n\nList of natural disasters by death toll\n\n<h2",
+        "evidence_type": "text",
+        "title": "See also",
+        "section_path": [
+          "See also"
+        ],
+        "retrieval_query": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+        "retriever": "vector",
+        "rank": 2,
+        "raw_score": 0.775002121925354,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "Lists_of_earthquakes.html#section-008-00",
+        "source_article": "Lists_of_earthquakes.html",
+        "content": "Article: Lists of earthquakes\nSection: Most studied earthquakes\n\nThe 50 most studied earthquakes according to the International Seismological Centre (ISC), based on a count of scientific papers (mostly in English) that discuss that earthquake. The \"Event #\" is linked to the ISC Event Bibliography for that event.\n\nRank\nEvent origin time\nISC Event #\nPapers\nISC code\nEvent\n\n1\n\n2011-03-11 05:46:23\n16461282\n2069\nTOHOKU2011\n2011 Tōhoku earthquake and tsunami\n\n2\n\n2008-05-12 06:28:00\n13228121\n1706\nWENCHUAN2008\n2008 Sichuan earthquake\n\n3\n\n2004-12-26 00:58:52\n7453151\n967\nSUMATRA2004\n2004 Indian Ocean earthquake and tsunami\n\n4\n\n1999-09-20 17:47:16\n1718616\n771\nCHI-CHI1999\n1999 Jiji earthquake\n\n5\n\n1995-01-16 20:46:51\n124708\n558\nSHYOGO1995\n1995 Great Hanshin earthquake\n\n6\n\n2010-02-27 06:34:13\n14340585\n551\nMAULE2010\n2010 Chile earthquake\n\n7\n\n1994-01-17 12:30:54\n189275\n548\nNORTHRIDGE1994\n1994 Northridge earthquake\n\n8\n\n2009-04-06 01:32:42\n13438018\n525\nLAQUILA2009\n2009 L'Aquila earthquake\n\n9\n\n1989-10-18 00:04:14\n389808\n520\nLOMAPRIETA1989\n1989 Loma Prieta earthquake\n\n10\n\n2015-04-25 06:11:26\n607208674\n516\nGORKHA2015\n2015 Nepal earthquake\n\n11\n\n1992-06-28 11:57:35\n289086\n440\nLANDERS1992\n1992 Landers earthquake\n\n12\n\n1999-08-17 00:01:38\n1655218\n428\nIZMIT1999\n1999 İzmit earthquake\n\n13\n\n2016-04-15 16:25:06\n610289055\n366\nKUMAMOTO2016\n2016 Kumamoto earthquakes\n\n14\n\n2013-04-20 00:02:47\n607304721\n342\nLUSHAN2013\n2013 Lushan earthquake\n\n15\n\n1964-03-28 03:36:13\n869809\n333\nALASKA1964\n1964 Alaska earthquake\n\n16\n\n1960-05-22 19:11:20\n879136\n290\nVALDIVIA1960\n1960 Valdivia earthquake\n\n17\n\n2023-02-06 01:17:34\n625613033\n277\nTURKYIE-SYRIA2023\n2023 Turkey–Syria earthquakes\n\n18\n\n2016-08-24 01:36:33\n611462212\n259\nAMATRICE2016\n2016 Central Italy earthquake\n\n19\n\n2010-09-03 16:35:46\n15155483\n257\nDARFIELD2010\n2010 Canterbury earthquake\n\n20\n\n2001-01-26 03:16:40\n1763683\n256\nBHUJ2001\n2001 Gujarat earthquake\n\n21\n\n1985-09-19 13:17:50\n516095\n253\nMEXICOCITY1985\n1985 Mexico City earthquake\n\n22\n\n2022-01-15 04:14:45\n621831271\n252\nHUNGATONGAHUNGAAPAI2022\n2022 Hunga Tonga–Hunga Haʻapai eruption and tsunami\n\n23\n\n2016-11-13 11:02:59\n615035032\n251\nKAIKOURA2016\n2016 Kaikōura earthquake\n\n24\n\n1971-02-09 14:00:40\n787038\n244\nSANFERNANDO1971\n1971 San Fernando earthquake\n\n25\n\n1976-07-27 19:42:53\n711732\n235\nTANGSHAN1976\n1976 Tangshan earthquake\n\n26\n\n2003-09-25 19:50:07\n7134409\n221\nTOKACHI-OKI2003\n2003 Tokachi earthquake\n\n27\n\n2019-07-06 03:19:55\n616203758\n221\nRIDGECREST2019B\n2019 Ridgecrest earthquakes\n\n28\n\n1980-11-23 18:34:52\n635924\n212\nIRPINIA1980\n1980 Irpinia earthquake\n\n29\n\n2004-10-23 08:55:58\n7421058\n205\nMID-NIIGATA2004\n2004 Chūetsu earthquake\n\n30\n\n2012-05-20 02:03:53\n601025379\n205\nEMILIA2012A\n2012 Northern Italy earthquakes\n\n31\n\n2011-02-21 23:51:42\n16168897\n204\nCHRISTCHURCH2011\n2011 Christchurch earthquake\n\n32\n\n1976-05-06 20:00:12\n713583\n199\nFRIULI1976\n1976 Friuli earthquake\n\n33\n\n2005-03-28 16:09:35\n7486110\n197\nNIAS2005\n2005 Nias–Simeulue earthquake\n\n34\n\n2004-09-28 17:15:24\n7406045\n197\nPARKFIELD2004\n2004 Parkfield earthquake\n\n35\n\n2023-02-06 10:24:50\n625614289\n195\nTURKYIE-SYRIA2023A\n2023 Turkey–Syria earthquakes\n\n36\n\n2016-10-30 06:40:19\n609624987\n194\nNORCIA2016\n2016 Central Italy earthquakes\n\n37\n\n1923-09-01 02:58:35\n911526\n193\nKANTO1923\n1923 Great Kantō earthquake\n\n38\n\n1999-10-16 09:46:45\n1643776\n184\nHECTOR-MINE1999\n1999 Hector Mine earthquake\n\n39\n\n2005-10-08 03:50:37\n7703077\n181\nKASHMIR2005\n2005 Kashmir earthquake\n\n40\n\n2017-08-08 13:19:49\n610874246\n178\nJUIZHAIGOU2017\n2017 Jinghe earthquake\n\n41\n\n2001-11-14 09:26:12\n2331800\n176\nKUNLUN2001\n2001 Kunlun earthquake\n\n42\n\n2015-09-16 22:54:30\n611531714\n175\nILLAPEL2015\n2015 Illapel earthquake\n\n43\n\n2014-04-01 23:46:47\n610102185\n167\nIQUIQUE2014\n2014 Iquique earthquake\n\n44\n\n2021-05-21 18:04:13\n620437814\n166\nMADUO2021\n2021 Maduo earthquake\n\n45\n\n1979-10-15 23:16:57\n657282\n165\nIMPERIAL1979\n1979 Imperial Valley earthquake\n\n46\n\n2002-11-03 22:12:41\n6123395\n164\nDENALI2002\n2002 Denali earthquake\n\n47\n\n1999-11-12 16:57:19\n1650092\n162\nDUZCE1999\n1999 Düzce earthquake\n\n48\n\n2010-04-04 22:40:43\n600257057\n158\nEL-MAYOR-CUCAPAH2010\n2010 Baja California earthquake\n\n49\n\n2019-07-04 17:33:50\n616217956\n158\nRIDGECREST2019A\n2019 Ridgecrest earthquakes\n\n50\n\n2010-01-12 21:53:10\n14226221\n157\nHAITI2010\n2010 Haiti earthquake\n\nModified from figure 2, \"The most studied events\", at the ISC's Overview of the ISC Event Bibliography.\n\nInternational Seismological Centre. Event Bibliography. Thatcham, United Kingdom. 2018.",
+        "evidence_type": "text",
+        "title": "Most studied earthquakes",
+        "section_path": [
+          "Most studied earthquakes"
+        ],
+        "retrieval_query": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+        "retriever": "vector",
+        "rank": 3,
+        "raw_score": 0.8467941880226135,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "Lists_of_earthquakes.html#section-000-00",
+        "source_article": "Lists_of_earthquakes.html",
+        "content": "Article: Lists of earthquakes\nSection: Lead\n\nEarthquakes (6.0+ Mw) between 1900 and 2017\n\nEarthquakes are caused by movements within the Earth's crust and uppermost mantle. They range from weak events detectable only by seismometers, to sudden and violent events lasting many minutes which have caused some of the biggest disasters in human history. Below, there are earthquakes listed by period, region or country, year, magnitude, cost, fatalities, and number of scientific studies.",
+        "evidence_type": "text",
+        "title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+        "retriever": "vector",
+        "rank": 4,
+        "raw_score": 0.8666225671768188,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "Lists_of_earthquakes.html#section-003-00",
+        "source_article": "Lists_of_earthquakes.html",
+        "content": "Article: Lists of earthquakes\nSection: Strongest earthquakes by magnitude\n\nA pie chart comparing the seismic moment release of the three strongest earthquakes for the hundred-year period from 1906 to 2005 with that for all earthquakes of magnitudes <6, 6 to 7, 7 to 8, and >8 for the same period. The 2011 Japan quake would be roughly similar to Sumatra.\nEarthquakes of magnitude 8.0 and greater from 1900 to 2018. The apparent 3D volumes of the bubbles are linearly proportional to their respective fatalities.[33] The colour indicates the continent, and the legend counts the number of quakes for each. Notice the absence of Africa.\n\nFor those which occurred before the development and deployment of seismographs – starting around 1900 – magnitudes are estimated from historical reports of the extent and severity of damage.[34]\n\nRank\n\nDate\n\nLocation\n\nEvent\n\nMagnitude\n\n1\n\nMay 22, 1960\n\nValdivia, Chile\n\n1960 Valdivia earthquake\n\n9.4–9.6[35]\n\n2\n\nMarch 27, 1964\n\nPrince William Sound, Alaska, United States\n\n1964 Alaska earthquake\n\n9.2–9.3[36]\n\nDecember 26, 2004\n\nSumatra, Indonesia\n\n2004 Indian Ocean earthquake\n\n9.2–9.3[37][38]\n\n4\n\nMarch 11, 2011\n\nPacific Ocean, Tōhoku region, Japan\n\n2011 Tōhoku earthquake\n\n9.0–9.1[39][40]\n\n5\n\nNovember 4, 1952\n\nKamchatka, Russian SFSR, Soviet Union\n\n1952 Severo-Kurilsk earthquake\n\n8.8–9.0[41]\n\n6\n\nFebruary 27, 2010\n\nMaule, Chile\n\n2010 Chile earthquake\n\n8.8[42]\n\nJuly 30, 2025\n\nKamchatka, Russia\n\n2025 Kamchatka earthquake\n\n8.8[43]\n\nJanuary 31, 1906\n\nEsmeraldas, Ecuador – Colombia\n\n1906 Ecuador–Colombia earthquake\n\n8.5–8.8[44]\n\n9\n\nFebruary 3, 1965\n\nRat Islands, Alaska, United States\n\n1965 Rat Islands earthquake\n\n8.7[45]\n\nAugust 15, 1950\n\nAssam, India – Tibet, China\n\n1950 Assam–Tibet earthquake\n\n8.7[46]\n\n11\n\nApril 1, 1946\n\nAleutian Islands, Alaska, United States\n\n1946 Aleutian Islands earthquake\n\n8.6[46]\n\nMarch 9, 1957\n\nAndreanof Islands, Alaska, United States\n\n1957 Andreanof Islands earthquake\n\n8.6[46]\n\nMarch 28, 2005\n\nSumatra, Indonesia\n\n2005 Nias–Simeulue earthquake\n\n8.6[46]\n\nApril 11, 2012\n\nSumatra, Indonesia\n\n2012 Indian Ocean earthquakes\n\n8.6[46]\n\n15\n\nNovember 11, 1922\n\nAtacama, Chile\n\n1922 Vallenar earthquake\n\n8.3–8.6[47]\n\nFebruary 1, 1938\n\nBanda Sea, Indonesia (then part of the Dutch East Indies)\n\n1938 Banda Sea earthquake\n\n8.5–8.6\n\n17\n\nMarch 2, 1933\n\nIwate Prefecture, Japan\n\n1933 Sanriku earthquake\n\n8.4–8.5[48]\n\nOctober 13, 1963\n\nKuril Islands, Russian SFSR, Soviet Union\n\n1963 Kuril Islands earthquake\n\n8.5[49]\n\nSeptember 12, 2007\n\nBengkulu Province, Indonesia\n\n2007 Bengkulu earthquakes\n\n8.4–8.5[50]",
+        "evidence_type": "text",
+        "title": "Strongest earthquakes by magnitude",
+        "section_path": [
+          "Strongest earthquakes by magnitude"
+        ],
+        "retrieval_query": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+        "retriever": "vector",
+        "rank": 5,
+        "raw_score": 0.8869372606277466,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "Lists_of_earthquakes.html#section-009-00",
+        "source_article": "Lists_of_earthquakes.html",
+        "content": "Article: Lists of earthquakes\nSection: Lists by time period > By century\n\nBefore 1900\n\n1901–2000\n\n2001–present",
+        "evidence_type": "text",
+        "title": "By century",
+        "section_path": [
+          "Lists by time period",
+          "By century"
+        ],
+        "retrieval_query": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+        "retriever": "vector",
+        "rank": 6,
+        "raw_score": 0.9828110933303833,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "Lists_of_earthquakes.html#section-006-01",
+        "source_article": "Lists_of_earthquakes.html",
+        "content": "Article: Lists of earthquakes\nSection: Strongest earthquakes by magnitude > Strongest earthquakes by magnitude by country/territory\n\nJune 26, 1681\n\n1681 Yangyang earthquake\n\nSouth Sudan\n\n7.2\n\nMay 20, 1990\n\n1990 South Sudan earthquakes\n\nSpain\n\n7.8\n\nMarch 29, 1954\n\n[93]\n\nSri Lanka\n\n5.7\n\nAugust 30, 1973\n\n[213]\n\nSudan\n\n6.0\n\nMay 12, 1938\n\n[214]\n\n Switzerland\n\n6.0–7.1\n\nOctober 18, 1356\n\n1356 Basel earthquake\n\nSyria\n\n7.6 Ms\n\nMay 20, 1202\n\n1202 Syria earthquake\n\nTaiwan\n\n8.2\n\nJune 5, 1920\n\n1920 Hualien earthquake\n\nTajikistan\n\n7.5\n\nJuly 10, 1949\n\n1949 Khait earthquake\n\nTanzania\n\n7.0\n\nJuly 8, 1919\n\n[215]\n\nThailand\n\n6.1\n\nMay 5, 2014\n\n2014 Mae Lao earthquake\n\nTonga\n\n8.3–8.5\n\nJune 26, 1917\n\n1917 Samoa earthquake\n\nTrinidad and Tobago\n\n7.5 Mfa \n\nJanuary 10, 1888\n\n[216]\n\nTunisia\n\n7.2 or less\n\nOctober 9, 859\n\n[217]\n\nTurkey\n\n7.8–8.0 Ms\n\nAugust 17, 1668\n\n1668 North Anatolia earthquake\n\nTurkmenistan\n\n8.2 Ms\n\nJuly 7, 1895\n\n[218]\n\nTuvalu\n\n5.4\n\nFebruary 5, 1983\n\n[219]\n\nUganda\n\n6.5\n\nJune 30, 1952\n\n[220]\n\nUkraine\n\n6.7\n\nSeptember 11, 1927\n\n1927 Crimean earthquakes\n\nUnited Arab Emirates\n\n5.0\n\nMarch 11, 2002\n\n[221]\n\nUnited Kingdom\n\n6.1 ML\n\nJune 7, 1931\n\n1931 Dogger Bank earthquake\n\nUnited States\n\n9.2–9.3\n\nMarch 28, 1964\n\n1964 Alaska earthquake\n\nU.S. Virgin Islands\n\n7.2\n\nNovember 18, 1867\n\n1867 Virgin Islands earthquake and tsunami\n\nUruguay\n\n5.5 Ms\n\nJune 5, 1888\n\n1888 Río de la Plata earthquake\n\nUzbekistan\n\n7.4 Ms\n\nOctober 21, 1907\n\n1907 Qaratog earthquake\n\nVanuatu\n\n8.1\n\nSeptember 20, 1920\n\n[222]\n\nVenezuela\n\n7.6–7.7\n\nApril 29, 1894 & October 29, 1900\n\n1894 Venezuelan earthquake[223] & 1900 San Narciso earthquake\n\nVietnam\n\n6.8\n\nNovember 1, 1935\n\n[224]\n\nWallis and Futuna\n\n7.6\n\nMay 23, 1956\n\n[225]\n\nYemen\n\n6.7\n\nDecember 18, 1908\n\n[226]\n\nZambia\n\n6.5\n\nMay 1, 1919\n\n[227]\n\nZimbabwe\n\n5.5\n\nSeptember 25, 1963\n\n[228]",
+        "evidence_type": "text",
+        "title": "Strongest earthquakes by magnitude by country/territory",
+        "section_path": [
+          "Strongest earthquakes by magnitude",
+          "Strongest earthquakes by magnitude by country/territory"
+        ],
+        "retrieval_query": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+        "retriever": "vector",
+        "rank": 7,
+        "raw_score": 0.9945555925369263,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "Lists_of_earthquakes.html#section-011-00",
+        "source_article": "Lists_of_earthquakes.html",
+        "content": "Article: Lists of earthquakes\nSection: Lists by time period > By year\n\n1900\n\n1901\n\n1902\n\n1903\n\n1904\n\n1905\n\n1906\n\n1907\n\n1908\n\n1909\n\n1910\n\n1911\n\n1912\n\n1913\n\n1914\n\n1915\n\n1916\n\n1917\n\n1918\n\n1919\n\n1920\n\n1921\n\n1922\n\n1923\n\n1924\n\n1925\n\n1926\n\n1927\n\n1928\n\n1929\n\n1930\n\n1931\n\n1932\n\n1933\n\n1934\n\n1935\n\n1936\n\n1937\n\n1938\n\n1939\n\n1940\n\n1941\n\n1942\n\n1943\n\n1944\n\n1945\n\n1946\n\n1947\n\n1948\n\n1949\n\n1950\n\n1951\n\n1952\n\n1953\n\n1954\n\n1955\n\n1956\n\n1957\n\n1958\n\n1959\n\n1960\n\n1961\n\n1962\n\n1963\n\n1964\n\n1965\n\n1966\n\n1967\n\n1968\n\n1969\n\n1970\n\n1971\n\n1972\n\n1973\n\n1974\n\n1975\n\n1976\n\n1977\n\n1978\n\n1979\n\n1980\n\n1981\n\n1982\n\n1983\n\n1984\n\n1985\n\n1986\n\n1987\n\n1988\n\n1989\n\n1990\n\n1991\n\n1992\n\n1993\n\n1994\n\n1995\n\n1996\n\n1997\n\n1998\n\n1999\n\n2000\n\n2001\n\n2002\n\n2003\n\n2004\n\n2005\n\n2006\n\n2007\n\n2008\n\n2009\n\n2010\n\n2011\n\n2012\n\n2013\n\n2014\n\n2015\n\n2016\n\n2017\n\n2018\n\n2019\n\n2020\n\n2021\n\n2022\n\n2023\n\n2024\n\n2025\n\n2026",
+        "evidence_type": "text",
+        "title": "By year",
+        "section_path": [
+          "Lists by time period",
+          "By year"
+        ],
+        "retrieval_query": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+        "retriever": "vector",
+        "rank": 8,
+        "raw_score": 0.9964607954025269,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      }
+    ],
+    "assessment": {
+      "ready_to_answer": true,
+      "supported_requirements": [
+        "The deadliest earthquakes table can be filtered to events dated 1976 or later.",
+        "The table includes at least one post-1976 event with a fatality estimate exceeding 100,000: 1976 Tangshan earthquake with 300,000+ fatalities.",
+        "The article reports the Tangshan death figures/range in multiple forms: 300,000+ in the table, with notes saying internal Tangshan reports found 263,299 local deaths, official nationwide deaths stated to be 242,769, and scholars estimated >300,000."
+      ],
+      "missing_requirements": [],
+      "retrieval_requests": [],
+      "table_requests": [],
+      "unresolved_conflicts": [],
+      "explanation": "The supplied deterministic table-computation result already applied the date and fatalities filters to the deadliest-earthquakes table and returned no matching rows. That is sufficient to determine that no events remain under the rule. The question’s second part asks how the article reports each death figure or range among the remaining events; because there are no remaining events, there is nothing further to list."
+    },
+    "assessment_history": [
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "The deadliest-earthquakes table can be filtered to events dated 1976 or later from the supplied evidence.",
+          "The only event in the supplied table meeting both conditions is the 1976 Tangshan earthquake, since it is dated July 27, 1976 and has a fatality estimate exceeding 100,000 (300,000+).",
+          "The article’s reported death figures/ranges for that event are present: internal Tangshan reports 263,299 local deaths, official nationwide deaths 242,769, and scholars estimated >300,000."
+        ],
+        "missing_requirements": [],
+        "retrieval_requests": [],
+        "table_requests": [
+          {
+            "missing_fact": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+            "source_article": "Lists_of_earthquakes.html",
+            "table_id": "table-001-41923bbcc1",
+            "expected_caption": null,
+            "operation": "auto",
+            "columns_needed": [],
+            "row_filters": {},
+            "comparison_key": null
+          }
+        ],
+        "unresolved_conflicts": [],
+        "explanation": "The supplied table excerpt is sufficient to identify events dated 1976 or later and to check which of those have at least one fatality estimate above 100,000. Only the 1976 Tangshan earthquake qualifies. The excerpt also supplies multiple death figures for that event, which can be reported without erasing disagreements."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "The source article and selected section are identified: Lists_of_earthquakes.html, Deadliest earthquakes.",
+          "The relevant table artifact is identified: table-001-41923bbcc1.",
+          "The table-computation result shows that applying the exact rule (date >= 1976 and any fatality estimate > 100,000) returns no matching rows."
+        ],
+        "missing_requirements": [
+          "Because the deterministic table result returned no rows, the answer to 'which events remain' is supported as none; however, if you need an explicit explanation of how to report death figures or ranges for remaining events, there are no remaining events to describe under this filter.",
+          "No additional retrieval is needed unless the user expects a broader interpretation of the threshold beyond the computed filter."
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Because the deterministic table result returned no rows, the answer to 'which events remain' is supported as none; however, if you need an explicit explanation of how to report death figures or ranges for remaining events, there are no remaining events to describe under this filter.; No additional retrieval is needed unless the user expects a broader interpretation of the threshold beyond the computed filter.",
+            "query": "Apply this rule to the deadliest-earthquakes table: the event must be dated 1976 or later, and at least one fatality estimate shown for it must exceed 100,000. Which events remain, and how does the article report each death figure or range? Do not erase disagreements among estimates.",
+            "target_articles": [],
+            "keywords": [],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The supplied deterministic table-computation result already applies the requested filter to the deadliest-earthquakes table and finds zero matching events. Therefore the evidence is sufficient to conclude that no events remain under the stated rule. Since there are no remaining rows, there are no death figures or ranges to report, and no disagreement among estimates needs to be preserved for the filtered set."
+      },
+      {
+        "ready_to_answer": true,
+        "supported_requirements": [
+          "The deadliest earthquakes table can be filtered to events dated 1976 or later.",
+          "The table includes at least one post-1976 event with a fatality estimate exceeding 100,000: 1976 Tangshan earthquake with 300,000+ fatalities.",
+          "The article reports the Tangshan death figures/range in multiple forms: 300,000+ in the table, with notes saying internal Tangshan reports found 263,299 local deaths, official nationwide deaths stated to be 242,769, and scholars estimated >300,000."
+        ],
+        "missing_requirements": [],
+        "retrieval_requests": [],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The supplied deterministic table-computation result already applied the date and fatalities filters to the deadliest-earthquakes table and returned no matching rows. That is sufficient to determine that no events remain under the rule. The question’s second part asks how the article reports each death figure or range among the remaining events; because there are no remaining events, there is nothing further to list."
+      }
+    ]
+  }
+}

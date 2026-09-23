@@ -1,0 +1,347 @@
+{
+  "run_id": "2026_09_23_11_55_11",
+  "question_number": 7,
+  "logged_at": "2026-09-23T11:57:48-04:00",
+  "question": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+  "final_state": {
+    "question": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+    "retrieval_attempts": 2,
+    "table_attempts": 0,
+    "article_candidates": [
+      {
+        "source_article": "100_metres.html",
+        "representative_chunk": "Article: 100 metres\nSection: Record performances\n\nUsain Bolt breaking the world and Olympic records at the 2008 Beijing Olympics\n\nMajor 100 m races, such as at the Olympic Games, attract much attention, particularly when the world record is thought to be within reach.\n\nThe men's world record has been improved upon twelve times since electronic timing became mandatory in 1977.[18] The current men's world record of 9.58 s is held by Usain Bolt of Jamaica, set at the 2009 World Athletics Championships final in Berlin, Germany on 16 August 2009, breaking his own previous world record by 0.11 s.[19] The current women's world record of 10.49 s was set by Florence Griffith-Joyner of the US, at the 1988 United States Olympic Trials in Indianapolis, Indiana, on 16 July 1988[20] breaking Evelyn Ashford's four-year-old world record by 0.27 seconds. The extraordinary nature of this result and those of several other sprinters in this race raised the possibility of a technical malfunction with the wind gauge which read at 0.0 m/s – a reading which was at complete odds to the windy conditions on the day with high wind speeds being recorded in all other sprints before and after this race as well as the parallel long jump runway at the time of the Griffith-Joyner performance. The next best wind legal performance is Elaine Thompson-Herah's 10.54 second clocking in 2021 at the Prefontaine Classic. Griffith-Joyner's next best legal performance of 10.61 from 1988, would have her third on the all-time list behind Thompson-Herah and Shelly-Ann Fraser-Pryce (10.60).[21]\n\nSome records have been marred by prohibited drug use – in particular, the scandal at the 1988 Summer Olympics when the winner, Canadian Ben Johnson, was stripped of his medal and world record.\n\nJim Hines, Ronnie Ray Smith and Charles Greene were the first to break the 10-second barrier in the 100 m, all on 20 June 1968, the Night of Speed. Hines also recorded the first legal electronically timed sub-10 second 100 m in winning the 100 metres at the 1968 Olympics. Bob Hayes ran a wind-assisted 9.91 seconds at the 1964 Olympics.",
+        "representative_chunk_id": "100_metres.html#section-006-00",
+        "section_title": "Record performances",
+        "section_path": [
+          "Record performances"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "discovered_by": "vector",
+        "rank": 1,
+        "raw_score": 0.735671877861023,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Usain_Bolt.html",
+        "representative_chunk": "Article: Usain Bolt\nSection: Statistics > Personal bests\n\nEvents tracked by World Athletics, the international governing body for the sport of athletics:\n\nEvent and Time\n\nDate and Venue\n\nRecords\n\nNotes\n\n100 metres in 9.58 seconds\n\n16 August in the 2009 World Championships in Athletics in Berlin, Germany\n\nWR\n\nEquivalent to an average ground speed of 10.44 m/s, 37.58 km/h, or 23.35 mph. Once his reaction time of 0.146 seconds is subtracted, his time is 9.434 seconds, or 10.6 m/s, 38.16 km/h, or 23.71 mph.[142] Bolt's top speed, based on his split time of 1.61 seconds for the 20 metres from the 60- to 80-metre marks (made during the 9.58 WR at 100 m), is 12.42 m/s, 44.72 km/h, or 27.79 mph.[348] He also has the second fastest time (9.63) and shares the third fastest time of 9.69 with Tyson Gay and Yohan Blake. Bolt's 9.63 is the Olympic record, set at the 2012 games.\n\n200 metres in 19.19 seconds\n\n20 August in the 2009 World Championships in Athletics in Berlin, Germany\n\nWR\n\nEquivalent to an average ground speed of 10.42 m/s, 37.52 km/h, or 23.31 mph. Also holds the Olympic record with 19.30, which was then (2008) a world record.\n\n400 metres in 45.28 seconds\n\n5 May 2007 in Kingston, Jamaica\n\n[1]\n\n4 × 100 metres relay in 36.84 seconds\n\n11 August in the 2012 Summer Olympics in London, England\n\nWR\n\nShared with Yohan Blake, Michael Frater and Nesta Carter.\n\nThe following events are not regulated by World Athletics, and are not tracked as official world records:\n\nEvent and Time\n\nDate and Venue\n\nRecords\n\nNotes\n\n60 metres in 6.31 seconds\n\n16 August in the 2009 World Championships in Athletics in Berlin, Germany\n\nWB\n\n100 metres indoors in 9.98 seconds\n\n23 Aug 2014 in the Kamila Skolimowska Memorial in Warsaw, Poland\n\nWB\n\n150 metres in 14.44 seconds\n\n20 August in the 2009 World Championships in Athletics in Berlin, Germany\n\nWB\n\n150 metres straight in 14.35 seconds\n\n17 May 2009 in the Great CityGames in Manchester, England\n\nWB\n\nEquivalent to an average ground speed of 10.45 m/s, 37.63 km/h, or 23.38 mph. He ran the last 100 m in 8.70, the fastest ever recorded time over a 100 m distance. This would equal an average speed of 11.49 m/s, 41.38 km/h, or 25.71 mph.\n\n300 metres in 30.97 seconds\n\n27 May 2010 in the Golden Spike Ostrava in Ostrava, Czech Republic\n\nNR\n\nThis is the fourth fastest time, behind Letsile Tebogo 30.69, Wayde van Niekerk 30.81 & Michael Johnson 30.85.\n\nSwedish relay in 1:46.59\n\n25 Jul 2006 in the DN-Galan in Stockholm, Sweden\n\nWB\n\nChristopher Williams ran 100 metres, Usain Bolt ran 200, Davian Clarke ran 300, and Jermaine Gonzales ran 400.",
+        "representative_chunk_id": "Usain_Bolt.html#section-026-00",
+        "section_title": "Personal bests",
+        "section_path": [
+          "Statistics",
+          "Personal bests"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "discovered_by": "vector",
+        "rank": 2,
+        "raw_score": 0.8284944295883179,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Four-minute_mile.html",
+        "representative_chunk": "Article: Four-minute mile\nSection: Record holders\n\nBannister and Landy racing in Vancouver, August 1954\nStatue in Vancouver commemorating the \"Miracle Mile\" between Bannister and Landy\nCurrent mile world record holder Hicham El Guerrouj (left) at the start of a race\n\nOn 30 October 1863, William Lang ran a downhill mile time trial in 4:02 in Newmarket, Suffolk, England.[6][7] Due to the downhill slope, the time would not have been valid for record-keeping but nonetheless remained the fastest mile ever run until 1943, and began speculation about when the first sub-four-minute mile would be performed.[8][9]\n\nThe four-minute barrier was first broken on 6 May 1954 at Oxford University's Iffley Road Track, by British athlete Roger Bannister,[10] with the help of fellow runners Chris Chataway and Chris Brasher as pacemakers.[11]\n\nOn 21 June 1954, at an international meet at Turku, Finland, John Landy of Australia became the second man, after Bannister, to achieve a sub-four-minute mile. He achieved a world record time of 3:57.9, ratified by the IAAF as 3:58.0 owing to the rounding rules then in effect. He held this record for more than three years.[12]\n\nTwo months later, on 7 August, during the 1954 British Empire and Commonwealth Games hosted in Vancouver, B.C., Landy and Bannister both ran the distance of one mile in under four minutes. The race's end is memorialised in a photo, and later a statue, of the two, with Landy looking over his left shoulder, just as Bannister is passing him on the right. Landy thus lost the race. The statue was placed in front of the Pacific National Exhibition entrance plaza.[13] Bannister won in 3:58.8, with Landy 0.8 seconds behind at 3:59.6.\n\nNew Zealand's John Walker ran 135 sub-four-minute miles during his career, became the first person to run over 100 sub-four-minute miles, and with a 3:49.4 performance in August 1975 became the first man to run the mile under 3:50. American Steve Scott has run the most sub-four-minute miles, with 136. Algeria's Noureddine Morceli was the first under 3:45. Currently, the mile record is held by Morocco's Hicham El Guerrouj, who ran a time of 3:43.13 in Rome in 1999.\n\nAn illustration of the progression of performance in the men's mile is that, in 1994, forty years after Bannister's breaking of the barrier, the Irish runner Eamonn Coghlan became the first man over the age of 40 to run a sub-four-minute mile.[14] Because Coghlan surpassed the mark indoors and before the IAAF validated indoor performances as being eligible for outdoor records, World Masters Athletics still had not recognised a sub-4-minute-mile performance as a record in the M40 division. Many elite athletes made the attempts to extend their careers beyond age 40 to challenge that mark. Over 18 years after Coghlan, that was finally achieved by Britain's Anthony Whiteman, running 3:58.79 on 2 June 2012.[15]\n\nIn 1997, Daniel Komen of Kenya ran two miles in less than eight minutes, doubling up on Bannister's accomplishment.[16] He did it again in February 1998, falling just 0.3 seconds behind his previous performance of 7:58.61. On 9 June 2023, Norwegian runner Jakob Ingebrigtsen bested that time, running 7:54.10 to become only the second individual to run two miles in less than eight minutes.",
+        "representative_chunk_id": "Four-minute_mile.html#section-001-00",
+        "section_title": "Record holders",
+        "section_path": [
+          "Record holders"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "discovered_by": "vector",
+        "rank": 3,
+        "raw_score": 0.8892468214035034,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Jim_Hines.html",
+        "representative_chunk": "Article: Jim Hines\nSection: Track career\n\nThis section needs additional citations for verification. Please help improve this article by adding citations to reliable sources in this section. Unsourced material may be challenged and removed. (June 2023) (Learn how and when to remove this message)\n\nBorn in Dumas, Arkansas, Hines was raised in Oakland, California, and graduated from McClymonds High School in 1964. He was a baseball player in his younger years[3] until he was spotted by track coach Jim Coleman as a running talent, and Hines became a sprinter. At the 1968 U.S. national championships in Sacramento, California, Hines became the first man to break the ten second barrier in the 100-metre race, setting 9.9 (manual timing), with an electronic time of 10.03 – two other athletes, Ronnie Ray Smith behind him (electronic time 10.13) and Charles Greene on the other semi-final (electronic time 10.09) having the same official clocking. That evening of June 20, 1968, at Hughes Stadium has been dubbed by track and field historians as the \"Night of Speed\".[4] Hines attended Texas Southern University in Houston, Texas. He was a member of the Texas Southern University Tigers track team.\n\nA few months later, at the 1968 Summer Olympics, Hines – a black athlete – found himself in a tense situation, with racial riots going on in his home country and a threat of a boycott by the black athletes of the U.S. team, who were disturbed by the controversial idea of admitting apartheid South Africa to the Games and revelations linking the head of the International Olympic Committee, Avery Brundage, to a racist and antisemitic country club. Hines reached the 100 m final, and won it with the time 9.89 appearing on the screen, later corrected to 9.95. The 9.89 was taken from a light beam across the finish line, while the official photographic process used Polaroid film and took a couple of minutes to process and read. There was some controversy over how his (slower appearing) automatic time of 9.95 should compare to the hand timed 9.9 world record (Hines was again recorded at 9.9 in his 9.95 race). Automatic times start instantly with the sound of the gun, while hand times include human reaction time to start the watch. It took until 1977 before fully automatic timing was required of world records. As the fastest electronic time to that point, Hines' mark was recognized exclusively as a new world record.[5] The race was also significant for being the third all-black podium in Olympic history. Hines helped break another world record, when he and his teammates sprinted to the 4 × 100 m relay gold at the same Games.",
+        "representative_chunk_id": "Jim_Hines.html#section-001-00",
+        "section_title": "Track career",
+        "section_path": [
+          "Track career"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "discovered_by": "vector",
+        "rank": 4,
+        "raw_score": 0.8949576616287231,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      }
+    ],
+    "article_reviews": [
+      {
+        "source_article": "100_metres.html",
+        "relevant": true,
+        "reason": "This article covers the 100 metres record performances and is the right source for identifying the men's world record details.",
+        "relevant_sections": [
+          "Record performances"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Usain_Bolt.html",
+        "relevant": false,
+        "reason": "This biography may mention Bolt’s records, but the specific world-record performance passage belongs in the 100 metres article.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Four-minute_mile.html",
+        "relevant": false,
+        "reason": "This article is about the mile, not the 100 metres.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Jim_Hines.html",
+        "relevant": false,
+        "reason": "This biography is not the primary source for the 100 metres world-record passage asked about.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      }
+    ],
+    "selected_articles": [
+      "100_metres.html"
+    ],
+    "rejected_articles": [
+      "Usain_Bolt.html",
+      "Four-minute_mile.html",
+      "Jim_Hines.html"
+    ],
+    "evidence": [
+      {
+        "evidence_id": "100_metres.html#section-006-00",
+        "source_article": "100_metres.html",
+        "content": "Article: 100 metres\nSection: Record performances\n\nUsain Bolt breaking the world and Olympic records at the 2008 Beijing Olympics\n\nMajor 100 m races, such as at the Olympic Games, attract much attention, particularly when the world record is thought to be within reach.\n\nThe men's world record has been improved upon twelve times since electronic timing became mandatory in 1977.[18] The current men's world record of 9.58 s is held by Usain Bolt of Jamaica, set at the 2009 World Athletics Championships final in Berlin, Germany on 16 August 2009, breaking his own previous world record by 0.11 s.[19] The current women's world record of 10.49 s was set by Florence Griffith-Joyner of the US, at the 1988 United States Olympic Trials in Indianapolis, Indiana, on 16 July 1988[20] breaking Evelyn Ashford's four-year-old world record by 0.27 seconds. The extraordinary nature of this result and those of several other sprinters in this race raised the possibility of a technical malfunction with the wind gauge which read at 0.0 m/s – a reading which was at complete odds to the windy conditions on the day with high wind speeds being recorded in all other sprints before and after this race as well as the parallel long jump runway at the time of the Griffith-Joyner performance. The next best wind legal performance is Elaine Thompson-Herah's 10.54 second clocking in 2021 at the Prefontaine Classic. Griffith-Joyner's next best legal performance of 10.61 from 1988, would have her third on the all-time list behind Thompson-Herah and Shelly-Ann Fraser-Pryce (10.60).[21]\n\nSome records have been marred by prohibited drug use – in particular, the scandal at the 1988 Summer Olympics when the winner, Canadian Ben Johnson, was stripped of his medal and world record.\n\nJim Hines, Ronnie Ray Smith and Charles Greene were the first to break the 10-second barrier in the 100 m, all on 20 June 1968, the Night of Speed. Hines also recorded the first legal electronically timed sub-10 second 100 m in winning the 100 metres at the 1968 Olympics. Bob Hayes ran a wind-assisted 9.91 seconds at the 1964 Olympics.",
+        "evidence_type": "text",
+        "title": "Record performances",
+        "section_path": [
+          "Record performances"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.735671877861023,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Record performances",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": []
+        }
+      },
+      {
+        "evidence_id": "100_metres.html#section-007-00",
+        "source_article": "100_metres.html",
+        "content": "Article: 100 metres\nSection: Record performances > Continental records\n\nUpdated 1 August 2025.[22][23]\n\nArea\n\nMen\n\nWomen\n\nTime\n\n(s)\n\nWind\n\n(m/s)\n\nSeason\n\nAthlete\n\nNation\n\nTime\n\n(s)\n\nWind\n\n(m/s)\n\nSeason\n\nAthlete\n\nNation\n\nAfrica (records)\n\n9.77 A\n+1.2\n2021\nFerdinand Omanyala\n Kenya\n10.72\n+0.4\n2022\nMarie-Josée Ta Lou\n Ivory Coast\n\nAsia (records)\n\n9.83\n+0.9\n2021\nSu Bingtian\n China\n10.79\n±0.0\n1997\nLi Xuemei\n China\n\nEurope (records)\n\n9.80\n+0.1\n2021\nMarcell Jacobs\n Italy\n10.73\n+2.0\n1998\nChristine Arron\n France\n\nNorth, Central America\n\nand Caribbean (records)\n\n9.58 WR\n+0.9\n2009\nUsain Bolt\n Jamaica\n10.49 WR\n±0.0\n1988\nFlorence Griffith-Joyner\n United States\n\nOceania (records)\n\n9.93\n+1.8\n2003\nPatrick Johnson\n Australia\n10.94\n+0.6\n2025\nZoe Hobbs\n New Zealand\n\nSouth America (records)\n\n9.93\n+1.5\n2025\nErik Cardoso\n Brazil\n10.91\n−0.2\n2017\nRosângela Santos\n Brazil",
+        "evidence_type": "text",
+        "title": "Continental records",
+        "section_path": [
+          "Record performances",
+          "Continental records"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "retriever": "vector",
+        "rank": 2,
+        "raw_score": 0.7781266570091248,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "100_metres.html#section-000-00",
+        "source_article": "100_metres.html",
+        "content": "Article: 100 metres\nSection: Lead\n\nSprint race\n\nThis article is about the 100 metres race. For lengths on the order of magnitude of 100 metres, see Orders of magnitude (length) § 1 hectometre.\n\nFor other uses, see 100 metres (disambiguation).\n\nAthletics\n\n100 metres\n\nStart of the men's 100 metres final at the\n\n2012 Olympic Games in London\n\nWorld records\n\nMen Usain Bolt (JAM) 9.58 (2009)\n\nWomen Florence Griffith-Joyner (USA) 10.49 (1988)\n\nOlympic records\n\nMen Usain Bolt (JAM) 9.63 (2012)\n\nWomen Elaine Thompson-Herah (JAM) 10.61 (2021)\n\nWorld Championship records\n\nMen Usain Bolt (JAM) 9.58 (2009)\n\nWomen Melissa Jefferson-Wooden (USA) 10.61 (2025)\n\nWorld junior (U20) records\n\nMen Letsile Tebogo (BOT) 9.91 (2022)\n\nWomen Sha'Carri Richardson (USA) 10.75 (2019)\n\nStart (green) and end (red) points of a 100 metre race, marked on a running track\n\nThe 100 metres, or 100-meter dash, is a sprint race in track and field competitions. The shortest common outdoor running distance, the 100-metre (109.36 yd) dash is one of the most popular and prestigious events in the sport of athletics. It has been contested at the Summer Olympics since 1896 for men and since 1928 for women. The inaugural World Championships were in 1983.\n\nOn an outdoor 400-metre running track, the 100 m is held on the home straight, with the start usually being set on an extension to make it a straight-line race. There are three instructions given to the runners immediately before and at the beginning of the race: \"on your marks\", \"set\", and the firing of the starter's pistol. The runners move to the starting blocks when they hear the \"on your marks\" instruction. The following instruction, to adopt the \"set\" position, allows them to adopt a more efficient starting posture and isometrically preload their muscles: this will help them to start faster. A race-official then fires the starter's pistol to signal the race beginning and the sprinters stride forwards from the blocks. Sprinters typically reach top speed after somewhere between 50 and 60 m. Their speed then slows towards the finish line.\n\nWomen's 100 m Final – 2015 World Championships, won by Jamaican sprinter Shelly-Ann Fraser-Pryce\n\nThe 10-second barrier has historically been a barometer of fast men's performances, while the best female sprinters take eleven seconds or less to complete the race. The men's world record is 9.58 seconds, set by Jamaica's Usain Bolt in 2009, while the women's world record is 10.49 seconds, set by American Florence Griffith-Joyner in 1988.[a]\n\nThe 100 metres is considered one of the blue ribbon events of the Olympics and is among the highest profile competitions at the games. It is the most prestigious 100 metres race at an elite level and is the shortest sprinting competition at the Olympics – a position it has held at every edition except for a brief period between 1900 and 1904, when a men's 60 metres was contested. The unofficial \"world's fastest man or woman\" title typically goes to the Olympic or world 100 metres champion.[3][4][5]\nThe 200 metre time almost always yields a \"faster\" average speed than a 100-metre race time, since the initial slow speed at the start is spread out over the longer distance.[6] The current men's Olympic champion is Noah Lyles, while the current world champion is Oblique Seville. The current women's Olympic champion is Julien Alfred, and the world champion is Melissa Jefferson-Wooden.",
+        "evidence_type": "text",
+        "title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "retriever": "vector",
+        "rank": 3,
+        "raw_score": 0.8237656354904175,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "100_metres.html#section-010-00",
+        "source_article": "100_metres.html",
+        "content": "Article: 100 metres\nSection: All-time top 25 men > Annulled marks\n\nTyson Gay (USA) also ran 9.75 (+1.1 m/s) during the USA Championships in Des Moines, Iowa on 21 June 2013, but he was later disqualified after he failed a drug test and his time was subsequently rescinded.[65]\n\nJustin Gatlin (USA) also ran 9.77 (+1.7 m/s) in Doha on 12 May 2006, which at the time equalled the world record and was later ratified. However, that same year, Gatlin tested positive for testosterone and the record was subsequently rescinded.[66]\n\nTim Montgomery (USA) ran 9.78 (+2.0 m/s) in Paris on 14 September 2002, which was at the time ratified as a world record.[67] However, the record was rescinded in December 2005 following his indictment in the BALCO scandal on drug use and drug trafficking charges.[68] The time had stood as the world record until Asafa Powell first ran 9.77.[69]\n\nBen Johnson (CAN) ran 9.79 (+1.1 m/s) during the Olympics in Seoul on 24 September 1988, but he was disqualified after he tested positive for stanozolol after the race. He subsequently admitted to drug use between 1981 and 1988, and also his time of 9.83 (+1.0 m/s) during the World Championships in Rome on 30 August 1987 was rescinded.",
+        "evidence_type": "text",
+        "title": "Annulled marks",
+        "section_path": [
+          "All-time top 25 men",
+          "Annulled marks"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "retriever": "vector",
+        "rank": 4,
+        "raw_score": 0.8393344283103943,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "100_metres.html#section-005-00",
+        "source_article": "100_metres.html",
+        "content": "Article: 100 metres\nSection: 10-second and 11-second barriers\n\nMain article: 10-second barrier\n\nThe 10-second mark had been widely considered a barrier for the 100 metres in men's sprinting. The first man to break the 10 second barrier with automatic timing was Jim Hines at the 1968 Summer Olympics. Since then, more than 200 sprinters have run faster than 10 seconds.[17] Similarly, 11 seconds is considered the standard for female athletes. The first woman to go under 11 seconds was Marlies Göhr in 1977.",
+        "evidence_type": "text",
+        "title": "10-second and 11-second barriers",
+        "section_path": [
+          "10-second and 11-second barriers"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "retriever": "vector",
+        "rank": 5,
+        "raw_score": 0.8631016612052917,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "100_metres.html#section-009-00",
+        "source_article": "100_metres.html",
+        "content": "Article: 100 metres\nSection: All-time top 25 men > Assisted marks\n\nAny performance with a following wind of more than 2.0 metres per second is not counted for record purposes. Below is a list of wind-assisted times (equal or superior to 9.80). Only times that are superior to legal bests are shown:\n\nTyson Gay (USA) ran 9.68 (+4.1 m/s) during the US Olympic Trials in Eugene, Oregon on 29 June 2008.[62]\n\nObadele Thompson (BAR) ran 9.69 (+5.0 m/s) A in El Paso, Texas on 13 April 1996.\n\nAndre De Grasse (CAN) ran 9.69 (+4.8 m/s) during the Diamond League in Stockholm on 18 June 2017,[63] 9.74 (+2.9 m/s) during the Diamond League in Eugene, Oregon on 21 August 2021, and 9.75 (+2.7 m/s) during the NCAA Division I Championships in Eugene, Oregon on 12 June 2015.\n\nRichard Thompson (TTO) ran 9.74 (+5.0 m/s) in Clermont, Florida on 31 May 2014.\n\nDarvis Patton (USA) ran 9.75 (+4.3 m/s) in Austin, Texas on 30 March 2013.\n\nTrayvon Bromell (USA) ran 9.75 (+2.1 m/s) in Jacksonville, Florida on 30 April 2022.\n\nJordan Anthony (USA) ran 9.75 (+2.1 m/s) in College Station, Texas on 30 May 2025.\n\nChurandy Martina (AHO) ran 9.76 (+6.1 m/s) A in El Paso, Texas on 13 May 2006.\n\nCarl Lewis (USA) ran 9.78 (+5.2 m/s) during the US Olympic Trials in Indianapolis, Indiana on 16 July 1988 and 9.80 (+4.3 m/s) during the World Championships in Tokyo on 24 August 1991.\n\nMaurice Greene (USA) ran 9.78 (+3.7 m/s) in Palo Alto, California on 31 May 2004.\n\nRonnie Baker (USA) ran 9.78 (+2.4 m/s) during the Diamond League in Eugene, Oregon on 26 May 2018.\n\nAndre Cason (USA) ran 9.79 (+5.3 m/s) and 9.79 (+4.5 m/s) during the USA Championships in Eugene, Oregon on 16 June 1993.\n\nFavour Ashe (NGR) ran 9.79 (+3.0 m/s) in Baton Rouge, Louisiana on 30 April 2022.\n\nWalter Dix (USA) ran 9.80 (+4.1 m/s) during the US Olympic Trials in Eugene, Oregon on 29 June 2008.\n\nMike Rodgers (USA) ran 9.80 (+2.7 m/s) during the Diamond League in Eugene, Oregon on 31 May 2014 and 9.80 (+2.4 m/s) in Sacramento, California on 27 June 2014.\n\nTerrance Laird (USA) ran 9.80 (+3.2 m/s) in College Station, Texas on 15 May 2021.[64]\n\nMarvin Bracy (USA) ran 9.80 (+2.9 m/s) in Montverde, Florida on 4 June 2022.",
+        "evidence_type": "text",
+        "title": "Assisted marks",
+        "section_path": [
+          "All-time top 25 men",
+          "Assisted marks"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "retriever": "vector",
+        "rank": 6,
+        "raw_score": 0.9390600919723511,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "100_metres.html#section-014-00",
+        "source_article": "100_metres.html",
+        "content": "Article: 100 metres\nSection: World leading times > Men\n\nYear\n\nTime\n\nAthlete\n\nPlace\n\n1972\n\n10.07\n\n Valeriy Borzov (URS)\n\nMunich\n\n1973\n\n10.15\n\n Steve Williams (USA)\n\nDakar\n\n1974\n\n9.9 h\n\n Steve Williams (USA)\n\nLos Angeles\n\n1975\n\n10.05\n\n Steve Riddick (USA)\n\nZürich\n\n1976\n\n10.06\n\n Hasely Crawford (TRI)\n\nMontreal\n\n1977\n\n9.98 A\n\n Silvio Leonard (CUB)\n\nGuadalajara\n\n1978\n\n10.07\n\n Clancy Edwards (USA)\n\nEugene\n\n10.07 A\n\n Eddie Hart (USA)\n\nColorado Springs\n\n10.07\n\n Steve Williams (USA)\n\nZürich\n\n1979\n\n10.01 A\n\n Pietro Mennea (ITA)\n\nMexico City\n\n1980\n\n10.02\n\n James Sanford (USA)\n\nWestwood\n\n1981\n\n10.00\n\n Carl Lewis (USA)\n\nDallas\n\n1982\n\n10.00\n\n Carl Lewis (USA)\n\nModesto\n\n1983\n\n9.93 A\n\n Calvin Smith (USA)\n\nColorado Springs\n\n1984\n\n9.96\n\n Mel Lattany (USA)\n\nAthens\n\n1985\n\n9.98\n\n Carl Lewis (USA)\n\nModesto\n\n1986\n\n10.00\n\n Chidi Imoh (NGR)\n\nBerlin\n\n1987\n\n9.93\n\n Carl Lewis (USA)\n\nRome\n\n1988\n\n9.92\n\n Carl Lewis (USA)\n\nSeoul\n\n1989\n\n9.94\n\n Leroy Burrell (USA)\n\nHouston\n\n1990\n\n9.96\n\n Leroy Burrell (USA)\n\nVilleneuve d'Ascq\n\n9.96 A\n\nSestriere\n\n1991\n\n9.86\n\n Carl Lewis (USA)\n\nTokyo\n\n1992\n\n9.93\n\n Michael Marsh (USA)\n\nWalnut\n\n1993\n\n9.87\n\n Linford Christie (GBR)\n\nStuttgart\n\n1994\n\n9.85\n\n Leroy Burrell (USA)\n\nLausanne\n\n1995\n\n9.91\n\n Donovan Bailey (CAN)\n\nMontreal\n\n1996\n\n9.84\n\n Donovan Bailey (CAN)\n\nAtlanta\n\n1997\n\n9.86\n\n Maurice Greene (USA)\n\nAthens\n\n1998\n\n9.86\n\n Ato Boldon (TRI)\n\nWalnut\n\nAthens\n\n1999\n\n9.79\n\n Maurice Greene (USA)\n\nAthens\n\n2000\n\n9.86\n\n Maurice Greene (USA)\n\nBerlin\n\n2001\n\n9.82\n\n Maurice Greene (USA)\n\nEdmonton\n\n2002\n\n9.89\n\n Maurice Greene (USA)\n\nRome\n\n2003\n\n9.93\n\n Patrick Johnson (AUS)\n\nMito\n\n2004\n\n9.85\n\n Justin Gatlin (USA)\n\nAthens\n\n2005\n\n9.77\n\n Asafa Powell (JAM)\n\nAthens\n\n2006\n\n9.77\n\n Asafa Powell (JAM)\n\nGateshead\n\nZürich\n\n2007\n\n9.74\n\n Asafa Powell (JAM)\n\nRieti\n\n2008\n\n9.69\n\n Usain Bolt (JAM)\n\nBeijing\n\n2009\n\n9.58\n\n Usain Bolt (JAM)\n\nBerlin\n\n2010\n\n9.78\n\n Tyson Gay (USA)\n\nLondon\n\n Nesta Carter (JAM)\n\nRieti\n\n2011\n\n9.76\n\n Usain Bolt (JAM)\n\nBrussels\n\n2012\n\n9.63\n\n Usain Bolt (JAM)\n\nLondon\n\n2013\n\n9.77\n\n Usain Bolt (JAM)\n\nMoscow\n\n2014\n\n9.77\n\n Justin Gatlin (USA)\n\nBrussels\n\n2015\n\n9.74\n\n Justin Gatlin (USA)\n\nDoha\n\n2016\n\n9.80\n\n Justin Gatlin (USA)\n\nEugene\n\n2017\n\n9.82\n\n Christian Coleman (USA)\n\nEugene\n\n2018\n\n9.79\n\n Christian Coleman (USA)\n\nBrussels\n\n2019\n\n9.76\n\n Christian Coleman (USA)\n\nDoha\n\n2020\n\n9.86\n\n Michael Norman (USA)\n\nFort Worth\n\n2021\n\n9.76 A\n\n Trayvon Bromell (USA)\n\nNairobi\n\n2022\n\n9.76\n\n Fred Kerley (USA)\n\nEugene\n\n2023\n\n9.83\n\n Zharnel Hughes (GBR)\n\nNew York City\n\n Noah Lyles (USA)\n\nBudapest\n\n Christian Coleman (USA)\n\nXiamen\n\nEugene\n\n2024\n\n9.77\n\n Kishane Thompson (JAM)\n\nKingston\n\n2025\n\n9.75\n\n Kishane Thompson (JAM)\n\nKingston",
+        "evidence_type": "text",
+        "title": "Men",
+        "section_path": [
+          "World leading times",
+          "Men"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "retriever": "vector",
+        "rank": 7,
+        "raw_score": 0.9619380235671997,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "100_metres.html#section-003-00",
+        "source_article": "100_metres.html",
+        "content": "Article: 100 metres\nSection: Race dynamics > Finish\n\nThe winner, by IAAF Competition Rules, is determined by the first athlete with their torso (not including limbs, head, or neck) over the nearer edge of the finish line.[15] There is therefore no requirement for the entire body to cross the finish line. When the placing of the athletes is not obvious, a photo finish is used to distinguish which runner was first to cross the line.",
+        "evidence_type": "text",
+        "title": "Finish",
+        "section_path": [
+          "Race dynamics",
+          "Finish"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "retriever": "vector",
+        "rank": 8,
+        "raw_score": 1.0240039825439453,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      }
+    ],
+    "assessment": {
+      "ready_to_answer": true,
+      "supported_requirements": [
+        "The 100_metres.html record performances section states the men's world record is 9.58 s, held by Usain Bolt of Jamaica, set at the 2009 World Athletics Championships final in Berlin, Germany on 16 August 2009.",
+        "The lead section also states the men's world record is 9.58 seconds, set by Jamaica's Usain Bolt in 2009."
+      ],
+      "missing_requirements": [],
+      "retrieval_requests": [],
+      "table_requests": [],
+      "unresolved_conflicts": [],
+      "explanation": "The supplied evidence directly identifies the men's world-record performance with time, athlete, country, event/date, and city/country. A brief supporting quotation can be drawn from the record performances passage."
+    },
+    "assessment_history": [
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "The 100 metres article states the men's world record is 9.58 s.",
+          "It identifies the athlete as Usain Bolt.",
+          "It identifies the country as Jamaica.",
+          "It gives the date as 16 August 2009.",
+          "It gives the location as Berlin, Germany.",
+          "It provides supporting context in the same passage about the men's world record."
+        ],
+        "missing_requirements": [],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Outstanding information required to answer the question.",
+            "query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+            "target_articles": [],
+            "keywords": [],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The supplied evidence directly answers all requested details from the 'Record performances' section of 100_metres.html, including the time, athlete, country, exact date, and city/country, plus a brief quote can be drawn verbatim from the passage."
+      },
+      {
+        "ready_to_answer": true,
+        "supported_requirements": [
+          "The 100_metres.html record performances section states the men's world record is 9.58 s, held by Usain Bolt of Jamaica, set at the 2009 World Athletics Championships final in Berlin, Germany on 16 August 2009.",
+          "The lead section also states the men's world record is 9.58 seconds, set by Jamaica's Usain Bolt in 2009."
+        ],
+        "missing_requirements": [],
+        "retrieval_requests": [],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The supplied evidence directly identifies the men's world-record performance with time, athlete, country, event/date, and city/country. A brief supporting quotation can be drawn from the record performances passage."
+      }
+    ]
+  }
+}

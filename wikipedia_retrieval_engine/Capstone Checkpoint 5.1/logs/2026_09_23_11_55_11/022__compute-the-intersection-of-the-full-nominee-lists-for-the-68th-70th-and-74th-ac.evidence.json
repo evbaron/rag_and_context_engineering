@@ -1,0 +1,1158 @@
+{
+  "run_id": "2026_09_23_11_55_11",
+  "question_number": 22,
+  "logged_at": "2026-09-23T12:04:05-04:00",
+  "question": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+  "final_state": {
+    "question": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+    "retrieval_attempts": 3,
+    "table_attempts": 0,
+    "article_candidates": [
+      {
+        "source_article": "74th_Academy_Awards.html",
+        "representative_chunk": "Article: 74th Academy Awards\nSection: Lead\n\nAward ceremony for films of 2001\n\n74th Academy Awards\n\nOfficial poster by Alex Ross[1]\n\nDateMarch 24, 2002\n\nSiteKodak Theatre\n\nHollywood, Los Angeles, California, U.S.\n\nHosted byWhoopi Goldberg\n\nPreshow hostsChris Connelly\n\nLeeza Gibbons\n\nAnanda Lewis[2]\n\nProduced byLaura Ziskin\n\nDirected byLouis J. Horvitz\n\nHighlights\n\nBest PictureA Beautiful Mind\n\nMost awardsA Beautiful Mind and The Lord of the Rings: The Fellowship of the Ring (4)\n\nMost nominationsThe Lord of the Rings: The Fellowship of the Ring (13)\n\nTV in the United States\n\nNetworkABC\n\nDuration4 hours, 23 minutes[3]\n\nRatings41.82 million\n\n25.54% (Nielsen ratings)\n\n← 73rd\n\nAcademy Awards\n\n75th →\n\nThe 74th Academy Awards ceremony, presented by the Academy of Motion Picture Arts and Sciences (AMPAS), took place on March 24, 2002, at the Kodak Theatre in Hollywood, Los Angeles. During the ceremony, AMPAS presented Academy Awards (commonly referred to as Oscars) in 24 categories honoring films released in 2001. The ceremony, televised in the United States by ABC, was produced by Laura Ziskin and directed by Louis J. Horvitz.[4][5] Actress Whoopi Goldberg hosted the show for the fourth time.[6] She first hosted the 66th ceremony held in 1994 and had last hosted the 71st ceremony in 1999.[7] Three weeks earlier, in a ceremony held at the Regent Beverly Wilshire Hotel in Beverly Hills, California, on March 2, the Academy Awards for Technical Achievement were presented by host Charlize Theron.[8]\n\nA Beautiful Mind won four awards, including Best Picture.[9][10] Other winners included The Lord of the Rings: The Fellowship of the Ring with four awards, Black Hawk Down and Moulin Rouge! with two, and The Accountant, For the Birds, Gosford Park, Iris, Monster's Ball, Monsters, Inc., Murder on a Sunday Morning, No Man's Land, Pearl Harbor, Shrek, Thoth, and Training Day with one. Despite a record length of four hours and twenty-three minutes, the telecast garnered nearly 42 million viewers in the United States.[11]",
+        "representative_chunk_id": "74th_Academy_Awards.html#section-000-00",
+        "section_title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "74th Academy Awards",
+        "discovered_by": "vector",
+        "rank": 1,
+        "raw_score": 0.6551920175552368,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "89th_Academy_Awards.html",
+        "representative_chunk": "Article: 89th Academy Awards\nSection: Notes and references\n\n<h3",
+        "representative_chunk_id": "89th_Academy_Awards.html#section-018-00",
+        "section_title": "Notes and references",
+        "section_path": [
+          "Notes and references"
+        ],
+        "retrieval_query": "74th Academy Awards",
+        "discovered_by": "vector",
+        "rank": 2,
+        "raw_score": 0.6896023750305176,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "68th_Academy_Awards.html",
+        "representative_chunk": "Article: 68th Academy Awards\nSection: See also\n\n2nd Screen Actors Guild Awards\n\n16th Golden Raspberry Awards\n\n38th Grammy Awards\n\n48th Primetime Emmy Awards\n\n49th British Academy Film Awards\n\n50th Tony Awards\n\n53rd Golden Globe Awards\n\nList of submissions to the 68th Academy Awards for Best Foreign Language Film\n\n<h2",
+        "representative_chunk_id": "68th_Academy_Awards.html#section-017-00",
+        "section_title": "See also",
+        "section_path": [
+          "See also"
+        ],
+        "retrieval_query": "68th Academy Awards",
+        "discovered_by": "vector",
+        "rank": 3,
+        "raw_score": 0.6923917531967163,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "70th_Academy_Awards.html",
+        "representative_chunk": "Article: 70th Academy Awards\nSection: See also\n\nFilm portal\n\nLos Angeles portal\n\n4th Screen Actors Guild Awards\n\n18th Golden Raspberry Awards\n\n40th Grammy Awards\n\n51st British Academy Film Awards\n\n52nd Tony Awards\n\n55th Golden Globe Awards\n\nList of submissions to the 70th Academy Awards for Best Foreign Language Film\n\n<h2",
+        "representative_chunk_id": "70th_Academy_Awards.html#section-013-00",
+        "section_title": "See also",
+        "section_path": [
+          "See also"
+        ],
+        "retrieval_query": "70th Academy Awards",
+        "discovered_by": "vector",
+        "rank": 4,
+        "raw_score": 0.6979728937149048,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Academy_Award_for_Best_Picture.html",
+        "representative_chunk": "Article: Academy Award for Best Picture\nSection: Winners and nominees\n\nIn the list below, winners are listed first in the gold row, followed by the other nominees.[6] Except for the early years (when the Academy used a non-calendar year), the year shown is the one in which the film first premiered in Los Angeles County, California; normally this is also the year of first release, but it may be the year after first release (as with Casablanca and, if the film-festival premiere is considered, Crash and The Hurt Locker). This is also the year before the ceremony at which the award is given; for example, a film exhibited theatrically during 2005 was eligible for consideration for the 2005 Best Picture Oscar, awarded in 2006. The number of the ceremony (1st, 2nd, etc.) appears in parentheses after the awards year, linked to the article on that ceremony. Each individual entry shows the title followed by nominee.\n\nUntil 1950, the Best Picture award was given to the production company; from 1951 on, it has gone to the producer or producers. The Academy used the producer credits of the Producers Guild of America (PGA) until 1998, when all five producers of Shakespeare in Love made speeches after its win.[9][10] A three-producer limit has been applied some years since.[10][11] There was controversy over the exclusion of some PGA-credited producers of Crash and Little Miss Sunshine.[11] The Academy can make exceptions to the limit, as when Anthony Minghella and Sydney Pollack were posthumously among the four nominated for The Reader.[13] However, now any number of producers on a film can be nominated for Best Picture, should they be deemed eligible.\n\nFor the first ceremony, three films were nominated for the award. For the following three years, five films were nominated for the award. This was expanded to eight in 1933, to ten in 1934, and to twelve in 1935, before being dropped back to ten in 1937. In 1945, it was further reduced to five. This number remained until 2009, when the limit was raised to ten; it was adjusted from 2011 to 2020 to vary between five and ten, but has been a full ten since 2022.\n\nFor the first six ceremonies, the eligibility period spanned two calendar years. For example, the 2nd Academy Awards presented on April 3, 1930, recognized films that were released between August 1, 1928, and July 31, 1929. Starting with the 7th Academy Awards, held in 1935, the period of eligibility became the full previous calendar year from January 1 to December 31. This has been the rule every year since except 2020, when the end date was extended to February 28, 2021, due to the COVID-19 pandemic, and 2021, which was correspondingly limited to March 1 to December 31.\n\nSince 2023, the category's winners and nominees from the 1927/28 and 1928/29 ceremonies have entered the public domain.[82]\n\n  indicates the winner",
+        "representative_chunk_id": "Academy_Award_for_Best_Picture.html#section-020-00",
+        "section_title": "Winners and nominees",
+        "section_path": [
+          "Winners and nominees"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "discovered_by": "vector",
+        "rank": 5,
+        "raw_score": 0.8095849752426147,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Academy_Award_for_Best_Actor.html",
+        "representative_chunk": "Article: Academy Award for Best Actor\nSection: Winners and nominees\n\nIn the following table, the years are listed as per Academy convention, and generally correspond to the year of film release in Los Angeles County; the ceremonies are always held the following year.[5] For the first five ceremonies, the eligibility period spanned twelve months, from August 1 to July 31.[6] For the 6th ceremony held in 1934, the eligibility period lasted from August 1, 1932, to December 31, 1933.[6] Since the 7th ceremony held in 1935, the period of eligibility became the full previous calendar year from January 1 to December 31.[6]\n\nTable key\n\n‡\n\nIndicates the winner\n\n§\n\nIndicates winner who refused the award\n\n†\n\nIndicates a posthumous winner\n\n†\n\nIndicates a posthumous nominee",
+        "representative_chunk_id": "Academy_Award_for_Best_Actor.html#section-002-00",
+        "section_title": "Winners and nominees",
+        "section_path": [
+          "Winners and nominees"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "discovered_by": "vector",
+        "rank": 6,
+        "raw_score": 0.8191192150115967,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Academy_Award_for_Best_Supporting_Actor.html",
+        "representative_chunk": "Article: Academy Award for Best Supporting Actor\nSection: Winners and nominees\n\nIn the following table, the years are listed as per Academy convention, and generally correspond to the year of film release in Los Angeles County; the ceremonies are always held the following year.[5] For the first five ceremonies, the eligibility period spanned twelve months, from August 1 to July 31.[6] For the 6th ceremony held in 1934, the eligibility period lasted from August 1, 1932, to December 31, 1933.[6] Since the 7th ceremony held in 1935, the period of eligibility became the full previous calendar year from January 1 to December 31.[6]\n\nTable key\n\n‡\n\nIndicates the winner\n\n†\n\nIndicates a posthumous winner\n\n†\n\nIndicates a posthumous nominee\n\n§\n\nIndicates actor who refused the nomination",
+        "representative_chunk_id": "Academy_Award_for_Best_Supporting_Actor.html#section-002-00",
+        "section_title": "Winners and nominees",
+        "section_path": [
+          "Winners and nominees"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "discovered_by": "vector",
+        "rank": 7,
+        "raw_score": 0.8607434034347534,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      }
+    ],
+    "article_reviews": [
+      {
+        "source_article": "74th_Academy_Awards.html",
+        "relevant": true,
+        "reason": "This ceremony page contains the full nominee list needed for the 74th Academy Awards.",
+        "relevant_sections": [
+          "Winners and nominees"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": true
+      },
+      {
+        "source_article": "89th_Academy_Awards.html",
+        "relevant": false,
+        "reason": "It is not one of the three requested ceremonies.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "68th_Academy_Awards.html",
+        "relevant": true,
+        "reason": "This ceremony page contains the full nominee list needed for the 68th Academy Awards.",
+        "relevant_sections": [
+          "Winners and nominees"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": true
+      },
+      {
+        "source_article": "70th_Academy_Awards.html",
+        "relevant": true,
+        "reason": "This ceremony page contains the full nominee list needed for the 70th Academy Awards.",
+        "relevant_sections": [
+          "Winners and nominees"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": true
+      },
+      {
+        "source_article": "Academy_Award_for_Best_Picture.html",
+        "relevant": false,
+        "reason": "It is a category history article, not a ceremony nominee list for the requested intersection.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Academy_Award_for_Best_Actor.html",
+        "relevant": false,
+        "reason": "It only covers Best Actor category nominees, not the full nominee lists for the requested ceremonies.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Academy_Award_for_Best_Supporting_Actor.html",
+        "relevant": false,
+        "reason": "It only covers Best Supporting Actor category nominees, not the full nominee lists for the requested ceremonies.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      }
+    ],
+    "selected_articles": [
+      "74th_Academy_Awards.html",
+      "68th_Academy_Awards.html",
+      "70th_Academy_Awards.html"
+    ],
+    "rejected_articles": [
+      "89th_Academy_Awards.html",
+      "Academy_Award_for_Best_Picture.html",
+      "Academy_Award_for_Best_Actor.html",
+      "Academy_Award_for_Best_Supporting_Actor.html"
+    ],
+    "evidence": [
+      {
+        "evidence_id": "74th_Academy_Awards.html#section-001-00",
+        "source_article": "74th_Academy_Awards.html",
+        "content": "Article: 74th Academy Awards\nSection: Winners and nominees\n\nThe nominees for the 74th Academy Awards were announced on February 12, 2002, at the Samuel Goldwyn Theater in Beverly Hills, California, by Frank Pierson, president of the academy, and the actress Marcia Gay Harden.[12] The Lord of the Rings: The Fellowship of the Ring earned the most nominations with thirteen. It was the seventh film to earn that many nominations. A Beautiful Mind and Moulin Rouge! tied for second place with eight apiece.[13][14]\n\nThe winners were announced during the awards ceremony on March 24, 2002.[15] By virtue of its latest Best Picture victory for A Beautiful Mind, DreamWorks became the second film studio to release three consecutive Best Picture winners; the studio had previously released American Beauty and Gladiator.[16] Denzel Washington was the second African-American to win the Academy Award for Best Actor, following Sidney Poitier for 1963's Lilies of the Field.[9] Halle Berry became the first, and as of 2026[update], only, African-American to win the Academy Award for Best Actress.[9] Nominated for their performances as the title character in Iris, Best Actress nominee Judi Dench and Best Supporting Actress nominee Kate Winslet became the second pair of actresses nominated for portraying the same character in the same film, following Best Actress nominee Winslet and Best Supporting Actress nominee Gloria Stuart as Rose in 1997's Titanic.[13]",
+        "evidence_type": "text",
+        "title": "Winners and nominees",
+        "section_path": [
+          "Winners and nominees"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.9377486705780029,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Winners and nominees",
+          "needs_table_reader": true,
+          "flagged_tables": [],
+          "flagged_table_ids": []
+        }
+      },
+      {
+        "evidence_id": "68th_Academy_Awards.html#section-001-00",
+        "source_article": "68th_Academy_Awards.html",
+        "content": "Article: 68th Academy Awards\nSection: Winners and nominees\n\nThe nominees for the 68th Academy Awards were announced on February 13, 1996, at 5:38 a.m. PST (13:38 UTC) at the Samuel Goldwyn Theater by president of the academy, and the music producer Quincy Jones.[7] Braveheart led all nominees with ten nominations; Apollo 13 came in second with nine.[8][9]\n\nThe winners were announced during the awards ceremony on March 25, 1996.[10] Braveheart was the ninth film to win Best Picture with no acting nominations.[11] With her Best Supporting Actress win for Mighty Aphrodite, Mira Sorvino became the second consecutive actress to win the aforementioned category for a performance in a film directed by Woody Allen.[12] Best Adapted Screenplay winner Emma Thompson was the first person to win Oscars for both acting and screenwriting. She had previously won Best Actress for her performance in the 1992 film Howards End.[13] This was the first year since the 42nd Academy Awards—and last to date—that none of the acting winners appeared in Best Picture nominees.",
+        "evidence_type": "text",
+        "title": "Winners and nominees",
+        "section_path": [
+          "Winners and nominees"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.9226004481315613,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Winners and nominees",
+          "needs_table_reader": true,
+          "flagged_tables": [],
+          "flagged_table_ids": []
+        }
+      },
+      {
+        "evidence_id": "70th_Academy_Awards.html#section-001-00",
+        "source_article": "70th_Academy_Awards.html",
+        "content": "Article: 70th Academy Awards\nSection: Winners and nominees\n\nThe nominees for the 70th Academy Awards were announced on February 10, 1998, at the Samuel Goldwyn Theater in Beverly Hills, California, by Robert Rehme, president of the academy, and actress Geena Davis.[11] Titanic led all nominees with fourteen nominations; Good Will Hunting and L.A. Confidential came in second with nine apiece.[12]\n\nThe winners were announced during the awards ceremony on March 23, 1998. With eleven awards, Titanic tied with Ben-Hur (1959) for the most Academy Awards in Oscar history.[13][a] It also became the first film to win Best Picture without a screenwriting nomination since The Sound of Music (1965).[15] Jack Nicholson became the fourth performer to win at least three acting Oscars.[16] Both Nicholson and Helen Hunt won for their roles in As Good as It Gets, making it the seventh film to win both lead acting awards.[17] Nominated for their performances as Rose DeWitt Bukater in Titanic, Best Actress nominee Kate Winslet and Best Supporting Actress nominee Gloria Stuart became the first pair of actresses nominated for portraying the same character in the same film.[18][19]",
+        "evidence_type": "text",
+        "title": "Winners and nominees",
+        "section_path": [
+          "Winners and nominees"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.8970215320587158,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Winners and nominees",
+          "needs_table_reader": true,
+          "flagged_tables": [],
+          "flagged_table_ids": []
+        }
+      },
+      {
+        "evidence_id": "74th_Academy_Awards.html#table-002-fe5aa895db",
+        "source_article": "74th_Academy_Awards.html",
+        "content": "Structured table (JSON rows, one object per row — read values directly from these rows; do not rely on prior knowledge).\n{\"artifact_id\": \"8afedfd1426c68352df3598f\", \"table_id\": \"table-002-fe5aa895db\", \"caption\": \"Films with multiple nominations\", \"section\": \"Winners and nominees > Films with multiple nominations and awards\", \"columns\": [\"Nominations\", \"Film\"], \"legends\": [], \"rows\": [{\"row_number\": 1, \"values\": {\"Nominations\": \"13\", \"Film\": \"The Lord of the Rings: The Fellowship of the Ring\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-fe5aa895db:r2:c2\", \"display_text\": \"The Lord of the Rings: The Fellowship of the Ring\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"The Lord of the Rings: The Fellowship of the Ring\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 2, \"values\": {\"Nominations\": \"8\", \"Film\": \"A Beautiful Mind\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-fe5aa895db:r3:c2\", \"display_text\": \"A Beautiful Mind\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"A Beautiful Mind\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 3, \"values\": {\"Nominations\": \"8\", \"Film\": \"Moulin Rouge!\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-fe5aa895db:r4:c2\", \"display_text\": \"Moulin Rouge!\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Moulin Rouge!\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 4, \"values\": {\"Nominations\": \"7\", \"Film\": \"Gosford Park\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-fe5aa895db:r5:c2\", \"display_text\": \"Gosford Park\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Gosford Park\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 5, \"values\": {\"Nominations\": \"5\", \"Film\": \"Amélie\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-fe5aa895db:r6:c2\", \"display_text\": \"Amélie\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Amélie\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 6, \"values\": {\"Nominations\": \"5\", \"Film\": \"In the Bedroom\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-fe5aa895db:r7:c2\", \"display_text\": \"In the Bedroom\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"In the Bedroom\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 7, \"values\": {\"Nominations\": \"4\", \"Film\": \"Black Hawk Down\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-fe5aa895db:r8:c2\", \"display_text\": \"Black Hawk Down\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Black Hawk Down\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 8, \"values\": {\"Nominations\": \"4\", \"Film\": \"Monsters, Inc.\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-fe5aa895db:r9:c2\", \"display_text\": \"Monsters, Inc.\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Monsters, Inc.\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 9, \"values\": {\"Nominations\": \"4\", \"Film\": \"Pearl Harbor\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-fe5aa895db:r10:c2\", \"display_text\": \"Pearl Harbor\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Pearl Harbor\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 10, \"values\": {\"Nominations\": \"3\", \"Film\": \"Harry Potter and the Sorcerer's Stone\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-fe5aa895db:r11:c2\", \"display_text\": \"Harry Potter and the Sorcerer's Stone\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Harry Potter and the Sorcerer's Stone\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 11, \"values\": {\"Nominations\": \"3\", \"Film\": \"Iris\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-fe5aa895db:r12:c2\", \"display_text\": \"Iris\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Iris\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 12, \"values\": {\"Nominations\": \"2\", \"Film\": \"A.I. Artificial Intelligence\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-fe5aa895db:r13:c2\", \"display_text\": \"A.I. Artificial Intelligence\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"A.I. Artificial Intelligence\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 13, \"values\": {\"Nominations\": \"2\", \"Film\": \"Ali\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-fe5aa895db:r14:c2\", \"display_text\": \"Ali\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Ali\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 14, \"values\": {\"Nominations\": \"2\", \"Film\": \"Memento\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-fe5aa895db:r15:c2\", \"display_text\": \"Memento\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Memento\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 15, \"values\": {\"Nominations\": \"2\", \"Film\": \"Monster's Ball\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-fe5aa895db:r16:c2\", \"display_text\": \"Monster's Ball\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Monster's Ball\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 16, \"values\": {\"Nominations\": \"2\", \"Film\": \"Shrek\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-fe5aa895db:r17:c2\", \"display_text\": \"Shrek\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Shrek\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 17, \"values\": {\"Nominations\": \"2\", \"Film\": \"Training Day\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-fe5aa895db:r18:c2\", \"display_text\": \"Training Day\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Training Day\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}]}",
+        "evidence_type": "table",
+        "title": "Films with multiple nominations",
+        "section_path": [
+          "Winners and nominees",
+          "Films with multiple nominations and awards"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "8afedfd1426c68352df3598f",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_id": "table-002-fe5aa895db",
+          "n_rows": 17,
+          "rows_rendered": 17,
+          "needs_table_reader": true
+        }
+      },
+      {
+        "evidence_id": "68th_Academy_Awards.html#table-002-e0cf369224",
+        "source_article": "68th_Academy_Awards.html",
+        "content": "Structured table (JSON rows, one object per row — read values directly from these rows; do not rely on prior knowledge).\n{\"artifact_id\": \"e9b6f706a78856f30bc5b742\", \"table_id\": \"table-002-e0cf369224\", \"caption\": null, \"section\": \"Winners and nominees > Multiple nominations and awards\", \"columns\": [\"Nominations\", \"Film\"], \"legends\": [], \"rows\": [{\"row_number\": 1, \"values\": {\"Nominations\": \"10\", \"Film\": \"Braveheart\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-e0cf369224:r2:c2\", \"display_text\": \"Braveheart\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Braveheart\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 2, \"values\": {\"Nominations\": \"9\", \"Film\": \"Apollo 13\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-e0cf369224:r3:c2\", \"display_text\": \"Apollo 13\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Apollo 13\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 3, \"values\": {\"Nominations\": \"7\", \"Film\": \"Babe\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-e0cf369224:r4:c2\", \"display_text\": \"Babe\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Babe\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 4, \"values\": {\"Nominations\": \"7\", \"Film\": \"Sense and Sensibility\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-e0cf369224:r5:c2\", \"display_text\": \"Sense and Sensibility\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Sense and Sensibility\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 5, \"values\": {\"Nominations\": \"5\", \"Film\": \"Il Postino: The Postman\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-e0cf369224:r6:c2\", \"display_text\": \"Il Postino: The Postman\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Il Postino: The Postman\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 6, \"values\": {\"Nominations\": \"4\", \"Film\": \"Dead Man Walking\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-e0cf369224:r7:c2\", \"display_text\": \"Dead Man Walking\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Dead Man Walking\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 7, \"values\": {\"Nominations\": \"4\", \"Film\": \"Leaving Las Vegas\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-e0cf369224:r8:c2\", \"display_text\": \"Leaving Las Vegas\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Leaving Las Vegas\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 8, \"values\": {\"Nominations\": \"4\", \"Film\": \"Nixon\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-e0cf369224:r9:c2\", \"display_text\": \"Nixon\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Nixon\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 9, \"values\": {\"Nominations\": \"3\", \"Film\": \"Batman Forever\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-e0cf369224:r10:c2\", \"display_text\": \"Batman Forever\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Batman Forever\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 10, \"values\": {\"Nominations\": \"3\", \"Film\": \"Crimson Tide\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-e0cf369224:r11:c2\", \"display_text\": \"Crimson Tide\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Crimson Tide\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 11, \"values\": {\"Nominations\": \"3\", \"Film\": \"Toy Story\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-e0cf369224:r12:c2\", \"display_text\": \"Toy Story [ a ]\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Toy Story\"], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ a ]\", \"role\": \"reference\", \"target\": \"cite_note-18\", \"note\": \"Not counting the non-competitive Special Achievement Award for Toy Story .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 12, \"values\": {\"Nominations\": \"2\", \"Film\": \"12 Monkeys\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-e0cf369224:r13:c2\", \"display_text\": \"12 Monkeys\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"12 Monkeys\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 13, \"values\": {\"Nominations\": \"2\", \"Film\": \"A Little Princess\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-e0cf369224:r14:c2\", \"display_text\": \"A Little Princess\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"A Little Princess\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 14, \"values\": {\"Nominations\": \"2\", \"Film\": \"Mighty Aphrodite\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-e0cf369224:r15:c2\", \"display_text\": \"Mighty Aphrodite\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Mighty Aphrodite\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 15, \"values\": {\"Nominations\": \"2\", \"Film\": \"Pocahontas\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-e0cf369224:r16:c2\", \"display_text\": \"Pocahontas\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Pocahontas\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 16, \"values\": {\"Nominations\": \"2\", \"Film\": \"Restoration\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-e0cf369224:r17:c2\", \"display_text\": \"Restoration\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Restoration\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 17, \"values\": {\"Nominations\": \"2\", \"Film\": \"Richard III\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-e0cf369224:r18:c2\", \"display_text\": \"Richard III\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Richard III\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 18, \"values\": {\"Nominations\": \"2\", \"Film\": \"Sabrina\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-e0cf369224:r19:c2\", \"display_text\": \"Sabrina\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Sabrina\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 19, \"values\": {\"Nominations\": \"2\", \"Film\": \"The Usual Suspects\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-e0cf369224:r20:c2\", \"display_text\": \"The Usual Suspects\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"The Usual Suspects\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}]}",
+        "evidence_type": "table",
+        "title": "table-002-e0cf369224",
+        "section_path": [
+          "Winners and nominees",
+          "Multiple nominations and awards"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "e9b6f706a78856f30bc5b742",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_id": "table-002-e0cf369224",
+          "n_rows": 19,
+          "rows_rendered": 19,
+          "needs_table_reader": true
+        }
+      },
+      {
+        "evidence_id": "70th_Academy_Awards.html#table-002-5f6a5bda3e",
+        "source_article": "70th_Academy_Awards.html",
+        "content": "Structured table (JSON rows, one object per row — read values directly from these rows; do not rely on prior knowledge).\n{\"artifact_id\": \"cae18510ec1c1f700328a09b\", \"table_id\": \"table-002-5f6a5bda3e\", \"caption\": null, \"section\": \"Winners and nominees > Films with multiple nominations and awards\", \"columns\": [\"Nominations\", \"Film\"], \"legends\": [], \"rows\": [{\"row_number\": 1, \"values\": {\"Nominations\": \"14\", \"Film\": \"Titanic\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-5f6a5bda3e:r2:c2\", \"display_text\": \"Titanic\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Titanic\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 2, \"values\": {\"Nominations\": \"9\", \"Film\": \"Good Will Hunting\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-5f6a5bda3e:r3:c2\", \"display_text\": \"Good Will Hunting\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Good Will Hunting\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 3, \"values\": {\"Nominations\": \"9\", \"Film\": \"L.A. Confidential\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-5f6a5bda3e:r4:c2\", \"display_text\": \"L.A. Confidential\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"L.A. Confidential\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 4, \"values\": {\"Nominations\": \"7\", \"Film\": \"As Good as It Gets\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-5f6a5bda3e:r5:c2\", \"display_text\": \"As Good as It Gets\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"As Good as It Gets\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 5, \"values\": {\"Nominations\": \"4\", \"Film\": \"Amistad\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-5f6a5bda3e:r6:c2\", \"display_text\": \"Amistad\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Amistad\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 6, \"values\": {\"Nominations\": \"4\", \"Film\": \"The Full Monty\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-5f6a5bda3e:r7:c2\", \"display_text\": \"The Full Monty\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"The Full Monty\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 7, \"values\": {\"Nominations\": \"4\", \"Film\": \"Kundun\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-5f6a5bda3e:r8:c2\", \"display_text\": \"Kundun\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Kundun\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 8, \"values\": {\"Nominations\": \"4\", \"Film\": \"The Wings of the Dove\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-5f6a5bda3e:r9:c2\", \"display_text\": \"The Wings of the Dove\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"The Wings of the Dove\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 9, \"values\": {\"Nominations\": \"3\", \"Film\": \"Boogie Nights\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-5f6a5bda3e:r10:c2\", \"display_text\": \"Boogie Nights\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Boogie Nights\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 10, \"values\": {\"Nominations\": \"3\", \"Film\": \"Men in Black\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-5f6a5bda3e:r11:c2\", \"display_text\": \"Men in Black\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Men in Black\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 11, \"values\": {\"Nominations\": \"2\", \"Film\": \"Air Force One\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-5f6a5bda3e:r12:c2\", \"display_text\": \"Air Force One\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Air Force One\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 12, \"values\": {\"Nominations\": \"2\", \"Film\": \"Anastasia\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-5f6a5bda3e:r13:c2\", \"display_text\": \"Anastasia\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Anastasia\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 13, \"values\": {\"Nominations\": \"2\", \"Film\": \"Con Air\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-5f6a5bda3e:r14:c2\", \"display_text\": \"Con Air\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Con Air\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 14, \"values\": {\"Nominations\": \"2\", \"Film\": \"Mrs Brown\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-5f6a5bda3e:r15:c2\", \"display_text\": \"Mrs Brown\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Mrs Brown\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 15, \"values\": {\"Nominations\": \"2\", \"Film\": \"The Sweet Hereafter\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-5f6a5bda3e:r16:c2\", \"display_text\": \"The Sweet Hereafter\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"The Sweet Hereafter\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 16, \"values\": {\"Nominations\": \"2\", \"Film\": \"Wag the Dog\"}, \"semantic_signals\": {\"Film\": {\"source_cell\": \"table-002-5f6a5bda3e:r17:c2\", \"display_text\": \"Wag the Dog\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Wag the Dog\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}]}",
+        "evidence_type": "table",
+        "title": "table-002-5f6a5bda3e",
+        "section_path": [
+          "Winners and nominees",
+          "Films with multiple nominations and awards"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "cae18510ec1c1f700328a09b",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_id": "table-002-5f6a5bda3e",
+          "n_rows": 16,
+          "rows_rendered": 16,
+          "needs_table_reader": true
+        }
+      },
+      {
+        "evidence_id": "74th_Academy_Awards.html#section-005-00",
+        "source_article": "74th_Academy_Awards.html",
+        "content": "Article: 74th Academy Awards\nSection: Winners and nominees > Films with multiple nominations and awards\n\nSee also: Films with the most Academy Award nominations per ceremony\n\nSee also: Films with the most Academy Awards per ceremony\n\nFilms with multiple nominations\n\nNominations\n\nFilm\n\n13\n\nThe Lord of the Rings: The Fellowship of the Ring\n\n8\n\nA Beautiful Mind\n\nMoulin Rouge!\n\n7\n\nGosford Park\n\n5\n\nAmélie\n\nIn the Bedroom\n\n4\n\nBlack Hawk Down\n\nMonsters, Inc.\n\nPearl Harbor\n\n3\n\nHarry Potter and the Sorcerer's Stone\n\nIris\n\n2\n\nA.I. Artificial Intelligence\n\nAli\n\nMemento\n\nMonster's Ball\n\nShrek\n\nTraining Day\n\nFilms with multiple awards\n\nAwards\n\nFilm\n\n4\n\nA Beautiful Mind\n\nThe Lord of the Rings: The Fellowship of the Ring\n\n2\n\nBlack Hawk Down\n\nMoulin Rouge!",
+        "evidence_type": "text",
+        "title": "Films with multiple nominations and awards",
+        "section_path": [
+          "Winners and nominees",
+          "Films with multiple nominations and awards"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.8797471523284912,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "74th_Academy_Awards.html#section-000-00",
+        "source_article": "74th_Academy_Awards.html",
+        "content": "Article: 74th Academy Awards\nSection: Lead\n\nAward ceremony for films of 2001\n\n74th Academy Awards\n\nOfficial poster by Alex Ross[1]\n\nDateMarch 24, 2002\n\nSiteKodak Theatre\n\nHollywood, Los Angeles, California, U.S.\n\nHosted byWhoopi Goldberg\n\nPreshow hostsChris Connelly\n\nLeeza Gibbons\n\nAnanda Lewis[2]\n\nProduced byLaura Ziskin\n\nDirected byLouis J. Horvitz\n\nHighlights\n\nBest PictureA Beautiful Mind\n\nMost awardsA Beautiful Mind and The Lord of the Rings: The Fellowship of the Ring (4)\n\nMost nominationsThe Lord of the Rings: The Fellowship of the Ring (13)\n\nTV in the United States\n\nNetworkABC\n\nDuration4 hours, 23 minutes[3]\n\nRatings41.82 million\n\n25.54% (Nielsen ratings)\n\n← 73rd\n\nAcademy Awards\n\n75th →\n\nThe 74th Academy Awards ceremony, presented by the Academy of Motion Picture Arts and Sciences (AMPAS), took place on March 24, 2002, at the Kodak Theatre in Hollywood, Los Angeles. During the ceremony, AMPAS presented Academy Awards (commonly referred to as Oscars) in 24 categories honoring films released in 2001. The ceremony, televised in the United States by ABC, was produced by Laura Ziskin and directed by Louis J. Horvitz.[4][5] Actress Whoopi Goldberg hosted the show for the fourth time.[6] She first hosted the 66th ceremony held in 1994 and had last hosted the 71st ceremony in 1999.[7] Three weeks earlier, in a ceremony held at the Regent Beverly Wilshire Hotel in Beverly Hills, California, on March 2, the Academy Awards for Technical Achievement were presented by host Charlize Theron.[8]\n\nA Beautiful Mind won four awards, including Best Picture.[9][10] Other winners included The Lord of the Rings: The Fellowship of the Ring with four awards, Black Hawk Down and Moulin Rouge! with two, and The Accountant, For the Birds, Gosford Park, Iris, Monster's Ball, Monsters, Inc., Murder on a Sunday Morning, No Man's Land, Pearl Harbor, Shrek, Thoth, and Training Day with one. Despite a record length of four hours and twenty-three minutes, the telecast garnered nearly 42 million viewers in the United States.[11]",
+        "evidence_type": "text",
+        "title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "vector",
+        "rank": 2,
+        "raw_score": 0.8797487020492554,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "74th_Academy_Awards.html#section-009-00",
+        "source_article": "74th_Academy_Awards.html",
+        "content": "Article: 74th Academy Awards\nSection: Ceremony information\n\nWhoopi Goldberg hosted the 74th Academy Awards.\n\nThe Academy wanted to find a new venue for the festivities amid limited seating and rehearsal time concerns with the Dorothy Chandler Pavilion. In addition, problems arose regarding staging the Oscars at the Shrine Auditorium because there was difficulty of directing guests from the auditorium where the main event took place to the adjacent Exhibition Hall for the Governor's Ball.[22] In August 1997, AMPAS and Canadian development firm TrizecHahn went into negotiations over the development of an entertainment complex located on the corner of Hollywood Boulevard and Highland Avenue adjacent to the Mann's Chinese Theatre.[23] Seven months later, both the Academy and TrizecHahn agreed on a twenty-year lease that allowed for the ceremony to be staged at a new venue, which would later be called the Kodak Theatre, located within the property which was also situated near the Hollywood Roosevelt Hotel, the site of the inaugural awards ceremony in 1929.[24][25] This was the first time the ceremony was held in Hollywood since the 32nd ceremony took place at the Pantages Theatre in 1960.[24]\n\nIn view of the return of the Oscars to Hollywood, the Academy hired film producer and Sony Pictures Entertainment chairman Laura Ziskin in September 2001 to oversee production of the telecast.[4] Pierson explained the decision to hire Ziskin saying, \"This show is one of the most difficult—if not the most difficult—producing jobs in show business. Laura Ziskin brings intelligence, experience and wit expressed in everything she has done.\"[26] This marked the first occurrence that a woman produced the Oscars solo. Four months later, Whoopi Goldberg was selected as host of the 2002 ceremony. In an article in the Los Angeles Times, Ziskin justified her choice of Goldberg commenting that she has \"great warmth, with humor, humanity and social conscience, all qualities that I feel are essential for this year's show. I look forward to collaborating with Whoopi to put on a meaningful and entertaining evening.\"[27]\n\nFurthermore, the September 11 attacks affected the telecast and its surrounding events. Despite speculation and suggestions that the festivities be postponed or canceled, AMPAS President Pierson wrote in a Variety column refusing to take such action stating that it would send the message that \"the terrorists have won\".[28][29] However, due to security concerns, the Academy announced that red carpet bleacher seats would now be limited on a reservation basis based on a random selection and a background check.[30]\n\nOn Oscar night, Tom Cruise opened the show and stated that it was the job of filmmakers to make films during troubling times. In addition, later in the evening Goldberg introduced a \"New York icon\" to the stage and filmmaker and director Woody Allen, who had previously never attended a ceremony, made a surprise appearance. Allen was greeted with a hearty standing ovation from audience members including Baz Luhrmann, Ron Howard, Jennifer Connelly, Denzel Washington, and Ethan Hawke. He explained that the September 11 attacks influenced him to attend the Oscars so that he could represent the city he deeply admired and urged filmmakers to continue to film in New York City. Allen then presented a film montage directed by fellow New Yorker and screenwriter Nora Ephron saluting New York City in film.[31]\n\nSeveral other people participated in the production of the ceremony. Actors Donald Sutherland and Glenn Close served as announcers during the show.[32] The orchestra, led by film composer and musical supervisor John Williams, performed selections of film scores during a montage saluting film composers produced by Kyle Cooper.[33] Filmmaker Errol Morris filmed a vignette featuring several famous people discuss movie memories.[34] Director Penelope Spheeris produced a montage saluting 60 years of Oscar-winning documentary feature films.[35][36] Cirque du Soleil performed a dance number inspired by movies and visual effects.[37]",
+        "evidence_type": "text",
+        "title": "Ceremony information",
+        "section_path": [
+          "Ceremony information"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "vector",
+        "rank": 3,
+        "raw_score": 0.9255748987197876,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "74th_Academy_Awards.html#section-006-00",
+        "source_article": "74th_Academy_Awards.html",
+        "content": "Article: 74th Academy Awards\nSection: Presenters and performers\n\nThe following individuals (in order of appearance) presented awards or performed musical numbers.[21]",
+        "evidence_type": "text",
+        "title": "Presenters and performers",
+        "section_path": [
+          "Presenters and performers"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "vector",
+        "rank": 5,
+        "raw_score": 0.94366055727005,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "74th_Academy_Awards.html#section-011-00",
+        "source_article": "74th_Academy_Awards.html",
+        "content": "Article: 74th Academy Awards\nSection: Ceremony information > Box office performance of nominated films\n\nAt the time of the nominations announcement on February 12, the combined gross of the five Best Picture nominees at the US box office was $484 million, with an average of $96.9 million per film. The Lord of the Rings: The Fellowship of the Ring was the highest earner among the Best Picture nominees with $271 million in domestic box office receipts.[42] The film was followed by A Beautiful Mind ($113 million), Moulin Rouge! ($57.1 million), Gosford Park ($22.2 million), and finally In the Bedroom ($19.5 million).[42]\n\nOf the top 50 grossing movies of the year, 46 nominations went to 14 films on the list.[43] Only The Lord of the Rings: The Fellowship of the Ring (2nd), Shrek (3rd), Monsters, Inc. (4th), A Beautiful Mind (15th), Black Hawk Down (25th), Jimmy Neutron: Boy Genius (27th), Training Day (29th), Bridget Jones's Diary (31st), Ali (41st), and Moulin Rouge! (44th) were nominated for Best Picture, Best Animated Feature, or any of the directing, acting, or screenwriting awards.[43] The other top-50 box office hits that earned nominations were Harry Potter and the Sorcerer's Stone (1st), Pearl Harbor (7th), Vanilla Sky (19th), and AI: Artificial Intelligence (28th).[43]",
+        "evidence_type": "text",
+        "title": "Box office performance of nominated films",
+        "section_path": [
+          "Ceremony information",
+          "Box office performance of nominated films"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "vector",
+        "rank": 6,
+        "raw_score": 0.9505619406700134,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "74th_Academy_Awards.html#section-015-00",
+        "source_article": "74th_Academy_Awards.html",
+        "content": "Article: 74th Academy Awards\nSection: See also\n\n8th Screen Actors Guild Awards\n\n22nd Golden Raspberry Awards\n\n44th Grammy Awards\n\n54th Primetime Emmy Awards\n\n55th British Academy Film Awards\n\n56th Tony Awards\n\n59th Golden Globe Awards\n\nList of submissions to the 74th Academy Awards for Best Foreign Language Film\n\nList of Academy Award records\n\n<h2",
+        "evidence_type": "text",
+        "title": "See also",
+        "section_path": [
+          "See also"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "vector",
+        "rank": 7,
+        "raw_score": 0.9515923261642456,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "74th_Academy_Awards.html#section-007-00",
+        "source_article": "74th_Academy_Awards.html",
+        "content": "Article: 74th Academy Awards\nSection: Presenters and performers > Presenters\n\nName(s)\nRole\n\nDonald Sutherland\n\nGlenn Close\nAnnouncers for the 74th annual Academy Awards\n\nTom Cruise\nPresenter of the Errol Morris montage on movie memories\n\nBenicio del Toro\nPresenter of the award for Best Supporting Actress\n\nFrank Pierson (AMPAS President)\nGiver of remarks welcoming guests to the awards ceremony\n\nWill Smith\nPresenter the award for Best Film Editing\n\nRyan Phillippe\n\nReese Witherspoon\nPresenters of the award for Best Makeup\n\nWhoopi Goldberg\nPresenter of the film In the Bedroom on the Best Picture segment\n\nBen Stiller\n\nOwen Wilson\nPresenters of the award for Best Costume Design\n\nWoody Allen\nPresenter of the New York City films tribute montage directed by Nora Ephron\n\nJodie Foster\nPresenter of the award for Best Cinematography\n\nWhoopi Goldberg\nPresenter of the film Gosford Park on the Best Picture segment\n\nHelen Hunt\nPresenter of the Documentary films tribute montage directed by Penelope Spheeris\n\nSamuel L. Jackson\nPresenter of the awards for Best Documentary Feature and Best Documentary Short Subject\n\nCameron Diaz\nPresenter of the award for Best Art Direction\n\nCharlize Theron (pre-recorded footage)\nPresenter of the award for Academy Scientific and Technical Award and the Gordon E. Sawyer Award\n\nNathan Lane\nPresenter of the award for Best Animated Feature Film\n\nHalle Berry\nPresenter of the award for Best Sound and Best Sound Editing\n\nMarcia Gay Harden\nPresenter of the award for Best Supporting Actor\n\nWhoopi Goldberg\nPresenter of the film The Lord of the Rings: The Fellowship of the Ring on the Best Picture segment\n\nIan McKellen\n\nMaggie Smith\nIntroducers of the performance by Cirque du Soleil\n\nKirsten Dunst\n\nTobey Maguire\nPresenters of the award for Best Visual Effects\n\nAli MacGraw\n\nRyan O'Neal\nPresenters of the Jean Hersholt Humanitarian Award to Arthur Hiller\n\nBen Kingsley\nPresenter of the tribute to musical scores in films conducted by John Williams\n\nSandra Bullock\n\nHugh Grant\nPresenters of the award for Best Original Score\n\nWalter Mirisch\n\nDenzel Washington\nPresenters of the Academy Honorary Award to Sidney Poitier\n\nHugh Jackman\n\nNaomi Watts\nPresenters of the award for Best Live Action Short Film and Best Animated Short Film\n\nJosh Hartnett\nIntroducer of the performances of the Best Original Song nominees\n\nJennifer Lopez\nPresenter of the award for Best Original Song\n\nEthan Hawke\n\nGwyneth Paltrow\nPresenters of the award for Best Screenplay Based on Material Previously Produced or Published/Adapted Screenplay and Best Screenplay Written Directly for the Screen/Original Screenplay\n\nSharon Stone\n\nJohn Travolta\nPresenters of the award for Best Foreign Language Film\n\nKevin Spacey\nPresenter of the In Memoriam Tribute\n\nWhoopi Goldberg\nPresenter of the film Moulin Rouge! on the Best Picture segment\n\nBarbra Streisand\nPresenter of the Academy Honorary Award to Robert Redford\n\nRussell Crowe\nPresenter of the award for Best Actress\n\nWhoopi Goldberg\nPresenter of the film A Beautiful Mind on the Best Picture segment\n\nJulia Roberts\nPresenter of the award for Best Actor\n\nMel Gibson\nPresenter of the award for Best Director\n\nTom Hanks\nPresenter of the award for Best Picture",
+        "evidence_type": "text",
+        "title": "Presenters",
+        "section_path": [
+          "Presenters and performers",
+          "Presenters"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "vector",
+        "rank": 8,
+        "raw_score": 0.9798457622528076,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "68th_Academy_Awards.html#section-006-00",
+        "source_article": "68th_Academy_Awards.html",
+        "content": "Article: 68th Academy Awards\nSection: Presenters and performers\n\nThe following individuals, listed in order of appearance, presented awards or performed musical numbers.[18]",
+        "evidence_type": "text",
+        "title": "Presenters and performers",
+        "section_path": [
+          "Presenters and performers"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.9178162813186646,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "68th_Academy_Awards.html#section-013-00",
+        "source_article": "68th_Academy_Awards.html",
+        "content": "Article: 68th Academy Awards\nSection: Ceremony information > Box office performance of nominees\n\nAt the time of the nominations announcement on February 13, the combined gross of the five Best Picture nominees at the US box office was $333 million, with an average of $66.5 million per film.[38] Apollo 13 was the highest earner among the Best Picture nominees with $172 million in domestic box office receipts.[38] The film was followed by Braveheart ($67 million), Babe ($58.2 million), Sense and Sensibility ($24.6 million) and finally Il Postino: The Postman ($10.7 million).[38]\n\nOf the top 50 grossing movies of the year, 47 nominations went to 14 films on the list. Only Toy Story (2nd), Apollo 13 (3rd), Braveheart (23rd), Babe (29th), 12 Monkeys (31st), Casino (38th) and Mr. Holland's Opus (39th) were nominated for directing, acting, screenwriting, or Best Picture.[39] The other box office hits that earned nominations were Batman Forever (1st), Pocahontas (4th), Seven (9th), Crimson Tide (10th), Waterworld (12th), The Bridges of Madison County (21st), The American President (27th) and Sabrina (34th).[39]",
+        "evidence_type": "text",
+        "title": "Box office performance of nominees",
+        "section_path": [
+          "Ceremony information",
+          "Box office performance of nominees"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "vector",
+        "rank": 2,
+        "raw_score": 0.9220098257064819,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "68th_Academy_Awards.html#section-000-00",
+        "source_article": "68th_Academy_Awards.html",
+        "content": "Article: 68th Academy Awards\nSection: Lead\n\nAward ceremony for films of 1995\n\n68th Academy Awards\n\nOfficial poster by Saul Bass[1]\n\nDateMarch 25, 1996\n\nSiteDorothy Chandler Pavilion, Los Angeles, California, U.S.\n\nHosted byWhoopi Goldberg\n\nProduced byDavid Salzman\n\nQuincy Jones\n\nDirected byJeff Margolis\n\nHighlights\n\nBest PictureBraveheart\n\nMost awardsBraveheart (5)\n\nMost nominationsBraveheart (10)\n\nTV in the United States\n\nNetworkABC\n\nDuration3 hours, 39 minutes\n\nRatings44.81 million\n\n30.48% (Nielsen ratings)\n\n← 67th\n\nAcademy Awards\n\n69th →\n\nThe 68th Academy Awards ceremony, organized by the Academy of Motion Picture Arts and Sciences (AMPAS), honored the best films of 1995 in the United States and took place on March 25, 1996, at the Dorothy Chandler Pavilion in Los Angeles beginning at 6:00 p.m. PST / 9:00 p.m. EST.[2] During the ceremony, AMPAS presented Academy Awards (commonly referred to as Oscars) in 24 categories.[2] The ceremony, televised in the United States by ABC, was produced by David Salzman and Quincy Jones and directed by Jeff Margolis.[2] Actress Whoopi Goldberg hosted the show for the second time, having previously presided over the 66th ceremony in 1994.[3] Three weeks earlier, in a ceremony held at the Regent Beverly Wilshire Hotel in Beverly Hills, California, on March 2, the Academy Awards for Technical Achievement were presented by host Richard Dreyfuss.[4]\n\nBraveheart won five awards, including Best Picture.[5][6] Other winners included Apollo 13, Pocahontas, Restoration, and The Usual Suspects with two awards and Anne Frank Remembered, Antonia's Line, Babe, A Close Shave, Dead Man Walking, Leaving Las Vegas, Lieberman in Love, Mighty Aphrodite, One Survivor Remembers, Il Postino: The Postman, and Sense and Sensibility with one. The telecast garnered almost 45 million viewers in the United States.",
+        "evidence_type": "text",
+        "title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "vector",
+        "rank": 4,
+        "raw_score": 0.9255289435386658,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "68th_Academy_Awards.html#section-005-00",
+        "source_article": "68th_Academy_Awards.html",
+        "content": "Article: 68th Academy Awards\nSection: Winners and nominees > Multiple nominations and awards\n\nThe following 19 films received multiple nominations:\n\nNominations\n\nFilm\n\n10\n\nBraveheart\n\n9\n\nApollo 13\n\n7\n\nBabe\n\nSense and Sensibility\n\n5\n\nIl Postino: The Postman\n\n4\n\nDead Man Walking\n\nLeaving Las Vegas\n\nNixon\n\n3\n\nBatman Forever\n\nCrimson Tide\n\nToy Story[a]\n\n2\n\n12 Monkeys\n\nA Little Princess\n\nMighty Aphrodite\n\nPocahontas\n\nRestoration\n\nRichard III\n\nSabrina\n\nThe Usual Suspects\n\nThe following five films received multiple awards:\n\nAwards\n\nFilm\n\n5\n\nBraveheart\n\n2\n\nApollo 13\n\nPocahontas\n\nRestoration\n\nThe Usual Suspects",
+        "evidence_type": "text",
+        "title": "Multiple nominations and awards",
+        "section_path": [
+          "Winners and nominees",
+          "Multiple nominations and awards"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "vector",
+        "rank": 5,
+        "raw_score": 0.9420850276947021,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "68th_Academy_Awards.html#section-009-00",
+        "source_article": "68th_Academy_Awards.html",
+        "content": "Article: 68th Academy Awards\nSection: Ceremony information\n\nWhoopi Goldberg hosted the 68th Academy Awards.\n\nAs a result of the negative reception of David Letterman's stint as host from the preceding year's ceremony, veteran film and television director Gil Cates declined to helm the upcoming festivities.[19] In November 1995, AMPAS recruited music producer and Jean Hersholt Humanitarian Award recipient Quincy Jones as producer of the 1996 ceremony.[20] Jones immediately selected actress and comedian Whoopi Goldberg to host the ceremony.[20] In an interview with Los Angeles Times writer Susan King, Jones explained the decision to hire Goldberg saying, \"She has all the qualifications to move on a dime, to carry the elegance and the dignity of the show and is very funny. She understands the street. She has everything.\"[21]\n\nOne segment that was staged during the ceremony was an elaborate fashion show showcasing the nominees for Best Costume Design.[22] Produced by fashion photographer Matthew Rolston, the production featured models such as Cameron Alborzian, Tyson Beckford, Tyra Banks, Marcus Schenkenberg and Joel West sporting various costumes from the five films nominated in the category.[23] Initially, actor Jack Nicholson was approached to introduce the segment along with models Naomi Campbell and Claudia Schiffer. However, actor Pierce Brosnan accepted the role of presenter of the segment and award after Nicholson declined those respective duties.[22]\n\nSeveral other people and elements were also involved with the production of the ceremony. Jeff Margolis served as director for the program.[24] Actress and talk show host Oprah Winfrey interviewed several nominees and other attendees during a seven-minute red carpet arrival segment shown at the beginning of the telecast.[25] Musician and saxophonist Tom Scott served as musical director for the ceremony.[26] Choreographer Jamie King supervised the performances of the Best Song nominees and two dance numbers.[27] Babe, the pig from the eponymous film, and Miss Piggy participated in a comedy sketch during the proceedings.[26] Actor Christopher Reeve, who was paralyzed in a horse riding accident nearly a year earlier, made a surprise appearance on the telecast urging filmmakers to make movies that face the world's most important issues head-on.[28]",
+        "evidence_type": "text",
+        "title": "Ceremony information",
+        "section_path": [
+          "Ceremony information"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "vector",
+        "rank": 6,
+        "raw_score": 0.9495601058006287,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "68th_Academy_Awards.html#section-007-00",
+        "source_article": "68th_Academy_Awards.html",
+        "content": "Article: 68th Academy Awards\nSection: Presenters and performers > Presenters\n\nName(s)\n\nRole\n\nLes Marshak\nAnnouncer for the 68th annual Academy Awards\n\nPierce Brosnan\n\nNaomi Campbell\n\nClaudia Schiffer\nPresenters of the award for Best Costume Design\n\nDianne Wiest\nPresenter of the award for Best Supporting Actor\n\nJohn Travolta\nPresenter of the film Apollo 13 on the Best Picture segment\n\nAlicia Silverstone\nPresenter of the award for Best Makeup\n\nEmma Thompson\nPresenter of the award for Best Art Direction\n\nChris O'Donnell\nIntroducer of the performance of Best Original Song nominee \"Moonlight\"\n\nRobin Williams\nPresenter of the Honorary Award to Chuck Jones and the Special Achievement Award to John Lasseter who comes onto the stage with a Sheriff Woody doll and a Buzz Lightyear action figure. As they come to life, Tom Hanks and Tim Allen reprise their respective voice roles.\n\nKareem Abdul-Jabbar\n\nJackie Chan\nPresenters of the awards for Best Live Action Short Film and Best Animated Short Film\n\nSandra Bullock\nPresenter of the award Best Sound Effects Editing\n\nSteven Seagal\nPresenter of the award Best Sound\n\nJeremy Irons\nPresenter of the film Braveheart on the Best Picture segment\n\nMartin Landau\nPresenter of the award for Best Supporting Actress\n\nJim Carrey\nPresenter of the award for Best Cinematography\n\nGoldie Hawn\n\nKurt Russell\nPresenters of the award for Best Film Editing\n\nRichard Dreyfuss\nPresenter of the segment of the Academy Awards for Technical Achievement and the Gordon E. Sawyer Award\n\nWinona Ryder\nIntroducer of the performance of Best Original Song nominee \"Dead Man Walking\"\n\nWill Smith\nPresenter of the award for Best Visual Effects\n\nAnjelica Huston\nPresenter of the film Sense and Sensibility on the Best Picture segment\n\nNicolas Cage\n\nElisabeth Shue\nPresenters of the awards for Best Documentary Short Subject and Best Documentary Feature\n\nNathan Lane\nIntroducer of the performance of Best Original Song nominee \"Colors of the Wind\"\n\nMel Gibson\nPresenter of the award Best Foreign Language Film\n\nSteven Spielberg\nPresenter of the Honorary Award to Kirk Douglas\n\nQuincy Jones\n\nSharon Stone\nPresenters of the awards for Best Original Musical or Comedy Score and Best Original Dramatic Score\n\nLiam Neeson\nPresenter of the film Il Postino: The Postman on the Best Picture segment\n\nArthur Hiller (AMPAS President)\nPresenter of the \"In Memoriam\" tribute\n\nJimmy Smits\nIntroducer of the performance of Best Original Song nominee \"Have You Ever Really Loved a Woman?\"\n\nSusan Sarandon\nPresenter of the award for Best Screenplay Written Directly for the Screen\n\nAnthony Hopkins\nPresenter of the award for Best Screenplay Based on Material Previously Produced or Published\n\nChristopher Reeve\nPresenter of the montage on films that address social issues\n\nAngela Bassett\n\nLaurence Fishburne\nPresenters of the award for Best Original Song\n\nNicole Kidman\nPresenter of the film Babe on the Best Picture segment\n\nRobert Zemeckis\nPresenter of the award Best Director\n\nTom Hanks\nPresenter of the award for Best Actress\n\nJessica Lange\nPresenter of the award for Best Actor\n\nSidney Poitier\nPresenter of the award for Best Picture",
+        "evidence_type": "text",
+        "title": "Presenters",
+        "section_path": [
+          "Presenters and performers",
+          "Presenters"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "vector",
+        "rank": 7,
+        "raw_score": 0.9528703689575195,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "68th_Academy_Awards.html#section-011-00",
+        "source_article": "68th_Academy_Awards.html",
+        "content": "Article: 68th Academy Awards\nSection: Ceremony information > Division of Best Original Score category\n\nBeginning with this ceremony, the AMPAS music branch divided the category of Best Original Score into two categories: Best Dramatic Score and Best Musical or Comedy Score.[33] This was seen as a response to the dominance of Walt Disney Feature Animation films in the Original Score and Original Song categories in recent years.[34] Four years later, the two scoring categories were merged back into one category.[35]",
+        "evidence_type": "text",
+        "title": "Division of Best Original Score category",
+        "section_path": [
+          "Ceremony information",
+          "Division of Best Original Score category"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "vector",
+        "rank": 8,
+        "raw_score": 0.9572368860244751,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "70th_Academy_Awards.html#section-008-00",
+        "source_article": "70th_Academy_Awards.html",
+        "content": "Article: 70th Academy Awards\nSection: Ceremony information\n\nBilly Crystal hosted the 70th Academy Awards.\n\nIn December 1997, the academy hired veteran Oscar telecast producer Gil Cates to oversee the 1998 ceremony.[25] \"Gil has become the consummate Oscar show producer, consistently garnering top television ratings for the telecast,\" said AMPAS President Robert Rehme in a press release announcing the selection. \"His shows are full of wit, charm and surprise.\"[25] A few days later, actor and comedian Billy Crystal was chosen to emcee the upcoming telecast. Cates explained his reason to bring back the veteran comedian saying, \"Billy's performance last year was spectacular. There is nobody like him.\"[26] In an article published in USA Today he initially requested to Cates and AMPAS five months after the previous year's ceremony that he would like to take a break from hosting duties. However, pressure from the academy, Cates, and several friends and family members made him reconsider his decision.[27] His sixth stint would make him second only to Bob Hope in number of ceremonies hosted.[28]\n\nTo commemorate the seventieth anniversary of the Academy Awards, 70 actors who have received both competitive and honorary awards appeared seated onstage together during a segment called Oscar's Family Album.[29] Each former winner was acknowledged by announcer Norman Rose with the films he or she won for. At the end of the segment newly minted winners Kim Basinger, Helen Hunt, and Robin Williams joined them. This marked the largest gathering of former winners since the 50th ceremony held in 1978.[30] The Academy also commissioned musician and composer Jerry Goldsmith to compose a new leitmotif for the Oscars telecast entitled \"Fanfare for Oscar\".[31]\n\nSeveral others participated in the production of the ceremony. Bill Conti served as musical director for the telecast.[32] Dancer Daniel Ezralow choreographed a dance number showcasing the nominees for Best Original Comedy or Musical Score.[33] Bart the Bear made a surprise appearance during the presentation of the Best Sound Effects Editing award with Mike Myers.[34]",
+        "evidence_type": "text",
+        "title": "Ceremony information",
+        "section_path": [
+          "Ceremony information"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.8823837041854858,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "70th_Academy_Awards.html#section-011-00",
+        "source_article": "70th_Academy_Awards.html",
+        "content": "Article: 70th Academy Awards\nSection: Ceremony information > Ratings and reception\n\nThe American telecast on ABC drew in an average of 57.25 million people over its length, which was a 29% increase from the previous year's ceremony.[43] An estimated 87.50 million total viewers watched all or part of the awards.[44] The show also earned higher Nielsen ratings compared to the previous ceremony with 35.32% of households watching over a 55.77 share.[45] In addition, it garnered a higher 18–49 demo rating with a 24.90 rating over a 44.30 share among viewers in that demographic.[45] It was the most watched Oscar ceremony in television history since viewership figures were compiled beginning with the 46th ceremony in 1974.[46]\n\nIn July 1998, the ceremony presentation received eight nominations at the 50th Primetime Emmys.[47] Two months later, the ceremony won five of those nominations for Outstanding Individual Performance in a Variety or Music Program (Billy Crystal), Outstanding Directing for a Variety or Music Program (Louis J Horvitz), Outstanding Lighting Direction (Electronic) for a Drama Series, Variety Series, Miniseries, or Movie (Bob Barnhart, Robert Dickinson, Matt Ford, Andy O'Reilly), Outstanding Music Direction (Bill Conti), and Outstanding Sound Mixing for a Variety Series or Special (Patrick Baltzell, Robert Douglass, Edward J. Greene, Tommy Vicari).[48][49]",
+        "evidence_type": "text",
+        "title": "Ratings and reception",
+        "section_path": [
+          "Ceremony information",
+          "Ratings and reception"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "vector",
+        "rank": 3,
+        "raw_score": 0.8967123031616211,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "70th_Academy_Awards.html#section-000-00",
+        "source_article": "70th_Academy_Awards.html",
+        "content": "Article: 70th Academy Awards\nSection: Lead\n\nAward ceremony for films of 1997\n\n70th Academy Awards\n\nOfficial poster by Arnold Schwartzman[1]\n\nDateMarch 23, 1998\n\nSiteShrine Auditorium\n\nLos Angeles, California, U.S.\n\nHosted byBilly Crystal\n\nProduced byGil Cates\n\nDirected byLouis J. Horvitz\n\nHighlights\n\nBest PictureTitanic\n\nMost awardsTitanic (11)\n\nMost nominationsTitanic (14)\n\nTV in the United States\n\nNetworkABC\n\nDuration3 hours, 47 minutes[2]\n\nRatings57.25 million\n\n35.32% (Nielsen ratings)\n\n← 69th\n\nAcademy Awards\n\n71st →\n\nThe 70th Academy Awards ceremony, organized by the Academy of Motion Picture Arts and Sciences (AMPAS), took place on March 23, 1998, at the Shrine Auditorium in Los Angeles beginning at 6:00 p.m. PST / 9:00 p.m. EST. During the show, AMPAS presented Academy Awards (commonly referred to as Oscars) in 24 categories honoring films released in 1997. The ceremony, which was televised in the United States by ABC, was produced by Gil Cates and directed by Louis J. Horvitz.[3][4] Actor Billy Crystal hosted the show for the sixth time.[5] He had first hosted the 62nd ceremony held in 1990, and most recently the previous year's awards.[6] Nearly a month earlier in an event held at the Regent Beverly Wilshire Hotel in Beverly Hills, California on February 28, the Academy Awards for Technical Achievement were presented by host Ashley Judd.[7]\n\nTitanic won 11 awards, including Best Picture, a number that is tied with Ben-Hur and The Lord of the Rings: The Return of the King.[8][9] Other winners included As Good as It Gets, Good Will Hunting, and L.A. Confidential with two awards, and Character, The Full Monty, Geri's Game, The Long Way Home, Men in Black, A Story of Healing, and Visas and Virtue with one. The telecast garnered more than 57 million viewers in the United States, making it the most-watched Oscars broadcast in history.[10]",
+        "evidence_type": "text",
+        "title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "vector",
+        "rank": 4,
+        "raw_score": 0.9004237055778503,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "70th_Academy_Awards.html#section-009-00",
+        "source_article": "70th_Academy_Awards.html",
+        "content": "Article: 70th Academy Awards\nSection: Ceremony information > Box office performance of nominees\n\nAt the time of the nominations announcement on February 10, the combined gross of the five Best Picture nominees was $579 million with an average of $116 million per film.[35] Titanic was the highest earner among the Best Picture nominees with $338.7 million in domestic box office receipts.[35] The film was followed by As Good as It Gets ($92.6 million), Good Will Hunting ($68.9 million), L.A. Confidential ($39.7 million), and finally The Full Monty ($38.7 million).[35]\n\nOf the top 50 grossing movies of the year, 40 nominations went to 15 films on the list. Only Titanic (1st), As Good as It Gets (16th), Good Will Hunting (20th), and In & Out (24th) were nominated for directing, acting, screenwriting, or Best Picture.[36] The other top 50 box office hits that earned nominations were Men in Black (2nd), The Lost World: Jurassic Park (3rd), Air Force One (5th), My Best Friends Wedding (7th), Face/Off (9th), Con Air (12th), Contact (13th), Hercules (14th), The Fifth Element (25th), Anastasia (30th), and Starship Troopers (34th).[36]",
+        "evidence_type": "text",
+        "title": "Box office performance of nominees",
+        "section_path": [
+          "Ceremony information",
+          "Box office performance of nominees"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "vector",
+        "rank": 5,
+        "raw_score": 0.9195951223373413,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "70th_Academy_Awards.html#section-004-00",
+        "source_article": "70th_Academy_Awards.html",
+        "content": "Article: 70th Academy Awards\nSection: Winners and nominees > Films with multiple nominations and awards\n\nThe following 16 films received multiple nominations:\n\nNominations\n\nFilm\n\n14\n\nTitanic\n\n9\n\nGood Will Hunting\n\nL.A. Confidential\n\n7\n\nAs Good as It Gets\n\n4\n\nAmistad\n\nThe Full Monty\n\nKundun\n\nThe Wings of the Dove\n\n3\n\nBoogie Nights\n\nMen in Black\n\n2\n\nAir Force One\n\nAnastasia\n\nCon Air\n\nMrs Brown\n\nThe Sweet Hereafter\n\nWag the Dog\n\nThe following four films received multiple awards:\n\nAwards\n\nFilm\n\n11\n\nTitanic\n\n2\n\nAs Good as It Gets\n\nGood Will Hunting\n\nL.A. Confidential",
+        "evidence_type": "text",
+        "title": "Films with multiple nominations and awards",
+        "section_path": [
+          "Winners and nominees",
+          "Films with multiple nominations and awards"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "vector",
+        "rank": 6,
+        "raw_score": 0.9443545341491699,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "70th_Academy_Awards.html#section-005-00",
+        "source_article": "70th_Academy_Awards.html",
+        "content": "Article: 70th Academy Awards\nSection: Presenters and performers\n\nThe following individuals presented awards or performed musical numbers.[22][23]",
+        "evidence_type": "text",
+        "title": "Presenters and performers",
+        "section_path": [
+          "Presenters and performers"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "vector",
+        "rank": 7,
+        "raw_score": 0.951441764831543,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "70th_Academy_Awards.html#section-013-00",
+        "source_article": "70th_Academy_Awards.html",
+        "content": "Article: 70th Academy Awards\nSection: See also\n\nFilm portal\n\nLos Angeles portal\n\n4th Screen Actors Guild Awards\n\n18th Golden Raspberry Awards\n\n40th Grammy Awards\n\n51st British Academy Film Awards\n\n52nd Tony Awards\n\n55th Golden Globe Awards\n\nList of submissions to the 70th Academy Awards for Best Foreign Language Film\n\n<h2",
+        "evidence_type": "text",
+        "title": "See also",
+        "section_path": [
+          "See also"
+        ],
+        "retrieval_query": "Compute the intersection of the full nominee lists for the 68th, 70th, and 74th Academy Awards. Return every person present at all three ceremonies, attach at least one of that person's nominated works at each ceremony, and state whether any of those people won at one or more of the three ceremonies, with the corresponding award and work.",
+        "retriever": "vector",
+        "rank": 8,
+        "raw_score": 0.9545373320579529,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "78th_Academy_Awards.html#section-013-00",
+        "source_article": "78th_Academy_Awards.html",
+        "content": "Article: 78th Academy Awards\nSection: See also\n\n12th Screen Actors Guild Awards\n\n26th Golden Raspberry Awards\n\n48th Grammy Awards\n\n58th Primetime Emmy Awards\n\n59th British Academy Film Awards\n\n60th Tony Awards\n\n63rd Golden Globe Awards\n\nList of submissions to the 78th Academy Awards for Best Foreign Language Film\n\n<h2",
+        "evidence_type": "graph",
+        "title": "See also",
+        "section_path": [
+          "See also"
+        ],
+        "retrieval_query": "68th Academy Awards full nominees list all categories nominees and nominated works winners nominees section",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 0.9048221707344055,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "74th_Academy_Awards.html",
+            "68th_Academy_Awards.html",
+            "70th_Academy_Awards.html"
+          ],
+          "graph_neighbor_rank": 2,
+          "graph_score": 10.101566219020846,
+          "discovery_reasons": [
+            "entity:Jennifer_Lopez(21)",
+            "entity:Nielsen_ratings(34)",
+            "entity:John_Williams(18)",
+            "entity:Whoopi_Goldberg(24)",
+            "entity:Halle_Berry(16)",
+            "entity:Sandra_Bullock(16)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Academy_Award_for_Best_Picture.html#section-020-00",
+        "source_article": "Academy_Award_for_Best_Picture.html",
+        "content": "Article: Academy Award for Best Picture\nSection: Winners and nominees\n\nIn the list below, winners are listed first in the gold row, followed by the other nominees.[6] Except for the early years (when the Academy used a non-calendar year), the year shown is the one in which the film first premiered in Los Angeles County, California; normally this is also the year of first release, but it may be the year after first release (as with Casablanca and, if the film-festival premiere is considered, Crash and The Hurt Locker). This is also the year before the ceremony at which the award is given; for example, a film exhibited theatrically during 2005 was eligible for consideration for the 2005 Best Picture Oscar, awarded in 2006. The number of the ceremony (1st, 2nd, etc.) appears in parentheses after the awards year, linked to the article on that ceremony. Each individual entry shows the title followed by nominee.\n\nUntil 1950, the Best Picture award was given to the production company; from 1951 on, it has gone to the producer or producers. The Academy used the producer credits of the Producers Guild of America (PGA) until 1998, when all five producers of Shakespeare in Love made speeches after its win.[9][10] A three-producer limit has been applied some years since.[10][11] There was controversy over the exclusion of some PGA-credited producers of Crash and Little Miss Sunshine.[11] The Academy can make exceptions to the limit, as when Anthony Minghella and Sydney Pollack were posthumously among the four nominated for The Reader.[13] However, now any number of producers on a film can be nominated for Best Picture, should they be deemed eligible.\n\nFor the first ceremony, three films were nominated for the award. For the following three years, five films were nominated for the award. This was expanded to eight in 1933, to ten in 1934, and to twelve in 1935, before being dropped back to ten in 1937. In 1945, it was further reduced to five. This number remained until 2009, when the limit was raised to ten; it was adjusted from 2011 to 2020 to vary between five and ten, but has been a full ten since 2022.\n\nFor the first six ceremonies, the eligibility period spanned two calendar years. For example, the 2nd Academy Awards presented on April 3, 1930, recognized films that were released between August 1, 1928, and July 31, 1929. Starting with the 7th Academy Awards, held in 1935, the period of eligibility became the full previous calendar year from January 1 to December 31. This has been the rule every year since except 2020, when the end date was extended to February 28, 2021, due to the COVID-19 pandemic, and 2021, which was correspondingly limited to March 1 to December 31.\n\nSince 2023, the category's winners and nominees from the 1927/28 and 1928/29 ceremonies have entered the public domain.[82]\n\n  indicates the winner",
+        "evidence_type": "graph",
+        "title": "Winners and nominees",
+        "section_path": [
+          "Winners and nominees"
+        ],
+        "retrieval_query": "74th Academy Awards full nominees list all categories nominees and nominated works winners nominees section",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 0.9071438908576965,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "74th_Academy_Awards.html",
+            "68th_Academy_Awards.html",
+            "70th_Academy_Awards.html"
+          ],
+          "graph_neighbor_rank": 4,
+          "graph_score": 9.539732570142869,
+          "discovery_reasons": [
+            "link",
+            "entity:Wes_Anderson(17)",
+            "entity:Walt_Disney_Pictures(29)",
+            "entity:Robert_Redford(20)",
+            "entity:Will_Smith(20)",
+            "entity:Academy_Award_for_Best_Director(45)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "78th_Academy_Awards.html#section-005-00",
+        "source_article": "78th_Academy_Awards.html",
+        "content": "Article: 78th Academy Awards\nSection: Presenters and performers\n\nThe following individuals presented awards or performed musical numbers.[23][24][25]",
+        "evidence_type": "graph",
+        "title": "Presenters and performers",
+        "section_path": [
+          "Presenters and performers"
+        ],
+        "retrieval_query": "68th Academy Awards full nominees list all categories nominees and nominated works winners nominees section",
+        "retriever": "graph",
+        "rank": 2,
+        "raw_score": 0.937759280204773,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "74th_Academy_Awards.html",
+            "68th_Academy_Awards.html",
+            "70th_Academy_Awards.html"
+          ],
+          "graph_neighbor_rank": 2,
+          "graph_score": 10.101566219020846,
+          "discovery_reasons": [
+            "entity:Jennifer_Lopez(21)",
+            "entity:Nielsen_ratings(34)",
+            "entity:John_Williams(18)",
+            "entity:Whoopi_Goldberg(24)",
+            "entity:Halle_Berry(16)",
+            "entity:Sandra_Bullock(16)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Academy_Award_for_Best_Picture.html#section-036-00",
+        "source_article": "Academy_Award_for_Best_Picture.html",
+        "content": "Article: Academy Award for Best Picture\nSection: See also\n\nAcademy Aperture 2025\n\nBAFTA Award for Best Film\n\nCritics' Choice Movie Award for Best Picture\n\nGolden Globe Award for Best Motion Picture – Drama\n\nGolden Globe Award for Best Motion Picture – Musical or Comedy\n\nGolden Raspberry Award for Worst Picture\n\nIndependent Spirit Award for Best Film\n\nProducers Guild of America Award for Best Theatrical Motion Picture\n\nScreen Actors Guild Award for Outstanding Performance by a Cast in a Motion Picture\n\nList of presenters of the Academy Award for Best Picture\n\nList of Academy Award–nominated films\n\nList of Academy Award–winning films\n\nList of Big Five Academy Award winners and nominees\n\nList of film production companies\n\nList of films considered the best\n\nLists of films\n\nList of superlative Academy Award winners and nominees\n\n<h2",
+        "evidence_type": "graph",
+        "title": "See also",
+        "section_path": [
+          "See also"
+        ],
+        "retrieval_query": "70th Academy Awards full nominees list all categories nominees and nominated works winners nominees section",
+        "retriever": "graph",
+        "rank": 2,
+        "raw_score": 0.9629145860671997,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "74th_Academy_Awards.html",
+            "68th_Academy_Awards.html",
+            "70th_Academy_Awards.html"
+          ],
+          "graph_neighbor_rank": 4,
+          "graph_score": 9.539732570142869,
+          "discovery_reasons": [
+            "link",
+            "entity:Wes_Anderson(17)",
+            "entity:Walt_Disney_Pictures(29)",
+            "entity:Robert_Redford(20)",
+            "entity:Will_Smith(20)",
+            "entity:Academy_Award_for_Best_Director(45)"
+          ]
+        }
+      }
+    ],
+    "assessment": {
+      "ready_to_answer": false,
+      "supported_requirements": [],
+      "missing_requirements": [
+        "The full nominee lists for the 68th, 70th, and 74th Academy Awards are not actually provided in the evidence excerpts; only summary text and a few category/film tables are available. The question requires the intersection of all nominee lists, which needs the complete nominee names from each ceremony.",
+        "For each person in the intersection, at least one nominated work at each of the three ceremonies must be identified. The current evidence does not supply full person-to-work nominee mappings for all three ceremonies.",
+        "Whether any of the intersecting people won at one or more of the three ceremonies, with the corresponding award and work, requires winner/nominee details that are not present in the supplied excerpts."
+      ],
+      "retrieval_requests": [
+        {
+          "missing_fact": "Complete nominee list for the 68th Academy Awards, including person names and nominated works by category.",
+          "query": "68th Academy Awards full nominee list nominees people works categories winners nominees section",
+          "target_articles": [
+            "68th_Academy_Awards.html"
+          ],
+          "keywords": [
+            "nominees",
+            "winners and nominees",
+            "category nominees",
+            "person",
+            "work"
+          ],
+          "preferred_retriever": "hybrid"
+        },
+        {
+          "missing_fact": "Complete nominee list for the 70th Academy Awards, including person names and nominated works by category.",
+          "query": "70th Academy Awards full nominee list nominees people works categories winners nominees section",
+          "target_articles": [
+            "70th_Academy_Awards.html"
+          ],
+          "keywords": [
+            "nominees",
+            "winners and nominees",
+            "category nominees",
+            "person",
+            "work"
+          ],
+          "preferred_retriever": "hybrid"
+        },
+        {
+          "missing_fact": "Complete nominee list for the 74th Academy Awards, including person names and nominated works by category.",
+          "query": "74th Academy Awards full nominee list nominees people works categories winners nominees section",
+          "target_articles": [
+            "74th_Academy_Awards.html"
+          ],
+          "keywords": [
+            "nominees",
+            "winners and nominees",
+            "category nominees",
+            "person",
+            "work"
+          ],
+          "preferred_retriever": "hybrid"
+        }
+      ],
+      "table_requests": [],
+      "unresolved_conflicts": [],
+      "explanation": "The supplied evidence only includes overview prose plus tables of films with multiple nominations/awards, which is insufficient to compute the intersection of full nominee lists across the three ceremonies or to determine the nominated works and winners for each intersecting person."
+    },
+    "assessment_history": [
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [],
+        "missing_requirements": [
+          "The full nominee lists for the 68th, 70th, and 74th Academy Awards are not provided as complete structured nominee tables in the supplied evidence, so the intersection of people cannot be computed from the excerpts alone.",
+          "For each person in the intersection, the question requires at least one nominated work at each of the three ceremonies; the supplied evidence only includes a few film-nomination summary tables and brief prose, not the nominee-by-person lists needed to attach works to people across all three ceremonies.",
+          "The question also asks whether any of those people won at one or more of the three ceremonies, with the corresponding award and work; the supplied evidence does not provide complete winner-by-person data tied to the intersection set."
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Complete nominee lists for the 68th Academy Awards, including nominee names and nominated works in each category.",
+            "query": "Retrieve the full nominee list for the 68th Academy Awards with nominees and nominated works for all categories, especially any people who may also appear in the 70th and 74th Academy Awards.",
+            "target_articles": [
+              "68th_Academy_Awards.html"
+            ],
+            "keywords": [
+              "68th Academy Awards",
+              "nominees",
+              "winners and nominees",
+              "full nominee list"
+            ],
+            "preferred_retriever": "hybrid"
+          },
+          {
+            "missing_fact": "Complete nominee lists for the 70th Academy Awards, including nominee names and nominated works in each category.",
+            "query": "Retrieve the full nominee list for the 70th Academy Awards with nominees and nominated works for all categories, especially any people who may also appear in the 68th and 74th Academy Awards.",
+            "target_articles": [
+              "70th_Academy_Awards.html"
+            ],
+            "keywords": [
+              "70th Academy Awards",
+              "nominees",
+              "winners and nominees",
+              "full nominee list"
+            ],
+            "preferred_retriever": "hybrid"
+          },
+          {
+            "missing_fact": "Complete nominee lists for the 74th Academy Awards, including nominee names and nominated works in each category.",
+            "query": "Retrieve the full nominee list for the 74th Academy Awards with nominees and nominated works for all categories, especially any people who may also appear in the 68th and 70th Academy Awards.",
+            "target_articles": [
+              "74th_Academy_Awards.html"
+            ],
+            "keywords": [
+              "74th Academy Awards",
+              "nominees",
+              "winners and nominees",
+              "full nominee list"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The supplied evidence only shows summary prose and tables of films with multiple nominations for each ceremony, not the full person-level nominee lists needed to compute the intersection of nominees across the 68th, 70th, and 74th Academy Awards. Because the task requires identifying people common to all three ceremonies, pairing each with nominated works at each ceremony, and checking whether any of them won, the evidence is insufficient to answer accurately."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [],
+        "missing_requirements": [
+          "The full nominee lists for the 68th, 70th, and 74th Academy Awards are not fully provided in the evidence excerpts, so the people appearing in all three ceremonies cannot be computed from the supplied evidence alone.",
+          "For each person in the intersection, at least one nominated work at each ceremony is needed; the supplied evidence only includes a few film-summary tables and some non-exhaustive mentions, not the nominee lists.",
+          "Whether any intersecting people won at one or more of the three ceremonies, with the corresponding award and work, requires nomination/winner tables or equivalent evidence for the relevant individual categories."
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Complete nominee roster for the 68th Academy Awards ceremony, including all nominee names and nominated works by category.",
+            "query": "68th Academy Awards full nominees list all categories nominees and nominated works winners nominees section",
+            "target_articles": [
+              "68th_Academy_Awards.html"
+            ],
+            "keywords": [
+              "nominees",
+              "winners and nominees",
+              "categories",
+              "full list"
+            ],
+            "preferred_retriever": "hybrid"
+          },
+          {
+            "missing_fact": "Complete nominee roster for the 70th Academy Awards ceremony, including all nominee names and nominated works by category.",
+            "query": "70th Academy Awards full nominees list all categories nominees and nominated works winners nominees section",
+            "target_articles": [
+              "70th_Academy_Awards.html"
+            ],
+            "keywords": [
+              "nominees",
+              "winners and nominees",
+              "categories",
+              "full list"
+            ],
+            "preferred_retriever": "hybrid"
+          },
+          {
+            "missing_fact": "Complete nominee roster for the 74th Academy Awards ceremony, including all nominee names and nominated works by category.",
+            "query": "74th Academy Awards full nominees list all categories nominees and nominated works winners nominees section",
+            "target_articles": [
+              "74th_Academy_Awards.html"
+            ],
+            "keywords": [
+              "nominees",
+              "winners and nominees",
+              "categories",
+              "full list"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The supplied evidence confirms only that the requested ceremony pages are relevant and includes partial summary text plus film tables of multiple nominations/awards. It does not enumerate all nominees across all categories for any of the three ceremonies, so the intersection of person-nominees cannot be determined, nor can per-ceremony nominated works and win status for the overlapping people."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [],
+        "missing_requirements": [
+          "The full nominee lists for the 68th, 70th, and 74th Academy Awards are not actually provided in the evidence excerpts; only summary text and a few category/film tables are available. The question requires the intersection of all nominee lists, which needs the complete nominee names from each ceremony.",
+          "For each person in the intersection, at least one nominated work at each of the three ceremonies must be identified. The current evidence does not supply full person-to-work nominee mappings for all three ceremonies.",
+          "Whether any of the intersecting people won at one or more of the three ceremonies, with the corresponding award and work, requires winner/nominee details that are not present in the supplied excerpts."
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Complete nominee list for the 68th Academy Awards, including person names and nominated works by category.",
+            "query": "68th Academy Awards full nominee list nominees people works categories winners nominees section",
+            "target_articles": [
+              "68th_Academy_Awards.html"
+            ],
+            "keywords": [
+              "nominees",
+              "winners and nominees",
+              "category nominees",
+              "person",
+              "work"
+            ],
+            "preferred_retriever": "hybrid"
+          },
+          {
+            "missing_fact": "Complete nominee list for the 70th Academy Awards, including person names and nominated works by category.",
+            "query": "70th Academy Awards full nominee list nominees people works categories winners nominees section",
+            "target_articles": [
+              "70th_Academy_Awards.html"
+            ],
+            "keywords": [
+              "nominees",
+              "winners and nominees",
+              "category nominees",
+              "person",
+              "work"
+            ],
+            "preferred_retriever": "hybrid"
+          },
+          {
+            "missing_fact": "Complete nominee list for the 74th Academy Awards, including person names and nominated works by category.",
+            "query": "74th Academy Awards full nominee list nominees people works categories winners nominees section",
+            "target_articles": [
+              "74th_Academy_Awards.html"
+            ],
+            "keywords": [
+              "nominees",
+              "winners and nominees",
+              "category nominees",
+              "person",
+              "work"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The supplied evidence only includes overview prose plus tables of films with multiple nominations/awards, which is insufficient to compute the intersection of full nominee lists across the three ceremonies or to determine the nominated works and winners for each intersecting person."
+      }
+    ]
+  }
+}

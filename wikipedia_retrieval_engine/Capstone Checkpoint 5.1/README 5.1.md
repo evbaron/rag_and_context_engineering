@@ -365,29 +365,59 @@ off-topic), and the table route only fires on table questions. Synthesis questio
 that are not ready need **more of their own article**, not a table and not a neighbor.
 That is a distinct retrieval need → a distinct route (Step 9).
 
-### Step 9 — the breadth route: `article_broaden`
+### Step 9 — the breadth step: a broaden route the assessor is *forced* to use
 
-A new repeated retriever, `article_broaden`
-([`retrieve_broadened_article_sections`](../wiki_agents/retrieval_nodes.py)): when an
-unsatisfied assessment escalates to it, it pulls the top `broaden_sections_k` (default
-8) sections of each **already-selected** article by relevance to the question, and
-adds them to evidence. It is deliberately narrow in scope:
+The fix has two parts that only work together, so they are one step.
 
-- **Only the selected articles** — not graph neighbors (the graph route already owns
-  multi-article recall, and neighbors are often off-topic for a synthesis question).
-- **Additive and deduped** — it never drops the TOC-selected section or the table
-  evidence; it only contributes sections *beyond* the one already picked, so it
-  restores 2.1–4.1's breadth without discarding 5.1's precision.
-- **Sits after `graph_seeded` in the escalation sequence**
-  (`REPEATED_RETRIEVERS = ("graph_seeded", "article_broaden")`), so a question that is
-  still not ready after recall-oriented expansion gets a breadth round before the
-  answer.
+**Part 1 — the `article_broaden` route**
+([`retrieve_broadened_article_sections`](../wiki_agents/retrieval_nodes.py)): a repeated
+retriever that pulls the top `broaden_sections_k` (default 8) sections of each
+**already-selected** article by relevance to the question. Only the selected articles
+(not graph neighbors), additive and deduped (it never drops the TOC section or table
+evidence; it adds sections *beyond* the one picked), restoring 2.1–4.1's breadth
+without discarding 5.1's precision.
 
-This directly targets the Cause-B losses (VAL09, VAL15; GT16, GT19) without touching
-the table path or the recall wins. It does **not** address Cause A (the executor
-hurting VAL05/VAL06) — that is a separate planner-precision fix. Pending its own
-validation + GT run to confirm it recovers the synthesis questions without diluting
-the questions that already pass.
+**The route alone did nothing.** Run on validation, quality actually fell to ~0.79 —
+because the route is assessor-gated and *the assessor never asked for it*. On synthesis
+questions the assessor declared `ready_to_answer` straight out of the initial
+single-section pass (VAL15: `ready=True, stage=multistep_entity_initial`, all runs) and
+answered partially. The breadth route can't help a question it is never handed. This is
+the table coin-flip one question-class over: the assessor is too eager to answer.
+
+**Part 2 — the readiness nudge.** In `assess_evidence`, deny a *first-pass* `ready`
+verdict for a non-table question (opt-in `breadth_nudge`, auto-enabled only when the
+broaden route is in the sequence): it must take one escalation before answering. And
+reorder the sequence to `("article_broaden", "graph_seeded")` so that one escalation
+delivers *breadth* (same-article sections), not graph *neighbors*. Recall is already
+1.000, so graph's recall job is done; it stays as the fallback. The nudge fires once
+(only at the initial pass), so every non-table question costs exactly one extra round —
+bounded, no loops.
+
+**Result (4 runs each):**
+
+| set | metric | 4.1 graph | 5.1 gateway | **5.1 + breadth** |
+| --- | --- | --- | --- | --- |
+| validation | recall | 0.973 | 1.000 | **1.000** |
+| validation | quality | **0.885** | 0.845 | **0.880** |
+| GT | recall | 0.939 | 1.000 | **1.000** |
+| GT | quality | 0.744 | 0.789 | ~0.78 (flat) |
+
+On the held-out validation set the nudge **closes the gap to the prior checkpoint**:
+quality 0.845 → **0.880**, level with 4.1-graph's 0.885 (−0.005, noise), at **recall
+1.000** and ~14× less context. The Cause-B targets recovered where breadth fired
+(VAL06 0.62 → 1.0, VAL15 0.75 → 1.0), and the clean-passers that were also broadened
+held at 1.0 — the blunt "broaden every non-table question" did not dilute them. GT
+(table-heavy) stays ~flat; its per-question swings (GT08/GT10) are answer/judge
+variance on the *unchanged* table path, not the nudge (broaden never fires on them).
+
+This resolves Cause B. It does **not** address Cause A (the executor mis-planning a
+temporal aggregation — GT07, VAL05), which remains a separate planner-precision fix.
+
+**The Phase-2 arc, end to end:** retrieval-only ≈ 0.39 → aligned tables ≈ 0.58 →
+executor (assessor-gated) ≈ 0.65 → table gateway **GT 0.75** → breadth step
+**validation 0.88 at recall 1.000, matching the prior checkpoint**. The single-section
+bet cost synthesis quality; diagnosing *why* (premature readiness) and forcing breadth
+recovered it without giving back recall, tables, or the context savings.
 
 ## 4. Configurable retriever architecture
 
@@ -631,6 +661,12 @@ Implemented:
   via an `auto` operation (lookup vs filter/aggregate/…), and extraction is additive
   so prose/quotations are preserved — quality 0.789, PASS 0.750, recall 1.000
   (4-run mean, `agentic_search_lookup_and_compute`);
+- the **breadth step** for non-table synthesis questions: an `article_broaden`
+  repeated retriever (top-k sections of the selected articles, additive) plus a
+  `breadth_nudge` that denies a first-pass "ready" so the question takes one breadth
+  round, with the sequence reordered to `("article_broaden", "graph_seeded")` — closes
+  the held-out validation gap to Checkpoint 4.1 (quality 0.845 → 0.880 ≈ 4.1's 0.885)
+  at recall 1.000;
 - a Wikipedia-GT RAGAS harness with separately labeled section-only and
   table-computation experiment modes;
 - focused tests for models, parsing, store cache/invalidation, graph nodes,
@@ -643,7 +679,8 @@ Still to implement:
   presentation tables — positional columns, each cell an entire category's nominees
   as one text blob. The parser should detect these and explode them into
   per-nominee rows so the executor has rows to extract;
-- planner correctness for counting-within-a-range aggregates (GT07);
+- planner correctness for counting-within-a-range aggregates (Cause A — GT07, VAL05:
+  the executor currently mis-plans the operation and scores *below* hand-reading);
 - deterministic multi-table / multi-document joins (the gateway can execute several
   independent requests, then leaves cross-result synthesis to the answer model);
 - in-graph grounded answering and verification nodes.
