@@ -47,13 +47,14 @@ load selected section and table evidence
         |
         v
 assess evidence
-   |                         |
-   | sufficient              | table computation required
-   v                         v
-finish                 compute_requested_tables
-                               |
-                               v
-                         reassess evidence
+   |
+   +-- selected table has no computed result
+   |      -> gateway creates/keeps TableRequest
+   |      -> planner classifies lookup/filter/aggregate/...
+   |      -> compute_requested_tables
+   |      -> reassess evidence
+   |
+   +-- no table work remains -> retrieval/breadth route or finish
 ```
 
 This separation avoids parsing large HTML files during every agent run. The graph
@@ -61,7 +62,7 @@ only reads immutable normalized artifacts that were prepared ahead of time.
 
 ---
 
-## 2. How we broke down Wikipedia tables
+# How we broke down Wikipedia tables (This part was heavily influenced by Claude)
 
 A Wikipedia table is not just a rectangular list of strings. Meaning can live in:
 
@@ -79,7 +80,7 @@ A Wikipedia table is not just a rectangular list of strings. Meaning can live in
 Flattening the HTML with `get_text()` destroys many of those relationships. The
 parser therefore represents the table at three levels.
 
-### 2.1 One semantic cell: `NormalizedCell`
+###  One semantic cell: `NormalizedCell`
 
 [`wiki_table_parser.py`](../utils/wiki_table_parser.py) converts each original HTML
 cell into a `NormalizedCell`.
@@ -116,7 +117,7 @@ The origin coordinates record where the cell came from in the expanded logical
 grid. Copies created by `rowspan` or `colspan` keep the original coordinates and
 are marked `inherited=True`.
 
-### 2.2 One logical table: `NormalizedTable`
+### One logical table: `NormalizedTable`
 
 The parser groups normalized cells into a `NormalizedTable`:
 
@@ -146,7 +147,7 @@ It keeps two synchronized views:
 The executor uses `rows` for ordinary selection and arithmetic while consulting
 `row_cells` for semantic matching and source-cell provenance.
 
-### 2.3 One page's catalog entry: `TableCatalogEntry`
+###  One page's catalog entry: `TableCatalogEntry`
 
 The runtime should not load every row from every table merely to decide which
 table is relevant. The artifact store therefore publishes a compact catalog entry
@@ -171,9 +172,9 @@ the full table in the selection prompt.
 
 ---
 
-## 3. How HTML becomes a normalized table
+##  How HTML becomes a normalized table
 
-### 3.1 Select data tables
+###  Select data tables
 
 The default selector is:
 
@@ -185,14 +186,14 @@ This intentionally excludes infoboxes, navigation boxes, and most layout tables.
 The parser can accept a different selector, but broadening it to every `<table>`
 should be an explicit choice.
 
-### 3.2 Ignore nested-table rows
+### Ignore nested-table rows
 
 Wikipedia sometimes uses tables for layout and nests one table inside another.
 The parser collects only rows whose nearest parent table is the table currently
 being parsed. A nested key table therefore does not become accidental rows in the
 outer data table.
 
-### 3.3 Expand `rowspan` and `colspan`
+### Expand `rowspan` and `colspan`
 
 The HTML grid is converted into a rectangular logical grid.
 
@@ -206,7 +207,7 @@ the value is available in all three logical rows. The copied cells retain the
 origin cell's coordinates and are marked as inherited. This prevents the common
 failure where later columns shift left and no longer align with their headers.
 
-### 3.4 Build usable column names
+### Build usable column names
 
 The parser first looks for rows in `<thead>`. If none exist, consecutive leading
 rows containing only `<th>` cells are treated as headers.
@@ -222,7 +223,7 @@ Postseason / Wins
 Blank columns receive positional names such as `column_1`. Duplicate names are
 made unique, for example `Team` and `Team__2`. Warnings record these repairs.
 
-### 3.5 Separate base values from annotations
+### Separate base values from annotations
 
 Superscripts and subscripts are removed from the base `text` but preserved as
 structured annotations:
@@ -241,7 +242,7 @@ Reference links retain their targets and resolved note text when available. This
 supports both ordinary citations such as `[N 1]` and semantic markers such as a
 dagger denoting a Pro Bowler.
 
-### 3.6 Capture visual meaning
+### Capture visual meaning
 
 The parser retains:
 
@@ -255,7 +256,7 @@ The parser retains:
 This matters for Academy Award tables in which a winner may be distinguished by
 bold text, a color, or a legend rather than by a separate `Winner` column.
 
-### 3.7 Extract and apply legends
+###  Extract and apply legends
 
 The parser recognizes three common legend forms:
 
@@ -282,7 +283,7 @@ annotations = [{"text": "†", ...}]
 legend_matches = ["Pro Bowler"]
 ```
 
-### 3.8 Attach table context and stable identity
+### Attach table context and stable identity
 
 Each normalized table retains:
 
@@ -302,7 +303,7 @@ The distinction between the two IDs is useful:
 
 ---
 
-## 4. The run-once artifact store
+##  The run-once artifact store
 
 [`wiki_table_store.py`](../utils/wiki_table_store.py) builds the normalized corpus.
 
@@ -333,7 +334,7 @@ full rebuild is needed.
 
 ---
 
-## 5. Where table computation enters the graph
+# Where table computation enters the graph
 
 Before computation, the graph has already:
 
@@ -343,14 +344,49 @@ Before computation, the graph has already:
 4. loaded the selected section evidence; and
 5. loaded normalized table rows as ordinary evidence.
 
-The evidence assessor then decides whether those rows can be used directly or
-need deterministic computation.
+The first implementation allowed the evidence assessor to decide whether a table
+needed computation where "lookup" was not part of the computation and was supposed to be done by the LLM.
+That produced inconsistent behavior: the same question passed
+when the assessor requested the tool and failed when it decided it could read the
+rows directly.
 
-A direct lookup may already be answerable from the loaded table evidence. A
-question requiring filtering, a threshold, counting, aggregation, comparison,
-or sorting should produce a `TableRequest` instead.
+The final design adds a **table gateway** inside `assess_evidence`:
 
-Example:
+```text
+relevant table artifact selected?
+        |
+        +-- no  -> honor normal readiness/retrieval logic
+        |
+        +-- yes -> table_computation evidence already present?
+                     |
+                     +-- yes -> honor the new assessment
+                     |
+                     +-- no  -> force not-ready
+                              -> preserve assessor requests, or synthesize one
+                                 operation="auto" request per selected artifact
+```
+
+This makes table processing reliable without removing judgment from the planner.
+The gateway decides **that** a selected table must pass through the deterministic
+path once. The planner decides **what** that path should do:
+
+- `lookup` for direct extraction or a whole column;
+- `filter` for row predicates;
+- `aggregate` for count/sum/min/max/average; or
+- `compare`, `sort`, or `timeline` when appropriate.
+
+For a synthesized gateway request, the input is deliberately minimal:
+
+```python
+TableRequest(
+    missing_fact=question,
+    source_article="Scores.html",
+    table_id="selected-artifact-id",
+    operation="auto",
+)
+```
+
+The assessor may still emit a more explicit request:
 
 ```python
 TableRequest(
@@ -362,17 +398,24 @@ TableRequest(
 )
 ```
 
-The request describes the evidence gap. It is not yet an executable program.
+Both requests describe an evidence gap. Neither is an executable program until
+`plan_table_query()` converts it into a validated `TableQueryPlan`.
 
 ---
 
-## 6. `compute_requested_tables`: overall responsibility
+##  `compute_requested_tables`: overall responsibility
 
 [`compute_requested_tables()`](../wiki_agents/table_nodes.py) is the orchestration
 node for one bounded table round.
 
 ```text
-EvidenceAssessment.table_requests
+selected table artifact
+              |
+              v
+      assess_evidence gateway
+              |
+              v
+ EvidenceAssessment.table_requests
               |
               v
     compute_requested_tables
@@ -392,14 +435,14 @@ EvidenceAssessment.table_requests
 
 It is an adapter between three contracts:
 
-- `TableRequest`: what information the assessor still needs;
+- `TableRequest`: what information the assessor or gateway wants extracted;
 - `TableQueryPlan`: the validated operation the planner wants executed; and
 - `TableEvidence`: the rows, calculation, warnings, and provenance produced by
   deterministic execution.
 
 ---
 
-## 7. Function inputs and owned state
+##  Function inputs and owned state
 
 The function receives:
 
@@ -437,7 +480,7 @@ the shared state object and return the whole object.
 
 ---
 
-## 8. Detailed execution, step by step
+##  Detailed execution, step by step
 
 ### Step 1: validate the node invocation
 
@@ -497,6 +540,12 @@ request in the ID.
 
 The planner translates the evidence gap into a `TableQueryPlan`.
 
+If `request.operation` is explicit, the planner must preserve it. If it is
+`"auto"`, the planner classifies the work from the user question, table schema,
+legends, and sample rows. This is what lets the gateway safely handle both simple
+lookups and real computation without treating every selected table as an
+aggregation problem.
+
 It first resolves the source article and finds candidate artifacts. An exact
 `table_id`/`artifact_id` from TOC review is authoritative. If no exact ID exists,
 candidate ranking considers:
@@ -537,7 +586,8 @@ arithmetic itself.
 Before execution, validation rejects a plan that:
 
 - selects an artifact that was not supplied;
-- changes the assessor's requested operation;
+- changes an explicitly requested operation (`auto` is intentionally free to be
+  classified);
 - references a nonexistent column;
 - selects no output columns;
 - requests sorting without a sort column;
@@ -644,7 +694,7 @@ whether the graph is ready, needs retrieval, or needs another table round.
 
 ---
 
-## 9. Predicate details
+##  Predicate details
 
 `TablePredicate` is the deterministic row-selection language.
 
@@ -712,7 +762,7 @@ Use:
 
 ---
 
-## 10. Aggregation and sorting details
+## Aggregation and sorting details
 
 Supported calculations are:
 
@@ -739,7 +789,7 @@ tries a numeric parse and falls back to normalized text ordering.
 
 ---
 
-## 11. Worked example: numeric row filtering
+##  Worked example: numeric row filtering
 
 Question:
 
@@ -810,7 +860,7 @@ has already been executed and its contributing cells are recorded.
 
 ---
 
-## 12. Expected failures and graph behavior
+##  Expected failures and graph behavior
 
 Expected artifact, schema, or plan failures are converted into insufficient
 evidence rather than dropping the entire benchmark question.
@@ -838,7 +888,7 @@ table node. They propagate to the harness's normal retry/backoff behavior.
 
 ---
 
-## 13. Why table and retrieval budgets are separate
+##  Why table and retrieval budgets are separate
 
 `retrieval_attempts` and `table_attempts` measure different kinds of work:
 
@@ -855,7 +905,76 @@ retrieval sequence or creating an infinite loop.
 
 ---
 
-## 14. Current boundary: what this does not yet do
+## What the final evaluation showed
+
+The table-heavy 19-question GT set separates the contribution of representation,
+execution, and routing:
+
+| configuration | quality | strict PASS | article recall | mean context |
+| --- | ---: | ---: | ---: | ---: |
+| TOC-selected sections | 0.579 | 40.8% | 0.974 | 13.3K |
+| aligned normalized tables, read as-is | 0.697 | 57.9% | 0.974 | 28.3K |
+| assessor-gated table computation | 0.697 | 61.8% | **1.000** | 43.5K |
+| forced lookup + computation gateway | **0.789** | **75.0%** | **1.000** | 44.2K |
+
+```mermaid
+flowchart LR
+    A[TOC sections<br/>quality 0.579]
+    B[Aligned rows<br/>quality 0.697]
+    C[Optional compute<br/>quality 0.697]
+    D[Forced lookup + compute<br/>quality 0.789]
+
+    A -->|repair representation| B
+    B -->|add executor, but assessor may skip it| C
+    C -->|remove routing coin-flip| D
+```
+
+The important comparison is the middle pair: adding a correct executor did not
+raise mean quality while its use remained assessor-gated. The gain appeared after
+the gateway made tool use reliable. This is why routing policy is part of tool
+quality; an unused correct tool has no effect on the answer.
+
+### GT10: the representation and plan align
+
+[`sample_agent_state_GT10_annotated.md`](sample_agent_state_GT10_annotated.md)
+shows the intended path. The selected `Sport / Years` table has one sport per row
+and real headers. Assessment sees that the visible excerpt is incomplete, the
+planner emits `year_min_gte(1950)`, Python filters all 16 artifact rows, and the
+answer uses the six returned sports plus their source cells. The result passes.
+
+### GT03: orchestration succeeds but the table shape does not
+
+[`sample_agent_state_GT03_annotated.md`](sample_agent_state_GT03_annotated.md)
+shows three selected ceremony tables and three successful tool calls. Yet the
+parser reports generated positional columns, and each cell contains an entire
+award category as one text blob. There is no nominee-per-row relation for Python
+to intersect. The answer fails even though retrieval, routing, and execution all
+ran.
+
+Together these examples define the boundary of deterministic computation:
+
+```text
+good table structure + correct plan + reliable routing -> trustworthy result
+bad table structure  + correct routing                 -> deterministic blob
+good table structure + skipped tool                    -> model hand-reading
+good table structure + wrong plan                      -> precise wrong answer
+```
+
+This is the important limit of the table pipeline: deterministic execution makes
+the result reproducible, but it cannot repair a malformed relation or an
+incorrect plan. The AgentState log is what distinguishes those cases.
+
+The remaining table failures are therefore specific rather than mysterious:
+
+- layout-table normalization for GT03;
+- planner correctness for temporal/count aggregation in GT07 and VAL05;
+- deciding when deterministic rows clarify a question versus distort an
+  uncertainty/conflict question such as VAL06; and
+- deterministic joins across independently computed table results.
+
+---
+
+##  Current boundary: what this does not yet do
 
 The current node can execute several independent `TableRequest` objects in one
 round. It does not yet perform a deterministic join across the resulting tables.
@@ -878,7 +997,7 @@ then calls the answer model and sends the result to RAGAS.
 
 ---
 
-## 15. Code map
+## Code map
 
 - [`wiki_table_parser.py`](../utils/wiki_table_parser.py) — HTML-to-normalized-table
   parsing, span expansion, annotations, legends, and provenance coordinates.
@@ -897,6 +1016,12 @@ then calls the answer model and sends the result to RAGAS.
   provenance, numeric, year, legend, and schema-validation tests.
 - [`test_agent_graph.py`](../tests/test_agent_graph.py) — full
   assess-to-compute-to-reassess graph test.
+- [`ragas_agent_toc_and_tables_v6.pdf`](ragas_agent_toc_and_tables_v6.pdf) — final
+  GT milestone comparison used in §14.
+- [`sample_agent_state_GT10_annotated.md`](sample_agent_state_GT10_annotated.md) —
+  successful deterministic table path.
+- [`sample_agent_state_GT03_annotated.md`](sample_agent_state_GT03_annotated.md) —
+  multi-table orchestration and the layout-table limitation.
 
 Run the focused tests from the repository root:
 
