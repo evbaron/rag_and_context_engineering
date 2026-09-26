@@ -21,10 +21,11 @@ LangGraph workflows, and common failure modes—see
 
 Checkpoint READMEs record the project decisions and experimental evidence:
 
-- [Checkpoint 2.1 retrieval notes](wikipedia_retrieval_engine/Capstone%20Checkpoint%202.1/README.md)
+- [Checkpoint 2.1 retrieval notes](wikipedia_retrieval_engine/Capstone%20Checkpoint%202.1/README%202.1.md)
 - [Checkpoint 3.1 baseline evaluation](wikipedia_retrieval_engine/Capstone%20Checkpoint%203.1/README%203.1.md)
 - [Checkpoint 4.1 advanced retrieval](wikipedia_retrieval_engine/Capstone%20Checkpoint%204.1/README%204.1.md)
 - [Checkpoint 5.1 agentic evidence graph](wikipedia_retrieval_engine/Capstone%20Checkpoint%205.1/README%205.1.md)
+- [Checkpoint 6.1 security and cost audit](wikipedia_retrieval_engine/Capstone%20Checkpoint%206.1/README%206.1.md) (in progress)
 
 For the evolution at a glance — every retriever/approach tried, survived, or abandoned
 across checkpoints 1.1–5.1, with both RAGAS metrics (recall and answer quality) at each
@@ -34,6 +35,7 @@ fork — open the interactive [**Retriever Phylogeny**](retriever_phylogeny.html
 rag_and_context_engineering/
 ├── README.md
 ├── LANGCHAIN_GUIDE.md
+├── retriever_phylogeny.html               # interactive lineage of retrievers 1.1–5.1
 ├── requirements.txt
 ├── test_setup.py
 └── wikipedia_retrieval_engine/
@@ -53,16 +55,27 @@ rag_and_context_engineering/
     ├── utils/
     │   ├── ragas_eval.py                  # shared RAGAS harness (GT parse, LLM/judge, rate-limit)
     │   ├── analyze_ragas_experiments.py   # aggregate CSV runs → PDF report
-    │   ├── openrouter_usage.py            # check/log OpenRouter key usage
+    │   ├── openrouter_usage.py            # key usage snapshot; --analytics by app/model/day
     │   ├── wiki_table_parser.py            # rich Wikipedia-table normalization
     │   └── wiki_table_store.py             # offline artifact builder + read-only runtime API
-    ├── wiki_agents/
-    │   └── agentic_models.py               # graph state, routing, and evidence models
+    ├── wiki_agents/                       # Checkpoint 5.1 LangGraph agent
+    │   ├── agent_graph.py                 # graph assembly, router, retrieval-stage configuration
+    │   ├── retrieval_nodes.py             # retrieval, TOC review, section loading, evidence assessment
+    │   ├── table_nodes.py                 # table query planner + deterministic executor node
+    │   ├── agentic_models.py              # graph state, routing, and evidence models
+    │   ├── run_logging.py                 # per-question AgentState evidence logs
+    │   └── run_agent.py                   # single-question run through evidence assessment
+    ├── tests/                             # unit tests (unittest)
     ├── Capstone Checkpoint 1.1/
     ├── Capstone Checkpoint 2.1/
     ├── Capstone Checkpoint 3.1/           # baseline retrieval + evaluation
     ├── Capstone Checkpoint 4.1/           # advanced retrieval (decomposition + graph)
-    └── Capstone Checkpoint 5.1/           # agentic evidence workflow
+    ├── Capstone Checkpoint 5.1/           # agentic evidence workflow
+    └── Capstone Checkpoint 6.1/           # security and cost audit of the 5.1 survivor
+        ├── survivor_agent.py              # builds the 5.1 survivor from the 5.1 harness constants
+        ├── security_test_starter.py       # multi-turn attacks (history on)
+        ├── cost_test_starter.py           # 5.1 evaluation + per-question/per-tool telemetry (history off)
+        └── pricing/model_prices.json      # USD per 1M tokens for cost estimates
 ```
 
 The checkpoint folders contain the assignment-specific scripts, evidence, reports,
@@ -87,13 +100,17 @@ categories/links/tables are the substrate for the Checkpoint 4.1 graph.
   sidecars, tested query decomposition, and added a rarity-weighted article graph.
   Graph retrieval improved article recall, but answer quality remained limited by
   table aggregation and reasoning.
-- **Checkpoint 5.1 — agentic evidence reasoning.** Implements a bounded retrieval
-  graph that starts with section-aware vector evidence, expands selected articles
-  through the Wikipedia graph when evidence is insufficient, and finally uses
-  targeted multi-step section retrieval. Its first RAGAS benchmark intentionally
-  disables table routing so retrieval gains can be measured independently. The rich
-  table parser, artifact store, planner, and deterministic executor remain ready for
-  the later table-enabled experiment.
+- **Checkpoint 5.1 — agentic evidence reasoning.** Implements a bounded LangGraph
+  agent (`wiki_agents/`). It finds articles through entity decomposition, selects
+  sections and table artifacts from each article's table of contents, forces every
+  selected table through a deterministic lookup/compute executor, and escalates to
+  same-article breadth and then graph neighbors when evidence is insufficient. Final
+  runs held designated-article recall at 1.000. On the held-out validation set,
+  quality reached 0.880 (4.1 graph: 0.885) with about one fifth of the 4.1 context.
+- **Checkpoint 6.1 — security and cost audit (in progress).** Audits the unchanged
+  5.1 survivor. The security experiment adds conversation history (the 5.1 agent is
+  single-turn) and tests roleplay and evidence-planting attacks. The cost experiment
+  reruns the 5.1 evaluation with per-question and per-tool token telemetry.
 
 ## Ground-truth files
 
@@ -256,6 +273,64 @@ wikipedia_retrieval_engine/Capstone Checkpoint 3.1/ragas_experiments/experiments
 The Checkpoint 3.1 technical README explains the experiment controls, final metrics,
 and known limitations in detail.
 
+## Checkpoint 5.1 agent evaluation
+
+The harness runs the final 5.1 configuration (entity-decomposed initial retrieval, TOC
+selection, table gateway, then `article_broaden` → `graph_seeded` escalation) over a
+ground-truth CSV, writes one RAGAS CSV per run, and writes one `AgentState` evidence
+log per question under `Capstone Checkpoint 5.1/logs/`:
+
+```bash
+python "wikipedia_retrieval_engine/Capstone Checkpoint 5.1/capstone_checkpoint_5_1_agent_rag_starter.py" \
+  --gt-set "wikipedia_retrieval_engine/GT/wikipedia_GT.csv" \
+  --output-dir "wikipedia_retrieval_engine/Capstone Checkpoint 5.1/ragas_test_GT_5.1" \
+  --experiment-name agentic_search_compute_broaden
+```
+
+`--limit N` runs a smoke test; repeat `--question-id GT16` to select questions. The
+Checkpoint 5.1 README documents the configuration, the progression, and the reports.
+
+## Checkpoint 6.1 security and cost tests
+
+Both starters build the unchanged 5.1 survivor through
+`Capstone Checkpoint 6.1/survivor_agent.py`. Each has a `--self-check` that runs
+without API calls.
+
+**Security (history on).** Each scenario is one conversation. The answer model
+receives the earlier turns; retrieval sees only the current message.
+
+Print the scenarios (no API calls):
+
+```bash
+python "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/security_test_starter.py" --show
+```
+
+Run every scenario three times:
+
+```bash
+python "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/security_test_starter.py" --scenario all --repeats 3
+```
+
+**Cost (history off).** Runs the 5.1 RAGAS case function unchanged, so the results
+CSV keeps the 5.1 schema. Token telemetry per call, node, and question is written to
+`<output-dir>/telemetry/`.
+
+Smoke test on one question:
+
+```bash
+python "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/cost_test_starter.py" --question-id GT04
+```
+
+Full validation set:
+
+```bash
+python "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/cost_test_starter.py" \
+  --gt-set "wikipedia_retrieval_engine/GT/wikipedia_GT_validation_set.csv"
+```
+
+The Checkpoint 6.1 README records the scenarios, the choices behind them, and the
+results.
+
 ## Analyze RAGAS experiments
 
 `wikipedia_retrieval_engine/utils/analyze_ragas_experiments.py` recursively discovers
@@ -323,7 +398,20 @@ python wikipedia_retrieval_engine/utils/openrouter_usage.py \
 Set `OPENROUTER_MANAGEMENT_KEY` when you also want account-level credit remaining or
 need to list/query managed keys.
 
-## Why the project progresses to Checkpoint 5.1
+The management key also enables the analytics query (day × dimension usage: request
+count, cost, prompt/completion/cached tokens). Capstone calls carry app tags ("WRE
+retriever" for chat roles, "WRE embedding", "WRE judge", applied since 2026-09-22), so
+grouping by `app` separates system cost from evaluation cost:
+
+```bash
+python wikipedia_retrieval_engine/utils/openrouter_usage.py \
+  --analytics --analytics-dimension app --analytics-days 14 \
+  --analytics-csv "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/openrouter_analytics_by_app.csv"
+```
+
+`--analytics-granularity hour` isolates individual runs.
+
+## Why the project progresses to Checkpoints 5.1 and 6.1
 
 The controlled experiments establish a useful sequence:
 
@@ -335,6 +423,11 @@ The controlled experiments establish a useful sequence:
 3. Checkpoint 5.1 therefore targets the reasoning stage: assess what evidence is
    missing, retrieve deliberately, compute over normalized table rows when necessary,
    and verify the answer against precise provenance.
+4. Checkpoint 5.1 reached designated-article recall of 1.000 with a fraction of the
+   4.1 context. It also makes five or more model calls per question and adds new
+   channels through which user text and retrieved text reach a model (decomposition,
+   TOC review, assessment, table planning). Checkpoint 6.1 therefore audits security,
+   reliability, latency, and cost before further capability work.
 
 These numbers are experiment-specific, not general claims about one retriever always
 being superior. The complete methods, caveats, and per-question results remain in the

@@ -1,0 +1,9 @@
+{
+  "_note": "USD per 1M tokens, used by cost_test_starter.py for est_cost_usd. The values below are the APPROXIMATE Lab 6.2 table (APPROX_PRICE_PER_MTOK), not verified prices. Replace them with the rates on https://openrouter.ai/models and set retrieved_at before quoting costs. cached_input null = cached tokens charged at the full input rate (an upper-bound estimate, as in Lab 6.2). A model missing here gets no estimate.",
+  "retrieved_at": null,
+  "source": "Lab 6.2 APPROX_PRICE_PER_MTOK (approximate)",
+  "usd_per_million_tokens": {
+    "openai/gpt-5.4-mini": {"input": 0.2, "cached_input": null, "output": 0.8},
+    "openai/gpt-4o-mini": {"input": 0.15, "cached_input": null, "output": 0.6}
+  }
+}
