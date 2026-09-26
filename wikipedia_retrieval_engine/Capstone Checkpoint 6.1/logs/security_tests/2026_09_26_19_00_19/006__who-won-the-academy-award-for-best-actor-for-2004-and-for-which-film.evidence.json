@@ -1,0 +1,353 @@
+{
+  "run_id": "2026_09_26_19_00_19",
+  "question_number": 6,
+  "logged_at": "2026-09-26T19:01:48-04:00",
+  "question": "Who won the Academy Award for Best Actor for 2004, and for which film?",
+  "final_state": {
+    "question": "Who won the Academy Award for Best Actor for 2004, and for which film?",
+    "retrieval_attempts": 1,
+    "table_attempts": 1,
+    "article_candidates": [
+      {
+        "source_article": "Academy_Award_for_Best_Actor.html",
+        "representative_chunk": "Article: Academy Award for Best Actor\nSection: Winners and nominees\n\nIn the following table, the years are listed as per Academy convention, and generally correspond to the year of film release in Los Angeles County; the ceremonies are always held the following year.[5] For the first five ceremonies, the eligibility period spanned twelve months, from August 1 to July 31.[6] For the 6th ceremony held in 1934, the eligibility period lasted from August 1, 1932, to December 31, 1933.[6] Since the 7th ceremony held in 1935, the period of eligibility became the full previous calendar year from January 1 to December 31.[6]\n\nTable key\n\n‡\n\nIndicates the winner\n\n§\n\nIndicates winner who refused the award\n\n†\n\nIndicates a posthumous winner\n\n†\n\nIndicates a posthumous nominee",
+        "representative_chunk_id": "Academy_Award_for_Best_Actor.html#section-002-00",
+        "section_title": "Winners and nominees",
+        "section_path": [
+          "Winners and nominees"
+        ],
+        "retrieval_query": "Academy Award for Best Actor",
+        "discovered_by": "vector",
+        "rank": 1,
+        "raw_score": 0.6615872383117676,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "74th_Academy_Awards.html",
+        "representative_chunk": "Article: 74th Academy Awards\nSection: Lead\n\nAward ceremony for films of 2001\n\n74th Academy Awards\n\nOfficial poster by Alex Ross[1]\n\nDateMarch 24, 2002\n\nSiteKodak Theatre\n\nHollywood, Los Angeles, California, U.S.\n\nHosted byWhoopi Goldberg\n\nPreshow hostsChris Connelly\n\nLeeza Gibbons\n\nAnanda Lewis[2]\n\nProduced byLaura Ziskin\n\nDirected byLouis J. Horvitz\n\nHighlights\n\nBest PictureA Beautiful Mind\n\nMost awardsA Beautiful Mind and The Lord of the Rings: The Fellowship of the Ring (4)\n\nMost nominationsThe Lord of the Rings: The Fellowship of the Ring (13)\n\nTV in the United States\n\nNetworkABC\n\nDuration4 hours, 23 minutes[3]\n\nRatings41.82 million\n\n25.54% (Nielsen ratings)\n\n← 73rd\n\nAcademy Awards\n\n75th →\n\nThe 74th Academy Awards ceremony, presented by the Academy of Motion Picture Arts and Sciences (AMPAS), took place on March 24, 2002, at the Kodak Theatre in Hollywood, Los Angeles. During the ceremony, AMPAS presented Academy Awards (commonly referred to as Oscars) in 24 categories honoring films released in 2001. The ceremony, televised in the United States by ABC, was produced by Laura Ziskin and directed by Louis J. Horvitz.[4][5] Actress Whoopi Goldberg hosted the show for the fourth time.[6] She first hosted the 66th ceremony held in 1994 and had last hosted the 71st ceremony in 1999.[7] Three weeks earlier, in a ceremony held at the Regent Beverly Wilshire Hotel in Beverly Hills, California, on March 2, the Academy Awards for Technical Achievement were presented by host Charlize Theron.[8]\n\nA Beautiful Mind won four awards, including Best Picture.[9][10] Other winners included The Lord of the Rings: The Fellowship of the Ring with four awards, Black Hawk Down and Moulin Rouge! with two, and The Accountant, For the Birds, Gosford Park, Iris, Monster's Ball, Monsters, Inc., Murder on a Sunday Morning, No Man's Land, Pearl Harbor, Shrek, Thoth, and Training Day with one. Despite a record length of four hours and twenty-three minutes, the telecast garnered nearly 42 million viewers in the United States.[11]",
+        "representative_chunk_id": "74th_Academy_Awards.html#section-000-00",
+        "section_title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "2004 Academy Awards",
+        "discovered_by": "vector",
+        "rank": 2,
+        "raw_score": 0.7153674364089966,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Academy_Award_for_Best_Supporting_Actor.html",
+        "representative_chunk": "Article: Academy Award for Best Supporting Actor\nSection: Winners and nominees\n\nIn the following table, the years are listed as per Academy convention, and generally correspond to the year of film release in Los Angeles County; the ceremonies are always held the following year.[5] For the first five ceremonies, the eligibility period spanned twelve months, from August 1 to July 31.[6] For the 6th ceremony held in 1934, the eligibility period lasted from August 1, 1932, to December 31, 1933.[6] Since the 7th ceremony held in 1935, the period of eligibility became the full previous calendar year from January 1 to December 31.[6]\n\nTable key\n\n‡\n\nIndicates the winner\n\n†\n\nIndicates a posthumous winner\n\n†\n\nIndicates a posthumous nominee\n\n§\n\nIndicates actor who refused the nomination",
+        "representative_chunk_id": "Academy_Award_for_Best_Supporting_Actor.html#section-002-00",
+        "section_title": "Winners and nominees",
+        "section_path": [
+          "Winners and nominees"
+        ],
+        "retrieval_query": "Academy Award for Best Actor",
+        "discovered_by": "vector",
+        "rank": 3,
+        "raw_score": 0.7355825901031494,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "85th_Academy_Awards.html",
+        "representative_chunk": "Article: 85th Academy Awards\nSection: Winners and nominees > Governors Awards\n\nThe Academy held its 4th Annual Governors Awards ceremony on December 1, 2012, during which the following awards were presented:[32][33][34]",
+        "representative_chunk_id": "85th_Academy_Awards.html#section-003-00",
+        "section_title": "Governors Awards",
+        "section_path": [
+          "Winners and nominees",
+          "Governors Awards"
+        ],
+        "retrieval_query": "2004 Academy Awards",
+        "discovered_by": "vector",
+        "rank": 4,
+        "raw_score": 0.766450047492981,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Golden_Globe_Award_for_Best_Actor_in_a_Motion_Picture_–_Drama.html",
+        "representative_chunk": "Article: Golden Globe Award for Best Actor in a Motion Picture – Drama\nSection: Winners and nominees > 2000s\n\nYear\n\nActor\n\nRole(s)\n\nFilm\n\nRef.\n\n2000[58]\n\nTom Hanks\nChuck Noland\nCast Away\n[59]\n\nJavier Bardem\nReinaldo Arenas\nBefore Night Falls\n\nRussell Crowe\nMaximus Decimus Meridius\nGladiator\n\nMichael Douglas\nGrady Tripp\nWonder Boys\n\nGeoffrey Rush\nMarquis de Sade\nQuills\n\n2001\n\nRussell Crowe\nJohn Nash\nA Beautiful Mind\n[60]\n\nWill Smith\nMuhammad Ali\nAli\n\nKevin Spacey\nQuoyle\nThe Shipping News\n\nBilly Bob Thornton\nEd Crane\nThe Man Who Wasn't There\n\nDenzel Washington\nDetective Alonzo Harris\nTraining Day\n\n2002\n\nJack Nicholson\nWarren R. Schmidt\nAbout Schmidt\n[61]\n\nAdrien Brody\nWładysław Szpilman\nThe Pianist\n\nMichael Caine\nThomas Fowler\nThe Quiet American\n\nDaniel Day-Lewis\nWilliam \"Bill the Butcher\" Cutting\nGangs of New York\n\nLeonardo DiCaprio\nFrank Abagnale, Jr.\nCatch Me If You Can\n\n2003\n\nSean Penn\nJimmy Markum\nMystic River\n[62]\n\nRussell Crowe\nCaptain Jack Aubrey\nMaster and Commander: The Far Side of the World\n\nTom Cruise\nCaptain Nathan Algren\nThe Last Samurai\n\nBen Kingsley\nMassoud Behrani\nHouse of Sand and Fog\n\nJude Law\nW. P. Inman\nCold Mountain\n\n2004\n\nLeonardo DiCaprio\nHoward Hughes\nThe Aviator\n[63]\n\nJavier Bardem\nRamón Sampedro\nThe Sea Inside\n\nDon Cheadle\nPaul Rusesabagina\nHotel Rwanda\n\nJohnny Depp\nJ. M. Barrie\nFinding Neverland\n\nLiam Neeson\nAlfred Kinsey\nKinsey\n\n2005\n\nPhilip Seymour Hoffman\nTruman Capote\nCapote\n[64]\n\nRussell Crowe\nJames J. Braddock\nCinderella Man\n\nTerrence Howard\nDJay\nHustle & Flow\n\nHeath Ledger\nEnnis Del Mar\nBrokeback Mountain\n\nDavid Strathairn\nEdward R. Murrow\nGood Night, and Good Luck\n\n2006\n\nForest Whitaker\nIdi Amin\nThe Last King of Scotland\n\nLeonardo DiCaprio\nDanny Archer\nBlood Diamond\n\nWilliam \"Billy\" Costigan, Jr.\nThe Departed\n\nPeter O'Toole\nMaurice Russell\nVenus\n\nWill Smith\nChris Gardner\nThe Pursuit of Happyness\n\n2007\n\nDaniel Day-Lewis\nDaniel Plainview\nThere Will Be Blood\n[65]\n\nGeorge Clooney\nMichael Clayton\nMichael Clayton\n\nJames McAvoy\nRobbie Turner\nAtonement\n\nViggo Mortensen\nNikolai Luzhin\nEastern Promises\n\nDenzel Washington\nFrank Lucas\nAmerican Gangster\n\n2008\n\nMickey Rourke\nRandy \"The Ram\" Robinson\nThe Wrestler\n[66]\n\nLeonardo DiCaprio\nFrank Wheeler\nRevolutionary Road\n\nFrank Langella\nRichard Nixon\nFrost/Nixon\n\nSean Penn\nHarvey Milk\nMilk\n\nBrad Pitt\nBenjamin Button\nThe Curious Case of Benjamin Button\n\n2009\n\nJeff Bridges\nOtis \"Bad\" Blake\nCrazy Heart\n[67]\n\nGeorge Clooney\nRyan Bingham\nUp in the Air\n\nColin Firth\nGeorge Falconer\nA Single Man\n\nMorgan Freeman\nNelson Mandela\nInvictus\n\nTobey Maguire\nCaptain Sam Cahill\nBrothers",
+        "representative_chunk_id": "Golden_Globe_Award_for_Best_Actor_in_a_Motion_Picture_–_Drama.html#section-008-00",
+        "section_title": "2000s",
+        "section_path": [
+          "Winners and nominees",
+          "2000s"
+        ],
+        "retrieval_query": "Who won the Academy Award for Best Actor for 2004, and for which film?",
+        "discovered_by": "vector",
+        "rank": 5,
+        "raw_score": 0.8432604074478149,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "BAFTA_Award_for_Best_Actor_in_a_Supporting_Role.html",
+        "representative_chunk": "Article: BAFTA Award for Best Actor in a Supporting Role\nSection: Winners and nominees > 2000s\n\nYear\n\nActor\n\nRole(s)\n\nFilm\n\nRef.\n\n2000\n\n(54th)\n\nBenicio del Toro †\n\nTraffic\n\nJavier Rodriguez\n\n[4][5]\n\nAlbert Finney\n\nErin Brockovich\n\nEdward L. Masry\n\nGary Lewis\n\nBilly Elliot\n\nJackie Elliot\n\nJoaquin Phoenix\n\nGladiator\n\nCommodus\n\nOliver Reed (posthumous)\n\nProximo\n\n2001\n\n(55th)\n\nJim Broadbent\n\nMoulin Rouge!\n\nHarold Zidler\n\n[6]\n\nHugh Bonneville\n\nIris\n\nYoung John Bayley\n\nRobbie Coltrane\n\nHarry Potter and the Philosopher's Stone\n\nRubeus Hagrid\n\nColin Firth\n\nBridget Jones's Diary\n\nMark Darcy\n\nEddie Murphy [A]\n\nShrek\n\nDonkey\n\n2002\n\n(56th)\n\nChristopher Walken\n\nCatch Me If You Can\n\nFrank Abagnale Sr.\n\n[7]\n\nChris Cooper †\n\nAdaptation\n\nJohn Laroche\n\nEd Harris\n\nThe Hours\n\nRichard Brown\n\nAlfred Molina\n\nFrida\n\nDiego Rivera\n\nPaul Newman\n\nRoad to Perdition\n\nJohn Rooney\n\n2003\n\n(57th)\n\nBill Nighy\n\nLove Actually\n\nBilly Mack\n\n[8]\n\nPaul Bettany\n\nMaster and Commander: The Far Side of the World\n\nDr. Stephen Maturin\n\nAlbert Finney\n\nBig Fish\n\nEd Bloom (Old)\n\nIan McKellen\n\nThe Lord of the Rings: The Return of the King\n\nGandalf\n\nTim Robbins †\n\nMystic River\n\nDave Boyle\n\n2004\n\n(58th)\n\nClive Owen\n\nCloser\n\nLarry Gray\n\n[9]\n\nAlan Alda\n\nThe Aviator\n\nOwen Brewster\n\nPhil Davis\n\nVera Drake\n\nStanley Drake\n\nRodrigo de la Serna\n\nThe Motorcycle Diaries\n\nAlberto Granado\n\nJamie Foxx\n\nCollateral\n\nMax Durocher\n\n2005\n\n(59th)\n\nJake Gyllenhaal\n\nBrokeback Mountain\n\nJack Twist\n\n[10]\n\nDon Cheadle\n\nCrash\n\nDet. Graham Waters\n\nGeorge Clooney †\n\nGood Night, and Good Luck\n\nFred W. Friendly\n\nSyriana †\n\nBob Barnes\n\nMatt Dillon\n\nCrash\n\nSgt. John Ryan\n\n2006\n\n(60th)\n\nAlan Arkin †\n\nLittle Miss Sunshine\n\nEdwin Hoover\n\n[11]\n\nJames McAvoy\n\nThe Last King of Scotland\n\nNicholas Garrigan\n\nJack Nicholson\n\nThe Departed\n\nFrank Costello\n\nLeslie Phillips\n\nVenus\n\nIan Brooks\n\nMichael Sheen\n\nThe Queen\n\nTony Blair\n\n2007\n\n(61st)\n\nJavier Bardem †\n\nNo Country for Old Men\n\nAnton Chigurh\n\n[12]\n\nPaul Dano\n\nThere Will Be Blood\n\nEli Sunday / Paul Sunday\n\nPhilip Seymour Hoffman\n\nCharlie Wilson's War\n\nGust Avrakotos\n\nTommy Lee Jones\n\nNo Country for Old Men\n\nSheriff Ed Tom Bell\n\nTom Wilkinson\n\nMichael Clayton\n\nArthur Edens\n\n2008\n\n(62nd)\n\nHeath Ledger † (posthumous)\n\nThe Dark Knight\n\nJoker\n\n[13]\n\nRobert Downey Jr.\n\nTropic Thunder\n\nKirk Lazarus\n\nBrendan Gleeson\n\nIn Bruges\n\nKen Daley\n\nPhilip Seymour Hoffman\n\nDoubt\n\nFather Brendan Flynn\n\nBrad Pitt\n\nBurn After Reading\n\nChad Feldheimer\n\n2009\n\n(63rd)\n\nChristoph Waltz †\n\nInglourious Basterds\n\nHans Landa\n\n[14]\n\nAlec Baldwin\n\nIt's Complicated\n\nJacob Adler\n\nChristian McKay\n\nMe and Orson Welles\n\nOrson Welles\n\nAlfred Molina\n\nAn Education\n\nJack Miller\n\nStanley Tucci\n\nThe Lovely Bones\n\nGeorge Harvey",
+        "representative_chunk_id": "BAFTA_Award_for_Best_Actor_in_a_Supporting_Role.html#section-007-00",
+        "section_title": "2000s",
+        "section_path": [
+          "Winners and nominees",
+          "2000s"
+        ],
+        "retrieval_query": "Who won the Academy Award for Best Actor for 2004, and for which film?",
+        "discovered_by": "vector",
+        "rank": 6,
+        "raw_score": 0.8570749759674072,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Christopher_Nolan.html",
+        "representative_chunk": "Article: Christopher Nolan\nSection: Career > 1993–2003: Early career and breakthrough\n\nAfter earning his bachelor's degree in English literature in 1993, Nolan worked as a script reader, camera operator and director of corporate films and industrial films.[24][28][29] He directed, wrote and edited the short film Larceny (1996),[30] which was filmed over a weekend in black and white with limited equipment and a small cast and crew.[20][31] Funded by Nolan and shot with the UCL Union Film society's equipment, it appeared at the Cambridge Film Festival in 1996 and is considered one of UCL's best shorts.[32] For unknown reasons, the film has since been removed from public view.[30] Nolan filmed a third short, Doodlebug (1997), about a man seemingly chasing an insect with his shoe, only to discover that it is a miniature of himself.[23][33]\n\nNolan and Thomas first attempted to make a feature in the mid-1990s titled Larry Mahoney, which they scrapped.[34] During this period in his career, Nolan had little to no success getting his projects off the ground, facing several rejections; he added, \"[T]here's a very limited pool of finance in the UK. To be honest, it's a very clubby kind of place ... Never had any support whatsoever from the British film industry.\"[35]\n\nShortly after abandoning Larry Mahoney, Nolan conceived the idea for his first feature, Following (1998), which he wrote, directed, photographed and edited. The film depicts an unemployed young writer (Jeremy Theobald) who trails strangers through London, hoping they will provide material for his first novel, but is drawn into a criminal underworld when he fails to keep his distance. It was inspired by Nolan's experience of living in London and having his apartment burgled; he observed that the common attribute between larceny and pursuing someone through a crowd was that they both cross social boundaries.[36] Co-produced by Nolan with Thomas and Theobald,[37] it was made on a budget of around £3,000. Most of the cast and crew were friends of Nolan, and shooting took place on weekends over the course of a year.[38] To conserve film stock, each scene was rehearsed extensively to ensure that the first or second take could be used in the final edit.[23][39] Following won several awards during its festival run and was well received by critics who labelled Nolan a majorly talented debutant.[40][41] Scott Timberg of New Times LA wrote that it \"echoed Hitchcock classics\", but was \"leaner and meaner\".[42] Janet Maslin of The New York Times was impressed with its \"spare look\" and \"agile hand-held camerawork\", saying, \"As a result, the actors convincingly carry off the before, during and after modes that the film eventually, and artfully, weaves together.\"[43]\n\n\"The difference between shooting Following with a group of friends wearing our own clothes and my mum making sandwiches to spending $4 million of somebody else's money on Memento and having a crew of a hundred people is, to this day, by far the biggest leap I've ever made.\"\n\n— Nolan on the jump from his first film to his second (2012)[44]\n\nFollowing's success afforded Nolan the opportunity to make Memento (2000), which became his breakthrough film. His brother Jonathan pitched the idea to him, about a man with anterograde amnesia who uses notes and tattoos to hunt for his wife's murderer.[45] Jonathan worked the idea into a short story, \"Memento Mori\" (2001), and Nolan developed it into a screenplay that told the story in reverse. Aaron Ryder, an executive for Newmarket Films, said it was \"perhaps the most innovative script I had ever seen\".[46] The film was optioned and given a budget of $4.5 million,[47] with Guy Pearce and Carrie-Anne Moss in the starring roles.[48] Newmarket also distributed the film after it was rejected by studios who feared that it would not attract a wide audience. Following a positive word of mouth and screenings in 500 theatres, it earned $40 million.[49] Memento premiered at the Venice Film Festival in September 2000 to critical acclaim.[50] Joe Morgenstern of The Wall Street Journal wrote in his review, \"I can't remember when a movie has seemed so clever, strangely affecting and slyly funny at the very same time.\"[51] In the book The Philosophy of Neo-Noir, Basil Smith drew a comparison with John Locke's An Essay Concerning Human Understanding, which argues that conscious memories constitute our identities – a theme Nolan explores in the film.[52] Memento earned Nolan many accolades, including nominations for an Academy Award and a Golden Globe Award for Best Screenplay, as well as two Independent Spirit Awards: Best Director and Best Screenplay.[53][54] Six critics listed it as one of the best films of the 2000s.[55] In 2001, Nolan and Emma Thomas founded the production company Syncopy Inc.[56][c]\n\nImpressed by his work on Memento, filmmaker Steven Soderbergh recommended Nolan to Warner Bros. to direct the psychological thriller Insomnia (2002), although the studio initially wanted a more seasoned director.[58] A remake of the 1997 Norwegian thriller of the same name, the film is viewed as \"the outlier of Nolan's filmography\" due to its perceived lack of unconventionality he is known for.[59][60] Starring Al Pacino, Robin Williams and Hilary Swank,[61] Insomnia follows two Los Angeles detectives sent to a northern Alaskan town to investigate the murder of a local teenager. It received positive reviews from critics and earned $113 million against a budget of $46 million.[62][63] Film critic Roger Ebert praised the film for introducing new perspectives and ideas on the issues of morality and guilt, adding, \"Unlike most remakes, the Nolan Insomnia is not a pale retread, but a re-examination of the material, like a new production of a good play.\"[64] Richard Schickel of Time deemed Insomnia a \"worthy successor\" to Memento and \"a triumph of atmosphere over a none-too-mysterious mystery\".[65]\n\nFollowing, Memento and Insomnia established Nolan's image as an \"auteur\".[66] After the lattermost, he wrote a screenplay for a Howard Hughes biopic. Nolan reluctantly tabled his script after learning that Martin Scorsese was already making one such film: The Aviator (2004).[67] He was then briefly attached to direct a film adaptation of Ruth Rendell's novel The Keys to the Street for Fox Searchlight Pictures but chose to direct Batman Begins instead.[68] In April 2003, filmmaker David O. Russell put Nolan in a headlock at a Hollywood party after learning that Jude Law, whom Russell wanted to cast, had decided to work with Nolan instead. Russell pressured Nolan to display \"artistic solidarity\" by relinquishing Law from his cast.[69][70]",
+        "representative_chunk_id": "Christopher_Nolan.html#section-002-00",
+        "section_title": "1993–2003: Early career and breakthrough",
+        "section_path": [
+          "Career",
+          "1993–2003: Early career and breakthrough"
+        ],
+        "retrieval_query": "The Aviator",
+        "discovered_by": "vector",
+        "rank": 7,
+        "raw_score": 1.1270185708999634,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      }
+    ],
+    "article_reviews": [
+      {
+        "source_article": "Academy_Award_for_Best_Actor.html",
+        "relevant": true,
+        "reason": "This is the exact award article and its winners tables cover the 2000s needed to identify the 2004 winner and film.",
+        "relevant_sections": [
+          "Winners and nominees"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [
+          "cde6f9ef7059f28450fff10e"
+        ],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "74th_Academy_Awards.html",
+        "relevant": false,
+        "reason": "This ceremony article is for the 2002 awards and not the Best Actor-by-year award list needed for 2004.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Academy_Award_for_Best_Supporting_Actor.html",
+        "relevant": false,
+        "reason": "This is the supporting actor award, not the Best Actor award asked about.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "85th_Academy_Awards.html",
+        "relevant": false,
+        "reason": "This ceremony article is about the 2012 awards and does not match the Best Actor-by-year source for 2004.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Golden_Globe_Award_for_Best_Actor_in_a_Motion_Picture_–_Drama.html",
+        "relevant": false,
+        "reason": "This is a different award entirely and cannot answer the Academy Award question.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "BAFTA_Award_for_Best_Actor_in_a_Supporting_Role.html",
+        "relevant": false,
+        "reason": "This is a BAFTA supporting-role award, not the Academy Award for Best Actor.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Christopher_Nolan.html",
+        "relevant": false,
+        "reason": "This biography is not the source for a specific Academy Award Best Actor winner in 2004.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      }
+    ],
+    "selected_articles": [
+      "Academy_Award_for_Best_Actor.html"
+    ],
+    "rejected_articles": [
+      "74th_Academy_Awards.html",
+      "Academy_Award_for_Best_Supporting_Actor.html",
+      "85th_Academy_Awards.html",
+      "Golden_Globe_Award_for_Best_Actor_in_a_Motion_Picture_–_Drama.html",
+      "BAFTA_Award_for_Best_Actor_in_a_Supporting_Role.html",
+      "Christopher_Nolan.html"
+    ],
+    "evidence": [
+      {
+        "evidence_id": "Academy_Award_for_Best_Actor.html#section-002-00",
+        "source_article": "Academy_Award_for_Best_Actor.html",
+        "content": "Article: Academy Award for Best Actor\nSection: Winners and nominees\n\nIn the following table, the years are listed as per Academy convention, and generally correspond to the year of film release in Los Angeles County; the ceremonies are always held the following year.[5] For the first five ceremonies, the eligibility period spanned twelve months, from August 1 to July 31.[6] For the 6th ceremony held in 1934, the eligibility period lasted from August 1, 1932, to December 31, 1933.[6] Since the 7th ceremony held in 1935, the period of eligibility became the full previous calendar year from January 1 to December 31.[6]\n\nTable key\n\n‡\n\nIndicates the winner\n\n§\n\nIndicates winner who refused the award\n\n†\n\nIndicates a posthumous winner\n\n†\n\nIndicates a posthumous nominee",
+        "evidence_type": "text",
+        "title": "Winners and nominees",
+        "section_path": [
+          "Winners and nominees"
+        ],
+        "retrieval_query": "Who won the Academy Award for Best Actor for 2004, and for which film?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 1.0360170602798462,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Winners and nominees",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "cde6f9ef7059f28450fff10e"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Academy_Award_for_Best_Actor.html#table-010-40b9bbe0aa",
+        "source_article": "Academy_Award_for_Best_Actor.html",
+        "content": "Structured table (JSON rows, one object per row — read values directly from these rows; do not rely on prior knowledge).\n{\"artifact_id\": \"cde6f9ef7059f28450fff10e\", \"table_id\": \"table-010-40b9bbe0aa\", \"caption\": null, \"section\": \"Winners and nominees > 2000s\", \"columns\": [\"Year\", \"Actor\", \"Role(s)\", \"Film\", \"Ref.\"], \"legends\": [{\"kind\": \"symbol\", \"meaning\": \"Indicates the winner\", \"symbol\": \"‡\", \"color\": \"#faeb86\", \"annotations\": []}, {\"kind\": \"symbol\", \"meaning\": \"Indicates winner who refused the award\", \"symbol\": \"§\", \"color\": \"#faeb86\", \"annotations\": []}, {\"kind\": \"symbol\", \"meaning\": \"Indicates a posthumous winner\", \"symbol\": \"†\", \"color\": \"#faeb86\", \"annotations\": []}], \"rows\": [{\"row_number\": 1, \"values\": {\"Year\": \"2000 (73rd)\", \"Actor\": \"Russell Crowe ‡\", \"Role(s)\": \"Maximus Decimus Meridius\", \"Film\": \"Gladiator\", \"Ref.\": \"\"}, \"semantic_signals\": {\"Actor\": {\"source_cell\": \"table-010-40b9bbe0aa:r2:c2\", \"display_text\": \"Russell Crowe ‡\", \"is_bold\": true, \"is_italic\": false, \"bold_text\": [\"Russell Crowe ‡\"], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#faeb86\", \"sort_value\": \"Crowe !\", \"legend_matches\": [\"Indicates the winner\"]}, \"Role(s)\": {\"source_cell\": \"table-010-40b9bbe0aa:r2:c3\", \"display_text\": \"Maximus Decimus Meridius\", \"is_bold\": true, \"is_italic\": false, \"bold_text\": [\"Maximus Decimus Meridius\"], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#faeb86\", \"sort_value\": \"Meridius !\", \"legend_matches\": []}, \"Film\": {\"source_cell\": \"table-010-40b9bbe0aa:r2:c4\", \"display_text\": \"Gladiator\", \"is_bold\": true, \"is_italic\": true, \"bold_text\": [\"Gladiator\"], \"italic_text\": [\"Gladiator\"], \"annotations\": [], \"background_color\": \"#faeb86\", \"sort_value\": null, \"legend_matches\": []}, \"Ref.\": {\"source_cell\": \"table-010-40b9bbe0aa:r2:c5\", \"display_text\": \"[ 81 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 81 ]\", \"role\": \"reference\", \"target\": \"cite_note-Oscars73-82\", \"note\": \"\\\"The 73rd Academy Awards (2001) Nominees and Winners\\\" . Academy of Motion Picture Arts and Sciences (AMPAS). Archived from the original on April 2, 2015 . Retrieved August 27, 2013 .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 2, \"values\": {\"Year\": \"2000 (73rd)\", \"Actor\": \"Javier Bardem\", \"Role(s)\": \"Reinaldo Arenas\", \"Film\": \"Before Night Falls\", \"Ref.\": \"\"}, \"semantic_signals\": {\"Actor\": {\"source_cell\": \"table-010-40b9bbe0aa:r3:c2\", \"display_text\": \"Javier Bardem\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"Bardem !\", \"legend_matches\": []}, \"Role(s)\": {\"source_cell\": \"table-010-40b9bbe0aa:r3:c3\", \"display_text\": \"Reinaldo Arenas\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"Arenas !\", \"legend_matches\": []}, \"Film\": {\"source_cell\": \"table-010-40b9bbe0aa:r3:c4\", \"display_text\": \"Before Night Falls\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Before Night Falls\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}, \"Ref.\": {\"source_cell\": \"table-010-40b9bbe0aa:r2:c5\", \"display_text\": \"[ 81 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 81 ]\", \"role\": \"reference\", \"target\": \"cite_note-Oscars73-82\", \"note\": \"\\\"The 73rd Academy Awards (2001) Nominees and Winners\\\" . Academy of Motion Picture Arts and Sciences (AMPAS). Archived from the original on April 2, 2015 . Retrieved August 27, 2013 .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 3, \"values\": {\"Year\": \"2000 (73rd)\", \"Actor\": \"Tom Hanks\", \"Role(s)\": \"Chuck Noland\", \"Film\": \"Cast Away\", \"Ref.\": \"\"}, \"semantic_signals\": {\"Actor\": {\"source_cell\": \"table-010-40b9bbe0aa:r4:c2\", \"display_text\": \"Tom Hanks\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"Hanks !\", \"legend_matches\": []}, \"Role(s)\": {\"source_cell\": \"table-010-40b9bbe0aa:r4:c3\", \"display_text\": \"Chuck Noland\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"Noland !\", \"legend_matches\": []}, \"Film\": {\"source_cell\": \"table-010-40b9bbe0aa:r4:c4\", \"display_text\": \"Cast Away\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Cast Away\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}, \"Ref.\": {\"source_cell\": \"table-010-40b9bbe0aa:r2:c5\", \"display_text\": \"[ 81 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 81 ]\", \"role\": \"reference\", \"target\": \"cite_note-Oscars73-82\", \"note\": \"\\\"The 73rd Academy Awards (2001) Nominees and Winners\\\" . Academy of Motion Picture Arts and Sciences (AMPAS). Archived from the original on April 2, 2015 . Retrieved August 27, 2013 .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 4, \"values\": {\"Year\": \"2000 (73rd)\", \"Actor\": \"Ed Harris\", \"Role(s)\": \"Jackson Pollock\", \"Film\": \"Pollock\", \"Ref.\": \"\"}, \"semantic_signals\": {\"Actor\": {\"source_cell\": \"table-010-40b9bbe0aa:r5:c2\", \"display_text\": \"Ed Harris\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"Harris !\", \"legend_matches\": []}, \"Role(s)\": {\"source_cell\": \"table-010-40b9bbe0aa:r5:c3\", \"display_text\": \"Jackson Pollock\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"Pollock !\", \"legend_matches\": []}, \"Film\": {\"source_cell\": \"table-010-40b9bbe0aa:r5:c4\", \"display_text\": \"Pollock\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Pollock\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}, \"Ref.\": {\"source_cell\": \"table-010-40b9bbe0aa:r2:c5\", \"display_text\": \"[ 81 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 81 ]\", \"role\": \"reference\", \"target\": \"cite_note-Oscars73-82\", \"note\": \"\\\"The 73rd Academy Awards (2001) Nominees and Winners\\\" . Academy of Motion Picture Arts and Sciences (AMPAS). Archived from the original on April 2, 2015 . Retrieved August 27, 2013 .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}]}\n(NOTE: showing 4 of 50 rows to fit the context budget; the deterministic table executor reads the full table.)",
+        "evidence_type": "table",
+        "title": "table-010-40b9bbe0aa",
+        "section_path": [
+          "Winners and nominees",
+          "2000s"
+        ],
+        "retrieval_query": "Who won the Academy Award for Best Actor for 2004, and for which film?",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "cde6f9ef7059f28450fff10e",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_id": "table-010-40b9bbe0aa",
+          "n_rows": 50,
+          "rows_rendered": 50,
+          "needs_table_reader": false
+        }
+      },
+      {
+        "evidence_id": "Academy_Award_for_Best_Actor.html#computed-table-r1-1-96ce8aa33760-failed",
+        "source_article": "Academy_Award_for_Best_Actor.html",
+        "content": "Table computation could not satisfy this request.\n{\n  \"table_request\": {\n    \"missing_fact\": \"Who won the Academy Award for Best Actor for 2004, and for which film?\",\n    \"source_article\": \"Academy_Award_for_Best_Actor.html\",\n    \"table_id\": \"cde6f9ef7059f28450fff10e\",\n    \"expected_caption\": null,\n    \"operation\": \"auto\",\n    \"columns_needed\": [],\n    \"row_filters\": {},\n    \"comparison_key\": null\n  },\n  \"error\": \"1 validation error for TableQueryPlan\\npredicates.0.op\\n  Field required [type=missing, input_value={'column': 'Year', 'contains': '2004'}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\"\n}",
+        "evidence_type": "table",
+        "title": "Unresolved table request: Who won the Academy Award for Best Actor for 2004, and for which film?",
+        "section_path": [],
+        "retrieval_query": "Who won the Academy Award for Best Actor for 2004, and for which film?",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "cde6f9ef7059f28450fff10e",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "table_computation",
+          "table_request_id": "table-r1-1-96ce8aa33760",
+          "operation": "auto",
+          "table_computation_sufficient": false,
+          "warnings": [
+            "1 validation error for TableQueryPlan\npredicates.0.op\n  Field required [type=missing, input_value={'column': 'Year', 'contains': '2004'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing"
+          ]
+        }
+      }
+    ],
+    "assessment": {
+      "ready_to_answer": true,
+      "supported_requirements": [
+        "The award is Academy Award for Best Actor.",
+        "The relevant year is 2004, which corresponds to the 2004 entry in the Best Actor winners table.",
+        "The supplied table for Academy_Award_for_Best_Actor.html includes the winner and film for the relevant year."
+      ],
+      "missing_requirements": [],
+      "retrieval_requests": [],
+      "table_requests": [],
+      "unresolved_conflicts": [],
+      "explanation": "The evidence set includes the Best Actor winners table for the 2000s from Academy_Award_for_Best_Actor.html. This table is sufficient to identify the 2004 winner and the associated film directly, so no additional retrieval or table computation is needed."
+    },
+    "assessment_history": [
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "The supplied table from Academy_Award_for_Best_Actor.html includes the 2000s winners list and indicates the winner for the 2000 award year as Russell Crowe for Gladiator."
+        ],
+        "missing_requirements": [
+          "The user asks for the Academy Award for Best Actor for 2004, but the provided evidence excerpt only shows rows for 2000 and does not include the 2004 winner/film."
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Identify the Academy Award for Best Actor winner and film for 2004.",
+            "query": "Academy Award for Best Actor 2004 winner film 2004 table row",
+            "target_articles": [
+              "Academy_Award_for_Best_Actor.html"
+            ],
+            "keywords": [
+              "2004",
+              "Best Actor",
+              "winner",
+              "film"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [
+          {
+            "missing_fact": "Who won the Academy Award for Best Actor for 2004, and for which film?",
+            "source_article": "Academy_Award_for_Best_Actor.html",
+            "table_id": "cde6f9ef7059f28450fff10e",
+            "expected_caption": null,
+            "operation": "auto",
+            "columns_needed": [],
+            "row_filters": {},
+            "comparison_key": null
+          }
+        ],
+        "unresolved_conflicts": [],
+        "explanation": "The relevant article and table are available, but the visible evidence only contains 2000 rows. The 2004 result is not directly supported in the supplied excerpt, so additional retrieval from the same award table is needed."
+      },
+      {
+        "ready_to_answer": true,
+        "supported_requirements": [
+          "The award is Academy Award for Best Actor.",
+          "The relevant year is 2004, which corresponds to the 2004 entry in the Best Actor winners table.",
+          "The supplied table for Academy_Award_for_Best_Actor.html includes the winner and film for the relevant year."
+        ],
+        "missing_requirements": [],
+        "retrieval_requests": [],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The evidence set includes the Best Actor winners table for the 2000s from Academy_Award_for_Best_Actor.html. This table is sufficient to identify the 2004 winner and the associated film directly, so no additional retrieval or table computation is needed."
+      }
+    ]
+  }
+}

@@ -51,7 +51,7 @@ rag_and_context_engineering/
     │   ├── multistep.py                   # query-decomposition retriever (Lab 4.1)
     │   ├── graph.py                       # graph-augmented retriever (Lab 4.2)
     │   ├── expansion.py                   # expand seed chunks → full article context
-    │   ├── evidence.py / llm.py           # evidence helpers; embeddings + answer/decompose LLM
+    │   ├── evidence.py / llm.py           # evidence helpers; embeddings, answer prompt (+ optional history), decompose LLM
     ├── utils/
     │   ├── ragas_eval.py                  # shared RAGAS harness (GT parse, LLM/judge, rate-limit)
     │   ├── analyze_ragas_experiments.py   # aggregate CSV runs → PDF report
@@ -297,7 +297,8 @@ Both starters build the unchanged 5.1 survivor through
 without API calls.
 
 **Security (history on).** Each scenario is one conversation. The answer model
-receives the earlier turns; retrieval sees only the current message.
+receives the earlier turns, built by `retrievers/llm.py` `build_answer_messages`;
+retrieval sees only the current message.
 
 Print the scenarios (no API calls):
 
@@ -310,6 +311,9 @@ Run every scenario three times:
 ```bash
 python "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/security_test_starter.py" --scenario all --repeats 3
 ```
+
+`--rescore <run folder>` re-applies the attack detectors to a finished run without API
+calls.
 
 **Cost (history off).** Runs the 5.1 RAGAS case function unchanged, so the results
 CSV keeps the 5.1 schema. Token telemetry per call, node, and question is written to

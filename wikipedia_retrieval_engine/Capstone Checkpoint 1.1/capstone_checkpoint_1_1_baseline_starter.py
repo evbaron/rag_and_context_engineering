@@ -29,9 +29,13 @@ plain script AND openable as cells in VS Code / PyCharm / Jupytext.
 # | Scenario | Corpus | What your system must eventually do |
 # |---|---|---|
 # | **Research Paper Navigator** | ~150 research-paper PDFs (`Labs/CapstoneDatasets/ResearchPapers/`) | Answer questions about the papers and **quote them directly**; handle single-paper and cross-paper questions (compare ideas, trace how an idea evolved); maintain conversation history. |
+
 # | **Wikipedia Retrieval Engine** | ~2,400 Wikipedia HTML articles (`Labs/CapstoneDatasets/Wikipedia/`) | Answer questions about significant figures/places and **back answers with direct quotes** from the articles; handle single-article and cross-article questions; maintain conversation history. |
+
+
 #
 # Both model the same real-world pattern: a chat interface over a large body of complex documents where answers must be **grounded and quotable**, not just fluent.
+
 #
 # Set `SCENARIO` below to the one you chose.
 
@@ -72,6 +76,7 @@ SCENARIO = "wikipedia"   # "research_papers" or "wikipedia"
 
 SYSTEM_PROMPT = (
     "You are a helpful research assistant. Answer the user's question as "
+    
     "accurately as you can. When you reference a specific document, quote "
     "from it directly. If you are not certain, say so rather than guessing."
 )
@@ -128,12 +133,15 @@ def log_response(scenario: str, prompt: str, response: str) -> None:
 # - **hallucinate** specifics (fabricate a paper's results, a date, a quote),
 # - **hedge** ("I don't have access to that document"),
 # - or give a **generic** answer that doesn't actually quote the source.
+
 #
 # These three behaviors are your evidence that retrieval is required. Read the responses critically — a fluent answer is not necessarily a correct one.
+
 
 # %%
 # Example baseline prompts per scenario. These reference REAL documents in the
 # capstone datasets so you can check the model's answers against the source.
+
 EXAMPLE_PROMPTS = {
     "research_papers": [
         # Asks for a specific finding from a specific paper in the collection.
@@ -158,6 +166,7 @@ EXAMPLE_PROMPTS = {
         "Quote the opening sentence of the Wikipedia article titled "
         "'13 (2010 film)'.",
         # Asks for an aggregated answer across articles.
+        
         "List three significant events recorded in the Wikipedia article for "
         "the year 1580, quoting the article for each.",
     ],
@@ -174,6 +183,7 @@ EXAMPLE_PROMPTS = {
 # - Ask something **outside** the corpus to see whether the model admits it doesn't know.
 #
 # Return a list of prompt strings. Look at a few real documents in `Labs/CapstoneDatasets/` first so you can check the answers against ground truth.
+
 
 # %%
 def my_probe_prompts() -> list[str]:
@@ -192,6 +202,7 @@ def my_probe_prompts() -> list[str]:
 #
 # This runs the example prompts plus your own through the **no-retrieval** LLM and logs every prompt/response to `checkpoint_1_1_responses.log`. Read each answer against the real document (open it in the dataset folder) and classify what you see: hallucination, hedge, generic-but-unsourced, or correct.
 
+
 # %%
 def run_probes() -> None:
     check_api_key()
@@ -207,17 +218,21 @@ def run_probes() -> None:
         print(f"PROMPT {i}/{len(prompts)}: {prompt[:90]}...")
         try:
             answer = ask(chain, prompt)
+            
         except Exception as e:
             print(f"  API error: {e}")
             continue
         print(f"\nRESPONSE:\n{answer}\n")
+        
         log_response(SCENARIO, prompt, answer)
+        
 
     print("=" * 72)
     print(
         "Done. Now READ each response against the real document. For each, "
         "note: did the model hallucinate, hedge, give a generic unsourced "
         "answer, or get it right? This is the evidence for your write-up."
+        
     )
 
 

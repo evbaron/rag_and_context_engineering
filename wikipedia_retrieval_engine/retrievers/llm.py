@@ -2,10 +2,11 @@
 from __future__ import annotations
 
 import os
+from collections.abc import Sequence
 from pathlib import Path
 
 from dotenv import load_dotenv
-from langchain_core.messages import HumanMessage, SystemMessage
+from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
@@ -84,6 +85,39 @@ def get_embeddings(model: str = EMBEDDING_MODEL) -> OpenAIEmbeddings:
     )
 
 
+def build_answer_messages(
+    query: str,
+    context: str,
+    *,
+    history: Sequence[tuple[str, str]] | None = None,
+    max_history_turns: int | None = None,
+    system_prompt: str = SYSTEM_PROMPT,
+) -> list[BaseMessage]:
+    """Build the answer model's message list, optionally with conversation history.
+
+    The chat model keeps no memory between calls, so earlier turns must be re-sent
+    on every call. ``history`` holds them oldest first as ``(user_message,
+    answer)`` pairs; each becomes a ``HumanMessage``/``AIMessage`` pair between the
+    system prompt and the current message. Only the text of earlier questions and
+    answers is sent, not the context retrieved for them.
+
+    ``max_history_turns`` keeps the most recent N turns (``None`` keeps all, ``0``
+    keeps none). Without history the result is the single-turn message pair every
+    checkpoint has sent through ``answer()``.
+    """
+    turns = list(history or [])
+    if max_history_turns is not None:
+        turns = turns[-max_history_turns:] if max_history_turns > 0 else []
+    messages: list[BaseMessage] = [SystemMessage(content=system_prompt)]
+    for user_message, previous_answer in turns:
+        messages.append(HumanMessage(content=user_message))
+        messages.append(AIMessage(content=previous_answer))
+    messages.append(
+        HumanMessage(content=f"Context (Wikipedia articles):\n{context}\n\nQuestion: {query}")
+    )
+    return messages
+
+
 def answer(
     query: str,
     context: str,
@@ -98,10 +132,7 @@ def answer(
     if not context.strip():
         raise ValueError("Cannot ask the LLM to answer without retrieved context.")
     client = llm or make_llm()
-    messages = [
-        SystemMessage(content=system_prompt),
-        HumanMessage(content=f"Context (Wikipedia articles):\n{context}\n\nQuestion: {query}"),
-    ]
+    messages = build_answer_messages(query, context, system_prompt=system_prompt)
     response = client.invoke(messages)
     content = response.content if hasattr(response, "content") else response
     return content if isinstance(content, str) else str(content)

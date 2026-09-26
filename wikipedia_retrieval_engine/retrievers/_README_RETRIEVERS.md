@@ -300,11 +300,17 @@ All model I/O. Retrievers do not import this except `vector.py` → `get_embeddi
 | `make_llm()`                                                    | Chat client                                                                            |
 | `get_embeddings()`                                              | Embedding client for Chroma                                                            |
 | `answer(query, context, llm=None, system_prompt=SYSTEM_PROMPT)` | Sends a `SystemMessage` plus the retrieved context and question. Does not search.      |
+| `build_answer_messages(query, context, *, history=None, max_history_turns=None, system_prompt=SYSTEM_PROMPT)` | Builds the answer model's message list. Without `history` it is the single-turn pair `answer()` sends; with `history` (`(question, answer)` pairs, oldest first) the earlier turns sit between the system prompt and the current message. Used by the Checkpoint 6.1 security starter. |
 
 
 The ChatOpenAI client itself does not store a system prompt. `answer()` explicitly
 passes `system_prompt` as a LangChain `SystemMessage` on every call. The checkpoint
 does not define a second prompt or a second model factory.
+
+The client keeps no conversation memory either: a multi-turn conversation re-sends
+its earlier turns through `build_answer_messages(..., history=...)` on every call.
+`tests/test_llm_messages.py` pins the single-turn messages as literal text, so
+the history option cannot change what earlier checkpoints send.
 
 ### `evidence.py` — `EvidenceLogger`
 
