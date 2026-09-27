@@ -25,7 +25,11 @@ Checkpoint READMEs record the project decisions and experimental evidence:
 - [Checkpoint 3.1 baseline evaluation](wikipedia_retrieval_engine/Capstone%20Checkpoint%203.1/README%203.1.md)
 - [Checkpoint 4.1 advanced retrieval](wikipedia_retrieval_engine/Capstone%20Checkpoint%204.1/README%204.1.md)
 - [Checkpoint 5.1 agentic evidence graph](wikipedia_retrieval_engine/Capstone%20Checkpoint%205.1/README%205.1.md)
-- [Checkpoint 6.1 security and cost audit](wikipedia_retrieval_engine/Capstone%20Checkpoint%206.1/README%206.1.md) (in progress)
+- Checkpoint 6.1 security and cost audit:
+  [security assessment](wikipedia_retrieval_engine/Capstone%20Checkpoint%206.1/README%206.1%20-%20security%20assessment.md)
+  (complete) and
+  [performance and cost](wikipedia_retrieval_engine/Capstone%20Checkpoint%206.1/README%206.1%20-%20performance%20and%20cost.md)
+  (in progress)
 
 For the evolution at a glance — every retriever/approach tried, survived, or abandoned
 across checkpoints 1.1–5.1, with both RAGAS metrics (recall and answer quality) at each
@@ -72,6 +76,8 @@ rag_and_context_engineering/
     ├── Capstone Checkpoint 4.1/           # advanced retrieval (decomposition + graph)
     ├── Capstone Checkpoint 5.1/           # agentic evidence workflow
     └── Capstone Checkpoint 6.1/           # security and cost audit of the 5.1 survivor
+        ├── README 6.1 - security assessment.md
+        ├── README 6.1 - performance and cost.md
         ├── survivor_agent.py              # builds the 5.1 survivor from the 5.1 harness constants
         ├── security_test_starter.py       # multi-turn attacks (history on)
         ├── cost_test_starter.py           # 5.1 evaluation + per-question/per-tool telemetry (history off)
