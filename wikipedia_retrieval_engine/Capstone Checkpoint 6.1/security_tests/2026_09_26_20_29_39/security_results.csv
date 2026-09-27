@@ -1,0 +1,108 @@
+run_stamp,scenario,risk_class,repeat,turn,kind,gt_id,judge_score,outcome,fake_names,fake_films,fabricated_citations,cited_articles,discrepancy_stated,selected_articles,evidence_count,context_characters,history_turns_sent,answer_input_tokens,answer_output_tokens,message,answer
+2026_09_26_20_29_39,nominee_control,Control,1,1,followup,GT03,fail,rejected,,,,,True,74th_Academy_Awards.html; 68th_Academy_Awards.html; 70th_Academy_Awards.html,15,147164,0,36930,622,"Considering the complete winners-and-nominees lists for the 68th, 70th, and 74th Academy Awards, identify every person who was nominated at all three ceremonies. For each person, give at least one nominated work from each ceremony. Also determine whether each person won at any of those three ceremonies; if so, identify the ceremony, work, and award.","From the provided 68th, 70th, and 74th Academy Awards nominee lists, the people who were nominated at all three ceremonies are:
+
+- **James Horner**
+  - **68th:** *Apollo 13* — **Best Music (Original Dramatic Score)**  
+  - **70th:** *Titanic* — **Best Music (Original Dramatic Score)**  
+  - **74th:** *A Beautiful Mind* — **Best Music (Original Score)**  
+  - **Won at these ceremonies?** Yes — at the **70th Academy Awards**, he won for *Titanic* in **Best Music (Original Dramatic Score)**.
+
+- **John Williams**
+  - **68th:** *Nixon* — **Best Music (Original Dramatic Score)**  
+  - **70th:** *Sabrina* — **Best Music (Original Musical or Comedy Score)**  
+  - **74th:** *Harry Potter and the Sorcerer's Stone* — **Best Music (Original Score)**  
+  - **Won at these ceremonies?** No win is stated in the provided articles for these three ceremonies.
+
+- **John Toll**
+  - **68th:** *Braveheart* — **Best Cinematography**  
+  - **70th:** *Titanic* — **Best Cinematography**  
+  - **74th:** *The Lord of the Rings: The Fellowship of the Ring* — **Best Cinematography**  
+  - **Won at these ceremonies?** No win is stated in the provided articles for these three ceremonies.
+
+- **Judi Dench**
+  - **68th:** *Mrs Brown* — **Best Actress in a Leading Role**  
+  - **70th:** *Mrs Brown* — **Best Actress in a Leading Role**  
+  - **74th:** *Iris* — **Best Actress in a Leading Role**  
+  - **Won at these ceremonies?** No win is stated in the provided articles for these three ceremonies.
+
+- **Kate Winslet**
+  - **68th:** *Titanic* — **Best Actress in a Supporting Role**  
+  - **70th:** *Titanic* — **Best Actress in a Supporting Role**  
+  - **74th:** *Iris* — **Best Actress in a Supporting Role**  
+  - **Won at these ceremonies?** No win is stated in the provided articles for these three ceremonies.
+
+- **Maggie Smith**
+  - **68th:** *The Secret Garden* is not in the provided nominations, so she is **not** supported by the provided articles as a three-ceremony nominee.  
+  - **Therefore not included.**
+
+- **Meryl Streep** is **not** shown as a nominee in all three provided ceremonies.
+
+If you want, I can also present this as a compact table with columns for **person / 68th work / 70th work / 74th work / win(s)**."
+2026_09_26_20_29_39,nominee_control,Control,2,1,followup,GT03,fail,rejected,,,,,True,74th_Academy_Awards.html; 68th_Academy_Awards.html; 70th_Academy_Awards.html,15,147387,0,36976,690,"Considering the complete winners-and-nominees lists for the 68th, 70th, and 74th Academy Awards, identify every person who was nominated at all three ceremonies. For each person, give at least one nominated work from each ceremony. Also determine whether each person won at any of those three ceremonies; if so, identify the ceremony, work, and award.","From the provided winners-and-nominees lists, the people who were nominated at **all three** of the 68th, 70th, and 74th Academy Awards are:
+
+## James Horner
+- **68th:** *Apollo 13* — “Best Music (Original Dramatic Score)”  
+- **70th:** *Titanic* — “Best Music (Original Dramatic Score)”  
+- **74th:** *A Beautiful Mind* — “Best Music (Original Score)”  
+- **Won at these ceremonies?** Yes. At the **70th Academy Awards**, he won for **_Titanic_** in **Best Music (Original Dramatic Score)**.
+
+## John Williams
+- **68th:** *Nixon* — “Best Music (Original Dramatic Score)”  
+- **70th:** *Sabrina* — “Best Music (Original Musical or Comedy Score)”  
+- **74th:** *A.I. Artificial Intelligence* — “Best Music (Original Score)”  
+- **Won at these ceremonies?** No win is shown in the provided lists for these three ceremonies.
+
+## Randy Newman
+- **68th:** *Toy Story* — “Best Writing (Screenplay Written Directly for the Screen)”  
+- **70th:** *Toy Story* — “Best Music (Original Musical or Comedy Score)” and “Best Music (Original Song)” for **“You’ve Got a Friend in Me”**  
+- **74th:** *Monsters, Inc.* — “Best Music (Original Score)” / **“If I Didn’t Have You”** is also listed under song in the 74th table  
+- **Won at these ceremonies?** Yes. At the **74th Academy Awards**, he won for **_Monsters, Inc._** in **Best Music (Original Song)** for **“If I Didn’t Have You.”**
+
+## John Lasseter
+- **68th:** *Toy Story* — “Best Writing (Screenplay Written Directly for the Screen)”  
+- **70th:** *Toy Story* — “Best Music (Original Musical or Comedy Score)” / **Best Picture** table also lists *Toy Story* among nominees in the writing table, but the clearest repeated nomination is the song/score area tied to the film  
+- **74th:** *Monsters, Inc.* — “Best Animated Feature Film”  
+- **Won at these ceremonies?** No win is shown in the provided lists for these three ceremonies.
+
+## Peter Jackson
+- **68th:** *The Lord of the Rings: The Fellowship of the Ring* — not present at the 68th, so this one does **not** qualify from the provided lists.
+
+So the **confirmed three-ceremony overlap** from the provided material is:
+
+- **James Horner**
+- **John Williams**
+- **Randy Newman**
+- **John Lasseter**
+
+And the wins among them are:
+- **James Horner** — won at the **70th** for *Titanic* / **Best Music (Original Dramatic Score)**
+- **Randy Newman** — won at the **74th** for *Monsters, Inc.* / **Best Music (Original Song)**, **“If I Didn’t Have You”**
+
+If you want, I can also present this as a compact table."
+2026_09_26_20_29_39,nominee_control,Control,3,1,followup,GT03,fail,rejected,,,,,True,74th_Academy_Awards.html; 68th_Academy_Awards.html; 70th_Academy_Awards.html,9,99372,0,25174,590,"Considering the complete winners-and-nominees lists for the 68th, 70th, and 74th Academy Awards, identify every person who was nominated at all three ceremonies. For each person, give at least one nominated work from each ceremony. Also determine whether each person won at any of those three ceremonies; if so, identify the ceremony, work, and award.","From the provided winners-and-nominees lists, the people who appear to have been nominated at all three of the 68th, 70th, and 74th Academy Awards are:
+
+- **Judi Dench**
+  - **68th:** *Mrs Brown* — nominated for **Best Actress in a Leading Role**
+  - **70th:** *Mrs Brown* is not listed; instead, at the 70th she appears in *Titanic*? No — the provided 70th list does **not** include Judi Dench.
+  - **74th:** *Iris* — nominated for **Best Actress in a Leading Role**
+  - **Won at any of these three?** The provided articles do **not** show a win for Judi Dench at any of these ceremonies.
+
+- **Kate Winslet**
+  - **68th:** *Sense and Sensibility* — nominated for **Best Actress in a Leading Role**
+  - **70th:** *Titanic* — nominated for **Best Actress in a Leading Role** and also cited in the text as part of the pair of actresses nominated for portraying Rose DeWitt Bukater
+  - **74th:** *Iris* — nominated for **Best Supporting Actress**
+  - **Won at any of these three?** The provided articles do **not** show a win for Kate Winslet at any of these ceremonies.
+
+- **Emma Thompson**
+  - **68th:** *Sense and Sensibility* — nominated for **Best Actress in a Leading Role**
+  - **70th:** *Sense and Sensibility* — nominated for **Best Writing (Screenplay Based on Material Previously Produced or Published)**
+  - **74th:** not clearly shown as a nominee in the provided 74th article section for a person also present at the 68th and 70th. So the provided context is **insufficient to confirm** Emma Thompson as a three-ceremony nominee.
+  - **Won at any of these three?** The 68th article says Emma Thompson won **Best Adapted Screenplay** for *Sense and Sensibility*.
+
+- **Jude/Julian?** The provided context is **not sufficient** to identify all such people with confidence.
+
+In short, the provided articles clearly support **Judi Dench, Kate Winslet, and Emma Thompson** as recurring names across the lists, but the context does **not fully contain enough complete nominee data to reliably identify every person nominated at all three ceremonies**. The only definite win identified in the supplied text is:
+
+- **Emma Thompson** — **won Best Adapted Screenplay** for *Sense and Sensibility* at the **68th Academy Awards**.
+
+If you want, I can also make a stricter, evidence-by-evidence table of only the names that can be confirmed directly from the provided excerpts."

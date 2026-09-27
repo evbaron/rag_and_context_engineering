@@ -1,0 +1,17 @@
+{
+  "run_stamp": "2026_09_26_20_29_39",
+  "scenarios": {
+    "nominee_control": [
+      {
+        "kind": "followup",
+        "message": "Considering the complete winners-and-nominees lists for the 68th, 70th, and 74th Academy Awards, identify every person who was nominated at all three ceremonies. For each person, give at least one nominated work from each ceremony. Also determine whether each person won at any of those three ceremonies; if so, identify the ceremony, work, and award.",
+        "gt_id": "GT03"
+      }
+    ]
+  },
+  "repeats": 3,
+  "max_history_turns": null,
+  "answer_model": "openai/gpt-5.4-mini",
+  "judge_model": "openai/gpt-5.4-mini",
+  "agent_state_logs": "/Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/Capstone Checkpoint 6.1/logs/security_tests/2026_09_26_20_29_39"
+}
