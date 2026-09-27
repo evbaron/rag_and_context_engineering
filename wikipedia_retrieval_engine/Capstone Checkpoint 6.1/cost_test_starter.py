@@ -2,11 +2,11 @@ r"""Checkpoint 6.1 cost test starter — the 5.1 survivor with per-question, per
 
 Run from the repository root (rag_and_context_engineering/):
 
-    # zero cost: verify the telemetry (the TODO) on a fake model, no API calls
+    # zero cost: verify the telemetry on a fake model, no API calls
     python "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/cost_test_starter.py" --self-check
 
     # live: smoke test, then the full validation set
-    python "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/cost_test_starter.py" --question-id GT04
+    python "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/cost_test_starter.py" --question-id VAL04
     python "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/cost_test_starter.py" \
         --gt-set "wikipedia_retrieval_engine/GT/wikipedia_GT_validation_set.csv"
 
@@ -40,7 +40,6 @@ from __future__ import annotations
 import argparse
 import asyncio
 import csv
-import json
 import sys
 import time
 from collections import Counter, defaultdict
@@ -62,11 +61,17 @@ from survivor_agent import (  # noqa: E402  (sys.path set above)
     describe_survivor,
     load_harness_5_1,
 )
+from usage_accounting import (  # noqa: E402
+    PRICES_PATH,
+    call_cost,
+    load_prices,
+    price_for,
+    usage_from_message,
+)
 
 from langchain_core.callbacks import BaseCallbackHandler  # noqa: E402
 
 OUTPUT_ROOT = _HERE / "cost_tests"
-PRICES_PATH = _HERE / "pricing" / "model_prices.json"
 
 # Graph node (or the harness answer call) -> the role it plays in the 5.1 agent.
 ROLE_BY_NODE = {
@@ -134,27 +139,37 @@ class QuestionUsage(BaseCallbackHandler):
     def on_llm_end(self, response, *, run_id, **kwargs):
         """Record one finished chat-model call as a ``CallRecord`` in ``self.calls``.
 
-        TODO (Checkpoint 6.1) — the Lab 6.2 ``_track_usage`` step, per call instead
-        of per model.
-
+        The Lab 6.2 ``_track_usage`` step, per call instead of per model.
         ``response`` is an ``LLMResult``; the model's reply is
-        ``response.generations[0][0].message`` (an ``AIMessage``). Read from it:
-
-            usage_metadata    -> input_tokens, output_tokens, total_tokens,
-                                 input_token_details["cache_read"]  (cached input)
-                                 output_token_details["reasoning"]  (reasoning)
-            response_metadata -> "model_name", and "token_usage"["cost"] when
-                                 OpenRouter reports a cost
-
-        Combine them with what ``on_chat_model_start`` stored for this ``run_id``
-        (pop it from ``self._pending``: node, step, start time), map the node to a
-        role with ``ROLE_BY_NODE`` ("other" when missing), compute ``latency_s``,
-        and append the ``CallRecord``. Missing fields become 0 / None — never raise:
-        callback exceptions are swallowed by LangChain, so a bug here only shows up
-        as missing records (the self-check catches that).
+        ``response.generations[0][0].message`` (an ``AIMessage``), whose token
+        counts, model name, and reported cost ``usage_from_message`` reads. What
+        ``on_chat_model_start`` stored for this ``run_id`` (node, step, start time)
+        supplies where the call happened and how long it took.
         """
 
-        raise NotImplementedError("QuestionUsage.on_llm_end — see the TODO docstring.")
+        pending = self._pending.pop(run_id, None) or {"node": "unknown", "step": None, "start": time.perf_counter()}
+        try:
+            message = response.generations[0][0].message
+        except (AttributeError, IndexError):
+            message = None
+        usage = usage_from_message(message)
+        self.calls.append(
+            CallRecord(
+                question_id=self.question_id,
+                graph_attempt=self.graph_attempts,
+                node=pending["node"],
+                role=ROLE_BY_NODE.get(pending["node"], "other"),
+                step=pending["step"],
+                model=usage["model"],
+                input_tokens=usage["input_tokens"],
+                output_tokens=usage["output_tokens"],
+                total_tokens=usage["total_tokens"],
+                cached_input_tokens=usage["cached_input_tokens"],
+                reasoning_tokens=usage["reasoning_tokens"],
+                latency_s=time.perf_counter() - pending["start"],
+                provider_cost_usd=usage["provider_cost_usd"],
+            )
+        )
 
     def on_llm_error(self, error, *, run_id, **kwargs):
         pending = self._pending.pop(run_id, None) or {"node": "unknown", "step": None, "start": time.perf_counter()}
@@ -265,35 +280,24 @@ class TelemetryAnswerLLM:
 # ## Cost estimate and summaries
 
 # %%
-def load_prices(path: Path = PRICES_PATH) -> dict[str, dict[str, float | None]]:
-    """USD per 1M tokens by model id; missing file or null values -> no estimate."""
+def call_costs(record: CallRecord, prices: dict[str, dict[str, float | None]]) -> dict[str, float | None]:
+    """List and billed cost of one recorded call (see ``usage_accounting.call_cost``)."""
 
-    if not path.is_file():
-        return {}
-    return json.loads(path.read_text(encoding="utf-8")).get("usd_per_million_tokens", {})
-
-
-def estimate_call_cost(record: CallRecord, prices: dict[str, dict[str, float | None]]) -> float | None:
-    """Lab 6.2 estimate, with cached input charged at the cached rate when known."""
-
-    price = prices.get(record.model or "") or next(
-        (p for model, p in prices.items() if record.model and record.model.startswith(model)),
-        None,
+    return call_cost(
+        record.input_tokens,
+        record.cached_input_tokens,
+        record.output_tokens,
+        price_for(record.model, prices),
     )
-    if not price or price.get("input") is None or price.get("output") is None:
-        return None
-    cached = record.cached_input_tokens
-    cached_rate = price.get("cached_input") if price.get("cached_input") is not None else price["input"]
-    return (
-        (record.input_tokens - cached) * price["input"]
-        + cached * cached_rate
-        + record.output_tokens * price["output"]
-    ) / 1_000_000
+
+
+def _total(values: list[float | None]) -> float | None:
+    return round(sum(values), 6) if values and None not in values else None
 
 
 def question_summary(usage: QuestionUsage, prices: dict[str, dict[str, float | None]]) -> dict[str, Any]:
     calls = usage.calls
-    costs = [estimate_call_cost(call, prices) for call in calls]
+    costs = [call_costs(call, prices) for call in calls]
     provider = [call.provider_cost_usd for call in calls if call.provider_cost_usd is not None]
     tokens_by_role: dict[str, int] = defaultdict(int)
     for call in calls:
@@ -313,7 +317,8 @@ def question_summary(usage: QuestionUsage, prices: dict[str, dict[str, float | N
         "tokens_by_role": "; ".join(f"{r}={n}" for r, n in sorted(tokens_by_role.items())),
         "graph_wall_s": round(usage.graph_wall_s, 2),
         "answer_wall_s": round(usage.answer_wall_s, 2),
-        "est_cost_usd": round(sum(costs), 6) if costs and None not in costs else None,
+        "list_cost_usd": _total([cost["list"] for cost in costs]),
+        "billed_est_usd": _total([cost["billed"] for cost in costs]),
         "provider_cost_usd": round(sum(provider), 6) if provider else None,
         "question": usage.question,
     }
@@ -330,11 +335,13 @@ def _write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
 
 def write_telemetry(recorder: UsageRecorder, out_dir: Path, run_name: str, prices: dict) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
-    calls = [
-        {"run": run_name, **asdict(call), "est_cost_usd": estimate_call_cost(call, prices)}
-        for usage in recorder.questions.values()
-        for call in usage.calls
-    ]
+    calls = []
+    for usage in recorder.questions.values():
+        for call in usage.calls:
+            cost = call_costs(call, prices)
+            calls.append(
+                {"run": run_name, **asdict(call), "list_cost_usd": cost["list"], "billed_est_usd": cost["billed"]}
+            )
     nodes = [{"run": run_name, **row} for usage in recorder.questions.values() for row in usage.node_timings]
     questions = [{"run": run_name, **question_summary(u, prices)} for u in recorder.questions.values()]
     _write_csv(out_dir / f"{run_name}__llm_calls.csv", calls)
@@ -403,7 +410,8 @@ def self_check(verbose: bool = True) -> bool:
             )
             return result
 
-    # 1) The TODO itself, called directly, so NotImplementedError is visible.
+    # 1) on_llm_end called directly, outside LangChain, so an exception is visible
+    #    here instead of being swallowed by the callback manager.
     probe = QuestionUsage(question_id="probe", question="probe")
     run_id = uuid4()
     probe.on_chat_model_start({}, [[HumanMessage("x")]], run_id=run_id, metadata={"langgraph_node": "assess_evidence", "langgraph_step": 1})
@@ -412,11 +420,7 @@ def self_check(verbose: bool = True) -> bool:
         usage_metadata={"input_tokens": 7, "output_tokens": 3, "total_tokens": 10},
         response_metadata={"model_name": "fake/model"},
     )
-    try:
-        probe.on_llm_end(LLMResult(generations=[[ChatGeneration(message=fake_reply)]]), run_id=run_id)
-    except NotImplementedError as error:
-        say(f"TODO not implemented yet: {error}")
-        return False
+    probe.on_llm_end(LLMResult(generations=[[ChatGeneration(message=fake_reply)]]), run_id=run_id)
 
     # 2) End to end through the wrappers, the way the 5.1 case function calls them.
     llm = UsageFake(messages=iter(["a", "b", "c", "d"]))
@@ -447,6 +451,7 @@ def self_check(verbose: bool = True) -> bool:
     usage = recorder.questions["Q?"]
     summary = question_summary(usage, {"fake/model": {"input": 1.0, "cached_input": 0.5, "output": 2.0}})
     steps = [c.step for c in usage.calls if c.role == "assessor"]
+    real_prices = load_prices()
     checks = {
         "direct call produced one record": len(probe.calls) == 1 and probe.calls[0].input_tokens == 7,
         "4 calls attributed to decomposer, assessor x2, answer": summary["llm_calls_by_role"]
@@ -457,7 +462,14 @@ def self_check(verbose: bool = True) -> bool:
         ) == (400, 40, 160),
         "reasoning tokens and provider cost read": summary["reasoning_tokens"] == 16
         and summary["provider_cost_usd"] == 0.004,
-        "price estimate uses cached rate": summary["est_cost_usd"] == round(4 * (60 * 1.0 + 40 * 0.5 + 10 * 2.0) / 1e6, 6),
+        "billed estimate uses the cached rate": summary["billed_est_usd"]
+        == round(4 * (60 * 1.0 + 40 * 0.5 + 10 * 2.0) / 1e6, 6),
+        "list price ignores caching": summary["list_cost_usd"] == round(4 * (100 * 1.0 + 10 * 2.0) / 1e6, 6),
+        "price file: dated gpt-5.4-mini id priced as mini, not gpt-5.4": price_for(
+            "openai/gpt-5.4-mini-20260317", real_prices
+        )
+        == real_prices.get("openai/gpt-5.4-mini")
+        is not None,
         "node timings for both nodes": {row["node"] for row in usage.node_timings}
         == {"retrieve_initial_articles", "assess_evidence"},
     }
@@ -489,7 +501,7 @@ async def main() -> None:
     if args.self_check:
         sys.exit(0 if self_check() else 1)
     if not self_check(verbose=False):
-        sys.exit("Telemetry self-check failed — implement QuestionUsage.on_llm_end (run --self-check).")
+        sys.exit("Telemetry self-check failed — run --self-check for details.")
 
     gt_path = args.gt_set.expanduser().resolve()
     output_dir = (args.output_dir or OUTPUT_ROOT / gt_path.stem).expanduser().resolve()

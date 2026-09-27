@@ -123,10 +123,11 @@ takes optional `history` and `max_history_turns`.
   call (graph node, role, input, output, and cached tokens, latency) and every node's
   wall time. No node code changes.
 - The telemetry CSVs are written next to the results CSV.
-- **Status:** the per-call recording step, `QuestionUsage.on_llm_end()`, still has to be
-  implemented; its self-check is in place.
+- **Status:** the per-call recording step, `QuestionUsage.on_llm_end()`, is implemented
+  on the shared `usage_accounting.py` (2026-09-27); its self-check passes.
 
-The cost experiment gets its own section when it runs.
+The cost experiment is recorded in
+[README 6.1 - performance and cost](README%206.1%20-%20performance%20and%20cost.md).
 
 # Security Experiment
 
@@ -1103,7 +1104,8 @@ flowchart LR
     M -->|sometimes| A3["Refusal"]
 ```
 
-Performance and cost (worksheet Step 3) are measured by the cost experiment. The
+Performance and cost (worksheet Step 3) are measured by the cost experiment
+([README 6.1 - performance and cost](README%206.1%20-%20performance%20and%20cost.md)). The
 security runs contribute two observations:
 
 - plant turns inflate the context: 145K–205K characters for the plain Best Actor plant,

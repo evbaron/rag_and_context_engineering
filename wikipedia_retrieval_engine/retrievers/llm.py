@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import os
+import re
 from collections.abc import Sequence
 from pathlib import Path
 
@@ -14,17 +15,28 @@ LLM_MODEL = "openai/gpt-5.4-mini"
 EMBEDDING_MODEL = "openai/text-embedding-3-small"
 TEMPERATURE = 0.2
 
-# OpenRouter app attribution. These two HTTP headers are surfaced by OpenRouter
-# analytics as the `app` (X-Title) and `origin` (HTTP-Referer) dimensions, so
-# retriever, embedding, and judge calls can be told apart even though they all
-# use the same model. A localhost referer keeps this project out of OpenRouter's
-# public app rankings.
+# OpenRouter app attribution. OpenRouter identifies an app by its HTTP-Referer
+# URL, and analytics reports that URL, path included, as the `origin` dimension.
+# One shared referer therefore made every role one origin, and the `app` dimension
+# showed "Unknown" (localhost apps also need the X-OpenRouter-Title header). Each
+# role now sends its own referer path, so retriever, embedding, and judge calls
+# can be told apart even though they all use the same model. The "hidden"
+# visibility keeps these localhost apps out of OpenRouter's public rankings.
 OPENROUTER_REFERER = "http://localhost/wikipedia-retrieval-engine"
 
 
 def openrouter_headers(app_title: str) -> dict[str, str]:
-    """Tag every OpenRouter call with an app name so usage can be split per role."""
-    return {"HTTP-Referer": OPENROUTER_REFERER, "X-Title": app_title}
+    """Tag every OpenRouter call with its role so usage can be split per role.
+
+    ``"WRE judge"`` becomes the origin ``http://localhost/wikipedia-retrieval-engine/judge``.
+    """
+    role = re.sub(r"[^a-z0-9]+", "-", app_title.lower().removeprefix("wre ")).strip("-")
+    return {
+        "HTTP-Referer": f"{OPENROUTER_REFERER}/{role or 'app'}",
+        "X-OpenRouter-Title": app_title,
+        "X-Title": app_title,  # older name for the title header, still accepted
+        "X-OpenRouter-App-Visibility": "hidden",
+    }
 
 
 SYSTEM_PROMPT = """You are a helpful assistant for a Wikipedia retrieval engine. \

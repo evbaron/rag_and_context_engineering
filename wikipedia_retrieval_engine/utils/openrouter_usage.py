@@ -501,10 +501,13 @@ def query_analytics(
     granularity: str,
     timeout: float,
 ) -> list[dict[str, Any]]:
-    """Return day x <dimension> usage rows from the OpenRouter analytics API.
+    """Return time bucket x <dimension> usage rows from the OpenRouter analytics API.
 
     Analytics requires a management key. Each row looks like
-    ``{"date__day": "...", "<dimension>": "...", "request_count": N, ...}``.
+    ``{"date__day": "...", "<dimension>": "...", "request_count": N, ...}``. The
+    time key follows the granularity (``date__hour`` for hourly buckets) and some
+    dimensions name it differently (``origin`` rows carry ``created_at__day``);
+    ``time_bucket_key`` finds it.
     """
     end = datetime.now(timezone.utc)
     start = (end - timedelta(days=days)).replace(
@@ -535,21 +538,36 @@ def _metric(row: dict[str, Any], name: str) -> float:
     return 0.0 if number is None else number
 
 
+def time_bucket_key(rows: list[dict[str, Any]]) -> str:
+    """Name of the time column in analytics rows (``date__day``, ``date__hour``, ...)."""
+    for row in rows:
+        for key in row:
+            if key.startswith(("date__", "created_at__")):
+                return key
+    return "date__day"
+
+
 def print_analytics(rows: list[dict[str, Any]], dimension: str) -> None:
-    """Print per-dimension totals and daily totals with derived cost ratios."""
+    """Print per-dimension totals and per-time-bucket totals with derived cost ratios."""
+    time_key = time_bucket_key(rows)
     by_dim: dict[str, dict[str, float]] = defaultdict(lambda: defaultdict(float))
     by_day: dict[str, dict[str, float]] = defaultdict(lambda: defaultdict(float))
     for row in rows:
         key = str(row.get(dimension) or "(none)")
-        day = str(row.get("date__day") or "")[:10]
+        day = str(row.get(time_key) or "")
+        if day.endswith(" 00:00:00") and not time_key.endswith("__hour"):
+            day = day[:10]
         for metric in ANALYTICS_METRICS:
             value = _metric(row, metric)
             by_dim[key][metric] += value
             by_day[day][metric] += value
 
     print(f"OpenRouter analytics - totals by {dimension}")
+    # Wide enough for per-role origins such as
+    # http://localhost/wikipedia-retrieval-engine/replay-answer.
+    name_width = min(64, max([24, *(len(key) for key in by_dim)]))
     header = (
-        f"{dimension[:24]:24} {'reqs':>8} {'spend$':>10} {'prompt_tok':>12} "
+        f"{dimension[:name_width]:{name_width}} {'reqs':>8} {'spend$':>10} {'prompt_tok':>12} "
         f"{'compl_tok':>11} {'cached_tok':>11} {'$/1k_tok':>9} {'$/req':>9} {'cache%':>7}"
     )
     print(header)
@@ -565,17 +583,19 @@ def print_analytics(rows: list[dict[str, Any]], dimension: str) -> None:
         per_1k = (spend / total_tok * 1000) if total_tok else 0.0
         per_req = (spend / reqs) if reqs else 0.0
         cache_pct = (cached / prompt_tok * 100) if prompt_tok else 0.0
-        name = key if len(key) <= 24 else key[:23] + "*"
+        name = key if len(key) <= name_width else key[: name_width - 1] + "*"
         print(
-            f"{name:24} {reqs:>8,.0f} {spend:>10.4f} {prompt_tok:>12,.0f} "
+            f"{name:{name_width}} {reqs:>8,.0f} {spend:>10.4f} {prompt_tok:>12,.0f} "
             f"{agg['tokens_completion']:>11,.0f} {cached:>11,.0f} "
             f"{per_1k:>9.4f} {per_req:>9.5f} {cache_pct:>6.0f}%"
         )
 
     print()
-    print("Daily totals (all values combined)")
+    bucket = time_key.split("__")[-1]
+    width = max([12, *(len(day) + 1 for day in by_day)])
+    print(f"Totals per {bucket} (all values combined, UTC)")
     day_header = (
-        f"{'date':12} {'reqs':>8} {'spend$':>10} {'tokens_total':>13} {'cached_tok':>11}"
+        f"{bucket:{width}} {'reqs':>8} {'spend$':>10} {'tokens_total':>13} {'cached_tok':>11}"
     )
     print(day_header)
     print("-" * len(day_header))
@@ -584,7 +604,7 @@ def print_analytics(rows: list[dict[str, Any]], dimension: str) -> None:
         if not agg["request_count"] and not agg["total_usage"]:
             continue
         print(
-            f"{day:12} {agg['request_count']:>8,.0f} {agg['total_usage']:>10.4f} "
+            f"{day:{width}} {agg['request_count']:>8,.0f} {agg['total_usage']:>10.4f} "
             f"{agg['tokens_total']:>13,.0f} {agg['cached_tokens']:>11,.0f}"
         )
 
@@ -592,10 +612,10 @@ def print_analytics(rows: list[dict[str, Any]], dimension: str) -> None:
 def write_analytics_csv(
     rows: list[dict[str, Any]], path: Path, dimension: str
 ) -> None:
-    """Write the raw day x dimension rows so they can be pivoted for a report."""
+    """Write the raw time bucket x dimension rows so they can be pivoted for a report."""
     path = path.expanduser().resolve()
     path.parent.mkdir(parents=True, exist_ok=True)
-    columns = ["date__day", dimension, *ANALYTICS_METRICS]
+    columns = [time_bucket_key(rows), dimension, *ANALYTICS_METRICS]
     with path.open("w", newline="", encoding="utf-8") as stream:
         writer = csv.DictWriter(stream, fieldnames=columns, extrasaction="ignore")
         writer.writeheader()

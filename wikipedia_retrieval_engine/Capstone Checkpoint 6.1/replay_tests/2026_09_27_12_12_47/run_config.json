@@ -1,0 +1,83 @@
+{
+  "created_at": "2026-09-27T12:12:47-04:00",
+  "git_commit": "865eb9f",
+  "arguments": {
+    "runs": "all",
+    "limit_runs": null,
+    "question_ids": null,
+    "rules": [
+      "sections",
+      "whole_per_question",
+      "whole_per_article"
+    ],
+    "models": [
+      "openai/gpt-5.4-mini"
+    ],
+    "replay_all": false,
+    "dry_run": false,
+    "summarize": null,
+    "output_dir": "/Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/Capstone Checkpoint 6.1/replay_tests",
+    "prices": "/Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/Capstone Checkpoint 6.1/pricing/model_prices.json"
+  },
+  "arms": [
+    {
+      "rule": "sections",
+      "model": "openai/gpt-5.4-mini"
+    },
+    {
+      "rule": "whole_per_question",
+      "model": "openai/gpt-5.4-mini"
+    },
+    {
+      "rule": "whole_per_article",
+      "model": "openai/gpt-5.4-mini"
+    }
+  ],
+  "judge_model": "openai/gpt-5.4-mini",
+  "sources": [
+    {
+      "set_name": "validation",
+      "results_csv": "distracted_dorsey",
+      "log_folder": "2026_09_23_11_28_19"
+    },
+    {
+      "set_name": "validation",
+      "results_csv": "cranky_stallman",
+      "log_folder": "2026_09_23_11_44_15"
+    },
+    {
+      "set_name": "validation",
+      "results_csv": "eager_rossum",
+      "log_folder": "2026_09_23_11_55_11"
+    },
+    {
+      "set_name": "validation",
+      "results_csv": "objective_hopper",
+      "log_folder": "2026_09_23_12_05_45"
+    },
+    {
+      "set_name": "gt",
+      "results_csv": "zealous_liskov",
+      "log_folder": "2026_09_23_10_29_40"
+    },
+    {
+      "set_name": "gt",
+      "results_csv": "happy_hopper",
+      "log_folder": "2026_09_23_11_03_04"
+    },
+    {
+      "set_name": "gt",
+      "results_csv": "stoic_postel",
+      "log_folder": "2026_09_23_11_13_11"
+    }
+  ],
+  "question_runs_selected": 157,
+  "question_runs_replayed": 84,
+  "prices": {
+    "openai/gpt-5.4-mini": {
+      "input": 0.75,
+      "cached_input": 0.075,
+      "output": 4.5
+    }
+  }
+}

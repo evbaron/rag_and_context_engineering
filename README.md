@@ -68,6 +68,7 @@ rag_and_context_engineering/
     │   ├── table_nodes.py                 # table query planner + deterministic executor node
     │   ├── agentic_models.py              # graph state, routing, and evidence models
     │   ├── run_logging.py                 # per-question AgentState evidence logs
+    │   ├── answer_context.py              # answer-context rules: 5.1 sections or whole articles (6.1)
     │   └── run_agent.py                   # single-question run through evidence assessment
     ├── tests/                             # unit tests (unittest)
     ├── Capstone Checkpoint 1.1/
@@ -81,7 +82,10 @@ rag_and_context_engineering/
         ├── survivor_agent.py              # builds the 5.1 survivor from the 5.1 harness constants
         ├── security_test_starter.py       # multi-turn attacks (history on)
         ├── cost_test_starter.py           # 5.1 evaluation + per-question/per-tool telemetry (history off)
-        └── pricing/model_prices.json      # USD per 1M tokens for cost estimates
+        ├── answer_replay_starter.py       # re-answers saved 5.1 runs with another context or answer model
+        ├── usage_accounting.py            # shared per-call tokens and list/billed cost
+        ├── replay_tests/                  # answer replay outputs (calls CSV, config, summary)
+        └── pricing/model_prices.json      # verified USD per 1M tokens (OpenRouter, 2026-09-27)
 ```
 
 The checkpoint folders contain the assignment-specific scripts, evidence, reports,
@@ -116,7 +120,9 @@ categories/links/tables are the substrate for the Checkpoint 4.1 graph.
 - **Checkpoint 6.1 — security and cost audit (in progress).** Audits the unchanged
   5.1 survivor. The security experiment adds conversation history (the 5.1 agent is
   single-turn) and tests roleplay and evidence-planting attacks. The cost experiment
-  reruns the 5.1 evaluation with per-question and per-tool token telemetry.
+  measures real billed cost per question (the survivor costs 1.45× the 4.1 graph per
+  question once caching is counted) and replays the saved 5.1 answer step to test
+  whole articles for questions that need no table.
 
 ## Ground-truth files
 
@@ -328,7 +334,7 @@ CSV keeps the 5.1 schema. Token telemetry per call, node, and question is writte
 Smoke test on one question:
 
 ```bash
-python "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/cost_test_starter.py" --question-id GT04
+python "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/cost_test_starter.py" --question-id VAL04
 ```
 
 Full validation set:
@@ -338,7 +344,29 @@ python "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/cost_test_starter.py"
   --gt-set "wikipedia_retrieval_engine/GT/wikipedia_GT_validation_set.csv"
 ```
 
-The Checkpoint 6.1 README records the scenarios, the choices behind them, and the
+**Answer replay.** Re-answers the saved 5.1 survivor runs (their AgentState logs are in
+`Capstone Checkpoint 5.1/logs/`) under another answer-context rule or answer model,
+without re-running the agent. Every run first checks that the rebuilt 5.1 contexts
+match the 5.1 results.
+
+Rebuild every context, show what would change, and estimate the cost (no API calls):
+
+```bash
+python "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/answer_replay_starter.py" --dry-run
+```
+
+Experiment 1, 5.1 sections against whole articles:
+
+```bash
+python "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/answer_replay_starter.py" \
+  --rules sections whole_per_question whole_per_article
+```
+
+`--question-id VAL11 --runs validation --limit-runs 1` runs a smoke test, `--models`
+compares answer models, and `--summarize <replay folder>` rebuilds the summary without
+API calls.
+
+The Checkpoint 6.1 READMEs record the scenarios, the choices behind them, and the
 results.
 
 ## Analyze RAGAS experiments
@@ -408,18 +436,20 @@ python wikipedia_retrieval_engine/utils/openrouter_usage.py \
 Set `OPENROUTER_MANAGEMENT_KEY` when you also want account-level credit remaining or
 need to list/query managed keys.
 
-The management key also enables the analytics query (day × dimension usage: request
-count, cost, prompt/completion/cached tokens). Capstone calls carry app tags ("WRE
-retriever" for chat roles, "WRE embedding", "WRE judge", applied since 2026-09-22), so
-grouping by `app` separates system cost from evaluation cost:
+The management key also enables the analytics query (time bucket × dimension usage:
+request count, cost, prompt/completion/cached tokens). Since 2026-09-27 each capstone
+role sends its own referer (`retrievers/llm.py` `openrouter_headers`), so grouping by
+`origin` separates system cost from evaluation cost: `…/retriever` for the agent and
+answer, `…/judge`, `…/embedding`, `…/replay-answer`. Earlier traffic shares one origin,
+and the `app` dimension reports it as "Unknown".
 
 ```bash
 python wikipedia_retrieval_engine/utils/openrouter_usage.py \
-  --analytics --analytics-dimension app --analytics-days 14 \
-  --analytics-csv "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/openrouter_analytics_by_app.csv"
+  --analytics --analytics-dimension origin --analytics-days 14 \
+  --analytics-csv "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/openrouter_analytics_by_origin.csv"
 ```
 
-`--analytics-granularity hour` isolates individual runs.
+`--analytics-granularity hour` isolates individual runs (buckets are in UTC).
 
 ## Why the project progresses to Checkpoints 5.1 and 6.1
 

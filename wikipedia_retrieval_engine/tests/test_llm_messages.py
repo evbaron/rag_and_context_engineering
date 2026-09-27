@@ -5,9 +5,11 @@ import unittest
 from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
 
 from wikipedia_retrieval_engine.retrievers.llm import (
+    OPENROUTER_REFERER,
     SYSTEM_PROMPT,
     answer,
     build_answer_messages,
+    openrouter_headers,
 )
 
 CONTEXT = "[Evidence ID: X.html#section-000-00]\nSource article: X.html\nBody text."
@@ -78,6 +80,25 @@ class AnswerMessageTests(unittest.TestCase):
         messages = build_answer_messages(QUESTION, CONTEXT, system_prompt="Custom rules.")
 
         self.assertEqual(_shape(messages[:1]), [(SystemMessage, "Custom rules.")])
+
+
+class OpenRouterHeaderTests(unittest.TestCase):
+    def test_each_role_gets_its_own_origin(self) -> None:
+        referers = {
+            title: openrouter_headers(title)["HTTP-Referer"]
+            for title in ("WRE retriever", "WRE judge", "WRE embedding", "WRE replay answer")
+        }
+
+        self.assertEqual(referers["WRE judge"], f"{OPENROUTER_REFERER}/judge")
+        self.assertEqual(referers["WRE replay answer"], f"{OPENROUTER_REFERER}/replay-answer")
+        self.assertEqual(len(set(referers.values())), 4)
+
+    def test_title_and_hidden_visibility_are_sent(self) -> None:
+        headers = openrouter_headers("WRE judge")
+
+        self.assertEqual(headers["X-OpenRouter-Title"], "WRE judge")
+        self.assertEqual(headers["X-Title"], "WRE judge")
+        self.assertEqual(headers["X-OpenRouter-App-Visibility"], "hidden")
 
 
 if __name__ == "__main__":
