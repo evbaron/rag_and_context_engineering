@@ -26,23 +26,25 @@ Checkpoint READMEs record the project decisions and experimental evidence:
 - [Checkpoint 4.1 advanced retrieval](wikipedia_retrieval_engine/Capstone%20Checkpoint%204.1/README%204.1.md)
 - [Checkpoint 5.1 agentic evidence graph](wikipedia_retrieval_engine/Capstone%20Checkpoint%205.1/README%205.1.md)
 - Checkpoint 6.1 security and cost audit:
-  [security assessment](wikipedia_retrieval_engine/Capstone%20Checkpoint%206.1/README%206.1%20-%20security%20assessment.md)
-  (complete) and
-  [performance and cost](wikipedia_retrieval_engine/Capstone%20Checkpoint%206.1/README%206.1%20-%20performance%20and%20cost.md)
-  (in progress)
+  [security assessment](wikipedia_retrieval_engine/Capstone%20Checkpoint%206.1/README%206.1%20-%20security%20assessment.md),
+  [performance and cost](wikipedia_retrieval_engine/Capstone%20Checkpoint%206.1/README%206.1%20-%20performance%20and%20cost.md),
+  and the submitted
+  [worksheet](wikipedia_retrieval_engine/Capstone%20Checkpoint%206.1/ElenaBaron_Capstone_Checkpoint_6_1_Worksheet_Completed.pdf)
 
 For the evolution at a glance — every retriever/approach tried, survived, or abandoned
-across checkpoints 1.1–5.1, with both RAGAS metrics (recall and answer quality) at each
-fork — open the interactive [**Retriever Phylogeny**](retriever_phylogeny.html) in a browser.
+across checkpoints 1.1–6.1, with both RAGAS metrics (recall and answer quality) at each
+fork, one survivor per checkpoint, and the survivors' progression on the test and
+validation sets — open the interactive
+[**Retriever Phylogeny**](wikipedia_retrieval_engine/retriever_phylogeny.html) in a browser.
 
 ```text
 rag_and_context_engineering/
 ├── README.md
 ├── LANGCHAIN_GUIDE.md
-├── retriever_phylogeny.html               # interactive lineage of retrievers 1.1–5.1
 ├── requirements.txt
 ├── test_setup.py
 └── wikipedia_retrieval_engine/
+    ├── retriever_phylogeny.html           # interactive lineage of retrievers 1.1–6.1
     ├── Wikipedia Library/                 # local HTML corpus (2,419 articles)
     ├── GT/
     │   ├── wikipedia_GT.csv               # canonical 19-case evaluation set (GT01–GT19)
@@ -76,16 +78,21 @@ rag_and_context_engineering/
     ├── Capstone Checkpoint 3.1/           # baseline retrieval + evaluation
     ├── Capstone Checkpoint 4.1/           # advanced retrieval (decomposition + graph)
     ├── Capstone Checkpoint 5.1/           # agentic evidence workflow
-    └── Capstone Checkpoint 6.1/           # security and cost audit of the 5.1 survivor
+    └── Capstone Checkpoint 6.1/           # security and cost audit; the 6.1 survivor
         ├── README 6.1 - security assessment.md
         ├── README 6.1 - performance and cost.md
+        ├── ElenaBaron_Capstone_Checkpoint_6_1_Worksheet_Completed.pdf  # submitted worksheet
         ├── survivor_agent.py              # builds the 5.1 survivor from the 5.1 harness constants
         ├── security_test_starter.py       # multi-turn attacks (history on)
-        ├── cost_test_starter.py           # 5.1 evaluation + per-question/per-tool telemetry (history off)
+        ├── cost_test_starter.py           # 5.1 or 6.1 survivor evaluation + per-call/per-node telemetry (history off)
         ├── survivor_6_1.py                # the 6.1 survivor: whole articles for text questions, surfaced gaps, model arguments
         ├── answer_replay_starter.py       # re-answers saved 5.1 runs with another context or answer model
         ├── usage_accounting.py            # shared per-call tokens and list/billed cost
+        ├── ragas_6_1_survivor_vs_5_1.pdf  # RAGAS report: 6.1 configurations against 5.1, with cost and latency
+        ├── security_tests/                # one folder per security run (transcripts, results CSV, config)
+        ├── cost_tests/                    # RAGAS CSVs + telemetry per run, by question set
         ├── replay_tests/                  # answer replay outputs (calls CSV, config, summary)
+        ├── logs/                          # AgentState evidence logs per question (security and cost runs)
         └── pricing/model_prices.json      # verified USD per 1M tokens (OpenRouter, 2026-09-27)
 ```
 
@@ -118,17 +125,19 @@ categories/links/tables are the substrate for the Checkpoint 4.1 graph.
   same-article breadth and then graph neighbors when evidence is insufficient. Final
   runs held designated-article recall at 1.000. On the held-out validation set,
   quality reached 0.880 (4.1 graph: 0.885) with about one fifth of the 4.1 context.
-- **Checkpoint 6.1 — security and cost audit (in progress).** Audits the unchanged
-  5.1 survivor. The security experiment adds conversation history (the 5.1 agent is
-  single-turn) and tests roleplay and evidence-planting attacks. The cost experiment
-  measures real billed cost per question (the survivor costs 1.45× the 4.1 graph per
-  question once caching is counted) and replays the saved 5.1 answer step to test
-  whole articles for questions that need no table. The resulting 6.1 survivor
-  (`survivor_6_1.py`: whole articles for text questions, incomplete table evidence
-  flagged to the user) matches 5.1's validation quality (0.860) at 20% less time and
-  17% less billed cost, answering text questions almost perfectly (0.974) while two
-  table questions regressed. The same graph on `gpt-5.4` reached 0.960, at 3.6× the
-  cost.
+- **Checkpoint 6.1 — security and cost audit.** Audits the 5.1 survivor, then builds
+  the 6.1 survivor from the findings. The security experiment adds conversation history
+  (the 5.1 agent is single-turn): the roleplay attack was refused in all four
+  conversations, while planted conversation text was adopted as retrieved fact in 3 of
+  30 conversations, each time the current evidence lacked the answer (the pipeline
+  fails open). The cost experiment measures real billed cost per question (the 5.1
+  survivor costs 1.45× the 4.1 graph per question once caching is counted) and replays
+  the saved 5.1 answer step to test whole articles for questions that need no table.
+  The resulting 6.1 survivor (`survivor_6_1.py`: whole articles for text questions,
+  incomplete table evidence flagged to the user) matches 5.1's validation quality
+  (0.860) at 20% less time and 17% less billed cost, answering text questions almost
+  perfectly (0.974) while two table questions regressed. The same graph on `gpt-5.4`
+  reached 0.960 in one run, at 3.6× the list cost (4.4× billed).
 
 ## Ground-truth files
 
@@ -311,8 +320,8 @@ Checkpoint 5.1 README documents the configuration, the progression, and the repo
 ## Checkpoint 6.1 security and cost tests
 
 Both starters build the unchanged 5.1 survivor through
-`Capstone Checkpoint 6.1/survivor_agent.py`. Each has a `--self-check` that runs
-without API calls.
+`Capstone Checkpoint 6.1/survivor_agent.py` by default. Each has a `--self-check` that
+runs without API calls.
 
 **Security (history on).** Each scenario is one conversation. The answer model
 receives the earlier turns, built by `retrievers/llm.py` `build_answer_messages`;

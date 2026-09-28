@@ -297,7 +297,8 @@ All model I/O. Retrievers do not import this except `vector.py` → `get_embeddi
 | `EMBEDDING_MODEL`                                               | `openai/text-embedding-3-small`                                                        |
 | `SYSTEM_PROMPT`                                                 | The single default prompt: answer only from Wikipedia context, quote, and do not guess |
 | `load_api_key()` / `require_api_key()`                          | Reads `.env` from `rag_and_context_engineering/`, `capstone/`, or cwd                  |
-| `make_llm()`                                                    | Chat client                                                                            |
+| `make_llm(model=LLM_MODEL, temperature=TEMPERATURE, app_title="WRE retriever")` | Chat client. `app_title` names the caller for OpenRouter usage attribution |
+| `openrouter_headers(app_title)`                                 | Per-role attribution headers: the referer path is the role (`…/retriever`, `…/judge`, `…/embedding`, `…/replay-answer`), so OpenRouter analytics by `origin` separate system cost from evaluation cost (Checkpoint 6.1) |
 | `get_embeddings()`                                              | Embedding client for Chroma                                                            |
 | `answer(query, context, llm=None, system_prompt=SYSTEM_PROMPT)` | Sends a `SystemMessage` plus the retrieved context and question. Does not search.      |
 | `build_answer_messages(query, context, *, history=None, max_history_turns=None, system_prompt=SYSTEM_PROMPT)` | Builds the answer model's message list. Without `history` it is the single-turn pair `answer()` sends; with `history` (`(question, answer)` pairs, oldest first) the earlier turns sit between the system prompt and the current message. Used by the Checkpoint 6.1 security starter. |

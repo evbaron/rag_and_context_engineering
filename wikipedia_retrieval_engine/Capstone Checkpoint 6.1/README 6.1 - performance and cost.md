@@ -341,7 +341,7 @@ baselines need the live telemetry run.
   sections quoted them. VAL11's loss under 5.1 (0.88, Finding 2) is therefore variation in
   the answer's synthesis, not missing context.
 
-**Planned run:** all 84 changed question-runs, three arms, `openai/gpt-5.4-mini`: 168
+**Run:** all 84 changed question-runs, three arms, `openai/gpt-5.4-mini`: 168
 answer calls and 168 judge calls, estimated at $3.00 at list price by the dry run.
 
 ## Results
@@ -901,15 +901,18 @@ README:
 | Step 4 | Trade-offs 1 and 2 above, and "compensation against safety" from the security README (reliability against security). Alternates: trade-off 3 above (flexibility); "conversation memory against exposure" from the security README; model capability against cost (Experiment 3: `gpt-5.4` reached 0.960 at 3.6× the list cost of `gpt-5.4-mini`); surfaced gaps against answer completeness (Experiment 3: VAL06) |
 | Step 5 | Most significant risk: silent adoption with false provenance (security README), with per-question cost as the performance counterpart. Lessons: security lessons 1, 2, and 4 with performance lessons 1, 3, and 5. Priorities: the synthesis fix (security priority 1), incremental assessment, escalation on an admitted gap, the answer-grounding check, and a judge with context |
 
+The submitted worksheet, `ElenaBaron_Capstone_Checkpoint_6_1_Worksheet_Completed.pdf` in
+this folder, draws on this selection and on the Experiment 3 results below.
+
 ## Supporting materials (performance)
 
 | Material | Location |
 | --- | --- |
-| Test cases | `answer_replay_starter.py` (context rules; `--dry-run` rebuilds every context); `cost_test_starter.py` (validation set); question sets in `GT/` |
-| System outputs | `replay_tests/2026_09_27_12_12_47/` (`answer_calls.csv`, `summary.md`); `cost_tests/wikipedia_GT_validation_set/experiments/quirky_adleman.csv` |
-| Performance measurements | `cost_tests/wikipedia_GT_validation_set/telemetry/quirky_adleman__llm_calls.csv`, `__node_timings.csv`, `__question_telemetry.csv`; OpenRouter analytics by origin and hour (`utils/openrouter_usage.py --analytics`) |
-| Screenshots or diagrams | The workflow diagram in Step 3; `retriever_phylogeny.html` (repository root) for the lineage from 1.1 to 5.1 |
-| Other supporting evidence | `logs/cost_tests/2026_09_27_13_23_33/` (one AgentState per question); `pricing/model_prices.json` (verified prices) |
+| Test cases | `answer_replay_starter.py` (context rules; `--dry-run` rebuilds every context); `cost_test_starter.py` (validation set; `--survivor 6.1` with `--model` and `--table-model` runs the 6.1 survivor from `survivor_6_1.py`); question sets in `GT/` |
+| System outputs | `replay_tests/2026_09_27_12_12_47/` (`answer_calls.csv`, `summary.md`); `cost_tests/wikipedia_GT_validation_set/experiments/`: `quirky_adleman.csv` (Experiment 2) and the Experiment 3 runs (`gpt-5.4-mini`: `dazzling_minsky`, `nifty_mccarthy`, `angry_babbage`; `gpt-5.4`: `nifty_andreessen`; planner `gpt-5.4`: `keen_zuckerberg`; `gpt-5.4-nano`: `tender_hopper`); `cost_tests/free_model_first5/` (free model) |
+| Performance measurements | `cost_tests/wikipedia_GT_validation_set/telemetry/<run>__llm_calls.csv`, `__node_timings.csv`, `__question_telemetry.csv`; `ragas_6_1_survivor_vs_5_1.pdf` (quality, cost, and latency per configuration); OpenRouter analytics by origin and hour (`utils/openrouter_usage.py --analytics`) |
+| Screenshots or diagrams | The workflow diagram in Step 3; `wikipedia_retrieval_engine/retriever_phylogeny.html` for the lineage from 1.1 to 6.1 (one survivor per checkpoint, with test- and validation-set charts) |
+| Other supporting evidence | `logs/cost_tests/<run stamp>/` (one AgentState per question; `2026_09_27_13_23_33` is Experiment 2); `pricing/model_prices.json` (verified prices) |
 
 # Experiment 3: the 6.1 survivor
 

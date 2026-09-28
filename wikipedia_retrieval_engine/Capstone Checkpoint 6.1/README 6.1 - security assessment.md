@@ -1081,6 +1081,14 @@ caveat (run 1).
 4. **An intent or scope gate** before retrieval.
 5. **A larger distance test,** with about 32 conversations per variant.
 
+**Follow-up.** Experiment 3 of
+[README 6.1 - performance and cost](README%206.1%20-%20performance%20and%20cost.md) builds two
+parts of the synthesis fix into the 6.1 survivor: planner schema errors are repaired,
+with one corrected retry, and incomplete computations are labeled, with an
+evidence-status notice in the answer. The decade-table combination, the "Totals" rows,
+and the cell separators remain open, and the security conversations were not re-run
+against the 6.1 survivor.
+
 ### Supporting materials
 
 | Material | Location |
