@@ -15,9 +15,10 @@
     --ink:#1a1e26; --ink-soft:#586173; --ink-faint:#8a93a3; --line:#d7dde5;
     --spine:#9aa7b6;
     --survivor:#157a54; --survivor-bg:#e4f3ec;
-    --built:#43708f; --built-bg:#e8eef4;
+    --built:#2560b8; --built-bg:#e6eefb;
     --abandon:#8a919c; --abandon-bg:#edeff2;
-    --probe:#3a4db3; --probe-bg:#e8eaf8;
+    --probe:#7a3fb4; --probe-bg:#f1e9fa;
+    --tool:#b3306a; --tool-bg:#fbe8f0;
     --current:#b25e18; --current-bg:#f8ecda;
     --next:#6a4ba6; --next-bg:#efe9f7;
     --recall:#0e7c8f; --quality:#b25e18;
@@ -31,9 +32,10 @@
     --ink:#e7ebf1; --ink-soft:#9aa5b4; --ink-faint:#6b7480; --line:#28303b;
     --spine:#3a4553;
     --survivor:#54c491; --survivor-bg:#132720;
-    --built:#82abcf; --built-bg:#131c26;
+    --built:#78a6f5; --built-bg:#131d30;
     --abandon:#727b87; --abandon-bg:#191e26;
-    --probe:#8494ec; --probe-bg:#161c33;
+    --probe:#b793ee; --probe-bg:#1f1830;
+    --tool:#f07aa8; --tool-bg:#2a1520;
     --current:#dd964e; --current-bg:#271d10;
     --next:#a488d8; --next-bg:#1f1830;
     --recall:#39b6cc; --quality:#dd964e;
@@ -44,9 +46,10 @@
     --ink:#e7ebf1; --ink-soft:#9aa5b4; --ink-faint:#6b7480; --line:#28303b;
     --spine:#3a4553;
     --survivor:#54c491; --survivor-bg:#132720;
-    --built:#82abcf; --built-bg:#131c26;
+    --built:#78a6f5; --built-bg:#131d30;
     --abandon:#727b87; --abandon-bg:#191e26;
-    --probe:#8494ec; --probe-bg:#161c33;
+    --probe:#b793ee; --probe-bg:#1f1830;
+    --tool:#f07aa8; --tool-bg:#2a1520;
     --current:#dd964e; --current-bg:#271d10;
     --next:#a488d8; --next-bg:#1f1830;
     --recall:#39b6cc; --quality:#dd964e;
@@ -65,8 +68,10 @@
   h1{font-size:clamp(30px,5.2vw,52px);line-height:1.02;margin-top:10px}
   .thesis{margin-top:14px;max-width:62ch;color:var(--ink-soft);font-size:16px}
   .thesis b{color:var(--ink);font-weight:600}
-  .herogrid{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:end;margin-top:26px}
-  @media(max-width:760px){.herogrid{grid-template-columns:1fr;gap:22px}}
+  .herogrid{display:grid;gap:4px;margin-top:26px}
+  .herogrid .hint{max-width:96ch}
+  .chartpair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+  @media(max-width:760px){.chartpair{grid-template-columns:1fr}}
   .chartcard{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 16px 12px;box-shadow:var(--shadow)}
   .chartcard h3{font-family:var(--body);font-weight:600;font-size:12.5px;letter-spacing:.02em;color:var(--ink-soft);margin-bottom:2px}
   .chartsub{font-size:11.5px;color:var(--ink-faint);margin-bottom:6px}
@@ -74,12 +79,13 @@
   .clegend{display:flex;gap:16px;margin-top:6px;font-size:11.5px;font-family:var(--mono);flex-wrap:wrap}
   .clegend span{display:inline-flex;align-items:center;gap:6px;color:var(--ink-soft)}
   .swatch{width:14px;height:3px;border-radius:2px;display:inline-block}
+  .ring{width:9px;height:9px;border-radius:50%;border:2px solid var(--quality);display:inline-block}
   .statuslegend{display:flex;flex-wrap:wrap;gap:8px 14px;margin-top:18px}
   .chip{display:inline-flex;align-items:center;gap:7px;font-size:12px;color:var(--ink-soft)}
   .dot{width:10px;height:10px;border-radius:50%;flex:none}
   .d-survivor{background:var(--survivor)} .d-abandon{background:var(--abandon)}
   .d-probe{background:var(--probe)} .d-current{background:var(--current)}
-  .d-next{background:var(--next)} .d-tool{background:var(--recall)}
+  .d-next{background:var(--next)} .d-tool{background:var(--tool)}
   .d-built{background:var(--built)}
   .hint{font-size:12px;color:var(--ink-faint);margin-top:10px}
 
@@ -104,7 +110,7 @@
   .band-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(212px,1fr));gap:12px}
 
   .valcol{padding-top:22px;display:flex;align-items:flex-start}
-  .valtile{width:100%;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--recall);border-radius:12px;padding:11px 12px;box-shadow:var(--shadow)}
+  .valtile{width:100%;background:var(--survivor-bg);border:1px solid var(--line);border-left:5px solid var(--survivor);border-radius:12px;padding:11px 12px;box-shadow:0 0 0 1px var(--survivor),var(--shadow)}
   .valtile.empty{border-left-color:var(--line);background:transparent;box-shadow:none;opacity:.55}
   .valtile .vlabel{font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint)}
   .valtile .vrow{display:flex;justify-content:space-between;align-items:baseline;margin-top:7px}
@@ -112,6 +118,8 @@
   .valtile .vv{font-family:var(--mono);font-weight:600;font-size:16px;line-height:1}
   .valtile .vv.r{color:var(--recall)} .valtile .vv.q{color:var(--quality)}
   .valtile .vnote{font-size:10px;color:var(--ink-faint);margin-top:9px;line-height:1.3}
+  .valtile .vrow.sub{margin-top:5px;padding-left:10px}
+  .valtile .vrow.sub .vk{font-family:var(--mono);font-size:10px}
 
   .card{position:relative;text-align:left;width:100%;background:var(--surface);color:inherit;
     border:1px solid var(--line);border-left:4px solid var(--abandon);border-radius:12px;
@@ -125,7 +133,7 @@
   .card.s-probe{border-left-color:var(--probe)}
   .card.s-current{border-left-color:var(--current);background:var(--current-bg)}
   .card.s-next{border-left-color:var(--next);background:var(--next-bg);border-style:dashed}
-  .card.s-tool{border-left-color:var(--recall)}
+  .card.s-tool{border-left-color:var(--tool)}
   .card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
   .card h3{font-family:var(--body);font-weight:600;font-size:14.5px;line-height:1.2}
   .fam{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);margin-top:3px}
@@ -136,7 +144,7 @@
   .t-probe{background:var(--probe-bg);color:var(--probe)}
   .t-current{background:var(--current-bg);color:var(--current)}
   .t-next{background:var(--next-bg);color:var(--next)}
-  .t-tool{background:var(--surface-2);color:var(--recall)}
+  .t-tool{background:var(--tool-bg);color:var(--tool)}
   .blurb{font-size:12.5px;color:var(--ink-soft);margin-top:7px}
   .metrics{display:flex;gap:14px;margin-top:11px}
   .metric{flex:1;min-width:0}
@@ -170,7 +178,7 @@
   .dr-note{font-size:12px;color:var(--ink-soft);margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
   .verdict{border-left:3px solid var(--survivor);padding-left:12px}
   .verdict.s-abandon{border-color:var(--abandon)} .verdict.s-probe{border-color:var(--probe)}
-  .verdict.s-current{border-color:var(--current)} .verdict.s-next{border-color:var(--next)} .verdict.s-tool{border-color:var(--recall)} .verdict.s-built{border-color:var(--built)}
+  .verdict.s-current{border-color:var(--current)} .verdict.s-next{border-color:var(--next)} .verdict.s-tool{border-color:var(--tool)} .verdict.s-built{border-color:var(--built)}
   .closebtn{position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink-soft);font-size:17px;cursor:pointer;line-height:1}
   .closebtn:focus-visible{outline:2px solid var(--recall);outline-offset:2px}
   footer{border-top:1px solid var(--line);padding-block:20px 34px;color:var(--ink-faint);font-size:12px}
@@ -188,22 +196,35 @@
       <b>answer quality stayed flat</b>, naming the real bottleneck early: reasoning over tables.
       <b>Phase 2 moved quality</b> — aligned JSON tables, then a table gateway that routes every table
       through a deterministic executor — lifting quality to <b>.79 at perfect recall</b>.
-      The held-out <b>validation set</b> (the far-right tiles) is the honest check: recall climbed
-      to <b>1.00</b> while quality held near <b>.88–.91</b> — the agent's win is <b>recall, ~14× less
-      context, and deterministic tables</b>, not raw quality over a strong fixed baseline.</p>
+      The held-out <b>validation set</b> (the right-hand chart and the far-right tiles) is the honest check: recall climbed
+      to <b>1.00</b> while quality held near <b>.86–.91</b> — the agent's win is <b>recall, ~14× less
+      context, and deterministic tables</b>, not raw quality over a strong fixed baseline.
+      In 6.1 the same survivor graph on <b>gpt-5.4</b> reached <b>.96</b>, at 4.4× the billed cost.</p>
     <div class="herogrid">
+      <div class="chartpair">
+        <div class="chartcard">
+          <h3>Test set · survivor progression</h3>
+          <div class="chartsub">survivor of each checkpoint · RAGAS · GT-19</div>
+          <svg id="chart" viewBox="0 0 340 172" role="img" aria-label="On the GT test set, recall rose to 1.0 across checkpoints while answer quality stayed flat through Phase 1 then rose to .79 in Phase 2; 6.1 was not run on the test set"></svg>
+          <div class="clegend">
+            <span><i class="swatch" style="background:var(--recall)"></i>article recall</span>
+            <span><i class="swatch" style="background:var(--quality)"></i>answer quality</span>
+          </div>
+        </div>
+        <div class="chartcard">
+          <h3>Validation set · survivor progression</h3>
+          <div class="chartsub">survivor of each checkpoint · RAGAS · VAL-25</div>
+          <svg id="valchart" viewBox="0 0 340 172" role="img" aria-label="On the held-out validation set, recall rose from .97 to 1.0 while answer quality stayed between .86 and .91; the 6.1 survivor graph on gpt-5.4 reached .96 in one run"></svg>
+          <div class="clegend">
+            <span><i class="swatch" style="background:var(--recall)"></i>article recall</span>
+            <span><i class="swatch" style="background:var(--quality)"></i>answer quality</span>
+            <span><i class="ring"></i>6.1 on gpt-5.4 (one run)</span>
+          </div>
+        </div>
+      </div>
       <div>
         <div class="statuslegend" id="legend"></div>
-        <p class="hint">Each row is a checkpoint: the <b>test-set approaches</b> it tried (the rich journey) and, on the far right, that checkpoint's single <b>validation-set</b> result. One <b>survivor</b> reaches today's system; the green lineage is what it was <b>built on</b>. Tap any test tile for detail.</p>
-      </div>
-      <div class="chartcard">
-        <h3>Test set · survivor progression</h3>
-        <div class="chartsub">survivor of each checkpoint · RAGAS · GT-19</div>
-        <svg id="chart" viewBox="0 0 340 172" role="img" aria-label="On the GT test set, recall rose to 1.0 across checkpoints while answer quality stayed flat through Phase 1 then rose to .79 in Phase 2"></svg>
-        <div class="clegend">
-          <span><i class="swatch" style="background:var(--recall)"></i>article recall</span>
-          <span><i class="swatch" style="background:var(--quality)"></i>answer quality</span>
-        </div>
+        <p class="hint">Each row is a checkpoint: the <b>test-set approaches</b> it tried (the rich journey) and, on the far right, its survivor's <b>validation-set</b> result. Each checkpoint keeps one green <b>survivor</b>, its best of breed at the time; <b>built on</b> marks the approaches inside the checkpoint that the survivor combines. Tap any test tile for detail.</p>
       </div>
     </div>
   </header>
@@ -212,7 +233,7 @@
     Reconstructed from the repo's <b>git history</b> (35 commits, 23 Aug – 21 Sep 2026), the <b>RAGAS experiment CSVs</b>
     (<span class="mono">retriever_kind · article_recall · score</span>), and the <b>checkpoint READMEs</b>.
     Test tiles carry GT-set survivor means; the far-right tile on each row is that checkpoint's held-out <b>validation-set</b> result (the validation set enters at 3.1).
-    1.1–2.1 predate the recall metric. Within 5.1, GT quality first dipped to .59 at the Phase-1 retrieval head (table reader still off — missing capability, not worse reasoning), then the table gateway recovered it to .79; the breadth survivor then closed the validation gap (.845 → .880) at recall 1.00. Phase-2 figures are 4-run means.
+    1.1–2.1 predate the recall metric. Within 5.1, GT quality first dipped to .59 at the Phase-1 retrieval head (table reader still off — missing capability, not worse reasoning), then the table gateway recovered it to .79; the breadth survivor then closed the validation gap (.845 → .880) at recall 1.00. Phase-2 figures are 4-run means. Checkpoint 6.1 was measured on the validation set only: its test tiles show a dash, the test chart marks it as not run, and each card's detail carries the validation figures.
   </footer>
 </div>
 
@@ -235,6 +256,7 @@ const CPS = [
   {cp:"3.1", date:"6–7 Sep", theme:"Eval framework + oracle ceiling"},
   {cp:"4.1", date:"13–15 Sep", theme:"Advanced retrieval"},
   {cp:"5.1", date:"20–21 Sep", theme:"Agentic retriever"},
+  {cp:"6.1", date:"25–27 Sep", theme:"Security + cost audit"},
 ];
 const STATUS = {
   survivor:{tag:"survivor",cls:"survivor"}, built:{tag:"built on",cls:"built"},
@@ -260,7 +282,7 @@ const N = [
    what:"BM25 and vector fused under several weightings (e.g. 35/65) across the three chunkings.",
    why:"Never clearly beat pure vector and dragged in extra context; formally measured and rejected in 3.1.",
    verdict:"Abandoned after the 3.1 head-to-head."},
-  {cp:"2.1",name:"Vector search (Chroma)",st:"built",fam:"retriever",recall:null,quality:null,
+  {cp:"2.1",name:"Vector search (Chroma)",st:"survivor",fam:"retriever",recall:null,quality:null,
    blurb:"Dense embedding retrieval — the trunk.",
    what:"Chroma dense-embedding search, the retriever every later checkpoint builds on.",
    why:"Strongest single retriever across the manually reviewed 2.1 experiments.",
@@ -288,7 +310,7 @@ const N = [
    why:"Quality reached only 0.789, not 1.0. Even with perfect articles, complex/table questions failed — the first *quantified* proof that reasoning, not retrieval, is the ceiling.",
    verdict:"Diagnostic probe — set the reasoning ceiling that still governs Phase 2.",
    rvalid:null,qvalid:null},
-  {cp:"3.1",name:"Vector · K=7",st:"built",fam:"retriever",recall:0.899,quality:0.747,
+  {cp:"3.1",name:"Vector · K=7",st:"survivor",fam:"retriever",recall:0.899,quality:0.747,
    blurb:"Top-7 seeds → full articles.",
    what:"Vector retrieval at K=7, collapsing duplicate articles and expanding to full article text.",
    why:"Best tested end-to-end: higher quality and recall than hybrid, at far less context.",
@@ -315,7 +337,7 @@ const N = [
    why:"A targeted tool — fixed some single-table aggregations (GT07 0.50→0.88) and lifted multi-article recall — but overall quality stayed flat and it could regress easy questions.",
    verdict:"Kept as a tool, not adopted as the main path.",
    range:"0.882–0.939", rvalid:0.967},
-  {cp:"4.1",name:"Graph retriever",st:"built",fam:"retriever",recall:0.939,quality:0.719,
+  {cp:"4.1",name:"Graph retriever",st:"survivor",fam:"retriever",recall:0.939,quality:0.719,
    blurb:"Vector seeds → 1-hop graph expansion.",
    what:"Self-seeds with vector search, then follows the article relationship graph one hop to related articles.",
    why:"The only lever that moved recall — 0.899 → 0.939 on the GT set. (On the validation set vector and graph tied at 0.973 — the gain was GT-specific.) Answer quality still flat.",
@@ -374,24 +396,53 @@ const N = [
    blurb:"Non-table questions escalate into fuller article context before answering.",
    what:"A new article_broaden route widens the selected articles (top-k sections), and a readiness nudge stops the assessor from answering a non-table question straight from its single initial section — forcing one breadth round first. Additive; table questions still go through the gateway.",
    why:"The held-out validation set showed 5.1's single-section bet had dipped quality below Checkpoint 4.1 on synthesis questions (people-connection, process-explanation) the assessor answered from one section. Breadth recovered them (VAL06 .62→1.0, VAL15 .75→1.0): validation quality 0.845 → 0.880, matching 4.1's 0.885, at recall 1.000. Clean-passers held; GT (table-heavy) stays ~flat.",
-   verdict:"The survivor — the retriever in today's system. Closes the validation gap to the prior checkpoint at perfect recall and far less context. Remaining ceiling is non-routing: layout tables (GT03), range-count planner (GT07), aggregation (VAL05).",
+   verdict:"Survived Checkpoint 5.1 and is the base of the 6.1 survivor. It closed the validation gap to the prior checkpoint at perfect recall and far less context. Remaining ceiling is non-routing: layout tables (GT03), range-count planner (GT07), aggregation (VAL05). In 6.1 its nudge round was priced at 30% of a text question.",
    rvalid:1.00, qvalid:0.880,
    range:"val 0.845→0.880"},
+  // 6.1: validation set only (GT not run), so the GT metrics are empty
+  {cp:"6.1",name:"Whole articles for text questions (answer replay)",st:"built",fam:"6.1 · context",recall:null,quality:null,
+   blurb:"Re-answer saved 5.1 runs with whole articles where no table is needed.",
+   what:"An answer replay over the saved 5.1 logs: the agent's selections stay fixed and only what the answer model reads changes. Rules tested: sections (control), whole articles per question, whole articles per article.",
+   why:"Text-only question-runs 0.914 → 0.961 at +38% of a text question's list cost. Per article lowered mixed questions (0.975 → 0.950). The one question family that sections really missed was Clinton–Obama: the section answers said themselves that Hillary Clinton's later role was missing.",
+   verdict:"Built on: the per-question rule became the 6.1 survivor's answer context.",
+   rvalid:1.00, qvalid:0.885},
+  {cp:"6.1",name:"Whole articles + surfaced gaps",st:"survivor",fam:"6.1 · context + reliability",recall:null,quality:null,
+   blurb:"Whole articles replace breadth; incomplete table evidence is flagged to the user.",
+   what:"The 5.1 survivor without the breadth nudge: text-only questions answer from whole articles (escalation loads them if the assessor asks). The table planner's schema slip is repaired with one corrected retry, empty computations are labeled incomplete, and an incomplete final state adds a notice asking the answer to say what could not be found or computed.",
+   why:"Validation 0.860 over 3 runs (0.88 / 0.80 / 0.90): level with 5.1 (0.880 recorded, 0.860 same-day). Text-only 0.850 → 0.974; table 0.867 → 0.736 (VAL24: a successful computation ended the loop before the prose arrived; VAL06: answers hedged under the incomplete label). 20% faster (12.8 s against 16.1 s) and 17% cheaper billed ($0.030 against $0.036 per question).",
+   verdict:"The survivor — today's system. Same quality as 5.1, faster and cheaper billed, near-perfect on text questions, and honest about incomplete computations. Open: table readiness after a computation, a row cap on computations, and the planner's wrong filters.",
+   rvalid:1.00, qvalid:0.860,
+   range:"val 0.80–0.90"},
+  {cp:"6.1",name:"Same architecture, gpt-5.4 in every role",st:"probe",fam:"6.1 · model",recall:null,quality:null,
+   blurb:"A stronger model in every role, same graph.",
+   what:"The 6.1 survivor with openai/gpt-5.4 for every agent role and the answer; the judge stays gpt-5.4-mini.",
+   why:"Validation 0.960, the highest of the project (text-only 1.000, table 0.909). Fixed VAL05, VAL06, and VAL24, at 3.6× the list cost ($0.152 per question) and 1.7× the time. One run.",
+   verdict:"Ceiling probe: the remaining table failures are mostly model capability, in the TOC reviewer's routing (VAL24 was not flagged as a computation) and in the roles that read table evidence (VAL05, VAL06). One run: p = 0.08 against the three mini runs.",
+   rvalid:1.00, qvalid:0.960},
+  {cp:"6.1",name:"Planner-only, nano, and free models",st:"abandon",fam:"6.1 · model",recall:null,quality:null,
+   blurb:"Cheaper or narrower model choices on the same graph.",
+   what:"gpt-5.4 as table planner only; gpt-5.4-nano in every role; the free nvidia/nemotron-3-super-120b-a12b on the first 5 validation questions.",
+   why:"Planner only: 0.860, no gain for +15% cost. Nano: 0.771, 40% cheaper but twice as slow, and a 510K-token context overflow on VAL24. Free: 0.750 on 4 questions, 520 s per question, a 473K-character answer, and a lost question (provider 503). Every model answered the text-only questions correctly.",
+   verdict:"Abandoned: a stronger planner alone does not help, and the cheaper models lose the table questions or the runtime.",
+   rvalid:1.00, qvalid:0.771},
 ];
 
 const legend = document.getElementById('legend');
-[["survivor","survivor · current system"],["built","built on"],["tool","kept as tool"],
+[["survivor","survivor · best of its checkpoint"],["built","built on"],["tool","kept as tool"],
  ["probe","ceiling probe"],["abandon","abandoned"]].forEach(([k,label])=>{
   const c=document.createElement('span');c.className='chip';
   c.innerHTML=`<span class="dot d-${k}"></span>${label}`;legend.appendChild(c);
 });
 
 // One validation-set result per checkpoint (the checkpoint's best fixed/agent survivor
-// on the held-out 25). Earlier checkpoints predate the validation set.
+// on the held-out 25). Earlier checkpoints predate the validation set. `qs` lists the
+// survivor's quality per model when the same graph ran on more than one.
 const VAL = {
   "3.1":{r:0.973,q:0.907,note:"fixed K=7 baseline"},
   "4.1":{r:0.973,q:0.885,note:"graph retriever"},
   "5.1":{r:1.000,q:0.880,note:"breadth survivor"},
+  "6.1":{r:1.000,q:0.860,qs:[{k:"gpt-5.4-mini",q:0.860},{k:"gpt-5.4",q:0.960}],
+         note:"6.1 survivor, same graph · gpt-5.4 is one run at 4.4× the billed cost"},
 };
 
 const tl=document.getElementById('timeline');
@@ -399,10 +450,14 @@ CPS.forEach(cpo=>{
   const nodes=N.filter(n=>n.cp===cpo.cp);
   const row=document.createElement('section');row.className='cp';
   const v=VAL[cpo.cp];
+  const qRows = v&&v.qs
+    ? `<div class="vrow"><span class="vk">quality</span></div>`
+      + v.qs.map(m=>`<div class="vrow sub"><span class="vk">${m.k}</span><span class="vv q">${fmt(m.q)}</span></div>`).join('')
+    : v ? `<div class="vrow"><span class="vk">quality</span><span class="vv q">${fmt(v.q)}</span></div>` : '';
   const valTile = v
     ? `<div class="valtile"><div class="vlabel">validation set</div>
          <div class="vrow"><span class="vk">recall</span><span class="vv r">${fmt(v.r)}</span></div>
-         <div class="vrow"><span class="vk">quality</span><span class="vv q">${fmt(v.q)}</span></div>
+         ${qRows}
          <div class="vnote">${v.note}</div></div>`
     : `<div class="valtile empty"><div class="vlabel">validation set</div><div class="vnote">not yet introduced</div></div>`;
   row.innerHTML=`
@@ -443,7 +498,8 @@ function openDrawer(n){
   let note='';
   if(n.rvalid!=null) note+=`Validation-set recall: <b>${fmt(n.rvalid)}</b>. `;
   if(n.qvalid!=null) note+=`Validation-set quality: <b>${fmt(n.qvalid)}</b> (vs 4.1's .88). `;
-  if(n.recall==null && n.quality==null) note+='No RAGAS figure recorded at this stage.';
+  if(n.recall==null && n.quality==null && n.rvalid==null && n.qvalid==null) note+='No RAGAS figure recorded at this stage.';
+  else if(n.recall==null && n.quality==null) note+='Measured on the validation set only (GT not run).';
   document.getElementById('dr-body').innerHTML=`
     <div class="dr-sec"><h4>What it was</h4><p>${n.what}</p></div>
     <div class="dr-sec"><h4>What the metrics said</h4><p>${n.why}</p></div>
@@ -460,27 +516,37 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer();});
   const NS="http://www.w3.org/2000/svg";
   const el=(t,a)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);return e;};
   const lab=v=>v>=1?'1.0':'.'+Math.round(v*100);
-  function draw(svgId, data){
+  // A checkpoint with null values was not run on that set; `rings` are extra quality
+  // points drawn hollow, labeled on their left.
+  function draw(svgId, data, rings=[]){
     const svg=document.getElementById(svgId);
     if(!svg) return;
-    const W=340,H=172,L=34,R=14,T=16,B=30;
-    const x=i=>L+i*((W-L-R)/(data.length-1));
+    const W=340,H=172,L=34,R=20,T=16,B=30,X0=L+14;
+    const x=i=>X0+i*((W-X0-R)/(data.length-1));
     const lo=0.60,hi=1.0, y=v=>T+(1-(v-lo)/(hi-lo))*(H-T-B);
     [0.6,0.7,0.8,0.9,1.0].forEach(v=>{
       svg.appendChild(el('line',{x1:L,x2:W-R,y1:y(v),y2:y(v),stroke:'var(--line)','stroke-width':1}));
       const t=el('text',{x:L-6,y:y(v)+3,'text-anchor':'end','font-size':9,'font-family':'var(--mono)',fill:'var(--ink-faint)'});t.textContent=lab(v);svg.appendChild(t);
     });
-    data.forEach((d,i)=>{const t=el('text',{x:x(i),y:H-9,'text-anchor':'middle','font-size':10,'font-family':'var(--mono)',fill:'var(--ink-soft)'});t.textContent=d.x;svg.appendChild(t);});
+    data.forEach((d,i)=>{const run=d.r!=null;
+      const t=el('text',{x:x(i),y:H-9,'text-anchor':'middle','font-size':10,'font-family':'var(--mono)',fill:run?'var(--ink-soft)':'var(--ink-faint)'});t.textContent=d.x;svg.appendChild(t);
+      if(!run){const n=el('text',{x:x(i),y:y(0.75)+3,'text-anchor':'middle','font-size':9,'font-family':'var(--mono)',fill:'var(--ink-faint)'});n.textContent='not run';svg.appendChild(n);}});
     const line=(key,color)=>{
-      svg.appendChild(el('path',{d:data.map((d,i)=>(i?'L':'M')+x(i)+' '+y(d[key])).join(' '),fill:'none',stroke:color,'stroke-width':2.4,'stroke-linejoin':'round','stroke-linecap':'round'}));
-      data.forEach((d,i)=>{svg.appendChild(el('circle',{cx:x(i),cy:y(d[key]),r:3.4,fill:color}));
-        const t=el('text',{x:x(i),y:y(d[key])-8,'text-anchor':'middle','font-size':9.5,'font-weight':600,'font-family':'var(--mono)',fill:color});t.textContent=lab(d[key]);svg.appendChild(t);});
+      const pts=data.map((d,i)=>[i,d[key]]).filter(p=>p[1]!=null);
+      svg.appendChild(el('path',{d:pts.map(([i,v],j)=>(j?'L':'M')+x(i)+' '+y(v)).join(' '),fill:'none',stroke:color,'stroke-width':2.4,'stroke-linejoin':'round','stroke-linecap':'round'}));
+      pts.forEach(([i,v])=>{svg.appendChild(el('circle',{cx:x(i),cy:y(v),r:3.4,fill:color}));
+        const t=el('text',{x:x(i),y:y(v)-8,'text-anchor':'middle','font-size':9.5,'font-weight':600,'font-family':'var(--mono)',fill:color});t.textContent=lab(v);svg.appendChild(t);});
     };
     line('r','var(--recall)');line('q','var(--quality)');
+    rings.forEach(p=>{svg.appendChild(el('circle',{cx:x(p.i),cy:y(p.v),r:3.6,fill:'var(--surface)',stroke:'var(--quality)','stroke-width':1.8}));
+      const t=el('text',{x:x(p.i)-7,y:y(p.v)+3,'text-anchor':'end','font-size':9.5,'font-weight':600,'font-family':'var(--mono)',fill:'var(--quality)'});t.textContent=`${p.label} ${lab(p.v)}`;svg.appendChild(t);});
   }
-  // The tuned GT test set, one survivor per checkpoint. (Per-checkpoint validation
-  // now lives as the far-right tile on each timeline row.)
-  draw('chart',[{x:"3.1",r:0.899,q:0.747},{x:"4.1",r:0.939,q:0.744},{x:"5.1",r:1.000,q:0.789}]);
+  // The tuned GT test set, one survivor per checkpoint; 6.1 ran on validation only.
+  draw('chart',[{x:"3.1",r:0.899,q:0.747},{x:"4.1",r:0.939,q:0.744},{x:"5.1",r:1.000,q:0.789},{x:"6.1",r:null,q:null}]);
+  // The held-out validation set, from the far-right tiles (VAL). The ring is the same
+  // 6.1 survivor graph on gpt-5.4.
+  const vk=Object.keys(VAL), g54=VAL["6.1"].qs[1];
+  draw('valchart',vk.map(k=>({x:k,r:VAL[k].r,q:VAL[k].q})),[{i:vk.indexOf("6.1"),v:g54.q,label:g54.k}]);
 })();
 </script>
 </body>

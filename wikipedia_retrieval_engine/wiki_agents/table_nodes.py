@@ -6,6 +6,7 @@ import hashlib
 import json
 import re
 from pathlib import Path
+from typing import Any, get_args
 
 from langchain_core.language_models.chat_models import BaseChatModel
 from langchain_core.messages import HumanMessage, SystemMessage
@@ -211,6 +212,95 @@ def find_table_candidates(
     return [entry for _, _, _, _, entry in ranked[:limit]]
 
 
+PREDICATE_OPS: tuple[str, ...] = get_args(TablePredicate.model_fields["op"].annotation)
+
+# Checkpoint 6.1: the header of a computation that failed or returned no usable rows.
+INCOMPLETE_COMPUTATION_HEADER = (
+    "INCOMPLETE table computation: it did not produce a usable result. Do not treat "
+    "it as the answer, and tell the user which part of the question could not be "
+    "computed.\n"
+)
+
+
+def repair_plan_arguments(arguments: dict[str, Any]) -> dict[str, Any]:
+    """Rewrite the planner's most common schema slip into the declared shape.
+
+    The planner often names the operation as a key instead of setting ``op``:
+    ``{"column": "Year", "year_between": [2000, 2020]}`` for
+    ``{"column": "Year", "op": "year_between", "value": 2000, "value2": 2020}``.
+    In the saved 5.1 runs this caused 26 of 35 rejected table plans. A predicate is
+    rewritten only when ``op`` is missing and exactly one operation name appears as
+    a key; everything else is left for validation to judge.
+    """
+
+    repaired = dict(arguments)
+    predicates = []
+    for predicate in arguments.get("predicates") or []:
+        if not isinstance(predicate, dict) or "op" in predicate:
+            predicates.append(predicate)
+            continue
+        named_ops = [key for key in predicate if key in PREDICATE_OPS]
+        if len(named_ops) != 1:
+            predicates.append(predicate)
+            continue
+        op = named_ops[0]
+        fixed = {key: value for key, value in predicate.items() if key != op}
+        value = predicate[op]
+        if op.endswith("between") and isinstance(value, (list, tuple)) and len(value) == 2:
+            fixed.setdefault("value", value[0])
+            fixed.setdefault("value2", value[1])
+        else:
+            fixed.setdefault("value", value)
+        predicates.append({**fixed, "op": op})
+    if "predicates" in arguments:
+        repaired["predicates"] = predicates
+    return repaired
+
+
+def _plan_from_output(
+    output: dict[str, Any],
+    request: TableRequest,
+    tables: dict[str, NormalizedTable],
+) -> tuple[TableQueryPlan | None, str | None]:
+    """Parse, repair if needed, and validate one ``include_raw`` planner output."""
+
+    plan = output.get("parsed")
+    if plan is None:
+        raw = output.get("raw")
+        tool_calls = getattr(raw, "tool_calls", None) or []
+        if not tool_calls:
+            return None, f"The planner returned no plan: {output.get('parsing_error')}"
+        try:
+            plan = TableQueryPlan.model_validate(repair_plan_arguments(tool_calls[0]["args"]))
+        except ValueError as error:
+            return None, str(error)
+    elif not isinstance(plan, TableQueryPlan):
+        plan = TableQueryPlan.model_validate(plan)
+    try:
+        _validate_table_query_plan(plan, request, tables)
+    except ValueError as error:
+        return None, str(error)
+    return plan, None
+
+
+def _plan_correction(error: str, tables: dict[str, NormalizedTable]) -> SystemMessage:
+    """The rejection, handed back to the planner for one corrected attempt."""
+
+    columns = "; ".join(f"{artifact_id}: {table.columns}" for artifact_id, table in tables.items())
+    return SystemMessage(
+        content=(
+            "Your previous table plan was rejected:\n"
+            f"{error}\n"
+            "Return a corrected TableQueryPlan.\n"
+            "- Every predicate is an object with column, op, value, and value2 for the "
+            f"*_between operations; op is one of {', '.join(PREDICATE_OPS)}.\n"
+            f"- Use only these exact column names: {columns}.\n"
+            "- A count is calculation='count', never a column named 'count'.\n"
+            "- A sort or timeline plan needs sort_column."
+        )
+    )
+
+
 def plan_table_query(
     question: str,
     request: TableRequest,
@@ -219,8 +309,14 @@ def plan_table_query(
     *,
     candidate_limit: int = 3,
     sample_rows: int = 3,
+    repair_invalid_plan: bool = False,
 ) -> TableQueryPlan:
-    """Use structured model output to plan—but not execute—one table request."""
+    """Use structured model output to plan—but not execute—one table request.
+
+    ``repair_invalid_plan`` (Checkpoint 6.1; off keeps the 5.1 behavior) first
+    rewrites the predicate slip handled by ``repair_plan_arguments``, then gives a
+    plan that still fails validation one corrected attempt with the error.
+    """
 
     if not question.strip():
         raise ValueError("A non-empty user question is required.")
@@ -252,24 +348,40 @@ def plan_table_query(
         for candidate in candidates
     ]
 
+    messages = [
+        SystemMessage(content=TABLE_QUERY_PLANNER_SYSTEM_PROMPT),
+        HumanMessage(
+            content=(
+                f"User question:\n{question.strip()}\n\n"
+                "Table request:\n"
+                f"{request.model_dump_json(indent=2)}\n\n"
+                "Candidate table artifacts:\n"
+                f"{json.dumps(candidate_context, indent=2, ensure_ascii=False)}"
+            )
+        ),
+    ]
+    if repair_invalid_plan:
+        planner = llm.with_structured_output(
+            TableQueryPlan,
+            method="function_calling",
+            include_raw=True,
+        )
+        plan, error = _plan_from_output(planner.invoke(messages), request, tables)
+        if plan is None:
+            plan, error = _plan_from_output(
+                planner.invoke([*messages, _plan_correction(error, tables)]),
+                request,
+                tables,
+            )
+        if plan is None:
+            raise ValueError(error)
+        return plan
+
     structured_planner = llm.with_structured_output(
         TableQueryPlan,
         method="function_calling",
     )
-    result = structured_planner.invoke(
-        [
-            SystemMessage(content=TABLE_QUERY_PLANNER_SYSTEM_PROMPT),
-            HumanMessage(
-                content=(
-                    f"User question:\n{question.strip()}\n\n"
-                    "Table request:\n"
-                    f"{request.model_dump_json(indent=2)}\n\n"
-                    "Candidate table artifacts:\n"
-                    f"{json.dumps(candidate_context, indent=2, ensure_ascii=False)}"
-                )
-            ),
-        ]
-    )
+    result = structured_planner.invoke(messages)
     plan = (
         result
         if isinstance(result, TableQueryPlan)
@@ -426,6 +538,8 @@ def compute_requested_tables(
     llm: BaseChatModel,
     *,
     max_requests_per_round: int = 6,
+    repair_invalid_plan: bool = False,
+    label_incomplete: bool = False,
 ) -> AgentState:
     """Plan and execute the current assessment's bounded table requests.
 
@@ -433,6 +547,12 @@ def compute_requested_tables(
     objects, so the same assessor can judge them on the next graph pass. Expected
     schema/artifact failures are also recorded as insufficient evidence instead
     of silently dropping the entire benchmark question.
+
+    Checkpoint 6.1 options (both off keeps the 5.1 behavior):
+    ``repair_invalid_plan`` is passed to ``plan_table_query``. ``label_incomplete``
+    marks a computation that failed or returned no usable rows as incomplete, where
+    5.1 labeled every executed result "use the computed rows ... rather than
+    recomputing them" and so presented empty results as authoritative.
     """
 
     if max_requests_per_round < 1:
@@ -463,6 +583,7 @@ def compute_requested_tables(
                 request,
                 table_store,
                 llm,
+                repair_invalid_plan=repair_invalid_plan,
             )
             result = execute_table_query_plan(
                 plan,
@@ -478,12 +599,17 @@ def compute_requested_tables(
             evidence_id = (
                 f"{table.source_article}#{table.table_id}#computed-{request_id}"
             )
+            header = (
+                INCOMPLETE_COMPUTATION_HEADER
+                if label_incomplete and not result.sufficient
+                else "Deterministic table-computation result. Use the computed "
+                "rows/calculation below rather than recomputing them.\n"
+            )
             evidence_by_id[evidence_id] = EvidenceItem(
                 evidence_id=evidence_id,
                 source_article=table.source_article,
                 content=(
-                    "Deterministic table-computation result. Use the computed "
-                    "rows/calculation below rather than recomputing them.\n"
+                    header
                     + json.dumps(payload, indent=2, ensure_ascii=False)
                 ),
                 evidence_type="table",
@@ -514,7 +640,8 @@ def compute_requested_tables(
                 evidence_id=evidence_id,
                 source_article=request.source_article,
                 content=(
-                    "Table computation could not satisfy this request.\n"
+                    (INCOMPLETE_COMPUTATION_HEADER if label_incomplete else "")
+                    + "Table computation could not satisfy this request.\n"
                     + json.dumps(
                         {
                             "table_request": request.model_dump(mode="json"),

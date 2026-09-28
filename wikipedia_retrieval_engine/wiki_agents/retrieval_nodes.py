@@ -18,6 +18,11 @@ from wikipedia_retrieval_engine.utils.wiki_table_store import (
     TableCatalogEntry,
 )
 from wikipedia_retrieval_engine.wiki_agents.table_nodes import resolve_source_article
+from wikipedia_retrieval_engine.wiki_agents.answer_context import (
+    ArticleTextLoader,
+    articles_to_send_whole,
+    replace_with_whole_articles,
+)
 from wikipedia_retrieval_engine.wiki_agents.agentic_models import (
     AgentState,
     ArticleReview,
@@ -1076,6 +1081,31 @@ def retrieve_broadened_article_sections(
 
     return {
         "evidence": list(evidence_by_id.values()),
+        "retrieval_attempts": retrieval_attempt_count(state) + 1,
+    }
+
+
+def retrieve_whole_article_evidence(
+    state: AgentState,
+    retriever: VectorRetriever,
+    *,
+    load_text: ArticleTextLoader,
+    broaden_k: int = 8,
+) -> AgentState:
+    """Widen context with whole articles: the Checkpoint 6.1 replacement for broadening.
+
+    When no kept article needs a table (the per-question rule of
+    ``answer_context``), each kept article's evidence is replaced by its whole text,
+    so the next assessment and the answer read the complete articles. A question with
+    a table keeps the 5.1 behavior: the top ``broaden_k`` sections of each selected
+    article are added.
+    """
+
+    whole = articles_to_send_whole(state, "whole_per_question")
+    if not whole:
+        return retrieve_broadened_article_sections(state, retriever, broaden_k=broaden_k)
+    return {
+        "evidence": replace_with_whole_articles(list(state.get("evidence", [])), whole, load_text),
         "retrieval_attempts": retrieval_attempt_count(state) + 1,
     }
 

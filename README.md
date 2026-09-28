@@ -82,6 +82,7 @@ rag_and_context_engineering/
         ├── survivor_agent.py              # builds the 5.1 survivor from the 5.1 harness constants
         ├── security_test_starter.py       # multi-turn attacks (history on)
         ├── cost_test_starter.py           # 5.1 evaluation + per-question/per-tool telemetry (history off)
+        ├── survivor_6_1.py                # the 6.1 survivor: whole articles for text questions, surfaced gaps, model arguments
         ├── answer_replay_starter.py       # re-answers saved 5.1 runs with another context or answer model
         ├── usage_accounting.py            # shared per-call tokens and list/billed cost
         ├── replay_tests/                  # answer replay outputs (calls CSV, config, summary)
@@ -122,7 +123,12 @@ categories/links/tables are the substrate for the Checkpoint 4.1 graph.
   single-turn) and tests roleplay and evidence-planting attacks. The cost experiment
   measures real billed cost per question (the survivor costs 1.45× the 4.1 graph per
   question once caching is counted) and replays the saved 5.1 answer step to test
-  whole articles for questions that need no table.
+  whole articles for questions that need no table. The resulting 6.1 survivor
+  (`survivor_6_1.py`: whole articles for text questions, incomplete table evidence
+  flagged to the user) matches 5.1's validation quality (0.860) at 20% less time and
+  17% less billed cost, answering text questions almost perfectly (0.974) while two
+  table questions regressed. The same graph on `gpt-5.4` reached 0.960, at 3.6× the
+  cost.
 
 ## Ground-truth files
 
@@ -344,6 +350,19 @@ python "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/cost_test_starter.py"
   --gt-set "wikipedia_retrieval_engine/GT/wikipedia_GT_validation_set.csv"
 ```
 
+**The 6.1 survivor** (`survivor_6_1.py`) runs through the same starter with telemetry.
+`--survivor 6.1` selects it. `--model` sets the model for every agent role and the
+answer, and `--table-model` gives the table planner its own model. The judge stays
+`gpt-5.4-mini`.
+
+```bash
+python "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/cost_test_starter.py" --survivor 6.1
+```
+
+```bash
+python "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/cost_test_starter.py" --survivor 6.1 --model openai/gpt-5.4
+```
+
 **Answer replay.** Re-answers the saved 5.1 survivor runs (their AgentState logs are in
 `Capstone Checkpoint 5.1/logs/`) under another answer-context rule or answer model,
 without re-running the agent. Every run first checks that the rebuilt 5.1 contexts
@@ -382,8 +401,21 @@ with normalized filenames, and creates a landscape PDF containing:
 - task-family attention scores and oracle-to-retriever gaps;
 - performance grouped by one, two, or three-plus designated articles;
 - per-question outcome heatmaps;
-- run-to-run variability; and
+- run-to-run variability;
+- cost and latency per configuration (calls, tokens, list and billed cost, seconds per
+  question, and quality against cost) for runs whose
+  `telemetry/<run>__question_telemetry.csv` exists (Checkpoint 6.1 cost starters); and
 - included, excluded, and duplicate-file diagnostics.
+
+`--experiments-dir` accepts several directories, for example the 5.1 validation runs and
+the 6.1 cost-test runs in one report:
+
+```bash
+python wikipedia_retrieval_engine/utils/analyze_ragas_experiments.py \
+  --experiments-dir "wikipedia_retrieval_engine/Capstone Checkpoint 5.1/ragas_validation_GT_5.1" \
+  "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/cost_tests/wikipedia_GT_validation_set" \
+  --output "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/ragas_6_1_survivor_vs_5_1.pdf"
+```
 
 The script does not call an LLM or make network requests. It requires `pandas` and
 `reportlab`, which are included in the Checkpoint 3.1 requirements.

@@ -29,25 +29,29 @@ from wikipedia_retrieval_engine.wiki_agents.retrieval_nodes import (
     retrieve_initial_articles,
     retrieve_initial_articles_decomposed,
     retrieve_multistep_evidence,
+    retrieve_whole_article_evidence,
     review_and_select_from_toc,
     review_article_candidates,
 )
+from wikipedia_retrieval_engine.wiki_agents.answer_context import markdown_text_loader
 from wikipedia_retrieval_engine.wiki_agents.table_nodes import (
     compute_requested_tables,
 )
 
 # Retriever strategy names used by the configurable benchmark graph.
 InitialRetriever = Literal["vector", "multistep", "multistep_entity"]
-RepeatedRetriever = Literal["graph_seeded", "multistep", "article_broaden"]
+RepeatedRetriever = Literal["graph_seeded", "multistep", "article_broaden", "whole_article"]
 _REPEATED_EDGE = {
     "graph_seeded": "retrieve_graph_seeded_sections",
     "multistep": "retrieve_multistep_sections",
     "article_broaden": "retrieve_broadened_sections",
+    "whole_article": "retrieve_whole_article_evidence",
 }
 _RETRIEVAL_STAGE_LABEL = {
     "graph_seeded": "graph_seeded_sections",
     "multistep": "targeted_multistep_sections",
     "article_broaden": "broadened_article_sections",
+    "whole_article": "whole_article_evidence",
 }
 from wikipedia_retrieval_engine.wiki_agents.run_logging import (
     AgentRunLogger,
@@ -177,8 +181,23 @@ def build_retrieval_benchmark_graph(
     broaden_sections_k: int = 8,
     max_table_rounds: int = 2,
     max_table_requests_per_round: int = 6,
+    review_llm: BaseChatModel | None = None,
+    assess_llm: BaseChatModel | None = None,
+    table_llm: BaseChatModel | None = None,
+    repair_invalid_table_plan: bool = False,
+    label_incomplete_tables: bool = False,
 ) -> CompiledStateGraph:
     """Compile the configurable TOC, section, and table-evidence graph.
+
+    Checkpoint 6.1 options, all defaulting to the 5.1 behavior:
+
+    - ``"whole_article"`` in ``repeated_retrievers`` widens a question without
+      tables to its whole articles (``retrieve_whole_article_evidence``). The breadth
+      nudge stays tied to ``"article_broaden"``, so a sequence without it has no nudge.
+    - ``review_llm``, ``assess_llm``, and ``table_llm`` give the TOC reviewer, the
+      assessor, and the table planner their own model; each defaults to ``llm``.
+    - ``repair_invalid_table_plan`` and ``label_incomplete_tables`` are passed to
+      ``compute_requested_tables``.
 
     The initial and repeated retrieval stages are pluggable:
 
@@ -235,7 +254,7 @@ def build_retrieval_benchmark_graph(
         "review_and_select_from_toc",
         partial(
             review_and_select_from_toc,
-            llm=llm,
+            llm=review_llm or llm,
             markdown_store=markdown_store,
             table_store=table_store,
         ),
@@ -256,7 +275,7 @@ def build_retrieval_benchmark_graph(
         "assess_evidence",
         partial(
             assess_evidence,
-            llm=llm,
+            llm=assess_llm or llm,
             allow_table_requests=max_table_rounds > 0,
             # Only nudge non-table questions off a first-pass "ready" when the
             # breadth escalation actually exists in the sequence to catch them.
@@ -268,8 +287,10 @@ def build_retrieval_benchmark_graph(
         partial(
             compute_requested_tables,
             table_store=table_store,
-            llm=llm,
+            llm=table_llm or llm,
             max_requests_per_round=max_table_requests_per_round,
+            repair_invalid_plan=repair_invalid_table_plan,
+            label_incomplete=label_incomplete_tables,
         ),
     )
     workflow.add_node(
@@ -299,6 +320,19 @@ def build_retrieval_benchmark_graph(
             broaden_k=broaden_sections_k,
         ),
     )
+    # 6.1 whole-article widening; added only when the sequence uses it, so a 5.1
+    # graph compiles exactly as before.
+    uses_whole_article = "whole_article" in repeated_retrievers
+    if uses_whole_article:
+        workflow.add_node(
+            "retrieve_whole_article_evidence",
+            partial(
+                retrieve_whole_article_evidence,
+                retriever=retriever,
+                load_text=markdown_text_loader(markdown_store),
+                broaden_k=broaden_sections_k,
+            ),
+        )
     workflow.add_node(
         "write_question_log",
         partial(write_question_log, logger=logger),
@@ -309,24 +343,29 @@ def build_retrieval_benchmark_graph(
     workflow.add_edge("review_and_select_from_toc", "load_selected_sections")
     workflow.add_edge("load_selected_sections", "load_selected_tables")
     workflow.add_edge("load_selected_tables", "assess_evidence")
+    routes = {
+        "compute_requested_tables": "compute_requested_tables",
+        "retrieve_graph_seeded_sections": "retrieve_graph_seeded_sections",
+        "retrieve_multistep_sections": "retrieve_multistep_sections",
+        "retrieve_broadened_sections": "retrieve_broadened_sections",
+        "finish": "write_question_log",
+    }
+    if uses_whole_article:
+        routes["retrieve_whole_article_evidence"] = "retrieve_whole_article_evidence"
     workflow.add_conditional_edges(
         "assess_evidence",
         make_retrieval_benchmark_router(
             tuple(repeated_retrievers),
             max_table_rounds=max_table_rounds,
         ),
-        {
-            "compute_requested_tables": "compute_requested_tables",
-            "retrieve_graph_seeded_sections": "retrieve_graph_seeded_sections",
-            "retrieve_multistep_sections": "retrieve_multistep_sections",
-            "retrieve_broadened_sections": "retrieve_broadened_sections",
-            "finish": "write_question_log",
-        },
+        routes,
     )
     workflow.add_edge("compute_requested_tables", "assess_evidence")
     workflow.add_edge("retrieve_graph_seeded_sections", "assess_evidence")
     workflow.add_edge("retrieve_multistep_sections", "assess_evidence")
     workflow.add_edge("retrieve_broadened_sections", "assess_evidence")
+    if uses_whole_article:
+        workflow.add_edge("retrieve_whole_article_evidence", "assess_evidence")
     workflow.add_edge("write_question_log", END)
 
     return workflow.compile(name="checkpoint_5_1_retrieval_benchmark")

@@ -68,6 +68,7 @@ from usage_accounting import (  # noqa: E402
     price_for,
     usage_from_message,
 )
+from survivor_6_1 import build_experiment_6_1, build_survivor_6_1, describe_survivor_6_1  # noqa: E402
 
 from langchain_core.callbacks import BaseCallbackHandler  # noqa: E402
 
@@ -488,12 +489,43 @@ def parse_args() -> argparse.Namespace:
         default=None,
         help="Default: Capstone Checkpoint 6.1/cost_tests/<gt-set file stem>.",
     )
-    parser.add_argument("--experiment-name", default="survivor_cost_6_1")
+    parser.add_argument(
+        "--survivor",
+        choices=["5.1", "6.1"],
+        default="5.1",
+        help="5.1: the unchanged 5.1 survivor. 6.1: the Checkpoint 6.1 survivor (survivor_6_1.py).",
+    )
+    parser.add_argument(
+        "--model",
+        default=None,
+        help="6.1 only: OpenRouter model for every agent role and the answer (default: the 5.1 model).",
+    )
+    parser.add_argument(
+        "--table-model",
+        default=None,
+        help="6.1 only: a separate OpenRouter model for the table planner (default: --model).",
+    )
+    parser.add_argument(
+        "--experiment-name",
+        default=None,
+        help="Default: survivor_cost_6_1 for 5.1; survivor_6_1 (plus the models when given) for 6.1.",
+    )
     parser.add_argument("--limit", type=int, default=None, help="First N questions only.")
     parser.add_argument("--question-id", dest="question_ids", action="append", default=None)
     parser.add_argument("--prices", type=Path, default=PRICES_PATH)
     parser.add_argument("--self-check", action="store_true", help="Run the offline checks and exit.")
-    return parser.parse_args()
+    args = parser.parse_args()
+    if args.survivor == "5.1" and (args.model or args.table_model):
+        parser.error("--model and --table-model apply to --survivor 6.1 only.")
+    if args.experiment_name is None:
+        if args.survivor == "5.1":
+            args.experiment_name = "survivor_cost_6_1"
+        else:
+            short = lambda model: model.split("/")[-1].removesuffix(":free")
+            args.experiment_name = "survivor_6_1" + (f"__{short(args.model)}" if args.model else "") + (
+                f"__planner_{short(args.table_model)}" if args.table_model else ""
+            )
+    return args
 
 
 async def main() -> None:
@@ -518,18 +550,33 @@ async def main() -> None:
     rows = [row if isinstance(row, dict) else row.model_dump() for row in dataset]
     recorder = UsageRecorder({row["question"]: row["question_id"] for row in rows})
 
-    print("Loading the 5.1 survivor agent...")
-    survivor = build_survivor_agent("cost_tests")
-    experiment = h.build_agentic_experiment(
-        TelemetryGraph(survivor.graph, recorder),
-        TelemetryAnswerLLM(survivor.agent_llm, recorder),
-        h.make_judge(),
-        h.RateLimitBackoff(),
-        args.experiment_name,
-    )
+    if args.survivor == "6.1":
+        print("Loading the 6.1 survivor agent...")
+        survivor = build_survivor_6_1("cost_tests", model=args.model, table_model=args.table_model)
+        experiment = build_experiment_6_1(
+            TelemetryGraph(survivor.graph, recorder),
+            TelemetryAnswerLLM(survivor.agent_llm, recorder),
+            h.make_judge(),
+            h.RateLimitBackoff(),
+            args.experiment_name,
+            survivor,
+        )
+        description = describe_survivor_6_1(survivor)
+    else:
+        print("Loading the 5.1 survivor agent...")
+        survivor = build_survivor_agent("cost_tests")
+        experiment = h.build_agentic_experiment(
+            TelemetryGraph(survivor.graph, recorder),
+            TelemetryAnswerLLM(survivor.agent_llm, recorder),
+            h.make_judge(),
+            h.RateLimitBackoff(),
+            args.experiment_name,
+        )
+        description = describe_survivor(h)
     print(
-        f"Cost test — history OFF, {len(rows)} question(s) from {gt_path.name}\n"
-        f"{describe_survivor(h)}\n"
+        f"Cost test — history OFF, {len(rows)} question(s) from {gt_path.name}, "
+        f"experiment {args.experiment_name}\n"
+        f"{description}\n"
         f"  AgentState logs={survivor.run_logger.run_directory}"
     )
     results = await experiment.arun(dataset)

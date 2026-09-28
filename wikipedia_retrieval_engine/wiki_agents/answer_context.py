@@ -20,7 +20,7 @@ state reloaded from a 5.1 log (the Checkpoint 6.1 answer replay).
 from __future__ import annotations
 
 from collections.abc import Callable
-from typing import Literal
+from typing import Any, Literal
 
 from wikipedia_retrieval_engine.wiki_agents.agentic_models import (
     AgentState,
@@ -123,3 +123,58 @@ def build_answer_evidence(
     if not whole:
         return evidence
     return replace_with_whole_articles(evidence, whole, load_text)
+
+
+def markdown_text_loader(store: Any) -> ArticleTextLoader:
+    """An ``ArticleTextLoader`` over a ``MarkdownArticleStore``, caching each article."""
+
+    cache: dict[str, str | None] = {}
+
+    def load(source: str) -> str | None:
+        if source not in cache:
+            cache[source] = store.load(source).markdown if store.has_article(source) else None
+        return cache[source]
+
+    return load
+
+
+def _incomplete_label(item: EvidenceItem) -> str:
+    return " > ".join(item.section_path) or item.table_id or item.evidence_id
+
+
+def evidence_status_notice(state: AgentState, *, max_items: int = 5) -> str | None:
+    """A notice for the answer model when the agent finished with incomplete evidence.
+
+    Checkpoint 6.1, "notify the user instead of passing it along": the evidence is
+    incomplete when the final assessment is not ready (a budget ran out first) or a
+    table computation failed or returned no usable rows. The answer still uses
+    everything the evidence supports; the notice asks it to tell the user what could
+    not be found or computed. Returns None when the evidence is complete.
+    """
+
+    assessment = state.get("assessment")
+    not_ready = assessment is not None and not assessment.ready_to_answer
+    incomplete = [
+        item
+        for item in state.get("evidence", [])
+        if item.metadata.get("retrieval_stage") == "table_computation"
+        and item.metadata.get("table_computation_sufficient") is False
+    ]
+    if not (not_ready or incomplete):
+        return None
+
+    lines = ["The retrieval agent could not complete the evidence for this question."]
+    if not_ready:
+        missing = [text.strip() for text in assessment.missing_requirements if text.strip()]
+        lines.append(
+            "Still missing: "
+            + ("; ".join(missing[:max_items]) if missing else "the evidence was not judged sufficient.")
+        )
+    if incomplete:
+        labels = list(dict.fromkeys(_incomplete_label(item) for item in incomplete))
+        lines.append("Table computations that did not complete: " + "; ".join(labels[:max_items]))
+    lines.append(
+        "Answer only what the evidence supports, and state plainly which parts of the "
+        "question could not be found or computed."
+    )
+    return "\n".join(lines)

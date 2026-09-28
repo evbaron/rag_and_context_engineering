@@ -71,6 +71,20 @@ except ImportError as exc:  # pragma: no cover - dependency error is user-facing
 
 SCRIPT_PATH = Path(__file__).resolve()
 ENGINE_DIR = SCRIPT_PATH.parents[1]
+
+# Checkpoint 6.1 cost telemetry, written next to a run as
+# <output>/telemetry/<run>__*.csv by the cost starters. These files are merged into
+# their run, never read as runs themselves.
+TELEMETRY_SUFFIXES = ("__llm_calls.csv", "__node_timings.csv", "__question_telemetry.csv")
+COST_COLUMNS = (
+    "telemetry_calls",
+    "telemetry_input_tokens",
+    "telemetry_output_tokens",
+    "telemetry_cached_tokens",
+    "cost_list_usd",
+    "cost_billed_usd",
+    "agent_seconds",
+)
 DEFAULT_EXPERIMENTS_DIR = (
     ENGINE_DIR
     / "Capstone Checkpoint 3.1"
@@ -172,8 +186,12 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument(
         "--experiments-dir",
         type=Path,
-        default=DEFAULT_EXPERIMENTS_DIR,
-        help=f"Directory searched recursively for CSVs (default: {DEFAULT_EXPERIMENTS_DIR})",
+        nargs="+",
+        default=[DEFAULT_EXPERIMENTS_DIR],
+        help=(
+            "One or more directories searched recursively for CSVs "
+            f"(default: {DEFAULT_EXPERIMENTS_DIR})"
+        ),
     )
     parser.add_argument(
         "--output",
@@ -397,18 +415,65 @@ def _source_scope(row: pd.Series) -> str:
     return "3+ articles"
 
 
+def _telemetry_path(run_path: Path) -> Path:
+    """Where the cost starters write a run's per-question telemetry."""
+
+    return run_path.parent.parent / "telemetry" / f"{run_path.stem}__question_telemetry.csv"
+
+
+def _attach_telemetry(frame: pd.DataFrame, run_path: Path) -> pd.DataFrame:
+    """Add the run's per-question calls, tokens, cost, and time when telemetry exists.
+
+    Runs without a telemetry file are returned unchanged, so reports on earlier
+    checkpoints are not affected.
+    """
+
+    telemetry_path = _telemetry_path(run_path)
+    if not telemetry_path.is_file():
+        return frame
+    telemetry = pd.read_csv(telemetry_path)
+    if "question_id" not in telemetry.columns:
+        return frame
+
+    def column(name: str) -> pd.Series:
+        return pd.to_numeric(telemetry.get(name), errors="coerce")
+
+    billed = column("provider_cost_usd")
+    if billed.isna().all():
+        billed = column("billed_est_usd")
+    per_question = pd.DataFrame(
+        {
+            "question_id": telemetry["question_id"],
+            "telemetry_calls": column("llm_calls"),
+            "telemetry_input_tokens": column("input_tokens"),
+            "telemetry_output_tokens": column("output_tokens"),
+            "telemetry_cached_tokens": column("cached_input_tokens"),
+            "cost_list_usd": column("list_cost_usd"),
+            "cost_billed_usd": billed,
+            "agent_seconds": column("graph_wall_s") + column("answer_wall_s"),
+        }
+    ).drop_duplicates("question_id")
+    return frame.merge(per_question, on="question_id", how="left")
+
+
 def load_experiments(
-    experiments_dir: Path,
+    experiments_dir: Path | Iterable[Path],
     *,
     include_binary_oracle: bool = False,
 ) -> AnalysisData:
-    experiments_dir = experiments_dir.expanduser().resolve()
-    if not experiments_dir.is_dir():
-        raise FileNotFoundError(f"Experiments directory not found: {experiments_dir}")
+    roots = (
+        [Path(experiments_dir)]
+        if isinstance(experiments_dir, (str, Path))
+        else [Path(root) for root in experiments_dir]
+    )
+    roots = [root.expanduser().resolve() for root in roots]
+    for root in roots:
+        if not root.is_dir():
+            raise FileNotFoundError(f"Experiments directory not found: {root}")
 
-    csv_paths = sorted(experiments_dir.rglob("*.csv"))
+    csv_paths = [(root, path) for root in roots for path in sorted(root.rglob("*.csv"))]
     if not csv_paths:
-        raise ValueError(f"No CSV files found under: {experiments_dir}")
+        raise ValueError(f"No CSV files found under: {', '.join(str(root) for root in roots)}")
 
     frames: list[pd.DataFrame] = []
     included_files: list[Path] = []
@@ -416,8 +481,15 @@ def load_experiments(
     warnings: list[str] = []
     seen_digests: dict[str, Path] = {}
 
-    for path in csv_paths:
-        relative_path = path.relative_to(experiments_dir)
+    for root, path in csv_paths:
+        relative_path = (
+            path.relative_to(root)
+            if len(roots) == 1
+            else Path(root.name) / path.relative_to(root)
+        )
+        if path.name.endswith(TELEMETRY_SUFFIXES):
+            excluded_files.append((relative_path, "telemetry, merged into its run"))
+            continue
         if _contains_legacy_binary_folder(relative_path) and not include_binary_oracle:
             excluded_files.append((relative_path, "legacy pass/fail-only scoring"))
             continue
@@ -502,6 +574,7 @@ def load_experiments(
             frame.get("context_characters"),
             errors="coerce",
         )
+        frame = _attach_telemetry(frame, path)
 
         frames.append(frame)
         included_files.append(relative_path)
@@ -514,7 +587,7 @@ def load_experiments(
     # oracle and retriever schemas. This also avoids pandas' all-NA concat warning.
     frames = [frame.dropna(axis=1, how="all") for frame in frames]
     rows = pd.concat(frames, ignore_index=True, sort=False)
-    for column in ("article_recall_recomputed", "context_characters_numeric"):
+    for column in ("article_recall_recomputed", "context_characters_numeric", *COST_COLUMNS):
         if column not in rows.columns:
             rows[column] = math.nan
     _append_experiment_name_warnings(rows, warnings)
@@ -654,11 +727,37 @@ def _build_config_summary(
                 "context_characters": float(
                     group["context_characters_numeric"].mean()
                 ),
+                **_cost_summary(group),
             }
         )
     return pd.DataFrame.from_records(records).sort_values(
         ["configuration_order", "configuration"]
     ).reset_index(drop=True)
+
+
+def _cost_summary(group: pd.DataFrame) -> dict[str, Any]:
+    """Per-question cost and latency over the question-runs that have telemetry."""
+
+    measured = group[group["cost_list_usd"].notna()]
+
+    def mean(column: str) -> float:
+        values = pd.to_numeric(measured[column], errors="coerce").dropna()
+        return float(values.mean()) if not values.empty else math.nan
+
+    return {
+        "telemetry_runs": int(measured["run_file"].nunique()),
+        "telemetry_quality": float(measured["quality"].mean()) if not measured.empty else math.nan,
+        "calls_per_question": mean("telemetry_calls"),
+        "input_tokens_per_question": mean("telemetry_input_tokens"),
+        "cached_share": (
+            float(measured["telemetry_cached_tokens"].sum() / measured["telemetry_input_tokens"].sum())
+            if not measured.empty and measured["telemetry_input_tokens"].sum()
+            else math.nan
+        ),
+        "list_cost_per_question": mean("cost_list_usd"),
+        "billed_cost_per_question": mean("cost_billed_usd"),
+        "seconds_per_question": mean("agent_seconds"),
+    }
 
 
 def _build_dimension_summary(
@@ -1367,6 +1466,89 @@ def _configuration_table(data: AnalysisData, styles: dict[str, ParagraphStyle]) 
     )
 
 
+def _measured_configurations(data: AnalysisData) -> pd.DataFrame:
+    """Configurations with at least one telemetry run (Checkpoint 6.1 cost starters)."""
+
+    summary = data.config_summary
+    if "telemetry_runs" not in summary.columns:
+        return summary.iloc[0:0]
+    return summary[summary["telemetry_runs"] > 0]
+
+
+def _cost_table(data: AnalysisData, styles: dict[str, ParagraphStyle]) -> Table:
+    headers = [
+        "Configuration",
+        "Runs",
+        "Quality",
+        "Calls / question",
+        "Input tokens / question",
+        "Cached",
+        "List $ / question",
+        "Billed $ / question",
+        "Seconds / question",
+        "List $ per quality point",
+    ]
+    table_data: list[list[Any]] = [[_paragraph(header, styles["table_header"]) for header in headers]]
+    for _, row in _measured_configurations(data).iterrows():
+        quality = _as_float(row["telemetry_quality"])
+        list_cost = _as_float(row["list_cost_per_question"])
+        table_data.append(
+            [
+                _paragraph(row["configuration"], styles["table"]),
+                int(row["telemetry_runs"]),
+                _decimal(row["telemetry_quality"]),
+                _decimal(row["calls_per_question"], 2),
+                _thousands(row["input_tokens_per_question"]),
+                _percent(row["cached_share"]),
+                _format_money(row["list_cost_per_question"]),
+                _format_money(row["billed_cost_per_question"]),
+                _decimal(row["seconds_per_question"], 1),
+                _format_money(list_cost / quality if list_cost is not None and quality else None),
+            ]
+        )
+    return _styled_table(table_data, [128, 32, 44, 52, 62, 44, 58, 58, 56, 66])
+
+
+def _format_money(value: Any) -> str:
+    number = _as_float(value)
+    return "n/a" if number is None else f"${number:.4f}"
+
+
+def _cost_quality_chart(data: AnalysisData) -> Drawing | None:
+    """Quality against list cost per question, one point per measured configuration."""
+
+    measured = _measured_configurations(data).dropna(subset=["list_cost_per_question", "telemetry_quality"])
+    if measured.empty:
+        return None
+    width, height = 690, 250
+    left, right, bottom, top = 60, 30, 40, 20
+    plot_width, plot_height = width - left - right, height - bottom - top
+    max_cost = float(measured["list_cost_per_question"].max()) * 1.15 or 1.0
+    min_quality = min(0.5, float(measured["telemetry_quality"].min()) - 0.05)
+    drawing = Drawing(width, height)
+
+    def x_of(cost: float) -> float:
+        return left + plot_width * cost / max_cost
+
+    def y_of(quality: float) -> float:
+        return bottom + plot_height * (quality - min_quality) / (1.0 - min_quality)
+
+    drawing.add(Line(left, bottom, left + plot_width, bottom, strokeColor=MID_GRAY, strokeWidth=0.6))
+    drawing.add(Line(left, bottom, left, bottom + plot_height, strokeColor=MID_GRAY, strokeWidth=0.6))
+    for step in range(5):
+        cost = max_cost * step / 4
+        drawing.add(String(x_of(cost), bottom - 12, f"${cost:.3f}", textAnchor="middle", fontName="Helvetica", fontSize=7, fillColor=GRAY))
+        quality = min_quality + (1.0 - min_quality) * step / 4
+        drawing.add(String(left - 6, y_of(quality) - 2, f"{quality:.2f}", textAnchor="end", fontName="Helvetica", fontSize=7, fillColor=GRAY))
+    drawing.add(String(left + plot_width / 2, 4, "List cost per question (USD, no caching)", textAnchor="middle", fontName="Helvetica", fontSize=8, fillColor=GRAY))
+    drawing.add(String(12, bottom + plot_height / 2, "Quality", textAnchor="middle", fontName="Helvetica", fontSize=8, fillColor=GRAY))
+    for _, row in measured.iterrows():
+        x, y = x_of(float(row["list_cost_per_question"])), y_of(float(row["telemetry_quality"]))
+        drawing.add(Circle(x, y, 4, fillColor=BLUE, strokeColor=None))
+        drawing.add(String(x + 7, y + 3, _as_text(row["configuration"]), fontName="Helvetica", fontSize=7, fillColor=BLACK))
+    return drawing
+
+
 def _run_table(data: AnalysisData, styles: dict[str, ParagraphStyle]) -> LongTable:
     headers = [
         "Run",
@@ -1729,9 +1911,31 @@ def create_pdf_report(
             "Percentages aggregate all question-runs within a configuration. Run SD is the standard deviation of mean quality across repeated runs.",
             styles["note"],
         ),
-        PageBreak(),
-        Paragraph("Retrieval diagnostics", styles["h1"]),
     ]
+
+    if not _measured_configurations(data).empty:
+        chart = _cost_quality_chart(data)
+        story.extend(
+            [
+                PageBreak(),
+                Paragraph("Cost and latency", styles["h1"]),
+                _paragraph(
+                    "Configurations whose runs carry per-question telemetry (the Checkpoint 6.1 cost starters). Every figure, quality included, is computed over those runs only, so cost and quality come from the same question-runs.",
+                    styles["body"],
+                ),
+                Spacer(1, 6),
+                _cost_table(data, styles),
+                Spacer(1, 6),
+                *([chart] if chart is not None else []),
+                Spacer(1, 5),
+                _paragraph(
+                    "List cost charges every input token at the full rate; billed cost is what OpenRouter reported, with cached input at the cached rate. The judge is not included. Seconds cover the agent graph and the answer call, not the judge.",
+                    styles["note"],
+                ),
+            ]
+        )
+
+    story.extend([PageBreak(), Paragraph("Retrieval diagnostics", styles["h1"])])
 
     recall_chart = _recall_chart(data.config_summary)
     if recall_chart is not None:
@@ -1896,7 +2100,24 @@ def create_pdf_report(
         for warning in data.warnings:
             story.append(_paragraph(warning, styles["note"]))
 
+    # Charts grow with the number of configurations; one taller than the page frame
+    # made reportlab raise LayoutError. Only such charts are scaled down.
+    story = [
+        _fit_drawing(item, document.width, document.height - 12) if isinstance(item, Drawing) else item
+        for item in story
+    ]
     document.build(story)
+
+
+def _fit_drawing(drawing: Drawing, max_width: float, max_height: float) -> Drawing:
+    """Scale a chart down to fit the page frame; a chart that fits is left unchanged."""
+
+    factor = min(1.0, max_width / drawing.width, max_height / drawing.height)
+    if factor < 1.0:
+        drawing.scale(factor, factor)
+        drawing.width *= factor
+        drawing.height *= factor
+    return drawing
 
 
 def print_console_summary(data: AnalysisData, output_path: Path) -> None:
@@ -1947,6 +2168,29 @@ def print_console_summary(data: AnalysisData, output_path: Path) -> None:
         ].map(_percent)
         print(f"\nTask-family attention ({baseline_label}):")
         print(focus.to_string(index=False))
+
+    measured = _measured_configurations(data)
+    if not measured.empty:
+        cost = measured[
+            [
+                "configuration",
+                "telemetry_runs",
+                "telemetry_quality",
+                "calls_per_question",
+                "input_tokens_per_question",
+                "list_cost_per_question",
+                "billed_cost_per_question",
+                "seconds_per_question",
+            ]
+        ].copy()
+        cost["telemetry_quality"] = cost["telemetry_quality"].map(_decimal)
+        cost["calls_per_question"] = cost["calls_per_question"].map(lambda value: _decimal(value, 2))
+        cost["input_tokens_per_question"] = cost["input_tokens_per_question"].map(_thousands)
+        for column in ("list_cost_per_question", "billed_cost_per_question"):
+            cost[column] = cost[column].map(_format_money)
+        cost["seconds_per_question"] = cost["seconds_per_question"].map(lambda value: _decimal(value, 1))
+        print("\nCost and latency (runs with telemetry; judge excluded):")
+        print(cost.to_string(index=False))
 
     print(f"\nIncluded CSVs: {len(data.included_files)}")
     print(f"Excluded CSVs: {len(data.excluded_files)}")

@@ -1,0 +1,258 @@
+{
+  "run_id": "2026_09_27_16_22_03",
+  "question_number": 6,
+  "logged_at": "2026-09-27T16:23:59-04:00",
+  "question": "What contamination chain was later found to explain how the Broad Street pump water became associated with the 1854 cholera outbreak? Trace the chain from the infected household material to the well.",
+  "final_state": {
+    "question": "What contamination chain was later found to explain how the Broad Street pump water became associated with the 1854 cholera outbreak? Trace the chain from the infected household material to the well.",
+    "retrieval_attempts": 1,
+    "table_attempts": 0,
+    "article_candidates": [
+      {
+        "source_article": "1854_Broad_Street_cholera_outbreak.html",
+        "representative_chunk": "Article: 1854 Broad Street cholera outbreak\nSection: Lead\n\nSevere outbreak of cholera that occurred in London in 1854\n\n1854 Broad Street cholera outbreak\nPart of 1846–1860 cholera pandemic\n\nA replica pump commemorating the outbreak and John Snow's investigation of it\n\nDate1854\n\nLocationSoho, London, UK\n\nCoordinates51°30′48″N 00°08′12″W﻿ / ﻿51.51333°N 0.13667°W﻿ / 51.51333; -0.13667\n\nCauseVibrio cholerae present within the pumping water due to contamination by sewage\n\nDeaths616\n\nA severe outbreak of cholera occurred in 1854 near Broad Street (now Broadwick Street) and Golden Square in Soho, London, England, during the worldwide 1846–1860 cholera pandemic. The outbreak (also known as Golden Square outbreak[1]), which killed 616 people, is best known for the physician John Snow's study of its causes and his hypothesis that germ-contaminated water was the cause, rather than something in the air called \"miasma\".[2][3] This discovery influenced public health and the construction of improved sanitation facilities beginning in the mid-19th century. Later, the term \"focus of infection\" was used to describe sites, such as the Broad Street pump, where conditions are favourable for transmission of infection. Snow unknowingly took advantage of a natural experiment during his endeavours to identify the cause of cholera transmission.",
+        "representative_chunk_id": "1854_Broad_Street_cholera_outbreak.html#section-000-00",
+        "section_title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "1854 Broad Street cholera outbreak",
+        "discovered_by": "vector",
+        "rank": 1,
+        "raw_score": 0.46833014488220215,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "John_Snow.html",
+        "representative_chunk": "Article: John Snow\nSection: Lead\n\nEnglish epidemiologist and physician (1813–1858)\n\nThis article is about the physician. For other uses, see John Snow (disambiguation).\n\nJohn Snow\n\nSnow in 1856\n\nBorn(1813-03-15)15 March 1813\n\nYork, England\n\nDied16 June 1858(1858-06-16) (aged 45)\n\nLondon, England\n\nEducationUniversity of London (MD)\n\nKnown forAnaesthesia\n\nLocating source of a cholera outbreak (thus establishing the disease as water-borne)\n\nScientific career\n\nFieldsAnaesthesia\n\nEpidemiology\n\nSignature\n\nJohn Snow (15 March 1813 – 16 June 1858)[1] was an English physician and a leader in the development of anaesthesia and medical hygiene. He is considered one of the founders of modern epidemiology and early germ theory, in part because of his work in tracing the source of a cholera outbreak in London's Soho, which he identified as a particular public water pump. Snow's findings inspired fundamental changes in the water and waste systems of London, which led to similar changes in other cities, and a significant improvement in general public health around the world.[2]",
+        "representative_chunk_id": "John_Snow.html#section-000-00",
+        "section_title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "John Snow",
+        "discovered_by": "vector",
+        "rank": 2,
+        "raw_score": 0.5543858408927917,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Miasma_theory.html",
+        "representative_chunk": "Article: Miasma theory\nSection: Replacement by germ theory > 1854 Broad Street cholera outbreak\n\nMain article: 1854 Broad Street cholera outbreak\n\nThe work of John Snow is notable for helping to make the connection between cholera and typhoid epidemics and contaminated water sources, which contributed to the eventual demise of miasma theory. During the cholera epidemic of 1854, Snow traced high mortality rates among the citizens of Soho to a water pump in Broad Street. Snow convinced the local government to remove the pump handle, which resulted in a marked decrease in cases of cholera in the area. In 1857, Snow submitted a paper to the British Medical Journal that attributed high numbers of cholera cases to water sources that were contaminated with human waste. Snow used statistical data to show that citizens who received their water from upstream sources were considerably less likely to develop cholera than those who received their water from downstream sources. Though his research supported his hypothesis that contaminated water, not foul air, was the source of cholera epidemics, a review committee concluded that Snow's findings were not significant enough to warrant change, and they were summarily dismissed. Additionally, other interests intervened in the process of reform. Many water companies and civic authorities pumped water directly from contaminated sources such as the Thames to public wells, and the idea of changing sources or implementing filtration techniques was an unattractive economic prospect. In the face of such economic interests, reform was slow to be adopted.[25]\n\nIn 1855, John Snow made a testimony against the Amendment to the \"Nuisances Removal and Diseases Prevention Act\" that regularized air pollution of some industries. He claimed that:\n\nThat is possible; but I believe that the poison of the cholera is either swallowed in water, or got directly from some other person in the family, or in the room; I believe it is quite an exception for it to be conveyed in the air; though if the matter gets dry it may be wafted a short distance.[36]\n\nThe same year, William Farr, who was then the major supporter of the miasma theory, issued a report to criticize the germ theory. Farr and the Committee wrote that:\n\nAfter careful inquiry, we see no reason to adopt this belief. We do not feel it established that the water was contaminated in the manner alleged; nor is there before us any sufficient evidence to show whether inhabitants of that district, drinking from that well, suffered in proportion more than other inhabitants of the district who drank from other sources.[37][38]",
+        "representative_chunk_id": "Miasma_theory.html#section-011-00",
+        "section_title": "1854 Broad Street cholera outbreak",
+        "section_path": [
+          "Replacement by germ theory",
+          "1854 Broad Street cholera outbreak"
+        ],
+        "retrieval_query": "What contamination chain was later found to explain how the Broad Street pump water became associated with the 1854 cholera outbreak? Trace the chain from the infected household material to the well.",
+        "discovered_by": "vector",
+        "rank": 3,
+        "raw_score": 0.7649417519569397,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      }
+    ],
+    "article_reviews": [
+      {
+        "source_article": "1854_Broad_Street_cholera_outbreak.html",
+        "relevant": true,
+        "reason": "This article is directly about the outbreak and likely covers the investigation and the contamination explanation chain.",
+        "relevant_sections": [
+          "Investigation by John Snow",
+          "Snow's post-outbreak evaluation",
+          "Involvement of Henry Whitehead",
+          "Broad Street outbreak"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "John_Snow.html",
+        "relevant": true,
+        "reason": "This biography includes a cholera section that may discuss Snow's explanation of the outbreak contamination pathway.",
+        "relevant_sections": [
+          "Cholera"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Miasma_theory.html",
+        "relevant": false,
+        "reason": "This is a broader theory article and only tangentially related to the specific contamination chain for the Broad Street pump.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      }
+    ],
+    "selected_articles": [
+      "1854_Broad_Street_cholera_outbreak.html",
+      "John_Snow.html"
+    ],
+    "rejected_articles": [
+      "Miasma_theory.html"
+    ],
+    "evidence": [
+      {
+        "evidence_id": "1854_Broad_Street_cholera_outbreak.html#section-006-00",
+        "source_article": "1854_Broad_Street_cholera_outbreak.html",
+        "content": "Article: 1854 Broad Street cholera outbreak\nSection: Investigation by John Snow\n\nOriginal map by John Snow showing the clusters of cholera cases (indicated by stacked rectangles) in the London epidemic of 1854. The contaminated pump is located at the crossroads of Broad Street and Cambridge Street (now Lexington Street), running into Little Windmill Street.\n\nThe Broad Street outbreak was an effect rather than a cause of the epidemic. Snow's conclusions were not predominantly based on the Broad Street outbreak, as he noted that he hesitated to come to a conclusion based on a population that had predominantly fled the neighbourhood and redistributed itself. He feared throwing off results of the study.[18]\n\nFrom a mathematical perspective, Snow's innovation was focusing on death rates in areas served by two water companies that drew water from the Thames, rather than basing it on data from victims of the Broad Street pump (which drew water from a well). Snow's work also led to a far greater health and safety impact than the removal of the Broad Street pump handle. Deactivating the pump \"hardly made a dent in the citywide cholera epidemic, which went on to claim nearly 3,000 lives\".[24]\n\nSnow was sceptical of the prevailing miasma theory, which held that diseases such as cholera or the Black Death were caused by pollution or a noxious form of \"bad air\". The germ theory was not yet established (Louis Pasteur proposed it in 1861). Snow did not understand the mechanism by which disease was transmitted, but the evidence led him to believe that it was not foul air. Based on the pattern of illness among residents, he hypothesized that cholera was spread by an agent in contaminated water.[8] He first published his theory in 1849, in an essay titled \"On the Mode of Communication of Cholera\".[25] In 1855 he published a second edition, including a more elaborate investigation of the effect of the water supply in the 1854 Soho outbreak.[18]\n\nThe cholera epidemic of 1849–1854 was also related to the water supplied by companies in London at the time. The main players were the Southwark and Vauxhall Waterworks Company and the Lambeth Waterworks Company. Both provided water to their customers drawn from the Thames, which was highly contaminated with visible and invisible products and bacteria. Dr Arthur Hill Hassall examined the filtered water and found it contained animal hair, among other foul substances. He remarked:\n\nIt will be observed, that the water of the companies of the Surrey Side of London, viz., the Southwark, Vauxhall, and Lambeth, is by far the worst of all those who take their supply from the Thames[18]\n\nOther companies, such as the New River Company and Chelsea Waterworks Company, were observed to have better filtered water; few deaths occurred in the neighbourhoods they supplied. They not only obtained their water from cleaner sources than the Thames, but filtered the water and treated it until there were no obvious contaminants.[18]\n\nAs mentioned above, Snow is known for his influence on public health, which arose after his studies of the cholera epidemic. In attempting to figure out who was receiving impure water in each neighbourhood, what is now known as a double-blind experiment fell right into his lap. He describes the conditions of the situation in his essays:\n\nIn many cases a single house has a supply different from that on either side. Each company supplies both rich and poor, both large houses and small; there is no difference in the condition or occupation of the persons receiving the water of the different companies...As there is no difference whatever either in the houses or the people receiving the supply of the two Water Companies, or in any of the physical conditions with which they are surrounded, it is obvious that no experiment could have been devised which would more thoroughly test the effect of water supply on the progress of Cholera than this, which circumstances placed ready made before the observer.\nThe experiment too, was on the grandest scale. No fewer than three hundred thousand people of both sexes, of every age and occupation, and of every rank and station, from gentlefolks down to the very poor, were divided into two groups without their choice, and, in most cases, without their knowledge; one group being supplied water containing the sewage of London, and amongst it, whatever might have come from the cholera patients, the other group having water quite free from such impurity.[18]\n\nSnow went on to study the water contents from each home through a test performed on each sample. In this way, it could be deduced from which supplier the home received its water. He concluded that it was indeed impure water from the big companies that allowed cholera to spread rapidly. He proved this by observing London prisons, finding that cholera ceased there only a few days after switching to cleaner water sources.[18]",
+        "evidence_type": "text",
+        "title": "Investigation by John Snow",
+        "section_path": [
+          "Investigation by John Snow"
+        ],
+        "retrieval_query": "What contamination chain was later found to explain how the Broad Street pump water became associated with the 1854 cholera outbreak? Trace the chain from the infected household material to the well.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.6164060831069946,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Investigation by John Snow",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": []
+        }
+      },
+      {
+        "evidence_id": "1854_Broad_Street_cholera_outbreak.html#section-007-00",
+        "source_article": "1854_Broad_Street_cholera_outbreak.html",
+        "content": "Article: 1854 Broad Street cholera outbreak\nSection: Snow's post-outbreak evaluation\n\nSnow's analysis of cholera and cholera outbreaks extended past the closure of the Broad Street pump. He concluded that cholera was transmitted through and affected the alimentary canal within the human body. Cholera did not affect either the circulatory or the nervous system and there was no \"poison in the blood...in the consecutive fever...the blood became poisoned from urea getting into the circulation\".[26] According to Snow, this \"urea\" entered the blood through kidney failure. (Acute kidney failure is a complication of cholera.)[27]\n\nTherefore, the fever was caused by kidney failure, not by a poison already present in the subject's bloodstream. Popular medical practices, such as bloodletting, could not be effective in such a case. Snow also argued that cholera was not a product of Miasma. \"There was nothing in the air to account for the spread of cholera\".[26] According to Snow, cholera was spread by persons ingesting a substance, not through atmospheric transmittal.[26]",
+        "evidence_type": "text",
+        "title": "Snow's post-outbreak evaluation",
+        "section_path": [
+          "Snow's post-outbreak evaluation"
+        ],
+        "retrieval_query": "What contamination chain was later found to explain how the Broad Street pump water became associated with the 1854 cholera outbreak? Trace the chain from the infected household material to the well.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.7146760821342468,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Snow's post-outbreak evaluation",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": []
+        }
+      },
+      {
+        "evidence_id": "1854_Broad_Street_cholera_outbreak.html#section-008-00",
+        "source_article": "1854_Broad_Street_cholera_outbreak.html",
+        "content": "Article: 1854 Broad Street cholera outbreak\nSection: Involvement of Henry Whitehead\n\nRev. Henry Whitehead\n\nThe Reverend Henry Whitehead was an assistant curate at St. Luke's church in Soho during the 1854 cholera outbreak.[28]\n\nA former believer in the miasma theory of disease, Whitehead worked to disprove false theories. He was influenced by Snow's theory that cholera spreads by consumption of water contaminated by human waste. Snow's work, particularly his maps of the Soho area cholera victims, convinced Whitehead that the Broad Street pump was the source of the local infections. Whitehead joined Snow in tracking the contamination to a faulty cesspool and the outbreak's index case (the baby with cholera).[29]\n\nWhitehead's work with Snow combined demographic study with scientific observation, setting an important precedent for epidemiology.[30]",
+        "evidence_type": "text",
+        "title": "Involvement of Henry Whitehead",
+        "section_path": [
+          "Involvement of Henry Whitehead"
+        ],
+        "retrieval_query": "What contamination chain was later found to explain how the Broad Street pump water became associated with the 1854 cholera outbreak? Trace the chain from the infected household material to the well.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.7635035514831543,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Involvement of Henry Whitehead",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": []
+        }
+      },
+      {
+        "evidence_id": "1854_Broad_Street_cholera_outbreak.html#section-005-00",
+        "source_article": "1854_Broad_Street_cholera_outbreak.html",
+        "content": "Article: 1854 Broad Street cholera outbreak\nSection: Broad Street outbreak\n\nOn 31 August 1854, after several other outbreaks elsewhere in the city, there was a major outbreak of cholera in Soho. Snow later called it \"the most terrible outbreak of cholera which ever occurred in this kingdom.\"[9]\n\nOver the next three days, 127 people on or near Broad Street died. During the next week, three quarters of the residents had fled the area. By 10 September, more than 500 people had died and the mortality rate was 12.8 per thousand inhabitants in some parts of the city.[10] By the end of the outbreak, 616 people had died.[11]\n\nMany of the victims were taken to the Middlesex Hospital, where their treatment was superintended by Florence Nightingale, who briefly joined the hospital in early September in order to help with the outbreak. According to a letter by Elizabeth Gaskell, Nightingale \"was up night and day from Friday afternoon (Sept. 1) to Sunday afternoon, receiving the poor creatures (chiefly fallen women of that neighbourhood - they had it the worst) who were being constantly brought in - - undressing them - putting on turpentine stupes, et cetera, doing it herself to as many as she could manage\".[12]\n\nBy talking to local residents (with the help of Reverend Henry Whitehead), Snow identified the outbreak's source as the public water pump on Broad Street (now Broadwick Street) at Cambridge Street. Although Snow's chemical and microscope examination of a sample of the water from this Broad Street pump water did not conclusively prove its danger, the patterns of illness and death among residents in Soho persuaded the St James parish authorities to disable the pump by removing its handle.[13]\n\nAlthough this action has been popularly reported as ending the outbreak, the epidemic may have already been in rapid decline, as explained by Snow:\n\nThere is no doubt that the mortality was much diminished, as I said before, by the flight of the population, which commenced soon after the outbreak; but the attacks had so far diminished before the use of the water was stopped, that it is impossible to decide whether the well still contained the cholera poison in an active state, or whether, from some cause, the water had become free from it.[14]\n\nSnow later used a dot map to illustrate how cases of cholera occurred around this pump.[15] His efforts to connect the incidence of cholera with potential geographic sources was based on what is now known as a Voronoi diagram. He mapped the individual water pumps and generated cells representing all the points on his map that were closest to each pump. The section of Snow's map representing areas in the city where the closest available source of water was the Broad Street pump had the highest incidence of cholera. Snow also performed a statistical comparison between the Southwark and Vauxhall Waterworks Company and a waterworks at Seething Wells (owned by the Lambeth Waterworks Company) that was further upriver and hence had cleaner water; he showed that houses supplied by the former had a cholera mortality rate 14 times that of those supplied by the latter.[16][17]\n\nOf the decline in cases related to the Broad Street pump, Snow said:\n\nIt will be observed that the deaths either very much diminished, or ceased altogether, at every point where it becomes decidedly nearer to send to another pump than to the one in Broad street. It may also be noticed that the deaths are most numerous near to the pump where the water could be more readily obtained.[18]\n\nThere was one significant anomaly: none of the workers in the nearby Broad Street brewery contracted cholera. As they were given a daily allowance of beer, they did not consume water from the nearby well.[19] During the brewing process, the wort (un-fermented beer) is boiled in part so that hops can be added. This step killed the cholera bacteria in the water they used to brew with, making it safe to drink. Snow showed that the Southwark and Vauxhall Waterworks Company was taking water from sewage-polluted sections of the Thames and delivering it to homes, resulting in an increased incidence of cholera among its customers. Snow's study is part of the history of public health and health geography. It is regarded as the founding event of epidemiology.[20]\n\nIn Snow's own words:\n\nOn proceeding to the spot, I found that nearly all the deaths had taken place within a short distance of the [Broad Street] pump. There were only ten deaths in houses situated decidedly nearer to another street-pump. In five of these cases the families of the deceased persons informed me that they always sent to the pump in Broad Street, as they preferred the water to that of the pumps which were nearer. In three other cases, the deceased were children who went to school near the pump in Broad Street ...\n\nWith regard to the deaths occurring in the locality belonging to the pump, there were 61 instances in which I was informed that the deceased persons used to drink the pump-water from Broad Street, either constantly or occasionally ...\n\nThe result of the inquiry then was, that there had been no particular outbreak or prevalence of cholera in this part of London except among the persons who were in the habit of drinking the water of the above-mentioned pump-well.\n\nI had an interview with the Board of Guardians of St. James's parish, on the evening of Thursday, the 7th September, and represented the above circumstances to them. In consequence of what I said, the handle of the pump was removed on the following day.[21]\n\nIt was discovered later that this public well had been dug 3 feet (0.9 m) from an old cesspit that had begun to leak faecal bacteria. Waste water from washing nappies used by a baby who had contracted cholera from another source drained into this cesspit. Its opening was under a nearby house that had been rebuilt further away after a fire and a street widening. At the time there were cesspits under most homes. Most families tried to have their raw sewage collected and dumped in the Thames to prevent their cesspit from filling faster than the sewage could decompose into the soil.[22]\n\nAt the same time, an investigation of cholera transmission was being conducted in Deptford. Around 90 people died within a few days in that town, where the water was known to be clean, and there had been no previous outbreaks of cholera. Snow was informed that the water had recently turned impure. Before using it, residents had to let it run until the sudsy, sewer-like water turned clear. Snow, finding that the water the residents were using was no different from the usual water from their pump, determined that the outbreak must be caused by a leak in the pipes that allowed surrounding sewage and its contaminants to seep in to the water supply. This was similar to the Broad Street outbreak. The incoming water was being contaminated by the increasing levels of sewage, coupled with lack of safe plumbing.[18]\n\nAfter the cholera epidemic subsided, government officials replaced the Broad Street pump handle. They had responded only to the urgent threat posed to the population, and afterwards they rejected Snow's theory. To accept his proposal would have meant indirectly accepting the oral-faecal method of transmission of disease, which was too unpleasant for most of the public to contemplate.[23]",
+        "evidence_type": "text",
+        "title": "Broad Street outbreak",
+        "section_path": [
+          "Broad Street outbreak"
+        ],
+        "retrieval_query": "What contamination chain was later found to explain how the Broad Street pump water became associated with the 1854 cholera outbreak? Trace the chain from the infected household material to the well.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.5747457146644592,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Broad Street outbreak",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": []
+        }
+      },
+      {
+        "evidence_id": "John_Snow.html#section-005-00",
+        "source_article": "John_Snow.html",
+        "content": "Article: John Snow\nSection: Career > Cholera\n\nMain article: 1854 Broad Street cholera outbreak\n\nMap of a later cholera outbreak in London, in 1866 Legend for the map above\n\nSnow was a skeptic of the then-dominant miasma theory that stated that diseases such as cholera and bubonic plague were caused by pollution or a noxious form of \"bad air\". The germ theory of disease had not yet been developed, so Snow did not understand the mechanism by which the disease was transmitted. His observation of the evidence led him to discount the theory of foul air. He first published his theory in an 1849 essay, On the Mode of Communication of Cholera,[22] followed by a more detailed treatise in 1855 incorporating the results of his investigation of the role of the water supply in the Soho epidemic of 1854.[23][24]\n\nBy talking to local residents (with the help of Henry Whitehead), he identified the source of the outbreak as the public water pump on Broad Street (now Broadwick Street). Although Snow's chemical and microscope examination of a water sample from the Broad Street pump did not conclusively prove its danger, his studies of the pattern of the disease were convincing enough to persuade the local council to disable the well pump by removing its handle (force rod). This action has been commonly credited as ending the outbreak, but Snow observed that the epidemic may have already been in rapid decline:\n\nThere is no doubt that the mortality was much diminished, as I said before, by the flight of the population, which commenced soon after the outbreak; but the attacks had so far diminished before the use of the water was stopped, that it is impossible to decide whether the well still contained the cholera poison in an active state, or whether, from some cause, the water had become free from it.[23]: 51–52 \n\nOriginal map by John Snow showing the clusters of cholera cases in the London epidemic of 1854, drawn and lithographed by Charles Cheffins.\n\nSnow later used a dot map to illustrate the cluster of cholera cases around the pump. He also used statistics to illustrate the connection between the quality of the water source and cholera cases. He showed that homes supplied by the Southwark and Vauxhall Waterworks Company, which was taking water from sewage-polluted sections of the Thames, had a cholera rate fourteen times that of those supplied by Lambeth Waterworks Company, which obtained water from the upriver, cleaner Seething Wells.[25][26] Snow's study was a major event in the history of public health and geography. It is regarded as the founding event of the science of epidemiology.[citation needed]\n\nSnow wrote:\n\nOn proceeding to the spot, I found that nearly all the deaths had taken place within a short distance of the [Broad Street] pump. There were only ten deaths in houses situated decidedly nearer to another street-pump. In five of these cases the families of the deceased persons informed me that they always sent to the pump in Broad Street, as they preferred the water to that of the pumps which were nearer. In three other cases, the deceased were children who went to school near the pump in Broad Street...\n\nWith regard to the deaths occurring in the locality belonging to the pump, there were 61 instances in which I was informed that the deceased persons used to drink the pump water from Broad Street, either constantly or occasionally...\n\nThe result of the inquiry, then, is, that there has been no particular outbreak or prevalence of cholera in this part of London except among the persons who were in the habit of drinking the water of the above-mentioned pump well.\n\nI had an interview with the Board of Guardians of St James's parish, on the evening of the 7th inst [7 September], and represented the above circumstances to them. In consequence of what I said, the handle of the pump was removed on the following day.\n\n— John Snow, letter to the editor of the Medical Times and Gazette[27]\n\nJohn Snow memorial and public house on Broadwick Street, Soho\n\nResearchers later discovered that this public well had been dug only 3 feet (0.9 m) from an old cesspit, which had begun to leak faecal bacteria. The cloth nappy of a baby, who had contracted cholera from another source, had been washed into this cesspit. Its opening was originally under a nearby house, which had been rebuilt farther away after a fire. The city had widened the street and the cesspit was lost. It was common at the time to have a cesspit under most homes. Most families tried to have their raw sewage collected and dumped in the Thames to prevent their cesspit from filling faster than the sewage could decompose into the soil.[28]\n\nThomas Shapter had conducted similar studies and used a point-based map for the study of cholera in Exeter, seven years before John Snow, although this did not identify the water supply problem that was later held responsible.[29]",
+        "evidence_type": "text",
+        "title": "Cholera",
+        "section_path": [
+          "Career",
+          "Cholera"
+        ],
+        "retrieval_query": "What contamination chain was later found to explain how the Broad Street pump water became associated with the 1854 cholera outbreak? Trace the chain from the infected household material to the well.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.6873000264167786,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Cholera",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": []
+        }
+      }
+    ],
+    "assessment": {
+      "ready_to_answer": true,
+      "supported_requirements": [
+        "The outbreak source was the Broad Street public water pump / well.",
+        "Later investigation found the well had been dug 3 feet from an old cesspit that had begun to leak faecal bacteria.",
+        "Waste water from washing nappies used by a baby who had contracted cholera from another source drained into this cesspit.",
+        "This contamination path explains how the pump water became associated with the 1854 cholera outbreak."
+      ],
+      "missing_requirements": [],
+      "retrieval_requests": [],
+      "table_requests": [],
+      "unresolved_conflicts": [],
+      "explanation": "The supplied evidence directly states the later-discovered contamination chain from a baby infected from another source, to washing nappies draining into an old cesspit, to faecal bacteria leaking from that cesspit into the Broad Street public well/pump. This is sufficient to answer the user's request to trace the chain from the infected household material to the well."
+    },
+    "assessment_history": [
+      {
+        "ready_to_answer": true,
+        "supported_requirements": [
+          "The outbreak source was the Broad Street public water pump / well.",
+          "Later investigation found the well had been dug 3 feet from an old cesspit that had begun to leak faecal bacteria.",
+          "Waste water from washing nappies used by a baby who had contracted cholera from another source drained into this cesspit.",
+          "This contamination path explains how the pump water became associated with the 1854 cholera outbreak."
+        ],
+        "missing_requirements": [],
+        "retrieval_requests": [],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The supplied evidence directly states the later-discovered contamination chain from a baby infected from another source, to washing nappies draining into an old cesspit, to faecal bacteria leaking from that cesspit into the Broad Street public well/pump. This is sufficient to answer the user's request to trace the chain from the infected household material to the well."
+      }
+    ]
+  }
+}

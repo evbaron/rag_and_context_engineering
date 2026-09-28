@@ -672,3 +672,462 @@ answer):
 | 2. 7–8 calls per question | Held for the median (7). Mean 6.72, range 5–11 |
 | 3. The assessor takes the most time | Held: 35% of the wall time, 5.6 s per question |
 | 4. Text-only questions cost more than table questions | Did not hold: table questions cost 1.9× as much ($0.0529 against $0.0283 at list price). The deterministic executor is free and the planner is cheap (8%), but the rows it extracts are read again by the assessor and by the answer |
+
+# Conclusion: performance and cost, organized by worksheet question
+
+**Testing completed.** The performance and cost evidence comes from three sources:
+
+- **Billing** (Finding 1): OpenRouter analytics for two matched workloads of 138
+  question-runs each, the 4.1 graph and the 5.1 survivor.
+- **Experiment 1** (answer replay): 84 saved question-runs re-answered under three context
+  rules.
+- **Experiment 2** (live telemetry): the survivor on the 25 validation questions, with
+  every model call and graph step recorded.
+
+The security findings (worksheet Steps 1 and 2) are in
+[README 6.1 - security assessment](README%206.1%20-%20security%20assessment.md). This
+section covers Step 3, the performance side of Steps 1, 4, and 5, and a combined
+selection for the worksheet.
+
+## Step 3: performance and cost analysis
+
+**Performance observations.**
+
+- **Per question:**
+  - 6.7 model calls (median 7, range 5–11) plus one judge call, and 49K input tokens;
+  - $0.036 billed ($0.043 at list price), plus $0.0008 for the judge;
+  - 14.1 s median for the agent and the answer (p90 23 s, maximum 30 s).
+- **End to end, including the judge:** 15 s median in the validation run against 21 s
+  on 2026-09-23 (Finding 1). The provider's latency varies by day; the shares by step
+  are what the telemetry establishes.
+- **Against the one-call 4.1 graph** (same workload): 3.8× the model calls, about twice
+  the latency, 37% fewer prompt tokens, and 45% more billed cost.
+  - The 4.1 graph's repeated whole articles were billed mostly at the cached rate.
+  - At list price, the survivor is 27% cheaper.
+- **The assessor is the cost centre:** 2.5 calls per question, 57% of the input tokens,
+  and 35% of the time.
+- **Table questions cost 1.9× as much as text-only questions** ($0.053 against $0.028 at
+  list price), although the table planner itself is only 8% of a table question's cost.
+- **The same question can cost several times as much in another run.** VAL04 cost $0.088
+  in the validation run and $0.015 in the smoke test an hour earlier, with the same
+  verdict.
+- **Latency follows the number of sequential calls, not their size.** Each call takes
+  1–2 s, and answer latency stayed at 1.8–2.1 s from under 15K to over 50K input tokens.
+- **Workflow complexity:**
+  - 5 model roles and 8–14 graph steps per question;
+  - every question took at least two assessor rounds: 18 of 25 exactly two, 7 three to
+    five;
+  - 4 of the 25 questions were answered once the escalation or table budget ran out,
+    without the assessor declaring the evidence ready.
+
+**Evidence.**
+
+| Measurement | Value | Source |
+| --- | --- | --- |
+| Cost per question | $0.0356 billed, $0.0431 list, judge $0.00075 | Experiment 2 telemetry, cross-checked against the OpenRouter `…/retriever` and `…/judge` origins |
+| Calls per question | 6.72 (5–11) | Experiment 2 `llm_calls.csv` |
+| Input tokens by role | assessor 57%, answer 31%, table planner 6%, TOC reviewer 5%, decomposer 1% | Experiment 2 |
+| Time by graph step | assessor 35%, TOC review 14%, initial retrieval 14%, answer 13%, table computation 10%, section loading 9% | Experiment 2 `node_timings.csv` |
+| Assessor prompt by round | 7.2K tokens in round 1, 14.0K in round 2 (45% cached) | Experiment 2 |
+| Table against text-only question | 61.5K against 30.1K input tokens; $0.053 against $0.028 at list price | Experiment 2 |
+| The same question across runs | 6 questions flagged as table questions in only some runs: their context was a median 2.0× larger when flagged (up to 3.7×), with the same verdicts. VAL04: 6× the cost | Saved 5.1 logs; Experiment 2 |
+| 5.1 against 4.1, per question | 7.6 against 2.0 requests; 46.7K against 74.5K prompt tokens; $0.0313 against $0.0217 billed | OpenRouter analytics (Finding 1) |
+| Context size against quality | Whole articles: text-only questions 0.914 → 0.961, for +38% of a text-only question's cost | Experiment 1 |
+| Latency against input size | 1.8–2.1 s median answer latency at every input size | Experiment 1 |
+
+**Identified bottlenecks or inefficiencies.**
+
+1. **Re-reading accumulated evidence.**
+   - Each assessor round re-sends everything gathered so far: round 2's prompt is twice
+     round 1's.
+   - The evidence is read about three times per question: 2.4 assessor rounds plus the
+     answer.
+   - `context_characters`, which measures only the answer prompt, therefore understates
+     the survivor's token use about fourfold.
+2. **Forced second rounds.** The breadth nudge sends every text-only question through a
+   second assessor round, 30% of its cost. Table questions return to the assessor after
+   their computation.
+3. **Table data travels downstream.** The executor's rows are read again by the assessor
+   (+16K tokens against a text-only question) and by the answer (+10K).
+4. **Unnecessary table selection.** When the TOC reviewer selects tables a question does
+   not need, the context grows 2× (median) and the cost up to 6×, with no change in
+   quality.
+5. **Sequential execution.** 6.7 model calls run one after another at 1–2 s each.
+   Vector searches outside the model calls add about 3 s per question.
+6. **The evaluation judge.**
+   - It costs about 2% of a question.
+   - It sees neither the question nor the context, so it cannot check faithfulness
+     (GT02), and it can grade harder than its grading notes (VAL14).
+
+**Contributing design decisions.**
+
+| Decision (checkpoint) | Effect |
+| --- | --- |
+| An LLM assessor decides when the evidence suffices (5.1) | 2.5 calls per question and 57% of input tokens. The loop makes latency about twice the 4.1 graph's |
+| Evidence accumulates, and every round re-reads all of it (5.1) | Round 2 ≈ 2× round 1; about three reads of the evidence per question |
+| Breadth nudge: a text-only question's first "ready" is denied (5.1) | One extra round per text-only question, 30% of its cost; it bought validation quality 0.845 → 0.880 |
+| Table gateway: every selected table goes through the planner (5.1) | Planner calls are cheap (8%), but the extracted rows are re-read, so table questions cost 1.9×. The cap of 6 requests per round bounds the worst case |
+| Any table the TOC reviewer selects makes the question a table question (5.1) | Routing varies between runs, and cost varies with it (2× median, VAL04 6×) |
+| Sections instead of whole articles (5.1) | The answer context is 5× smaller than 4.1's. Facts outside the selected sections are missed (VAL09); whole articles recover them for +38% |
+| One model, `gpt-5.4-mini`, in every role, without reasoning (4.1–5.1) | Low price per token; no role gets a stronger or a cheaper model |
+| Nodes and questions run one at a time (5.1) | Latency is the sum of the calls |
+
+**Diagram:** the survivor's workflow with the Experiment 2 averages per question.
+
+```mermaid
+flowchart TD
+    Q["Question"] --> D["Decomposer + vector search<br/>1 call · 0.4K tokens · 2.3 s"]
+    D --> T["TOC reviewer<br/>1 call · 2.4K tokens · 2.3 s"]
+    T --> L["Load selected sections and tables<br/>no model call · 1.5 s"]
+    L --> A["Assessor<br/>2.5 rounds · 28K tokens (57%) · 5.6 s (35%)<br/>round 2 ≈ 2× round 1"]
+    A -->|"table requests"| P["Table planner → deterministic executor<br/>1.2 calls · 2.9K tokens · 1.6 s"]
+    P --> A
+    A -->|"needs more evidence<br/>(breadth nudge on text-only questions)"| E["Broaden sections, then graph neighbors<br/>no model call · 0.6 s"]
+    E --> A
+    A -->|"ready, or budget spent"| N["Answer<br/>1 call · 15K tokens (31%) · 2.1 s"]
+    N --> J["Judge (evaluation only)<br/>$0.0008"]
+```
+
+## Step 1 addition: cost amplification
+
+A performance issue that belongs beside the security issues A–D in the security
+README:
+
+| # | Issue | Example input | Example output | Risk classification |
+| --- | --- | --- | --- | --- |
+| E | Some inputs multiply the cost of a question: routing that selects many tables, or a question that exhausts every escalation | VAL04, a question about the Best Actor nomination procedure (validation run); the security runs' questions about a non-existent actor | VAL04: 12 winner tables selected, 6 planner calls, 143K characters of context, and $0.088 against $0.015 in the previous run, with the same answer. The non-existent actor: every escalation used, about 130K characters of context | System-level vulnerability (unbounded consumption) |
+
+- **Bounded, but not by the input.** The budgets (2 table rounds, 6 requests per round,
+  2 escalation stages) cap the cost, so the amplification has a ceiling. Nothing in the
+  pipeline keeps an input from reaching those caps.
+- **Root cause (Step 2):** prompt or workflow design.
+  - Any selected table makes a question a table question, and every selected table is
+    loaded and planned.
+  - A question about a missing entity looks the same as one that needs more evidence.
+
+## Step 4: trade-offs (performance)
+
+**Trade-off 1: agentic depth against cost and latency.**
+
+- **The trade-off.** The 5.1 loop (assessor rounds, table gateway, breadth nudge)
+  matched the 4.1 graph's quality (validation 0.880 against 0.885, GT 0.754 against
+  0.754) with perfect article recall and a fifth of the answer context. It costs 3.8×
+  the model calls, about twice the latency, and 45% more billed cost than the one-call
+  4.1 graph.
+- **Why it occurs.** Every decision point is a model call, the calls run in sequence,
+  and each assessor round re-reads the accumulated evidence.
+- **Impact.** 14–16 s per question; the assessor alone is 57% of the tokens; the breadth
+  nudge alone costs 30% of a text-only question for +0.035 validation quality.
+
+**Trade-off 2: context size against cost and reliability.**
+
+- **The trade-off.** Sections keep the answer context small. Whole articles recover
+  facts outside the selected sections (text-only questions 0.914 → 0.961) for +38% of a
+  text-only question, and occasionally introduce a competing wrong answer (GT16: Joe
+  Biden, in 248K characters).
+- **Why it occurs.** The answer model can use only what is in its context, and more
+  context means more tokens and more candidate answers.
+- **Impact.**
+  - Whole articles always: +15.5% per question overall at list price, for +0.036 on the
+    replayed question-runs (not significant, p = 0.22).
+  - Whole articles only after an admitted gap: about 80% of that gain for +2.9%
+    (simulated).
+
+**Trade-off 3: flexible routing against predictable cost.**
+
+- **The trade-off.** The TOC reviewer chooses sections and tables freely, so one agent
+  serves text, table, and mixed questions. The same freedom makes a question's cost vary
+  between runs.
+- **Why it occurs.** Routing is a model decision at temperature 0.2, and a single
+  selected table is enough to load tables and call the planner.
+- **Impact.** The context is a median 2× larger when tables are selected unnecessarily,
+  and VAL04 cost 6× as much, with no change in quality. Average cost figures do not
+  bound the cost of a single question.
+
+## Step 5: reflection (performance)
+
+**Most significant performance risk: per-question cost that cannot be predicted.**
+
+- Averages are stable: list-price cost per question agrees within 6% between the
+  2026-09-23 billing window and the validation run.
+- A single question varies up to 6× with routing, and an input can drive it to the
+  budget caps (issue E).
+
+**Key lessons.**
+
+1. **The number of sequential model calls sets latency; the size of the context sets
+   cost.**
+2. **An agent reads its evidence more than once.** Measuring only the answer prompt
+   understates the tokens about fourfold.
+3. **Deterministic computation is free, but its output is not.** The rows it extracts
+   are read by every later model call.
+4. **Caching can reverse a cost comparison.** Repeated evaluation runs of static prompts
+   are billed mostly at the cached rate, so comparisons belong at list price.
+5. **The answer model reports missing context reliably** (all 6 Clinton–Obama gaps),
+   which makes escalation on an admitted gap cheap. It cannot report an answer to the
+   wrong question (GT16, run `10_29_40`).
+6. **The evaluation judge is itself a source of variation:** 6 of 84 verdicts changed
+   on identical input.
+
+**Future investigation priorities (performance).**
+
+1. **Incremental assessment:** later rounds receive the new evidence and the previous
+   assessment instead of everything again.
+2. **Escalation on an admitted gap in place of the breadth nudge,** with a structured
+   field in which the answer model lists what it could not answer.
+3. **A table-selection guard:** load and plan tables only when the TOC review sets
+   `needs_table_reader`, and cap the tables per article.
+4. **A judge with context:** give it the question and the evidence, and take the
+   majority of several judgments (the consistency test from Lab 5.1).
+5. **Per-role models** (Lab 6.2): a cheaper assessor and a stronger table planner. The
+   replay and the telemetry measure both. Experiment 3 has since shown that a stronger
+   planner alone does not help. A stronger TOC reviewer is the cheapest candidate (7% of
+   the `gpt-5.4` bill): its `needs_table_reader` decision fixed VAL24. The other table
+   fixes come after routing (section choice, the assessor, or the answer).
+6. **A row cap on table computations** (Experiment 3): nothing limits the rows a
+   computation adds to the evidence, and `gpt-5.4-nano` overflowed the 400K-token
+   context on VAL24.
+7. **Readiness after a table round that checks the prose requirements** (Experiment 3,
+   VAL24): a single successful computation ended the loop before the prose facts
+   arrived.
+
+## Combined selection for the worksheet
+
+| Worksheet part | Selection |
+| --- | --- |
+| Step 1 | Issues A–D (security README) and E (above) |
+| Step 2 | The security README's root-cause table; for E, the design decisions above (table gateway, TOC table selection, escalation budgets) |
+| Step 3 | This section: observations, evidence, bottlenecks, design decisions, and the diagram |
+| Step 4 | Trade-offs 1 and 2 above, and "compensation against safety" from the security README (reliability against security). Alternates: trade-off 3 above (flexibility); "conversation memory against exposure" from the security README; model capability against cost (Experiment 3: `gpt-5.4` reached 0.960 at 3.6× the list cost of `gpt-5.4-mini`); surfaced gaps against answer completeness (Experiment 3: VAL06) |
+| Step 5 | Most significant risk: silent adoption with false provenance (security README), with per-question cost as the performance counterpart. Lessons: security lessons 1, 2, and 4 with performance lessons 1, 3, and 5. Priorities: the synthesis fix (security priority 1), incremental assessment, escalation on an admitted gap, the answer-grounding check, and a judge with context |
+
+## Supporting materials (performance)
+
+| Material | Location |
+| --- | --- |
+| Test cases | `answer_replay_starter.py` (context rules; `--dry-run` rebuilds every context); `cost_test_starter.py` (validation set); question sets in `GT/` |
+| System outputs | `replay_tests/2026_09_27_12_12_47/` (`answer_calls.csv`, `summary.md`); `cost_tests/wikipedia_GT_validation_set/experiments/quirky_adleman.csv` |
+| Performance measurements | `cost_tests/wikipedia_GT_validation_set/telemetry/quirky_adleman__llm_calls.csv`, `__node_timings.csv`, `__question_telemetry.csv`; OpenRouter analytics by origin and hour (`utils/openrouter_usage.py --analytics`) |
+| Screenshots or diagrams | The workflow diagram in Step 3; `retriever_phylogeny.html` (repository root) for the lineage from 1.1 to 5.1 |
+| Other supporting evidence | `logs/cost_tests/2026_09_27_13_23_33/` (one AgentState per question); `pricing/model_prices.json` (verified prices) |
+
+# Experiment 3: the 6.1 survivor
+
+**Status:** validation runs complete (2026-09-27; see Results).
+
+**Design** ([`survivor_6_1.py`](survivor_6_1.py); decided 2026-09-27):
+
+- **Whole articles replace the breadth step** (rule `whole_per_question`, Experiment 1):
+  - no breadth nudge;
+  - the first escalation loads the whole kept articles of a question without tables
+    (`whole_article`), then graph neighbors;
+  - the answer reads the whole articles; table questions keep the 5.1 path.
+- **Incomplete evidence is surfaced, not passed along.** This is the synthesis fix of
+  record, parts 2 and 3:
+  - the planner's predicate slip (the operation written as a key, 26 of 35 rejected
+    plans in the 5.1 runs) is repaired, and a plan that still fails gets one corrected
+    retry;
+  - empty or failed computations are labeled INCOMPLETE;
+  - an incomplete final state adds an evidence-status notice to the answer.
+- **Models are arguments:** `--model` (every role) and `--table-model` (the planner
+  only). The judge stays `gpt-5.4-mini`.
+- Every option defaults to the 5.1 behavior, so 5.1 runs as before.
+
+**Verification (zero cost unless noted):**
+
+- 105 unit tests pass (11 new).
+- Replaying the notice signals over the saved 5.1 logs reproduces the security what-if
+  exactly: not ready 10 (validation) and 6 (GT); incomplete computation 20 and 21. The
+  notice would fire on 24 of 100 validation question-runs, 14 of which passed.
+- Smoke test (mini, $0.17):
+  - VAL09: the assessor found the gap, whole articles fixed it, pass, at $0.099 (5.1:
+    $0.027), because the assessor re-reads the whole articles.
+  - VAL05: all 4 computations ran (one after the corrected retry); two came back empty
+    and were labeled incomplete; the answer said so, but the non-empty 2000s
+    computation was wrong (Cause A), fail.
+- **Model smoke tests on VAL05** (one question each; n = 1, so no quality conclusion):
+  - `gpt-5.4-nano`: partial, with 5 assessor and 8 planner calls;
+  - `gpt-5.4`: pass;
+  - `gpt-5.4` as table planner only: fail;
+  - the free `nvidia/nemotron-3-super-120b-a12b:free`: pass, after about 26 minutes
+    for the one question. Its outputs were long (the planner wrote 10.8K output
+    tokens), and free models are rate-limited. A full validation run would take about
+    11 hours, so it runs on the first 5 validation questions only.
+
+**Predictions (recorded before the validation runs).** The runs were delegated, so
+these are computed from Experiment 1, Experiment 2, and the smoke tests:
+
+- **Quality:**
+  - text-only questions near 0.95 (Experiment 1: 0.914 → 0.961 with whole articles);
+  - table questions level with 5.1 or slightly better: the repair recovers rejected
+    plans, but wrong computations that return rows remain;
+  - validation overall 0.87–0.91, within noise of 5.1 (0.880 recorded, 0.860 in
+    Experiment 2).
+- **Cost:** a text-only question ready after round 1 costs less than in 5.1 (no forced
+  round), and one that escalates costs 3–4× (VAL09: $0.099 against $0.027). Overall +10%
+  to +25% at list price, about $0.047–0.054 per question against $0.0431.
+- **Latency:** level with 5.1 on average (about 16 s): one round fewer on text questions
+  that are ready, one heavier round on those that escalate.
+- **Models:**
+  - `gpt-5.4-nano`: about a quarter of the cost, lower quality, and more calls;
+  - `gpt-5.4`: about 3× the cost, higher quality on table questions;
+  - planner only on `gpt-5.4`: about +10% cost;
+  - the free model: zero cost, about 26 minutes per question.
+- Analyzer: cost section added (telemetry is merged per run, several
+  `--experiments-dir` folders are accepted). The console output of the 5.1 and 4.1
+  validation reports is identical to before the change.
+
+**Commands** (from `rag_and_context_engineering/`):
+
+```bash
+# 6.1 survivor, three validation runs (repeat three times)
+python "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/cost_test_starter.py" --survivor 6.1 --gt-set "wikipedia_retrieval_engine/GT/wikipedia_GT_validation_set.csv"
+# model comparison, one run each
+python "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/cost_test_starter.py" --survivor 6.1 --model openai/gpt-5.4-nano
+python "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/cost_test_starter.py" --survivor 6.1 --model openai/gpt-5.4
+python "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/cost_test_starter.py" --survivor 6.1 --table-model openai/gpt-5.4
+# free model: first 5 validation questions only (about 26 minutes per question in the smoke test)
+python "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/cost_test_starter.py" --survivor 6.1 --model nvidia/nemotron-3-super-120b-a12b:free --limit 5 --experiment-name "survivor_6_1__nemotron-3-super-120b-a12b__first5" --output-dir "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/cost_tests/free_model_first5"
+# report: 5.1 history against the 6.1 runs, with the cost section
+python wikipedia_retrieval_engine/utils/analyze_ragas_experiments.py --experiments-dir "wikipedia_retrieval_engine/Capstone Checkpoint 5.1/ragas_validation_GT_5.1" "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/cost_tests/wikipedia_GT_validation_set" "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/cost_tests/free_model_first5" --output "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/ragas_6_1_survivor_vs_5_1.pdf" --title "6.1 survivor against 5.1 (validation set)"
+```
+
+## Results (2026-09-27)
+
+**The runs.** All ran on the validation set, one question at a time, with the same judge:
+
+| Configuration | Result CSVs (`cost_tests/…/experiments/`) | Question-runs | Pass / partial / fail | Quality |
+| --- | --- | ---: | --- | ---: |
+| 6.1, `gpt-5.4-mini`, 3 runs | `dazzling_minsky`, `nifty_mccarthy`, `angry_babbage` | 75 | 60 / 9 / 6 | 0.860 (0.880, 0.800, 0.900) |
+| 6.1, `gpt-5.4` | `nifty_andreessen` | 25 | 24 / 0 / 1 | **0.960** |
+| 6.1, `gpt-5.4` as table planner only | `keen_zuckerberg` | 25 | 21 / 1 / 3 | 0.860 |
+| 6.1, `gpt-5.4-nano` | `tender_hopper` | 24 of 25 | 18 / 1 / 5 | 0.771 |
+| 6.1, free `nemotron-3-super-120b-a12b` | `free_model_first5/…/ecstatic_bezos` | 4 of 5 | 3 / 0 / 1 | 0.750 |
+
+- The baseline is 5.1: 0.880 over the four recorded runs, and 0.860 in Experiment 2
+  (same day, same telemetry).
+- Article recall was 1.000 in every configuration.
+- Two question-runs were lost:
+  - **nano on VAL24:** the context window overflowed. Seven table computations
+    returned large row sets, the assessor's next prompt reached about 510K tokens
+    against a 400K limit, and every later call failed.
+  - **the free model on VAL05:** the provider returned "Service temporarily overloaded"
+    (503), which the rate-limit backoff does not retry.
+- Report: `ragas_6_1_survivor_vs_5_1.pdf` (quality, recall, per-question heatmap, and
+  the new cost section).
+
+**Cost and latency per question** (telemetry; judge excluded):
+
+| Configuration | Calls | Input tokens | List $ | Billed $ | Seconds (mean / median) |
+| --- | ---: | ---: | ---: | ---: | --- |
+| 5.1 (Experiment 2) | 6.72 | 49.0K | 0.0431 | 0.0356 | 16.1 / 14.1 |
+| 6.1, `gpt-5.4-mini` | 5.79 | 49.1K | 0.0422 | **0.0296** | **12.8 / 11.0** |
+| 6.1, `gpt-5.4` | 6.20 | 52.6K | 0.1524 | 0.1292 | 21.6 / 18.0 |
+| 6.1, planner `gpt-5.4` | 5.72 | 51.9K | 0.0487 | 0.0399 | 14.4 / 11.4 |
+| 6.1, `gpt-5.4-nano` | 7.96 | 110.8K | 0.0252 | 0.0163 | 25.9 / 24.8 |
+| 6.1, free (4 questions) | 6.00 | 60.0K | 0 | 0 | 520 / 66 |
+
+**By question type** (6.1 `gpt-5.4-mini` against 5.1 in Experiment 2):
+
+| | Text-only | Table |
+| --- | --- | --- |
+| Question-runs | 39 against 10 | 36 against 15 |
+| Quality | **0.974** against 0.850 | **0.736** against 0.867 |
+| List cost | $0.0367 against $0.0283 (+30%) | $0.0482 against $0.0529 (−9%) |
+| Billed cost | $0.0234 against $0.0229 (+2%) | $0.0363 against $0.0440 |
+| Time | 10.5 s against 14.9 s | 15.3 s against 16.9 s |
+
+**Whole articles (text-only questions).**
+
+- 34 of 39 text-only question-runs were ready after the first assessment. They cost
+  $0.0277 at list price, the same as a 5.1 text question, because the removed nudge
+  round pays for the larger whole-article answer. They took 9.5 s and scored 1.000.
+- The 5 that escalated (VAL15 ×2, VAL17, VAL02, VAL09) cost $0.0979, took 17.5 s, and
+  scored 0.800: the assessor re-read the whole articles.
+- VAL09 went from 0.60 to 1.00 and VAL11 from 0.90 to 1.00. Every text-only question
+  scored 1.00 in all three runs.
+
+**Surfaced gaps and the planner repair (table questions).**
+
+- Rejected table plans fell to 7% (5 of 71 computations), from 10% in Experiment 2 and
+  17% in the 2026-09-23 runs. Empty results were unchanged (14% against 13%); they come
+  from wrong filters, which the repair does not address.
+- The evidence notice fired on 9 of 75 question-runs (5 partial, 2 fail, 2 pass).
+- The table group fell from 0.867 to 0.736, mostly on two questions. Their logs show
+  two different mechanisms:
+  - **VAL24** (Alaska against Tōhoku: dates, magnitudes, durations) fell from 1.00 to
+    0.33. In all four 2026-09-23 runs, failed or empty computations kept the assessor
+    asking for more, and the broadened sections brought the prose facts: pass. In two
+    6.1 runs a single computation succeeded, the assessor declared the evidence ready
+    at once, no broadening followed, and the answer lacked the facts: fail. In 5.1,
+    failed computations were rescuing this question by accident.
+  - **VAL06** (a filter over the deadliest-earthquakes table) fell from 0.80 to 0.33.
+    The computation returned no rows in 5.1 and in 6.1 alike. Under the 6.1 label and
+    notice, the answer never claimed that no event qualifies (the fail mode of
+    Experiment 2's 5.1 run), but it hedged ("I can only answer from the visible article
+    data") and was graded partial, fail, and partial.
+
+**Models.**
+
+- **`gpt-5.4` in every role reached 0.960,** the highest validation quality in the
+  project (text-only 1.000, table 0.909). It fixed VAL05 (Cause A), VAL06, and VAL24,
+  at 3.6× the list cost of `gpt-5.4-mini` (4.4× billed) and 1.7× the time. It is a
+  single run: against the mean of the three mini runs it was better on 6 questions and
+  worse on 1 (VAL02), which is not significant at this size (Wilcoxon p = 0.08).
+- **Its fixes came from two places.** On VAL24 the `gpt-5.4` TOC reviewer did not set
+  `needs_table_reader`: the question compares looked-up values (dates, magnitudes,
+  durations), and the reviewer prompt reserves the flag for computations over table
+  rows. The question took the text path, the assessor asked for more, and the
+  whole-article escalation delivered the prose facts. The mini reviewer set the flag in
+  all three runs, and in two of them the single successful computation ended the loop.
+  The two reviewers also disagreed on VAL14, VAL19, and VAL20 (flagged in two of three
+  mini runs, never by `gpt-5.4`), with little effect on their scores. On VAL05, VAL06,
+  VAL08, and VAL10 both models took the same table path, so those gains come after
+  routing: section choice, the assessor, or the answer.
+- **`gpt-5.4` as table planner only** changed nothing overall (0.860, +15% list cost);
+  only VAL24 improved, through three escalation rounds rather than through routing. The
+  planner alone is not what fixed the table questions.
+- **By role, the answer (43%) and the assessor (41%) carry most of the `gpt-5.4` bill.**
+  The TOC reviewer that made the VAL24 routing decision is 7% ($0.009 per question,
+  against $0.002–0.003 with mini).
+- **`gpt-5.4-nano`** answered every text-only question correctly, fell to 0.577 on table
+  questions, and crashed VAL24. It was 40% cheaper at list price but twice as slow,
+  with 2.3× the input tokens and more calls.
+- **The free model** also answered its text-only questions correctly. It averaged 520 s
+  per question: VAL02 took 32 minutes and produced a 473,208-character answer. It lost
+  one question to a provider error. At zero cost it is not usable for the agent.
+
+**Predictions against results:**
+
+| Prediction | Result |
+| --- | --- |
+| Text-only questions near 0.95 | Held: 0.974 |
+| Table questions level or slightly better | Did not hold: 0.736 against 0.867 (VAL24 control flow, VAL06 hedging) |
+| Validation overall 0.87–0.91 | Slightly below: 0.860, level with Experiment 2 |
+| Cost +10% to +25% at list price | Did not hold: −2% overall (text-only +30%, table −9%); billed −17% |
+| Latency level | Did not hold: −20% (12.8 s against 16.1 s) |
+| `gpt-5.4-nano` about a quarter of the cost, lower quality, more calls | Partly: 0.6× the list cost (it used 2.3× the input tokens); quality 0.771; 7.96 calls |
+| `gpt-5.4` about 3× the cost, better on tables | Held: 3.6×, table 0.909 |
+| Planner only about +10% | Held: +15%, no quality change |
+| Free model: zero cost, about 26 minutes per question | Mostly held: $0; 520 s mean, 32 minutes on VAL02 |
+
+**Reading.**
+
+- **The 6.1 architecture trades table quality for text quality, speed, and billed
+  cost.** At the same overall quality as 5.1 (0.860), it answers text-only questions
+  almost perfectly, is 20% faster and 17% cheaper billed, and tells the user when a
+  computation did not complete. Two table questions regressed.
+- **Fixing one failure changed the control flow.** Failed computations kept the loop
+  going in 5.1, so they also delivered prose that some table questions needed (VAL24).
+  Readiness after a table round has to consider the question's prose requirements, not
+  only the computation.
+- **Surfacing a gap has a quality cost on partially supported answers** (VAL06): the
+  notify-against-quality trade-off, even without refusals.
+- **The remaining table failures are largely model capability,** in two places: the TOC
+  reviewer's routing (`gpt-5.4` did not flag VAL24 as a computation) and the later
+  roles that read table evidence (VAL05, VAL06). A stronger planner alone did not help.
+  The `gpt-5.4` lead comes from one run (p = 0.08 against the three mini runs).
+- **Two new risks, both unbounded consumption (issue E):**
+  - table computations have no cap on the rows they add, so a weak planner can
+    overflow the context window (nano, VAL24);
+  - a free provider can be very slow, overloaded, or produce runaway output.

@@ -2,12 +2,21 @@ from __future__ import annotations
 
 import unittest
 
-from wikipedia_retrieval_engine.wiki_agents.agentic_models import ArticleReview, EvidenceItem
+from unittest.mock import Mock
+
+from wikipedia_retrieval_engine.retrievers.vector import VectorRetriever
+from wikipedia_retrieval_engine.wiki_agents.agentic_models import (
+    ArticleReview,
+    EvidenceAssessment,
+    EvidenceItem,
+)
 from wikipedia_retrieval_engine.wiki_agents.answer_context import (
     WHOLE_ARTICLE_STAGE,
     articles_to_send_whole,
     build_answer_evidence,
+    evidence_status_notice,
 )
+from wikipedia_retrieval_engine.wiki_agents.retrieval_nodes import retrieve_whole_article_evidence
 
 TEXTS = {"Bio.html": "Whole biography.", "Awards.html": "Whole awards list.", "Other.html": "Whole other."}
 
@@ -132,6 +141,80 @@ class BuildAnswerEvidenceTests(unittest.TestCase):
             _ids(evidence),
             [f"{WHOLE_ARTICLE_STAGE}:Bio.html", f"{WHOLE_ARTICLE_STAGE}:Other.html"],
         )
+
+
+def _computation(sufficient: bool, section: str) -> EvidenceItem:
+    return EvidenceItem(
+        evidence_id=f"computed-{section}",
+        source_article="Awards.html",
+        content="rows",
+        evidence_type="table",
+        section_path=["Winners", section],
+        metadata={"retrieval_stage": "table_computation", "table_computation_sufficient": sufficient},
+    )
+
+
+class EvidenceStatusNoticeTests(unittest.TestCase):
+    def test_no_notice_when_ready_and_every_computation_succeeded(self) -> None:
+        state = {
+            "assessment": EvidenceAssessment(ready_to_answer=True, explanation="ok"),
+            "evidence": [_computation(True, "2000s")],
+        }
+
+        self.assertIsNone(evidence_status_notice(state))
+
+    def test_not_ready_lists_the_missing_requirements(self) -> None:
+        state = {
+            "assessment": EvidenceAssessment(
+                ready_to_answer=False,
+                missing_requirements=["Hillary Clinton's role in Obama's administration"],
+                explanation="gap",
+            ),
+            "evidence": [],
+        }
+
+        notice = evidence_status_notice(state)
+
+        self.assertIn("Still missing: Hillary Clinton's role in Obama's administration", notice)
+        self.assertIn("state plainly which parts", notice)
+
+    def test_incomplete_computations_are_named_even_when_ready(self) -> None:
+        state = {
+            "assessment": EvidenceAssessment(ready_to_answer=True, explanation="ok"),
+            "evidence": [_computation(False, "2010s"), _computation(True, "2000s"), _computation(False, "2010s")],
+        }
+
+        notice = evidence_status_notice(state)
+
+        self.assertIn("did not complete: Winners > 2010s", notice)
+        self.assertNotIn("2000s", notice)
+        self.assertNotIn("Still missing", notice)
+
+
+class WholeArticleEscalationTests(unittest.TestCase):
+    def test_text_question_gets_its_whole_articles(self) -> None:
+        state = _state([_review("Bio.html"), _review("Other.html", relevant=False)], [_item("Bio.html", 1), _item("Neighbor.html", 1)])
+        state["retrieval_attempts"] = 1
+        retriever = Mock(spec=VectorRetriever)
+
+        update = retrieve_whole_article_evidence(state, retriever, load_text=TEXTS.get)
+
+        self.assertEqual(_ids(update["evidence"]), [f"{WHOLE_ARTICLE_STAGE}:Bio.html", "Neighbor.html#1"])
+        self.assertEqual(update["retrieval_attempts"], 2)
+        retriever.getArticleSectionsTopK.assert_not_called()
+
+    def test_table_question_keeps_the_5_1_broadening(self) -> None:
+        state = _state([_review("Awards.html", table=True)], [_item("Awards.html", 1)])
+        state["retrieval_attempts"] = 1
+        state["selected_articles"] = ["Awards.html"]
+        retriever = Mock(spec=VectorRetriever)
+        retriever.getArticleSectionsTopK.return_value = []
+
+        update = retrieve_whole_article_evidence(state, retriever, load_text=TEXTS.get)
+
+        retriever.getArticleSectionsTopK.assert_called_once_with("q", "Awards.html", k=8)
+        self.assertEqual(_ids(update["evidence"]), ["Awards.html#1"])
+        self.assertEqual(update["retrieval_attempts"], 2)
 
 
 if __name__ == "__main__":

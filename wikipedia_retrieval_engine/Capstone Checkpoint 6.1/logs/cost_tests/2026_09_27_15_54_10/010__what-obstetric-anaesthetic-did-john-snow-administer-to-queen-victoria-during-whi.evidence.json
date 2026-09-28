@@ -1,0 +1,482 @@
+{
+  "run_id": "2026_09_27_15_54_10",
+  "question_number": 10,
+  "logged_at": "2026-09-27T15:56:36-04:00",
+  "question": "What obstetric anaesthetic did John Snow administer to Queen Victoria, during which two royal births did he administer it, and what broader effect did the article associate with those events?",
+  "final_state": {
+    "question": "What obstetric anaesthetic did John Snow administer to Queen Victoria, during which two royal births did he administer it, and what broader effect did the article associate with those events?",
+    "retrieval_attempts": 1,
+    "table_attempts": 1,
+    "article_candidates": [
+      {
+        "source_article": "John_Snow.html",
+        "representative_chunk": "Article: John Snow\nSection: Career > Obstetric anaesthesia\n\nSnow's work and findings were related to both anaesthesia and the practice of childbirth. His experience with obstetric patients was extensive and used different substances including ether, amylene and chloroform to treat his patients. However, chloroform was the easiest drug to administer. He treated 77 obstetric patients with chloroform. He would apply the chloroform at the second stage of labour and controlled the amount without completely putting the patients to sleep. Once the patient was delivering the baby, they would only feel the first half of the contraction and be on the border of unconsciousness, but not fully there. Regarding administration of the anaesthetic, Snow believed that it would be safer if another person that was not the surgeon applied it.[15]\n\nThe use of chloroform as an anaesthetic for childbirth was seen as unethical by many physicians and even the Church of England. However, on 7 April 1853, Queen Victoria asked John Snow to administer chloroform during the delivery of her eighth child, Leopold. He then repeated the procedure for the delivery of her daughter Beatrice in 1857.[21] This led to wider acceptance of obstetrical anaesthesia.[5]",
+        "representative_chunk_id": "John_Snow.html#section-004-00",
+        "section_title": "Obstetric anaesthesia",
+        "section_path": [
+          "Career",
+          "Obstetric anaesthesia"
+        ],
+        "retrieval_query": "What obstetric anaesthetic did John Snow administer to Queen Victoria, during which two royal births did he administer it, and what broader effect did the article associate with those events?",
+        "discovered_by": "vector",
+        "rank": 1,
+        "raw_score": 0.4115438461303711,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Queen_Victoria.html",
+        "representative_chunk": "Article: Queen Victoria\nSection: Lead\n\nQueen of the United Kingdom from 1837 to 1901\n\n\"Victoria of the United Kingdom\" redirects here. For other uses, see Victoria of the United Kingdom (disambiguation) and Queen Victoria (disambiguation).\n\nVictoria\n\nFormal portrait, 1882\n\nQueen of the United Kingdom\n\nReign20 June 1837 – 22 January 1901\n\nCoronation28 June 1838\n\nPredecessorWilliam IV\n\nSuccessorEdward VII\n\nEmpress of India\n\nReign1 May 1876 – 22 January 1901\n\nImperial Durbar1 January 1877\n\nPredecessorPosition established\n\nSuccessorEdward VII\n\nBornPrincess Alexandrina Victoria of Kent\n\n(1819-05-24)24 May 1819\n\nKensington Palace, London, England\n\nDied22 January 1901(1901-01-22) (aged 81)\n\nOsborne House, Isle of Wight, England\n\nBurial4 February 1901\n\nRoyal Mausoleum, Frogmore, Windsor\n\nSpouse\n\nPrince Albert of Saxe-Coburg and Gotha\n\n​\n\n​\n(m. 1840; died 1861)​\n\nIssue\n\nVictoria, German Empress\n\nEdward VII\n\nAlice, Grand Duchess of Hesse and by Rhine\n\nAlfred, Duke of Saxe-Coburg and Gotha\n\nHelena, Princess Christian of Schleswig-Holstein\n\nPrincess Louise, Duchess of Argyll\n\nPrince Arthur, Duke of Connaught and Strathearn\n\nPrince Leopold, Duke of Albany\n\nBeatrice, Princess Henry of Battenberg\n\nHouseHanover\n\nFatherPrince Edward, Duke of Kent and Strathearn\n\nMotherPrincess Victoria of Saxe-Coburg-Saalfeld\n\nReligionProtestant[a]\n\nSignature\n\nVictoria (Alexandrina Victoria; 24 May 1819 – 22 January 1901) was Queen of the United Kingdom of Great Britain and Ireland from 20 June 1837 until her death in 1901. Her reign of 63 years and 216 days, which was longer than those of any of her predecessors, constituted the Victorian era, a period of industrial, political, scientific, and military change within the United Kingdom marked by a great expansion of the British Empire. In 1876, the British parliament voted to grant her the additional title of Empress of India.\n\nVictoria was the daughter of Prince Edward, Duke of Kent and Strathearn (the fourth son of King George III), and Princess Victoria of Saxe-Coburg-Saalfeld. After the deaths of her father and grandfather in 1820, she was raised under close supervision by her mother and her comptroller, John Conroy. She inherited the throne aged 18 after her father's three elder brothers died without surviving legitimate issue. Victoria attempted privately to influence government policy and ministerial appointments; publicly, she became a national icon who was identified with strict standards of personal morality.\n\nVictoria married her maternal first cousin, Prince Albert of Saxe-Coburg and Gotha, in 1840. Their nine children married into royal and noble families across the continent, earning Victoria the sobriquet \"grandmother of Europe\". After Albert's death in 1861, Victoria plunged into deep mourning and avoided public appearances. As a result of her seclusion, British republicanism temporarily gained strength, but in the latter half of her reign, her popularity recovered. Her Golden and Diamond jubilees were times of public celebration. Victoria died at Osborne House on the Isle of Wight, at the age of 81. The last British monarch of the House of Hanover, she was succeeded by her son Edward VII.",
+        "representative_chunk_id": "Queen_Victoria.html#section-000-00",
+        "section_title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Queen Victoria",
+        "discovered_by": "vector",
+        "rank": 2,
+        "raw_score": 0.5841471552848816,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "1854_Broad_Street_cholera_outbreak.html",
+        "representative_chunk": "Article: 1854 Broad Street cholera outbreak\nSection: Investigation by John Snow\n\nOriginal map by John Snow showing the clusters of cholera cases (indicated by stacked rectangles) in the London epidemic of 1854. The contaminated pump is located at the crossroads of Broad Street and Cambridge Street (now Lexington Street), running into Little Windmill Street.\n\nThe Broad Street outbreak was an effect rather than a cause of the epidemic. Snow's conclusions were not predominantly based on the Broad Street outbreak, as he noted that he hesitated to come to a conclusion based on a population that had predominantly fled the neighbourhood and redistributed itself. He feared throwing off results of the study.[18]\n\nFrom a mathematical perspective, Snow's innovation was focusing on death rates in areas served by two water companies that drew water from the Thames, rather than basing it on data from victims of the Broad Street pump (which drew water from a well). Snow's work also led to a far greater health and safety impact than the removal of the Broad Street pump handle. Deactivating the pump \"hardly made a dent in the citywide cholera epidemic, which went on to claim nearly 3,000 lives\".[24]\n\nSnow was sceptical of the prevailing miasma theory, which held that diseases such as cholera or the Black Death were caused by pollution or a noxious form of \"bad air\". The germ theory was not yet established (Louis Pasteur proposed it in 1861). Snow did not understand the mechanism by which disease was transmitted, but the evidence led him to believe that it was not foul air. Based on the pattern of illness among residents, he hypothesized that cholera was spread by an agent in contaminated water.[8] He first published his theory in 1849, in an essay titled \"On the Mode of Communication of Cholera\".[25] In 1855 he published a second edition, including a more elaborate investigation of the effect of the water supply in the 1854 Soho outbreak.[18]\n\nThe cholera epidemic of 1849–1854 was also related to the water supplied by companies in London at the time. The main players were the Southwark and Vauxhall Waterworks Company and the Lambeth Waterworks Company. Both provided water to their customers drawn from the Thames, which was highly contaminated with visible and invisible products and bacteria. Dr Arthur Hill Hassall examined the filtered water and found it contained animal hair, among other foul substances. He remarked:\n\nIt will be observed, that the water of the companies of the Surrey Side of London, viz., the Southwark, Vauxhall, and Lambeth, is by far the worst of all those who take their supply from the Thames[18]\n\nOther companies, such as the New River Company and Chelsea Waterworks Company, were observed to have better filtered water; few deaths occurred in the neighbourhoods they supplied. They not only obtained their water from cleaner sources than the Thames, but filtered the water and treated it until there were no obvious contaminants.[18]\n\nAs mentioned above, Snow is known for his influence on public health, which arose after his studies of the cholera epidemic. In attempting to figure out who was receiving impure water in each neighbourhood, what is now known as a double-blind experiment fell right into his lap. He describes the conditions of the situation in his essays:\n\nIn many cases a single house has a supply different from that on either side. Each company supplies both rich and poor, both large houses and small; there is no difference in the condition or occupation of the persons receiving the water of the different companies...As there is no difference whatever either in the houses or the people receiving the supply of the two Water Companies, or in any of the physical conditions with which they are surrounded, it is obvious that no experiment could have been devised which would more thoroughly test the effect of water supply on the progress of Cholera than this, which circumstances placed ready made before the observer.\nThe experiment too, was on the grandest scale. No fewer than three hundred thousand people of both sexes, of every age and occupation, and of every rank and station, from gentlefolks down to the very poor, were divided into two groups without their choice, and, in most cases, without their knowledge; one group being supplied water containing the sewage of London, and amongst it, whatever might have come from the cholera patients, the other group having water quite free from such impurity.[18]\n\nSnow went on to study the water contents from each home through a test performed on each sample. In this way, it could be deduced from which supplier the home received its water. He concluded that it was indeed impure water from the big companies that allowed cholera to spread rapidly. He proved this by observing London prisons, finding that cholera ceased there only a few days after switching to cleaner water sources.[18]",
+        "representative_chunk_id": "1854_Broad_Street_cholera_outbreak.html#section-006-00",
+        "section_title": "Investigation by John Snow",
+        "section_path": [
+          "Investigation by John Snow"
+        ],
+        "retrieval_query": "John Snow",
+        "discovered_by": "vector",
+        "rank": 3,
+        "raw_score": 0.7853721976280212,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Elizabeth_II.html",
+        "representative_chunk": "Article: Elizabeth II\nSection: Family tree\n\nFamily of Elizabeth II[324]\n\nQueen VictoriaPrince Albert\n\nKing Edward VIIQueen AlexandraKing George I of GreecePrincess Alice\n\nKing George VQueen MaryLouise, Princess RoyalPrincess VictoriaQueen Maud of NorwayPrince Nicholas of Greece and DenmarkPrincess Victoria of Hesse and by Rhine\n\nKing Edward VIIIKing George VIQueen Elizabeth the Queen MotherMary, Princess RoyalPrince Henry, Duke of GloucesterPrince George, Duke of KentPrincess Marina, Duchess of KentPrince Andrew of Greece and DenmarkPrincess Alice of BattenbergLouis Mountbatten, Earl Mountbatten of Burma\n\nQueen Elizabeth IIPrincess Margaret, Countess of SnowdonPrince Philip, Duke of Edinburgh\n\nKing Charles IIIAnne, Princess RoyalAndrew Mountbatten-WindsorPrince Edward, Duke of Edinburgh\n\nWilliam, Prince of WalesPrince Harry, Duke of SussexPeter PhillipsZara TindallPrincess BeatricePrincess EugenieLady Louise Mountbatten-WindsorJames Mountbatten-Windsor, Earl of Wessex",
+        "representative_chunk_id": "Elizabeth_II.html#section-021-00",
+        "section_title": "Family tree",
+        "section_path": [
+          "Family tree"
+        ],
+        "retrieval_query": "Princess Beatrice of the United Kingdom",
+        "discovered_by": "vector",
+        "rank": 4,
+        "raw_score": 0.9282925128936768,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Anne,_Princess_Royal.html",
+        "representative_chunk": "Article: Anne, Princess Royal\nSection: Lead\n\nBritish princess (born 1950)\n\n\"Princess Anne\" redirects here. For other uses, see Princess Anne (disambiguation).\n\nAnne\n\nPrincess Royal (more)\n\nAnne in 2025\n\nBornPrincess Anne of Edinburgh\n\n(1950-08-15) 15 August 1950 (age 75)\n\nClarence House, London, England\n\nSpouses\n\nMark Phillips\n\n​\n\n​\n(m. 1973; div. 1992)​\n\nSir Timothy Laurence\n\n​\n\n​\n(m. 1992)​\n\nIssue\n\nDetail\n\nPeter Phillips\n\nZara Tindall\n\nNames\n\nAnne Elizabeth Alice Louise[a]\n\nHouseWindsor\n\nFatherPrince Philip, Duke of Edinburgh\n\nMotherElizabeth II\n\nSignature\n\nEducationBenenden School\n\nRoyal family of\n\nthe United Kingdom and the\n\nother Commonwealth realms\n\nThe King\n\nThe Queen\n\nThe Prince of Wales\n\nThe Princess of Wales\n\nPrince George of Wales\n\nPrincess Charlotte of Wales\n\nPrince Louis of Wales\n\nThe Duke of Sussex\n\nThe Duchess of Sussex\n\nPrince Archie of Sussex\n\nPrincess Lilibet of Sussex\n\nThe Princess Royal\n\nThe Duke of Edinburgh\n\nThe Duchess of Edinburgh\n\nPrincess Beatrice\n\nPrincess Eugenie\n\nThe Duke of Gloucester\n\nThe Duchess of Gloucester\n\nThe Duke of Kent\n\nPrincess Alexandra\n\nPrince Michael of Kent\n\nPrincess Michael of Kent\n\nv\n\nt\n\ne\n\nAnne, Princess Royal (Anne Elizabeth Alice Louise; born 15 August 1950), is a member of the British royal family. She is the second child and only daughter of Queen Elizabeth II and Prince Philip, Duke of Edinburgh, and the sister of King Charles III. Born third in the line of succession to the British throne, she is 18th in line as of 2026. She has held the title of Princess Royal since 1987.\n\nBorn at Clarence House, Anne was educated at Benenden School and began carrying out official royal duties in early adulthood. A distinguished equestrian, she won one gold medal at the 1971 and two silver medals at the 1975 European Eventing Championships. In 1976, she became the first member of the British royal family to compete in the Olympic Games. She has been a member of the International Olympic Committee since 1988.\n\nAnne continues to undertake engagements and official duties on behalf of the monarch – she has attended more than 20,000 such events since commencing royal duties in 1968. She presently serves as patron or honorary president of more than 300 organisations, including WISE, Riders for Health, Carers Trust, and Transaid. Her charitable work focuses primarily on sport, science, disability, and health in developing countries. She has been closely associated with Save the Children for over 50 years and has visited numerous projects supported by the organisation worldwide.\n\nIn 1973, Anne married Captain Mark Phillips; the couple separated in 1989 and divorced in 1992. They have two children, Peter Phillips and Zara Tindall. In 1992, she married Commander (now Vice Admiral) Sir Timothy Laurence, whom she met during his service as an equerry to Queen Elizabeth II.",
+        "representative_chunk_id": "Anne,_Princess_Royal.html#section-000-00",
+        "section_title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Princess Beatrice of the United Kingdom",
+        "discovered_by": "vector",
+        "rank": 5,
+        "raw_score": 0.9450873732566833,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Prince_Edward,_Duke_of_Edinburgh.html",
+        "representative_chunk": "Article: Prince Edward, Duke of Edinburgh\nSection: Ancestry\n\nAncestors of Prince Edward, Duke of Edinburgh[124]\n\n8. George I of Greece\n\n4. Prince Andrew of Greece and Denmark\n\n9. Grand Duchess Olga Constantinovna of Russia\n\n2. Prince Philip, Duke of Edinburgh\n\n10. Prince Louis of Battenberg\n\n5. Princess Alice of Battenberg\n\n11. Princess Victoria of Hesse and by Rhine\n\n1. Prince Edward, Duke of Edinburgh\n\n12. George V of the United Kingdom\n\n6. George VI of the United Kingdom\n\n13. Princess Victoria Mary of Teck\n\n3. Elizabeth II of the United Kingdom\n\n14. Claude Bowes-Lyon, 14th Earl of Strathmore and Kinghorne\n\n7. Lady Elizabeth Bowes-Lyon\n\n15. Cecilia Cavendish-Bentinck",
+        "representative_chunk_id": "Prince_Edward,_Duke_of_Edinburgh.html#section-012-00",
+        "section_title": "Ancestry",
+        "section_path": [
+          "Ancestry"
+        ],
+        "retrieval_query": "Prince Leopold, Duke of Albany",
+        "discovered_by": "vector",
+        "rank": 6,
+        "raw_score": 1.0574883222579956,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Belgian_Congo.html",
+        "representative_chunk": "Article: Belgian Congo\nSection: Congo Free State\n\nMain articles: Congo Free State and Atrocities in the Congo Free State\n\nLeopold II, King of the Belgians and de facto owner of the Congo Free State from 1885 to 1908\nChildren mutilated during King Leopold II's rule\n\nUntil the later part of the 19th century, few Europeans had ventured into the Congo Basin. The rainforest, swamps and accompanying malaria and other tropical diseases, such as sleeping sickness, made it a difficult environment for European exploration. In 1876, King Leopold II of Belgium organised the International African Association with the cooperation of the leading African explorers and the support of several European governments for the promotion of the exploration and colonisation of Africa. After Henry Morton Stanley had explored the region in a journey that ended in 1878, Leopold courted the explorer and hired him to help his interests in the region.[13]\n\nLeopold II had been keen to acquire a colony for Belgium even before he ascended to the throne in 1865. The Belgian civil government showed little interest in its monarch's dreams of empire-building. Ambitious and stubborn, Leopold decided to pursue the matter on his own account.\n\nEuropean rivalry in Central Africa led to diplomatic tensions, in particular with regard to the Congo Basin, which no European power had claimed. In November 1884, Otto von Bismarck convened a 14-nation conference (the Berlin Conference) to find a peaceful resolution to the Congo situation. Though the Berlin Conference did not formally approve the territorial claims of the European powers in Central Africa, it did agree on a set of rules to ensure a conflict-free partitioning of the region. The rules recognised (inter alia) the Congo Basin as a free-trade zone. But Leopold II emerged triumphant from the Berlin Conference[14] and his single shareholder \"philanthropic\" organisation received a large share of territory (2,344,000 km2 (905,000 sq mi)) to be organised as the Congo Free State.\n\nThe Congo Free State operated as a corporate state, privately controlled by Leopold II through a non-governmental organisation, the International African Association.[15] The state included the entire area of the present-day Democratic Republic of the Congo, and existed from 1885 until 1908, when the government of Belgium reluctantly annexed the area. Under Leopold II's administration, the Congo Free State became a humanitarian disaster.\n\nThe lack of accurate records makes it difficult to quantify the number of deaths caused by the ruthless exploitation and the lack of immunity to new diseases introduced by contact with European colonists – like the 1889–1890 influenza pandemic, which caused millions of deaths on the European continent, including Prince Baudouin of Belgium, who died in 1891.[16] William Rubinstein wrote: \"More basically, it appears almost certain that the population figures given by Hochschild are inaccurate. There is, of course, no way of ascertaining the population of the Congo before the twentieth century and estimates like 20 million are purely guesses. Most of the interior of the Congo was literally unexplored if not inaccessible.\"[17] Leopold's Force Publique, a private army that terrorised natives to work as forced labour for resource extraction, disrupted local societies and killed and abused natives indiscriminately. The Force Publique also became involved in the Congo–Arab War against African and Arab slavers like Zanzibari/Swahili strongman Tippu Tip.\n\nFollowing the 1904 Casement Report on misdeeds and conditions, European (British included) and US press exposed the conditions in the Congo Free State to the public in the early 1900s. In 1904 Leopold II was forced to allow an international parliamentary commission of inquiry entry to the Congo Free State. By 1908, public pressure and diplomatic manoeuvres led to the end of Leopold II's personal rule and to the annexation of the Congo as a colony of Belgium, known as the \"Belgian Congo\".",
+        "representative_chunk_id": "Belgian_Congo.html#section-001-00",
+        "section_title": "Congo Free State",
+        "section_path": [
+          "Congo Free State"
+        ],
+        "retrieval_query": "Prince Leopold, Duke of Albany",
+        "discovered_by": "vector",
+        "rank": 7,
+        "raw_score": 1.0765947103500366,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      }
+    ],
+    "article_reviews": [
+      {
+        "source_article": "John_Snow.html",
+        "relevant": true,
+        "reason": "This is the primary article about John Snow and likely contains the obstetric anaesthesia and royal birth details needed.",
+        "relevant_sections": [
+          "Anaesthesia",
+          "Obstetric anaesthesia",
+          "Legacy and honours"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Queen_Victoria.html",
+        "relevant": true,
+        "reason": "Queen Victoria's article is a plausible source for the births and may mention John Snow's administration of anaesthetic and its significance.",
+        "relevant_sections": [
+          "Marriage and public life",
+          "Declining health and death",
+          "Legacy",
+          "Descendants and haemophilia"
+        ],
+        "relevant_table_names": [
+          "table-001-a39a552c85"
+        ],
+        "relevant_table_ids": [
+          "d3ddcd84a926d38df5d1454e"
+        ],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "1854_Broad_Street_cholera_outbreak.html",
+        "relevant": false,
+        "reason": "This article is about cholera epidemiology, not the royal obstetric anaesthetic events asked about.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Elizabeth_II.html",
+        "relevant": false,
+        "reason": "This article is about Elizabeth II and is not the source for John Snow's administration of obstetric anaesthetic to Queen Victoria.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Anne,_Princess_Royal.html",
+        "relevant": false,
+        "reason": "This article concerns Anne, Princess Royal and is unrelated to John Snow or Queen Victoria's births.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Prince_Edward,_Duke_of_Edinburgh.html",
+        "relevant": false,
+        "reason": "This article concerns Prince Edward and is unrelated to John Snow or Queen Victoria's births.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Belgian_Congo.html",
+        "relevant": false,
+        "reason": "This article is unrelated to the historical medical and royal birth question.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      }
+    ],
+    "selected_articles": [
+      "John_Snow.html",
+      "Queen_Victoria.html"
+    ],
+    "rejected_articles": [
+      "1854_Broad_Street_cholera_outbreak.html",
+      "Elizabeth_II.html",
+      "Anne,_Princess_Royal.html",
+      "Prince_Edward,_Duke_of_Edinburgh.html",
+      "Belgian_Congo.html"
+    ],
+    "evidence": [
+      {
+        "evidence_id": "John_Snow.html#section-003-00",
+        "source_article": "John_Snow.html",
+        "content": "Article: John Snow\nSection: Career > Anaesthesia\n\nPortrait of John Snow by Thomas Jones Barker (detail), 1847, private collection\n\nSnow's interest in anaesthesia and breathing was evident from 1841 and beginning in 1843, he experimented with ether to see its effects on respiration.[5] Only a year after ether was introduced to Britain, in 1847, he published a short work titled, On the Inhalation of the Vapor of Ether, which served as a guide for its use. At the same time, he worked on various papers that reported his clinical experience with anaesthesia, noting reactions, procedures and experiments. Within two years of ether being introduced, Snow was the most accomplished anaesthetist in Britain. London's principal surgeons suddenly wanted his assistance.[5]\n\nAs well as ether, John Snow studied chloroform, which was introduced in 1847 by James Young Simpson, a Scottish obstetrician. He realised that chloroform was much more potent and required more attention and precision when administering it. Snow first realised this with Hannah Greener, a 15-year-old patient who died on 28 January 1848 after a surgical procedure that required the cutting of her toenail. She was administered chloroform by covering her face with a cloth dipped in the substance. However, she quickly lost pulse and died. After investigating her death and a couple of deaths that followed, he realized that chloroform had to be administered carefully and published his findings in a letter to The Lancet.[5]\n\nJohn Snow was one of the first physicians to study and calculate dosages for the use of ether and chloroform as surgical anaesthetics, allowing patients to undergo surgical and obstetric procedures without the distress and pain they would otherwise experience. He designed the apparatus to safely administer ether to the patients and also designed a mask to administer chloroform.[18] Snow published an article on ether in 1847 entitled On the Inhalation of the Vapor of Ether.[19] A longer version entitled On Chloroform and Other Anaesthetics and Their Action and Administration was published posthumously in 1858.[20]\n\nAlthough he thoroughly worked with ether as an anaesthetic, he never attempted to patent it; instead, he continued to work and publish written works on his observations and research.",
+        "evidence_type": "text",
+        "title": "Anaesthesia",
+        "section_path": [
+          "Career",
+          "Anaesthesia"
+        ],
+        "retrieval_query": "What obstetric anaesthetic did John Snow administer to Queen Victoria, during which two royal births did he administer it, and what broader effect did the article associate with those events?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.6367001533508301,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Anaesthesia",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": []
+        }
+      },
+      {
+        "evidence_id": "John_Snow.html#section-004-00",
+        "source_article": "John_Snow.html",
+        "content": "Article: John Snow\nSection: Career > Obstetric anaesthesia\n\nSnow's work and findings were related to both anaesthesia and the practice of childbirth. His experience with obstetric patients was extensive and used different substances including ether, amylene and chloroform to treat his patients. However, chloroform was the easiest drug to administer. He treated 77 obstetric patients with chloroform. He would apply the chloroform at the second stage of labour and controlled the amount without completely putting the patients to sleep. Once the patient was delivering the baby, they would only feel the first half of the contraction and be on the border of unconsciousness, but not fully there. Regarding administration of the anaesthetic, Snow believed that it would be safer if another person that was not the surgeon applied it.[15]\n\nThe use of chloroform as an anaesthetic for childbirth was seen as unethical by many physicians and even the Church of England. However, on 7 April 1853, Queen Victoria asked John Snow to administer chloroform during the delivery of her eighth child, Leopold. He then repeated the procedure for the delivery of her daughter Beatrice in 1857.[21] This led to wider acceptance of obstetrical anaesthesia.[5]",
+        "evidence_type": "text",
+        "title": "Obstetric anaesthesia",
+        "section_path": [
+          "Career",
+          "Obstetric anaesthesia"
+        ],
+        "retrieval_query": "What obstetric anaesthetic did John Snow administer to Queen Victoria, during which two royal births did he administer it, and what broader effect did the article associate with those events?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.4115438461303711,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Obstetric anaesthesia",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": []
+        }
+      },
+      {
+        "evidence_id": "John_Snow.html#section-008-00",
+        "source_article": "John_Snow.html",
+        "content": "Article: John Snow\nSection: Legacy and honours\n\nFunerary monument, Brompton Cemetery, London\nBlue plaque erected by the Royal Society of Chemistry\n\nA plaque commemorates Snow and his 1854 study in the place of the water pump on Broad Street (now Broadwick Street). It shows a water pump with its handle removed. The spot where the pump stood is covered with red granite.\n\nA public house nearby was named the \"John Snow\" in his honour.[41]\n\nThe John Snow Society is named in his honour, and the society regularly meets at The John Snow pub. An annual Pumphandle Lecture is delivered each September by a leading authority in contemporary public health.\n\nHis grave in Brompton Cemetery, London, is marked by a funerary monument.[42]\n\nIn York a blue plaque on the west end of the Park Inn, a hotel in North Street, commemorates John Snow.\n\nTogether with fellow pioneer of anaesthesia Joseph Thomas Clover, Snow is one of the heraldic supporters of the Royal College of Anaesthetists.[43]\n\nThe Association of Anaesthetists of Great Britain and Ireland awards The John Snow Award, a bursary for undergraduate medical students undertaking research in the field of anaesthesia.\n\nDespite reports that Snow was awarded a prize by the Institut de France for his 1849 essay on cholera,[44] a 1950 letter from the Institut indicates that he received only a nomination for it.[45]\n\nIn 1978 a public health research and consulting firm, John Snow, Inc, was founded.[citation needed]\n\nIn 2001 the John Snow College was founded on the University of Durham's Queen's Campus in Stockton-on-Tees.[46]\n\nIn 2003 John Snow was voted by readers in the United Kingdom of 'Hospital Doctor' magazine as 'the greatest doctor of all time'.[47]\n\nIn 2009, the John Snow lecture theatre was opened by Anne, Princess Royal, at the London School of Hygiene & Tropical Medicine.[citation needed]\n\nIn 2013 The Lancet printed a correction of its brief obituary of Snow, originally published in 1858: \"The journal accepts that some readers may wrongly have inferred that The Lancet failed to recognise Dr Snow's remarkable achievements in the field of epidemiology and, in particular, his visionary work in deducing the mode of transmission of epidemic cholera.\"[48]\n\nIn 2016, Katherine Tansley published a fictionalised account based on Snow's activities, in her historical novel The Doctor of Broad Street (Troubadour Books).\n\nIn 2017 York Civic Trust erected a memorial to John Snow in the form of a pump with its handle removed, a blue plaque and an interpretation board, in North Street Gardens, York, close to his birthplace.[49]",
+        "evidence_type": "text",
+        "title": "Legacy and honours",
+        "section_path": [
+          "Legacy and honours"
+        ],
+        "retrieval_query": "What obstetric anaesthetic did John Snow administer to Queen Victoria, during which two royal births did he administer it, and what broader effect did the article associate with those events?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.8860317468643188,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Legacy and honours",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": []
+        }
+      },
+      {
+        "evidence_id": "Queen_Victoria.html#section-004-00",
+        "source_article": "Queen_Victoria.html",
+        "content": "Article: Queen Victoria\nSection: Marriage and public life\n\nSee also: Wedding of Queen Victoria and Prince Albert and Wedding dress of Queen Victoria\n\nThe Marriage of Queen Victoria, painted by George Hayter\n\nAlthough Victoria was now queen, as an unmarried young woman she was required by social convention to live with her mother, despite their differences over the Kensington System and her mother's continued reliance on Conroy.[52] The duchess was consigned to a remote apartment in Buckingham Palace, and Victoria often refused to see her.[53] When Victoria complained to Melbourne that her mother's proximity promised \"torment for many years\", Melbourne sympathised but said it could be avoided by marriage, which Victoria called a \"schocking [sic] alternative\".[54] Victoria showed interest in Albert's education for the future role he would have to play as her husband, but she resisted attempts to rush her into wedlock.[55]\n\nVictoria continued to praise Albert following his second visit in October 1839. They felt mutual affection and the Queen proposed to him on 15 October 1839, just five days after he had arrived at Windsor.[56] They were married on 10 February 1840, in the Chapel Royal of St James's Palace, London. Victoria was love-struck. She spent the evening after their wedding lying down with a headache, but wrote ecstatically in her diary:\n\nI NEVER, NEVER spent such an evening!!! MY DEAREST DEAREST DEAR Albert ... his excessive love & affection gave me feelings of heavenly love & happiness I never could have hoped to have felt before! He clasped me in his arms, & we kissed each other again & again! His beauty, his sweetness & gentleness—really how can I ever be thankful enough to have such a Husband! ... to be called by names of tenderness, I have never yet heard used to me before—was bliss beyond belief! Oh! This was the happiest day of my life![57]\n\nAlbert became an important political adviser as well as the Queen's companion, replacing Melbourne as the dominant influential figure in the first half of her life.[58] Victoria's mother was evicted from the palace, to Ingestre House in Belgrave Square. After the death of Victoria's aunt Princess Augusta in 1840, the duchess was given both Clarence House and Frogmore House.[59] Through Albert's mediation, relations between mother and daughter slowly improved.[60]\n\nContemporary lithograph of Edward Oxford's attempt to assassinate Victoria, 1840\n\nDuring Victoria's first pregnancy in 1840, in the first few months of the marriage, 18-year-old Edward Oxford attempted to assassinate her while she was riding in a carriage with Prince Albert on her way to visit her mother. Oxford fired twice, but either both bullets missed or, as he later claimed, the guns had no shot.[61] He was tried for high treason, found not guilty by reason of insanity, committed to an insane asylum indefinitely, and later sent to live in Australia.[62] In the immediate aftermath of the attack, Victoria's popularity soared, mitigating residual discontent over the Hastings affair and the bedchamber crisis.[63] Her daughter, also named Victoria, was born on 21 November 1840. The Queen hated being pregnant,[64] viewed breast-feeding with disgust,[65] and thought newborn babies were ugly.[66] Nevertheless, over the following seventeen years, she and Albert had a further eight children: Albert Edward, Alice, Alfred, Helena, Louise, Arthur, Leopold and Beatrice.[67]\n\nThe household was largely run by Victoria's childhood governess, Baroness Louise Lehzen from Hanover. Lehzen had been a formative influence on Victoria[68] and had supported her against the Kensington System.[69] Albert, however, thought that Lehzen was incompetent and that her mismanagement threatened his daughter Victoria's health. After a furious row between Victoria and Albert over the issue, Lehzen was pensioned off in 1842, and Victoria's close relationship with her ended.[70]\n\nOn 29 May 1842, Victoria was riding in a carriage along The Mall, London, when John Francis aimed a pistol at her, but the gun did not fire. The assailant escaped; the following day, Victoria drove the same route, though faster and with a greater escort, in a deliberate attempt to bait Francis into taking a second aim and catch him in the act. As expected, Francis shot at her, but he was seized by plainclothes policemen, and convicted of high treason. On 3 July, two days after Francis's death sentence was commuted to transportation for life, John William Bean also tried to fire a pistol at the Queen, but it was loaded only with paper and tobacco and had too little charge.[71] Edward Oxford felt that the attempts were encouraged by his acquittal in 1840.[72] Bean was sentenced to 18 months in jail.[72] In a similar attack in 1849, unemployed Irishman William Hamilton fired a powder-filled pistol at Victoria's carriage as it passed along Constitution Hill, London.[73] In 1850, the Queen did sustain injury when she was assaulted by a possibly insane ex-army officer, Robert Pate. As Victoria was riding in a carriage, Pate struck her with his cane, crushing her bonnet and bruising her forehead. Both Hamilton and Pate were sentenced to seven years' transportation.[74]\n\nPortrait by Franz Xaver Winterhalter, 1843\n\nMelbourne's support in the House of Commons weakened through the early years of Victoria's reign, and in the 1841 general election the Whigs were defeated. Peel became prime minister, and the ladies of the bedchamber most associated with the Whigs were replaced.[75] In 1845, Ireland was hit by a potato blight.[76] In the next four years, over a million Irish people died and another million emigrated in what became known as the Great Famine.[77] In Ireland, Victoria was labelled \"The Famine Queen\".[78][79] In January 1847 she personally donated £2,000 (equivalent to between £230,000 and £8.5 million in 2022)[80] to the British Relief Association, more than any other individual famine relief donor,[81] and supported the Maynooth Grant to a Roman Catholic seminary in Ireland, despite Protestant opposition.[82] The story that she donated only £5 in aid to the Irish, and on the same day gave the same amount to Battersea Dogs Home, was a myth generated towards the end of the 19th century.[83] By 1846, Peel's ministry faced a crisis involving the repeal of the Corn Laws. Many Tories—by then known also as Conservatives—were opposed to the repeal, but Peel, some Tories (the free-trade oriented liberal conservative \"Peelites\"), most Whigs and Victoria supported it. Peel resigned in 1846, after the repeal narrowly passed, and was replaced by Lord John Russell.[84]\n\nVictoria's British prime ministers\n\nYear\n\nPrime Minister (party)\n\n1835\n\nViscount Melbourne (Whig)\n\n1841\n\nSir Robert Peel (Conservative)\n\n1846\n\nLord John Russell (Whig)\n\n1852 (Feb.)\n\nEarl of Derby (Conservative)\n\n1852 (Dec.)\n\nEarl of Aberdeen (Peelite)\n\n1855\n\nViscount Palmerston (Liberal)\n\n1858\n\nEarl of Derby (Conservative)\n\n1859\n\nViscount Palmerston (Liberal)\n\n1865\n\nLord John Russell\n\nas Earl Russell (Liberal)\n\n1866\n\nEarl of Derby (Conservative)\n\n1868 (Feb.)\n\nBenjamin Disraeli (Cons.)\n\n1868 (Dec.)\n\nWilliam Gladstone (Liberal)\n\n1874\n\nBenjamin Disraeli\n\nas Lord Beaconsfield (Cons.)\n\n1880\n\nWilliam Gladstone (Liberal)\n\n1885\n\nMarquess of Salisbury (Cons.)\n\n1886 (Feb.)\n\nWilliam Gladstone (Liberal)\n\n1886 (July)\n\nMarquess of Salisbury (Cons.)\n\n1892\n\nWilliam Gladstone (Liberal)\n\n1894\n\nEarl of Rosebery (Liberal)\n\n1895\n\nMarquess of Salisbury (Cons.)\n\nSee List of prime ministers of Queen Victoria\n\nfor details of her British and overseas premiers\n\nInternationally, Victoria took a keen interest in the improvement of relations between France and Britain.[85] She made and hosted several visits between the British royal family and the House of Orleans, who were related by marriage through the Coburgs. In 1843 and 1845, she and Albert stayed with King Louis Philippe I at Château d'Eu in Normandy; she was the first British or English monarch to visit a French monarch since the meeting of Henry VIII of England and Francis I of France on the Field of the Cloth of Gold in 1520.[86] When Louis Philippe made a reciprocal trip in 1844, he became the first French king to visit a British sovereign.[87] Louis Philippe was deposed in the revolutions of 1848, and fled to exile in England.[88] At the height of a revolutionary scare in the United Kingdom in April 1848, Victoria and her family left London for the greater safety of Osborne House,[89] a private estate on the Isle of Wight that they had purchased in 1845 and redeveloped.[90] Demonstrations by Chartists and Irish nationalists failed to attract widespread support, and the scare died down without any major disturbances.[91] Victoria's first visit to Ireland in 1849 was a public relations success, but it had no lasting impact or effect on the growth of Irish nationalism.[92]\n\nRussell's ministry, though Whig, was not favoured by the Queen.[93] She found particularly offensive the Foreign Secretary, Lord Palmerston, who often acted without consulting the cabinet, the prime minister, or the Queen.[94] Victoria complained to Russell that Palmerston sent official dispatches to foreign leaders without her knowledge, but Palmerston was retained in office and continued to act on his own initiative, despite her repeated remonstrances. It was only in 1851 that Palmerston was removed after he announced the British government's approval of President Louis-Napoleon Bonaparte's coup in France without consulting the prime minister.[95] The following year, President Bonaparte was declared Emperor Napoleon III, by which time Russell's administration had been replaced by a short-lived minority government led by Lord Derby.[96]\n\nAlbert, Victoria and their nine children, 1857. Left to right: Alice, Arthur, Prince Albert, Albert Edward, Leopold, Louise, Queen Victoria with Beatrice, Alfred, Victoria, and Helena",
+        "evidence_type": "text",
+        "title": "Marriage and public life",
+        "section_path": [
+          "Marriage and public life"
+        ],
+        "retrieval_query": "What obstetric anaesthetic did John Snow administer to Queen Victoria, during which two royal births did he administer it, and what broader effect did the article associate with those events?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 1.0616456270217896,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Marriage and public life",
+          "needs_table_reader": false,
+          "flagged_tables": [
+            "table-001-a39a552c85"
+          ],
+          "flagged_table_ids": [
+            "d3ddcd84a926d38df5d1454e"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Queen_Victoria.html#section-008-00",
+        "source_article": "Queen_Victoria.html",
+        "content": "Article: Queen Victoria\nSection: Declining health and death\n\nMain article: Death and state funeral of Queen Victoria\n\nPortrait by Heinrich von Angeli, 1899\nQueen Victoria in Dublin, 1900\n\nVictoria regularly holidayed in mainland Europe. In 1889, during a stay in Biarritz, she became the first reigning monarch from Britain to visit Spain by briefly crossing the border.[196] By April 1900, the Boer War was so unpopular in mainland Europe that her annual trip to France seemed inadvisable. Instead, the Queen went to Ireland for the first time since 1861, in part to acknowledge the contribution of Irish regiments to the South African war.[197]\n\nIn July 1900, Victoria's second son, Alfred (\"Affie\"), died. \"Oh, God! My poor darling Affie gone too\", she wrote in her journal. \"It is a horrible year, nothing but sadness & horrors of one kind & another.\"[198]\n\nFollowing a custom she maintained throughout her widowhood, Victoria spent the Christmas of 1900 at Osborne House on the Isle of Wight. Rheumatism in her legs had rendered her disabled, and her eyesight was clouded by cataracts.[199] Through early January, she felt \"weak and unwell\",[200] and by mid-January she was \"drowsy [...] dazed, [and] confused\".[201] Her favourite pet Pomeranian, Turi, was laid on her bed as a last request.[202] Victoria died at 6:30 pm on 22 January 1901, aged 81, in the presence of her eldest son, Albert Edward, and grandson, Wilhelm II. Albert Edward succeeded immediately as Edward VII.[203]\n\nIn 1897, Victoria had written instructions for her funeral, which was to be military as befitting a soldier's daughter and the head of the army,[67] and white instead of black.[204] On 25 January, Edward VII and Wilhelm II, together with Prince Arthur, helped lift her body into the coffin.[205] She was dressed in a white dress and her wedding veil.[206] An array of mementos commemorating her extended family, friends and servants were laid in the coffin with her, at her request, by her physician and dressers. One of Albert's dressing gowns was placed by her side, with a plaster cast of his hand, while a lock of John Brown's hair, along with a picture of him, was placed in her left hand concealed from the view of the family by a carefully positioned bunch of flowers.[67][207] Items of jewellery placed on Victoria included the wedding ring of Brown's mother, which Brown gave Victoria in 1883.[67] Her funeral took place on Saturday, 2 February, in St George's Chapel, Windsor Castle. Following two days of lying-in-state, she was interred beside Prince Albert in the Royal Mausoleum, Frogmore, within Home Park, Windsor.[208]\n\nWith a reign of 63 years, seven months, and two days, Victoria was the longest-reigning British monarch and the longest-reigning queen regnant in world history, until her great-great-granddaughter Elizabeth II surpassed her on 9 September 2015.[209] She was the last monarch of Britain from the House of Hanover; her son Edward VII belonged to her husband's House of Saxe-Coburg and Gotha.[210]",
+        "evidence_type": "text",
+        "title": "Declining health and death",
+        "section_path": [
+          "Declining health and death"
+        ],
+        "retrieval_query": "What obstetric anaesthetic did John Snow administer to Queen Victoria, during which two royal births did he administer it, and what broader effect did the article associate with those events?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 1.1370115280151367,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Declining health and death",
+          "needs_table_reader": false,
+          "flagged_tables": [
+            "table-001-a39a552c85"
+          ],
+          "flagged_table_ids": [
+            "d3ddcd84a926d38df5d1454e"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Queen_Victoria.html#section-010-00",
+        "source_article": "Queen_Victoria.html",
+        "content": "Article: Queen Victoria\nSection: Legacy > Descendants and haemophilia\n\nThe Victoria Memorial in Kolkata, India\n\nVictoria's links with Europe's royal families earned her the nickname \"the grandmother of Europe\".[229] Of the grandchildren of Victoria and Albert, 34 survived to adulthood.[67]\n\nVictoria's youngest son, Leopold, was affected by the blood-clotting disease haemophilia B and at least two of her five daughters, Alice and Beatrice, were carriers. Royal haemophiliacs descended from Victoria included her great-grandsons, Alexei Nikolaevich, Tsarevich of Russia; Alfonso, Prince of Asturias; and Infante Gonzalo of Spain.[230] The presence of the disease in Victoria's descendants, but not in her ancestors, led to modern speculation that her true father was not the Duke of Kent, but a haemophiliac.[231] There is no documentary evidence of a haemophiliac in connection with Victoria's mother, and as male carriers always had the disease, even if such a man had existed he would have been seriously ill.[232] It is more likely that the mutation arose spontaneously because Victoria's father was over 50 at the time of her conception and haemophilia arises more frequently in the children of older fathers.[233] Spontaneous mutations account for about a third of cases.[234]",
+        "evidence_type": "text",
+        "title": "Descendants and haemophilia",
+        "section_path": [
+          "Legacy",
+          "Descendants and haemophilia"
+        ],
+        "retrieval_query": "What obstetric anaesthetic did John Snow administer to Queen Victoria, during which two royal births did he administer it, and what broader effect did the article associate with those events?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 1.0918967723846436,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Descendants and haemophilia",
+          "needs_table_reader": false,
+          "flagged_tables": [
+            "table-001-a39a552c85"
+          ],
+          "flagged_table_ids": [
+            "d3ddcd84a926d38df5d1454e"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Queen_Victoria.html#table-001-a39a552c85",
+        "source_article": "Queen_Victoria.html",
+        "content": "Structured table (JSON rows, one object per row — read values directly from these rows; do not rely on prior knowledge).\n{\"artifact_id\": \"d3ddcd84a926d38df5d1454e\", \"table_id\": \"table-001-a39a552c85\", \"caption\": null, \"section\": \"Family > Issue\", \"columns\": [\"Name\", \"Birth\", \"Death\", \"Spouse and children\"], \"legends\": [], \"rows\": [{\"row_number\": 1, \"values\": {\"Name\": \"Victoria, Princess Royal\", \"Birth\": \"1840 21 Nov\", \"Death\": \"1901 5 August\", \"Spouse and children\": \"Married 1858, Frederick , later German Emperor and King of Prussia (1831–1888); 4 sons (including Wilhelm II, German Emperor ), 4 daughters (including Queen Sophia of Greece )\"}, \"semantic_signals\": {\"Name\": {\"source_cell\": \"table-001-a39a552c85:r2:c1\", \"display_text\": \"Victoria, Princess Royal\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fff8f8\", \"sort_value\": null, \"legend_matches\": []}, \"Birth\": {\"source_cell\": \"table-001-a39a552c85:r2:c2\", \"display_text\": \"1840 21 Nov\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fff8f8\", \"sort_value\": null, \"legend_matches\": []}, \"Death\": {\"source_cell\": \"table-001-a39a552c85:r2:c3\", \"display_text\": \"1901 5 August\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fff8f8\", \"sort_value\": null, \"legend_matches\": []}, \"Spouse and children\": {\"source_cell\": \"table-001-a39a552c85:r2:c4\", \"display_text\": \"Married 1858, Frederick , later German Emperor and King of Prussia (1831–1888); 4 sons (including Wilhelm II, German Emperor ), 4 daughters (including Queen Sophia of Greece )\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#f8f8ff\", \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 2, \"values\": {\"Name\": \"Edward VII\", \"Birth\": \"1841 9 Nov\", \"Death\": \"1910 6 May\", \"Spouse and children\": \"Married 1863, Princess Alexandra of Denmark (1844–1925); 3 sons (including King George V of the United Kingdom), 3 daughters (including Queen Maud of Norway )\"}, \"semantic_signals\": {\"Name\": {\"source_cell\": \"table-001-a39a552c85:r3:c1\", \"display_text\": \"Edward VII\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#f8f8ff\", \"sort_value\": null, \"legend_matches\": []}, \"Birth\": {\"source_cell\": \"table-001-a39a552c85:r3:c2\", \"display_text\": \"1841 9 Nov\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#f8f8ff\", \"sort_value\": null, \"legend_matches\": []}, \"Death\": {\"source_cell\": \"table-001-a39a552c85:r3:c3\", \"display_text\": \"1910 6 May\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#f8f8ff\", \"sort_value\": null, \"legend_matches\": []}, \"Spouse and children\": {\"source_cell\": \"table-001-a39a552c85:r3:c4\", \"display_text\": \"Married 1863, Princess Alexandra of Denmark (1844–1925); 3 sons (including King George V of the United Kingdom), 3 daughters (including Queen Maud of Norway )\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fff8f8\", \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 3, \"values\": {\"Name\": \"Princess Alice\", \"Birth\": \"1843 25 April\", \"Death\": \"1878 14 Dec\", \"Spouse and children\": \"Married 1862, Louis IV, Grand Duke of Hesse and by Rhine (1837–1892); 2 sons, 5 daughters (including Empress Alexandra Feodorovna of Russia )\"}, \"semantic_signals\": {\"Name\": {\"source_cell\": \"table-001-a39a552c85:r4:c1\", \"display_text\": \"Princess Alice\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fff8f8\", \"sort_value\": null, \"legend_matches\": []}, \"Birth\": {\"source_cell\": \"table-001-a39a552c85:r4:c2\", \"display_text\": \"1843 25 April\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fff8f8\", \"sort_value\": null, \"legend_matches\": []}, \"Death\": {\"source_cell\": \"table-001-a39a552c85:r4:c3\", \"display_text\": \"1878 14 Dec\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fff8f8\", \"sort_value\": null, \"legend_matches\": []}, \"Spouse and children\": {\"source_cell\": \"table-001-a39a552c85:r4:c4\", \"display_text\": \"Married 1862, Louis IV, Grand Duke of Hesse and by Rhine (1837–1892); 2 sons, 5 daughters (including Empress Alexandra Feodorovna of Russia )\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#f8f8ff\", \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 4, \"values\": {\"Name\": \"Alfred, Duke of Saxe-Coburg and Gotha\", \"Birth\": \"1844 6 August\", \"Death\": \"1900 31 July\", \"Spouse and children\": \"Married 1874, Grand Duchess Maria Alexandrovna of Russia (1853–1920); 2 sons (1 stillborn ), 4 daughters (including Queen Marie of Romania )\"}, \"semantic_signals\": {\"Name\": {\"source_cell\": \"table-001-a39a552c85:r5:c1\", \"display_text\": \"Alfred, Duke of Saxe-Coburg and Gotha\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#f8f8ff\", \"sort_value\": null, \"legend_matches\": []}, \"Birth\": {\"source_cell\": \"table-001-a39a552c85:r5:c2\", \"display_text\": \"1844 6 August\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#f8f8ff\", \"sort_value\": null, \"legend_matches\": []}, \"Death\": {\"source_cell\": \"table-001-a39a552c85:r5:c3\", \"display_text\": \"1900 31 July\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#f8f8ff\", \"sort_value\": null, \"legend_matches\": []}, \"Spouse and children\": {\"source_cell\": \"table-001-a39a552c85:r5:c4\", \"display_text\": \"Married 1874, Grand Duchess Maria Alexandrovna of Russia (1853–1920); 2 sons (1 stillborn ), 4 daughters (including Queen Marie of Romania )\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#fff8f8\", \"sort_value\": null, \"legend_matches\": []}}}]}\n(NOTE: showing 4 of 9 rows to fit the context budget; the deterministic table executor reads the full table.)",
+        "evidence_type": "table",
+        "title": "table-001-a39a552c85",
+        "section_path": [
+          "Family",
+          "Issue"
+        ],
+        "retrieval_query": "What obstetric anaesthetic did John Snow administer to Queen Victoria, during which two royal births did he administer it, and what broader effect did the article associate with those events?",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "d3ddcd84a926d38df5d1454e",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_id": "table-001-a39a552c85",
+          "n_rows": 9,
+          "rows_rendered": 9,
+          "needs_table_reader": false
+        }
+      },
+      {
+        "evidence_id": "Queen_Victoria.html#table-001-a39a552c85#computed-table-r1-1-0b59f3b35074",
+        "source_article": "Queen_Victoria.html",
+        "content": "Deterministic table-computation result. Use the computed rows/calculation below rather than recomputing them.\n{\n  \"table_request\": {\n    \"missing_fact\": \"What obstetric anaesthetic did John Snow administer to Queen Victoria, during which two royal births did he administer it, and what broader effect did the article associate with those events?\",\n    \"source_article\": \"Queen_Victoria.html\",\n    \"table_id\": \"d3ddcd84a926d38df5d1454e\",\n    \"expected_caption\": null,\n    \"operation\": \"auto\",\n    \"columns_needed\": [],\n    \"row_filters\": {},\n    \"comparison_key\": null\n  },\n  \"query_plan\": {\n    \"artifact_id\": \"d3ddcd84a926d38df5d1454e\",\n    \"operation\": \"lookup\",\n    \"selected_columns\": [\n      \"Name\",\n      \"Spouse and children\"\n    ],\n    \"filters\": {},\n    \"predicates\": [\n      {\n        \"column\": \"Spouse and children\",\n        \"op\": \"contains\",\n        \"value\": \"Queen Victoria\",\n        \"value2\": null\n      }\n    ],\n    \"group_by\": [],\n    \"calculation\": null,\n    \"calculation_column\": null,\n    \"sort_column\": null,\n    \"sort_direction\": null,\n    \"limit\": 10\n  },\n  \"result\": {\n    \"request_id\": \"table-r1-1-0b59f3b35074\",\n    \"artifact_id\": \"d3ddcd84a926d38df5d1454e\",\n    \"result_rows\": [\n      {\n        \"Name\": \"Princess Beatrice\",\n        \"Spouse and children\": \"Married 1885, Prince Henry of Battenberg (1858–1896); 3 sons, 1 daughter ( Queen Victoria Eugenie of Spain )\"\n      }\n    ],\n    \"calculation\": null,\n    \"source_cells\": [\n      \"table-001-a39a552c85:r10:c1\",\n      \"table-001-a39a552c85:r10:c4\"\n    ],\n    \"cell_details\": [\n      {\n        \"source_cell\": \"table-001-a39a552c85:r10:c1\",\n        \"row_number\": 9,\n        \"column\": \"Name\",\n        \"text\": \"Princess Beatrice\",\n        \"display_text\": \"Princess Beatrice\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": \"#fff8f8\",\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a39a552c85:r10:c4\",\n        \"row_number\": 9,\n        \"column\": \"Spouse and children\",\n        \"text\": \"Married 1885, Prince Henry of Battenberg (1858–1896); 3 sons, 1 daughter ( Queen Victoria Eugenie of Spain )\",\n        \"display_text\": \"Married 1885, Prince Henry of Battenberg (1858–1896); 3 sons, 1 daughter ( Queen Victoria Eugenie of Spain )\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": \"#f8f8ff\",\n        \"sort_value\": null,\n        \"legend_matches\": []\n      }\n    ],\n    \"sufficient\": true,\n    \"warnings\": []\n  }\n}",
+        "evidence_type": "table",
+        "title": "Computed table result: What obstetric anaesthetic did John Snow administer to Queen Victoria, during which two royal births did he administer it, and what broader effect did the article associate with those events?",
+        "section_path": [
+          "Family",
+          "Issue"
+        ],
+        "retrieval_query": "What obstetric anaesthetic did John Snow administer to Queen Victoria, during which two royal births did he administer it, and what broader effect did the article associate with those events?",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "d3ddcd84a926d38df5d1454e",
+        "source_cells": [
+          "table-001-a39a552c85:r10:c1",
+          "table-001-a39a552c85:r10:c4"
+        ],
+        "metadata": {
+          "retrieval_stage": "table_computation",
+          "table_request_id": "table-r1-1-0b59f3b35074",
+          "operation": "lookup",
+          "calculation": null,
+          "table_computation_sufficient": true,
+          "warnings": []
+        }
+      }
+    ],
+    "assessment": {
+      "ready_to_answer": true,
+      "supported_requirements": [
+        "John Snow administered chloroform to Queen Victoria.",
+        "He administered it during the births of Leopold (1853) and Beatrice (1857).",
+        "The article says this led to wider acceptance of obstetrical anaesthesia."
+      ],
+      "missing_requirements": [],
+      "retrieval_requests": [],
+      "table_requests": [],
+      "unresolved_conflicts": [],
+      "explanation": "The retrieved John Snow obstetric anaesthesia section directly states that Queen Victoria asked Snow to administer chloroform during the delivery of her eighth child, Leopold, and that he repeated the procedure for Beatrice in 1857. It also explicitly says, 'This led to wider acceptance of obstetrical anaesthesia.' All parts of the question are supported by the supplied evidence."
+    },
+    "assessment_history": [
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "John Snow administered chloroform to Queen Victoria.",
+          "He administered it during the births of her eighth child Leopold and her daughter Beatrice.",
+          "The article associates these events with wider acceptance of obstetrical anaesthesia."
+        ],
+        "missing_requirements": [],
+        "retrieval_requests": [],
+        "table_requests": [
+          {
+            "missing_fact": "What obstetric anaesthetic did John Snow administer to Queen Victoria, during which two royal births did he administer it, and what broader effect did the article associate with those events?",
+            "source_article": "Queen_Victoria.html",
+            "table_id": "d3ddcd84a926d38df5d1454e",
+            "expected_caption": null,
+            "operation": "auto",
+            "columns_needed": [],
+            "row_filters": {},
+            "comparison_key": null
+          }
+        ],
+        "unresolved_conflicts": [],
+        "explanation": "The John_Snow article explicitly states that Queen Victoria asked Snow to administer chloroform during the delivery of her eighth child, Leopold, and that he repeated the procedure for the delivery of her daughter Beatrice in 1857. It also states that this led to wider acceptance of obstetrical anaesthesia. No additional retrieval or table work is needed."
+      },
+      {
+        "ready_to_answer": true,
+        "supported_requirements": [
+          "John Snow administered chloroform to Queen Victoria.",
+          "He administered it during the births of Leopold (1853) and Beatrice (1857).",
+          "The article says this led to wider acceptance of obstetrical anaesthesia."
+        ],
+        "missing_requirements": [],
+        "retrieval_requests": [],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The retrieved John Snow obstetric anaesthesia section directly states that Queen Victoria asked Snow to administer chloroform during the delivery of her eighth child, Leopold, and that he repeated the procedure for Beatrice in 1857. It also explicitly says, 'This led to wider acceptance of obstetrical anaesthesia.' All parts of the question are supported by the supplied evidence."
+      }
+    ]
+  }
+}

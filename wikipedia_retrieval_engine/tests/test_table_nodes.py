@@ -15,12 +15,28 @@ from wikipedia_retrieval_engine.wiki_agents.agentic_models import (
     TableQueryPlan,
     TableRequest,
 )
+from langchain_core.messages import AIMessage
+
+from wikipedia_retrieval_engine.wiki_agents.agentic_models import EvidenceAssessment
 from wikipedia_retrieval_engine.wiki_agents.table_nodes import (
+    INCOMPLETE_COMPUTATION_HEADER,
+    compute_requested_tables,
     execute_table_query_plan,
     find_table_candidates,
     plan_table_query,
+    repair_plan_arguments,
     resolve_source_article,
 )
+
+
+def _raw_output(arguments: dict) -> dict:
+    """What ``with_structured_output(..., include_raw=True)`` returns on a parse failure."""
+
+    return {
+        "raw": AIMessage(content="", tool_calls=[{"name": "TableQueryPlan", "args": arguments, "id": "c1"}]),
+        "parsed": None,
+        "parsing_error": ValueError("predicates.0.op Field required"),
+    }
 
 
 ARTICLE_HTML = """
@@ -226,6 +242,122 @@ class TableNodeTests(unittest.TestCase):
 
         with self.assertRaisesRegex(ValueError, "invented columns"):
             plan_table_query("Which film won?", request, self.store, llm)
+
+    # -- Checkpoint 6.1: plan repair, one corrected retry, incomplete labels ------------
+    def _scores(self):
+        return self.store.find_tables("Scores", source_article="95th_Academy_Awards.html", limit=1)[0]
+
+    def test_repair_plan_arguments_reads_the_op_from_its_key(self) -> None:
+        repaired = repair_plan_arguments(
+            {
+                "artifact_id": "t",
+                "predicates": [
+                    {"column": "Year", "year_between": [2000, 2020]},
+                    {"column": "Location", "contains": "India"},
+                    {"column": "Points", "op": "num_gt", "value": 5},
+                    {"column": "Points", "num_gt": 5, "num_lt": 9},
+                ],
+            }
+        )
+
+        self.assertEqual(
+            repaired["predicates"],
+            [
+                {"column": "Year", "op": "year_between", "value": 2000, "value2": 2020},
+                {"column": "Location", "op": "contains", "value": "India"},
+                {"column": "Points", "op": "num_gt", "value": 5},
+                {"column": "Points", "num_gt": 5, "num_lt": 9},
+            ],
+        )
+
+    def test_plan_table_query_repairs_the_op_slip_without_another_call(self) -> None:
+        scores = self._scores()
+        request = TableRequest(missing_fact="Who scored over 1,000?", source_article="95th_Academy_Awards.html", table_id=scores.artifact_id, operation="auto")
+        structured_planner = Mock()
+        structured_planner.invoke.return_value = _raw_output(
+            {
+                "artifact_id": scores.artifact_id,
+                "operation": "filter",
+                "selected_columns": ["Name", "Points"],
+                "predicates": [{"column": "Points", "num_gt": 1000}],
+            }
+        )
+        llm = Mock(spec=BaseChatModel)
+        llm.with_structured_output.return_value = structured_planner
+
+        plan = plan_table_query("Who scored over 1,000?", request, self.store, llm, repair_invalid_plan=True)
+
+        llm.with_structured_output.assert_called_once_with(TableQueryPlan, method="function_calling", include_raw=True)
+        self.assertEqual(structured_planner.invoke.call_count, 1)
+        self.assertEqual(plan.predicates, [TablePredicate(column="Points", op="num_gt", value=1000)])
+
+    def test_plan_table_query_retries_once_with_the_rejection(self) -> None:
+        scores = self._scores()
+        request = TableRequest(missing_fact="How many teams?", source_article="95th_Academy_Awards.html", table_id=scores.artifact_id, operation="auto")
+        invented = TableQueryPlan(artifact_id=scores.artifact_id, operation="aggregate", selected_columns=["count"], calculation="count")
+        corrected = TableQueryPlan(artifact_id=scores.artifact_id, operation="aggregate", selected_columns=["Name"], calculation="count")
+        structured_planner = Mock()
+        structured_planner.invoke.side_effect = [
+            {"raw": AIMessage(content=""), "parsed": invented, "parsing_error": None},
+            {"raw": AIMessage(content=""), "parsed": corrected, "parsing_error": None},
+        ]
+        llm = Mock(spec=BaseChatModel)
+        llm.with_structured_output.return_value = structured_planner
+
+        plan = plan_table_query("How many teams?", request, self.store, llm, repair_invalid_plan=True)
+
+        self.assertEqual(plan, corrected)
+        retry_messages = structured_planner.invoke.call_args_list[1].args[0]
+        self.assertIn("was rejected", retry_messages[-1].content)
+        self.assertIn("invented columns", retry_messages[-1].content)
+
+    def test_plan_table_query_raises_when_the_retry_also_fails(self) -> None:
+        scores = self._scores()
+        request = TableRequest(missing_fact="How many teams?", source_article="95th_Academy_Awards.html", table_id=scores.artifact_id, operation="auto")
+        invented = TableQueryPlan(artifact_id=scores.artifact_id, operation="lookup", selected_columns=["count"])
+        structured_planner = Mock()
+        structured_planner.invoke.return_value = {"raw": AIMessage(content=""), "parsed": invented, "parsing_error": None}
+        llm = Mock(spec=BaseChatModel)
+        llm.with_structured_output.return_value = structured_planner
+
+        with self.assertRaisesRegex(ValueError, "invented columns"):
+            plan_table_query("How many teams?", request, self.store, llm, repair_invalid_plan=True)
+        self.assertEqual(structured_planner.invoke.call_count, 2)
+
+    def _state_for_empty_result(self) -> dict:
+        scores = self._scores()
+        request = TableRequest(missing_fact="Who scored over 5,000?", source_article="95th_Academy_Awards.html", table_id=scores.artifact_id, operation="filter")
+        return {
+            "question": "Who scored over 5,000?",
+            "assessment": EvidenceAssessment(ready_to_answer=False, table_requests=[request], explanation="needs rows"),
+            "evidence": [],
+        }
+
+    def _planner_with_no_matches(self) -> Mock:
+        structured_planner = Mock()
+        structured_planner.invoke.return_value = TableQueryPlan(
+            artifact_id=self._scores().artifact_id,
+            operation="filter",
+            selected_columns=["Name", "Points"],
+            predicates=[TablePredicate(column="Points", op="num_gt", value=5000)],
+        )
+        llm = Mock(spec=BaseChatModel)
+        llm.with_structured_output.return_value = structured_planner
+        return llm
+
+    def test_empty_result_is_labelled_incomplete_when_asked(self) -> None:
+        state = compute_requested_tables(
+            self._state_for_empty_result(), self.store, self._planner_with_no_matches(), label_incomplete=True
+        )
+
+        item = state["evidence"][0]
+        self.assertFalse(item.metadata["table_computation_sufficient"])
+        self.assertTrue(item.content.startswith(INCOMPLETE_COMPUTATION_HEADER))
+
+    def test_empty_result_keeps_the_5_1_header_by_default(self) -> None:
+        state = compute_requested_tables(self._state_for_empty_result(), self.store, self._planner_with_no_matches())
+
+        self.assertTrue(state["evidence"][0].content.startswith("Deterministic table-computation result."))
 
     def test_execute_lookup_preserves_rich_cell_provenance(self) -> None:
         winners = self.store.find_tables(

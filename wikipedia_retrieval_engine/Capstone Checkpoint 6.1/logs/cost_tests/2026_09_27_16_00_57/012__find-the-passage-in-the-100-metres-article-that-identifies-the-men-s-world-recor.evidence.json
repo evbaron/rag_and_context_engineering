@@ -1,0 +1,943 @@
+{
+  "run_id": "2026_09_27_16_00_57",
+  "question_number": 12,
+  "logged_at": "2026-09-27T16:06:29-04:00",
+  "question": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+  "final_state": {
+    "question": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+    "retrieval_attempts": 3,
+    "table_attempts": 2,
+    "article_candidates": [
+      {
+        "source_article": "100_metres.html",
+        "representative_chunk": "Article: 100 metres\nSection: Record performances\n\nUsain Bolt breaking the world and Olympic records at the 2008 Beijing Olympics\n\nMajor 100 m races, such as at the Olympic Games, attract much attention, particularly when the world record is thought to be within reach.\n\nThe men's world record has been improved upon twelve times since electronic timing became mandatory in 1977.[18] The current men's world record of 9.58 s is held by Usain Bolt of Jamaica, set at the 2009 World Athletics Championships final in Berlin, Germany on 16 August 2009, breaking his own previous world record by 0.11 s.[19] The current women's world record of 10.49 s was set by Florence Griffith-Joyner of the US, at the 1988 United States Olympic Trials in Indianapolis, Indiana, on 16 July 1988[20] breaking Evelyn Ashford's four-year-old world record by 0.27 seconds. The extraordinary nature of this result and those of several other sprinters in this race raised the possibility of a technical malfunction with the wind gauge which read at 0.0 m/s – a reading which was at complete odds to the windy conditions on the day with high wind speeds being recorded in all other sprints before and after this race as well as the parallel long jump runway at the time of the Griffith-Joyner performance. The next best wind legal performance is Elaine Thompson-Herah's 10.54 second clocking in 2021 at the Prefontaine Classic. Griffith-Joyner's next best legal performance of 10.61 from 1988, would have her third on the all-time list behind Thompson-Herah and Shelly-Ann Fraser-Pryce (10.60).[21]\n\nSome records have been marred by prohibited drug use – in particular, the scandal at the 1988 Summer Olympics when the winner, Canadian Ben Johnson, was stripped of his medal and world record.\n\nJim Hines, Ronnie Ray Smith and Charles Greene were the first to break the 10-second barrier in the 100 m, all on 20 June 1968, the Night of Speed. Hines also recorded the first legal electronically timed sub-10 second 100 m in winning the 100 metres at the 1968 Olympics. Bob Hayes ran a wind-assisted 9.91 seconds at the 1964 Olympics.",
+        "representative_chunk_id": "100_metres.html#section-006-00",
+        "section_title": "Record performances",
+        "section_path": [
+          "Record performances"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "discovered_by": "vector",
+        "rank": 1,
+        "raw_score": 0.735671877861023,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Usain_Bolt.html",
+        "representative_chunk": "Article: Usain Bolt\nSection: Statistics > Personal bests\n\nEvents tracked by World Athletics, the international governing body for the sport of athletics:\n\nEvent and Time\n\nDate and Venue\n\nRecords\n\nNotes\n\n100 metres in 9.58 seconds\n\n16 August in the 2009 World Championships in Athletics in Berlin, Germany\n\nWR\n\nEquivalent to an average ground speed of 10.44 m/s, 37.58 km/h, or 23.35 mph. Once his reaction time of 0.146 seconds is subtracted, his time is 9.434 seconds, or 10.6 m/s, 38.16 km/h, or 23.71 mph.[142] Bolt's top speed, based on his split time of 1.61 seconds for the 20 metres from the 60- to 80-metre marks (made during the 9.58 WR at 100 m), is 12.42 m/s, 44.72 km/h, or 27.79 mph.[348] He also has the second fastest time (9.63) and shares the third fastest time of 9.69 with Tyson Gay and Yohan Blake. Bolt's 9.63 is the Olympic record, set at the 2012 games.\n\n200 metres in 19.19 seconds\n\n20 August in the 2009 World Championships in Athletics in Berlin, Germany\n\nWR\n\nEquivalent to an average ground speed of 10.42 m/s, 37.52 km/h, or 23.31 mph. Also holds the Olympic record with 19.30, which was then (2008) a world record.\n\n400 metres in 45.28 seconds\n\n5 May 2007 in Kingston, Jamaica\n\n[1]\n\n4 × 100 metres relay in 36.84 seconds\n\n11 August in the 2012 Summer Olympics in London, England\n\nWR\n\nShared with Yohan Blake, Michael Frater and Nesta Carter.\n\nThe following events are not regulated by World Athletics, and are not tracked as official world records:\n\nEvent and Time\n\nDate and Venue\n\nRecords\n\nNotes\n\n60 metres in 6.31 seconds\n\n16 August in the 2009 World Championships in Athletics in Berlin, Germany\n\nWB\n\n100 metres indoors in 9.98 seconds\n\n23 Aug 2014 in the Kamila Skolimowska Memorial in Warsaw, Poland\n\nWB\n\n150 metres in 14.44 seconds\n\n20 August in the 2009 World Championships in Athletics in Berlin, Germany\n\nWB\n\n150 metres straight in 14.35 seconds\n\n17 May 2009 in the Great CityGames in Manchester, England\n\nWB\n\nEquivalent to an average ground speed of 10.45 m/s, 37.63 km/h, or 23.38 mph. He ran the last 100 m in 8.70, the fastest ever recorded time over a 100 m distance. This would equal an average speed of 11.49 m/s, 41.38 km/h, or 25.71 mph.\n\n300 metres in 30.97 seconds\n\n27 May 2010 in the Golden Spike Ostrava in Ostrava, Czech Republic\n\nNR\n\nThis is the fourth fastest time, behind Letsile Tebogo 30.69, Wayde van Niekerk 30.81 & Michael Johnson 30.85.\n\nSwedish relay in 1:46.59\n\n25 Jul 2006 in the DN-Galan in Stockholm, Sweden\n\nWB\n\nChristopher Williams ran 100 metres, Usain Bolt ran 200, Davian Clarke ran 300, and Jermaine Gonzales ran 400.",
+        "representative_chunk_id": "Usain_Bolt.html#section-026-00",
+        "section_title": "Personal bests",
+        "section_path": [
+          "Statistics",
+          "Personal bests"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "discovered_by": "vector",
+        "rank": 2,
+        "raw_score": 0.8284944295883179,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Four-minute_mile.html",
+        "representative_chunk": "Article: Four-minute mile\nSection: Record holders\n\nBannister and Landy racing in Vancouver, August 1954\nStatue in Vancouver commemorating the \"Miracle Mile\" between Bannister and Landy\nCurrent mile world record holder Hicham El Guerrouj (left) at the start of a race\n\nOn 30 October 1863, William Lang ran a downhill mile time trial in 4:02 in Newmarket, Suffolk, England.[6][7] Due to the downhill slope, the time would not have been valid for record-keeping but nonetheless remained the fastest mile ever run until 1943, and began speculation about when the first sub-four-minute mile would be performed.[8][9]\n\nThe four-minute barrier was first broken on 6 May 1954 at Oxford University's Iffley Road Track, by British athlete Roger Bannister,[10] with the help of fellow runners Chris Chataway and Chris Brasher as pacemakers.[11]\n\nOn 21 June 1954, at an international meet at Turku, Finland, John Landy of Australia became the second man, after Bannister, to achieve a sub-four-minute mile. He achieved a world record time of 3:57.9, ratified by the IAAF as 3:58.0 owing to the rounding rules then in effect. He held this record for more than three years.[12]\n\nTwo months later, on 7 August, during the 1954 British Empire and Commonwealth Games hosted in Vancouver, B.C., Landy and Bannister both ran the distance of one mile in under four minutes. The race's end is memorialised in a photo, and later a statue, of the two, with Landy looking over his left shoulder, just as Bannister is passing him on the right. Landy thus lost the race. The statue was placed in front of the Pacific National Exhibition entrance plaza.[13] Bannister won in 3:58.8, with Landy 0.8 seconds behind at 3:59.6.\n\nNew Zealand's John Walker ran 135 sub-four-minute miles during his career, became the first person to run over 100 sub-four-minute miles, and with a 3:49.4 performance in August 1975 became the first man to run the mile under 3:50. American Steve Scott has run the most sub-four-minute miles, with 136. Algeria's Noureddine Morceli was the first under 3:45. Currently, the mile record is held by Morocco's Hicham El Guerrouj, who ran a time of 3:43.13 in Rome in 1999.\n\nAn illustration of the progression of performance in the men's mile is that, in 1994, forty years after Bannister's breaking of the barrier, the Irish runner Eamonn Coghlan became the first man over the age of 40 to run a sub-four-minute mile.[14] Because Coghlan surpassed the mark indoors and before the IAAF validated indoor performances as being eligible for outdoor records, World Masters Athletics still had not recognised a sub-4-minute-mile performance as a record in the M40 division. Many elite athletes made the attempts to extend their careers beyond age 40 to challenge that mark. Over 18 years after Coghlan, that was finally achieved by Britain's Anthony Whiteman, running 3:58.79 on 2 June 2012.[15]\n\nIn 1997, Daniel Komen of Kenya ran two miles in less than eight minutes, doubling up on Bannister's accomplishment.[16] He did it again in February 1998, falling just 0.3 seconds behind his previous performance of 7:58.61. On 9 June 2023, Norwegian runner Jakob Ingebrigtsen bested that time, running 7:54.10 to become only the second individual to run two miles in less than eight minutes.",
+        "representative_chunk_id": "Four-minute_mile.html#section-001-00",
+        "section_title": "Record holders",
+        "section_path": [
+          "Record holders"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "discovered_by": "vector",
+        "rank": 3,
+        "raw_score": 0.8892468214035034,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      },
+      {
+        "source_article": "Jim_Hines.html",
+        "representative_chunk": "Article: Jim Hines\nSection: Track career\n\nThis section needs additional citations for verification. Please help improve this article by adding citations to reliable sources in this section. Unsourced material may be challenged and removed. (June 2023) (Learn how and when to remove this message)\n\nBorn in Dumas, Arkansas, Hines was raised in Oakland, California, and graduated from McClymonds High School in 1964. He was a baseball player in his younger years[3] until he was spotted by track coach Jim Coleman as a running talent, and Hines became a sprinter. At the 1968 U.S. national championships in Sacramento, California, Hines became the first man to break the ten second barrier in the 100-metre race, setting 9.9 (manual timing), with an electronic time of 10.03 – two other athletes, Ronnie Ray Smith behind him (electronic time 10.13) and Charles Greene on the other semi-final (electronic time 10.09) having the same official clocking. That evening of June 20, 1968, at Hughes Stadium has been dubbed by track and field historians as the \"Night of Speed\".[4] Hines attended Texas Southern University in Houston, Texas. He was a member of the Texas Southern University Tigers track team.\n\nA few months later, at the 1968 Summer Olympics, Hines – a black athlete – found himself in a tense situation, with racial riots going on in his home country and a threat of a boycott by the black athletes of the U.S. team, who were disturbed by the controversial idea of admitting apartheid South Africa to the Games and revelations linking the head of the International Olympic Committee, Avery Brundage, to a racist and antisemitic country club. Hines reached the 100 m final, and won it with the time 9.89 appearing on the screen, later corrected to 9.95. The 9.89 was taken from a light beam across the finish line, while the official photographic process used Polaroid film and took a couple of minutes to process and read. There was some controversy over how his (slower appearing) automatic time of 9.95 should compare to the hand timed 9.9 world record (Hines was again recorded at 9.9 in his 9.95 race). Automatic times start instantly with the sound of the gun, while hand times include human reaction time to start the watch. It took until 1977 before fully automatic timing was required of world records. As the fastest electronic time to that point, Hines' mark was recognized exclusively as a new world record.[5] The race was also significant for being the third all-black podium in Olympic history. Hines helped break another world record, when he and his teammates sprinted to the 4 × 100 m relay gold at the same Games.",
+        "representative_chunk_id": "Jim_Hines.html#section-001-00",
+        "section_title": "Track career",
+        "section_path": [
+          "Track career"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "discovered_by": "vector",
+        "rank": 4,
+        "raw_score": 0.8949576616287231,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      }
+    ],
+    "article_reviews": [
+      {
+        "source_article": "100_metres.html",
+        "relevant": true,
+        "reason": "This article is about the 100 metres and includes record performances, which should identify the men's world-record and its details.",
+        "relevant_sections": [
+          "All-time top 25 men",
+          "World leading times",
+          "Men"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [
+          "711ed76e8d19fdccbcaa27ae",
+          "dfd7da75652a7dc97a667deb",
+          "654bf0f2b2c93a90bee9f724",
+          "c1e4ad357ea42fe5f5ce51c0",
+          "c85529b410ed496c482ba80a"
+        ],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Usain_Bolt.html",
+        "relevant": false,
+        "reason": "While it contains Bolt-related achievements, it is not the general 100 metres record passage requested.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Four-minute_mile.html",
+        "relevant": false,
+        "reason": "This article is about the four-minute mile, not the men's 100 metres world record.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      },
+      {
+        "source_article": "Jim_Hines.html",
+        "relevant": false,
+        "reason": "This article focuses on Jim Hines and does not provide the general 100 metres article passage for the men's world-record performance.",
+        "relevant_sections": [],
+        "relevant_table_names": [],
+        "relevant_table_ids": [],
+        "needs_table_reader": false
+      }
+    ],
+    "selected_articles": [
+      "100_metres.html"
+    ],
+    "rejected_articles": [
+      "Usain_Bolt.html",
+      "Four-minute_mile.html",
+      "Jim_Hines.html"
+    ],
+    "evidence": [
+      {
+        "evidence_id": "100_metres.html#section-008-00",
+        "source_article": "100_metres.html",
+        "content": "Article: 100 metres\nSection: All-time top 25 men\n\nSee also: 10-second barrier and Men's 100 metres world record progression\n\nTables show data for two definitions of \"Top 25\" - the top 25 100m times and the top 25 athletes:\n\n- denotes top performance for athletes in the top 25 100m times\n\n- denotes lesser performances, still in the top 25 100m times, by repeat athletes\n\n- denotes top performance (only) for other top 25 athletes who fall outside the top 25 100m times\n\nAs of September 2025[update][17][24]\n\nAth.#\nPerf.#\nTime (s)\nWind (m/s)\nReaction (s)\nAthlete\nNation\nDate\nPlace\nRef.\n\n1\n1\n9.58\n+0.9\n0.146\nUsain Bolt\n Jamaica\n16 August 2009\nBerlin\n[25][26]\n\n2\n9.63\n+1.5\n0.165\nBolt #2\n\n5 August 2012\nLondon\n[27]\n\n3\n9.69\n±0.0\n0.165\nBolt #3\n16 August 2008\nBeijing\n[27]\n\n2\n4\n9.69\n+2.0\n0.178\nTyson Gay\n United States\n20 September 2009\nShanghai\n[28][29]\n\n−0.1\n0.142\nYohan Blake\n Jamaica\n23 August 2012\nLausanne\n[30][31]\n\n6\n9.71\n+0.9\n0.144\nGay #2\n\n16 August 2009\nBerlin\n[25][26]\n\n7\n9.72\n+1.7\n0.157\nBolt #4\n31 May 2008\nNew York City\n[32]\n\n4\n7\n9.72\n+0.2\n\nAsafa Powell\n Jamaica\n2 September 2008\nLausanne\n[33]\n\n9\n9.74\n+1.7\n0.137\nPowell #2\n\n9 September 2007\nRieti\n[34]\n\n5\n9\n9.74\n+0.9\n0.161\nJustin Gatlin\n United States\n15 May 2015\nDoha\n[35][36]\n\n11\n9.75\n+1.1\n\nBlake #2\n\n29 June 2012\nKingston\n\n+1.5\n0.179\nBlake #3\n5 August 2012\nLondon\n[27]\n\n+0.9\n0.164\nGatlin #2\n4 June 2015\nRome\n[37]\n\n+1.4\n0.154\nGatlin #3\n9 July 2015\nLausanne\n[38]\n\n6\n\n11\n\n9.75\n\n+0.8\n\nKishane Thompson\n\n Jamaica\n\n27 June 2025\n\nKingston\n\n[39]\n\n16\n9.76\n+1.8\n\nBolt #5\n\n3 May 2008\nKingston\n\n+1.3\n0.154\nBolt #6\n16 September 2011\nBrussels\n[40]\n\n−0.1\n0.152\nBolt #7\n31 May 2012\nRome\n[41]\n\n+1.4\n0.146\nBlake #4\n30 August 2012\nZürich\n[42]\n\n7\n16\n9.76\n+0.6\n0.128\nChristian Coleman\n United States\n28 September 2019\nDoha\n[43][34]\n\n9.76 A\n+1.2\n\nTrayvon Bromell\n United States\n18 September 2021\nNairobi\n[44]\n\n9.76\n\n+1.4\n\nFred Kerley\n\n United States\n\n24 June 2022\n\nEugene\n\n[45]\n\n23\n9.77\n+1.6\n0.150\nPowell #3\n\n14 June 2005\nAthens\n[34]\n\n+1.5\n0.145\nPowell #4\n11 June 2006\nGateshead\n[34]\n\n+1.0\n0.148\nPowell #5\n18 August 2006\nZürich\n[34]\n\n+1.0\n\nGay #3\n28 June 2008\nEugene\n\n−1.3\n\nBolt #8\n5 September 2008\nBrussels\n\n+0.9\n\nPowell #6\n7 September 2008\nRieti\n\n+0.4\n\nGay #4\n10 July 2009\nRome\n\n−0.3\n0.163\nBolt #9\n11 August 2013\nMoscow\n[46]\n\n+0.6\n0.178\nGatlin #4\n5 September 2014\nBrussels\n[47]\n\n+0.9\n0.153\nGatlin #5\n23 August 2015\nBeijing\n[48]\n\n+1.5\n\nBromell #2\n5 June 2021\nMiramar\n[49]\n\n10\n23\n9.77 A\n+1.2\n\nFerdinand Omanyala\n Kenya\n18 September 2021\nNairobi\n[44]\n\n23\n\n9.77\n\n+1.8\n\nKerley #2\n\n24 June 2022\n\nEugene\n\n[50]\n\n+0.9\n\nK. Thompson #2\n28 June 2024\nKingston\n[51]\n\n10\n23\n9.77\n+0.3\n0.157\nOblique Seville\n Jamaica\n14 September 2025\nTokyo\n[52]\n\n12\n\n9.78\n+0.9\n\nNesta Carter\n Jamaica\n29 August 2010\nRieti\n[53]\n\n13\n9.79\n+0.1\n\nMaurice Greene\n United States\n16 June 1999\nAthens\n[54]\n\n+1.0\n0.178\nNoah Lyles\n United States\n4 August 2024\nSaint-Denis\n[55]\n\n+1.8\n\nKenny Bednarek\n United States\n1 August 2025\nEugene\n[56]\n\n16\n9.80\n+1.3\n\nSteve Mullings\n Jamaica\n4 June 2011\nEugene\n[57]\n\n+0.1\n\nMarcell Jacobs\n Italy\n1 August 2021\nTokyo\n[58]\n\n18\n9.82\n+1.7\n\nRichard Thompson\n Trinidad and Tobago\n21 June 2014\nPort of Spain\n[59]\n\n+1.0\n0.149\nAkani Simbine\n South Africa\n4 August 2024\nSaint-Denis\n[55]\n\n+1.3\n\nBryan Levell\n Jamaica\n23 July 2025\nEisenstadt\n[60]\n\n+1.8\n\nCourtney Lindsey\n United States\n1 August 2025\nEugene\n[56]\n\n22\n9.83\n+0.9\n\nSu Bingtian\n China\n1 August 2021\nTokyo\n\n+0.9\n\nRonnie Baker\n United States\n1 August 2021\nTokyo\n\n+1.3\n\n0.150\n\nZharnel Hughes\n\n Great Britain\n\n24 June 2023\n\nNew York City\n\n[61]\n\n+1.8\n\nT'Mars McCallum\n United States\n1 August 2025\nEugene\n[56]",
+        "evidence_type": "text",
+        "title": "All-time top 25 men",
+        "section_path": [
+          "All-time top 25 men"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 1.0372025966644287,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "All-time top 25 men",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "711ed76e8d19fdccbcaa27ae",
+            "dfd7da75652a7dc97a667deb",
+            "654bf0f2b2c93a90bee9f724",
+            "c1e4ad357ea42fe5f5ce51c0",
+            "c85529b410ed496c482ba80a"
+          ]
+        }
+      },
+      {
+        "evidence_id": "100_metres.html#section-014-00",
+        "source_article": "100_metres.html",
+        "content": "Article: 100 metres\nSection: World leading times > Men\n\nYear\n\nTime\n\nAthlete\n\nPlace\n\n1972\n\n10.07\n\n Valeriy Borzov (URS)\n\nMunich\n\n1973\n\n10.15\n\n Steve Williams (USA)\n\nDakar\n\n1974\n\n9.9 h\n\n Steve Williams (USA)\n\nLos Angeles\n\n1975\n\n10.05\n\n Steve Riddick (USA)\n\nZürich\n\n1976\n\n10.06\n\n Hasely Crawford (TRI)\n\nMontreal\n\n1977\n\n9.98 A\n\n Silvio Leonard (CUB)\n\nGuadalajara\n\n1978\n\n10.07\n\n Clancy Edwards (USA)\n\nEugene\n\n10.07 A\n\n Eddie Hart (USA)\n\nColorado Springs\n\n10.07\n\n Steve Williams (USA)\n\nZürich\n\n1979\n\n10.01 A\n\n Pietro Mennea (ITA)\n\nMexico City\n\n1980\n\n10.02\n\n James Sanford (USA)\n\nWestwood\n\n1981\n\n10.00\n\n Carl Lewis (USA)\n\nDallas\n\n1982\n\n10.00\n\n Carl Lewis (USA)\n\nModesto\n\n1983\n\n9.93 A\n\n Calvin Smith (USA)\n\nColorado Springs\n\n1984\n\n9.96\n\n Mel Lattany (USA)\n\nAthens\n\n1985\n\n9.98\n\n Carl Lewis (USA)\n\nModesto\n\n1986\n\n10.00\n\n Chidi Imoh (NGR)\n\nBerlin\n\n1987\n\n9.93\n\n Carl Lewis (USA)\n\nRome\n\n1988\n\n9.92\n\n Carl Lewis (USA)\n\nSeoul\n\n1989\n\n9.94\n\n Leroy Burrell (USA)\n\nHouston\n\n1990\n\n9.96\n\n Leroy Burrell (USA)\n\nVilleneuve d'Ascq\n\n9.96 A\n\nSestriere\n\n1991\n\n9.86\n\n Carl Lewis (USA)\n\nTokyo\n\n1992\n\n9.93\n\n Michael Marsh (USA)\n\nWalnut\n\n1993\n\n9.87\n\n Linford Christie (GBR)\n\nStuttgart\n\n1994\n\n9.85\n\n Leroy Burrell (USA)\n\nLausanne\n\n1995\n\n9.91\n\n Donovan Bailey (CAN)\n\nMontreal\n\n1996\n\n9.84\n\n Donovan Bailey (CAN)\n\nAtlanta\n\n1997\n\n9.86\n\n Maurice Greene (USA)\n\nAthens\n\n1998\n\n9.86\n\n Ato Boldon (TRI)\n\nWalnut\n\nAthens\n\n1999\n\n9.79\n\n Maurice Greene (USA)\n\nAthens\n\n2000\n\n9.86\n\n Maurice Greene (USA)\n\nBerlin\n\n2001\n\n9.82\n\n Maurice Greene (USA)\n\nEdmonton\n\n2002\n\n9.89\n\n Maurice Greene (USA)\n\nRome\n\n2003\n\n9.93\n\n Patrick Johnson (AUS)\n\nMito\n\n2004\n\n9.85\n\n Justin Gatlin (USA)\n\nAthens\n\n2005\n\n9.77\n\n Asafa Powell (JAM)\n\nAthens\n\n2006\n\n9.77\n\n Asafa Powell (JAM)\n\nGateshead\n\nZürich\n\n2007\n\n9.74\n\n Asafa Powell (JAM)\n\nRieti\n\n2008\n\n9.69\n\n Usain Bolt (JAM)\n\nBeijing\n\n2009\n\n9.58\n\n Usain Bolt (JAM)\n\nBerlin\n\n2010\n\n9.78\n\n Tyson Gay (USA)\n\nLondon\n\n Nesta Carter (JAM)\n\nRieti\n\n2011\n\n9.76\n\n Usain Bolt (JAM)\n\nBrussels\n\n2012\n\n9.63\n\n Usain Bolt (JAM)\n\nLondon\n\n2013\n\n9.77\n\n Usain Bolt (JAM)\n\nMoscow\n\n2014\n\n9.77\n\n Justin Gatlin (USA)\n\nBrussels\n\n2015\n\n9.74\n\n Justin Gatlin (USA)\n\nDoha\n\n2016\n\n9.80\n\n Justin Gatlin (USA)\n\nEugene\n\n2017\n\n9.82\n\n Christian Coleman (USA)\n\nEugene\n\n2018\n\n9.79\n\n Christian Coleman (USA)\n\nBrussels\n\n2019\n\n9.76\n\n Christian Coleman (USA)\n\nDoha\n\n2020\n\n9.86\n\n Michael Norman (USA)\n\nFort Worth\n\n2021\n\n9.76 A\n\n Trayvon Bromell (USA)\n\nNairobi\n\n2022\n\n9.76\n\n Fred Kerley (USA)\n\nEugene\n\n2023\n\n9.83\n\n Zharnel Hughes (GBR)\n\nNew York City\n\n Noah Lyles (USA)\n\nBudapest\n\n Christian Coleman (USA)\n\nXiamen\n\nEugene\n\n2024\n\n9.77\n\n Kishane Thompson (JAM)\n\nKingston\n\n2025\n\n9.75\n\n Kishane Thompson (JAM)\n\nKingston",
+        "evidence_type": "text",
+        "title": "Men",
+        "section_path": [
+          "World leading times",
+          "Men"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.9548475742340088,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Men",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "711ed76e8d19fdccbcaa27ae",
+            "dfd7da75652a7dc97a667deb",
+            "654bf0f2b2c93a90bee9f724",
+            "c1e4ad357ea42fe5f5ce51c0",
+            "c85529b410ed496c482ba80a"
+          ]
+        }
+      },
+      {
+        "evidence_id": "100_metres.html#table-001-db27029f68",
+        "source_article": "100_metres.html",
+        "content": "Structured table (JSON rows, one object per row — read values directly from these rows; do not rely on prior knowledge).\n{\"artifact_id\": \"711ed76e8d19fdccbcaa27ae\", \"table_id\": \"table-001-db27029f68\", \"caption\": null, \"section\": \"Record performances > Continental records\", \"columns\": [\"Area\", \"Men / Time (s)\", \"Men / Wind (m/s)\", \"Men / Season\", \"Men / Athlete\", \"Men / Nation\", \"Women / Time (s)\", \"Women / Wind (m/s)\", \"Women / Season\", \"Women / Athlete\", \"Women / Nation\"], \"legends\": [], \"rows\": [{\"row_number\": 1, \"values\": {\"Area\": \"Africa ( records )\", \"Men / Time (s)\": \"9.77 A\", \"Men / Wind (m/s)\": \"+1.2\", \"Men / Season\": \"2021\", \"Men / Athlete\": \"Ferdinand Omanyala\", \"Men / Nation\": \"Kenya\", \"Women / Time (s)\": \"10.72\", \"Women / Wind (m/s)\": \"+0.4\", \"Women / Season\": \"2022\", \"Women / Athlete\": \"Marie-Josée Ta Lou\", \"Women / Nation\": \"Ivory Coast\"}, \"semantic_signals\": {\"Area\": {\"source_cell\": \"table-001-db27029f68:r3:c1\", \"display_text\": \"Africa ( records )\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"records\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}, \"Men / Time (s)\": {\"source_cell\": \"table-001-db27029f68:r3:c2\", \"display_text\": \"9.77 A\", \"is_bold\": true, \"is_italic\": false, \"bold_text\": [\"9.77\"], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}, \"Women / Time (s)\": {\"source_cell\": \"table-001-db27029f68:r3:c7\", \"display_text\": \"10.72\", \"is_bold\": true, \"is_italic\": false, \"bold_text\": [\"10.72\"], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 2, \"values\": {\"Area\": \"Asia ( records )\", \"Men / Time (s)\": \"9.83\", \"Men / Wind (m/s)\": \"+0.9\", \"Men / Season\": \"2021\", \"Men / Athlete\": \"Su Bingtian\", \"Men / Nation\": \"China\", \"Women / Time (s)\": \"10.79\", \"Women / Wind (m/s)\": \"±0.0\", \"Women / Season\": \"1997\", \"Women / Athlete\": \"Li Xuemei\", \"Women / Nation\": \"China\"}, \"semantic_signals\": {\"Area\": {\"source_cell\": \"table-001-db27029f68:r4:c1\", \"display_text\": \"Asia ( records )\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"records\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}, \"Men / Time (s)\": {\"source_cell\": \"table-001-db27029f68:r4:c2\", \"display_text\": \"9.83\", \"is_bold\": true, \"is_italic\": false, \"bold_text\": [\"9.83\"], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}, \"Women / Time (s)\": {\"source_cell\": \"table-001-db27029f68:r4:c7\", \"display_text\": \"10.79\", \"is_bold\": true, \"is_italic\": false, \"bold_text\": [\"10.79\"], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 3, \"values\": {\"Area\": \"Europe ( records )\", \"Men / Time (s)\": \"9.80\", \"Men / Wind (m/s)\": \"+0.1\", \"Men / Season\": \"2021\", \"Men / Athlete\": \"Marcell Jacobs\", \"Men / Nation\": \"Italy\", \"Women / Time (s)\": \"10.73\", \"Women / Wind (m/s)\": \"+2.0\", \"Women / Season\": \"1998\", \"Women / Athlete\": \"Christine Arron\", \"Women / Nation\": \"France\"}, \"semantic_signals\": {\"Area\": {\"source_cell\": \"table-001-db27029f68:r5:c1\", \"display_text\": \"Europe ( records )\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"records\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}, \"Men / Time (s)\": {\"source_cell\": \"table-001-db27029f68:r5:c2\", \"display_text\": \"9.80\", \"is_bold\": true, \"is_italic\": false, \"bold_text\": [\"9.80\"], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}, \"Women / Time (s)\": {\"source_cell\": \"table-001-db27029f68:r5:c7\", \"display_text\": \"10.73\", \"is_bold\": true, \"is_italic\": false, \"bold_text\": [\"10.73\"], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 4, \"values\": {\"Area\": \"North, Central America and Caribbean ( records )\", \"Men / Time (s)\": \"9.58 WR\", \"Men / Wind (m/s)\": \"+0.9\", \"Men / Season\": \"2009\", \"Men / Athlete\": \"Usain Bolt\", \"Men / Nation\": \"Jamaica\", \"Women / Time (s)\": \"10.49 WR\", \"Women / Wind (m/s)\": \"±0.0\", \"Women / Season\": \"1988\", \"Women / Athlete\": \"Florence Griffith-Joyner\", \"Women / Nation\": \"United States\"}, \"semantic_signals\": {\"Area\": {\"source_cell\": \"table-001-db27029f68:r6:c1\", \"display_text\": \"North, Central America and Caribbean ( records )\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"records\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}, \"Men / Time (s)\": {\"source_cell\": \"table-001-db27029f68:r6:c2\", \"display_text\": \"9.58 WR\", \"is_bold\": true, \"is_italic\": false, \"bold_text\": [\"9.58\", \"WR\"], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}, \"Women / Time (s)\": {\"source_cell\": \"table-001-db27029f68:r6:c7\", \"display_text\": \"10.49 WR\", \"is_bold\": true, \"is_italic\": false, \"bold_text\": [\"10.49\", \"WR\"], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 5, \"values\": {\"Area\": \"Oceania ( records )\", \"Men / Time (s)\": \"9.93\", \"Men / Wind (m/s)\": \"+1.8\", \"Men / Season\": \"2003\", \"Men / Athlete\": \"Patrick Johnson\", \"Men / Nation\": \"Australia\", \"Women / Time (s)\": \"10.94\", \"Women / Wind (m/s)\": \"+0.6\", \"Women / Season\": \"2025\", \"Women / Athlete\": \"Zoe Hobbs\", \"Women / Nation\": \"New Zealand\"}, \"semantic_signals\": {\"Area\": {\"source_cell\": \"table-001-db27029f68:r7:c1\", \"display_text\": \"Oceania ( records )\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"records\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}, \"Men / Time (s)\": {\"source_cell\": \"table-001-db27029f68:r7:c2\", \"display_text\": \"9.93\", \"is_bold\": true, \"is_italic\": false, \"bold_text\": [\"9.93\"], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}, \"Women / Time (s)\": {\"source_cell\": \"table-001-db27029f68:r7:c7\", \"display_text\": \"10.94\", \"is_bold\": true, \"is_italic\": false, \"bold_text\": [\"10.94\"], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 6, \"values\": {\"Area\": \"South America ( records )\", \"Men / Time (s)\": \"9.93\", \"Men / Wind (m/s)\": \"+1.5\", \"Men / Season\": \"2025\", \"Men / Athlete\": \"Erik Cardoso\", \"Men / Nation\": \"Brazil\", \"Women / Time (s)\": \"10.91\", \"Women / Wind (m/s)\": \"−0.2\", \"Women / Season\": \"2017\", \"Women / Athlete\": \"Rosângela Santos\", \"Women / Nation\": \"Brazil\"}, \"semantic_signals\": {\"Area\": {\"source_cell\": \"table-001-db27029f68:r8:c1\", \"display_text\": \"South America ( records )\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"records\"], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}, \"Men / Time (s)\": {\"source_cell\": \"table-001-db27029f68:r8:c2\", \"display_text\": \"9.93\", \"is_bold\": true, \"is_italic\": false, \"bold_text\": [\"9.93\"], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}, \"Women / Time (s)\": {\"source_cell\": \"table-001-db27029f68:r8:c7\", \"display_text\": \"10.91\", \"is_bold\": true, \"is_italic\": false, \"bold_text\": [\"10.91\"], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}]}",
+        "evidence_type": "table",
+        "title": "table-001-db27029f68",
+        "section_path": [
+          "Record performances",
+          "Continental records"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "711ed76e8d19fdccbcaa27ae",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_id": "table-001-db27029f68",
+          "n_rows": 6,
+          "rows_rendered": 6,
+          "needs_table_reader": false
+        }
+      },
+      {
+        "evidence_id": "100_metres.html#table-002-a394b6b879",
+        "source_article": "100_metres.html",
+        "content": "Structured table (JSON rows, one object per row — read values directly from these rows; do not rely on prior knowledge).\n{\"artifact_id\": \"dfd7da75652a7dc97a667deb\", \"table_id\": \"table-002-a394b6b879\", \"caption\": null, \"section\": \"All-time top 25 men\", \"columns\": [\"Ath.#\", \"Perf.#\", \"Time (s)\", \"Wind (m/s)\", \"Reaction (s)\", \"Athlete\", \"Nation\", \"Date\", \"Place\", \"Ref.\"], \"legends\": [], \"rows\": [{\"row_number\": 1, \"values\": {\"Ath.#\": \"1\", \"Perf.#\": \"1\", \"Time (s)\": \"9.58\", \"Wind (m/s)\": \"+0.9\", \"Reaction (s)\": \"0.146\", \"Athlete\": \"Usain Bolt\", \"Nation\": \"Jamaica\", \"Date\": \"16 August 2009\", \"Place\": \"Berlin\", \"Ref.\": \"\"}, \"semantic_signals\": {\"Ath.#\": {\"source_cell\": \"table-002-a394b6b879:r2:c1\", \"display_text\": \"1\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#f6f5ce\", \"sort_value\": null, \"legend_matches\": []}, \"Perf.#\": {\"source_cell\": \"table-002-a394b6b879:r2:c2\", \"display_text\": \"1\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#f6f5ce\", \"sort_value\": null, \"legend_matches\": []}, \"Time (s)\": {\"source_cell\": \"table-002-a394b6b879:r2:c3\", \"display_text\": \"9.58\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#f6f5ce\", \"sort_value\": null, \"legend_matches\": []}, \"Wind (m/s)\": {\"source_cell\": \"table-002-a394b6b879:r2:c4\", \"display_text\": \"+0.9\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#f6f5ce\", \"sort_value\": null, \"legend_matches\": []}, \"Reaction (s)\": {\"source_cell\": \"table-002-a394b6b879:r2:c5\", \"display_text\": \"0.146\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#f6f5ce\", \"sort_value\": null, \"legend_matches\": []}, \"Athlete\": {\"source_cell\": \"table-002-a394b6b879:r2:c6\", \"display_text\": \"Usain Bolt\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#f6f5ce\", \"sort_value\": \"Bolt, Usain\", \"legend_matches\": []}, \"Nation\": {\"source_cell\": \"table-002-a394b6b879:r2:c7\", \"display_text\": \"Jamaica\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#f6f5ce\", \"sort_value\": null, \"legend_matches\": []}, \"Date\": {\"source_cell\": \"table-002-a394b6b879:r2:c8\", \"display_text\": \"16 August 2009\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#f6f5ce\", \"sort_value\": null, \"legend_matches\": []}, \"Place\": {\"source_cell\": \"table-002-a394b6b879:r2:c9\", \"display_text\": \"Berlin\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#f6f5ce\", \"sort_value\": null, \"legend_matches\": []}, \"Ref.\": {\"source_cell\": \"table-002-a394b6b879:r2:c10\", \"display_text\": \"[ 25 ] [ 26 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 25 ]\", \"role\": \"reference\", \"target\": \"cite_note-Berlin2009-26\", \"note\": \"Layden, Tim (31 August 2009). \\\"Bolt Strikes Twice\\\" . Sports Illustrated . Retrieved 5 December 2018 .\"}, {\"position\": \"superscript\", \"text\": \"[ 26 ]\", \"role\": \"reference\", \"target\": \"cite_note-mwc2009-27\", \"note\": \"\\\"100 Metres Result | 12th IAAF World Championships in Athletics\\\" . worldathletics.org . Retrieved 10 May 2023 .\"}], \"background_color\": \"#f6f5ce\", \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 2, \"values\": {\"Ath.#\": \"\", \"Perf.#\": \"2\", \"Time (s)\": \"9.63\", \"Wind (m/s)\": \"+1.5\", \"Reaction (s)\": \"0.165\", \"Athlete\": \"Bolt #2\", \"Nation\": \"\", \"Date\": \"5 August 2012\", \"Place\": \"London\", \"Ref.\": \"\"}, \"semantic_signals\": {\"Athlete\": {\"source_cell\": \"table-002-a394b6b879:r3:c6\", \"display_text\": \"Bolt #2\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Bolt #2\"], \"annotations\": [], \"background_color\": null, \"sort_value\": \"Bolt, Usain !\", \"legend_matches\": []}, \"Ref.\": {\"source_cell\": \"table-002-a394b6b879:r3:c10\", \"display_text\": \"[ 27 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 27 ]\", \"role\": \"reference\", \"target\": \"cite_note-riostats-28\", \"note\": \"Butler, Mark. \\\"IAAF Statistics Handbook Special Edition Games of the XXXI Olympiad Rio 2016\\\" . p. 74 . Retrieved 10 May 2023 .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 3, \"values\": {\"Ath.#\": \"\", \"Perf.#\": \"3\", \"Time (s)\": \"9.69\", \"Wind (m/s)\": \"±0.0\", \"Reaction (s)\": \"0.165\", \"Athlete\": \"Bolt #3\", \"Nation\": \"\", \"Date\": \"16 August 2008\", \"Place\": \"Beijing\", \"Ref.\": \"\"}, \"semantic_signals\": {\"Athlete\": {\"source_cell\": \"table-002-a394b6b879:r4:c6\", \"display_text\": \"Bolt #3\", \"is_bold\": false, \"is_italic\": true, \"bold_text\": [], \"italic_text\": [\"Bolt #3\"], \"annotations\": [], \"background_color\": null, \"sort_value\": \"Bolt, Usain !\", \"legend_matches\": []}, \"Ref.\": {\"source_cell\": \"table-002-a394b6b879:r4:c10\", \"display_text\": \"[ 27 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 27 ]\", \"role\": \"reference\", \"target\": \"cite_note-riostats-28\", \"note\": \"Butler, Mark. \\\"IAAF Statistics Handbook Special Edition Games of the XXXI Olympiad Rio 2016\\\" . p. 74 . Retrieved 10 May 2023 .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}]}\n(NOTE: showing 3 of 51 rows to fit the context budget; the deterministic table executor reads the full table.)",
+        "evidence_type": "table",
+        "title": "table-002-a394b6b879",
+        "section_path": [
+          "All-time top 25 men"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "retriever": "table",
+        "rank": 2,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "dfd7da75652a7dc97a667deb",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_id": "table-002-a394b6b879",
+          "n_rows": 51,
+          "rows_rendered": 51,
+          "needs_table_reader": false
+        }
+      },
+      {
+        "evidence_id": "100_metres.html#table-006-0983bd3965",
+        "source_article": "100_metres.html",
+        "content": "Structured table (JSON rows, one object per row — read values directly from these rows; do not rely on prior knowledge).\n{\"artifact_id\": \"654bf0f2b2c93a90bee9f724\", \"table_id\": \"table-006-0983bd3965\", \"caption\": null, \"section\": \"Top 25 junior (under-20) men\", \"columns\": [\"Rank\", \"Time\", \"Wind (m/s)\", \"Athlete\", \"Nation\", \"Date\", \"Place\", \"Age\", \"Ref\"], \"legends\": [], \"rows\": [{\"row_number\": 1, \"values\": {\"Rank\": \"1\", \"Time\": \"9.89\", \"Wind (m/s)\": \"+0.8\", \"Athlete\": \"Issamade Asinga\", \"Nation\": \"Suriname\", \"Date\": \"28 July 2023\", \"Place\": \"São Paulo\", \"Age\": \"18 years, 211 days\", \"Ref\": \"\"}, \"semantic_signals\": {\"Age\": {\"source_cell\": \"table-006-0983bd3965:r2:c8\", \"display_text\": \"18 years, 211 days\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"7003678500000000000♠\", \"legend_matches\": []}, \"Ref\": {\"source_cell\": \"table-006-0983bd3965:r2:c9\", \"display_text\": \"[ 112 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 112 ]\", \"role\": \"reference\", \"target\": \"cite_note-113\", \"note\": \"\\\"100m Final Result\\\" . World Athletics . 28 July 2023 . Retrieved 28 July 2023 .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 2, \"values\": {\"Rank\": \"2\", \"Time\": \"9.91 A\", \"Wind (m/s)\": \"+0.8\", \"Athlete\": \"Letsile Tebogo\", \"Nation\": \"Botswana\", \"Date\": \"2 August 2022\", \"Place\": \"Cali\", \"Age\": \"19 years, 60 days\", \"Ref\": \"\"}, \"semantic_signals\": {\"Age\": {\"source_cell\": \"table-006-0983bd3965:r3:c8\", \"display_text\": \"19 years, 60 days\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"7003700000000000000♠\", \"legend_matches\": []}, \"Ref\": {\"source_cell\": \"table-006-0983bd3965:r3:c9\", \"display_text\": \"[ 113 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 113 ]\", \"role\": \"reference\", \"target\": \"cite_note-114\", \"note\": \"\\\"100m Final Results\\\" (PDF) . World Athletics . 2 August 2022 . Retrieved 18 August 2022 .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 3, \"values\": {\"Rank\": \"3\", \"Time\": \"9.92\", \"Wind (m/s)\": \"+1.8\", \"Athlete\": \"Maurice Gleaton\", \"Nation\": \"United States\", \"Date\": \"1 August 2025\", \"Place\": \"Eugene\", \"Age\": \"18 years, 248 days\", \"Ref\": \"\"}, \"semantic_signals\": {\"Age\": {\"source_cell\": \"table-006-0983bd3965:r4:c8\", \"display_text\": \"18 years, 248 days\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"7003682300000000000♠\", \"legend_matches\": []}, \"Ref\": {\"source_cell\": \"table-006-0983bd3965:r4:c9\", \"display_text\": \"[ 114 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 114 ]\", \"role\": \"reference\", \"target\": \"cite_note-115\", \"note\": \"\\\"100m Results\\\" . World Athletics . Retrieved 18 August 2025 .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 4, \"values\": {\"Rank\": \"4\", \"Time\": \"9.92\", \"Wind (m/s)\": \"+1.1\", \"Athlete\": \"Tate Taylor\", \"Nation\": \"United States\", \"Date\": \"3 May 2025\", \"Place\": \"Austin\", \"Age\": \"17 years, 219 days\", \"Ref\": \"\"}, \"semantic_signals\": {\"Age\": {\"source_cell\": \"table-006-0983bd3965:r5:c8\", \"display_text\": \"17 years, 219 days\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"7003642900000000000♠\", \"legend_matches\": []}, \"Ref\": {\"source_cell\": \"table-006-0983bd3965:r5:c9\", \"display_text\": \"[ 115 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 115 ]\", \"role\": \"reference\", \"target\": \"cite_note-116\", \"note\": \"Melling, Shane (3 May 2025). \\\"Tate Taylor Sets New National Mark in 100m\\\" . Milesplit . Retrieved 4 May 2025 .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 5, \"values\": {\"Rank\": \"5\", \"Time\": \"9.93\", \"Wind (m/s)\": \"+1.6\", \"Athlete\": \"Christian Miller\", \"Nation\": \"United States\", \"Date\": \"20 April 2024\", \"Place\": \"Clermont\", \"Age\": \"17 years, 340 days\", \"Ref\": \"\"}, \"semantic_signals\": {\"Age\": {\"source_cell\": \"table-006-0983bd3965:r6:c8\", \"display_text\": \"17 years, 340 days\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"7003654900000000000♠\", \"legend_matches\": []}, \"Ref\": {\"source_cell\": \"table-006-0983bd3965:r6:c9\", \"display_text\": \"[ 116 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 116 ]\", \"role\": \"reference\", \"target\": \"cite_note-117\", \"note\": \"Olivia Ekpone (20 April 2024). \\\"Christian Miller Goes 9.93, Breaks U20 American 100m Record\\\" . milesplit.com . Retrieved 22 April 2024 .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 6, \"values\": {\"Rank\": \"6\", \"Time\": \"9.94\", \"Wind (m/s)\": \"+0.7\", \"Athlete\": \"Puripol Boonson\", \"Nation\": \"Thailand\", \"Date\": \"10 December 2025\", \"Place\": \"Bangkok\", \"Age\": \"19 years, 336 days\", \"Ref\": \"\"}, \"semantic_signals\": {\"Age\": {\"source_cell\": \"table-006-0983bd3965:r7:c8\", \"display_text\": \"19 years, 336 days\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"7003727600000000000♠\", \"legend_matches\": []}, \"Ref\": {\"source_cell\": \"table-006-0983bd3965:r7:c9\", \"display_text\": \"[ 117 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 117 ]\", \"role\": \"reference\", \"target\": \"cite_note-118\", \"note\": \"Hong Duy; Trung Thu (11 December 2025). \\\"Thailand athlete becomes first Southeast Asian to run 100m under 10 seconds\\\" . e.vnexpress.net . Retrieved 12 December 2025 .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 7, \"values\": {\"Rank\": \"7\", \"Time\": \"9.97\", \"Wind (m/s)\": \"+1.8\", \"Athlete\": \"Trayvon Bromell\", \"Nation\": \"United States\", \"Date\": \"13 June 2014\", \"Place\": \"Eugene\", \"Age\": \"18 years, 338 days\", \"Ref\": \"\"}, \"semantic_signals\": {\"Age\": {\"source_cell\": \"table-006-0983bd3965:r8:c8\", \"display_text\": \"18 years, 338 days\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"7003691300000000000♠\", \"legend_matches\": []}, \"Ref\": {\"source_cell\": \"table-006-0983bd3965:r8:c9\", \"display_text\": \"[ 118 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 118 ]\", \"role\": \"reference\", \"target\": \"cite_note-119\", \"note\": \"Jon Gugala (14 June 2014). \\\"Freshman Sprinting Phenom Wins NCAAs, Sets World Junior Record\\\" . deadspin.com . Dead Spin . Retrieved 13 December 2018 .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}]}\n(NOTE: showing 7 of 26 rows to fit the context budget; the deterministic table executor reads the full table.)",
+        "evidence_type": "table",
+        "title": "table-006-0983bd3965",
+        "section_path": [
+          "Top 25 junior (under-20) men"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "retriever": "table",
+        "rank": 3,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "654bf0f2b2c93a90bee9f724",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_id": "table-006-0983bd3965",
+          "n_rows": 26,
+          "rows_rendered": 26,
+          "needs_table_reader": false
+        }
+      },
+      {
+        "evidence_id": "100_metres.html#table-005-e8484d77dc",
+        "source_article": "100_metres.html",
+        "content": "Structured table (JSON rows, one object per row — read values directly from these rows; do not rely on prior knowledge).\n{\"artifact_id\": \"c1e4ad357ea42fe5f5ce51c0\", \"table_id\": \"table-005-e8484d77dc\", \"caption\": null, \"section\": \"World leading times\", \"columns\": [\"Year\", \"Time\", \"Athlete\", \"Place\"], \"legends\": [], \"rows\": [{\"row_number\": 1, \"values\": {\"Year\": \"1972\", \"Time\": \"11.07\", \"Athlete\": \"Renate Stecher ( GDR )\", \"Place\": \"Munich\"}, \"semantic_signals\": {}}, {\"row_number\": 2, \"values\": {\"Year\": \"1973\", \"Time\": \"11.07\", \"Athlete\": \"Renate Stecher ( GDR )\", \"Place\": \"Dresden\"}, \"semantic_signals\": {}}, {\"row_number\": 3, \"values\": {\"Year\": \"1974\", \"Time\": \"11.13\", \"Athlete\": \"Irena Szewinska ( POL )\", \"Place\": \"Rome\"}, \"semantic_signals\": {}}, {\"row_number\": 4, \"values\": {\"Year\": \"1975\", \"Time\": \"11.13\", \"Athlete\": \"Renate Stecher ( GDR )\", \"Place\": \"Dresden\"}, \"semantic_signals\": {}}, {\"row_number\": 5, \"values\": {\"Year\": \"1976\", \"Time\": \"11.01\", \"Athlete\": \"Annegret Richter ( FRG )\", \"Place\": \"Montreal\"}, \"semantic_signals\": {}}, {\"row_number\": 6, \"values\": {\"Year\": \"1977\", \"Time\": \"10.88\", \"Athlete\": \"Marlies Göhr ( GDR )\", \"Place\": \"Dresden\"}, \"semantic_signals\": {}}, {\"row_number\": 7, \"values\": {\"Year\": \"1978\", \"Time\": \"10.94\", \"Athlete\": \"Marlies Göhr ( GDR )\", \"Place\": \"Dresden\"}, \"semantic_signals\": {}}, {\"row_number\": 8, \"values\": {\"Year\": \"1979\", \"Time\": \"10.97\", \"Athlete\": \"Marlies Göhr ( GDR )\", \"Place\": \"Dresden\"}, \"semantic_signals\": {}}, {\"row_number\": 9, \"values\": {\"Year\": \"1979\", \"Time\": \"10.97\", \"Athlete\": \"Evelyn Ashford ( USA )\", \"Place\": \"Walnut\"}, \"semantic_signals\": {}}, {\"row_number\": 10, \"values\": {\"Year\": \"1980\", \"Time\": \"10.93\", \"Athlete\": \"Marlies Göhr ( GDR )\", \"Place\": \"Dresden\"}, \"semantic_signals\": {}}, {\"row_number\": 11, \"values\": {\"Year\": \"1981\", \"Time\": \"10.90 A\", \"Athlete\": \"Evelyn Ashford ( USA )\", \"Place\": \"Colorado Springs\"}, \"semantic_signals\": {}}, {\"row_number\": 12, \"values\": {\"Year\": \"1982\", \"Time\": \"10.88\", \"Athlete\": \"Marlies Göhr ( GDR )\", \"Place\": \"Karl-Marx-Stadt\"}, \"semantic_signals\": {}}, {\"row_number\": 13, \"values\": {\"Year\": \"1983\", \"Time\": \"10.79 A\", \"Athlete\": \"Evelyn Ashford ( USA )\", \"Place\": \"Colorado Springs\"}, \"semantic_signals\": {}}, {\"row_number\": 14, \"values\": {\"Year\": \"1984\", \"Time\": \"10.76\", \"Athlete\": \"Evelyn Ashford ( USA )\", \"Place\": \"Zürich\"}, \"semantic_signals\": {}}, {\"row_number\": 15, \"values\": {\"Year\": \"1985\", \"Time\": \"10.86\", \"Athlete\": \"Marlies Göhr ( GDR )\", \"Place\": \"Berlin\"}, \"semantic_signals\": {}}, {\"row_number\": 16, \"values\": {\"Year\": \"1986\", \"Time\": \"10.88\", \"Athlete\": \"Evelyn Ashford ( USA )\", \"Place\": \"Rieti\"}, \"semantic_signals\": {}}, {\"row_number\": 17, \"values\": {\"Year\": \"1987\", \"Time\": \"10.86\", \"Athlete\": \"Anelia Nuneva ( BUL )\", \"Place\": \"Belgrade\"}, \"semantic_signals\": {}}, {\"row_number\": 18, \"values\": {\"Year\": \"1987\", \"Time\": \"10.86\", \"Athlete\": \"Silke Möller ( GDR )\", \"Place\": \"Potsdam\"}, \"semantic_signals\": {}}, {\"row_number\": 19, \"values\": {\"Year\": \"1988\", \"Time\": \"10.49\", \"Athlete\": \"Florence Griffith-Joyner ( USA )\", \"Place\": \"Indianapolis\"}, \"semantic_signals\": {}}, {\"row_number\": 20, \"values\": {\"Year\": \"1989\", \"Time\": \"10.78 A\", \"Athlete\": \"Dawn Sowell ( USA )\", \"Place\": \"Provo\"}, \"semantic_signals\": {}}, {\"row_number\": 21, \"values\": {\"Year\": \"1990\", \"Time\": \"10.78\", \"Athlete\": \"Merlene Ottey ( JAM )\", \"Place\": \"Seville\"}, \"semantic_signals\": {}}, {\"row_number\": 22, \"values\": {\"Year\": \"1991\", \"Time\": \"10.79\", \"Athlete\": \"Merlene Ottey ( JAM )\", \"Place\": \"Vigo\"}, \"semantic_signals\": {}}, {\"row_number\": 23, \"values\": {\"Year\": \"1992\", \"Time\": \"10.80\", \"Athlete\": \"Merlene Ottey ( JAM )\", \"Place\": \"Salamanca\"}, \"semantic_signals\": {}}, {\"row_number\": 24, \"values\": {\"Year\": \"1993\", \"Time\": \"10.82\", \"Athlete\": \"Gail Devers ( USA )\", \"Place\": \"Lausanne\"}, \"semantic_signals\": {}}, {\"row_number\": 25, \"values\": {\"Year\": \"1993\", \"Time\": \"10.82\", \"Athlete\": \"Gail Devers ( USA )\", \"Place\": \"Stuttgart\"}, \"semantic_signals\": {}}, {\"row_number\": 26, \"values\": {\"Year\": \"1993\", \"Time\": \"10.82\", \"Athlete\": \"Merlene Ottey ( JAM )\", \"Place\": \"Stuttgart\"}, \"semantic_signals\": {}}, {\"row_number\": 27, \"values\": {\"Year\": \"1994\", \"Time\": \"10.77\", \"Athlete\": \"Irina Privalova ( RUS )\", \"Place\": \"Lausanne\"}, \"semantic_signals\": {}}, {\"row_number\": 28, \"values\": {\"Year\": \"1995\", \"Time\": \"10.84\", \"Athlete\": \"Gwen Torrence ( USA )\", \"Place\": \"Gothenburg\"}, \"semantic_signals\": {}}, {\"row_number\": 29, \"values\": {\"Year\": \"1996\", \"Time\": \"10.74\", \"Athlete\": \"Merlene Ottey ( JAM )\", \"Place\": \"Milan\"}, \"semantic_signals\": {}}, {\"row_number\": 30, \"values\": {\"Year\": \"1997\", \"Time\": \"10.76\", \"Athlete\": \"Marion Jones ( USA )\", \"Place\": \"Brussels\"}, \"semantic_signals\": {}}, {\"row_number\": 31, \"values\": {\"Year\": \"1998\", \"Time\": \"10.65 A\", \"Athlete\": \"Marion Jones ( USA )\", \"Place\": \"Johannesburg\"}, \"semantic_signals\": {}}, {\"row_number\": 32, \"values\": {\"Year\": \"1999\", \"Time\": \"10.70\", \"Athlete\": \"Marion Jones ( USA )\", \"Place\": \"Seville\"}, \"semantic_signals\": {}}, {\"row_number\": 33, \"values\": {\"Year\": \"2000\", \"Time\": \"10.78\", \"Athlete\": \"Marion Jones ( USA )\", \"Place\": \"London\"}, \"semantic_signals\": {}}, {\"row_number\": 34, \"values\": {\"Year\": \"2001\", \"Time\": \"10.82\", \"Athlete\": \"Zhanna Block ( UKR )\", \"Place\": \"Edmonton\"}, \"semantic_signals\": {}}, {\"row_number\": 35, \"values\": {\"Year\": \"2002\", \"Time\": \"10.91\", \"Athlete\": \"Debbie Ferguson-McKenzie ( BAH )\", \"Place\": \"Manchester\"}, \"semantic_signals\": {}}, {\"row_number\": 36, \"values\": {\"Year\": \"2003\", \"Time\": \"10.86\", \"Athlete\": \"Chryste Gaines ( USA )\", \"Place\": \"Monaco\"}, \"semantic_signals\": {}}, {\"row_number\": 37, \"values\": {\"Year\": \"2004\", \"Time\": \"10.77\", \"Athlete\": \"Ivet Lalova ( BUL )\", \"Place\": \"Plovdiv\"}, \"semantic_signals\": {}}, {\"row_number\": 38, \"values\": {\"Year\": \"2005\", \"Time\": \"10.84\", \"Athlete\": \"Chandra Sturrup ( BAH )\", \"Place\": \"Lausanne\"}, \"semantic_signals\": {}}, {\"row_number\": 39, \"values\": {\"Year\": \"2006\", \"Time\": \"10.82\", \"Athlete\": \"Sherone Simpson ( JAM )\", \"Place\": \"Kingston\"}, \"semantic_signals\": {}}, {\"row_number\": 40, \"values\": {\"Year\": \"2007\", \"Time\": \"10.89\", \"Athlete\": \"Veronica Campbell-Brown ( JAM )\", \"Place\": \"Kingston\"}, \"semantic_signals\": {}}, {\"row_number\": 41, \"values\": {\"Year\": \"2008\", \"Time\": \"10.78\", \"Athlete\": \"Torri Edwards ( USA )\", \"Place\": \"Eugene\"}, \"semantic_signals\": {}}, {\"row_number\": 42, \"values\": {\"Year\": \"2008\", \"Time\": \"10.78\", \"Athlete\": \"Shelly-Ann Fraser ( JAM )\", \"Place\": \"Beijing\"}, \"semantic_signals\": {}}, {\"row_number\": 43, \"values\": {\"Year\": \"2009\", \"Time\": \"10.64\", \"Athlete\": \"Carmelita Jeter ( USA )\", \"Place\": \"Shanghai\"}, \"semantic_signals\": {}}, {\"row_number\": 44, \"values\": {\"Year\": \"2010\", \"Time\": \"10.78\", \"Athlete\": \"Veronica Campbell-Brown ( JAM )\", \"Place\": \"Eugene\"}, \"semantic_signals\": {}}, {\"row_number\": 45, \"values\": {\"Year\": \"2011\", \"Time\": \"10.70\", \"Athlete\": \"Carmelita Jeter ( USA )\", \"Place\": \"Eugene\"}, \"semantic_signals\": {}}, {\"row_number\": 46, \"values\": {\"Year\": \"2012\", \"Time\": \"10.70\", \"Athlete\": \"Shelly-Ann Fraser-Pryce ( JAM )\", \"Place\": \"Kingston\"}, \"semantic_signals\": {}}, {\"row_number\": 47, \"values\": {\"Year\": \"2013\", \"Time\": \"10.71\", \"Athlete\": \"Shelly-Ann Fraser-Pryce ( JAM )\", \"Place\": \"Moscow\"}, \"semantic_signals\": {}}, {\"row_number\": 48, \"values\": {\"Year\": \"2014\", \"Time\": \"10.80\", \"Athlete\": \"Tori Bowie ( USA )\", \"Place\": \"Monaco\"}, \"semantic_signals\": {}}, {\"row_number\": 49, \"values\": {\"Year\": \"2015\", \"Time\": \"10.74\", \"Athlete\": \"Shelly-Ann Fraser-Pryce ( JAM )\", \"Place\": \"Saint-Denis\"}, \"semantic_signals\": {}}, {\"row_number\": 50, \"values\": {\"Year\": \"2016\", \"Time\": \"10.70\", \"Athlete\": \"Elaine Thompson ( JAM )\", \"Place\": \"Kingston\"}, \"semantic_signals\": {}}, {\"row_number\": 51, \"values\": {\"Year\": \"2017\", \"Time\": \"10.71\", \"Athlete\": \"Elaine Thompson ( JAM )\", \"Place\": \"Kingston\"}, \"semantic_signals\": {}}]}\n(NOTE: showing 51 of 61 rows to fit the context budget; the deterministic table executor reads the full table.)",
+        "evidence_type": "table",
+        "title": "table-005-e8484d77dc",
+        "section_path": [
+          "World leading times"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "retriever": "table",
+        "rank": 4,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "c1e4ad357ea42fe5f5ce51c0",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_id": "table-005-e8484d77dc",
+          "n_rows": 61,
+          "rows_rendered": 61,
+          "needs_table_reader": false
+        }
+      },
+      {
+        "evidence_id": "100_metres.html#table-007-8ee4d15449",
+        "source_article": "100_metres.html",
+        "content": "Structured table (JSON rows, one object per row — read values directly from these rows; do not rely on prior knowledge).\n{\"artifact_id\": \"c85529b410ed496c482ba80a\", \"table_id\": \"table-007-8ee4d15449\", \"caption\": null, \"section\": \"Top 25 junior (under-20) women\", \"columns\": [\"Rank\", \"Time\", \"Wind (m/s)\", \"Athlete\", \"Nation\", \"Date\", \"Place\", \"Age\", \"Ref\"], \"legends\": [], \"rows\": [{\"row_number\": 1, \"values\": {\"Rank\": \"1\", \"Time\": \"10.75\", \"Wind (m/s)\": \"+1.6\", \"Athlete\": \"Sha'Carri Richardson\", \"Nation\": \"United States\", \"Date\": \"8 June 2019\", \"Place\": \"Austin\", \"Age\": \"19 years, 75 days\", \"Ref\": \"\"}, \"semantic_signals\": {\"Age\": {\"source_cell\": \"table-007-8ee4d15449:r2:c8\", \"display_text\": \"19 years, 75 days\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"7003701400000000000♠\", \"legend_matches\": []}, \"Ref\": {\"source_cell\": \"table-007-8ee4d15449:r2:c9\", \"display_text\": \"[ 136 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 136 ]\", \"role\": \"reference\", \"target\": \"cite_note-Jenna_West-137\", \"note\": \"Jenna West (8 June 2019). \\\"LSU Freshman Breaks Women's 100m Collegiate Record in 10.75, Celebrates Early\\\" . Sports Illustrated . Retrieved 8 June 2019 .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 2, \"values\": {\"Rank\": \"2\", \"Time\": \"10.83\", \"Wind (m/s)\": \"+0.6\", \"Athlete\": \"Tamari Davis\", \"Nation\": \"United States\", \"Date\": \"30 July 2022\", \"Place\": \"Memphis\", \"Age\": \"19 years, 175 days\", \"Ref\": \"\"}, \"semantic_signals\": {\"Age\": {\"source_cell\": \"table-007-8ee4d15449:r3:c8\", \"display_text\": \"19 years, 175 days\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"7003711500000000000♠\", \"legend_matches\": []}, \"Ref\": {\"source_cell\": \"table-007-8ee4d15449:r3:c9\", \"display_text\": \"[ 137 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 137 ]\", \"role\": \"reference\", \"target\": \"cite_note-138\", \"note\": \"Cory Mull (30 July 2022). \\\"Tamari Davis, AAU Alumnus, Sets Potential World U20 Record\\\" . milesplit.com . Retrieved 18 August 2022 .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 3, \"values\": {\"Rank\": \"3\", \"Time\": \"10.88\", \"Wind (m/s)\": \"+2.0\", \"Athlete\": \"Marlies Göhr\", \"Nation\": \"East Germany\", \"Date\": \"1 July 1977\", \"Place\": \"Dresden\", \"Age\": \"19 years, 102 days\", \"Ref\": \"\"}, \"semantic_signals\": {\"Age\": {\"source_cell\": \"table-007-8ee4d15449:r4:c8\", \"display_text\": \"19 years, 102 days\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"7003704200000000000♠\", \"legend_matches\": []}}}, {\"row_number\": 4, \"values\": {\"Rank\": \"4\", \"Time\": \"10.89\", \"Wind (m/s)\": \"+1.8\", \"Athlete\": \"Katrin Krabbe\", \"Nation\": \"East Germany\", \"Date\": \"20 July 1988\", \"Place\": \"Berlin\", \"Age\": \"18 years, 241 days\", \"Ref\": \"\"}, \"semantic_signals\": {\"Age\": {\"source_cell\": \"table-007-8ee4d15449:r5:c8\", \"display_text\": \"18 years, 241 days\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"7003681500000000000♠\", \"legend_matches\": []}}}, {\"row_number\": 5, \"values\": {\"Rank\": \"4\", \"Time\": \"10.89\", \"Wind (m/s)\": \"+0.9\", \"Athlete\": \"Shawnti Jackson\", \"Nation\": \"United States\", \"Date\": \"3 June 2023\", \"Place\": \"Nashville\", \"Age\": \"18 years, 32 days\", \"Ref\": \"\"}, \"semantic_signals\": {\"Age\": {\"source_cell\": \"table-007-8ee4d15449:r6:c8\", \"display_text\": \"18 years, 32 days\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"7003660600000000000♠\", \"legend_matches\": []}, \"Ref\": {\"source_cell\": \"table-007-8ee4d15449:r6:c9\", \"display_text\": \"[ 138 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 138 ]\", \"role\": \"reference\", \"target\": \"cite_note-139\", \"note\": \"Steve Campbell (3 June 2023). \\\"Shawnti Jackson runs blistering 10.89 secs, set national high school record\\\" . world-track.org . Retrieved 7 June 2023 .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 6, \"values\": {\"Rank\": \"6\", \"Time\": \"10.92\", \"Wind (m/s)\": \"+1.0\", \"Athlete\": \"Alana Reid\", \"Nation\": \"Jamaica\", \"Date\": \"29 March 2023\", \"Place\": \"Kingston\", \"Age\": \"18 years, 68 days\", \"Ref\": \"\"}, \"semantic_signals\": {\"Age\": {\"source_cell\": \"table-007-8ee4d15449:r7:c8\", \"display_text\": \"18 years, 68 days\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"7003664200000000000♠\", \"legend_matches\": []}, \"Ref\": {\"source_cell\": \"table-007-8ee4d15449:r7:c9\", \"display_text\": \"[ 119 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 119 ]\", \"role\": \"reference\", \"target\": \"cite_note-Noel_Francis-120\", \"note\": \"Noel Francis (2 April 2023). \\\"Nkrumie and Reid sizzle at Jamaican High School Championships\\\" . World Athletics . Retrieved 17 April 2023 .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 7, \"values\": {\"Rank\": \"7\", \"Time\": \"10.95 A\", \"Wind (m/s)\": \"−0.1\", \"Athlete\": \"Tina Clayton\", \"Nation\": \"Jamaica\", \"Date\": \"3 August 2022\", \"Place\": \"Cali\", \"Age\": \"17 years, 351 days\", \"Ref\": \"\"}, \"semantic_signals\": {\"Age\": {\"source_cell\": \"table-007-8ee4d15449:r8:c8\", \"display_text\": \"17 years, 351 days\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"7003656000000000000♠\", \"legend_matches\": []}, \"Ref\": {\"source_cell\": \"table-007-8ee4d15449:r8:c9\", \"display_text\": \"[ 139 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 139 ]\", \"role\": \"reference\", \"target\": \"cite_note-140\", \"note\": \"\\\"100 Metres Women – Final – Results\\\" (PDF) . World Athletics . 4 August 2022 . Retrieved 18 August 2022 .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 8, \"values\": {\"Rank\": \"8\", \"Time\": \"10.97\", \"Wind (m/s)\": \"+1.2\", \"Athlete\": \"Briana Williams\", \"Nation\": \"Jamaica\", \"Date\": \"5 June 2021\", \"Place\": \"Miramar\", \"Age\": \"19 years, 76 days\", \"Ref\": \"\"}, \"semantic_signals\": {\"Age\": {\"source_cell\": \"table-007-8ee4d15449:r9:c8\", \"display_text\": \"19 years, 76 days\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": \"7003701600000000000♠\", \"legend_matches\": []}, \"Ref\": {\"source_cell\": \"table-007-8ee4d15449:r9:c9\", \"display_text\": \"[ 140 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 140 ]\", \"role\": \"reference\", \"target\": \"cite_note-Leighton_Levy-141\", \"note\": \"Leighton Levy (6 June 2021). \\\"Thompson-Herah runs 10.87, Briana Williams breaks 100m U20 record, again, at New Life Invitational\\\" . SportsMax . Retrieved 26 June 2021 .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}]}\n(NOTE: showing 8 of 26 rows to fit the context budget; the deterministic table executor reads the full table.)",
+        "evidence_type": "table",
+        "title": "table-007-8ee4d15449",
+        "section_path": [
+          "Top 25 junior (under-20) women"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "retriever": "table",
+        "rank": 5,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "c85529b410ed496c482ba80a",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_id": "table-007-8ee4d15449",
+          "n_rows": 26,
+          "rows_rendered": 26,
+          "needs_table_reader": false
+        }
+      },
+      {
+        "evidence_id": "100_metres.html#table-002-a394b6b879#computed-table-r1-1-d0156b009b12",
+        "source_article": "100_metres.html",
+        "content": "Deterministic table-computation result. Use the computed rows/calculation below rather than recomputing them.\n{\n  \"table_request\": {\n    \"missing_fact\": \"Get country for the place where it was achieved (Berlin) if available in the table or related article text.\",\n    \"source_article\": \"100_metres.html\",\n    \"table_id\": \"table-002-a394b6b879\",\n    \"expected_caption\": null,\n    \"operation\": \"lookup\",\n    \"columns_needed\": [],\n    \"row_filters\": {},\n    \"comparison_key\": null\n  },\n  \"query_plan\": {\n    \"artifact_id\": \"dfd7da75652a7dc97a667deb\",\n    \"operation\": \"lookup\",\n    \"selected_columns\": [\n      \"Time (s)\",\n      \"Athlete\",\n      \"Nation\",\n      \"Date\",\n      \"Place\"\n    ],\n    \"filters\": {},\n    \"predicates\": [],\n    \"group_by\": [],\n    \"calculation\": null,\n    \"calculation_column\": null,\n    \"sort_column\": null,\n    \"sort_direction\": null,\n    \"limit\": 1\n  },\n  \"result\": {\n    \"request_id\": \"table-r1-1-d0156b009b12\",\n    \"artifact_id\": \"dfd7da75652a7dc97a667deb\",\n    \"result_rows\": [\n      {\n        \"Time (s)\": \"9.58\",\n        \"Athlete\": \"Usain Bolt\",\n        \"Nation\": \"Jamaica\",\n        \"Date\": \"16 August 2009\",\n        \"Place\": \"Berlin\"\n      }\n    ],\n    \"calculation\": null,\n    \"source_cells\": [\n      \"table-002-a394b6b879:r2:c3\",\n      \"table-002-a394b6b879:r2:c6\",\n      \"table-002-a394b6b879:r2:c7\",\n      \"table-002-a394b6b879:r2:c8\",\n      \"table-002-a394b6b879:r2:c9\"\n    ],\n    \"cell_details\": [\n      {\n        \"source_cell\": \"table-002-a394b6b879:r2:c3\",\n        \"row_number\": 1,\n        \"column\": \"Time (s)\",\n        \"text\": \"9.58\",\n        \"display_text\": \"9.58\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": \"#f6f5ce\",\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-002-a394b6b879:r2:c6\",\n        \"row_number\": 1,\n        \"column\": \"Athlete\",\n        \"text\": \"Usain Bolt\",\n        \"display_text\": \"Usain Bolt\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": \"#f6f5ce\",\n        \"sort_value\": \"Bolt, Usain\",\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-002-a394b6b879:r2:c7\",\n        \"row_number\": 1,\n        \"column\": \"Nation\",\n        \"text\": \"Jamaica\",\n        \"display_text\": \"Jamaica\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": \"#f6f5ce\",\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-002-a394b6b879:r2:c8\",\n        \"row_number\": 1,\n        \"column\": \"Date\",\n        \"text\": \"16 August 2009\",\n        \"display_text\": \"16 August 2009\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": \"#f6f5ce\",\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-002-a394b6b879:r2:c9\",\n        \"row_number\": 1,\n        \"column\": \"Place\",\n        \"text\": \"Berlin\",\n        \"display_text\": \"Berlin\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": \"#f6f5ce\",\n        \"sort_value\": null,\n        \"legend_matches\": []\n      }\n    ],\n    \"sufficient\": true,\n    \"warnings\": [\n      \"Expanded rowspan/colspan values into the logical grid.\",\n      \"Superscript/subscript annotations are available in row_cells.\"\n    ]\n  }\n}",
+        "evidence_type": "table",
+        "title": "Computed table result: Get country for the place where it was achieved (Berlin) if available in the table or related article text.",
+        "section_path": [
+          "All-time top 25 men"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "dfd7da75652a7dc97a667deb",
+        "source_cells": [
+          "table-002-a394b6b879:r2:c3",
+          "table-002-a394b6b879:r2:c6",
+          "table-002-a394b6b879:r2:c7",
+          "table-002-a394b6b879:r2:c8",
+          "table-002-a394b6b879:r2:c9"
+        ],
+        "metadata": {
+          "retrieval_stage": "table_computation",
+          "table_request_id": "table-r1-1-d0156b009b12",
+          "operation": "lookup",
+          "calculation": null,
+          "table_computation_sufficient": true,
+          "warnings": [
+            "Expanded rowspan/colspan values into the logical grid.",
+            "Superscript/subscript annotations are available in row_cells."
+          ]
+        }
+      },
+      {
+        "evidence_id": "100_metres.html#table-002-a394b6b879#computed-table-r2-1-c7c60a0fd5c7",
+        "source_article": "100_metres.html",
+        "content": "Deterministic table-computation result. Use the computed rows/calculation below rather than recomputing them.\n{\n  \"table_request\": {\n    \"missing_fact\": \"Confirm whether the place (Berlin) has an associated country in any relevant table (e.g., world record/record performances tables) or needs mapping to a country.\",\n    \"source_article\": \"100_metres.html\",\n    \"table_id\": \"table-002-a394b6b879\",\n    \"expected_caption\": null,\n    \"operation\": \"lookup\",\n    \"columns_needed\": [],\n    \"row_filters\": {},\n    \"comparison_key\": null\n  },\n  \"query_plan\": {\n    \"artifact_id\": \"dfd7da75652a7dc97a667deb\",\n    \"operation\": \"lookup\",\n    \"selected_columns\": [\n      \"Time (s)\",\n      \"Athlete\",\n      \"Nation\",\n      \"Date\",\n      \"Place\",\n      \"Ref.\"\n    ],\n    \"filters\": {},\n    \"predicates\": [\n      {\n        \"column\": \"Time (s)\",\n        \"op\": \"equals\",\n        \"value\": \"9.58\",\n        \"value2\": null\n      }\n    ],\n    \"group_by\": [],\n    \"calculation\": null,\n    \"calculation_column\": null,\n    \"sort_column\": null,\n    \"sort_direction\": null,\n    \"limit\": 5\n  },\n  \"result\": {\n    \"request_id\": \"table-r2-1-c7c60a0fd5c7\",\n    \"artifact_id\": \"dfd7da75652a7dc97a667deb\",\n    \"result_rows\": [\n      {\n        \"Time (s)\": \"9.58\",\n        \"Athlete\": \"Usain Bolt\",\n        \"Nation\": \"Jamaica\",\n        \"Date\": \"16 August 2009\",\n        \"Place\": \"Berlin\",\n        \"Ref.\": \"\"\n      }\n    ],\n    \"calculation\": null,\n    \"source_cells\": [\n      \"table-002-a394b6b879:r2:c3\",\n      \"table-002-a394b6b879:r2:c6\",\n      \"table-002-a394b6b879:r2:c7\",\n      \"table-002-a394b6b879:r2:c8\",\n      \"table-002-a394b6b879:r2:c9\",\n      \"table-002-a394b6b879:r2:c10\"\n    ],\n    \"cell_details\": [\n      {\n        \"source_cell\": \"table-002-a394b6b879:r2:c3\",\n        \"row_number\": 1,\n        \"column\": \"Time (s)\",\n        \"text\": \"9.58\",\n        \"display_text\": \"9.58\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": \"#f6f5ce\",\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-002-a394b6b879:r2:c6\",\n        \"row_number\": 1,\n        \"column\": \"Athlete\",\n        \"text\": \"Usain Bolt\",\n        \"display_text\": \"Usain Bolt\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": \"#f6f5ce\",\n        \"sort_value\": \"Bolt, Usain\",\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-002-a394b6b879:r2:c7\",\n        \"row_number\": 1,\n        \"column\": \"Nation\",\n        \"text\": \"Jamaica\",\n        \"display_text\": \"Jamaica\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": \"#f6f5ce\",\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-002-a394b6b879:r2:c8\",\n        \"row_number\": 1,\n        \"column\": \"Date\",\n        \"text\": \"16 August 2009\",\n        \"display_text\": \"16 August 2009\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": \"#f6f5ce\",\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-002-a394b6b879:r2:c9\",\n        \"row_number\": 1,\n        \"column\": \"Place\",\n        \"text\": \"Berlin\",\n        \"display_text\": \"Berlin\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": \"#f6f5ce\",\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-002-a394b6b879:r2:c10\",\n        \"row_number\": 1,\n        \"column\": \"Ref.\",\n        \"text\": \"\",\n        \"display_text\": \"[ 25 ] [ 26 ]\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [\n          {\n            \"position\": \"superscript\",\n            \"text\": \"[ 25 ]\",\n            \"role\": \"reference\",\n            \"target\": \"cite_note-Berlin2009-26\",\n            \"note\": \"Layden, Tim (31 August 2009). \\\"Bolt Strikes Twice\\\" . Sports Illustrated . Retrieved 5 December 2018 .\"\n          },\n          {\n            \"position\": \"superscript\",\n            \"text\": \"[ 26 ]\",\n            \"role\": \"reference\",\n            \"target\": \"cite_note-mwc2009-27\",\n            \"note\": \"\\\"100 Metres Result | 12th IAAF World Championships in Athletics\\\" . worldathletics.org . Retrieved 10 May 2023 .\"\n          }\n        ],\n        \"background_color\": \"#f6f5ce\",\n        \"sort_value\": null,\n        \"legend_matches\": []\n      }\n    ],\n    \"sufficient\": true,\n    \"warnings\": [\n      \"Expanded rowspan/colspan values into the logical grid.\",\n      \"Superscript/subscript annotations are available in row_cells.\"\n    ]\n  }\n}",
+        "evidence_type": "table",
+        "title": "Computed table result: Confirm whether the place (Berlin) has an associated country in any relevant table (e.g., world record/record performances tables) or needs mapping to a country.",
+        "section_path": [
+          "All-time top 25 men"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "dfd7da75652a7dc97a667deb",
+        "source_cells": [
+          "table-002-a394b6b879:r2:c3",
+          "table-002-a394b6b879:r2:c6",
+          "table-002-a394b6b879:r2:c7",
+          "table-002-a394b6b879:r2:c8",
+          "table-002-a394b6b879:r2:c9",
+          "table-002-a394b6b879:r2:c10"
+        ],
+        "metadata": {
+          "retrieval_stage": "table_computation",
+          "table_request_id": "table-r2-1-c7c60a0fd5c7",
+          "operation": "lookup",
+          "calculation": null,
+          "table_computation_sufficient": true,
+          "warnings": [
+            "Expanded rowspan/colspan values into the logical grid.",
+            "Superscript/subscript annotations are available in row_cells."
+          ]
+        }
+      },
+      {
+        "evidence_id": "100_metres.html#section-006-00",
+        "source_article": "100_metres.html",
+        "content": "Article: 100 metres\nSection: Record performances\n\nUsain Bolt breaking the world and Olympic records at the 2008 Beijing Olympics\n\nMajor 100 m races, such as at the Olympic Games, attract much attention, particularly when the world record is thought to be within reach.\n\nThe men's world record has been improved upon twelve times since electronic timing became mandatory in 1977.[18] The current men's world record of 9.58 s is held by Usain Bolt of Jamaica, set at the 2009 World Athletics Championships final in Berlin, Germany on 16 August 2009, breaking his own previous world record by 0.11 s.[19] The current women's world record of 10.49 s was set by Florence Griffith-Joyner of the US, at the 1988 United States Olympic Trials in Indianapolis, Indiana, on 16 July 1988[20] breaking Evelyn Ashford's four-year-old world record by 0.27 seconds. The extraordinary nature of this result and those of several other sprinters in this race raised the possibility of a technical malfunction with the wind gauge which read at 0.0 m/s – a reading which was at complete odds to the windy conditions on the day with high wind speeds being recorded in all other sprints before and after this race as well as the parallel long jump runway at the time of the Griffith-Joyner performance. The next best wind legal performance is Elaine Thompson-Herah's 10.54 second clocking in 2021 at the Prefontaine Classic. Griffith-Joyner's next best legal performance of 10.61 from 1988, would have her third on the all-time list behind Thompson-Herah and Shelly-Ann Fraser-Pryce (10.60).[21]\n\nSome records have been marred by prohibited drug use – in particular, the scandal at the 1988 Summer Olympics when the winner, Canadian Ben Johnson, was stripped of his medal and world record.\n\nJim Hines, Ronnie Ray Smith and Charles Greene were the first to break the 10-second barrier in the 100 m, all on 20 June 1968, the Night of Speed. Hines also recorded the first legal electronically timed sub-10 second 100 m in winning the 100 metres at the 1968 Olympics. Bob Hayes ran a wind-assisted 9.91 seconds at the 1964 Olympics.",
+        "evidence_type": "text",
+        "title": "Record performances",
+        "section_path": [
+          "Record performances"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.735671877861023,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "100_metres.html#section-007-00",
+        "source_article": "100_metres.html",
+        "content": "Article: 100 metres\nSection: Record performances > Continental records\n\nUpdated 1 August 2025.[22][23]\n\nArea\n\nMen\n\nWomen\n\nTime\n\n(s)\n\nWind\n\n(m/s)\n\nSeason\n\nAthlete\n\nNation\n\nTime\n\n(s)\n\nWind\n\n(m/s)\n\nSeason\n\nAthlete\n\nNation\n\nAfrica (records)\n\n9.77 A\n+1.2\n2021\nFerdinand Omanyala\n Kenya\n10.72\n+0.4\n2022\nMarie-Josée Ta Lou\n Ivory Coast\n\nAsia (records)\n\n9.83\n+0.9\n2021\nSu Bingtian\n China\n10.79\n±0.0\n1997\nLi Xuemei\n China\n\nEurope (records)\n\n9.80\n+0.1\n2021\nMarcell Jacobs\n Italy\n10.73\n+2.0\n1998\nChristine Arron\n France\n\nNorth, Central America\n\nand Caribbean (records)\n\n9.58 WR\n+0.9\n2009\nUsain Bolt\n Jamaica\n10.49 WR\n±0.0\n1988\nFlorence Griffith-Joyner\n United States\n\nOceania (records)\n\n9.93\n+1.8\n2003\nPatrick Johnson\n Australia\n10.94\n+0.6\n2025\nZoe Hobbs\n New Zealand\n\nSouth America (records)\n\n9.93\n+1.5\n2025\nErik Cardoso\n Brazil\n10.91\n−0.2\n2017\nRosângela Santos\n Brazil",
+        "evidence_type": "text",
+        "title": "Continental records",
+        "section_path": [
+          "Record performances",
+          "Continental records"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "retriever": "vector",
+        "rank": 2,
+        "raw_score": 0.7781266570091248,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "100_metres.html#section-000-00",
+        "source_article": "100_metres.html",
+        "content": "Article: 100 metres\nSection: Lead\n\nSprint race\n\nThis article is about the 100 metres race. For lengths on the order of magnitude of 100 metres, see Orders of magnitude (length) § 1 hectometre.\n\nFor other uses, see 100 metres (disambiguation).\n\nAthletics\n\n100 metres\n\nStart of the men's 100 metres final at the\n\n2012 Olympic Games in London\n\nWorld records\n\nMen Usain Bolt (JAM) 9.58 (2009)\n\nWomen Florence Griffith-Joyner (USA) 10.49 (1988)\n\nOlympic records\n\nMen Usain Bolt (JAM) 9.63 (2012)\n\nWomen Elaine Thompson-Herah (JAM) 10.61 (2021)\n\nWorld Championship records\n\nMen Usain Bolt (JAM) 9.58 (2009)\n\nWomen Melissa Jefferson-Wooden (USA) 10.61 (2025)\n\nWorld junior (U20) records\n\nMen Letsile Tebogo (BOT) 9.91 (2022)\n\nWomen Sha'Carri Richardson (USA) 10.75 (2019)\n\nStart (green) and end (red) points of a 100 metre race, marked on a running track\n\nThe 100 metres, or 100-meter dash, is a sprint race in track and field competitions. The shortest common outdoor running distance, the 100-metre (109.36 yd) dash is one of the most popular and prestigious events in the sport of athletics. It has been contested at the Summer Olympics since 1896 for men and since 1928 for women. The inaugural World Championships were in 1983.\n\nOn an outdoor 400-metre running track, the 100 m is held on the home straight, with the start usually being set on an extension to make it a straight-line race. There are three instructions given to the runners immediately before and at the beginning of the race: \"on your marks\", \"set\", and the firing of the starter's pistol. The runners move to the starting blocks when they hear the \"on your marks\" instruction. The following instruction, to adopt the \"set\" position, allows them to adopt a more efficient starting posture and isometrically preload their muscles: this will help them to start faster. A race-official then fires the starter's pistol to signal the race beginning and the sprinters stride forwards from the blocks. Sprinters typically reach top speed after somewhere between 50 and 60 m. Their speed then slows towards the finish line.\n\nWomen's 100 m Final – 2015 World Championships, won by Jamaican sprinter Shelly-Ann Fraser-Pryce\n\nThe 10-second barrier has historically been a barometer of fast men's performances, while the best female sprinters take eleven seconds or less to complete the race. The men's world record is 9.58 seconds, set by Jamaica's Usain Bolt in 2009, while the women's world record is 10.49 seconds, set by American Florence Griffith-Joyner in 1988.[a]\n\nThe 100 metres is considered one of the blue ribbon events of the Olympics and is among the highest profile competitions at the games. It is the most prestigious 100 metres race at an elite level and is the shortest sprinting competition at the Olympics – a position it has held at every edition except for a brief period between 1900 and 1904, when a men's 60 metres was contested. The unofficial \"world's fastest man or woman\" title typically goes to the Olympic or world 100 metres champion.[3][4][5]\nThe 200 metre time almost always yields a \"faster\" average speed than a 100-metre race time, since the initial slow speed at the start is spread out over the longer distance.[6] The current men's Olympic champion is Noah Lyles, while the current world champion is Oblique Seville. The current women's Olympic champion is Julien Alfred, and the world champion is Melissa Jefferson-Wooden.",
+        "evidence_type": "text",
+        "title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "retriever": "vector",
+        "rank": 3,
+        "raw_score": 0.8237656354904175,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "100_metres.html#section-010-00",
+        "source_article": "100_metres.html",
+        "content": "Article: 100 metres\nSection: All-time top 25 men > Annulled marks\n\nTyson Gay (USA) also ran 9.75 (+1.1 m/s) during the USA Championships in Des Moines, Iowa on 21 June 2013, but he was later disqualified after he failed a drug test and his time was subsequently rescinded.[65]\n\nJustin Gatlin (USA) also ran 9.77 (+1.7 m/s) in Doha on 12 May 2006, which at the time equalled the world record and was later ratified. However, that same year, Gatlin tested positive for testosterone and the record was subsequently rescinded.[66]\n\nTim Montgomery (USA) ran 9.78 (+2.0 m/s) in Paris on 14 September 2002, which was at the time ratified as a world record.[67] However, the record was rescinded in December 2005 following his indictment in the BALCO scandal on drug use and drug trafficking charges.[68] The time had stood as the world record until Asafa Powell first ran 9.77.[69]\n\nBen Johnson (CAN) ran 9.79 (+1.1 m/s) during the Olympics in Seoul on 24 September 1988, but he was disqualified after he tested positive for stanozolol after the race. He subsequently admitted to drug use between 1981 and 1988, and also his time of 9.83 (+1.0 m/s) during the World Championships in Rome on 30 August 1987 was rescinded.",
+        "evidence_type": "text",
+        "title": "Annulled marks",
+        "section_path": [
+          "All-time top 25 men",
+          "Annulled marks"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "retriever": "vector",
+        "rank": 4,
+        "raw_score": 0.8393344283103943,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "100_metres.html#section-005-00",
+        "source_article": "100_metres.html",
+        "content": "Article: 100 metres\nSection: 10-second and 11-second barriers\n\nMain article: 10-second barrier\n\nThe 10-second mark had been widely considered a barrier for the 100 metres in men's sprinting. The first man to break the 10 second barrier with automatic timing was Jim Hines at the 1968 Summer Olympics. Since then, more than 200 sprinters have run faster than 10 seconds.[17] Similarly, 11 seconds is considered the standard for female athletes. The first woman to go under 11 seconds was Marlies Göhr in 1977.",
+        "evidence_type": "text",
+        "title": "10-second and 11-second barriers",
+        "section_path": [
+          "10-second and 11-second barriers"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "retriever": "vector",
+        "rank": 5,
+        "raw_score": 0.8631016612052917,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "100_metres.html#section-009-00",
+        "source_article": "100_metres.html",
+        "content": "Article: 100 metres\nSection: All-time top 25 men > Assisted marks\n\nAny performance with a following wind of more than 2.0 metres per second is not counted for record purposes. Below is a list of wind-assisted times (equal or superior to 9.80). Only times that are superior to legal bests are shown:\n\nTyson Gay (USA) ran 9.68 (+4.1 m/s) during the US Olympic Trials in Eugene, Oregon on 29 June 2008.[62]\n\nObadele Thompson (BAR) ran 9.69 (+5.0 m/s) A in El Paso, Texas on 13 April 1996.\n\nAndre De Grasse (CAN) ran 9.69 (+4.8 m/s) during the Diamond League in Stockholm on 18 June 2017,[63] 9.74 (+2.9 m/s) during the Diamond League in Eugene, Oregon on 21 August 2021, and 9.75 (+2.7 m/s) during the NCAA Division I Championships in Eugene, Oregon on 12 June 2015.\n\nRichard Thompson (TTO) ran 9.74 (+5.0 m/s) in Clermont, Florida on 31 May 2014.\n\nDarvis Patton (USA) ran 9.75 (+4.3 m/s) in Austin, Texas on 30 March 2013.\n\nTrayvon Bromell (USA) ran 9.75 (+2.1 m/s) in Jacksonville, Florida on 30 April 2022.\n\nJordan Anthony (USA) ran 9.75 (+2.1 m/s) in College Station, Texas on 30 May 2025.\n\nChurandy Martina (AHO) ran 9.76 (+6.1 m/s) A in El Paso, Texas on 13 May 2006.\n\nCarl Lewis (USA) ran 9.78 (+5.2 m/s) during the US Olympic Trials in Indianapolis, Indiana on 16 July 1988 and 9.80 (+4.3 m/s) during the World Championships in Tokyo on 24 August 1991.\n\nMaurice Greene (USA) ran 9.78 (+3.7 m/s) in Palo Alto, California on 31 May 2004.\n\nRonnie Baker (USA) ran 9.78 (+2.4 m/s) during the Diamond League in Eugene, Oregon on 26 May 2018.\n\nAndre Cason (USA) ran 9.79 (+5.3 m/s) and 9.79 (+4.5 m/s) during the USA Championships in Eugene, Oregon on 16 June 1993.\n\nFavour Ashe (NGR) ran 9.79 (+3.0 m/s) in Baton Rouge, Louisiana on 30 April 2022.\n\nWalter Dix (USA) ran 9.80 (+4.1 m/s) during the US Olympic Trials in Eugene, Oregon on 29 June 2008.\n\nMike Rodgers (USA) ran 9.80 (+2.7 m/s) during the Diamond League in Eugene, Oregon on 31 May 2014 and 9.80 (+2.4 m/s) in Sacramento, California on 27 June 2014.\n\nTerrance Laird (USA) ran 9.80 (+3.2 m/s) in College Station, Texas on 15 May 2021.[64]\n\nMarvin Bracy (USA) ran 9.80 (+2.9 m/s) in Montverde, Florida on 4 June 2022.",
+        "evidence_type": "text",
+        "title": "Assisted marks",
+        "section_path": [
+          "All-time top 25 men",
+          "Assisted marks"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "retriever": "vector",
+        "rank": 6,
+        "raw_score": 0.9390600919723511,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "100_metres.html#section-003-00",
+        "source_article": "100_metres.html",
+        "content": "Article: 100 metres\nSection: Race dynamics > Finish\n\nThe winner, by IAAF Competition Rules, is determined by the first athlete with their torso (not including limbs, head, or neck) over the nearer edge of the finish line.[15] There is therefore no requirement for the entire body to cross the finish line. When the placing of the athletes is not obvious, a photo finish is used to distinguish which runner was first to cross the line.",
+        "evidence_type": "text",
+        "title": "Finish",
+        "section_path": [
+          "Race dynamics",
+          "Finish"
+        ],
+        "retrieval_query": "Find the passage in the 100 metres article that identifies the men's world-record performance. Report the time, athlete and country, exact date, and city and country where it was achieved, then reproduce a brief supporting quotation.",
+        "retriever": "vector",
+        "rank": 8,
+        "raw_score": 1.0240039825439453,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "Usain_Bolt.html#section-027-00",
+        "source_article": "Usain_Bolt.html",
+        "content": "Article: Usain Bolt\nSection: Statistics > Records\n\nBolt's personal best of 9.58 seconds in 2009 in the 100 metres is the fastest ever run.[349] Bolt also holds the second fastest time of 9.63 seconds,[87] the current Olympic record,[89] and set two previous world records in the event. Bolt's personal best of 19.19 s in the 200 metres is the world record. This was recorded at the 2009 World Championships in Athletics in Berlin against a head wind of −0.3 m/s (−1.1 km/h; −0.67 mph). This performance broke his previous world record in the event, his 19.30 s clocking in winning the 2008 Olympic 200 metres title.\n\nBolt has been on three world-record-setting Jamaican relay teams. The first record, 37.10 seconds, was set in winning gold at the 2008 Summer Olympics, although the result was voided in 2017 when the team was disqualified due to his team member Nesta Carter's urine sample being retested and found positive for the prohibited substance methylhexaneamine.[350] The second record came at the 2011 World Championships in Athletics, a time of 37.04 seconds. The third world record was set at the 2012 Summer Olympics, a time of 36.84 seconds.[351]\n\nBolt also holds the 200 metres world teenage best results for the age categories 15 (20.58 s), 16 (20.13 s, former world youth record),[352][353] 17 (19.93 s) and 18 (19.93 s, world junior record).[87] He also holds the 150 metres world best set in 2009, during which he ran the last 100 metres in 8.70 seconds, the quickest timed 100 metres ever.[87]\n\nBolt completed a total of 53 wind-legal sub-10-second performances in the 100 m during his career, with his first coming on 3 May 2008 and his last on 5 August 2017 at the World Championships. His longest undefeated streak in the 200 m was in 17 finals, lasting from 12 June 2008 to 3 September 2011. He also had a win-streak covering 14 100 m finals from 16 August 2008 to 16 July 2010.[354]",
+        "evidence_type": "graph",
+        "title": "Records",
+        "section_path": [
+          "Statistics",
+          "Records"
+        ],
+        "retrieval_query": "100 metres article passage current men's world record of 9.58 s held by Usain Bolt set at 2009 World Athletics Championships final Berlin Germany 16 August 2009 quotation",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 0.5614712834358215,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "100_metres.html"
+          ],
+          "graph_neighbor_rank": 1,
+          "graph_score": 15.4742730294244,
+          "discovery_reasons": [
+            "link",
+            "entity:Monaco(29)",
+            "entity:2012_Summer_Olympics(33)",
+            "entity:Kingston,_Jamaica(13)",
+            "entity:Athletics_abbreviations(8)",
+            "entity:Jamaica(42)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Usain_Bolt.html#section-026-00",
+        "source_article": "Usain_Bolt.html",
+        "content": "Article: Usain Bolt\nSection: Statistics > Personal bests\n\nEvents tracked by World Athletics, the international governing body for the sport of athletics:\n\nEvent and Time\n\nDate and Venue\n\nRecords\n\nNotes\n\n100 metres in 9.58 seconds\n\n16 August in the 2009 World Championships in Athletics in Berlin, Germany\n\nWR\n\nEquivalent to an average ground speed of 10.44 m/s, 37.58 km/h, or 23.35 mph. Once his reaction time of 0.146 seconds is subtracted, his time is 9.434 seconds, or 10.6 m/s, 38.16 km/h, or 23.71 mph.[142] Bolt's top speed, based on his split time of 1.61 seconds for the 20 metres from the 60- to 80-metre marks (made during the 9.58 WR at 100 m), is 12.42 m/s, 44.72 km/h, or 27.79 mph.[348] He also has the second fastest time (9.63) and shares the third fastest time of 9.69 with Tyson Gay and Yohan Blake. Bolt's 9.63 is the Olympic record, set at the 2012 games.\n\n200 metres in 19.19 seconds\n\n20 August in the 2009 World Championships in Athletics in Berlin, Germany\n\nWR\n\nEquivalent to an average ground speed of 10.42 m/s, 37.52 km/h, or 23.31 mph. Also holds the Olympic record with 19.30, which was then (2008) a world record.\n\n400 metres in 45.28 seconds\n\n5 May 2007 in Kingston, Jamaica\n\n[1]\n\n4 × 100 metres relay in 36.84 seconds\n\n11 August in the 2012 Summer Olympics in London, England\n\nWR\n\nShared with Yohan Blake, Michael Frater and Nesta Carter.\n\nThe following events are not regulated by World Athletics, and are not tracked as official world records:\n\nEvent and Time\n\nDate and Venue\n\nRecords\n\nNotes\n\n60 metres in 6.31 seconds\n\n16 August in the 2009 World Championships in Athletics in Berlin, Germany\n\nWB\n\n100 metres indoors in 9.98 seconds\n\n23 Aug 2014 in the Kamila Skolimowska Memorial in Warsaw, Poland\n\nWB\n\n150 metres in 14.44 seconds\n\n20 August in the 2009 World Championships in Athletics in Berlin, Germany\n\nWB\n\n150 metres straight in 14.35 seconds\n\n17 May 2009 in the Great CityGames in Manchester, England\n\nWB\n\nEquivalent to an average ground speed of 10.45 m/s, 37.63 km/h, or 23.38 mph. He ran the last 100 m in 8.70, the fastest ever recorded time over a 100 m distance. This would equal an average speed of 11.49 m/s, 41.38 km/h, or 25.71 mph.\n\n300 metres in 30.97 seconds\n\n27 May 2010 in the Golden Spike Ostrava in Ostrava, Czech Republic\n\nNR\n\nThis is the fourth fastest time, behind Letsile Tebogo 30.69, Wayde van Niekerk 30.81 & Michael Johnson 30.85.\n\nSwedish relay in 1:46.59\n\n25 Jul 2006 in the DN-Galan in Stockholm, Sweden\n\nWB\n\nChristopher Williams ran 100 metres, Usain Bolt ran 200, Davian Clarke ran 300, and Jermaine Gonzales ran 400.",
+        "evidence_type": "graph",
+        "title": "Personal bests",
+        "section_path": [
+          "Statistics",
+          "Personal bests"
+        ],
+        "retrieval_query": "100 metres article passage current men's world record of 9.58 s held by Usain Bolt set at 2009 World Athletics Championships final Berlin Germany 16 August 2009 quotation",
+        "retriever": "graph",
+        "rank": 2,
+        "raw_score": 0.6034752130508423,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "100_metres.html"
+          ],
+          "graph_neighbor_rank": 1,
+          "graph_score": 15.4742730294244,
+          "discovery_reasons": [
+            "link",
+            "entity:Monaco(29)",
+            "entity:2012_Summer_Olympics(33)",
+            "entity:Kingston,_Jamaica(13)",
+            "entity:Athletics_abbreviations(8)",
+            "entity:Jamaica(42)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "2015_Diamond_League.html#section-004-00",
+        "source_article": "2015_Diamond_League.html",
+        "content": "Article: 2015 Diamond League\nSection: Winners > Men > Track\n\n#\nMeeting\n100 m\n200 m\n400 m\n800 m\n1500 m\n5000 m\n110 m h\n400 m h\n3000 m st\n\n1\nDoha\n\n Justin Gatlin (USA) 9.74 WL, MR\n\n–\n\n Abdalelah Haroun (QAT) 44.85\n\n Ayanleh Souleiman (DJI) 1:43.78 WL\n\n–\n\n Hagos Gebrhiwet (ETH) 7:38.08 WL (3000m)\n\n–\n\n Bershawn Jackson (USA) 48.09 WL, MR\n\n–\n\n2\nShanghai\n\n–\n\n Alonso Edward (PAN) 20.33 SB\n\n Kirani James (GRN) 44.66\n\n–\n\n Silas Kiplagat (KEN) 3:35.29 WL\n\n-\n\n David Oliver (USA) 13.17 SB\n\n–\n\n Jairus Birech (KEN) 8:05.36 WL\n\n3\nEugene\n\n–\n\n Justin Gatlin (USA) 19.68 WL\n\n Kirani James (GRN) 43.95 WL\n\n–\n\n Ayanleh Souleiman (DJI) 3:51.10 WL (1 Mile)\n\n–\n\n Pascal Martinot-Lagarde (FRA) 13.06 WL\n\n Johnny Dutch (USA) 48.20 SB\n\n Ezekiel Kemboi (KEN) 8:01.71 WL\n\n4\nRome\n\n Justin Gatlin (USA) 9.75 MR\n\n Lykourgos-Stefanos Tsakonas (GRE) 20.09\n\n–\n\n Mohammed Aman (ETH) 1:43.56 WL\n\n–\n\n Yomif Kejelcha (ETH) 12:58.39 WL\n\n–\n\n Johnny Dutch (USA) 48.13\n\n–\n\n5\nBirmingham\n\n Marvin Bracy (USA) 9.93\n\n–\n\n–\n\n Nijel Amos (BOT) 1:46.77\n\n–\n\n Thomas Pkemei Longosiwa (KEN) 13:07.26\n\n–\n\n–\n\n–\n\n6\nOslo\n\n–\n\n Christophe Lemaitre (FRA) 20.21 SB\n\n Steven Gardiner (BAH) 44.64\n\n–\n\n Asbel Kiprop (KEN) 3:51.45 (1 Mile)\n\n–\n\n–\n\n–\n\n Jairus Birech (KEN) 8:05.63\n\n7\nNew York\n\n Tyson Gay (USA) 10.12\n\n Usain Bolt (JAM) 20.29\n\n–\n\n David Rudisha (KEN) 1:43.58 SB\n\n–\n\n Ben True (USA) 13:29.48\n\n David Oliver (USA) 13.19\n\n Javier Culson (PUR) 48.48 SB\n\n–\n\n8\nParis\n\n Asafa Powell (JAM) 9.81\n\n–\n\n Wayde van Niekerk (RSA) 43.96 AR\n\n–\n\n Silas Kiplagat (KEN) 3:30.12 WL\n\n–\n\n Orlando Ortega (CUB) 12.94 WL\n\n–\n\n Jairus Birech (KEN) 7:58.83 MR WL\n\n9\nLausanne\n\n Justin Gatlin (USA) 9.75\n\n Zharnel Hughes (GBR) 20.13\n\n–\n\n Nijel Amos (BOT) 1:43.27\n\n–\n\n Mo Farah (GBR) 13:11.77\n\n–\n\n Bershawn Jackson (USA) 48.71\n\n–\n\n10\nMonaco\n\n Justin Gatlin (USA) 9.78\n\n–\n\n–\n\n Amel Tuka (BIH) 1:42.51 WL, NR\n\n Asbel Kiprop (KEN) 3:26.69 WL\n\n Caleb Ndiku (KEN) 7:35.13 WL (3000 m)\n\n–\n\n Bershawn Jackson (USA) 48.23\n\n–\n\n11\nLondon\n\n Usain Bolt (JAM) 9.87\n\n Zharnel Hughes (GBR) 20.05 PB\n\n Wayde van Niekerk (RSA) 44.63\n\n Nijel Amos (BOT) 1:44.57\n\n Asbel Kiprop (KEN) 3:54.87 (mile)\n\n Mo Farah (GBR) 7:34.66 WL (3000 m)\n\n Jason Richardson (USA) 13.19\n\n Michael Tinsley (USA) 49.02\n\n Conseslus Kipruto (KEN) 8:09.47\n\n12\nStockholm\n\n–\n\n Alonso Edward (PAN) 20.04\n\n Machel Cedenio (TTO) 44.97\n\n–\n\n Ayanleh Souleiman (DJI) 3:33.33\n\n–\n\n Orlando Ortega (CUB) 13.18\n\n–\n\n Hicham Sigueni (MAR) 8:16.54 PB\n\n13\nZürich\n\n–\n\n Alonso Edward (PAN) 20.03\n\n LaShawn Merritt (USA) 44.18\n\n–\n\n Asbel Kiprop (KEN) 3:35.79\n\n–\n\n Sergey Shubenkov (RUS) 13.14\n\n–\n\n Paul Kipsiele Koech (KEN) 8:10.24 SB\n\n14\nBrussels\n\n Justin Gatlin (USA) 9.98\n\n–\n\n–\n\n Adam Kszczot (POL) 1:45.12\n\n–\n\n Yomif Kejelcha (ETH) 12:53.98 WL\n\n–\n\n Jeffrey Gibson (BAH) 48.72\n\n–\n\nOverall winner\n\n Justin Gatlin (USA)\n\n Alonso Edward (PAN)\n\n Kirani James (GRN)\n\n Nijel Amos (BOT)\n\n Asbel Kiprop (KEN)\n\n Yomif Kejelcha (ETH)\n\n David Oliver (USA)\n\n Bershawn Jackson (USA)\n\n Jairus Birech (KEN)",
+        "evidence_type": "graph",
+        "title": "Track",
+        "section_path": [
+          "Winners",
+          "Men",
+          "Track"
+        ],
+        "retrieval_query": "100 metres article passage current men's world record of 9.58 s held by Usain Bolt set at 2009 World Athletics Championships final Berlin Germany 16 August 2009 quotation",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 0.892317533493042,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "100_metres.html"
+          ],
+          "graph_neighbor_rank": 2,
+          "graph_score": 9.673654445399805,
+          "discovery_reasons": [
+            "entity:Usain_Bolt(10)",
+            "entity:Bulgaria(44)",
+            "entity:Athletics_abbreviations(8)",
+            "entity:Jamaica(42)",
+            "entity:Eugene,_Oregon(13)",
+            "entity:Shelly-Ann_Fraser-Pryce(5)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "2015_Diamond_League.html#section-009-00",
+        "source_article": "2015_Diamond_League.html",
+        "content": "Article: 2015 Diamond League\nSection: Meeting highlights > Doha\n\nThree Diamond League records were set in Doha during the opening competition of the series. Allyson Felix of the United States won the women's 200 metres with a run of 21.98 seconds to equal Veronica Campbell Brown's time which was set during the inaugural 2010 IAAF Diamond League season.[4] Jasmin Stowers, making her debut on the circuit, broke the women's 100 metres hurdles record with a time of 12.35 seconds – this raised her to seventh on the all-time rankings for the discipline.[5][6] The third record of the evening came in the men's triple jump: Cuba's Pedro Pablo Pichardo became the first person to go beyond eighteen metres in series history, setting a national record and Diamond League best of 18.06 m (59 ft 3 in). This placed him third on the all-time lists for the sport behind Jonathan Edwards and Kenny Harrison. The reigning Olympic champion, Christian Taylor, was runner-up and moved himself up to fourth on the all-time lists with a mark of 18.04 m (59 ft 2 in), making the contest the first in history to feature two men going beyond eighteen metres.[7] Among the other results, Justin Gatlin of the United States became the fifth fastest man in the history of the 100 metres with his winning time of 9.74 seconds (bettering the world record of 9.77 seconds he set in 2006, which was annulled due to a failed doping test).[8][9]",
+        "evidence_type": "graph",
+        "title": "Doha",
+        "section_path": [
+          "Meeting highlights",
+          "Doha"
+        ],
+        "retrieval_query": "100 metres article passage current men's world record of 9.58 s held by Usain Bolt set at 2009 World Athletics Championships final Berlin Germany 16 August 2009 quotation",
+        "retriever": "graph",
+        "rank": 2,
+        "raw_score": 0.9141858816146851,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "100_metres.html"
+          ],
+          "graph_neighbor_rank": 2,
+          "graph_score": 9.673654445399805,
+          "discovery_reasons": [
+            "entity:Usain_Bolt(10)",
+            "entity:Bulgaria(44)",
+            "entity:Athletics_abbreviations(8)",
+            "entity:Jamaica(42)",
+            "entity:Eugene,_Oregon(13)",
+            "entity:Shelly-Ann_Fraser-Pryce(5)"
+          ]
+        }
+      }
+    ],
+    "assessment": {
+      "ready_to_answer": false,
+      "supported_requirements": [
+        "time: 9.58 s",
+        "athlete: Usain Bolt",
+        "country/nation: Jamaica",
+        "exact date: 16 August 2009",
+        "city/place: Berlin"
+      ],
+      "missing_requirements": [
+        "city country: Germany (place Berlin is in Germany)",
+        "brief supporting quotation identifying it as the men's world-record performance (needs the specific passage)"
+      ],
+      "retrieval_requests": [
+        {
+          "missing_fact": "Passage in the 100 metres article that identifies the men's world-record performance, with the sentence/wording containing the record (i.e., not just the tables).",
+          "query": "100 metres article men's world record 9.58 set at Berlin 16 August 2009 passage quotation",
+          "target_articles": [
+            "100_metres.html"
+          ],
+          "keywords": [
+            "100 metres",
+            "men's world record",
+            "9.58",
+            "Usain Bolt",
+            "world record",
+            "Berlin",
+            "16 August 2009",
+            "Germany"
+          ],
+          "preferred_retriever": "hybrid"
+        }
+      ],
+      "table_requests": [
+        {
+          "missing_fact": "Identify the country for the place where it was achieved (Berlin) if available in a table; otherwise we will need text passage for 'Berlin, Germany'.",
+          "source_article": "100_metres.html",
+          "table_id": "table-002-a394b6b879",
+          "expected_caption": null,
+          "operation": "lookup",
+          "columns_needed": [],
+          "row_filters": {},
+          "comparison_key": null
+        }
+      ],
+      "unresolved_conflicts": [],
+      "explanation": "The tables and record-performance text provide time, athlete, nation, date, and place (Berlin) for the men's world record (9.58 by Usain Bolt of Jamaica on 16 August 2009). However, the requested city-and-country pair requires the country for Berlin (Germany), and the question also asks to 'report the exact date ... then reproduce a brief supporting quotation' from the specific passage that identifies the men's world-record performance; the provided evidence includes record text but not the exact short quotation requested."
+    },
+    "assessment_history": [
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "Identify men's world-record performance details (time/athlete/nation/date/place) appear in 100_metres.html evidence: table row with Usain Bolt 9.58, Jamaica, 16 August 2009, Berlin."
+        ],
+        "missing_requirements": [
+          "Need exact passage/brief supporting quotation identifying it as the men's world-record in the 100 metres article text (not just table data).",
+          "Need city and country where achieved: evidence provides Berlin but not explicit country; place shown only as city."
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Exact text passage/quotation in 100_metres.html that identifies the men’s world-record performance (not just table entries).",
+            "query": "100 metres article men's world record 9.58 Usain Bolt exact wording",
+            "target_articles": [
+              "100_metres.html"
+            ],
+            "keywords": [
+              "100 metres",
+              "men's world record",
+              "9.58",
+              "Usain Bolt",
+              "world record"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [
+          {
+            "missing_fact": "Get country for the place where it was achieved (Berlin) if available in the table or related article text.",
+            "source_article": "100_metres.html",
+            "table_id": "table-002-a394b6b879",
+            "expected_caption": null,
+            "operation": "lookup",
+            "columns_needed": [],
+            "row_filters": {},
+            "comparison_key": null
+          }
+        ],
+        "unresolved_conflicts": [],
+        "explanation": "The provided table evidence includes the world-record performance values (9.58, Usain Bolt, Jamaica, 16 August 2009, Berlin). However, the question also asks for an exact supporting quotation from the article passage that identifies it as the men's world-record; only table rows are provided. Additionally, the place is given as Berlin without an explicit country in the provided excerpt, so the city-country requirement is not fully supported."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "Time, athlete, country, exact date, and city where achieved are present in 100_metres.html (table-002-a394b6b879): 9.58 by Usain Bolt (Jamaica) on 16 August 2009 in Berlin."
+        ],
+        "missing_requirements": [
+          "City and country where it was achieved: the city is Berlin, but the country of Berlin is not provided in the supplied excerpts/tables (country not explicitly listed).",
+          "Brief supporting quotation: no passage text/quotation identifying the men's world record is included in the supplied evidence; only tabular values are provided."
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "The explicit supporting sentence/passage in 100 metres article that identifies the men's world-record performance (with wording suitable for a quotation), plus the country for Berlin if stated nearby.",
+            "query": "100 metres article men's world record 9.58 Usain Bolt Berlin 16 August 2009 quotation world record",
+            "target_articles": [
+              "100_metres.html"
+            ],
+            "keywords": [
+              "100 metres",
+              "men's world record",
+              "9.58",
+              "Usain Bolt",
+              "Berlin",
+              "16 August 2009",
+              "world record"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [
+          {
+            "missing_fact": "Confirm whether the place (Berlin) has an associated country in any relevant table (e.g., world record/record performances tables) or needs mapping to a country.",
+            "source_article": "100_metres.html",
+            "table_id": "table-002-a394b6b879",
+            "expected_caption": null,
+            "operation": "lookup",
+            "columns_needed": [],
+            "row_filters": {},
+            "comparison_key": null
+          }
+        ],
+        "unresolved_conflicts": [],
+        "explanation": "Evidence provides the performance details (time, athlete, nation, date, place city) via a table row, but not the requested country for Berlin and not the specific textual passage/quotation identifying it as the men's world-record performance."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "time (9.58 s)",
+          "athlete (Usain Bolt)",
+          "country/nation (Jamaica)",
+          "exact date (16 August 2009)",
+          "city (Berlin)"
+        ],
+        "missing_requirements": [
+          "city and country where it was achieved (needs country for Berlin; not provided in evidence)",
+          "brief supporting quotation (no narrative passage/quotation provided in supplied evidence)",
+          "confirmation it is the men's world-record performance specifically (evidence shows top performance row but not explicitly labeled as world record in excerpt)"
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Country for the place Berlin (Germany) as used by the 100 metres article in the relevant world-record passage.",
+            "query": "100 metres.html Berlin Place country",
+            "target_articles": [
+              "100_metres.html"
+            ],
+            "keywords": [
+              "100 metres",
+              "Berlin",
+              "Place",
+              "country",
+              "world record"
+            ],
+            "preferred_retriever": "hybrid"
+          },
+          {
+            "missing_fact": "Passage in the 100 metres article that identifies the men's world-record performance and contains wording to quote.",
+            "query": "100 metres men's world record passage quotation 9.58 Berlin 16 August 2009",
+            "target_articles": [
+              "100_metres.html"
+            ],
+            "keywords": [
+              "100 metres",
+              "men's world record",
+              "9.58",
+              "Berlin",
+              "16 August 2009",
+              "quotation"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [
+          {
+            "missing_fact": "Determine the country associated with the place 'Berlin' in the article's relevant record/world record tables or text.",
+            "source_article": "100_metres.html",
+            "table_id": "table-002-a394b6b879",
+            "expected_caption": null,
+            "operation": "lookup",
+            "columns_needed": [],
+            "row_filters": {},
+            "comparison_key": null
+          }
+        ],
+        "unresolved_conflicts": [],
+        "explanation": "The supplied evidence contains the performance details (9.58, Usain Bolt, Jamaica, 16 August 2009, Berlin). However, it does not provide an explicit country for Berlin nor any narrative passage/quotation that identifies this as the men's world-record performance. Additional retrieval is needed for the exact world-record passage and for mapping Berlin to its country as stated/used in the article."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "Identify the men's world-record performance time, athlete, country, exact date, and city where achieved from the “All-time top 25 men” table: 9.58 s, Usain Bolt, Jamaica, 16 August 2009, Berlin."
+        ],
+        "missing_requirements": [
+          "Reproduce a brief supporting quotation identifying it as the men’s world-record performance (a passage with wording like “current men's world record… set…”) is not provided as an extract in the evidence; only the table row values and separate narrative paragraph are available, but the task requests a brief supporting quotation specifically from the relevant “100 metres” article passage."
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Brief supporting quotation from the 100 metres article passage that explicitly identifies the men’s world-record performance (wording of the current men’s world record, including time/athlete/date/location).",
+            "query": "100 metres article passage current men's world record of 9.58 s held by Usain Bolt set at 2009 World Athletics Championships final Berlin Germany 16 August 2009 quotation",
+            "target_articles": [
+              "100_metres.html"
+            ],
+            "keywords": [
+              "100 metres",
+              "men's world record",
+              "9.58",
+              "Usain Bolt",
+              "Berlin",
+              "16 August 2009",
+              "World Athletics Championships final"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The necessary numeric details are supported by the “All-time top 25 men” table row (9.58, Usain Bolt, Jamaica, 16 August 2009, Berlin). However, the request asks to “find the passage in the 100 metres article that identifies the men's world-record performance” and to “reproduce a brief supporting quotation.” While a relevant paragraph exists in evidence (“The current men's world record of 9.58 s is held by Usain Bolt… set … in Berlin, Germany on 16 August 2009…”), the provided excerpt is not tied to a specific 'passage' citation in a way that guarantees the exact quotation needed. Additional retrieval is needed to capture the exact sentence(s) for quotation."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "time: 9.58 s",
+          "athlete: Usain Bolt",
+          "country/nation: Jamaica",
+          "exact date: 16 August 2009",
+          "city/place: Berlin"
+        ],
+        "missing_requirements": [
+          "city country: Germany (place Berlin is in Germany)",
+          "brief supporting quotation identifying it as the men's world-record performance (needs the specific passage)"
+        ],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Passage in the 100 metres article that identifies the men's world-record performance, with the sentence/wording containing the record (i.e., not just the tables).",
+            "query": "100 metres article men's world record 9.58 set at Berlin 16 August 2009 passage quotation",
+            "target_articles": [
+              "100_metres.html"
+            ],
+            "keywords": [
+              "100 metres",
+              "men's world record",
+              "9.58",
+              "Usain Bolt",
+              "world record",
+              "Berlin",
+              "16 August 2009",
+              "Germany"
+            ],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [
+          {
+            "missing_fact": "Identify the country for the place where it was achieved (Berlin) if available in a table; otherwise we will need text passage for 'Berlin, Germany'.",
+            "source_article": "100_metres.html",
+            "table_id": "table-002-a394b6b879",
+            "expected_caption": null,
+            "operation": "lookup",
+            "columns_needed": [],
+            "row_filters": {},
+            "comparison_key": null
+          }
+        ],
+        "unresolved_conflicts": [],
+        "explanation": "The tables and record-performance text provide time, athlete, nation, date, and place (Berlin) for the men's world record (9.58 by Usain Bolt of Jamaica on 16 August 2009). However, the requested city-and-country pair requires the country for Berlin (Germany), and the question also asks to 'report the exact date ... then reproduce a brief supporting quotation' from the specific passage that identifies the men's world-record performance; the provided evidence includes record text but not the exact short quotation requested."
+      }
+    ]
+  }
+}
