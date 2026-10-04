@@ -51,7 +51,8 @@ from survivor_6_1 import (  # noqa: E402
     describe_survivor_6_1,
 )
 
-from wikipedia_retrieval_engine.retrievers.llm import make_llm  # noqa: E402
+from wikipedia_retrieval_engine.retrievers.llm import LLM_MODEL, make_llm, openrouter_headers, require_api_key  # noqa: E402
+from wikipedia_retrieval_engine.wiki_agents import model_routing  # noqa: E402
 from wikipedia_retrieval_engine.wiki_agents.answer_guard import (  # noqa: E402
     GROUNDING_POLICIES,
     GroundingPolicy,
@@ -110,12 +111,16 @@ def build_survivor_final(
     input_filter_model: str | None = None,
     answer_system_prompt: str | None = GUARDED_ANSWER_SYSTEM_PROMPT,
     log_root: Path | None = None,
+    **routing_roles: Any,
 ) -> SurvivorFinal:
     """Build the 6.1 graph with answering, the grounding guardrail and input sanitising.
 
     ``input_filter_model`` defaults to None: the deterministic input layers run and no
     model filter is called. Nano timed out in testing, so the layer is opt-in rather than
     assumed (see the note at the top of this module). Passing a model name enables it.
+
+    ``routing_roles`` (``assess_llm``, ``planner_llm``, ``answer_llm``, ``make_route_node``)
+    are passed to ``build_survivor_6_1`` for the model routing of ``build_survivor_routed``.
 
     Note that the filter fails open, so its absence and its outage look the same to the
     rest of the graph. The difference is recorded either way, in
@@ -141,6 +146,7 @@ def build_survivor_final(
         sanitize_input=sanitize_input,
         input_filter_llm=input_filter_llm,
         log_root=log_root or LOG_ROOT,
+        **routing_roles,
     )
     return SurvivorFinal(
         survivor=survivor,
@@ -149,6 +155,97 @@ def build_survivor_final(
         input_filter_model=input_filter_model if input_filter_llm else None,
         legacy_prompt=answer_system_prompt == LEGACY_ANSWER_SYSTEM_PROMPT,
     )
+
+
+STRONG_MODEL = "openai/gpt-5.4"
+
+
+@dataclass
+class SurvivorRouted:
+    """The 7.1 final with model routing (``wiki_agents/model_routing.py``).
+
+    ``graph`` is the routed wrapper; every other attribute is the base survivor's, so the
+    cost harness's case function uses it unchanged.
+    """
+
+    base: SurvivorFinal
+    graph: Any
+    strategy: str
+    cheap_model: str
+    strong_model: str
+    check_threshold: float | None
+    escalation: SurvivorFinal | None = None
+
+    def __getattr__(self, name: str) -> Any:
+        return getattr(self.base, name)
+
+
+def build_survivor_routed(
+    strategy: str,
+    log_subdir: str,
+    *,
+    cheap_model: str | None = None,
+    strong_model: str = STRONG_MODEL,
+    check_threshold: float = 0.5,
+    policy: GroundingPolicy = DEFAULT_POLICY,
+    log_root: Path | None = None,
+) -> SurvivorRouted:
+    """The 7.1 final with ``gpt-5.4-mini`` by default and ``gpt-5.4`` where the strategy routes.
+
+    - ``type``: assessor, table planner, and answer on the strong model when the TOC review
+      flagged a table;
+    - ``b``: the same trigger, assessor and answer only;
+    - ``check``: assessor, planner, and answer on the strong model for a text question whose
+      kept articles are too large for Jev; otherwise answered on the cheap model and checked
+      by Jev ("complete?"), and answered again on an all-strong graph below the threshold.
+    """
+
+    if strategy not in model_routing.STRATEGIES:
+        raise ValueError(f"Unknown routing strategy: {strategy!r}")
+    cheap_model = cheap_model or LLM_MODEL
+    holder = model_routing.RouteHolder()
+    switch = model_routing.TierSwitchModel(make_llm(model=cheap_model), make_llm(model=strong_model), holder)
+    roles: dict[str, Any] = {"assess_llm": switch, "answer_llm": switch}
+    if strategy in ("type", "check"):
+        roles["planner_llm"] = switch
+    if strategy in ("check", "b_check"):
+        roles["make_route_node"] = lambda load_text: model_routing.make_size_route(holder, load_text)
+    else:
+        roles["make_route_node"] = lambda load_text: model_routing.make_type_route(holder)
+    base = build_survivor_final(log_subdir, model=cheap_model, policy=policy, log_root=log_root, **roles)
+    if strategy not in ("check", "b_check"):
+        return SurvivorRouted(base, model_routing.RoutedGraph(base.graph, holder), strategy, cheap_model,
+                              strong_model, None)
+
+    if strategy == "check":  # the rerun: every role on the strong model
+        escalation = build_survivor_final(f"{log_subdir}_escalation", model=strong_model, policy=policy,
+                                          log_root=log_root)
+    else:  # b_check, the rerun the Router B way: assessor and answer on the strong model only
+        strong_llm = make_llm(model=strong_model)
+        escalation = build_survivor_final(f"{log_subdir}_escalation", model=cheap_model, policy=policy,
+                                          log_root=log_root, assess_llm=strong_llm, answer_llm=strong_llm)
+    headers = {**openrouter_headers("WRE answer check"), "Authorization": f"Bearer {require_api_key()}",
+               "Content-Type": "application/json"}
+    checker = lambda question, answer, evidence: model_routing.jev_complete_check(question, answer, evidence, headers)
+    graph = model_routing.EscalatingGraph(base.graph, escalation.graph, holder, checker, threshold=check_threshold)
+    return SurvivorRouted(base, graph, strategy, cheap_model, strong_model, check_threshold, escalation)
+
+
+def describe_survivor_routed(agent: SurvivorRouted) -> str:
+    roles = {"type": "assessor, table planner, answer", "b": "assessor, answer",
+             "check": "assessor, table planner, answer (large evidence); whole question on escalation",
+             "b_check": "assessor, answer (large evidence, and on escalation; planner stays on the default)"}[agent.strategy]
+    trigger = {"type": "TOC review flagged a table", "b": "TOC review flagged a table",
+               "check": f"kept articles too large for Jev, or Jev p(complete) < {agent.check_threshold}",
+               "b_check": f"kept articles too large for Jev, or Jev p(complete) < {agent.check_threshold}"}[agent.strategy]
+    lines = [
+        describe_survivor_final(agent.base),
+        f"  routing={agent.strategy}: default {agent.cheap_model}; {agent.strong_model} for {roles}",
+        f"  routed when: {trigger}; decomposer and TOC reviewer always on {agent.cheap_model}",
+    ]
+    if agent.escalation is not None:
+        lines.append(f"  Escalation AgentState logs={agent.escalation.run_logger.run_directory}")
+    return "\n".join(lines)
 
 
 def describe_survivor_final(agent: SurvivorFinal) -> str:

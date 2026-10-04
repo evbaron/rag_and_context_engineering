@@ -1,0 +1,7 @@
+configuration,question_runs,evidence_notice,evidence_notice_rate,notice_pass,notice_partial,notice_fail,grounding_checked,grounding_flagged,grounding_flagged_rate,flagged_pass,flagged_partial,flagged_fail,check_passed_but_fail,input_sanitized
+7.1 final,57,17,0.2982456140350877,11,4,2,57,10,0.17543859649122806,8,1,1,12,0
+6.1 survivor,57,17,0.2982456140350877,12,4,1,0,0,,0,0,0,0,0
+"7.1 final, gpt-5.4",19,5,0.2631578947368421,4,1,0,19,1,0.05263157894736842,1,0,0,2,0
+7.1 router by question type,19,6,0.3157894736842105,5,1,0,19,5,0.2631578947368421,3,1,1,2,0
+7.1 Router B (assessor + answer),19,9,0.47368421052631576,7,2,0,19,2,0.10526315789473684,2,0,0,1,0
+7.1 answer check 0.5 + large to gpt-5.4,19,7,0.3684210526315789,6,0,1,19,3,0.15789473684210525,2,0,1,2,0

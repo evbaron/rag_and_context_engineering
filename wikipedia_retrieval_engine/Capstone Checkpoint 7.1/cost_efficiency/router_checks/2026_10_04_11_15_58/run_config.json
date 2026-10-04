@@ -1,0 +1,21 @@
+{
+  "model": "typesafe/jev-1.13",
+  "url": "https://openrouter.ai/api/alpha/decisions",
+  "repeats": 3,
+  "route_question": {
+    "type": "choice",
+    "instructions": "Which answering path does this Wikipedia question need?",
+    "criteria": {
+      "simple": "The answer is stated in the text of one Wikipedia article about one person, place, event, or work. No tables, counting, rankings, date ranges, or comparisons across articles.",
+      "complex": "Answering needs table data, counting, filtering by dates, ranking, calculation, or combining facts from more than one article."
+    }
+  },
+  "thresholds": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "default_threshold": 0.8
+}

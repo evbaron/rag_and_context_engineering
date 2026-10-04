@@ -4,10 +4,43 @@
   "source": "https://openrouter.ai/api/v1/models",
   "replaced": "Lab 6.2 APPROX_PRICE_PER_MTOK (gpt-5.4-mini 0.2 input / 0.8 output), which understated input 3.75x and output 5.6x",
   "usd_per_million_tokens": {
-    "openai/gpt-5.4-mini": {"input": 0.75, "cached_input": 0.075, "output": 4.5},
-    "openai/gpt-5.4-nano": {"input": 0.2, "cached_input": 0.02, "output": 1.25},
-    "openai/gpt-5.4": {"input": 2.5, "cached_input": 0.25, "output": 15.0},
-    "openai/gpt-5.5": {"input": 5.0, "cached_input": 0.5, "output": 30.0},
-    "openai/text-embedding-3-small": {"input": 0.02, "cached_input": null, "output": 0.0}
-  }
+    "openai/gpt-5.4-mini": {
+      "input": 0.75,
+      "cached_input": 0.075,
+      "output": 4.5
+    },
+    "openai/gpt-5.4-nano": {
+      "input": 0.2,
+      "cached_input": 0.02,
+      "output": 1.25
+    },
+    "openai/gpt-5.4": {
+      "input": 2.5,
+      "cached_input": 0.25,
+      "output": 15.0,
+      "long_context": {
+        "min_prompt_tokens": 272000,
+        "input": 5.0,
+        "cached_input": 0.5,
+        "output": 22.5
+      }
+    },
+    "openai/gpt-5.5": {
+      "input": 5.0,
+      "cached_input": 0.5,
+      "output": 30.0
+    },
+    "openai/text-embedding-3-small": {
+      "input": 0.02,
+      "cached_input": null,
+      "output": 0.0
+    },
+    "typesafe/jev-1.13": {
+      "input": 0.042,
+      "cached_input": null,
+      "output": 0.0
+    }
+  },
+  "long_context_note": "gpt-5.4 long-prompt tier verified 2026-10-04 (GET https://openrouter.ai/api/v1/models/openai/gpt-5.4/endpoints, pricing.overrides min_prompt_tokens 272000). It reproduces the provider-reported cost of the two >272K-token calls in the 7.1 GT run to the tenth of a cent. gpt-5.4-mini has no tier.",
+  "jev_note": "typesafe/jev-1.13 verified 2026-10-04 (GET https://openrouter.ai/api/v1/models/typesafe/jev-1.13/endpoints): $0.042 per 1M input tokens, output free, no caching, 32,000-token context. Served through POST /api/alpha/decisions, which reports usage.cost per call."
 }

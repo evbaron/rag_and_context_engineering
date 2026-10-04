@@ -533,6 +533,19 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         help="Default: survivor_cost_6_1 for 5.1; survivor_6_1 (plus the models when given) "
              "for 6.1; survivor_final__grounding_<policy> for final.",
     )
+    parser.add_argument(
+        "--routing",
+        choices=["type", "b", "check", "b_check"],
+        default=None,
+        help="final only (Checkpoint 7.1 model routing): gpt-5.4-mini by default and --strong-model "
+             "where routed. type: assessor, planner, and answer when the TOC review flags a table; "
+             "b: same trigger, assessor and answer only; check: Jev's answer check, with large "
+             "evidence straight to the strong model; b_check: the answer check with Router B's "
+             "models (assessor and answer only, on large evidence and on a rerun).",
+    )
+    parser.add_argument("--strong-model", default="openai/gpt-5.4", help="--routing only: the routed-to model.")
+    parser.add_argument("--check-threshold", type=float, default=0.5,
+                        help="--routing check or b_check: escalate when Jev's p(complete) is below this.")
     parser.add_argument("--limit", type=int, default=None, help="First N questions only.")
     parser.add_argument("--question-id", dest="question_ids", action="append", default=None)
     parser.add_argument("--prices", type=Path, default=PRICES_PATH)
@@ -542,6 +555,10 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         parser.error("--model and --table-model apply to --survivor 6.1 or final only.")
     if args.survivor != "final" and (args.grounding != "surface" or args.no_sanitize or args.legacy_prompt):
         parser.error("--grounding, --no-sanitize and --legacy-prompt apply to --survivor final only.")
+    if args.routing and (args.survivor != "final" or args.model or args.table_model or args.no_sanitize
+                         or args.legacy_prompt):
+        parser.error("--routing applies to --survivor final only, without --model, --table-model, "
+                     "--no-sanitize or --legacy-prompt (the routed models are fixed: mini and --strong-model).")
     if args.experiment_name is None:
         if args.survivor == "5.1":
             args.experiment_name = "survivor_cost_6_1"
@@ -552,6 +569,8 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
                 + ("__no_sanitize" if args.no_sanitize else "")
                 + ("__legacy_prompt" if args.legacy_prompt else "")
                 + (f"__{short(args.model)}" if args.model else "")
+                + (f"__route_{args.routing}" if args.routing else "")
+                + (f"_{args.check_threshold:g}" if args.routing in ("check", "b_check") else "")
             )
         else:
             short = lambda model: model.split("/")[-1].removesuffix(":free")
@@ -596,16 +615,27 @@ async def main(argv: list[str] | None = None) -> None:
             LEGACY_ANSWER_SYSTEM_PROMPT,
         )
 
-        survivor = build_survivor_final(
-            "cost_tests",  # log_root defaults to Checkpoint 7.1/logs
-            model=args.model,
-            table_model=args.table_model,
-            policy=args.grounding,
-            sanitize_input=not args.no_sanitize,
-            answer_system_prompt=(
-                LEGACY_ANSWER_SYSTEM_PROMPT if args.legacy_prompt else GUARDED_ANSWER_SYSTEM_PROMPT
-            ),
-        )
+        if args.routing:
+            from survivor_agent_final import build_survivor_routed, describe_survivor_routed
+
+            survivor = build_survivor_routed(
+                args.routing,
+                "cost_tests",
+                strong_model=args.strong_model,
+                check_threshold=args.check_threshold,
+                policy=args.grounding,
+            )
+        else:
+            survivor = build_survivor_final(
+                "cost_tests",  # log_root defaults to Checkpoint 7.1/logs
+                model=args.model,
+                table_model=args.table_model,
+                policy=args.grounding,
+                sanitize_input=not args.no_sanitize,
+                answer_system_prompt=(
+                    LEGACY_ANSWER_SYSTEM_PROMPT if args.legacy_prompt else GUARDED_ANSWER_SYSTEM_PROMPT
+                ),
+            )
         experiment = build_experiment_final(
             TelemetryGraph(survivor.graph, recorder),
             TelemetryAnswerLLM(survivor.agent_llm, recorder),
@@ -614,7 +644,7 @@ async def main(argv: list[str] | None = None) -> None:
             args.experiment_name,
             survivor,
         )
-        description = describe_survivor_final(survivor)
+        description = describe_survivor_routed(survivor) if args.routing else describe_survivor_final(survivor)
     elif args.survivor == "6.1":
         print("Loading the 6.1 survivor agent...")
         survivor = build_survivor_6_1("cost_tests", model=args.model, table_model=args.table_model)

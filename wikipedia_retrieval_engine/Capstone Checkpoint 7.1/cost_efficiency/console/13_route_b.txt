@@ -1,0 +1,33 @@
+Loading the Checkpoint 7.1 survivor agent...
+Loading existing vector DB from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/wikipedia_sections_max10000_no_overlap/
+Loading existing vector DB from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/wikipedia_sections_max10000_no_overlap/
+Loading extracted markdown from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/article_text/wikipedia_markdown/
+Loading existing graph from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/graph/wikipedia_graph/graph.json
+Cost test — history OFF, 19 question(s) from wikipedia_GT.csv, experiment survivor_final__grounding_surface__route_b
+  survivor=6.1 (5.1 configuration with the 6.1 changes)
+  initial retriever=multistep_entity
+  repeated retrievers=whole_article -> graph_seeded (no breadth nudge)
+  answer context=whole_per_question; table plan repair and retry on; incomplete computations labeled; evidence notice on
+  model=openai/gpt-5.4-mini (every agent role and the answer), table planner=openai/gpt-5.4-mini, judge=openai/gpt-5.4-mini
+  survivor=final (6.1 configuration; safeguards in the graph)
+  grounding policy=surface; answer and guard are graph nodes
+  input sanitising=on (deterministic layers only)
+  answer prompt=guarded (7.1)
+  routing=b: default openai/gpt-5.4-mini; openai/gpt-5.4 for assessor, answer
+  routed when: TOC review flagged a table; decomposer and TOC reviewer always on openai/gpt-5.4-mini
+  AgentState logs=/Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/Capstone Checkpoint 7.1/logs/cost_tests/2026_10_04_14_40_19
+Running experiment:   0%|          | 0/19 [00:00<?, ?it/s]Running experiment:   5%|▌         | 1/19 [07:35<2:16:30, 455.05s/it]Running experiment: 100%|██████████| 19/19 [07:35<00:00, 23.95s/it]  
+
+Experiment complete: Pass: 16 | Partial: 1 | Fail: 2 | Total: 19
+
+Results saved to: /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/Capstone Checkpoint 7.1/cost_efficiency/wikipedia_GT/experiments/reverent_diffie.csv
+Telemetry saved to: /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/Capstone Checkpoint 7.1/cost_efficiency/wikipedia_GT/telemetry/reverent_diffie__*.csv
+
+PER ROLE (tool) over 19 question(s)
+  role           calls/q  in tok/q out tok/q  cached  token share
+  answer             1.0     34829       184     10%          40%
+  assessor           2.2     40865       725     35%          48%
+  decomposer         1.0       424       107      0%           1%
+  table_planner      2.6      6031       206     34%           7%
+  toc_reviewer       1.0      3096       362     83%           4%
+  slowest questions: GT19 43s/11 calls, GT03 41s/12 calls, GT09 38s/11 calls, GT07 37s/13 calls, GT08 28s/8 calls

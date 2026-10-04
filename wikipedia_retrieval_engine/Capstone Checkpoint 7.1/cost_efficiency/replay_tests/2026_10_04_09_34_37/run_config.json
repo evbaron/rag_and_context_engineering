@@ -1,0 +1,58 @@
+{
+  "model": "openai/gpt-5.4-mini",
+  "arms": [
+    "legacy",
+    "guarded"
+  ],
+  "questions": [
+    "GT05",
+    "GT07",
+    "GT09",
+    "GT10",
+    "GT11",
+    "GT15",
+    "GT16",
+    "GT19"
+  ],
+  "source_runs": [
+    {
+      "system": "6.1",
+      "results_csv": "eager_torvalds.csv",
+      "log_folder": "logs/2026_10_04_01_37_06"
+    },
+    {
+      "system": "final",
+      "results_csv": "admiring_diffie.csv",
+      "log_folder": "logs/2026_10_04_01_41_15"
+    },
+    {
+      "system": "6.1",
+      "results_csv": "hardcore_page.csv",
+      "log_folder": "logs/2026_10_04_01_45_35"
+    },
+    {
+      "system": "final",
+      "results_csv": "eloquent_hoare.csv",
+      "log_folder": "logs/2026_10_04_01_50_22"
+    },
+    {
+      "system": "6.1",
+      "results_csv": "confident_stallman.csv",
+      "log_folder": "logs/2026_10_04_01_55_24"
+    },
+    {
+      "system": "final",
+      "results_csv": "confident_zuckerberg.csv",
+      "log_folder": "logs/2026_10_04_02_00_40"
+    }
+  ],
+  "estimate": {
+    "question_runs": 48,
+    "answer_calls": 96,
+    "input_tokens": 2357776,
+    "answer_list_usd": 1.8547319999999996,
+    "judge_usd": 0.07680000000000001,
+    "total_usd": 1.9315319999999996
+  },
+  "judge": "the 5.1 harness RAGAS judge, raw answers (no grounding label)"
+}

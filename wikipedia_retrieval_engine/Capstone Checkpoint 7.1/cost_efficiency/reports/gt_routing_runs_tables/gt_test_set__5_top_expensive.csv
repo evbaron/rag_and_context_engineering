@@ -1,0 +1,11 @@
+configuration,run,question_id,path,score,list_cost,seconds,calls
+"7.1 final, gpt-5.4",adoring_hopper,GT09,Table,partial,3.4416325,41.97,12
+7.1 router by question type,wizardly_yao,GT09,Table,partial,3.4102515,35.91,11
+7.1 Router B (assessor + answer),suspicious_liskov,GT09,Table,partial,0.76709575,30.78,10
+7.1 answer check 0.5 + large to gpt-5.4,gifted_yao,GT03,Table,fail,0.6678182500000001,62.14,20
+"7.1 final, gpt-5.4",adoring_hopper,GT07,Table,pass,0.5769725,51.13,15
+7.1 router by question type,wizardly_yao,GT07,Table,pass,0.435122,45.96,17
+7.1 router by question type,wizardly_yao,GT03,Table,fail,0.42276199999999997,38.03,11
+7.1 answer check 0.5 + large to gpt-5.4,gifted_yao,GT19,Table,pass,0.365799,79.09,22
+"7.1 final, gpt-5.4",adoring_hopper,GT16,"Text, escalated",pass,0.332205,22.28,5
+7.1 answer check 0.5 + large to gpt-5.4,gifted_yao,GT16,"Text, escalated",pass,0.330995,24.96,5

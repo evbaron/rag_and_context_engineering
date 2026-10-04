@@ -66,6 +66,7 @@ rag_and_context_engineering/
     ├── utils/
     │   ├── ragas_eval.py                  # shared RAGAS harness (GT parse, LLM/judge, rate-limit)
     │   ├── analyze_ragas_experiments.py   # aggregate CSV runs → PDF report
+    │   ├── analyze_ragas_experiments_efficiency.py # accuracy against cost and latency → PDF + CSV tables
     │   ├── openrouter_usage.py            # key usage snapshot; --analytics by app/model/day
     │   ├── wiki_table_parser.py            # rich Wikipedia-table normalization
     │   └── wiki_table_store.py             # offline artifact builder + read-only runtime API
@@ -82,6 +83,7 @@ rag_and_context_engineering/
     │   ├── answer_nodes.py                # 7.1 graph nodes: sanitize, answer, guard
     │   ├── prompts.py                     # legacy and guarded (7.1) answer system prompts
     │   ├── chat.py                        # multi-turn chat over the guarded graph (manual testing)
+    │   ├── model_routing.py               # 7.1 model routing: mini by default, gpt-5.4 by rule; Jev answer check
     │   └── run_agent.py                   # single-question run through evidence assessment
     ├── tests/                             # unit tests (unittest)
     ├── Capstone Checkpoint 1.1/
@@ -111,7 +113,11 @@ rag_and_context_engineering/
         ├── survivor_agent_final.py        # the 7.1 final system: 6.1 survivor + input sanitizer, guarded prompt, grounding check
         ├── security_test_final.py         # 6.1 security scenarios against the 7.1 system
         ├── cost_test_final.py             # 6.1 cost-and-quality harness against the 7.1 system
+        ├── prompt_replay.py               # re-answers saved GT contexts with the legacy and guarded prompts
+        ├── jev_route_check.py             # Jev's route for the 44 questions against an answer key
+        ├── jev_answer_check.py            # Jev's "complete?" check over saved answers; escalation simulated
         ├── analyzers/                     # compare_security_runs, rebuild_answer_context, replay_grounding (offline)
+        ├── cost_efficiency/               # performance runs: wikipedia_GT/ (results + telemetry), logs/, console/, run_manifest.csv, reports/
         ├── ragas_7_1_vs_6_1_vs_5_1.pdf    # RAGAS report: 7.1 against 6.1 and 5.1, with cost and latency
         └── security_tests/ cost_tests/ logs/  # run outputs, as in 6.1
 ```
@@ -570,6 +576,46 @@ Earlier oracle runs used a binary PASS/FAIL rubric and are excluded from the pri
 comparison because those labels are not compatible with the final three-level rubric.
 Pass `--include-binary-oracle` only when intentionally reviewing those legacy runs;
 do not combine them with the final baseline statistics.
+
+## Analyze accuracy against cost and latency
+
+`wikipedia_retrieval_engine/utils/analyze_ragas_experiments_efficiency.py` (Checkpoint
+7.1) reads the same experiment CSVs plus the cost starters' telemetry and reports the
+trade-offs, one section per question set (GT and validation are never pooled):
+
+1. frontier: quality against list cost and seconds, run points and means, dominated
+   configurations;
+2. paired against a baseline: per-question changes, better/worse/same, Wilcoxon p, the
+   price of a quality point;
+3. cost and model time by role;
+4. text-ready, text-escalated, and table paths;
+5. tail and waste: p50, p90, maximum, most expensive question-runs, spend on fails;
+6. comparability: run order, caching, billed against list, per-call latency by role,
+   with warnings;
+7. safeguard markers: evidence notices, grounding flags and false alarms, sanitizer hits;
+8. routing: what-if policies on saved runs (`--route-cheap`, `--route-strong`), and the
+   route mix once runs record a `route` column.
+
+It writes the PDF and one CSV per table (`<output stem>_tables/`). Display labels for the
+experiment names are built in (`--alias NAME=LABEL` adds more); `--baseline` takes a
+label or an experiment name. Run order comes from a `run_manifest.csv` above the runs
+when there is one, else from the file times.
+
+```bash
+python wikipedia_retrieval_engine/utils/analyze_ragas_experiments_efficiency.py \
+  --experiments-dir "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/cost_efficiency/wikipedia_GT" \
+  --baseline "6.1 survivor" \
+  --output "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/cost_efficiency/reports/gt_baseline_6_1_vs_7_1.pdf" \
+  --title "GT baseline: 6.1 survivor against 7.1 final"
+```
+
+With no arguments it reads `Capstone Checkpoint 7.1/cost_efficiency/wikipedia_GT` and
+writes `cost_efficiency/reports/efficiency_report.pdf`. Folders named `reports` or
+`*_tables` are never read as runs, so a report can sit beside the runs it describes.
+
+A routing simulation adds, for example,
+`--route-cheap "6.1 survivor" --route-cheap "7.1 final" --route-strong "6.1 survivor, gpt-5.4"`.
+Tests: `tests/test_analyze_efficiency.py` (reproduces the README 7.1 figures).
 
 ## Check OpenRouter usage
 

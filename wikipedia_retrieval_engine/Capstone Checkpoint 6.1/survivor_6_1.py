@@ -76,21 +76,30 @@ def build_survivor_6_1(
     sanitize_input: bool = False,
     input_filter_llm: Any | None = None,
     log_root: Any | None = None,
+    assess_llm: Any | None = None,
+    planner_llm: Any | None = None,
+    answer_llm: Any | None = None,
+    make_route_node: Callable[[Callable[[str], str | None]], Callable[[dict], dict]] | None = None,
 ) -> Survivor61:
     """Build the 6.1 graph: the 5.1 survivor's configuration with the 6.1 changes.
 
-    The last five arguments are the Checkpoint 7.1 extension and all default to off, so a
-    call without them builds the 6.1 survivor exactly as the recorded runs used it. They
-    live here rather than in the 7.1 module because the answer model is the agent model,
-    built in this function: ``answer_in_graph`` wires it into the graph's answer node
-    instead of leaving the answering to the harness.
+    The arguments after ``table_model`` are the Checkpoint 7.1 extension and all default
+    to off, so a call without them builds the 6.1 survivor exactly as the recorded runs
+    used it. They live here rather than in the 7.1 module because the answer model is the
+    agent model, built in this function: ``answer_in_graph`` wires it into the graph's
+    answer node instead of leaving the answering to the harness.
+
+    ``assess_llm``, ``planner_llm``, ``answer_llm``, and ``make_route_node`` are the 7.1
+    model routing (``wiki_agents/model_routing.py``): per-role model objects, and a factory
+    that receives the markdown loader and returns the routing node placed after the TOC
+    review.
     """
 
     h = load_harness_5_1()
     model = model or h.LLM_MODEL
     table_model = table_model or model
     agent_llm = make_llm(model=model)
-    table_llm = agent_llm if table_model == model else make_llm(model=table_model)
+    table_llm = planner_llm or (agent_llm if table_model == model else make_llm(model=table_model))
     retriever = h.VectorRetriever.for_section_index(
         top_k=h.INITIAL_ARTICLE_TOP_K,
         label=f"section_vector_articles_k{h.INITIAL_ARTICLE_TOP_K}",
@@ -102,6 +111,7 @@ def build_survivor_6_1(
         label="targeted_multistep_sections",
     )
     markdown_store = build_or_load_markdown_store()
+    load_text = markdown_text_loader(markdown_store)
     wiki_graph = h.build_or_load_graph(markdown_store)
     table_store = h.TableArtifactStore.open()
     run_logger = h.AgentRunLogger(log_root=(log_root or LOG_ROOT) / log_subdir)
@@ -125,10 +135,12 @@ def build_survivor_6_1(
         multistep_hits_per_request=h.MULTISTEP_HITS_PER_REQUEST,
         max_table_rounds=h.MAX_TABLE_ROUNDS,
         max_table_requests_per_round=h.MAX_TABLE_REQUESTS_PER_ROUND,
+        assess_llm=assess_llm,
         table_llm=table_llm,
         repair_invalid_table_plan=True,
         label_incomplete_tables=True,
-        answer_llm=agent_llm if answer_in_graph else None,
+        answer_llm=(answer_llm or agent_llm) if answer_in_graph else None,
+        route_after_review=make_route_node(load_text) if make_route_node else None,
         answer_context_rule=ANSWER_CONTEXT_RULE,
         answer_system_prompt=answer_system_prompt,
         grounding_policy=grounding_policy,
@@ -140,7 +152,7 @@ def build_survivor_6_1(
         graph=graph,
         agent_llm=agent_llm,
         run_logger=run_logger,
-        load_text=markdown_text_loader(markdown_store),
+        load_text=load_text,
         model=model,
         table_model=table_model,
     )
@@ -224,6 +236,7 @@ def build_experiment_6_1(
         guard_columns: dict[str, Any] = {
             **state.get("input_sanitization", {}),
             **state.get("grounding", {}),
+            **state.get("routing", {}),
         }
 
         score = h.call_with_rate_limit_backoff(

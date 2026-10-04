@@ -1,0 +1,29 @@
+{
+  "model": "typesafe/jev-1.13",
+  "checks": {
+    "grounded": {
+      "type": "noul",
+      "instructions": "Is every fact stated in the answer supported by the evidence?",
+      "criteria": {
+        "true": "Every person, work, number, date, and relationship the answer states appears in the evidence and is described there the same way.",
+        "false": "The answer states a person, work, number, date, or relationship that the evidence does not contain, or describes one differently from the evidence."
+      }
+    },
+    "complete": {
+      "type": "noul",
+      "instructions": "Does the answer fully answer every part of the question?",
+      "criteria": {
+        "true": "The answer gives a definite answer to every part of the question.",
+        "false": "The answer leaves a part of the question unanswered, gives only part of a list or count, or says it cannot answer."
+      }
+    }
+  },
+  "state_token_budget": 28000,
+  "thresholds": [
+    0.3,
+    0.5,
+    0.7,
+    0.8,
+    0.9
+  ]
+}

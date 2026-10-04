@@ -1,0 +1,38 @@
+Loading the Checkpoint 7.1 survivor agent...
+Loading existing vector DB from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/wikipedia_sections_max10000_no_overlap/
+Loading existing vector DB from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/wikipedia_sections_max10000_no_overlap/
+Loading extracted markdown from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/article_text/wikipedia_markdown/
+Loading existing graph from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/graph/wikipedia_graph/graph.json
+Loading existing vector DB from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/wikipedia_sections_max10000_no_overlap/
+Loading existing vector DB from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/wikipedia_sections_max10000_no_overlap/
+Loading extracted markdown from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/article_text/wikipedia_markdown/
+Loading existing graph from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/graph/wikipedia_graph/graph.json
+Cost test — history OFF, 19 question(s) from wikipedia_GT.csv, experiment survivor_final__grounding_surface__route_check_0.5
+  survivor=6.1 (5.1 configuration with the 6.1 changes)
+  initial retriever=multistep_entity
+  repeated retrievers=whole_article -> graph_seeded (no breadth nudge)
+  answer context=whole_per_question; table plan repair and retry on; incomplete computations labeled; evidence notice on
+  model=openai/gpt-5.4-mini (every agent role and the answer), table planner=openai/gpt-5.4-mini, judge=openai/gpt-5.4-mini
+  survivor=final (6.1 configuration; safeguards in the graph)
+  grounding policy=surface; answer and guard are graph nodes
+  input sanitising=on (deterministic layers only)
+  answer prompt=guarded (7.1)
+  routing=check: default openai/gpt-5.4-mini; openai/gpt-5.4 for assessor, table planner, answer (large evidence); whole question on escalation
+  routed when: kept articles too large for Jev, or Jev p(complete) < 0.5; decomposer and TOC reviewer always on openai/gpt-5.4-mini
+  Escalation AgentState logs=/Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/Capstone Checkpoint 7.1/logs/cost_tests_escalation/2026_10_04_13_23_57
+  AgentState logs=/Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/Capstone Checkpoint 7.1/logs/cost_tests/2026_10_04_13_23_57
+Running experiment:   0%|          | 0/19 [00:00<?, ?it/s]Running experiment:   5%|▌         | 1/19 [07:47<2:20:10, 467.23s/it]Running experiment: 100%|██████████| 19/19 [07:47<00:00, 24.59s/it]  
+
+Experiment complete: Pass: 16 | Partial: 0 | Fail: 3 | Total: 19
+
+Results saved to: /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/Capstone Checkpoint 7.1/cost_efficiency/wikipedia_GT/experiments/gifted_yao.csv
+Telemetry saved to: /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/Capstone Checkpoint 7.1/cost_efficiency/wikipedia_GT/telemetry/gifted_yao__*.csv
+
+PER ROLE (tool) over 19 question(s)
+  role           calls/q  in tok/q out tok/q  cached  token share
+  answer             1.2     26760       231     47%          37%
+  assessor           2.8     34600       834     36%          49%
+  decomposer         1.2       517       135      0%           1%
+  table_planner      2.5      5706       195     48%           8%
+  toc_reviewer       1.2      3618       429     70%           6%
+  slowest questions: GT19 79s/22 calls, GT03 62s/20 calls, GT08 56s/18 calls, GT05 27s/14 calls, GT16 25s/5 calls

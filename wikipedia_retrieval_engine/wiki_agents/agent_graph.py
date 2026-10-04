@@ -193,6 +193,7 @@ def build_retrieval_benchmark_graph(
     repair_invalid_table_plan: bool = False,
     label_incomplete_tables: bool = False,
     answer_llm: BaseChatModel | None = None,
+    route_after_review: Callable[[AgentState], AgentState] | None = None,
     answer_context_rule: ContextRule = "sections",
     answer_system_prompt: str | None = None,
     grounding_policy: GroundingPolicy | None = None,
@@ -383,7 +384,14 @@ def build_retrieval_benchmark_graph(
     else:
         workflow.add_edge(START, "retrieve_initial_articles")
     workflow.add_edge("retrieve_initial_articles", "review_and_select_from_toc")
-    workflow.add_edge("review_and_select_from_toc", "load_selected_sections")
+    if route_after_review is not None:
+        # Checkpoint 7.1 model routing: decide the model for the remaining roles from the
+        # review (``wiki_agents/model_routing.py``). Without it the edge is unchanged.
+        workflow.add_node("route_model", route_after_review)
+        workflow.add_edge("review_and_select_from_toc", "route_model")
+        workflow.add_edge("route_model", "load_selected_sections")
+    else:
+        workflow.add_edge("review_and_select_from_toc", "load_selected_sections")
     workflow.add_edge("load_selected_sections", "load_selected_tables")
     workflow.add_edge("load_selected_tables", "assess_evidence")
     routes = {

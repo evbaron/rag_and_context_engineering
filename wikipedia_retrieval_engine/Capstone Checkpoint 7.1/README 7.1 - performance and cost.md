@@ -59,11 +59,11 @@ configurations run in the same session, one after the other, with nothing else r
 on the account; quality and cost are compared question by question; latency is compared
 per call and role as well as per question.
 
-## Question sets: validation only
+## Question sets
 
-- Every figure with per-call telemetry is on the validation set (25 questions). No
-  configuration has a telemetry run on the GT test set, and 6.1 and 7.1 have no GT run
-  at all.
+- Until the GT baseline below, every figure with per-call telemetry was on the
+  validation set (25 questions). No configuration had a telemetry run on the GT test set,
+  and 6.1 and 7.1 had no GT run at all.
 - GT cost evidence is indirect:
   - the 6.1 billing windows (4.1 against 5.1) each mix two GT and four validation runs
     in the same hours, so GT cannot be separated;
@@ -77,6 +77,28 @@ per call and role as well as per question.
 - Routing estimates from validation (Finding 3: 44–47% of questions sent to `gpt-5.4`)
   therefore likely overstate the saving on a GT-like workload, where about three
   quarters of the questions would take the expensive path.
+- **Decision (2026-10-04): GT is the working set for the 7.1 experiments,** with repeated
+  runs under `cost_efficiency/wikipedia_GT/`. Validation runs once, at the end, as the
+  held-out check, into its own folder (`cost_efficiency/wikipedia_GT_validation_set/`).
+  The analyzer reports each set separately, so the two are never pooled.
+
+## Tools for the experiments
+
+| File | Role |
+| --- | --- |
+| [`../utils/analyze_ragas_experiments_efficiency.py`](../utils/analyze_ragas_experiments_efficiency.py) | Accuracy against cost and latency, per question set: frontier, paired comparison against a baseline, cost by role, paths, tail and waste, comparability warnings, safeguard markers, routing simulation. PDF plus one CSV per table |
+| [`../tests/test_analyze_efficiency.py`](../tests/test_analyze_efficiency.py) | Logic tests, plus checks that the analyzer reproduces this README's GT baseline and Finding 3 figures |
+| `cost_efficiency/run_manifest.csv` | Run order, system, results CSV, and log folder for each performance run |
+
+- **Why a separate analyzer.** `analyze_ragas_experiments.py` tracks accuracy across
+  checkpoints and shows cost only as configuration averages. It groups runs by
+  experiment name alone, so the GT and validation runs of `survivor_6_1` would have been
+  pooled. The new analyzer imports the original's loader and PDF styling, leaves it
+  unchanged, and separates the sets.
+- **What it changed in this README.** It reproduced every Finding 3 policy computed by
+  hand, and corrected one: the hindsight row (see Finding 3). It also reproduced the GT
+  baseline figures (p = 0.188 for the quality change, which the hand calculation gave as
+  0.19).
 
 ## Starting decision: accuracy first
 
@@ -142,7 +164,8 @@ calls):
 
 **Method.** Each mini question-run (4 runs × 25 questions) keeps its own outcome, cost,
 and time, or, when a policy sends it to `gpt-5.4`, takes that question's outcome, cost,
-and time from the `gpt-5.4` run:
+and time from the `gpt-5.4` run. First computed with a one-off script; the efficiency
+analyzer (§8, below) reproduces every row:
 
 | Policy | Quality | List $/q | Seconds/q | Sent to `gpt-5.4` |
 | --- | ---: | ---: | ---: | ---: |
@@ -152,15 +175,20 @@ and time from the `gpt-5.4` run:
 | Route on the question's category (author labels; seven text categories) | 0.955 | 0.1165 | 18.3 | 44% |
 | Route on `gpt-5.4`'s table flag | 0.935 | 0.1108 | 18.4 | 44% |
 | Mini first; rerun on `gpt-5.4` when the evidence notice fires | 0.910 | 0.0821 | 17.4 | 13%, paid twice |
-| Hindsight: `gpt-5.4` only where this mini run failed | 0.965 | 0.1038 | 12.4 | 13% |
+| Perfect router (hindsight): `gpt-5.4` only where it scores higher than this mini run, paying only the path taken | 0.965 | 0.0717 | 14.6 | 14% |
 
 **Reading.**
 
 - **Routing table questions to `gpt-5.4` kept its quality (0.960) for 28% less** ($0.109
   against $0.152 at list price) and 3.8 s less per question.
-- **A perfect router would save little more** ($0.104): the questions that need
-  `gpt-5.4` are the ones it spends the most on. Further savings have to come from inside
-  the expensive path, where the assessor re-reads and the planner can run up to 12 times.
+- **A precise router could save up to a third more.** A router that knew the outcomes
+  would send only 14% of the question-runs to `gpt-5.4` and cost $0.072 for the same
+  quality, against the table-flag router's 47% and $0.109. Most table questions are ones
+  mini already answers; the gap between the two is the value of routing precision. The
+  first version of this row charged both paths for every routed question ($0.104) and led
+  to the opposite reading; the analyzer's definition (only the path taken) is the right
+  bound. The other lever is the expensive path itself, where the assessor re-reads and
+  the planner can run up to 12 times.
 - **Escalating on the evidence notice is cheapest and loses quality** (0.910). The silent
   failures raise no notice: VAL24 when one computation succeeds too early, VAL08, VAL14.
 - **Limits.** The `gpt-5.4` outcomes come from a single run (6.1: Wilcoxon p = 0.08 against
@@ -343,7 +371,8 @@ Article recall was 1.000 in every run.
   GT15 read like those rules applied too literally; GT16's Joe Biden is the competing
   answer first seen in the 6.1 answer replay (a large whole-article context). This is a
   hypothesis: the runs change the prompt and the grounding check together, and the
-  judge's own variation is about 7% of verdicts on identical input (6.1).
+  judge's own variation is about 7% of verdicts on identical input (6.1). *Tested in the
+  prompt replay below: refuted; the gap is chance.*
 - **The grounding check flagged 10 of 57 answers, and 8 of them passed the judge.** The
   flagged spans are extraction artifacts, not invented facts: "Russia-related Olympic"
   (the hyphen-suffix pattern already seen on validation), "Winter Olympic Games Sport"
@@ -353,6 +382,17 @@ Article recall was 1.000 in every run.
   the check verifies names, not relationships (its limit recorded in 6.1). With policy
   `surface`, a correct answer carried the "[QUARANTINED]" label in 8 of 57 question-runs.
 
+**Report:** `cost_efficiency/reports/gt_baseline_6_1_vs_7_1.pdf`, tables in
+`cost_efficiency/reports/gt_baseline_6_1_vs_7_1_tables/`. Two of its markers add to the
+reading above:
+
+- **The tail is GT09** (a cross-table comparison): $0.31 at list price in one 6.1 run
+  (partial) and $0.24 in one 7.1 run (pass), against a median question of $0.033. The
+  most expensive question-run costs 6.5x the mean question-run in 6.1, and 4.7x in 7.1.
+- **The grounding check cannot see most wrong answers:** 12 of 7.1's 13 failed answers
+  passed it, Joe Biden included. 13% of 6.1's list spend and 23% of 7.1's went to
+  failed answers.
+
 **Predictions against results:**
 
 | Prediction | Result |
@@ -361,3 +401,756 @@ Article recall was 1.000 in every run.
 | About $0.045 per question at list price | $0.0485 (6.1) and $0.0502 (7.1) |
 | About 14 s per question | 13.1 s and 13.8 s |
 | 7.1 against 6.1: no difference beyond the run-to-run spread | Held for cost, calls, tokens, and time. Quality −0.078, consistent in all three pairs, not significant (p = 0.19) |
+
+# Prompt replay on the GT contexts: legacy against guarded answer prompt
+
+**Status:** complete (2026-10-04, `cost_efficiency/replay_tests/2026_10_04_09_34_37/`);
+96 answers and 96 judge calls, no errors, $1.26 billed for the answers. **Result: the
+guarded prompt is not the cause.**
+
+**Why.** The GT baseline put the 7.1 final 0.08 below the 6.1 survivor, with the losses in
+the answer step on identical contexts. The two systems differ in three things at once:
+the answer prompt, the grounding check (its label on flagged answers), and what the agent
+collected in each run. Before any optimization is built on the 7.1 final, the prompt is
+tested alone.
+
+**Design** ([`prompt_replay.py`](prompt_replay.py), the answer replay method of 6.1
+Experiment 1):
+
+- **Evidence held fixed.** Each saved GT context is rebuilt from its run's AgentState log
+  with `analyzers/rebuild_answer_context.rebuild_row`, and must match its recorded
+  `context_characters` before anything is paid: 48 of 48 matched (114 of 114 for all GT
+  questions).
+- **Two arms, one change.** Every context is answered with the legacy prompt (2.1-6.1)
+  and with the guarded prompt (7.1), through the `build_answer_messages` both systems use,
+  on `gpt-5.4-mini` at temperature 0.2.
+- **Contexts from both systems.** The three 6.1 and the three 7.1 runs of each question
+  are replayed, so the result separates the prompt (same context, two prompts) from the
+  evidence (same prompt, contexts from different runs).
+- **Questions:** the eight whose verdicts differed between the systems (GT05, GT07, GT09,
+  GT10, GT11, GT15, GT16, GT19): 48 question-runs, 96 answers, 96 judge calls,
+  estimated $1.93 at list price. The other eleven were level in the baseline.
+- **Judging:** the cost runs' RAGAS judge grades the raw answer in both arms. The
+  grounding label is not applied, so the comparison holds the prompt's effect alone; the
+  check's verdict on each answer is recorded offline.
+- **Noise floor:** the arm matching each context's own run (legacy on 6.1 contexts,
+  guarded on 7.1 contexts) re-answers the recorded condition.
+- **Markers counted per arm:** Joe Biden and Hillary Clinton in GT16 answers, the "Totals"
+  row in GT05 answers, and hedges ("do not contain", "do not support", …).
+- Outputs: `cost_efficiency/replay_tests/<stamp>/` (`answer_calls.csv`, `summary.md`,
+  `run_config.json`).
+
+**Predictions** (recorded before the results):
+
+- On these eight questions the baseline gap is larger than overall: 6.1 0.708 against 7.1
+  0.521 (−0.19). They were selected because they differed, so part of that gap is
+  selection by chance, and any replay difference should be smaller.
+- **If the guarded prompt is the cause:** guarded below legacy on the same contexts, by
+  roughly 0.05–0.15; the Joe Biden answers on GT16 and the "Totals" answers on GT05 appear
+  mostly under the guarded prompt, on contexts from both systems; more hedges under the
+  guarded prompt.
+- **If the evidence or chance is the cause:** the two prompts score about the same on the
+  same contexts, and any difference follows the context's source (contexts from 7.1 runs
+  lower under both prompts).
+
+## Results (2026-10-04)
+
+**Quality on the same 48 contexts:**
+
+| Evidence from | Legacy prompt | Guarded prompt | Recorded in the run |
+| --- | ---: | ---: | ---: |
+| 6.1 survivor runs (24) | 0.688 | 0.688 | 0.708 |
+| 7.1 final runs (24) | 0.688 | 0.688 | 0.521 |
+
+- **The prompts score the same.** Paired on each context, guarded minus legacy is +0.000:
+  better on 8, worse on 9, the same on 31 (Wilcoxon p = 0.94).
+- **The 7.1 evidence was not worse.** Contexts from the 7.1 runs score exactly what
+  contexts from the 6.1 runs score, under either prompt.
+- **The baseline gap on these questions was chance.** The 7.1 runs' recorded 0.521 becomes
+  0.688 when the same contexts are answered again with the same (guarded) prompt.
+- **Re-asking moves verdicts more than changing the prompt.** The arm matching each
+  context's own run changed 22 of 48 recorded verdicts (9 of 24 on 6.1 contexts, 13 of 24
+  on 7.1 contexts); switching the prompt on the same context changed 17 of 48. These eight
+  questions were chosen because they differed between the systems, so they are the
+  unstable ones: 6.1 measured a noise floor of 6 in 84 on a broader set.
+
+**The markers behind the hypothesis:**
+
+| Marker | Legacy prompt | Guarded prompt |
+| --- | --- | --- |
+| GT16 answers naming Joe Biden as the connecting person | 1 of 6 (a 7.1 context) | 2 of 6 (6.1 contexts) |
+| GT05 answers mentioning the "Totals" row | 1 of 6 (quality 0.83) | 0 of 6 (quality 1.00) |
+| Hedges ("do not contain", "do not support", …) | 8 of 48 | 17 of 48 |
+| Grounding check flags (not applied) / of those, judge passes | 9 / 6 | 8 / 6 |
+
+- **Joe Biden is the answer model's instability on GT16's 248K-character context,** with
+  either prompt and on either system's evidence. It is the competing answer first seen in
+  the 6.1 answer replay.
+- **The "Totals" answers came from the legacy prompt** in the replay, the opposite of the
+  baseline's appearance.
+- **The guarded prompt hedges twice as often,** without lowering the verdicts on these
+  questions (GT05 and GT09 hedge most and still score 1.00 and 0.83).
+- **The grounding check's false alarms do not depend on the prompt** (6 of 9 and 6 of 8
+  flagged answers passed).
+
+**Predictions against results:**
+
+| Prediction | Result |
+| --- | --- |
+| Any replay difference smaller than the baseline's −0.19 on these questions | Held: 0.000 |
+| If the prompt is the cause: guarded 0.05–0.15 below legacy, Biden and "Totals" mostly under the guarded prompt, more hedges | Only the hedges held. Quality level; Biden under both prompts; "Totals" under the legacy prompt |
+| If chance or the evidence is the cause: the prompts level on the same contexts | Held, and the contexts' source made no difference either: chance |
+
+**Reading.**
+
+- **The 7.1 final remains the base for the performance work.** The guarded prompt costs
+  no measurable quality on GT; its security benefit stands.
+- **The GT gap between 6.1 and 7.1 (−0.08, p = 0.19) is chance.** The baseline's own test
+  said "not significant"; the replay finds no mechanism behind it.
+- **Measurement lesson.** Half the verdicts on the unstable GT questions move when the
+  same evidence is answered again. Three runs of 19 questions cannot resolve a difference
+  of 0.08, so later comparisons are paired by question and, where only the answer step
+  changes, replayed on fixed evidence.
+
+# Grounding check: name-extraction fixes (offline)
+
+**Status:** complete (2026-10-04); no API calls.
+
+**Why.** The GT baseline found the grounding check flagging correct answers: 8 of its 10
+flags on the 7.1 final were answers the judge passed. Under policy `surface` each of those
+reaches the user with the "[QUARANTINED]" label, a usability cost of the safeguard, and
+the same artifacts would follow every later run.
+
+**Method.** Every saved answer was re-checked with its rebuilt evidence (verified against
+the recorded `context_characters`): the six GT baseline runs (114 answers) and the four
+validation runs of 6.1 and 7.1 (100). The recorded "[QUARANTINED]" label is stripped
+first, because re-checking a labelled answer flags the label itself. The security floor
+is every answer or draft in the security runs that contains a planted name (13 answers,
+57 mentions of names such as "Marisol Quennell" and "Rafe Dunmoor"): each must stay
+flagged.
+
+**What the flags were.** Five extraction artifacts, each a span no answer asserted:
+
+| Artifact | Example (recorded answer) | Invented span | Flags |
+| --- | --- | --- | ---: |
+| Lowercase hyphen suffix | "The Russia-related Olympic identities" | Russia-related Olympic | 10 |
+| Table header joined by a slash | "the Winter Olympic Games Sport/Years table" | Winter Olympic Games Sport | 6 |
+| Capitalised connector opening a label | "- **To Bill Clinton:** his wife"; "Among Best Actor winners" | To Bill Clinton; Among Best Actor | 7 |
+| Brackets and quotes removed, gluing a title to a name | "*Sense and Sensibility* (“Kate Winslet –" | Sensibility Kate Winslet | 4 |
+| Possessive removed | "Obama’s Secretary of State" | Obama Secretary | 3 |
+
+**Changes** (`wiki_agents/grounding_check.py`, name extraction only; quotations unchanged):
+
+- a hyphen continues a name only before a capital or a digit ("Austria-Hungary" stays one
+  name; "Russia-related" ends at "Russia");
+- a slash-joined word, a bracket, a double quote, and a possessive end a name;
+- "To" and "Among" join the sentence openers.
+
+**Results:**
+
+| | Before | After |
+| --- | ---: | ---: |
+| Answers flagged (of 214) | 45 | 22 |
+| … of them passed by the judge (false alarms) | 32 | 15 |
+| Answers flagged for a name | 29 | 5 |
+| Spans the change introduced | | 0 |
+| Planted-name mentions flagged (security floor) | 57 of 57 | 57 of 57 |
+| 6.1 validation replay (`analyzers/replay_grounding.py`): trigger rate; quality under `withhold` | 21%; 0.693 | 13%; 0.760 |
+
+- **Left as they are, by design:**
+  - "Russian Empire" (4), a negated mention of an entity absent from the evidence ("did
+    not show any hosting by the Russian Empire"), the same accepted cost as a refusal that
+    names a fabricated entity;
+  - "Summer Games" (2) and "Prince Leopold" (1), paraphrases or titles the evidence does
+    not contain;
+  - the quotation rule (17 flagged answers), strict on purpose: some are inexact quotes
+    the guarded prompt targets, and the rest quote the evidence notice or the table
+    request, which are kept out of the trusted evidence because a planted text can reach
+    them.
+- **Cost of the change:** a name that itself contains a possessive ("People's Republic
+  of China") is no longer checked as one span, the same limit as single-word names; 777
+  names checked against 809 before.
+- **Tests:** `tests/test_grounding_extraction.py` (each artifact gone; the planted name
+  next to every new boundary still flagged); the module's self-check passes; 184 tests
+  pass.
+- **The security result stands:** every planted name the recorded security runs caught
+  is still caught.
+
+# GT run on gpt-5.4: the strong path
+
+**Status:** complete (2026-10-04, 10:04–10:12, `adoring_hopper`); one run, no errors.
+
+**Why.** The performance work starts from the `gpt-5.4` quality (accuracy first), and on
+GT that quality was unknown: the 0.960 came from one validation run, and GT's table
+questions are harder. A router to `gpt-5.4` is worth building only if `gpt-5.4` clearly
+beats mini on GT, and the routing simulation (efficiency analyzer §8) needs a strong
+outcome for every GT question.
+
+**Design.** The 7.1 final (the system kept after the prompt replay, with the corrected
+grounding check) with `--model openai/gpt-5.4` for every agent role and the answer; judge
+`gpt-5.4-mini` as in every run; history off; GT, 19 questions. One run, about $3.3
+estimated: a reference point, not a final comparison.
+
+**Commands** (from `rag_and_context_engineering/`):
+
+```bash
+python "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/cost_test_final.py" --gt-set "wikipedia_retrieval_engine/GT/wikipedia_GT.csv" --output-dir "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/cost_efficiency/wikipedia_GT" --model openai/gpt-5.4
+python wikipedia_retrieval_engine/utils/analyze_ragas_experiments_efficiency.py --baseline "7.1 final" --route-cheap "7.1 final" --route-strong "7.1 final, gpt-5.4" --output "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/cost_efficiency/reports/gt_7_1_mini_vs_gpt54.pdf"
+```
+
+## A pricing rule found on the way
+
+The run's billed cost ($5.30) came out above its list cost ($4.96), which list price
+should never allow. `gpt-5.4` doubles its input price for prompts above 272K tokens
+(OpenRouter endpoint pricing, `overrides.min_prompt_tokens`), and two GT09 calls (the
+assessor and the answer) sent 293K tokens each. With the tier, the price table reproduces
+what OpenRouter billed for both calls to the tenth of a cent ($0.798 and $1.473).
+
+- `pricing/model_prices.json` carries the tier, `usage_accounting.call_cost` applies it,
+  and the efficiency analyzer recomputes every run's list cost from its calls with the
+  current table (the recorded figure stays in `cost_list_recorded_usd`).
+- Only this run had prompts above 272K tokens; every mini and every earlier `gpt-5.4` run
+  is unchanged. This run's list cost goes from $4.96 to $6.43 (+30%).
+
+## Results (2026-10-04)
+
+| GT, 19 questions | Quality | List $/q | Billed $/q | Seconds/q | Calls/q |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 7.1 final, `gpt-5.4-mini` (3 runs) | 0.711 | 0.0502 | 0.0348 | 13.8 | 6.84 |
+| 7.1 final, `gpt-5.4` (1 run) | **0.868** | **0.3387** | 0.2787 | 24.2 | 7.11 |
+
+- **Quality +0.158 over mini** (7 questions better, 2 worse; Wilcoxon p = 0.074), at 6.7x
+  the list cost and 10 s more per question: $0.18 per question for each +0.10 quality.
+- **By path:** table questions 0.667 → 0.821; text questions 0.833 → 1.000 (5
+  question-runs). On GT, unlike validation, mini is not perfect on text questions
+  (GT16, the Joe Biden answer).
+- **Where `gpt-5.4` won:** GT07 and GT16 (+0.83), GT08 (+0.67), GT05, GT10, GT15, GT19
+  (+0.33). **Where it lost:** GT09 (1.00 → 0.50) and GT11 (0.17 → 0).
+- **One question is half the bill.** GT09 (the cross-table population and life-expectancy
+  comparison) cost $3.44 at list price, 53% of the run's $6.43, in 12 calls and 773K input
+  tokens, and scored partial, where mini scores 1.00 for $0.12. Its two largest prompts
+  crossed the 272K tier. The most expensive question-run costs 10x the run's mean
+  (mini: 4.7x).
+- **By role:** the assessor is 52% of the `gpt-5.4` bill and the answer 37%; together
+  89%. The decomposer, TOC reviewer, and table planner are 11%.
+
+**Routing simulated on these runs** (analyzer §8; cheap = the three 7.1 mini runs,
+strong = this run):
+
+| Policy | Quality | List $/q | Sent to `gpt-5.4` | Saving against all `gpt-5.4` |
+| --- | ---: | ---: | ---: | ---: |
+| All mini | 0.711 | 0.0502 | 0% | 85% |
+| All `gpt-5.4` | 0.868 | 0.3387 | 100% | 0% |
+| Route on the question type (table flag) | 0.825 | 0.3072 | 74% | 9% |
+| Route on the question's category | 0.825 | 0.3180 | 79% | 6% |
+| Mini first; rerun on `gpt-5.4` when the evidence notice fires | 0.772 | 0.1494 | 30%, paid twice | 56% |
+| Perfect router (hindsight) | 0.904 | 0.1029 | 25% | 70% |
+
+**Reading.**
+
+- **`gpt-5.4` is worth routing to on GT:** the quality gain is large, and it comes from
+  both table and text questions.
+- **A question-type router saves little on GT.** Three quarters of GT question-runs are
+  table questions, so the type router sends 74% to `gpt-5.4` and saves 9% against all
+  `gpt-5.4`, while losing 0.04 quality on the text questions it keeps on mini. On
+  validation the same router saved 28% (44–47% sent).
+- **The cost of the strong path is concentrated.** One question (GT09) is half of it, at
+  a lower verdict than mini's. A cap on the strong path's context (below the 272K tier)
+  or on its table rounds would remove most of that tail; the perfect router's $0.103 shows
+  how much precision is worth.
+- **Router B's room is small on cost.** Routing only the assessor and the answer to
+  `gpt-5.4` keeps 11% of the strong path on mini; its difference from router A is mostly
+  a quality question (6.1: the `gpt-5.4` TOC reviewer's table flag fixed VAL24).
+
+# Router check: Jev on the 44 questions
+
+**Status:** complete (2026-10-04, `cost_efficiency/router_checks/2026_10_04_11_15_58/`);
+132 Jev calls, all ok, $0.0023.
+
+**The routing rule (decided 2026-10-04).** `gpt-5.4-mini` is the default for a question
+that is text-only and needs one article; every other question goes to `gpt-5.4`. In the
+saved runs this rule loses no quality on either set (GT 0.868, validation 0.960, the same
+as all `gpt-5.4`), because every question it keeps on mini is one mini answers correctly.
+The single-article condition is what protects GT16 (two articles), which mini fails.
+
+**How the router decides.** Jev makes one decision, the route; code makes the rest:
+
+- Jev (`typesafe/jev-1.13`, pinned) reads only the question and answers one `choice`
+  question with two written routes: *simple* ("stated in the text of one Wikipedia article
+  about one person, place, event, or work; no tables, counting, rankings, date ranges, or
+  comparisons across articles") and *complex* (tables, counting, date filters, ranking,
+  calculation, or facts from more than one article). It returns a probability for each.
+- Code maps the answer to a model: *simple* with probability at or above a threshold goes
+  to mini; anything else, including a failed call, goes to `gpt-5.4`. Jev never sees the
+  articles, so "one article" is a reading of the question's wording, not knowledge of the
+  corpus.
+
+**Design of the check** ([`jev_route_check.py`](jev_route_check.py)):
+
+- All 44 questions (GT and validation), three repeats each.
+- **Answer key:** *simple* when fewer than half of the saved mini runs flagged a table and
+  the question set lists one source article; *complex* otherwise.
+- **Two error kinds:** a complex question sent to mini can lose the question; a simple
+  question sent to `gpt-5.4` only costs money.
+- The routes are then simulated on the saved outcomes with the efficiency analyzer
+  (`--route-labels`), which is the real test: agreement with the key matters only where
+  it changes a verdict.
+
+## Results
+
+- **Cost and speed:** $0.000017 per decision (about 400 input tokens), median 0.20 s.
+- **Stable:** the same choice in all three repeats on 43 of 44 questions; p(simple) varied
+  by at most 0.09.
+- **Agreement with the key:** 32 to 34 of 44, depending on the threshold. The
+  disagreements that send a "complex" question to mini are questions mini answers
+  correctly: GT01 and GT04 (direct facts the TOC reviewer routed through a table), and
+  VAL11–VAL13 (the Broad Street cholera explanations, which list two source articles).
+
+**Simulated on the saved outcomes:**
+
+| Router | GT quality | GT list $/q | GT to `gpt-5.4` | Validation quality | Validation list $/q | Validation to `gpt-5.4` |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| All `gpt-5.4` | 0.868 | 0.3387 | 100% | 0.960 | 0.1524 | 100% |
+| The answer key (the rule, applied perfectly) | 0.868 | 0.3293 | 84% | 0.960 | 0.1324 | 68% |
+| Jev at 0.5 | 0.868 | 0.3274 | 74% | 0.955 | 0.1182 | 36% |
+| Jev at 0.8 | 0.868 | 0.3327 | 84% | 0.955 | 0.1270 | 52% |
+| Jev at 0.9 | 0.868 | 0.3327 | 84% | 0.960 | 0.1379 | 76% |
+| Perfect router (hindsight) | 0.904 | 0.1029 | 25% | 0.965 | 0.0717 | 14% |
+
+**Reading.**
+
+- **Jev applies the rule without losing quality** on GT at any threshold and loses 0.005 on
+  validation below 0.9, for a fraction of a cent per question and 0.2 s.
+- **Lower thresholds are cheaper and no worse here:** at 0.5 Jev sends more questions to
+  mini than the key does (it reads GT01, GT04, and the Broad Street questions as simple),
+  and mini answers them correctly. The threshold was chosen from the same 44 questions it
+  is scored on, so the difference between 0.5 and 0.8 is not evidence of a better cutoff.
+- **The rule saves little on GT:** 2–3% against all `gpt-5.4` (16–26% of GT goes to mini),
+  and 17–22% on validation. The questions that need `gpt-5.4` are the expensive ones, and
+  one of them (GT09) is half of the strong path's GT cost.
+
+# Answer check: Jev decides when a mini answer needs gpt-5.4
+
+**Status:** complete (2026-10-04, `cost_efficiency/answer_checks/2026_10_04_12_06_53/`);
+offline over saved answers, 214 Jev calls, $0.15.
+
+**Why.** The routers decide from the question alone, before anything runs, and on GT they
+send three quarters of the questions to `gpt-5.4` (2–3% saving). The perfect router
+($0.103 on GT) shows that most of the strong path is spent on questions mini answers
+correctly; what a router cannot see is whether mini *did*. A check after the answer can.
+
+**The policy ("verify after").** `gpt-5.4-mini` answers every question. Jev reads the
+question, the answer, and the evidence the answer was given, and answers two yes/no
+questions in one call:
+
+- *grounded*: "Is every fact stated in the answer supported by the evidence?" (a person,
+  work, number, date, or relationship absent or described differently counts as no);
+- *complete*: "Does the answer fully answer every part of the question?" (a missing part,
+  a partial list or count, or "cannot answer" counts as no).
+
+When Jev's probability falls below a threshold, the question is answered again on
+`gpt-5.4`, and both are paid. This is an escalation trigger for cost, not a security
+guard: it reads the user's question, which the deterministic grounding check never does.
+A question crafted to steer Jev can at worst keep mini's answer or cost one extra
+`gpt-5.4` run.
+
+**Design** ([`jev_answer_check.py`](jev_answer_check.py)):
+
+- every saved `gpt-5.4-mini` answer with its evidence rebuilt and verified: the six GT
+  baseline runs (114) and the four validation runs (100); the judge's verdict is the label;
+  7.1 answers are checked without the grounding label;
+- evidence that does not fit Jev's 32K-token window (57 of 214) is cut to the passages
+  mentioning the answer's names, numbers, and quotations, plus the evidence notice; the
+  simulation also shows escalating every oversized answer instead;
+- simulated on the saved outcomes: an escalated question-run pays mini, Jev, and that
+  question's mean `gpt-5.4` cost and time, and takes its `gpt-5.4` verdict.
+
+## Results
+
+- **213 of 214 checked,** median 0.33 s, about $0.0007 per answer. One call (GT19) was
+  rejected as too long: Jev counts more tokens than the `o200k` estimate, so the budget is
+  now 22K `o200k` tokens. The simulation escalates a failed check.
+- **"Complete" predicts the judge; "grounded" much less.** AUC, the chance a non-pass
+  answer scores lower than a pass (0.5 = no signal):
+
+  | | GT (36 of 113 non-pass) | Validation (18 of 100) |
+  | --- | ---: | ---: |
+  | grounded | 0.68 | 0.83 |
+  | complete | 0.76 | 0.93 |
+  | the lower of the two | 0.71 | 0.91 |
+
+  Mini's wrong answers are mostly incomplete or wrong in substance, not invented, which is
+  also why the deterministic grounding check passed 12 of 13 failed 7.1 answers.
+
+**Simulated policies (escalate on "complete"; excerpts for large evidence):**
+
+| GT | Quality | List $/q | Seconds/q | Escalated |
+| --- | ---: | ---: | ---: | ---: |
+| All mini | 0.711 | 0.0502 | 13.8 | 0% |
+| All `gpt-5.4` | 0.868 | 0.3387 | 24.2 | 100% |
+| Router (Jev on the question, 0.8) | 0.868 | 0.3327 | 23.6 | 84% |
+| Answer check, threshold 0.3 | 0.789 | 0.0717 | 18.5 | 14% |
+| **Answer check, threshold 0.5** | **0.833** | **0.1079** | 22.3 | 25% |
+| Answer check, threshold 0.7 | 0.833 | 0.3204 | 28.2 | 44% |
+| Answer check, 0.5, large evidence always escalated | 0.860 | 0.2797 | 28.6 | 51% |
+
+| Validation | Quality | List $/q | Seconds/q | Escalated |
+| --- | ---: | ---: | ---: | ---: |
+| All mini | 0.870 | 0.0431 | 12.4 | 0% |
+| All `gpt-5.4` | 0.960 | 0.1524 | 21.6 | 100% |
+| Router (Jev on the question, 0.8) | 0.955 | 0.1270 | 18.8 | 52% |
+| Answer check, threshold 0.5 | 0.930 | 0.0889 | 18.3 | 14% |
+| **Answer check, threshold 0.7** | **0.955** | **0.1163** | 20.6 | 21% |
+
+**Reading.**
+
+- **The answer check reaches trade-off points the routers cannot.** On GT, threshold 0.5
+  keeps 78% of the quality gain from mini to `gpt-5.4` (+0.122 of +0.157) for 20% of the
+  extra cost ($0.058 of $0.289). On validation, threshold 0.7 matches the router's quality
+  (0.955) for a little less.
+- **GT09 decides the price above 0.5.** Between thresholds 0.5 and 0.7 the GT cost triples
+  ($0.108 → $0.320) for no quality: the higher threshold escalates GT09, whose `gpt-5.4`
+  run costs $3.44 and scores lower than mini. The cap on the strong path and the answer
+  check address the same tail from two sides.
+- **It is slower on escalated questions,** which pay mini, Jev, and `gpt-5.4` in sequence:
+  22.3 s per question on GT at 0.5 against 24.2 s for all `gpt-5.4` and 13.8 s for mini.
+- **Limits.** The thresholds were read off the same answers they are scored on, and the
+  `gpt-5.4` outcomes on GT come from one run, so a live run has to confirm the trade-off.
+  Escalation reruns the whole question; rerunning only the answer step on the saved
+  evidence would be cheaper but leaves the evidence as mini collected it.
+
+# Options for the live runs, side by side
+
+**Status:** compiled 2026-10-04 from the sections above.
+
+**Decision (2026-10-04): three live GT runs first,** and further combinations chosen
+after their results:
+
+1. **Router by question type:** after the TOC review, a question flagged for a table
+   runs the assessor, the table planner, and the answer on `gpt-5.4`.
+2. **Router B:** the same trigger; only the assessor and the answer switch to `gpt-5.4`,
+   so the two runs differ in one role, the table planner.
+3. **Answer check at 0.5, large evidence straight to `gpt-5.4`.**
+
+Escalation on the evidence notice is not run: its trigger is recorded in the saved runs,
+so its simulation is already reliable, and it is the weakest option on both sets. The cap
+on the strong path is not part of these runs; each run's cost is reported with and
+without GT09.
+
+Every option starts from the 7.1 final and uses two models: `gpt-5.4-mini` (cheap) and
+`gpt-5.4` (strong). The two "All" rows are measured runs (GT: three mini runs, one
+`gpt-5.4` run; validation: four mini runs, one `gpt-5.4` run). Every other row is
+simulated on those runs: a question-run sent to `gpt-5.4` takes that question's measured
+`gpt-5.4` outcome, cost, and time. "Gain kept" is the share of the quality gain from all
+mini to all `gpt-5.4` that an option keeps; "extra cost" is the share of the cost
+difference it spends.
+
+## How each option decides
+
+| Option | Decides from | When the model is chosen | Extra calls | Main risk |
+| --- | --- | --- | --- | --- |
+| All `gpt-5.4-mini` | nothing | fixed | none | table computations and multi-article questions fail |
+| All `gpt-5.4` | nothing | fixed | none | 6.7x the cost; one question (GT09) is half of the GT bill |
+| Router by question type | the TOC reviewer's table flag | after the TOC review | none | sends three quarters of GT to `gpt-5.4`; keeps failing text questions on mini |
+| Router A, the routing rule | Jev on the question: simple (text, one article) or complex | before retrieval | one Jev call (0.2 s) | Jev reads only the wording; saves little on GT |
+| Router B (assessor and answer on `gpt-5.4` when routed) | same as A, or the evidence size after the TOC review | after the TOC review | as A | not measurable from saved runs; keeps the TOC reviewer, whose table flag mattered in 6.1, on mini |
+| Answer check | Jev on question, mini's answer, and evidence: "complete?" | after mini answers | one Jev call (0.3 s); escalated questions run twice | slower on escalated questions; thresholds read off the same data |
+| Answer check, large evidence straight to `gpt-5.4` | the check, plus the evidence size | after the TOC review for large evidence | as above | large contexts are where `gpt-5.4` is most expensive |
+| Escalate on the evidence notice | the 6.1 evidence-status notice | after mini answers | none | silent failures raise no notice |
+
+## Results
+
+| Option | GT quality | GT list $/q | GT s/q | GT to `gpt-5.4` | GT gain kept / extra cost | Val quality | Val list $/q | Val to `gpt-5.4` | Val gain kept / extra cost |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| All `gpt-5.4-mini` (measured) | 0.711 | 0.0502 | 13.8 | 0% | 0% / 0% | 0.870 | 0.0431 | 0% | 0% / 0% |
+| All `gpt-5.4` (measured) | 0.868 | 0.3387 | 24.2 | 100% | 100% / 100% | 0.960 | 0.1524 | 100% | 100% / 100% |
+| Router by question type | 0.825 | 0.3072 | 22.6 | 74% | 73% / 89% | 0.960 | 0.1094 | 47% | 100% / 61% |
+| Router A, the routing rule, Jev at 0.8 | 0.868 | 0.3327 | 23.6 | 84% | 100% / 98% | 0.955 | 0.1270 | 52% | 94% / 77% |
+| Router A, the routing rule, Jev at 0.5 | 0.868 | 0.3274 | 23.1 | 74% | 100% / 96% | 0.955 | 0.1182 | 36% | 94% / 69% |
+| Router B (quality not measurable; cost estimated from per-role costs) | | ≈ 0.288 | | 74% | | | | | |
+| **Answer check at 0.5** | **0.833** | **0.1079** | 22.3 | 25% | **78% / 20%** | 0.930 | 0.0889 | 14% | 67% / 42% |
+| Answer check at 0.7 | 0.833 | 0.3204 | 28.2 | 44% | 78% / 94% | 0.955 | 0.1163 | 21% | 94% / 67% |
+| Answer check at 0.5, large evidence: mini first, always rerun | 0.860 | 0.2797 | 28.6 | 51% | 95% / 80% | 0.930 | 0.1303 | 35% | 67% / 80% |
+| Answer check at 0.5, large evidence straight to `gpt-5.4` | 0.860 | 0.2518 | 23.6 | 51% | 95% / 70% | 0.930 | 0.1115 | 35% | 67% / 63% |
+| Escalate on the evidence notice | 0.772 | 0.1494 | 22.5 | 30% | 39% / 34% | 0.910 | 0.0821 | 13% | 44% / 36% |
+| Perfect router (hindsight bound) | 0.904 | 0.1029 | 17.9 | 25% | 123% / 18% | 0.965 | 0.0717 | 14% | 106% / 26% |
+
+**Reading.**
+
+- **For full `gpt-5.4` quality,** the routing rule through Jev is the safe choice: no loss on
+  GT, 0.005 on validation, and a saving of 2–4% on GT and 17–22% on validation.
+- **For the best trade-off,** the answer check at 0.5 keeps 78% of the GT gain for 20% of
+  the extra cost; no router comes close on GT.
+- **Between the two,** sending large evidence straight to `gpt-5.4` buys the remaining
+  GT quality (0.860) for 70% of the extra cost; on validation it adds nothing.
+- **GT09 sits under every row.** Whichever option escalates it pays $3.44 for a partial
+  answer mini gets right, which is why the cost jumps between thresholds 0.5 and 0.7. A cap
+  on the strong path (O2) would lower every row that sends GT09 to `gpt-5.4`.
+- **Router B's cost** is estimated per GT question from the measured per-role costs:
+  decomposer, TOC reviewer, and planner from the mini runs, assessor and answer from the
+  `gpt-5.4` run, weighted by how often mini flagged a table. That gives $0.288 per
+  question against $0.299 for the type router with the same trigger, $0.377 against $0.403
+  on a routed question, and $3.38 for GT09: B keeps on `gpt-5.4` the two roles whose
+  prompts crossed the 272K tier. Without GT09, B costs $0.116 and the type router $0.125.
+- **Every row except the two "All" rows is a prediction.** The thresholds were read off
+  the same data, and the `gpt-5.4` outcomes come from one run per set.
+
+# Live GT runs: three routing strategies
+
+**Status:** complete (2026-10-04, 12:56–13:31): `wizardly_yao` (type), `suspicious_liskov`
+(B), `gifted_yao` (answer check), one run each; $13.2 billed, including one failed attempt
+(below).
+
+**Why.** The decision recorded in the options section: the three strategies the saved runs
+could not settle, run live on GT before any further combination is chosen.
+
+## How the routing was built
+
+**One mechanism for all three** ([`../wiki_agents/model_routing.py`](../wiki_agents/model_routing.py)):
+
+- **A model switch.** The graph's nodes build their model call at the moment they run, so
+  a `TierSwitchModel` standing in for a chat model forwards each call to `gpt-5.4-mini` or
+  `gpt-5.4`, whichever the current question's tier says.
+- **A routing node after the TOC review** (`route_model`, an optional node in
+  `agent_graph.build_retrieval_benchmark_graph`) sets the tier and records the decision in
+  the state (`routing`), which the cost harness writes to the results CSV (`route`,
+  `route_reason`, and for the answer check `check_p_complete`, `escalated`,
+  `router_cost_usd`). The decomposer and the TOC reviewer always run on mini: the route
+  is decided from their output.
+- **The answer check** wraps two graphs: the routed one, and an all-`gpt-5.4` one. After
+  mini answers, Jev asks "does the answer fully answer every part of the question?"; below
+  0.5, or when the check fails or the evidence is too large for Jev, the whole question is
+  answered again on the all-`gpt-5.4` graph and both are paid.
+
+| Run (experiment name suffix) | Routed to `gpt-5.4` when | Roles on `gpt-5.4` when routed |
+| --- | --- | --- |
+| `route_type` | the TOC review flagged a table | assessor, table planner, answer |
+| `route_b` | the TOC review flagged a table | assessor, answer |
+| `route_check_0.5` | a text question's kept articles exceed 80,000 characters (Jev's window); or, after mini answered, Jev's p(complete) < 0.5, the check fails, or the answer context exceeds the window | after the review: assessor, table planner, answer; on escalation: every role, the question answered again |
+
+- **Builder and harness:** `survivor_agent_final.build_survivor_routed` and
+  `cost_test_starter.py --routing {type,b,check}` (`--strong-model`, `--check-threshold`).
+  Every new option defaults to off; the 6.1 and 7.1 builds are unchanged.
+- **Jev's cost** is invisible to the LangChain telemetry, so the routing records it
+  (`router_cost_usd`) and the efficiency analyzer adds it to each question's cost.
+- **Tests:** `tests/test_model_routing.py` (the switch, both routing nodes, the escalation
+  with fake graphs); 195 tests pass. An offline build of each strategy confirmed the
+  routing node sits between the TOC review and section loading.
+- **Smoke tests** (2026-10-04, one question each, outputs kept out of the run folders):
+
+  | Strategy, question | What the telemetry shows |
+  | --- | --- |
+  | type, GT04 | decomposer and TOC reviewer on mini; assessor, planner, answer on `gpt-5.4`; pass |
+  | b, GT04 | the same, with the planner on mini; pass |
+  | check, GT06 | kept articles 94,907 characters, so routed to `gpt-5.4` after the review; pass |
+  | check, GT04, threshold forced to 1.01 | six mini calls, Jev p(complete) 0.97, escalation, seven `gpt-5.4` calls; all 13 calls and Jev's cost recorded; pass |
+
+**Commands** (from `rag_and_context_engineering/`; each run also needs `--gt-set` and
+`--output-dir` as in the GT baseline):
+
+```bash
+python "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/cost_test_final.py" --routing type
+python "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/cost_test_final.py" --routing b
+python "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/cost_test_final.py" --routing check --check-threshold 0.5
+```
+
+## Predictions (recorded before the results)
+
+From the options section, with three differences between the simulation and these runs:
+the simulation gave a routed question the whole `gpt-5.4` run's outcome, while here its
+decomposer and TOC reviewer stay on mini; each strategy runs once (the 6.1 mini runs spread
+from 0.737 to 0.816); and these runs are hours after the baselines, so seconds compare
+only per call and role (the analyzer's comparability section).
+
+| Run | Quality | List $/q | Note |
+| --- | ---: | ---: | --- |
+| `route_type` | about 0.825 | about 0.30 | GT09 alone about $3.4 of the run |
+| `route_b` | close to `route_type` | about 0.29 | 6.1: `gpt-5.4` on the planner alone changed nothing |
+| `route_check_0.5` | about 0.86 | about 0.25 | GT09 is a large-evidence question if its kept articles exceed the window |
+
+## A failed first attempt of the answer check
+
+The first answer-check run (`keen_perlis`, 13:11–13:21) answered and judged all 19 questions
+and then failed when RAGAS wrote the results CSV: the CSV takes its columns from the first
+row, and a question routed to `gpt-5.4` after the review carried no check fields while a
+checked question did. The answers, the verdicts, and the telemetry were lost (about $4.90
+billed); the AgentState logs remain, and the one-row fragment is kept in
+`cost_efficiency/failed_runs/`. Every routing record now carries the same fields
+(`model_routing.ROUTING_FIELDS`, filled with empty values where a step did not apply), a
+test checks that every routing path writes identical columns, and a two-question smoke test
+mixing both paths saved its CSV before the run was repeated (`gifted_yao`). The
+single-question smoke tests could not have caught it: the failure needs two kinds of row.
+
+## Results (2026-10-04)
+
+Report: `cost_efficiency/reports/gt_routing_runs.pdf` (efficiency analyzer, baseline the
+7.1 final on mini).
+
+| GT, 19 questions | Runs | Quality | List $/q | Billed $/q | Seconds/q | Without GT09: quality, list $/q | Gain kept / extra cost | p (quality, against mini) |
+| --- | ---: | ---: | ---: | ---: | ---: | --- | ---: | ---: |
+| 7.1 final, `gpt-5.4-mini` | 3 | 0.711 | 0.0502 | 0.0348 | 13.8 | 0.694, 0.0460 | 0% / 0% | |
+| 7.1 final, `gpt-5.4` | 1 | 0.868 | 0.3387 | 0.2787 | 24.2 | 0.889, 0.1663 | 100% / 100% | 0.074 |
+| Router by question type | 1 | 0.816 | 0.3009 | 0.2451 | 22.0 | 0.833, 0.1282 | 67% / 87% | 0.133 |
+| **Router B (assessor and answer)** | 1 | **0.868** | **0.1417** | 0.1013 | 20.8 | 0.889, 0.1069 | **100% / 32%** | 0.074 |
+| **Answer check 0.5, large evidence to `gpt-5.4`** | 1 | **0.842** | **0.1275** | 0.0816 | 22.8 | 0.833, 0.1327 | **83% / 27%** | **0.031** |
+
+Seconds were measured hours after the mini baselines; the decomposer's median call varied
+0.93–1.80 s across the session, so the time column compares only roughly.
+
+**Router B: the planner is where `gpt-5.4` overspends.** *(One run; the three-run comparison
+below refines this: a mini planner lowers the risk of GT09's large prompts but does not
+remove it.)*
+
+- Router B scored what all `gpt-5.4` scored (0.868) for 42% of its cost; against the type
+  router, which differs only in running the table planner on `gpt-5.4`, it scored 0.05
+  higher for half the cost.
+- GT09 shows the mechanism: with the planner on `gpt-5.4` (type router, all `gpt-5.4`) it
+  made 5–6 planner calls, read 767–773K input tokens, and its largest prompt (the assessor's)
+  reached 294K tokens, above the 272K price tier: $3.41–3.44. With the planner on mini
+  (Router B): 4 planner calls, 307K input tokens, a largest prompt of 100K: $0.77. A
+  `gpt-5.4` planner requests more table data, and every later call reads it again.
+- Without GT09, Router B costs $0.107 per question against $0.128 for the type router and
+  $0.166 for all `gpt-5.4`, still the cheapest of the three at the highest quality.
+
+**The answer check: cheapest of the routed runs, and the only one separable from mini.**
+
+| Path | Questions |
+| --- | --- |
+| Stayed on mini (Jev: complete) | 11: GT01, GT02, GT04, GT07, GT09, GT10, GT11, GT12, GT13, GT14, GT15 |
+| `gpt-5.4` after the review (kept articles above 80,000 characters) | 4: GT06, GT16, GT17, GT18, all pass (GT16 was the Joe Biden question on mini) |
+| Answered again on `gpt-5.4` | 4: GT05 (p 0.09) and GT08 (p 0.33) pass; GT03 and GT19 (check failed or evidence too large) fail and pass |
+
+- 0.842 at $0.128 per question, the lowest cost of the three; quality +0.132 over mini with
+  p = 0.031. Jev cost $0.007 for the run.
+- **It avoided the tail:** Jev judged mini's GT09 answer complete (0.73), so GT09 stayed on
+  mini and passed for $0.034.
+- **Its misses are the known limit:** GT07 and GT11 stayed on mini (Jev 0.68 and 0.92) and
+  failed: their answers read as complete, but their computed counts were wrong, which a
+  check of the answer's form cannot see.
+- **Escalation is slow:** an escalated question pays two passes, 27–79 s.
+
+**Predictions against results:**
+
+| Run | Predicted | Result |
+| --- | --- | --- |
+| Type router | about 0.825 at about $0.30; GT09 about $3.4 | 0.816 at $0.301; GT09 $3.41. Held |
+| Router B | close to the type router's quality at about $0.29 | 0.868 at $0.142. Quality higher and cost half: the estimate assumed GT09's assessor and answer prompts would be as large as in the `gpt-5.4` run; with the planner on mini they were a third of it |
+| Answer check | about 0.86 at about $0.25 | 0.842 at $0.128. Cheaper than predicted: GT09 stayed on mini |
+
+**Reading.**
+
+- **Two strategies dominate the rest on GT:** Router B (full `gpt-5.4` quality, 32% of its
+  extra cost) and the answer check (83% of the gain, 27% of the extra cost). The type router
+  is dominated by both.
+- **Heterogeneous roles beat a whole-question switch.** The roles that judge evidence and
+  write the answer gain from `gpt-5.4`; the role that requests table data does not, and
+  costs more there. This matches 6.1, where `gpt-5.4` on the planner alone changed nothing.
+- **One run each:** Router B and the answer check differ by 0.026 in quality and $0.014 in
+  cost, inside the run-to-run spread (the three mini runs of the 7.1 final ranged 0.658 to
+  0.763). Which of the two is better is not settled by these runs.
+
+
+## The pipeline, step by step, in each configuration
+
+What each configuration changes, in pipeline order. "Mini" is `gpt-5.4-mini`, "5.4" is
+`gpt-5.4`. The last column is a proposed combination, not yet run, estimated from the runs
+above.
+
+| Pipeline step | All mini | All 5.4 | Router by question type | Router B | Answer check 0.5 | Proposed: Router B + answer check |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1. Input sanitizer (code, no model) | on | on | on | on | on | on |
+| 2. Decomposer: one search per named person, place, or work | mini | 5.4 | mini | mini | mini; 5.4 on a rerun | mini |
+| 3. Article selection (TOC reviewer): keep articles, pick sections and tables, set the table flag | mini | 5.4 | mini | mini | mini; 5.4 on a rerun | mini |
+| 4. **Routing step** (new, after step 3) | none | none | table flag → 5.4 for steps 6, 7, 9 | table flag → 5.4 for steps 6 and 9 | text question with kept articles over 80,000 characters → 5.4 for steps 6, 7, 9; every other question stays on mini, checked at step 11 | as the answer check, with 5.4 for steps 6 and 9 only |
+| 5. Load sections and tables (code) | same | same | same | same | same | same |
+| 6. Assessor: is the evidence enough; request tables or more evidence (loop) | mini | 5.4 | 5.4 when routed | 5.4 when routed | 5.4 when routed; 5.4 on a rerun | 5.4 when routed or rerun |
+| 7. Table planner, then the deterministic executor | mini | 5.4 | 5.4 when routed | **always mini** | 5.4 when routed; 5.4 on a rerun | **always mini** |
+| 8. Widen: whole articles, then graph neighbours (code) | same | same | same | same | same | same |
+| 9. Answer | mini | 5.4 | 5.4 when routed | 5.4 when routed | 5.4 when routed; 5.4 on a rerun | 5.4 when routed or rerun |
+| 10. Grounding check (code) | on | on | on | on | on | on |
+| 11. **Jev "complete?" check** (new) | none | none | none | none | after a mini answer; below 0.5, a failed check, or evidence over Jev's window → step 12 | as the answer check |
+| 12. **Rerun** (new) | none | none | none | none | the whole question on an all-5.4 graph; both runs paid | the whole question with Router B's models (steps 6 and 9 on 5.4) |
+| **GT quality** | 0.711 (3 runs) | 0.868 | 0.816 | **0.868** | **0.842** | about 0.82 (estimate) |
+| **GT list $ per question** | 0.0502 | 0.3387 | 0.3009 | **0.1417** | **0.1275** | about 0.105 (estimate) |
+| **GT seconds per question** | 13.8 | 24.2 | 22.0 | 20.8 | 22.8 | |
+| Questions on 5.4 (any step) | 0 of 19 | 19 | 14 | 14 | 8 (4 after step 4, 4 rerun) | 8 |
+
+- **Code for steps 4, 11, and 12:** `wiki_agents/model_routing.py` (the model switch, both
+  routing steps, the Jev check, the rerun), an optional `route_model` node in
+  `agent_graph.py`, and `cost_test_starter.py --routing {type,b,check}`. Steps 1–3, 5, 8,
+  and 10 are unchanged in every configuration.
+- **The grounding check (step 10)** is the corrected version in every run after the
+  name-extraction fix; the three mini baseline runs used the earlier version. It only
+  labels a flagged answer and never changes its content; whether the label moves the
+  judge's verdict was not measured.
+- **The proposed combination's estimate:** the answer-check run with its four reruns
+  priced and judged as Router B ran those questions (GT03, GT05, GT08, GT19). It costs
+  less per rerun ($0.07–0.27 against $0.13–0.67) and loses GT19 (0.5 under Router B, 1.0
+  on the full 5.4 rerun), so the quality estimate rests on one question's single verdict.
+
+# Three-run comparison on GT
+
+**Status:** complete (2026-10-04, 14:30–15:30); report
+`cost_efficiency/reports/gt_three_run_comparison.pdf`.
+
+**Why.** One run of 19 questions cannot separate differences of a few points (the three
+mini runs of the 7.1 final spread from 0.658 to 0.763). Every configuration in the
+comparison gets the same number of runs: three.
+
+**Runs added** (in this order, one at a time):
+
+- Router B + answer check (`b_check`, new): the answer check with Router B's models: on
+  large evidence, and on a rerun, only the assessor and the answer use `gpt-5.4`; the table
+  planner stays on mini. Runs `reverent_bezos`, `brave_liskov`, `vigilant_page`.
+- Router B, two more runs: `reverent_diffie`, `focused_huffman`.
+- All `gpt-5.4`, two more runs: `pedantic_neumann`, `hardcore_turing`.
+
+The two strategies run only once (the type router, the answer check alone) stay outside
+this comparison as exploratory results.
+
+**Before the runs:** a two-question smoke test of `b_check` confirmed the rerun's models
+(decomposer, TOC reviewer, and planner on mini; assessor and answer on `gpt-5.4`). The
+combination was estimated at about 0.82 and $0.105 per question from the answer-check run
+(its reruns priced as Router B ran those questions).
+
+## Results
+
+| GT, 3 runs each | Quality (run range) | List $/q (run range) | Seconds/q | List $ per passing answer | Most expensive question-run |
+| --- | --- | --- | ---: | ---: | ---: |
+| 7.1 final, `gpt-5.4-mini` | 0.711 (0.658–0.763) | 0.0502 (0.0459–0.0539) | 13.8 | | 0.236 |
+| 7.1 final, `gpt-5.4` | **0.886** (0.842–0.947) | 0.3457 (0.3387–0.3516) | 24.7 | 0.402 | 3.442 |
+| **Router B** | **0.868** (0.868 in all three) | **0.1725** (0.1417–0.1924) | 21.3 | **0.209** | 1.356 |
+| Router B + answer check | 0.798 (0.763–0.842) | 0.2260 (0.1485–0.3145) | 26.4 | 0.322 | 3.530 |
+
+**Paired by question** (each question's mean over its three runs; Wilcoxon signed-rank):
+
+| Comparison | Quality | List $/q | Seconds/q |
+| --- | --- | --- | --- |
+| `gpt-5.4` against mini | +0.175 (9 better, 1 worse; p = 0.055) | +$0.296 (p < 0.001) | +10.9 |
+| Router B against mini | +0.158 (8 better, 1 worse; **p = 0.047**) | +$0.122 (p < 0.001) | +7.5 |
+| **Router B against `gpt-5.4`** | **−0.018 (2 better, 3 worse; p = 0.81)** | **−$0.173, −50% (p = 0.001)** | −3.4 |
+| Router B + check against `gpt-5.4` | −0.088 (2 better, 4 worse; p = 0.25) | −$0.120, −35% (p = 0.045) | +1.7 |
+
+**Reading.**
+
+- **Router B keeps `gpt-5.4`'s quality at half its cost.** Against `gpt-5.4` its quality
+  difference is not distinguishable from zero (−0.018, p = 0.81) while its cost difference
+  is (−50%, p = 0.001); it is the only routed configuration significantly better than
+  mini (p = 0.047), and it scored the same 0.868 in all three runs. Each passing answer
+  costs $0.21 against $0.40 on `gpt-5.4`.
+- **Router B + answer check fell short of its estimate.** Jev sent 6–8 questions per run to
+  a rerun (4 in the single answer-check run), every rerun pays two passes, and quality
+  dropped to 0.798 at $0.226. The estimate rested on one run's four reruns.
+- **GT09 is a property of the question on `gpt-5.4`,** not a chance event: $3.42–3.44 in all
+  three runs, scored 0.5, 0, and 0.5 (mini answers it for $0.04–0.24 and scores 1.0 in all
+  three of its runs).
+- **The planner, corrected.** One run suggested that the table planner alone explained
+  GT09's cost. Across the runs: with the planner on `gpt-5.4`, GT09's largest prompt reached
+  294K tokens (above the 272K price tier) in all three `gpt-5.4` runs and the type-router
+  run; with the planner on mini, the largest prompt was 100–220K in Router B's three runs,
+  but one Router B + check rerun reached 294K too (951K input tokens). A mini planner makes
+  the large evidence less likely; only a cap on prompt size would rule it out.
+- **The single runs stay exploratory:** the type router (0.816 at $0.301) and the answer
+  check alone (0.842 at $0.128) were not repeated. The answer check's one run suggests a
+  cheaper point than Router B; the combination's three runs did not reproduce it.
+

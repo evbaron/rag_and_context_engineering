@@ -1,0 +1,56 @@
+Loading the Checkpoint 7.1 survivor agent...
+Loading existing vector DB from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/wikipedia_sections_max10000_no_overlap/
+Loading existing vector DB from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/wikipedia_sections_max10000_no_overlap/
+Loading extracted markdown from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/article_text/wikipedia_markdown/
+Loading existing graph from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/graph/wikipedia_graph/graph.json
+Loading existing vector DB from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/wikipedia_sections_max10000_no_overlap/
+Loading existing vector DB from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/wikipedia_sections_max10000_no_overlap/
+Loading extracted markdown from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/article_text/wikipedia_markdown/
+Loading existing graph from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/graph/wikipedia_graph/graph.json
+Cost test — history OFF, 19 question(s) from wikipedia_GT.csv, experiment survivor_final__grounding_surface__route_check_0.5
+  survivor=6.1 (5.1 configuration with the 6.1 changes)
+  initial retriever=multistep_entity
+  repeated retrievers=whole_article -> graph_seeded (no breadth nudge)
+  answer context=whole_per_question; table plan repair and retry on; incomplete computations labeled; evidence notice on
+  model=openai/gpt-5.4-mini (every agent role and the answer), table planner=openai/gpt-5.4-mini, judge=openai/gpt-5.4-mini
+  survivor=final (6.1 configuration; safeguards in the graph)
+  grounding policy=surface; answer and guard are graph nodes
+  input sanitising=on (deterministic layers only)
+  answer prompt=guarded (7.1)
+  routing=check: default openai/gpt-5.4-mini; openai/gpt-5.4 for assessor, table planner, answer (large evidence); whole question on escalation
+  routed when: kept articles too large for Jev, or Jev p(complete) < 0.5; decomposer and TOC reviewer always on openai/gpt-5.4-mini
+  Escalation AgentState logs=/Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/Capstone Checkpoint 7.1/logs/cost_tests_escalation/2026_10_04_13_11_05
+  AgentState logs=/Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/Capstone Checkpoint 7.1/logs/cost_tests/2026_10_04_13_11_04
+Running experiment:   0%|          | 0/19 [00:00<?, ?it/s]Running experiment:   5%|▌         | 1/19 [10:31<3:09:20, 631.11s/it]Running experiment: 100%|██████████| 19/19 [10:31<00:00, 33.22s/it]  
+Traceback (most recent call last):
+  File "/Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/Capstone Checkpoint 7.1/cost_test_final.py", line 81, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/Capstone Checkpoint 7.1/cost_test_final.py", line 76, in main
+    asyncio.run(run_cost_test(arguments))
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/Capstone Checkpoint 6.1/cost_test_starter.py", line 676, in main
+    results = await experiment.arun(dataset)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/.venv/lib/python3.12/site-packages/ragas/experiment.py", line 196, in arun
+    experiment_view.save()
+  File "/Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/.venv/lib/python3.12/site-packages/ragas/dataset.py", line 269, in save
+    self.backend.save_experiment(
+  File "/Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/.venv/lib/python3.12/site-packages/ragas/backends/local_csv.py", line 132, in save_experiment
+    self._save("experiments", name, data, data_model)
+  File "/Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/.venv/lib/python3.12/site-packages/ragas/backends/local_csv.py", line 94, in _save
+    writer.writerows(data)
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/csv.py", line 167, in writerows
+    return self.writer.writerows(map(self._dict_to_list, rowdicts))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/csv.py", line 159, in _dict_to_list
+    raise ValueError("dict contains fields not in fieldnames: "
+ValueError: dict contains fields not in fieldnames: 'check_p_complete'

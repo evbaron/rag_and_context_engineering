@@ -76,6 +76,10 @@ class AgentState(TypedDict, total=False):
     # model and nothing else, and never reaches the grounding check.
     history: list[tuple[str, str]]
     max_history_turns: int
+    # Checkpoint 7.1 performance: the model route a routing node chose after the TOC review,
+    # and, for the answer check, Jev's verdict and whether the question was escalated.
+    # Absent unless the graph was built with a routing node (``wiki_agents/model_routing.py``).
+    routing: dict[str, Any]
 
 
 DEFAULT_RETRIEVAL_ATTEMPTS = 0

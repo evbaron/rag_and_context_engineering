@@ -24,7 +24,7 @@ from typing import Any
 
 PRICES_PATH = Path(__file__).resolve().parent / "pricing" / "model_prices.json"
 
-Price = dict[str, float | None]
+Price = dict[str, Any]  # rates in USD per 1M tokens, plus an optional "long_context" tier
 Prices = dict[str, Price]
 
 FREE_PRICE: Price = {"input": 0.0, "cached_input": 0.0, "output": 0.0}
@@ -62,10 +62,19 @@ def call_cost(
     output_tokens: int,
     price: Price | None,
 ) -> dict[str, float | None]:
-    """List and billed cost in USD for one call's token counts (None without a price)."""
+    """List and billed cost in USD for one call's token counts (None without a price).
+
+    A price may carry a ``long_context`` tier: above ``min_prompt_tokens`` the whole call
+    is charged at the tier's rates. ``gpt-5.4`` doubles its input price above 272K prompt
+    tokens; the 7.1 GT run sent two 293K-token prompts (GT09), and only the tier reproduces
+    what OpenRouter billed for them ($0.798 and $1.473).
+    """
 
     if not price or price.get("input") is None or price.get("output") is None:
         return {"list": None, "billed": None}
+    tier = price.get("long_context")
+    if isinstance(tier, dict) and input_tokens > tier.get("min_prompt_tokens", float("inf")):
+        price = {**price, **{key: value for key, value in tier.items() if key != "min_prompt_tokens"}}
     cached_rate = price["input"] if price.get("cached_input") is None else price["cached_input"]
     cached = min(cached_input_tokens, input_tokens)
     output = output_tokens * price["output"]

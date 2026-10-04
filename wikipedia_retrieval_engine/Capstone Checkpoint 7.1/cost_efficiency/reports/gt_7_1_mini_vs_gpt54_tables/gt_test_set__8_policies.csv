@@ -1,0 +1,8 @@
+policy,description,quality,list_per_question,seconds,sent_to_strong,paid_twice,question_runs,saving_vs_all_strong
+All cheap,every question on the cheap configuration,0.7105263157894737,0.05017705263157894,13.812105263157898,0.0,0.0,57,0.8518429419937155
+All strong,every question on the strong configuration,0.868421052631579,0.3386747368421053,24.161578947368422,1.0,0.0,57,0.0
+Route on the cheap run's table flag,strong when the cheap run's TOC review flagged a table,0.8245614035087719,0.30716363157894744,22.592807017543866,0.7368421052631579,0.0,57,0.09304238502397888
+Route on the strong runs' table flag,strong when most strong runs flagged a table for the question,0.8245614035087719,0.30716363157894744,22.592807017543866,0.7368421052631579,0.0,57,0.09304238502397888
+Route on the question's category,strong unless the category is one of the text categories,0.8245614035087719,0.31800888157894747,22.990526315789477,0.7894736842105263,0.0,57,0.061019772114837556
+Escalate on the evidence notice,cheap first; rerun on strong when the evidence notice fired (both paid),0.7719298245614035,0.14944253508771926,22.45754385964912,0.2982456140350877,0.2982456140350877,57,0.5587431868076084
+Perfect router (hindsight),strong only where the strong mean scores higher; the lower bound for any router,0.9035087719298246,0.10292339912280699,17.9280701754386,0.24561403508771928,0.0,57,0.6960995671466594

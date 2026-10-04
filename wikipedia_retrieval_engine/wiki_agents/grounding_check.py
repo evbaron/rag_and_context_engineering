@@ -68,7 +68,15 @@ _BRACKET_RE = re.compile(r"[\[\]()]")
 # Boundaries a name cannot cross: line ends, list markers and cell separators. The spaced
 # hyphen matters because ``normalise`` collapses cell separators for quotation matching,
 # which would otherwise glue "Russell Crowe - Gladiator" into one invented name.
-_SEGMENT_RE = re.compile(r"[\n:;|•]+|\s+[-–—]\s+|^\s*[-*+]\s+", re.MULTILINE)
+#
+# Brackets and double quotes end a name too (Checkpoint 7.1, GT baseline): ``normalise``
+# removes them, which glued a title to the name after it -- "*Sense and Sensibility*
+# (“Kate Winslet ..." became "Sensibility Kate Winslet". Single quotes stay out: U+2019 is
+# an apostrophe inside names ("O’Brien") far more often than a quotation mark.
+_SEGMENT_RE = re.compile(r"[\n:;|•()\[\]\"“”«»]+|\s+[-–—]\s+|^\s*[-*+]\s+", re.MULTILINE)
+# A slash-joined word is a table header or an "and/or", never part of a name: "the Winter
+# Olympic Games Sport/Years table" gave "Winter Olympic Games Sport". It ends the name.
+_SLASH_WORD_RE = re.compile(r"\S*/\S*")
 # A trailing possessive, dropped so "Queen Victoria's" matches "Queen Victoria".
 _POSSESSIVE_RE = re.compile(r"['’]s\b")
 # A pipe, or a hyphen used as a cell separator rather than inside a hyphenated word.
@@ -88,7 +96,11 @@ _CONNECTORS = {
     "of", "the", "and", "for", "in", "at", "on", "to", "a", "an", "de", "del", "della",
     "da", "van", "von", "der", "den", "la", "le", "les", "du", "di", "bin", "al",
 }
-_CAP_TOKEN = r"[A-ZÀ-Ü][\wÀ-ɏ'’.\-]*"
+# A hyphen continues a name only before another capital or a digit ("Austria-Hungary",
+# "Jean-Paul"). A lowercase suffix is a description, not part of the name: "Russia-related
+# Olympic identities" gave the invented span "Russia-related Olympic" (Checkpoint 7.1, GT
+# baseline, 10 flags), and "Harry Potter-related" the same on validation.
+_CAP_TOKEN = r"[A-ZÀ-Ü][\wÀ-ɏ'’.]*(?:-[A-ZÀ-Ü0-9][\wÀ-ɏ'’.]*)*"
 _ENTITY_RE = re.compile(rf"{_CAP_TOKEN}(?:\s+{_CAP_TOKEN})+")
 # Capitalised openers that start a sentence rather than a name.
 _SENTENCE_OPENERS = {
@@ -105,6 +117,10 @@ _SENTENCE_OPENERS = {
     "During", "After", "Before", "Following", "Then", "Later", "Within", "Over",
     "Under", "Across", "About", "Around", "Between", "Through", "Upon", "Via",
     "Despite", "Meanwhile", "Subsequently", "Afterwards", "Once", "Until",
+    # Capitalised connectors that open a bold list label or a sentence (Checkpoint 7.1, GT
+    # baseline): "**To Bill Clinton:** his wife" gave "To Bill Clinton"; "Among Best Actor
+    # winners ..." gave "Among Best Actor".
+    "To", "Among",
 }
 
 MIN_QUOTE_CHARS = 15
@@ -204,7 +220,13 @@ def find_entities(answer: str) -> list[str]:
     # into spaces, which joined a name to the next line's heading and invented spans like
     # "Germany Supporting" and "Broad Street Important". Colons, semicolons, pipes and
     # bullets end a span for the same reason.
-    for segment in _SEGMENT_RE.split(answer):
+    #
+    # A possessive ends a name as well: ``normalise`` drops "'s", which turned "Obama’s
+    # Secretary of State" into the invented span "Obama Secretary" (Checkpoint 7.1, GT16
+    # and VAL09). The cost is that a name containing a possessive ("People's Republic of
+    # China") is no longer checked as one span, the same limit as single-word names.
+    names_text = _POSSESSIVE_RE.sub("\n", _SLASH_WORD_RE.sub("\n", answer))
+    for segment in _SEGMENT_RE.split(names_text):
         plain = normalise(segment)
         for match in _ENTITY_RE.finditer(plain):
             for span in _split_at_sentence_end(match.group(0)):
