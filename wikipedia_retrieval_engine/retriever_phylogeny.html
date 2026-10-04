@@ -199,13 +199,15 @@
       The held-out <b>validation set</b> (the right-hand chart and the far-right tiles) is the honest check: recall climbed
       to <b>1.00</b> while quality held near <b>.86–.91</b> — the agent's win is <b>recall, ~14× less
       context, and deterministic tables</b>, not raw quality over a strong fixed baseline.
-      In 6.1 the same survivor graph on <b>gpt-5.4</b> reached <b>.96</b>, at 4.4× the billed cost.</p>
+      In 6.1 the same survivor graph on <b>gpt-5.4</b> reached <b>.96</b>, at 4.4× the billed cost.
+      In 7.1 safeguards moved into the graph: a planted-source attack that fooled 5.1 on
+      <b>5 of 20</b> chances fooled it on <b>none</b> (p = .047), with validation quality at <b>.90</b> in one run.</p>
     <div class="herogrid">
       <div class="chartpair">
         <div class="chartcard">
           <h3>Test set · survivor progression</h3>
           <div class="chartsub">survivor of each checkpoint · RAGAS · GT-19</div>
-          <svg id="chart" viewBox="0 0 340 172" role="img" aria-label="On the GT test set, recall rose to 1.0 across checkpoints while answer quality stayed flat through Phase 1 then rose to .79 in Phase 2; 6.1 was not run on the test set"></svg>
+          <svg id="chart" viewBox="0 0 340 172" role="img" aria-label="On the GT test set, recall rose to 1.0 across checkpoints while answer quality stayed flat through Phase 1 then rose to .79 in Phase 2; 6.1 and 7.1 were not run on the test set"></svg>
           <div class="clegend">
             <span><i class="swatch" style="background:var(--recall)"></i>article recall</span>
             <span><i class="swatch" style="background:var(--quality)"></i>answer quality</span>
@@ -214,7 +216,7 @@
         <div class="chartcard">
           <h3>Validation set · survivor progression</h3>
           <div class="chartsub">survivor of each checkpoint · RAGAS · VAL-25</div>
-          <svg id="valchart" viewBox="0 0 340 172" role="img" aria-label="On the held-out validation set, recall rose from .97 to 1.0 while answer quality stayed between .86 and .91; the 6.1 survivor graph on gpt-5.4 reached .96 in one run"></svg>
+          <svg id="valchart" viewBox="0 0 340 172" role="img" aria-label="On the held-out validation set, recall rose from .97 to 1.0 while answer quality stayed between .86 and .91; the 6.1 survivor graph on gpt-5.4 reached .96 in one run; the 7.1 safeguarded survivor reached .90 in one run"></svg>
           <div class="clegend">
             <span><i class="swatch" style="background:var(--recall)"></i>article recall</span>
             <span><i class="swatch" style="background:var(--quality)"></i>answer quality</span>
@@ -233,7 +235,7 @@
     Reconstructed from the repo's <b>git history</b> (48 commits, 23 Aug – 28 Sep 2026), the <b>RAGAS experiment CSVs</b>
     (<span class="mono">retriever_kind · article_recall · score</span>), and the <b>checkpoint READMEs</b>.
     Test tiles carry GT-set survivor means; the far-right tile on each row is that checkpoint's held-out <b>validation-set</b> result (the validation set enters at 3.1).
-    1.1–2.1 predate the recall metric. Within 5.1, GT quality first dipped to .59 at the Phase-1 retrieval head (table reader still off — missing capability, not worse reasoning), then the table gateway recovered it to .79; the breadth survivor then closed the validation gap (.845 → .880) at recall 1.00. Phase-2 figures are 4-run means. Checkpoint 6.1 was measured on the validation set only: its test tiles show a dash, the test chart marks it as not run, and each card's detail carries the validation figures.
+    1.1–2.1 predate the recall metric. Within 5.1, GT quality first dipped to .59 at the Phase-1 retrieval head (table reader still off — missing capability, not worse reasoning), then the table gateway recovered it to .79; the breadth survivor then closed the validation gap (.845 → .880) at recall 1.00. Phase-2 figures are 4-run means. Checkpoints 6.1 and 7.1 were measured on the validation set only: their test tiles show a dash, the test chart marks them as not run, and each card's detail carries the validation figures. Checkpoint 7.1 (3–4 Oct) comes from its README, the security-run CSVs, and the RAGAS experiment CSV.
   </footer>
 </div>
 
@@ -257,6 +259,7 @@ const CPS = [
   {cp:"4.1", date:"13–15 Sep", theme:"Advanced retrieval"},
   {cp:"5.1", date:"20–21 Sep", theme:"Agentic retriever"},
   {cp:"6.1", date:"25–27 Sep", theme:"Security + cost audit"},
+  {cp:"7.1", date:"3–4 Oct", theme:"Security safeguards"},
 ];
 const STATUS = {
   survivor:{tag:"survivor",cls:"survivor"}, built:{tag:"built on",cls:"built"},
@@ -410,7 +413,7 @@ const N = [
    blurb:"Whole articles replace breadth; incomplete table evidence is flagged to the user.",
    what:"The 5.1 survivor without the breadth nudge: text-only questions answer from whole articles (escalation loads them if the assessor asks). The table planner's schema slip is repaired with one corrected retry, empty computations are labeled incomplete, and an incomplete final state adds a notice asking the answer to say what could not be found or computed.",
    why:"Validation 0.860 over 3 runs (0.88 / 0.80 / 0.90): level with 5.1 (0.880 recorded, 0.860 same-day). Text-only 0.850 → 0.974; table 0.867 → 0.736 (VAL24: a successful computation ended the loop before the prose arrived; VAL06: answers hedged under the incomplete label). 20% faster (12.8 s against 16.1 s) and 17% cheaper billed ($0.030 against $0.036 per question).",
-   verdict:"The survivor — today's system. Same quality as 5.1, faster and cheaper billed, near-perfect on text questions, and honest about incomplete computations. Open: table readiness after a computation, a row cap on computations, and the planner's wrong filters.",
+   verdict:"Survived Checkpoint 6.1 and is the base of the 7.1 survivor. Same quality as 5.1, faster and cheaper billed, near-perfect on text questions, and honest about incomplete computations. Its security effect was first measured in 7.1, together with the 7.1 safeguards. Open: table readiness after a computation, a row cap on computations, and the planner's wrong filters.",
    rvalid:1.00, qvalid:0.860,
    range:"val 0.80–0.90"},
   {cp:"6.1",name:"Same architecture, gpt-5.4 in every role",st:"probe",fam:"6.1 · model",recall:null,quality:null,
@@ -425,6 +428,39 @@ const N = [
    why:"Planner only: 0.860, no gain for +15% cost. Nano: 0.771, 40% cheaper but twice as slow, and a 510K-token context overflow on VAL24. Free: 0.750 on 4 questions, 520 s per question, a 473K-character answer, and a lost question (provider 503). Every model answered the text-only questions correctly.",
    verdict:"Abandoned: a stronger planner alone does not help, and the cheaper models lose the table questions or the runtime.",
    rvalid:1.00, qvalid:0.771},
+  // 7.1: validation set only (GT not run). Security measured with history on, 155 turns per agent.
+  {cp:"7.1",name:"Grounding check (output guardrail)",st:"built",fam:"7.1 · output check",recall:null,quality:null,
+   blurb:"Names and quotations in the answer must appear in the corpus evidence it was given.",
+   what:"Deterministic: quoted spans must appear verbatim, and multi-word names and italic titles must appear in the evidence. Numbers are excluded (2% mismatched, none fabricated). It reads only corpus text: a table computation's echoed request carried the planted table into 148 evidence items across 33 turns of the 6.1 logs. Names from the question are not exempted. Policy surface: a [QUARANTINED] notice before the answer.",
+   why:"Offline on saved runs: flags all 3 adoptions from 6.1, and 6 of 54 clean answers (46 before the parsing fixes), 4 of them genuine misquotations the judge passed; VAL20 quoted the real Nobel citation, which is absent from the evidence. Live: flagged 47 of 155 answers, none an adoption, because none reached the draft; 6 were correct answers, 5 of them the same VAL14 answer.",
+   verdict:"Built on: the survivor's backstop. It stopped no attack in the live runs, and it catches what the instructions cannot enforce."},
+  {cp:"7.1",name:"Guarded answer instructions",st:"built",fam:"7.1 · prompt",recall:null,quality:null,
+   blurb:"A trust order over what the model receives, and a strict quotation rule.",
+   what:"A second answer prompt beside the 2.1–6.1 one: these instructions, then the context block, then earlier turns (“NOT a source”), then the question; no “according to the table” unless that table says it; quotation marks only for exact copies, with [...] for omissions; show the inputs when calculating.",
+   why:"Each rule answers a measured failure: the 6.1 adoptions, the false provenance (“According to the table … Rafe Dunmoor”), and four misquotations. About 330 more input tokens per answer call. Its effect is not separated from the 6.1 evidence fixes; together they kept the fake list out of every first draft.",
+   verdict:"Built on: one of the two upstream changes credited with stopping the planted-source attack."},
+  {cp:"7.1",name:"Input sanitising (deterministic)",st:"built",fam:"7.1 · input filter",recall:null,quality:null,
+   blurb:"Lab 7.1's middleware: escaping, forged-evidence removal, injection patterns.",
+   what:"Before retrieval: escapes angle brackets, removes pasted blocks shaped like the engine's own evidence, and marks override and persona phrases. History stores the cleaned question.",
+   why:"Fired on 3 of 155 turns, all on the formatted plant, which never got through even against 5.1 (0 of 9). It never fired on the plain-text pastes that did. This confirms 6.1: the format is not what makes an attack work.",
+   verdict:"Built on, but inert against the attacks that worked: it defends a format the attacker never needed."},
+  {cp:"7.1",name:"Safeguards in the graph",st:"survivor",fam:"7.1 · security",recall:null,quality:null,
+   blurb:"The 6.1 survivor with input sanitising, guarded instructions and a grounding check inside its graph.",
+   what:"Answering moved into the graph so a guardrail sits between the draft and the reader: sanitize_question → retrieval → answer_question → guard_answer. The three safeguards marked built on, the 6.1 table-plan repair and incomplete labels, and conversation history for multi-turn use.",
+   why:"Security, history on: the fake nominee list got through 5 of 20 times against 5.1 and 0 of 20 against this survivor (p = 0.047); all attacks 5 of 59 → 0 of 59. Validation 0.900 in one run, inside 6.1's 0.80–0.90; list cost $0.046 per question, inside 6.1's $0.036–0.052; no extra model calls. The fake content never reached the first draft, so the change came from before the output check.",
+   verdict:"The survivor — today's system. It stops the planted-source attack with no measured cost to quality, cost or latency. Open: 6 correct answers flagged (5 the same VAL14 answer), the decade-table combination, and GT03 still answered wrongly.",
+   rvalid:1.00, qvalid:0.900,
+   range:"val 0.90 (one run)"},
+  {cp:"7.1",name:"Model input filter (gpt-5.4-nano)",st:"abandon",fam:"7.1 · input filter",recall:null,quality:null,
+   blurb:"Lab 7.1's persona filter: a small model removes role-play attempts.",
+   what:"An extra nano call on every user turn, failing open on error.",
+   why:"Timed out in testing, consistent with nano's earlier record here (6.1: quality 0.771 and a 510K-token overflow).",
+   verdict:"Abandoned as a default; available with --input-filter-model. A layer that is usually absent invites reliance it does not earn."},
+  {cp:"7.1",name:"Withhold policy",st:"abandon",fam:"7.1 · output check",recall:null,quality:null,
+   blurb:"Replace a flagged answer with a fixed refusal.",
+   what:"The same grounding check, acting by withholding the answer instead of marking it.",
+   why:"Replayed over the saved 6.1 validation answers: quality 0.860 → 0.693, because 10 answers the judge passed would be withheld.",
+   verdict:"Abandoned in favor of surface, which keeps the answer behind a [QUARANTINED] notice."},
 ];
 
 const legend = document.getElementById('legend');
@@ -443,6 +479,7 @@ const VAL = {
   "5.1":{r:1.000,q:0.880,note:"breadth survivor"},
   "6.1":{r:1.000,q:0.860,qs:[{k:"gpt-5.4-mini",q:0.860},{k:"gpt-5.4",q:0.960}],
          note:"6.1 survivor, same graph · gpt-5.4 is one run at 4.4× the billed cost"},
+  "7.1":{r:1.000,q:0.900,note:"safeguarded survivor · one run"},
 };
 
 const tl=document.getElementById('timeline');
@@ -541,8 +578,8 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer();});
     rings.forEach(p=>{svg.appendChild(el('circle',{cx:x(p.i),cy:y(p.v),r:3.6,fill:'var(--surface)',stroke:'var(--quality)','stroke-width':1.8}));
       const t=el('text',{x:x(p.i)-7,y:y(p.v)+3,'text-anchor':'end','font-size':9.5,'font-weight':600,'font-family':'var(--mono)',fill:'var(--quality)'});t.textContent=`${p.label} ${lab(p.v)}`;svg.appendChild(t);});
   }
-  // The tuned GT test set, one survivor per checkpoint; 6.1 ran on validation only.
-  draw('chart',[{x:"3.1",r:0.899,q:0.747},{x:"4.1",r:0.939,q:0.744},{x:"5.1",r:1.000,q:0.789},{x:"6.1",r:null,q:null}]);
+  // The tuned GT test set, one survivor per checkpoint; 6.1 and 7.1 ran on validation only.
+  draw('chart',[{x:"3.1",r:0.899,q:0.747},{x:"4.1",r:0.939,q:0.744},{x:"5.1",r:1.000,q:0.789},{x:"6.1",r:null,q:null},{x:"7.1",r:null,q:null}]);
   // The held-out validation set, from the far-right tiles (VAL). The ring is the same
   // 6.1 survivor graph on gpt-5.4.
   const vk=Object.keys(VAL), g54=VAL["6.1"].qs[1];

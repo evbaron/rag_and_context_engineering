@@ -81,6 +81,10 @@ ROLE_BY_NODE = {
     "assess_evidence": "assessor",
     "compute_requested_tables": "table_planner",
     "answer": "answer",
+    # Checkpoint 7.1: answering moved into the graph, so it is attributed by node name
+    # like the other roles rather than by the answer wrapper's run_name.
+    "answer_question": "answer",
+    "sanitize_question": "input_filter",
 }
 
 
@@ -480,7 +484,7 @@ def self_check(verbose: bool = True) -> bool:
 
 
 # %%
-def parse_args() -> argparse.Namespace:
+def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Checkpoint 6.1 cost tests (history off, telemetry on).")
     parser.add_argument("--gt-set", type=Path, default=VALIDATION_PATH)
     parser.add_argument(
@@ -491,35 +495,64 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--survivor",
-        choices=["5.1", "6.1"],
+        choices=["5.1", "6.1", "final"],
         default="5.1",
-        help="5.1: the unchanged 5.1 survivor. 6.1: the Checkpoint 6.1 survivor (survivor_6_1.py).",
+        help="5.1: the unchanged 5.1 survivor. 6.1: the Checkpoint 6.1 survivor "
+             "(survivor_6_1.py). final: the Checkpoint 7.1 agent (survivor_agent_final.py) "
+             "-- the 6.1 configuration with input sanitising, answering and the grounding "
+             "guardrail inside the graph.",
     )
+    parser.add_argument(
+        "--grounding",
+        choices=["off", "surface", "withhold"],
+        default="surface",
+        help="final only: the grounding policy. 'off' delivers the answer unchanged and "
+             "still records the verdict, so one run gives both the 6.1-comparable quality "
+             "and the guardrail's trigger rate.",
+    )
+    parser.add_argument("--no-sanitize", action="store_true",
+                        help="final only: turn the input layers off.")
+    parser.add_argument("--legacy-prompt", action="store_true",
+                        help="final only: keep the 2.1-6.1 answer prompt, to separate the "
+                             "prompt's effect from the guardrail's.")
     parser.add_argument(
         "--model",
         default=None,
-        help="6.1 only: OpenRouter model for every agent role and the answer (default: the 5.1 model).",
+        help="6.1 and final only: OpenRouter model for every agent role and the answer "
+             "(default: the 5.1 model).",
     )
     parser.add_argument(
         "--table-model",
         default=None,
-        help="6.1 only: a separate OpenRouter model for the table planner (default: --model).",
+        help="6.1 and final only: a separate OpenRouter model for the table planner "
+             "(default: --model).",
     )
     parser.add_argument(
         "--experiment-name",
         default=None,
-        help="Default: survivor_cost_6_1 for 5.1; survivor_6_1 (plus the models when given) for 6.1.",
+        help="Default: survivor_cost_6_1 for 5.1; survivor_6_1 (plus the models when given) "
+             "for 6.1; survivor_final__grounding_<policy> for final.",
     )
     parser.add_argument("--limit", type=int, default=None, help="First N questions only.")
     parser.add_argument("--question-id", dest="question_ids", action="append", default=None)
     parser.add_argument("--prices", type=Path, default=PRICES_PATH)
     parser.add_argument("--self-check", action="store_true", help="Run the offline checks and exit.")
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
     if args.survivor == "5.1" and (args.model or args.table_model):
-        parser.error("--model and --table-model apply to --survivor 6.1 only.")
+        parser.error("--model and --table-model apply to --survivor 6.1 or final only.")
+    if args.survivor != "final" and (args.grounding != "surface" or args.no_sanitize or args.legacy_prompt):
+        parser.error("--grounding, --no-sanitize and --legacy-prompt apply to --survivor final only.")
     if args.experiment_name is None:
         if args.survivor == "5.1":
             args.experiment_name = "survivor_cost_6_1"
+        elif args.survivor == "final":
+            short = lambda model: model.split("/")[-1].removesuffix(":free")
+            args.experiment_name = (
+                f"survivor_final__grounding_{args.grounding}"
+                + ("__no_sanitize" if args.no_sanitize else "")
+                + ("__legacy_prompt" if args.legacy_prompt else "")
+                + (f"__{short(args.model)}" if args.model else "")
+            )
         else:
             short = lambda model: model.split("/")[-1].removesuffix(":free")
             args.experiment_name = "survivor_6_1" + (f"__{short(args.model)}" if args.model else "") + (
@@ -528,8 +561,8 @@ def parse_args() -> argparse.Namespace:
     return args
 
 
-async def main() -> None:
-    args = parse_args()
+async def main(argv: list[str] | None = None) -> None:
+    args = parse_args(argv)
     if args.self_check:
         sys.exit(0 if self_check() else 1)
     if not self_check(verbose=False):
@@ -550,7 +583,39 @@ async def main() -> None:
     rows = [row if isinstance(row, dict) else row.model_dump() for row in dataset]
     recorder = UsageRecorder({row["question"]: row["question_id"] for row in rows})
 
-    if args.survivor == "6.1":
+    if args.survivor == "final":
+        print("Loading the Checkpoint 7.1 survivor agent...")
+        sys.path.insert(0, str(_HERE.parent / "Capstone Checkpoint 7.1"))
+        from survivor_agent_final import (
+            build_experiment_final,
+            build_survivor_final,
+            describe_survivor_final,
+        )
+        from wikipedia_retrieval_engine.wiki_agents.prompts import (
+            GUARDED_ANSWER_SYSTEM_PROMPT,
+            LEGACY_ANSWER_SYSTEM_PROMPT,
+        )
+
+        survivor = build_survivor_final(
+            "cost_tests",  # log_root defaults to Checkpoint 7.1/logs
+            model=args.model,
+            table_model=args.table_model,
+            policy=args.grounding,
+            sanitize_input=not args.no_sanitize,
+            answer_system_prompt=(
+                LEGACY_ANSWER_SYSTEM_PROMPT if args.legacy_prompt else GUARDED_ANSWER_SYSTEM_PROMPT
+            ),
+        )
+        experiment = build_experiment_final(
+            TelemetryGraph(survivor.graph, recorder),
+            TelemetryAnswerLLM(survivor.agent_llm, recorder),
+            h.make_judge(),
+            h.RateLimitBackoff(),
+            args.experiment_name,
+            survivor,
+        )
+        description = describe_survivor_final(survivor)
+    elif args.survivor == "6.1":
         print("Loading the 6.1 survivor agent...")
         survivor = build_survivor_6_1("cost_tests", model=args.model, table_model=args.table_model)
         experiment = build_experiment_6_1(

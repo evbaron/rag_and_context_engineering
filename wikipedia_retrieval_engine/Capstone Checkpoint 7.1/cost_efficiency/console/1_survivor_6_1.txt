@@ -1,0 +1,27 @@
+Loading the 6.1 survivor agent...
+Loading existing vector DB from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/wikipedia_sections_max10000_no_overlap/
+Loading existing vector DB from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/wikipedia_sections_max10000_no_overlap/
+Loading extracted markdown from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/article_text/wikipedia_markdown/
+Loading existing graph from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/graph/wikipedia_graph/graph.json
+Cost test — history OFF, 19 question(s) from wikipedia_GT.csv, experiment survivor_6_1
+  survivor=6.1 (5.1 configuration with the 6.1 changes)
+  initial retriever=multistep_entity
+  repeated retrievers=whole_article -> graph_seeded (no breadth nudge)
+  answer context=whole_per_question; table plan repair and retry on; incomplete computations labeled; evidence notice on
+  model=openai/gpt-5.4-mini (every agent role and the answer), table planner=openai/gpt-5.4-mini, judge=openai/gpt-5.4-mini
+  AgentState logs=/Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/Capstone Checkpoint 6.1/logs/cost_tests/2026_10_04_01_37_06
+Running experiment:   0%|          | 0/19 [00:00<?, ?it/s]Running experiment:   5%|▌         | 1/19 [04:07<1:14:09, 247.19s/it]Running experiment: 100%|██████████| 19/19 [04:07<00:00, 13.01s/it]  
+
+Experiment complete: Pass: 12 | Partial: 4 | Fail: 3 | Total: 19
+
+Results saved to: /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/Capstone Checkpoint 7.1/cost_efficiency/wikipedia_GT/experiments/eager_torvalds.csv
+Telemetry saved to: /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/Capstone Checkpoint 7.1/cost_efficiency/wikipedia_GT/telemetry/eager_torvalds__*.csv
+
+PER ROLE (tool) over 19 question(s)
+  role           calls/q  in tok/q out tok/q  cached  token share
+  answer             1.0     20478       163      0%          44%
+  assessor           2.0     18642       533     25%          41%
+  decomposer         1.0       424       104      0%           1%
+  table_planner      1.5      3423       124      6%           8%
+  toc_reviewer       1.0      2943       347      0%           7%
+  slowest questions: GT19 24s/10 calls, GT12 17s/10 calls, GT14 15s/8 calls, GT03 15s/8 calls, GT07 13s/8 calls

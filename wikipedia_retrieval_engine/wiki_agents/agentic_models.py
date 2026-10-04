@@ -58,6 +58,25 @@ class AgentState(TypedDict, total=False):
     assessment: EvidenceAssessment
     assessment_history: list[EvidenceAssessment]
 
+    # Checkpoint 7.1. Absent unless the graph was built with the answer and guard nodes,
+    # which is why ``AgentState`` is ``total=False``: the 2.1-6.1 graphs never set them,
+    # and their harnesses answer after the graph returns, exactly as before.
+    answer: str
+    # The answer as the model wrote it, kept when the guardrail replaced or marked it.
+    # Detectors and attack scoring must read this, not the delivered text: a policy
+    # notice contains negation language that would flip a rejected/adopted judgement.
+    answer_drafted: str
+    answer_usage: dict[str, Any]
+    answer_context: str
+    answer_evidence: list[EvidenceItem]
+    grounding: dict[str, Any]
+    input_sanitization: dict[str, Any]
+    # Earlier turns as (user_message, answer) pairs, oldest first, for the chat path.
+    # Retrieval always runs on the current question only; history reaches the answer
+    # model and nothing else, and never reaches the grounding check.
+    history: list[tuple[str, str]]
+    max_history_turns: int
+
 
 DEFAULT_RETRIEVAL_ATTEMPTS = 0
 DEFAULT_TABLE_ATTEMPTS = 0

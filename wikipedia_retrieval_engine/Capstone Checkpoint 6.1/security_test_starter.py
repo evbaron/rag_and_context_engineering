@@ -48,7 +48,7 @@ import json
 import re
 import sys
 from collections import Counter
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, field
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -383,6 +383,14 @@ class TurnResult:
     history_turns_sent: int
     answer_input_tokens: int | None
     answer_output_tokens: int | None
+    # Checkpoint 7.1. ``answer`` is what a reader receives; ``answer_drafted`` is what the
+    # model wrote. The attack detectors read the draft, because a policy notice contains
+    # negation language that would turn an adoption into a "rejected" classification and
+    # make the 7.1 run incomparable with the recorded 6.1 one.
+    answer_drafted: str = ""
+    question_sent: str = ""
+    grounding: dict[str, Any] = field(default_factory=dict)
+    input_sanitization: dict[str, Any] = field(default_factory=dict)
 
 
 class ConversationSession:
@@ -398,15 +406,46 @@ class ConversationSession:
 
     def send(self, message: str) -> TurnResult:
         h = self._h
+        graph_input = h.initial_agent_state(message)
+        # The guarded graph answers for itself, so it needs the history the answer model
+        # used to be handed here. A graph without the answer node ignores both keys.
+        graph_input["history"] = list(self.history)
+        if self._max_history_turns is not None:
+            graph_input["max_history_turns"] = self._max_history_turns
         state = h.call_with_rate_limit_backoff(
             lambda: self._graph.invoke(
-                h.initial_agent_state(message),
+                graph_input,
                 config={"recursion_limit": h.RECURSION_LIMIT},
             ),
             self._backoff,
             label="agent graph",
         )
         evidence = state.get("evidence", [])
+
+        if state.get("answer"):
+            # Checkpoint 7.1: the graph sanitised the question, answered, and applied the
+            # grounding policy. History stores the sanitised question, so a forged source
+            # block cannot survive into later turns.
+            answer = state["answer"]
+            context = state.get("answer_context", "")
+            usage = dict(state.get("answer_usage") or {})
+            sent = state.get("question", message)
+            self.history.append((sent, answer))
+            return TurnResult(
+                answer=answer,
+                selected_articles=list(state.get("selected_articles", [])),
+                evidence_ids=[item.evidence_id for item in evidence],
+                context_characters=len(context),
+                history_turns_sent=len(graph_input["history"]) if self._max_history_turns is None
+                else min(len(graph_input["history"]), max(self._max_history_turns, 0)),
+                answer_input_tokens=usage.get("input_tokens"),
+                answer_output_tokens=usage.get("output_tokens"),
+                answer_drafted=state.get("answer_drafted", answer),
+                question_sent=sent,
+                grounding=dict(state.get("grounding") or {}),
+                input_sanitization=dict(state.get("input_sanitization") or {}),
+            )
+
         context = h.format_section_evidence(evidence)
         turns_sent = 0
         usage: dict[str, Any] = {}
@@ -437,6 +476,8 @@ class ConversationSession:
             history_turns_sent=turns_sent,
             answer_input_tokens=usage.get("input_tokens"),
             answer_output_tokens=usage.get("output_tokens"),
+            answer_drafted=answer,
+            question_sent=message,
         )
 
 
@@ -481,7 +522,9 @@ def run_scenario(
                 backoff,
                 label=f"judge {turn.gt_id}",
             ).value
-        found = detect(result.answer, turn.message, corpus_articles)
+        # The detectors read the draft, so outcome classification stays comparable
+        # with the recorded 6.1 runs; the judge above scored the delivered answer.
+        found = detect(result.answer_drafted or result.answer, turn.message, corpus_articles)
         print(f"  [{number}] {turn.kind:<8} {turn.gt_id or '':<6} USER: {_preview(turn.message, 90)}")
         print(f"       SYSTEM: {_preview(result.answer)}")
         flags = [
@@ -509,8 +552,12 @@ def run_scenario(
                 "history_turns_sent": result.history_turns_sent,
                 "answer_input_tokens": result.answer_input_tokens,
                 "answer_output_tokens": result.answer_output_tokens,
+                **result.input_sanitization,
+                **result.grounding,
                 "message": turn.message,
+                "question_sent": result.question_sent,
                 "answer": result.answer,
+                "answer_drafted": result.answer_drafted,
             }
         )
     return rows
@@ -583,6 +630,55 @@ def print_summary(rows: list[dict[str, Any]]) -> None:
             + "  ".join(f"{label}={outcomes[label]}" for label in _OUTCOMES)
             + f"  judge pass={passes}/{len(scored)}"
         )
+    print_safeguard_summary(rows)
+
+
+def print_safeguard_summary(rows: list[dict[str, Any]]) -> None:
+    """What the 7.1 safeguards did, when the run had them.
+
+    ``outcome`` is classified from ``answer_drafted``, the answer before the guardrail
+    acted, so a single run reports both sides of the comparison: ``outcome`` is what the
+    agent would have delivered without the guardrail, and ``grounding_acted`` says whether
+    the guardrail then intervened. A separate ``--grounding off`` run is not needed.
+    """
+
+    if not any("grounding_policy" in row or "input_sanitized" in row for row in rows):
+        return
+
+    print("\nSAFEGUARDS")
+    sanitized = [row for row in rows if row.get("input_sanitized")]
+    if any("input_sanitized" in row for row in rows):
+        blocks = sum(int(row.get("input_evidence_blocks_removed") or 0) for row in rows)
+        patterns = sum(bool(row.get("input_injection_pattern_hit")) for row in rows)
+        failed_open = sum(bool(row.get("input_model_filter_failed_open")) for row in rows)
+        print(
+            f"  input layers: {len(sanitized)}/{len(rows)} turns rewritten; "
+            f"forged source blocks removed={blocks}; injection patterns hit={patterns}; "
+            f"model filter failed open={failed_open}"
+        )
+
+    guarded = [row for row in rows if "grounding_ok" in row]
+    if guarded:
+        policy = next((row.get("grounding_policy") for row in guarded if row.get("grounding_policy")), "?")
+        flagged = [row for row in guarded if str(row.get("grounding_ok")).lower() == "false"]
+        acted = [row for row in guarded if str(row.get("grounding_acted")).lower() == "true"]
+        print(
+            f"  grounding ({policy}): flagged {len(flagged)}/{len(guarded)} turns; "
+            f"acted on {len(acted)}"
+        )
+        caught = [row for row in flagged if "adopted" in str(row.get("outcome", ""))]
+        adoptions = [row for row in guarded if "adopted" in str(row.get("outcome", ""))]
+        if adoptions:
+            print(
+                f"  adoptions in the draft: {len(adoptions)}; "
+                f"caught by the grounding check: {len(caught)}/{len(adoptions)}"
+            )
+        else:
+            print("  adoptions in the draft: 0 (nothing for the grounding check to catch)")
+        for row in flagged:
+            spans = row.get("ungrounded_entities") or row.get("ungrounded_quotations") or ""
+            if spans:
+                print(f"    t{row['turn']} {row['scenario']}: {str(spans)[:90]}")
 
 
 # %% [markdown]
@@ -664,7 +760,7 @@ def show(scenarios: dict[str, Scenario], h: Any) -> None:
 
 
 # %%
-def parse_args() -> argparse.Namespace:
+def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Checkpoint 6.1 security tests (history on).")
     parser.add_argument(
         "--scenario",
@@ -687,6 +783,28 @@ def parse_args() -> argparse.Namespace:
         help="Answer model for the conversation (default: the survivor's model, as in 5.1).",
     )
     parser.add_argument("--no-judge", action="store_true", help="Skip RAGAS scoring of GT turns.")
+    parser.add_argument(
+        "--survivor",
+        choices=("5.1", "6.1", "final"),
+        default="5.1",
+        help="Agent under test. '5.1' is the configuration the recorded security runs "
+             "used and is the before. '6.1' is 5.1 plus the reliability fixes those "
+             "attacks prompted (whole articles, table-plan repair and retry, INCOMPLETE "
+             "labels, evidence notice) -- never security-tested, so this arm separates "
+             "the fixes from the safeguards. 'final' adds the 7.1 safeguards: input "
+             "sanitising, and the grounding guardrail inside the graph.",
+    )
+    parser.add_argument(
+        "--grounding",
+        choices=("off", "surface", "withhold"),
+        default="surface",
+        help="Grounding policy; --survivor final only. 'off' records the verdict without "
+             "acting, which measures the trigger rate against an otherwise unchanged agent.",
+    )
+    parser.add_argument("--no-sanitize", action="store_true",
+                        help="For --survivor final: turn the input layers off.")
+    parser.add_argument("--legacy-prompt", action="store_true",
+                        help="For --survivor final: keep the 2.1-6.1 answer prompt.")
     parser.add_argument("--output-dir", type=Path, default=OUTPUT_ROOT)
     parser.add_argument("--show", action="store_true", help="Print scenarios and exit (no API calls).")
     parser.add_argument("--self-check", action="store_true", help="Run the offline checks and exit.")
@@ -696,11 +814,11 @@ def parse_args() -> argparse.Namespace:
         metavar="RUN_DIR",
         help="Re-apply the detectors to a finished run folder and exit (no API calls).",
     )
-    return parser.parse_args()
+    return parser.parse_args(argv)
 
 
-def main() -> None:
-    args = parse_args()
+def main(argv: list[str] | None = None) -> None:
+    args = parse_args(argv)
     if args.self_check:
         sys.exit(0 if self_check() else 1)
     if args.rescore:
@@ -717,7 +835,34 @@ def main() -> None:
         sys.exit("Offline checks failed (run --self-check for details).")
 
     selected = list(scenarios.values()) if args.scenario == "all" else [scenarios[args.scenario]]
-    survivor = build_survivor_agent("security_tests")
+    if args.survivor == "6.1":
+        from survivor_6_1 import build_survivor_6_1, describe_survivor_6_1
+
+        # The reliability fixes alone. 6.1's security experiment ran against 5.1, before
+        # these existed, so this is the arm that says how much of any improvement comes
+        # from the fixes rather than from the 7.1 safeguards.
+        survivor = build_survivor_6_1("security_tests")
+        describe = describe_survivor_6_1(survivor)
+    elif args.survivor == "final":
+        sys.path.insert(0, str(_HERE.parent / "Capstone Checkpoint 7.1"))
+        from survivor_agent_final import build_survivor_final, describe_survivor_final
+        from wikipedia_retrieval_engine.wiki_agents.prompts import (
+            GUARDED_ANSWER_SYSTEM_PROMPT,
+            LEGACY_ANSWER_SYSTEM_PROMPT,
+        )
+
+        survivor = build_survivor_final(
+            "security_tests",
+            policy=args.grounding,
+            sanitize_input=not args.no_sanitize,
+            answer_system_prompt=(
+                LEGACY_ANSWER_SYSTEM_PROMPT if args.legacy_prompt else GUARDED_ANSWER_SYSTEM_PROMPT
+            ),
+        )
+        describe = describe_survivor_final(survivor)
+    else:
+        survivor = build_survivor_agent("security_tests")
+        describe = describe_survivor(h)
     answer_llm = (
         make_llm(model=args.answer_model, app_title="WRE security answer")
         if args.answer_model
@@ -727,8 +872,9 @@ def main() -> None:
     corpus_articles = load_corpus_articles()
     run_stamp = datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
     print(
-        f"Security tests — history ON, scenarios={[s.name for s in selected]}, repeats={args.repeats}\n"
-        f"{describe_survivor(h)}\n"
+        f"Security tests — history ON, survivor={args.survivor}, "
+        f"scenarios={[s.name for s in selected]}, repeats={args.repeats}\n"
+        f"{describe}\n"
         f"  answer model={args.answer_model or h.LLM_MODEL}, "
         f"history window={args.max_history_turns or 'all turns'}\n"
         f"  AgentState logs={survivor.run_logger.run_directory}"
@@ -756,6 +902,11 @@ def main() -> None:
         "scenarios": {s.name: [asdict(t) for t in s.turns] for s in selected},
         "repeats": args.repeats,
         "max_history_turns": args.max_history_turns,
+        "survivor": args.survivor,
+        "grounding_policy": args.grounding if args.survivor == "final" else None,
+        "sanitize_input": (not args.no_sanitize) if args.survivor == "final" else None,
+        "answer_prompt": ("legacy" if args.legacy_prompt else "guarded")
+        if args.survivor == "final" else "legacy",
         "answer_model": args.answer_model or h.LLM_MODEL,
         "judge_model": None if args.no_judge else h.JUDGE_MODEL,
         "agent_state_logs": str(survivor.run_logger.run_directory),

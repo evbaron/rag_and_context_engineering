@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from functools import partial
-from typing import Literal, Sequence
+from typing import Callable, Literal, Sequence
 
 from langchain_core.language_models.chat_models import BaseChatModel
 from langgraph.graph import END, START, StateGraph
@@ -33,7 +33,13 @@ from wikipedia_retrieval_engine.wiki_agents.retrieval_nodes import (
     review_and_select_from_toc,
     review_article_candidates,
 )
-from wikipedia_retrieval_engine.wiki_agents.answer_context import markdown_text_loader
+from wikipedia_retrieval_engine.wiki_agents.answer_context import ContextRule, markdown_text_loader
+from wikipedia_retrieval_engine.wiki_agents.answer_guard import GroundingPolicy
+from wikipedia_retrieval_engine.wiki_agents.answer_nodes import (
+    answer_question,
+    guard_answer_node,
+    sanitize_question,
+)
 from wikipedia_retrieval_engine.wiki_agents.table_nodes import (
     compute_requested_tables,
 )
@@ -186,6 +192,13 @@ def build_retrieval_benchmark_graph(
     table_llm: BaseChatModel | None = None,
     repair_invalid_table_plan: bool = False,
     label_incomplete_tables: bool = False,
+    answer_llm: BaseChatModel | None = None,
+    answer_context_rule: ContextRule = "sections",
+    answer_system_prompt: str | None = None,
+    grounding_policy: GroundingPolicy | None = None,
+    sanitize_input: bool = False,
+    input_filter_llm: BaseChatModel | None = None,
+    call_with_backoff: Callable[[Callable[[], object], str], object] | None = None,
 ) -> CompiledStateGraph:
     """Compile the configurable TOC, section, and table-evidence graph.
 
@@ -338,7 +351,37 @@ def build_retrieval_benchmark_graph(
         partial(write_question_log, logger=logger),
     )
 
-    workflow.add_edge(START, "retrieve_initial_articles")
+    # Checkpoint 7.1: the safeguards and the answer step become nodes. Each is added only
+    # when the builder was given what it needs, so a 5.1 or 6.1 call produces the exact
+    # topology it always did and its recorded runs stay reproducible.
+    if sanitize_input:
+        workflow.add_node(
+            "sanitize_question",
+            partial(sanitize_question, model_filter=input_filter_llm),
+        )
+    if answer_llm is not None:
+        workflow.add_node(
+            "answer_question",
+            partial(
+                answer_question,
+                answer_llm=answer_llm,
+                context_rule=answer_context_rule,
+                load_text=markdown_text_loader(markdown_store),
+                system_prompt=answer_system_prompt,
+                call_with_backoff=call_with_backoff,
+            ),
+        )
+        if grounding_policy is not None:
+            workflow.add_node(
+                "guard_answer",
+                partial(guard_answer_node, policy=grounding_policy),
+            )
+
+    if sanitize_input:
+        workflow.add_edge(START, "sanitize_question")
+        workflow.add_edge("sanitize_question", "retrieve_initial_articles")
+    else:
+        workflow.add_edge(START, "retrieve_initial_articles")
     workflow.add_edge("retrieve_initial_articles", "review_and_select_from_toc")
     workflow.add_edge("review_and_select_from_toc", "load_selected_sections")
     workflow.add_edge("load_selected_sections", "load_selected_tables")
@@ -366,6 +409,20 @@ def build_retrieval_benchmark_graph(
     workflow.add_edge("retrieve_broadened_sections", "assess_evidence")
     if uses_whole_article:
         workflow.add_edge("retrieve_whole_article_evidence", "assess_evidence")
-    workflow.add_edge("write_question_log", END)
 
-    return workflow.compile(name="checkpoint_5_1_retrieval_benchmark")
+    # The log is written before the answer, so a run that fails while answering still
+    # records the evidence it had reached.
+    if answer_llm is None:
+        workflow.add_edge("write_question_log", END)
+    elif grounding_policy is None:
+        workflow.add_edge("write_question_log", "answer_question")
+        workflow.add_edge("answer_question", END)
+    else:
+        workflow.add_edge("write_question_log", "answer_question")
+        workflow.add_edge("answer_question", "guard_answer")
+        workflow.add_edge("guard_answer", END)
+
+    name = "checkpoint_5_1_retrieval_benchmark"
+    if answer_llm is not None:
+        name = "checkpoint_7_1_guarded_answer" if grounding_policy else "checkpoint_7_1_answer"
+    return workflow.compile(name=name)

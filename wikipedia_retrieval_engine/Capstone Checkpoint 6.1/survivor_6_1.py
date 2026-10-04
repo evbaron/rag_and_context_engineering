@@ -65,8 +65,26 @@ class Survivor61:
     table_model: str
 
 
-def build_survivor_6_1(log_subdir: str, *, model: str | None = None, table_model: str | None = None) -> Survivor61:
-    """Build the 6.1 graph: the 5.1 survivor's configuration with the 6.1 changes."""
+def build_survivor_6_1(
+    log_subdir: str,
+    *,
+    model: str | None = None,
+    table_model: str | None = None,
+    answer_in_graph: bool = False,
+    answer_system_prompt: str | None = None,
+    grounding_policy: str | None = None,
+    sanitize_input: bool = False,
+    input_filter_llm: Any | None = None,
+    log_root: Any | None = None,
+) -> Survivor61:
+    """Build the 6.1 graph: the 5.1 survivor's configuration with the 6.1 changes.
+
+    The last five arguments are the Checkpoint 7.1 extension and all default to off, so a
+    call without them builds the 6.1 survivor exactly as the recorded runs used it. They
+    live here rather than in the 7.1 module because the answer model is the agent model,
+    built in this function: ``answer_in_graph`` wires it into the graph's answer node
+    instead of leaving the answering to the harness.
+    """
 
     h = load_harness_5_1()
     model = model or h.LLM_MODEL
@@ -86,7 +104,7 @@ def build_survivor_6_1(log_subdir: str, *, model: str | None = None, table_model
     markdown_store = build_or_load_markdown_store()
     wiki_graph = h.build_or_load_graph(markdown_store)
     table_store = h.TableArtifactStore.open()
-    run_logger = h.AgentRunLogger(log_root=LOG_ROOT / log_subdir)
+    run_logger = h.AgentRunLogger(log_root=(log_root or LOG_ROOT) / log_subdir)
     graph = h.build_retrieval_benchmark_graph(
         retriever,
         multistep_retriever,
@@ -110,6 +128,12 @@ def build_survivor_6_1(log_subdir: str, *, model: str | None = None, table_model
         table_llm=table_llm,
         repair_invalid_table_plan=True,
         label_incomplete_tables=True,
+        answer_llm=agent_llm if answer_in_graph else None,
+        answer_context_rule=ANSWER_CONTEXT_RULE,
+        answer_system_prompt=answer_system_prompt,
+        grounding_policy=grounding_policy,
+        sanitize_input=sanitize_input,
+        input_filter_llm=input_filter_llm,
     )
     return Survivor61(
         harness=h,
@@ -148,6 +172,7 @@ def build_experiment_6_1(
     rate_limit_backoff: Any,
     experiment_name: str,
     agent: Survivor61,
+    survivor_label: str = "6.1",
 ):
     """The RAGAS case function for the 6.1 survivor.
 
@@ -155,6 +180,12 @@ def build_experiment_6_1(
     harness) and changes only the answer context: whole articles by
     ``ANSWER_CONTEXT_RULE``, plus the evidence notice when the evidence ended
     incomplete. Retrieval metrics are computed from the agent's own evidence, as in 5.1.
+
+    Checkpoint 7.1 moved answering and the grounding guardrail into the graph. When the
+    graph was built that way it returns ``state["answer"]`` already guarded, and this
+    function uses it instead of answering again; the judge therefore scores what a reader
+    would receive rather than a draft the system decided to withhold. A graph without
+    those nodes leaves no ``answer`` in the state, so the 2.1-6.1 path below is unchanged.
     """
 
     h = agent.harness
@@ -176,7 +207,12 @@ def build_experiment_6_1(
         context = h.format_section_evidence(answer_evidence)
         if context.strip() and notice:
             context = f"{context}{h._CONTEXT_SEPARATOR}[Evidence status]\n{notice}"
-        if context.strip():
+        graph_answer = state.get("answer")
+        if graph_answer:
+            # 7.1: the graph answered and the guardrail has already acted on it.
+            response = graph_answer
+            context = state.get("answer_context", context)
+        elif context.strip():
             response = h.call_with_rate_limit_backoff(
                 lambda: answer_from_context(query=row["question"], context=context, llm=answer_llm),
                 rate_limit_backoff,
@@ -184,6 +220,11 @@ def build_experiment_6_1(
             )
         else:
             response = NO_EVIDENCE_RESPONSE
+
+        guard_columns: dict[str, Any] = {
+            **state.get("input_sanitization", {}),
+            **state.get("grounding", {}),
+        }
 
         score = h.call_with_rate_limit_backoff(
             lambda: h.correctness_metric.score(
@@ -289,12 +330,14 @@ def build_experiment_6_1(
             "score": score.value,
             "source_count": len(required_articles),
             # 6.1 columns
-            "survivor": "6.1",
+            "survivor": survivor_label,
             "table_model": agent.table_model,
             "answer_context_rule": ANSWER_CONTEXT_RULE,
             "whole_articles_sent": "; ".join(whole_articles),
             "evidence_notice": bool(notice),
             "incomplete_table_computations": len(incomplete_computations),
+            # 7.1 columns, empty unless an answer_guard was supplied
+            **guard_columns,
         }
 
     return run_survivor_6_1_case
