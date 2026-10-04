@@ -1,0 +1,674 @@
+{
+  "run_id": "2026_10_04_15_47_54",
+  "question_number": 12,
+  "logged_at": "2026-10-04T15:52:00-04:00",
+  "question": "According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+  "final_state": {
+    "question": "According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+    "retrieval_attempts": 3,
+    "table_attempts": 1,
+    "article_candidates": [
+      {
+        "source_article": "2009_swine_flu_pandemic.html",
+        "representative_chunk": "Article: 2009 swine flu pandemic\nSection: Epidemiology\n\nFurther information: 2009 swine flu pandemic timeline, 2009 swine flu pandemic timeline summary, 2009 swine flu pandemic tables, and 2009 swine flu pandemic by country\n\n2009 flu pandemic data[10]\n\nArea\n\nLab confirmed\n\ndeaths reported to the WHO\n\nWorldwide (total)\n\nAt least 18,449\n\nAfrica\n\n168\n\nAmericas\n\nAt least 8,533\n\nEastern Mediterranean\n\n1,019\n\nEurope\n\nAt least 4,079\n\nSouth-East Asia\n\n1,992\n\nWestern Pacific\n\n1,858\n\nFurther information: Cases and deaths by country\n\nNote: The ratio of confirmed deaths to total deaths due to the pandemic is unknown. For more information, see \"Data reporting and accuracy\".\n\nWhile it is not known precisely where or when the virus originated,[4][178] analyses in scientific journals have suggested that the H1N1 strain responsible for the 2009 outbreak first evolved in September 2008 and circulated amongst humans for several months, before being formally recognised and identified as a novel strain of influenza.[4][5]",
+        "representative_chunk_id": "2009_swine_flu_pandemic.html#section-023-00",
+        "section_title": "Epidemiology",
+        "section_path": [
+          "Epidemiology"
+        ],
+        "retrieval_query": "2009 swine flu pandemic",
+        "discovered_by": "vector",
+        "rank": 1,
+        "raw_score": 0.513473391532898,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      }
+    ],
+    "article_reviews": [
+      {
+        "source_article": "2009_swine_flu_pandemic.html",
+        "relevant": true,
+        "reason": "This article is directly about the 2009 swine flu pandemic and should contain the origin, composition, and chronology information asked about.",
+        "relevant_sections": [
+          "History",
+          "Cause",
+          "Epidemiology",
+          "Mexico"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [
+          "8b065eb423653d4efc0e01c6",
+          "7def40599a1c4d0d64575121"
+        ],
+        "needs_table_reader": false
+      }
+    ],
+    "selected_articles": [
+      "2009_swine_flu_pandemic.html"
+    ],
+    "rejected_articles": [],
+    "evidence": [
+      {
+        "evidence_id": "2009_swine_flu_pandemic.html#section-002-00",
+        "source_article": "2009_swine_flu_pandemic.html",
+        "content": "Article: 2009 swine flu pandemic\nSection: History\n\nAnalysis of the genetic divergence of the virus in samples from different cases indicated that the virus jumped to humans in 2008, probably after June, and not later than the end of November,[40] likely around September 2008.[4][5] The research also indicated the virus had been latent in pigs for several months prior to the outbreak, suggesting a need to increase agricultural surveillance to prevent future outbreaks.[41] In 2009, U.S. agricultural officials speculated, although emphasizing that there was no way to prove their hypothesis, that \"contrary to the popular assumption that the new swine flu pandemic arose on factory farms in Mexico, [the virus] most likely emerged in pigs in Asia, but then traveled to North America in a human.\"[15] However, a subsequent report[42] by researchers at the Mount Sinai School of Medicine in 2016 found that the 2009 H1N1 virus likely originated from pigs in a very small region of central Mexico.[43]\n\nMexican soldiers distributing protective masks to citizens\n\nInitially called an \"outbreak\", widespread H1N1 infection was first recognized in the state of Veracruz, Mexico, with evidence that the virus had been present for months before it was officially called an \"epidemic\".[15] The Mexican government closed most of Mexico City's public and private facilities in an attempt to contain the spread of the virus; however, it continued to spread globally, and clinics in some areas were overwhelmed by infected people. The new virus was first isolated in late April by American and Canadian laboratories from samples taken from people with flu in Mexico, Southern California, and Texas. Soon the earliest known human case was traced to a case from 9 March 2009 in a 5-year-old boy in La Gloria, Mexico, a rural town in Veracruz.[14][15] In late April, the World Health Organization (WHO) declared its first ever \"public health emergency of international concern\", or PHEIC,[44] and in June, the WHO and the U.S. CDC stopped counting cases and declared the outbreak a pandemic.[45]\n\nThe H1N1 flu virus cannot be contracted by eating pork products;[46][47] similar to other influenza viruses, it is typically contracted by person-to-person transmission through respiratory droplets.[48] Symptoms usually last 4–6 days.[49] Antivirals (oseltamivir or zanamivir) were recommended for those with more severe symptoms or those in an at-risk group.[50]\n\nThe pandemic began to taper off in November 2009,[51] and by May 2010, the number of cases was in steep decline.[52][53][54][55] On 10 August 2010, the Director-General of the WHO, Margaret Chan, announced the end of the H1N1 pandemic[7] and announced that the H1N1 influenza event had moved into the post-pandemic period.[56] According to WHO statistics (as of July 2010), the virus had killed more than 18,000 people since it appeared in April 2009; however, they state that the total mortality (including deaths unconfirmed or unreported) from the H1N1 strain is \"unquestionably higher\".[52][57] Critics claimed the WHO had exaggerated the danger, spreading \"fear and confusion\" rather than \"immediate information\".[58] The WHO began an investigation to determine[59] whether it had \"frightened people unnecessarily\".[60] A flu follow-up study done in September 2010, found that \"the risk of most serious complications was not elevated in adults or children.\"[61] In a 5 August 2011 PLOS ONE article, researchers estimated that the 2009 H1N1 global infection rate was 11% to 21%, lower than what was previously expected.[62] However, by 2012, research showed that as many as 579,000 people could have been killed by the disease, as only those fatalities confirmed by laboratory testing were included in the original number, and meant that many without access to health facilities went uncounted. The majority of these deaths occurred in Africa and Southeast Asia. Experts, including the WHO, have agreed that an estimated 284,500 people were killed by the disease, much higher than the initial death toll.[63][64]",
+        "evidence_type": "text",
+        "title": "History",
+        "section_path": [
+          "History"
+        ],
+        "retrieval_query": "According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.641383707523346,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "History",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "8b065eb423653d4efc0e01c6",
+            "7def40599a1c4d0d64575121"
+          ]
+        }
+      },
+      {
+        "evidence_id": "2009_swine_flu_pandemic.html#section-007-00",
+        "source_article": "2009_swine_flu_pandemic.html",
+        "content": "Article: 2009 swine flu pandemic\nSection: Cause\n\nMain article: Pandemic H1N1/09 virus\n\nThe virus was found to be a novel strain of influenza for which existing vaccines against seasonal flu provided little protection. A study at the U.S. Centers for Disease Control and Prevention published in May 2009 found that children had no preexisting immunity to the new strain but that adults, particularly those older than 60, had some degree of immunity. Children showed no cross-reactive antibody reaction to the new strain, adults aged 18 to 60 had 6–9%, and older adults 33%.[85][86] While it has been thought that these findings suggest the partial immunity in older adults may be due to previous exposure to similar seasonal influenza viruses, a November 2009 study of a rural unvaccinated population in China found only a 0.3% cross-reactive antibody reaction to the H1N1 strain, suggesting that previous vaccinations for seasonal flu and not exposure may have resulted in the immunity found in the older U.S. population.[87]\n\nAnalyses of the genetic sequences of the first isolates, promptly shared on the GISAID database according to Nature and WHO,[88][89] soon determined that the strain contains genes from five different flu viruses: North American swine influenza, North American avian influenza, human influenza, and two swine influenza viruses typically found in Asia and Europe. Further analysis has shown that several proteins of the virus are most similar to strains that cause mild symptoms in humans, leading virologist Wendy Barclay to suggest on 1 May 2009, that the initial indications are that the virus was unlikely to cause severe symptoms for most people.[90]\n\nThe virus was less lethal than previous pandemic strains and killed about 0.01–0.03% of those infected; the 1918 influenza was about one hundred times more lethal and had a case fatality rate of 2–3%.[91] By 14 November 2009, the virus had infected one in six Americans with 200,000 hospitalisations and 10,000 deaths—as many hospitalizations and fewer deaths than in an average flu season overall, but with much higher risk for those under 50. With deaths of 1,100 children and 7,500 adults 18 to 64, these figures were deemed \"much higher than in a usual flu season\" during the pandemic.[92]\n\nIn June 2010, scientists from Hong Kong reported discovery of a new swine flu virus: a hybrid of the pandemic H1N1 virus and viruses previously found in pigs. It was the first report of a reassortment of the pandemic virus, which in humans had been slow to evolve. Nancy Cox, head of the influenza division at the U.S. Centers for Disease Control and Prevention, has said, \"This particular paper is extremely interesting because it demonstrates for the first time what we had worried about at the very onset of the pandemic, and that is that this particular virus, when introduced into pigs, could reassort with the resident viruses in pigs and we would have new gene constellations. And bingo, here we are.\" Pigs have been termed the mixing vessel of flu because they can be infected both by avian flu viruses, which rarely directly infect people, and by human viruses. When pigs become simultaneously infected with more than one virus, the viruses can swap genes, producing new variants which can pass to humans and sometimes spread amongst them.[93] \"Unlike the situation with birds and humans, we have a situation with pigs and humans where there's a two-way street of exchange of viruses. With pigs it's very much a two-way street.\"[94]",
+        "evidence_type": "text",
+        "title": "Cause",
+        "section_path": [
+          "Cause"
+        ],
+        "retrieval_query": "According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.5454503297805786,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Cause",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "8b065eb423653d4efc0e01c6",
+            "7def40599a1c4d0d64575121"
+          ]
+        }
+      },
+      {
+        "evidence_id": "2009_swine_flu_pandemic.html#section-023-00",
+        "source_article": "2009_swine_flu_pandemic.html",
+        "content": "Article: 2009 swine flu pandemic\nSection: Epidemiology\n\nFurther information: 2009 swine flu pandemic timeline, 2009 swine flu pandemic timeline summary, 2009 swine flu pandemic tables, and 2009 swine flu pandemic by country\n\n2009 flu pandemic data[10]\n\nArea\n\nLab confirmed\n\ndeaths reported to the WHO\n\nWorldwide (total)\n\nAt least 18,449\n\nAfrica\n\n168\n\nAmericas\n\nAt least 8,533\n\nEastern Mediterranean\n\n1,019\n\nEurope\n\nAt least 4,079\n\nSouth-East Asia\n\n1,992\n\nWestern Pacific\n\n1,858\n\nFurther information: Cases and deaths by country\n\nNote: The ratio of confirmed deaths to total deaths due to the pandemic is unknown. For more information, see \"Data reporting and accuracy\".\n\nWhile it is not known precisely where or when the virus originated,[4][178] analyses in scientific journals have suggested that the H1N1 strain responsible for the 2009 outbreak first evolved in September 2008 and circulated amongst humans for several months, before being formally recognised and identified as a novel strain of influenza.[4][5]",
+        "evidence_type": "text",
+        "title": "Epidemiology",
+        "section_path": [
+          "Epidemiology"
+        ],
+        "retrieval_query": "According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.5826089978218079,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Epidemiology",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "8b065eb423653d4efc0e01c6",
+            "7def40599a1c4d0d64575121"
+          ]
+        }
+      },
+      {
+        "evidence_id": "2009_swine_flu_pandemic.html#section-024-00",
+        "source_article": "2009_swine_flu_pandemic.html",
+        "content": "Article: 2009 swine flu pandemic\nSection: Epidemiology > Mexico\n\nFurther information: 2009 swine flu pandemic in Mexico\n\nThe virus was first reported in two U.S. children in March 2009, but health officials have reported that it apparently infected people as early as January 2009 in Mexico.[6] The outbreak was first identified in Mexico City on 18 March 2009;[179] immediately after the outbreak was officially announced, Mexico notified the U.S. and World Health Organization, and within days of the outbreak Mexico City was \"effectively shut down\".[180] Some countries cancelled flights to Mexico while others halted trade. Calls to close the border to contain the spread were rejected.[180] Mexico already had hundreds of non-lethal cases before the outbreak was officially discovered, and was therefore in the midst of a \"silent epidemic\". As a result, Mexico was reporting only the most serious cases which showed more severe signs different from those of normal flu, possibly leading to a skewed initial estimate of the case fatality rate.[179]",
+        "evidence_type": "text",
+        "title": "Mexico",
+        "section_path": [
+          "Epidemiology",
+          "Mexico"
+        ],
+        "retrieval_query": "According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.7688050866127014,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Mexico",
+          "needs_table_reader": false,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "8b065eb423653d4efc0e01c6",
+            "7def40599a1c4d0d64575121"
+          ]
+        }
+      },
+      {
+        "evidence_id": "2009_swine_flu_pandemic.html#table-001-a7cddbc910",
+        "source_article": "2009_swine_flu_pandemic.html",
+        "content": "Structured table (JSON rows, one object per row — read values directly from these rows; do not rely on prior knowledge).\n{\"artifact_id\": \"8b065eb423653d4efc0e01c6\", \"table_id\": \"table-001-a7cddbc910\", \"caption\": \"2009 flu pandemic data\", \"section\": \"Epidemiology\", \"columns\": [\"Area\", \"Lab confirmed deaths reported to the WHO\"], \"legends\": [], \"rows\": [{\"row_number\": 1, \"values\": {\"Area\": \"Worldwide (total)\", \"Lab confirmed deaths reported to the WHO\": \"At least 18,449\"}, \"semantic_signals\": {\"Area\": {\"source_cell\": \"table-001-a7cddbc910:r2:c1\", \"display_text\": \"Worldwide (total)\", \"is_bold\": true, \"is_italic\": false, \"bold_text\": [\"Worldwide (total)\"], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}, \"Lab confirmed deaths reported to the WHO\": {\"source_cell\": \"table-001-a7cddbc910:r2:c2\", \"display_text\": \"At least 18,449\", \"is_bold\": true, \"is_italic\": false, \"bold_text\": [\"At least 18,449\"], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 2, \"values\": {\"Area\": \"Africa\", \"Lab confirmed deaths reported to the WHO\": \"168\"}, \"semantic_signals\": {}}, {\"row_number\": 3, \"values\": {\"Area\": \"Americas\", \"Lab confirmed deaths reported to the WHO\": \"At least 8,533\"}, \"semantic_signals\": {}}, {\"row_number\": 4, \"values\": {\"Area\": \"Eastern Mediterranean\", \"Lab confirmed deaths reported to the WHO\": \"1,019\"}, \"semantic_signals\": {}}, {\"row_number\": 5, \"values\": {\"Area\": \"Europe\", \"Lab confirmed deaths reported to the WHO\": \"At least 4,079\"}, \"semantic_signals\": {}}, {\"row_number\": 6, \"values\": {\"Area\": \"South-East Asia\", \"Lab confirmed deaths reported to the WHO\": \"1,992\"}, \"semantic_signals\": {}}, {\"row_number\": 7, \"values\": {\"Area\": \"Western Pacific\", \"Lab confirmed deaths reported to the WHO\": \"1,858\"}, \"semantic_signals\": {}}, {\"row_number\": 8, \"values\": {\"Area\": \"Further information: Cases and deaths by country Note: The ratio of confirmed deaths to total deaths due to the pandemic is unknown. For more information, see \\\" Data reporting and accuracy \\\".\", \"Lab confirmed deaths reported to the WHO\": \"Further information: Cases and deaths by country Note: The ratio of confirmed deaths to total deaths due to the pandemic is unknown. For more information, see \\\" Data reporting and accuracy \\\".\"}, \"semantic_signals\": {}}]}",
+        "evidence_type": "table",
+        "title": "2009 flu pandemic data",
+        "section_path": [
+          "Epidemiology"
+        ],
+        "retrieval_query": "According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "8b065eb423653d4efc0e01c6",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_id": "table-001-a7cddbc910",
+          "n_rows": 8,
+          "rows_rendered": 8,
+          "needs_table_reader": false
+        }
+      },
+      {
+        "evidence_id": "2009_swine_flu_pandemic.html#table-002-abc53325c1",
+        "source_article": "2009_swine_flu_pandemic.html",
+        "content": "Structured table (JSON rows, one object per row — read values directly from these rows; do not rely on prior knowledge).\n{\"artifact_id\": \"7def40599a1c4d0d64575121\", \"table_id\": \"table-002-abc53325c1\", \"caption\": \"Major modern influenza pandemics\", \"section\": \"Comparisons to other pandemics and epidemics\", \"columns\": [\"Name\", \"Date\", \"World pop.\", \"Subtype\", \"Reproduction number\", \"Infected (est.)\", \"Deaths worldwide\", \"Case fatality rate\", \"Pandemic severity\"], \"legends\": [], \"rows\": [{\"row_number\": 1, \"values\": {\"Name\": \"Spanish flu\", \"Date\": \"1918–20\", \"World pop.\": \"1.80 billion\", \"Subtype\": \"H1N1\", \"Reproduction number\": \"1.80 (IQR, 1.47–2.27)\", \"Infected (est.)\": \"33% (500 million) or >56% (>1 billion)\", \"Deaths worldwide\": \"17 –100 million\", \"Case fatality rate\": \"2–3%, or ~4%, or ~10%\", \"Pandemic severity\": \"5\"}, \"semantic_signals\": {\"Name\": {\"source_cell\": \"table-002-abc53325c1:r2:c1\", \"display_text\": \"Spanish flu [ 216 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 216 ]\", \"role\": \"reference\", \"target\": \"cite_note-216\", \"note\": \"Mills CE, Robins JM, Lipsitch M (December 2004). \\\"Transmissibility of 1918 pandemic influenza\\\" . Nature . 432 (7019): 904– 6. Bibcode : 2004Natur.432..904M . doi : 10.1038/nature03063 . PMC 7095078 . PMID 15602562 .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}, \"Infected (est.)\": {\"source_cell\": \"table-002-abc53325c1:r2:c6\", \"display_text\": \"33% (500 million) [ 217 ] or >56% (>1 billion) [ 218 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 217 ]\", \"role\": \"reference\", \"target\": \"cite_note-217\", \"note\": \"Taubenberger JK, Morens DM (January 2006). \\\"1918 Influenza: the mother of all pandemics\\\" . Emerging Infectious Diseases . 12 (1): 15– 22. doi : 10.3201/eid1201.050979 . PMC 3291398 . PMID 16494711 .\"}, {\"position\": \"superscript\", \"text\": \"[ 218 ]\", \"role\": \"reference\", \"target\": \"cite_note-nfp:0-218\", \"note\": \"\\\"Report of the Review Committee on the Functioning of the International Health Regulations (2005) in relation to Pandemic (H1N1) 2009\\\" (PDF) . 5 May 2011. p. 37. Archived (PDF) from the original on 14 May 2015 . Retrieved 1 March 2015 .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}, \"Deaths worldwide\": {\"source_cell\": \"table-002-abc53325c1:r2:c7\", \"display_text\": \"17 [ 219 ] –100 [ 220 ] [ 221 ] million\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 219 ]\", \"role\": \"reference\", \"target\": \"cite_note-Spreeuwenberg-219\", \"note\": \"Spreeuwenberg P, Kroneman M, Paget J (December 2018). \\\"Reassessing the Global Mortality Burden of the 1918 Influenza Pandemic\\\" . American Journal of Epidemiology . 187 (12): 2561– 2567. doi : 10.1093/aje/kwy191 . PMC 7314216 . PMID 30202996 .\"}, {\"position\": \"superscript\", \"text\": \"[ 220 ]\", \"role\": \"reference\", \"target\": \"cite_note-220\", \"note\": \"Morens DM, Fauci AS (April 2007). \\\"The 1918 influenza pandemic: insights for the 21st century\\\" . The Journal of Infectious Diseases . 195 (7): 1018– 28. doi : 10.1086/511989 . PMID 17330793 .\"}, {\"position\": \"superscript\", \"text\": \"[ 221 ]\", \"role\": \"reference\", \"target\": \"cite_note-221\", \"note\": \"Johnson NP, Mueller J (2002). \\\"Updating the accounts: global mortality of the 1918-1920 \\\"Spanish\\\" influenza pandemic\\\". Bulletin of the History of Medicine . 76 (1): 105– 15. doi : 10.1353/bhm.2002.0022 . PMID 11875246 . S2CID 22974230 .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}, \"Case fatality rate\": {\"source_cell\": \"table-002-abc53325c1:r2:c8\", \"display_text\": \"2–3%, [ 218 ] or ~4%, or ~10% [ 222 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 218 ]\", \"role\": \"reference\", \"target\": \"cite_note-nfp:0-218\", \"note\": \"\\\"Report of the Review Committee on the Functioning of the International Health Regulations (2005) in relation to Pandemic (H1N1) 2009\\\" (PDF) . 5 May 2011. p. 37. Archived (PDF) from the original on 14 May 2015 . Retrieved 1 March 2015 .\"}, {\"position\": \"superscript\", \"text\": \"[ 222 ]\", \"role\": \"reference\", \"target\": \"cite_note-222\", \"note\": \"Lin II RG, Karlamangla S (6 March 2020). \\\"Why the coronavirus outbreak isn't likely to be a repeat of the 1918 Spanish flu\\\" . Los Angeles Times .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}, \"Pandemic severity\": {\"source_cell\": \"table-002-abc53325c1:r2:c9\", \"display_text\": \"5\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#ff6060\", \"sort_value\": null, \"legend_matches\": []}}}]}\n(NOTE: showing 1 of 7 rows to fit the context budget; the deterministic table executor reads the full table.)",
+        "evidence_type": "table",
+        "title": "Major modern influenza pandemics",
+        "section_path": [
+          "Comparisons to other pandemics and epidemics"
+        ],
+        "retrieval_query": "According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+        "retriever": "table",
+        "rank": 2,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "7def40599a1c4d0d64575121",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_id": "table-002-abc53325c1",
+          "n_rows": 7,
+          "rows_rendered": 7,
+          "needs_table_reader": false
+        }
+      },
+      {
+        "evidence_id": "2009_swine_flu_pandemic.html#table-001-a7cddbc910#computed-table-r1-1-988fdbe4b8cf",
+        "source_article": "2009_swine_flu_pandemic.html",
+        "content": "Deterministic table-computation result. Use the computed rows/calculation below rather than recomputing them.\n{\n  \"table_request\": {\n    \"missing_fact\": \"According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?\",\n    \"source_article\": \"2009_swine_flu_pandemic.html\",\n    \"table_id\": \"8b065eb423653d4efc0e01c6\",\n    \"expected_caption\": null,\n    \"operation\": \"auto\",\n    \"columns_needed\": [],\n    \"row_filters\": {},\n    \"comparison_key\": null\n  },\n  \"query_plan\": {\n    \"artifact_id\": \"8b065eb423653d4efc0e01c6\",\n    \"operation\": \"lookup\",\n    \"selected_columns\": [\n      \"Area\",\n      \"Lab confirmed deaths reported to the WHO\"\n    ],\n    \"filters\": {},\n    \"predicates\": [],\n    \"group_by\": [],\n    \"calculation\": null,\n    \"calculation_column\": null,\n    \"sort_column\": null,\n    \"sort_direction\": null,\n    \"limit\": 8\n  },\n  \"result\": {\n    \"request_id\": \"table-r1-1-988fdbe4b8cf\",\n    \"artifact_id\": \"8b065eb423653d4efc0e01c6\",\n    \"result_rows\": [\n      {\n        \"Area\": \"Worldwide (total)\",\n        \"Lab confirmed deaths reported to the WHO\": \"At least 18,449\"\n      },\n      {\n        \"Area\": \"Africa\",\n        \"Lab confirmed deaths reported to the WHO\": \"168\"\n      },\n      {\n        \"Area\": \"Americas\",\n        \"Lab confirmed deaths reported to the WHO\": \"At least 8,533\"\n      },\n      {\n        \"Area\": \"Eastern Mediterranean\",\n        \"Lab confirmed deaths reported to the WHO\": \"1,019\"\n      },\n      {\n        \"Area\": \"Europe\",\n        \"Lab confirmed deaths reported to the WHO\": \"At least 4,079\"\n      },\n      {\n        \"Area\": \"South-East Asia\",\n        \"Lab confirmed deaths reported to the WHO\": \"1,992\"\n      },\n      {\n        \"Area\": \"Western Pacific\",\n        \"Lab confirmed deaths reported to the WHO\": \"1,858\"\n      },\n      {\n        \"Area\": \"Further information: Cases and deaths by country Note: The ratio of confirmed deaths to total deaths due to the pandemic is unknown. For more information, see \\\" Data reporting and accuracy \\\".\",\n        \"Lab confirmed deaths reported to the WHO\": \"Further information: Cases and deaths by country Note: The ratio of confirmed deaths to total deaths due to the pandemic is unknown. For more information, see \\\" Data reporting and accuracy \\\".\"\n      }\n    ],\n    \"calculation\": null,\n    \"source_cells\": [\n      \"table-001-a7cddbc910:r2:c1\",\n      \"table-001-a7cddbc910:r2:c2\",\n      \"table-001-a7cddbc910:r3:c1\",\n      \"table-001-a7cddbc910:r3:c2\",\n      \"table-001-a7cddbc910:r4:c1\",\n      \"table-001-a7cddbc910:r4:c2\",\n      \"table-001-a7cddbc910:r5:c1\",\n      \"table-001-a7cddbc910:r5:c2\",\n      \"table-001-a7cddbc910:r6:c1\",\n      \"table-001-a7cddbc910:r6:c2\",\n      \"table-001-a7cddbc910:r7:c1\",\n      \"table-001-a7cddbc910:r7:c2\",\n      \"table-001-a7cddbc910:r8:c1\",\n      \"table-001-a7cddbc910:r8:c2\",\n      \"table-001-a7cddbc910:r9:c1\"\n    ],\n    \"cell_details\": [\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r2:c1\",\n        \"row_number\": 1,\n        \"column\": \"Area\",\n        \"text\": \"Worldwide (total)\",\n        \"display_text\": \"Worldwide (total)\",\n        \"is_bold\": true,\n        \"is_italic\": false,\n        \"bold_text\": [\n          \"Worldwide (total)\"\n        ],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r2:c2\",\n        \"row_number\": 1,\n        \"column\": \"Lab confirmed deaths reported to the WHO\",\n        \"text\": \"At least 18,449\",\n        \"display_text\": \"At least 18,449\",\n        \"is_bold\": true,\n        \"is_italic\": false,\n        \"bold_text\": [\n          \"At least 18,449\"\n        ],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r3:c1\",\n        \"row_number\": 2,\n        \"column\": \"Area\",\n        \"text\": \"Africa\",\n        \"display_text\": \"Africa\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r3:c2\",\n        \"row_number\": 2,\n        \"column\": \"Lab confirmed deaths reported to the WHO\",\n        \"text\": \"168\",\n        \"display_text\": \"168\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r4:c1\",\n        \"row_number\": 3,\n        \"column\": \"Area\",\n        \"text\": \"Americas\",\n        \"display_text\": \"Americas\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r4:c2\",\n        \"row_number\": 3,\n        \"column\": \"Lab confirmed deaths reported to the WHO\",\n        \"text\": \"At least 8,533\",\n        \"display_text\": \"At least 8,533\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r5:c1\",\n        \"row_number\": 4,\n        \"column\": \"Area\",\n        \"text\": \"Eastern Mediterranean\",\n        \"display_text\": \"Eastern Mediterranean\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r5:c2\",\n        \"row_number\": 4,\n        \"column\": \"Lab confirmed deaths reported to the WHO\",\n        \"text\": \"1,019\",\n        \"display_text\": \"1,019\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r6:c1\",\n        \"row_number\": 5,\n        \"column\": \"Area\",\n        \"text\": \"Europe\",\n        \"display_text\": \"Europe\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r6:c2\",\n        \"row_number\": 5,\n        \"column\": \"Lab confirmed deaths reported to the WHO\",\n        \"text\": \"At least 4,079\",\n        \"display_text\": \"At least 4,079\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r7:c1\",\n        \"row_number\": 6,\n        \"column\": \"Area\",\n        \"text\": \"South-East Asia\",\n        \"display_text\": \"South-East Asia\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r7:c2\",\n        \"row_number\": 6,\n        \"column\": \"Lab confirmed deaths reported to the WHO\",\n        \"text\": \"1,992\",\n        \"display_text\": \"1,992\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r8:c1\",\n        \"row_number\": 7,\n        \"column\": \"Area\",\n        \"text\": \"Western Pacific\",\n        \"display_text\": \"Western Pacific\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r8:c2\",\n        \"row_number\": 7,\n        \"column\": \"Lab confirmed deaths reported to the WHO\",\n        \"text\": \"1,858\",\n        \"display_text\": \"1,858\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r9:c1\",\n        \"row_number\": 8,\n        \"column\": \"Area\",\n        \"text\": \"Further information: Cases and deaths by country Note: The ratio of confirmed deaths to total deaths due to the pandemic is unknown. For more information, see \\\" Data reporting and accuracy \\\".\",\n        \"display_text\": \"Further information: Cases and deaths by country Note: The ratio of confirmed deaths to total deaths due to the pandemic is unknown. For more information, see \\\" Data reporting and accuracy \\\".\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      }\n    ],\n    \"sufficient\": true,\n    \"warnings\": [\n      \"Expanded rowspan/colspan values into the logical grid.\"\n    ]\n  }\n}",
+        "evidence_type": "table",
+        "title": "Computed table result: According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+        "section_path": [
+          "Epidemiology"
+        ],
+        "retrieval_query": "According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "8b065eb423653d4efc0e01c6",
+        "source_cells": [
+          "table-001-a7cddbc910:r2:c1",
+          "table-001-a7cddbc910:r2:c2",
+          "table-001-a7cddbc910:r3:c1",
+          "table-001-a7cddbc910:r3:c2",
+          "table-001-a7cddbc910:r4:c1",
+          "table-001-a7cddbc910:r4:c2",
+          "table-001-a7cddbc910:r5:c1",
+          "table-001-a7cddbc910:r5:c2",
+          "table-001-a7cddbc910:r6:c1",
+          "table-001-a7cddbc910:r6:c2",
+          "table-001-a7cddbc910:r7:c1",
+          "table-001-a7cddbc910:r7:c2",
+          "table-001-a7cddbc910:r8:c1",
+          "table-001-a7cddbc910:r8:c2",
+          "table-001-a7cddbc910:r9:c1"
+        ],
+        "metadata": {
+          "retrieval_stage": "table_computation",
+          "table_request_id": "table-r1-1-988fdbe4b8cf",
+          "operation": "lookup",
+          "calculation": null,
+          "table_computation_sufficient": true,
+          "warnings": [
+            "Expanded rowspan/colspan values into the logical grid."
+          ]
+        }
+      },
+      {
+        "evidence_id": "2009_swine_flu_pandemic.html#table-002-abc53325c1#computed-table-r1-2-561321695f58",
+        "source_article": "2009_swine_flu_pandemic.html",
+        "content": "Deterministic table-computation result. Use the computed rows/calculation below rather than recomputing them.\n{\n  \"table_request\": {\n    \"missing_fact\": \"According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?\",\n    \"source_article\": \"2009_swine_flu_pandemic.html\",\n    \"table_id\": \"7def40599a1c4d0d64575121\",\n    \"expected_caption\": null,\n    \"operation\": \"auto\",\n    \"columns_needed\": [],\n    \"row_filters\": {},\n    \"comparison_key\": null\n  },\n  \"query_plan\": {\n    \"artifact_id\": \"7def40599a1c4d0d64575121\",\n    \"operation\": \"lookup\",\n    \"selected_columns\": [\n      \"Name\",\n      \"Date\",\n      \"Subtype\"\n    ],\n    \"filters\": {},\n    \"predicates\": [\n      {\n        \"column\": \"Name\",\n        \"op\": \"contains\",\n        \"value\": \"2009 swine flu pandemic\",\n        \"value2\": null\n      }\n    ],\n    \"group_by\": [],\n    \"calculation\": null,\n    \"calculation_column\": null,\n    \"sort_column\": null,\n    \"sort_direction\": null,\n    \"limit\": 1\n  },\n  \"result\": {\n    \"request_id\": \"table-r1-2-561321695f58\",\n    \"artifact_id\": \"7def40599a1c4d0d64575121\",\n    \"result_rows\": [\n      {\n        \"Name\": \"2009 swine flu pandemic\",\n        \"Date\": \"2009–10\",\n        \"Subtype\": \"H1N1/09\"\n      }\n    ],\n    \"calculation\": null,\n    \"source_cells\": [\n      \"table-002-abc53325c1:r6:c1\",\n      \"table-002-abc53325c1:r6:c2\",\n      \"table-002-abc53325c1:r6:c4\"\n    ],\n    \"cell_details\": [\n      {\n        \"source_cell\": \"table-002-abc53325c1:r6:c1\",\n        \"row_number\": 5,\n        \"column\": \"Name\",\n        \"text\": \"2009 swine flu pandemic\",\n        \"display_text\": \"2009 swine flu pandemic [ 225 ] [ 226 ]\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [\n          {\n            \"position\": \"superscript\",\n            \"text\": \"[ 225 ]\",\n            \"role\": \"reference\",\n            \"target\": \"cite_note-225\",\n            \"note\": \"Donaldson LJ, Rutter PD, Ellis BM, Greaves FE, Mytton OT, Pebody RG, Yardley IE (December 2009). \\\"Mortality from pandemic A/H1N1 2009 influenza in England: public health surveillance study\\\" . BMJ . 339 b5213. doi : 10.1136/bmj.b5213 . PMC 2791802 . PMID 20007665 .\"\n          },\n          {\n            \"position\": \"superscript\",\n            \"text\": \"[ 226 ]\",\n            \"role\": \"reference\",\n            \"target\": \"cite_note-226\",\n            \"note\": \"\\\"First Global Estimates of 2009 H1N1 Pandemic Mortality Released by CDC-Led Collaboration\\\" . Centers for Disease Control and Prevention (CDC). 25 June 2012 . Retrieved 7 July 2012 .\"\n          }\n        ],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-002-abc53325c1:r6:c2\",\n        \"row_number\": 5,\n        \"column\": \"Date\",\n        \"text\": \"2009–10\",\n        \"display_text\": \"2009–10\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-002-abc53325c1:r6:c4\",\n        \"row_number\": 5,\n        \"column\": \"Subtype\",\n        \"text\": \"H1N1/09\",\n        \"display_text\": \"H1N1/09\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      }\n    ],\n    \"sufficient\": true,\n    \"warnings\": [\n      \"Expanded rowspan/colspan values into the logical grid.\",\n      \"Superscript/subscript annotations are available in row_cells.\"\n    ]\n  }\n}",
+        "evidence_type": "table",
+        "title": "Computed table result: According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+        "section_path": [
+          "Comparisons to other pandemics and epidemics"
+        ],
+        "retrieval_query": "According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+        "retriever": "table",
+        "rank": 2,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "7def40599a1c4d0d64575121",
+        "source_cells": [
+          "table-002-abc53325c1:r6:c1",
+          "table-002-abc53325c1:r6:c2",
+          "table-002-abc53325c1:r6:c4"
+        ],
+        "metadata": {
+          "retrieval_stage": "table_computation",
+          "table_request_id": "table-r1-2-561321695f58",
+          "operation": "lookup",
+          "calculation": null,
+          "table_computation_sufficient": true,
+          "warnings": [
+            "Expanded rowspan/colspan values into the logical grid.",
+            "Superscript/subscript annotations are available in row_cells."
+          ]
+        }
+      },
+      {
+        "evidence_id": "2009_swine_flu_pandemic.html#section-018-00",
+        "source_article": "2009_swine_flu_pandemic.html",
+        "content": "Article: 2009 swine flu pandemic\nSection: Prevention > Infection control > Pigs and food safety\n\nMain article: 2009 swine flu pandemic actions concerning pigs\n\nThe pandemic virus is a type of swine influenza, derived originally from a strain which lived in pigs, and this origin gave rise to the common name of \"swine flu\". This term is widely used by mass media, though the Paris-based World Organisation for Animal Health as well as industry groups such as the U.S. National Pork Board, the American Meat Institute, and the Canadian Pork Council objected to widespread media use of the name \"swine flu\" and suggested it should be called \"North American flu\" instead, while the World Health Organization switched its designation from \"swine influenza\" to \"influenza A (H1N1)\" in late April 2009.[153][154] The virus has been found in U.S. hogs,[155] and Canadian[156] as well as in hogs in Northern Ireland, Argentina, and Norway.[157] Leading health agencies and the United States Secretary of Agriculture have stressed that eating properly cooked pork or other food products derived from pigs will not cause flu.[158][159] Nevertheless, on 27 April, Azerbaijan imposed a ban on the importation of animal husbandry products from the entire Americas.[160] The Indonesian government also halted the importation of pigs and initiated the examination of 9 million pigs in Indonesia.[161] The Egyptian government ordered the slaughter of all pigs in Egypt on 29 April.[162]",
+        "evidence_type": "text",
+        "title": "Pigs and food safety",
+        "section_path": [
+          "Prevention",
+          "Infection control",
+          "Pigs and food safety"
+        ],
+        "retrieval_query": "According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+        "retriever": "vector",
+        "rank": 4,
+        "raw_score": 0.7020394802093506,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "2009_swine_flu_pandemic.html#section-000-00",
+        "source_article": "2009_swine_flu_pandemic.html",
+        "content": "Article: 2009 swine flu pandemic\nSection: Lead\n\n2009–2010 pandemic of swine influenza caused by H1N1 influenza virus\n\n2009 swine flu pandemic\n\n  50,000+ confirmed cases\n\n  5,000–49,999 confirmed cases\n\n  500–4,999 confirmed cases\n\n  50–499 confirmed cases\n\n  5–49 confirmed cases\n\n  1–4 confirmed cases\n\n  No confirmed cases\n\nDiseaseInfluenza\n\nVirus strainPandemic H1N1/09 virus\n\nSourcePigs, likely indirectly\n\nLocationWorldwide\n\nFirst outbreakNorth America[1][2]\n\nIndex caseVeracruz, Mexico[1][3]\n\nArrival dateSeptember 2008[4][5]\n\nDateJanuary 2009 – 10 August 2010[6][7]\n\nConfirmed cases491,382 (lab-confirmed)[8]\n\nSuspected cases‡700 million to 1.4 billion (estimate)[9]\n\nDeaths\nLab confirmed deaths: 18,449 (reported to the WHO)[10]\n\nEstimated excess death: 284,000[11]\n\n‡Suspected cases have not been confirmed by laboratory tests as being due to this strain, although some other strains may have been ruled out.\n\nInfluenza (flu)\n\nTypes\n\nAvian\n\nA/H5N1 subtype\n\nCanine\n\nEquine\n\nSwine\n\nA/H1N1 subtype\n\nVaccines\n\n2009 pandemic\n\nPandemrix\n\nLive attenuated\n\nSeasonal flu vaccine brands\n\nTreatment\n\nAmantadine\n\nBaloxavir marboxil\n\nLaninamivir\n\nOseltamivir\n\nPeramivir\n\nRimantadine\n\nUmifenovir\n\nZanamivir\n\nPandemics\n\n1889–1890 Russian flu\n\n1918 Spanish flu\n\n1957–1958 Asian flu\n\n1968 Hong Kong flu\n\n1977 Russian flu\n\n2009 swine flu\n\nOutbreaks\n\n1976 swine flu\n\n2006 H5N1 India\n\n2007 Australian equine\n\n2007 Bernard Matthews H5N1\n\n2008 West Bengal\n\n2015 United States H5N2 outbreak\n\n2020–2023 H5N8 outbreak\n\nSee also\n\nFlu season\n\nInfluenza evolution\n\nInfluenza research\n\nInfluenza-like illness\n\nVaccine reformulations\n\nv\n\nt\n\ne\n\nThe 2009 swine flu pandemic, caused by the H1N1/swine flu/influenza virus and declared by the World Health Organization (WHO) from June 2009 to August 2010, was the third recent flu pandemic involving the H1N1 virus (the first being the 1918–1920 Spanish flu pandemic and the second being the 1977 Russian flu).[12][13] The first identified human case was in La Gloria, Mexico, a rural town in Veracruz.[14][15] The virus appeared to be a new strain of H1N1 that resulted from a previous triple reassortment of bird, swine, and human flu viruses which further combined with a Eurasian pig flu virus,[16] leading to the term \"swine flu\".[17]\n\nUnlike most strains of influenza, the pandemic H1N1/09 virus did not disproportionately infect adults older than 60 years; this was an unusual and characteristic feature of the H1N1 pandemic.[18] Even in the case of previously healthy people, a small percentage develop pneumonia or acute respiratory distress syndrome (ARDS). This manifests itself as increased breathing difficulty and typically occurs three to six days after initial onset of flu symptoms.[19][20] The pneumonia caused by flu can be either direct viral pneumonia or a secondary bacterial pneumonia. A November 2009 New England Journal of Medicine article recommended that flu patients whose chest X-ray indicates pneumonia receive both antivirals and antibiotics.[21] In particular, it is a warning sign if a child seems to be getting better and then relapses with high fever, as this relapse may be bacterial pneumonia.[22]\n\nSome studies estimated that the real number of cases including asymptomatic and mild cases could be 700 million to 1.4 billion people—or 11% to 21% of the global population of 6.8 billion at the time.[9] The lower value of 700 million is more than the 500 million people estimated to have been infected by the Spanish flu pandemic.[23] However, the Spanish flu infected approximately a third of the world population at the time, a much higher proportion.[24]\n\nThe number of lab-confirmed deaths reported to the WHO is 18,449[10] and is widely considered a gross underestimate.[25] The WHO collaborated with the US Centers for Disease Control and Prevention (CDC) and Netherlands Institute for Health Services Research (NIVEL) to produce two independent estimates of the influenza deaths that occurred during the global pandemic using two distinct methodologies. The 2009 H1N1 flu pandemic is estimated to have actually caused about 284,000 (range from 150,000 to 575,000) excess deaths by the WHO-USCDC study and 148,000–249,000 excess respiratory deaths by the WHO-NIVEL study.[26][27] A study done in September 2010 showed that the risk of serious illness resulting from the 2009 H1N1 flu was no higher than that of the yearly seasonal flu.[28] For comparison, the WHO estimates that 250,000 to 500,000 people die of seasonal flu annually.[29] However, the H1N1 influenza epidemic in 2009 resulted in a large increase in the number of new cases of narcolepsy.[30]",
+        "evidence_type": "text",
+        "title": "Lead",
+        "section_path": [
+          "Lead"
+        ],
+        "retrieval_query": "According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+        "retriever": "vector",
+        "rank": 5,
+        "raw_score": 0.7178757786750793,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "2009_swine_flu_pandemic.html#section-008-00",
+        "source_article": "2009_swine_flu_pandemic.html",
+        "content": "Article: 2009 swine flu pandemic\nSection: Cause > Transmission\n\nSpread of the H1N1 virus is thought to occur in the same way that seasonal flu spreads. Flu viruses are spread mainly from person to person through coughing or sneezing by people with influenza. Sometimes people may become infected by touching something—such as a surface or object—with flu viruses on it and then touching their face.[46]\n\nThe basic reproduction number (the average number of other individuals whom each infected individual will infect, in a population which has no immunity to the disease) for the 2009 novel H1N1 is estimated to be 1.75.[95] A December 2009 study found that the transmissibility of the H1N1 influenza virus in households is lower than that seen in past pandemics. Most transmissions occur soon before or after the onset of symptoms.[96]\n\nThe H1N1 virus has been transmitted to animals, including swine, turkeys, ferrets, household cats, at least one dog, and a cheetah.[97][98][99][100]",
+        "evidence_type": "text",
+        "title": "Transmission",
+        "section_path": [
+          "Cause",
+          "Transmission"
+        ],
+        "retrieval_query": "According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+        "retriever": "vector",
+        "rank": 6,
+        "raw_score": 0.7182577252388,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "2009_swine_flu_pandemic.html#section-001-00",
+        "source_article": "2009_swine_flu_pandemic.html",
+        "content": "Article: 2009 swine flu pandemic\nSection: Name\n\nFurther information: Pandemic H1N1/09 virus § Nomenclature\n\nThe World Health Organization uses the term \"(H1N1) 2009 pandemic\" when referring to the event, and officially adopted the name \"A(H1N1)pdm09\" for the virus in 2010, after the conclusion of the pandemic.[31]\n\nControversy arose early on regarding the wide assortment of terms used by journalists, academics,\nand officials. Labels like \"H1N1 flu\", \"Swine flu\", \"Mexican flu\", and variations thereof were typical. Criticism centered on how these names may confuse or mislead the public. It was argued that the names were overly technical (e.g. \"H1N1\"), incorrectly implying that the disease is caused by contact with pigs or pig products, or provoking stigmatization against certain communities (e.g. \"Mexican\"). Some academics of the time asserted there is nothing wrong with such names,[32] while research published years later (in 2013) concluded that Mexican Americans and Latino Americans had indeed been stigmatized due to the frequent use of term \"Mexican flu\" in the news media.[33]\n\nOfficial entities adopted terms with varying consistency over the course of the pandemic. The CDC used names like \"novel influenza A (H1N1)\" or \"2009 H1N1 flu\".[34] The Netherlands National Institute for Public Health and the Environment used the term \"Pig Flu\" early on. Officials in Taiwan suggested use of the names \"H1N1 flu\" or \"new flu\".[35] The World Organisation for Animal Health, an IGO based in Europe, proposed the name \"North American influenza\".[36] The European Commission adopted the term \"novel flu virus\". Officials in Israel and South Korea briefly considered adoption of the name \"Mexican virus\" due to concern about the use of the word \"swine\".[37] In Israel, objections stemmed from sensitivity to religious restrictions on eating pork in the Jewish and Muslim populations,[38] in South Korea, concerns were influenced by the importance of pork and domestic pigs.\n\nAs terminology changed to deal with these and other such issues, further criticism was made that the situation was unnecessarily confusing. For example, the news department at the journal Science produced an article with the humorous title \"Swine Flu Names Evolving Faster Than Swine Flu Itself\".[39]",
+        "evidence_type": "text",
+        "title": "Name",
+        "section_path": [
+          "Name"
+        ],
+        "retrieval_query": "According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+        "retriever": "vector",
+        "rank": 7,
+        "raw_score": 0.7243341207504272,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "2009_swine_flu_pandemic.html#section-026-00",
+        "source_article": "2009_swine_flu_pandemic.html",
+        "content": "Article: 2009 swine flu pandemic\nSection: Epidemiology > Data reporting and accuracy\n\nSee also: GISAID, National Influenza Centers, Disease surveillance, and Clinical surveillance\n\nInfluenza surveillance information \"answers the questions of where, when, and what influenza viruses are circulating. Sharing of such information is especially crucial during an emergent pandemic as in April 2009, when the genetic sequences of the initial viruses were rapidly and openly shared via the GISAID Initiative within days of identification,[183] playing a key role in facilitating an early response to the evolving pandemic.[184][185][186] Surveillance is used to determine if influenza activity is increasing or decreasing, but cannot be used to ascertain how many people have become ill with influenza.\"[187] For example, as of late June, influenza surveillance information showed the U.S. had nearly 28,000 laboratory-confirmed cases including 3,065 hospitalizations and 127 deaths. But mathematical modelling showed an estimated 1 million Americans had the 2009 pandemic flu at the time, according to Lyn Finelli, a flu surveillance official with the CDC.[188] Estimating deaths from influenza is also a complicated process. In 2005, influenza only appeared on the death certificates of 1,812 people in the US. The average annual US death toll from flu is, however, estimated to be 36,000.[189] The CDC explains:[190] \"[I]nfluenza is infrequently listed on death certificates of people who die from flu-related complications\" and hence, \"Only counting deaths where influenza was included on a death certificate would be a gross underestimation of influenza's true impact.\"\n\nInfluenza surveillance information on the 2009 H1N1 flu pandemic is available, but almost no studies attempted to estimate the total number of deaths attributable to H1N1 flu. Two studies were carried out by the CDC; the later of them estimated that between 7,070 and 13,930 deaths were attributable to H1N1 flu from April to 14 November 2009.[191] During the same period, 1,642 deaths were officially confirmed as caused by H1N1 flu.[192][193] The WHO stated in 2010 that total mortality (including unconfirmed or unreported deaths) from H1N1 flu was \"unquestionably higher\" than their own confirmed death statistics.[194]\n\nThe initial outbreak received a week of near-constant media attention. Epidemiologists cautioned that the number of cases reported in the early days of an outbreak can be very inaccurate and deceptive, due to several causes, among them selection bias, media bias and incorrect reporting by governments. Inaccuracies could also be caused by authorities in different countries looking at differing population groups. Furthermore, countries with poor health care systems and older laboratory facilities may take longer to identify or report cases.[195] \"[E]ven in developed countries the [numbers of flu deaths] are uncertain, because medical authorities don't usually verify who actually died of influenza and who died of a flu-like illness\".[196] Joseph S. Bresee, then CDC flu division's epidemiology chief and Michael Osterholm, director of the Center for Infectious Disease Research and Policy pointed out that millions of people have had H1N1 flu, usually in a mild form, so the numbers of laboratory-confirmed cases were actually meaningless, and in July 2009, the WHO stopped keeping count of individual cases and focused more on major outbreaks.[197]",
+        "evidence_type": "text",
+        "title": "Data reporting and accuracy",
+        "section_path": [
+          "Epidemiology",
+          "Data reporting and accuracy"
+        ],
+        "retrieval_query": "According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+        "retriever": "vector",
+        "rank": 8,
+        "raw_score": 0.7512274980545044,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "broadened_article_sections"
+        }
+      },
+      {
+        "evidence_id": "WHO_Model_List_of_Essential_Medicines.html#section-112-00",
+        "source_article": "WHO_Model_List_of_Essential_Medicines.html",
+        "content": "Article: WHO Model List of Essential Medicines\nSection: Immunologicals > Sera, immunoglobulins and monoclonal antibodies\n\nAnti-rabies virus monoclonal antibodies[note 20]\n\nAntivenom immunoglobulin[note 153]\n\nDiphtheria antitoxin\n\nEquine rabies immunoglobulin",
+        "evidence_type": "graph",
+        "title": "Sera, immunoglobulins and monoclonal antibodies",
+        "section_path": [
+          "Immunologicals",
+          "Sera, immunoglobulins and monoclonal antibodies"
+        ],
+        "retrieval_query": "According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 1.4619934558868408,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "2009_swine_flu_pandemic.html"
+          ],
+          "graph_neighbor_rank": 1,
+          "graph_score": 1.483076923076923,
+          "discovery_reasons": [
+            "entity:World_Health_Organization(26)",
+            "entity:Oseltamivir(2)",
+            "entity:Vaccination(10)",
+            "entity:Influenza_vaccine(2)",
+            "entity:Paracetamol(2)",
+            "entity:Ibuprofen(2)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "WHO_Model_List_of_Essential_Medicines.html#section-056-00",
+        "source_article": "WHO_Model_List_of_Essential_Medicines.html",
+        "content": "Article: WHO Model List of Essential Medicines\nSection: Anti-infective medicines > Medicines for Ebola virus disease\n\nAnsuvimab\n\nAtoltivimab/maftivimab/odesivimab (atoltivimab + maftivimab + odesivimab)",
+        "evidence_type": "graph",
+        "title": "Medicines for Ebola virus disease",
+        "section_path": [
+          "Anti-infective medicines",
+          "Medicines for Ebola virus disease"
+        ],
+        "retrieval_query": "According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+        "retriever": "graph",
+        "rank": 2,
+        "raw_score": 1.4994144439697266,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "2009_swine_flu_pandemic.html"
+          ],
+          "graph_neighbor_rank": 1,
+          "graph_score": 1.483076923076923,
+          "discovery_reasons": [
+            "entity:World_Health_Organization(26)",
+            "entity:Oseltamivir(2)",
+            "entity:Vaccination(10)",
+            "entity:Influenza_vaccine(2)",
+            "entity:Paracetamol(2)",
+            "entity:Ibuprofen(2)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Israel.html#section-003-00",
+        "source_article": "Israel.html",
+        "content": "Article: Israel\nSection: History > Prehistory\n\nFurther information: Prehistory of the Levant\n\nThe Ubeidiya prehistoric site in northern Israel shows the presence of archaic humans around 1.5 million years ago.[57] The second-oldest evidence of anatomically modern humans outside Africa is a 200,000-year-old fossil from Misliya Cave on Mount Carmel.[58] The Natufian culture (c. 10,000 BCE) may be linked to the Proto-Afroasiatic language[59][60] and is notable for adopting sedentism before the advent of agriculture and the Neolithic Revolution.[61]",
+        "evidence_type": "graph",
+        "title": "Prehistory",
+        "section_path": [
+          "History",
+          "Prehistory"
+        ],
+        "retrieval_query": "According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 1.5166245698928833,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "2009_swine_flu_pandemic.html"
+          ],
+          "graph_neighbor_rank": 2,
+          "graph_score": 1.335294117647059,
+          "discovery_reasons": [
+            "link",
+            "entity:European_Commission(17)",
+            "entity:Religious_restrictions_on_the_consumption_of_pork(2)"
+          ]
+        }
+      },
+      {
+        "evidence_id": "Barack_Obama.html#section-044-00",
+        "source_article": "Barack_Obama.html",
+        "content": "Article: Barack Obama\nSection: Bibliography > Articles\n\nObama, Barack (1988). \"Why organize? Problems in the inner city\". Illinois Issues. XIV (8 & 9): 40–42. ISSN 0738-9663. Archived from the original on April 21, 2021. Retrieved February 20, 2021.\n\n——————— (1990). \"Tort Law. Prenatal Injuries. Supreme Court of Illinois Refuses to Recognize Cause of Action Brought by Fetus Against Its Mother for Unintentional Infliction of Prenatal Injuries. Stallman v. Youngquist, 125 Ill. 2d 267, 531 N. E.2d 355 (1988)\". Harvard Law Review. 103 (3): 823–828. doi:10.2307/1341352. JSTOR 1341352. Uncredited case comment.[539]\n\n——————— (2005). \"Bound to the Word\". American Libraries. 36 (7): 48–52. JSTOR 25649652.\n\n———————; Clinton, Hillary (May 25, 2006). \"Making Patient Safety the Centerpiece of Medical Liability Reform\". The New England Journal of Medicine. 354 (21): 2205–2208. doi:10.1056/NEJMp068100. PMID 16723612.\n\n——————— (2007). \"Renewing American Leadership\". Foreign Affairs. 86 (4): 2–16. JSTOR 20032411.\n\n——————— (2008). \"A More Perfect Union\". The Black Scholar. 38 (1): 17–23. doi:10.1080/00064246.2008.11413431. JSTOR 41069296. S2CID 219318643.\n\n——————— (2009). \"What Science Can Do\". Issues in Science and Technology. 25 (4): 23–30. JSTOR 43314908.\n\n——————— (2009). \"A New Beginning\". Zeitschrift für Staats- und Europawissenschaften. 7 (2): 173–186. doi:10.5771/1610-7780-2009-2-173. JSTOR 26165626.\n\n——————— (August 2, 2016). \"United States Health Care Reform: Progress to Date and Next Steps\". Journal of the American Medical Association. 130 (5): 811–866. doi:10.1001/jama.2016.9797. PMC 5069435. PMID 27400401.\n\n——————— (January 5, 2017). \"The President's Role in Advancing Criminal Justice Reform\" (PDF). Harvard Law Review. 130 (3): 811–866. JSTOR 44865604.\n\n——————— (January 13, 2017). \"The Irreversible Momentum of Clean Energy\". Science. 355 (6321): 126–129. Bibcode:2017Sci...355..126O. doi:10.1126/science.aam6284. PMID 28069665. S2CID 30991274.\n\n——————— (May 2017). \"Repealing the ACA Without a Replacement—the Risks to American Health Care\". Obstetrical & Gynecological Survey. 72 (5): 263–264. doi:10.1097/OGX.0000000000000447. S2CID 80088566.",
+        "evidence_type": "graph",
+        "title": "Articles",
+        "section_path": [
+          "Bibliography",
+          "Articles"
+        ],
+        "retrieval_query": "According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+        "retriever": "graph",
+        "rank": 1,
+        "raw_score": 1.6196280717849731,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "graph_seeded_sections",
+          "seed_articles": [
+            "2009_swine_flu_pandemic.html"
+          ],
+          "graph_neighbor_rank": 3,
+          "graph_score": 1.3,
+          "discovery_reasons": [
+            "link",
+            "entity:JAMA_(journal)(2)"
+          ]
+        }
+      }
+    ],
+    "assessment": {
+      "ready_to_answer": false,
+      "supported_requirements": [
+        "The first identified human case is supported: the lead states it was in La Gloria, Mexico, a rural town in Veracruz, and the History section says the earliest known human case was traced to 9 March 2009 in a 5-year-old boy in La Gloria, Veracruz, Mexico.",
+        "What the virus appeared to be made from is supported: the lead says it appeared to be a new H1N1 strain resulting from a previous triple reassortment of bird, swine, and human flu viruses that further combined with a Eurasian pig flu virus; the Cause section similarly says the strain contains genes from five different flu viruses: North American swine, North American avian, human influenza, and two swine influenza viruses typically found in Asia and Europe.",
+        "What can and cannot be said with certainty about origin is supported: the Epidemiology section explicitly says it is not known precisely where or when the virus originated; scientific analyses suggested the outbreak strain first evolved around September 2008 and circulated among humans for several months before formal recognition. The History section adds that genetic divergence analysis indicated a jump to humans in 2008, probably after June and not later than end of November, likely around September 2008.",
+        "Competing hypotheses about geographic origin are supported: History reports 2009 U.S. agricultural speculation that it most likely emerged in pigs in Asia and then traveled to North America in a human, while emphasizing there was no way to prove that hypothesis; it also reports a later 2016 study finding the 2009 H1N1 virus likely originated from pigs in a very small region of central Mexico."
+      ],
+      "missing_requirements": [],
+      "retrieval_requests": [
+        {
+          "missing_fact": "Outstanding information required to answer the question.",
+          "query": "According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+          "target_articles": [],
+          "keywords": [],
+          "preferred_retriever": "hybrid"
+        }
+      ],
+      "table_requests": [],
+      "unresolved_conflicts": [
+        "The article presents multiple non-certain geographic-origin hypotheses: speculative emergence in pigs in Asia versus a later study suggesting likely origin from pigs in central Mexico. This is not a resolvable contradiction from the supplied evidence, but the question asks what can and cannot be said with certainty, and the article explicitly says precise where/when origin is unknown."
+      ],
+      "explanation": "The evidence is sufficient to answer all parts of the question directly from text; no table work or additional retrieval is needed."
+    },
+    "assessment_history": [
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "The article identifies the earliest known/first identified human case as a 5-year-old boy in La Gloria, Veracruz, Mexico, traced to 9 March 2009.",
+          "The article says the virus appeared to contain genes from five different flu viruses: North American swine influenza, North American avian influenza, human influenza, and two swine influenza viruses typically found in Asia and Europe.",
+          "The article states it is not known precisely where or when the virus originated.",
+          "The article allows a qualified statement about timing: analyses suggested the H1N1 strain first evolved/jumped to humans in 2008, probably after June, not later than end of November, likely around September 2008, and circulated among humans for several months before formal recognition.",
+          "The article presents competing/qualified possibilities about place of origin: 2009 U.S. agricultural officials speculated it most likely emerged in pigs in Asia and traveled to North America in a human, while a later 2016 study found it likely originated from pigs in a very small region of central Mexico."
+        ],
+        "missing_requirements": [],
+        "retrieval_requests": [],
+        "table_requests": [
+          {
+            "missing_fact": "According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+            "source_article": "2009_swine_flu_pandemic.html",
+            "table_id": "8b065eb423653d4efc0e01c6",
+            "expected_caption": null,
+            "operation": "auto",
+            "columns_needed": [],
+            "row_filters": {},
+            "comparison_key": null
+          },
+          {
+            "missing_fact": "According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+            "source_article": "2009_swine_flu_pandemic.html",
+            "table_id": "7def40599a1c4d0d64575121",
+            "expected_caption": null,
+            "operation": "auto",
+            "columns_needed": [],
+            "row_filters": {},
+            "comparison_key": null
+          }
+        ],
+        "unresolved_conflicts": [
+          "Place of origin is not certain within the article: one cited view speculates emergence in pigs in Asia, while a later cited study says likely from pigs in a small region of central Mexico. Therefore only uncertainty and competing hypotheses can be stated, not a definitive origin location."
+        ],
+        "explanation": "The supplied text evidence is sufficient to answer all parts of the question. No table work is needed because the question is fully addressed by prose in the History, Cause, and Epidemiology sections. The answer should note both the first identified human case and the virus's genetic makeup, and should carefully distinguish what the article permits us to say with certainty (uncertainty about exact origin in place/time) from what it presents as likely based on analyses and later studies."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "First identified/earliest known human case location: the History section says the earliest known human case was traced to a 5-year-old boy on 9 March 2009 in La Gloria, Veracruz, Mexico; the Mexico subsection also supports Mexico as the setting of early cases/outbreak recognition.",
+          "What the virus appeared to be made from: the Cause section says genetic analyses determined the strain contains genes from five different flu viruses: North American swine influenza, North American avian influenza, human influenza, and two swine influenza viruses typically found in Asia and Europe.",
+          "What can and cannot be said with certainty about where/when the virus originated: the Epidemiology section explicitly states it is not known precisely where or when the virus originated; scientific analyses suggested it first evolved around September 2008 and circulated in humans for several months before formal recognition. The History section adds a narrower timing estimate (jumped to humans in 2008, probably after June and not later than end of November, likely around September 2008) and presents competing location hypotheses/speculations (Asia via pigs to North America in a human; later 2016 study suggesting pigs in a very small region of central Mexico), which supports the uncertainty about exact place of origin while allowing cautious statements about suggested timing and possible locations."
+        ],
+        "missing_requirements": [],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Outstanding information required to answer the question.",
+            "query": "According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+            "target_articles": [],
+            "keywords": [],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [
+          "Location of origin is uncertain within the article: one 2009 speculation says the virus most likely emerged in pigs in Asia and traveled to North America in a human, while a later 2016 report says it likely originated from pigs in a very small region of central Mexico. This does not block answering because the question asks what can and cannot be said with certainty."
+        ],
+        "explanation": "The evidence is sufficient to answer all parts of the question from text alone. No table work is needed."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "First identified human case location: the lead states the first identified human case was in La Gloria, Mexico, a rural town in Veracruz; the History section also traces the earliest known human case to a 5-year-old boy in La Gloria, Mexico, in Veracruz.",
+          "Virus composition: the lead says the virus appeared to be a new strain of H1N1 resulting from a previous triple reassortment of bird, swine, and human flu viruses which further combined with a Eurasian pig flu virus; the Cause section similarly says it contains genes from five different flu viruses, including North American swine, North American avian, human influenza, and two swine influenza viruses typically found in Asia and Europe.",
+          "What can and cannot be said with certainty about origin in place and time: the Epidemiology section explicitly says it is not known precisely where or when the virus originated, while analyses suggested the strain first evolved in September 2008 and circulated among humans for several months before formal recognition. The History section adds that genetic divergence analysis indicated the virus jumped to humans in 2008, probably after June and not later than the end of November, likely around September 2008, and notes competing hypotheses/updates on place of origin (speculation about emergence in pigs in Asia versus a later report that it likely originated from pigs in a very small region of central Mexico)."
+        ],
+        "missing_requirements": [],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Outstanding information required to answer the question.",
+            "query": "According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+            "target_articles": [],
+            "keywords": [],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [
+          "Place of origin is not established with certainty within the supplied evidence: one 2009 speculation says the virus most likely emerged in pigs in Asia and then traveled to North America in a human, while a 2016 report says it likely originated from pigs in a very small region of central Mexico. This supports only a qualified statement, not a certain place of origin."
+        ],
+        "explanation": "The evidence is sufficient to answer all parts of the question using text excerpts alone. No table computation is needed. The answer can state the first identified human case location and the virus's apparent reassortant makeup, and can carefully distinguish between what the article suggests about origin timing/location and what it says is not known precisely."
+      },
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "The first identified human case is supported: the lead states it was in La Gloria, Mexico, a rural town in Veracruz, and the History section says the earliest known human case was traced to 9 March 2009 in a 5-year-old boy in La Gloria, Veracruz, Mexico.",
+          "What the virus appeared to be made from is supported: the lead says it appeared to be a new H1N1 strain resulting from a previous triple reassortment of bird, swine, and human flu viruses that further combined with a Eurasian pig flu virus; the Cause section similarly says the strain contains genes from five different flu viruses: North American swine, North American avian, human influenza, and two swine influenza viruses typically found in Asia and Europe.",
+          "What can and cannot be said with certainty about origin is supported: the Epidemiology section explicitly says it is not known precisely where or when the virus originated; scientific analyses suggested the outbreak strain first evolved around September 2008 and circulated among humans for several months before formal recognition. The History section adds that genetic divergence analysis indicated a jump to humans in 2008, probably after June and not later than end of November, likely around September 2008.",
+          "Competing hypotheses about geographic origin are supported: History reports 2009 U.S. agricultural speculation that it most likely emerged in pigs in Asia and then traveled to North America in a human, while emphasizing there was no way to prove that hypothesis; it also reports a later 2016 study finding the 2009 H1N1 virus likely originated from pigs in a very small region of central Mexico."
+        ],
+        "missing_requirements": [],
+        "retrieval_requests": [
+          {
+            "missing_fact": "Outstanding information required to answer the question.",
+            "query": "According to the 2009 swine flu pandemic article, where was the first identified human case, what did the virus appear to be made from, and what does the article allow us to say—and not say with certainty—about where and when the virus originated?",
+            "target_articles": [],
+            "keywords": [],
+            "preferred_retriever": "hybrid"
+          }
+        ],
+        "table_requests": [],
+        "unresolved_conflicts": [
+          "The article presents multiple non-certain geographic-origin hypotheses: speculative emergence in pigs in Asia versus a later study suggesting likely origin from pigs in central Mexico. This is not a resolvable contradiction from the supplied evidence, but the question asks what can and cannot be said with certainty, and the article explicitly says precise where/when origin is unknown."
+        ],
+        "explanation": "The evidence is sufficient to answer all parts of the question directly from text; no table work or additional retrieval is needed."
+      }
+    ],
+    "input_sanitization": {
+      "input_sanitized": false,
+      "input_escaped": false,
+      "input_evidence_blocks_removed": 0,
+      "input_injection_pattern_hit": false,
+      "input_model_filter_changed": false,
+      "input_model_filter_failed_open": false
+    },
+    "routing": {
+      "route": "strong",
+      "route_reason": "table flagged",
+      "route_point": "after TOC review",
+      "kept_article_chars": null,
+      "check_status": null,
+      "check_p_complete": null,
+      "check_threshold": null,
+      "escalated": null,
+      "router_cost_usd": null,
+      "router_latency_s": null,
+      "first_answer_chars": null
+    }
+  }
+}

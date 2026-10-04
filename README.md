@@ -12,6 +12,28 @@ time-bounded lists, cross-article comparisons, relationships among people and pl
 geopolitical timelines, calculations, conflicting estimates, and questions that
 require caution about causal inference.
 
+## Current final system
+
+The **7.1 Final Survivor** is the safeguarded agent with Router B model assignment. It
+uses `gpt-5.4-mini` for decomposition, article selection, and table planning. When the
+TOC review flags a table question, it uses `gpt-5.4` for the evidence assessor and final
+answer—the two roles with the clearest measured quality benefit. Input sanitising, the
+guarded answer prompt, and the deterministic grounding check remain active.
+
+Across three 19-question GT runs, Router B scored 0.868 at $0.1725 list cost per question
+and 21.3 seconds per question. All-`gpt-5.4` scored 0.886 at $0.3457 per question and 24.7
+seconds. The observed
+quality difference was −0.018 (paired Wilcoxon p = 0.81), while Router B reduced list
+cost by 50% (p = 0.001). This means the experiment detected a cost reduction but did not
+detect a quality difference; it does not prove statistical equivalence.
+
+On the held-out 25-question validation set, the 7.1 Final Survivor scored 0.933, with
+99.3% article recall, at $0.1068 list cost and 18.7 seconds per question. The 6.1 survivor
+scored 0.860, with 100% recall, at $0.0422 and 12.8 seconds. Security testing also reduced
+fabricated-fact adoption from 5 of 59 attack opportunities to 0 of 59; the pre-grouped
+fake-nominee scenarios fell from 5 of 20 to 0 of 20 (Fisher's exact p = 0.047). These
+figures describe the recorded datasets and runs, not guaranteed behavior on every input.
+
 ## Documentation map
 
 For a practical introduction to the LangChain APIs used by this project—including
@@ -27,14 +49,13 @@ Checkpoint READMEs record the project decisions and experimental evidence:
 - [Checkpoint 5.1 agentic evidence graph](wikipedia_retrieval_engine/Capstone%20Checkpoint%205.1/README%205.1.md)
 - Checkpoint 6.1 security and cost audit:
   [security assessment](wikipedia_retrieval_engine/Capstone%20Checkpoint%206.1/README%206.1%20-%20security%20assessment.md),
-  [performance and cost](wikipedia_retrieval_engine/Capstone%20Checkpoint%206.1/README%206.1%20-%20performance%20and%20cost.md),
-  and the submitted
-  [worksheet](wikipedia_retrieval_engine/Capstone%20Checkpoint%206.1/ElenaBaron_Capstone_Checkpoint_6_1_Worksheet_Completed.pdf)
+  and [performance and cost](wikipedia_retrieval_engine/Capstone%20Checkpoint%206.1/README%206.1%20-%20performance%20and%20cost.md)
 - Checkpoint 7.1 production readiness:
   [security improvements](wikipedia_retrieval_engine/Capstone%20Checkpoint%207.1/README%207.1%20-%20security%20improvements.md),
-  with the [security comparison, 5.1 against 7.1](wikipedia_retrieval_engine/Capstone%20Checkpoint%207.1/security_comparison_5_1_vs_7_1.md)
-  and the [quality and cost report](wikipedia_retrieval_engine/Capstone%20Checkpoint%207.1/ragas_7_1_vs_6_1_vs_5_1.pdf);
-  performance and efficiency improvements are to come
+  [performance and efficiency](wikipedia_retrieval_engine/Capstone%20Checkpoint%207.1/README%207.1%20-%20performance%20and%20cost.md),
+  [security comparison, 5.1 against the safeguarded baseline](wikipedia_retrieval_engine/Capstone%20Checkpoint%207.1/security_comparison_5_1_vs_7_1.md),
+  [final accuracy and recall report](wikipedia_retrieval_engine/Capstone%20Checkpoint%207.1/final_validation/ragas_validation_5_1_6_1_7_1.pdf),
+  and [final efficiency report](wikipedia_retrieval_engine/Capstone%20Checkpoint%207.1/final_validation/efficiency_validation_5_1_6_1_7_1.pdf)
 
 For the evolution at a glance — every retriever/approach tried, survived, or abandoned
 across checkpoints 1.1–7.1, with both RAGAS metrics (recall and answer quality) at each
@@ -94,7 +115,6 @@ rag_and_context_engineering/
     ├── Capstone Checkpoint 6.1/           # security and cost audit; the 6.1 survivor
     │   ├── README 6.1 - security assessment.md
     │   ├── README 6.1 - performance and cost.md
-    │   ├── ElenaBaron_Capstone_Checkpoint_6_1_Worksheet_Completed.pdf  # submitted worksheet
     │   ├── survivor_agent.py              # builds the 5.1 survivor from the 5.1 harness constants
     │   ├── security_test_starter.py       # multi-turn attacks (history on); --survivor 5.1, 6.1 or final
     │   ├── cost_test_starter.py           # 5.1, 6.1 or final survivor evaluation + per-call/per-node telemetry (history off)
@@ -109,16 +129,18 @@ rag_and_context_engineering/
     │   └── pricing/model_prices.json      # verified USD per 1M tokens (OpenRouter, 2026-09-27)
     └── Capstone Checkpoint 7.1/           # production readiness: safeguards, then performance and cost
         ├── README 7.1 - security improvements.md
-        ├── security_comparison_5_1_vs_7_1.md  # security result: 5.1 survivor against the 7.1 final system
-        ├── survivor_agent_final.py        # the 7.1 final system: 6.1 survivor + input sanitizer, guarded prompt, grounding check
+        ├── README 7.1 - performance and cost.md
+        ├── security_comparison_5_1_vs_7_1.md  # security result: 5.1 survivor against the safeguarded baseline
+        ├── survivor_agent_final.py        # safeguarded 7.1 graph + optional role-based model routing
         ├── security_test_final.py         # 6.1 security scenarios against the 7.1 system
         ├── cost_test_final.py             # 6.1 cost-and-quality harness against the 7.1 system
         ├── prompt_replay.py               # re-answers saved GT contexts with the legacy and guarded prompts
         ├── jev_route_check.py             # Jev's route for the 44 questions against an answer key
         ├── jev_answer_check.py            # Jev's "complete?" check over saved answers; escalation simulated
-        ├── analyzers/                     # compare_security_runs, rebuild_answer_context, replay_grounding (offline)
-        ├── cost_efficiency/               # performance runs: wikipedia_GT/ (results + telemetry), logs/, console/, run_manifest.csv, reports/
-        ├── ragas_7_1_vs_6_1_vs_5_1.pdf    # RAGAS report: 7.1 against 6.1 and 5.1, with cost and latency
+        ├── analyzers/                     # compare_security_runs, rebuild_answer_context, replay_grounding, build_final_validation (offline)
+        ├── cost_efficiency/               # performance runs: wikipedia_GT/ (results + telemetry), logs/, console/, run_manifest.csv, reports/;
+        │                                  #   wikipedia_GT_validation_set/ (final validation runs, own manifest/logs/console)
+        ├── final_validation/              # 5.1, 6.1, 7.1 survivors, 3 runs each (copies + provenance.csv) and the two final PDFs
         └── security_tests/ cost_tests/ logs/  # run outputs, as in 6.1
 ```
 
@@ -164,18 +186,17 @@ categories/links/tables are the substrate for the Checkpoint 4.1 graph.
   (0.860) at 20% less time and 17% less billed cost, answering text questions almost
   perfectly (0.974) while two table questions regressed. The same graph on `gpt-5.4`
   reached 0.960 in one run, at 3.6× the list cost (4.4× billed).
-- **Checkpoint 7.1 — production readiness (security).** Adds safeguards for the 6.1
-  findings inside the agent graph. Answering moved into the graph so that a check can
-  sit between the drafted answer and the reader: deterministic input sanitising runs
-  before retrieval, the answer prompt states a trust order (earlier turns are never a
-  source) and a quotation rule, and a grounding check marks an answer `[QUARANTINED]`
-  when its names or quotations are not in the retrieved evidence. Against the 5.1
-  survivor, the only configuration with no security work, and with history on, the
-  planted fake nominee list got through 5 of 20 times before and 0 of 20 after
-  (p = 0.047). The fake content never reached the first draft, so the change came
-  before the output check. Validation quality was 0.900 in one run, inside 6.1's
-  range, with no extra model calls; the cost is six correct answers wrongly flagged.
-  Efficiency improvements are to come.
+- **Checkpoint 7.1 — production readiness.** Adds deterministic input sanitising, a
+  guarded answer prompt, and a grounding check inside the agent graph. In the pooled
+  security evaluation, fabricated facts reached 5 of 59 answers before the safeguards
+  and 0 of 59 afterward; the two pre-grouped fake-nominee scenarios fell from 5 of 20
+  to 0 of 20 (Fisher's exact p = 0.047). The controls were evaluated together, so the
+  result does not assign causality to a single layer. Performance experiments then
+  compared all-mini, all-`gpt-5.4`, question routing, answer checking, and role-based
+  routing. Router B became the Final Survivor: it uses `gpt-5.4` for the assessor and
+  answer on table questions and mini elsewhere. Across three GT runs it scored 0.868 at
+  half the list cost of all-`gpt-5.4`; on three held-out validation runs it scored 0.933
+  at $0.1068 per question, with 99.3% article recall.
 
 ## Ground-truth files
 
@@ -435,16 +456,16 @@ API calls.
 The Checkpoint 6.1 READMEs record the scenarios, the choices behind them, and the
 results.
 
-## Checkpoint 7.1 safeguards and security tests
+## Checkpoint 7.1 production-readiness tests
 
 `Capstone Checkpoint 7.1/survivor_agent_final.py` builds the 6.1 survivor with three
 safeguards inside its graph: input sanitising before retrieval, the guarded answer
 instructions (`wiki_agents/prompts.py`), and a grounding check between the drafted answer
-and the reader. Answering moved into the graph so the check can sit there; the new graph
-arguments default to off, so the 2.1–6.1 runs are unchanged. The 7.1 entry points import
-the 6.1 starters, so the scenarios, detectors, dataset, and judge match the runs they are
-compared with, and they write results and logs under `Capstone Checkpoint 7.1/`. Each
-script has a `--self-check` that runs without API calls.
+and the reader. This all-mini configuration is the **7.1 safeguarded baseline**. The
+selected **7.1 Final Survivor** adds Router B: `gpt-5.4` is used for the assessor and
+answer when the TOC review flags a table question, while the other roles remain on
+`gpt-5.4-mini`. The 7.1 entry points reuse the 6.1 harnesses so scenarios, datasets,
+detectors, and judges remain comparable.
 
 ```bash
 python "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/survivor_agent_final.py" --self-check
@@ -477,23 +498,35 @@ python "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/analyzers/compare_sec
   --output "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/security_comparison_5_1_vs_7_1.md"
 ```
 
-**Quality and cost (history off).** The 6.1 cost harness on the 7.1 system, with
-telemetry; `--question-id VAL22` runs a smoke test:
+**Quality and cost (history off).** Run the safeguarded all-mini baseline:
 
 ```bash
 python "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/cost_test_final.py"
 ```
 
-The RAGAS report sets the 7.1 run beside the 6.1 runs. The analyzer groups runs by
-`experiment_name`, so the other 6.1 model runs (planner-only, `gpt-5.4`, nano) appear as
-their own groups; the delivered `ragas_7_1_vs_6_1_vs_5_1.pdf` keeps only 5.1, 6.1 on
-`gpt-5.4-mini`, and 7.1:
+Run the selected Router B configuration on a chosen question set and output directory:
 
 ```bash
+python "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/cost_test_final.py" \
+  --routing b \
+  --gt-set "wikipedia_retrieval_engine/GT/wikipedia_GT_validation_set.csv" \
+  --output-dir "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/cost_efficiency/wikipedia_GT_validation_set"
+```
+
+The final validation comparison is rebuilt from copies of the recorded source runs;
+`provenance.csv` preserves the source path and original experiment name for every copy:
+
+```bash
+python "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/analyzers/build_final_validation.py"
 python wikipedia_retrieval_engine/utils/analyze_ragas_experiments.py \
-  --experiments-dir "wikipedia_retrieval_engine/Capstone Checkpoint 6.1/cost_tests/wikipedia_GT_validation_set" \
-  "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/cost_tests/wikipedia_GT_validation_set" \
-  --output "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/ragas_7_1_vs_all_6_1_runs.pdf"
+  --experiments-dir "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/final_validation/runs" \
+  --output "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/final_validation/ragas_validation_5_1_6_1_7_1.pdf" \
+  --title "Final validation: survivor progression from 5.1 to 7.1"
+python wikipedia_retrieval_engine/utils/analyze_ragas_experiments_efficiency.py \
+  --experiments-dir "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/final_validation/runs" \
+  --baseline "6.1 survivor" \
+  --output "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/final_validation/efficiency_validation_5_1_6_1_7_1.pdf" \
+  --title "Survivor quality, cost, and latency"
 ```
 
 **Offline evidence from saved runs.** Rebuild the exact context each saved 6.1 answer
@@ -515,8 +548,8 @@ python "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/analyzers/replay_grou
 python "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/survivor_agent_final.py" --chat --show-state
 ```
 
-The Checkpoint 7.1 README records the design of each safeguard, the runs, and the
-results.
+The two Checkpoint 7.1 READMEs record the safeguard design, routing experiments,
+statistical limitations, and final decision.
 
 ## Analyze RAGAS experiments
 
@@ -606,7 +639,7 @@ python wikipedia_retrieval_engine/utils/analyze_ragas_experiments_efficiency.py 
   --experiments-dir "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/cost_efficiency/wikipedia_GT" \
   --baseline "6.1 survivor" \
   --output "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/cost_efficiency/reports/gt_baseline_6_1_vs_7_1.pdf" \
-  --title "GT baseline: 6.1 survivor against 7.1 final"
+  --title "GT baseline: 6.1 survivor against 7.1 safeguarded baseline"
 ```
 
 With no arguments it reads `Capstone Checkpoint 7.1/cost_efficiency/wikipedia_GT` and
@@ -615,7 +648,10 @@ writes `cost_efficiency/reports/efficiency_report.pdf`. Folders named `reports` 
 
 A routing simulation adds, for example,
 `--route-cheap "6.1 survivor" --route-cheap "7.1 final" --route-strong "6.1 survivor, gpt-5.4"`.
-Tests: `tests/test_analyze_efficiency.py` (reproduces the README 7.1 figures).
+Here, `7.1 final` is the historical experiment label for the all-mini safeguarded
+baseline, not the later Router B Final Survivor.
+Tests for the analyzer's grouping, comparison, and routing logic are in
+`tests/test_analyze_efficiency.py`.
 
 ## Check OpenRouter usage
 
@@ -675,7 +711,21 @@ The controlled experiments establish a useful sequence:
    reliability fixes were measured with history off, where that attack cannot occur.
    Checkpoint 7.1 therefore adds safeguards inside the agent rather than in a test
    harness, and re-runs the 6.1 attacks with history on against the combined changes.
+6. Checkpoint 7.1 then measures where the stronger model earns its cost. Repeated GT
+   runs support Router B: use `gpt-5.4` for evidence assessment and answer writing on
+   table questions, and use mini for decomposition, article selection, and table
+   planning. The held-out validation comparison checks the selected system once the
+   architecture is fixed.
 
 These numbers are experiment-specific, not general claims about one retriever always
 being superior. The complete methods, caveats, and per-question results remain in the
 checkpoint READMEs linked at the top of this file.
+
+## AI assistance disclosure
+
+AI assistance was used to organize code, develop utilities and log-analysis tools,
+consolidate prior run outputs, organize observations, and refine the wording of the
+written analysis. The performance evaluation, prioritization of next steps, and proposed
+security and efficiency changes were determined by the author from the recorded data.
+The author reviewed the prompts, experimental runs, interpretations, and conclusions and
+made the final decisions about the outcomes and evidence included in the report.

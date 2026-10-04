@@ -1,0 +1,33 @@
+Loading the Checkpoint 7.1 survivor agent...
+Loading existing vector DB from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/wikipedia_sections_max10000_no_overlap/
+Loading existing vector DB from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/wikipedia_sections_max10000_no_overlap/
+Loading extracted markdown from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/article_text/wikipedia_markdown/
+Loading existing graph from /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/retrievers/db/graph/wikipedia_graph/graph.json
+Cost test — history OFF, 25 question(s) from wikipedia_GT_validation_set.csv, experiment survivor_final__grounding_surface__route_b
+  survivor=6.1 (5.1 configuration with the 6.1 changes)
+  initial retriever=multistep_entity
+  repeated retrievers=whole_article -> graph_seeded (no breadth nudge)
+  answer context=whole_per_question; table plan repair and retry on; incomplete computations labeled; evidence notice on
+  model=openai/gpt-5.4-mini (every agent role and the answer), table planner=openai/gpt-5.4-mini, judge=openai/gpt-5.4-mini
+  survivor=final (6.1 configuration; safeguards in the graph)
+  grounding policy=surface; answer and guard are graph nodes
+  input sanitising=on (deterministic layers only)
+  answer prompt=guarded (7.1)
+  routing=b: default openai/gpt-5.4-mini; openai/gpt-5.4 for assessor, answer
+  routed when: TOC review flagged a table; decomposer and TOC reviewer always on openai/gpt-5.4-mini
+  AgentState logs=/Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/Capstone Checkpoint 7.1/logs/cost_tests/2026_10_04_15_47_54
+Running experiment:   0%|          | 0/25 [00:00<?, ?it/s]Running experiment:   4%|▍         | 1/25 [08:24<3:21:53, 504.73s/it]Running experiment: 100%|██████████| 25/25 [08:24<00:00, 20.19s/it]  
+
+Experiment complete: Pass: 22 | Partial: 3 | Fail: 0 | Total: 25
+
+Results saved to: /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/Capstone Checkpoint 7.1/cost_efficiency/wikipedia_GT_validation_set/experiments/xenodochial_tarjan.csv
+Telemetry saved to: /Users/elenabaron/MITxPro/RAGandContextEng/capstone/rag_and_context_engineering/wikipedia_retrieval_engine/Capstone Checkpoint 7.1/cost_efficiency/wikipedia_GT_validation_set/telemetry/xenodochial_tarjan__*.csv
+
+PER ROLE (tool) over 25 question(s)
+  role           calls/q  in tok/q out tok/q  cached  token share
+  answer             1.0     23228       239     41%          45%
+  assessor           1.9     20517       619     37%          41%
+  decomposer         1.0       428       112      0%           1%
+  table_planner      1.4      3713       132     39%           7%
+  toc_reviewer       1.0      2330       308     77%           5%
+  slowest questions: VAL05 40s/17 calls, VAL02 39s/12 calls, VAL06 38s/10 calls, VAL17 33s/9 calls, VAL21 31s/9 calls

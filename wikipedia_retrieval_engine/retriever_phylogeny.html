@@ -200,23 +200,26 @@
       to <b>1.00</b> while quality held near <b>.86–.91</b> — the agent's win is <b>recall, ~14× less
       context, and deterministic tables</b>, not raw quality over a strong fixed baseline.
       In 6.1 the same survivor graph on <b>gpt-5.4</b> reached <b>.96</b>, at 4.4× the billed cost.
-      In 7.1 safeguards moved into the graph: a planted-source attack that fooled 5.1 on
-      <b>5 of 20</b> chances fooled it on <b>none</b> (p = .047), with validation quality at <b>.90</b> in one run.</p>
+      In 7.1 safeguards moved into the graph and the final survivor routed table questions'
+      assessor and answer to <b>gpt-5.4</b>: a planted-source attack that fooled 5.1 on
+      <b>5 of 20</b> chances fooled it on <b>none</b> (p = .047), while held-out quality rose
+      to <b>.93</b> over three runs.</p>
     <div class="herogrid">
       <div class="chartpair">
         <div class="chartcard">
           <h3>Test set · survivor progression</h3>
           <div class="chartsub">survivor of each checkpoint · RAGAS · GT-19</div>
-          <svg id="chart" viewBox="0 0 340 172" role="img" aria-label="On the GT test set, recall rose to 1.0 across checkpoints while answer quality stayed flat through Phase 1 then rose to .79 in Phase 2; 6.1 and 7.1 were not run on the test set"></svg>
+          <svg id="chart" viewBox="0 0 340 172" role="img" aria-label="On the GT test set, recall rose to 1.0 across checkpoints while answer quality stayed flat through Phase 1 then rose to .79 in Phase 2 with the table gateway; the 5.1 breadth survivor scored .75, the 6.1 survivor .79, and the 7.1 survivor .87, against .89 for the 7.1 graph on gpt-5.4"></svg>
           <div class="clegend">
             <span><i class="swatch" style="background:var(--recall)"></i>article recall</span>
             <span><i class="swatch" style="background:var(--quality)"></i>answer quality</span>
+            <span><i class="ring"></i>7.1 graph on gpt-5.4 (3 runs)</span>
           </div>
         </div>
         <div class="chartcard">
           <h3>Validation set · survivor progression</h3>
           <div class="chartsub">survivor of each checkpoint · RAGAS · VAL-25</div>
-          <svg id="valchart" viewBox="0 0 340 172" role="img" aria-label="On the held-out validation set, recall rose from .97 to 1.0 while answer quality stayed between .86 and .91; the 6.1 survivor graph on gpt-5.4 reached .96 in one run; the 7.1 safeguarded survivor reached .90 in one run"></svg>
+          <svg id="valchart" viewBox="0 0 340 172" role="img" aria-label="On the held-out validation set, recall rose from .97 to 1.0 and the 7.1 Final Survivor held .99 recall while answer quality reached .93; the 6.1 survivor graph on gpt-5.4 reached .96 in one ceiling run"></svg>
           <div class="clegend">
             <span><i class="swatch" style="background:var(--recall)"></i>article recall</span>
             <span><i class="swatch" style="background:var(--quality)"></i>answer quality</span>
@@ -235,7 +238,7 @@
     Reconstructed from the repo's <b>git history</b> (48 commits, 23 Aug – 28 Sep 2026), the <b>RAGAS experiment CSVs</b>
     (<span class="mono">retriever_kind · article_recall · score</span>), and the <b>checkpoint READMEs</b>.
     Test tiles carry GT-set survivor means; the far-right tile on each row is that checkpoint's held-out <b>validation-set</b> result (the validation set enters at 3.1).
-    1.1–2.1 predate the recall metric. Within 5.1, GT quality first dipped to .59 at the Phase-1 retrieval head (table reader still off — missing capability, not worse reasoning), then the table gateway recovered it to .79; the breadth survivor then closed the validation gap (.845 → .880) at recall 1.00. Phase-2 figures are 4-run means. Checkpoints 6.1 and 7.1 were measured on the validation set only: their test tiles show a dash, the test chart marks them as not run, and each card's detail carries the validation figures. Checkpoint 7.1 (3–4 Oct) comes from its README, the security-run CSVs, and the RAGAS experiment CSV.
+    1.1–2.1 predate the recall metric. Within 5.1, GT quality first dipped to .59 at the Phase-1 retrieval head (table reader still off — missing capability, not worse reasoning), then the table gateway recovered it to .79; the breadth survivor then closed the validation gap (.845 → .880) at recall 1.00, but scored .754 on GT over its three recorded runs, which is the 5.1 point on the test chart (the chart plots each checkpoint's survivor). Phase-2 figures are 4-run means. The 6.1 and 7.1 survivors were run on the GT test set on 4 Oct, three runs each, in the 7.1 performance work; their survivor tiles carry those GT means, and the other 6.1 and 7.1 tiles, measured on the validation set only, show a dash. The 7.1 validation tile is the three-run 7.1Final Survivor; the mini-only safeguarded baseline is omitted because it reproduced 6.1's .860 mean and adds no survivor step. Checkpoint 7.1 (3–4 Oct) comes from its README, the security-run CSVs, and the RAGAS experiment and telemetry CSVs of its performance runs.
   </footer>
 </div>
 
@@ -259,7 +262,7 @@ const CPS = [
   {cp:"4.1", date:"13–15 Sep", theme:"Advanced retrieval"},
   {cp:"5.1", date:"20–21 Sep", theme:"Agentic retriever"},
   {cp:"6.1", date:"25–27 Sep", theme:"Security + cost audit"},
-  {cp:"7.1", date:"3–4 Oct", theme:"Security safeguards"},
+  {cp:"7.1", date:"3–4 Oct", theme:"Safeguards + model routing"},
 ];
 const STATUS = {
   survivor:{tag:"survivor",cls:"survivor"}, built:{tag:"built on",cls:"built"},
@@ -395,27 +398,27 @@ const N = [
    why:"Kills the assessor coin-flip. GT quality 0.70 → 0.79 and strict PASS 0.62 → 0.75 at recall 1.000, over 4 runs. GT10 becomes a reliable pass; GT08 jumped 0.38 → 1.0 as a bonus; the quotation (GT01) and lookup (GT05) sentinels held — deterministic extraction never diluted them.",
    verdict:"Survived — table routing is solved on GT. But the held-out validation set then exposed that its single-section evidence starves synthesis questions → the breadth route below.",
    range:"PASS 0.68–0.79"},
-  {cp:"5.1",name:"Context breadth (broaden + nudge)",st:"survivor",fam:"phase 2 · context",recall:1.00,quality:0.78,
+  {cp:"5.1",name:"Context breadth (broaden + nudge)",st:"survivor",fam:"phase 2 · context",recall:1.00,quality:0.754,
    blurb:"Non-table questions escalate into fuller article context before answering.",
    what:"A new article_broaden route widens the selected articles (top-k sections), and a readiness nudge stops the assessor from answering a non-table question straight from its single initial section — forcing one breadth round first. Additive; table questions still go through the gateway.",
-   why:"The held-out validation set showed 5.1's single-section bet had dipped quality below Checkpoint 4.1 on synthesis questions (people-connection, process-explanation) the assessor answered from one section. Breadth recovered them (VAL06 .62→1.0, VAL15 .75→1.0): validation quality 0.845 → 0.880, matching 4.1's 0.885, at recall 1.000. Clean-passers held; GT (table-heavy) stays ~flat.",
+   why:"The held-out validation set showed 5.1's single-section bet had dipped quality below Checkpoint 4.1 on synthesis questions (people-connection, process-explanation) the assessor answered from one section. Breadth recovered them (VAL06 .62→1.0, VAL15 .75→1.0): validation quality 0.845 → 0.880, matching 4.1's 0.885, at recall 1.000. Clean-passers held. GT (table-heavy) did not follow: 0.754 over its three recorded runs (0.789 / 0.737 / 0.737) against the gateway's 0.789, at recall 1.000.",
    verdict:"Survived Checkpoint 5.1 and is the base of the 6.1 survivor. It closed the validation gap to the prior checkpoint at perfect recall and far less context. Remaining ceiling is non-routing: layout tables (GT03), range-count planner (GT07), aggregation (VAL05). In 6.1 its nudge round was priced at 30% of a text question.",
    rvalid:1.00, qvalid:0.880,
    range:"val 0.845→0.880"},
-  // 6.1: validation set only (GT not run), so the GT metrics are empty
+  // 6.1: measured on validation; the survivor was also run on GT in 7.1 (three runs, 4 Oct)
   {cp:"6.1",name:"Whole articles for text questions (answer replay)",st:"built",fam:"6.1 · context",recall:null,quality:null,
    blurb:"Re-answer saved 5.1 runs with whole articles where no table is needed.",
    what:"An answer replay over the saved 5.1 logs: the agent's selections stay fixed and only what the answer model reads changes. Rules tested: sections (control), whole articles per question, whole articles per article.",
    why:"Text-only question-runs 0.914 → 0.961 at +38% of a text question's list cost. Per article lowered mixed questions (0.975 → 0.950). The one question family that sections really missed was Clinton–Obama: the section answers said themselves that Hillary Clinton's later role was missing.",
    verdict:"Built on: the per-question rule became the 6.1 survivor's answer context.",
    rvalid:1.00, qvalid:0.885},
-  {cp:"6.1",name:"Whole articles + surfaced gaps",st:"survivor",fam:"6.1 · context + reliability",recall:null,quality:null,
+  {cp:"6.1",name:"Whole articles + surfaced gaps",st:"survivor",fam:"6.1 · context + reliability",recall:1.00,quality:0.789,
    blurb:"Whole articles replace breadth; incomplete table evidence is flagged to the user.",
    what:"The 5.1 survivor without the breadth nudge: text-only questions answer from whole articles (escalation loads them if the assessor asks). The table planner's schema slip is repaired with one corrected retry, empty computations are labeled incomplete, and an incomplete final state adds a notice asking the answer to say what could not be found or computed.",
-   why:"Validation 0.860 over 3 runs (0.88 / 0.80 / 0.90): level with 5.1 (0.880 recorded, 0.860 same-day). Text-only 0.850 → 0.974; table 0.867 → 0.736 (VAL24: a successful computation ended the loop before the prose arrived; VAL06: answers hedged under the incomplete label). 20% faster (12.8 s against 16.1 s) and 17% cheaper billed ($0.030 against $0.036 per question).",
+   why:"Validation 0.860 over 3 runs (0.88 / 0.80 / 0.90): level with 5.1 (0.880 recorded, 0.860 same-day). Text-only 0.850 → 0.974; table 0.867 → 0.736 (VAL24: a successful computation ended the loop before the prose arrived; VAL06: answers hedged under the incomplete label). 20% faster (12.8 s against 16.1 s) and 17% cheaper billed ($0.030 against $0.036 per question). GT, three runs on 4 Oct (in 7.1): 0.789 (0.737 / 0.816 / 0.816) at recall 1.00.",
    verdict:"Survived Checkpoint 6.1 and is the base of the 7.1 survivor. Same quality as 5.1, faster and cheaper billed, near-perfect on text questions, and honest about incomplete computations. Its security effect was first measured in 7.1, together with the 7.1 safeguards. Open: table readiness after a computation, a row cap on computations, and the planner's wrong filters.",
    rvalid:1.00, qvalid:0.860,
-   range:"val 0.80–0.90"},
+   range:"GT 0.74–0.82 · val 0.80–0.90"},
   {cp:"6.1",name:"Same architecture, gpt-5.4 in every role",st:"probe",fam:"6.1 · model",recall:null,quality:null,
    blurb:"A stronger model in every role, same graph.",
    what:"The 6.1 survivor with openai/gpt-5.4 for every agent role and the answer; the judge stays gpt-5.4-mini.",
@@ -428,11 +431,12 @@ const N = [
    why:"Planner only: 0.860, no gain for +15% cost. Nano: 0.771, 40% cheaper but twice as slow, and a 510K-token context overflow on VAL24. Free: 0.750 on 4 questions, 520 s per question, a 473K-character answer, and a lost question (provider 503). Every model answered the text-only questions correctly.",
    verdict:"Abandoned: a stronger planner alone does not help, and the cheaper models lose the table questions or the runtime.",
    rvalid:1.00, qvalid:0.771},
-  // 7.1: validation set only (GT not run). Security measured with history on, 155 turns per agent.
+  // 7.1: the survivor was run on GT and validation, three runs each; the safeguard tiles were measured on
+  // validation and in the security runs only. Security measured with history on, 155 turns per agent.
   {cp:"7.1",name:"Grounding check (output guardrail)",st:"built",fam:"7.1 · output check",recall:null,quality:null,
    blurb:"Names and quotations in the answer must appear in the corpus evidence it was given.",
    what:"Deterministic: quoted spans must appear verbatim, and multi-word names and italic titles must appear in the evidence. Numbers are excluded (2% mismatched, none fabricated). It reads only corpus text: a table computation's echoed request carried the planted table into 148 evidence items across 33 turns of the 6.1 logs. Names from the question are not exempted. Policy surface: a [QUARANTINED] notice before the answer.",
-   why:"Offline on saved runs: flags all 3 adoptions from 6.1, and 6 of 54 clean answers (46 before the parsing fixes), 4 of them genuine misquotations the judge passed; VAL20 quoted the real Nobel citation, which is absent from the evidence. Live: flagged 47 of 155 answers, none an adoption, because none reached the draft; 6 were correct answers, 5 of them the same VAL14 answer.",
+   why:"Offline on saved runs: flags all 3 adoptions from 6.1, and 6 of 54 clean answers (46 before the parsing fixes), 4 of them genuine misquotations the judge passed; VAL20 quoted the real Nobel citation, which is absent from the evidence. Live: flagged 47 of 155 answers, none an adoption, because none reached the draft; 6 were correct answers, 5 of them the same VAL14 answer. After the GT baseline its name extraction was corrected (hyphen suffixes, slash-joined headers, bold labels, brackets and quotes, possessives): over 214 saved answers, flags 45 → 22 and false alarms on passing answers 32 → 15, with every planted name still caught (57 of 57).",
    verdict:"Built on: the survivor's backstop. It stopped no attack in the live runs, and it catches what the instructions cannot enforce."},
   {cp:"7.1",name:"Guarded answer instructions",st:"built",fam:"7.1 · prompt",recall:null,quality:null,
    blurb:"A trust order over what the model receives, and a strict quotation rule.",
@@ -444,13 +448,20 @@ const N = [
    what:"Before retrieval: escapes angle brackets, removes pasted blocks shaped like the engine's own evidence, and marks override and persona phrases. History stores the cleaned question.",
    why:"Fired on 3 of 155 turns, all on the formatted plant, which never got through even against 5.1 (0 of 9). It never fired on the plain-text pastes that did. This confirms 6.1: the format is not what makes an attack work.",
    verdict:"Built on, but inert against the attacks that worked: it defends a format the attacker never needed."},
-  {cp:"7.1",name:"Safeguards in the graph",st:"survivor",fam:"7.1 · security",recall:null,quality:null,
-   blurb:"The 6.1 survivor with input sanitising, guarded instructions and a grounding check inside its graph.",
-   what:"Answering moved into the graph so a guardrail sits between the draft and the reader: sanitize_question → retrieval → answer_question → guard_answer. The three safeguards marked built on, the 6.1 table-plan repair and incomplete labels, and conversation history for multi-turn use.",
-   why:"Security, history on: the fake nominee list got through 5 of 20 times against 5.1 and 0 of 20 against this survivor (p = 0.047); all attacks 5 of 59 → 0 of 59. Validation 0.900 in one run, inside 6.1's 0.80–0.90; list cost $0.046 per question, inside 6.1's $0.036–0.052; no extra model calls. The fake content never reached the first draft, so the change came from before the output check.",
-   verdict:"The survivor — today's system. It stops the planted-source attack with no measured cost to quality, cost or latency. Open: 6 correct answers flagged (5 the same VAL14 answer), the decade-table combination, and GT03 still answered wrongly.",
-   rvalid:1.00, qvalid:0.900,
-   range:"val 0.90 (one run)"},
+  {cp:"7.1",name:"Router B: model routing",st:"built",fam:"7.1 · model routing",recall:1.00,quality:0.868,
+   blurb:"gpt-5.4-mini by default; gpt-5.4 for the assessor and the answer when the TOC review flags a table.",
+   what:"A routing step after the TOC review reads the table flag, and a model switch stands in for the assessor and answer models, forwarding their calls to gpt-5.4 on routed questions. The decomposer, the TOC reviewer, and the table planner stay on gpt-5.4-mini.",
+   why:"GT, three runs: 0.868 in every run at $0.173 per question, against 0.886 for the same graph on gpt-5.4 in every role at $0.346 (quality p = 0.81, cost p = 0.001) and 0.711 on gpt-5.4-mini alone (p = 0.047). With the planner on gpt-5.4 as well (the type router), quality was 0.816 at $0.301: a gpt-5.4 planner requests more table data, and GT09's prompts crossed the 272K-token price tier.",
+   verdict:"Built on: the survivor's performance change, keeping gpt-5.4's quality at half its cost.",
+   rvalid:0.993, qvalid:0.933,
+   range:"GT 0.868 ×3"},
+  {cp:"7.1",name:"7.1Final Survivor",st:"survivor",fam:"7.1 · safeguards + model routing",recall:1.00,quality:0.868,
+   blurb:"The safeguarded 6.1 graph plus Router B: gpt-5.4 for the assessor and answer on table-routed questions.",
+   what:"Answering moved into the graph so a guardrail sits between the draft and the reader: sanitize_question → retrieval → answer_question → guard_answer. Router B keeps gpt-5.4-mini as the default and switches only the evidence assessor and final answer to gpt-5.4 when TOC review flags a table.",
+   why:"Security, history on: the fake nominee list got through 5 of 20 times against 5.1 and 0 of 20 against the safeguarded graph (p = 0.047); all attacks 5 of 59 → 0 of 59. On held-out validation, the final survivor scored 0.933 over three runs (0.940 / 0.920 / 0.940), above every 6.1 mini run, at 2.5× their list cost. Recall was 0.993: one VAL10 run mis-typed a missing population source as a table request after the table budget was exhausted, so the bounded loop ended before repeated retrieval; the other two runs found both articles. On GT, three runs: 0.868 in every run at recall 1.00, against 0.886 for the same graph on gpt-5.4 in every role at twice the cost (quality p = 0.81, cost p = 0.001) and 0.711 for the safeguarded graph on gpt-5.4-mini alone.",
+   verdict:"The 7.1Final Survivor. It preserves the safeguards and concentrates the strong model in the two table-path roles that moved quality. Open: harden assessor request typing so a missing source always reaches retrieval after table attempts are exhausted.",
+   rvalid:0.993, qvalid:0.933,
+   range:"GT 0.868 ×3 · val 0.92–0.94 · 3 runs"},
   {cp:"7.1",name:"Model input filter (gpt-5.4-nano)",st:"abandon",fam:"7.1 · input filter",recall:null,quality:null,
    blurb:"Lab 7.1's persona filter: a small model removes role-play attempts.",
    what:"An extra nano call on every user turn, failing open on error.",
@@ -461,6 +472,33 @@ const N = [
    what:"The same grounding check, acting by withholding the answer instead of marking it.",
    why:"Replayed over the saved 6.1 validation answers: quality 0.860 → 0.693, because 10 answers the judge passed would be withheld.",
    verdict:"Abandoned in favor of surface, which keeps the answer behind a [QUARANTINED] notice."},
+  {cp:"7.1",name:"Safeguarded graph, gpt-5.4 in every role",st:"probe",fam:"7.1 · model",recall:0.991,quality:0.886,
+   blurb:"The accuracy target: the strong model everywhere.",
+   what:"The 7.1 safeguarded graph with openai/gpt-5.4 for every agent role and the answer; the judge stays gpt-5.4-mini. Three GT runs.",
+   why:"GT 0.886 (0.868 / 0.842 / 0.947) at $0.346 per question, 6.9× the mini cost and 11 s slower per question. GT09 cost $3.42–3.44 in every run for a partial or failed answer: its assessor and answer prompts crossed the 272K-token tier, where gpt-5.4 doubles its input price.",
+   verdict:"Ceiling probe: the quality target the routing strategies were measured against.",
+   range:"GT 0.84–0.95 · 3 runs"},
+  {cp:"7.1",name:"Router by question type",st:"abandon",fam:"7.1 · model routing",recall:1.00,quality:0.816,
+   blurb:"After the TOC review, a table question runs everything after it on gpt-5.4.",
+   what:"The same routing step as Router B, but the assessor, the table planner, and the answer all switch to gpt-5.4.",
+   why:"GT, one run: 0.816 at $0.301 per question; GT09 alone cost $3.41. It differs from Router B only in the planner, and Router B scored higher at half the cost.",
+   verdict:"Abandoned for Router B: the planner on gpt-5.4 adds cost and no quality."},
+  {cp:"7.1",name:"Router A: Jev reads the question",st:"abandon",fam:"7.1 · model routing",recall:null,quality:null,
+   blurb:"A decision-only model routes each question before retrieval: mini only for text questions about one article.",
+   what:"typesafe/jev-1.13 answers one choice question about the question text (simple: one article, no tables or counting; complex: anything else) for about $0.00002 and 0.2 s; code sends simple to gpt-5.4-mini and everything else, or a failed call, to gpt-5.4. Checked offline on all 44 questions, three repeats each.",
+   why:"Stable: the same choice in every repeat on 43 of 44 questions. Simulated on the saved runs, it kept gpt-5.4's GT quality but saved 2–3%, because three quarters of GT questions are table questions and go to the strong model anyway (17–22% on validation).",
+   verdict:"Not run live: on GT the rule it applies saves too little."},
+  {cp:"7.1",name:"Answer check: Jev asks whether the answer is complete",st:"abandon",fam:"7.1 · model routing",recall:1.00,quality:0.842,
+   blurb:"Mini answers; Jev judges completeness; an incomplete answer is answered again on gpt-5.4.",
+   what:"After a gpt-5.4-mini answer, Jev reads the question, the answer, and the evidence and gives p(complete); below 0.5, or when the evidence exceeds its 32K window, the whole question is answered again on gpt-5.4. A text question with large kept articles goes to gpt-5.4 after the TOC review.",
+   why:"Offline over 214 saved answers, 'complete' separated the judge's non-pass answers (AUC 0.76 GT, 0.93 validation) better than 'grounded' (0.68, 0.83). One live GT run: 0.842 at $0.128 per question, the cheapest routed run; it kept GT09 on mini, and missed wrong counts that read as complete (GT07, GT11).",
+   verdict:"Not pursued: one run; combined with Router B's models it fell to 0.798 over three runs."},
+  {cp:"7.1",name:"Router B + answer check",st:"abandon",fam:"7.1 · model routing",recall:1.00,quality:0.798,
+   blurb:"The answer check, with Router B's models on large evidence and on reruns.",
+   what:"As the answer check, but a rerun or a large-evidence question uses gpt-5.4 only for the assessor and the answer; the planner stays on gpt-5.4-mini.",
+   why:"GT, three runs: 0.798 (0.763 / 0.789 / 0.842) at $0.226 per question, against an estimate of about 0.82 at $0.105 from the single answer-check run. Jev sent 6–8 questions per run to a rerun, each paid twice, and one rerun of GT09 crossed the 272K tier ($3.53).",
+   verdict:"Abandoned: below Router B in quality and above it in cost.",
+   range:"GT 0.76–0.84 · 3 runs"},
 ];
 
 const legend = document.getElementById('legend');
@@ -479,7 +517,7 @@ const VAL = {
   "5.1":{r:1.000,q:0.880,note:"breadth survivor"},
   "6.1":{r:1.000,q:0.860,qs:[{k:"gpt-5.4-mini",q:0.860},{k:"gpt-5.4",q:0.960}],
          note:"6.1 survivor, same graph · gpt-5.4 is one run at 4.4× the billed cost"},
-  "7.1":{r:1.000,q:0.900,note:"safeguarded survivor · one run"},
+  "7.1":{r:0.993,q:0.933,note:"7.1Final Survivor · safeguards + Router B · 3 runs"},
 };
 
 const tl=document.getElementById('timeline');
@@ -568,18 +606,23 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer();});
     data.forEach((d,i)=>{const run=d.r!=null;
       const t=el('text',{x:x(i),y:H-9,'text-anchor':'middle','font-size':10,'font-family':'var(--mono)',fill:run?'var(--ink-soft)':'var(--ink-faint)'});t.textContent=d.x;svg.appendChild(t);
       if(!run){const n=el('text',{x:x(i),y:y(0.75)+3,'text-anchor':'middle','font-size':9,'font-family':'var(--mono)',fill:'var(--ink-faint)'});n.textContent='not run';svg.appendChild(n);}});
-    const line=(key,color)=>{
+    // A quality point with a ring just above it (same checkpoint) takes its label below,
+    // so the two labels never overlap.
+    const line=(key,color,under=[])=>{
       const pts=data.map((d,i)=>[i,d[key]]).filter(p=>p[1]!=null);
       svg.appendChild(el('path',{d:pts.map(([i,v],j)=>(j?'L':'M')+x(i)+' '+y(v)).join(' '),fill:'none',stroke:color,'stroke-width':2.4,'stroke-linejoin':'round','stroke-linecap':'round'}));
       pts.forEach(([i,v])=>{svg.appendChild(el('circle',{cx:x(i),cy:y(v),r:3.4,fill:color}));
-        const t=el('text',{x:x(i),y:y(v)-8,'text-anchor':'middle','font-size':9.5,'font-weight':600,'font-family':'var(--mono)',fill:color});t.textContent=lab(v);svg.appendChild(t);});
+        const below=under.some(p=>p.i===i&&p.v>=v&&p.v-v<0.05);
+        const t=el('text',{x:x(i),y:below?y(v)+14:y(v)-8,'text-anchor':'middle','font-size':9.5,'font-weight':600,'font-family':'var(--mono)',fill:color});t.textContent=lab(v);svg.appendChild(t);});
     };
-    line('r','var(--recall)');line('q','var(--quality)');
+    line('r','var(--recall)');line('q','var(--quality)',rings);
     rings.forEach(p=>{svg.appendChild(el('circle',{cx:x(p.i),cy:y(p.v),r:3.6,fill:'var(--surface)',stroke:'var(--quality)','stroke-width':1.8}));
       const t=el('text',{x:x(p.i)-7,y:y(p.v)+3,'text-anchor':'end','font-size':9.5,'font-weight':600,'font-family':'var(--mono)',fill:'var(--quality)'});t.textContent=`${p.label} ${lab(p.v)}`;svg.appendChild(t);});
   }
-  // The tuned GT test set, one survivor per checkpoint; 6.1 and 7.1 ran on validation only.
-  draw('chart',[{x:"3.1",r:0.899,q:0.747},{x:"4.1",r:0.939,q:0.744},{x:"5.1",r:1.000,q:0.789},{x:"6.1",r:null,q:null},{x:"7.1",r:null,q:null}]);
+  // The tuned GT test set, one survivor per checkpoint. 6.1 and 7.1 are the three-run GT means
+  // measured on 4 Oct (7.1 performance work); the ring is the 7.1 graph on gpt-5.4 (three runs).
+  draw('chart',[{x:"3.1",r:0.899,q:0.747},{x:"4.1",r:0.939,q:0.744},{x:"5.1",r:1.000,q:0.754},{x:"6.1",r:1.000,q:0.789},{x:"7.1",r:1.000,q:0.868}],
+       [{i:4,v:0.886,label:"gpt-5.4"}]);
   // The held-out validation set, from the far-right tiles (VAL). The ring is the same
   // 6.1 survivor graph on gpt-5.4.
   const vk=Object.keys(VAL), g54=VAL["6.1"].qs[1];

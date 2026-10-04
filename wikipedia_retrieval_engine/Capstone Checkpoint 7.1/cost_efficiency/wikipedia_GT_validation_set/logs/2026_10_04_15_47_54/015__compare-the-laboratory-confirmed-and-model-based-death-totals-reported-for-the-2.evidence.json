@@ -1,0 +1,341 @@
+{
+  "run_id": "2026_10_04_15_47_54",
+  "question_number": 15,
+  "logged_at": "2026-10-04T15:52:45-04:00",
+  "question": "Compare the laboratory-confirmed and model-based death totals reported for the 2009 H1N1 pandemic. What numbers or ranges does the article give, and why should they not be treated as equivalent counts?",
+  "final_state": {
+    "question": "Compare the laboratory-confirmed and model-based death totals reported for the 2009 H1N1 pandemic. What numbers or ranges does the article give, and why should they not be treated as equivalent counts?",
+    "retrieval_attempts": 1,
+    "table_attempts": 1,
+    "article_candidates": [
+      {
+        "source_article": "2009_swine_flu_pandemic.html",
+        "representative_chunk": "Article: 2009 swine flu pandemic\nSection: Epidemiology\n\nFurther information: 2009 swine flu pandemic timeline, 2009 swine flu pandemic timeline summary, 2009 swine flu pandemic tables, and 2009 swine flu pandemic by country\n\n2009 flu pandemic data[10]\n\nArea\n\nLab confirmed\n\ndeaths reported to the WHO\n\nWorldwide (total)\n\nAt least 18,449\n\nAfrica\n\n168\n\nAmericas\n\nAt least 8,533\n\nEastern Mediterranean\n\n1,019\n\nEurope\n\nAt least 4,079\n\nSouth-East Asia\n\n1,992\n\nWestern Pacific\n\n1,858\n\nFurther information: Cases and deaths by country\n\nNote: The ratio of confirmed deaths to total deaths due to the pandemic is unknown. For more information, see \"Data reporting and accuracy\".\n\nWhile it is not known precisely where or when the virus originated,[4][178] analyses in scientific journals have suggested that the H1N1 strain responsible for the 2009 outbreak first evolved in September 2008 and circulated amongst humans for several months, before being formally recognised and identified as a novel strain of influenza.[4][5]",
+        "representative_chunk_id": "2009_swine_flu_pandemic.html#section-023-00",
+        "section_title": "Epidemiology",
+        "section_path": [
+          "Epidemiology"
+        ],
+        "retrieval_query": "2009 swine flu pandemic",
+        "discovered_by": "vector",
+        "rank": 1,
+        "raw_score": 0.513473391532898,
+        "score_semantics": "lower_is_better",
+        "seed_articles": [],
+        "discovery_reasons": []
+      }
+    ],
+    "article_reviews": [
+      {
+        "source_article": "2009_swine_flu_pandemic.html",
+        "relevant": true,
+        "reason": "This article covers the 2009 H1N1 pandemic and includes epidemiology and comparison sections that can contain the death totals and context needed.",
+        "relevant_sections": [
+          "Epidemiology",
+          "Comparisons to other pandemics and epidemics",
+          "Data reporting and accuracy"
+        ],
+        "relevant_table_names": [],
+        "relevant_table_ids": [
+          "8b065eb423653d4efc0e01c6",
+          "7def40599a1c4d0d64575121"
+        ],
+        "needs_table_reader": true
+      }
+    ],
+    "selected_articles": [
+      "2009_swine_flu_pandemic.html"
+    ],
+    "rejected_articles": [],
+    "evidence": [
+      {
+        "evidence_id": "2009_swine_flu_pandemic.html#section-023-00",
+        "source_article": "2009_swine_flu_pandemic.html",
+        "content": "Article: 2009 swine flu pandemic\nSection: Epidemiology\n\nFurther information: 2009 swine flu pandemic timeline, 2009 swine flu pandemic timeline summary, 2009 swine flu pandemic tables, and 2009 swine flu pandemic by country\n\n2009 flu pandemic data[10]\n\nArea\n\nLab confirmed\n\ndeaths reported to the WHO\n\nWorldwide (total)\n\nAt least 18,449\n\nAfrica\n\n168\n\nAmericas\n\nAt least 8,533\n\nEastern Mediterranean\n\n1,019\n\nEurope\n\nAt least 4,079\n\nSouth-East Asia\n\n1,992\n\nWestern Pacific\n\n1,858\n\nFurther information: Cases and deaths by country\n\nNote: The ratio of confirmed deaths to total deaths due to the pandemic is unknown. For more information, see \"Data reporting and accuracy\".\n\nWhile it is not known precisely where or when the virus originated,[4][178] analyses in scientific journals have suggested that the H1N1 strain responsible for the 2009 outbreak first evolved in September 2008 and circulated amongst humans for several months, before being formally recognised and identified as a novel strain of influenza.[4][5]",
+        "evidence_type": "text",
+        "title": "Epidemiology",
+        "section_path": [
+          "Epidemiology"
+        ],
+        "retrieval_query": "Compare the laboratory-confirmed and model-based death totals reported for the 2009 H1N1 pandemic. What numbers or ranges does the article give, and why should they not be treated as equivalent counts?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.965705931186676,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Epidemiology",
+          "needs_table_reader": true,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "8b065eb423653d4efc0e01c6",
+            "7def40599a1c4d0d64575121"
+          ]
+        }
+      },
+      {
+        "evidence_id": "2009_swine_flu_pandemic.html#section-028-00",
+        "source_article": "2009_swine_flu_pandemic.html",
+        "content": "Article: 2009 swine flu pandemic\nSection: Comparisons to other pandemics and epidemics\n\nAnnual influenza epidemics are estimated to affect 5–15% of the global population. Although most cases are mild, these epidemics still cause severe illness in 3–5 million people and 290,000–650,000 deaths worldwide every year.[207] On average 41,400 people die of influenza-related illnesses each year in the United States, based on data collected between 1979 and 2001.[204] In industrialised countries, severe illness and deaths occur mainly in the high-risk populations of infants, the elderly and chronically ill patients,[207] although the H1N1 flu outbreak (like the 1918 Spanish flu) differs in its tendency to affect younger, healthier people.[208]\n\nIn addition to these annual epidemics, Influenza A virus strains caused three global pandemics during the 20th century: the Spanish flu in 1918, Asian flu in 1957, and Hong Kong flu in 1968–69. These virus strains had undergone major genetic changes for which the population did not possess significant immunity.[209] Recent genetic analysis has revealed that three-quarters, or six out of the eight genetic segments, of the 2009 flu pandemic strain arose from the North American swine flu strains circulating since 1998, when a new strain was first identified on a factory farm in North Carolina, and which was the first-ever reported triple-hybrid flu virus.[210]\n\nThe Spanish flu began with a wave of mild cases in the spring, followed by more deadly waves in the autumn, eventually killing hundreds of thousands in the United States and 50–100 million worldwide.[211] The great majority of deaths in the 1918 flu pandemic were the result of secondary bacterial pneumonia. The influenza virus damaged the lining of the bronchial tubes and lungs of patients, allowing common bacteria from the nose and throat to infect their lungs. Subsequent pandemics have had many fewer fatalities due to the development of antibiotic medicines which can treat pneumonia.[212]\n\nMajor modern influenza pandemics[213][214]\n\nName\n\nDate\n\nWorld pop.\n\nSubtype\n\nReproduction number[215]\n\nInfected (est.)\n\nDeaths worldwide\n\nCase fatality rate\n\nPandemic severity\n\nSpanish flu[216]\n\n1918–20\n\n1.80 billion\n\nH1N1\n\n1.80 (IQR, 1.47–2.27)\n\n33% (500 million)[217] or >56% (>1 billion)[218]\n\n17[219]–100[220][221] million\n\n2–3%,[218] or ~4%, or ~10%[222]\n\n5\n\nAsian flu\n\n1957–58\n\n2.90 billion\n\nH2N2\n\n1.65 (IQR, 1.53–1.70)\n\n>17% (>500 million)[218]\n\n1–4 million[218]\n\n<0.2%[218]\n\n2\n\nHong Kong flu\n\n1968–69\n\n3.53 billion\n\nH3N2\n\n1.80 (IQR, 1.56–1.85)\n\n>14% (>500 million)[218]\n\n1–4 million[218]\n\n<0.2%[218][223]\n\n2\n\n1977 Russian flu\n\n1977–79\n\n4.21 billion\n\nH1N1\n\n?\n\n?\n\n0.7 million[224]\n\n?\n\n?\n\n2009 swine flu pandemic[225][226]\n\n2009–10\n\n6.85 billion\n\nH1N1/09\n\n1.46 (IQR, 1.30–1.70)\n\n11–21% (0.7–1.4 billion)[227]\n\n151,700–575,400[228]\n\n0.01%[229][230]\n\n1\n\nTypical seasonal flu[t 1]\n\nEvery year\n\n7.75 billion\n\nA/H3N2, A/H1N1, B, ...\n\n1.28 (IQR, 1.19–1.37)\n\n5–15% (340 million – 1 billion)[231]\n\n3–11% or 5–20%[232][233] (240 million – 1.6 billion)\n\n290,000–650,000/year[234]\n\n<0.1%[235]\n\n1\n\nNotes\n\n^ Not pandemic, but included for comparison purposes.\n\nThe influenza virus has caused several pandemic threats over the past century, including the pseudo-pandemic of 1947 (thought of as mild because although globally distributed, it caused relatively few deaths),[209] the 1976 swine flu outbreak and the 1977 Russian flu, all caused by the H1N1 subtype.[209] The world has been at an increased level of alert since the SARS epidemic in Southeast Asia (caused by the SARS coronavirus).[236] The level of preparedness was further increased and sustained with the advent of the H5N1 bird flu outbreaks because of H5N1's high fatality rate, although the strains currently prevalent have limited human-to-human transmission (anthroponotic) capability, or epidemicity.[237]\n\nPeople who contracted influenza before 1957 appeared to have some immunity to H1N1 flu. According to Daniel Jernigan, head of flu epidemiology for the U.S. CDC \"Tests on blood serum from older people showed that they had antibodies that attacked the new virus ... That does not mean that everyone over 52 is immune, since Americans and Mexicans older than that have died of the new flu\".[238]\n\nIn June 2012, a model based study found that the number of deaths related to the H1N1 influenza may have been fifteen times higher than the reported laboratory confirmed deaths, with 80% of the respiratory and cardiovascular deaths in people younger than 65 years and 51% occurring in southeast Asia and Africa. A disproportionate number of pandemic deaths might have occurred in these regions and that efforts to prevent future influenza pandemics need to effectively target these regions.[239]\n\nA WHO-supported 2013 study estimated that the 2009 global pandemic respiratory mortality was ~10-fold higher than the World Health Organization's laboratory-confirmed mortality count (18.631). Although the pandemic mortality estimate was similar in magnitude to that of seasonal influenza, a marked shift toward mortality among persons less than 65 years of age occurred, so that many more life-years were lost. Between 123,000 and 203,000 pandemic respiratory deaths were estimated globally for the last nine months of 2009. The majority (62–85%) were attributed to persons under 65 years of age. The burden varied greatly among countries. There was an almost 20-fold higher mortality in some countries in the Americas than in Europe. The model attributed 148,000–249,000 respiratory deaths to influenza in an average pre-pandemic season, with only 19% in persons <65 years of age.[240]\n\nThe COVID-19 pandemic is not caused by an influenza virus but SARS-CoV-2, a coronavirus which also primarily affects the respiratory system.",
+        "evidence_type": "text",
+        "title": "Comparisons to other pandemics and epidemics",
+        "section_path": [
+          "Comparisons to other pandemics and epidemics"
+        ],
+        "retrieval_query": "Compare the laboratory-confirmed and model-based death totals reported for the 2009 H1N1 pandemic. What numbers or ranges does the article give, and why should they not be treated as equivalent counts?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.9175415635108948,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Comparisons to other pandemics and epidemics",
+          "needs_table_reader": true,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "8b065eb423653d4efc0e01c6",
+            "7def40599a1c4d0d64575121"
+          ]
+        }
+      },
+      {
+        "evidence_id": "2009_swine_flu_pandemic.html#section-026-00",
+        "source_article": "2009_swine_flu_pandemic.html",
+        "content": "Article: 2009 swine flu pandemic\nSection: Epidemiology > Data reporting and accuracy\n\nSee also: GISAID, National Influenza Centers, Disease surveillance, and Clinical surveillance\n\nInfluenza surveillance information \"answers the questions of where, when, and what influenza viruses are circulating. Sharing of such information is especially crucial during an emergent pandemic as in April 2009, when the genetic sequences of the initial viruses were rapidly and openly shared via the GISAID Initiative within days of identification,[183] playing a key role in facilitating an early response to the evolving pandemic.[184][185][186] Surveillance is used to determine if influenza activity is increasing or decreasing, but cannot be used to ascertain how many people have become ill with influenza.\"[187] For example, as of late June, influenza surveillance information showed the U.S. had nearly 28,000 laboratory-confirmed cases including 3,065 hospitalizations and 127 deaths. But mathematical modelling showed an estimated 1 million Americans had the 2009 pandemic flu at the time, according to Lyn Finelli, a flu surveillance official with the CDC.[188] Estimating deaths from influenza is also a complicated process. In 2005, influenza only appeared on the death certificates of 1,812 people in the US. The average annual US death toll from flu is, however, estimated to be 36,000.[189] The CDC explains:[190] \"[I]nfluenza is infrequently listed on death certificates of people who die from flu-related complications\" and hence, \"Only counting deaths where influenza was included on a death certificate would be a gross underestimation of influenza's true impact.\"\n\nInfluenza surveillance information on the 2009 H1N1 flu pandemic is available, but almost no studies attempted to estimate the total number of deaths attributable to H1N1 flu. Two studies were carried out by the CDC; the later of them estimated that between 7,070 and 13,930 deaths were attributable to H1N1 flu from April to 14 November 2009.[191] During the same period, 1,642 deaths were officially confirmed as caused by H1N1 flu.[192][193] The WHO stated in 2010 that total mortality (including unconfirmed or unreported deaths) from H1N1 flu was \"unquestionably higher\" than their own confirmed death statistics.[194]\n\nThe initial outbreak received a week of near-constant media attention. Epidemiologists cautioned that the number of cases reported in the early days of an outbreak can be very inaccurate and deceptive, due to several causes, among them selection bias, media bias and incorrect reporting by governments. Inaccuracies could also be caused by authorities in different countries looking at differing population groups. Furthermore, countries with poor health care systems and older laboratory facilities may take longer to identify or report cases.[195] \"[E]ven in developed countries the [numbers of flu deaths] are uncertain, because medical authorities don't usually verify who actually died of influenza and who died of a flu-like illness\".[196] Joseph S. Bresee, then CDC flu division's epidemiology chief and Michael Osterholm, director of the Center for Infectious Disease Research and Policy pointed out that millions of people have had H1N1 flu, usually in a mild form, so the numbers of laboratory-confirmed cases were actually meaningless, and in July 2009, the WHO stopped keeping count of individual cases and focused more on major outbreaks.[197]",
+        "evidence_type": "text",
+        "title": "Data reporting and accuracy",
+        "section_path": [
+          "Epidemiology",
+          "Data reporting and accuracy"
+        ],
+        "retrieval_query": "Compare the laboratory-confirmed and model-based death totals reported for the 2009 H1N1 pandemic. What numbers or ranges does the article give, and why should they not be treated as equivalent counts?",
+        "retriever": "vector",
+        "rank": 1,
+        "raw_score": 0.7082139849662781,
+        "score_semantics": "lower_is_better",
+        "table_id": null,
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_section",
+          "requested_section": "Data reporting and accuracy",
+          "needs_table_reader": true,
+          "flagged_tables": [],
+          "flagged_table_ids": [
+            "8b065eb423653d4efc0e01c6",
+            "7def40599a1c4d0d64575121"
+          ]
+        }
+      },
+      {
+        "evidence_id": "2009_swine_flu_pandemic.html#table-001-a7cddbc910",
+        "source_article": "2009_swine_flu_pandemic.html",
+        "content": "Structured table (JSON rows, one object per row — read values directly from these rows; do not rely on prior knowledge).\n{\"artifact_id\": \"8b065eb423653d4efc0e01c6\", \"table_id\": \"table-001-a7cddbc910\", \"caption\": \"2009 flu pandemic data\", \"section\": \"Epidemiology\", \"columns\": [\"Area\", \"Lab confirmed deaths reported to the WHO\"], \"legends\": [], \"rows\": [{\"row_number\": 1, \"values\": {\"Area\": \"Worldwide (total)\", \"Lab confirmed deaths reported to the WHO\": \"At least 18,449\"}, \"semantic_signals\": {\"Area\": {\"source_cell\": \"table-001-a7cddbc910:r2:c1\", \"display_text\": \"Worldwide (total)\", \"is_bold\": true, \"is_italic\": false, \"bold_text\": [\"Worldwide (total)\"], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}, \"Lab confirmed deaths reported to the WHO\": {\"source_cell\": \"table-001-a7cddbc910:r2:c2\", \"display_text\": \"At least 18,449\", \"is_bold\": true, \"is_italic\": false, \"bold_text\": [\"At least 18,449\"], \"italic_text\": [], \"annotations\": [], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}}}, {\"row_number\": 2, \"values\": {\"Area\": \"Africa\", \"Lab confirmed deaths reported to the WHO\": \"168\"}, \"semantic_signals\": {}}, {\"row_number\": 3, \"values\": {\"Area\": \"Americas\", \"Lab confirmed deaths reported to the WHO\": \"At least 8,533\"}, \"semantic_signals\": {}}, {\"row_number\": 4, \"values\": {\"Area\": \"Eastern Mediterranean\", \"Lab confirmed deaths reported to the WHO\": \"1,019\"}, \"semantic_signals\": {}}, {\"row_number\": 5, \"values\": {\"Area\": \"Europe\", \"Lab confirmed deaths reported to the WHO\": \"At least 4,079\"}, \"semantic_signals\": {}}, {\"row_number\": 6, \"values\": {\"Area\": \"South-East Asia\", \"Lab confirmed deaths reported to the WHO\": \"1,992\"}, \"semantic_signals\": {}}, {\"row_number\": 7, \"values\": {\"Area\": \"Western Pacific\", \"Lab confirmed deaths reported to the WHO\": \"1,858\"}, \"semantic_signals\": {}}, {\"row_number\": 8, \"values\": {\"Area\": \"Further information: Cases and deaths by country Note: The ratio of confirmed deaths to total deaths due to the pandemic is unknown. For more information, see \\\" Data reporting and accuracy \\\".\", \"Lab confirmed deaths reported to the WHO\": \"Further information: Cases and deaths by country Note: The ratio of confirmed deaths to total deaths due to the pandemic is unknown. For more information, see \\\" Data reporting and accuracy \\\".\"}, \"semantic_signals\": {}}]}",
+        "evidence_type": "table",
+        "title": "2009 flu pandemic data",
+        "section_path": [
+          "Epidemiology"
+        ],
+        "retrieval_query": "Compare the laboratory-confirmed and model-based death totals reported for the 2009 H1N1 pandemic. What numbers or ranges does the article give, and why should they not be treated as equivalent counts?",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "8b065eb423653d4efc0e01c6",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_id": "table-001-a7cddbc910",
+          "n_rows": 8,
+          "rows_rendered": 8,
+          "needs_table_reader": true
+        }
+      },
+      {
+        "evidence_id": "2009_swine_flu_pandemic.html#table-002-abc53325c1",
+        "source_article": "2009_swine_flu_pandemic.html",
+        "content": "Structured table (JSON rows, one object per row — read values directly from these rows; do not rely on prior knowledge).\n{\"artifact_id\": \"7def40599a1c4d0d64575121\", \"table_id\": \"table-002-abc53325c1\", \"caption\": \"Major modern influenza pandemics\", \"section\": \"Comparisons to other pandemics and epidemics\", \"columns\": [\"Name\", \"Date\", \"World pop.\", \"Subtype\", \"Reproduction number\", \"Infected (est.)\", \"Deaths worldwide\", \"Case fatality rate\", \"Pandemic severity\"], \"legends\": [], \"rows\": [{\"row_number\": 1, \"values\": {\"Name\": \"Spanish flu\", \"Date\": \"1918–20\", \"World pop.\": \"1.80 billion\", \"Subtype\": \"H1N1\", \"Reproduction number\": \"1.80 (IQR, 1.47–2.27)\", \"Infected (est.)\": \"33% (500 million) or >56% (>1 billion)\", \"Deaths worldwide\": \"17 –100 million\", \"Case fatality rate\": \"2–3%, or ~4%, or ~10%\", \"Pandemic severity\": \"5\"}, \"semantic_signals\": {\"Name\": {\"source_cell\": \"table-002-abc53325c1:r2:c1\", \"display_text\": \"Spanish flu [ 216 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 216 ]\", \"role\": \"reference\", \"target\": \"cite_note-216\", \"note\": \"Mills CE, Robins JM, Lipsitch M (December 2004). \\\"Transmissibility of 1918 pandemic influenza\\\" . Nature . 432 (7019): 904– 6. Bibcode : 2004Natur.432..904M . doi : 10.1038/nature03063 . PMC 7095078 . PMID 15602562 .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}, \"Infected (est.)\": {\"source_cell\": \"table-002-abc53325c1:r2:c6\", \"display_text\": \"33% (500 million) [ 217 ] or >56% (>1 billion) [ 218 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 217 ]\", \"role\": \"reference\", \"target\": \"cite_note-217\", \"note\": \"Taubenberger JK, Morens DM (January 2006). \\\"1918 Influenza: the mother of all pandemics\\\" . Emerging Infectious Diseases . 12 (1): 15– 22. doi : 10.3201/eid1201.050979 . PMC 3291398 . PMID 16494711 .\"}, {\"position\": \"superscript\", \"text\": \"[ 218 ]\", \"role\": \"reference\", \"target\": \"cite_note-nfp:0-218\", \"note\": \"\\\"Report of the Review Committee on the Functioning of the International Health Regulations (2005) in relation to Pandemic (H1N1) 2009\\\" (PDF) . 5 May 2011. p. 37. Archived (PDF) from the original on 14 May 2015 . Retrieved 1 March 2015 .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}, \"Deaths worldwide\": {\"source_cell\": \"table-002-abc53325c1:r2:c7\", \"display_text\": \"17 [ 219 ] –100 [ 220 ] [ 221 ] million\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 219 ]\", \"role\": \"reference\", \"target\": \"cite_note-Spreeuwenberg-219\", \"note\": \"Spreeuwenberg P, Kroneman M, Paget J (December 2018). \\\"Reassessing the Global Mortality Burden of the 1918 Influenza Pandemic\\\" . American Journal of Epidemiology . 187 (12): 2561– 2567. doi : 10.1093/aje/kwy191 . PMC 7314216 . PMID 30202996 .\"}, {\"position\": \"superscript\", \"text\": \"[ 220 ]\", \"role\": \"reference\", \"target\": \"cite_note-220\", \"note\": \"Morens DM, Fauci AS (April 2007). \\\"The 1918 influenza pandemic: insights for the 21st century\\\" . The Journal of Infectious Diseases . 195 (7): 1018– 28. doi : 10.1086/511989 . PMID 17330793 .\"}, {\"position\": \"superscript\", \"text\": \"[ 221 ]\", \"role\": \"reference\", \"target\": \"cite_note-221\", \"note\": \"Johnson NP, Mueller J (2002). \\\"Updating the accounts: global mortality of the 1918-1920 \\\"Spanish\\\" influenza pandemic\\\". Bulletin of the History of Medicine . 76 (1): 105– 15. doi : 10.1353/bhm.2002.0022 . PMID 11875246 . S2CID 22974230 .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}, \"Case fatality rate\": {\"source_cell\": \"table-002-abc53325c1:r2:c8\", \"display_text\": \"2–3%, [ 218 ] or ~4%, or ~10% [ 222 ]\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [{\"position\": \"superscript\", \"text\": \"[ 218 ]\", \"role\": \"reference\", \"target\": \"cite_note-nfp:0-218\", \"note\": \"\\\"Report of the Review Committee on the Functioning of the International Health Regulations (2005) in relation to Pandemic (H1N1) 2009\\\" (PDF) . 5 May 2011. p. 37. Archived (PDF) from the original on 14 May 2015 . Retrieved 1 March 2015 .\"}, {\"position\": \"superscript\", \"text\": \"[ 222 ]\", \"role\": \"reference\", \"target\": \"cite_note-222\", \"note\": \"Lin II RG, Karlamangla S (6 March 2020). \\\"Why the coronavirus outbreak isn't likely to be a repeat of the 1918 Spanish flu\\\" . Los Angeles Times .\"}], \"background_color\": null, \"sort_value\": null, \"legend_matches\": []}, \"Pandemic severity\": {\"source_cell\": \"table-002-abc53325c1:r2:c9\", \"display_text\": \"5\", \"is_bold\": false, \"is_italic\": false, \"bold_text\": [], \"italic_text\": [], \"annotations\": [], \"background_color\": \"#ff6060\", \"sort_value\": null, \"legend_matches\": []}}}]}\n(NOTE: showing 1 of 7 rows to fit the context budget; the deterministic table executor reads the full table.)",
+        "evidence_type": "table",
+        "title": "Major modern influenza pandemics",
+        "section_path": [
+          "Comparisons to other pandemics and epidemics"
+        ],
+        "retrieval_query": "Compare the laboratory-confirmed and model-based death totals reported for the 2009 H1N1 pandemic. What numbers or ranges does the article give, and why should they not be treated as equivalent counts?",
+        "retriever": "table",
+        "rank": 2,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "7def40599a1c4d0d64575121",
+        "source_cells": [],
+        "metadata": {
+          "retrieval_stage": "toc_selected_table",
+          "table_id": "table-002-abc53325c1",
+          "n_rows": 7,
+          "rows_rendered": 7,
+          "needs_table_reader": true
+        }
+      },
+      {
+        "evidence_id": "2009_swine_flu_pandemic.html#table-001-a7cddbc910#computed-table-r1-1-d79032acaec9",
+        "source_article": "2009_swine_flu_pandemic.html",
+        "content": "Deterministic table-computation result. Use the computed rows/calculation below rather than recomputing them.\n{\n  \"table_request\": {\n    \"missing_fact\": \"Compare the laboratory-confirmed and model-based death totals reported for the 2009 H1N1 pandemic. What numbers or ranges does the article give, and why should they not be treated as equivalent counts?\",\n    \"source_article\": \"2009_swine_flu_pandemic.html\",\n    \"table_id\": \"8b065eb423653d4efc0e01c6\",\n    \"expected_caption\": null,\n    \"operation\": \"auto\",\n    \"columns_needed\": [],\n    \"row_filters\": {},\n    \"comparison_key\": null\n  },\n  \"query_plan\": {\n    \"artifact_id\": \"8b065eb423653d4efc0e01c6\",\n    \"operation\": \"lookup\",\n    \"selected_columns\": [\n      \"Area\",\n      \"Lab confirmed deaths reported to the WHO\"\n    ],\n    \"filters\": {},\n    \"predicates\": [],\n    \"group_by\": [],\n    \"calculation\": null,\n    \"calculation_column\": null,\n    \"sort_column\": null,\n    \"sort_direction\": null,\n    \"limit\": 8\n  },\n  \"result\": {\n    \"request_id\": \"table-r1-1-d79032acaec9\",\n    \"artifact_id\": \"8b065eb423653d4efc0e01c6\",\n    \"result_rows\": [\n      {\n        \"Area\": \"Worldwide (total)\",\n        \"Lab confirmed deaths reported to the WHO\": \"At least 18,449\"\n      },\n      {\n        \"Area\": \"Africa\",\n        \"Lab confirmed deaths reported to the WHO\": \"168\"\n      },\n      {\n        \"Area\": \"Americas\",\n        \"Lab confirmed deaths reported to the WHO\": \"At least 8,533\"\n      },\n      {\n        \"Area\": \"Eastern Mediterranean\",\n        \"Lab confirmed deaths reported to the WHO\": \"1,019\"\n      },\n      {\n        \"Area\": \"Europe\",\n        \"Lab confirmed deaths reported to the WHO\": \"At least 4,079\"\n      },\n      {\n        \"Area\": \"South-East Asia\",\n        \"Lab confirmed deaths reported to the WHO\": \"1,992\"\n      },\n      {\n        \"Area\": \"Western Pacific\",\n        \"Lab confirmed deaths reported to the WHO\": \"1,858\"\n      },\n      {\n        \"Area\": \"Further information: Cases and deaths by country Note: The ratio of confirmed deaths to total deaths due to the pandemic is unknown. For more information, see \\\" Data reporting and accuracy \\\".\",\n        \"Lab confirmed deaths reported to the WHO\": \"Further information: Cases and deaths by country Note: The ratio of confirmed deaths to total deaths due to the pandemic is unknown. For more information, see \\\" Data reporting and accuracy \\\".\"\n      }\n    ],\n    \"calculation\": null,\n    \"source_cells\": [\n      \"table-001-a7cddbc910:r2:c1\",\n      \"table-001-a7cddbc910:r2:c2\",\n      \"table-001-a7cddbc910:r3:c1\",\n      \"table-001-a7cddbc910:r3:c2\",\n      \"table-001-a7cddbc910:r4:c1\",\n      \"table-001-a7cddbc910:r4:c2\",\n      \"table-001-a7cddbc910:r5:c1\",\n      \"table-001-a7cddbc910:r5:c2\",\n      \"table-001-a7cddbc910:r6:c1\",\n      \"table-001-a7cddbc910:r6:c2\",\n      \"table-001-a7cddbc910:r7:c1\",\n      \"table-001-a7cddbc910:r7:c2\",\n      \"table-001-a7cddbc910:r8:c1\",\n      \"table-001-a7cddbc910:r8:c2\",\n      \"table-001-a7cddbc910:r9:c1\"\n    ],\n    \"cell_details\": [\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r2:c1\",\n        \"row_number\": 1,\n        \"column\": \"Area\",\n        \"text\": \"Worldwide (total)\",\n        \"display_text\": \"Worldwide (total)\",\n        \"is_bold\": true,\n        \"is_italic\": false,\n        \"bold_text\": [\n          \"Worldwide (total)\"\n        ],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r2:c2\",\n        \"row_number\": 1,\n        \"column\": \"Lab confirmed deaths reported to the WHO\",\n        \"text\": \"At least 18,449\",\n        \"display_text\": \"At least 18,449\",\n        \"is_bold\": true,\n        \"is_italic\": false,\n        \"bold_text\": [\n          \"At least 18,449\"\n        ],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r3:c1\",\n        \"row_number\": 2,\n        \"column\": \"Area\",\n        \"text\": \"Africa\",\n        \"display_text\": \"Africa\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r3:c2\",\n        \"row_number\": 2,\n        \"column\": \"Lab confirmed deaths reported to the WHO\",\n        \"text\": \"168\",\n        \"display_text\": \"168\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r4:c1\",\n        \"row_number\": 3,\n        \"column\": \"Area\",\n        \"text\": \"Americas\",\n        \"display_text\": \"Americas\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r4:c2\",\n        \"row_number\": 3,\n        \"column\": \"Lab confirmed deaths reported to the WHO\",\n        \"text\": \"At least 8,533\",\n        \"display_text\": \"At least 8,533\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r5:c1\",\n        \"row_number\": 4,\n        \"column\": \"Area\",\n        \"text\": \"Eastern Mediterranean\",\n        \"display_text\": \"Eastern Mediterranean\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r5:c2\",\n        \"row_number\": 4,\n        \"column\": \"Lab confirmed deaths reported to the WHO\",\n        \"text\": \"1,019\",\n        \"display_text\": \"1,019\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r6:c1\",\n        \"row_number\": 5,\n        \"column\": \"Area\",\n        \"text\": \"Europe\",\n        \"display_text\": \"Europe\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r6:c2\",\n        \"row_number\": 5,\n        \"column\": \"Lab confirmed deaths reported to the WHO\",\n        \"text\": \"At least 4,079\",\n        \"display_text\": \"At least 4,079\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r7:c1\",\n        \"row_number\": 6,\n        \"column\": \"Area\",\n        \"text\": \"South-East Asia\",\n        \"display_text\": \"South-East Asia\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r7:c2\",\n        \"row_number\": 6,\n        \"column\": \"Lab confirmed deaths reported to the WHO\",\n        \"text\": \"1,992\",\n        \"display_text\": \"1,992\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r8:c1\",\n        \"row_number\": 7,\n        \"column\": \"Area\",\n        \"text\": \"Western Pacific\",\n        \"display_text\": \"Western Pacific\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r8:c2\",\n        \"row_number\": 7,\n        \"column\": \"Lab confirmed deaths reported to the WHO\",\n        \"text\": \"1,858\",\n        \"display_text\": \"1,858\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-001-a7cddbc910:r9:c1\",\n        \"row_number\": 8,\n        \"column\": \"Area\",\n        \"text\": \"Further information: Cases and deaths by country Note: The ratio of confirmed deaths to total deaths due to the pandemic is unknown. For more information, see \\\" Data reporting and accuracy \\\".\",\n        \"display_text\": \"Further information: Cases and deaths by country Note: The ratio of confirmed deaths to total deaths due to the pandemic is unknown. For more information, see \\\" Data reporting and accuracy \\\".\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      }\n    ],\n    \"sufficient\": true,\n    \"warnings\": [\n      \"Expanded rowspan/colspan values into the logical grid.\"\n    ]\n  }\n}",
+        "evidence_type": "table",
+        "title": "Computed table result: Compare the laboratory-confirmed and model-based death totals reported for the 2009 H1N1 pandemic. What numbers or ranges does the article give, and why should they not be treated as equivalent counts?",
+        "section_path": [
+          "Epidemiology"
+        ],
+        "retrieval_query": "Compare the laboratory-confirmed and model-based death totals reported for the 2009 H1N1 pandemic. What numbers or ranges does the article give, and why should they not be treated as equivalent counts?",
+        "retriever": "table",
+        "rank": 1,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "8b065eb423653d4efc0e01c6",
+        "source_cells": [
+          "table-001-a7cddbc910:r2:c1",
+          "table-001-a7cddbc910:r2:c2",
+          "table-001-a7cddbc910:r3:c1",
+          "table-001-a7cddbc910:r3:c2",
+          "table-001-a7cddbc910:r4:c1",
+          "table-001-a7cddbc910:r4:c2",
+          "table-001-a7cddbc910:r5:c1",
+          "table-001-a7cddbc910:r5:c2",
+          "table-001-a7cddbc910:r6:c1",
+          "table-001-a7cddbc910:r6:c2",
+          "table-001-a7cddbc910:r7:c1",
+          "table-001-a7cddbc910:r7:c2",
+          "table-001-a7cddbc910:r8:c1",
+          "table-001-a7cddbc910:r8:c2",
+          "table-001-a7cddbc910:r9:c1"
+        ],
+        "metadata": {
+          "retrieval_stage": "table_computation",
+          "table_request_id": "table-r1-1-d79032acaec9",
+          "operation": "lookup",
+          "calculation": null,
+          "table_computation_sufficient": true,
+          "warnings": [
+            "Expanded rowspan/colspan values into the logical grid."
+          ]
+        }
+      },
+      {
+        "evidence_id": "2009_swine_flu_pandemic.html#table-002-abc53325c1#computed-table-r1-2-77ffd9d0ec01",
+        "source_article": "2009_swine_flu_pandemic.html",
+        "content": "Deterministic table-computation result. Use the computed rows/calculation below rather than recomputing them.\n{\n  \"table_request\": {\n    \"missing_fact\": \"Compare the laboratory-confirmed and model-based death totals reported for the 2009 H1N1 pandemic. What numbers or ranges does the article give, and why should they not be treated as equivalent counts?\",\n    \"source_article\": \"2009_swine_flu_pandemic.html\",\n    \"table_id\": \"7def40599a1c4d0d64575121\",\n    \"expected_caption\": null,\n    \"operation\": \"auto\",\n    \"columns_needed\": [],\n    \"row_filters\": {},\n    \"comparison_key\": null\n  },\n  \"query_plan\": {\n    \"artifact_id\": \"7def40599a1c4d0d64575121\",\n    \"operation\": \"lookup\",\n    \"selected_columns\": [\n      \"Name\",\n      \"Deaths worldwide\"\n    ],\n    \"filters\": {},\n    \"predicates\": [\n      {\n        \"column\": \"Name\",\n        \"op\": \"contains\",\n        \"value\": \"2009 swine flu pandemic\",\n        \"value2\": null\n      }\n    ],\n    \"group_by\": [],\n    \"calculation\": null,\n    \"calculation_column\": null,\n    \"sort_column\": null,\n    \"sort_direction\": null,\n    \"limit\": 1\n  },\n  \"result\": {\n    \"request_id\": \"table-r1-2-77ffd9d0ec01\",\n    \"artifact_id\": \"7def40599a1c4d0d64575121\",\n    \"result_rows\": [\n      {\n        \"Name\": \"2009 swine flu pandemic\",\n        \"Deaths worldwide\": \"151,700–575,400\"\n      }\n    ],\n    \"calculation\": null,\n    \"source_cells\": [\n      \"table-002-abc53325c1:r6:c1\",\n      \"table-002-abc53325c1:r6:c7\"\n    ],\n    \"cell_details\": [\n      {\n        \"source_cell\": \"table-002-abc53325c1:r6:c1\",\n        \"row_number\": 5,\n        \"column\": \"Name\",\n        \"text\": \"2009 swine flu pandemic\",\n        \"display_text\": \"2009 swine flu pandemic [ 225 ] [ 226 ]\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [\n          {\n            \"position\": \"superscript\",\n            \"text\": \"[ 225 ]\",\n            \"role\": \"reference\",\n            \"target\": \"cite_note-225\",\n            \"note\": \"Donaldson LJ, Rutter PD, Ellis BM, Greaves FE, Mytton OT, Pebody RG, Yardley IE (December 2009). \\\"Mortality from pandemic A/H1N1 2009 influenza in England: public health surveillance study\\\" . BMJ . 339 b5213. doi : 10.1136/bmj.b5213 . PMC 2791802 . PMID 20007665 .\"\n          },\n          {\n            \"position\": \"superscript\",\n            \"text\": \"[ 226 ]\",\n            \"role\": \"reference\",\n            \"target\": \"cite_note-226\",\n            \"note\": \"\\\"First Global Estimates of 2009 H1N1 Pandemic Mortality Released by CDC-Led Collaboration\\\" . Centers for Disease Control and Prevention (CDC). 25 June 2012 . Retrieved 7 July 2012 .\"\n          }\n        ],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      },\n      {\n        \"source_cell\": \"table-002-abc53325c1:r6:c7\",\n        \"row_number\": 5,\n        \"column\": \"Deaths worldwide\",\n        \"text\": \"151,700–575,400\",\n        \"display_text\": \"151,700–575,400 [ 228 ]\",\n        \"is_bold\": false,\n        \"is_italic\": false,\n        \"bold_text\": [],\n        \"italic_text\": [],\n        \"annotations\": [\n          {\n            \"position\": \"superscript\",\n            \"text\": \"[ 228 ]\",\n            \"role\": \"reference\",\n            \"target\": \"cite_note-228\",\n            \"note\": \"Dawood FS, Iuliano AD, Reed C, Meltzer MI, Shay DK, Cheng PY, Bandaranayake D, Breiman RF, Brooks WA, Buchy P, Feikin DR, Fowler KB, Gordon A, Hien NT, Horby P, Huang QS, Katz MA, Krishnan A, Lal R, Montgomery JM, Mølbak K, Pebody R, Presanis AM, Razuri H, Steens A, Tinoco YO, Wallinga J, Yu H, Vong S, Bresee J, Widdowson MA (September 2012). \\\"Estimated global mortality associated with the first 12 months of 2009 pandemic influenza A H1N1 virus circulation: a modelling study\\\" . The Lancet. Infectious Diseases . 12 (9): 687– 95. doi : 10.1016/S1473-3099(12)70121-4 . PMID 22738893 .\"\n          }\n        ],\n        \"background_color\": null,\n        \"sort_value\": null,\n        \"legend_matches\": []\n      }\n    ],\n    \"sufficient\": true,\n    \"warnings\": [\n      \"Expanded rowspan/colspan values into the logical grid.\",\n      \"Superscript/subscript annotations are available in row_cells.\"\n    ]\n  }\n}",
+        "evidence_type": "table",
+        "title": "Computed table result: Compare the laboratory-confirmed and model-based death totals reported for the 2009 H1N1 pandemic. What numbers or ranges does the article give, and why should they not be treated as equivalent counts?",
+        "section_path": [
+          "Comparisons to other pandemics and epidemics"
+        ],
+        "retrieval_query": "Compare the laboratory-confirmed and model-based death totals reported for the 2009 H1N1 pandemic. What numbers or ranges does the article give, and why should they not be treated as equivalent counts?",
+        "retriever": "table",
+        "rank": 2,
+        "raw_score": 0.0,
+        "score_semantics": "rank_only",
+        "table_id": "7def40599a1c4d0d64575121",
+        "source_cells": [
+          "table-002-abc53325c1:r6:c1",
+          "table-002-abc53325c1:r6:c7"
+        ],
+        "metadata": {
+          "retrieval_stage": "table_computation",
+          "table_request_id": "table-r1-2-77ffd9d0ec01",
+          "operation": "lookup",
+          "calculation": null,
+          "table_computation_sufficient": true,
+          "warnings": [
+            "Expanded rowspan/colspan values into the logical grid.",
+            "Superscript/subscript annotations are available in row_cells."
+          ]
+        }
+      }
+    ],
+    "assessment": {
+      "ready_to_answer": true,
+      "supported_requirements": [
+        "Laboratory-confirmed death total for the 2009 H1N1 pandemic is supported: worldwide total reported to WHO was 'At least 18,449'.",
+        "Model-based death totals are supported: the comparison table gives '151,700–575,400' deaths worldwide for the 2009 swine flu pandemic; text also states a WHO-supported 2013 study estimated 'Between 123,000 and 203,000 pandemic respiratory deaths' for the last nine months of 2009 and says this was about 10-fold higher than WHO's lab-confirmed count.",
+        "Why the figures are not equivalent is supported: the article states the ratio of confirmed deaths to total deaths is unknown; surveillance cannot ascertain total illnesses; influenza is infrequently listed on death certificates; only counting influenza-listed deaths is a gross underestimation; WHO said total mortality including unconfirmed or unreported deaths was unquestionably higher than confirmed statistics."
+      ],
+      "missing_requirements": [],
+      "retrieval_requests": [],
+      "table_requests": [],
+      "unresolved_conflicts": [],
+      "explanation": "The evidence directly supplies both the laboratory-confirmed total and the model-based estimates/ranges, plus explicit explanatory text that confirmed counts and modeled mortality estimates measure different things and should not be treated as equivalent counts. No further retrieval or table computation is needed."
+    },
+    "assessment_history": [
+      {
+        "ready_to_answer": false,
+        "supported_requirements": [
+          "The article's laboratory-confirmed global death total for the 2009 H1N1 pandemic is supported: 'At least 18,449' deaths reported to the WHO, with a related WHO-confirmed count phrased elsewhere as 18,631.",
+          "The article's model-based death totals are supported in two forms: a June 2012 model-based study saying deaths may have been fifteen times higher than reported laboratory-confirmed deaths, and a WHO-supported 2013 study estimating 123,000–203,000 pandemic respiratory deaths globally for the last nine months of 2009.",
+          "The article also gives a broader model-based worldwide deaths range in the comparison table for the 2009 swine flu pandemic: 151,700–575,400.",
+          "The reason they should not be treated as equivalent counts is supported: laboratory-confirmed deaths are surveillance/confirmed counts reported to WHO, while model-based totals estimate total mortality including unconfirmed or unreported deaths; the article explicitly says surveillance cannot ascertain how many people became ill, influenza deaths are undercounted on death certificates, and WHO said total mortality was unquestionably higher than confirmed statistics."
+        ],
+        "missing_requirements": [],
+        "retrieval_requests": [],
+        "table_requests": [
+          {
+            "missing_fact": "Compare the laboratory-confirmed and model-based death totals reported for the 2009 H1N1 pandemic. What numbers or ranges does the article give, and why should they not be treated as equivalent counts?",
+            "source_article": "2009_swine_flu_pandemic.html",
+            "table_id": "8b065eb423653d4efc0e01c6",
+            "expected_caption": null,
+            "operation": "auto",
+            "columns_needed": [],
+            "row_filters": {},
+            "comparison_key": null
+          },
+          {
+            "missing_fact": "Compare the laboratory-confirmed and model-based death totals reported for the 2009 H1N1 pandemic. What numbers or ranges does the article give, and why should they not be treated as equivalent counts?",
+            "source_article": "2009_swine_flu_pandemic.html",
+            "table_id": "7def40599a1c4d0d64575121",
+            "expected_caption": null,
+            "operation": "auto",
+            "columns_needed": [],
+            "row_filters": {},
+            "comparison_key": null
+          }
+        ],
+        "unresolved_conflicts": [],
+        "explanation": "The evidence is sufficient to answer all parts of the question directly from the supplied text and table excerpts. No further retrieval or table computation is needed because the relevant totals/ranges and the explanatory distinction between confirmed counts and model-based estimates are explicitly stated."
+      },
+      {
+        "ready_to_answer": true,
+        "supported_requirements": [
+          "Laboratory-confirmed death total for the 2009 H1N1 pandemic is supported: worldwide total reported to WHO was 'At least 18,449'.",
+          "Model-based death totals are supported: the comparison table gives '151,700–575,400' deaths worldwide for the 2009 swine flu pandemic; text also states a WHO-supported 2013 study estimated 'Between 123,000 and 203,000 pandemic respiratory deaths' for the last nine months of 2009 and says this was about 10-fold higher than WHO's lab-confirmed count.",
+          "Why the figures are not equivalent is supported: the article states the ratio of confirmed deaths to total deaths is unknown; surveillance cannot ascertain total illnesses; influenza is infrequently listed on death certificates; only counting influenza-listed deaths is a gross underestimation; WHO said total mortality including unconfirmed or unreported deaths was unquestionably higher than confirmed statistics."
+        ],
+        "missing_requirements": [],
+        "retrieval_requests": [],
+        "table_requests": [],
+        "unresolved_conflicts": [],
+        "explanation": "The evidence directly supplies both the laboratory-confirmed total and the model-based estimates/ranges, plus explicit explanatory text that confirmed counts and modeled mortality estimates measure different things and should not be treated as equivalent counts. No further retrieval or table computation is needed."
+      }
+    ],
+    "input_sanitization": {
+      "input_sanitized": false,
+      "input_escaped": false,
+      "input_evidence_blocks_removed": 0,
+      "input_injection_pattern_hit": false,
+      "input_model_filter_changed": false,
+      "input_model_filter_failed_open": false
+    },
+    "routing": {
+      "route": "strong",
+      "route_reason": "table flagged",
+      "route_point": "after TOC review",
+      "kept_article_chars": null,
+      "check_status": null,
+      "check_p_complete": null,
+      "check_threshold": null,
+      "escalated": null,
+      "router_cost_usd": null,
+      "router_latency_s": null,
+      "first_answer_chars": null
+    }
+  }
+}

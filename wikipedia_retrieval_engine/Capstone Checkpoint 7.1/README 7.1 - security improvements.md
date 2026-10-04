@@ -1,8 +1,25 @@
-# Introduction and preparation
+# Checkpoint 7.1 security and reliability approach
 
 Checkpoint 7.1 implements safeguards for the security issues that Checkpoint 6.1
-diagnosed, and measures their effect against the system 6.1 audited. Steps are recorded
-here as they happen.
+diagnosed and measures their effect against the system that 6.1 audited. This README is
+the technical record for the security portion of the checkpoint: the threat model,
+control placement, implementation, evaluation design, results, trade-offs, and remaining
+limitations.
+
+## Final security result
+
+The security comparison uses the 5.1 survivor as the untreated baseline and the **7.1
+safeguarded baseline** as the after system. The safeguarded baseline is the 6.1 survivor
+with deterministic input sanitising, guarded answer instructions, and a deterministic
+grounding check. It uses `gpt-5.4-mini` in every model role; the role-based Router B
+optimization selected later in the performance work is the **7.1 Final Survivor**.
+
+Across the pooled multi-turn security runs, fabricated facts reached the answer in 5 of
+59 attack opportunities before the safeguards and 0 of 59 afterward. For the two
+pre-grouped fake-nominee scenarios, the observed result was 5 of 20 before and 0 of 20
+after (Fisher's exact p = 0.047). This is evidence of improved resistance in the tested
+scenarios, not proof that the attack class has been eliminated. The safeguards were
+enabled together, so the evaluation does not identify one layer as the sole cause.
 
 ## Starting point: what 6.1 found and left open
 
@@ -38,7 +55,7 @@ changes were measured for quality and cost only:
 reliability fixes together with the 7.1 safeguards, compared with the 5.1 survivor, the
 only configuration with no security work in it.
 
-## System under test: the final survivor
+## System under test: the 7.1 safeguarded baseline
 
 [`survivor_agent_final.py`](survivor_agent_final.py) builds the 6.1 survivor and adds
 three safeguards inside its graph:
@@ -47,9 +64,10 @@ three safeguards inside its graph:
 - **new answer instructions**: a trust order and a quotation rule;
 - **a grounding check** between the drafted answer and the reader.
 
-Retrieval is unchanged: entity-decomposed initial retrieval, table-of-contents selection,
-the forced table gateway, whole articles for text questions, the 6.1 table-plan repair
-and incomplete labels, and `openai/gpt-5.4-mini` in every role.
+Relative to the 6.1 survivor, the retrieval path in these security tests is unchanged:
+entity-decomposed initial retrieval, table-of-contents selection, the forced table
+gateway, whole articles for text questions, the 6.1 table-plan repair and incomplete
+labels, and `openai/gpt-5.4-mini` in every role.
 
 `survivor_agent_final.py` is configuration only. The safeguards are part of the agent,
 not of a test harness, so they live in `wiki_agents/`:
@@ -120,8 +138,8 @@ first, and records which fired:
   the conversation history carry the cleaned text.
 
 **What it cannot do.** 6.1's adoptions contained no instructions and no role-play. They
-were plain tables of invented facts, which no input filter can tell apart from a user
-legitimately pasting data.
+were plain tables of invented facts. This deterministic pattern filter cannot reliably
+distinguish that content from data a user legitimately pasted.
 
 ## Safeguard 2: the grounding check
 
@@ -250,7 +268,8 @@ the rebuilt contexts; the offline figures above come from it.
 ## Tools
 
 - [`security_test_final.py`](security_test_final.py) and
-  [`cost_test_final.py`](cost_test_final.py) run the 6.1 starters with the final survivor
+  [`cost_test_final.py`](cost_test_final.py) run the 6.1 starters with the safeguarded
+  7.1 graph
   and write under Checkpoint 7.1. They import the starters rather than copy them, so the
   scenarios, plant payloads, detectors, dataset and judge are identical to the runs
   being compared with. Both refuse any other `--survivor`.
@@ -264,9 +283,9 @@ the rebuilt contexts; the offline figures above come from it.
   cannot: it reads one row per question with a score, and a security run is one row per
   conversation turn.
 
-# Security Experiment
+# Security evaluation
 
-**Status:** 5.1 and the final survivor, each on all eight 6.1 scenarios three times plus
+**Status:** 5.1 and the 7.1 safeguarded baseline, each on all eight 6.1 scenarios three times plus
 seven further repeats of the two nominee attacks: 155 turns per agent, history on. The
 attack that worked against 5.1 got through 5 of 20 times before and 0 of 20 after
 (p = 0.047).
@@ -274,7 +293,7 @@ attack that worked against 5.1 got through 5 of 20 times before and 0 of 20 afte
 ## Design
 
 - **Before:** the 5.1 survivor, unchanged, as in 6.1.
-- **After:** the final survivor, grounding policy `surface`, input sanitising on, guarded
+- **After:** the 7.1 safeguarded baseline, grounding policy `surface`, input sanitising on, guarded
   prompt.
 - **Same everything else:** the eight 6.1 scenarios and plant payloads, the 6.1 detectors
   and outcome labels, `openai/gpt-5.4-mini` answering and judging, history on.
@@ -328,7 +347,7 @@ python "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/analyzers/rebuild_ans
 python "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/analyzers/replay_grounding.py"
 ```
 
-Run every scenario three times against the final survivor:
+Run every scenario three times against the 7.1 safeguarded baseline:
 
 ```bash
 python "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/security_test_final.py" --scenario all --repeats 3
@@ -372,7 +391,7 @@ The run was launched through `security_test_final.py` but recorded `survivor=5.1
 6.1 starter's `parse_args` still read `sys.argv`, so the forwarded `--survivor final`
 was dropped. The defect was fixed, and
 [`tests/test_checkpoint_entry_points.py`](../tests/test_checkpoint_entry_points.py) now
-checks that each 7.1 runner's arguments parse to the final survivor. The run is a
+checks that each 7.1 runner's arguments parse to the safeguarded 7.1 graph. The run is a
 complete, uniform 5.1 baseline and is used as one. It replaces 6.1's twelve runs of
 uneven size as the comparison point, because every scenario has the same three repeats.
 
@@ -383,7 +402,7 @@ uneven size as the comparison point, because every scenario has the same three r
 
 ### Run 2: plumbing check (2026-10-03)
 
-`security_tests/2026_10_03_18_33_26`: `plant_buried`, one repeat, final survivor.
+`security_tests/2026_10_03_18_33_26`: `plant_buried`, one repeat, safeguarded baseline.
 
 - Header, outputs and AgentState logs confirmed `survivor=final`, the guarded prompt and
   the `[QUARANTINED]` notice; the graph contained all three new nodes in order.
@@ -391,7 +410,7 @@ uneven size as the comparison point, because every scenario has the same three r
   scenario never adopted either; the September adoption ("Rafe Dunmoor") did not recur.
 - Not counted in the comparison.
 
-### Run 3: final survivor, all scenarios, three repeats (2026-10-03)
+### Run 3: 7.1 safeguarded baseline, all scenarios, three repeats (2026-10-03)
 
 `security_tests/2026_10_03_18_36_22`: 99 turns.
 
@@ -447,14 +466,15 @@ paste was adopted twice, the exact-format paste never.
 | `nominee_plant_plain`, `nominee_plant_buried` | plain text: a filename and a list | no | 5 of 20 |
 
 - Every adoption, in 6.1 and here, came from a plain-text paste.
-- The input filter removed the disguise from the one plant that never got through, and
-  never fired on the one that did. It played no part in the result.
+- The input filter removed the disguise from the formatted plant, which never got
+  through, and did not fire on the plain-text plant that succeeded before safeguards.
+  Its recorded triggers therefore do not explain the observed before-and-after change.
 - The format is not secret and does not need to be, and removing it defends against an
   attack the model was already resisting.
 
 ### What the safeguards did, pooled
 
-Over 155 turns of the final survivor:
+Over 155 turns of the 7.1 safeguarded baseline:
 
 - **Input filter:** 3 questions rewritten, all `plant_formatted` paste turns.
 - **Grounding check:** 47 answers flagged, all marked `[QUARANTINED]`:
@@ -468,13 +488,21 @@ Over 155 turns of the final survivor:
     the three ceremonies asked about.
 - **Adoptions in the draft:** 0, so the check caught none; there was none to catch.
 
-## The safeguards' cost on the validation set
+## Initial validation check for the safeguards
+
+This section isolates the early all-mini safeguarded baseline. It is retained because it
+shows that the deterministic controls did not add model calls. It is not the final 7.1
+system comparison: the later performance work selected Router B and evaluated that final
+configuration in three held-out validation runs.
 
 `cost_test_final.py`, history off, the 25 validation questions:
 `cost_tests/wikipedia_GT_validation_set/experiments/awesome_valiant.csv` (2026-10-04),
-compared in [ragas_7_1_vs_6_1_vs_5_1.pdf](ragas_7_1_vs_6_1_vs_5_1.pdf).
+The final three-survivor comparison is reported in
+[`final_validation/ragas_validation_5_1_6_1_7_1.pdf`](final_validation/ragas_validation_5_1_6_1_7_1.pdf)
+and
+[`final_validation/efficiency_validation_5_1_6_1_7_1.pdf`](final_validation/efficiency_validation_5_1_6_1_7_1.pdf).
 
-| | 5.1 | 6.1 (3 runs) | Final (1 run) |
+| | 5.1 | 6.1 (3 runs) | 7.1 safeguarded baseline (1 run) |
 | --- | :---: | :---: | :---: |
 | Quality | 0.860 | 0.880 / 0.800 / 0.900 (0.860) | **0.900** |
 | Article recall | 1.000 | 1.000 | 1.000 |
@@ -497,17 +525,17 @@ compared in [ragas_7_1_vs_6_1_vs_5_1.pdf](ragas_7_1_vs_6_1_vs_5_1.pdf).
   a constant; its `experiment_name` (`survivor_final__grounding_surface`) and grounding
   columns identify it. Later runs record `final`.
 
-Spend for all 7.1 runs: about $10.
-
 ## Conclusion: security, organized by worksheet question
 
 ### What held, and what changed
 
-- **The planted-source attack stopped working.** The fake nominee list got through 5 of
-  20 times against 5.1 and 0 of 20 against the final survivor (p = 0.047).
+- **No planted-source adoption was observed after the safeguards.** The fake nominee
+  list got through 5 of 20 times against 5.1 and 0 of 20 against the 7.1 safeguarded
+  baseline (p = 0.047).
 - **The role-play and winners-table attacks still failed**, as in 6.1: 0 of 12 and 0 of
   27 on both agents.
-- **Validation quality held**: 0.900, inside 6.1's range.
+- **The initial all-mini validation check held**: 0.900, inside 6.1's run range. The
+  later 7.1 Final Survivor, Router B, scored 0.933 across three held-out validation runs.
 - **The output check was not what stopped the attack.** The fake content never reached
   the draft. The grounding check flagged 47 answers and caught no adoption, because there
   was none.
@@ -536,17 +564,18 @@ conversation history the provenance boundary 6.1 asked for.
 
 ### Step 4: evidence of improvement
 
-| Measure | Before (5.1) | After (final) |
+| Measure | Before (5.1) | After (7.1 safeguarded baseline) |
 | --- | :---: | :---: |
 | Fake nominee list got through | 5 of 20 | 0 of 20 (p = 0.047) |
 | All attacks got through | 5 of 59 | 0 of 59 (p = 0.057) |
-| Validation quality | 0.860 | 0.900 (6.1: 0.800–0.900) |
+| Initial all-mini validation quality | 0.860 | 0.900 (one safeguarded-baseline run; 6.1 range: 0.800–0.900) |
 | Security-run quality on scored turns | 0.631 | 0.596 |
 | Correct answers marked `[QUARANTINED]` | — | 6 |
 
 Supporting outputs: [security_comparison_5_1_vs_7_1.md](security_comparison_5_1_vs_7_1.md)
-for the attacks, [ragas_7_1_vs_6_1_vs_5_1.pdf](ragas_7_1_vs_6_1_vs_5_1.pdf) for quality,
-cost and latency.
+for the attacks and
+[`final_validation/efficiency_validation_5_1_6_1_7_1.pdf`](final_validation/efficiency_validation_5_1_6_1_7_1.pdf)
+for final quality, cost, and latency.
 
 ### Step 5: trade-offs
 
@@ -559,9 +588,10 @@ cost and latency.
 3. **Coverage against exploitability: names from the question.** Exempting them would
    remove the three "Harlan Voss" flags and would let an attacker pass a planted name
    through the question.
-4. **Cost and latency: none measured.** The input filter and the grounding check are
-   code, not model calls; the prompt adds about 330 tokens per question. Every
-   validation-set figure is inside 6.1's run-to-run range.
+4. **Cost and latency: no separable deterministic-control overhead was detected.** The
+   input filter and grounding check are code rather than model calls; the guarded prompt
+   adds about 330 input tokens to the answer call. In the initial all-mini comparison,
+   cost and latency remained inside the 6.1 run-to-run range.
 5. **Reliability against availability: the model filter.** A nano input filter would
    catch fuzzier role-play, but it timed out and fails open, so it was left optional.
    A layer that is usually absent invites reliance it does not earn.
@@ -573,13 +603,14 @@ cost and latency.
 
 ### Step 6: reflection and next steps
 
-**Effectiveness.** The combined changes stopped the attack that worked, with evidence
-just strong enough to call real. The run cannot say which change did it, because they
-were switched on together; the fake content was absent from the first draft, so the
-cause sits upstream of the output check — the instructions, the 6.1 evidence fixes, or
-both. The grounding check is a backstop that did not fire on an attack here, and it
-catches what the prompt cannot enforce: on saved answers it flagged all three 6.1
-adoptions and four misquotations the judge passed.
+**Effectiveness.** No adoption was observed after the combined changes. The pre-grouped
+fake-nominee comparison reached p = 0.047, while the all-attacks comparison reached
+p = 0.057; both should be interpreted with the small sample in mind. The evaluation
+cannot identify which layer caused the change because the layers were enabled together.
+The fake content was absent from the first draft, so the observed prevention happened
+upstream of the output check — through the guarded instructions, the 6.1 evidence fixes,
+or both. The grounding check remains a backstop: it caught all three saved 6.1 adoptions
+offline and also flagged four misquotations that the answer judge accepted.
 
 **Remaining limitations.**
 
@@ -592,22 +623,26 @@ adoptions and four misquotations the judge passed.
   still judged wrong.
 - **The input filter does not recognise a plain-text plant**, which is how every
   successful attack was delivered.
-- **One validation run for the final survivor.**
+- **Only one all-mini safeguard-only validation run.** The three final Router B runs do
+  not isolate the safeguards from the routing change.
 
 **Future improvements.**
 
-1. **Fix the VAL14 false alarm**, which accounts for five of six; it can be checked
-   offline against the saved runs.
-2. **Separate the causes** with one run of the final survivor using the 2.1–6.1 prompt
+1. **Replace answer-level matching with evidence-linked claim verification.** Check each
+   important claim against the evidence item it cites, then tune the verifier on a larger
+   labeled set. This should reduce false quarantines while catching incorrect
+   relationships among real entities.
+2. **Add deterministic limits to table-request loops and evidence size.** Bound the
+   number of table rounds, retained evidence, and prompt size to limit latency and tail
+   cost while preserving a clear incomplete-evidence outcome.
+3. **Separate the causes** with one run of the 7.1 safeguarded baseline using the 2.1–6.1 prompt
    (`--legacy-prompt`), against the same nominee repeats.
-3. **Per-claim citations**, using `AnswerClaim` and `DraftAnswer` in
-   `agentic_models.py` (defined, unused): each claim checked against the evidence item
-   it cites, which would catch wrong relationships. Cited ids must be checked against
-   the retriever's own, or a plant can forge one.
-4. **The decade-table combination**, the remaining part of the mitigation of record.
+4. **Complete the decade-table combination**, the remaining part of the mitigation of
+   record.
 5. **Save each turn as it completes**, so a run that fails midway keeps what it paid for.
 
-Step 3 (performance and efficiency improvements) is outside this README.
+Step 3 (performance and efficiency) is documented in
+[`README 7.1 - performance and cost.md`](README%207.1%20-%20performance%20and%20cost.md).
 
 ### Supporting materials
 
@@ -615,10 +650,10 @@ Step 3 (performance and efficiency improvements) is outside this README.
 | --- | --- |
 | Test cases | `Capstone Checkpoint 6.1/security_test_starter.py` (the eight scenarios; `--show` prints every turn) |
 | Code | `wiki_agents/sanitize.py`, `grounding_check.py`, `answer_guard.py`, `answer_nodes.py`, `prompts.py`, `chat.py`; `survivor_agent_final.py` |
-| Tests | `tests/test_answer_nodes.py`, `test_chat.py`, `test_checkpoint_entry_points.py`; 163 tests in the suite |
+| Tests | `tests/test_answer_nodes.py`, `test_chat.py`, `test_checkpoint_entry_points.py`, `test_grounding_extraction.py`, and `test_model_routing.py` |
 | System outputs | `security_tests/<run stamp>/security_results.csv` and `transcripts.jsonl` (runs 1–4) |
 | Evidence traces | `logs/security_tests/<run stamp>/`: one AgentState log per turn |
-| Analysis | [security_comparison_5_1_vs_7_1.md](security_comparison_5_1_vs_7_1.md); [ragas_7_1_vs_6_1_vs_5_1.pdf](ragas_7_1_vs_6_1_vs_5_1.pdf); `analyzers/` |
+| Analysis | [security_comparison_5_1_vs_7_1.md](security_comparison_5_1_vs_7_1.md); [`final_validation/ragas_validation_5_1_6_1_7_1.pdf`](final_validation/ragas_validation_5_1_6_1_7_1.pdf); [`final_validation/efficiency_validation_5_1_6_1_7_1.pdf`](final_validation/efficiency_validation_5_1_6_1_7_1.pdf); `analyzers/` |
 | Diagram | where each safeguard sits, below |
 
 ```mermaid

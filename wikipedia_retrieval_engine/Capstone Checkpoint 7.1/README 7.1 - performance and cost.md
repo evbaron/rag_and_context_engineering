@@ -1,26 +1,53 @@
-# Introduction and preparation
+# Checkpoint 7.1 performance and efficiency approach
 
-This README records the performance and cost part of Checkpoint 7.1 (worksheet Step 3:
-performance and efficiency improvements, with their evidence in Step 4 and trade-offs in
-Step 5). The security part is recorded in
-[`security_comparison_5_1_vs_7_1.md`](security_comparison_5_1_vs_7_1.md). Steps are
-recorded as they happen.
+This README is the technical record for Checkpoint 7.1 Steps 3–5: the performance
+question, the experiments used to answer it, the final architecture decision, and the
+measured trade-offs. The companion
+[`README 7.1 - security improvements.md`](README%207.1%20-%20security%20improvements.md)
+documents the safeguards, and
+[`security_comparison_5_1_vs_7_1.md`](security_comparison_5_1_vs_7_1.md) contains their
+attack-by-attack results.
 
-**Status:** existing runs re-read and the Jev decision model reviewed (2026-10-04). No
-optimization is built yet.
+**Status:** complete. Router B was selected as the **7.1 Final Survivor**.
 
-## System under test
+## Final decision
 
-The 7.1 final survivor ([`survivor_agent_final.py`](survivor_agent_final.py)): the 6.1
-survivor (whole articles for text questions, the table planner's repair and retry,
-INCOMPLETE labels, the evidence notice) plus the 7.1 security safeguards (input
-sanitizer, guarded answer prompt, grounding check). Every chat-model role uses
-`openai/gpt-5.4-mini`.
+The strongest model in every role produced the highest mean quality on the GT working
+set, but at high and variable cost. The all-mini system was much cheaper but left a
+measurable quality gap. Router B uses `gpt-5.4` only for the two roles that benefited
+most—the evidence assessor and final answer—and keeps the decomposer, TOC reviewer, and
+table planner on `gpt-5.4-mini`. Keeping the planner on mini also reduced, but did not
+eliminate, the risk of extremely large repeated prompts.
+
+Across three GT runs, Router B scored 0.868 at $0.1725 list cost per question and 21.3
+seconds per question. All-`gpt-5.4` scored 0.886 at $0.3457 per question and 24.7 seconds.
+The observed quality
+difference was −0.018 (paired Wilcoxon p = 0.81), so these runs did not detect a quality
+difference; they do not prove statistical equivalence. Router B reduced list cost by 50%
+(p = 0.001). Repeated runs were necessary because a single 19-question run varied too
+much to support a reliable decision.
+
+On the held-out validation set, the 7.1 Final Survivor scored 0.933, with 99.3% article
+recall, at $0.1068 list cost and 18.7 seconds per question. The 6.1 survivor scored 0.860,
+with 100% recall, at $0.0422 and 12.8 seconds. The final system therefore improved the
+observed validation quality while accepting higher cost and latency than the all-mini
+survivor.
+
+## Starting system: 7.1 safeguarded baseline
+
+The starting system ([`survivor_agent_final.py`](survivor_agent_final.py)) is the 6.1
+survivor—whole articles for text questions, table-plan repair and retry, `INCOMPLETE`
+labels, and the evidence notice—plus the 7.1 input sanitizer, guarded answer prompt, and
+grounding check. At this stage, every chat-model role used `openai/gpt-5.4-mini`.
+
+Some saved experiment labels call this configuration `7.1 final`; in this README it is
+called the **7.1 safeguarded baseline** so it is not confused with the selected Router B
+Final Survivor.
 
 | Configuration (validation, 25 questions) | Quality | List $/q | Billed $/q | Seconds/q | Calls/q |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | 6.1 survivor, `gpt-5.4-mini` (3 runs) | 0.860 | 0.0422 | 0.0296 | 12.8 | 5.79 |
-| 7.1 final, `gpt-5.4-mini` (1 run, `awesome_valiant`) | 0.900 | 0.0456 | 0.0377 | 11.0 | 6.04 |
+| 7.1 safeguarded baseline, `gpt-5.4-mini` (1 run, `awesome_valiant`) | 0.900 | 0.0456 | 0.0377 | 11.0 | 6.04 |
 | 6.1 survivor, `gpt-5.4` (1 run, `nifty_andreessen`) | 0.960 | 0.1524 | 0.1292 | 21.6 | 6.20 |
 
 **Comparability of these figures** (checked 2026-10-04, before any new run):
@@ -135,7 +162,7 @@ Share of list cost by role:
   7.1 change touches (the sanitizer left all 25 validation questions unchanged): 5 of its
   14 text questions escalated to whole articles, against 5 of 39 in the 6.1 runs.
 
-### Finding 2: mini is perfect on text questions and loses on table questions
+### Finding 2: mini was perfect on ready text questions in the saved validation runs
 
 Question-runs grouped by path (the run's `tables_flagged` and its number of assessor
 calls):
@@ -146,9 +173,10 @@ calls):
 | Text, escalated to whole articles | 5 · 0.800 · $0.098 | 5 · 1.000 · $0.070 | 2 · 1.000 · $0.310 |
 | Table | 36 · 0.736 · $0.048 | 11 · 0.773 · $0.051 | 11 · 0.909 · $0.204 |
 
-- **Text questions do not need the stronger model.** Mini answered every ready text
-  question correctly; `gpt-5.4` did the same at about 3× the cost. Text questions took 41%
-  of the `gpt-5.4` bill.
+- **The stronger model did not improve ready text questions in these validation runs.**
+  Mini answered every ready text question correctly; `gpt-5.4` did the same at about 3×
+  the cost. Text questions took 41% of the `gpt-5.4` bill. This is evidence for the tested
+  set, not a claim that every future text question can stay on mini.
 - **Mini's losses sit on the table path.** Seven questions average below 1.0 over the
   four mini runs: VAL02, VAL05, VAL06, VAL08, VAL10, VAL14, and VAL24. Each lost its
   points in runs where it took the table path, except VAL02 (a cross-article
@@ -160,7 +188,7 @@ calls):
 - **Escalation re-reads.** An escalated text question cost 3.5× a ready one in the 6.1
   runs ($0.098 against $0.028), because the assessor reads the whole articles again.
 
-### Finding 3: routing by question type keeps the `gpt-5.4` quality for 28% less
+### Finding 3: preliminary routing simulation
 
 **Method.** Each mini question-run (4 runs × 25 questions) keeps its own outcome, cost,
 and time, or, when a policy sends it to `gpt-5.4`, takes that question's outcome, cost,
@@ -179,8 +207,9 @@ analyzer (§8, below) reproduces every row:
 
 **Reading.**
 
-- **Routing table questions to `gpt-5.4` kept its quality (0.960) for 28% less** ($0.109
-  against $0.152 at list price) and 3.8 s less per question.
+- **The simulated table router reproduced the one observed `gpt-5.4` run's 0.960 score
+  for 28% less** ($0.109 against $0.152 at list price) and 3.8 s less per question. This
+  was a retrospective combination of saved outcomes, not a live routed-system result.
 - **A precise router could save up to a third more.** A router that knew the outcomes
   would send only 14% of the question-runs to `gpt-5.4` and cost $0.072 for the same
   quality, against the table-flag router's 47% and $0.109. Most table questions are ones
@@ -193,7 +222,8 @@ analyzer (§8, below) reproduces every row:
   failures raise no notice: VAL24 when one computation succeeds too early, VAL08, VAL14.
 - **Limits.** The `gpt-5.4` outcomes come from a single run (6.1: Wilcoxon p = 0.08 against
   the three mini runs). A routed system is a different run, with `gpt-5.4` on only part of
-  the questions, so the simulation predicts and a live run confirms.
+  the questions. The simulation therefore motivated the live routing experiments below;
+  it was not used as the final evidence for the decision.
 
 ## Candidate component reviewed: Jev
 
@@ -201,8 +231,9 @@ The lecture named Jev as a model "very explicitly not designed to output text", 
 for decisions such as routing and checking, and charged only for input tokens. It was
 reviewed as the decision-maker for a router.
 
-**Facts** (verified 2026-10-04 on the OpenRouter model endpoint and the OpenRouter and
-TypeSafe documentation):
+**Facts** (verified 2026-10-04 using the official
+[OpenRouter model endpoint](https://openrouter.ai/typesafe/jev-1.13/api) and
+[OpenRouter Jev guide](https://openrouter.ai/blog/tutorials/how-to-use-jev/)):
 
 | Item | Value |
 | --- | --- |
@@ -234,7 +265,7 @@ TypeSafe documentation):
 - **Integration.** Jev is not a LangChain chat model, so the telemetry callbacks do not
   see it; its cost comes from the `usage.cost` field of each response.
 
-# Baseline on the GT test set: 6.1 survivor and 7.1 final
+# Baseline on the GT test set: 6.1 survivor and 7.1 safeguarded baseline
 
 **Status:** complete (2026-10-04, 01:37–02:06). Six runs, no errors, no whole-graph
 retries; $3.90 billed, judge included.
@@ -245,7 +276,7 @@ on validation alone would likely overstate it. Before any optimization, both sys
 a GT baseline:
 
 - the **6.1 survivor**, the last checkpoint's survivor;
-- the **7.1 final**, the system the optimizations build on.
+- the **7.1 safeguarded baseline**, the system the optimizations build on.
 
 Running both also checks, on a second question set, that the 7.1 safeguards add no
 measurable cost.
@@ -253,7 +284,7 @@ measurable cost.
 **Design.**
 
 - 3 runs per system, 19 GT questions each, history off, `openai/gpt-5.4-mini` in every
-  role, judge `gpt-5.4-mini`; the 7.1 final with its default grounding policy
+  role, judge `gpt-5.4-mini`; the 7.1 safeguarded baseline with its default grounding policy
   (`surface`).
 - **Interleaved order:** 6.1, final, 6.1, final, 6.1, final, one run at a time with
   nothing else on the account. Provider speed and cache warm-up then fall on both systems
@@ -310,11 +341,11 @@ path and the 5.1 GT runs):
 | Order | System | Results CSV | Quality | List $/q | Billed $/q | Cached | Seconds/q | Calls/q |
 | ---: | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | 1 | 6.1 | `eager_torvalds` | 0.737 | 0.0402 | 0.0368 | 11% | 11.3 | 6.53 |
-| 2 | 7.1 final | `admiring_diffie` | 0.658 | 0.0507 | 0.0432 | 19% | 11.8 | 6.89 |
+| 2 | 7.1 safeguarded baseline | `admiring_diffie` | 0.658 | 0.0507 | 0.0432 | 19% | 11.8 | 6.89 |
 | 3 | 6.1 | `hardcore_page` | 0.816 | 0.0570 | 0.0372 | 43% | 13.3 | 7.16 |
-| 4 | 7.1 final | `eloquent_hoare` | 0.711 | 0.0459 | 0.0286 | 48% | 14.0 | 6.95 |
+| 4 | 7.1 safeguarded baseline | `eloquent_hoare` | 0.711 | 0.0459 | 0.0286 | 48% | 14.0 | 6.95 |
 | 5 | 6.1 | `confident_stallman` | 0.816 | 0.0485 | 0.0310 | 45% | 14.7 | 6.63 |
-| 6 | 7.1 final | `confident_zuckerberg` | 0.763 | 0.0539 | 0.0325 | 49% | 15.6 | 6.68 |
+| 6 | 7.1 safeguarded baseline | `confident_zuckerberg` | 0.763 | 0.0539 | 0.0325 | 49% | 15.6 | 6.68 |
 
 Article recall was 1.000 in every run.
 
@@ -324,17 +355,17 @@ Article recall was 1.000 in every run.
 | --- | ---: | ---: | ---: | --- | ---: | ---: |
 | 5.1 survivor (3 runs, 2026-09-23, no telemetry) | 0.754 | | | | | |
 | 6.1 survivor | **0.789** | 0.0485 | 0.0350 | 13.1 / 11.8 | 6.77 | 56.8K |
-| 7.1 final | **0.711** | 0.0502 | 0.0348 | 13.8 / 12.6 | 6.84 | 59.3K |
+| 7.1 safeguarded baseline | **0.711** | 0.0502 | 0.0348 | 13.8 / 12.6 | 6.84 | 59.3K |
 
 **By path** (`tables_flagged` and assessor calls, as in Finding 2):
 
-| Path | 6.1: runs · quality · list $/q · s/q | 7.1 final |
+| Path | 6.1: runs · quality · list $/q · s/q | 7.1 safeguarded baseline |
 | --- | --- | --- |
 | Text, ready after the first assessment | 13 · 0.962 · $0.038 · 8.9 s | 15 · 0.833 · $0.038 · 9.3 s |
 | Text, escalated | 1 · 1.000 · $0.020 · 8.2 s | none |
 | Table | 43 · 0.733 · $0.052 · 14.5 s | 42 · 0.667 · $0.055 · 15.4 s |
 
-**Cost and time: no difference between the systems.**
+**Cost and time: no separable system effect was detected.**
 
 - List cost $0.0485 against $0.0502 per question, inside 6.1's own run-to-run range
   ($0.0402–0.0570). Calls (6.77 against 6.84) and input tokens (56.8K against 59.3K)
@@ -347,12 +378,12 @@ Article recall was 1.000 in every run.
   at list price. GT has more table question-runs (75% against 48%), and its text
   questions read larger whole articles (GT16: 248K characters).
 
-**Quality: 6.1 is above 5.1 on GT; 7.1 final is below both.**
+**Quality in these runs: 6.1 is above 5.1 on GT; the 7.1 safeguarded baseline is below both.**
 
 - **6.1: 0.789** (0.737, 0.816, 0.816), against 0.754 for the three recorded 5.1 GT
   runs (judged on 2026-09-23). Its table path scored 0.733, against 0.69 for 5.1 on the
   same set: on GT, the 6.1 reliability fixes did not lower the table path.
-- **7.1 final: 0.711** (0.658, 0.711, 0.763). Each 7.1 run scored below the 6.1 run
+- **7.1 safeguarded baseline: 0.711** (0.658, 0.711, 0.763). Each 7.1 run scored below the 6.1 run
   before it. Per question: 6 lower, 2 higher (GT09, GT11), 11 unchanged; −0.078 on
   average; Wilcoxon p = 0.19, so not significant at this size. On validation, the single
   7.1 run had scored 0.900.
@@ -371,8 +402,8 @@ Article recall was 1.000 in every run.
   GT15 read like those rules applied too literally; GT16's Joe Biden is the competing
   answer first seen in the 6.1 answer replay (a large whole-article context). This is a
   hypothesis: the runs change the prompt and the grounding check together, and the
-  judge's own variation is about 7% of verdicts on identical input (6.1). *Tested in the
-  prompt replay below: refuted; the gap is chance.*
+  judge's own variation is about 7% of verdicts on identical input (6.1). *The prompt
+  replay below did not reproduce a prompt-driven gap.*
 - **The grounding check flagged 10 of 57 answers, and 8 of them passed the judge.** The
   flagged spans are extraction artifacts, not invented facts: "Russia-related Olympic"
   (the hyphen-suffix pattern already seen on validation), "Winter Olympic Games Sport"
@@ -406,12 +437,12 @@ reading above:
 
 **Status:** complete (2026-10-04, `cost_efficiency/replay_tests/2026_10_04_09_34_37/`);
 96 answers and 96 judge calls, no errors, $1.26 billed for the answers. **Result: the
-guarded prompt is not the cause.**
+replay did not detect a quality loss caused by the guarded prompt.**
 
-**Why.** The GT baseline put the 7.1 final 0.08 below the 6.1 survivor, with the losses in
+**Why.** The GT baseline put the 7.1 safeguarded baseline 0.08 below the 6.1 survivor, with the losses in
 the answer step on identical contexts. The two systems differ in three things at once:
 the answer prompt, the grounding check (its label on flagged answers), and what the agent
-collected in each run. Before any optimization is built on the 7.1 final, the prompt is
+collected in each run. Before any optimization is built on the safeguarded baseline, the prompt is
 tested alone.
 
 **Design** ([`prompt_replay.py`](prompt_replay.py), the answer replay method of 6.1
@@ -460,14 +491,16 @@ Experiment 1):
 | Evidence from | Legacy prompt | Guarded prompt | Recorded in the run |
 | --- | ---: | ---: | ---: |
 | 6.1 survivor runs (24) | 0.688 | 0.688 | 0.708 |
-| 7.1 final runs (24) | 0.688 | 0.688 | 0.521 |
+| 7.1 safeguarded baseline runs (24) | 0.688 | 0.688 | 0.521 |
 
 - **The prompts score the same.** Paired on each context, guarded minus legacy is +0.000:
   better on 8, worse on 9, the same on 31 (Wilcoxon p = 0.94).
 - **The 7.1 evidence was not worse.** Contexts from the 7.1 runs score exactly what
   contexts from the 6.1 runs score, under either prompt.
-- **The baseline gap on these questions was chance.** The 7.1 runs' recorded 0.521 becomes
-  0.688 when the same contexts are answered again with the same (guarded) prompt.
+- **The replay found no repeatable prompt-driven gap on these questions.** The 7.1 runs'
+  recorded 0.521 became 0.688 when the same contexts were answered again with the same
+  guarded prompt. This supports run-to-run answer or judge variation as the explanation,
+  but does not prove that chance was the only cause.
 - **Re-asking moves verdicts more than changing the prompt.** The arm matching each
   context's own run changed 22 of 48 recorded verdicts (9 of 24 on 6.1 contexts, 13 of 24
   on 7.1 contexts); switching the prompt on the same context changed 17 of 48. These eight
@@ -499,14 +532,16 @@ Experiment 1):
 | --- | --- |
 | Any replay difference smaller than the baseline's −0.19 on these questions | Held: 0.000 |
 | If the prompt is the cause: guarded 0.05–0.15 below legacy, Biden and "Totals" mostly under the guarded prompt, more hedges | Only the hedges held. Quality level; Biden under both prompts; "Totals" under the legacy prompt |
-| If chance or the evidence is the cause: the prompts level on the same contexts | Held, and the contexts' source made no difference either: chance |
+| If run-to-run variation or the evidence is the cause: the prompts level on the same contexts | Held; the replay found no difference by prompt or context source |
 
 **Reading.**
 
-- **The 7.1 final remains the base for the performance work.** The guarded prompt costs
-  no measurable quality on GT; its security benefit stands.
-- **The GT gap between 6.1 and 7.1 (−0.08, p = 0.19) is chance.** The baseline's own test
-  said "not significant"; the replay finds no mechanism behind it.
+- **The 7.1 safeguarded baseline remains the base for the performance work.** The replay
+  detected no quality loss attributable to the guarded prompt; its security benefit
+  therefore remains part of the design.
+- **The GT gap between 6.1 and 7.1 (−0.08, p = 0.19) was not statistically significant.**
+  The replay did not reproduce a prompt effect, so the evidence is consistent with
+  run-to-run answer or judge variation.
 - **Measurement lesson.** Half the verdicts on the unstable GT questions move when the
   same evidence is answered again. Three runs of 19 questions cannot resolve a difference
   of 0.08, so later comparisons are paired by question and, where only the answer step
@@ -517,7 +552,7 @@ Experiment 1):
 **Status:** complete (2026-10-04); no API calls.
 
 **Why.** The GT baseline found the grounding check flagging correct answers: 8 of its 10
-flags on the 7.1 final were answers the judge passed. Under policy `surface` each of those
+flags on the 7.1 safeguarded baseline were answers the judge passed. Under policy `surface` each of those
 reaches the user with the "[QUARANTINED]" label, a usability cost of the safeguard, and
 the same artifacts would follow every later run.
 
@@ -570,9 +605,9 @@ flagged.
 - **Cost of the change:** a name that itself contains a possessive ("People's Republic
   of China") is no longer checked as one span, the same limit as single-word names; 777
   names checked against 809 before.
-- **Tests:** `tests/test_grounding_extraction.py` (each artifact gone; the planted name
-  next to every new boundary still flagged); the module's self-check passes; 184 tests
-  pass.
+- **Tests:** `tests/test_grounding_extraction.py` covers each removed artifact and checks
+  that planted names next to every new boundary remain flagged; the module also includes
+  a self-check.
 - **The security result stands:** every planted name the recorded security runs caught
   is still caught.
 
@@ -586,7 +621,7 @@ questions are harder. A router to `gpt-5.4` is worth building only if `gpt-5.4` 
 beats mini on GT, and the routing simulation (efficiency analyzer §8) needs a strong
 outcome for every GT question.
 
-**Design.** The 7.1 final (the system kept after the prompt replay, with the corrected
+**Design.** The 7.1 safeguarded baseline (the system kept after the prompt replay, with the corrected
 grounding check) with `--model openai/gpt-5.4` for every agent role and the answer; judge
 `gpt-5.4-mini` as in every run; history off; GT, 19 questions. One run, about $3.3
 estimated: a reference point, not a final comparison.
@@ -616,8 +651,8 @@ what OpenRouter billed for both calls to the tenth of a cent ($0.798 and $1.473)
 
 | GT, 19 questions | Quality | List $/q | Billed $/q | Seconds/q | Calls/q |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| 7.1 final, `gpt-5.4-mini` (3 runs) | 0.711 | 0.0502 | 0.0348 | 13.8 | 6.84 |
-| 7.1 final, `gpt-5.4` (1 run) | **0.868** | **0.3387** | 0.2787 | 24.2 | 7.11 |
+| 7.1 safeguarded baseline, `gpt-5.4-mini` (3 runs) | 0.711 | 0.0502 | 0.0348 | 13.8 | 6.84 |
+| Safeguarded graph, `gpt-5.4` in all roles (1 run) | **0.868** | **0.3387** | 0.2787 | 24.2 | 7.11 |
 
 - **Quality +0.158 over mini** (7 questions better, 2 worse; Wilcoxon p = 0.074), at 6.7x
   the list cost and 10 s more per question: $0.18 per question for each +0.10 quality.
@@ -837,7 +872,8 @@ so its simulation is already reliable, and it is the weakest option on both sets
 on the strong path is not part of these runs; each run's cost is reported with and
 without GT09.
 
-Every option starts from the 7.1 final and uses two models: `gpt-5.4-mini` (cheap) and
+Every option starts from the 7.1 safeguarded baseline and uses two models:
+`gpt-5.4-mini` (cheap) and
 `gpt-5.4` (strong). The two "All" rows are measured runs (GT: three mini runs, one
 `gpt-5.4` run; validation: four mini runs, one `gpt-5.4` run). Every other row is
 simulated on those runs: a question-run sent to `gpt-5.4` takes that question's measured
@@ -984,12 +1020,12 @@ single-question smoke tests could not have caught it: the failure needs two kind
 ## Results (2026-10-04)
 
 Report: `cost_efficiency/reports/gt_routing_runs.pdf` (efficiency analyzer, baseline the
-7.1 final on mini).
+7.1 safeguarded configuration on mini; its saved experiment label is `7.1 final`).
 
 | GT, 19 questions | Runs | Quality | List $/q | Billed $/q | Seconds/q | Without GT09: quality, list $/q | Gain kept / extra cost | p (quality, against mini) |
 | --- | ---: | ---: | ---: | ---: | ---: | --- | ---: | ---: |
-| 7.1 final, `gpt-5.4-mini` | 3 | 0.711 | 0.0502 | 0.0348 | 13.8 | 0.694, 0.0460 | 0% / 0% | |
-| 7.1 final, `gpt-5.4` | 1 | 0.868 | 0.3387 | 0.2787 | 24.2 | 0.889, 0.1663 | 100% / 100% | 0.074 |
+| 7.1 safeguarded baseline, `gpt-5.4-mini` | 3 | 0.711 | 0.0502 | 0.0348 | 13.8 | 0.694, 0.0460 | 0% / 0% | |
+| Safeguarded graph, `gpt-5.4` in all roles | 1 | 0.868 | 0.3387 | 0.2787 | 24.2 | 0.889, 0.1663 | 100% / 100% | 0.074 |
 | Router by question type | 1 | 0.816 | 0.3009 | 0.2451 | 22.0 | 0.833, 0.1282 | 67% / 87% | 0.133 |
 | **Router B (assessor and answer)** | 1 | **0.868** | **0.1417** | 0.1013 | 20.8 | 0.889, 0.1069 | **100% / 32%** | 0.074 |
 | **Answer check 0.5, large evidence to `gpt-5.4`** | 1 | **0.842** | **0.1275** | 0.0816 | 22.8 | 0.833, 0.1327 | **83% / 27%** | **0.031** |
@@ -1039,22 +1075,23 @@ remove it.)*
 
 **Reading.**
 
-- **Two strategies dominate the rest on GT:** Router B (full `gpt-5.4` quality, 32% of its
-  extra cost) and the answer check (83% of the gain, 27% of the extra cost). The type router
-  is dominated by both.
+- **Two strategies dominated the other live configurations in this GT run:** Router B
+  matched the observed all-`gpt-5.4` score while using 32% of its extra cost, and the
+  answer check kept 83% of the observed gain for 27% of the extra cost. These were
+  single-run results at this stage; the repeated comparison below made the final choice.
 - **Heterogeneous roles beat a whole-question switch.** The roles that judge evidence and
   write the answer gain from `gpt-5.4`; the role that requests table data does not, and
   costs more there. This matches 6.1, where `gpt-5.4` on the planner alone changed nothing.
 - **One run each:** Router B and the answer check differ by 0.026 in quality and $0.014 in
-  cost, inside the run-to-run spread (the three mini runs of the 7.1 final ranged 0.658 to
+  cost, inside the run-to-run spread (the three mini runs of the safeguarded baseline ranged 0.658 to
   0.763). Which of the two is better is not settled by these runs.
 
 
 ## The pipeline, step by step, in each configuration
 
 What each configuration changes, in pipeline order. "Mini" is `gpt-5.4-mini`, "5.4" is
-`gpt-5.4`. The last column is a proposed combination, not yet run, estimated from the runs
-above.
+`gpt-5.4`. At this stage the last column was a proposed combination estimated from the
+runs above; it was subsequently implemented and evaluated in the three-run comparison.
 
 | Pipeline step | All mini | All 5.4 | Router by question type | Router B | Answer check 0.5 | Proposed: Router B + answer check |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1094,7 +1131,7 @@ above.
 `cost_efficiency/reports/gt_three_run_comparison.pdf`.
 
 **Why.** One run of 19 questions cannot separate differences of a few points (the three
-mini runs of the 7.1 final spread from 0.658 to 0.763). Every configuration in the
+mini runs of the 7.1 safeguarded baseline spread from 0.658 to 0.763). Every configuration in the
 comparison gets the same number of runs: three.
 
 **Runs added** (in this order, one at a time):
@@ -1117,8 +1154,8 @@ combination was estimated at about 0.82 and $0.105 per question from the answer-
 
 | GT, 3 runs each | Quality (run range) | List $/q (run range) | Seconds/q | List $ per passing answer | Most expensive question-run |
 | --- | --- | --- | ---: | ---: | ---: |
-| 7.1 final, `gpt-5.4-mini` | 0.711 (0.658–0.763) | 0.0502 (0.0459–0.0539) | 13.8 | | 0.236 |
-| 7.1 final, `gpt-5.4` | **0.886** (0.842–0.947) | 0.3457 (0.3387–0.3516) | 24.7 | 0.402 | 3.442 |
+| 7.1 safeguarded baseline, `gpt-5.4-mini` | 0.711 (0.658–0.763) | 0.0502 (0.0459–0.0539) | 13.8 | | 0.236 |
+| Safeguarded graph, `gpt-5.4` in all roles | **0.886** (0.842–0.947) | 0.3457 (0.3387–0.3516) | 24.7 | 0.402 | 3.442 |
 | **Router B** | **0.868** (0.868 in all three) | **0.1725** (0.1417–0.1924) | 21.3 | **0.209** | 1.356 |
 | Router B + answer check | 0.798 (0.763–0.842) | 0.2260 (0.1485–0.3145) | 26.4 | 0.322 | 3.530 |
 
@@ -1133,11 +1170,12 @@ combination was estimated at about 0.82 and $0.105 per question from the answer-
 
 **Reading.**
 
-- **Router B keeps `gpt-5.4`'s quality at half its cost.** Against `gpt-5.4` its quality
-  difference is not distinguishable from zero (−0.018, p = 0.81) while its cost difference
-  is (−50%, p = 0.001); it is the only routed configuration significantly better than
-  mini (p = 0.047), and it scored the same 0.868 in all three runs. Each passing answer
-  costs $0.21 against $0.40 on `gpt-5.4`.
+- **Router B delivered the best measured quality-cost trade-off.** Against all-`gpt-5.4`,
+  its observed quality was 0.018 lower and the difference was not statistically detected
+  (p = 0.81); this is not a formal equivalence result. Its list cost was 50% lower
+  (p = 0.001). It was the only routed configuration statistically higher than mini in
+  this comparison (p = 0.047), and it scored 0.868 in all three runs. Each passing answer
+  cost $0.21, compared with $0.40 on all-`gpt-5.4`.
 - **Router B + answer check fell short of its estimate.** Jev sent 6–8 questions per run to
   a rerun (4 in the single answer-check run), every rerun pays two passes, and quality
   dropped to 0.798 at $0.226. The estimate rested on one run's four reruns.
@@ -1154,3 +1192,121 @@ combination was estimated at about 0.82 and $0.105 per question from the answer-
   check alone (0.842 at $0.128) were not repeated. The answer check's one run suggests a
   cheaper point than Router B; the combination's three runs did not reproduce it.
 
+
+# Final validation: 5.1, 6.1, and 7.1 survivors
+
+**Status:** complete (2026-10-04, 15:41–16:26).
+
+**Why.** GT was the working set for every 7.1 choice; validation was reserved for one
+final comparison campaign, with three runs per survivor. The operational selection goal
+was for Router B to score at least as well as the 6.1 survivor in these held-out runs.
+
+**Runs** (`cost_efficiency/wikipedia_GT_validation_set/`, its own manifest, logs, and
+console; interleaved, one at a time): the three Router B runs (`xenodochial_tarjan`,
+`thirsty_stallman`, `sweet_dijkstra`) are the **7.1 Final Survivor**. The three mini-only
+7.1 runs are retained in the recorded run folder but omitted from this final survivor
+comparison: they reproduced the 6.1 mean (0.860) at effectively the same cost and add no
+new lineage step. No further all-`gpt-5.4` run: its only validation run (6.1, 0.960) stays
+a reference outside the comparison.
+
+**The comparison folder** (`final_validation/`, built by
+[`analyzers/build_final_validation.py`](analyzers/build_final_validation.py)): copies of
+three runs per survivor in `runs/experiments/` and `runs/telemetry/`, each copy's
+`experiment_name` set to one label per survivor (only on the copies; the recorded files are
+unchanged), file times preserved, and `provenance.csv` listing every copy's source and
+original name. The 5.1 survivor is represented by `quirky_adleman` (its one validation run
+with cost telemetry) and the two most recent of its four 2026-09-23 runs, `eager_rossum`
+and `objective_hopper`; their mean, 0.880, equals the four-run mean recorded in 5.1.
+
+**Final outputs:**
+
+- `final_validation/ragas_validation_5_1_6_1_7_1.pdf`: recall and accuracy (the original
+  analyzer);
+- `final_validation/efficiency_validation_5_1_6_1_7_1.pdf`: accuracy against cost and
+  latency (the efficiency analyzer, baseline the 6.1 survivor), with its tables in
+  `efficiency_validation_5_1_6_1_7_1_tables/`.
+
+Rebuild the three-survivor comparison without changing the recorded source runs:
+
+```bash
+python "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/analyzers/build_final_validation.py"
+python wikipedia_retrieval_engine/utils/analyze_ragas_experiments.py \
+  --experiments-dir "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/final_validation/runs" \
+  --output "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/final_validation/ragas_validation_5_1_6_1_7_1.pdf" \
+  --title "Final validation: survivor progression from 5.1 to 7.1"
+python wikipedia_retrieval_engine/utils/analyze_ragas_experiments_efficiency.py \
+  --experiments-dir "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/final_validation/runs" \
+  --baseline "6.1 survivor" \
+  --output "wikipedia_retrieval_engine/Capstone Checkpoint 7.1/final_validation/efficiency_validation_5_1_6_1_7_1.pdf" \
+  --title "Survivor quality, cost, and latency"
+```
+
+## Results
+
+| Validation, 25 questions, 3 runs each | Quality (runs) | Pass / partial / fail | Article recall | List $/q | Billed $/q | Seconds/q | List $ per passing answer |
+| --- | --- | --- | ---: | ---: | ---: | ---: | ---: |
+| 5.1 survivor | 0.880 (0.860, 0.900, 0.880) | 82.7% / 10.7% / 6.7% | 100.0% | 0.0431 (one run with telemetry) | 0.0356 | 16.1 | 0.054 |
+| 6.1 survivor | 0.860 (0.880, 0.800, 0.900) | 80.0% / 12.0% / 8.0% | 100.0% | 0.0422 | 0.0296 | 12.8 | 0.053 |
+| **7.1 Final Survivor** | **0.933** (0.940, 0.920, 0.940) | **89.3% / 8.0% / 2.7%** | 99.3% | 0.1068 | 0.0751 | 18.7 | 0.120 |
+
+**Paired against the 6.1 survivor:**
+
+- **7.1 Final Survivor: +0.073** (6 questions better, 1 worse; p = 0.094), for +$0.065 per question at
+  list price and +5.9 s. Gains on VAL24 (0.33 → 1.00), VAL06 (0.33 → 1.00), VAL08 and VAL14
+  (0.83 → 1.00), VAL02 and VAL05; the one loss is VAL10 (0.67 → 0.50), the question where
+  one Router B run missed an article (recall 99.3%).
+- 5.1: +0.020 (p = 0.69).
+
+**Reading.**
+
+- **The 7.1 Final Survivor met the operational selection goal in these runs.** It scored
+  above the 6.1 survivor in all three held-out runs (0.920–0.940 against 0.800–0.900),
+  with the lowest observed fail rate of any survivor (2.7%). The mean improvement over
+  6.1 was +0.073 with p = 0.094, so this small comparison does not establish a statistically
+  significant general improvement. On GT, Router B was 0.018 below all-`gpt-5.4`
+  (p = 0.81) at half its list cost.
+- **The price is 2.5x the mini survivors** ($0.107 against $0.042–0.044 at list price) and
+  6 s per question; a passing answer costs $0.12 against $0.05. That is the price of
+  `gpt-5.4` in the two roles that judge the evidence and write the answer, on the questions
+  the TOC review routes to the table path.
+- **The 7.1 Final Survivor is Router B:** the safeguarded graph (input sanitizer, guarded answer prompt,
+  corrected grounding check) with the routing step, `gpt-5.4-mini` by default, and the
+  assessor and the answer on `gpt-5.4` when the TOC review flags a table.
+
+**Why recall dipped to 99.3%.** This is one miss on VAL10 in one of 75 question-runs.
+Initial top-4 retrieval found the historical life-expectancy
+article but not the exact UN population-list article. After two incomplete table rounds,
+the assessor put the still-missing population source into `table_requests` with no table
+ID and emitted no `retrieval_request`. The bounded router gives table requests priority;
+with the table budget exhausted and no retrieval request left, it terminated before the
+graph-seeded retrieval stage. The other two 7.1 Final Survivor runs kept a retrieval
+request alive, found both required articles, and recorded 1.000 recall. The evidence
+points to a request-typing and termination edge case between the assessor and router;
+additional runs would be needed to determine how often it recurs.
+
+# Final technical conclusion
+
+Router B is the selected architecture because it concentrates the stronger model in the
+two roles with the clearest measured benefit while leaving the table planner on the
+smaller model. The decision is supported by three repeated GT runs and three held-out
+validation runs, not by the earlier one-run routing simulations. The results support a
+practical cost-quality choice for these datasets; they do not establish equivalence to
+all-`gpt-5.4` or guarantee the same behavior on a different workload.
+
+The first follow-up improvements should be:
+
+1. Add deterministic limits to table-request loops, prompt size, and accumulated
+   evidence so repeated table work cannot create extreme tail cost.
+2. Replace the current name-oriented grounding heuristic with evidence-linked claim
+   verification, then tune it on a larger labeled set to reduce false quarantines without
+   weakening protection against fabricated claims.
+3. Monitor routing decisions, article recall, and per-question tail cost on a larger and
+   more varied evaluation set.
+
+## Supporting material
+
+- [`cost_efficiency/reports/gt_three_run_comparison.pdf`](cost_efficiency/reports/gt_three_run_comparison.pdf): repeated GT comparison used for the routing decision.
+- [`final_validation/ragas_validation_5_1_6_1_7_1.pdf`](final_validation/ragas_validation_5_1_6_1_7_1.pdf): final survivor accuracy and recall.
+- [`final_validation/efficiency_validation_5_1_6_1_7_1.pdf`](final_validation/efficiency_validation_5_1_6_1_7_1.pdf): final survivor quality, cost, and latency.
+- [`final_validation/provenance.csv`](final_validation/provenance.csv): source run for every copied final-validation result.
+- [`cost_efficiency/run_manifest.csv`](cost_efficiency/run_manifest.csv): GT experiment order and run locations.
