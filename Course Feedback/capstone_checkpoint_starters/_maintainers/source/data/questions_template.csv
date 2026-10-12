@@ -1,0 +1,3 @@
+ID,Category,Question,Reference answer,Grading notes,Source articles,Split
+GT01,Direct fact,A question exactly as a user would ask it,"The correct answer, checked against the corpus",What a PASS must contain; what makes it PARTIAL; what makes it FAIL,file_name.html,gt
+VAL01,Multi-article,"A held-back question, similar in kind to the gt questions",The correct answer,What a PASS must contain,first_file.html; second_file.html,validation

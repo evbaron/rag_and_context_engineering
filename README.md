@@ -48,20 +48,20 @@ Checkpoint READMEs record the project decisions and experimental evidence:
 - [Checkpoint 4.1 advanced retrieval](wikipedia_retrieval_engine/Capstone%20Checkpoint%204.1/README%204.1.md)
 - [Checkpoint 5.1 agentic evidence graph](wikipedia_retrieval_engine/Capstone%20Checkpoint%205.1/README%205.1.md)
 - Checkpoint 6.1 security and cost audit:
-  [security assessment](wikipedia_retrieval_engine/Capstone%20Checkpoint%206.1/README%206.1%20-%20security%20assessment.md),
-  and [performance and cost](wikipedia_retrieval_engine/Capstone%20Checkpoint%206.1/README%206.1%20-%20performance%20and%20cost.md)
+[security assessment](wikipedia_retrieval_engine/Capstone%20Checkpoint%206.1/README%206.1%20-%20security%20assessment.md),
+and [performance and cost](wikipedia_retrieval_engine/Capstone%20Checkpoint%206.1/README%206.1%20-%20performance%20and%20cost.md)
 - Checkpoint 7.1 production readiness:
-  [security improvements](wikipedia_retrieval_engine/Capstone%20Checkpoint%207.1/README%207.1%20-%20security%20improvements.md),
-  [performance and efficiency](wikipedia_retrieval_engine/Capstone%20Checkpoint%207.1/README%207.1%20-%20performance%20and%20cost.md),
-  [security comparison, 5.1 against the safeguarded baseline](wikipedia_retrieval_engine/Capstone%20Checkpoint%207.1/security_comparison_5_1_vs_7_1.md),
-  [final accuracy and recall report](wikipedia_retrieval_engine/Capstone%20Checkpoint%207.1/final_validation/ragas_validation_5_1_6_1_7_1.pdf),
-  and [final efficiency report](wikipedia_retrieval_engine/Capstone%20Checkpoint%207.1/final_validation/efficiency_validation_5_1_6_1_7_1.pdf)
+[security improvements](wikipedia_retrieval_engine/Capstone%20Checkpoint%207.1/README%207.1%20-%20security%20improvements.md),
+[performance and efficiency](wikipedia_retrieval_engine/Capstone%20Checkpoint%207.1/README%207.1%20-%20performance%20and%20cost.md),
+[security comparison, 5.1 against the safeguarded baseline](wikipedia_retrieval_engine/Capstone%20Checkpoint%207.1/security_comparison_5_1_vs_7_1.md),
+[final accuracy and recall report](wikipedia_retrieval_engine/Capstone%20Checkpoint%207.1/final_validation/ragas_validation_5_1_6_1_7_1.pdf),
+and [final efficiency report](wikipedia_retrieval_engine/Capstone%20Checkpoint%207.1/final_validation/efficiency_validation_5_1_6_1_7_1.pdf)
 
 For the evolution at a glance — every retriever/approach tried, survived, or abandoned
 across checkpoints 1.1–7.1, with both RAGAS metrics (recall and answer quality) at each
 fork, one survivor per checkpoint, and the survivors' progression on the test and
 validation sets — open the interactive
-[**Retriever Phylogeny**](wikipedia_retrieval_engine/retriever_phylogeny.html) in a browser.
+**[Retriever Phylogeny](wikipedia_retrieval_engine/retriever_phylogeny.html)** in a browser.
 
 ```text
 rag_and_context_engineering/
@@ -144,6 +144,8 @@ rag_and_context_engineering/
         └── security_tests/ cost_tests/ logs/  # run outputs, as in 6.1
 ```
 
+
+
 The checkpoint folders contain the assignment-specific scripts, evidence, reports,
 and technical notes. Reusable retrieval code lives in `retrievers/` (each retriever
 implements `BaseRetriever.getTopK`), and utilities that operate across checkpoints
@@ -155,63 +157,64 @@ categories/links/tables are the substrate for the Checkpoint 4.1 graph.
 ## Checkpoint progression
 
 - **Checkpoint 1.1 — baseline generation.** Established the Wikipedia question-answer
-  scenario, initial prompt, and repeat-run response logs.
+scenario, initial prompt, and repeat-run response logs.
 - **Checkpoint 2.1 — retrieval experiments.** Added BM25, vector, and weighted hybrid
-  retrieval; compared chunking strategies and full-article context; and created the
-  initial manually reviewed ground-truth workbook.
+retrieval; compared chunking strategies and full-article context; and created the
+initial manually reviewed ground-truth workbook.
 - **Checkpoint 3.1 — controlled evaluation.** Introduced the canonical GT set,
-  oracle-context and end-to-end runs, RAGAS scoring, repeat-run analysis, and the
-  vector `k=7` baseline.
+oracle-context and end-to-end runs, RAGAS scoring, repeat-run analysis, and the
+vector `k=7` baseline.
 - **Checkpoint 4.1 — advanced retrieval.** Rebuilt the corpus as Markdown plus JSON
-  sidecars, tested query decomposition, and added a rarity-weighted article graph.
-  Graph retrieval improved article recall, but answer quality remained limited by
-  table aggregation and reasoning.
+sidecars, tested query decomposition, and added a rarity-weighted article graph.
+Graph retrieval improved article recall, but answer quality remained limited by
+table aggregation and reasoning.
 - **Checkpoint 5.1 — agentic evidence reasoning.** Implements a bounded LangGraph
-  agent (`wiki_agents/`). It finds articles through entity decomposition, selects
-  sections and table artifacts from each article's table of contents, forces every
-  selected table through a deterministic lookup/compute executor, and escalates to
-  same-article breadth and then graph neighbors when evidence is insufficient. Final
-  runs held designated-article recall at 1.000. On the held-out validation set,
-  quality reached 0.880 (4.1 graph: 0.885) with about one fifth of the 4.1 context.
+agent (`wiki_agents/`). It finds articles through entity decomposition, selects
+sections and table artifacts from each article's table of contents, forces every
+selected table through a deterministic lookup/compute executor, and escalates to
+same-article breadth and then graph neighbors when evidence is insufficient. Final
+runs held designated-article recall at 1.000. On the held-out validation set,
+quality reached 0.880 (4.1 graph: 0.885) with about one fifth of the 4.1 context.
 - **Checkpoint 6.1 — security and cost audit.** Audits the 5.1 survivor, then builds
-  the 6.1 survivor from the findings. The security experiment adds conversation history
-  (the 5.1 agent is single-turn): the roleplay attack was refused in all four
-  conversations, while planted conversation text was adopted as retrieved fact in 3 of
-  30 conversations, each time the current evidence lacked the answer (the pipeline
-  fails open). The cost experiment measures real billed cost per question (the 5.1
-  survivor costs 1.45× the 4.1 graph per question once caching is counted) and replays
-  the saved 5.1 answer step to test whole articles for questions that need no table.
-  The resulting 6.1 survivor (`survivor_6_1.py`: whole articles for text questions,
-  incomplete table evidence flagged to the user) matches 5.1's validation quality
-  (0.860) at 20% less time and 17% less billed cost, answering text questions almost
-  perfectly (0.974) while two table questions regressed. The same graph on `gpt-5.4`
-  reached 0.960 in one run, at 3.6× the list cost (4.4× billed).
+the 6.1 survivor from the findings. The security experiment adds conversation history
+(the 5.1 agent is single-turn): the roleplay attack was refused in all four
+conversations, while planted conversation text was adopted as retrieved fact in 3 of
+30 conversations, each time the current evidence lacked the answer (the pipeline
+fails open). The cost experiment measures real billed cost per question (the 5.1
+survivor costs 1.45× the 4.1 graph per question once caching is counted) and replays
+the saved 5.1 answer step to test whole articles for questions that need no table.
+The resulting 6.1 survivor (`survivor_6_1.py`: whole articles for text questions,
+incomplete table evidence flagged to the user) matches 5.1's validation quality
+(0.860) at 20% less time and 17% less billed cost, answering text questions almost
+perfectly (0.974) while two table questions regressed. The same graph on `gpt-5.4`
+reached 0.960 in one run, at 3.6× the list cost (4.4× billed).
 - **Checkpoint 7.1 — production readiness.** Adds deterministic input sanitising, a
-  guarded answer prompt, and a grounding check inside the agent graph. In the pooled
-  security evaluation, fabricated facts reached 5 of 59 answers before the safeguards
-  and 0 of 59 afterward; the two pre-grouped fake-nominee scenarios fell from 5 of 20
-  to 0 of 20 (Fisher's exact p = 0.047). The controls were evaluated together, so the
-  result does not assign causality to a single layer. Performance experiments then
-  compared all-mini, all-`gpt-5.4`, question routing, answer checking, and role-based
-  routing. Router B became the Final Survivor: it uses `gpt-5.4` for the assessor and
-  answer on table questions and mini elsewhere. Across three GT runs it scored 0.868 at
-  half the list cost of all-`gpt-5.4`; on three held-out validation runs it scored 0.933
-  at $0.1068 per question, with 99.3% article recall.
+guarded answer prompt, and a grounding check inside the agent graph. In the pooled
+security evaluation, fabricated facts reached 5 of 59 answers before the safeguards
+and 0 of 59 afterward; the two pre-grouped fake-nominee scenarios fell from 5 of 20
+to 0 of 20 (Fisher's exact p = 0.047). The controls were evaluated together, so the
+result does not assign causality to a single layer. Performance experiments then
+compared all-mini, all-`gpt-5.4`, question routing, answer checking, and role-based
+routing. Router B became the Final Survivor: it uses `gpt-5.4` for the assessor and
+answer on table questions and mini elsewhere. Across three GT runs it scored 0.868 at
+half the list cost of all-`gpt-5.4`; on three held-out validation runs it scored 0.933
+at $0.1068 per question, with 99.3% article recall.
+
+
 
 ## Ground-truth files
 
 Two ground-truth artifacts are retained for different purposes:
 
 - `wikipedia_retrieval_engine/Capstone Checkpoint 2.1/wikipedia Q-A GT.xlsx` is the
-  original workbook used for the manual Checkpoint 2.1 review. It remains beside that
-  checkpoint so its historical results can be reproduced and interpreted correctly.
+original workbook used for the manual Checkpoint 2.1 review. It remains beside that
+checkpoint so its historical results can be reproduced and interpreted correctly.
 - `wikipedia_retrieval_engine/GT/wikipedia_GT.csv` is the current canonical evaluation
-  set for Checkpoint 3.1 and later work. It contains stable IDs GT01-GT19, reference
-  answers, question-specific PASS/PARTIAL/FAIL rules, designated source articles,
-  scope assumptions, evaluation roles, and complexity labels.
+set for Checkpoint 3.1 and later work. It contains stable IDs GT01-GT19, reference
+answers, question-specific PASS/PARTIAL/FAIL rules, designated source articles,
+scope assumptions, evaluation roles, and complexity labels.
 
-The audit and migration from the original workbook to the current CSV are documented
-in `wikipedia_retrieval_engine/GT/capstone2.1_gt_cleanup_notes.md`.
+The audit and migration from the original workbook to the current CSV are documented isurn `wikipedia_retrieval_engine/GT/capstone2.1_gt_cleanup_notes.md`.
 
 ## Setup
 
@@ -251,6 +254,8 @@ For later sessions, reactivate the environment with:
 source .venv/bin/activate
 ```
 
+
+
 ## Prepare the local corpus and indexes
 
 Place the supplied 2,419 HTML files in:
@@ -272,6 +277,8 @@ python -m wikipedia_retrieval_engine.retrievers.corpus \
   "wikipedia_retrieval_engine/Wikipedia Library"
 ```
 
+
+
 ### Baseline Chroma index
 
 The first build embeds the full corpus and therefore uses OpenRouter credits. Later
@@ -280,6 +287,8 @@ runs load the persisted Chroma collection but still embed each search query.
 ```bash
 python -c 'from wikipedia_retrieval_engine.retrievers.vector import build_or_load_db; build_or_load_db(chroma_db_name="wikipedia_chars1600_overlap200")'
 ```
+
+
 
 ### Section-aware Chroma index for Checkpoint 5.1
 
@@ -304,6 +313,8 @@ call:
 python -c 'from wikipedia_retrieval_engine.retrievers.corpus import build_or_load_markdown_store; from wikipedia_retrieval_engine.retrievers.graph import build_or_load_graph; build_or_load_graph(build_or_load_markdown_store())'
 ```
 
+
+
 ### Rich table artifacts for Checkpoint 5.1
 
 The answering graph never reparses HTML or writes corpus artifacts. Build the
@@ -326,6 +337,8 @@ for the representation and agent-routing design.
 python -m unittest discover -s wikipedia_retrieval_engine/tests -p "test_*.py"
 ```
 
+
+
 ## Checkpoint 3.1 evaluation workflow
 
 Run these commands from the repository root.
@@ -338,6 +351,8 @@ the answer model. It isolates answer generation and judge behavior from retrieva
 ```bash
 python "wikipedia_retrieval_engine/Capstone Checkpoint 3.1/capstone_checkpoint_3_1_oracle_AI_only.py"
 ```
+
+
 
 ### End-to-end retrieval evaluation
 
@@ -566,8 +581,8 @@ with normalized filenames, and creates a landscape PDF containing:
 - per-question outcome heatmaps;
 - run-to-run variability;
 - cost and latency per configuration (calls, tokens, list and billed cost, seconds per
-  question, and quality against cost) for runs whose
-  `telemetry/<run>__question_telemetry.csv` exists (Checkpoint 6.1 cost starters); and
+question, and quality against cost) for runs whose
+`telemetry/<run>__question_telemetry.csv` exists (Checkpoint 6.1 cost starters); and
 - included, excluded, and duplicate-file diagnostics.
 
 `--experiments-dir` accepts several directories, for example the 5.1 validation runs and
@@ -617,17 +632,17 @@ do not combine them with the final baseline statistics.
 trade-offs, one section per question set (GT and validation are never pooled):
 
 1. frontier: quality against list cost and seconds, run points and means, dominated
-   configurations;
+  configurations;
 2. paired against a baseline: per-question changes, better/worse/same, Wilcoxon p, the
-   price of a quality point;
+  price of a quality point;
 3. cost and model time by role;
 4. text-ready, text-escalated, and table paths;
 5. tail and waste: p50, p90, maximum, most expensive question-runs, spend on fails;
 6. comparability: run order, caching, billed against list, per-call latency by role,
-   with warnings;
+  with warnings;
 7. safeguard markers: evidence notices, grounding flags and false alarms, sanitizer hits;
 8. routing: what-if policies on saved runs (`--route-cheap`, `--route-strong`), and the
-   route mix once runs record a `route` column.
+  route mix once runs record a `route` column.
 
 It writes the PDF and one CSV per table (`<output stem>_tables/`). Display labels for the
 experiment names are built in (`--alias NAME=LABEL` adds more); `--baseline` takes a
@@ -694,25 +709,25 @@ python wikipedia_retrieval_engine/utils/openrouter_usage.py \
 The controlled experiments establish a useful sequence:
 
 1. Checkpoint 3.1 found a strong vector `k=7` baseline and showed that perfect source
-   selection still did not solve exhaustive-list and time-filter questions.
+  selection still did not solve exhaustive-list and time-filter questions.
 2. Checkpoint 4.1 improved article recall from 0.899 to 0.939 with graph expansion, but
-   mean answer quality remained approximately flat. Clean Markdown tables also did not
+  mean answer quality remained approximately flat. Clean Markdown tables also did not
    resolve the difficult aggregation family by themselves.
 3. Checkpoint 5.1 therefore targets the reasoning stage: assess what evidence is
-   missing, retrieve deliberately, compute over normalized table rows when necessary,
+  missing, retrieve deliberately, compute over normalized table rows when necessary,
    and verify the answer against precise provenance.
 4. Checkpoint 5.1 reached designated-article recall of 1.000 with a fraction of the
-   4.1 context. It also makes five or more model calls per question and adds new
+  4.1 context. It also makes five or more model calls per question and adds new
    channels through which user text and retrieved text reach a model (decomposition,
    TOC review, assessment, table planning). Checkpoint 6.1 therefore audits security,
    reliability, latency, and cost before further capability work.
 5. Checkpoint 6.1 found that the pipeline fails open: planted conversation text was
-   adopted as retrieved fact when the current evidence lacked the answer. Its
+  adopted as retrieved fact when the current evidence lacked the answer. Its
    reliability fixes were measured with history off, where that attack cannot occur.
    Checkpoint 7.1 therefore adds safeguards inside the agent rather than in a test
    harness, and re-runs the 6.1 attacks with history on against the combined changes.
 6. Checkpoint 7.1 then measures where the stronger model earns its cost. Repeated GT
-   runs support Router B: use `gpt-5.4` for evidence assessment and answer writing on
+  runs support Router B: use `gpt-5.4` for evidence assessment and answer writing on
    table questions, and use mini for decomposition, article selection, and table
    planning. The held-out validation comparison checks the selected system once the
    architecture is fixed.

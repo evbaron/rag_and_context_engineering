@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ragkit"
+version = "0.1.0"
+description = "Capstone starter library: chat, logging, retrieval, evaluation, agents."
+requires-python = ">=3.11,<3.13"
+# Dependencies are installed from requirements.txt, where every version is pinned.
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["ragkit*"]
+
+[tool.setuptools.package-data]
+ragkit = ["*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
+filterwarnings = ["ignore::DeprecationWarning", "ignore::UserWarning"]
